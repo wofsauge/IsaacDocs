@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!--Lua Codehightlight--><link href="themes/prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -352,8 +353,21 @@ Public Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-
+</div>
+<div class="memdoc">
+<!--start Custom comment -->
+Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
+<div id="example_code">
+<h3>Examplecode:</h3>
+This code damages every entity in the room for half a second with the damagesource set to the player. The total damage dealt is 30.
+<pre><code class="language-lua">local player =Isaac.GetPlayer(0)
+for i, entity in ipairs(Isaac.GetRoomEntities()) do
+	entity:AddBurn(player,30,1)
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
+</div>
 </div>
 </div>
 <a id="a7d87da4a0e221142c066e60ecd6007f6"></a>
@@ -372,6 +386,17 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<!--start Custom comment -->
+Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. <br><code class="language-lua">AddCharmed(-1)</code> makes the effect permanent and the enemy will follow you even to different rooms.
+<div id="example_code">
+<h3>Examplecode:</h3>
+This code charms every entity in the room for half a second.
+<pre><code class="language-lua">for i, entity in ipairs(Isaac.GetRoomEntities()) do
+	entity:AddCharmed(30)
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a72122843651282e0fc8a7615bc057c2b"></a>
@@ -405,7 +430,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+Adds a confusion effect to an entity.
+<div id="example_code">
+<h3>Examplecode:</h3>
+This code confuses every entity in the room for half a second while ignoring bosses.
+<pre><code class="language-lua">local player =Isaac.GetPlayer(0) 
+for i, entity in ipairs(Isaac.GetRoomEntities()) do
+	entity:AddConfusion(player,30,true)
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="afb6ce23adf982c643511bd960f60fce1"></a>
@@ -423,7 +459,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
 
+<div id="example_code">
+<h3>Examplecode:</h3>
+--todo . Contact me on Discord (Wofsauge#6503) if you want to suggest a descrption/codeexample for it
+<pre><code class="language-lua">
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a4125ead0022d35ace0b6a89c6c07aea8"></a>
@@ -451,7 +495,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+Adds a fear-effect to an entity.
+<div id="example_code">
+<h3>Examplecode:</h3>
+This code frightens every entity in the room for half a second.
+<pre><code class="language-lua">local player =Isaac.GetPlayer(0) 
+for i, entity in ipairs(Isaac.GetRoomEntities()) do
+	entity:AddFear(player, 30)
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a5734a5e4eaec852adfaa668b4e30785b"></a>
@@ -479,7 +534,18 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+Freezes an entity, making it unable to move and attack.
+<div id="example_code">
+<h3>Examplecode:</h3>
+This code freezes every entity in the room for half a second.
+<pre><code class="language-lua">local player =Isaac.GetPlayer(0) 
+for i, entity in ipairs(Isaac.GetRoomEntities()) do
+	entity:AddFreeze(player, 30)
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a73b1d1fbd7e929aad4ba1ab7d396c627"></a>
@@ -2118,5 +2184,6 @@ Public Attributes</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+<!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>
