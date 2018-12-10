@@ -359,7 +359,7 @@ Public Attributes</h2></td></tr>
 Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
 <div id="example_code">
 <h3>Examplecode:</h3>
-This code damages every entity in the room for half a second with the damagesource set to the player. The total damage dealt is 30.
+This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 30.
 <pre><code class="language-lua">local player =Isaac.GetPlayer(0)
 for i, entity in ipairs(Isaac.GetRoomEntities()) do
 	entity:AddBurn(player,30,1)
@@ -390,7 +390,7 @@ end
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. <br><code class="language-lua">AddCharmed(-1)</code> makes the effect permanent and the enemy will follow you even to different rooms.
 <div id="example_code">
 <h3>Examplecode:</h3>
-This code charms every entity in the room for half a second.
+This code charms every entity in the room for 1 second.
 <pre><code class="language-lua">for i, entity in ipairs(Isaac.GetRoomEntities()) do
 	entity:AddCharmed(30)
 end
@@ -434,7 +434,7 @@ end
 Adds a confusion effect to an entity.
 <div id="example_code">
 <h3>Examplecode:</h3>
-This code confuses every entity in the room for half a second while ignoring bosses.
+This code confuses every entity in the room for 1 second while ignoring bosses.
 <pre><code class="language-lua">local player =Isaac.GetPlayer(0) 
 for i, entity in ipairs(Isaac.GetRoomEntities()) do
 	entity:AddConfusion(player,30,true)
@@ -499,7 +499,7 @@ end
 Adds a fear-effect to an entity.
 <div id="example_code">
 <h3>Examplecode:</h3>
-This code frightens every entity in the room for half a second.
+This code frightens every entity in the room for 1 second.
 <pre><code class="language-lua">local player =Isaac.GetPlayer(0) 
 for i, entity in ipairs(Isaac.GetRoomEntities()) do
 	entity:AddFear(player, 30)
