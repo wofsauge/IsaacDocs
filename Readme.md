@@ -1,18 +1,14 @@
-This project is tries to make the Isaac modding documentation better.
+# Binding of Isaac - Afterbirth LUA Reference
+This repository contains all classes, functions and enums which can be used in Mods which are written in LUA.
 
+The documentation will be improved over time.
 
-Process of adding new content to a file:
-1. make sure to add this line of code at the top of the head       `<!--Lua Codehightlight--><link href="themes/prism.css" rel="stylesheet" />`  
-2. make sure to add this line of code at the bottom of the body     `<!--Lua Codehightlight--><script src="prism.js"></script>`
-3. add the following to the "memdoc" div you want to add the text to:
-```lua
-<!--start Custom comment -->
-YOUR DESCRIPTION HERE
-<div id="example_code">
-<h3>Examplecode:</h3>
-YOUR CODE DESCRIPTION HERE
-<pre><code class="language-lua">CODE HERE
-</code></pre>	
-</div>
-<!--End Custom comment -->
-```
+## Contributing
+If you found a typo or want to improve the documentation, fork the repository, change the affecting file and start a pull request.
+
+Every pull request is very welcome.
+
+## Contributors
+* [Wofsauge](https://github.com/wofsauge) for completing the documentation
+* [Yannick Fricke](https://github.com/YannickFricke) for extracting all informations from the Doxygen docs
+
