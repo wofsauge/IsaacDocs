@@ -5,4 +5,5 @@
 ## classes
 
 * [Untitled](classes/untitled.md)
+* [test](classes/test.md)
 
