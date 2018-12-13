@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Initial page](README.md)
+* [About the project](README.md)
 
 ## classes
 
