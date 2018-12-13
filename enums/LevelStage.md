@@ -1,0 +1,25 @@
+# LevelStage
+
+|Enumeration|Value|Description|
+|-----------|:---:|-----------|
+|STAGE_NULL|0||
+|STAGE1_1|1||
+|STAGE1_2|2||
+|STAGE2_1|3||
+|STAGE2_2|4||
+|STAGE3_1|5||
+|STAGE3_2|6||
+|STAGE4_1|7||
+|STAGE4_2|8||
+|STAGE4_3|9||
+|STAGE5|10||
+|STAGE6|11||
+|STAGE7|12||
+|NUM_STAGES|13||
+|STAGE1_GREED|1||
+|STAGE2_GREED|2||
+|STAGE3_GREED|3||
+|STAGE4_GREED|4||
+|STAGE5_GREED|5||
+|STAGE6_GREED|6||
+|STAGE7_GREED|7||
