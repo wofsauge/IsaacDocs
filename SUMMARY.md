@@ -4,6 +4,7 @@
 
 ## classes
 
-* [Untitled](classes/untitled.md)
-* [test](classes/test.md)
+* [Part I](README.md)
+    * [Writing is nice](test/test.md)
+    * [GitBook is nice](classes/untitled.md)
 
