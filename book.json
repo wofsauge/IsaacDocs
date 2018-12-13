@@ -1,4 +1,3 @@
 {
-    "direction": "rtl",
     "plugins": [ "theme-gestalt", "-theme-default", "styles-sass-fix" ]
 }
