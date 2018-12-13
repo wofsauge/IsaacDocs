@@ -1,4 +1,4 @@
-# Binding of Isaac - Afterbirth LUA Reference
+# Initial page
 
 This repository contains all classes, functions and enums which can be used in Mods which are written in LUA.
 
@@ -14,3 +14,4 @@ Every pull request is very welcome.
 
 * [Wofsauge](https://github.com/wofsauge) for completing the documentation
 * [Yannick Fricke](https://github.com/YannickFricke) for extracting all informations from the Doxygen docs
+
