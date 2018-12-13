@@ -1,4 +1,4 @@
-# About the project
+# README
 
 This repository contains all classes, functions and enums which can be used in Mods which are written in LUA.
 

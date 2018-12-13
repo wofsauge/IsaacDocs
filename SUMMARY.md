@@ -1,0 +1,23 @@
+# Table of contents
+
+* [About the project](README.md)
+
+* [enums](enums.md)
+    * [ModCallbacks](enums/ModCallbacks.md)
+    * [EntityType](enums/EntityType.md)
+    * [GridEntityType](enums/GridEntityType.md)
+    * [EffectVariant](enums/EffectVariant.md)
+    * [PickupVariant](enums/PickupVariant.md)
+    * [HeartSubType](enums/HeartSubType.md)
+    * [CoinSubType](enums/CoinSubType.md)
+    * [KeySubType](enums/KeySubType.md)
+    * [ChestSubType](enums/ChestSubType.md)
+    * [BombSubType](enums/BombSubType.md)
+    * [PickupPrice](enums/PickupPrice.md)
+    * [Challenge](enums/Challenge.md)
+    * [BombVariant](enums/BombVariant.md)
+    * [CacheFlag](enums/CacheFlag.md)
+    * [NpcState](enums/NpcState.md)
+    * [EntityGridCollisionClass](enums/EntityGridCollisionClass.md)
+    * [EntityCollisionClass](enums/EntityCollisionClass.md)
+    * [EntityFlag](enums/EntityFlag.md)
