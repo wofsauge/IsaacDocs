@@ -1,18 +1,17 @@
 # BombVariant
 
-| Enumeration | Value | Description |
-| :--- | :---: | :--- |
-| BOMB\_NORMAL | 1 |  |
-| BOMB\_BIG | 1 |  |
-| BOMB\_DECOY | 2 |  |
-| BOMB\_TROLL | 3 |  |
-| BOMB\_SUPERTROLL | 5 |  |
-| BOMB\_POISON | 5 |  |
-| BOMB\_POISON\_BIG | 6 |  |
-| BOMB\_SAD | 7 |  |
-| BOMB\_HOT | 8 |  |
-| BOMB\_BUTT | 9 |  |
-| BOMB\_MR\_MEGA | 10 |  |
-| BOMB\_BOBBY | 11 |  |
-| BOMB\_GLITTER | 12 |  |
-
+|Enumeration|Value|Description|
+|-----------|:---:|-----------|
+|BOMB_NORMAL|1||
+|BOMB_BIG|1||
+|BOMB_DECOY|2||
+|BOMB_TROLL|3||
+|BOMB_SUPERTROLL|5||
+|BOMB_POISON|5||
+|BOMB_POISON_BIG|6||
+|BOMB_SAD|7||
+|BOMB_HOT|8||
+|BOMB_BUTT|9||
+|BOMB_MR_MEGA|10||
+|BOMB_BOBBY|11||
+|BOMB_GLITTER|12||

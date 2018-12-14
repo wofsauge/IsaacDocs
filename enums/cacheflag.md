@@ -1,17 +1,16 @@
 # CacheFlag
 
-| Enumeration | Value | Description |
-| :--- | :---: | :--- |
-| CACHE\_DAMAGE | 1 |  |
-| CACHE\_FIREDELAY | 2 |  |
-| CACHE\_SHOTSPEED | 4 |  |
-| CACHE\_RANGE | 8 |  |
-| CACHE\_SPEED | 16 |  |
-| CACHE\_TEARFLAG | 32 |  |
-| CACHE\_TEARCOLOR | 64 |  |
-| CACHE\_FLYING | 128 |  |
-| CACHE\_WEAPON | 256 |  |
-| CACHE\_FAMILIARS | 512 |  |
-| CACHE\_LUCK | 1024 |  |
-| CACHE\_ALL | 0xFFFFFFFF |  |
-
+|Enumeration|Value|Description|
+|-----------|:---:|-----------|
+|CACHE_DAMAGE|1||
+|CACHE_FIREDELAY|2||
+|CACHE_SHOTSPEED|4||
+|CACHE_RANGE|8||
+|CACHE_SPEED|16||
+|CACHE_TEARFLAG|32||
+|CACHE_TEARCOLOR|64||
+|CACHE_FLYING|128||
+|CACHE_WEAPON|256||
+|CACHE_FAMILIARS|512||
+|CACHE_LUCK|1024||
+|CACHE_ALL|0xFFFFFFFF||

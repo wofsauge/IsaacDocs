@@ -1,11 +1,10 @@
 # CoinSubType
 
-| Enumeration | Value | Description |
-| :--- | :---: | :--- |
-| COIN\_PENNY | 1 |  |
-| COIN\_NICKEL | 2 |  |
-| COIN\_DIME | 3 |  |
-| COIN\_DOUBLEPACK | 4 |  |
-| COIN\_LUCKYPENNY | 5 |  |
-| COIN\_STICKYNICKEL | 6 |  |
-
+|Enumeration|Value|Description|
+|-----------|:---:|-----------|
+|COIN_PENNY|1||
+|COIN_NICKEL|2||
+|COIN_DIME|3||
+|COIN_DOUBLEPACK|4||
+|COIN_LUCKYPENNY|5||
+|COIN_STICKYNICKEL|6||
