@@ -2601,16 +2601,6 @@ var group__enums =
       [ "SOUND_PING_PONG", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204a68067917fdcf35ebee1b6a98fd2f54a2", null ],
       [ "SOUND_SPEWER", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204aad718331e6dc30a3112b020e01687e4f", null ],
       [ "SOUND_MOM_FOOTSTEPS", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204a2217b76bc82425fd942c0d3eab6aad4b", null ],
-      [ "SOUND_BONE_HEART", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204a402ad5b7d57dd20c06c04e2746baaf57", null ],
-      [ "SOUND_BONE_SNAP", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204ad5c02176a2447302be8813c43f131ec3", null ],
-      [ "SOUND_SHOVEL_DROP", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204ae6644891b99bc3011ace3c8a883547cd", null ],
-      [ "SOUND_SHOVEL_DIG", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204add990d42309ac07d754034f7ec9cfcef", null ],
-      [ "SOUND_GOLD_HEART", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204ae8a98eca8ad7a458819d25c30a4c0012", null ],
-      [ "SOUND_GOLD_HEART_DROP", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204accc09d31cdefce5ae043cde8a7068e41", null ],
-      [ "SOUND_BONE_DROP", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204a66f42c69d2cf50f83c04e2aaa83f06d5", null ],
-      [ "SOUND_UNHOLY", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204af7e01c6158d382d410ed3b11b79c81f1", null ],
-      [ "SOUND_BUTTON_PRESS", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204a42adde13da72f988074a38c769f177a7", null ],
-      [ "SOUND_GOLDENBOMB", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204a04539c6cc680a6606036cb7120887a21", null ],
       [ "NUM_SOUND_EFFECTS", "group__enums.html#gga1a22039e4e87e271f7333d22a8d9e204ab29757288c15163fa1387cde03ad5db9", null ]
     ] ],
     [ "StageType", "group__enums.html#gad1a098beb3570d1dc1c719b74185b093", [
