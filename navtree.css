@@ -1,3 +1,16 @@
+/*START CUSTOM EDIT*/
+
+#example_code pre {
+        border: 1px solid #A8B8D9;
+        padding: 6px 10px;
+        background-color: #f4f4f4;
+		border-radius: 4px;
+		font-size: 9pt;
+		line-height: 12pt;
+}
+
+/*END CUSTOM EDIT*/
+
 #nav-tree .children_ul {
   margin:0;
   padding:4px;
