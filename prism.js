@@ -1,15 +1,15 @@
 /* PrismJS 1.15.0
 https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+lua */
 $(document).ready(function(){
-$( "<button class='hide_dyncontent'>Show Relationship-diagram</button>" ).insertBefore( ".dyncontent" );
+$( "<button class='hide_dyncontent'>Show Inheritance-diagram</button>" ).insertBefore( ".dyncontent" );
   $(".dyncontent").hide();
   $x=true;
   $(".hide_dyncontent").click(function(){
     $(".dyncontent").toggle();
     if($x){
-    $(".hide_dyncontent").html('Hide Relationship-diagram');}
+    $(".hide_dyncontent").html('Hide Inheritance-diagram');}
     else{
-    $(".hide_dyncontent").html('Show Relationship-diagram');}
+    $(".hide_dyncontent").html('Show Inheritance-diagram');}
     $x= !$x;
   });
 });
