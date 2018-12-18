@@ -93,9 +93,10 @@ $(document).ready(function(){initNavTree('index.html','');});
 This Documentation is a community curated project. It provides additional informations and code examples for the functions provided by the "Binding of isaac:Afterbirth+" LUA modding API.<br><br>If you want to support this project, consider visiting us in Github: <a href="https://github.com/wofsauge/IsaacDocs">https://github.com/wofsauge/IsaacDocs</a><br>You can also come to the official Binding of Isaac Discord server: <a href="https://discord.gg/qKdHue2">https://discord.gg/qKdHue2</a><br><br>
 <!--start Custom comment -->
 <div id="example_code">
-<h3>Example project:</h3>
-To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory: C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods<br>
-Then, you have to create a new <i>main.lua</i> file in the newly created folder. This file can then be used to contain the logic behind your mod. <br><h4>Example "main.lua"</h4>
+<h2>Example project:</h2>
+To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory: <code class="language-lua">C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods</code><br>
+Then, you have to create a new <code class="language-lua">main.lua</code> file in the newly created folder. This file can then be used to contain the logic behind your mod. <br>
+<h4>Example "main.lua"</h4>
 This code creates a mod, that turns tears into dark matter tears (slowing black tears). It also adds one coin to the player every shot.
 <pre><code class="language-lua">local mod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (dont change anything here, except the name)
 
