@@ -1,13 +1,22 @@
 /*START CUSTOM EDIT*/
 
-#example_code pre {
-        border: 1px solid #A8B8D9;
-        padding: 6px 10px;
-        background-color: #f4f4f4;
-		border-radius: 4px;
-		font-size: 9pt;
-		line-height: 12pt;
+pre {
+    border: 1px solid #A8B8D9;
+    padding: 6px 10px;
+    background-color: #f4f4f4;
+	border-radius: 5px;
 }
+.ToTop{
+	position: absolute;
+    bottom: 40px;
+    right: 30px;
+    border: 1px solid #A8B8D9;
+    padding: 7px 15px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+	box-shadow: 0px 3px 4px 0px #c5c5c5;
+}
+
 
 /*END CUSTOM EDIT*/
 

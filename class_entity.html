@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!--Lua Codehightlight--><link href="themes/prism.css" rel="stylesheet" />
+<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -357,8 +357,7 @@ Public Attributes</h2></td></tr>
 <div class="memdoc">
 <!--start Custom comment -->
 Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
-<div id="example_code">
-<h3>Examplecode:</h3>
+<div class="example_code">
 This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 30.
 <pre><code class="language-lua">local player =Isaac.GetPlayer(0)
 for i, entity in ipairs(Isaac.GetRoomEntities()) do
@@ -388,8 +387,7 @@ end
 
 <!--start Custom comment -->
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. <br><code class="language-lua">AddCharmed(-1)</code> makes the effect permanent and the enemy will follow you even to different rooms.
-<div id="example_code">
-<h3>Examplecode:</h3>
+<div class="example_code">
 This code charms every entity in the room for 1 second.
 <pre><code class="language-lua">for i, entity in ipairs(Isaac.GetRoomEntities()) do
 	entity:AddCharmed(30)
@@ -432,8 +430,7 @@ end
 </div><div class="memdoc">
 <!--start Custom comment -->
 Adds a confusion effect to an entity.
-<div id="example_code">
-<h3>Examplecode:</h3>
+<div class="example_code">
 This code confuses every entity in the room for 1 second while ignoring bosses.
 <pre><code class="language-lua">local player =Isaac.GetPlayer(0) 
 for i, entity in ipairs(Isaac.GetRoomEntities()) do
