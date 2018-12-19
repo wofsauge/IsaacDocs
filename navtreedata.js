@@ -24,7 +24,10 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Binding of Isaac - Afterbirth+ Lua Reference/Guide", "index.html", [
-    [ "Debug Console Primer", "debug_console_primer.html", [
+    [ "[Tutorial] Debugging using ZeroBrane Studio", "debugging.html", null ],
+    [ "[Tutorial] Remarks", "remarks.html", null ],
+    [ "[Tutorial] Writing shaders", "screen_shaders.html", null ],
+    [ "[Tutorial] Debug Console", "debug_console_primer.html", [
       [ "Commands ", "debug_console_primer.html#commands", [
         [ "spawn", "debug_console_primer.html#spawn", null ],
         [ "goto", "debug_console_primer.html#goto", null ],
@@ -55,10 +58,9 @@ var NAVTREE =
         [ "luamem", "debug_console_primer.html#luamem", null ]
       ] ]
     ] ],
-    [ "Using ZeroBrane Studio to debug your scripts", "debugging.html", null ],
-    [ "Remarks", "remarks.html", null ],
-    [ "Writing screen shaders", "screen_shaders.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+[ "", null, null ],
+    [ "Enumerations", "group__enums.html", "group__enums" ],
+    [ "Global Functions", "group__funcs.html", "group__funcs" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -75,7 +77,18 @@ var NAVTREE =
         [ "Functions", "functions_func.html", "functions_func" ],
         [ "Variables", "functions_vars.html", "functions_vars" ]
       ] ]
-    ] ]
+    ] ],   
+[ "", null, null ],
+	[ "----- Frequently used -----", "", null ],
+    [ "Entity", "class_entity.html", null ],
+    [ "--- EntityPlayer", "class_entity_player.html", null ],
+    [ "--- EntityNPC", "class_entity_n_p_c.html", null ],
+    [ "--- EntityEffect", "class_entity_effect.html", null ],
+    [ "Isaac.", "namespace_isaac.html", null ],
+    [ "Game():", "class_game.html", null ],
+    [ "Room", "class_room.html", null ],
+    [ "Level", "class_level.html", null ],
+    [ "Mod Callbacks", "group__enums.html#ga84d8f7ea5c80b37ad1c55b2a97286eb1", null ]
   ] ]
 ];
 

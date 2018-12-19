@@ -95,5 +95,6 @@ var class_entity =
     [ "Type", "class_entity.html#a8db7312370db1734681dfaee7f2242a8", null ],
     [ "Variant", "class_entity.html#a245d6ea934d466a77d45afeba3fbd305", null ],
     [ "Velocity", "class_entity.html#a33229ab7dd68ebbc1bbf199cc802e44a", null ],
-    [ "Visible", "class_entity.html#a9f884fefbd27e47bd3b6f41f208529c8", null ]
+    [ "Visible", "class_entity.html#a9f884fefbd27e47bd3b6f41f208529c8", null ],
+    [ "Size", "class_entity.html#entitySize", null ]
 ];
