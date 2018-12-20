@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -435,8 +436,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>animation helpers void anim_walkframe(<a class="el" href="class_sprite.html">Sprite</a>&amp; S, const char* HorizontalAnim, const char* VerticalAnim, float SpeedThreshold); </p>
-
 </div>
 </div>
 <a id="a68aaf4419c10fb65870034256d1037c2"></a>
@@ -774,6 +773,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<!--start Custom comment -->
+<p>Morph the current entity into another one. </p>
+    <div class="example_code">
+        This code turns an entity into a gaper.
+<pre><code class="language-lua">entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0)</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a0add10d26216ee931f5a880158c6a1f1"></a>
@@ -1210,5 +1216,6 @@ Public Attributes</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+<!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>
