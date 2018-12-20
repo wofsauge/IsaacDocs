@@ -5,7 +5,7 @@ This project is tries to make the Isaac modding documentation better.
 3. add the following to the "memdoc" div you want to add the text to:
 ```lua
 <!--start Custom comment -->
-YOUR DESCRIPTION HERE
+<p>YOUR DESCRIPTION HERE</p>
 <div id="example_code">
 YOUR CODE DESCRIPTION HERE
 <pre><code class="language-lua">CODE HERE
