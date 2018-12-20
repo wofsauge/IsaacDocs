@@ -2,7 +2,7 @@
 https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javascript+lua */
 $(document).ready(function(){
 	$( "<button class='hide_dyncontent'>Show Inheritance-diagram</button>" ).insertBefore( ".dyncontent" );
-	$( "<br/><hr/><h3>Examplecode:</h3>" ).insertBefore( ".example_code" );
+	$( "<hr/><h3>Examplecode:</h3>" ).insertBefore( ".example_code" );
 		
 	$( "body" ).append( "<button class='ToTop'>⬆  Back to top  ⬆</button>" );
 	  $(".dyncontent").hide();
