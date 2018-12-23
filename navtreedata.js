@@ -27,6 +27,7 @@ var NAVTREE =
     [ "[Tutorial] Debugging using ZeroBrane Studio", "debugging.html", null ],
     [ "[Tutorial] Remarks", "remarks.html", null ],
     [ "[Tutorial] Writing shaders", "screen_shaders.html", null ],
+    [ "[Tutorial] Render text", "special_chars.html", null ],
     [ "[Tutorial] Debug Console", "debug_console_primer.html", [
       [ "Commands ", "debug_console_primer.html#commands", [
         [ "spawn", "debug_console_primer.html#spawn", null ],
