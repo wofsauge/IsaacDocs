@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.12"/>
@@ -86,6 +87,8 @@ $(document).ready(function(){initNavTree('class_font.html','');});
 <div class="title">Font Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+    <h2>All possible Fonts that can be drawn</h2>
+    <img src="customImg/font-types.png" alt="" width="500px" />
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -138,6 +141,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Constructor for the "Font" class.</p>
+<div class="example_code">
+Example usage.
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/terminus.fnt") -- load a font into the font object
+f:DrawString("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -192,8 +205,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Draws a string of text to the screen</p>
+<p>Converts UTF8 to UTF16, then draws the string. </p>
 <p>Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size </p>
 
+<!--start Custom comment -->
+<div class="example_code">
+Example usage.
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/terminus.fnt") -- load a font into the font object
+f:DrawString("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a6f7efa0b7dd66ceaca7a86b963aa6abc"></a>
@@ -257,8 +280,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Converts UTF8 to UTF16, then draws. </p>
+<p>Draws a scaled string of text on the screen.</p>
+<p>Converts UTF8 to UTF16, then draws the string. </p>
+<!--start Custom comment -->
+<div class="example_code">
+Example usage.
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/terminus.fnt") -- load a font into the font object
+f:DrawStringScaled("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -324,7 +356,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unicode. </p>
+<p>Draws a scaled string of Unicode text on the screen.</p>
+<!--start Custom comment -->
+<div class="example_code">
+Example usage.
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/terminus.fnt") -- load a font into the font object
+f:DrawStringScaledUTF8("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -378,8 +419,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unicode. </p>
+<p>Draws a string of Unicode text to the screen</p>
+<p>Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size </p>
 
+<!--start Custom comment -->
+<div class="example_code">
+Example usage.
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/terminus.fnt") -- load a font into the font object
+f:DrawStringUTF8("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="ab61df068d68abc2a0e2be223037669a9"></a>
@@ -433,7 +484,6 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Converts UTF8 to UTF16 and returns string width</p>
 <p>Get the distance in pixels between each line of text </p>
 
 </div>
@@ -453,8 +503,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unicode</p>
-<p>Returns the width of a string </p>
+<p>Converts UTF8 to UTF16 and returns string width</p>
 
 </div>
 </div>
@@ -474,7 +523,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unicode. </p>
+<p>returns string width of a Unicode text. </p>
 
 </div>
 </div>
@@ -492,7 +541,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns whether we've loaded a font or not </p>
+<p>Returns whether a font is loaded or not. </p>
 
 </div>
 </div>
@@ -511,7 +560,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Loads a font </p>
+<p>Loads a font. </p>
+<!--start Custom comment -->
+<div class="example_code">
+Example usage.
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/terminus.fnt") -- load a font into the font object
+f:DrawString("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -564,5 +622,6 @@ Public Member Functions</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.12 </li>
   </ul>
 </div>
+<!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>
