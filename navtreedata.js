@@ -24,11 +24,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Binding of Isaac - Afterbirth+ Lua Reference/Guide", "index.html", [
-    [ "[Tutorial] Debugging using ZeroBrane Studio", "debugging.html", null ],
-    [ "[Tutorial] Loading other .lua files", "remarks.html", null ],
-    [ "[Tutorial] Writing shaders", "screen_shaders.html", null ],
-    [ "[Tutorial] Render text", "special_chars.html", null ],
-    [ "[Tutorial] Debug Console", "debug_console_primer.html", [
+  [ "[Tutorial] Debug Console", "debug_console_primer.html", [
       [ "Commands ", "debug_console_primer.html#commands", [
         [ "spawn", "debug_console_primer.html#spawn", null ],
         [ "goto", "debug_console_primer.html#goto", null ],
@@ -59,6 +55,11 @@ var NAVTREE =
         [ "luamem", "debug_console_primer.html#luamem", null ]
       ] ]
     ] ],
+    [ "[Tutorial] Debugging using ZeroBrane Studio", "debugging.html", null ],
+    [ "[Tutorial] Loading other .lua files", "remarks.html", null ],
+    [ "[Tutorial] Writing shaders", "screen_shaders.html", null ],
+    [ "[Tutorial] Render text", "special_chars.html", null ],
+    
 [ "", null, null ],
     [ "Enumerations", "group__enums.html", "group__enums" ],
     [ "Global Functions", "group__funcs.html", "group__funcs" ],
@@ -85,7 +86,7 @@ var NAVTREE =
     [ "--- EntityPlayer", "class_entity_player.html", null ],
     [ "--- EntityNPC", "class_entity_n_p_c.html", null ],
     [ "--- EntityEffect", "class_entity_effect.html", null ],
-    [ "Isaac.", "namespace_isaac.html", null ],
+    [ "Isaac.", "namespace_isaac.html#", null ],
     [ "Game():", "class_game.html", null ],
     [ "Room", "class_room.html", null ],
     [ "Level", "class_level.html", null ],
