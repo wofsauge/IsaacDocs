@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -137,6 +138,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Returns the current strength in which a button was pressed. This is 0 OR 1 with a keyboard. With a controller, this can be used to get the strength in which you have moved the analog stick in a direction.</p>
+<div class="example_code">
+This code prints the current "strength" in which the analog stick was moved to the left.
+<pre><code class="language-lua">print(Input.GetActionValue(ButtonAction.ACTION_LEFT, 1))   
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -165,6 +174,10 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Use "GetActionValue" instead of this function.</p>
+
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -183,6 +196,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Returns the current mouse position in game coordinates (true) or render coordinates.</p>
+<div class="example_code">
+This code renders "Hello World!" at the current mouse position.
+<pre><code class="language-lua">local mousePos = Isaac.WorldToScreen(Input.GetMousePosition(true))-- transfer game- in screen coordinates
+Isaac.RenderText("Hello World!", mousePos.X, mousePos.Y, 1 ,1 ,1 ,1 )
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -211,6 +233,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Returns, if an action-button is pressed or not. An Action-button is any button that got a default function assigned to it. This function will return true, as long the button is held down.</p>
+    <p><a href="group__enums.html#gafa717ac273a5a382f7c01ef7afba1ee7">List of all Action enums</a></p>
+<div class="example_code">
+This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
+<pre><code class="language-lua">if Input.IsActionPressed(ButtonAction.ACTION_BOMB, 0)  then
+    print("bomb Button pressed")   
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -239,6 +272,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Returns, if an action-button was pressed some time before or not. An Action-button is any button that got a default function assigned to it. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).</p>
+    <p><a href="group__enums.html#gafa717ac273a5a382f7c01ef7afba1ee7">List of all Action enums</a></p>
+<div class="example_code">
+This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
+<pre><code class="language-lua">if Input.IsActionTriggered(ButtonAction.ACTION_BOMB, 0)  then
+    print("bomb Button pressed")   
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -267,7 +311,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns, if a button is pressed or not. This function will return true, as long the button is held down.</p>
+    <p><a href="group__enums.html#gabcabfff8e6138e0943763148d70e5005">List of all key enums</a></p>
+<div class="example_code">
+This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
+<pre><code class="language-lua">if Input.IsButtonPressed(Keyboard.KEY_ENTER, 0)  then
+    print("Enter Button pressed.")   
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="adcef2513e963f9945457ec71792033b1"></a>
@@ -295,7 +349,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns, if a button was pressed some time before or not. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).</p>
+    <p><a href="group__enums.html#gabcabfff8e6138e0943763148d70e5005">List of all key enums</a></p>
+<div class="example_code">
+This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
+<pre><code class="language-lua">if Input.IsButtonTriggered(Keyboard.KEY_ENTER, 0)  then
+    print("Enter Button was pressed.")   
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a140ad4eefc73e39f0a8a716b32af2eda"></a>
@@ -313,7 +377,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns, if a mousebutton is pressed or not.</p>
+    <p>Left: 0, Right: 1, mousewheel: 2, back button: 3, forward button: 4</p>
+<div class="example_code">
+This code prints "Right Click", when the "right"-mousebutton was pressed.
+<pre><code class="language-lua">if Input.IsMouseBtnPressed(1)  then
+    print("Right Click")   
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -327,5 +401,6 @@ Functions</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+<!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>

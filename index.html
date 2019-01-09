@@ -96,7 +96,7 @@ This Documentation is a community curated project. It provides additional inform
     <b>Discord:</b> Wofsauge#6503<br>
     <b>Reddit:</b> /u/Wofsauge<br>
 <!--start Custom comment -->
-<div id="example_code">
+<div class="example_code">
 <h2>Example project:</h2>
 To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory: <code class="language-lua">C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods</code><br>
 Then, you have to create a new <code class="language-lua">main.lua</code> file in the newly created folder. This file can then be used to contain the logic behind your mod. <br>
@@ -114,7 +114,7 @@ end
 mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR , mod.onTear) -- Trigger the function "onTear()", when the "POST_FIRE_TEAR" callback is triggered.
 </code></pre>	
 </div>
-<div id="example_code">
+<div class="example_code">
 <h2>Local function example</h2>
 <pre><code class="language-lua">local mod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (don't change anything here, except the name)
 
@@ -138,7 +138,7 @@ Instead of the function being stored inside of the mod variable it is it's own v
 </code></pre>
 where this function would be called via functions[1], and is used in place of onTear in the AddCallback function of the main example
 
-<div id="example_code">
+<div class="example_code">
 <h2>"Inline" definition of functions example</h2>
 <pre><code class="language-lua">local mod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (don't change anything here, except the name)
 

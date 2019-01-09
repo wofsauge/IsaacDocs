@@ -6,7 +6,7 @@ This project is tries to make the Isaac modding documentation better.
 ```lua
 <!--start Custom comment -->
 <p>YOUR DESCRIPTION HERE</p>
-<div id="example_code">
+<div class="example_code">
 YOUR CODE DESCRIPTION HERE
 <pre><code class="language-lua">CODE HERE
 </code></pre>	
