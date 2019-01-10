@@ -125,6 +125,7 @@ var searchData=
   ['roomclearcount',['RoomClearCount',['../class_entity_familiar.html#a67c10c9ac04cdee26618937836b838b8',1,'EntityFamiliar']]],
   ['roomconfig',['RoomConfig',['../namespace_room_config.html',1,'']]],
   ['roomdescriptor',['RoomDescriptor',['../class_room_descriptor.html',1,'']]],
+  ['roomdescriptordata',['RoomDescriptorData',['../class_room_descriptor_data.html',1,'']]],
   ['roomshape',['RoomShape',['../group__enums.html#gade2a79908923e18471135bfe86d3b1f7',1,'Enums.h']]],
   ['roomshape_5f1x1',['ROOMSHAPE_1x1',['../group__enums.html#ggade2a79908923e18471135bfe86d3b1f7a70ecda66ea4dca468cf949ddc094a9f6',1,'Enums.h']]],
   ['roomshape_5f1x2',['ROOMSHAPE_1x2',['../group__enums.html#ggade2a79908923e18471135bfe86d3b1f7aa6f8337b9504e06ab365f96af4138003',1,'Enums.h']]],
