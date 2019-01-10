@@ -45,5 +45,6 @@ var annotated_dup =
     [ "TearParams", "class_tear_params.html", "class_tear_params" ],
     [ "TemporaryEffect", "class_temporary_effect.html", "class_temporary_effect" ],
     [ "TemporaryEffects", "class_temporary_effects.html", "class_temporary_effects" ],
-    [ "Vector", "class_vector.html", "class_vector" ]
+    [ "Vector", "class_vector.html", "class_vector" ],
+    [ "RoomDescriptorData", "class_room_descriptor_data.html", "class_room_descriptor_data" ],
 ];
