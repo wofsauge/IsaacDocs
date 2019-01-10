@@ -1,6 +1,7 @@
 var searchData=
 [
   ['g',['G',['../class_k_color.html#acb303974c5f6a36b834510201dcdd398',1,'KColor']]],
+  ['g',['G',['../class_color.html#acb303974c5f6a36b834510201dcdd398',1,'Color']]],
   ['game',['Game',['../class_game.html',1,'Game'],['../group__funcs.html#gae643f2600404d3a34d6236fec678aa7c',1,'Game():&#160;Output.h']]],
   ['gamestateflag',['GameStateFlag',['../group__enums.html#gacb81dc787ab621baa1b749086e67995c',1,'Enums.h']]],
   ['gb_5fbug',['GB_BUG',['../group__enums.html#gga98047d6add3110afcb410e3026264bbea023e3040c8f6b5d9d1c00fe4833208be',1,'Enums.h']]],
@@ -268,7 +269,7 @@ var searchData=
   ['ghost_5fbaby',['GHOST_BABY',['../group__enums.html#gga98047d6add3110afcb410e3026264bbea8eea16fc1dc2e4d850f19691f7cf0388',1,'Enums.h']]],
   ['glaucoma',['GLAUCOMA',['../group__enums.html#gga1c33a86e6763599e3685d45558207359acdd6e1abc8ef0072544087ddbeb2ceb8',1,'Enums.h']]],
   ['glaucoma_5fblood',['GLAUCOMA_BLOOD',['../group__enums.html#gga1c33a86e6763599e3685d45558207359aabccb043c8b3f40fa11242b5a4e28d90',1,'Enums.h']]],
-  ['go',['GO',['../class_k_color.html#a2d8d7e64f446b310471889fc5945586f',1,'KColor']]],
+  ['go',['GO',['../class_color.html#a2d8d7e64f446b310471889fc5945586f',1,'Color']]],
   ['gods_5fflesh',['GODS_FLESH',['../group__enums.html#gga1c33a86e6763599e3685d45558207359a79788c326791bffb7dc681724f6239c1',1,'Enums.h']]],
   ['gods_5fflesh_5fblood',['GODS_FLESH_BLOOD',['../group__enums.html#gga1c33a86e6763599e3685d45558207359a95919819157f6d158573246dc25cbdba',1,'Enums.h']]],
   ['gold_5fparticle',['GOLD_PARTICLE',['../group__enums.html#gga76f2089184023be252ef251921626d99a4c4f9896c95f71132d6391b2d4639f33',1,'Enums.h']]],

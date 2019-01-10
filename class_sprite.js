@@ -37,7 +37,7 @@ var class_sprite =
     [ "WasEventTriggered", "class_sprite.html#a1ed50d281e74b764fa99108f82158b90", null ],
     [ "FlipX", "class_sprite.html#acf45ee4d6fabcd0bff7cd9836c30a5ae", null ],
     [ "FlipY", "class_sprite.html#a288c6a428bf4adfd711f18e11e01a4dc", null ],
-    [ "KColor", "class_sprite.html#a972d6a3dff4ee96fcaf48911c109170e", null ],
+    [ "Color", "class_sprite.html#a972d6a3dff4ee96fcaf48911c109170e", null ],
     [ "Offset", "class_sprite.html#aa674bf8daad990e61dcb43a524b6bb96", null ],
     [ "PlaybackSpeed", "class_sprite.html#af73c407f001b1ceec4a4bd3d23e24017", null ],
     [ "Rotation", "class_sprite.html#a0ae57bb8e4930ae935f0047afa241f3f", null ],

@@ -38,7 +38,7 @@ var hierarchy =
     [ "ItemConfig::Item", "class_item_config_1_1_item.html", null ],
     [ "CppContainer::Vector::ItemConfigList", "class_cpp_container_1_1_vector_1_1_item_config_list.html", null ],
     [ "ItemPool", "class_item_pool.html", null ],
-    [ "KColor", "class_k_color.html", null ],
+    [ "Color", "class_color.html", null ],
     [ "Level", "class_level.html", null ],
     [ "MusicManager", "class_music_manager.html", null ],
     [ "PathFinder", "class_path_finder.html", null ],

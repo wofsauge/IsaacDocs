@@ -1,6 +1,7 @@
 var searchData=
 [
   ['a',['A',['../class_k_color.html#a653c47afd1e1437a9e328b57cb63dd3f',1,'KColor']]],
+  ['a',['A',['../class_color.html#a653c47afd1e1437a9e328b57cb63dd3f',1,'Color']]],
   ['abel',['ABEL',['../group__enums.html#gga98047d6add3110afcb410e3026264bbeacb23769aabbd9da1d81f79abdda8df36',1,'Enums.h']]],
   ['accelerate',['ACCELERATE',['../group__enums.html#gga0302119ed82822df78af258ee457e6a6a6c3b7e604342e50d869bcfbdc63b6413',1,'Enums.h']]],
   ['acceleration',['Acceleration',['../class_projectile_params.html#a0948c86780ffe7da34a345e6a01eefb8',1,'ProjectileParams::Acceleration()'],['../class_entity_projectile.html#ae350d10f60cdd0beb73873db50a66e28',1,'EntityProjectile::Acceleration()']]],

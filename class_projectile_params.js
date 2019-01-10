@@ -16,7 +16,7 @@ var class_projectile_params =
     [ "GridCollision", "class_projectile_params.html#a8408006c9fc18f258f6c35a87cd58d63", null ],
     [ "HeightModifier", "class_projectile_params.html#ac1f10a9e78f158ffca4a78e349c320b5", null ],
     [ "HomingStrength", "class_projectile_params.html#a8237a68b9be58e7421b4b659d89bb051", null ],
-    [ "KColor", "class_projectile_params.html#a97600388504ecef4b9506abc5a7e0faa", null ],
+    [ "Color", "class_projectile_params.html#a97600388504ecef4b9506abc5a7e0faa", null ],
     [ "PositionOffset", "class_projectile_params.html#af089747f0a55938bfed20aa0c1c7da4a", null ],
     [ "Scale", "class_projectile_params.html#a24f0ff9332337059b501a8db57c3361f", null ],
     [ "Spread", "class_projectile_params.html#a9e33542197ac70e2f1b17acdc46d26ff", null ],

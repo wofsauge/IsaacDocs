@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['a',['A',['../class_color.html#a653c47afd1e1437a9e328b57cb63dd3f',1,'Color']]],
   ['a',['A',['../class_k_color.html#a653c47afd1e1437a9e328b57cb63dd3f',1,'KColor']]],
   ['acceleration',['Acceleration',['../class_projectile_params.html#a0948c86780ffe7da34a345e6a01eefb8',1,'ProjectileParams::Acceleration()'],['../class_entity_projectile.html#ae350d10f60cdd0beb73873db50a66e28',1,'EntityProjectile::Acceleration()']]],
   ['achievementid',['AchievementID',['../class_item_config_1_1_card.html#a3cd1284eb6665ecd94021a9bebea58cc',1,'ItemConfig::Card::AchievementID()'],['../class_item_config_1_1_pill_effect.html#ae44cc4d382630f5f2dad4aa935a45d98',1,'ItemConfig::PillEffect::AchievementID()'],['../class_item_config_1_1_item.html#a7b9005919c89520156e4e539a500836a',1,'ItemConfig::Item::AchievementID()']]],
