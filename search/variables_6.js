@@ -1,8 +1,9 @@
 var searchData=
 [
+  ['g',['G',['../class_color.html#acb303974c5f6a36b834510201dcdd398',1,'Color']]],
   ['g',['G',['../class_k_color.html#acb303974c5f6a36b834510201dcdd398',1,'KColor']]],
   ['gfxfilename',['GfxFileName',['../class_item_config_1_1_item.html#a47c5e462fca36b280577176197c02873',1,'ItemConfig::Item']]],
-  ['go',['GO',['../class_k_color.html#a2d8d7e64f446b310471889fc5945586f',1,'KColor']]],
+  ['go',['GO',['../class_color.html#a2d8d7e64f446b310471889fc5945586f',1,'Color']]],
   ['greedmodeallowed',['GreedModeAllowed',['../class_item_config_1_1_card.html#a5c1c5f7dc2c99ba1838dce3e8d220394',1,'ItemConfig::Card::GreedModeAllowed()'],['../class_item_config_1_1_pill_effect.html#a04ff3d4dc4bd9afba99e5f16b8f43827',1,'ItemConfig::PillEffect::GreedModeAllowed()']]],
   ['greedmoderng',['GreedModeRNG',['../class_grid_entity_pressure_plate.html#a1d0f5f9ce84632110dcaac9c71923789',1,'GridEntityPressurePlate']]],
   ['greedmodewave',['GreedModeWave',['../class_level.html#a0ecbc57869397c24828d89b5b0d0372f',1,'Level']]],

@@ -49,7 +49,7 @@ var searchData=
   ['rerollenemy',['RerollEnemy',['../class_game.html#aceeb93c20d6a99d3c179cab27caf2e17',1,'Game']]],
   ['rerolllevelcollectibles',['RerollLevelCollectibles',['../class_game.html#a4ce79bda5763cbab1e932dc6e72052fc',1,'Game']]],
   ['rerolllevelpickups',['RerollLevelPickups',['../class_game.html#addab415ee48ed2ba2e864ece8d477695',1,'Game']]],
-  ['reset',['Reset',['../class_k_color.html#ad538fbf4543001758889aa3a72bb66db',1,'KColor::Reset()'],['../class_sprite.html#aa2ba07ecf6ffb893702665f712c291c0',1,'Sprite::Reset()'],['../class_path_finder.html#a24d8d945dc8039e6bcc3c5ac28dab2bd',1,'PathFinder::Reset()'],['../class_entity_knife.html#af363c9aa93bb147e1f74fb9d88892132',1,'EntityKnife::Reset()'],['../class_seeds.html#af4c7c3e761c0a09c032bd88cf3ce76e2',1,'Seeds::Reset()']]],
+  ['reset',['Reset',['../class_color.html#ad538fbf4543001758889aa3a72bb66db',1,'Color::Reset()'],['../class_sprite.html#aa2ba07ecf6ffb893702665f712c291c0',1,'Sprite::Reset()'],['../class_path_finder.html#a24d8d945dc8039e6bcc3c5ac28dab2bd',1,'PathFinder::Reset()'],['../class_entity_knife.html#af363c9aa93bb147e1f74fb9d88892132',1,'EntityKnife::Reset()'],['../class_seeds.html#af4c7c3e761c0a09c032bd88cf3ce76e2',1,'Seeds::Reset()']]],
   ['resetdamagecooldown',['ResetDamageCooldown',['../class_entity_player.html#ae919b0026d4196e2bd66e1b7eea514df',1,'EntityPlayer']]],
   ['resetitemstate',['ResetItemState',['../class_entity_player.html#a8d6994b994aef7bb1212cd54a11e4fa5',1,'EntityPlayer']]],
   ['resetmovementtarget',['ResetMovementTarget',['../class_path_finder.html#a1c4409f9d692aba6b1512127233e5bbc',1,'PathFinder']]],

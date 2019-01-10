@@ -21,7 +21,7 @@ var searchData=
   ['left0',['LEFT0',['../group__enums.html#gga445b41ae2021fde99dff29df01f9ce38acdc8e4122f3ba763559160dd56b9853a',1,'Enums.h']]],
   ['left1',['LEFT1',['../group__enums.html#gga445b41ae2021fde99dff29df01f9ce38abc9fa736500cb017ef97c4e13f306c16',1,'Enums.h']]],
   ['leprocy',['LEPROCY',['../group__enums.html#gga98047d6add3110afcb410e3026264bbeaad6e29d957fa8b685a4928facbdffad8',1,'Enums.h']]],
-  ['lerp',['Lerp',['../class_k_color.html#ab5aec21730df314963db1194bf6991a2',1,'KColor']]],
+  ['lerp',['Lerp',['../class_color.html#ab5aec21730df314963db1194bf6991a2',1,'Color']]],
   ['level',['Level',['../class_level.html',1,'']]],
   ['levelcurse',['LevelCurse',['../group__enums.html#gaf8502e81b66781fad715e772644d8a04',1,'Enums.h']]],
   ['levelstage',['LevelStage',['../group__enums.html#ga94b82cf988747085e77be386560efc68',1,'Enums.h']]],

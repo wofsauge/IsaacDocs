@@ -1,6 +1,7 @@
 var searchData=
 [
   ['b',['B',['../class_k_color.html#ae4868ee86a56afea2ee7b4dbae6a69ce',1,'KColor']]],
+  ['b',['B',['../class_color.html#ae4868ee86a56afea2ee7b4dbae6a69ce',1,'Color']]],
   ['baby_5f0',['BABY_0',['../group__enums.html#ggad65102fdce2fc7b437b3d73d7753e747a4baee483e4962ae7705f1a7416143940',1,'Enums.h']]],
   ['baby_5fapollyon',['BABY_APOLLYON',['../group__enums.html#ggad65102fdce2fc7b437b3d73d7753e747a7192ec5fbcde64ce8a6b4edd771cade3',1,'Enums.h']]],
   ['baby_5fbasic',['BABY_BASIC',['../group__enums.html#ggad65102fdce2fc7b437b3d73d7753e747a8bb3f39bb55db808dc6f702389bb1125',1,'Enums.h']]],
@@ -101,7 +102,7 @@ var searchData=
   ['blue_5fspider',['BLUE_SPIDER',['../group__enums.html#gga98047d6add3110afcb410e3026264bbea8a225aa1bd1709a96624a10c4d03ccc5',1,'Enums.h']]],
   ['bluebabys_5fonly_5ffriend',['BLUEBABYS_ONLY_FRIEND',['../group__enums.html#gga98047d6add3110afcb410e3026264bbea41d09fb8ef3934a894a43565170917e8',1,'Enums.h']]],
   ['bluewombpartime',['BlueWombParTime',['../class_game.html#acc245460949069065ca75cd87bc9496e',1,'Game']]],
-  ['bo',['BO',['../class_k_color.html#afcbff3e5141636698910999910d9df14',1,'KColor']]],
+  ['bo',['BO',['../class_color.html#afcbff3e5141636698910999910d9df14',1,'Color']]],
   ['bobs_5fbrain',['BOBS_BRAIN',['../group__enums.html#gga98047d6add3110afcb410e3026264bbea329a6ddd48d6434553503e0239bbfe95',1,'Enums.h']]],
   ['bobs_5fhead',['BOBS_HEAD',['../group__enums.html#gga1c33a86e6763599e3685d45558207359a66cc23356827c6029a82ef48ef1f51d6',1,'Enums.h']]],
   ['bomb_5fbag',['BOMB_BAG',['../group__enums.html#gga98047d6add3110afcb410e3026264bbeae1ea40f0b006946269810599c61b961a',1,'Enums.h']]],

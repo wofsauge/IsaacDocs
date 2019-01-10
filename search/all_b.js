@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['kcolor',['KColor',['../class_k_color.html',1,'KColor'],['../class_sprite.html#a972d6a3dff4ee96fcaf48911c109170e',1,'Sprite::KColor()'],['../class_projectile_params.html#a97600388504ecef4b9506abc5a7e0faa',1,'ProjectileParams::KColor()'],['../class_k_color.html#adad4075b6c806d97b9b0134e9e9e519d',1,'KColor::KColor(float, float, float, float)'],['../class_k_color.html#a299e7ac540fe56fb4d7fcff0c7b79d35',1,'KColor::KColor(float, float, float, float, integer, integer, integer)']]],
+  ['kcolor',['KColor',['../class_k_color.html',1,'KColor'],['../class_k_color.html#adad4075b6c806d97b9b0134e9e9e519d',1,'KColor::KColor(float, float, float, float)']]],
   ['keepdoorsclosed',['KeepDoorsClosed',['../class_room.html#af3c973def5cd03cbf4c26cf2ac475846',1,'Room']]],
   ['key_5f0',['KEY_0',['../group__enums.html#ggabcabfff8e6138e0943763148d70e5005a6b30f8af6c880e1aca01b91aa13c6ff9',1,'Enums.h']]],
   ['key_5f1',['KEY_1',['../group__enums.html#ggabcabfff8e6138e0943763148d70e5005a35bcc2bc85513df4f3897a9d64a9c51c',1,'Enums.h']]],

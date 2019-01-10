@@ -731,6 +731,7 @@ var searchData=
   ['collision_5fwall_5fexcept_5fplayer',['COLLISION_WALL_EXCEPT_PLAYER',['../group__enums.html#gga4c0d9bdd063a76821a5ad3030f586e17adc0e1793a71473ae3d5348dd682a7f4c',1,'Enums.h']]],
   ['collisionclass',['CollisionClass',['../class_grid_entity.html#a6376be8fe47d7993957209e1734b7dd6',1,'GridEntity']]],
   ['collisiondamage',['CollisionDamage',['../class_entity.html#adc59845247bb82e2b466d8ed122dab17',1,'Entity']]],
+  ['color',['Color',['../class_color.html',1,'Color'],['../class_sprite.html#a972d6a3dff4ee96fcaf48911c109170e',1,'Sprite::Color()'],['../class_projectile_params.html#a97600388504ecef4b9506abc5a7e0faa',1,'ProjectileParams::Color()'],['../class_color.html#a299e7ac540fe56fb4d7fcff0c7b79d35',1,'Color::Color(float, float, float, float, integer, integer, integer)']]],
   ['config',['Config',['../class_item_config_1_1_config.html',1,'ItemConfig']]],
   ['consoleoutput',['ConsoleOutput',['../namespace_isaac.html#a66a278e9b5fc1a6baa2409dd1c57b204',1,'Isaac']]],
   ['continuevelocity',['ContinueVelocity',['../class_entity_tear.html#a0e78f69eaf515e229f99dc3f74223245',1,'EntityTear']]],
