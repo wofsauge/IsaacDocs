@@ -3,7 +3,7 @@ This project is tries to make the Isaac modding documentation better.
 1. make sure to add this line of code at the top of the head       `<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />`  
 2. make sure to add this line of code at the bottom of the body     `<!--Lua Codehightlight--><script src="prism.js"></script>`
 3. add the following to the "memdoc" div you want to add the text to:
-```lua
+```html
 <!--start Custom comment -->
 <p>YOUR DESCRIPTION HERE</p>
 <div class="example_code">
@@ -12,4 +12,20 @@ YOUR CODE DESCRIPTION HERE
 </code></pre>	
 </div>
 <!--End Custom comment -->
+```
+
+
+
+Add notes like this:
+```html 
+<div class="notes">
+YOU CONTENT HERE
+</div>
+```
+
+Add bugs like this
+```html 
+<div class="bugs">
+YOU CONTENT HERE
+</div>
 ```
