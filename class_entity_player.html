@@ -946,10 +946,10 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <!--start Custom comment -->
-<p>Adds bone hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
+<p>Adds bone hearts to the player. 1 unit is a single bone heart. Remove them with negative numbers. </p>
 <div class="example_code">
-    This code adds 1 full bone heart to the player.
-<pre><code class="language-lua">Isaac.GetPlayer(0):AddBlackHearts(2)</code></pre>	
+    This code adds 1 bone heart to the player.
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddBoneHearts(1)</code></pre>	
 </div>
 <!--End Custom comment -->
 </div>
@@ -963,14 +963,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">EntityPlayer::AddCacheFlags </td>
           <td>(</td>
-          <td class="paramtype">integer&#160;</td>
-          <td class="paramname"><em>Flags</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="group__enums.html#ga32a9a3d125cc93d397abbd4f63f07f29">CacheFlag</a>&#160;</td>
+          <td class="paramname"><em>CacheFlag</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Reevaluate Damage, Firerate, Shot speed. </p>
+<p>Will reevaluate the cache flags provided in the next cache reevaluation.</p>
 
 </div>
 </div>
@@ -1190,7 +1189,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <!--start Custom comment -->
-<p>Adds golden hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
+<p>Adds golden hearts to the player. 1 unit is a single gold heart. Remove them with negative numbers. </p>
 <div class="example_code">
     This code adds 1 golden heart to the player.
 <pre><code class="language-lua">Isaac.GetPlayer(0):AddGoldenHearts(1)</code></pre>	
@@ -1232,9 +1231,9 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <!--start Custom comment -->
-<p>Heals the player. 1 unit is half a heart. Damage the player with negative numbers. </p>
+<p>Adds red hearts to the player if there are any empty heart containers. 1 unit is half a heart. Remove health with negative numbers. </p>
 <div class="example_code">
-    This code heals 1 full heart of the player.
+    This code adds 1 full red heart to the player.
 <pre><code class="language-lua">Isaac.GetPlayer(0):AddkHearts(2)</code></pre>	
 </div>
 <!--End Custom comment -->
@@ -1328,10 +1327,25 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <!--start Custom comment -->
-<p>Adds red heartcontainer to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
+<p>Adds heart containers to the player. 2 units is a full heart container. Remove them with negative numbers. </p>
 <div class="example_code">
-    This code adds 1 full red heart to the player.
-<pre><code class="language-lua">Isaac.GetPlayer(0):AddMaxHearts(2,true)</code></pre>	
+    This code adds 1 heart container to the player.
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddMaxHearts(2,true)</code></pre>
+</div>
+<div class="notes">
+<ul>
+	<li>It is possible to add a half heart container to the player. This will appear as a regular heart container but can only be filled half-way.</li>
+</ul>
+</div>
+<div class="bugs">
+<ul>
+	<li>IgnoreKeeper does not appear to work as intended.</li>
+	<ul>
+		<li>Max hearts can be added or removed from Keeper regardless of what this boolean is.</li>
+		<li>If Keeper has Greed's Gullet and this boolean is set to false, max hearts cannot be added to Keeper, but can be removed normally.</li>
+		<li>If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be added or removed from Keeper normally.</li>
+	</ul>
+</ul>
 </div>
 <!--End Custom comment -->
 </div>
@@ -2144,6 +2158,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>Triggers a cache reevaluation. Will trigger the MC_EVALUATE_CACHE callback.</p>
 
 </div>
 </div>
