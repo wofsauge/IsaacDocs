@@ -1,0 +1,36 @@
+/* Highlight formating */
+		
+.hlTab{
+	width:50px;
+	height:8px;
+	float:left;
+}
+
+.hlSourceCode{
+	color:#333333;
+	font-family:Verdana;
+	font-size:16px;
+}
+
+.hlLanguageKw{
+	color:#0000ff;
+	font-weight:bold;
+}
+
+.hlHTMLKw{
+	color:#a3489d;
+}
+
+.hlString{
+	color:#aa0000;
+}
+
+.hlComment{
+	color:#777777;
+	font-style: italic;
+}
+
+.hlMarvinMethods{
+	color:#33a933;
+	font-weight:bold;
+}

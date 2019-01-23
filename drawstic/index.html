@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.marvinj.org/en/examples/processingBeforeUpload.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Processing images in client-side before uploading it to a server</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="" src="./indexx_files/js"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-109677410-1');
+	</script>
+	
+	<style>
+		.textResize{
+			width:30px;
+			height:20px;
+			border:1px solid #cccccc;
+			background-color:white;
+		}
+	</style>
+
+<link rel="stylesheet" type="text/css" href="./indexx_files/main.css">
+<link rel="stylesheet" type="text/css" href="./indexx_files/hlformat.css">
+<link rel="stylesheet" href="./indexx_files/font-awesome.min.css">
+
+<style>
+	
+</style>
+	
+</head>
+<body>
+
+<div id="mainContent" class="mainContent">
+
+	<h2>Sprite Editor</h2>
+
+	<div style="display:flex">
+	<div class="buttonFilter" onclick="clickRemoveBorder()">Remove Border</div><div class="buttonFilter" onclick="clickDrawBorder()">Draw Border</div>
+		<div style="width:100%; display:inline-block">
+		<div style="height:80px">
+			INPUT IMAGE: 
+			
+			<form id="picField" style="margin:auto;" method="post" enctype="multipart/form-data">
+				<input type="file" id="fileUpload" class="upload" name="userfile">
+			</form>
+<div id="result"></div>
+		</div>
+		
+		<div style="display:flex">
+			<div style="width:99%; height: 100%; display:inline-block; background-color:#eeeeee">
+				<table>
+				<tr><td>Original: </td></tr>
+				<tr><td><canvas id="original">Your browser does not support HTML5. Please use another browser.</canvas></td></tr>
+				<tr><td>Edited:</td></tr>
+				<tr><td><canvas id="canvas">Your browser does not support HTML5. Please use another browser.</canvas></td></tr>
+			</div>
+		
+			
+		</div>
+	
+		</div>
+		
+	</div>
+	
+	
+</div>
+
+
+<script src="jquery-3.1.1.js"></script>
+<script src="marvinj-0.9.js"></script>
+<script src="processingBeforeUpload.js"></script>
+
+</body></html>
