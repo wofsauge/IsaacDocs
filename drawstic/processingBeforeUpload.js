@@ -13,6 +13,7 @@ document.getElementById('picField').onchange = function (evt) {
         var fr = new FileReader();
         fr.onload = function () {
 			imageOriginal.load(fr.result, imageLoaded);
+			document.getElementById("actionBar").style.display = "block";
         }
         fr.readAsDataURL(files[0]);
     }
@@ -34,6 +35,9 @@ function imageLoaded(){
     canvas.height = imageOriginal.getHeight();
 	canvas.getContext("2d").fillStyle = "#eeeeee";
 	canvas.getContext("2d").fillRect(0,0,canvasOriginal.width, canvasOriginal.height);
+	
+	
+	buildHisto();
 	repaint();
 }
 
@@ -47,7 +51,6 @@ function repaint(){
 	
 
 function clickRemoveBorder(){
-	buildHisto();
   for(var y=0; y<imageOriginal.getHeight(); y++){
     for(var x=0; x<imageOriginal.getWidth(); x++){
       var red = imageOriginal.getIntComponent0(x,y);
@@ -77,7 +80,7 @@ function clickDrawBorder(){
       var alpha = imageTemp.getAlphaComponent(x,y);
 
 	  if(evalEnvironment(imageTemp,x,y)>0 && alpha==0){
-        imageProcessed.setIntColor(x, y, 255, 255,0,0);
+        imageProcessed.setIntColor(x, y, 255, 14,0,0);
 	  }
     }
   }
@@ -92,15 +95,30 @@ var hist=[];
       var green = imageOriginal.getIntComponent1(x,y);
       var blue = imageOriginal.getIntComponent2(x,y);
       var alpha = imageOriginal.getAlphaComponent(x,y);
-		
-	  if(!Array.isArray(hist[String(all)])){
-		  hist.append([red,green,blue,alpha,1]); 
-	  }else{
-		  hist[String(all)][4]++;
+	  if (alpha==0){continue;}
+	  var temp= false;
+		for(i=0;i<hist.length;i++){
+			if (hist[i][0]==all){
+				hist[i][5]++;
+				temp=true;
+			}
+		}
+	  if(!temp){
+		  hist.push([all,red,green,blue,alpha,1]); 
 	  }
     }
   }
-  for (i=0; i < hist.length; i++) { console.log(hist[i]); 
-}
+  hist.sort(function(a, b){return b[5]-a[5];});
+  
+  
+
+  for (i=0; i < hist.length; i++) { 
+	var div = document.createElement("div");
+	div.setAttribute('class', 'histEntry');
+	div.classList.add("tooltip");
+	div.innerHTML = hist[i][5]+"  <span class=\"tooltiptext\">Red: "+hist[i][1]+" Green: "+hist[i][2]+" Blue: "+hist[i][3]+" Alpha: "+hist[i][4]+"</span>";
+	div.style.background = "rgba("+hist[i][1]+","+hist[i][2]+","+hist[i][3]+","+hist[i][4]+")";
+	document.getElementById("histogram").appendChild(div);
+	}	
   repaint();
 }
