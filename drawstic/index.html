@@ -16,6 +16,15 @@
 		<div id="actionBar" style="display:none">
 			<div class="buttonFilter iLB" onclick="clickRemoveBorder()">Remove Border</div>
 			<div class="buttonFilter iLB" onclick="clickDrawBorder()">Draw Border</div>
+			<div>Zoom: <select id="zoomlevel" onchange="changeZoom()">
+  <option value="400">400%</option>
+  <option value="300">300%</option>
+  <option value="200">200%</option>
+  <option value="150">150%</option>
+  <option value="100" selected="true">100%</option>
+  <option value="50">50%</option>
+  <option value="25">25%</option>
+</select></div>
 		</div>	
 		<div style="width:100%; display:inline-block">
 		<div style="height:80px">
@@ -35,7 +44,7 @@
 				<tr><td>Edited:</td></tr>
 				<tr><td><canvas id="canvas">Your browser does not support HTML5. Please use another browser.</canvas></td></tr>
 				</table>
-				<div class="iLB" style="float: right;width: 400px;" id="histogram"><h5>Frequency of colors</h5></div>
+				<div class="iLB" style="float: right;width: 400px;"><h5>Frequency of colors</h5><h6>Drag & drop to replace colors.</h6><div id="histogram"></div></div>
 			</div>
 		
 			

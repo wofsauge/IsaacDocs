@@ -12,6 +12,10 @@
     color: white;
     text-shadow: 0px 0px 3px black;
 }
+.over {
+  border: 2px dashed #000;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
