@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="separator:aa27abe7b9d59db23204258294de2c3e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2610ab5ade9aaf79ceacae2906845a5a"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_isaac.html#a2610ab5ade9aaf79ceacae2906845a5a">GetPlayerTypeByName</a> (string playerName)</td></tr>
 <tr class="separator:a2610ab5ade9aaf79ceacae2906845a5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f64a59912d78b156c99060b632bbbdf"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_isaac.html#a1f64a59912d78b156c99060b632bbbdf">GetCardIdByName</a> (string cardName)</td></tr>
+<tr class="memitem:a1f64a59912d78b156c99060b632bbbdf"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_isaac.html#a1f64a59912d78b156c99060b632bbbdf">GetCardIdByName</a> (string cardHudName)</td></tr>
 <tr class="separator:a1f64a59912d78b156c99060b632bbbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a094d5aed3516fc6f3e86538ba578ad2f"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_isaac.html#a094d5aed3516fc6f3e86538ba578ad2f">GetPillEffectByName</a> (string pillEffect)</td></tr>
 <tr class="separator:a094d5aed3516fc6f3e86538ba578ad2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -541,13 +541,27 @@ print("This is a Test.")
           <td class="memname">integer Isaac::GetCardIdByName </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>cardName</em></td><td>)</td>
+          <td class="paramname"><em>cardHudName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the CardID based on its hud value. (File: pocketitems.xml)</p>
+<div class="example_code">
+    This code gets the CardID of XVI - The Tower. 
+<pre><code class="language-lua">Isaac.GetPillEffectByName("16_TheTower")
+    --Returns: 17
+</code></pre>
 </div>
+<div class="notes">
+<ul>
+	<li>The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.</li>
+</ul>
+</div>
+<!--End Custom comment -->
+</div>
+
 </div>
 <a id="ae7e6a85b7b5be7896f3406298ff9dd59"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae7e6a85b7b5be7896f3406298ff9dd59">&#9670;&nbsp;</a></span>GetChallenge()</h2>
@@ -563,6 +577,8 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.</p>
 
 </div>
 </div>
@@ -581,7 +597,15 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)</p>
+<div class="example_code">
+    This code gets the ChallengeID of Aprils fool. 
+<pre><code class="language-lua">Isaac.GetChallengeIdByName("Aprils fool")
+    --Returns: 32
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a3f216ccd33ff52709d9c7ee6fe437297"></a>
@@ -599,7 +623,15 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)</p>
+<div class="example_code">
+    This code gets the CostumeID of the Poop transformation costume.
+<pre><code class="language-lua">Isaac.GetCostumeIdByPath("gfx/characters/n027_Transformation_Poop.anm2")
+    --Returns: 27
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a13f2a1724d8e011b975626616128ad2d"></a>
@@ -617,7 +649,15 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the CurseID of a curse based on its name. (File: curses.xml)</p>
+<div class="example_code">
+    This code gets the CurseID of Curse of the Unknown.
+<pre><code class="language-lua">Isaac.GetCurseIdByName("Curse of the Unknown")
+    --Returns: 4
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="ab03caabbbca296f666a7927e1df2b9a8"></a>
@@ -635,7 +675,20 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the EntityType of an entity based on its name. (File: entities2.xml)</p>
+<div class="example_code">
+    This code gets the EntityType of Flaming Gaper. 
+<pre><code class="language-lua">Isaac.GetEntityTypeByName("Flaming Gaper")
+    --Returns: 10
+</code></pre>
+</div>
+<div class="notes">
+<ul>
+	<li>There is no SubType version of this function.</li>
+</ul>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a7e2bd07df1bce5faf2bc448246b0a29b"></a>
@@ -653,7 +706,20 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the variant of an entity based on its name. (File: entities2.xml)</p>
+<div class="example_code">
+    This code gets the variant of Flaming Gaper. 
+<pre><code class="language-lua">Isaac.GetEntityVariantByName("Flaming Gaper")
+    --Returns: 2
+</code></pre>
+</div>
+<div class="notes">
+<ul>
+	<li>There is no SubType version of this function.</li>
+</ul>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a880a22350f53acea378bf7c721bd5bd5"></a>
@@ -838,7 +904,15 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the PlayerType of a character based on its name. (File: players.xml)</p>
+<div class="example_code">
+    This code gets the PlayerType of Azazel. 
+<pre><code class="language-lua">Isaac.GetPlayerTypeByName("Azazel")
+    --Returns: 7
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a600b3a456d7e403e013493b4ce45674f"></a>
@@ -892,7 +966,14 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the SoundEffectID of a sound based on its name. (File: sounds.xml)</p>
+<div class="example_code">
+    This code gets the SoundEffectID of a sound named "Custom Sound Effect"
+<pre><code class="language-lua">Isaac.GetSoundIdByName("Custom Sound Effect")
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a2267d6dc72d36e1cadd38bc6bdf3510c"></a>
@@ -948,7 +1029,15 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the TrinketType of a trinket based on its name. (File: items.xml)</p>
+<div class="example_code">
+    This code gets the TrinketType of Lucky Toe. 
+<pre><code class="language-lua">Isaac.GetTrinketIdByName("Lucky Toe")
+    --Returns: 42
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a1ee38916798f78e5398993c4b224d1a3"></a>
