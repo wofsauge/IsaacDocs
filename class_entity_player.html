@@ -318,9 +318,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ca24e81cbc5b5f29237a0d2ba777006"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_player.html#a1ca24e81cbc5b5f29237a0d2ba777006">GetSoulHearts</a> ()</td></tr>
 <tr class="separator:a1ca24e81cbc5b5f29237a0d2ba777006"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42f56fe9afee22f8fba92fd945c4df1d"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_player.html#a42f56fe9afee22f8fba92fd945c4df1d">GetBlackHearts</a> ()</td></tr>
+<tr class="memdesc:ada1ff7cd08e2b67391b399c44ab3a326"><td class="mdescLeft">&#160;</td><td class="mdescRight">This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts.  <a href="#ada1ff7cd08e2b67391b399c44ab3a326">More...</a><br /></td></tr>
 <tr class="separator:a42f56fe9afee22f8fba92fd945c4df1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada1ff7cd08e2b67391b399c44ab3a326"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_player.html#ada1ff7cd08e2b67391b399c44ab3a326">GetEternalHearts</a> ()</td></tr>
-<tr class="memdesc:ada1ff7cd08e2b67391b399c44ab3a326"><td class="mdescLeft">&#160;</td><td class="mdescRight">This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts.  <a href="#ada1ff7cd08e2b67391b399c44ab3a326">More...</a><br /></td></tr>
 <tr class="separator:ada1ff7cd08e2b67391b399c44ab3a326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1477e8153ce737221a31e9a4fd86f808"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_entity_player.html#a1477e8153ce737221a31e9a4fd86f808">GetExtraLives</a> ()</td></tr>
 <tr class="separator:a1477e8153ce737221a31e9a4fd86f808"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -2649,7 +2649,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This does not return the # of bone hearts, but the bit mask for which soul hearts are bone hearts. </p>
+<p>This does not return the # of bone hearts, this returns the bit mask for which hearts are bone hearts</p>
 </div>
 </div>
 <a id="a7c5eabf583d723802a4eb7e77c8009ed"></a>
@@ -2840,9 +2840,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts. </p>
-
+<!--start Custom comment -->
+<p>Returns the amount of eternal hearts the player has.</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a1477e8153ce737221a31e9a4fd86f808"></a>
@@ -2910,7 +2910,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This does not return the # of golden hearts, but the bit mask for which heartcontainers have a golden heart assigned. </p>
+<!--start Custom comment -->
+<p>Returns the amount of golden hearts the player has.</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a3c64bafab7b9e5a0c71feae8206fa587"></a>
@@ -2979,9 +2981,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <!--start Custom comment -->
-<p>Returns your red health NOT the number of total heartcontainers.</p>
+<p>Returns the amount of red hearts the player has inside their heart containers and bone hearts. 1 unit is half a heart.</p>
 <!--End Custom comment -->
-
 </div>
 </div>
 <a id="a69aad84548878a521019e307941d9f83"></a>
@@ -3145,9 +3146,8 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
 <!--start Custom comment -->
-<p>Returns the number of Heart containers of the player.</p>
+<p>Returns the amount of Heart Containers the player has. 1 unit is half a heart container.</p>
 <!--End Custom comment -->
 </div>
 </div>
@@ -3602,7 +3602,14 @@ Get the number of Pickup items you can carry. (1 on default. 2 with belly button
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the amount of Soul Hearts the player has. 1 unit is half a heart.</p>
+<!--End Custom comment -->
+<div class="notes">
+<ul>
+	<li>Black Hearts count toward this total, as the game sees them as soul hearts.</li>
+</ul>
+</div>
 </div>
 </div>
 <a id="ab82151e0b2a80492bb635fee015dfd7f"></a>
