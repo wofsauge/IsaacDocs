@@ -108,7 +108,7 @@ Functions</h2></td></tr>
 <tr class="separator:gadb9aad240fd3780570efed9201ce28ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Free functions </p>
+<p>These are functions that you can call freely which are not tied to any objects.</p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gae643f2600404d3a34d6236fec678aa7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae643f2600404d3a34d6236fec678aa7c">&#9670;&nbsp;</a></span>Game()</h2>
@@ -124,7 +124,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns a <a class="el" href="class_game.html">Game</a> object.</p>
+<div class="example_code">
+    Example usage:
+<pre><code class="language-lua">Game():IsPaused()
+--returns true if the game is paused
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="gadb9aad240fd3780570efed9201ce28ee"></a>
@@ -141,7 +149,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.</p>
+<div class="example_code">
+    Example usage:
+<pre><code class="language-lua">MusicManager():Disable()
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="gab0914b8a441bd429bdd637e6b31dfd7c"></a>
@@ -159,7 +174,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>random integer [0, 2^32) </p>
+<p>Returns a random integer. (0 to 2^32) </p>
 
 </div>
 </div>
@@ -178,7 +193,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>random vector with length 1 </p>
+<p>Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.</p>
 
 </div>
 </div>
@@ -196,7 +211,14 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.</p>
+<div class="example_code">
+    Example usage:
+<pre><code class="language-lua">SFXManager():Stop(SoundEffect.SOUND_1UP)
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 </div><!-- contents -->
