@@ -273,7 +273,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <!--start Custom comment -->
-<p>Prints a string into the Debug console.</p>
+<p>Prints a string into the Debug Console</p>
 <div class="example_code">
     You can use this example as an alternative.
 <pre><code class="language-lua">Isaac.ConsoleOutput("This is a Test.")
@@ -407,7 +407,7 @@ print("This is a Test.")
 </div><div class="memdoc">
 
 <!--start Custom comment -->
-<p>This function executes a command. see <a href="debug_console_primer.html">[Tutorial] Debug Console</a> for informations on how to use commands.</p>
+<p>This function executes a debug console command. see <a href="debug_console_primer.html">[Tutorial] Debug Console</a> for informations on how to use commands.</p>
 <!--End Custom comment -->
 </div>
 </div>
@@ -550,7 +550,7 @@ print("This is a Test.")
 <p>Returns the CardID based on its hud value. (File: pocketitems.xml)</p>
 <div class="example_code">
     This code gets the CardID of XVI - The Tower. 
-<pre><code class="language-lua">Isaac.GetPillEffectByName("16_TheTower")
+<pre><code class="language-lua">Isaac.GetCardIdByName("16_TheTower")
     --Returns: 17
 </code></pre>
 </div>
@@ -827,7 +827,7 @@ print("This is a Test.")
       </table>
 </div><div class="memdoc">
 <!--start Custom comment -->
-<p>Returns the MusicID of a Musictrack. (File: music.xml)</p>
+<p>Returns the MusicID of a music track. (File: music.xml)</p>
 <div class="example_code">
     This code gets the MusicID of the Title Screen.
     <pre><code class="language-lua">Isaac.GetMusicIdByName("Title Screen")
@@ -880,7 +880,7 @@ print("This is a Test.")
       </table>
 </div><div class="memdoc">
 <!--start Custom comment -->
-<p>Returns the player-Entity. PlayerID 0 = Main player. Higher numbers refer to coop babies.</p>
+<p>Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies.</p>
 <div class="example_code">
     <pre><code class="language-lua">Isaac.GetPlayer(0)
 </code></pre>	
