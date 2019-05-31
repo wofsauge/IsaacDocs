@@ -1332,7 +1332,29 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<div class="notes">
+Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call <code class="language-lua"> UpdateVisibility()</code> afterwards to apply any changes.
+    <div class="example_code">
+This code 
+<pre><code class="language-lua">-- Local variables
+local game = Game()
+local level = game:GetLevel()
 
+-- Give the player the Compass effect, which will display all of the floor's special rooms on the mini-map
+level:ApplyCompassEffect()
+
+-- Remove the icon for the Treasure Room specifically
+local treasureIndex = level:QueryRoomTypeIndex(RoomType.ROOM_TREASURE, false, RNG())
+local treasureRoom = level:GetRoomByIdx(treasureIndex)
+treasureRoom.DisplayFlags = 0
+
+-- Since the mini-map is cached, changing display flags won't update it unless we explicitly call this function
+level:UpdateVisibility()
+</code></pre>	
+</div>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
