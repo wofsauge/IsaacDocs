@@ -6241,6 +6241,8 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_G
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3a522edc2720af79f1cab04c48a0375c"></a>MC_PRE_USE_ITEM&#160;</td><td class="fielddoc"><p>(CollectibleType ItemId, <a class="el" href="class_r_n_g.html">RNG</a>&amp; ItemRng) - return true if the item can't be used / processed inside the script, other values or no value will continue the routine </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a689dd914c245158a03927393343b75fe"></a>MC_PRE_ENTITY_SPAWN&#160;</td><td class="fielddoc"><p>(EntityType Type, integer Variant, integer SubType, const Vector2 Position, const Vector2 Velocity, const <a class="el" href="class_entity.html">Entity</a> Spawner, integer Seed), optional return - an array table with new values { Type, Variant, Subtype, Seed } </p>
+    <!--start Custom comment -->
+    <div class="notes"><p>For this callback, you CANNOT specify an EntityType to only get entities of a single type.</p></div><!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a9bc02faae2ce4549428403cc7523480a"></a>MC_POST_FAMILIAR_RENDER&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_familiar.html">EntityFamiliar</a> Fam, <a class="el" href="class_vector.html">Vector</a> Offset) </p>
 </td></tr>
@@ -6261,6 +6263,8 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_G
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a7b9bb4693d4c9026ac2fcfb79f4f6f0e"></a>MC_PRE_PLAYER_COLLISION&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_player.html">EntityPlayer</a> Player, <a class="el" href="class_entity.html">Entity</a> Collider, boolean Low), returns true/false to ignore collision code (true to respond to collision, false to not), or nil to continue the internal code. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a7297b9f5419f75eeb15eb37ed9645a33"></a>MC_POST_PICKUP_INIT&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_pickup.html">EntityPickup</a> Pickup) </p>
+    <!--start Custom comment -->
+    <div class="notes"><p>When adding this callback, specify a PickupVariant so it is only called for pickups of that specific variant. This improves performance</p></div><!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a4da727dcdb3d8536e3f6f6bf53f8d4e5"></a>MC_POST_PICKUP_UPDATE&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_pickup.html">EntityPickup</a> Pickup) </p>
 </td></tr>
