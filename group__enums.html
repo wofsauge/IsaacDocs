@@ -6324,7 +6324,11 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_G
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ad2c55cabcedb3d3b4c0d106fb951283e"></a>MC_POST_GET_COLLECTIBLE&#160;</td><td class="fielddoc"><p>(CollectibleType SelectedCollectible, integer PoolType, boolean Decrease, integer Seed) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a52b8ac19b779eaef40f2bf49b923f2f9"></a>MC_GET_PILL_COLOR&#160;</td><td class="fielddoc"><p>(PillColor SelectedPill, integer Seed) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a52b8ac19b779eaef40f2bf49b923f2f9"></a>MC_GET_PILL_COLOR&#160;</td><td class="fielddoc"><p>(PillColor SelectedPill, integer Seed) </p><!--start Custom comment -->
+<div class="bugs">
+<p>This function is broken and does NOT provide the PillColor value. It only provides the Seed value.</p>
+</div>
+<!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab3f22a2ec1956dbc564c08c163a59a6c"></a>MC_GET_PILL_EFFECT&#160;</td><td class="fielddoc"><p>(PillEffect SelectedPillEffect, PillColor PillColor) </p>
 </td></tr>
