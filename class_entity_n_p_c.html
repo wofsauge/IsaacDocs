@@ -775,9 +775,10 @@ Public Attributes</h2></td></tr>
 
 <!--start Custom comment -->
 <p>Morph the current entity into another one. </p>
+<p><a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use <code class="language-lua">-1</code> to turn it into a regular entity.<br></p>
     <div class="example_code">
         This code turns an entity into a gaper.
-<pre><code class="language-lua">entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0)</code></pre>	
+<pre><code class="language-lua">entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)</code></pre>	
 </div>
 <!--End Custom comment -->
 </div>
