@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+    <!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
@@ -177,8 +178,26 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the Itemobject of a given CollectibleID.</p>
+<div class="example_code">
+This Code gets the highest possible collectibleid including modded items. It uses the Binary Search algorithm to do it.
+<pre><code class="language-lua">function GetMaxCollectibleID()
+    local id = CollectibleType.NUM_COLLECTIBLES-1
+    local step = 16
+    while step > 0 do
+        if Isaac.GetItemConfig():GetCollectible(id+step) ~= nil then
+            id = id + step
+        else
+            step = step // 2
+        end
+    end
+    
+    return id
+end
+</code></pre>
 </div>
+<!--End Custom comment -->
 </div>
 <a id="ab570e24606197f78a9cf4476dba71ef5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab570e24606197f78a9cf4476dba71ef5">&#9670;&nbsp;</a></span>GetCollectibles()</h2>
@@ -342,7 +361,18 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Function to check if a given item id is a valid collectible id (aka. this item exists). Returns <b>True</b> when it exists and <b>False</b> when it doesnt.</p>
+    
+<div class="bugs">
+This function returns false for modded items! Use <code class="language-lua">itemConfig:GetCollectible()</code> instead.
+</div>
+<div class="example_code">
+This Code checks, if the item "Sad Onion" (ID: 1) exists.
+<pre><code class="language-lua">ItemConfig.Config.IsValidCollectible(1)
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a081bc308ad482c33ba4b69bf7c54fdb4"></a>
@@ -382,5 +412,6 @@ Static Public Member Functions</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+    <!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>
