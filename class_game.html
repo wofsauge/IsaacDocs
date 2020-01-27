@@ -2002,6 +2002,21 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<!--start Custom comment -->
+<div class="notes">
+The Animation types are as follows:<br>
+    <ul></ul>
+<li>0 or >4: standard transition, sweeps the room in from a direction</li>
+<li>1: fade to black transition, like used for goto</li>
+<li>2: pixel out transition, like used for crawlspaces and the trapdoor at the end of floors</li>
+<li>3: teleport transition, isaac teleports out of the current room and into the next</li>
+    </ul>
+</div>
+    
+<div class="bugs">
+The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="aa6b49ca8563c6d9895fb7204664fa1aa"></a>
