@@ -1095,7 +1095,9 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.</p><p>There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a526834c43e9f0dbaec961602e39245a7"></a>
@@ -1113,8 +1115,24 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns a  JSON array/table that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.</p>
+<p>There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<div class="example_code">
+This code loads data stored in the "saveX.dat" file, if it exists.
+<pre><code class="language-lua">local yourMod = RegisterMod("someMod", 1)
+local json = require("json")
+-- ...
+function yourMod:OnGameStart(isSave)
+	--Loading Moddata--
+	if yourMod:HasData() then
+		local myTable = json.decode(Isaac.LoadModData(yourMod))
+	end
+end
+yourMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, yourMod.OnGameStart)
+</code></pre>	
 </div>
+<!--End Custom comment -->
 </div>
 <a id="a340b626f61bc1eec35fd6559fa9c30fe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a340b626f61bc1eec35fd6559fa9c30fe">&#9670;&nbsp;</a></span>RegisterMod()</h2>
@@ -1147,8 +1165,13 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Exposed methods. </p>
+<!--start Custom comment -->
+<p>Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!</p>
+<div class="example_code">
+<pre><code class="language-lua">local yourMod = RegisterMod("someMod", 1)
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -1201,7 +1224,11 @@ print("This is a Test.")
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
+<p>Deletes the stored "saveX.dat" file if it exists. </p>
+<p>There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
 
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a7ee39f5babe379714ed65520c60aa5d1"></a>
@@ -1377,7 +1404,23 @@ Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 1 ,1 ,1 ,1 )
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Stores a JSON array/table in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.</p>
+<p>There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<div class="example_code">
+This code saves a table in the "saveX.dat" file.
+<pre><code class="language-lua">local yourMod = RegisterMod("someMod", 1)
+local json = require("json")
+-- ...
+--Saving Moddata--
+function yourMod:SaveGame()
+    local table= {1,2,3}
+    yourMod.SaveData(yourMod, json.encode(table))
+end
+yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a7b8c5a1f60eacd74c9d295b2309af4d1"></a>
