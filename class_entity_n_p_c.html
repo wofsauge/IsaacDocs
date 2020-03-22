@@ -622,7 +622,12 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+    
+<!--start Custom comment -->
+    <div class="notes">
+    <p>A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> </p>
+        </div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a47d561dec91acafecf5b03d248d96faa"></a>
@@ -715,6 +720,11 @@ Public Attributes</h2></td></tr>
 
 <p>Forces a non champion to become a champion, resets hp to max hp. </p>
 
+<!--start Custom comment -->
+    <div class="notes">
+<p>Hard to use because there are millions of possible seeds to input here.<br>Use <a href="#a42056314c26d9aae65483d819c00b605">Morph()</a> to change the champion Color instead!</p>
+        </div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a33bfe0f6f73c2fc1e26ec8ebc4f78bc7"></a>
@@ -775,7 +785,8 @@ Public Attributes</h2></td></tr>
 
 <!--start Custom comment -->
 <p>Morph the current entity into another one. </p>
-<p><a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use <code class="language-lua">-1</code> to turn it into a regular entity.<br></p>
+<p><a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use <code class="language-lua">-1</code> to turn it into a regular entity.</p>
+    <p>A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> </p>
     <div class="example_code">
         This code turns an entity into a gaper.
 <pre><code class="language-lua">entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)</code></pre>	
