@@ -29,3 +29,10 @@ Add bugs like this
 YOU CONTENT HERE
 </div>
 ```
+
+Removed original description can be marked like this:
+```html
+<!--start Custom comment -->
+<!-- Removed false description -->
+<!--End Custom comment -->
+```
