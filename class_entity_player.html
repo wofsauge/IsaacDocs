@@ -2648,8 +2648,15 @@ Public Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
-</div><div class="memdoc">
-<p>This does not return the # of bone hearts, this returns the bit mask for which hearts are bone hearts</p>
+</div><div class="memdoc"><!--start Custom comment -->
+<p>Returns the number of bone hearts as an integer value. 1 Boneheart = 1.</p>
+    <div class="example_code">
+This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. 
+<pre><code class="language-lua">local player = Isaac.GetPlayer(0)
+player:GetMaxHearts()+player:GetBoneHearts()*2
+</code></pre>	
+</div>
+    <!--End Custom comment -->
 </div>
 </div>
 <a id="a7c5eabf583d723802a4eb7e77c8009ed"></a>
