@@ -18,6 +18,7 @@
   $(document).ready(initResizable);
 /* @license-end */</script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
+    <!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
@@ -324,7 +325,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>index in the level grid (always top left) </p>
-
+<!--start Custom comment -->
+    <div class="notes">
+        <p>This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)</p>
+    <img src="customImg/infographics/RoomGridIndicies.png" alt="" width="750"/>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="aba2c5b709a188d8051d86e844333e2cc"></a>
@@ -457,7 +463,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!) </p>
-
+<!--start Custom comment -->
+    <div class="notes">
+        <p>This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below) </p>
+    <img src="customImg/infographics/RoomGridIndicies.png" alt="" width="750"/>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="add08003782c8057f572eb9177e71355d"></a>
@@ -545,5 +556,6 @@ Public Attributes</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+    <!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>
