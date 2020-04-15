@@ -14,6 +14,7 @@
 <script type="text/javascript" src="navtreedata.js"></script>
 <script type="text/javascript" src="navtree.js"></script>
 <script type="text/javascript">
+    <!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
   $(document).ready(initResizable);
 /* @license-end */</script>
@@ -106,6 +107,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga9234017f135540fa61ad6c17a7c9205b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadb9aad240fd3780570efed9201ce28ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_music_manager.html">MusicManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__funcs.html#gadb9aad240fd3780570efed9201ce28ee">MusicManager</a> ()</td></tr>
 <tr class="separator:gadb9aad240fd3780570efed9201ce28ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+    <!--start Custom comment -->
+    <!-- Added -->
+    <tr class="memitem:GetPtrHash"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_music_manager.html">GetPtrHash</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__funcs.html#GetPtrHash">GetPtrHash</a> (Object object)</td></tr>
+<tr class="separator:gadb9aad240fd3780570efed9201ce28ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+    <!--End Custom comment -->
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>These are functions that you can call freely which are not tied to any objects.</p>
@@ -221,6 +227,41 @@ Functions</h2></td></tr>
 <!--End Custom comment -->
 </div>
 </div>
+<!--start Custom comment -->
+    <!-- Added -->
+    <a id="GetPtrHash"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#GetPtrHash">&#9670;&nbsp;</a></span>GetPtrHash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">integer <a class="el" href="class_s_f_x_manager.html">GetPtrHash</a> </td>
+          <td>(</td>
+          <td class="paramname">Object</td><td>object</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including <code>Entity</code>, <code>Room</code>, <code>RNG</code>, <code>Sprite</code>, <code>Game</code> etc.</p>
+    <p>It can be used to easily compare two entities, making equality checks very easy.</p>
+    <p><b>Example:</b></p>
+    <p>If you spawn a certain entity, save it in a variable and then compare it to the <code>entity</code> parameter in <code>MC_ENTITY_TAKE_DMG</code>, this comparison will never be true even if both variables refer to the exact same entity in the game. <code>GetPtrHash()</code> turns pointer into a fixed number, which makes comparisons easier.</p>
+<div class="example_code">
+    Example on check if two entities saved in different variables are the same.
+<pre><code class="language-lua">-- don't do it like this
+if entity1 == entity2 then
+-- this will always be false, because two different references on a pointer are not equal
+end
+-- use GetPtrHash() to compare them
+if GetPtrHash(entity1) == GetPtrHash(entity2) then
+-- this will be true, when the pointer of both variables point to the same object.
+end
+</code></pre>	
+</div>
+</div>
+</div>
+<!--End Custom comment -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
@@ -231,5 +272,6 @@ Functions</h2></td></tr>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+    <!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>
