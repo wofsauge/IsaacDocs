@@ -130,12 +130,22 @@ $(document).ready(function(){initNavTree('modules.html','');});
     <ul>
     <li>If a costumeID can't be associated with an itemid, the game crashes.</li>
     <li><b>Transformations</b> still must be added using the Null Costume method (LUA-based)</li>
-    <li>Costumes of type <b>null</b> actually have a null item associated with it. These Nullcostumes can be added using LUA.</li>
+    <li>Costumes of type <b>none</b> actually have a null item associated with it. These Nullcostumes can be added using LUA.</li>
     </ul>
 
+    <hr>
     <h2>Adding Nullcostumes</h2>
     <p>Nullcostumes are costumes that dont have an actual item attached to them. Therefore, they can be used to add temporary costumes like for example Transformations.</p>
     <p>The following code adds a nullcostume to the player in two different ways. Choose the one that fits your neededs.</p>
+    
+    <h4>costumes2.xml</h4>
+    Define a null costume in the "costumes2.xml" file by setting the type to "none". DONT set an ID!
+     <pre><code class="language-xml line-numbers">&lt;costumes anm2root=&quot;gfx/&quot;&gt;
+    &lt;costume anm2path=&quot;characters/some_null_costume.anm2&quot; type=&quot;none&quot; /&gt;
+&lt;/costumes&gt;
+</code></pre>
+    <h4>main.lua</h4>
+    Get the automatically generated CostumeID of the null-Costume, and then apply it to the player
     <pre><code class="language-lua">-- get the internal costumeID
     NullItemID.ID_SOME_NULL_COSTUME = Isaac.GetCostumeIdByPath("gfx/characters/some_null_costume.anm2")
     
@@ -161,6 +171,10 @@ function mod:myFunction2(player)
     end
 end
 mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, mod.myFunction2, 0)</code></pre>
+    
+    <br>
+    <hr>
+    <p>Special thanks to <i><b>Piber20</b></i> and <i><b>JSG</b></i> for figuring out these methods!</p>
 <!--End Custom comment -->
 </div></div><!-- contents -->
 </div><!-- doc-content -->
