@@ -59,6 +59,7 @@ var NAVTREE =
     [ "[Tutorial] Loading other .lua files", "remarks.html", null ],
     [ "[Tutorial] Writing shaders", "screen_shaders.html", null ],
     [ "[Tutorial] Render text", "special_chars.html", null ],
+    [ "[Tutorial] Add costumes (no LUA)", "adding_costumes.html", null ],
     
 [ "", null, null ],
     [ "Enumerations", "group__enums.html", "group__enums" ],

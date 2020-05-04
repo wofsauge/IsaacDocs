@@ -6292,6 +6292,9 @@ mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, onExit)
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a07d8d324935e33a401184172782c1502"></a>MC_PRE_NPC_COLLISION&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_n_p_c.html">EntityNPC</a> NPC, <a class="el" href="class_entity.html">Entity</a> Collider, boolean Low), returns true/false to ignore collision code (true to respond to collision, false to not), or nil to continue the internal code. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a01830a0162d692c210b76d87c2a5c690"></a>MC_POST_PLAYER_UPDATE&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_player.html">EntityPlayer</a> Player) </p>
+    <!--start Custom comment -->
+    <p><b>Optional:</b> When adding this callback, specify a Player Variant so it is only called for either the player (0) or coop-babies (1). This improves the performance</p>
+    <!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aaa51209a4a7b20ed8d42a8ff306c269c"></a>MC_POST_PLAYER_RENDER&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_player.html">EntityPlayer</a> Player, <a class="el" href="class_vector.html">Vector</a> Offset) </p>
 </td></tr>
@@ -6299,7 +6302,7 @@ mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, onExit)
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a7297b9f5419f75eeb15eb37ed9645a33"></a>MC_POST_PICKUP_INIT&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_pickup.html">EntityPickup</a> Pickup) </p>
     <!--start Custom comment -->
-    <div class="notes"><p>When adding this callback, specify a PickupVariant so it is only called for pickups of that specific variant. This improves performance</p></div><!--End Custom comment -->
+    <div class="notes"><p><b>Optional:</b> When adding this callback, specify a PickupVariant so it is only called for pickups of that specific variant. This improves performance</p></div><!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a4da727dcdb3d8536e3f6f6bf53f8d4e5"></a>MC_POST_PICKUP_UPDATE&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_pickup.html">EntityPickup</a> Pickup) </p>
     <!--start Custom comment -->
@@ -6388,7 +6391,7 @@ You can return an integer from this callback in order to change the returned ite
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa503c87bcc557d1913c71f270d835a19"></a>MC_PRE_SPAWN_CLEAN_AWARD&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_r_n_g.html">RNG</a>&amp; Rng, <a class="el" href="class_vector.html">Vector</a> SpawnPos), returns true if the spawn routine should be ignored, false or nil/nothing otherwise </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a083afd103e2960bbdfc314f4b4621f96"></a>MC_PRE_ROOM_ENTITY_SPAWN&#160;</td><td class="fielddoc"><p>(EntityType Type, integer Variant, integer SubType, integer GridIndex, integer Seed) - This is called when entering a new room, before spawning entities which are part its layout. Grid entities will also trigger this callback and their type will the same as the type used by the gridspawn command. Because of this, effects are assigned the type 999 instead of 1000 in this callback. Optional return: an array table with new values { Type, Variant, Subtype }. Returning a table will override any replacements that might naturally occur i.e. enemy variants. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a083afd103e2960bbdfc314f4b4621f96"></a>MC_PRE_ROOM_ENTITY_SPAWN&#160;</td><td class="fielddoc"><p>(EntityType Type, integer Variant, integer SubType, integer GridIndex, integer Seed)<br> This is called when entering a new room, before spawning entities which are part its layout. Grid entities will also trigger this callback and their type will the same as the type used by the gridspawn command. Because of this, effects are assigned the type 999 instead of 1000 in this callback. Optional return: an array table with new values { Type, Variant, Subtype }. Returning a table will override any replacements that might naturally occur i.e. enemy variants. </p>
 </td></tr>
 </table>
 
