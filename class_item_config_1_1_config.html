@@ -107,13 +107,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af01a4b34e0574b956c291bff48bcc0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbc9c39e44e4bae548c82f7a820bd5e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="class_item_config_1_1_pill_effect.html">PillEffect</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#acbbc9c39e44e4bae548c82f7a820bd5e">GetPillEffect</a> (<a class="el" href="class_item_config_1_1_pill_effect.html">PillEffect</a> PillEffectID)</td></tr>
 <tr class="separator:acbbc9c39e44e4bae548c82f7a820bd5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab570e24606197f78a9cf4476dba71ef5"><td class="memItemLeft" align="right" valign="top">const ItemList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#ab570e24606197f78a9cf4476dba71ef5">GetCollectibles</a> ()</td></tr>
+<tr class="memitem:ab570e24606197f78a9cf4476dba71ef5"><td class="memItemLeft" align="right" valign="top">const <!--start Custom comment --><a class="el" href="class_cpp_container_1_1_vector_1_1_item_config_list.html">ItemList</a><!--End Custom comment --> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#ab570e24606197f78a9cf4476dba71ef5">GetCollectibles</a> ()</td></tr>
 <tr class="separator:ab570e24606197f78a9cf4476dba71ef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97d611f689f2e54b04ee685cd430b3e0"><td class="memItemLeft" align="right" valign="top">const ItemList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#a97d611f689f2e54b04ee685cd430b3e0">GetTrinkets</a> ()</td></tr>
 <tr class="separator:a97d611f689f2e54b04ee685cd430b3e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a367f5288d7770455f1cba77582a46bf2"><td class="memItemLeft" align="right" valign="top">const ItemList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#a367f5288d7770455f1cba77582a46bf2">GetNullItems</a> ()</td></tr>
 <tr class="separator:a367f5288d7770455f1cba77582a46bf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ad35a29215494b7c814841c8d09b280"><td class="memItemLeft" align="right" valign="top">const CostumeList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#a4ad35a29215494b7c814841c8d09b280">GetCostumes</a> ()</td></tr>
+    <tr class="memitem:a4ad35a29215494b7c814841c8d09b280"><td class="memItemLeft" align="right" valign="top">const <!--start Custom comment --><a class="el" href="class_cpp_container_1_1_vector_1_1_costume_config_list.html">CostumeList</a><!--End Custom comment --> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#a4ad35a29215494b7c814841c8d09b280">GetCostumes</a> ()</td></tr>
 <tr class="separator:a4ad35a29215494b7c814841c8d09b280"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2d8c59d30d76bf14700db1736a71e88"><td class="memItemLeft" align="right" valign="top">const CardList &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_item_config_1_1_config.html#af2d8c59d30d76bf14700db1736a71e88">GetCards</a> ()</td></tr>
 <tr class="separator:af2d8c59d30d76bf14700db1736a71e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,7 +181,8 @@ Static Public Member Functions</h2></td></tr>
 <!--start Custom comment -->
 <p>Returns the Itemobject of a given CollectibleID.</p>
 <div class="example_code">
-This Code gets the highest possible collectibleid including modded items. It uses the Binary Search algorithm to do it.
+<p>This Code gets the highest possible collectibleid including modded items. It uses the Binary Search algorithm to do it.</p>
+    <p>Using GetCollectible(): (not recommended)</p>
 <pre><code class="language-lua">function GetMaxCollectibleID()
     local id = CollectibleType.NUM_COLLECTIBLES-1
     local step = 16
@@ -196,6 +197,11 @@ This Code gets the highest possible collectibleid including modded items. It use
     return id
 end
 </code></pre>
+    <p>Using GetCollectibles():</p>
+<pre><code class="language-lua">function GetMaxCollectibleID()
+    return Isaac.GetItemConfig():GetCollectibles().Size -1
+end
+</code></pre>
 </div>
 <!--End Custom comment -->
 </div>
@@ -206,14 +212,26 @@ end
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const ItemList&amp; ItemConfig::Config::GetCollectibles </td>
+          <td class="memname">const <!--start Custom comment --><a class="el" href="class_cpp_container_1_1_vector_1_1_item_config_list.html">ItemList</a><!--End Custom comment -->&amp; ItemConfig::Config::GetCollectibles </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the List of all Collectibles. </p>
+    <div class="bugs">
+The objects stored in the returned list cant be accessed correctly and are therefore useless.
+</div>
+<div class="example_code">
+<p>This Code gets the highest possible collectibleid including modded items.</p>
+<pre><code class="language-lua">function GetMaxCollectibleID()
+    return Isaac.GetItemConfig():GetCollectibles().Size -1
+end
+</code></pre>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a4ad35a29215494b7c814841c8d09b280"></a>
@@ -223,14 +241,18 @@ end
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const CostumeList&amp; ItemConfig::Config::GetCostumes </td>
+          <td class="memname">const <!--start Custom comment --><a class="el" href="class_cpp_container_1_1_vector_1_1_costume_config_list.html">CostumeList</a><!--End Custom comment -->&amp; ItemConfig::Config::GetCostumes </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<div class="bugs">
+The Vector/Table returned by this function is always empty! 
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a39164fcef99fd373821e7564a0a013c1"></a>
