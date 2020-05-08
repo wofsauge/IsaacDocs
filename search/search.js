@@ -21,6 +21,28 @@
  @licend  The above is the entire license notice
  for the JavaScript code in this file
  */
+
+ /*----DarkMode Stuff----*/  
+ function LoadDarkMode(){
+	   var currval = localStorage.getItem("IsaacDocsDarkMode");
+		  if (currval == "On"){
+		 	  $("html").css("filter","invert(1) grayscale(1)");
+		  }else{
+			   $("html").css("filter","");
+		  }
+	}
+	function TriggerDarkMode(){
+	  if (localStorage.getItem("IsaacDocsDarkMode") != "On"){
+		 	 localStorage.setItem("IsaacDocsDarkMode","On");
+		 }else{
+		 	 localStorage.setItem("IsaacDocsDarkMode","Off");
+		 }
+	 LoadDarkMode();
+	}
+   
+  LoadDarkMode();
+/*----DarkMode Stuff----*/
+
 function convertToId(search)
 {
   var result = '';
