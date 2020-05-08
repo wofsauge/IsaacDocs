@@ -22,6 +22,9 @@
  for the JavaScript code in this file
  */
 
+ /*----Custom JS Stuff----*/ 
+
+ 
  /*----DarkMode Stuff----*/  
  function LoadDarkMode(){
 	   var currval = localStorage.getItem("IsaacDocsDarkMode");
@@ -40,8 +43,34 @@
 	 LoadDarkMode();
 	}
    
+	
   LoadDarkMode();
-/*----DarkMode Stuff----*/
+/*----Custom JS Stuff----*/
+ $(document).ready(function(){
+	$( "<button class='hide_dyncontent'>Show Inheritance-diagram</button>" ).insertBefore( ".dyncontent" );
+	$( "<hr/><h3>Example code:</h3>" ).insertBefore( ".example_code" );
+	$( "<hr/><h3 style=\"color:red;\">Bugs:</h3>" ).insertBefore( ".bugs" );
+	$( "<hr/><h3>Notes:</h3>" ).insertBefore( ".notes" );
+
+	$( "body" ).append( "<button class='ToTop'>⬆  Back to top  ⬆</button>" );
+	  $(".dyncontent").hide();
+	  $x=true;
+	  $(".hide_dyncontent").click(function(){
+			$(".dyncontent").toggle();
+			if($x){
+				$(".hide_dyncontent").html('Hide Inheritance-diagram');}
+			else{
+				$(".hide_dyncontent").html('Show Inheritance-diagram');}
+			$x= !$x;
+	  });
+$(".ToTop").click(function(){
+	  $('#doc-content').scrollTop(0);
+	  return false;
+});
+});
+
+
+/*----END CUSTOM JS Stuff----*/
 
 function convertToId(search)
 {
