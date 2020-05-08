@@ -26,7 +26,7 @@
  function LoadDarkMode(){
 	   var currval = localStorage.getItem("IsaacDocsDarkMode");
 		  if (currval == "On"){
-		 	  $("html").css("filter","invert(1) grayscale(1)");
+		 	  $("html").css("filter","invert(1) saturate(3.5) grayscale(1)");
 		  }else{
 			   $("html").css("filter","");
 		  }
