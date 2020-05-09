@@ -105,7 +105,7 @@ This code creates a mod, that turns tears into dark matter tears (slowing black 
 <pre><code class="language-lua">local mod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (dont change anything here, except the name)
 
 function mod:onTear(tear)
-	local player =Isaac.GetPlayer(0) --get the player entity
+	local player = Isaac.GetPlayer(0) --get the player entity
 	player:AddCoins(1) -- add a coin
 	tear.TearFlags = tear.TearFlags |TearFlags.TEAR_SLOW  -- add slowing effect to the tear
 	tear:ChangeVariant(TearVariant.DARK_MATTER ) -- change appearance of the tear
