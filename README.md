@@ -1,4 +1,5 @@
-This project is tries to make the Isaac modding documentation better.
+This project aims to make the Binding of Isaac modding documentation better by providing additional informations and features.
+
  Process of adding new content to a file:
 1. make sure to add this line of code at the top of the head       `<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />`  
 2. make sure to add this line of code at the bottom of the body     `<!--Lua Codehightlight--><script src="prism.js"></script>`
