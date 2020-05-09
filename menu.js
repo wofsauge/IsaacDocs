@@ -48,7 +48,6 @@ function initMenu(relPath,searchEnabled,serverSide,searchPage,search) {
   $('#main-menu').smartmenus();
 
   /*----DarkMode Stuff----*/
-  $('#main-menu').prepend('<li style="padding: 0 12px;font-size: 18px;    font-weight: bold;    text-shadow: 0 1px 1px rgba(255,255,255,0.9);  color: #283a5d;    line-height: 36px;">BoI: AB+ Lua Docs</li>');
   $('#main-menu').append('<li title="Trigger Dark Mode" style="float:right"><div id="darkmodebtn" style="padding-top:7px;color:#283a5d;font-size:1.5em;cursor:pointer;user-select: none;"><img width="20px" src="customImg/darkMode.png"/></div></li>');
   $('#darkmodebtn').on("click",TriggerDarkMode);	
   /*----DarkMode Stuff----*/

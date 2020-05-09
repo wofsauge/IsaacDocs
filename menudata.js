@@ -22,10 +22,31 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 for the JavaScript code in this file
 */
 var menudata={children:[
-{text:"Main Page",url:"index.html"},
-{text:"Related Pages",url:"pages.html"},
-{text:"Modules",url:"modules.html"},
-{text:"Namespaces",url:"namespaces.html",children:[
+{text:"BoI: AB+ Lua Docs",url:"index.html"},
+{text:"Tutorials",url:"#",children:[
+{text:"Debug Console",url:"debug_console_primer.html"},
+{text:"Debugging using ZeroBrane Studio",url:"debugging.html"},
+{text:"Loading other .lua files",url:"remarks.html"},
+{text:"Writing Shaders",url:"screen_shaders.html"},
+{text:"Render text",url:"special_chars.html"},
+{text:"Add costumes (no LUA)",url:"adding_costumes.html"},
+]},
+{text:"Frequently used",url:"#",children:[
+{text:"Entity",url:"class_entity.html",children:[
+{text:"EntityPlayer",url:"class_entity_player.html"},
+{text:"EntityNPC",url:"class_entity_n_p_c.html"},
+{text:"EntityEffect",url:"class_entity_effect.html"},
+]},
+{text:"Isaac.",url:"namespace_isaac.html"},
+{text:"Game()",url:"class_game.html"},
+{text:"Room()",url:"class_room.html"},
+{text:"Level()",url:"class_level.html"},
+{text:"Mod Callbacks",url:"group__enums.html#ga84d8f7ea5c80b37ad1c55b2a97286eb1"},
+
+]},
+
+//{text:"Modules",url:"modules.html"},
+/*{text:"Namespaces",url:"namespaces.html",children:[
 {text:"Namespace List",url:"namespaces.html"},
 {text:"Namespace Members",url:"namespacemembers.html",children:[
 {text:"All",url:"namespacemembers.html",children:[
@@ -133,4 +154,6 @@ var menudata={children:[
 {text:"v",url:"functions_vars_v.html#index_v"},
 {text:"w",url:"functions_vars_w.html#index_w"},
 {text:"x",url:"functions_vars_x.html#index_x"},
-{text:"y",url:"functions_vars_y.html#index_y"}]}]}]}]}
+{text:"y",url:"functions_vars_y.html#index_y"}]}]}]}
+*/
+]}
