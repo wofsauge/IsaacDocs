@@ -51,5 +51,6 @@ function initMenu(relPath,searchEnabled,serverSide,searchPage,search) {
   $('#main-menu').append('<li title="Trigger Dark Mode" style="float:right"><div id="darkmodebtn" style="padding-top:7px;color:#283a5d;font-size:1.5em;cursor:pointer;user-select: none;"><img width="20px" src="customImg/darkMode.png"/></div></li>');
   $('#darkmodebtn').on("click",TriggerDarkMode);	
   /*----DarkMode Stuff----*/
+
 }
 /* @license-end */
