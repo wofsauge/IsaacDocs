@@ -23,7 +23,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Binding of Isaac - Afterbirth+ Lua Reference/Guide", "index.html", [
+  [ "BoI - Afterbirth+ Lua API - Guide", "index.html", [
   [ "[Tutorial] Debug Console", "debug_console_primer.html", [
       [ "Commands ", "debug_console_primer.html#commands", [
         [ "spawn", "debug_console_primer.html#spawn", null ],

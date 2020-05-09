@@ -1321,8 +1321,8 @@ div.toc li.level4 {
 }
 
 tr.heading h2 {
-        margin-top: 12px;
-        margin-bottom: 4px;
+        margin-top: 5px;
+        margin-bottom: 0px;
 }
 
 /* tooltip related style info */

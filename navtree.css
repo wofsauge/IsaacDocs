@@ -82,12 +82,12 @@ h4, h3{
 }
 
 #nav-tree .children_ul {
-  margin:0px;
+  margin: -3px -5px;
   padding:0px;
 }
 
 #nav-tree .item {
-  margin:0px;
+  margin: -4px 0px;
   padding:0px;
 }
 
