@@ -1,12 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Binding of Isaac - Afterbirth+ Lua Reference/Guide: Remarks</title>
+<title>Binding of Isaac - Afterbirth+ Lua Reference/Guide: Using ZeroBrane Studio to debug your scripts</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -67,7 +66,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('remarks.html','');});
+$(document).ready(function(){initNavTree('tutorial','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -87,56 +86,19 @@ $(document).ready(function(){initNavTree('remarks.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Using additional .lua Files </div>  </div>
+<div class="title">Using ZeroBrane Studio to debug your scripts </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">
-    <p>If you want to load an additional .lua file besides your main.lua file, you can use the "require" function. </p>
-    <p><b>Note:</b> Reloading a mod that uses this method of loading additional files using the command "luamod" will not load the extra files correctly.</p>
-    <h4>Content "secondFile.lua":</h4>
-    <pre><code class="language-lua">x = "Hello world" --define a new global variable x</pre></code>
-    <h4>Content "main.lua":</h4>
-    <pre><code class="language-lua">require("secondFile")
-print(x)</pre></code>
-    <h4>This prints:</h4>
-    <pre><code class="language-lua">"Hello world"</pre></code>
-    
-    
-    <h2>Navigate into folders:</h2>
-    You can navigate into folders, by seperating the path with a "."
-    <h4>Content "folder1/folder2/secondFile.lua":</h4>
-    <pre><code class="language-lua">x = "Hello world" --define a new global variable x</pre></code>
-    <h4>Content "main.lua":</h4>
-    <pre><code class="language-lua">require("folder1.folder2.secondFile")
-print(x)</pre></code>
-    <h4>This prints:</h4>
-    <pre><code class="language-lua">"Hello world"</pre></code>
-    
-    
-    
-    <h2>Load extra files with "luamod"-command consistency</h2>
-    <p>If you want to load additional files the most correct way, you have to intentionally cause an error in the extra file and catch it in the main file. The following code is an example for this method:</p>
-    <h4>Content "secondFile.lua":</h4>
-    <pre><code class="language-lua">x = "Hello world" --define a new global variable x
---end of the file 
-Err:ForceError() --call a nonexistent function to throw an error intentionally
- </pre></code>
-    <h4>Content "main.lua":</h4>
-    <pre><code class="language-lua">local _, err = pcall(require, "filename")--change filename here
---The following code catches errors and handles them nicely.
-err = tostring(err)
-if not string.match(err, "attempt to call a nil value %(method 'ForceError'%)") then
-    if string.match(err, "true") then
-        err = "Error: require passed in config"
-    end
-    Isaac.DebugString(err)
-    print(err)
-end
--- end of errorhandling
-print(x)</pre></code>
-    <h4>This prints:</h4>
-    <pre><code class="language-lua">"Hello world"</pre></code>
-
+<div class="textblock"><p>Debuggers are very valuable tools to diagnose problems with your code when you don't know exactly what your program is doing! You can get by with simple debug print statements, but some things are easier to track down with a debugger.</p>
+<ol type="1">
+<li>Download and install ZeroBrane Studio for your platform of choice.</li>
+<li>Add <code>--luadebug</code> to your launch options for <a class="el" href="namespace_isaac.html">Isaac</a> on Steam. Properties &gt; General &gt; Set Launch Options. The debugger will not work without this command line option.</li>
+<li>In Zerobrane, Open your Lua file. Go to the Project menu &gt; Project Directory &gt; Set from Current File. Project &gt; Start debugger server. You may get a popup to allow ZeroBrane to have network access.</li>
+<li>Add this line at the top of your main.lua file: <code>StartDebug()</code></li>
+<li>Start the game. The game will freeze up when the debugger triggers an automatic breakpoint.</li>
+</ol>
+<p>Now you can hit the green arrow button to continue execution. Check the ZeroBrane documentation if you need help with its debugging features.</p>
+<p>We strongly advise disabling <code>--luadebug</code> after you're done if you don't need access to the debug features! </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
@@ -147,6 +109,5 @@ print(x)</pre></code>
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
-<!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>

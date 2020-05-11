@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Binding of Isaac - Afterbirth+ Lua Reference/Guide: Using ZeroBrane Studio to debug your scripts</title>
+<title>Binding of Isaac - Afterbirth+ Lua Reference/Guide: special chars</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -66,7 +67,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('debugging.html','');});
+$(document).ready(function(){initNavTree('tutorial','');});
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -86,19 +87,60 @@ $(document).ready(function(){initNavTree('debugging.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Using ZeroBrane Studio to debug your scripts </div>  </div>
+<div class="title">[Tutorial] Render text</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Debuggers are very valuable tools to diagnose problems with your code when you don't know exactly what your program is doing! You can get by with simple debug print statements, but some things are easier to track down with a debugger.</p>
-<ol type="1">
-<li>Download and install ZeroBrane Studio for your platform of choice.</li>
-<li>Add <code>--luadebug</code> to your launch options for <a class="el" href="namespace_isaac.html">Isaac</a> on Steam. Properties &gt; General &gt; Set Launch Options. The debugger will not work without this command line option.</li>
-<li>In Zerobrane, Open your Lua file. Go to the Project menu &gt; Project Directory &gt; Set from Current File. Project &gt; Start debugger server. You may get a popup to allow ZeroBrane to have network access.</li>
-<li>Add this line at the top of your main.lua file: <code>StartDebug()</code></li>
-<li>Start the game. The game will freeze up when the debugger triggers an automatic breakpoint.</li>
-</ol>
-<p>Now you can hit the green arrow button to continue execution. Check the ZeroBrane documentation if you need help with its debugging features.</p>
-<p>We strongly advise disabling <code>--luadebug</code> after you're done if you don't need access to the debug features! </p>
+<div class="textblock">
+<!--start Custom comment -->
+    <h2>Basics of rendering a text</h2>
+<p>First we need to have a look at the basic process of writing on the screen. here is a sample code:</p>
+<pre><code class="language-lua">local testmod= RegisterMod( "testmod" ,1 );
+
+local function onRender(t)
+    Isaac.RenderText("Sample text", 50, 30, 1, 1, 1, 255)
+end
+
+testmod:AddCallback(ModCallbacks.MC_POST_RENDER, onRender)</code></pre>
+<b>Result:</b><br> 
+    <img src="customImg/tutorial_special_chars/b1.png" alt=""/><br>
+<br>
+The game uses the font-file "terminus.fnt" in order to render and display this text. this cant be changed. Luckily for us, this file contains "sprites" for all normal ASCII characters that exist out there (256 to be precise).
+    <h2>Rendering text with a different font</h2>
+We can render any kind of text with a different font as well. This can be done by using the "Font()" class and its functions.
+<div class="example_code">
+<pre><code class="language-lua">local f = Font() -- init font object
+f:Load("font/droid.fnt") -- load a font into the font object
+f:DrawString("droid",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+</code></pre>	
+</div>
+    <h3>All possible Fonts that can be drawn:</h3>
+    <img src="customImg/font-types.png" alt="" width="500px" />
+    
+<h2>Render Special Characters</h2>
+The game allows us to write anything into the "displayed text" argument that is part of the ASCII standard for characters. For characters a-z, 0-9 and ,.#+;:_'*~° this works without any problems and without using any kind of "hack".
+Now if we just strait up try to type in ' ä ' or ' ß ' to let it render as text, it will not look as intended.<br>
+<img src="customImg/tutorial_special_chars/b2.png" alt="" width="700px"/>
+<br>
+In order to fix this problem we have to use the "raw" version of said characters.
+Example:
+
+<pre><code class="language-lua">\197   </code></pre>
+prints:
+
+<pre><code class="language-lua">Ä</code></pre>
+So in order to print special characters, just replace them in the code like this:
+
+<pre><code class="language-lua">Isaac.RenderText("S\228mple text", 50, 30, 1, 1, 1, 255)</code></pre>
+prints:
+<pre><code class="language-lua">Sämple text</code></pre>
+<h2>List of all supported characters and their counterpart</h2> 
+<img src="customImg/tutorial_special_chars/b3.png" alt="" width="800px"/>
+<br><br>
+<div class="notes">
+The Developer _Kilburn mentioned that fonts could be created using this Tool: <a href:"https://www.angelcode.com/products/bmfont/">https://www.angelcode.com/products/bmfont</a>
+</div>
+<br><br><br>
+<!--End Custom comment -->
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
@@ -109,5 +151,6 @@ $(document).ready(function(){initNavTree('debugging.html','');});
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.14 </li>
   </ul>
 </div>
+<!--Lua Codehightlight--><script src="prism.js"></script>
 </body>
 </html>

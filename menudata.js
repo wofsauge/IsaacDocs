@@ -24,12 +24,12 @@ for the JavaScript code in this file
 var menudata={children:[
 {text:"BoI: AB+ Lua Docs",url:"index.html"},
 {text:"Tutorials",url:"#",children:[
-{text:"Debug Console",url:"debug_console_primer.html"},
-{text:"Debugging using ZeroBrane Studio",url:"debugging.html"},
-{text:"Loading other .lua files",url:"remarks.html"},
-{text:"Writing Shaders",url:"screen_shaders.html"},
-{text:"Render text",url:"special_chars.html"},
-{text:"Add costumes (no LUA)",url:"adding_costumes.html"},
+{text:"Debug Console",url:"tutorial_debug_console.html"},
+{text:"Debugging using ZeroBrane Studio",url:"tutorial_debugging.html"},
+{text:"Loading other .lua files",url:"tutorial_lua_import.html"},
+{text:"Writing Shaders",url:"tutorial_screen_shaders.html"},
+{text:"Render text",url:"tutorial_special_chars.html"},
+{text:"Add costumes (no LUA)",url:"tutorial_adding_costumes.html"},
 ]},
 {text:"Frequently used",url:"#",children:[
 {text:"Entity",url:"class_entity.html",children:[
