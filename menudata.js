@@ -25,6 +25,7 @@ var menudata={children:[
 {text:"BoI: AB+ Lua Docs",url:"index.html"},
 {text:"Tutorials",url:"#",children:[
 {text:"Debug Console",url:"tutorial_debug_console.html"},
+{text:"XML Files",url:"tutorial_xml_files.html"},
 {text:"Debugging using ZeroBrane Studio",url:"tutorial_debugging.html"},
 {text:"Loading other .lua files",url:"tutorial_lua_import.html"},
 {text:"Writing Shaders",url:"tutorial_screen_shaders.html"},
@@ -44,48 +45,6 @@ var menudata={children:[
 {text:"Mod Callbacks",url:"group__enums.html#ga84d8f7ea5c80b37ad1c55b2a97286eb1"},
 
 ]},
-
-
-/*
-  [ "[Tutorial] Debug Console", "debug_console_primer.html", [
-      [ "Commands ", "debug_console_primer.html#commands", [
-        [ "spawn", "debug_console_primer.html#spawn", null ],
-        [ "goto", "debug_console_primer.html#goto", null ],
-        [ "stage", "debug_console_primer.html#stage", null ],
-        [ "gridspawn", "debug_console_primer.html#gridspawn", null ],
-        [ "debug", "debug_console_primer.html#debug", null ],
-        [ "giveitem", "debug_console_primer.html#giveitem", [
-          [ "Item and trinket syntax", "debug_console_primer.html#giveitem_item", null ],
-          [ "Pill syntax", "debug_console_primer.html#giveitem_pill", null ],
-          [ "Card syntax", "debug_console_primer.html#giveitem_card", null ]
-        ] ],
-        [ "remove", "debug_console_primer.html#remove", null ],
-        [ "costumetest", "debug_console_primer.html#costumetest", null ],
-        [ "restart", "debug_console_primer.html#restart", null ],
-        [ "repeat", "debug_console_primer.html#repeat", null ],
-        [ "clearseeds", "debug_console_primer.html#clearseeds", null ],
-        [ "seed", "debug_console_primer.html#seed", null ],
-        [ "challenge", "debug_console_primer.html#challenge", null ],
-        [ "combo", "debug_console_primer.html#combo", null ],
-        [ "macro", "debug_console_primer.html#macro", null ],
-        [ "curse", "debug_console_primer.html#curse", null ],
-        [ "reseed", "debug_console_primer.html#reseed", null ],
-        [ "copy", "debug_console_primer.html#copy", null ],
-        [ "clear", "debug_console_primer.html#clear", null ],
-        [ "lua", "debug_console_primer.html#lua", null ],
-        [ "luarun", "debug_console_primer.html#luarun", null ],
-        [ "luamod", "debug_console_primer.html#luamod", null ],
-        [ "luamem", "debug_console_primer.html#luamem", null ]
-      ] ]
-    ] ],
-    [ "[Tutorial] Debugging using ZeroBrane Studio", "debugging.html", null ],
-    [ "[Tutorial] Loading other .lua files", "remarks.html", null ],
-    [ "[Tutorial] Writing shaders", "screen_shaders.html", null ],
-    [ "[Tutorial] Render text", "special_chars.html", null ],
-    [ "[Tutorial] Add costumes (no LUA)", "adding_costumes.html", null ],
-
-*/
-
 
 
 //{text:"Modules",url:"modules.html"},

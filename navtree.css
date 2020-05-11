@@ -19,9 +19,66 @@ pre {
 }
 h4, h3{
 	margin: 15px 0px 4px 0px;
-	
+}
+.badge{
+	display: inline-block;
+	color: #fff;
+    padding: 0.7em 0.5em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: super;
+    border-radius: .25rem;
+}
+.cf-green{
+    background-color: #28a745;
+}
+.cf-gray{
+    background-color: #6c757d;
+}
+.cf-red{
+    background-color: #dc3545;
+}
+.cf-cyan{
+    background-color: #17a2b8;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -200%;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 /*END CUSTOM EDIT*/
 
 #nav-tree .children_ul {
