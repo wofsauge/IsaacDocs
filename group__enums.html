@@ -4017,7 +4017,7 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3a948aded3afdbb52f73c3a1c4be46e458"></a>CARD_DICE_SHARD&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3a157ee69830f35db0908dca1e51daa5ba"></a>CARD_EMERGENCY_CONTACT&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3aabbc2a660cf34168295e89460a3b236e"></a>CARD_HOLY&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3aa1bf86f03950c458230cce2ad9b9c732"></a>CARD_HUGE_GROWTH&#160;</td><td class="fielddoc"><p>Booster Pack #1 </p>
+<tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3aa1bf86f03950c458230cce2ad9b9c732"></a>CARD_HUGE_GROWTH&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3a0d6c412d9d207bcba4863b5e3b018923"></a>CARD_ANCIENT_RECALL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga98a2b239923441ea943de74af3208aa3adb96df66331ae3e11c03e9e3e3123579"></a>CARD_ERA_WALK&#160;</td><td class="fielddoc"></td></tr>
@@ -6219,6 +6219,7 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_G
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1abefa2eee8779a30402d407022a2fe961"></a>MC_FAMILIAR_INIT&#160;</td><td class="fielddoc"><p>Callback is a method that takes (Entity_Familiar). Called just after a familiar is initialized. </p><p><b>Optional:</b> You can specify a Familiar Variant so it is only called for a specific Familiar. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a6fb72b64fb1aeb55804061277fff6cc4"></a>MC_EVALUATE_CACHE&#160;</td><td class="fielddoc"><p>Callback is a method that takes (<a class="el" href="class_entity_player.html">EntityPlayer</a>, CacheFlag). Called one or more times when a player's stats must be re-evaluated, such as after picking up an item, using certain pills, manually calling EvaluateItems on <a class="el" href="class_entity_player.html">EntityPlayer</a>. </p><p><b>Hint: </b>Use this to let custom items change the player's stats, familiars, flying, weapons, etc. Items tell the game which stats they affect using cache values in items.xml. Then the callback should respond to the CacheFlag by setting the corresponding player stat. Other items' stat modifiers, multipliers, etc are applied before this callback is called. </p>
+    <p><b>Optional:</b> You can specify a CacheFlag so it is only called when a certain CacheFlag is triggered. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a93c08c26fb4f23c91d47a5938f1e6f29"></a>MC_POST_PLAYER_INIT&#160;</td><td class="fielddoc"><p>Callback is a method that takes (<a class="el" href="class_entity_player.html">EntityPlayer</a>). Called after the player is initialized (Usually after starting the game). </p>
 </td></tr>
