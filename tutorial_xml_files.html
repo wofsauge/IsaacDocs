@@ -159,9 +159,10 @@ $(document).ready(function(){initNavTree('tutorial','');});
           
 <!---------------------------------->
     <h2 style="display: inline-block;"><a class="anchor" id="babies"></a>babies.xml </h2>
-    <div class="badge cf-gray tooltip">Resource-Folder (not tested)<span class="tooltiptext">Using this file in a resource folder of a mod is not tested yet.</span></div>
-    <div class="badge cf-gray tooltip">Content-Folder (not tested)<span class="tooltiptext">Using this file in a content folder of a mod is not tested yet.</span></div>
+    <div class="badge cf-red tooltip">Resource-Folder<span class="tooltiptext">Using this file in a resource folder and modifying it can cause crashes.</span></div>
+    <div class="badge cf-gray tooltip">Content-Folder (not confirmed)<span class="tooltiptext">Using this file in a content folder of a mod is not tested yet.</span></div>
     <div class="textblock"><p>This file is used to store informations about coop-babies.</p>
+    <div class="textblock"><p>Placing this file in a resource folder of a mod and removing entries causes crashes.</p>
 
     </div>
     
@@ -193,78 +194,102 @@ $(document).ready(function(){initNavTree('tutorial','');});
           
 <!---------------------------------->
     <h2 style="display: inline-block;"><a class="anchor" id="challenges"></a>challenges.xml </h2>
-    <div class="badge cf-gray tooltip">Resource-Folder (not tested)<span class="tooltiptext">Using this file in a resource folder of a mod is not tested yet.</span></div>
-    <div class="badge cf-gray tooltip">Content-Folder (not tested)<span class="tooltiptext">Using this file in a content folder of a mod is not tested yet.</span></div>
-    <div class="textblock"><p></p>
-<ul>
-<li>name = challenge name</li>
+        <div class="badge cf-green tooltip">Resource-Folder<span class="tooltiptext">Using this file in a resource folder of a mod will override the original.</span></div>
+    <div class="badge cf-green tooltip">Content-Folder<span class="tooltiptext">Using this file in a content folder of a mod adds new challenges.</span></div>
 
-<li>id = challenge id</li>
-
-<li>startingitems = comma separated (nospace) item ids that will be added at the start</li>
-
-<li>startingtrinkets = comma separated (nospace) trinket ids that will be added at the start (max 2)</li>
-
-<li>startingpill = effect id of the starting pill (-1 for no pill | default)</li>
-
-<li>startingcard = card id of the starting card (can include runes) (-1 for random tarot card, 0 for no card | default)</li>
-
-<li>playertype = player type id for player type to start with (0 for Isaac | default)</li>
-
-<li>endstage = the last stage of the challenge (use eLevelStage ids)</li>
-
-<li>roomfilter = list of room ids to not be generated in challenge [Not all room ids can be used] (NORMAL - 1, Shop - 2, Error - 3, Treasure - 4, Boss - 5, Miniboss - 6, Secret - 7, SuperSecret - 8, Arcade - 9, Curse - 10, Challenge - 11, Library - 12, Sacrifice - 13, Devil - 14, Angel - 15, Dungeon - 16, Bossrush - 17, Isaacs - 18, Barren - 19, Chest - 20, Dice - 21, BMarket - 22).</li>
-
-<li>cursefilter = bitmask for curses to be removed (Darkness = 1, Labyrinth = 2, Lost = 4, Unknown = 8, Cursed = 16)</li>
-
-<li>getcurse = bitmask for curses to be forced (Same id's as curse filter)</li>
-
-<li>achievements = list of achievement ids that are required to be able to play the challenge</li>
-
-<li>altpath = alternative floor for light/dark path (isaac/satan)</li>
-
-<li>canshoot = determines if player can shoot (true | default)</li>
-
-<li>redhp = add red hp</li>
-
-<li>maxhp = add hp container</li>
-
-<li>soulhp = add soul hp</li>
-
-<li>blackhp = add black hp</li>
-
-<li>coins = add coins</li>
-
-<li>maxdamage = maximal damage or more (clamps at min 100)</li>
-
-<li>adddamage = + damage up</li>
-
-<li>minfirerate = minimal fire rate or more</li>
-
-<li>minshotspeed = minimal shot speed or less</li>
-
-<li>bigrange = big range</li>
-
-<li>difficulty = game difficulty (0 - normal | default, 1 - hard | 2 - Greed | 3 - Greedier) Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy</li>
-
-<li>megasatan = last boss is megasatan</li>
-</ul>
+    <div class="textblock"><p>Used to store all challenges and some of their attributes.</p>
+        <p>Placing this file in a resource folder of a mod will override the original.</p>
+        <p>Placing this file in a content folder of a mod will add a new <b>Custom challenge</b>.</p>
+             <table class="fieldtable">
+<thead>
+  <tr>
+    <th><b>Variable-Name</b></th>
+    <th><b>Possible Values</b></th>
+    <th><b>Description</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr> <td>id</td><td>int</td><td>Ingame-Id of the Challenge (Not needed for Content Folder)</td></tr>
+  <tr> <td>name</td><td>string</td><td>Name of the Challenge</td></tr>
+  <tr> <td>startingitems</td><td>string list</td><td>Comma separated (nospace) item ids that will be added at the start.</td></tr>
+  <tr> <td>startingtrinkets</td><td>string list</td><td>comma separated (nospace) trinket ids that will be added at the start (max 2)</td></tr>
+  <tr> <td>startingpill</td><td>string list</td><td>startingpill = effect id of the starting pill (-1 for no pill | default))</td></tr>
+  <tr> <td>playertype</td><td>string</td><td>player type id  (0 for Isaac | default). Custom characters cant be defined this way! Use LUA code instead.</td></tr>
+  <tr> <td>endstage</td><td>string</td><td>the last stage of the challenge (use <a href="group__enums.html#ga94b82cf988747085e77be386560efc68">LevelStage</a> internal ids) </td></tr>
+  <tr> <td>roomfilter</td><td>string list</td><td>list of room ids to not be generated in challenge [Not all room ids can be used] (NORMAL - 1, Shop - 2, Error - 3, Treasure - 4, Boss - 5, Miniboss - 6, Secret - 7, SuperSecret - 8, Arcade - 9, Curse - 10, Challenge - 11, Library - 12, Sacrifice - 13, Devil - 14, Angel - 15, Dungeon - 16, Bossrush - 17, Isaacs - 18, Barren - 19, Chest - 20, Dice - 21, BMarket - 22).</td></tr>
+  <tr> <td>cursefilter</td><td>string</td><td>bitmask for curses to be removed (Darkness = 1, Labyrinth = 2, Lost = 4, Unknown = 8, Cursed = 16)</td></tr>
+  <tr> <td>getcurse</td><td>string</td><td>bitmask for curses to be forced (Same id's as curse filter) </td></tr>
+  <tr> <td>achievements</td><td>string list</td><td>list of achievement ids that are required to be able to play the challenge </td></tr>
+  <tr> <td>altpath</td><td>bool</td><td>alternative floor for light/dark path (isaac/satan) </td></tr>
+  <tr> <td>canshoot</td><td>bool</td><td>determines if player can shoot (true | default) </td></tr>
+  <tr> <td>redhp</td><td>int</td><td>Add red hp to the base of the choosen character. 2 = 1 Heart. Negative numbers possible</td></tr>
+  <tr> <td>maxhp</td><td>int</td><td>Add red hp containers to the base of the choosen character. 2 = 1 Heartcontainer. Negative numbers possible </td></tr>
+  <tr> <td>soulhp</td><td>int</td><td>Add soul hp containers to the base of the choosen character. 2 = 1 Heartcontainer</td></tr>
+  <tr> <td>blackhp</td><td>int</td><td>Add black hp containers to the base of the choosen character. 2 = 1 Heartcontainer</td></tr>
+  <tr> <td>coins</td><td>int</td><td>Add starting coins</td></tr>
+  <tr> <td>maxdamage</td><td>bool</td><td>Max. damage actived (clamps at min 100) or deactivated</td></tr>
+  <tr> <td>adddamage</td><td>float</td><td>+ damage up</td></tr>
+  <tr> <td>minfirerate</td><td>float</td><td>minimal fire rate or more</td></tr>
+  <tr> <td>minshotspeed</td><td>bool</td><td>minimal shot speed actived or deactivated</td></tr>
+  <tr> <td>bigrange</td><td>bool</td><td>Enable high starting range value</td></tr>
+  <tr> <td>difficulty</td><td>bool</td><td>game difficulty (0 - normal | default, 1 - hard | 2 - Greed | 3 - Greedier) Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy</td></tr>
+  <tr> <td>megasatan</td><td>bool</td><td>last boss is megasatan. Adds the Key to the player.</td></tr>
+  
+</tbody>
+</table>
     </div>    
           
 <!---------------------------------->
     <h2 style="display: inline-block;"><a class="anchor" id="costumes2"></a>costumes2.xml </h2>
-    <div class="badge cf-gray tooltip">Resource-Folder (not tested)<span class="tooltiptext">Using this file in a resource folder of a mod is not tested yet.</span></div>
-    <div class="badge cf-gray tooltip">Content-Folder (not tested)<span class="tooltiptext">Using this file in a content folder of a mod is not tested yet.</span></div>
-    <div class="textblock"><p></p>
-
+    <div class="badge cf-green tooltip">Resource-Folder<span class="tooltiptext">Using this file in a resource folder of a mod will override the original.</span></div>
+    <div class="badge cf-green tooltip">Content-Folder<span class="tooltiptext">Using this file in a content folder of a mod adds new Costumes.</span></div>
+<div class="textblock"><p>Defines Costumes informations.</p>
+        <p>Placing this file in a resource folder of a mod will override the original.</p>
+        <p>Placing this file in a content folder of a mod will add a new <b>Costumes</b>. See the Tutorial on <a href ="tutorial_adding_costumes.html">"Adding Costumes"</a> for more informations.</p>
+     <table class="fieldtable">
+<thead>
+  <tr>
+    <th><b>Variable-Name</b></th>
+    <th><b>Possible Values</b></th>
+    <th><b>Description</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr> <td>id</td><td>int</td><td>Ingame-Id of the Costume. Will be overridden by the game when file is in content folder.</td></tr>
+  <tr> <td>anm2path</td><td>string</td><td>Path to the .anm2 file</td></tr>
+  <tr> <td>type</td><td>string</td><td>Type of the costume. Available: none | passive | active | familiar | trinket</td></tr>
+  <tr> <td>priority</td><td>int</td><td>Priority of the costume. higher number means higher priority</td></tr>
+  <tr> <td>overwriteColor</td><td>bool</td><td>Define if a costume overrides the body color of the character (default: false)</td></tr>
+  <tr> <td>isFlying</td><td>bool</td><td>Define if a costume displays a flying character (default: false)</td></tr>
+  <tr> <td>skinColor</td><td>int</td><td>Define what skincolor that costume has. (default: 0)</td></tr>
+  <tr> <td>hasSkinAlt</td><td>bool</td><td>Define if a costume has alternative versions for all other the skin colors (default: false)</td></tr>
+  <tr> <td>hasOverlay</td><td>bool</td><td>Define if a costume has an overlayeffect (default: false)</td></tr>
+  
+</tbody>
+</table>
     </div>    
           
 <!---------------------------------->
     <h2 style="display: inline-block;"><a class="anchor" id="curses"></a>curses.xml </h2>
-    <div class="badge cf-gray tooltip">Resource-Folder (not tested)<span class="tooltiptext">Using this file in a resource folder of a mod is not tested yet.</span></div>
-    <div class="badge cf-gray tooltip">Content-Folder (not tested)<span class="tooltiptext">Using this file in a content folder of a mod is not tested yet.</span></div>
-    <div class="textblock"><p></p>
-
+    <div class="badge cf-green tooltip">Resource-Folder<span class="tooltiptext">Using this file in a resource folder of a mod renames curses.</span></div>
+    <div class="badge cf-green tooltip">Content-Folder<span class="tooltiptext">Using this file in a content folder of a mod adds new curses.</span></div>
+    <div class="textblock"><p>Stores the names and ids of the available curses.</p>
+        <p>Placing this file inside a mods resources folder will rename curses.</p>
+        <p>Placing this file in a content folder of a mod will add a new <b>Curse</b>. The new curse must be applied using lua, since it cant be encountered normally!</a>
+     <table class="fieldtable">
+<thead>
+  <tr>
+    <th><b>Variable-Name</b></th>
+    <th><b>Possible Values</b></th>
+    <th><b>Description</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr> <td>id</td><td>int</td><td>Ingame-Id of the Curse. Will be overridden by the game when file is in content folder.</td></tr>
+  <tr> <td>name</td><td>string</td><td>Name of the Curse</td></tr>
+  
+</tbody>
+</table>
     </div>    
           
 <!---------------------------------->
@@ -341,10 +366,24 @@ $(document).ready(function(){initNavTree('tutorial','');});
           
 <!---------------------------------->
     <h2 style="display: inline-block;"><a class="anchor" id="nightmares"></a>nightmares.xml </h2>
-    <div class="badge cf-gray tooltip">Resource-Folder (not tested)<span class="tooltiptext">Using this file in a resource folder of a mod is not tested yet.</span></div>
+    <div class="badge cf-green tooltip">Resource-Folder<span class="tooltiptext">Using this file in a resource folder of a mod will override the original.</span></div>
     <div class="badge cf-green tooltip">Content-Folder<span class="tooltiptext">Using this file in a content folder of a mod adds new nightmares.</span></div>
-    <div class="textblock"><p></p>
-
+    <div class="textblock"><p>Used to store all animation paths to the nightmares (dream sequence between stage transitions)</p>
+        <p>Placing this file in a resource folder of a mod will override the original.</p>
+        <p>Placing this file in a content folder of a mod will add new nightmares.</p>
+     <table class="fieldtable">
+<thead>
+  <tr>
+    <th><b>Variable-Name</b></th>
+    <th><b>Possible Values</b></th>
+    <th><b>Description</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr> <td>anm2</td><td>string</td><td>Path to the .anm2 file of the nightmare</td></tr>
+  
+</tbody>
+</table>
     </div>    
           
 <!---------------------------------->
