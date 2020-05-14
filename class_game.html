@@ -1049,7 +1049,19 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Returns the number of frames the gameplay is actively running. Pauses are therefore not included!</p>
+    <p>1 second equals 30 frames.</p>
+<div class="example_code">
+This code returns hours, minutes, seconds, and milliseconds of the game running actively:
+<pre><code class="language-lua">local curTime = Game():GetFrameCount()
+local msecs= curTime%30 * (10/3) -- turns the millisecond value range from [0 to 30] to [0 to 100]
+local secs= math.floor(curTime/30)%60
+local mins= math.floor(curTime/30/60)%60
+local hours= math.floor(curTime/30/60/60)%60
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a16b644ed2ad71d97f3f9ac43ab50992f"></a>
