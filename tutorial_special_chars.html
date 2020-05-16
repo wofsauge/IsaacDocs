@@ -92,6 +92,30 @@ $(document).ready(function(){initNavTree('tutorial','');});
 <div class="contents">
 <div class="textblock">
 <!--start Custom comment -->
+    <h2>Fonts used by the game</h2>
+    <p>The Following fonts are used by the game and can be used with the "Font()" class:</p>
+         <table class="fieldtable">
+<thead>
+  <tr>
+    <th><b>Font Name</b></th>
+    <th><b>Ingame Name/s</b></th>
+    <th><b>Ingame Example</b></th>
+    <th><b>Ingame Usage</b></th>
+    <th><b>Link to font</b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr> <td>Droid Sans</td><td>droid</td><td><a href="customImg/tutorial_special_chars/example_droid.png">Example Droid</a></td><td>(Not used ingame)</td><td><a href="customData/droid-sans.zip">Droid Sans</a></td></tr>
+  <tr> <td>PF Tempesta Seven (Condensed)</td><td>pftempestasevencondensed</td><td><a href="customImg/tutorial_special_chars/example_pftempestasevencondensed.png">Example PF Tempesta Seven</a></td><td>HUD Elements like coin/key counters</td><td><a href="https://www.dafont.com/pf-tempesta-seven.font">PF Tempesta Seven</a></td></tr>
+  <tr> <td>Team Meat Font</td><td><p>teammeatfont10</p><p>teammeatfont12</p><p>teammeatfont16</p><p>teammeatfont16bold</p></td><td><p><a href="customImg/tutorial_special_chars/example_teammeat10.png">Example teammeatfont10</a></p><p><a href="customImg/tutorial_special_chars/example_teammeat12.png">Example teammeatfont12</a></p><p><a href="customImg/tutorial_special_chars/example_teammeat16.png">Example teammeatfont16</a></p><p><a href="customImg/tutorial_special_chars/example_teammeat16bold.png">Example teammeatfont16bold</a></p></td><td><p>Main Menu Elements | Pop-Ups</p><p>Timer / Score Elements</p></td><td><a href="customData/team-meat-font_1.2.zip">Team Meat Font without Bold</a></td></tr>
+  <tr> <td>Terminus</td><td><p>terminus</p><p>terminus8</p></td><td><p><a href="customImg/tutorial_special_chars/example_terminus.png">Example Terminus</a></p><p><a href="customImg/tutorial_special_chars/example_terminus8.png">Example Terminus8</a></p></td><td>Debug Console / Isaac.RenderText()</td><td><a href="http://terminus-font.sourceforge.net/">Terminus</a></td></tr>
+  <tr> <td>Upheaval</td><td><p>upheaval</p></td><td><a href="customImg/tutorial_special_chars/example_upheaval.png">Example Upheaval</a></td><td>Streak text</td><td><a href="https://www.dafont.com/upheaval.font">Upheaval</a></td></tr>
+  <tr> <td>mplus (Japanese)</td><td><p>mplus_10r</p><p>mplus_12b</p></td><td><p><a href="customImg/tutorial_special_chars/example_mplus10r.png">Example mplus_10r</a></p><p><a href="customImg/tutorial_special_chars/example_mplus12b.png">Example mplus_12b</a></p></td><td><p>Replacement for all fonts aboth for Japanese translation.</p><p> 10r is pf "Tempesta seven" / "Team Meat" replacement</p><p> 12b is "Upheaval" replacement</p></td><td><a href="https://mplus-fonts.osdn.jp/">M+ Fonts</a></td></tr>
+  <tr> <td>kr Font (Korean)</td><td><p>kr_font12</p><p>kr_font14</p></td><td><p><a href="customImg/tutorial_special_chars/example_krfont12.png">Example kr_font12</a></p><p><a href="customImg/tutorial_special_chars/example_krfont14.png">Example kr_font14</a></p></td><td>TBD</td><td>No source found right now</td></tr>
+  <tr> <td>Team Meat Font (Korean)</td><td><p>kr_meatfont14</p></td><td><a href="customImg/tutorial_special_chars/example_krmeatfont14.png">Example kr_meatfont14</a></td><td>TBD</td><td>- Not available -</td></tr>
+  
+</tbody>
+</table>
     <h2>Basics of rendering a text</h2>
 <p>First we need to have a look at the basic process of writing on the screen. here is a sample code:</p>
 <pre><code class="language-lua">local testmod= RegisterMod( "testmod" ,1 );
