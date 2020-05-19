@@ -137,6 +137,60 @@ print(x)</pre></code>
     <h4>This prints:</h4>
     <pre><code class="language-lua">"Hello world"</pre></code>
 
+    <h2>Using Sockets and other general lua-modules</h2>
+    
+    <p>The following functions/objects are available from within the lua-api:</p>
+         <table class="fieldtable">
+<thead>
+  <tr>
+    <th><b>Always Available</b></th>
+    <th><b>Only available with <code>--luadebug</code></b></th>
+  </tr>
+</thead>
+<tbody>
+  <tr><td>json (with <code>require("json")</code>)</td><td>socket (with <code>require("socket")</code>)</td></tr>
+  <tr><td>assert</td>   <td>debug</td></tr>
+  <tr><td>collectgarbage</td><td>io</td></tr>
+  <tr><td>coroutine</td><td>os</td></tr>
+  <tr><td>dofile</td><td>package</td></tr>
+  <tr><td>error</td><td>require <b style="color:green">(not modified*)</b></td></tr>
+  <tr><td>getmetatable</td><td></td></tr>
+  <tr><td>ipairs</td><td></td></tr>
+  <tr><td>load</td><td></td></tr>
+  <tr><td>loadfile</td><td></td></tr>
+  <tr><td>math</td><td></td></tr>
+  <tr><td>next</td><td></td></tr>
+  <tr><td>pairs</td><td></td></tr>
+  <tr><td>pcall</td><td></td></tr>
+  <tr><td>print</td><td></td></tr>
+  <tr><td>rawequal</td><td></td></tr>
+  <tr><td>rawget</td><td></td></tr>
+  <tr><td>rawlen</td><td></td></tr>
+  <tr><td>rawset</td><td></td></tr>
+  <tr><td>require <b style="color:red">(modified*)</b></td><td></td></tr>
+  <tr><td>select</td><td></td></tr>
+  <tr><td>setmetatable</td><td></td></tr>
+  <tr><td>string</td><td></td></tr>
+  <tr><td>table</td><td></td></tr>
+  <tr><td>tonumber</td><td></td></tr>
+  <tr><td>tostring</td><td></td></tr>
+  <tr><td>type</td><td></td></tr>
+  <tr><td>utf8</td><td></td></tr>
+  <tr><td>xpcall</td><td></td></tr>
+</tbody>
+</table>
+    <h3>--luadebug</h3>
+    <p><code>--luadebug</code> is an argument that can be defined as a launchparameter of the game. It enables additional and potential harmful features of the lua interpreter. To enable it, navigate in steam to "Library ->  Right click on Isaac -> Preferences -> General -> launchoptions" and then write <code>--luadebug</code> inside the textfield.</p>
+    <h4>What it does</h4>
+    <p>The flag enables the packages listed on the right side of the table aboth and propably enables the original require function to be called instead of the altered version, which transforms the filepath into a path ending with ".lua".</p>
+    <h4>Networking and socket</h4>
+    <p>To enable network and socket features, the <code>--luadebug</code> needs to be set. otherwise, the module cant be loaded.</p>
+    <h4>Possible problems using --luadebug</h4>
+    <p>In general, <code>--luadebug</code> enables all features of the lua language, including extremely harmful features like "os". With that, it is possible to open, write or even delete any file on the system even if it is not related to the game itself.</p>
+    <h2>The game's "main.lua" file</h2>
+    <p>Inside the "scripts" folder of the game, a unique "main.lua" file can be found which acts independently from the rest of the other mods.</p>
+    <p>The file will always the loaded and executed even if the modding api is turned off (at least one mod activated). This allows us to execute lua code even in scenarios its normally not possible, like in daily runs.</p>
+    <p>Nice to know: if you use "ModData" inside this "main.lua" file, the "saveX.dat" files get placed next to this file inside the games resources/scripts folder.</p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
