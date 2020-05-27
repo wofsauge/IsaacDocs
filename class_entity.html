@@ -1811,7 +1811,18 @@ end</code></pre>
       </table>
 </div><div class="memdoc">
 <!--start Custom comment -->
-<p>Get/Set the z value of the entity.</p>
+<p>Get/Set the depth-offset of the entity. This value is added to the Y Position of the entity, which is then used to determine the rendering order of each entity. Default value is 0 for all entities.</p>
+<div class="example_code">
+This code explains how this variable works.
+<pre><code class="language-lua">entity1.Position.Y -- => 50
+entity2.Position.Y -- => 45
+-- Entity1 is rendered in front of Entity2
+
+entity1.DepthOffset = -10
+-- new Entity1 renderYPosition => 40
+-- Entity2 is rendered in front of Entity1
+</code></pre>	
+</div>
 <!--End Custom comment -->
 </div>
 </div>
@@ -2026,7 +2037,11 @@ end</code></pre>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<div class="bugs">
+This variable doesnt seem to do anything useful. Use <a class="el" href="#a3318cf0702fc14e41bf5e89523e81aca">DepthOffset</a> instead.
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a8196d447e9c047fa4c92627ac4b030f4"></a>
