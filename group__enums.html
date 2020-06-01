@@ -6083,28 +6083,33 @@ Enumerations</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+    <!--start Custom comment -->
+<div class="notes">
+<p>This is only used to determine the general Level of the stage. To know which exact Stage you are on (e.g. Basement, Cellar or Burning Basement), use <a class="el" href="group__enums.html#gad1a098beb3570d1dc1c719b74185b093">StageType</a>.</p>
+</div>
+<!--End Custom comment -->
 <table class="fieldtable">
-<tr><th> Enumerator</th><th>internal id</th></tr><tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68aeef6cbb12a7aba8611b2253969a1c202"></a>STAGE_NULL&#160;</td><td class="fielddoc">0</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68acf7c611691949156a673ba268027187c"></a>STAGE1_1&#160;</td><td class="fielddoc">1</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a14ab2ae89609bbc38681303c7cb48dae"></a>STAGE1_2&#160;</td><td class="fielddoc">2</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a60910f858b89cebcab7b9d1080cb79e1"></a>STAGE2_1&#160;</td><td class="fielddoc">3</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a3a24b3f01dbdf82c8ebafeb6697a8faf"></a>STAGE2_2&#160;</td><td class="fielddoc">4</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68ae605e7ccb5bd648e2f7af6c9a325158f"></a>STAGE3_1&#160;</td><td class="fielddoc">5</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a7906c8f00feffbc9d0e1a5b1abbecd68"></a>STAGE3_2&#160;</td><td class="fielddoc">6</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68ab9a3dc44053b1b545adedb6e90c41e14"></a>STAGE4_1&#160;</td><td class="fielddoc">7</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a593ab90c07c6736fa984f39d04830ea8"></a>STAGE4_2&#160;</td><td class="fielddoc">8</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a07e802f3fe43d3b682ea27907d54eb35"></a>STAGE4_3&#160;</td><td class="fielddoc">9</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a89e77b3aba2d28c171be859801abc0d0"></a>STAGE5&#160;</td><td class="fielddoc">10</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a65446f18178eab431ec71f4c9c08935f"></a>STAGE6&#160;</td><td class="fielddoc">11</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a79a9eeba7c03cae5730b167f3d732ae0"></a>STAGE7&#160;</td><td class="fielddoc">12</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68ad8f49ef203ddf5bafa8de3de3f7a5ffa"></a>NUM_STAGES&#160;</td><td class="fielddoc">13</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68af4c053444ef252ae6755519590bb1487"></a>STAGE1_GREED&#160;</td><td class="fielddoc">1</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68aba3b560edb89985c5a7bb7db197a3778"></a>STAGE2_GREED&#160;</td><td class="fielddoc">2</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68aa9ff2c4ce846c970bb6f8c107d5b4959"></a>STAGE3_GREED&#160;</td><td class="fielddoc">3</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a559b05ffc07e8050b4ddac8b324c27d1"></a>STAGE4_GREED&#160;</td><td class="fielddoc">4</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a42d4a392a114b7529ecfaa3fe779bbec"></a>STAGE5_GREED&#160;</td><td class="fielddoc">5</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a48784b0030b1a78c207a7cb09b47cd28"></a>STAGE6_GREED&#160;</td><td class="fielddoc">6</td></tr>
-<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a7b0c31fa9853149adb6c284537841caf"></a>STAGE7_GREED&#160;</td><td class="fielddoc">7</td></tr>
+<tr><th> Enumerator</th><th>internal id</th><th>possible stages</th></tr><tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68aeef6cbb12a7aba8611b2253969a1c202"></a>STAGE_NULL&#160;</td><td class="fielddoc">0</td><td class="fielddoc">Special Rooms</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68acf7c611691949156a673ba268027187c"></a>STAGE1_1&#160;</td><td class="fielddoc">1</td><td class="fielddoc">Basement 1, Cellar 1, Burning Basement 1</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a14ab2ae89609bbc38681303c7cb48dae"></a>STAGE1_2&#160;</td><td class="fielddoc">2</td><td class="fielddoc">Basement 2, Cellar 2, Burning Basement 2</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a60910f858b89cebcab7b9d1080cb79e1"></a>STAGE2_1&#160;</td><td class="fielddoc">3</td><td class="fielddoc">Caves 1, Catacombs 1, Flooded Caves 1</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a3a24b3f01dbdf82c8ebafeb6697a8faf"></a>STAGE2_2&#160;</td><td class="fielddoc">4</td><td class="fielddoc">Caves 2, Catacombs 2, Flooded Caves 2</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68ae605e7ccb5bd648e2f7af6c9a325158f"></a>STAGE3_1&#160;</td><td class="fielddoc">5</td><td class="fielddoc">Depths 1, Necropolis 1, Dank Depths 1</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a7906c8f00feffbc9d0e1a5b1abbecd68"></a>STAGE3_2&#160;</td><td class="fielddoc">6</td><td class="fielddoc">Depths 2, Necropolis 2, Dank Depths 2</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68ab9a3dc44053b1b545adedb6e90c41e14"></a>STAGE4_1&#160;</td><td class="fielddoc">7</td><td class="fielddoc">Womb 1, Utero 1, Scarred Womb 1</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a593ab90c07c6736fa984f39d04830ea8"></a>STAGE4_2&#160;</td><td class="fielddoc">8</td><td class="fielddoc">Womb 2, Utero 2, Scarred Womb 2</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a07e802f3fe43d3b682ea27907d54eb35"></a>STAGE4_3&#160;</td><td class="fielddoc">9</td><td class="fielddoc">??? (Blue Womb)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a89e77b3aba2d28c171be859801abc0d0"></a>STAGE5&#160;</td><td class="fielddoc">10</td><td class="fielddoc">Sheol, Cathedral</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a65446f18178eab431ec71f4c9c08935f"></a>STAGE6&#160;</td><td class="fielddoc">11</td><td class="fielddoc">Dark Room, Chest</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a79a9eeba7c03cae5730b167f3d732ae0"></a>STAGE7&#160;</td><td class="fielddoc">12</td><td class="fielddoc">The Void</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68ad8f49ef203ddf5bafa8de3de3f7a5ffa"></a>NUM_STAGES&#160;</td><td class="fielddoc">13</td><td class="fielddoc">-</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68af4c053444ef252ae6755519590bb1487"></a>STAGE1_GREED&#160;</td><td class="fielddoc">1</td><td class="fielddoc">Basement (Greed)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68aba3b560edb89985c5a7bb7db197a3778"></a>STAGE2_GREED&#160;</td><td class="fielddoc">2</td><td class="fielddoc">Caves (Greed)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68aa9ff2c4ce846c970bb6f8c107d5b4959"></a>STAGE3_GREED&#160;</td><td class="fielddoc">3</td><td class="fielddoc">Depths (Greed)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a559b05ffc07e8050b4ddac8b324c27d1"></a>STAGE4_GREED&#160;</td><td class="fielddoc">4</td><td class="fielddoc">Womb (Greed)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a42d4a392a114b7529ecfaa3fe779bbec"></a>STAGE5_GREED&#160;</td><td class="fielddoc">5</td><td class="fielddoc">Sheol (Greed)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a48784b0030b1a78c207a7cb09b47cd28"></a>STAGE6_GREED&#160;</td><td class="fielddoc">6</td><td class="fielddoc">The Shop (Greed)</td></tr>
+<tr><td class="fieldname"><a id="gga94b82cf988747085e77be386560efc68a7b0c31fa9853149adb6c284537841caf"></a>STAGE7_GREED&#160;</td><td class="fielddoc">7</td><td class="fielddoc">Ultra Greed</td></tr>
 </table>
 
 </div>
