@@ -6184,7 +6184,7 @@ Enumerations</h2></td></tr>
          
     <!--End Custom comment -->
 <table class="fieldtable">
-    <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3c4f9e6f99171bdb3590c62127a76e29"></a>MC_NPC_UPDATE&#160;</td><td class="fielddoc"><p>Callback is a method that takes (<a class="el" href="class_entity_n_p_c.html">EntityNPC</a>). Called after an NPC is updated. </p><p><b>Optional:</b> You can specify an EntityType so it is only called for entities of that type. </p>
+    <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3c4f9e6f99171bdb3590c62127a76e29"></a><b>MC_NPC_UPDATE</b>&#160;<br>Function Args: (<a class="el" href="class_entity_n_p_c.html">EntityNPC</a>)<br>Optional callback Args: <a class="el" href="group__enums.html#gad79a57ed3105eb60d991a1aeb4a9dc44">EntityType</a></td><td class="fielddoc"><p>Called after an NPC is updated.</p>
 <!--start Custom comment -->
     <div class="notes"><p>This callback will NOT fire when the NPC is playing the "Appear" animation. For example, when a Gaper spawns, it will fire on frame 1, then on frame 31 and onwards.</p></div>
 <div class="example_code">
@@ -6202,46 +6202,43 @@ mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_G
 </div>
 <!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab33a769ca4f606e98adcd3996884d2e2"></a>MC_POST_UPDATE&#160;</td><td class="fielddoc"><p>Callback is a method with no arguments. Called after game update. </p><!--start Custom comment -->
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab33a769ca4f606e98adcd3996884d2e2"></a><b>MC_POST_UPDATE</b>&#160;<br>Function Args: -</td><td class="fielddoc"><p>Called after every game update. </p><!--start Custom comment -->
     <div class="notes"><p>This callback is called every few frames the game is active. It will not be called, when its paused (for example on screentransitions or on the pause menu).</p></div><!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a4e5cb9195df683ac69621c4211e26eac"></a>MC_POST_RENDER&#160;</td><td class="fielddoc"><p>Callback is a method with no arguments. Called after game render. 
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a4e5cb9195df683ac69621c4211e26eac"></a><b>MC_POST_RENDER</b>&#160;<br>Function Args: -</td><td class="fielddoc"><p>Called after every game render. 
     </p><!--start Custom comment -->
     <div class="notes"><p>It is highly recommended to only use this function when you want to render something.<br> Its not recommended to use this function for things which are not frequently used or need constant recalculation.</p></div><!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa1523b5f4055795419b1210dd7e4277c"></a>MC_USE_ITEM&#160;</td><td class="fielddoc"><p>Callback is a method that takes (CollectibleType, <a class="el" href="class_r_n_g.html">RNG</a>). Return true to show the "use item" animation, otherwise false. Called when a custom active item is used, after discharging it.</p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa1523b5f4055795419b1210dd7e4277c"></a><b>MC_USE_ITEM</b>&#160; <br>Function Args: (<a class="el" href="#ga2f1970a814e3e61deec58584b8b45a1e">CollectibleType</a>, <a class="el" href="class_r_n_g.html">RNG</a>)<br>Optional callback Args: <a class="el" href="#ga2f1970a814e3e61deec58584b8b45a1e">CollectibleType</a></td><td class="fielddoc"><p>Called when a custom active item is used, after discharging it. </p><p>Return true to show the "use item" animation, otherwise false. </p>
     <p>The item <a class="el" href="class_r_n_g.html">RNG</a> allows for the item's random events to be seeded. </p>
-    <p><b>Optional:</b> You can specify a CollectibleType so it is only called for a specific item getting activated.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a710c845d132e65d89ff72854b715a2f7"></a>MC_POST_PEFFECT_UPDATE&#160;</td><td class="fielddoc"><p>Callback is a method that takes (<a class="el" href="class_entity_player.html">EntityPlayer</a>). Called for each player, each frame, after the player evaluates the effects of items that must be constantly evaluated. </p>
-    <p><b>Optional:</b> You can specify a <a class="el" href="group__enums.html#gabe590f3c9109f404f003d5d7e4f0fccf">PlayerType</a> so it is only called for a specific player is affected.</p>
+    <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a710c845d132e65d89ff72854b715a2f7"></a><b>MC_POST_PEFFECT_UPDATE</b>&#160; <br>Function Args: (<a class="el" href="class_entity_player.html">EntityPlayer</a>)<br>Optional callback Args: <a class="el" href="group__enums.html#gabe590f3c9109f404f003d5d7e4f0fccf">PlayerType</a></td><td class="fielddoc"><p>Called for each player, each frame, after the player evaluates the effects of items that must be constantly evaluated.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a92c7dd414e91aa3af84cadd87b20f388"></a>MC_USE_CARD&#160;</td><td class="fielddoc"><p>Callback is a method that takes (Card). Called when a card/rune is used.</p>
-    <p><b>Optional:</b> You can specify a CardID so it is only called when using a specific card/rune. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a92c7dd414e91aa3af84cadd87b20f388"></a><b>MC_USE_CARD</b>&#160; <br>Function Args: (<a class="el" href="#ga98a2b239923441ea943de74af3208aa3">Card</a>)<br>Optional callback Args: <a class="el" href="#ga98a2b239923441ea943de74af3208aa3">Card</a></td><td class="fielddoc"><p>Called when a card/rune is used.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a8c29e3fadaae7b4f78e75e5a8cb4848f"></a>MC_FAMILIAR_UPDATE&#160;</td><td class="fielddoc"><p>Callback is a method that takes (Entity_Familiar). Called every frame for each familiar. </p>
-    <p><b>Optional:</b> You can specify a Familiar Variant so it is only called for a specific Familiar. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a8c29e3fadaae7b4f78e75e5a8cb4848f"></a><b>MC_FAMILIAR_UPDATE</b>&#160; <br>Function Args: (<a class="el" href="class_entity_familiar.html">EntityFamiliar</a>)<br>Optional callback Args: <a class="el" href="#ga98047d6add3110afcb410e3026264bbe">FamiliarVariant</a></td><td class="fielddoc"><p>Called every frame for each familiar. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1abefa2eee8779a30402d407022a2fe961"></a>MC_FAMILIAR_INIT&#160;</td><td class="fielddoc"><p>Callback is a method that takes (Entity_Familiar). Called just after a familiar is initialized. </p><p><b>Optional:</b> You can specify a Familiar Variant so it is only called for a specific Familiar. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1abefa2eee8779a30402d407022a2fe961"></a><b>MC_FAMILIAR_INIT</b>&#160; <br>Function Args: (<a class="el" href="class_entity_familiar.html">EntityFamiliar</a>)<br>Optional callback Args: <a class="el" href="#ga98047d6add3110afcb410e3026264bbe">FamiliarVariant</a></td><td class="fielddoc"><p>Called just after a familiar is initialized. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a6fb72b64fb1aeb55804061277fff6cc4"></a>MC_EVALUATE_CACHE&#160;</td><td class="fielddoc"><p>Callback is a method that takes (<a class="el" href="class_entity_player.html">EntityPlayer</a>, CacheFlag). Called one or more times when a player's stats must be re-evaluated, such as after picking up an item, using certain pills, manually calling EvaluateItems on <a class="el" href="class_entity_player.html">EntityPlayer</a>. </p><p><b>Hint: </b>Use this to let custom items change the player's stats, familiars, flying, weapons, etc. Items tell the game which stats they affect using cache values in items.xml. Then the callback should respond to the CacheFlag by setting the corresponding player stat. Other items' stat modifiers, multipliers, etc are applied before this callback is called. </p>
-    <p><b>Optional:</b> You can specify a CacheFlag so it is only called when a certain CacheFlag is triggered. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a6fb72b64fb1aeb55804061277fff6cc4"></a><b>MC_EVALUATE_CACHE</b>&#160; <br>Function Args: (<a class="el" href="class_entity_player.html">EntityPlayer</a>, <a class="el" href="#ga32a9a3d125cc93d397abbd4f63f07f29">CacheFlag</a>)<br>Optional callback Args: <a class="el" href="#ga32a9a3d125cc93d397abbd4f63f07f29">CacheFlag</a></td><td class="fielddoc"><p>Called one or more times when a player's stats must be re-evaluated, such as after picking up an item, using certain pills or manually calling <a class="el" href="class_entity_player.html#a5dba278dcb6d32890628370421dee447">EvaluateItems()</a> on an <a class="el" href="class_entity_player.html">EntityPlayer</a>. </p><p><b>Hint: </b>Use this to let custom items change the player's stats, familiars, flying, weapons, etc. Items tell the game which stats they affect using cache values in items.xml. Then the callback should respond to the CacheFlag by setting the corresponding player stat. Other items' stat modifiers, multipliers, etc are applied before this callback is called. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a93c08c26fb4f23c91d47a5938f1e6f29"></a>MC_POST_PLAYER_INIT&#160;</td><td class="fielddoc"><p>Callback is a method that takes (<a class="el" href="class_entity_player.html">EntityPlayer</a>). Called after the player is initialized (Usually after starting the game). </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a93c08c26fb4f23c91d47a5938f1e6f29"></a><b>MC_POST_PLAYER_INIT</b>&#160; <br>Function Args: (<a class="el" href="class_entity_player.html">EntityPlayer</a>)<br>Optional callback Args: PlayerVariant*</td><td class="fielddoc"><p>Called after a <a class="el" href="class_entity_player.html">Player Entity</a> is initialized. </p><p>The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = Co-Op-Baby</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab267dd070d135049afed42d9c92707bb"></a>MC_USE_PILL&#160;</td><td class="fielddoc"><p>Callback is a method that takes (PillEffect). Called when a custom pill is used.</p><p><b>Optional:</b> You can specify an PillEffectID so it is only called for a specific pill. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab267dd070d135049afed42d9c92707bb"></a><b>MC_USE_PILL</b>&#160; <br>Function Args: (<a class="el" href="#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a>)<br>Optional callback Args: <a class="el" href="#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a></td><td class="fielddoc"><p>Called when a pill is used.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a079e9ebc9ed0e8ba9407c0a887296187"></a>MC_ENTITY_TAKE_DMG&#160;</td><td class="fielddoc"><p>Callback is a method that takes (TookDamage : <a class="el" href="class_entity.html">Entity</a>, DamageAmount : number, DamageFlag : number (bit flags from DamageFlag enumeration), DamageSource : <a class="el" href="class_entity_ref.html">EntityRef</a>, DamageCountdownFrames : number).</p><p> Return true or nil if the entity or player should sustain the damage, otherwise false to ignore it. If the entity is an <a class="el" href="class_entity_player.html">EntityPlayer</a>, the DamageAmount is the integer number of half-hearts of damage that the player will take. Otherwise, DamageAmount is a number of hit points. Called before new damage is applied. A DAMAGE_COUNTDOWN flag means the entity will ignore any other DAMAGE_COUNTDOWN hits for the duration specified.</p><p><b>Optional:</b> You can specify an EntityType so it is only called for a specific entity. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a079e9ebc9ed0e8ba9407c0a887296187"></a><b>MC_ENTITY_TAKE_DMG</b>&#160; <br>Function Args: (TookDamage [<a class="el" href="class_entity.html">Entity</a>], DamageAmount [float], <br><a class="el" href="#gab084d3a6d6ddd144ea6df4af965f93fc">DamageFlags</a>, DamageSource [<a class="el" href="class_entity_ref.html">EntityRef</a>], <br>DamageCountdownFrames [int])<br><br>Optional callback Args: <a class="el" href="#gad79a57ed3105eb60d991a1aeb4a9dc44">EntityType</a></td><td class="fielddoc"><p>Called before new damage is applied.</p><p>Return true or nil if the entity or player should sustain the damage, otherwise false to ignore it. If the entity is an <a class="el" href="class_entity_player.html">EntityPlayer</a>, the DamageAmount is the integer number of half-hearts of damage that the player will take. Otherwise, DamageAmount is a number of hit points.</p><p>If the entity has a DAMAGE_COUNTDOWN flag, it will ignore any other DAMAGE_COUNTDOWN hits for the duration specified.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1acf2e9feadf1ef655ac57503a8bb1291e"></a>MC_POST_CURSE_EVAL&#160;</td><td class="fielddoc"><p>Callback is a method that takes (integer Curses). Curses is a bitmask containing current curses. Called after <a class="el" href="class_level.html">Level</a> applied it's curses. Returns the new curse bitmask. Use <a class="el" href="namespace_isaac.html#a13f2a1724d8e011b975626616128ad2d">Isaac.GetCurseIdByName()</a> to get the curseID. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1acf2e9feadf1ef655ac57503a8bb1291e"></a><b>MC_POST_CURSE_EVAL</b>&#160; <br>Function Args: (<a class="el" href="#gaf8502e81b66781fad715e772644d8a04">Curses</a>)</td><td class="fielddoc"><p><a class="el" href="#gaf8502e81b66781fad715e772644d8a04">Curses</a> is a bitmask containing current curses. Called after the current <a class="el" href="class_level.html">Level</a> applied it's curses. Returns the new curse bitmask. Use <a class="el" href="namespace_isaac.html#a13f2a1724d8e011b975626616128ad2d">Isaac.GetCurseIdByName()</a> to get the curseID.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ae2861ed475db7ffa4c5f65243d974d0b"></a>MC_INPUT_ACTION&#160;</td><td class="fielddoc"><p>Callback that takes (<a class="el" href="class_entity.html">Entity</a>, InputHook, ButtonAction). It is called when game/game entities wants to read action input. <a class="el" href="class_entity.html">Entity</a> can be nil if the input is read not from an entity Class. InputHook and ButtonActions are enumerations. Return nil if you don't want to overwrite the input or value otherwise. Return value can be bool if it's a Is__ hook or float if it's an Get__Value hook. Float values should be in range of 0.0 and 1.0 </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ae2861ed475db7ffa4c5f65243d974d0b"></a><b>MC_INPUT_ACTION</b>&#160; <br>Function Args: (<a class="el" href="class_entity.html">Entity</a>, <a class="el" href="#ga0945400993463eece8f1c9856e24573c">InputHook</a>, <a class="el" href="#gafa717ac273a5a382f7c01ef7afba1ee7">ButtonAction</a>)<br>Optional callback Args: <a class="el" href="#ga0945400993463eece8f1c9856e24573c">InputHook</a></td><td class="fielddoc"><p>It is called when game/game entities wants to read an action input.<br> <a class="el" href="class_entity.html">Entity</a> can be nil if the input is not read from an entity class.</p>
+    <p>The <a class="el" href="#ga0945400993463eece8f1c9856e24573c">InputHook</a> value can be used to determine if this callback was called through <a class="el" href="namespace_input.html#a949df9702b52862bc00b0d6b4c60248d">Input.IsActionTriggered()</a>, <a class="el" href="namespace_input.html#a789973d13d3371b5228bc630803dfdfa">Input.IsActionPressed()</a>, or <a class="el" href="namespace_input.html#a8994f5a67dbe9bae1285c906c53c3bd2">Input.GetActionValue()</a></p><p> Return nil if you don't want to overwrite the input or value. <br> The return value can be bool if it's a <code>IS_ACTION_XXX</code> hook or float if it's an <code>GET_ACTION_VALUE</code> hook. Float values should be in range of 0.0 and 1.0 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1abb6d66a63e9db67c932713d4befb005c"></a>MC_LEVEL_GENERATOR&#160;</td><td class="fielddoc"><p style="color:red">WIP. This feature doesnt work right now!</p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1abb6d66a63e9db67c932713d4befb005c"></a><b>MC_LEVEL_GENERATOR</b>&#160; </td><td class="fielddoc"><p style="color:red">This callback doesn't work right now and will never be called by the game!</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3b0cba976794d22c25b72fb069229d48"></a>MC_POST_GAME_STARTED&#160;</td><td class="fielddoc"><p>Callback is a method that takes (bool)</p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3b0cba976794d22c25b72fb069229d48"></a><b>MC_POST_GAME_STARTED</b>&#160; <br>Function Args: (IsContinued [bool])</td><td class="fielddoc">
     <!--start Custom comment -->
 <p>This function gets called when you start a game. The boolean value is true when you continue a run, false when you start a new one.</p>
+    <p>This callback will be called after <a class="el" href="#gga84d8f7ea5c80b37ad1c55b2a97286eb1a32cf1206a6cf3130aef0970bbc385c46">MC_POST_NEW_ROOM</a> and after <a class="el" href="#gga84d8f7ea5c80b37ad1c55b2a97286eb1aaa15355f9337dddfd644d6b890994cd4">MC_POST_NEW_LEVEL</a>.</p>
 <div class="example_code">
 <pre><code class="language-lua">local function onStart(_,bool)
 	print(bool)
@@ -6251,9 +6248,8 @@ mod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, onStart)
 </div>
 <!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a20683e1a8f5183b1b11b98922ae4673a"></a>MC_POST_GAME_END&#160;</td><td class="fielddoc"><p>Callback is a method that takes (bool) - Gameover </p>
-    <!--start Custom comment -->
-<p>This function gets called when a game ends. The boolean value is false when you died, true when you won.</p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a20683e1a8f5183b1b11b98922ae4673a"></a><b>MC_POST_GAME_END</b>&#160; <br>Function Args: (IsGameOver [bool])</td><td class="fielddoc"><!--start Custom comment -->
+<p>This function gets called when the game over screen appears, or when the an ending starts playing. The boolean value is true when you died and got a game over, false when you won and got an ending.</p>
 <div class="example_code">
 <pre><code class="language-lua">local function onEnd(_,bool)
 	print(bool)
@@ -6263,9 +6259,9 @@ mod:AddCallback(ModCallbacks.MC_POST_GAME_END, onEnd)
 </div>
 <!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a606e2543ee424cd31d678e9591a0a9b9"></a>MC_PRE_GAME_EXIT&#160;</td><td class="fielddoc"><p>Callback is a method that takes (bool) - ShouldSave </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a606e2543ee424cd31d678e9591a0a9b9"></a><b>MC_PRE_GAME_EXIT</b>&#160; <br>Function Args: (ShouldSave [bool])</td><td class="fielddoc">
         <!--start Custom comment -->
-<p>This function gets called when you exit a game. The boolean value is true when you exit the game with the menu, false when you died. It gets called after restarting from the death screen, too.</p>
+<p>This function gets called when you quit a run. The boolean value is true when the game would normally create a continuable save, false when it wouldn't. </p><p>Called twice when the game plays an ending.</p>
 <div class="example_code">
 <pre><code class="language-lua">local function onExit(_,bool)
 	print(bool)
@@ -6275,17 +6271,27 @@ mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, onExit)
 </div>
 <!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aaa15355f9337dddfd644d6b890994cd4"></a>MC_POST_NEW_LEVEL&#160;</td><td class="fielddoc"><p>This triggers after transitioning a level or stage.</p>
+    <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aaa15355f9337dddfd644d6b890994cd4"></a><b>MC_POST_NEW_LEVEL</b>&#160; <br>Function Args: - </td><td class="fielddoc"><p>This triggers after transitioning a level or stage.</p> <p>Its always called <b>after</b> <a class="el" href="#gga84d8f7ea5c80b37ad1c55b2a97286eb1a32cf1206a6cf3130aef0970bbc385c46">MC_POST_NEW_ROOM</a>.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a32cf1206a6cf3130aef0970bbc385c46"></a>MC_POST_NEW_ROOM&#160;</td><td class="fielddoc"><p>This triggers after entering a room.</p></td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab55adfd98a00dee21f98b07328b6d21f"></a>MC_GET_CARD&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_r_n_g.html">RNG</a>&amp; rng, integer CurrentCard, bool Playing, bool Runes, bool OnlyRunes) - This is used for Card Pools. Because not all cards have the same chance to spawn, use <a class="el" href="class_r_n_g.html">RNG</a> for seeded random and return your card id (if you don't want to change the current card, return CurrentCard or nil). If desired Playing (can include playing cards), Runes (can include runes), OnlyRunes (only return runes) filter can be used to make your selection. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a32cf1206a6cf3130aef0970bbc385c46"></a><b>MC_POST_NEW_ROOM</b>&#160; <br>Function Args: - </td><td class="fielddoc"><p>This triggers after entering a room.</p></td></tr>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab55adfd98a00dee21f98b07328b6d21f"></a><b>MC_GET_CARD</b>&#160;<br>Function Args: (<a class="el" href="class_r_n_g.html">RNG</a>, <a class="el" href="#ga98a2b239923441ea943de74af3208aa3">Card</a>, IncludePlayingCards [bool],<br> IncludeRunes [bool], OnlyRunes [bool])</td><td class="fielddoc"><p>This callback is used for handling Card Pools. The return value determines, what <a class="el" href="#ga98a2b239923441ea943de74af3208aa3">Card</a> will be spawned.<br> Because not all cards have the same chance to spawn, use <a class="el" href="class_r_n_g.html">RNG</a> for a seeded random selection.<br>Return nil to not repalce the spawned card. <br>You can use the boolean values as a filter for the selection.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a10c85a938bd75259ad64e2bc50332cd8"></a>MC_GET_SHADER_PARAMS&#160;</td><td class="fielddoc"><p>(string shaderName) - returns a table containing a key -&gt; value pair for custom shader parameters </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a10c85a938bd75259ad64e2bc50332cd8"></a><b>MC_GET_SHADER_PARAMS</b>&#160; <br>Function Args: (ShaderName [string])</td><td class="fielddoc"><p>Returns a table containing a key -&gt; value pair for custom shader parameters.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af722513005a65dbbc6bc28ef729c3bde"></a>MC_EXECUTE_CMD&#160;</td><td class="fielddoc"><p>(string cmd, string params) - returns a string separated by <br />
- (newline) per output line </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af722513005a65dbbc6bc28ef729c3bde"></a><b>MC_EXECUTE_CMD</b>&#160;<br>Function Args: (CMD [string], Parameters [string])</td><td class="fielddoc"><p>Returns a string separated by <code>&lt;br /&gt;</code> (newline) per output line </p><p>CMD is the first word of the Console input. The parameters are the rest of the Input.</p><p>This function is NOT called for default game commands like <code>Spawn</code> or <code>Debug</code>.</p>
+    <div class="example_code">
+<pre><code>function mod.oncmd(_, command, args)
+	print(command)
+	print(args)
+end
+mod:AddCallback(ModCallbacks.MC_EXECUTE_CMD, mod.oncmd)
+-- executing command "Test apple 1 Pear test" prints
+-- Test
+-- apple 1 Pear test
+</code></pre>	
+</div>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3a522edc2720af79f1cab04c48a0375c"></a>MC_PRE_USE_ITEM&#160;</td><td class="fielddoc"><p>(CollectibleType ItemId, <a class="el" href="class_r_n_g.html">RNG</a>&amp; ItemRng) - return true if the item can't be used / processed inside the script, other values or no value will continue the routine </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a3a522edc2720af79f1cab04c48a0375c"></a><b>MC_PRE_USE_ITEM</b>&#160;<br>Function Args: (<a class="el" href="#ga2f1970a814e3e61deec58584b8b45a1e">CollectibleType</a>, <a class="el" href="class_r_n_g.html">RNG</a>)<br>Optional callback Args: <a class="el" href="#ga2f1970a814e3e61deec58584b8b45a1e">CollectibleType</a></td><td class="fielddoc"><p>Called before an item is used.</p><p> Return true to prevent the default code of an item to be triggered. This will still discharge the item.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a689dd914c245158a03927393343b75fe"></a>MC_PRE_ENTITY_SPAWN&#160;</td><td class="fielddoc"><p>(EntityType Type, integer Variant, integer SubType, const Vector2 Position, const Vector2 Velocity, const <a class="el" href="class_entity.html">Entity</a> Spawner, integer Seed), optional return - an array table with new values { Type, Variant, Subtype, Seed } </p>
     <!--start Custom comment -->
