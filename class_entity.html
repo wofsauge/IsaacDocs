@@ -900,7 +900,8 @@ end
 
 <!--start Custom comment -->
 <p>Returns a table that contains all data assosiated with the entity. This can be used to add custom data as well.</p>
-    
+    <div class="notes">Data associated with an entity does only persists in between rooms, when the entity is a player, familiar or the entity has the "<a class="el" href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.FLAG_PERSISTENT" Flag active. Data does not persists in between exiting the game to a menu, or when restarting/finishing a run.
+    </div>
 <div class="example_code">
     This code adds custom data to an entity or prints it in the console if it exists.
 <pre><code class="language-lua">if type(entity:GetData()["MyValue"]) == type(nil) then -- checks, if the Data does exist already
