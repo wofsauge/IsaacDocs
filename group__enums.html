@@ -6298,8 +6298,10 @@ mod:AddCallback(ModCallbacks.MC_EXECUTE_CMD, mod.oncmd)
     <div class="notes"><p>For this callback, you CANNOT specify an EntityType to only get entities of a single type.</p></div><!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a9bc02faae2ce4549428403cc7523480a"></a>MC_POST_FAMILIAR_RENDER&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_familiar.html">EntityFamiliar</a> Fam, <a class="el" href="class_vector.html">Vector</a> Offset) </p>
+<p><b>Optional:</b> You can specify a Familiar Variant so it is only called for a specific Familiar. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a57ed65c13ebe8f15f1e3d72340121815"></a>MC_PRE_FAMILIAR_COLLISION&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_familiar.html">EntityFamiliar</a> Fam, <a class="el" href="class_entity.html">Entity</a> Collider, boolean Low), returns true/false to ignore collision code (true to respond to collision, false to not), or nil to continue the internal code. </p>
+<p><b>Optional:</b> You can specify a Familiar Variant so it is only called for a specific Familiar. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a748c6542edcd2828db311cc693930827"></a>MC_POST_NPC_INIT&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_n_p_c.html">EntityNPC</a> NPC) </p>
 </td></tr>
@@ -7621,8 +7623,7 @@ You can return an integer from this callback in order to change the returned ite
 </td></tr>
 <tr><td class="fieldname"><a id="gga497749198295d1f3d5ecd1c6d5ea2ccea719b3343cfcbc5060c0c5a1c858a728d"></a>TEAR_GREED_COIN&#160;</td><td class="fielddoc"><p>Greed coin tears that has a chance to generate a coin when hit </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga497749198295d1f3d5ecd1c6d5ea2ccea5f2fc75d402c54b9e8241a08ac202616"></a>TEAR_MYSTERIOUS_LIQUID_CREEP&#160;</td><td class="fielddoc"><p>Greed coin tears that has a chance to generate a coin when hit </p>
-</td></tr>
+<tr><td class="fieldname"><a id="gga497749198295d1f3d5ecd1c6d5ea2ccea5f2fc75d402c54b9e8241a08ac202616"></a>TEAR_MYSTERIOUS_LIQUID_CREEP&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="gga497749198295d1f3d5ecd1c6d5ea2cceac95dafbe1b1fc4f248b9bb9ecf2b51b0"></a>TEAR_BIG_SPIRAL&#160;</td><td class="fielddoc"><p>Ouroboros Worm, big radius oscilating tears </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga497749198295d1f3d5ecd1c6d5ea2cceac51913bed65fb0cfb7de34d346cc194c"></a>TEAR_PERMANENT_CONFUSION&#160;</td><td class="fielddoc"><p>Glaucoma tears, permanently confuses enemies </p>
