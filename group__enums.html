@@ -6373,58 +6373,64 @@ mod:AddCallback(ModCallbacks.MC_EXECUTE_CMD, mod.oncmd)
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a9236685f1372e3cd6be2a02224766527"></a>MC_POST_EFFECT_RENDER&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_effect.html">EntityEffect</a> Effect, <a class="el" href="class_vector.html">Vector</a> Offset) </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa866959a6f4c615c22836da692949059"></a>MC_POST_BOMB_INIT&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_bomb.html">EntityBomb</a> Bomb) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa866959a6f4c615c22836da692949059"></a><b>MC_POST_BOMB_INIT</b>&#160;<br>Function Args: (<a class="el" href="class_entity_bomb.html">EntityBomb</a>)<br>Optional callback Args: <a class="el" href="#gadf74ad42bd2a6d6963e6d84b54385174">BombVariant</a></td><td class="fielddoc"><p></p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a1f31c9aad29a52c7106686a7e927fe9b"></a>MC_POST_BOMB_UPDATE&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_bomb.html">EntityBomb</a> Bomb) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a1f31c9aad29a52c7106686a7e927fe9b"></a><b>MC_POST_BOMB_UPDATE</b>&#160;<br>Function Args: (<a class="el" href="class_entity_bomb.html">EntityBomb</a>)<br>Optional callback Args: <a class="el" href="#gadf74ad42bd2a6d6963e6d84b54385174">BombVariant</a></td><td class="fielddoc"><p></p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a6ee339ec924c4b6ab5b8ab3161bbbbbf"></a>MC_POST_BOMB_RENDER&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_bomb.html">EntityBomb</a> Bomb, <a class="el" href="class_vector.html">Vector</a> Offset) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a6ee339ec924c4b6ab5b8ab3161bbbbbf"></a><b>MC_POST_BOMB_RENDER</b>&#160;<br>Function Args: (<a class="el" href="class_entity_bomb.html">EntityBomb</a>, Offset [Vector])<br>Optional callback Args: <a class="el" href="#gadf74ad42bd2a6d6963e6d84b54385174">BombVariant</a></td><td class="fielddoc"><p></p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a4321cd11429b86dd72ed17962c727d70"></a>MC_PRE_BOMB_COLLISION&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_bomb.html">EntityBomb</a> Bomb, <a class="el" href="class_entity.html">Entity</a> Collider, boolean Low), returns true/false to ignore collision code (true to respond to collision, false to not), or nil to continue the internal code. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a4321cd11429b86dd72ed17962c727d70"></a><b>MC_PRE_BOMB_COLLISION</b>&#160;<br>Function Args: (<a class="el" href="class_entity_bomb.html">EntityBomb</a>, Collider [<a class="el" href="class_entity.html">Entity</a>], Low [bool])<br>Optional callback Args: <a class="el" href="#gadf74ad42bd2a6d6963e6d84b54385174">BombVariant</a></td><td class="fielddoc"><p>Return true/false to ignore collision code (true to respond to collision, false to not), or nil to continue the internal code. </p>
+            <div class="bugs">
+<p>This Callback can only be used <b>ONCE</b> across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary!</p>
+</div>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aeee47a943c7ce36ccf3bbc14a1df1d10"></a>MC_POST_FIRE_TEAR&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_tear.html">EntityTear</a> Tear) </p>
+    <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aeee47a943c7ce36ccf3bbc14a1df1d10"></a><b>MC_POST_FIRE_TEAR</b>&#160;<br>Function Args: (<a class="el" href="class_entity_tear.html">EntityTear</a>)</td><td class="fielddoc"><p>Called when the player fires a tear.</p><p>It is not called for other weapons or tears fired with Incubus.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a486da803f51d329593cb2875b15f8600"></a>MC_PRE_GET_COLLECTIBLE&#160;</td><td class="fielddoc"><p>(integer PoolType, boolean Decrease, integer Seed), evaluates before special events </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a486da803f51d329593cb2875b15f8600"></a><b>MC_PRE_GET_COLLECTIBLE</b>&#160;<br>Function Args:(<a class="el" href="#gaa8e780d5a9d7622188511c4c190000f1">ItemPoolType</a>, Decrease [bool], Seed [int])</td><td class="fielddoc">
         <!--start Custom comment -->
-    <p>This callback is called when the game needs to get a new random item from an item pool.
+    <p>This callback is called when the game needs to get a new random item from an item pool.<br>
 You can return an integer from this callback in order to change the returned item pool type.</p>
 <p>It is not called for "scripted" drops (like Mr. Boom from Wrath) and manually spawned items.</p>
     <!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ad2c55cabcedb3d3b4c0d106fb951283e"></a>MC_POST_GET_COLLECTIBLE&#160;</td><td class="fielddoc"><p>(CollectibleType SelectedCollectible, integer PoolType, boolean Decrease, integer Seed) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ad2c55cabcedb3d3b4c0d106fb951283e"></a><b>MC_POST_GET_COLLECTIBLE</b>&#160;<br>Function Args:(SelectedCollectible [<a class="el" href="#ga2f1970a814e3e61deec58584b8b45a1e">CollectibleType</a>], <a class="el" href="#gaa8e780d5a9d7622188511c4c190000f1">ItemPoolType</a>, <br>Decrease [bool], Seed [int])</td><td class="fielddoc"><p>This function is called right after <a class="el" href="gga84d8f7ea5c80b37ad1c55b2a97286eb1a486da803f51d329593cb2875b15f8600"></a><b>MC_PRE_GET_COLLECTIBLE</b> and determines the Collectible that will be spawned from the given <a class="el" href="#gaa8e780d5a9d7622188511c4c190000f1">ItemPoolType</a>.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a52b8ac19b779eaef40f2bf49b923f2f9"></a>MC_GET_PILL_COLOR&#160;</td><td class="fielddoc"><p>(PillColor SelectedPill, integer Seed) </p><!--start Custom comment -->
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a52b8ac19b779eaef40f2bf49b923f2f9"></a><b>MC_GET_PILL_COLOR</b>&#160;<br>Function Args:(Seed [int])</td><td class="fielddoc"><!--start Custom comment -->
 <p>This function is called, when the game is spawning a pill and needs to determine its PillColor.</p>
-<div class="bugs">
-<p>This function is broken and does NOT provide the PillColor value. It only provides the Seed value.</p>
-</div>
+    <p>Return a <a class="el" href="#gabaa0d4a2933c225fdc0e8f58f4b616d6">PillColor</a> to specify a Pillcolor that needs to be choosen. Return nothing to let it be handled by the game.</p>
 <!--End Custom comment -->
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab3f22a2ec1956dbc564c08c163a59a6c"></a>MC_GET_PILL_EFFECT&#160;</td><td class="fielddoc"><p>(PillEffect SelectedPillEffect, PillColor PillColor) </p>
-<p>Called every frames when the game get the <a class="el" href="group__enums.html#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a> of a pill. The effect of the pill can be choosed by returning the chosen <a class="el" href="group__enums.html#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a></p>
-<div class="notes"><p>The effect is applied to a SubType of pills, not to a particular pill. It means every pill colors will have the same effect</p></div>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab3f22a2ec1956dbc564c08c163a59a6c"></a><b>MC_GET_PILL_EFFECT</b>&#160;<br>Function Args: (SelectedPillEffect [<a class="el" href="#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a>], <a class="el" href="#gabaa0d4a2933c225fdc0e8f58f4b616d6">PillColor</a>)</td><td class="fielddoc"><p>Called every frames when the game get the <a class="el" href="#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a> of a pill. The effect of the pill can be choosed by returning the chosen <a class="el" href="#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a>.</p>
+    <p>The effect is applied to every pill of the same <a class="el" href="#gabaa0d4a2933c225fdc0e8f58f4b616d6">PillColor</a>, not to a single pill.</p>
 <div class="example_code">
-<pre class="  language-lua"><code class="  language-lua"><span>-- This turn "Bad Trip" pills into "Balls of Steel" pills</span>
-<span>function</span> <span>mod</span><span>:getPillEffect(pillEffect,</span> <span>pillColor)</span>
-    <span>if</span> <span>pillEffect</span> <span>==</span> <span>PillEffect.PILLEFFECT_BAD_TRIP</span> <span>then</span>
-        <span>return</span> <span>PillEffect.PILLEFFECT_BALLS_OF_STEEL</span>
-    <span>end</span>
-<span>end</span>
-<span>mod:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT, mod.getPillEffect);</span>
+<p>This code turn "Bad Trip" pills into "Balls of Steel" pills.</p>
+<pre><code>function mod:getPillEffect(pillEffect, pillColor)
+    if pillEffect == PillEffect.PILLEFFECT_BAD_TRIP then
+       return PillEffect.PILLEFFECT_BALLS_OF_STEEL
+    end
+end
+mod:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT, mod.getPillEffect)
 </code></pre>	
 </div>
 
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af8c52ae6f508a0e9a122f523003b2121"></a>MC_GET_TRINKET&#160;</td><td class="fielddoc"><p>(TrinketType SelectedTrinket, <a class="el" href="class_r_n_g.html">RNG</a>&amp; TrinketRNG) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af8c52ae6f508a0e9a122f523003b2121"></a><b>MC_GET_TRINKET</b>&#160;<br>Function Args: (SelectedTrinket [<a class="el" href="#gabd5e2c76ec4af0838568b19fd2b4e4f2">TrinketType</a>], <a class="el" href="#class_r_n_g.html">RNG</a>)</td><td class="fielddoc"><p>Called when a <a class="el" href="#gabd5e2c76ec4af0838568b19fd2b4e4f2">TrinketType</a> of a Trinket needs to be determined. <br>A <a class="el" href="#gabd5e2c76ec4af0838568b19fd2b4e4f2">TrinketType</a> can be returned to change the SelectedTrinket.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ad06936bc62c69403e378cbbd2e9508f5"></a>MC_POST_ENTITY_REMOVE&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity.html">Entity</a> Ent) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ad06936bc62c69403e378cbbd2e9508f5"></a><b>MC_POST_ENTITY_REMOVE</b>&#160;<br>Function Args: (<a class="el" href="class_entity.html">Entity</a>)<br>Optional callback Args: <a class="el" href="#gad79a57ed3105eb60d991a1aeb4a9dc44">EntityType</a></td><td class="fielddoc"><p>Called whenever an <a class="el" href="class_entity.html">Entity</a> gets removed by the game. This includes deaths, kills, removals and even unloading an entity on room transition or ending a run.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af7384f6387026bb2badafd1bab0f735e"></a>MC_POST_ENTITY_KILL&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity.html">Entity</a> Ent) </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af7384f6387026bb2badafd1bab0f735e"></a><b>MC_POST_ENTITY_KILL</b>&#160;<br>Function Args: (<a class="el" href="class_entity.html">Entity</a>)<br>Optional callback Args: <a class="el" href="#gad79a57ed3105eb60d991a1aeb4a9dc44">EntityType</a></td><td class="fielddoc"><p>Called right before a death animation is triggered for an <a class="el" href="class_entity.html">Entity</a>.</p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a7650580b7f38b4a6bcf9f1bf61508738"></a>MC_PRE_NPC_UPDATE&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_entity_n_p_c.html">EntityNPC</a> NPC), returns true if the internal ai should be ignored, false or nil/nothing otherwise </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a7650580b7f38b4a6bcf9f1bf61508738"></a><b>MC_PRE_NPC_UPDATE</b>&#160;<br>Function Args: (<a class="el" href="class_entity_n_p_c.html">EntityNPC</a>)<br>Optional callback Args: <a class="el" href="#gad79a57ed3105eb60d991a1aeb4a9dc44">EntityType</a></td><td class="fielddoc"><p>Return true if the internal AI of an NPC should be ignored, false or nil/nothing otherwise.</p>
+    <div class="bugs">
+<p>This Callback can only be used <b>ONCE</b> across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary!</p>
+</div>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa503c87bcc557d1913c71f270d835a19"></a>MC_PRE_SPAWN_CLEAN_AWARD&#160;</td><td class="fielddoc"><p>(<a class="el" href="class_r_n_g.html">RNG</a>&amp; Rng, <a class="el" href="class_vector.html">Vector</a> SpawnPos), returns true if the spawn routine should be ignored, false or nil/nothing otherwise </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1aa503c87bcc557d1913c71f270d835a19"></a><b>MC_PRE_SPAWN_CLEAN_AWARD</b>&#160;<br>Function Args: (<a class="el" href="class_r_n_g.html">RNG</a>, SpawnPosition [<a class="el" href="class_vector.html">Vector</a>])</td><td class="fielddoc"><p>This function is triggered in every room that can be cleared, including boss and angel rooms, and even when it normally would not spawn a reward.<br>This Callback also handles special spawns like the spawning of Trapdoors after a boss is killed, therefore returning true here will also cancel those events.</p><p>Return true if the spawn routine should be ignored, false or nil/nothing otherwise.</p>
+        <div class="bugs">
+<p>This Callback can only be used <b>ONCE</b> across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary!</p>
+</div>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a083afd103e2960bbdfc314f4b4621f96"></a>MC_PRE_ROOM_ENTITY_SPAWN&#160;</td><td class="fielddoc"><p>(EntityType Type, integer Variant, integer SubType, integer GridIndex, integer Seed)<br> This is called when entering a new room, before spawning entities which are part its layout. Grid entities will also trigger this callback and their type will the same as the type used by the gridspawn command. Because of this, effects are assigned the type 999 instead of 1000 in this callback. Optional return: an array table with new values { Type, Variant, Subtype }. Returning a table will override any replacements that might naturally occur i.e. enemy variants. </p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a083afd103e2960bbdfc314f4b4621f96"></a><b>MC_PRE_ROOM_ENTITY_SPAWN</b><br>Function Args: (<a class="el" href="#gad79a57ed3105eb60d991a1aeb4a9dc44">EntityType</a>, Variant [int], SubType [int], <br>GridIndex [int], Seed [int])</td><td class="fielddoc"><p>This is called when entering a new room, before spawning entities which are part of its layout. Grid entities will also trigger this callback and their type will the same as the type used by the gridspawn command. Because of this, effects are assigned the type 999 instead of 1000 in this callback.<br> Optional: Return an array table with new values <code>{ Type, Variant, Subtype }</code>. Returning such a table will override any replacements that might naturally occur i.e. enemy variants.</p>
 </td></tr>
 </table>
 
