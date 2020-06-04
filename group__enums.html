@@ -6400,6 +6400,19 @@ You can return an integer from this callback in order to change the returned ite
 <!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ab3f22a2ec1956dbc564c08c163a59a6c"></a>MC_GET_PILL_EFFECT&#160;</td><td class="fielddoc"><p>(PillEffect SelectedPillEffect, PillColor PillColor) </p>
+<p>Called every frames when the game get the <a class="el" href="group__enums.html#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a> of a pill. The effect of the pill can be choosed by returning the chosen <a class="el" href="group__enums.html#ga347f7740b9e122def6037b63c81a4c8b">PillEffect</a></p>
+<div class="notes"><p>The effect is applied to a SubType of pills, not to a particular pill. It means every pill colors will have the same effect</p></div>
+<div class="example_code">
+<pre class="  language-lua"><code class="  language-lua"><span>-- This turn "Bad Trip" pills into "Balls of Steel" pills</span>
+<span>function</span> <span>mod</span><span>:getPillEffect(pillEffect,</span> <span>pillColor)</span>
+    <span>if</span> <span>pillEffect</span> <span>==</span> <span>PillEffect.PILLEFFECT_BAD_TRIP</span> <span>then</span>
+        <span>return</span> <span>PillEffect.PILLEFFECT_BALLS_OF_STEEL</span>
+    <span>end</span>
+<span>end</span>
+<span>mod:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT, mod.getPillEffect);</span>
+</code></pre>	
+</div>
+
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1af8c52ae6f508a0e9a122f523003b2121"></a>MC_GET_TRINKET&#160;</td><td class="fielddoc"><p>(TrinketType SelectedTrinket, <a class="el" href="class_r_n_g.html">RNG</a>&amp; TrinketRNG) </p>
 </td></tr>
