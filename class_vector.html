@@ -101,7 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b3a83ea8859a34776e4b5ff4a26cc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7734ac3f82d1af28f63cc4d7283fbbc"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#ac7734ac3f82d1af28f63cc4d7283fbbc">Cross</a> (<a class="el" href="class_vector.html">Vector</a> second)</td></tr>
 <tr class="separator:ac7734ac3f82d1af28f63cc4d7283fbbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e36c093f15253db8f0d68d5a69b64eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a7e36c093f15253db8f0d68d5a69b64eb">Lerp</a> (<a class="el" href="class_vector.html">Vector</a> first, <a class="el" href="class_vector.html">Vector</a> second, float t)</td></tr>
+<tr class="memitem:a7e36c093f15253db8f0d68d5a69b64eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vector.html">Vector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a7e36c093f15253db8f0d68d5a69b64eb">Lerp</a> (<a class="el" href="class_vector.html">Vector</a> first, <a class="el" href="class_vector.html">Vector</a> second, float t) *</td></tr>
 <tr class="separator:a7e36c093f15253db8f0d68d5a69b64eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b5516463b4a28f3c919100d86f37473"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vector.html#a3b5516463b4a28f3c919100d86f37473">Distance</a> (<a class="el" href="class_vector.html">Vector</a> first, <a class="el" href="class_vector.html">Vector</a> second)</td></tr>
 <tr class="separator:a3b5516463b4a28f3c919100d86f37473"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -562,7 +562,23 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Linear interpolation between two vectors for t = 0 returns first, for t = 1 returns second </p>
+    <!--start Custom comment -->
+<p>Linear interpolation between two vectors. For t = 0 it returns the first Vector, for t = 1 it returns the second.</p>
+<div class="example_code">
+This code will make v1 the vector 50% in between v1 and v2
+<pre><code class="language-lua">local v1 = Vector(0,0)
+local v2 = Vector(1,1)
+v1.Lerp(v2,0.5) -- v1 equals  Vector(0.5,0.5)  now
+</code></pre>	
+</div>
+<div class="example_code">
+This function does the same as Lerp, but will not alter the input vectors.
+<pre><code class="language-lua">function Lerp(vec1, vec2, percent)
+    return vec1 * (1 - percent) + vec2 * percent
+end
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
