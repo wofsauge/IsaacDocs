@@ -491,8 +491,17 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<!--start Custom comment -->
 <p>Returns the angle the vector is facing. The vector (1, 0) will be at 0 degrees. The vector (0, 1) will be at 90 degrees. </p>
-
+<div class="example_code">
+This code returns the angle between two positions.
+<pre><code class="language-lua">local v1 = Vector(1,0) -- has angle 0.0
+local v2 = Vector(0,1) -- has angle 90.0
+local v3 = v2-v1 -- subtraction of 2 points is a vector connecting the two points
+print(v3:GetAngleDegrees()) -- prints 45.0 
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a36fc58a941177377e066425071cf4bb3"></a>
