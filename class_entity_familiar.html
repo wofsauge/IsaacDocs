@@ -603,8 +603,9 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
+<!--start Custom comment -->
+<p>Returns the position of an orbiting familiar relative to the player's position. Returns <code>Vector(0,0) if its a normal familiar.</code></p>
+    <p>The "pos" argument is used as an offset.</p>
 </div>
 <a id="a09e60b8d7bfe1eaba2dad503f3d0e3bd"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a09e60b8d7bfe1eaba2dad503f3d0e3bd">&#9670;&nbsp;</a></span>MoveDelayed()</h2>
@@ -750,7 +751,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>returns the number of familiars in that layer </p>
+<p>Returns the number of familiars in that layer.</p>
 
 </div>
 </div>
@@ -936,7 +937,19 @@ This function does not seem to work.
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Can be used to override the angular position of the familiar on its orbit based on the initial starting position of the orbit.</p>
+    <div class="example_code">
+This code will make all of your orbitals move as a tight wall around you.
+<pre><code class="language-lua">for i,v in ipairs(Isaac.GetRoomEntities()) do 
+    if v.Type==3 then 
+        v:ToFamiliar().OrbitAngleOffset = 0.25*i 
+    end 
+end
+</code></pre>	
+<p>Result: </p><a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"></a>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="ae09a3876ae274ce071acd2d12feae2f5"></a>
@@ -950,7 +963,9 @@ This function does not seem to work.
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Defines the orbit of the familiar, if its an orbital. The Vector is interpreted as the dimensions of the circle/oval orbit. Example: <code>Vector(110,90)</code> is the orbital of "Forever alone".</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a1dac03df876ca103f0e58f66faaa9b7b"></a>

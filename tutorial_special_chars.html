@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('tutorial','');});
   <tr> <td>Team Meat Font</td><td><p>teammeatfont10</p><p>teammeatfont12</p><p>teammeatfont16</p><p>teammeatfont16bold</p></td><td><p><a href="customImg/tutorial_special_chars/example_teammeat10.png">Example teammeatfont10</a></p><p><a href="customImg/tutorial_special_chars/example_teammeat12.png">Example teammeatfont12</a></p><p><a href="customImg/tutorial_special_chars/example_teammeat16.png">Example teammeatfont16</a></p><p><a href="customImg/tutorial_special_chars/example_teammeat16bold.png">Example teammeatfont16bold</a></p></td><td><p>Main Menu Elements | Pop-Ups</p><p>Timer / Score Elements</p></td><td><a href="customData/team-meat-font_1.2.zip">Team Meat Font without Bold</a></td></tr>
   <tr> <td>Terminus</td><td><p>terminus</p><p>terminus8</p></td><td><p><a href="customImg/tutorial_special_chars/example_terminus.png">Example Terminus</a></p><p><a href="customImg/tutorial_special_chars/example_terminus8.png">Example Terminus8</a></p></td><td>Debug Console / Isaac.RenderText()</td><td><a href="http://terminus-font.sourceforge.net/">Terminus</a></td></tr>
   <tr> <td>Upheaval</td><td><p>upheaval</p></td><td><a href="customImg/tutorial_special_chars/example_upheaval.png">Example Upheaval</a></td><td>Streak text</td><td><a href="https://www.dafont.com/upheaval.font">Upheaval</a></td></tr>
-  <tr> <td>mplus (Japanese)</td><td><p>mplus_10r</p><p>mplus_12b</p></td><td><p><a href="customImg/tutorial_special_chars/example_mplus10r.png">Example mplus_10r</a></p><p><a href="customImg/tutorial_special_chars/example_mplus12b.png">Example mplus_12b</a></p></td><td><p>Replacement for all fonts aboth for Japanese translation.</p><p> 10r is pf "Tempesta seven" / "Team Meat" replacement</p><p> 12b is "Upheaval" replacement</p></td><td><a href="https://mplus-fonts.osdn.jp/">M+ Fonts</a></td></tr>
+  <tr> <td>mplus (Japanese)</td><td><p>mplus_10r</p><p>mplus_12b</p></td><td><p><a href="customImg/tutorial_special_chars/example_mplus10r.png">Example mplus_10r</a></p><p><a href="customImg/tutorial_special_chars/example_mplus12b.png">Example mplus_12b</a></p></td><td><p>Replacement for all fonts aboth for Japanese translation.</p><p> 10r is pf "Tempesta seven" / "Team Meat" replacement</p><p> 12b is "Upheaval" replacement</p></td><td> <a href="http://itouhiro.hatenablog.com/entry/20130602/font">PixelMplus</a> <br><a href="https://mplus-fonts.osdn.jp/">(M+ Fonts)</a></td></tr>
   <tr> <td>kr Font (Korean)</td><td><p>kr_font12</p><p>kr_font14</p></td><td><p><a href="customImg/tutorial_special_chars/example_krfont12.png">Example kr_font12</a></p><p><a href="customImg/tutorial_special_chars/example_krfont14.png">Example kr_font14</a></p></td><td>TBD</td><td>No source found right now</td></tr>
   <tr> <td>Team Meat Font (Korean)</td><td><p>kr_meatfont14</p></td><td><a href="customImg/tutorial_special_chars/example_krmeatfont14.png">Example kr_meatfont14</a></td><td>TBD</td><td>- Not available -</td></tr>
   
@@ -160,8 +160,45 @@ prints:
 <h2>List of all supported characters and their counterpart</h2> 
 <img src="customImg/tutorial_special_chars/b3.png" alt="" width="800px"/>
 <br><br>
-<div class="notes">
-The Developer _Kilburn mentioned that fonts could be created using this Tool: <a href:"https://www.angelcode.com/products/bmfont/">https://www.angelcode.com/products/bmfont</a>
+    <hr>
+<h1>Creating .fnt files</h1>
+<p>The Developer <i>_Kilburn</i> mentioned that fonts can be created using this Tool: <a href:"https://www.angelcode.com/products/bmfont/">https://www.angelcode.com/products/bmfont</a>.</p>
+<p>The best results can be made by converting Bitmap fonts, since they allow for smaller fontsizes.</p>
+    <img src="customImg/BM_font-settings.png" alt="" width="225px" style="float: left; padding-right: 25px;"/>
+<p><b>Font Settings:</b></p>
+    <ul>
+        <li><b>Font</b> - choose a font thats very readable in small sizes (~8-10px height)</li>
+        <li><b>Charset</b> - Unicode</li>
+        <li><b>Size</b> - the general size of the characters in pixels. normal values are between 10 and 16</li>
+        <li><b>Height</b> - can be used to squish/strech the </li>
+        <li><b>Match char height</b> - the charactersize will be choosen based on the character, and not the size defined in <b>Size</b></li>
+        <li><b>Bold / Italic</b> - What font styling should be used</li>
+        <li><b>Output invalid char glyph</b> - Characters that dont have a sprite will be put on the spritesheet, too. This can create holes in the spritesheet</li>
+        <li><b>Do not include kerning pairs</b> - ?</li>
+        <li></li>
+        <li><b>Rasterization</b> - used to smooth the font sprites. Not recommended for Isaac since we want pixel-perfect fonts!</li>
+        <li></li>
+        <li><b>Outline thickness</b> - Define if an outline should be drawn around the character. In Isaac, this is always ~1px</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="customImg/BM_export-settings.png" alt="" width="225px" style="float: left; padding-right: 25px;"/>
+<p><b>Export Options:</b></p>
+    <ul>
+        <li><b>Padding</b> - Padding around each character, in pixels</li>
+        <li><b>Spacing</b> - Space between characters, in pixels</li>
+        <li><b>Equalize the cell heights</b> - will align all characters in a way, so they take up the least space vertically. off = they group in more uniform rows</li>
+        <li></li>
+        <li><b>Width / Height</b> - Width and Height of each character spritesheet. If spritesheet isnt big enough, multiple files will be created</li>
+        <li><b>Bit depth</b> - how many Bits should be used per color. ALWAYS choose 32 bit! </li>
+        <li><b>Pack chars in multiple Channels</b> - Dont use this. We need all channels for out font because of transparencies!</li>
+        <li></li>
+        <li><b>File format</b> - Choose Binary to create ".fnt" files</li>
+        <li><b>Textures</b> - always set it to "png"</li>
+        <li><b>Compression</b> - (only one option available)</li>
+    </ul>
 </div>
 <br><br><br>
 <!--End Custom comment -->
