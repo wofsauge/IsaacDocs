@@ -400,6 +400,12 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns distance between two vectors </p>
 
+<!--start Custom comment -->
+<div class="example_code">
+<pre><code class="language-lua">local sqtDist = Vector(2,0):Distance(Vector(4,0))) --sqtDist = 2
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a2017d10464afbbfac794504651b6c6d0"></a>
@@ -428,6 +434,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns squared distance between two vectors </p>
+<!--start Custom comment -->
+<div class="example_code">
+<pre><code class="language-lua">local sqtDist = Vector(2,0):DistanceSquared(Vector(4,0))) --sqtDist = 4
+</code></pre>	
+</div>
+<!--End Custom comment -->
 
 </div>
 </div>
@@ -475,6 +487,13 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <p>Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). </p>
 
+<!--start Custom comment -->
+<div class="example_code">
+This code returns a vector that has a 45 degree angle
+<pre><code class="language-lua">local vec = Vector.GetAngleDegrees(45)) --vec is now Vector(0.70711,0.70711)
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a267cb475e2b29b83ac555c04d13cfc69"></a>
