@@ -1053,7 +1053,7 @@ end</code></pre>
 <!--start Custom comment -->
 <p>Returns true, if the entity has all named <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> set.</p>
 <div class="example_code">
-    This code prints something in the console, if the entity has a specific <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+    This code prints something in the console, if the entity has a specific <a class="el" href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
 <pre><code class="language-lua">if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
     print("This entity is confused!")
 end</code></pre>	
@@ -1092,7 +1092,12 @@ end</code></pre>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<div class="notes">
+<p>The game adds taken damage to a damage buffer, which gets applied in the next frame. <a class="el" href="#a4ea78431621cc619182512b8998935d9">HasMortalDamage()</a> returns true if the buffered damage is enough to kill the entity.</p>
+    <p><a class="el" href="#a4ea78431621cc619182512b8998935d9">HasMortalDamage()</a> will be updated additionally after <a class="el" href="#a95415777def9412a45d51e216212e2aa">TakeDamage()</a> is called.</p>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a3b080cfe1792a7e5966408c3e3e087b8"></a>
@@ -1581,7 +1586,11 @@ end</code></pre>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<div class="notes">
+The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, <a class ="el" href="#a95415777def9412a45d51e216212e2aa">TakeDamage()</a> will not decremented the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a2dd95fc8acc01c47134b15ca2bdc6715"></a>
@@ -1926,7 +1935,11 @@ entity1.DepthOffset = -10
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<div class="notes">
+The <a class ="el" href="#acdeee5ac8615e74b5aa91bbdede84813">HitPoints</a> value is not decremented immediately upon taking damage like you would expect. Rather, it is only updated on the frame after the entity takes damage.
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a1df0054b8c30731ca66e4eff0d60a7cf"></a>
