@@ -1889,7 +1889,22 @@ local hours= math.floor(curTime/30/60/60)%60
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+    <p>The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.</p>
+<div class="example_code">
+This code spawns a Leech with specific seed.
+<pre><code class="language-lua">Game():Spawn(
+  EntityType.ENTITY_LEECH, -- Type
+  0, -- Variant
+  Game():GetRoom():GetCenterPos(), -- Position
+  Vector(0, 0), -- Velocity
+  nil, -- Parent
+  0, -- SubType
+  Game():GetRoom():GetSpawnSeed() -- Seed (the "GetSpawnSeed()" function gets a reproducible seed based on the room, e.g. "2496979501")
+)
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="ab7b7c5c0a4b8d0e7d62aff420271392e"></a>
