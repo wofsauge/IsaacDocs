@@ -2027,15 +2027,23 @@ This code spawns a Leech with specific seed.
 
 <!--start Custom comment -->
 <div class="notes">
-The Animation types are as follows:<br>
-    <ul></ul>
-<li>0 or >4: standard transition, sweeps the room in from a direction</li>
-<li>1: fade to black transition, like used for goto</li>
-<li>2: pixel out transition, like used for crawlspaces and the trapdoor at the end of floors</li>
-<li>3: teleport transition, isaac teleports out of the current room and into the next</li>
+<b>Available Animation types (Extracted by "ilise rose" (@yatboim)):</b>
+    <ul>
+<li>0: (None) Standard transition, sweeps the room in from a direction</li>
+<li>1: (Default)fade to black transition, like used for goto</li>
+<li>2: (Stage) pixel out transition, like used for crawlspaces and the trapdoor at the end of floors</li>
+<li>3: (Teleport) teleport transition, isaac teleports out of the current room and into the next</li>
+<li>5: (Ankh) Same as standard transition</li>
+<li>6: (Dead Cat) Same as standard transition</li>
+<li>7: (1Up) Same as standard transition</li>
+<li>8: (Guppys Collar) Same as standard transition</li>
+<li>9: (Judas Shadow) Same as standard transition</li>
+<li>10: (Lazarus Rags) Same as standard transition</li>
+<li>12: (Glowing Hourglass) Same as standard transition</li>
+<li>13: (D7) Same as standard transition</li>
+<li>14: (Missing Poster) Same as standard transition</li>
     </ul>
 </div>
-    
 <div class="bugs">
 The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
 </div>
@@ -2067,7 +2075,16 @@ The Direction variable is completely ignored at all times, with the game instead
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Starts a transition animation like it`s playing when entering a trapdoor to switch between stages.</p>
+    <p><b>Stage Transition types:</b></p>
+    <ul>
+<li>0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.</li>
+<li>1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.</li>
+<li>>2: Same as 0</li>
+    </ul>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="adfc3c2122f7315583f9cd5450660ea09"></a>
