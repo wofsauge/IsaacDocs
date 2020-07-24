@@ -1814,7 +1814,33 @@ local hours= math.floor(curTime/30/60/60)%60
         </tr>
       </table>
 </div><div class="memdoc">
+    <p>Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.</p>
+<!--start Custom comment -->
+    <div class="bugs">
+<p><b>This function does not work and will crash your game on use!</b></p>
+</div>
+<div class="example_code">
+This code emulated the effect of this function by hijacking the Delirious item effect
+<pre><code class="language-lua">local usagetime = -1 -- stores the last time the effect was called.
 
+-- call this function to play the Hallucination effect
+function playHallucination()
+    local player = Isaac.GetPlayer(0)
+    usagetime = Game().TimeCounter
+    player:UseActiveItem(510, false, false, false, false) -- use the delirious item without applying the costume
+    player:GetEffects():RemoveCollectibleEffect(510) -- remove any unwanted side effects of the item usage
+end
+
+-- Removes all spawned NPC entities when activating the function
+function mod:onFriendlyInit(npc) 
+	if Game().TimeCounter-usagetime == 0 then -- only remove enemies that spawned when the effect was called!
+		npc:Remove()
+	end
+end
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.onFriendlyInit)
+</code></pre>	
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a9196b82ad8cf78bf77a03fd3e2874ab2"></a>
