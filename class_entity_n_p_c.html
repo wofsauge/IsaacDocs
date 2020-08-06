@@ -61,7 +61,7 @@ $(function() {
       <div id="nav-sync" class="sync"></div>
     </div>
   </div>
-  <div id="splitbar" style="-moz-user-select:none;" 
+  <div id="splitbar" style="-moz-user-select:none;"
        class="ui-resizable-handle">
   </div>
 </div>
@@ -80,7 +80,7 @@ $(document).ready(function(){initNavTree('class_entity_n_p_c.html','');});
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
+<iframe src="javascript:void(0)" frameborder="0"
         name="MSearchResults" id="MSearchResults">
 </iframe>
 </div>
@@ -606,6 +606,12 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<!--start Custom comment -->
+    <div class="notes">
+    <p>This will return the boss color idx reduced by 1. To get the actual color as set in bosscolors.xml, add +1 to the result.</p>
+        </div>
+<!--End Custom comment -->
+
 </div>
 </div>
 <a id="acd1bbe0173009ffa820fe333afd6442b"></a>
@@ -622,7 +628,7 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-    
+
 <!--start Custom comment -->
     <div class="notes">
     <p>A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> </p>
@@ -789,7 +795,7 @@ Public Attributes</h2></td></tr>
     <p>A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> </p>
     <div class="example_code">
         This code turns an entity into a gaper.
-<pre><code class="language-lua">entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)</code></pre>	
+<pre><code class="language-lua">entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)</code></pre>
 </div>
 <!--End Custom comment -->
 </div>
