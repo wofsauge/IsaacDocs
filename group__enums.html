@@ -6423,11 +6423,12 @@ mod:AddCallback(ModCallbacks.MC_EXECUTE_CMD, mod.oncmd)
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a486da803f51d329593cb2875b15f8600"></a><b>MC_PRE_GET_COLLECTIBLE</b>&#160;<br>Function Args:(<a class="el" href="#gaa8e780d5a9d7622188511c4c190000f1">ItemPoolType</a>, Decrease [bool], Seed [int])</td><td class="fielddoc">
         <!--start Custom comment -->
     <p>This callback is called when the game needs to get a new random item from an item pool.<br>
-You can return an integer from this callback in order to change the returned item pool type.</p>
+You can return an integer from this callback in order to change the returned collectible type.</p>
 <p>It is not called for "scripted" drops (like Mr. Boom from Wrath) and manually spawned items.</p>
     <!--End Custom comment -->
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1ad2c55cabcedb3d3b4c0d106fb951283e"></a><b>MC_POST_GET_COLLECTIBLE</b>&#160;<br>Function Args:(SelectedCollectible [<a class="el" href="#ga2f1970a814e3e61deec58584b8b45a1e">CollectibleType</a>], <a class="el" href="#gaa8e780d5a9d7622188511c4c190000f1">ItemPoolType</a>, <br>Decrease [bool], Seed [int])</td><td class="fielddoc"><p>This function is called right after <a class="el" href="gga84d8f7ea5c80b37ad1c55b2a97286eb1a486da803f51d329593cb2875b15f8600">MC_PRE_GET_COLLECTIBLE</a> and determines the Collectible that will be spawned from the given <a class="el" href="#gaa8e780d5a9d7622188511c4c190000f1">ItemPoolType</a>.</p>
+    <p>You can return an integer from this callback in order to change the returned collectible type.</p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a52b8ac19b779eaef40f2bf49b923f2f9"></a><b>MC_GET_PILL_COLOR</b>&#160;<br>Function Args:(Seed [int])</td><td class="fielddoc"><!--start Custom comment -->
 <p>This function is called, when the game is spawning a pill and needs to determine its PillColor.</p>
