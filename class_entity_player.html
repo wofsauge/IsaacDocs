@@ -2113,7 +2113,13 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+    <!--start Custom comment -->
+<p>Drops a held pocketitem (Card, Pill, Rune...) from the given itemslot at the given position. Possible pocketnumbers are [0, 1]</p>
+    <div class="bugs">
+        <p>This function is spelled wrong.</p>
+        <p>Removing the pocketitem in slot 0, while having a second item in slot 1 will not update the UI correctly. The second item will still be in the second slot, which will in turn prevent the player from using this card right away. The player needs to switch between cards to fix this.</p>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="aff53701e111455f344ffda37f942d18c"></a>
@@ -2674,7 +2680,9 @@ player:GetMaxHearts()+player:GetBoneHearts()*2
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Gets the ID of the card the player is holding in the given itemslot (0 or 1).</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="acef32c6fdb8f8d9622bed59303866db1"></a>
@@ -3175,7 +3183,12 @@ player:GetMaxHearts()+player:GetBoneHearts()*2
         </tr>
       </table>
 </div><div class="memdoc">
-Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)
+    <!--start Custom comment -->
+<p>Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)</p>
+    <div class="bugs">
+        <p>This function is spelled wrong.</p>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a985159436957dc93db8e4f8145e71073"></a>
@@ -3469,7 +3482,9 @@ Get the number of Pickup items you can carry. (1 on default. 2 with belly button
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Gets the ID of the pill the player is holding in the given itemslot (0 or 1).</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a279ae8b9fca1b3f8d55cb5ef8f88132c"></a>
@@ -3523,7 +3538,10 @@ Get the number of Pickup items you can carry. (1 on default. 2 with belly button
       </table>
 </div><div class="memdoc">
 <!--start Custom comment -->
-<p>Get the ID of the pocketitem (Card,Pill,rune) in a said slot </p>
+<p>Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.</p>
+<div class="bugs">
+<p>This function returns userdata, which cant be processed. It is therefore broken and should not be used! </p>
+</div>
 <!--End Custom comment -->
 
 </div>
@@ -3775,7 +3793,9 @@ Get the number of Pickup items you can carry. (1 on default. 2 with belly button
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Gets the ID of the trinket the player is holding in the given trinketslot (0 or 1).</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a19731a1b4c5696a96f5c565959fc3dec"></a>
@@ -4668,6 +4688,9 @@ Get the number of Pickup items you can carry. (1 on default. 2 with belly button
       </table>
 </div><div class="memdoc">
 
+<!--start Custom comment -->
+<p>Change the card/rune the player is holding in the given itemslot (0 or 1).</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a3290c406fe82c3125c9972194fece2bd"></a>
@@ -4730,7 +4753,9 @@ Get the number of Pickup items you can carry. (1 on default. 2 with belly button
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<p>Change the pill the player is holding in the given itemslot (0 or 1).</p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a4ffe93a12f9f2c9d8589f459a0fdb58f"></a>
