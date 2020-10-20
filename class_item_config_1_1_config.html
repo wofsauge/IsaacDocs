@@ -182,7 +182,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns the Itemobject of a given CollectibleID.</p>
 <div class="example_code">
 <p>This Code gets the highest possible collectibleid including modded items. It uses the Binary Search algorithm to do it.</p>
-    <p>Using GetCollectible(): (not recommended)</p>
+    <p>Using GetCollectible(): (<b>recommended!</b>)</p>
 <pre><code class="language-lua">function GetMaxCollectibleID()
     local id = CollectibleType.NUM_COLLECTIBLES-1
     local step = 16
@@ -197,7 +197,7 @@ Static Public Member Functions</h2></td></tr>
     return id
 end
 </code></pre>
-    <p>Using GetCollectibles():</p>
+    <p>Using GetCollectibles(): (<b style="color:red">Crashes on Mac OS)</b></p>
 <pre><code class="language-lua">function GetMaxCollectibleID()
     return Isaac.GetItemConfig():GetCollectibles().Size -1
 end
