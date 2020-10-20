@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('class_room_descriptor_data.html','');}
 Public Attributes</h2></td></tr>
 <tr class="memitem:entryStageID"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryStageID">StageID</a></td></tr>
 <tr class="separator:entryStageID"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:entrySpawns"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entrySpawns">Spawns</a></td></tr>
+<tr class="memitem:entrySpawns"><td class="memItemLeft" align="right" valign="top">userdata&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entrySpawns">Spawns</a></td></tr>
 <tr class="separator:entrySpawns"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:entryType"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryType">Type</a></td></tr>
 <tr class="separator:entryType"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,17 +111,17 @@ Public Attributes</h2></td></tr>
 <tr class="separator:entryName"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:entryShape"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__enums.html#gade2a79908923e18471135bfe86d3b1f7">RoomShape</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryShape">Shape</a></td></tr>
 <tr class="separator:entryShape"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:entrySpawnCount"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entrySpawnCount">SpawnCount</a></td></tr>
+<tr class="memitem:entrySpawnCount"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entrySpawnCount">SpawnCount</a></td></tr>
 <tr class="separator:entrySpawnCount"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:entryHeight"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryHeight">Height</a></td></tr>
+<tr class="memitem:entryHeight"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryHeight">Height</a></td></tr>
 <tr class="separator:entryHeight"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:entryInitialWeight"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryInitialWeight">InitialWeight</a></td></tr>
 <tr class="separator:entryInitialWeight"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:entryDoors"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryDoors">Doors</a></td></tr>
+<tr class="memitem:entryDoors"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryDoors">Doors</a></td></tr>
 <tr class="separator:entryDoors"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:entryWeight"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryWeight">Weight</a></td></tr>
 <tr class="separator:entryWeight"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:entryWidth"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryWidth">Width</a></td></tr>
+<tr class="memitem:entryWidth"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_room_descriptor_data.html#entryWidth">Width</a></td></tr>
 <tr class="separator:entryWidth"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -146,11 +146,15 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RoomDescriptorData::Spawns</td>
+          <td class="memname">userdata RoomDescriptorData::Spawns</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+<div class="bugs">
+<p>Uses userdata, which is a datatype that cant be read/altered via LUA.</p>
+</div>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="entryType"></a>
@@ -206,9 +210,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>bool StageID; </p>
-
 </div>
 </div>
 <a id="entryName"></a>
@@ -246,7 +247,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RoomDescriptorData::SpawnCount</td>
+          <td class="memname">integer RoomDescriptorData::SpawnCount</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -260,7 +261,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RoomDescriptorData::Height</td>
+          <td class="memname">integer RoomDescriptorData::Height</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -288,7 +289,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RoomDescriptorData::Doors</td>
+          <td class="memname">integer RoomDescriptorData::Doors</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -316,7 +317,7 @@ Public Attributes</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">RoomDescriptorData::Width</td>
+          <td class="memname">integer RoomDescriptorData::Width</td>
         </tr>
       </table>
 </div><div class="memdoc">
