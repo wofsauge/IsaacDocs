@@ -145,10 +145,8 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a94280d115acf598bf9f751da3f815a8c"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projectile_params.html#a94280d115acf598bf9f751da3f815a8c">ChangeFlags</a></td></tr>
 <tr class="separator:a94280d115acf598bf9f751da3f815a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d480667cf7ba94ee10bbb9dcc008c6f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projectile_params.html#a8d480667cf7ba94ee10bbb9dcc008c6f">ChangeVelocity</a></td></tr>
-<tr class="memdesc:a8d480667cf7ba94ee10bbb9dcc008c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Velocity will resize to this length.  <a href="#a8d480667cf7ba94ee10bbb9dcc008c6f">More...</a><br /></td></tr>
 <tr class="separator:a8d480667cf7ba94ee10bbb9dcc008c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6738cae72bddb5bbc087f215f7f08bd2"><td class="memItemLeft" align="right" valign="top">integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projectile_params.html#a6738cae72bddb5bbc087f215f7f08bd2">ChangeTimeout</a></td></tr>
-<tr class="memdesc:a6738cae72bddb5bbc087f215f7f08bd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many frames to wait before changing projectile properties if CHANGE_FLAGS_AFTER_TIMEOUT, CHANGE_VELOCITY_AFTER_TIMEOUT are set.  <a href="#a6738cae72bddb5bbc087f215f7f08bd2">More...</a><br /></td></tr>
 <tr class="separator:a6738cae72bddb5bbc087f215f7f08bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cf2914b1d574232020bef71d2d3e79d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_projectile_params.html#a6cf2914b1d574232020bef71d2d3e79d">DepthOffset</a></td></tr>
 <tr class="separator:a6cf2914b1d574232020bef71d2d3e79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,7 +212,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<!--start Custom comment -->
+    <p>Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes after the "Changed" state was activated.</p>
+    <p>The <a  class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!</p>
+    <hr/>
+<p><b>Informations about "Changed" State:</b><br>Projectiles can have two states: normal (default) and changed.<br>
+Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.</p>	
+    <hr/>
+    <p>Also used in: <a  class="el" href="class_entity_projectile.html#a6c5a69141dc132104776d0aa4ce8691e">EntityProjectile()</a></p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a6738cae72bddb5bbc087f215f7f08bd2"></a>
@@ -228,9 +234,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>How many frames to wait before changing projectile properties if CHANGE_FLAGS_AFTER_TIMEOUT, CHANGE_VELOCITY_AFTER_TIMEOUT are set. </p>
-
+<!--start Custom comment -->
+    <p>Number of frames that need to elapse after spawn till the "Changed" state is activated.</p>
+        <p>The <a  class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!</p>
+    <hr/>
+<p><b>Informations about "Changed" State:</b><br>Projectiles can have two states: normal (default) and changed.<br>
+Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.</p>	
+    <hr/>
+    <p>Also used in: <a  class="el" href="class_entity_projectile.html#adc75976b47b0121d4faf956ee61f2a8d">EntityProjectile()</a></p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a8d480667cf7ba94ee10bbb9dcc008c6f"></a>
@@ -244,9 +256,15 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Velocity will resize to this length. </p>
-
+<!--start Custom comment -->
+    <p>Velocity value that gets applied when the "Changed" state is activated.</p>
+            <p>The <a  class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!</p>
+    <hr/>
+<p><b>Informations about "Changed" State:</b><br>Projectiles can have two states: normal (default) and changed.<br>
+Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.</p>	
+    <hr/>
+    <p>Also used in: <a  class="el" href="class_entity_projectile.html#adf22f7bcbe0ffbd7346ede9431c83df1">EntityProjectile()</a></p>
+<!--End Custom comment -->
 </div>
 </div>
 <a id="a2437dd4201892b6264f85a16629a0667"></a>
