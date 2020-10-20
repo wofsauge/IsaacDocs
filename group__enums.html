@@ -6338,8 +6338,9 @@ mod:AddCallback(ModCallbacks.MC_EXECUTE_CMD, mod.oncmd)
 </td></tr>
 <tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a29f5a42a53930937040f12957dc5e42c"></a><b>MC_POST_PICKUP_RENDER</b>&#160;<br>Function Args: (<a class="el" href="class_entity_pickup.html">EntityPickup</a>, RenderOffset [<a class="el" href="class_vector.html">Vector</a>])<br>Optional callback Args: <a class="el" href="#gabe9aded062487f3488b31d7257f395f2">PickupVariant</a></td><td class="fielddoc"><p></p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a70beb5f92f75eade15093118260c4222"></a><b>MC_POST_PICKUP_SELECTION</b>&#160;<br>Function Args: (<a class="el" href="class_entity_pickup.html">EntityPickup</a>, Variant [int], Subtype [int])</td><td class="fielddoc"><p>Called after a Pickup was choosen from a list of random pickups to be spawned.<br>Return nil to continue with default game code. Return an array table <code>{ Variant, Subtype }</code> to override the specified values.</p>
+<tr><td class="fieldname"><a id="gga84d8f7ea5c80b37ad1c55b2a97286eb1a70beb5f92f75eade15093118260c4222"></a><b>MC_POST_PICKUP_SELECTION</b>&#160;<br>Function Args: (<a class="el" href="class_entity_pickup.html">EntityPickup</a>[int], Variant [int], Subtype [int])</td><td class="fielddoc"><p>Called after a Pickup was choosen from a list of random pickups to be spawned.<br>Return nil to continue with default game code. Return an array table <code>{ Variant, Subtype }</code> to override the specified values.</p>
  <div class="bugs">
+<p><a class="el" href="class_entity_pickup.html">EntityPickup</a> does contain the Type/variant of the pickup to spawn, but is otherwise an empty class with empty / zeroed values.</p>
 <p>This Callback is also called when entering a room that contains pickups that are already selected. It is also called when the player drops a card. Those facts make this callback useless to use for handling pickup pools.</p>
 </div>
 </td></tr>
