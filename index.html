@@ -100,6 +100,9 @@ This Documentation is a community curated project. It provides additional inform
 <h2>Example project:</h2>
 To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory: <code class="language-lua">C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods</code><br>
 Then, you have to create a new <code class="language-lua">main.lua</code> file in the newly created folder. This file can then be used to contain the logic behind your mod. <br>
+<div class="notes">
+  Linux: Mod tools aren't available in the native version. You need to run the game with <a href="https://github.com/ValveSoftware/Proton">Proton</a>, the folder location is going to be inside your Steam folder <code class="language-lua">/Steam/steamapps/compatdata/250900/pfx/drive_c/users/steamuser/Documents/My Games/Binding of Isaac Afterbirth+ Mods</code>
+</div>
 <h4>Example "main.lua"</h4>
 This code creates a mod, that turns tears into dark matter tears (slowing black tears). It also adds one coin to the player every shot.
 <pre><code class="language-lua">local mod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (dont change anything here, except the name)
