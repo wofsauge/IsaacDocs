@@ -1,0 +1,112 @@
+site_name: "BoI: AB+ Lua Docs"
+nav:
+    - Home: index.md
+    - Docs:
+        - Home: index.md
+        - "Color": Color.md        
+        - "> CppContainer":
+            - "CppContainer::ArrayProxy": CppContainer_ArrayProxy.md
+            - "CppContainer::ArrayProxy::RoomList": CppContainer_ArrayProxy_RoomList.md
+            - "CppContainer::EntityList": CppContainer_EntityList.md
+            - "CppContainer::Vector::CardConfigList": CppContainer_Vector_CardConfigList.md
+            - "CppContainer::Vector::CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
+            - "CppContainer::Vector::EffectList": CppContainer_Vector_EffectList.md
+            - "CppContainer::Vector::ItemConfigList": CppContainer_Vector_ItemConfigList.md
+            - "CppContainer::Vector::PillConfigList": CppContainer_Vector_PillConfigList.md
+            - "CppContainer::Vector::VectorList": CppContainer_Vector_VectorList.md
+        - "> Entity":
+            - "Entity": Entity.md
+            - "EntityBomb": EntityBomb.md
+            - "EntityEffect": EntityEffect.md
+            - "EntityFamiliar": EntityFamiliar.md
+            - "EntityKnife": EntityKnife.md
+            - "EntityLaser": EntityLaser.md
+            - "EntityNPC": EntityNPC.md
+            - "EntityPickup": EntityPickup.md
+            - "EntityPlayer": EntityPlayer.md
+            - "EntityProjectile": EntityProjectile.md
+            - "EntityPtr": EntityPtr.md
+            - "EntityRef": EntityRef.md
+            - "EntityTear": EntityTear.md
+        - "Font": Font.md
+        - "Functions": Functions.md
+        - "Game": Game.md
+        - "> GridEntity":
+            - "GridEntity": GridEntity.md
+            - "GridEntityDesc": GridEntityDesc.md
+            - "GridEntityDoor": GridEntityDoor.md
+            - "GridEntityPit": GridEntityPit.md
+            - "GridEntityPoop": GridEntityPoop.md
+            - "GridEntityPressurePlate": GridEntityPressurePlate.md
+            - "GridEntityRock": GridEntityRock.md
+            - "GridEntitySpikes": GridEntitySpikes.md
+            - "GridEntityTNT": GridEntityTNT.md
+        - "> ItemConfig":
+            - "ItemConfig::Card": ItemConfig_Card.md
+            - "ItemConfig::Config": ItemConfig_Config.md
+            - "ItemConfig::Costume": ItemConfig_Costume.md
+            - "ItemConfig::Item": ItemConfig_Item.md
+            - "ItemConfig::PillEffect": ItemConfig_PillEffect.md
+        - "Input": Input.md
+        - "Isaac": Isaac.md
+        - "ItemPool": ItemPool.md
+        - "KColor": KColor.md
+        - "Level": Level.md
+        - "MusicManager": MusicManager.md
+        - "PathFinder": PathFinder.md
+        - "> PlayerTypes":
+            - "PlayerTypes::ActiveItemDesc": PlayerTypes_ActiveItemDesc.md
+            - "PlayerTypes::PosVel": PlayerTypes_PosVel.md
+        - "ProjectileParams": ProjectileParams.md
+        - "QueueItemData": QueueItemData.md
+        - "Room": Room.md
+        - "> RoomConfig":
+            - "RoomConfig::Entry": RoomConfig_Entry.md
+            - "RoomConfig::Room": RoomConfig_Room.md
+            - "RoomConfig::Spawn": RoomConfig_Spawn.md
+        - "RoomDescriptor": RoomDescriptor.md
+        - "RoomDescriptorData": RoomDescriptorData.md
+        - "RNG": RNG.md
+        - "Seeds": Seeds.md
+        - "ShockwaveParams": ShockwaveParams.md
+        - "Sprite": Sprite.md
+        - "SFXManager": SFXManager.md
+        - "TearParams": TearParams.md
+        - "TemporaryEffect": TemporaryEffect.md
+        - "TemporaryEffects": TemporaryEffects.md
+        - "Vector": Vector.md
+    - Tutorials:
+        - "Tutorial - Adding Costumes to items without LUA": Tutorial-AddingCostumestoitemswithoutLUA.md
+        - "Using ZeroBrane Studio to debug your scripts": UsingZeroBraneStudiotodebugyourscripts.md
+        - "Debug Console": DebugConsole.md
+        - "Using additional .lua Files": Usingadditional.luaFiles.md
+        - "Writing screen shaders": Writingscreenshaders.md
+        - "Tutorial - Render text": Tutorial-Rendertext.md
+        - "XML File documentation": XMLFiledocumentation.md
+theme:
+    name: material
+    features:
+        - navigation.tabs
+        - navigation.instant
+    palette:
+        #scheme: slate
+    icon:
+        repo: fontawesome/brands/github
+markdown_extensions:
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 3
+plugins:
+  - search:
+        separator: '[\s\-\.]+'
+#  - git-revision-date:
+#      enabled_if_env: CI
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/wofsauge/IsaacDocs
+      name: "BoI: AB+ Lua Docs on GitHub"
+copyright: Copyright &copy; 2021 Wofsauge
+repo_url: https://github.com/wofsauge/IsaacDocs
+repo_name: wofsauge/IsaacDocs
+edit_uri: edit/master/beta/docs/

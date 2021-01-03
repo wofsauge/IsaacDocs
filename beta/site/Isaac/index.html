@@ -1,0 +1,2505 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Isaac - BoI: AB+ Lua Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-isaac" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="BoI: AB+ Lua Docs" class="md-header-nav__button md-logo" aria-label="BoI: AB+ Lua Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            BoI: AB+ Lua Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Isaac
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/wofsauge/IsaacDocs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Docs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Frequently used
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BoI: AB+ Lua Docs" class="md-nav__button md-logo" aria-label="BoI: AB+ Lua Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    BoI: AB+ Lua Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/wofsauge/IsaacDocs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Docs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Docs" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Color/" class="md-nav__link">
+      Color
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_ArrayProxy_RoomList/" class="md-nav__link">
+      CppContainer::ArrayProxy::RoomList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_EntityList/" class="md-nav__link">
+      CppContainer::EntityList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_CardConfigList/" class="md-nav__link">
+      CppContainer::Vector::CardConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_CostumeConfigList/" class="md-nav__link">
+      CppContainer::Vector::CostumeConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_EffectList/" class="md-nav__link">
+      CppContainer::Vector::EffectList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_ItemConfigList/" class="md-nav__link">
+      CppContainer::Vector::ItemConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_PillConfigList/" class="md-nav__link">
+      CppContainer::Vector::PillConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_VectorList/" class="md-nav__link">
+      CppContainer::Vector::VectorList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Entity/" class="md-nav__link">
+      Entity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityBomb/" class="md-nav__link">
+      EntityBomb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityEffect/" class="md-nav__link">
+      EntityEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityFamiliar/" class="md-nav__link">
+      EntityFamiliar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityKnife/" class="md-nav__link">
+      EntityKnife
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityLaser/" class="md-nav__link">
+      EntityLaser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityNPC/" class="md-nav__link">
+      EntityNPC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPickup/" class="md-nav__link">
+      EntityPickup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPlayer/" class="md-nav__link">
+      EntityPlayer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityProjectile/" class="md-nav__link">
+      EntityProjectile
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPtr/" class="md-nav__link">
+      EntityPtr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityRef/" class="md-nav__link">
+      EntityRef
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityTear/" class="md-nav__link">
+      EntityTear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Font/" class="md-nav__link">
+      Font
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Game/" class="md-nav__link">
+      Game
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntity/" class="md-nav__link">
+      GridEntity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityDesc/" class="md-nav__link">
+      GridEntityDesc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityDoor/" class="md-nav__link">
+      GridEntityDoor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPit/" class="md-nav__link">
+      GridEntityPit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPoop/" class="md-nav__link">
+      GridEntityPoop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPressurePlate/" class="md-nav__link">
+      GridEntityPressurePlate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityRock/" class="md-nav__link">
+      GridEntityRock
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntitySpikes/" class="md-nav__link">
+      GridEntitySpikes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityTNT/" class="md-nav__link">
+      GridEntityTNT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Card/" class="md-nav__link">
+      ItemConfig::Card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Config/" class="md-nav__link">
+      ItemConfig::Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Costume/" class="md-nav__link">
+      ItemConfig::Costume
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Item/" class="md-nav__link">
+      ItemConfig::Item
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_PillEffect/" class="md-nav__link">
+      ItemConfig::PillEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemPool/" class="md-nav__link">
+      ItemPool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../KColor/" class="md-nav__link">
+      KColor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Level/" class="md-nav__link">
+      Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../MusicManager/" class="md-nav__link">
+      MusicManager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PathFinder/" class="md-nav__link">
+      PathFinder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes_ActiveItemDesc/" class="md-nav__link">
+      PlayerTypes::ActiveItemDesc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes_PosVel/" class="md-nav__link">
+      PlayerTypes::PosVel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ProjectileParams/" class="md-nav__link">
+      ProjectileParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../QueueItemData/" class="md-nav__link">
+      QueueItemData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Room/" class="md-nav__link">
+      Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Entry/" class="md-nav__link">
+      RoomConfig::Entry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Room/" class="md-nav__link">
+      RoomConfig::Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Spawn/" class="md-nav__link">
+      RoomConfig::Spawn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomDescriptor/" class="md-nav__link">
+      RoomDescriptor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomDescriptorData/" class="md-nav__link">
+      RoomDescriptorData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RNG/" class="md-nav__link">
+      RNG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Seeds/" class="md-nav__link">
+      Seeds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ShockwaveParams/" class="md-nav__link">
+      ShockwaveParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Sprite/" class="md-nav__link">
+      Sprite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../SFXManager/" class="md-nav__link">
+      SFXManager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TearParams/" class="md-nav__link">
+      TearParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TemporaryEffect/" class="md-nav__link">
+      TemporaryEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TemporaryEffects/" class="md-nav__link">
+      TemporaryEffects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Vector/" class="md-nav__link">
+      Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Functions/" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../BindingofIsaac-Afterbirth%2BLuaReference_GuideDocumentation/" class="md-nav__link">
+      Binding of Isaac - Afterbirth+ Lua Reference/Guide Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer/" class="md-nav__link">
+      CppContainer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_ArrayProxy/" class="md-nav__link">
+      CppContainer::ArrayProxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector/" class="md-nav__link">
+      CppContainer::Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Input/" class="md-nav__link">
+      Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Isaac
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Isaac
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcallback-table-ref-integer-callbackid-table-callbackfn-integer-entityid" class="md-nav__link">
+    void AddCallback (table ref, integer callbackId, table callbackFn, integer entityId )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-addpilleffecttopool-integer-pilleffect" class="md-nav__link">
+    integer AddPillEffectToPool (integer pillEffect)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-consoleoutput-string-text" class="md-nav__link">
+    void ConsoleOutput (string text)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-countbosses" class="md-nav__link">
+    integer CountBosses ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-countenemies" class="md-nav__link">
+    integer CountEnemies ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-countentities-entity-spawner-integer-type-integer-variant-integer-subtype" class="md-nav__link">
+    integer CountEntities (Entity Spawner, integer Type, integer Variant, integer Subtype )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-debugstring-string-str" class="md-nav__link">
+    void DebugString (string str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-executecommand-string-command" class="md-nav__link">
+    string ExecuteCommand (string command)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-explode-vector-pos-entity-source-float-damage" class="md-nav__link">
+    void Explode (Vector pos, Entity source, float damage )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-findbytype-integer-type-integer-variant-integer-subtype-boolean-cache-boolean-ignorefriendly" class="md-nav__link">
+    table FindByType (integer Type, integer Variant, integer Subtype, boolean Cache, boolean IgnoreFriendly )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-findinradius-vector-position-float-radius-integer-partitions" class="md-nav__link">
+    table FindInRadius (Vector Position, float Radius, integer Partitions )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcardidbyname-string-cardhudname" class="md-nav__link">
+    integer GetCardIdByName (string cardHudName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getchallenge" class="md-nav__link">
+    integer GetChallenge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getchallengeidbyname-string-challengename" class="md-nav__link">
+    integer GetChallengeIdByName (string challengeName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcostumeidbypath-string-path" class="md-nav__link">
+    integer GetCostumeIdByPath (string path)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcurseidbyname-string-cursename" class="md-nav__link">
+    integer GetCurseIdByName (string curseName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getentitytypebyname-string-entityname" class="md-nav__link">
+    integer GetEntityTypeByName (string entityName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getentityvariantbyname-string-entityname" class="md-nav__link">
+    integer GetEntityVariantByName (string entityName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#int-getframecount" class="md-nav__link">
+    int GetFrameCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getfreenearposition-vector-pos-float-step" class="md-nav__link">
+    Vector GetFreeNearPosition (Vector pos, float step )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-getitemconfig" class="md-nav__link">
+    Config GetItemConfig ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getitemidbyname-string-itemname" class="md-nav__link">
+    integer GetItemIdByName (string itemName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmusicidbyname-string-musicname" class="md-nav__link">
+    integer GetMusicIdByName (string musicName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getpilleffectbyname-string-pilleffect" class="md-nav__link">
+    integer GetPillEffectByName (string pillEffect)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getplayer-integer-playerid" class="md-nav__link">
+    EntityPlayer GetPlayer (integer playerId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getplayertypebyname-string-playername" class="md-nav__link">
+    integer GetPlayerTypeByName (string playerName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getrandomposition" class="md-nav__link">
+    Vector GetRandomPosition ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-getroomentities" class="md-nav__link">
+    table GetRoomEntities ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getsoundidbyname-string-soundname" class="md-nav__link">
+    integer GetSoundIdByName (string soundName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettextwidth-string-str" class="md-nav__link">
+    integer GetTextWidth (string str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettime" class="md-nav__link">
+    integer GetTime ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettrinketidbyname-string-trinketname" class="md-nav__link">
+    integer GetTrinketIdByName (string trinketName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gridentity-gridspawn-gridentity-gridentitytype-int-variant-vector-position-boolean-forced" class="md-nav__link">
+    GridEntity GridSpawn (GridEntity gridEntityType, int Variant, Vector position, boolean forced )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasmoddata-table-ref" class="md-nav__link">
+    boolean HasModData (table ref)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtoscreendistance-vector-pos" class="md-nav__link">
+    Vector WorldToScreenDistance (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-registermod-table-ref-string-modname-integer-apiversion" class="md-nav__link">
+    void RegisterMod (table ref, string modName, integer apiVersion )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removecallback-table-ref-integer-callbackid-table-callbackfn" class="md-nav__link">
+    void RemoveCallback (table ref, integer callbackId, table callbackFn )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removemoddata-table-ref" class="md-nav__link">
+    void RemoveModData (table ref)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderscaledtext-string-str-float-x-float-y-float-scalex-float-scaley-float-r-float-g-float-b-float-a" class="md-nav__link">
+    void RenderScaledText (string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rendertext-string-str-float-x-float-y-float-r-float-g-float-b-float-a" class="md-nav__link">
+    void RenderText (string str, float X, float Y, float R, float G, float B, float A )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-savemoddata-table-ref-string-data" class="md-nav__link">
+    void SaveModData (table ref, string data )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-screentoworld-vector-pos" class="md-nav__link">
+    Vector ScreenToWorld (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-screentoworlddistance-vector-pos" class="md-nav__link">
+    Vector ScreenToWorldDistance (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-spawn-int-entitytype-int-entityvariant-int-entitysubtype-vector-position-vector-velocity-entity-spawner" class="md-nav__link">
+    Entity Spawn (int entityType, int entityVariant, int entitySubtype, Vector position, Vector velocity, Entity Spawner )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtorenderposition-vector-pos" class="md-nav__link">
+    Vector WorldToRenderPosition (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtoscreen-vector-pos" class="md-nav__link">
+    Vector WorldToScreen (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtoscreendistance-vector-pos_1" class="md-nav__link">
+    Vector WorldToScreenDistance (Vector pos)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig/" class="md-nav__link">
+      ItemConfig
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes/" class="md-nav__link">
+      PlayerTypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig/" class="md-nav__link">
+      RoomConfig
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-nav__link">
+      Tutorial - Adding Costumes to items without LUA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../UsingZeroBraneStudiotodebugyourscripts/" class="md-nav__link">
+      Using ZeroBrane Studio to debug your scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../DebugConsole/" class="md-nav__link">
+      Debug Console
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Usingadditional.luaFiles/" class="md-nav__link">
+      Using additional .lua Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Writingscreenshaders/" class="md-nav__link">
+      Writing screen shaders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-Rendertext/" class="md-nav__link">
+      Tutorial - Render text
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../XMLFiledocumentation/" class="md-nav__link">
+      XML File documentation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-nav__link">
+      [Tutorial] Adding Costumes to items without LUA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-Rendertext/" class="md-nav__link">
+      [Tutorial] Render text
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Frequently used
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Frequently used" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Frequently used
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      EntityPlayer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcallback-table-ref-integer-callbackid-table-callbackfn-integer-entityid" class="md-nav__link">
+    void AddCallback (table ref, integer callbackId, table callbackFn, integer entityId )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-addpilleffecttopool-integer-pilleffect" class="md-nav__link">
+    integer AddPillEffectToPool (integer pillEffect)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-consoleoutput-string-text" class="md-nav__link">
+    void ConsoleOutput (string text)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-countbosses" class="md-nav__link">
+    integer CountBosses ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-countenemies" class="md-nav__link">
+    integer CountEnemies ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-countentities-entity-spawner-integer-type-integer-variant-integer-subtype" class="md-nav__link">
+    integer CountEntities (Entity Spawner, integer Type, integer Variant, integer Subtype )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-debugstring-string-str" class="md-nav__link">
+    void DebugString (string str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-executecommand-string-command" class="md-nav__link">
+    string ExecuteCommand (string command)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-explode-vector-pos-entity-source-float-damage" class="md-nav__link">
+    void Explode (Vector pos, Entity source, float damage )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-findbytype-integer-type-integer-variant-integer-subtype-boolean-cache-boolean-ignorefriendly" class="md-nav__link">
+    table FindByType (integer Type, integer Variant, integer Subtype, boolean Cache, boolean IgnoreFriendly )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-findinradius-vector-position-float-radius-integer-partitions" class="md-nav__link">
+    table FindInRadius (Vector Position, float Radius, integer Partitions )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcardidbyname-string-cardhudname" class="md-nav__link">
+    integer GetCardIdByName (string cardHudName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getchallenge" class="md-nav__link">
+    integer GetChallenge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getchallengeidbyname-string-challengename" class="md-nav__link">
+    integer GetChallengeIdByName (string challengeName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcostumeidbypath-string-path" class="md-nav__link">
+    integer GetCostumeIdByPath (string path)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcurseidbyname-string-cursename" class="md-nav__link">
+    integer GetCurseIdByName (string curseName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getentitytypebyname-string-entityname" class="md-nav__link">
+    integer GetEntityTypeByName (string entityName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getentityvariantbyname-string-entityname" class="md-nav__link">
+    integer GetEntityVariantByName (string entityName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#int-getframecount" class="md-nav__link">
+    int GetFrameCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getfreenearposition-vector-pos-float-step" class="md-nav__link">
+    Vector GetFreeNearPosition (Vector pos, float step )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config-getitemconfig" class="md-nav__link">
+    Config GetItemConfig ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getitemidbyname-string-itemname" class="md-nav__link">
+    integer GetItemIdByName (string itemName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmusicidbyname-string-musicname" class="md-nav__link">
+    integer GetMusicIdByName (string musicName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getpilleffectbyname-string-pilleffect" class="md-nav__link">
+    integer GetPillEffectByName (string pillEffect)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getplayer-integer-playerid" class="md-nav__link">
+    EntityPlayer GetPlayer (integer playerId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getplayertypebyname-string-playername" class="md-nav__link">
+    integer GetPlayerTypeByName (string playerName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getrandomposition" class="md-nav__link">
+    Vector GetRandomPosition ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#table-getroomentities" class="md-nav__link">
+    table GetRoomEntities ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getsoundidbyname-string-soundname" class="md-nav__link">
+    integer GetSoundIdByName (string soundName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettextwidth-string-str" class="md-nav__link">
+    integer GetTextWidth (string str)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettime" class="md-nav__link">
+    integer GetTime ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettrinketidbyname-string-trinketname" class="md-nav__link">
+    integer GetTrinketIdByName (string trinketName)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gridentity-gridspawn-gridentity-gridentitytype-int-variant-vector-position-boolean-forced" class="md-nav__link">
+    GridEntity GridSpawn (GridEntity gridEntityType, int Variant, Vector position, boolean forced )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasmoddata-table-ref" class="md-nav__link">
+    boolean HasModData (table ref)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtoscreendistance-vector-pos" class="md-nav__link">
+    Vector WorldToScreenDistance (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-registermod-table-ref-string-modname-integer-apiversion" class="md-nav__link">
+    void RegisterMod (table ref, string modName, integer apiVersion )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removecallback-table-ref-integer-callbackid-table-callbackfn" class="md-nav__link">
+    void RemoveCallback (table ref, integer callbackId, table callbackFn )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removemoddata-table-ref" class="md-nav__link">
+    void RemoveModData (table ref)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderscaledtext-string-str-float-x-float-y-float-scalex-float-scaley-float-r-float-g-float-b-float-a" class="md-nav__link">
+    void RenderScaledText (string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rendertext-string-str-float-x-float-y-float-r-float-g-float-b-float-a" class="md-nav__link">
+    void RenderText (string str, float X, float Y, float R, float G, float B, float A )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-savemoddata-table-ref-string-data" class="md-nav__link">
+    void SaveModData (table ref, string data )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-screentoworld-vector-pos" class="md-nav__link">
+    Vector ScreenToWorld (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-screentoworlddistance-vector-pos" class="md-nav__link">
+    Vector ScreenToWorldDistance (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-spawn-int-entitytype-int-entityvariant-int-entitysubtype-vector-position-vector-velocity-entity-spawner" class="md-nav__link">
+    Entity Spawn (int entityType, int entityVariant, int entitySubtype, Vector position, Vector velocity, Entity Spawner )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtorenderposition-vector-pos" class="md-nav__link">
+    Vector WorldToRenderPosition (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtoscreen-vector-pos" class="md-nav__link">
+    Vector WorldToScreen (Vector pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-worldtoscreendistance-vector-pos_1" class="md-nav__link">
+    Vector WorldToScreenDistance (Vector pos)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/wofsauge/IsaacDocs/edit/master/docs/Isaac.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="class-isaac">Class "Isaac"<a class="headerlink" href="#class-isaac" title="Permanent link">⚓︎</a></h1>
+<hr />
+<h2 id="void-addcallback-table-ref-integer-callbackid-table-callbackfn-integer-entityid">void AddCallback (table ref, integer callbackId, table callbackFn, integer entityId )<a class="headerlink" href="#void-addcallback-table-ref-integer-callbackid-table-callbackfn-integer-entityid" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-addpilleffecttopool-integer-pilleffect">integer AddPillEffectToPool (integer pillEffect)<a class="headerlink" href="#integer-addpilleffecttopool-integer-pilleffect" title="Permanent link">⚓︎</a></h2>
+<p>returns pill color </p>
+<hr />
+<h2 id="void-consoleoutput-string-text">void ConsoleOutput (string text)<a class="headerlink" href="#void-consoleoutput-string-text" title="Permanent link">⚓︎</a></h2>
+<p>Prints a string into the Debug Console</p>
+<h4>Example Code</h4>
+<p>You can use this example as an alternative.</p>
+<pre><code class="language-lua">Isaac.ConsoleOutput(&quot;This is a Test.&quot;)
+-- Output: This is a Test.
+
+-- Alternatively:
+print(&quot;This is a Test.&quot;)
+-- Output: This is a Test.
+
+</code></pre>
+<hr />
+<h2 id="integer-countbosses">integer CountBosses ()<a class="headerlink" href="#integer-countbosses" title="Permanent link">⚓︎</a></h2>
+<p>Returns the number of bosses in the current room.</p>
+<hr />
+<h2 id="integer-countenemies">integer CountEnemies ()<a class="headerlink" href="#integer-countenemies" title="Permanent link">⚓︎</a></h2>
+<p>Returns the number of enemies in the current room.</p>
+<hr />
+<h2 id="integer-countentities-entity-spawner-integer-type-integer-variant-integer-subtype">integer CountEntities (Entity Spawner, integer Type, integer Variant, integer Subtype )<a class="headerlink" href="#integer-countentities-entity-spawner-integer-type-integer-variant-integer-subtype" title="Permanent link">⚓︎</a></h2>
+<p>Returns the number of entities in the current room that fulfill the specified requirements.
+Spawner refers to an entity object (can be <code>nil</code>) 
+Type refers to the found entity's type (Can be <code>EntityType.ENTITY_NULL</code>) 
+Variant and Subtype refer to the found entitys Variant and Subtype (Can be <code>-1</code>) </p>
+<hr />
+<h2 id="void-debugstring-string-str">void DebugString (string str)<a class="headerlink" href="#void-debugstring-string-str" title="Permanent link">⚓︎</a></h2>
+<p>Prints a string into the log file. You can find this file here <code>C:\Users\Jan\Documents\My Games\Binding of Isaac Afterbirth+\log.txt</code> </p>
+<h4>Example Code</h4>
+<p>This code prints "This is a Test." in the log.txt file.</p>
+<pre><code class="language-lua">Isaac.DebugString(&quot;This is a Test.&quot;)
+-- Output: Lua Debug: This is a Test.
+
+</code></pre>
+<hr />
+<h2 id="string-executecommand-string-command">string ExecuteCommand (string command)<a class="headerlink" href="#string-executecommand-string-command" title="Permanent link">⚓︎</a></h2>
+<p>This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands.</p>
+<hr />
+<h2 id="void-explode-vector-pos-entity-source-float-damage">void Explode (Vector pos, Entity source, float damage )<a class="headerlink" href="#void-explode-vector-pos-entity-source-float-damage" title="Permanent link">⚓︎</a></h2>
+<p>Spawn an explosion on a specified location.</p>
+<hr />
+<h2 id="table-findbytype-integer-type-integer-variant-integer-subtype-boolean-cache-boolean-ignorefriendly">table FindByType (integer Type, integer Variant, integer Subtype, boolean Cache, boolean IgnoreFriendly )<a class="headerlink" href="#table-findbytype-integer-type-integer-variant-integer-subtype-boolean-cache-boolean-ignorefriendly" title="Permanent link">⚓︎</a></h2>
+<p>Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. </p>
+<hr />
+<h2 id="table-findinradius-vector-position-float-radius-integer-partitions">table FindInRadius (Vector Position, float Radius, integer Partitions )<a class="headerlink" href="#table-findinradius-vector-position-float-radius-integer-partitions" title="Permanent link">⚓︎</a></h2>
+<p>Returns entities in range of Radius from Position filtered by Partitions mask (see <a href="group__enums.html#gaea2d06861d0d38120ea425aa76d2f398">EntityPartition enum</a>) (include all = 0xffffffff) </p>
+<p>This function does not return the entities sorted by nearest first, but based on the order they were loaded.</p>
+<hr />
+<h2 id="integer-getcardidbyname-string-cardhudname">integer GetCardIdByName (string cardHudName)<a class="headerlink" href="#integer-getcardidbyname-string-cardhudname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the CardID based on its hud value. (File: pocketitems.xml)</p>
+<h4>Notes</h4>
+<p>The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.</p>
+<h4>Example Code</h4>
+<p>This code gets the CardID of XVI - The Tower. </p>
+<pre><code class="language-lua">Isaac.GetCardIdByName(&quot;16_TheTower&quot;)
+    --Returns: 17
+
+</code></pre>
+<hr />
+<h2 id="integer-getchallenge">integer GetChallenge ()<a class="headerlink" href="#integer-getchallenge" title="Permanent link">⚓︎</a></h2>
+<p>Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.</p>
+<hr />
+<h2 id="integer-getchallengeidbyname-string-challengename">integer GetChallengeIdByName (string challengeName)<a class="headerlink" href="#integer-getchallengeidbyname-string-challengename" title="Permanent link">⚓︎</a></h2>
+<p>Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the ChallengeID of Aprils fool. </p>
+<pre><code class="language-lua">Isaac.GetChallengeIdByName(&quot;Aprils fool&quot;)
+    --Returns: 32
+
+</code></pre>
+<hr />
+<h2 id="integer-getcostumeidbypath-string-path">integer GetCostumeIdByPath (string path)<a class="headerlink" href="#integer-getcostumeidbypath-string-path" title="Permanent link">⚓︎</a></h2>
+<p>Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the CostumeID of the Poop transformation costume.</p>
+<pre><code class="language-lua">Isaac.GetCostumeIdByPath(&quot;gfx/characters/n027_Transformation_Poop.anm2&quot;)
+    --Returns: 27
+
+</code></pre>
+<hr />
+<h2 id="integer-getcurseidbyname-string-cursename">integer GetCurseIdByName (string curseName)<a class="headerlink" href="#integer-getcurseidbyname-string-cursename" title="Permanent link">⚓︎</a></h2>
+<p>Returns the CurseID of a curse based on its name. (File: curses.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the CurseID of Curse of the Unknown.</p>
+<pre><code class="language-lua">Isaac.GetCurseIdByName(&quot;Curse of the Unknown&quot;)
+    --Returns: 4
+
+</code></pre>
+<hr />
+<h2 id="integer-getentitytypebyname-string-entityname">integer GetEntityTypeByName (string entityName)<a class="headerlink" href="#integer-getentitytypebyname-string-entityname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the EntityType of an entity based on its name. (File: entities2.xml)</p>
+<h4>Notes</h4>
+<p>There is no SubType version of this function.</p>
+<h4>Example Code</h4>
+<p>This code gets the EntityType of Flaming Gaper. </p>
+<pre><code class="language-lua">Isaac.GetEntityTypeByName(&quot;Flaming Gaper&quot;)
+    --Returns: 10
+
+</code></pre>
+<hr />
+<h2 id="integer-getentityvariantbyname-string-entityname">integer GetEntityVariantByName (string entityName)<a class="headerlink" href="#integer-getentityvariantbyname-string-entityname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the variant of an entity based on its name. (File: entities2.xml)</p>
+<h4>Notes</h4>
+<p>There is no SubType version of this function.</p>
+<h4>Example Code</h4>
+<p>This code gets the variant of Flaming Gaper. </p>
+<pre><code class="language-lua">Isaac.GetEntityVariantByName(&quot;Flaming Gaper&quot;)
+    --Returns: 2
+
+</code></pre>
+<hr />
+<h2 id="int-getframecount">int GetFrameCount ()<a class="headerlink" href="#int-getframecount" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
+1 second equals roughtly 60 frames.
+This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207"><code>Game():GetFrameCount()</code></a></p>
+<hr />
+<h2 id="vector-getfreenearposition-vector-pos-float-step">Vector GetFreeNearPosition (Vector pos, float step )<a class="headerlink" href="#vector-getfreenearposition-vector-pos-float-step" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="config-getitemconfig">Config GetItemConfig ()<a class="headerlink" href="#config-getitemconfig" title="Permanent link">⚓︎</a></h2>
+<p>Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object.</p>
+<hr />
+<h2 id="integer-getitemidbyname-string-itemname">integer GetItemIdByName (string itemName)<a class="headerlink" href="#integer-getitemidbyname-string-itemname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the ItemID of a Collectible. (File: items.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the ItemID of Brimstone.</p>
+<pre><code class="language-lua">Isaac.GetItemIdByName(&quot;Brimstone&quot;)
+    --Returns: 118
+
+</code></pre>
+<hr />
+<h2 id="integer-getmusicidbyname-string-musicname">integer GetMusicIdByName (string musicName)<a class="headerlink" href="#integer-getmusicidbyname-string-musicname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the MusicID of a music track. (File: music.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the MusicID of the Title Screen.</p>
+<pre><code class="language-lua">Isaac.GetMusicIdByName(&quot;Title Screen&quot;)
+    --Returns: 61
+
+</code></pre>
+<hr />
+<h2 id="integer-getpilleffectbyname-string-pilleffect">integer GetPillEffectByName (string pillEffect)<a class="headerlink" href="#integer-getpilleffectbyname-string-pilleffect" title="Permanent link">⚓︎</a></h2>
+<p>Returns the PillEffectID based on its name. (File: pocketitems.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the PillEffectID of I can see forever!.</p>
+<pre><code class="language-lua">Isaac.GetPillEffectByName(&quot;I can see forever!&quot;)
+    --Returns: 23
+
+</code></pre>
+<hr />
+<h2 id="entityplayer-getplayer-integer-playerid">EntityPlayer GetPlayer (integer playerId)<a class="headerlink" href="#entityplayer-getplayer-integer-playerid" title="Permanent link">⚓︎</a></h2>
+<p>Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies.</p>
+<h4>Example Code</h4>
+<pre><code class="language-lua">Isaac.GetPlayer(0)
+
+</code></pre>
+<hr />
+<h2 id="integer-getplayertypebyname-string-playername">integer GetPlayerTypeByName (string playerName)<a class="headerlink" href="#integer-getplayertypebyname-string-playername" title="Permanent link">⚓︎</a></h2>
+<p>Returns the PlayerType of a character based on its name. (File: players.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the PlayerType of Azazel. </p>
+<pre><code class="language-lua">Isaac.GetPlayerTypeByName(&quot;Azazel&quot;)
+    --Returns: 7
+
+</code></pre>
+<hr />
+<h2 id="vector-getrandomposition">Vector GetRandomPosition ()<a class="headerlink" href="#vector-getrandomposition" title="Permanent link">⚓︎</a></h2>
+<p>Returns a random position inside the current room. The Return value is a Vector containing the position in world coordinates.</p>
+<hr />
+<h2 id="table-getroomentities">table GetRoomEntities ()<a class="headerlink" href="#table-getroomentities" title="Permanent link">⚓︎</a></h2>
+<p>Returns a table containing all entities in the room.</p>
+<hr />
+<h2 id="integer-getsoundidbyname-string-soundname">integer GetSoundIdByName (string soundName)<a class="headerlink" href="#integer-getsoundidbyname-string-soundname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the SoundEffectID of a sound based on its name. (File: sounds.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the SoundEffectID of a sound named "Custom Sound Effect"</p>
+<pre><code class="language-lua">Isaac.GetSoundIdByName(&quot;Custom Sound Effect&quot;)
+
+</code></pre>
+<hr />
+<h2 id="integer-gettextwidth-string-str">integer GetTextWidth (string str)<a class="headerlink" href="#integer-gettextwidth-string-str" title="Permanent link">⚓︎</a></h2>
+<p>Returns the width of the given string in pixels based on the "terminus8" font (same font as used in Isaac.RenderText())</p>
+<hr />
+<h2 id="integer-gettime">integer GetTime ()<a class="headerlink" href="#integer-gettime" title="Permanent link">⚓︎</a></h2>
+<p>Returns the current game time in milliseconds. This includes pauses!</p>
+<hr />
+<h2 id="integer-gettrinketidbyname-string-trinketname">integer GetTrinketIdByName (string trinketName)<a class="headerlink" href="#integer-gettrinketidbyname-string-trinketname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the TrinketType of a trinket based on its name. (File: items.xml)</p>
+<h4>Example Code</h4>
+<p>This code gets the TrinketType of Lucky Toe. </p>
+<pre><code class="language-lua">Isaac.GetTrinketIdByName(&quot;Lucky Toe&quot;)
+    --Returns: 42
+
+</code></pre>
+<hr />
+<h2 id="gridentity-gridspawn-gridentity-gridentitytype-int-variant-vector-position-boolean-forced">GridEntity GridSpawn (GridEntity gridEntityType, int Variant, Vector position, boolean forced )<a class="headerlink" href="#gridentity-gridspawn-gridentity-gridentitytype-int-variant-vector-position-boolean-forced" title="Permanent link">⚓︎</a></h2>
+<p>Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given position (world coordinates).</p>
+<h4>Bugs</h4>
+<p>forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again.</p>
+<hr />
+<h2 id="boolean-hasmoddata-table-ref">boolean HasModData (table ref)<a class="headerlink" href="#boolean-hasmoddata-table-ref" title="Permanent link">⚓︎</a></h2>
+<p>Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<hr />
+<h2 id="vector-worldtoscreendistance-vector-pos">Vector WorldToScreenDistance (Vector pos)<a class="headerlink" href="#vector-worldtoscreendistance-vector-pos" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-registermod-table-ref-string-modname-integer-apiversion">void RegisterMod (table ref, string modName, integer apiVersion )<a class="headerlink" href="#void-registermod-table-ref-string-modname-integer-apiversion" title="Permanent link">⚓︎</a></h2>
+<p>Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!</p>
+<hr />
+<h2 id="void-removecallback-table-ref-integer-callbackid-table-callbackfn">void RemoveCallback (table ref, integer callbackId, table callbackFn )<a class="headerlink" href="#void-removecallback-table-ref-integer-callbackid-table-callbackfn" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removemoddata-table-ref">void RemoveModData (table ref)<a class="headerlink" href="#void-removemoddata-table-ref" title="Permanent link">⚓︎</a></h2>
+<p>Deletes the stored "saveX.dat" file if it exists. 
+There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<hr />
+<h2 id="void-renderscaledtext-string-str-float-x-float-y-float-scalex-float-scaley-float-r-float-g-float-b-float-a">void RenderScaledText (string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )<a class="headerlink" href="#void-renderscaledtext-string-str-float-x-float-y-float-scalex-float-scaley-float-r-float-g-float-b-float-a" title="Permanent link">⚓︎</a></h2>
+<p>Renders a scaled text on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). ScaleX, ScaleY, R ,G ,B and A need to be between [0,1]. Some scale values can cause the font to display deformed and pixelated.</p>
+<hr />
+<h2 id="void-rendertext-string-str-float-x-float-y-float-r-float-g-float-b-float-a">void RenderText (string str, float X, float Y, float R, float G, float B, float A )<a class="headerlink" href="#void-rendertext-string-str-float-x-float-y-float-r-float-g-float-b-float-a" title="Permanent link">⚓︎</a></h2>
+<p>Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1]. </p>
+<hr />
+<h2 id="void-savemoddata-table-ref-string-data">void SaveModData (table ref, string data )<a class="headerlink" href="#void-savemoddata-table-ref-string-data" title="Permanent link">⚓︎</a></h2>
+<p>Stores a JSON array/table in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
+There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<hr />
+<h2 id="vector-screentoworld-vector-pos">Vector ScreenToWorld (Vector pos)<a class="headerlink" href="#vector-screentoworld-vector-pos" title="Permanent link">⚓︎</a></h2>
+<p>Transfers Screen (aka. Window coordinates) into Worldcoordinates. This can be used to get a specific location in the room in World coordnates The World coordinate system is x[0,inf) y[0,inf).</p>
+<hr />
+<h2 id="vector-screentoworlddistance-vector-pos">Vector ScreenToWorldDistance (Vector pos)<a class="headerlink" href="#vector-screentoworlddistance-vector-pos" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entity-spawn-int-entitytype-int-entityvariant-int-entitysubtype-vector-position-vector-velocity-entity-spawner">Entity Spawn (int entityType, int entityVariant, int entitySubtype, Vector position, Vector velocity, Entity Spawner )<a class="headerlink" href="#entity-spawn-int-entitytype-int-entityvariant-int-entitysubtype-vector-position-vector-velocity-entity-spawner" title="Permanent link">⚓︎</a></h2>
+<p>Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
+There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a> and <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.</p>
+<hr />
+<h2 id="vector-worldtorenderposition-vector-pos">Vector WorldToRenderPosition (Vector pos)<a class="headerlink" href="#vector-worldtorenderposition-vector-pos" title="Permanent link">⚓︎</a></h2>
+<p>Transfers world (aka. game coordinates) into Rendercoordinates. This can be used to render things at fixed positions in a room. The Render coordinate system is x[0,inf) y[0,inf). It defines the Position on the rendering-plane in the current room.</p>
+<hr />
+<h2 id="vector-worldtoscreen-vector-pos">Vector WorldToScreen (Vector pos)<a class="headerlink" href="#vector-worldtoscreen-vector-pos" title="Permanent link">⚓︎</a></h2>
+<p>Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. This can be used to render things next to an entity. The Screen coordinate system is x[0,inf) y[0,inf). Normally, it goes till ~500x ~300y. The return vector contains integer values or numbers ending with .5</p>
+<hr />
+<h2 id="vector-worldtoscreendistance-vector-pos_1">Vector WorldToScreenDistance (Vector pos)<a class="headerlink" href="#vector-worldtoscreendistance-vector-pos_1" title="Permanent link">⚓︎</a></h2>
+<hr />
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Input/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Input
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../ItemConfig/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                ItemConfig
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Wofsauge
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/wofsauge/IsaacDocs" target="_blank" rel="noopener" title="BoI: AB+ Lua Docs on GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs', 'navigation.instant'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

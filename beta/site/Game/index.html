@@ -1,0 +1,3052 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>Game - BoI: AB+ Lua Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-game" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="BoI: AB+ Lua Docs" class="md-header-nav__button md-logo" aria-label="BoI: AB+ Lua Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            BoI: AB+ Lua Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              Game
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/wofsauge/IsaacDocs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Docs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Frequently used
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BoI: AB+ Lua Docs" class="md-nav__button md-logo" aria-label="BoI: AB+ Lua Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    BoI: AB+ Lua Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/wofsauge/IsaacDocs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Docs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Docs" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Color/" class="md-nav__link">
+      Color
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_ArrayProxy_RoomList/" class="md-nav__link">
+      CppContainer::ArrayProxy::RoomList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_EntityList/" class="md-nav__link">
+      CppContainer::EntityList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_CardConfigList/" class="md-nav__link">
+      CppContainer::Vector::CardConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_CostumeConfigList/" class="md-nav__link">
+      CppContainer::Vector::CostumeConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_EffectList/" class="md-nav__link">
+      CppContainer::Vector::EffectList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_ItemConfigList/" class="md-nav__link">
+      CppContainer::Vector::ItemConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_PillConfigList/" class="md-nav__link">
+      CppContainer::Vector::PillConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_VectorList/" class="md-nav__link">
+      CppContainer::Vector::VectorList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Entity/" class="md-nav__link">
+      Entity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityBomb/" class="md-nav__link">
+      EntityBomb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityEffect/" class="md-nav__link">
+      EntityEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityFamiliar/" class="md-nav__link">
+      EntityFamiliar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityKnife/" class="md-nav__link">
+      EntityKnife
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityLaser/" class="md-nav__link">
+      EntityLaser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityNPC/" class="md-nav__link">
+      EntityNPC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPickup/" class="md-nav__link">
+      EntityPickup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPlayer/" class="md-nav__link">
+      EntityPlayer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityProjectile/" class="md-nav__link">
+      EntityProjectile
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPtr/" class="md-nav__link">
+      EntityPtr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityRef/" class="md-nav__link">
+      EntityRef
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityTear/" class="md-nav__link">
+      EntityTear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Font/" class="md-nav__link">
+      Font
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Game
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Game
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#void-adddevilroomdeal" class="md-nav__link">
+    void AddDevilRoomDeal ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addencounteredboss-entitytype-boss-integer-variant" class="md-nav__link">
+    void AddEncounteredBoss (EntityType Boss, integer Variant )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addpixelation-integer-duration" class="md-nav__link">
+    void AddPixelation (integer Duration)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addstagewithoutdamage" class="md-nav__link">
+    void AddStageWithoutDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addstagewithoutheartspicked" class="md-nav__link">
+    void AddStageWithoutHeartsPicked ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addtreasureroomsvisited" class="md-nav__link">
+    void AddTreasureRoomsVisited ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-bombdamage-vector-position-float-damage-float-radius-boolean-linecheck-entity-source-integer-tearflags-integer-damageflags-boolean-damagesource" class="md-nav__link">
+    void BombDamage (Vector Position, float Damage, float Radius, boolean LineCheck, Entity Source, integer TearFlags, integer DamageFlags, boolean DamageSource )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-bombexplosioneffects-vector-position-float-damage-integer-tearflags-color-color-entity-source-float-radiusmult-boolean-linecheck-boolean-damagesource" class="md-nav__link">
+    void BombExplosionEffects (Vector Position, float Damage, integer TearFlags, Color Color, Entity Source, float RadiusMult, boolean LineCheck, boolean DamageSource )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-bombtearflageffects-vector-position-float-radius-integer-tearflags-entity-source" class="md-nav__link">
+    void BombTearflagEffects (Vector Position, float Radius, integer TearFlags, Entity Source )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-butterbeanfart-vector-position-float-radius-entity-source-boolean-showeffect" class="md-nav__link">
+    void ButterBeanFart (Vector Position, float Radius, Entity Source, boolean ShowEffect )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-changeroom-integer-roomindex" class="md-nav__link">
+    void ChangeRoom (integer RoomIndex)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-charmfart-vector-position-float-radius-entity-source" class="md-nav__link">
+    void CharmFart (Vector Position, float Radius, Entity Source )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleardonationmodangel" class="md-nav__link">
+    void ClearDonationModAngel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleardonationmodgreed" class="md-nav__link">
+    void ClearDonationModGreed ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-clearstageswithoutdamage" class="md-nav__link">
+    void ClearStagesWithoutDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-clearstageswithoutheartspicked" class="md-nav__link">
+    void ClearStagesWithoutHeartsPicked ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-darken-float-darkness-integer-timeout" class="md-nav__link">
+    void Darken (float Darkness, integer Timeout )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-donateangel-integer-donate" class="md-nav__link">
+    void DonateAngel (integer Donate)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-donategreed-integer-donate" class="md-nav__link">
+    void DonateGreed (integer Donate)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-end-ending-ending" class="md-nav__link">
+    void End (Ending Ending)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-fadein-float-speed" class="md-nav__link">
+    void Fadein (float Speed)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-fadeout-float-speed-fadeouttarget-target" class="md-nav__link">
+    void Fadeout (float Speed, FadeoutTarget Target )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-fart-vector-position-float-radius-entity-source-float-fartscale-integer-fartsubtype" class="md-nav__link">
+    void Fart (Vector Position, float Radius, Entity Source, float FartScale, integer FartSubType )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-finishchallenge" class="md-nav__link">
+    void FinishChallenge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambush-getambush" class="md-nav__link">
+    Ambush GetAmbush ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-getdarknessmodifier" class="md-nav__link">
+    float GetDarknessModifier ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdevilroomdeals" class="md-nav__link">
+    integer GetDevilRoomDeals ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdonationmodangel" class="md-nav__link">
+    integer GetDonationModAngel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdonationmodgreed" class="md-nav__link">
+    integer GetDonationModGreed ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-getfont" class="md-nav__link">
+    Font GetFont ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getframecount" class="md-nav__link">
+    integer GetFrameCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getgreedbosswavenum" class="md-nav__link">
+    integer GetGreedBossWaveNum ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getgreedwavesnum" class="md-nav__link">
+    integer GetGreedWavesNum ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history-getitemhistory" class="md-nav__link">
+    History GetItemHistory ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#itemoverlay-getitemoverlay" class="md-nav__link">
+    ItemOverlay GetItemOverlay ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#itempool-getitempool" class="md-nav__link">
+    ItemPool GetItemPool ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-levelstage-userdata-getlastdevilroomstage" class="md-nav__link">
+    void LevelStage (UserData) GetLastDevilRoomStage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levelstage-getlastlevelwithdamage" class="md-nav__link">
+    LevelStage GetLastLevelWithDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levelstage-getlastlevelwithouthalfhp" class="md-nav__link">
+    LevelStage GetLastLevelWithoutHalfHp ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-getlevel" class="md-nav__link">
+    Level GetLevel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getnearestplayer-vector-pos" class="md-nav__link">
+    EntityPlayer GetNearestPlayer (Vector Pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumencounteredbosses" class="md-nav__link">
+    integer GetNumEncounteredBosses ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumplayers" class="md-nav__link">
+    integer GetNumPlayers ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getplayer-integer-index" class="md-nav__link">
+    EntityPlayer GetPlayer (integer Index)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getrandomplayer-vector-pos-float-radius" class="md-nav__link">
+    EntityPlayer GetRandomPlayer (Vector Pos, float Radius )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#room-getroom" class="md-nav__link">
+    Room GetRoom ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-integer-getscreenshakecountdown" class="md-nav__link">
+    const integer GetScreenShakeCountdown ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seeds-getseeds" class="md-nav__link">
+    Seeds GetSeeds ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getstageswithoutdamage" class="md-nav__link">
+    integer GetStagesWithoutDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getstageswithoutheartspicked" class="md-nav__link">
+    integer GetStagesWithoutHeartsPicked ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-getstateflag-stateflag-stateflag" class="md-nav__link">
+    boolean GetStateFlag (StateFlag StateFlag)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-gettargetdarkness" class="md-nav__link">
+    float GetTargetDarkness ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettreasureroomvisitcount" class="md-nav__link">
+    integer GetTreasureRoomVisitCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getvictorylap" class="md-nav__link">
+    integer GetVictoryLap ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasencounteredboss-entitytype-boss-integer-variant" class="md-nav__link">
+    boolean HasEncounteredBoss (EntityType Boss, integer Variant )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-hashallucination" class="md-nav__link">
+    integer HasHallucination ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isgreedmode" class="md-nav__link">
+    boolean IsGreedMode ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-ispaused" class="md-nav__link">
+    boolean IsPaused ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-movetorandomroom-boolean-iamerrorroom-integer-seed" class="md-nav__link">
+    void MoveToRandomRoom (boolean IAmErrorRoom, integer Seed )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-nextvictorylap" class="md-nav__link">
+    void NextVictoryLap ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-render" class="md-nav__link">
+    void Render ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-rerollenemy-entity-e" class="md-nav__link">
+    boolean RerollEnemy (Entity e)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rerolllevelcollectibles" class="md-nav__link">
+    void RerollLevelCollectibles ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rerolllevelpickups-integer-seed" class="md-nav__link">
+    void RerollLevelPickups (integer Seed)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setlastdevilroomstage-levelstage-stage" class="md-nav__link">
+    void SetLastDevilRoomStage (LevelStage Stage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setlastlevelwithdamage-levelstage-stage" class="md-nav__link">
+    void SetLastLevelWithDamage (LevelStage Stage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setlastlevelwithouthalfhp-levelstage-stage" class="md-nav__link">
+    void SetLastLevelWithoutHalfHp (LevelStage Stage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setstateflag-stateflag-stateflag-boolean-val" class="md-nav__link">
+    void SetStateFlag (StateFlag StateFlag, boolean Val )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-shakescreen-integer-timeout" class="md-nav__link">
+    void ShakeScreen (integer Timeout)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-showfortune" class="md-nav__link">
+    void ShowFortune ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-showhallucination-integer-framecount-backdropbackdrop-hallucinationbackdrop" class="md-nav__link">
+    void ShowHallucination (integer FrameCount, Backdrop::Backdrop HallucinationBackdrop )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-showrule" class="md-nav__link">
+    void ShowRule ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-spawn-entitytype-type-integer-variant-vector-position-vector-velocity-entity-spawner-integer-subtype-integer-seed" class="md-nav__link">
+    Entity Spawn (EntityType Type, integer Variant, Vector Position, Vector Velocity, Entity Spawner, integer SubType, integer Seed )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitynpc-spawnentitydesc-entityentitydesc-desc-vector-position-entity-spawner" class="md-nav__link">
+    EntityNPC SpawnEntityDesc (Entity::EntityDesc desc, Vector Position, Entity Spawner )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-spawnparticles-vector-pos-entityeffectvariant-particletype-integer-numparticles-float-speed-color-color-float-height" class="md-nav__link">
+    void SpawnParticles (Vector Pos, EntityEffect::Variant ParticleType, integer NumParticles, float Speed, Color Color, float Height )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-startroomtransition-integer-roomindex-direction-direction-roomtransitionanimation-animation" class="md-nav__link">
+    void StartRoomTransition (integer RoomIndex, Direction Direction, RoomTransition::Animation Animation )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-startstagetransition-boolean-samestage-stagetransitionanimation-animation" class="md-nav__link">
+    void StartStageTransition (boolean SameStage, StageTransition::Animation Animation )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-update" class="md-nav__link">
+    void Update ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-updatestrangeattractor-vector-position" class="md-nav__link">
+    void UpdateStrangeAttractor (Vector Position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-bluewombpartime" class="md-nav__link">
+    integer BlueWombParTime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-bossrushpartime" class="md-nav__link">
+    integer BossRushParTime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-challenge" class="md-nav__link">
+    Challenge Challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-difficulty-difficulty" class="md-nav__link">
+    const Difficulty Difficulty
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-screenshakeoffset" class="md-nav__link">
+    const Vector ScreenShakeOffset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-timecounter" class="md-nav__link">
+    integer TimeCounter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntity/" class="md-nav__link">
+      GridEntity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityDesc/" class="md-nav__link">
+      GridEntityDesc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityDoor/" class="md-nav__link">
+      GridEntityDoor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPit/" class="md-nav__link">
+      GridEntityPit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPoop/" class="md-nav__link">
+      GridEntityPoop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPressurePlate/" class="md-nav__link">
+      GridEntityPressurePlate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityRock/" class="md-nav__link">
+      GridEntityRock
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntitySpikes/" class="md-nav__link">
+      GridEntitySpikes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityTNT/" class="md-nav__link">
+      GridEntityTNT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Card/" class="md-nav__link">
+      ItemConfig::Card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Config/" class="md-nav__link">
+      ItemConfig::Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Costume/" class="md-nav__link">
+      ItemConfig::Costume
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Item/" class="md-nav__link">
+      ItemConfig::Item
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_PillEffect/" class="md-nav__link">
+      ItemConfig::PillEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemPool/" class="md-nav__link">
+      ItemPool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../KColor/" class="md-nav__link">
+      KColor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Level/" class="md-nav__link">
+      Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../MusicManager/" class="md-nav__link">
+      MusicManager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PathFinder/" class="md-nav__link">
+      PathFinder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes_ActiveItemDesc/" class="md-nav__link">
+      PlayerTypes::ActiveItemDesc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes_PosVel/" class="md-nav__link">
+      PlayerTypes::PosVel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ProjectileParams/" class="md-nav__link">
+      ProjectileParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../QueueItemData/" class="md-nav__link">
+      QueueItemData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Room/" class="md-nav__link">
+      Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Entry/" class="md-nav__link">
+      RoomConfig::Entry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Room/" class="md-nav__link">
+      RoomConfig::Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Spawn/" class="md-nav__link">
+      RoomConfig::Spawn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomDescriptor/" class="md-nav__link">
+      RoomDescriptor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomDescriptorData/" class="md-nav__link">
+      RoomDescriptorData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RNG/" class="md-nav__link">
+      RNG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Seeds/" class="md-nav__link">
+      Seeds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ShockwaveParams/" class="md-nav__link">
+      ShockwaveParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Sprite/" class="md-nav__link">
+      Sprite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../SFXManager/" class="md-nav__link">
+      SFXManager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TearParams/" class="md-nav__link">
+      TearParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TemporaryEffect/" class="md-nav__link">
+      TemporaryEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TemporaryEffects/" class="md-nav__link">
+      TemporaryEffects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Vector/" class="md-nav__link">
+      Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Functions/" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../BindingofIsaac-Afterbirth%2BLuaReference_GuideDocumentation/" class="md-nav__link">
+      Binding of Isaac - Afterbirth+ Lua Reference/Guide Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer/" class="md-nav__link">
+      CppContainer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_ArrayProxy/" class="md-nav__link">
+      CppContainer::ArrayProxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector/" class="md-nav__link">
+      CppContainer::Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Input/" class="md-nav__link">
+      Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Isaac/" class="md-nav__link">
+      Isaac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig/" class="md-nav__link">
+      ItemConfig
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes/" class="md-nav__link">
+      PlayerTypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig/" class="md-nav__link">
+      RoomConfig
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-nav__link">
+      Tutorial - Adding Costumes to items without LUA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../UsingZeroBraneStudiotodebugyourscripts/" class="md-nav__link">
+      Using ZeroBrane Studio to debug your scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../DebugConsole/" class="md-nav__link">
+      Debug Console
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Usingadditional.luaFiles/" class="md-nav__link">
+      Using additional .lua Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Writingscreenshaders/" class="md-nav__link">
+      Writing screen shaders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-Rendertext/" class="md-nav__link">
+      Tutorial - Render text
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../XMLFiledocumentation/" class="md-nav__link">
+      XML File documentation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-nav__link">
+      [Tutorial] Adding Costumes to items without LUA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-Rendertext/" class="md-nav__link">
+      [Tutorial] Render text
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Frequently used
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Frequently used" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Frequently used
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      EntityPlayer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#void-adddevilroomdeal" class="md-nav__link">
+    void AddDevilRoomDeal ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addencounteredboss-entitytype-boss-integer-variant" class="md-nav__link">
+    void AddEncounteredBoss (EntityType Boss, integer Variant )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addpixelation-integer-duration" class="md-nav__link">
+    void AddPixelation (integer Duration)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addstagewithoutdamage" class="md-nav__link">
+    void AddStageWithoutDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addstagewithoutheartspicked" class="md-nav__link">
+    void AddStageWithoutHeartsPicked ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addtreasureroomsvisited" class="md-nav__link">
+    void AddTreasureRoomsVisited ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-bombdamage-vector-position-float-damage-float-radius-boolean-linecheck-entity-source-integer-tearflags-integer-damageflags-boolean-damagesource" class="md-nav__link">
+    void BombDamage (Vector Position, float Damage, float Radius, boolean LineCheck, Entity Source, integer TearFlags, integer DamageFlags, boolean DamageSource )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-bombexplosioneffects-vector-position-float-damage-integer-tearflags-color-color-entity-source-float-radiusmult-boolean-linecheck-boolean-damagesource" class="md-nav__link">
+    void BombExplosionEffects (Vector Position, float Damage, integer TearFlags, Color Color, Entity Source, float RadiusMult, boolean LineCheck, boolean DamageSource )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-bombtearflageffects-vector-position-float-radius-integer-tearflags-entity-source" class="md-nav__link">
+    void BombTearflagEffects (Vector Position, float Radius, integer TearFlags, Entity Source )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-butterbeanfart-vector-position-float-radius-entity-source-boolean-showeffect" class="md-nav__link">
+    void ButterBeanFart (Vector Position, float Radius, Entity Source, boolean ShowEffect )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-changeroom-integer-roomindex" class="md-nav__link">
+    void ChangeRoom (integer RoomIndex)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-charmfart-vector-position-float-radius-entity-source" class="md-nav__link">
+    void CharmFart (Vector Position, float Radius, Entity Source )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleardonationmodangel" class="md-nav__link">
+    void ClearDonationModAngel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleardonationmodgreed" class="md-nav__link">
+    void ClearDonationModGreed ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-clearstageswithoutdamage" class="md-nav__link">
+    void ClearStagesWithoutDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-clearstageswithoutheartspicked" class="md-nav__link">
+    void ClearStagesWithoutHeartsPicked ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-darken-float-darkness-integer-timeout" class="md-nav__link">
+    void Darken (float Darkness, integer Timeout )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-donateangel-integer-donate" class="md-nav__link">
+    void DonateAngel (integer Donate)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-donategreed-integer-donate" class="md-nav__link">
+    void DonateGreed (integer Donate)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-end-ending-ending" class="md-nav__link">
+    void End (Ending Ending)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-fadein-float-speed" class="md-nav__link">
+    void Fadein (float Speed)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-fadeout-float-speed-fadeouttarget-target" class="md-nav__link">
+    void Fadeout (float Speed, FadeoutTarget Target )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-fart-vector-position-float-radius-entity-source-float-fartscale-integer-fartsubtype" class="md-nav__link">
+    void Fart (Vector Position, float Radius, Entity Source, float FartScale, integer FartSubType )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-finishchallenge" class="md-nav__link">
+    void FinishChallenge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ambush-getambush" class="md-nav__link">
+    Ambush GetAmbush ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-getdarknessmodifier" class="md-nav__link">
+    float GetDarknessModifier ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdevilroomdeals" class="md-nav__link">
+    integer GetDevilRoomDeals ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdonationmodangel" class="md-nav__link">
+    integer GetDonationModAngel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdonationmodgreed" class="md-nav__link">
+    integer GetDonationModGreed ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#font-getfont" class="md-nav__link">
+    Font GetFont ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getframecount" class="md-nav__link">
+    integer GetFrameCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getgreedbosswavenum" class="md-nav__link">
+    integer GetGreedBossWaveNum ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getgreedwavesnum" class="md-nav__link">
+    integer GetGreedWavesNum ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#history-getitemhistory" class="md-nav__link">
+    History GetItemHistory ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#itemoverlay-getitemoverlay" class="md-nav__link">
+    ItemOverlay GetItemOverlay ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#itempool-getitempool" class="md-nav__link">
+    ItemPool GetItemPool ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-levelstage-userdata-getlastdevilroomstage" class="md-nav__link">
+    void LevelStage (UserData) GetLastDevilRoomStage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levelstage-getlastlevelwithdamage" class="md-nav__link">
+    LevelStage GetLastLevelWithDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#levelstage-getlastlevelwithouthalfhp" class="md-nav__link">
+    LevelStage GetLastLevelWithoutHalfHp ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-getlevel" class="md-nav__link">
+    Level GetLevel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getnearestplayer-vector-pos" class="md-nav__link">
+    EntityPlayer GetNearestPlayer (Vector Pos)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumencounteredbosses" class="md-nav__link">
+    integer GetNumEncounteredBosses ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumplayers" class="md-nav__link">
+    integer GetNumPlayers ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getplayer-integer-index" class="md-nav__link">
+    EntityPlayer GetPlayer (integer Index)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getrandomplayer-vector-pos-float-radius" class="md-nav__link">
+    EntityPlayer GetRandomPlayer (Vector Pos, float Radius )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#room-getroom" class="md-nav__link">
+    Room GetRoom ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-integer-getscreenshakecountdown" class="md-nav__link">
+    const integer GetScreenShakeCountdown ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#seeds-getseeds" class="md-nav__link">
+    Seeds GetSeeds ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getstageswithoutdamage" class="md-nav__link">
+    integer GetStagesWithoutDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getstageswithoutheartspicked" class="md-nav__link">
+    integer GetStagesWithoutHeartsPicked ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-getstateflag-stateflag-stateflag" class="md-nav__link">
+    boolean GetStateFlag (StateFlag StateFlag)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-gettargetdarkness" class="md-nav__link">
+    float GetTargetDarkness ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettreasureroomvisitcount" class="md-nav__link">
+    integer GetTreasureRoomVisitCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getvictorylap" class="md-nav__link">
+    integer GetVictoryLap ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasencounteredboss-entitytype-boss-integer-variant" class="md-nav__link">
+    boolean HasEncounteredBoss (EntityType Boss, integer Variant )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-hashallucination" class="md-nav__link">
+    integer HasHallucination ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isgreedmode" class="md-nav__link">
+    boolean IsGreedMode ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-ispaused" class="md-nav__link">
+    boolean IsPaused ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-movetorandomroom-boolean-iamerrorroom-integer-seed" class="md-nav__link">
+    void MoveToRandomRoom (boolean IAmErrorRoom, integer Seed )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-nextvictorylap" class="md-nav__link">
+    void NextVictoryLap ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-render" class="md-nav__link">
+    void Render ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-rerollenemy-entity-e" class="md-nav__link">
+    boolean RerollEnemy (Entity e)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rerolllevelcollectibles" class="md-nav__link">
+    void RerollLevelCollectibles ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rerolllevelpickups-integer-seed" class="md-nav__link">
+    void RerollLevelPickups (integer Seed)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setlastdevilroomstage-levelstage-stage" class="md-nav__link">
+    void SetLastDevilRoomStage (LevelStage Stage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setlastlevelwithdamage-levelstage-stage" class="md-nav__link">
+    void SetLastLevelWithDamage (LevelStage Stage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setlastlevelwithouthalfhp-levelstage-stage" class="md-nav__link">
+    void SetLastLevelWithoutHalfHp (LevelStage Stage)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setstateflag-stateflag-stateflag-boolean-val" class="md-nav__link">
+    void SetStateFlag (StateFlag StateFlag, boolean Val )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-shakescreen-integer-timeout" class="md-nav__link">
+    void ShakeScreen (integer Timeout)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-showfortune" class="md-nav__link">
+    void ShowFortune ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-showhallucination-integer-framecount-backdropbackdrop-hallucinationbackdrop" class="md-nav__link">
+    void ShowHallucination (integer FrameCount, Backdrop::Backdrop HallucinationBackdrop )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-showrule" class="md-nav__link">
+    void ShowRule ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-spawn-entitytype-type-integer-variant-vector-position-vector-velocity-entity-spawner-integer-subtype-integer-seed" class="md-nav__link">
+    Entity Spawn (EntityType Type, integer Variant, Vector Position, Vector Velocity, Entity Spawner, integer SubType, integer Seed )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitynpc-spawnentitydesc-entityentitydesc-desc-vector-position-entity-spawner" class="md-nav__link">
+    EntityNPC SpawnEntityDesc (Entity::EntityDesc desc, Vector Position, Entity Spawner )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-spawnparticles-vector-pos-entityeffectvariant-particletype-integer-numparticles-float-speed-color-color-float-height" class="md-nav__link">
+    void SpawnParticles (Vector Pos, EntityEffect::Variant ParticleType, integer NumParticles, float Speed, Color Color, float Height )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-startroomtransition-integer-roomindex-direction-direction-roomtransitionanimation-animation" class="md-nav__link">
+    void StartRoomTransition (integer RoomIndex, Direction Direction, RoomTransition::Animation Animation )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-startstagetransition-boolean-samestage-stagetransitionanimation-animation" class="md-nav__link">
+    void StartStageTransition (boolean SameStage, StageTransition::Animation Animation )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-update" class="md-nav__link">
+    void Update ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-updatestrangeattractor-vector-position" class="md-nav__link">
+    void UpdateStrangeAttractor (Vector Position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-bluewombpartime" class="md-nav__link">
+    integer BlueWombParTime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-bossrushpartime" class="md-nav__link">
+    integer BossRushParTime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenge-challenge" class="md-nav__link">
+    Challenge Challenge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-difficulty-difficulty" class="md-nav__link">
+    const Difficulty Difficulty
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-screenshakeoffset" class="md-nav__link">
+    const Vector ScreenShakeOffset
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-timecounter" class="md-nav__link">
+    integer TimeCounter
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/wofsauge/IsaacDocs/edit/master/docs/Game.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="class-game">Class "Game"<a class="headerlink" href="#class-game" title="Permanent link">⚓︎</a></h1>
+<hr />
+<h2 id="void-adddevilroomdeal">void AddDevilRoomDeal ()<a class="headerlink" href="#void-adddevilroomdeal" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addencounteredboss-entitytype-boss-integer-variant">void AddEncounteredBoss (EntityType Boss, integer Variant )<a class="headerlink" href="#void-addencounteredboss-entitytype-boss-integer-variant" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addpixelation-integer-duration">void AddPixelation (integer Duration)<a class="headerlink" href="#void-addpixelation-integer-duration" title="Permanent link">⚓︎</a></h2>
+<p>Triggers the effect of the "retro vision" pill.</p>
+<hr />
+<h2 id="void-addstagewithoutdamage">void AddStageWithoutDamage ()<a class="headerlink" href="#void-addstagewithoutdamage" title="Permanent link">⚓︎</a></h2>
+<p>Increases the ingame counter, that keeps track of the stages you cleared without taking damage. (useful for Devil deal manipulations)</p>
+<hr />
+<h2 id="void-addstagewithoutheartspicked">void AddStageWithoutHeartsPicked ()<a class="headerlink" href="#void-addstagewithoutheartspicked" title="Permanent link">⚓︎</a></h2>
+<p>Increases the ingame counter, that keeps track of stages you cleared without picking up hearts.</p>
+<hr />
+<h2 id="void-addtreasureroomsvisited">void AddTreasureRoomsVisited ()<a class="headerlink" href="#void-addtreasureroomsvisited" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-bombdamage-vector-position-float-damage-float-radius-boolean-linecheck-entity-source-integer-tearflags-integer-damageflags-boolean-damagesource">void BombDamage (Vector Position, float Damage, float Radius, boolean LineCheck, Entity Source, integer TearFlags, integer DamageFlags, boolean DamageSource )<a class="headerlink" href="#void-bombdamage-vector-position-float-damage-float-radius-boolean-linecheck-entity-source-integer-tearflags-integer-damageflags-boolean-damagesource" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-bombexplosioneffects-vector-position-float-damage-integer-tearflags-color-color-entity-source-float-radiusmult-boolean-linecheck-boolean-damagesource">void BombExplosionEffects (Vector Position, float Damage, integer TearFlags, Color Color, Entity Source, float RadiusMult, boolean LineCheck, boolean DamageSource )<a class="headerlink" href="#void-bombexplosioneffects-vector-position-float-damage-integer-tearflags-color-color-entity-source-float-radiusmult-boolean-linecheck-boolean-damagesource" title="Permanent link">⚓︎</a></h2>
+<p>The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects. </p>
+<hr />
+<h2 id="void-bombtearflageffects-vector-position-float-radius-integer-tearflags-entity-source">void BombTearflagEffects (Vector Position, float Radius, integer TearFlags, Entity Source )<a class="headerlink" href="#void-bombtearflageffects-vector-position-float-radius-integer-tearflags-entity-source" title="Permanent link">⚓︎</a></h2>
+<p>Does bomb-exclusive special effects. </p>
+<hr />
+<h2 id="void-butterbeanfart-vector-position-float-radius-entity-source-boolean-showeffect">void ButterBeanFart (Vector Position, float Radius, Entity Source, boolean ShowEffect )<a class="headerlink" href="#void-butterbeanfart-vector-position-float-radius-entity-source-boolean-showeffect" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-changeroom-integer-roomindex">void ChangeRoom (integer RoomIndex)<a class="headerlink" href="#void-changeroom-integer-roomindex" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-charmfart-vector-position-float-radius-entity-source">void CharmFart (Vector Position, float Radius, Entity Source )<a class="headerlink" href="#void-charmfart-vector-position-float-radius-entity-source" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-cleardonationmodangel">void ClearDonationModAngel ()<a class="headerlink" href="#void-cleardonationmodangel" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-cleardonationmodgreed">void ClearDonationModGreed ()<a class="headerlink" href="#void-cleardonationmodgreed" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-clearstageswithoutdamage">void ClearStagesWithoutDamage ()<a class="headerlink" href="#void-clearstageswithoutdamage" title="Permanent link">⚓︎</a></h2>
+<p>Sets the counter for stages cleared without damage to 0.</p>
+<hr />
+<h2 id="void-clearstageswithoutheartspicked">void ClearStagesWithoutHeartsPicked ()<a class="headerlink" href="#void-clearstageswithoutheartspicked" title="Permanent link">⚓︎</a></h2>
+<p>Sets the counter for stages cleared without picking up hearts to 0.</p>
+<hr />
+<h2 id="void-darken-float-darkness-integer-timeout">void Darken (float Darkness, integer Timeout )<a class="headerlink" href="#void-darken-float-darkness-integer-timeout" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-donateangel-integer-donate">void DonateAngel (integer Donate)<a class="headerlink" href="#void-donateangel-integer-donate" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-donategreed-integer-donate">void DonateGreed (integer Donate)<a class="headerlink" href="#void-donategreed-integer-donate" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-end-ending-ending">void End (Ending Ending)<a class="headerlink" href="#void-end-ending-ending" title="Permanent link">⚓︎</a></h2>
+<p>remove entity from the update list (render only) void EnableEntity(Entity<em> e); add entity back to the update list (update + render) void DisableEntity(Entity</em> e); </p>
+<hr />
+<h2 id="void-fadein-float-speed">void Fadein (float Speed)<a class="headerlink" href="#void-fadein-float-speed" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-fadeout-float-speed-fadeouttarget-target">void Fadeout (float Speed, FadeoutTarget Target )<a class="headerlink" href="#void-fadeout-float-speed-fadeouttarget-target" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-fart-vector-position-float-radius-entity-source-float-fartscale-integer-fartsubtype">void Fart (Vector Position, float Radius, Entity Source, float FartScale, integer FartSubType )<a class="headerlink" href="#void-fart-vector-position-float-radius-entity-source-float-fartscale-integer-fartsubtype" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-finishchallenge">void FinishChallenge ()<a class="headerlink" href="#void-finishchallenge" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="ambush-getambush">Ambush GetAmbush ()<a class="headerlink" href="#ambush-getambush" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-getdarknessmodifier">float GetDarknessModifier ()<a class="headerlink" href="#float-getdarknessmodifier" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getdevilroomdeals">integer GetDevilRoomDeals ()<a class="headerlink" href="#integer-getdevilroomdeals" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getdonationmodangel">integer GetDonationModAngel ()<a class="headerlink" href="#integer-getdonationmodangel" title="Permanent link">⚓︎</a></h2>
+<p>Get the value that indicates the angel-counter of a shop-donation maschine. This Stat increases everytime you donate to a shop. A higher number grants a few advantages.</p>
+<hr />
+<h2 id="integer-getdonationmodgreed">integer GetDonationModGreed ()<a class="headerlink" href="#integer-getdonationmodgreed" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="font-getfont">Font GetFont ()<a class="headerlink" href="#font-getfont" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getframecount">integer GetFrameCount ()<a class="headerlink" href="#integer-getframecount" title="Permanent link">⚓︎</a></h2>
+<p>Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
+1 second equals 30 frames.
+This function therefore works drastically different than <a href="namespace_isaac.html#a880a22350f53acea378bf7c721bd5bd5"><code>Isaac.GetFrameCount()</code></a></p>
+<h4>Example Code</h4>
+<p>This code returns hours, minutes, seconds, and milliseconds of the game running actively:</p>
+<pre><code class="language-lua">local curTime = Game():GetFrameCount()
+local msecs= curTime%30 * (10/3) -- turns the millisecond value range from [0 to 30] to [0 to 100]
+local secs= math.floor(curTime/30)%60
+local mins= math.floor(curTime/30/60)%60
+local hours= math.floor(curTime/30/60/60)%60
+
+</code></pre>
+<hr />
+<h2 id="integer-getgreedbosswavenum">integer GetGreedBossWaveNum ()<a class="headerlink" href="#integer-getgreedbosswavenum" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getgreedwavesnum">integer GetGreedWavesNum ()<a class="headerlink" href="#integer-getgreedwavesnum" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="history-getitemhistory">History GetItemHistory ()<a class="headerlink" href="#history-getitemhistory" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="itemoverlay-getitemoverlay">ItemOverlay GetItemOverlay ()<a class="headerlink" href="#itemoverlay-getitemoverlay" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="itempool-getitempool">ItemPool GetItemPool ()<a class="headerlink" href="#itempool-getitempool" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-levelstage-userdata-getlastdevilroomstage">void LevelStage (UserData) GetLastDevilRoomStage ()<a class="headerlink" href="#void-levelstage-userdata-getlastdevilroomstage" title="Permanent link">⚓︎</a></h2>
+<h4>Notes</h4>
+<p>Since it returns UserData, this function is unusable and therefore broken.</p>
+<hr />
+<h2 id="levelstage-getlastlevelwithdamage">LevelStage GetLastLevelWithDamage ()<a class="headerlink" href="#levelstage-getlastlevelwithdamage" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="levelstage-getlastlevelwithouthalfhp">LevelStage GetLastLevelWithoutHalfHp ()<a class="headerlink" href="#levelstage-getlastlevelwithouthalfhp" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="level-getlevel">Level GetLevel ()<a class="headerlink" href="#level-getlevel" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entityplayer-getnearestplayer-vector-pos">EntityPlayer GetNearestPlayer (Vector Pos)<a class="headerlink" href="#entityplayer-getnearestplayer-vector-pos" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getnumencounteredbosses">integer GetNumEncounteredBosses ()<a class="headerlink" href="#integer-getnumencounteredbosses" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getnumplayers">integer GetNumPlayers ()<a class="headerlink" href="#integer-getnumplayers" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entityplayer-getplayer-integer-index">EntityPlayer GetPlayer (integer Index)<a class="headerlink" href="#entityplayer-getplayer-integer-index" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entityplayer-getrandomplayer-vector-pos-float-radius">EntityPlayer GetRandomPlayer (Vector Pos, float Radius )<a class="headerlink" href="#entityplayer-getrandomplayer-vector-pos-float-radius" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="room-getroom">Room GetRoom ()<a class="headerlink" href="#room-getroom" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-integer-getscreenshakecountdown">const integer GetScreenShakeCountdown ()<a class="headerlink" href="#const-integer-getscreenshakecountdown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="seeds-getseeds">Seeds GetSeeds ()<a class="headerlink" href="#seeds-getseeds" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getstageswithoutdamage">integer GetStagesWithoutDamage ()<a class="headerlink" href="#integer-getstageswithoutdamage" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getstageswithoutheartspicked">integer GetStagesWithoutHeartsPicked ()<a class="headerlink" href="#integer-getstageswithoutheartspicked" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-getstateflag-stateflag-stateflag">boolean GetStateFlag (StateFlag StateFlag)<a class="headerlink" href="#boolean-getstateflag-stateflag-stateflag" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-gettargetdarkness">float GetTargetDarkness ()<a class="headerlink" href="#float-gettargetdarkness" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-gettreasureroomvisitcount">integer GetTreasureRoomVisitCount ()<a class="headerlink" href="#integer-gettreasureroomvisitcount" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getvictorylap">integer GetVictoryLap ()<a class="headerlink" href="#integer-getvictorylap" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasencounteredboss-entitytype-boss-integer-variant">boolean HasEncounteredBoss (EntityType Boss, integer Variant )<a class="headerlink" href="#boolean-hasencounteredboss-entitytype-boss-integer-variant" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-hashallucination">integer HasHallucination ()<a class="headerlink" href="#integer-hashallucination" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isgreedmode">boolean IsGreedMode ()<a class="headerlink" href="#boolean-isgreedmode" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-ispaused">boolean IsPaused ()<a class="headerlink" href="#boolean-ispaused" title="Permanent link">⚓︎</a></h2>
+<p>Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes hiving the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.</p>
+<hr />
+<h2 id="void-movetorandomroom-boolean-iamerrorroom-integer-seed">void MoveToRandomRoom (boolean IAmErrorRoom, integer Seed )<a class="headerlink" href="#void-movetorandomroom-boolean-iamerrorroom-integer-seed" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-nextvictorylap">void NextVictoryLap ()<a class="headerlink" href="#void-nextvictorylap" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-render">void Render ()<a class="headerlink" href="#void-render" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-rerollenemy-entity-e">boolean RerollEnemy (Entity e)<a class="headerlink" href="#boolean-rerollenemy-entity-e" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-rerolllevelcollectibles">void RerollLevelCollectibles ()<a class="headerlink" href="#void-rerolllevelcollectibles" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-rerolllevelpickups-integer-seed">void RerollLevelPickups (integer Seed)<a class="headerlink" href="#void-rerolllevelpickups-integer-seed" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setlastdevilroomstage-levelstage-stage">void SetLastDevilRoomStage (LevelStage Stage)<a class="headerlink" href="#void-setlastdevilroomstage-levelstage-stage" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setlastlevelwithdamage-levelstage-stage">void SetLastLevelWithDamage (LevelStage Stage)<a class="headerlink" href="#void-setlastlevelwithdamage-levelstage-stage" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setlastlevelwithouthalfhp-levelstage-stage">void SetLastLevelWithoutHalfHp (LevelStage Stage)<a class="headerlink" href="#void-setlastlevelwithouthalfhp-levelstage-stage" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setstateflag-stateflag-stateflag-boolean-val">void SetStateFlag (StateFlag StateFlag, boolean Val )<a class="headerlink" href="#void-setstateflag-stateflag-stateflag-boolean-val" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-shakescreen-integer-timeout">void ShakeScreen (integer Timeout)<a class="headerlink" href="#void-shakescreen-integer-timeout" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-showfortune">void ShowFortune ()<a class="headerlink" href="#void-showfortune" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-showhallucination-integer-framecount-backdropbackdrop-hallucinationbackdrop">void ShowHallucination (integer FrameCount, Backdrop::Backdrop HallucinationBackdrop )<a class="headerlink" href="#void-showhallucination-integer-framecount-backdropbackdrop-hallucinationbackdrop" title="Permanent link">⚓︎</a></h2>
+<p>Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.</p>
+<h4>Example Code</h4>
+<p>This code emulated the effect of this function by hijacking the Delirious item effect</p>
+<pre><code class="language-lua">local usagetime = -1 -- stores the last time the effect was called.
+
+-- call this function to play the Hallucination effect
+function playHallucination()
+    local player = Isaac.GetPlayer(0)
+    usagetime = Game().TimeCounter
+    player:UseActiveItem(510, false, false, false, false) -- use the delirious item without applying the costume
+    player:GetEffects():RemoveCollectibleEffect(510) -- remove any unwanted side effects of the item usage
+end
+
+-- Removes all spawned NPC entities when activating the function
+function mod:onFriendlyInit(npc) 
+    if Game().TimeCounter-usagetime == 0 then -- only remove enemies that spawned when the effect was called!
+        npc:Remove()
+    end
+end
+mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.onFriendlyInit)
+
+</code></pre>
+<h4>Bugs</h4>
+<p>This function does not work and will crash your game on use!</p>
+<hr />
+<h2 id="void-showrule">void ShowRule ()<a class="headerlink" href="#void-showrule" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entity-spawn-entitytype-type-integer-variant-vector-position-vector-velocity-entity-spawner-integer-subtype-integer-seed">Entity Spawn (EntityType Type, integer Variant, Vector Position, Vector Velocity, Entity Spawner, integer SubType, integer Seed )<a class="headerlink" href="#entity-spawn-entitytype-type-integer-variant-vector-position-vector-velocity-entity-spawner-integer-subtype-integer-seed" title="Permanent link">⚓︎</a></h2>
+<p>The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.</p>
+<h4>Example Code</h4>
+<p>This code spawns a Leech with specific seed.</p>
+<pre><code class="language-lua">Game():Spawn(
+  EntityType.ENTITY_LEECH, -- Type
+  0, -- Variant
+  Game():GetRoom():GetCenterPos(), -- Position
+  Vector(0, 0), -- Velocity
+  nil, -- Parent
+  0, -- SubType
+  Game():GetRoom():GetSpawnSeed() -- Seed (the &quot;GetSpawnSeed()&quot; function gets a reproducible seed based on the room, e.g. &quot;2496979501&quot;)
+)
+
+</code></pre>
+<hr />
+<h2 id="entitynpc-spawnentitydesc-entityentitydesc-desc-vector-position-entity-spawner">EntityNPC SpawnEntityDesc (Entity::EntityDesc desc, Vector Position, Entity Spawner )<a class="headerlink" href="#entitynpc-spawnentitydesc-entityentitydesc-desc-vector-position-entity-spawner" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-spawnparticles-vector-pos-entityeffectvariant-particletype-integer-numparticles-float-speed-color-color-float-height">void SpawnParticles (Vector Pos, EntityEffect::Variant ParticleType, integer NumParticles, float Speed, Color Color, float Height )<a class="headerlink" href="#void-spawnparticles-vector-pos-entityeffectvariant-particletype-integer-numparticles-float-speed-color-color-float-height" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-startroomtransition-integer-roomindex-direction-direction-roomtransitionanimation-animation">void StartRoomTransition (integer RoomIndex, Direction Direction, RoomTransition::Animation Animation )<a class="headerlink" href="#void-startroomtransition-integer-roomindex-direction-direction-roomtransitionanimation-animation" title="Permanent link">⚓︎</a></h2>
+<h4>Notes</h4>
+<p>Available Animation types (Discovered by "ilise rose" (@yatboim)):</p>
+<p>0: (Default) Standard transition, sweeps the room in from a direction
+1: (Fade) Fade to black transition, like its used for the "goto" - console command
+2: (Stage) Pixel out transition, like used for crawlspaces and the trapdoor at the end of floors
+3: (Teleport) teleport transition, isaac teleports out of the current room and into the next
+5: (Ankh) Same as standard transition
+6: (Dead Cat) Same as standard transition
+7: (1Up) Same as standard transition
+8: (Guppys Collar) Same as standard transition
+9: (Judas Shadow) Same as standard transition
+10: (Lazarus Rags) Same as standard transition
+12: (Glowing Hourglass) Same as standard transition
+13: (D7) Same as standard transition
+14: (Missing Poster) Same as standard transition</p>
+<h4>Bugs</h4>
+<p>The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.</p>
+<hr />
+<h2 id="void-startstagetransition-boolean-samestage-stagetransitionanimation-animation">void StartStageTransition (boolean SameStage, StageTransition::Animation Animation )<a class="headerlink" href="#void-startstagetransition-boolean-samestage-stagetransitionanimation-animation" title="Permanent link">⚓︎</a></h2>
+<p>Starts a transition animation like it`s playing when entering a trapdoor to switch between stages.
+<strong>Stage Transition types:</strong></p>
+<ul>
+<li>0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.</li>
+<li>1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.</li>
+<li>&gt;2: Same as 0</li>
+</ul>
+<hr />
+<h2 id="void-update">void Update ()<a class="headerlink" href="#void-update" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-updatestrangeattractor-vector-position">void UpdateStrangeAttractor (Vector Position)<a class="headerlink" href="#void-updatestrangeattractor-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-bluewombpartime">integer BlueWombParTime<a class="headerlink" href="#integer-bluewombpartime" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-bossrushpartime">integer BossRushParTime<a class="headerlink" href="#integer-bossrushpartime" title="Permanent link">⚓︎</a></h2>
+<p>Number of frames of game time. </p>
+<hr />
+<h2 id="challenge-challenge">Challenge Challenge<a class="headerlink" href="#challenge-challenge" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-difficulty-difficulty">const Difficulty Difficulty<a class="headerlink" href="#const-difficulty-difficulty" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-vector-screenshakeoffset">const Vector ScreenShakeOffset<a class="headerlink" href="#const-vector-screenshakeoffset" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-timecounter">integer TimeCounter<a class="headerlink" href="#integer-timecounter" title="Permanent link">⚓︎</a></h2>
+<p>same as FrameCounter but can be modified, mostly used for timed events (bossrush, daily, ...) and not for timestepping </p>
+<hr />
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Font/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Font
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../GridEntity/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GridEntity
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Wofsauge
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/wofsauge/IsaacDocs" target="_blank" rel="noopener" title="BoI: AB+ Lua Docs on GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs', 'navigation.instant'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

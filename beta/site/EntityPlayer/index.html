@@ -1,0 +1,5499 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
+    
+    
+      
+        <title>EntityPlayer - BoI: AB+ Lua Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-entityplayer" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="BoI: AB+ Lua Docs" class="md-header-nav__button md-logo" aria-label="BoI: AB+ Lua Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            BoI: AB+ Lua Docs
+          </span>
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
+            
+              EntityPlayer
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/wofsauge/IsaacDocs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href=".." class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link md-tabs__link--active">
+        Docs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        Frequently used
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="BoI: AB+ Lua Docs" class="md-nav__button md-logo" aria-label="BoI: AB+ Lua Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    BoI: AB+ Lua Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/wofsauge/IsaacDocs/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
+      Docs
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Docs" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
+        Docs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Color/" class="md-nav__link">
+      Color
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_ArrayProxy_RoomList/" class="md-nav__link">
+      CppContainer::ArrayProxy::RoomList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_EntityList/" class="md-nav__link">
+      CppContainer::EntityList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_CardConfigList/" class="md-nav__link">
+      CppContainer::Vector::CardConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_CostumeConfigList/" class="md-nav__link">
+      CppContainer::Vector::CostumeConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_EffectList/" class="md-nav__link">
+      CppContainer::Vector::EffectList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_ItemConfigList/" class="md-nav__link">
+      CppContainer::Vector::ItemConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_PillConfigList/" class="md-nav__link">
+      CppContainer::Vector::PillConfigList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector_VectorList/" class="md-nav__link">
+      CppContainer::Vector::VectorList
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Entity/" class="md-nav__link">
+      Entity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityBomb/" class="md-nav__link">
+      EntityBomb
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityEffect/" class="md-nav__link">
+      EntityEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityFamiliar/" class="md-nav__link">
+      EntityFamiliar
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityKnife/" class="md-nav__link">
+      EntityKnife
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityLaser/" class="md-nav__link">
+      EntityLaser
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityNPC/" class="md-nav__link">
+      EntityNPC
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPickup/" class="md-nav__link">
+      EntityPickup
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        EntityPlayer
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      EntityPlayer
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#void-addblackhearts-integer-blackhearts" class="md-nav__link">
+    void AddBlackHearts (integer BlackHearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-addblueflies-integer-amount-vector-position-entity-target" class="md-nav__link">
+    Entity AddBlueFlies (integer Amount, Vector Position, Entity Target )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-addbluespider-vector-position" class="md-nav__link">
+    Entity AddBlueSpider (Vector Position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addbombs-integer-amount" class="md-nav__link">
+    void AddBombs (integer Amount)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addbonehearts-integer-hearts" class="md-nav__link">
+    void AddBoneHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcacheflags-cacheflag-cacheflag" class="md-nav__link">
+    void AddCacheFlags (CacheFlag CacheFlag)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcard-card-card" class="md-nav__link">
+    void AddCard (Card Card)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcoins-integer-amount" class="md-nav__link">
+    void AddCoins (integer Amount)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcollectible-collectibletype-type-integer-charge-boolean-addconsumables" class="md-nav__link">
+    void AddCollectible (CollectibleType Type, integer Charge, boolean AddConsumables )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcontrolscooldown-integer-cooldown" class="md-nav__link">
+    void AddControlsCooldown (integer Cooldown)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcostume-configitem-item-boolean-itemstateonly" class="md-nav__link">
+    void AddCostume (Config::Item Item, boolean ItemStateOnly )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-adddeadeyecharge" class="md-nav__link">
+    void AddDeadEyeCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-adddollarbilleffect" class="md-nav__link">
+    void AddDollarBillEffect ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addeternalhearts-integer-eternalhearts" class="md-nav__link">
+    void AddEternalHearts (integer EternalHearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addgoldenbomb" class="md-nav__link">
+    void AddGoldenBomb ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addgoldenhearts-integer-hearts" class="md-nav__link">
+    void AddGoldenHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addgoldenkey" class="md-nav__link">
+    void AddGoldenKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addhearts-integer-hearts" class="md-nav__link">
+    void AddHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addjarflies-integer-flies" class="md-nav__link">
+    void AddJarFlies (integer Flies)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addjarhearts-integer-hearts" class="md-nav__link">
+    void AddJarHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addkeys-integer-amount" class="md-nav__link">
+    void AddKeys (integer Amount)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addmaxhearts-integer-maxhearts-boolean-ignorekeeper" class="md-nav__link">
+    void AddMaxHearts (integer MaxHearts, boolean IgnoreKeeper )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addnullcostume-confignullitemid-nullid" class="md-nav__link">
+    void AddNullCostume (Config::NullItemID NullId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addpill-pillcolor-pill" class="md-nav__link">
+    void AddPill (PillColor Pill)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addplayerformcostume-playerform-form" class="md-nav__link">
+    void AddPlayerFormCostume (PlayerForm Form)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addprettyfly" class="md-nav__link">
+    void AddPrettyFly ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addsoulhearts-integer-soulhearts" class="md-nav__link">
+    void AddSoulHearts (integer SoulHearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addtrinket-trinkettype-type" class="md-nav__link">
+    void AddTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animateappear" class="md-nav__link">
+    void AnimateAppear ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatecard-card-card-string-animname" class="md-nav__link">
+    void AnimateCard (Card Card, string AnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatecollectible-collectibletype-collectible-string-animname-string-spriteanimname" class="md-nav__link">
+    void AnimateCollectible (CollectibleType Collectible, string AnimName, string SpriteAnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatehappy" class="md-nav__link">
+    void AnimateHappy ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatelighttravel" class="md-nav__link">
+    void AnimateLightTravel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatepill-pillcolor-pill-string-animname" class="md-nav__link">
+    void AnimatePill (PillColor Pill, string AnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatepitfallin" class="md-nav__link">
+    void AnimatePitfallIn ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatepitfallout" class="md-nav__link">
+    void AnimatePitfallOut ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatesad" class="md-nav__link">
+    void AnimateSad ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animateteleport-boolean-up" class="md-nav__link">
+    void AnimateTeleport (boolean Up)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatetrapdoor" class="md-nav__link">
+    void AnimateTrapdoor ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatetrinket-trinkettype-trinket-string-animname-string-spriteanimname" class="md-nav__link">
+    void AnimateTrinket (TrinketType Trinket, string AnimName, string SpriteAnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-arecontrolsenabled" class="md-nav__link">
+    boolean AreControlsEnabled ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-areopposingshootdirectionspressed" class="md-nav__link">
+    boolean AreOpposingShootDirectionsPressed ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canaddcollectible" class="md-nav__link">
+    boolean CanAddCollectible ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickblackhearts" class="md-nav__link">
+    boolean CanPickBlackHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickbonehearts" class="md-nav__link">
+    boolean CanPickBoneHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickgoldenhearts" class="md-nav__link">
+    boolean CanPickGoldenHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickredhearts" class="md-nav__link">
+    boolean CanPickRedHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpicksoulhearts" class="md-nav__link">
+    boolean CanPickSoulHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickupitem" class="md-nav__link">
+    boolean CanPickupItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canshoot" class="md-nav__link">
+    boolean CanShoot ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canturnhead" class="md-nav__link">
+    boolean CanTurnHead ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-checkfamiliar-integer-familiarvariant-integer-targetcount-rng-rng" class="md-nav__link">
+    void CheckFamiliar (integer FamiliarVariant, integer TargetCount, RNG rng )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-clearcostumes" class="md-nav__link">
+    void ClearCostumes ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleardeadeyecharge" class="md-nav__link">
+    void ClearDeadEyeCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleartemporaryeffects" class="md-nav__link">
+    void ClearTemporaryEffects ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-dischargeactiveitem" class="md-nav__link">
+    void DischargeActiveItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-donateluck-integer-luck" class="md-nav__link">
+    void DonateLuck (integer Luck)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-doziteffect-vector-direction" class="md-nav__link">
+    void DoZitEffect (Vector Direction)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-droppoketitem-integer-pocketnum-vector-pos" class="md-nav__link">
+    void DropPoketItem (integer PocketNum, Vector Pos )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-droptrinket-vector-droppos-boolean-replacetick" class="md-nav__link">
+    void DropTrinket (Vector DropPos, boolean ReplaceTick )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-evaluateitems" class="md-nav__link">
+    void EvaluateItems ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitybomb-firebomb-vector-position-vector-velocity" class="md-nav__link">
+    EntityBomb FireBomb (Vector Position, Vector Velocity )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firebrimstone-vector-direction" class="md-nav__link">
+    EntityLaser FireBrimstone (Vector Direction)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firedelayedbrimstone-float-angle-entity-parent" class="md-nav__link">
+    EntityLaser FireDelayedBrimstone (float Angle, Entity Parent )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityknife-fireknife-entity-parent-float-rotationoffset-boolean-cantoverwrite-integer-subtype" class="md-nav__link">
+    EntityKnife FireKnife (Entity Parent, float RotationOffset, boolean CantOverwrite, integer SubType )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitytear-firetear-vector-position-vector-velocity-boolean-canbeeye-boolean-notractorbeam-boolean-cantriggerstreakend" class="md-nav__link">
+    EntityTear FireTear (Vector Position, Vector Velocity, boolean CanBeEye, boolean NoTractorBeam, boolean CanTriggerStreakEnd )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firetechlaser-vector-position-laseroffset-offsetid-vector-direction-boolean-lefteye-boolean-onehit" class="md-nav__link">
+    EntityLaser FireTechLaser (Vector Position, LaserOffset OffsetID, Vector Direction, boolean LeftEye, boolean OneHit )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firetechxlaser-vector-position-vector-direction-float-radius" class="md-nav__link">
+    EntityLaser FireTechXLaser (Vector Position, Vector Direction, float Radius )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-flushqueueitem" class="md-nav__link">
+    boolean FlushQueueItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-fullcharge" class="md-nav__link">
+    boolean FullCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getactivecharge" class="md-nav__link">
+    integer GetActiveCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibletype-getactiveitem" class="md-nav__link">
+    CollectibleType GetActiveItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getactivesubcharge" class="md-nav__link">
+    integer GetActiveSubCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-getactiveweaponentity" class="md-nav__link">
+    Entity GetActiveWeaponEntity ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getaimdirection" class="md-nav__link">
+    const Vector GetAimDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#babysubtype-getbabyskin" class="md-nav__link">
+    BabySubType GetBabySkin ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getbatterycharge" class="md-nav__link">
+    integer GetBatteryCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getblackhearts" class="md-nav__link">
+    integer GetBlackHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getbombflags" class="md-nav__link">
+    integer GetBombFlags ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitybombbombvariant-getbombvariant-integer-tearflags-boolean-forcesmallbomb" class="md-nav__link">
+    EntityBomb::BombVariant GetBombVariant (integer TearFlags, boolean ForceSmallBomb )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getbonehearts" class="md-nav__link">
+    integer GetBoneHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#card-getcard-integer-slotid" class="md-nav__link">
+    Card GetCard (integer SlotId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-getcardrng-card-id" class="md-nav__link">
+    RNG GetCardRNG (Card ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcollectiblecount" class="md-nav__link">
+    integer GetCollectibleCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcollectiblenum-collectibletype-type" class="md-nav__link">
+    integer GetCollectibleNum (CollectibleType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-getcollectiblerng-collectibletype-id" class="md-nav__link">
+    RNG GetCollectibleRNG (CollectibleType ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getcostumenullpos-string-nullframename-boolean-headscale-vector-direction" class="md-nav__link">
+    Vector GetCostumeNullPos (string NullFrameName, boolean HeadScale, Vector Direction )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdamagecooldown" class="md-nav__link">
+    integer GetDamageCooldown ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-geteffectivemaxhearts" class="md-nav__link">
+    integer GetEffectiveMaxHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temporaryeffects-geteffects" class="md-nav__link">
+    TemporaryEffects GetEffects ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-geteternalhearts" class="md-nav__link">
+    integer GetEternalHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getextralives" class="md-nav__link">
+    integer GetExtraLives ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-getfiredirection" class="md-nav__link">
+    Direction GetFireDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getflyingoffset" class="md-nav__link">
+    Vector GetFlyingOffset ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getgoldenhearts" class="md-nav__link">
+    integer GetGoldenHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-getgreeddonationbreakchance" class="md-nav__link">
+    float GetGreedDonationBreakChance ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-getheaddirection" class="md-nav__link">
+    Direction GetHeadDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getheartlimit" class="md-nav__link">
+    integer GetHeartLimit ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gethearts" class="md-nav__link">
+    integer GetHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibletype-getitemstate" class="md-nav__link">
+    CollectibleType GetItemState ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getjarflies" class="md-nav__link">
+    integer GetJarFlies ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getjarhearts" class="md-nav__link">
+    integer GetJarHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getlaseroffset-laseroffset-id-vector-direction" class="md-nav__link">
+    Vector GetLaserOffset (LaserOffset ID, Vector Direction )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getlastactiontriggers" class="md-nav__link">
+    integer GetLastActionTriggers ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getlastdamageflags" class="md-nav__link">
+    integer GetLastDamageFlags ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-entityref-getlastdamagesource" class="md-nav__link">
+    const EntityRef GetLastDamageSource ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getlastdirection" class="md-nav__link">
+    const Vector GetLastDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmaxhearts" class="md-nav__link">
+    integer GetMaxHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmaxpoketitems" class="md-nav__link">
+    integer GetMaxPoketItems ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmaxtrinkets" class="md-nav__link">
+    integer GetMaxTrinkets ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-getmovementdirection" class="md-nav__link">
+    Direction GetMovementDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getmovementinput" class="md-nav__link">
+    Vector GetMovementInput ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getmovementjoystick" class="md-nav__link">
+    Vector GetMovementJoystick ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getmovementvector" class="md-nav__link">
+    const Vector GetMovementVector ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multishotparams-getmultishotparams" class="md-nav__link">
+    MultiShotParams GetMultiShotParams ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posvel-getmultishotpositionvelocity-integer-loopindex-weapontype-weapon-vector-shotdirection-float-shotspeed-multishotparams-params" class="md-nav__link">
+    PosVel GetMultiShotPositionVelocity (integer LoopIndex, WeaponType Weapon, Vector ShotDirection, float ShotSpeed, MultiShotParams params )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-getname" class="md-nav__link">
+    string GetName ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-getnpctarget" class="md-nav__link">
+    Entity GetNPCTarget ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumblueflies" class="md-nav__link">
+    integer GetNumBlueFlies ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumbluespiders" class="md-nav__link">
+    integer GetNumBlueSpiders ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumbombs" class="md-nav__link">
+    integer GetNumBombs ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumcoins" class="md-nav__link">
+    integer GetNumCoins ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumkeys" class="md-nav__link">
+    integer GetNumKeys ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pillcolor-getpill-integer-slotid" class="md-nav__link">
+    PillColor GetPill (integer SlotId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-getpillrng-pilleffect-id" class="md-nav__link">
+    RNG GetPillRNG (PillEffect ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playertype-getplayertype" class="md-nav__link">
+    PlayerType GetPlayerType ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-playerpocketitem-getpocketitem-integer-slotid" class="md-nav__link">
+    const PlayerPocketItem GetPocketItem (integer SlotId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getrecentmovementvector" class="md-nav__link">
+    const Vector GetRecentMovementVector ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getshootinginput" class="md-nav__link">
+    Vector GetShootingInput ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getshootingjoystick" class="md-nav__link">
+    Vector GetShootingJoystick ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-getsmoothbodyrotation" class="md-nav__link">
+    float GetSmoothBodyRotation ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getsoulhearts" class="md-nav__link">
+    integer GetSoulHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getsubplayer" class="md-nav__link">
+    EntityPlayer GetSubPlayer ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tearparams-gettearhitparams-weapontype-weapontype-float-damagescale-integer-teardisplacement" class="md-nav__link">
+    TearParams GetTearHitParams (WeaponType WeaponType, float DamageScale, integer TearDisplacement )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-gettearmovementinheritance-vector-shotdirection" class="md-nav__link">
+    Vector GetTearMovementInheritance (Vector ShotDirection)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-gettearpoisondamage" class="md-nav__link">
+    float GetTearPoisonDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettearrangemodifier" class="md-nav__link">
+    integer GetTearRangeModifier ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettotaldamagetaken" class="md-nav__link">
+    integer GetTotalDamageTaken ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-gettractorbeam" class="md-nav__link">
+    Entity GetTractorBeam ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trinkettype-gettrinket-integer-trinketindex" class="md-nav__link">
+    TrinketType GetTrinket (integer TrinketIndex)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettrinketmultiplier" class="md-nav__link">
+    integer GetTrinketMultiplier ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-gettrinketrng-trinkettype-id" class="md-nav__link">
+    RNG GetTrinketRNG (TrinketType ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getvelocitybeforeupdate" class="md-nav__link">
+    const Vector GetVelocityBeforeUpdate ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibletype-getzodiaceffect" class="md-nav__link">
+    CollectibleType GetZodiacEffect ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hascollectible-collectibletype-type" class="md-nav__link">
+    boolean HasCollectible (CollectibleType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasfullhearts" class="md-nav__link">
+    boolean HasFullHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasfullheartsandsoulhearts" class="md-nav__link">
+    boolean HasFullHeartsAndSoulHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasgoldenbomb" class="md-nav__link">
+    boolean HasGoldenBomb ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasgoldenkey" class="md-nav__link">
+    boolean HasGoldenKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasinvincibility" class="md-nav__link">
+    boolean HasInvincibility ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasplayerform-playerform-form" class="md-nav__link">
+    boolean HasPlayerForm (PlayerForm Form)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hastimeditem" class="md-nav__link">
+    boolean HasTimedItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hastrinket-trinkettype-type" class="md-nav__link">
+    boolean HasTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasweapontype-weapontype-weapontype" class="md-nav__link">
+    boolean HasWeaponType (WeaponType WeaponType)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-initbabyskin" class="md-nav__link">
+    void InitBabySkin ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isblackheart-integer-heart" class="md-nav__link">
+    boolean IsBlackHeart (integer Heart)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isboneheart-integer-heart" class="md-nav__link">
+    boolean IsBoneHeart (integer heart)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isextraanimationfinished" class="md-nav__link">
+    boolean IsExtraAnimationFinished ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isfullspriterendering" class="md-nav__link">
+    boolean IsFullSpriteRendering ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-ishelditemvisible" class="md-nav__link">
+    boolean IsHeldItemVisible ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isholdingitem" class="md-nav__link">
+    boolean IsHoldingItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isitemqueueempty" class="md-nav__link">
+    boolean IsItemQueueEmpty ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isp2appearing" class="md-nav__link">
+    boolean IsP2Appearing ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isposinspotlight-vector-position" class="md-nav__link">
+    boolean IsPosInSpotLight (Vector Position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-issubplayer" class="md-nav__link">
+    boolean IsSubPlayer ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-needscharge" class="md-nav__link">
+    boolean NeedsCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-playextraanimation-string-animation" class="md-nav__link">
+    void PlayExtraAnimation (string Animation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-queueextraanimation-string-animation" class="md-nav__link">
+    void QueueExtraAnimation (string Animation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-queueitem-configitem-item-integer-charge-boolean-touched" class="md-nav__link">
+    void QueueItem (Config::Item Item, integer Charge, boolean Touched )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removeblackheart-integer-blackheart" class="md-nav__link">
+    void RemoveBlackHeart (integer BlackHeart)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removebluefly" class="md-nav__link">
+    void RemoveBlueFly ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removebluespider" class="md-nav__link">
+    void RemoveBlueSpider ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removecollectible-collectibletype-type" class="md-nav__link">
+    void RemoveCollectible (CollectibleType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removecostume-configitem-item" class="md-nav__link">
+    void RemoveCostume (Config::Item Item)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removegoldenbomb" class="md-nav__link">
+    void RemoveGoldenBomb ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removegoldenkey" class="md-nav__link">
+    void RemoveGoldenKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removeskincostume" class="md-nav__link">
+    void RemoveSkinCostume ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderbody-vector-position" class="md-nav__link">
+    void RenderBody (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderglow-vector-position" class="md-nav__link">
+    void RenderGlow (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderhead-vector-position" class="md-nav__link">
+    void RenderHead (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rendertop-vector-position" class="md-nav__link">
+    void RenderTop (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-replacecostumesprite-configitem-item-string-spritepath-integer-spriteid" class="md-nav__link">
+    void ReplaceCostumeSprite (Config::Item Item, string SpritePath, integer SpriteId )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-resetdamagecooldown" class="md-nav__link">
+    void ResetDamageCooldown ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-resetitemstate" class="md-nav__link">
+    void ResetItemState ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-respawnfamiliars" class="md-nav__link">
+    void RespawnFamiliars ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-revive" class="md-nav__link">
+    void Revive ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setactivecharge-integer-charge" class="md-nav__link">
+    void SetActiveCharge (integer Charge)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setcard-integer-slotid-card-card" class="md-nav__link">
+    void SetCard (integer SlotId, Card Card )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setfullhearts" class="md-nav__link">
+    void SetFullHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setmindamagecooldown-integer-damagecooldown" class="md-nav__link">
+    void SetMinDamageCooldown (integer DamageCooldown)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setpill-integer-slotid-pillcolor-pill" class="md-nav__link">
+    void SetPill (integer SlotId, PillColor Pill )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setshootingcooldown-integer-cooldown" class="md-nav__link">
+    void SetShootingCooldown (integer Cooldown)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-settargettrapdoor-gridentity-trapdoor" class="md-nav__link">
+    void SetTargetTrapDoor (GridEntity TrapDoor)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-shootredcandle-vector-direction" class="md-nav__link">
+    void ShootRedCandle (Vector Direction)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-spawnmawofvoid-integer-timeout" class="md-nav__link">
+    EntityLaser SpawnMawOfVoid (integer Timeout)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-stopextraanimation" class="md-nav__link">
+    void StopExtraAnimation ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-swapactiveitems" class="md-nav__link">
+    void SwapActiveItems ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-throwbluespider-vector-position-vector-target" class="md-nav__link">
+    Entity ThrowBlueSpider (Vector Position, Vector Target )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-tryholdtrinket-trinkettype-type" class="md-nav__link">
+    boolean TryHoldTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-tryremovecollectiblecostume-collectibletype-collectible-boolean-keeppersistent" class="md-nav__link">
+    void TryRemoveCollectibleCostume (CollectibleType Collectible, boolean KeepPersistent )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-tryremovenullcostume-confignullitemid-nullid" class="md-nav__link">
+    void TryRemoveNullCostume (Config::NullItemID NullId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-tryremovetrinket-trinkettype-type" class="md-nav__link">
+    boolean TryRemoveTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-tryremovetrinketcostume-trinkettype-trinket" class="md-nav__link">
+    void TryRemoveTrinketCostume (TrinketType Trinket)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-tryusekey" class="md-nav__link">
+    boolean TryUseKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-updatecanshoot" class="md-nav__link">
+    void UpdateCanShoot ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-useactiveitem-collectibletype-item-boolean-showanim-boolean-keepactiveitem-boolean-allownonmainplayer-boolean-toaddcostume" class="md-nav__link">
+    void UseActiveItem (CollectibleType Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-usecard-card-card" class="md-nav__link">
+    void UseCard (Card Card)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-usepill-pilleffect-pilleffect-pillcolor-pillcolor" class="md-nav__link">
+    void UsePill (PillEffect PillEffect, PillColor PillColor )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-willplayerrevive" class="md-nav__link">
+    boolean WillPlayerRevive ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#babysubtype-babyskin" class="md-nav__link">
+    BabySubType BabySkin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canfly" class="md-nav__link">
+    boolean CanFly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-integer-controllerindex" class="md-nav__link">
+    const integer ControllerIndex
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-controlscooldown" class="md-nav__link">
+    integer ControlsCooldown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-controlsenabled" class="md-nav__link">
+    boolean ControlsEnabled
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-damage" class="md-nav__link">
+    float Damage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-firedelay" class="md-nav__link">
+    integer FireDelay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-entitydesc-friendballenemy" class="md-nav__link">
+    const EntityDesc FriendBallEnemy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-headframedelay" class="md-nav__link">
+    integer HeadFrameDelay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-itemholdcooldown" class="md-nav__link">
+    integer ItemHoldCooldown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-lasercolor" class="md-nav__link">
+    Color LaserColor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-luck" class="md-nav__link">
+    float Luck
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-maxfiredelay" class="md-nav__link">
+    integer MaxFireDelay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-movespeed" class="md-nav__link">
+    float MoveSpeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queueitemdata-queueditem" class="md-nav__link">
+    QueueItemData QueuedItem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activeitemdesc-secondaryactiveitem" class="md-nav__link">
+    ActiveItemDesc SecondaryActiveItem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-shotspeed" class="md-nav__link">
+    float ShotSpeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-spritescale" class="md-nav__link">
+    Vector SpriteScale
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-tearcolor" class="md-nav__link">
+    Color TearColor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-tearfallingacceleration" class="md-nav__link">
+    float TearFallingAcceleration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-tearfallingspeed" class="md-nav__link">
+    float TearFallingSpeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-tearflags" class="md-nav__link">
+    integer TearFlags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-tearheight" class="md-nav__link">
+    float TearHeight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-tearsoffset" class="md-nav__link">
+    const Vector TearsOffset
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityProjectile/" class="md-nav__link">
+      EntityProjectile
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityPtr/" class="md-nav__link">
+      EntityPtr
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityRef/" class="md-nav__link">
+      EntityRef
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../EntityTear/" class="md-nav__link">
+      EntityTear
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Font/" class="md-nav__link">
+      Font
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Game/" class="md-nav__link">
+      Game
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntity/" class="md-nav__link">
+      GridEntity
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityDesc/" class="md-nav__link">
+      GridEntityDesc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityDoor/" class="md-nav__link">
+      GridEntityDoor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPit/" class="md-nav__link">
+      GridEntityPit
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPoop/" class="md-nav__link">
+      GridEntityPoop
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityPressurePlate/" class="md-nav__link">
+      GridEntityPressurePlate
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityRock/" class="md-nav__link">
+      GridEntityRock
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntitySpikes/" class="md-nav__link">
+      GridEntitySpikes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../GridEntityTNT/" class="md-nav__link">
+      GridEntityTNT
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Card/" class="md-nav__link">
+      ItemConfig::Card
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Config/" class="md-nav__link">
+      ItemConfig::Config
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Costume/" class="md-nav__link">
+      ItemConfig::Costume
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_Item/" class="md-nav__link">
+      ItemConfig::Item
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig_PillEffect/" class="md-nav__link">
+      ItemConfig::PillEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemPool/" class="md-nav__link">
+      ItemPool
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../KColor/" class="md-nav__link">
+      KColor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Level/" class="md-nav__link">
+      Level
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../MusicManager/" class="md-nav__link">
+      MusicManager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PathFinder/" class="md-nav__link">
+      PathFinder
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes_ActiveItemDesc/" class="md-nav__link">
+      PlayerTypes::ActiveItemDesc
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes_PosVel/" class="md-nav__link">
+      PlayerTypes::PosVel
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ProjectileParams/" class="md-nav__link">
+      ProjectileParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../QueueItemData/" class="md-nav__link">
+      QueueItemData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Room/" class="md-nav__link">
+      Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Entry/" class="md-nav__link">
+      RoomConfig::Entry
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Room/" class="md-nav__link">
+      RoomConfig::Room
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig_Spawn/" class="md-nav__link">
+      RoomConfig::Spawn
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomDescriptor/" class="md-nav__link">
+      RoomDescriptor
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomDescriptorData/" class="md-nav__link">
+      RoomDescriptorData
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RNG/" class="md-nav__link">
+      RNG
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Seeds/" class="md-nav__link">
+      Seeds
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ShockwaveParams/" class="md-nav__link">
+      ShockwaveParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Sprite/" class="md-nav__link">
+      Sprite
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../SFXManager/" class="md-nav__link">
+      SFXManager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TearParams/" class="md-nav__link">
+      TearParams
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TemporaryEffect/" class="md-nav__link">
+      TemporaryEffect
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../TemporaryEffects/" class="md-nav__link">
+      TemporaryEffects
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Vector/" class="md-nav__link">
+      Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Functions/" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../BindingofIsaac-Afterbirth%2BLuaReference_GuideDocumentation/" class="md-nav__link">
+      Binding of Isaac - Afterbirth+ Lua Reference/Guide Documentation
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer/" class="md-nav__link">
+      CppContainer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_ArrayProxy/" class="md-nav__link">
+      CppContainer::ArrayProxy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../CppContainer_Vector/" class="md-nav__link">
+      CppContainer::Vector
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Input/" class="md-nav__link">
+      Input
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Isaac/" class="md-nav__link">
+      Isaac
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../ItemConfig/" class="md-nav__link">
+      ItemConfig
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../PlayerTypes/" class="md-nav__link">
+      PlayerTypes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../RoomConfig/" class="md-nav__link">
+      RoomConfig
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-nav__link">
+      Tutorial - Adding Costumes to items without LUA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../UsingZeroBraneStudiotodebugyourscripts/" class="md-nav__link">
+      Using ZeroBrane Studio to debug your scripts
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../DebugConsole/" class="md-nav__link">
+      Debug Console
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Usingadditional.luaFiles/" class="md-nav__link">
+      Using additional .lua Files
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Writingscreenshaders/" class="md-nav__link">
+      Writing screen shaders
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-Rendertext/" class="md-nav__link">
+      Tutorial - Render text
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../XMLFiledocumentation/" class="md-nav__link">
+      XML File documentation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+    
+    <label class="md-nav__link" for="nav-3">
+      Tutorials
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
+        Tutorials
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-AddingCostumestoitemswithoutLUA/" class="md-nav__link">
+      [Tutorial] Adding Costumes to items without LUA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../Tutorial-Rendertext/" class="md-nav__link">
+      [Tutorial] Render text
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+    
+    <label class="md-nav__link" for="nav-4">
+      Frequently used
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Frequently used" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Frequently used
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href=".." class="md-nav__link">
+      EntityPlayer
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#void-addblackhearts-integer-blackhearts" class="md-nav__link">
+    void AddBlackHearts (integer BlackHearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-addblueflies-integer-amount-vector-position-entity-target" class="md-nav__link">
+    Entity AddBlueFlies (integer Amount, Vector Position, Entity Target )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-addbluespider-vector-position" class="md-nav__link">
+    Entity AddBlueSpider (Vector Position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addbombs-integer-amount" class="md-nav__link">
+    void AddBombs (integer Amount)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addbonehearts-integer-hearts" class="md-nav__link">
+    void AddBoneHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcacheflags-cacheflag-cacheflag" class="md-nav__link">
+    void AddCacheFlags (CacheFlag CacheFlag)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcard-card-card" class="md-nav__link">
+    void AddCard (Card Card)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcoins-integer-amount" class="md-nav__link">
+    void AddCoins (integer Amount)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcollectible-collectibletype-type-integer-charge-boolean-addconsumables" class="md-nav__link">
+    void AddCollectible (CollectibleType Type, integer Charge, boolean AddConsumables )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcontrolscooldown-integer-cooldown" class="md-nav__link">
+    void AddControlsCooldown (integer Cooldown)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addcostume-configitem-item-boolean-itemstateonly" class="md-nav__link">
+    void AddCostume (Config::Item Item, boolean ItemStateOnly )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-adddeadeyecharge" class="md-nav__link">
+    void AddDeadEyeCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-adddollarbilleffect" class="md-nav__link">
+    void AddDollarBillEffect ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addeternalhearts-integer-eternalhearts" class="md-nav__link">
+    void AddEternalHearts (integer EternalHearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addgoldenbomb" class="md-nav__link">
+    void AddGoldenBomb ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addgoldenhearts-integer-hearts" class="md-nav__link">
+    void AddGoldenHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addgoldenkey" class="md-nav__link">
+    void AddGoldenKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addhearts-integer-hearts" class="md-nav__link">
+    void AddHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addjarflies-integer-flies" class="md-nav__link">
+    void AddJarFlies (integer Flies)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addjarhearts-integer-hearts" class="md-nav__link">
+    void AddJarHearts (integer Hearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addkeys-integer-amount" class="md-nav__link">
+    void AddKeys (integer Amount)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addmaxhearts-integer-maxhearts-boolean-ignorekeeper" class="md-nav__link">
+    void AddMaxHearts (integer MaxHearts, boolean IgnoreKeeper )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addnullcostume-confignullitemid-nullid" class="md-nav__link">
+    void AddNullCostume (Config::NullItemID NullId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addpill-pillcolor-pill" class="md-nav__link">
+    void AddPill (PillColor Pill)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addplayerformcostume-playerform-form" class="md-nav__link">
+    void AddPlayerFormCostume (PlayerForm Form)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addprettyfly" class="md-nav__link">
+    void AddPrettyFly ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addsoulhearts-integer-soulhearts" class="md-nav__link">
+    void AddSoulHearts (integer SoulHearts)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-addtrinket-trinkettype-type" class="md-nav__link">
+    void AddTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animateappear" class="md-nav__link">
+    void AnimateAppear ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatecard-card-card-string-animname" class="md-nav__link">
+    void AnimateCard (Card Card, string AnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatecollectible-collectibletype-collectible-string-animname-string-spriteanimname" class="md-nav__link">
+    void AnimateCollectible (CollectibleType Collectible, string AnimName, string SpriteAnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatehappy" class="md-nav__link">
+    void AnimateHappy ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatelighttravel" class="md-nav__link">
+    void AnimateLightTravel ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatepill-pillcolor-pill-string-animname" class="md-nav__link">
+    void AnimatePill (PillColor Pill, string AnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatepitfallin" class="md-nav__link">
+    void AnimatePitfallIn ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatepitfallout" class="md-nav__link">
+    void AnimatePitfallOut ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatesad" class="md-nav__link">
+    void AnimateSad ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animateteleport-boolean-up" class="md-nav__link">
+    void AnimateTeleport (boolean Up)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatetrapdoor" class="md-nav__link">
+    void AnimateTrapdoor ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-animatetrinket-trinkettype-trinket-string-animname-string-spriteanimname" class="md-nav__link">
+    void AnimateTrinket (TrinketType Trinket, string AnimName, string SpriteAnimName )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-arecontrolsenabled" class="md-nav__link">
+    boolean AreControlsEnabled ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-areopposingshootdirectionspressed" class="md-nav__link">
+    boolean AreOpposingShootDirectionsPressed ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canaddcollectible" class="md-nav__link">
+    boolean CanAddCollectible ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickblackhearts" class="md-nav__link">
+    boolean CanPickBlackHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickbonehearts" class="md-nav__link">
+    boolean CanPickBoneHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickgoldenhearts" class="md-nav__link">
+    boolean CanPickGoldenHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickredhearts" class="md-nav__link">
+    boolean CanPickRedHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpicksoulhearts" class="md-nav__link">
+    boolean CanPickSoulHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canpickupitem" class="md-nav__link">
+    boolean CanPickupItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canshoot" class="md-nav__link">
+    boolean CanShoot ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canturnhead" class="md-nav__link">
+    boolean CanTurnHead ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-checkfamiliar-integer-familiarvariant-integer-targetcount-rng-rng" class="md-nav__link">
+    void CheckFamiliar (integer FamiliarVariant, integer TargetCount, RNG rng )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-clearcostumes" class="md-nav__link">
+    void ClearCostumes ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleardeadeyecharge" class="md-nav__link">
+    void ClearDeadEyeCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-cleartemporaryeffects" class="md-nav__link">
+    void ClearTemporaryEffects ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-dischargeactiveitem" class="md-nav__link">
+    void DischargeActiveItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-donateluck-integer-luck" class="md-nav__link">
+    void DonateLuck (integer Luck)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-doziteffect-vector-direction" class="md-nav__link">
+    void DoZitEffect (Vector Direction)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-droppoketitem-integer-pocketnum-vector-pos" class="md-nav__link">
+    void DropPoketItem (integer PocketNum, Vector Pos )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-droptrinket-vector-droppos-boolean-replacetick" class="md-nav__link">
+    void DropTrinket (Vector DropPos, boolean ReplaceTick )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-evaluateitems" class="md-nav__link">
+    void EvaluateItems ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitybomb-firebomb-vector-position-vector-velocity" class="md-nav__link">
+    EntityBomb FireBomb (Vector Position, Vector Velocity )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firebrimstone-vector-direction" class="md-nav__link">
+    EntityLaser FireBrimstone (Vector Direction)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firedelayedbrimstone-float-angle-entity-parent" class="md-nav__link">
+    EntityLaser FireDelayedBrimstone (float Angle, Entity Parent )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityknife-fireknife-entity-parent-float-rotationoffset-boolean-cantoverwrite-integer-subtype" class="md-nav__link">
+    EntityKnife FireKnife (Entity Parent, float RotationOffset, boolean CantOverwrite, integer SubType )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitytear-firetear-vector-position-vector-velocity-boolean-canbeeye-boolean-notractorbeam-boolean-cantriggerstreakend" class="md-nav__link">
+    EntityTear FireTear (Vector Position, Vector Velocity, boolean CanBeEye, boolean NoTractorBeam, boolean CanTriggerStreakEnd )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firetechlaser-vector-position-laseroffset-offsetid-vector-direction-boolean-lefteye-boolean-onehit" class="md-nav__link">
+    EntityLaser FireTechLaser (Vector Position, LaserOffset OffsetID, Vector Direction, boolean LeftEye, boolean OneHit )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-firetechxlaser-vector-position-vector-direction-float-radius" class="md-nav__link">
+    EntityLaser FireTechXLaser (Vector Position, Vector Direction, float Radius )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-flushqueueitem" class="md-nav__link">
+    boolean FlushQueueItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-fullcharge" class="md-nav__link">
+    boolean FullCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getactivecharge" class="md-nav__link">
+    integer GetActiveCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibletype-getactiveitem" class="md-nav__link">
+    CollectibleType GetActiveItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getactivesubcharge" class="md-nav__link">
+    integer GetActiveSubCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-getactiveweaponentity" class="md-nav__link">
+    Entity GetActiveWeaponEntity ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getaimdirection" class="md-nav__link">
+    const Vector GetAimDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#babysubtype-getbabyskin" class="md-nav__link">
+    BabySubType GetBabySkin ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getbatterycharge" class="md-nav__link">
+    integer GetBatteryCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getblackhearts" class="md-nav__link">
+    integer GetBlackHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getbombflags" class="md-nav__link">
+    integer GetBombFlags ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitybombbombvariant-getbombvariant-integer-tearflags-boolean-forcesmallbomb" class="md-nav__link">
+    EntityBomb::BombVariant GetBombVariant (integer TearFlags, boolean ForceSmallBomb )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getbonehearts" class="md-nav__link">
+    integer GetBoneHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#card-getcard-integer-slotid" class="md-nav__link">
+    Card GetCard (integer SlotId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-getcardrng-card-id" class="md-nav__link">
+    RNG GetCardRNG (Card ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcollectiblecount" class="md-nav__link">
+    integer GetCollectibleCount ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getcollectiblenum-collectibletype-type" class="md-nav__link">
+    integer GetCollectibleNum (CollectibleType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-getcollectiblerng-collectibletype-id" class="md-nav__link">
+    RNG GetCollectibleRNG (CollectibleType ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getcostumenullpos-string-nullframename-boolean-headscale-vector-direction" class="md-nav__link">
+    Vector GetCostumeNullPos (string NullFrameName, boolean HeadScale, Vector Direction )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getdamagecooldown" class="md-nav__link">
+    integer GetDamageCooldown ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-geteffectivemaxhearts" class="md-nav__link">
+    integer GetEffectiveMaxHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temporaryeffects-geteffects" class="md-nav__link">
+    TemporaryEffects GetEffects ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-geteternalhearts" class="md-nav__link">
+    integer GetEternalHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getextralives" class="md-nav__link">
+    integer GetExtraLives ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-getfiredirection" class="md-nav__link">
+    Direction GetFireDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getflyingoffset" class="md-nav__link">
+    Vector GetFlyingOffset ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getgoldenhearts" class="md-nav__link">
+    integer GetGoldenHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-getgreeddonationbreakchance" class="md-nav__link">
+    float GetGreedDonationBreakChance ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-getheaddirection" class="md-nav__link">
+    Direction GetHeadDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getheartlimit" class="md-nav__link">
+    integer GetHeartLimit ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gethearts" class="md-nav__link">
+    integer GetHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibletype-getitemstate" class="md-nav__link">
+    CollectibleType GetItemState ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getjarflies" class="md-nav__link">
+    integer GetJarFlies ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getjarhearts" class="md-nav__link">
+    integer GetJarHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getlaseroffset-laseroffset-id-vector-direction" class="md-nav__link">
+    Vector GetLaserOffset (LaserOffset ID, Vector Direction )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getlastactiontriggers" class="md-nav__link">
+    integer GetLastActionTriggers ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getlastdamageflags" class="md-nav__link">
+    integer GetLastDamageFlags ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-entityref-getlastdamagesource" class="md-nav__link">
+    const EntityRef GetLastDamageSource ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getlastdirection" class="md-nav__link">
+    const Vector GetLastDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmaxhearts" class="md-nav__link">
+    integer GetMaxHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmaxpoketitems" class="md-nav__link">
+    integer GetMaxPoketItems ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getmaxtrinkets" class="md-nav__link">
+    integer GetMaxTrinkets ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#direction-getmovementdirection" class="md-nav__link">
+    Direction GetMovementDirection ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getmovementinput" class="md-nav__link">
+    Vector GetMovementInput ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getmovementjoystick" class="md-nav__link">
+    Vector GetMovementJoystick ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getmovementvector" class="md-nav__link">
+    const Vector GetMovementVector ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multishotparams-getmultishotparams" class="md-nav__link">
+    MultiShotParams GetMultiShotParams ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#posvel-getmultishotpositionvelocity-integer-loopindex-weapontype-weapon-vector-shotdirection-float-shotspeed-multishotparams-params" class="md-nav__link">
+    PosVel GetMultiShotPositionVelocity (integer LoopIndex, WeaponType Weapon, Vector ShotDirection, float ShotSpeed, MultiShotParams params )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#string-getname" class="md-nav__link">
+    string GetName ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-getnpctarget" class="md-nav__link">
+    Entity GetNPCTarget ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumblueflies" class="md-nav__link">
+    integer GetNumBlueFlies ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumbluespiders" class="md-nav__link">
+    integer GetNumBlueSpiders ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumbombs" class="md-nav__link">
+    integer GetNumBombs ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumcoins" class="md-nav__link">
+    integer GetNumCoins ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getnumkeys" class="md-nav__link">
+    integer GetNumKeys ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pillcolor-getpill-integer-slotid" class="md-nav__link">
+    PillColor GetPill (integer SlotId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-getpillrng-pilleffect-id" class="md-nav__link">
+    RNG GetPillRNG (PillEffect ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#playertype-getplayertype" class="md-nav__link">
+    PlayerType GetPlayerType ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-playerpocketitem-getpocketitem-integer-slotid" class="md-nav__link">
+    const PlayerPocketItem GetPocketItem (integer SlotId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getrecentmovementvector" class="md-nav__link">
+    const Vector GetRecentMovementVector ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getshootinginput" class="md-nav__link">
+    Vector GetShootingInput ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-getshootingjoystick" class="md-nav__link">
+    Vector GetShootingJoystick ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-getsmoothbodyrotation" class="md-nav__link">
+    float GetSmoothBodyRotation ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-getsoulhearts" class="md-nav__link">
+    integer GetSoulHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entityplayer-getsubplayer" class="md-nav__link">
+    EntityPlayer GetSubPlayer ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tearparams-gettearhitparams-weapontype-weapontype-float-damagescale-integer-teardisplacement" class="md-nav__link">
+    TearParams GetTearHitParams (WeaponType WeaponType, float DamageScale, integer TearDisplacement )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-gettearmovementinheritance-vector-shotdirection" class="md-nav__link">
+    Vector GetTearMovementInheritance (Vector ShotDirection)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-gettearpoisondamage" class="md-nav__link">
+    float GetTearPoisonDamage ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettearrangemodifier" class="md-nav__link">
+    integer GetTearRangeModifier ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettotaldamagetaken" class="md-nav__link">
+    integer GetTotalDamageTaken ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-gettractorbeam" class="md-nav__link">
+    Entity GetTractorBeam ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trinkettype-gettrinket-integer-trinketindex" class="md-nav__link">
+    TrinketType GetTrinket (integer TrinketIndex)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-gettrinketmultiplier" class="md-nav__link">
+    integer GetTrinketMultiplier ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rng-gettrinketrng-trinkettype-id" class="md-nav__link">
+    RNG GetTrinketRNG (TrinketType ID)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-getvelocitybeforeupdate" class="md-nav__link">
+    const Vector GetVelocityBeforeUpdate ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#collectibletype-getzodiaceffect" class="md-nav__link">
+    CollectibleType GetZodiacEffect ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hascollectible-collectibletype-type" class="md-nav__link">
+    boolean HasCollectible (CollectibleType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasfullhearts" class="md-nav__link">
+    boolean HasFullHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasfullheartsandsoulhearts" class="md-nav__link">
+    boolean HasFullHeartsAndSoulHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasgoldenbomb" class="md-nav__link">
+    boolean HasGoldenBomb ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasgoldenkey" class="md-nav__link">
+    boolean HasGoldenKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasinvincibility" class="md-nav__link">
+    boolean HasInvincibility ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasplayerform-playerform-form" class="md-nav__link">
+    boolean HasPlayerForm (PlayerForm Form)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hastimeditem" class="md-nav__link">
+    boolean HasTimedItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hastrinket-trinkettype-type" class="md-nav__link">
+    boolean HasTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-hasweapontype-weapontype-weapontype" class="md-nav__link">
+    boolean HasWeaponType (WeaponType WeaponType)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-initbabyskin" class="md-nav__link">
+    void InitBabySkin ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isblackheart-integer-heart" class="md-nav__link">
+    boolean IsBlackHeart (integer Heart)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isboneheart-integer-heart" class="md-nav__link">
+    boolean IsBoneHeart (integer heart)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isextraanimationfinished" class="md-nav__link">
+    boolean IsExtraAnimationFinished ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isfullspriterendering" class="md-nav__link">
+    boolean IsFullSpriteRendering ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-ishelditemvisible" class="md-nav__link">
+    boolean IsHeldItemVisible ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isholdingitem" class="md-nav__link">
+    boolean IsHoldingItem ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isitemqueueempty" class="md-nav__link">
+    boolean IsItemQueueEmpty ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isp2appearing" class="md-nav__link">
+    boolean IsP2Appearing ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-isposinspotlight-vector-position" class="md-nav__link">
+    boolean IsPosInSpotLight (Vector Position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-issubplayer" class="md-nav__link">
+    boolean IsSubPlayer ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-needscharge" class="md-nav__link">
+    boolean NeedsCharge ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-playextraanimation-string-animation" class="md-nav__link">
+    void PlayExtraAnimation (string Animation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-queueextraanimation-string-animation" class="md-nav__link">
+    void QueueExtraAnimation (string Animation)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-queueitem-configitem-item-integer-charge-boolean-touched" class="md-nav__link">
+    void QueueItem (Config::Item Item, integer Charge, boolean Touched )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removeblackheart-integer-blackheart" class="md-nav__link">
+    void RemoveBlackHeart (integer BlackHeart)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removebluefly" class="md-nav__link">
+    void RemoveBlueFly ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removebluespider" class="md-nav__link">
+    void RemoveBlueSpider ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removecollectible-collectibletype-type" class="md-nav__link">
+    void RemoveCollectible (CollectibleType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removecostume-configitem-item" class="md-nav__link">
+    void RemoveCostume (Config::Item Item)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removegoldenbomb" class="md-nav__link">
+    void RemoveGoldenBomb ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removegoldenkey" class="md-nav__link">
+    void RemoveGoldenKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-removeskincostume" class="md-nav__link">
+    void RemoveSkinCostume ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderbody-vector-position" class="md-nav__link">
+    void RenderBody (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderglow-vector-position" class="md-nav__link">
+    void RenderGlow (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-renderhead-vector-position" class="md-nav__link">
+    void RenderHead (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-rendertop-vector-position" class="md-nav__link">
+    void RenderTop (Vector position)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-replacecostumesprite-configitem-item-string-spritepath-integer-spriteid" class="md-nav__link">
+    void ReplaceCostumeSprite (Config::Item Item, string SpritePath, integer SpriteId )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-resetdamagecooldown" class="md-nav__link">
+    void ResetDamageCooldown ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-resetitemstate" class="md-nav__link">
+    void ResetItemState ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-respawnfamiliars" class="md-nav__link">
+    void RespawnFamiliars ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-revive" class="md-nav__link">
+    void Revive ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setactivecharge-integer-charge" class="md-nav__link">
+    void SetActiveCharge (integer Charge)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setcard-integer-slotid-card-card" class="md-nav__link">
+    void SetCard (integer SlotId, Card Card )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setfullhearts" class="md-nav__link">
+    void SetFullHearts ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setmindamagecooldown-integer-damagecooldown" class="md-nav__link">
+    void SetMinDamageCooldown (integer DamageCooldown)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setpill-integer-slotid-pillcolor-pill" class="md-nav__link">
+    void SetPill (integer SlotId, PillColor Pill )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-setshootingcooldown-integer-cooldown" class="md-nav__link">
+    void SetShootingCooldown (integer Cooldown)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-settargettrapdoor-gridentity-trapdoor" class="md-nav__link">
+    void SetTargetTrapDoor (GridEntity TrapDoor)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-shootredcandle-vector-direction" class="md-nav__link">
+    void ShootRedCandle (Vector Direction)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entitylaser-spawnmawofvoid-integer-timeout" class="md-nav__link">
+    EntityLaser SpawnMawOfVoid (integer Timeout)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-stopextraanimation" class="md-nav__link">
+    void StopExtraAnimation ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-swapactiveitems" class="md-nav__link">
+    void SwapActiveItems ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entity-throwbluespider-vector-position-vector-target" class="md-nav__link">
+    Entity ThrowBlueSpider (Vector Position, Vector Target )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-tryholdtrinket-trinkettype-type" class="md-nav__link">
+    boolean TryHoldTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-tryremovecollectiblecostume-collectibletype-collectible-boolean-keeppersistent" class="md-nav__link">
+    void TryRemoveCollectibleCostume (CollectibleType Collectible, boolean KeepPersistent )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-tryremovenullcostume-confignullitemid-nullid" class="md-nav__link">
+    void TryRemoveNullCostume (Config::NullItemID NullId)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-tryremovetrinket-trinkettype-type" class="md-nav__link">
+    boolean TryRemoveTrinket (TrinketType Type)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-tryremovetrinketcostume-trinkettype-trinket" class="md-nav__link">
+    void TryRemoveTrinketCostume (TrinketType Trinket)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-tryusekey" class="md-nav__link">
+    boolean TryUseKey ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-updatecanshoot" class="md-nav__link">
+    void UpdateCanShoot ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-useactiveitem-collectibletype-item-boolean-showanim-boolean-keepactiveitem-boolean-allownonmainplayer-boolean-toaddcostume" class="md-nav__link">
+    void UseActiveItem (CollectibleType Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-usecard-card-card" class="md-nav__link">
+    void UseCard (Card Card)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#void-usepill-pilleffect-pilleffect-pillcolor-pillcolor" class="md-nav__link">
+    void UsePill (PillEffect PillEffect, PillColor PillColor )
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-willplayerrevive" class="md-nav__link">
+    boolean WillPlayerRevive ()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#babysubtype-babyskin" class="md-nav__link">
+    BabySubType BabySkin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-canfly" class="md-nav__link">
+    boolean CanFly
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-integer-controllerindex" class="md-nav__link">
+    const integer ControllerIndex
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-controlscooldown" class="md-nav__link">
+    integer ControlsCooldown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#boolean-controlsenabled" class="md-nav__link">
+    boolean ControlsEnabled
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-damage" class="md-nav__link">
+    float Damage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-firedelay" class="md-nav__link">
+    integer FireDelay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-entitydesc-friendballenemy" class="md-nav__link">
+    const EntityDesc FriendBallEnemy
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-headframedelay" class="md-nav__link">
+    integer HeadFrameDelay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-itemholdcooldown" class="md-nav__link">
+    integer ItemHoldCooldown
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-lasercolor" class="md-nav__link">
+    Color LaserColor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-luck" class="md-nav__link">
+    float Luck
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-maxfiredelay" class="md-nav__link">
+    integer MaxFireDelay
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-movespeed" class="md-nav__link">
+    float MoveSpeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#queueitemdata-queueditem" class="md-nav__link">
+    QueueItemData QueuedItem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activeitemdesc-secondaryactiveitem" class="md-nav__link">
+    ActiveItemDesc SecondaryActiveItem
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-shotspeed" class="md-nav__link">
+    float ShotSpeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vector-spritescale" class="md-nav__link">
+    Vector SpriteScale
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#color-tearcolor" class="md-nav__link">
+    Color TearColor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-tearfallingacceleration" class="md-nav__link">
+    float TearFallingAcceleration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-tearfallingspeed" class="md-nav__link">
+    float TearFallingSpeed
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integer-tearflags" class="md-nav__link">
+    integer TearFlags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#float-tearheight" class="md-nav__link">
+    float TearHeight
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#const-vector-tearsoffset" class="md-nav__link">
+    const Vector TearsOffset
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/wofsauge/IsaacDocs/edit/master/docs/EntityPlayer.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="class-entityplayer">Class "EntityPlayer"<a class="headerlink" href="#class-entityplayer" title="Permanent link">⚓︎</a></h1>
+<hr />
+<h2 id="void-addblackhearts-integer-blackhearts">void AddBlackHearts (integer BlackHearts)<a class="headerlink" href="#void-addblackhearts-integer-blackhearts" title="Permanent link">⚓︎</a></h2>
+<p>Adds Black hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 full black heart to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddBlackHearts(2)
+</code></pre>
+<hr />
+<h2 id="entity-addblueflies-integer-amount-vector-position-entity-target">Entity AddBlueFlies (integer Amount, Vector Position, Entity Target )<a class="headerlink" href="#entity-addblueflies-integer-amount-vector-position-entity-target" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entity-addbluespider-vector-position">Entity AddBlueSpider (Vector Position)<a class="headerlink" href="#entity-addbluespider-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addbombs-integer-amount">void AddBombs (integer Amount)<a class="headerlink" href="#void-addbombs-integer-amount" title="Permanent link">⚓︎</a></h2>
+<p>Adds bombs to the player. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code removes 1 bomb from the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddBombs(-1)
+</code></pre>
+<hr />
+<h2 id="void-addbonehearts-integer-hearts">void AddBoneHearts (integer Hearts)<a class="headerlink" href="#void-addbonehearts-integer-hearts" title="Permanent link">⚓︎</a></h2>
+<p>Adds bone hearts to the player. 1 unit is a single bone heart. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 bone heart to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddBoneHearts(1)
+</code></pre>
+<hr />
+<h2 id="void-addcacheflags-cacheflag-cacheflag">void AddCacheFlags (CacheFlag CacheFlag)<a class="headerlink" href="#void-addcacheflags-cacheflag-cacheflag" title="Permanent link">⚓︎</a></h2>
+<p>Will reevaluate the cache flags provided in the next cache reevaluation.</p>
+<hr />
+<h2 id="void-addcard-card-card">void AddCard (Card Card)<a class="headerlink" href="#void-addcard-card-card" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addcoins-integer-amount">void AddCoins (integer Amount)<a class="headerlink" href="#void-addcoins-integer-amount" title="Permanent link">⚓︎</a></h2>
+<p>Adds coins to the player. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 coin to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddCoins(1)
+</code></pre>
+<hr />
+<h2 id="void-addcollectible-collectibletype-type-integer-charge-boolean-addconsumables">void AddCollectible (CollectibleType Type, integer Charge, boolean AddConsumables )<a class="headerlink" href="#void-addcollectible-collectibletype-type-integer-charge-boolean-addconsumables" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addcontrolscooldown-integer-cooldown">void AddControlsCooldown (integer Cooldown)<a class="headerlink" href="#void-addcontrolscooldown-integer-cooldown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addcostume-configitem-item-boolean-itemstateonly">void AddCostume (Config::Item Item, boolean ItemStateOnly )<a class="headerlink" href="#void-addcostume-configitem-item-boolean-itemstateonly" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-adddeadeyecharge">void AddDeadEyeCharge ()<a class="headerlink" href="#void-adddeadeyecharge" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-adddollarbilleffect">void AddDollarBillEffect ()<a class="headerlink" href="#void-adddollarbilleffect" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addeternalhearts-integer-eternalhearts">void AddEternalHearts (integer EternalHearts)<a class="headerlink" href="#void-addeternalhearts-integer-eternalhearts" title="Permanent link">⚓︎</a></h2>
+<p>Adds eternal hearts to the player. 1 unit is half a heart. Remove them with negative numbers. <br/>(Note that eternal hearts automatically turn to full hearts, when you have more than one.) </p>
+<h4>Example Code</h4>
+<p>This code adds 1 eternal heart to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddEternalHearts(1)
+</code></pre>
+<hr />
+<h2 id="void-addgoldenbomb">void AddGoldenBomb ()<a class="headerlink" href="#void-addgoldenbomb" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addgoldenhearts-integer-hearts">void AddGoldenHearts (integer Hearts)<a class="headerlink" href="#void-addgoldenhearts-integer-hearts" title="Permanent link">⚓︎</a></h2>
+<p>Adds golden hearts to the player. 1 unit is a single gold heart. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 golden heart to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddGoldenHearts(1)
+</code></pre>
+<hr />
+<h2 id="void-addgoldenkey">void AddGoldenKey ()<a class="headerlink" href="#void-addgoldenkey" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addhearts-integer-hearts">void AddHearts (integer Hearts)<a class="headerlink" href="#void-addhearts-integer-hearts" title="Permanent link">⚓︎</a></h2>
+<p>Adds red hearts to the player if there are any empty heart containers. 1 unit is half a heart. Remove health with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 full red heart to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddkHearts(2)
+</code></pre>
+<hr />
+<h2 id="void-addjarflies-integer-flies">void AddJarFlies (integer Flies)<a class="headerlink" href="#void-addjarflies-integer-flies" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addjarhearts-integer-hearts">void AddJarHearts (integer Hearts)<a class="headerlink" href="#void-addjarhearts-integer-hearts" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addkeys-integer-amount">void AddKeys (integer Amount)<a class="headerlink" href="#void-addkeys-integer-amount" title="Permanent link">⚓︎</a></h2>
+<p>Adds keys to the player. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 key to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddKeys(1)
+</code></pre>
+<hr />
+<h2 id="void-addmaxhearts-integer-maxhearts-boolean-ignorekeeper">void AddMaxHearts (integer MaxHearts, boolean IgnoreKeeper )<a class="headerlink" href="#void-addmaxhearts-integer-maxhearts-boolean-ignorekeeper" title="Permanent link">⚓︎</a></h2>
+<p>Adds heart containers to the player. 2 units is a full heart container. Remove them with negative numbers. </p>
+<h4>Notes</h4>
+<p>It is possible to add a half heart container to the player. This will appear as a regular heart container but can only be filled half-way.</p>
+<h4>Example Code</h4>
+<p>This code adds 1 heart container to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddMaxHearts(2,true)
+</code></pre>
+<h4>Bugs</h4>
+<p>IgnoreKeeper does not appear to work as intended.</p>
+<p>Max hearts can be added or removed from Keeper regardless of what this boolean is.
+If Keeper has Greed's Gullet and this boolean is set to false, max hearts cannot be added to Keeper, but can be removed normally.
+If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be added or removed from Keeper normally.</p>
+<hr />
+<h2 id="void-addnullcostume-confignullitemid-nullid">void AddNullCostume (Config::NullItemID NullId)<a class="headerlink" href="#void-addnullcostume-confignullitemid-nullid" title="Permanent link">⚓︎</a></h2>
+<p>for Lua </p>
+<hr />
+<h2 id="void-addpill-pillcolor-pill">void AddPill (PillColor Pill)<a class="headerlink" href="#void-addpill-pillcolor-pill" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addplayerformcostume-playerform-form">void AddPlayerFormCostume (PlayerForm Form)<a class="headerlink" href="#void-addplayerformcostume-playerform-form" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addprettyfly">void AddPrettyFly ()<a class="headerlink" href="#void-addprettyfly" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-addsoulhearts-integer-soulhearts">void AddSoulHearts (integer SoulHearts)<a class="headerlink" href="#void-addsoulhearts-integer-soulhearts" title="Permanent link">⚓︎</a></h2>
+<p>Adds soul hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
+<h4>Example Code</h4>
+<p>This code adds 1 full soul heart to the player.</p>
+<pre><code class="language-lua">Isaac.GetPlayer(0):AddSoulHearts(2)
+</code></pre>
+<hr />
+<h2 id="void-addtrinket-trinkettype-type">void AddTrinket (TrinketType Type)<a class="headerlink" href="#void-addtrinket-trinkettype-type" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-animateappear">void AnimateAppear ()<a class="headerlink" href="#void-animateappear" title="Permanent link">⚓︎</a></h2>
+<p>Play the animation that is normally played at the beginning of a stage. </p>
+<hr />
+<h2 id="void-animatecard-card-card-string-animname">void AnimateCard (Card Card, string AnimName )<a class="headerlink" href="#void-animatecard-card-card-string-animname" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-animatecollectible-collectibletype-collectible-string-animname-string-spriteanimname">void AnimateCollectible (CollectibleType Collectible, string AnimName, string SpriteAnimName )<a class="headerlink" href="#void-animatecollectible-collectibletype-collectible-string-animname-string-spriteanimname" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-animatehappy">void AnimateHappy ()<a class="headerlink" href="#void-animatehappy" title="Permanent link">⚓︎</a></h2>
+<p>thumbs up </p>
+<hr />
+<h2 id="void-animatelighttravel">void AnimateLightTravel ()<a class="headerlink" href="#void-animatelighttravel" title="Permanent link">⚓︎</a></h2>
+<p>end of a stage </p>
+<hr />
+<h2 id="void-animatepill-pillcolor-pill-string-animname">void AnimatePill (PillColor Pill, string AnimName )<a class="headerlink" href="#void-animatepill-pillcolor-pill-string-animname" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-animatepitfallin">void AnimatePitfallIn ()<a class="headerlink" href="#void-animatepitfallin" title="Permanent link">⚓︎</a></h2>
+<p>Fall into pitfall. </p>
+<hr />
+<h2 id="void-animatepitfallout">void AnimatePitfallOut ()<a class="headerlink" href="#void-animatepitfallout" title="Permanent link">⚓︎</a></h2>
+<p>Jump out of pitfall. </p>
+<hr />
+<h2 id="void-animatesad">void AnimateSad ()<a class="headerlink" href="#void-animatesad" title="Permanent link">⚓︎</a></h2>
+<p>oh no! </p>
+<hr />
+<h2 id="void-animateteleport-boolean-up">void AnimateTeleport (boolean Up)<a class="headerlink" href="#void-animateteleport-boolean-up" title="Permanent link">⚓︎</a></h2>
+<p>teleport to another room </p>
+<hr />
+<h2 id="void-animatetrapdoor">void AnimateTrapdoor ()<a class="headerlink" href="#void-animatetrapdoor" title="Permanent link">⚓︎</a></h2>
+<p>end of a stage </p>
+<hr />
+<h2 id="void-animatetrinket-trinkettype-trinket-string-animname-string-spriteanimname">void AnimateTrinket (TrinketType Trinket, string AnimName, string SpriteAnimName )<a class="headerlink" href="#void-animatetrinket-trinkettype-trinket-string-animname-string-spriteanimname" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-arecontrolsenabled">boolean AreControlsEnabled ()<a class="headerlink" href="#boolean-arecontrolsenabled" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-areopposingshootdirectionspressed">boolean AreOpposingShootDirectionsPressed ()<a class="headerlink" href="#boolean-areopposingshootdirectionspressed" title="Permanent link">⚓︎</a></h2>
+<p>Returns the non-zero joystick direction from the most recent movement input, but goes to zero after the player comes to a stop. </p>
+<hr />
+<h2 id="boolean-canaddcollectible">boolean CanAddCollectible ()<a class="headerlink" href="#boolean-canaddcollectible" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-canpickblackhearts">boolean CanPickBlackHearts ()<a class="headerlink" href="#boolean-canpickblackhearts" title="Permanent link">⚓︎</a></h2>
+<p>returns true if player has room for more black hearts </p>
+<hr />
+<h2 id="boolean-canpickbonehearts">boolean CanPickBoneHearts ()<a class="headerlink" href="#boolean-canpickbonehearts" title="Permanent link">⚓︎</a></h2>
+<p>returns true if player has room for more bone hearts </p>
+<hr />
+<h2 id="boolean-canpickgoldenhearts">boolean CanPickGoldenHearts ()<a class="headerlink" href="#boolean-canpickgoldenhearts" title="Permanent link">⚓︎</a></h2>
+<p>returns true if player has room for more golden hearts </p>
+<hr />
+<h2 id="boolean-canpickredhearts">boolean CanPickRedHearts ()<a class="headerlink" href="#boolean-canpickredhearts" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-canpicksoulhearts">boolean CanPickSoulHearts ()<a class="headerlink" href="#boolean-canpicksoulhearts" title="Permanent link">⚓︎</a></h2>
+<p>returns true if player has room for more soul hearts </p>
+<hr />
+<h2 id="boolean-canpickupitem">boolean CanPickupItem ()<a class="headerlink" href="#boolean-canpickupitem" title="Permanent link">⚓︎</a></h2>
+<p>Can Player pick up an item right now? </p>
+<hr />
+<h2 id="boolean-canshoot">boolean CanShoot ()<a class="headerlink" href="#boolean-canshoot" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-canturnhead">boolean CanTurnHead ()<a class="headerlink" href="#boolean-canturnhead" title="Permanent link">⚓︎</a></h2>
+<p>returns true if head should react to keys or false otherwise </p>
+<hr />
+<h2 id="void-checkfamiliar-integer-familiarvariant-integer-targetcount-rng-rng">void CheckFamiliar (integer FamiliarVariant, integer TargetCount, RNG rng )<a class="headerlink" href="#void-checkfamiliar-integer-familiarvariant-integer-targetcount-rng-rng" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-clearcostumes">void ClearCostumes ()<a class="headerlink" href="#void-clearcostumes" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-cleardeadeyecharge">void ClearDeadEyeCharge ()<a class="headerlink" href="#void-cleardeadeyecharge" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-cleartemporaryeffects">void ClearTemporaryEffects ()<a class="headerlink" href="#void-cleartemporaryeffects" title="Permanent link">⚓︎</a></h2>
+<p>Will be called when player exits the room. </p>
+<hr />
+<h2 id="void-dischargeactiveitem">void DischargeActiveItem ()<a class="headerlink" href="#void-dischargeactiveitem" title="Permanent link">⚓︎</a></h2>
+<p>Sets the charge of your active item to 0 without triggering the active item effect. </p>
+<hr />
+<h2 id="void-donateluck-integer-luck">void DonateLuck (integer Luck)<a class="headerlink" href="#void-donateluck-integer-luck" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-doziteffect-vector-direction">void DoZitEffect (Vector Direction)<a class="headerlink" href="#void-doziteffect-vector-direction" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-droppoketitem-integer-pocketnum-vector-pos">void DropPoketItem (integer PocketNum, Vector Pos )<a class="headerlink" href="#void-droppoketitem-integer-pocketnum-vector-pos" title="Permanent link">⚓︎</a></h2>
+<p>Drops a held pocketitem (Card, Pill, Rune...) from the given itemslot at the given position. Possible pocketnumbers are [0, 1]</p>
+<h4>Bugs</h4>
+<p>This function is spelled wrong.
+Removing the pocketitem in slot 0, while having a second item in slot 1 will not update the UI correctly. The second item will still be in the second slot, which will in turn prevent the player from using this card right away. The player needs to switch between cards to fix this.</p>
+<hr />
+<h2 id="void-droptrinket-vector-droppos-boolean-replacetick">void DropTrinket (Vector DropPos, boolean ReplaceTick )<a class="headerlink" href="#void-droptrinket-vector-droppos-boolean-replacetick" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-evaluateitems">void EvaluateItems ()<a class="headerlink" href="#void-evaluateitems" title="Permanent link">⚓︎</a></h2>
+<p>Triggers a cache reevaluation. Will trigger the MC_EVALUATE_CACHE callback.</p>
+<hr />
+<h2 id="entitybomb-firebomb-vector-position-vector-velocity">EntityBomb FireBomb (Vector Position, Vector Velocity )<a class="headerlink" href="#entitybomb-firebomb-vector-position-vector-velocity" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entitylaser-firebrimstone-vector-direction">EntityLaser FireBrimstone (Vector Direction)<a class="headerlink" href="#entitylaser-firebrimstone-vector-direction" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entitylaser-firedelayedbrimstone-float-angle-entity-parent">EntityLaser FireDelayedBrimstone (float Angle, Entity Parent )<a class="headerlink" href="#entitylaser-firedelayedbrimstone-float-angle-entity-parent" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entityknife-fireknife-entity-parent-float-rotationoffset-boolean-cantoverwrite-integer-subtype">EntityKnife FireKnife (Entity Parent, float RotationOffset, boolean CantOverwrite, integer SubType )<a class="headerlink" href="#entityknife-fireknife-entity-parent-float-rotationoffset-boolean-cantoverwrite-integer-subtype" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entitytear-firetear-vector-position-vector-velocity-boolean-canbeeye-boolean-notractorbeam-boolean-cantriggerstreakend">EntityTear FireTear (Vector Position, Vector Velocity, boolean CanBeEye, boolean NoTractorBeam, boolean CanTriggerStreakEnd )<a class="headerlink" href="#entitytear-firetear-vector-position-vector-velocity-boolean-canbeeye-boolean-notractorbeam-boolean-cantriggerstreakend" title="Permanent link">⚓︎</a></h2>
+<p>This replaces the protected fire_tear() to allow other entities (Such as bombs) to easily shoot tears in the same manner and with all the effects the player does. (Ex. Sad Bombs) </p>
+<hr />
+<h2 id="entitylaser-firetechlaser-vector-position-laseroffset-offsetid-vector-direction-boolean-lefteye-boolean-onehit">EntityLaser FireTechLaser (Vector Position, LaserOffset OffsetID, Vector Direction, boolean LeftEye, boolean OneHit )<a class="headerlink" href="#entitylaser-firetechlaser-vector-position-laseroffset-offsetid-vector-direction-boolean-lefteye-boolean-onehit" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entitylaser-firetechxlaser-vector-position-vector-direction-float-radius">EntityLaser FireTechXLaser (Vector Position, Vector Direction, float Radius )<a class="headerlink" href="#entitylaser-firetechxlaser-vector-position-vector-direction-float-radius" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-flushqueueitem">boolean FlushQueueItem ()<a class="headerlink" href="#boolean-flushqueueitem" title="Permanent link">⚓︎</a></h2>
+<p>called after animation is finished, or on special occasions to prevent bugs </p>
+<hr />
+<h2 id="boolean-fullcharge">boolean FullCharge ()<a class="headerlink" href="#boolean-fullcharge" title="Permanent link">⚓︎</a></h2>
+<p>Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot. </p>
+<hr />
+<h2 id="integer-getactivecharge">integer GetActiveCharge ()<a class="headerlink" href="#integer-getactivecharge" title="Permanent link">⚓︎</a></h2>
+<p>Get the current charge of your active item.</p>
+<hr />
+<h2 id="collectibletype-getactiveitem">CollectibleType GetActiveItem ()<a class="headerlink" href="#collectibletype-getactiveitem" title="Permanent link">⚓︎</a></h2>
+<p>Returns the currently held item.</p>
+<hr />
+<h2 id="integer-getactivesubcharge">integer GetActiveSubCharge ()<a class="headerlink" href="#integer-getactivesubcharge" title="Permanent link">⚓︎</a></h2>
+<p>Get the current items subcharge. (Useful for items that charge up over time.)</p>
+<hr />
+<h2 id="entity-getactiveweaponentity">Entity GetActiveWeaponEntity ()<a class="headerlink" href="#entity-getactiveweaponentity" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-vector-getaimdirection">const Vector GetAimDirection ()<a class="headerlink" href="#const-vector-getaimdirection" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="babysubtype-getbabyskin">BabySubType GetBabySkin ()<a class="headerlink" href="#babysubtype-getbabyskin" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getbatterycharge">integer GetBatteryCharge ()<a class="headerlink" href="#integer-getbatterycharge" title="Permanent link">⚓︎</a></h2>
+<p>Get the current charge progress of the second charge of your current active item. This bar is only active, when you have the Collectible "The Battery"</p>
+<hr />
+<h2 id="integer-getblackhearts">integer GetBlackHearts ()<a class="headerlink" href="#integer-getblackhearts" title="Permanent link">⚓︎</a></h2>
+<p>This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts. </p>
+<hr />
+<h2 id="integer-getbombflags">integer GetBombFlags ()<a class="headerlink" href="#integer-getbombflags" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entitybombbombvariant-getbombvariant-integer-tearflags-boolean-forcesmallbomb">EntityBomb::BombVariant GetBombVariant (integer TearFlags, boolean ForceSmallBomb )<a class="headerlink" href="#entitybombbombvariant-getbombvariant-integer-tearflags-boolean-forcesmallbomb" title="Permanent link">⚓︎</a></h2>
+<p>Pass tear flags to add extra effects to the bomb visual like burn -&gt; hot bombs, even if player doesn't have Hot Bombs collectible. ForceSmallBomb will override large bomb variants for TEAR_PERSISTENT. </p>
+<hr />
+<h2 id="integer-getbonehearts">integer GetBoneHearts ()<a class="headerlink" href="#integer-getbonehearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the number of bone hearts as an integer value. 1 Boneheart = 1.</p>
+<h4>Example Code</h4>
+<p>This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. </p>
+<pre><code class="language-lua">local player = Isaac.GetPlayer(0)
+player:GetMaxHearts()+player:GetBoneHearts()*2
+
+</code></pre>
+<hr />
+<h2 id="card-getcard-integer-slotid">Card GetCard (integer SlotId)<a class="headerlink" href="#card-getcard-integer-slotid" title="Permanent link">⚓︎</a></h2>
+<p>Gets the ID of the card the player is holding in the given itemslot (0 or 1).</p>
+<hr />
+<h2 id="rng-getcardrng-card-id">RNG GetCardRNG (Card ID)<a class="headerlink" href="#rng-getcardrng-card-id" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getcollectiblecount">integer GetCollectibleCount ()<a class="headerlink" href="#integer-getcollectiblecount" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getcollectiblenum-collectibletype-type">integer GetCollectibleNum (CollectibleType Type)<a class="headerlink" href="#integer-getcollectiblenum-collectibletype-type" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="rng-getcollectiblerng-collectibletype-id">RNG GetCollectibleRNG (CollectibleType ID)<a class="headerlink" href="#rng-getcollectiblerng-collectibletype-id" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="vector-getcostumenullpos-string-nullframename-boolean-headscale-vector-direction">Vector GetCostumeNullPos (string NullFrameName, boolean HeadScale, Vector Direction )<a class="headerlink" href="#vector-getcostumenullpos-string-nullframename-boolean-headscale-vector-direction" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getdamagecooldown">integer GetDamageCooldown ()<a class="headerlink" href="#integer-getdamagecooldown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-geteffectivemaxhearts">integer GetEffectiveMaxHearts ()<a class="headerlink" href="#integer-geteffectivemaxhearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of Red Hearts the player can contain in their Heart Containers and Bone Hearts. 1 unit is half a red heart.
+<strong>Example:</strong> you have 3 red heart container and one bone heart. 6(red) + 2(bone) = 8 </p>
+<hr />
+<h2 id="temporaryeffects-geteffects">TemporaryEffects GetEffects ()<a class="headerlink" href="#temporaryeffects-geteffects" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-geteternalhearts">integer GetEternalHearts ()<a class="headerlink" href="#integer-geteternalhearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of eternal hearts the player has.</p>
+<hr />
+<h2 id="integer-getextralives">integer GetExtraLives ()<a class="headerlink" href="#integer-getextralives" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="direction-getfiredirection">Direction GetFireDirection ()<a class="headerlink" href="#direction-getfiredirection" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="vector-getflyingoffset">Vector GetFlyingOffset ()<a class="headerlink" href="#vector-getflyingoffset" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getgoldenhearts">integer GetGoldenHearts ()<a class="headerlink" href="#integer-getgoldenhearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of golden hearts the player has.</p>
+<hr />
+<h2 id="float-getgreeddonationbreakchance">float GetGreedDonationBreakChance ()<a class="headerlink" href="#float-getgreeddonationbreakchance" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="direction-getheaddirection">Direction GetHeadDirection ()<a class="headerlink" href="#direction-getheaddirection" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getheartlimit">integer GetHeartLimit ()<a class="headerlink" href="#integer-getheartlimit" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-gethearts">integer GetHearts ()<a class="headerlink" href="#integer-gethearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of red hearts the player has inside their heart containers and bone hearts. 1 unit is half a heart.</p>
+<hr />
+<h2 id="collectibletype-getitemstate">CollectibleType GetItemState ()<a class="headerlink" href="#collectibletype-getitemstate" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getjarflies">integer GetJarFlies ()<a class="headerlink" href="#integer-getjarflies" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getjarhearts">integer GetJarHearts ()<a class="headerlink" href="#integer-getjarhearts" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="vector-getlaseroffset-laseroffset-id-vector-direction">Vector GetLaserOffset (LaserOffset ID, Vector Direction )<a class="headerlink" href="#vector-getlaseroffset-laseroffset-id-vector-direction" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getlastactiontriggers">integer GetLastActionTriggers ()<a class="headerlink" href="#integer-getlastactiontriggers" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getlastdamageflags">integer GetLastDamageFlags ()<a class="headerlink" href="#integer-getlastdamageflags" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-entityref-getlastdamagesource">const EntityRef GetLastDamageSource ()<a class="headerlink" href="#const-entityref-getlastdamagesource" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-vector-getlastdirection">const Vector GetLastDirection ()<a class="headerlink" href="#const-vector-getlastdirection" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getmaxhearts">integer GetMaxHearts ()<a class="headerlink" href="#integer-getmaxhearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of Heart Containers the player has. 1 unit is half a heart container.</p>
+<hr />
+<h2 id="integer-getmaxpoketitems">integer GetMaxPoketItems ()<a class="headerlink" href="#integer-getmaxpoketitems" title="Permanent link">⚓︎</a></h2>
+<p>Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)</p>
+<h4>Bugs</h4>
+<p>This function is spelled wrong.</p>
+<hr />
+<h2 id="integer-getmaxtrinkets">integer GetMaxTrinkets ()<a class="headerlink" href="#integer-getmaxtrinkets" title="Permanent link">⚓︎</a></h2>
+<p>Get the number of trinkets you can carry. (1 on default. 2 with moms purse or similar)</p>
+<hr />
+<h2 id="direction-getmovementdirection">Direction GetMovementDirection ()<a class="headerlink" href="#direction-getmovementdirection" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="vector-getmovementinput">Vector GetMovementInput ()<a class="headerlink" href="#vector-getmovementinput" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="vector-getmovementjoystick">Vector GetMovementJoystick ()<a class="headerlink" href="#vector-getmovementjoystick" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-vector-getmovementvector">const Vector GetMovementVector ()<a class="headerlink" href="#const-vector-getmovementvector" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="multishotparams-getmultishotparams">MultiShotParams GetMultiShotParams ()<a class="headerlink" href="#multishotparams-getmultishotparams" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="posvel-getmultishotpositionvelocity-integer-loopindex-weapontype-weapon-vector-shotdirection-float-shotspeed-multishotparams-params">PosVel GetMultiShotPositionVelocity (integer LoopIndex, WeaponType Weapon, Vector ShotDirection, float ShotSpeed, MultiShotParams params )<a class="headerlink" href="#posvel-getmultishotpositionvelocity-integer-loopindex-weapontype-weapon-vector-shotdirection-float-shotspeed-multishotparams-params" title="Permanent link">⚓︎</a></h2>
+<p>Call this function in a loop with values from 0 to MultiShotParams.NumProjectiles-1 (inclusive) </p>
+<hr />
+<h2 id="string-getname">string GetName ()<a class="headerlink" href="#string-getname" title="Permanent link">⚓︎</a></h2>
+<p>Returns the name of the player. (Isaac, Cain, Azazel,...)</p>
+<hr />
+<h2 id="entity-getnpctarget">Entity GetNPCTarget ()<a class="headerlink" href="#entity-getnpctarget" title="Permanent link">⚓︎</a></h2>
+<p>normally returns the player itself. Can redirect enemy attacks to a different entity such as Best Friend </p>
+<hr />
+<h2 id="integer-getnumblueflies">integer GetNumBlueFlies ()<a class="headerlink" href="#integer-getnumblueflies" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getnumbluespiders">integer GetNumBlueSpiders ()<a class="headerlink" href="#integer-getnumbluespiders" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getnumbombs">integer GetNumBombs ()<a class="headerlink" href="#integer-getnumbombs" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getnumcoins">integer GetNumCoins ()<a class="headerlink" href="#integer-getnumcoins" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getnumkeys">integer GetNumKeys ()<a class="headerlink" href="#integer-getnumkeys" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="pillcolor-getpill-integer-slotid">PillColor GetPill (integer SlotId)<a class="headerlink" href="#pillcolor-getpill-integer-slotid" title="Permanent link">⚓︎</a></h2>
+<p>Gets the ID of the pill the player is holding in the given itemslot (0 or 1).</p>
+<hr />
+<h2 id="rng-getpillrng-pilleffect-id">RNG GetPillRNG (PillEffect ID)<a class="headerlink" href="#rng-getpillrng-pilleffect-id" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="playertype-getplayertype">PlayerType GetPlayerType ()<a class="headerlink" href="#playertype-getplayertype" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-playerpocketitem-getpocketitem-integer-slotid">const PlayerPocketItem GetPocketItem (integer SlotId)<a class="headerlink" href="#const-playerpocketitem-getpocketitem-integer-slotid" title="Permanent link">⚓︎</a></h2>
+<p>Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.</p>
+<h4>Bugs</h4>
+<p>This function returns userdata, which cant be processed. It is therefore broken and should not be used! </p>
+<hr />
+<h2 id="const-vector-getrecentmovementvector">const Vector GetRecentMovementVector ()<a class="headerlink" href="#const-vector-getrecentmovementvector" title="Permanent link">⚓︎</a></h2>
+<p>Returns the joystick direction that drives player movement, taking into account certain modifiers like disabled controls and seed effects. </p>
+<hr />
+<h2 id="vector-getshootinginput">Vector GetShootingInput ()<a class="headerlink" href="#vector-getshootinginput" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="vector-getshootingjoystick">Vector GetShootingJoystick ()<a class="headerlink" href="#vector-getshootingjoystick" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-getsmoothbodyrotation">float GetSmoothBodyRotation ()<a class="headerlink" href="#float-getsmoothbodyrotation" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-getsoulhearts">integer GetSoulHearts ()<a class="headerlink" href="#integer-getsoulhearts" title="Permanent link">⚓︎</a></h2>
+<p>Returns the amount of Soul Hearts the player has. 1 unit is half a heart.</p>
+<h4>Notes</h4>
+<p>Black Hearts count toward this total, as the game sees them as soul hearts.</p>
+<hr />
+<h2 id="entityplayer-getsubplayer">EntityPlayer GetSubPlayer ()<a class="headerlink" href="#entityplayer-getsubplayer" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="tearparams-gettearhitparams-weapontype-weapontype-float-damagescale-integer-teardisplacement">TearParams GetTearHitParams (WeaponType WeaponType, float DamageScale, integer TearDisplacement )<a class="headerlink" href="#tearparams-gettearhitparams-weapontype-weapontype-float-damagescale-integer-teardisplacement" title="Permanent link">⚓︎</a></h2>
+<p>Used for tear parameters that are calculated on hit (ex: Tough love, Common cold), DamageScale is used for scale calculation based on damage </p>
+<hr />
+<h2 id="vector-gettearmovementinheritance-vector-shotdirection">Vector GetTearMovementInheritance (Vector ShotDirection)<a class="headerlink" href="#vector-gettearmovementinheritance-vector-shotdirection" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-gettearpoisondamage">float GetTearPoisonDamage ()<a class="headerlink" href="#float-gettearpoisondamage" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-gettearrangemodifier">integer GetTearRangeModifier ()<a class="headerlink" href="#integer-gettearrangemodifier" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-gettotaldamagetaken">integer GetTotalDamageTaken ()<a class="headerlink" href="#integer-gettotaldamagetaken" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entity-gettractorbeam">Entity GetTractorBeam ()<a class="headerlink" href="#entity-gettractorbeam" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="trinkettype-gettrinket-integer-trinketindex">TrinketType GetTrinket (integer TrinketIndex)<a class="headerlink" href="#trinkettype-gettrinket-integer-trinketindex" title="Permanent link">⚓︎</a></h2>
+<p>Gets the ID of the trinket the player is holding in the given trinketslot (0 or 1).</p>
+<hr />
+<h2 id="integer-gettrinketmultiplier">integer GetTrinketMultiplier ()<a class="headerlink" href="#integer-gettrinketmultiplier" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="rng-gettrinketrng-trinkettype-id">RNG GetTrinketRNG (TrinketType ID)<a class="headerlink" href="#rng-gettrinketrng-trinkettype-id" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="const-vector-getvelocitybeforeupdate">const Vector GetVelocityBeforeUpdate ()<a class="headerlink" href="#const-vector-getvelocitybeforeupdate" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="collectibletype-getzodiaceffect">CollectibleType GetZodiacEffect ()<a class="headerlink" href="#collectibletype-getzodiaceffect" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hascollectible-collectibletype-type">boolean HasCollectible (CollectibleType Type)<a class="headerlink" href="#boolean-hascollectible-collectibletype-type" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasfullhearts">boolean HasFullHearts ()<a class="headerlink" href="#boolean-hasfullhearts" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasfullheartsandsoulhearts">boolean HasFullHeartsAndSoulHearts ()<a class="headerlink" href="#boolean-hasfullheartsandsoulhearts" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasgoldenbomb">boolean HasGoldenBomb ()<a class="headerlink" href="#boolean-hasgoldenbomb" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasgoldenkey">boolean HasGoldenKey ()<a class="headerlink" href="#boolean-hasgoldenkey" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasinvincibility">boolean HasInvincibility ()<a class="headerlink" href="#boolean-hasinvincibility" title="Permanent link">⚓︎</a></h2>
+<p>returns true when player is in an invincibility state </p>
+<hr />
+<h2 id="boolean-hasplayerform-playerform-form">boolean HasPlayerForm (PlayerForm Form)<a class="headerlink" href="#boolean-hasplayerform-playerform-form" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hastimeditem">boolean HasTimedItem ()<a class="headerlink" href="#boolean-hastimeditem" title="Permanent link">⚓︎</a></h2>
+<p>Kept for avoiding modding issues. </p>
+<hr />
+<h2 id="boolean-hastrinket-trinkettype-type">boolean HasTrinket (TrinketType Type)<a class="headerlink" href="#boolean-hastrinket-trinkettype-type" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-hasweapontype-weapontype-weapontype">boolean HasWeaponType (WeaponType WeaponType)<a class="headerlink" href="#boolean-hasweapontype-weapontype-weapontype" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-initbabyskin">void InitBabySkin ()<a class="headerlink" href="#void-initbabyskin" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isblackheart-integer-heart">boolean IsBlackHeart (integer Heart)<a class="headerlink" href="#boolean-isblackheart-integer-heart" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isboneheart-integer-heart">boolean IsBoneHeart (integer heart)<a class="headerlink" href="#boolean-isboneheart-integer-heart" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isextraanimationfinished">boolean IsExtraAnimationFinished ()<a class="headerlink" href="#boolean-isextraanimationfinished" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isfullspriterendering">boolean IsFullSpriteRendering ()<a class="headerlink" href="#boolean-isfullspriterendering" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-ishelditemvisible">boolean IsHeldItemVisible ()<a class="headerlink" href="#boolean-ishelditemvisible" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isholdingitem">boolean IsHoldingItem ()<a class="headerlink" href="#boolean-isholdingitem" title="Permanent link">⚓︎</a></h2>
+<p>Is Player holding up an item (card/collectible/etc) </p>
+<hr />
+<h2 id="boolean-isitemqueueempty">boolean IsItemQueueEmpty ()<a class="headerlink" href="#boolean-isitemqueueempty" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isp2appearing">boolean IsP2Appearing ()<a class="headerlink" href="#boolean-isp2appearing" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-isposinspotlight-vector-position">boolean IsPosInSpotLight (Vector Position)<a class="headerlink" href="#boolean-isposinspotlight-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-issubplayer">boolean IsSubPlayer ()<a class="headerlink" href="#boolean-issubplayer" title="Permanent link">⚓︎</a></h2>
+<p>This is for players that require multiple player entities, such as the Forgotten (this has nothing to do with co-players!) </p>
+<hr />
+<h2 id="boolean-needscharge">boolean NeedsCharge ()<a class="headerlink" href="#boolean-needscharge" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-playextraanimation-string-animation">void PlayExtraAnimation (string Animation)<a class="headerlink" href="#void-playextraanimation-string-animation" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-queueextraanimation-string-animation">void QueueExtraAnimation (string Animation)<a class="headerlink" href="#void-queueextraanimation-string-animation" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-queueitem-configitem-item-integer-charge-boolean-touched">void QueueItem (Config::Item Item, integer Charge, boolean Touched )<a class="headerlink" href="#void-queueitem-configitem-item-integer-charge-boolean-touched" title="Permanent link">⚓︎</a></h2>
+<p>Add Collectible/Trinket after animation is finished. </p>
+<hr />
+<h2 id="void-removeblackheart-integer-blackheart">void RemoveBlackHeart (integer BlackHeart)<a class="headerlink" href="#void-removeblackheart-integer-blackheart" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removebluefly">void RemoveBlueFly ()<a class="headerlink" href="#void-removebluefly" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removebluespider">void RemoveBlueSpider ()<a class="headerlink" href="#void-removebluespider" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removecollectible-collectibletype-type">void RemoveCollectible (CollectibleType Type)<a class="headerlink" href="#void-removecollectible-collectibletype-type" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removecostume-configitem-item">void RemoveCostume (Config::Item Item)<a class="headerlink" href="#void-removecostume-configitem-item" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removegoldenbomb">void RemoveGoldenBomb ()<a class="headerlink" href="#void-removegoldenbomb" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removegoldenkey">void RemoveGoldenKey ()<a class="headerlink" href="#void-removegoldenkey" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-removeskincostume">void RemoveSkinCostume ()<a class="headerlink" href="#void-removeskincostume" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-renderbody-vector-position">void RenderBody (Vector position)<a class="headerlink" href="#void-renderbody-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-renderglow-vector-position">void RenderGlow (Vector position)<a class="headerlink" href="#void-renderglow-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-renderhead-vector-position">void RenderHead (Vector position)<a class="headerlink" href="#void-renderhead-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-rendertop-vector-position">void RenderTop (Vector position)<a class="headerlink" href="#void-rendertop-vector-position" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-replacecostumesprite-configitem-item-string-spritepath-integer-spriteid">void ReplaceCostumeSprite (Config::Item Item, string SpritePath, integer SpriteId )<a class="headerlink" href="#void-replacecostumesprite-configitem-item-string-spritepath-integer-spriteid" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-resetdamagecooldown">void ResetDamageCooldown ()<a class="headerlink" href="#void-resetdamagecooldown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-resetitemstate">void ResetItemState ()<a class="headerlink" href="#void-resetitemstate" title="Permanent link">⚓︎</a></h2>
+<p>Made this public so <a class="el" href="class_room.html">Room</a> transtiions can call this to prevent lock ups. </p>
+<hr />
+<h2 id="void-respawnfamiliars">void RespawnFamiliars ()<a class="headerlink" href="#void-respawnfamiliars" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-revive">void Revive ()<a class="headerlink" href="#void-revive" title="Permanent link">⚓︎</a></h2>
+<p>revive player </p>
+<hr />
+<h2 id="void-setactivecharge-integer-charge">void SetActiveCharge (integer Charge)<a class="headerlink" href="#void-setactivecharge-integer-charge" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setcard-integer-slotid-card-card">void SetCard (integer SlotId, Card Card )<a class="headerlink" href="#void-setcard-integer-slotid-card-card" title="Permanent link">⚓︎</a></h2>
+<p>Change the card/rune the player is holding in the given itemslot (0 or 1).</p>
+<hr />
+<h2 id="void-setfullhearts">void SetFullHearts ()<a class="headerlink" href="#void-setfullhearts" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setmindamagecooldown-integer-damagecooldown">void SetMinDamageCooldown (integer DamageCooldown)<a class="headerlink" href="#void-setmindamagecooldown-integer-damagecooldown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-setpill-integer-slotid-pillcolor-pill">void SetPill (integer SlotId, PillColor Pill )<a class="headerlink" href="#void-setpill-integer-slotid-pillcolor-pill" title="Permanent link">⚓︎</a></h2>
+<p>Change the pill the player is holding in the given itemslot (0 or 1).</p>
+<hr />
+<h2 id="void-setshootingcooldown-integer-cooldown">void SetShootingCooldown (integer Cooldown)<a class="headerlink" href="#void-setshootingcooldown-integer-cooldown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-settargettrapdoor-gridentity-trapdoor">void SetTargetTrapDoor (GridEntity TrapDoor)<a class="headerlink" href="#void-settargettrapdoor-gridentity-trapdoor" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-shootredcandle-vector-direction">void ShootRedCandle (Vector Direction)<a class="headerlink" href="#void-shootredcandle-vector-direction" title="Permanent link">⚓︎</a></h2>
+<p>for ghost pepper item + poop and farts </p>
+<hr />
+<h2 id="entitylaser-spawnmawofvoid-integer-timeout">EntityLaser SpawnMawOfVoid (integer Timeout)<a class="headerlink" href="#entitylaser-spawnmawofvoid-integer-timeout" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-stopextraanimation">void StopExtraAnimation ()<a class="headerlink" href="#void-stopextraanimation" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-swapactiveitems">void SwapActiveItems ()<a class="headerlink" href="#void-swapactiveitems" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="entity-throwbluespider-vector-position-vector-target">Entity ThrowBlueSpider (Vector Position, Vector Target )<a class="headerlink" href="#entity-throwbluespider-vector-position-vector-target" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-tryholdtrinket-trinkettype-type">boolean TryHoldTrinket (TrinketType Type)<a class="headerlink" href="#boolean-tryholdtrinket-trinkettype-type" title="Permanent link">⚓︎</a></h2>
+<p>Returns true if an active item pickup cooldown is over. returns true if trinket can be added, else false </p>
+<hr />
+<h2 id="void-tryremovecollectiblecostume-collectibletype-collectible-boolean-keeppersistent">void TryRemoveCollectibleCostume (CollectibleType Collectible, boolean KeepPersistent )<a class="headerlink" href="#void-tryremovecollectiblecostume-collectibletype-collectible-boolean-keeppersistent" title="Permanent link">⚓︎</a></h2>
+<p>tries to remove a costume based on some filters </p>
+<hr />
+<h2 id="void-tryremovenullcostume-confignullitemid-nullid">void TryRemoveNullCostume (Config::NullItemID NullId)<a class="headerlink" href="#void-tryremovenullcostume-confignullitemid-nullid" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-tryremovetrinket-trinkettype-type">boolean TryRemoveTrinket (TrinketType Type)<a class="headerlink" href="#boolean-tryremovetrinket-trinkettype-type" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-tryremovetrinketcostume-trinkettype-trinket">void TryRemoveTrinketCostume (TrinketType Trinket)<a class="headerlink" href="#void-tryremovetrinketcostume-trinkettype-trinket" title="Permanent link">⚓︎</a></h2>
+<p>tries to remove a costume based on some filters </p>
+<hr />
+<h2 id="boolean-tryusekey">boolean TryUseKey ()<a class="headerlink" href="#boolean-tryusekey" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-updatecanshoot">void UpdateCanShoot ()<a class="headerlink" href="#void-updatecanshoot" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-useactiveitem-collectibletype-item-boolean-showanim-boolean-keepactiveitem-boolean-allownonmainplayer-boolean-toaddcostume">void UseActiveItem (CollectibleType Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume )<a class="headerlink" href="#void-useactiveitem-collectibletype-item-boolean-showanim-boolean-keepactiveitem-boolean-allownonmainplayer-boolean-toaddcostume" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-usecard-card-card">void UseCard (Card Card)<a class="headerlink" href="#void-usecard-card-card" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="void-usepill-pilleffect-pilleffect-pillcolor-pillcolor">void UsePill (PillEffect PillEffect, PillColor PillColor )<a class="headerlink" href="#void-usepill-pilleffect-pilleffect-pillcolor-pillcolor" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-willplayerrevive">boolean WillPlayerRevive ()<a class="headerlink" href="#boolean-willplayerrevive" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="babysubtype-babyskin">BabySubType BabySkin<a class="headerlink" href="#babysubtype-babyskin" title="Permanent link">⚓︎</a></h2>
+<p>P2 Skin section Used to hold the selected skin (in case of glitched baby it will pick a random one) </p>
+<hr />
+<h2 id="boolean-canfly">boolean CanFly<a class="headerlink" href="#boolean-canfly" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Can the player fly over rocks and pits? </p>
+<hr />
+<h2 id="const-integer-controllerindex">const integer ControllerIndex<a class="headerlink" href="#const-integer-controllerindex" title="Permanent link">⚓︎</a></h2>
+<p>s32 GetItemStateCooldown( void ) const { return m_ItemStateCooldown; } </p>
+<hr />
+<h2 id="integer-controlscooldown">integer ControlsCooldown<a class="headerlink" href="#integer-controlscooldown" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="boolean-controlsenabled">boolean ControlsEnabled<a class="headerlink" href="#boolean-controlsenabled" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-damage">float Damage<a class="headerlink" href="#float-damage" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Damage Stat.</strong>  How much damage do the players tears or other main weapons do? </p>
+<hr />
+<h2 id="integer-firedelay">integer FireDelay<a class="headerlink" href="#integer-firedelay" title="Permanent link">⚓︎</a></h2>
+<p>How long until the player can spawn their next tear? </p>
+<hr />
+<h2 id="const-entitydesc-friendballenemy">const EntityDesc FriendBallEnemy<a class="headerlink" href="#const-entitydesc-friendballenemy" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-headframedelay">integer HeadFrameDelay<a class="headerlink" href="#integer-headframedelay" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="integer-itemholdcooldown">integer ItemHoldCooldown<a class="headerlink" href="#integer-itemholdcooldown" title="Permanent link">⚓︎</a></h2>
+<p>Used for avoiding player get stucked between rocks when switching a flying item with other active item. </p>
+<hr />
+<h2 id="color-lasercolor">Color LaserColor<a class="headerlink" href="#color-lasercolor" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-luck">float Luck<a class="headerlink" href="#float-luck" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Luck Stat.</strong>  Better luck generally means better random events. </p>
+<hr />
+<h2 id="integer-maxfiredelay">integer MaxFireDelay<a class="headerlink" href="#integer-maxfiredelay" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Tears Stat.</strong>  How long between each tear can spawn? </p>
+<hr />
+<h2 id="float-movespeed">float MoveSpeed<a class="headerlink" href="#float-movespeed" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Speed Stat.</strong>  How fast can the player move? </p>
+<hr />
+<h2 id="queueitemdata-queueditem">QueueItemData QueuedItem<a class="headerlink" href="#queueitemdata-queueditem" title="Permanent link">⚓︎</a></h2>
+<p>item queue for when the player is picking up an item. the item is in effect as soon as the animation is finished and will be removed from the queue. </p>
+<hr />
+<h2 id="activeitemdesc-secondaryactiveitem">ActiveItemDesc SecondaryActiveItem<a class="headerlink" href="#activeitemdesc-secondaryactiveitem" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-shotspeed">float ShotSpeed<a class="headerlink" href="#float-shotspeed" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the ShotSpeed Stat.</strong>  How fast does the tear travel when spawned? </p>
+<hr />
+<h2 id="vector-spritescale">Vector SpriteScale<a class="headerlink" href="#vector-spritescale" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="color-tearcolor">Color TearColor<a class="headerlink" href="#color-tearcolor" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-tearfallingacceleration">float TearFallingAcceleration<a class="headerlink" href="#float-tearfallingacceleration" title="Permanent link">⚓︎</a></h2>
+<hr />
+<h2 id="float-tearfallingspeed">float TearFallingSpeed<a class="headerlink" href="#float-tearfallingspeed" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How fast is the tear moving up or down when it spawns? Affects range. </p>
+<hr />
+<h2 id="integer-tearflags">integer TearFlags<a class="headerlink" href="#integer-tearflags" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various <a href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">tear flags</a>. </p>
+<h4>Example Code</h4>
+<p>This code makes Isaac's tears spectral. </p>
+<pre><code class="language-lua">local mod:OnEvaluateTearFlags(player, flag)
+    player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
+end
+
+mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
+
+</code></pre>
+<hr />
+<h2 id="float-tearheight">float TearHeight<a class="headerlink" href="#float-tearheight" title="Permanent link">⚓︎</a></h2>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Range Stat * -1.</strong>  How high above the ground is the tear when it spawns? </p>
+<h4>Example Code</h4>
+<p>This code gives Isaac a +5 range up.</p>
+<pre><code class="language-lua">local mod:OnEvaluateRange(player, flag)
+    -- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels
+    player.TearHeight = player.TearHeight - 5
+end
+
+mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateRange, CacheFlag.CACHE_RANGE)
+
+</code></pre>
+<hr />
+<h2 id="const-vector-tearsoffset">const Vector TearsOffset<a class="headerlink" href="#const-vector-tearsoffset" title="Permanent link">⚓︎</a></h2>
+<hr />
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../EntityPickup/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                EntityPickup
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../EntityProjectile/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                EntityProjectile
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2021 Wofsauge
+          </div>
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+  <div class="md-footer-social">
+    
+      
+      
+      <a href="https://github.com/wofsauge/IsaacDocs" target="_blank" rel="noopener" title="BoI: AB+ Lua Docs on GitHub" class="md-footer-social__link">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+      </a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: ['navigation.tabs', 'navigation.instant'],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.8c7e0a7e.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
