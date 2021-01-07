@@ -1444,15 +1444,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vector" class="md-nav__link">
-    Vector ()
+  <a href="#getrenderscrolloffset" class="md-nav__link">
+    GetRenderScrollOffset ()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#vector_1" class="md-nav__link">
-    Vector ()
+  <a href="#getrendersurfacetopleft" class="md-nav__link">
+    GetRenderSurfaceTopLeft ()
   </a>
   
 </li>
@@ -2552,15 +2552,15 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#vector" class="md-nav__link">
-    Vector ()
+  <a href="#getrenderscrolloffset" class="md-nav__link">
+    GetRenderScrollOffset ()
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#vector_1" class="md-nav__link">
-    Vector ()
+  <a href="#getrendersurfacetopleft" class="md-nav__link">
+    GetRenderSurfaceTopLeft ()
   </a>
   
 </li>
@@ -3003,7 +3003,7 @@
                 <h1 id="class-room">Class "Room"<a class="headerlink" href="#class-room" title="Permanent link">⚓︎</a></h1>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
 <h3 aria-label="Functions" id="checkline">CheckLine ()<a class="headerlink" href="#checkline" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">CheckLine</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos1</span><span class="p">,</span> <span class="n">Vector</span> <span class="n">Pos2</span><span class="p">,</span> <span class="n">LinecheckMode</span> <span class="n">Mode</span><span class="p">,</span> <span class="kt">int</span> <span class="n">GridPathThreshold</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">IgnoreWalls</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">IgnoreCrushable</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean CheckLine ( <a href="../Vector">Vector</a> Pos1, <a href="../Vector">Vector</a> Pos2, LinecheckMode Mode, int GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable )</h4>
 <p>returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed </p>
 <h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>LinecheckModes:
@@ -3013,35 +3013,35 @@
 3 : is a line check that only collides with obstacles that can block projectiles</p>
 <hr />
 <h3 aria-label="Functions" id="damagegrid">DamageGrid ()<a class="headerlink" href="#damagegrid" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">DamageGrid</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Damage</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean DamageGrid ( int Index, int Damage )</h4>
 <p>Damage Grid Entities currently this concerns <a class="el" href="class_grid_entity_poop.html">GridEntityPoop</a> and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc </p>
 <hr />
 <h3 aria-label="Functions" id="destroygrid">DestroyGrid ()<a class="headerlink" href="#destroygrid" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">DestroyGrid</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">Immediate</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean DestroyGrid ( int Index, boolean Immediate )</h4>
 <p>calls DamageGrid internally to damage Poop/Fire removes rocks and opens secret doors returns true if something was destroyed returns false if not used for explosions mostly </p>
 <hr />
 <h3 aria-label="Functions" id="emitbloodfromwalls">EmitBloodFromWalls ()<a class="headerlink" href="#emitbloodfromwalls" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">EmitBloodFromWalls</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Duration</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Count</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void EmitBloodFromWalls ( int Duration, int Count )</h4>
 <hr />
 <h3 aria-label="Functions" id="findfreepickupspawnposition">FindFreePickupSpawnPosition ()<a class="headerlink" href="#findfreepickupspawnposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">FindFreePickupSpawnPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">InitialStep</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">AvoidActiveEntities</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> FindFreePickupSpawnPosition ( <a href="../Vector">Vector</a> Pos, float InitialStep, boolean AvoidActiveEntities )</h4>
 <p>Starting from Pos, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned. </p>
 <hr />
 <h3 aria-label="Functions" id="findfreetileposition">FindFreeTilePosition ()<a class="headerlink" href="#findfreetileposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">FindFreeTilePosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">DistanceThreshold</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> FindFreeTilePosition ( <a href="../Vector">Vector</a> Pos, float DistanceThreshold )</h4>
 <p>Finds the nearest free tile based on position Stops immediately if the tile sampled has a squared distance less than DistanceThresholdSQ </p>
 <hr />
 <h3 aria-label="Functions" id="getalivebossescount">GetAliveBossesCount ()<a class="headerlink" href="#getalivebossescount" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetAliveBossesCount</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetAliveBossesCount ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getaliveenemiescount">GetAliveEnemiesCount ()<a class="headerlink" href="#getaliveenemiescount" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetAliveEnemiesCount</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetAliveEnemiesCount ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getawardseed">GetAwardSeed ()<a class="headerlink" href="#getawardseed" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetAwardSeed</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetAwardSeed ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getbackdroptype">GetBackdropType ()<a class="headerlink" href="#getbackdroptype" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Backdrop</span><span class="o">::</span><span class="n">Backdrop</span> <span class="n">GetBackdropType</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">Backdrop::Backdrop GetBackdropType ( )</h4>
 <p>Returns the BackdropType (Background) of the current room.</p>
 <h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>BackdropTypes</p>
@@ -3107,247 +3107,247 @@ Sheol</p>
 Ultra Greed Shop</p>
 <hr />
 <h3 aria-label="Functions" id="getbossid">GetBossID ()<a class="headerlink" href="#getbossid" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">BossId</span> <span class="n">GetBossID</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">BossId GetBossID ( )</h4>
 <p>This will return the subtype of the current room, since this value is used to determine the boss-portrait to display when entering.</p>
 <hr />
 <h3 aria-label="Functions" id="getbottomrightpos">GetBottomRightPos ()<a class="headerlink" href="#getbottomrightpos" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetBottomRightPos</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetBottomRightPos ( )</h4>
 <p>returns bottom right position inside of walls </p>
 <hr />
 <h3 aria-label="Functions" id="getbrokenwatchstate">GetBrokenWatchState ()<a class="headerlink" href="#getbrokenwatchstate" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetBrokenWatchState</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetBrokenWatchState ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getcenterpos">GetCenterPos ()<a class="headerlink" href="#getcenterpos" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetCenterPos</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetCenterPos ( )</h4>
 <p>returns the room center position </p>
 <hr />
 <h3 aria-label="Functions" id="getclampedgridindex">GetClampedGridIndex ()<a class="headerlink" href="#getclampedgridindex" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetClampedGridIndex</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Position</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">int GetClampedGridIndex ( <a href="../Vector">Vector</a> Position)</h4>
 <p>converts float position (x,y) to grid index (similar to ingrid) clamps the values if out of bounds </p>
 <hr />
 <h3 aria-label="Functions" id="getclampedposition">GetClampedPosition ()<a class="headerlink" href="#getclampedposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetClampedPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Margin</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetClampedPosition ( <a href="../Vector">Vector</a> Pos, float Margin )</h4>
 <p>returns Pos clamped to room borders inside of walls </p>
 <hr />
 <h3 aria-label="Functions" id="getdecorationseed">GetDecorationSeed ()<a class="headerlink" href="#getdecorationseed" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetDecorationSeed</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetDecorationSeed ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getdeliriumdistance">GetDeliriumDistance ()<a class="headerlink" href="#getdeliriumdistance" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetDeliriumDistance</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetDeliriumDistance ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getdevilroomchance">GetDevilRoomChance ()<a class="headerlink" href="#getdevilroomchance" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">float</span> <span class="n">GetDevilRoomChance</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">float GetDevilRoomChance ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getdoor">GetDoor ()<a class="headerlink" href="#getdoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">GridEntityDoor</span> <span class="n">GetDoor</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../GridEntityDoor">GridEntityDoor</a> GetDoor ( DoorSlot Slot)</h4>
 <hr />
 <h3 aria-label="Functions" id="getdoorslotposition">GetDoorSlotPosition ()<a class="headerlink" href="#getdoorslotposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetDoorSlotPosition</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetDoorSlotPosition ( DoorSlot Slot)</h4>
 <hr />
 <h3 aria-label="Functions" id="getdungeonrockidx">GetDungeonRockIdx ()<a class="headerlink" href="#getdungeonrockidx" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetDungeonRockIdx</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetDungeonRockIdx ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getentities">GetEntities ()<a class="headerlink" href="#getentities" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">EntityList</span> <span class="n">GetEntities</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions"><a href="../CppContainer_EntityList">EntityList</a> GetEntities ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getframecount">GetFrameCount ()<a class="headerlink" href="#getframecount" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetFrameCount</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetFrameCount ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getgridcollision">GetGridCollision ()<a class="headerlink" href="#getgridcollision" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">GridCollisionClass</span> <span class="n">GetGridCollision</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">GridCollisionClass GetGridCollision ( int GridIndex)</h4>
 <p>Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this grid index.</p>
 <hr />
 <h3 aria-label="Functions" id="getgridcollisionatpos">GetGridCollisionAtPos ()<a class="headerlink" href="#getgridcollisionatpos" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">GridCollisionClass</span> <span class="n">GetGridCollisionAtPos</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">GridCollisionClass GetGridCollisionAtPos ( <a href="../Vector">Vector</a> Pos)</h4>
 <p>Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this position in the room.</p>
 <hr />
 <h3 aria-label="Functions" id="getgridentity">GetGridEntity ()<a class="headerlink" href="#getgridentity" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">GridEntity</span> <span class="n">GetGridEntity</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../GridEntity">GridEntity</a> GetGridEntity ( int Index)</h4>
 <p>Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this grid index.</p>
 <hr />
 <h3 aria-label="Functions" id="getgridentityfrompos">GetGridEntityFromPos ()<a class="headerlink" href="#getgridentityfrompos" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">GridEntity</span> <span class="n">GetGridEntityFromPos</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Position</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../GridEntity">GridEntity</a> GetGridEntityFromPos ( <a href="../Vector">Vector</a> Position)</h4>
 <p>Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this position in the room.</p>
 <hr />
 <h3 aria-label="Functions" id="getgridheight">GetGridHeight ()<a class="headerlink" href="#getgridheight" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridHeight</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetGridHeight ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getgridindex">GetGridIndex ()<a class="headerlink" href="#getgridindex" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridIndex</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Position</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">int GetGridIndex ( <a href="../Vector">Vector</a> Position)</h4>
 <p>converts float position (x,y) to grid index returns -1 for invalid index </p>
 <hr />
 <h3 aria-label="Functions" id="getgridpath">GetGridPath ()<a class="headerlink" href="#getgridpath" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridPath</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">int GetGridPath ( int Index)</h4>
 <hr />
 <h3 aria-label="Functions" id="getgridpathfrompos">GetGridPathFromPos ()<a class="headerlink" href="#getgridpathfrompos" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridPathFromPos</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">int GetGridPathFromPos ( int Index)</h4>
 <hr />
 <h3 aria-label="Functions" id="getgridposition">GetGridPosition ()<a class="headerlink" href="#getgridposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetGridPosition</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetGridPosition ( int GridIndex)</h4>
 <p>converts grid index to float (x,y) position undefined behaviour for invalid index </p>
 <hr />
 <h3 aria-label="Functions" id="getgridsize">GetGridSize ()<a class="headerlink" href="#getgridsize" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridSize</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetGridSize ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getgridwidth">GetGridWidth ()<a class="headerlink" href="#getgridwidth" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridWidth</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetGridWidth ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getlasertarget">GetLaserTarget ()<a class="headerlink" href="#getlasertarget" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetLaserTarget</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="n">Vector</span> <span class="n">Dir</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetLaserTarget ( <a href="../Vector">Vector</a> Pos, <a href="../Vector">Vector</a> Dir )</h4>
 <p>returns the hit position for a laser beam (Technology, Robo-Baby) usually, the first poop, fire, rock, TNT, or wall encountered on a straight line </p>
 <hr />
 <h3 aria-label="Functions" id="getlightingalpha">GetLightingAlpha ()<a class="headerlink" href="#getlightingalpha" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">float</span> <span class="n">GetLightingAlpha</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">float GetLightingAlpha ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getlroomareadesc">GetLRoomAreaDesc ()<a class="headerlink" href="#getlroomareadesc" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">LRoomAreaDesc</span> <span class="n">GetLRoomAreaDesc</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">LRoomAreaDesc GetLRoomAreaDesc ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getlroomtiledesc">GetLRoomTileDesc ()<a class="headerlink" href="#getlroomtiledesc" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">LRoomTileDesc</span> <span class="n">GetLRoomTileDesc</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">LRoomTileDesc GetLRoomTileDesc ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getnextshockwaveid">GetNextShockwaveId ()<a class="headerlink" href="#getnextshockwaveid" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetNextShockwaveId</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetNextShockwaveId ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getrandomposition">GetRandomPosition ()<a class="headerlink" href="#getrandomposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetRandomPosition</span> <span class="p">(</span><span class="kt">float</span> <span class="n">Margin</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetRandomPosition ( float Margin)</h4>
 <p>returns random non tile aligned position </p>
 <hr />
 <h3 aria-label="Functions" id="getrandomtileindex">GetRandomTileIndex ()<a class="headerlink" href="#getrandomtileindex" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetRandomTileIndex</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Seed</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">int GetRandomTileIndex ( int Seed)</h4>
 <hr />
 <h3 aria-label="Functions" id="getredheartdamage">GetRedHeartDamage ()<a class="headerlink" href="#getredheartdamage" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">GetRedHeartDamage</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean GetRedHeartDamage ( )</h4>
 <hr />
-<h3 aria-label="Functions" id="vector">Vector ()<a class="headerlink" href="#vector" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetRenderScrollOffset</span> <span class="p">()</span></code></h4>
+<h3 aria-label="Functions" id="getrenderscrolloffset">GetRenderScrollOffset ()<a class="headerlink" href="#getrenderscrolloffset" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetRenderScrollOffset ( )</h4>
 <p>The camera scroll offset and screen shake offsets are both represented here. </p>
 <hr />
-<h3 aria-label="Functions" id="vector_1">Vector ()<a class="headerlink" href="#vector_1" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetRenderSurfaceTopLeft</span> <span class="p">()</span></code></h4>
+<h3 aria-label="Functions" id="getrendersurfacetopleft">GetRenderSurfaceTopLeft ()<a class="headerlink" href="#getrendersurfacetopleft" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetRenderSurfaceTopLeft ( )</h4>
 <p>The position the floor and wall textures will be rendered at. </p>
 <hr />
 <h3 aria-label="Functions" id="getroomconfigstage">GetRoomConfigStage ()<a class="headerlink" href="#getroomconfigstage" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">RoomConfig</span><span class="o">::</span><span class="n">Stage</span> <span class="n">GetRoomConfigStage</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">RoomConfig::Stage GetRoomConfigStage ( )</h4>
 <p>returns the original stage the room was designed for (useful for The Void) </p>
 <hr />
 <h3 aria-label="Functions" id="getroomshape">GetRoomShape ()<a class="headerlink" href="#getroomshape" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">RoomShape</span> <span class="n">GetRoomShape</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">RoomShape GetRoomShape ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getsecondbossid">GetSecondBossID ()<a class="headerlink" href="#getsecondbossid" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">BossId</span> <span class="n">GetSecondBossID</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">BossId GetSecondBossID ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getseededcollectible">GetSeededCollectible ()<a class="headerlink" href="#getseededcollectible" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">CollectibleType</span> <span class="n">GetSeededCollectible</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Seed</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">CollectibleType GetSeededCollectible ( int Seed)</h4>
 <hr />
 <h3 aria-label="Functions" id="getshoplevel">GetShopLevel ()<a class="headerlink" href="#getshoplevel" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetShopLevel</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetShopLevel ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="getspawnseed">GetSpawnSeed ()<a class="headerlink" href="#getspawnseed" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetSpawnSeed</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetSpawnSeed ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="gettintedrockidx">GetTintedRockIdx ()<a class="headerlink" href="#gettintedrockidx" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetTintedRockIdx</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">int GetTintedRockIdx ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="gettopleftpos">GetTopLeftPos ()<a class="headerlink" href="#gettopleftpos" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetTopLeftPos</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> GetTopLeftPos ( )</h4>
 <p>returns top left position inside of walls </p>
 <hr />
 <h3 aria-label="Functions" id="gettype">GetType ()<a class="headerlink" href="#gettype" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">RoomType</span> <span class="n">GetType</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">RoomType GetType ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="hasslowdown">HasSlowDown ()<a class="headerlink" href="#hasslowdown" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasSlowDown</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean HasSlowDown ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="hastriggerpressureplates">HasTriggerPressurePlates ()<a class="headerlink" href="#hastriggerpressureplates" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasTriggerPressurePlates</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean HasTriggerPressurePlates ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="haswater">HasWater ()<a class="headerlink" href="#haswater" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasWater</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean HasWater ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="haswaterpits">HasWaterPits ()<a class="headerlink" href="#haswaterpits" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasWaterPits</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean HasWaterPits ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="isambushactive">IsAmbushActive ()<a class="headerlink" href="#isambushactive" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsAmbushActive</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsAmbushActive ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="isambushdone">IsAmbushDone ()<a class="headerlink" href="#isambushdone" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsAmbushDone</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsAmbushDone ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="isclear">IsClear ()<a class="headerlink" href="#isclear" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsClear</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsClear ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="iscurrentroomlastboss">IsCurrentRoomLastBoss ()<a class="headerlink" href="#iscurrentroomlastboss" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsCurrentRoomLastBoss</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsCurrentRoomLastBoss ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="isdoorslotallowed">IsDoorSlotAllowed ()<a class="headerlink" href="#isdoorslotallowed" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsDoorSlotAllowed</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean IsDoorSlotAllowed ( DoorSlot Slot)</h4>
 <p>Returns whether this room design may have a door at a given position, disregarding whether those doors exist. </p>
 <hr />
 <h3 aria-label="Functions" id="isfirstenemydead">IsFirstEnemyDead ()<a class="headerlink" href="#isfirstenemydead" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsFirstEnemyDead</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsFirstEnemyDead ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="isfirstvisit">IsFirstVisit ()<a class="headerlink" href="#isfirstvisit" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsFirstVisit</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsFirstVisit ( )</h4>
 <p>Broken Watch <a class="el" href="class_room.html">Room</a> State - 0 = no watch effect, 1 = speed down, 2 = speed up. </p>
 <hr />
 <h3 aria-label="Functions" id="isinitialized">IsInitialized ()<a class="headerlink" href="#isinitialized" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsInitialized</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsInitialized ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="islshapedroom">IsLShapedRoom ()<a class="headerlink" href="#islshapedroom" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsLShapedRoom</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsLShapedRoom ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="ispositioninroom">IsPositionInRoom ()<a class="headerlink" href="#ispositioninroom" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsPositionInRoom</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Margin</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean IsPositionInRoom ( <a href="../Vector">Vector</a> Pos, float Margin )</h4>
 <hr />
 <h3 aria-label="Functions" id="issacrificedone">IsSacrificeDone ()<a class="headerlink" href="#issacrificedone" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsSacrificeDone</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean IsSacrificeDone ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="keepdoorsclosed">KeepDoorsClosed ()<a class="headerlink" href="#keepdoorsclosed" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">KeepDoorsClosed</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void KeepDoorsClosed ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="mamamegaexplossion">MamaMegaExplossion ()<a class="headerlink" href="#mamamegaexplossion" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">MamaMegaExplossion</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void MamaMegaExplossion ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="playmusic">PlayMusic ()<a class="headerlink" href="#playmusic" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">PlayMusic</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void PlayMusic ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="removedoor">RemoveDoor ()<a class="headerlink" href="#removedoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">RemoveDoor</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void RemoveDoor ( DoorSlot Slot)</h4>
 <hr />
 <h3 aria-label="Functions" id="removegridentity">RemoveGridEntity ()<a class="headerlink" href="#removegridentity" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">RemoveGridEntity</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">,</span> <span class="kt">int</span> <span class="n">PathTrail</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">KeepDecoration</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void RemoveGridEntity ( int GridIndex, int PathTrail, boolean KeepDecoration )</h4>
 <hr />
 <h3 aria-label="Functions" id="render">Render ()<a class="headerlink" href="#render" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">Render</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void Render ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="respawnenemies">RespawnEnemies ()<a class="headerlink" href="#respawnenemies" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">RespawnEnemies</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void RespawnEnemies ( )</h4>
 <p>for D7 collectible </p>
 <hr />
 <h3 aria-label="Functions" id="screenwrapposition">ScreenWrapPosition ()<a class="headerlink" href="#screenwrapposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">ScreenWrapPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Margin</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> ScreenWrapPosition ( <a href="../Vector">Vector</a> Pos, float Margin )</h4>
 <p>Returns Pos, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)</p>
 <h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. </p>
 <hr />
 <h3 aria-label="Functions" id="setambushdone">SetAmbushDone ()<a class="headerlink" href="#setambushdone" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetAmbushDone</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Value</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetAmbushDone ( boolean Value)</h4>
 <hr />
 <h3 aria-label="Functions" id="setbrokenwatchstate">SetBrokenWatchState ()<a class="headerlink" href="#setbrokenwatchstate" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetBrokenWatchState</span> <span class="p">(</span><span class="kt">int</span> <span class="n">State</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetBrokenWatchState ( int State)</h4>
 <hr />
 <h3 aria-label="Functions" id="setcardagainsthumanity">SetCardAgainstHumanity ()<a class="headerlink" href="#setcardagainsthumanity" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetCardAgainstHumanity</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void SetCardAgainstHumanity ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="setclear">SetClear ()<a class="headerlink" href="#setclear" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetClear</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Clear</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetClear ( boolean Clear)</h4>
 <p>Needed for angel room, so the clear flag can be set to false when the angel spawns void SetClear(bool Clear) {m_Desc-&gt;Clear = Clear;} </p>
 <hr />
 <h3 aria-label="Functions" id="setfirstenemydead">SetFirstEnemyDead ()<a class="headerlink" href="#setfirstenemydead" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetFirstEnemyDead</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Value</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetFirstEnemyDead ( boolean Value)</h4>
 <hr />
 <h3 aria-label="Functions" id="setfloorcolor">SetFloorColor ()<a class="headerlink" href="#setfloorcolor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetFloorColor</span> <span class="p">(</span><span class="n">Color</span> <span class="n">FloorColor</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetFloorColor ( <a href="../Color">Color</a> FloorColor)</h4>
 <p>Allows you to apply a color modifier to the floor texture of the current room.</p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
 <p>This code changes the floorcolor to red.
@@ -3356,22 +3356,22 @@ Ultra Greed Shop</p>
 </td></tr></table></p>
 <hr />
 <h3 aria-label="Functions" id="setgridpath">SetGridPath ()<a class="headerlink" href="#setgridpath" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">SetGridPath</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Value</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean SetGridPath ( int Index, int Value )</h4>
 <hr />
 <h3 aria-label="Functions" id="setredheartdamage">SetRedHeartDamage ()<a class="headerlink" href="#setredheartdamage" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetRedHeartDamage</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void SetRedHeartDamage ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="setsacrificedone">SetSacrificeDone ()<a class="headerlink" href="#setsacrificedone" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetSacrificeDone</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Done</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetSacrificeDone ( boolean Done)</h4>
 <hr />
 <h3 aria-label="Functions" id="setshockwaveparam">SetShockwaveParam ()<a class="headerlink" href="#setshockwaveparam" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetShockwaveParam</span> <span class="p">(</span><span class="kt">int</span> <span class="n">ShockwaveId</span><span class="p">,</span> <span class="n">ShockwaveParams</span> <span class="n">Params</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetShockwaveParam ( int ShockwaveId, <a href="../ShockwaveParams">ShockwaveParams</a> Params )</h4>
 <hr />
 <h3 aria-label="Functions" id="setslowdown">SetSlowDown ()<a class="headerlink" href="#setslowdown" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetSlowDown</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Duration</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetSlowDown ( int Duration)</h4>
 <hr />
 <h3 aria-label="Functions" id="setwallcolor">SetWallColor ()<a class="headerlink" href="#setwallcolor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetWallColor</span> <span class="p">(</span><span class="n">Color</span> <span class="n">WallColor</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void SetWallColor ( <a href="../Color">Color</a> WallColor)</h4>
 <p>Allows you to apply a color modifier to the wall texture of the current room.</p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
 <p>This code changes the wallcolor to red.
@@ -3380,53 +3380,53 @@ Ultra Greed Shop</p>
 </td></tr></table></p>
 <hr />
 <h3 aria-label="Functions" id="shopreshuffle">ShopReshuffle ()<a class="headerlink" href="#shopreshuffle" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">ShopReshuffle</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">KeepCollectibleIdx</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ReselectSaleItem</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void ShopReshuffle ( boolean KeepCollectibleIdx, boolean ReselectSaleItem )</h4>
 <hr />
 <h3 aria-label="Functions" id="shoprestockfull">ShopRestockFull ()<a class="headerlink" href="#shoprestockfull" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">ShopRestockFull</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void ShopRestockFull ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="shoprestockpartial">ShopRestockPartial ()<a class="headerlink" href="#shoprestockpartial" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">ShopRestockPartial</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void ShopRestockPartial ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="spawnclearaward">SpawnClearAward ()<a class="headerlink" href="#spawnclearaward" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SpawnClearAward</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void SpawnClearAward ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="spawngridentity">SpawnGridEntity ()<a class="headerlink" href="#spawngridentity" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">SpawnGridEntity</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">,</span> <span class="n">GridEntityType</span> <span class="n">Type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Variant</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Seed</span><span class="p">,</span> <span class="kt">int</span> <span class="n">VarData</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean SpawnGridEntity ( int GridIndex, GridEntityType Type, int Variant, int Seed, int VarData )</h4>
 <hr />
 <h3 aria-label="Functions" id="trymakebridge">TryMakeBridge ()<a class="headerlink" href="#trymakebridge" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TryMakeBridge</span> <span class="p">(</span><span class="n">GridEntity</span> <span class="n">pit</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean TryMakeBridge ( <a href="../GridEntity">GridEntity</a> pit)</h4>
 <hr />
 <h3 aria-label="Functions" id="tryplaceladder">TryPlaceLadder ()<a class="headerlink" href="#tryplaceladder" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">TryPlaceLadder</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">PlayerPos</span><span class="p">,</span> <span class="n">Vector</span> <span class="n">PlayerVelocity</span><span class="p">,</span> <span class="n">Entity</span> <span class="n">Ladder</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">void TryPlaceLadder ( <a href="../Vector">Vector</a> PlayerPos, <a href="../Vector">Vector</a> PlayerVelocity, <a href="../Entity">Entity</a> Ladder )</h4>
 <hr />
 <h3 aria-label="Functions" id="tryspawnbluewombdoor">TrySpawnBlueWombDoor ()<a class="headerlink" href="#tryspawnbluewombdoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnBlueWombDoor</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">FirstTime</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">IgnoreTime</span> <span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean TrySpawnBlueWombDoor ( boolean FirstTime, boolean IgnoreTime )</h4>
 <hr />
 <h3 aria-label="Functions" id="tryspawnbossrushdoor">TrySpawnBossRushDoor ()<a class="headerlink" href="#tryspawnbossrushdoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnBossRushDoor</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">IgnoreTime</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean TrySpawnBossRushDoor ( boolean IgnoreTime)</h4>
 <hr />
 <h3 aria-label="Functions" id="tryspawndevilroomdoor">TrySpawnDevilRoomDoor ()<a class="headerlink" href="#tryspawndevilroomdoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnDevilRoomDoor</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Animate</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions">boolean TrySpawnDevilRoomDoor ( boolean Animate)</h4>
 <hr />
 <h3 aria-label="Functions" id="tryspawnmegasatanroomdoor">TrySpawnMegaSatanRoomDoor ()<a class="headerlink" href="#tryspawnmegasatanroomdoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnMegaSatanRoomDoor</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean TrySpawnMegaSatanRoomDoor ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="tryspawnthevoiddoor">TrySpawnTheVoidDoor ()<a class="headerlink" href="#tryspawnthevoiddoor" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnTheVoidDoor</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">boolean TrySpawnTheVoidDoor ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="turngold">TurnGold ()<a class="headerlink" href="#turngold" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">TurnGold</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void TurnGold ( )</h4>
 <hr />
 <h3 aria-label="Functions" id="update">Update ()<a class="headerlink" href="#update" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">Update</span> <span class="p">()</span></code></h4>
+<h4 aria-label="Functions">void Update ( )</h4>
 <p>Updates the current room.</p>
 <h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>Calling this function is NOT needed to apply changes!
 This function is pretty useless </p>
 <hr />
 <h3 aria-label="Functions" id="worldtoscreenposition">WorldToScreenPosition ()<a class="headerlink" href="#worldtoscreenposition" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">WorldToScreenPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">WorldPos</span><span class="p">)</span></code></h4>
+<h4 aria-label="Functions"><a href="../Vector">Vector</a> WorldToScreenPosition ( <a href="../Vector">Vector</a> WorldPos)</h4>
 <p>Converts an entity position to one that can be used to render to the screen. </p>
 <hr />
                 
@@ -3437,7 +3437,7 @@ This function is pretty useless </p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-01-03
+      Last update: 2021-01-07
     
   </small>
 </div>
