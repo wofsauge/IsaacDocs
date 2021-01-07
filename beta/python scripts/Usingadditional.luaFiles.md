@@ -1,2 +1,0 @@
-# Class "Usingadditional.luaFiles"
-## Functions
