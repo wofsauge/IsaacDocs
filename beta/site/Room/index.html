@@ -32,6 +32,8 @@
     
     
     
+      <link rel="stylesheet" href="../css/custom.css">
+    
     
       
     
@@ -1133,730 +1135,743 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#boolean-checkline-vector-pos1-vector-pos2-linecheckmode-mode-integer-gridpaththreshold-boolean-ignorewalls-boolean-ignorecrushable" class="md-nav__link">
-    boolean CheckLine (Vector Pos1, Vector Pos2, LinecheckMode Mode, integer GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable )
+  <a href="#functions" class="md-nav__link">
+    Functions
   </a>
   
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkline" class="md-nav__link">
+    CheckLine ()
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-damagegrid-integer-index-integer-damage" class="md-nav__link">
-    boolean DamageGrid (integer Index, integer Damage )
+        
+          <li class="md-nav__item">
+  <a href="#damagegrid" class="md-nav__link">
+    DamageGrid ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-destroygrid-integer-index-boolean-immediate" class="md-nav__link">
-    boolean DestroyGrid (integer Index, boolean Immediate )
+        
+          <li class="md-nav__item">
+  <a href="#destroygrid" class="md-nav__link">
+    DestroyGrid ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-emitbloodfromwalls-integer-duration-integer-count" class="md-nav__link">
-    void EmitBloodFromWalls (integer Duration, integer Count )
+        
+          <li class="md-nav__item">
+  <a href="#emitbloodfromwalls" class="md-nav__link">
+    EmitBloodFromWalls ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-findfreepickupspawnposition-vector-pos-float-initialstep-boolean-avoidactiveentities" class="md-nav__link">
-    Vector FindFreePickupSpawnPosition (Vector Pos, float InitialStep, boolean AvoidActiveEntities )
+        
+          <li class="md-nav__item">
+  <a href="#findfreepickupspawnposition" class="md-nav__link">
+    FindFreePickupSpawnPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-findfreetileposition-vector-pos-float-distancethreshold" class="md-nav__link">
-    Vector FindFreeTilePosition (Vector Pos, float DistanceThreshold )
+        
+          <li class="md-nav__item">
+  <a href="#findfreetileposition" class="md-nav__link">
+    FindFreeTilePosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getalivebossescount" class="md-nav__link">
-    integer GetAliveBossesCount ()
+        
+          <li class="md-nav__item">
+  <a href="#getalivebossescount" class="md-nav__link">
+    GetAliveBossesCount ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getaliveenemiescount" class="md-nav__link">
-    integer GetAliveEnemiesCount ()
+        
+          <li class="md-nav__item">
+  <a href="#getaliveenemiescount" class="md-nav__link">
+    GetAliveEnemiesCount ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getawardseed" class="md-nav__link">
-    integer GetAwardSeed ()
+        
+          <li class="md-nav__item">
+  <a href="#getawardseed" class="md-nav__link">
+    GetAwardSeed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#backdropbackdrop-getbackdroptype" class="md-nav__link">
-    Backdrop::Backdrop GetBackdropType ()
+        
+          <li class="md-nav__item">
+  <a href="#getbackdroptype" class="md-nav__link">
+    GetBackdropType ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bossid-getbossid" class="md-nav__link">
-    BossId GetBossID ()
+        
+          <li class="md-nav__item">
+  <a href="#getbossid" class="md-nav__link">
+    GetBossID ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getbottomrightpos" class="md-nav__link">
-    Vector GetBottomRightPos ()
+        
+          <li class="md-nav__item">
+  <a href="#getbottomrightpos" class="md-nav__link">
+    GetBottomRightPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getbrokenwatchstate" class="md-nav__link">
-    integer GetBrokenWatchState ()
+        
+          <li class="md-nav__item">
+  <a href="#getbrokenwatchstate" class="md-nav__link">
+    GetBrokenWatchState ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getcenterpos" class="md-nav__link">
-    Vector GetCenterPos ()
+        
+          <li class="md-nav__item">
+  <a href="#getcenterpos" class="md-nav__link">
+    GetCenterPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getclampedgridindex-vector-position" class="md-nav__link">
-    integer GetClampedGridIndex (Vector Position)
+        
+          <li class="md-nav__item">
+  <a href="#getclampedgridindex" class="md-nav__link">
+    GetClampedGridIndex ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getclampedposition-vector-pos-float-margin" class="md-nav__link">
-    Vector GetClampedPosition (Vector Pos, float Margin )
+        
+          <li class="md-nav__item">
+  <a href="#getclampedposition" class="md-nav__link">
+    GetClampedPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getdecorationseed" class="md-nav__link">
-    integer GetDecorationSeed ()
+        
+          <li class="md-nav__item">
+  <a href="#getdecorationseed" class="md-nav__link">
+    GetDecorationSeed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getdeliriumdistance" class="md-nav__link">
-    integer GetDeliriumDistance ()
+        
+          <li class="md-nav__item">
+  <a href="#getdeliriumdistance" class="md-nav__link">
+    GetDeliriumDistance ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#float-getdevilroomchance" class="md-nav__link">
-    float GetDevilRoomChance ()
+        
+          <li class="md-nav__item">
+  <a href="#getdevilroomchance" class="md-nav__link">
+    GetDevilRoomChance ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridentitydoor-getdoor-doorslot-slot" class="md-nav__link">
-    GridEntityDoor GetDoor (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#getdoor" class="md-nav__link">
+    GetDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getdoorslotposition-doorslot-slot" class="md-nav__link">
-    Vector GetDoorSlotPosition (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#getdoorslotposition" class="md-nav__link">
+    GetDoorSlotPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getdungeonrockidx" class="md-nav__link">
-    integer GetDungeonRockIdx ()
+        
+          <li class="md-nav__item">
+  <a href="#getdungeonrockidx" class="md-nav__link">
+    GetDungeonRockIdx ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#entitylist-getentities" class="md-nav__link">
-    EntityList GetEntities ()
+        
+          <li class="md-nav__item">
+  <a href="#getentities" class="md-nav__link">
+    GetEntities ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getframecount" class="md-nav__link">
-    integer GetFrameCount ()
+        
+          <li class="md-nav__item">
+  <a href="#getframecount" class="md-nav__link">
+    GetFrameCount ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridcollisionclass-getgridcollision-integer-gridindex" class="md-nav__link">
-    GridCollisionClass GetGridCollision (integer GridIndex)
+        
+          <li class="md-nav__item">
+  <a href="#getgridcollision" class="md-nav__link">
+    GetGridCollision ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridcollisionclass-getgridcollisionatpos-vector-pos" class="md-nav__link">
-    GridCollisionClass GetGridCollisionAtPos (Vector Pos)
+        
+          <li class="md-nav__item">
+  <a href="#getgridcollisionatpos" class="md-nav__link">
+    GetGridCollisionAtPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridentity-getgridentity-integer-index" class="md-nav__link">
-    GridEntity GetGridEntity (integer Index)
+        
+          <li class="md-nav__item">
+  <a href="#getgridentity" class="md-nav__link">
+    GetGridEntity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridentity-getgridentityfrompos-vector-position" class="md-nav__link">
-    GridEntity GetGridEntityFromPos (Vector Position)
+        
+          <li class="md-nav__item">
+  <a href="#getgridentityfrompos" class="md-nav__link">
+    GetGridEntityFromPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridheight" class="md-nav__link">
-    integer GetGridHeight ()
+        
+          <li class="md-nav__item">
+  <a href="#getgridheight" class="md-nav__link">
+    GetGridHeight ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridindex-vector-position" class="md-nav__link">
-    integer GetGridIndex (Vector Position)
+        
+          <li class="md-nav__item">
+  <a href="#getgridindex" class="md-nav__link">
+    GetGridIndex ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridpath-integer-index" class="md-nav__link">
-    integer GetGridPath (integer Index)
+        
+          <li class="md-nav__item">
+  <a href="#getgridpath" class="md-nav__link">
+    GetGridPath ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridpathfrompos-integer-index" class="md-nav__link">
-    integer GetGridPathFromPos (integer Index)
+        
+          <li class="md-nav__item">
+  <a href="#getgridpathfrompos" class="md-nav__link">
+    GetGridPathFromPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getgridposition-integer-gridindex" class="md-nav__link">
-    Vector GetGridPosition (integer GridIndex)
+        
+          <li class="md-nav__item">
+  <a href="#getgridposition" class="md-nav__link">
+    GetGridPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridsize" class="md-nav__link">
-    integer GetGridSize ()
+        
+          <li class="md-nav__item">
+  <a href="#getgridsize" class="md-nav__link">
+    GetGridSize ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridwidth" class="md-nav__link">
-    integer GetGridWidth ()
+        
+          <li class="md-nav__item">
+  <a href="#getgridwidth" class="md-nav__link">
+    GetGridWidth ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getlasertarget-vector-pos-vector-dir" class="md-nav__link">
-    Vector GetLaserTarget (Vector Pos, Vector Dir )
+        
+          <li class="md-nav__item">
+  <a href="#getlasertarget" class="md-nav__link">
+    GetLaserTarget ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#float-getlightingalpha" class="md-nav__link">
-    float GetLightingAlpha ()
+        
+          <li class="md-nav__item">
+  <a href="#getlightingalpha" class="md-nav__link">
+    GetLightingAlpha ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lroomareadesc-getlroomareadesc" class="md-nav__link">
-    LRoomAreaDesc GetLRoomAreaDesc ()
+        
+          <li class="md-nav__item">
+  <a href="#getlroomareadesc" class="md-nav__link">
+    GetLRoomAreaDesc ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lroomtiledesc-getlroomtiledesc" class="md-nav__link">
-    LRoomTileDesc GetLRoomTileDesc ()
+        
+          <li class="md-nav__item">
+  <a href="#getlroomtiledesc" class="md-nav__link">
+    GetLRoomTileDesc ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getnextshockwaveid" class="md-nav__link">
-    integer GetNextShockwaveId ()
+        
+          <li class="md-nav__item">
+  <a href="#getnextshockwaveid" class="md-nav__link">
+    GetNextShockwaveId ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getrandomposition-float-margin" class="md-nav__link">
-    Vector GetRandomPosition (float Margin)
+        
+          <li class="md-nav__item">
+  <a href="#getrandomposition" class="md-nav__link">
+    GetRandomPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getrandomtileindex-integer-seed" class="md-nav__link">
-    integer GetRandomTileIndex (integer Seed)
+        
+          <li class="md-nav__item">
+  <a href="#getrandomtileindex" class="md-nav__link">
+    GetRandomTileIndex ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-getredheartdamage" class="md-nav__link">
-    boolean GetRedHeartDamage ()
+        
+          <li class="md-nav__item">
+  <a href="#getredheartdamage" class="md-nav__link">
+    GetRedHeartDamage ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#const-vector-getrenderscrolloffset" class="md-nav__link">
-    const Vector GetRenderScrollOffset ()
+        
+          <li class="md-nav__item">
+  <a href="#vector" class="md-nav__link">
+    Vector ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#const-vector-getrendersurfacetopleft" class="md-nav__link">
-    const Vector GetRenderSurfaceTopLeft ()
+        
+          <li class="md-nav__item">
+  <a href="#vector_1" class="md-nav__link">
+    Vector ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#roomconfigstage-getroomconfigstage" class="md-nav__link">
-    RoomConfig::Stage GetRoomConfigStage ()
+        
+          <li class="md-nav__item">
+  <a href="#getroomconfigstage" class="md-nav__link">
+    GetRoomConfigStage ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#roomshape-getroomshape" class="md-nav__link">
-    RoomShape GetRoomShape ()
+        
+          <li class="md-nav__item">
+  <a href="#getroomshape" class="md-nav__link">
+    GetRoomShape ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bossid-getsecondbossid" class="md-nav__link">
-    BossId GetSecondBossID ()
+        
+          <li class="md-nav__item">
+  <a href="#getsecondbossid" class="md-nav__link">
+    GetSecondBossID ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#collectibletype-getseededcollectible-integer-seed" class="md-nav__link">
-    CollectibleType GetSeededCollectible (integer Seed)
+        
+          <li class="md-nav__item">
+  <a href="#getseededcollectible" class="md-nav__link">
+    GetSeededCollectible ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getshoplevel" class="md-nav__link">
-    integer GetShopLevel ()
+        
+          <li class="md-nav__item">
+  <a href="#getshoplevel" class="md-nav__link">
+    GetShopLevel ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getspawnseed" class="md-nav__link">
-    integer GetSpawnSeed ()
+        
+          <li class="md-nav__item">
+  <a href="#getspawnseed" class="md-nav__link">
+    GetSpawnSeed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-gettintedrockidx" class="md-nav__link">
-    integer GetTintedRockIdx ()
+        
+          <li class="md-nav__item">
+  <a href="#gettintedrockidx" class="md-nav__link">
+    GetTintedRockIdx ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-gettopleftpos" class="md-nav__link">
-    Vector GetTopLeftPos ()
+        
+          <li class="md-nav__item">
+  <a href="#gettopleftpos" class="md-nav__link">
+    GetTopLeftPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#roomtype-gettype" class="md-nav__link">
-    RoomType GetType ()
+        
+          <li class="md-nav__item">
+  <a href="#gettype" class="md-nav__link">
+    GetType ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-hasslowdown" class="md-nav__link">
-    boolean HasSlowDown ()
+        
+          <li class="md-nav__item">
+  <a href="#hasslowdown" class="md-nav__link">
+    HasSlowDown ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-hastriggerpressureplates" class="md-nav__link">
-    boolean HasTriggerPressurePlates ()
+        
+          <li class="md-nav__item">
+  <a href="#hastriggerpressureplates" class="md-nav__link">
+    HasTriggerPressurePlates ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-haswater" class="md-nav__link">
-    boolean HasWater ()
+        
+          <li class="md-nav__item">
+  <a href="#haswater" class="md-nav__link">
+    HasWater ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-haswaterpits" class="md-nav__link">
-    boolean HasWaterPits ()
+        
+          <li class="md-nav__item">
+  <a href="#haswaterpits" class="md-nav__link">
+    HasWaterPits ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isambushactive" class="md-nav__link">
-    boolean IsAmbushActive ()
+        
+          <li class="md-nav__item">
+  <a href="#isambushactive" class="md-nav__link">
+    IsAmbushActive ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isambushdone" class="md-nav__link">
-    boolean IsAmbushDone ()
+        
+          <li class="md-nav__item">
+  <a href="#isambushdone" class="md-nav__link">
+    IsAmbushDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isclear" class="md-nav__link">
-    boolean IsClear ()
+        
+          <li class="md-nav__item">
+  <a href="#isclear" class="md-nav__link">
+    IsClear ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-iscurrentroomlastboss" class="md-nav__link">
-    boolean IsCurrentRoomLastBoss ()
+        
+          <li class="md-nav__item">
+  <a href="#iscurrentroomlastboss" class="md-nav__link">
+    IsCurrentRoomLastBoss ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isdoorslotallowed-doorslot-slot" class="md-nav__link">
-    boolean IsDoorSlotAllowed (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#isdoorslotallowed" class="md-nav__link">
+    IsDoorSlotAllowed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isfirstenemydead" class="md-nav__link">
-    boolean IsFirstEnemyDead ()
+        
+          <li class="md-nav__item">
+  <a href="#isfirstenemydead" class="md-nav__link">
+    IsFirstEnemyDead ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isfirstvisit" class="md-nav__link">
-    boolean IsFirstVisit ()
+        
+          <li class="md-nav__item">
+  <a href="#isfirstvisit" class="md-nav__link">
+    IsFirstVisit ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isinitialized" class="md-nav__link">
-    boolean IsInitialized ()
+        
+          <li class="md-nav__item">
+  <a href="#isinitialized" class="md-nav__link">
+    IsInitialized ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-islshapedroom" class="md-nav__link">
-    boolean IsLShapedRoom ()
+        
+          <li class="md-nav__item">
+  <a href="#islshapedroom" class="md-nav__link">
+    IsLShapedRoom ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-ispositioninroom-vector-pos-float-margin" class="md-nav__link">
-    boolean IsPositionInRoom (Vector Pos, float Margin )
+        
+          <li class="md-nav__item">
+  <a href="#ispositioninroom" class="md-nav__link">
+    IsPositionInRoom ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-issacrificedone" class="md-nav__link">
-    boolean IsSacrificeDone ()
+        
+          <li class="md-nav__item">
+  <a href="#issacrificedone" class="md-nav__link">
+    IsSacrificeDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-keepdoorsclosed" class="md-nav__link">
-    void KeepDoorsClosed ()
+        
+          <li class="md-nav__item">
+  <a href="#keepdoorsclosed" class="md-nav__link">
+    KeepDoorsClosed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-mamamegaexplossion" class="md-nav__link">
-    void MamaMegaExplossion ()
+        
+          <li class="md-nav__item">
+  <a href="#mamamegaexplossion" class="md-nav__link">
+    MamaMegaExplossion ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-playmusic" class="md-nav__link">
-    void PlayMusic ()
+        
+          <li class="md-nav__item">
+  <a href="#playmusic" class="md-nav__link">
+    PlayMusic ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-removedoor-doorslot-slot" class="md-nav__link">
-    void RemoveDoor (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#removedoor" class="md-nav__link">
+    RemoveDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-removegridentity-integer-gridindex-integer-pathtrail-boolean-keepdecoration" class="md-nav__link">
-    void RemoveGridEntity (integer GridIndex, integer PathTrail, boolean KeepDecoration )
+        
+          <li class="md-nav__item">
+  <a href="#removegridentity" class="md-nav__link">
+    RemoveGridEntity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-render" class="md-nav__link">
-    void Render ()
+        
+          <li class="md-nav__item">
+  <a href="#render" class="md-nav__link">
+    Render ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-respawnenemies" class="md-nav__link">
-    void RespawnEnemies ()
+        
+          <li class="md-nav__item">
+  <a href="#respawnenemies" class="md-nav__link">
+    RespawnEnemies ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-screenwrapposition-vector-pos-float-margin" class="md-nav__link">
-    Vector ScreenWrapPosition (Vector Pos, float Margin )
+        
+          <li class="md-nav__item">
+  <a href="#screenwrapposition" class="md-nav__link">
+    ScreenWrapPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setambushdone-boolean-value" class="md-nav__link">
-    void SetAmbushDone (boolean Value)
+        
+          <li class="md-nav__item">
+  <a href="#setambushdone" class="md-nav__link">
+    SetAmbushDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setbrokenwatchstate-integer-state" class="md-nav__link">
-    void SetBrokenWatchState (integer State)
+        
+          <li class="md-nav__item">
+  <a href="#setbrokenwatchstate" class="md-nav__link">
+    SetBrokenWatchState ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setcardagainsthumanity" class="md-nav__link">
-    void SetCardAgainstHumanity ()
+        
+          <li class="md-nav__item">
+  <a href="#setcardagainsthumanity" class="md-nav__link">
+    SetCardAgainstHumanity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setclear-boolean-clear" class="md-nav__link">
-    void SetClear (boolean Clear)
+        
+          <li class="md-nav__item">
+  <a href="#setclear" class="md-nav__link">
+    SetClear ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setfirstenemydead-boolean-value" class="md-nav__link">
-    void SetFirstEnemyDead (boolean Value)
+        
+          <li class="md-nav__item">
+  <a href="#setfirstenemydead" class="md-nav__link">
+    SetFirstEnemyDead ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setfloorcolor-color-floorcolor" class="md-nav__link">
-    void SetFloorColor (Color FloorColor)
+        
+          <li class="md-nav__item">
+  <a href="#setfloorcolor" class="md-nav__link">
+    SetFloorColor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-setgridpath-integer-index-integer-value" class="md-nav__link">
-    boolean SetGridPath (integer Index, integer Value )
+        
+          <li class="md-nav__item">
+  <a href="#setgridpath" class="md-nav__link">
+    SetGridPath ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setredheartdamage" class="md-nav__link">
-    void SetRedHeartDamage ()
+        
+          <li class="md-nav__item">
+  <a href="#setredheartdamage" class="md-nav__link">
+    SetRedHeartDamage ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setsacrificedone-boolean-done" class="md-nav__link">
-    void SetSacrificeDone (boolean Done)
+        
+          <li class="md-nav__item">
+  <a href="#setsacrificedone" class="md-nav__link">
+    SetSacrificeDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setshockwaveparam-integer-shockwaveid-shockwaveparams-params" class="md-nav__link">
-    void SetShockwaveParam (integer ShockwaveId, ShockwaveParams Params )
+        
+          <li class="md-nav__item">
+  <a href="#setshockwaveparam" class="md-nav__link">
+    SetShockwaveParam ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setslowdown-integer-duration" class="md-nav__link">
-    void SetSlowDown (integer Duration)
+        
+          <li class="md-nav__item">
+  <a href="#setslowdown" class="md-nav__link">
+    SetSlowDown ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setwallcolor-color-wallcolor" class="md-nav__link">
-    void SetWallColor (Color WallColor)
+        
+          <li class="md-nav__item">
+  <a href="#setwallcolor" class="md-nav__link">
+    SetWallColor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-shopreshuffle-boolean-keepcollectibleidx-boolean-reselectsaleitem" class="md-nav__link">
-    void ShopReshuffle (boolean KeepCollectibleIdx, boolean ReselectSaleItem )
+        
+          <li class="md-nav__item">
+  <a href="#shopreshuffle" class="md-nav__link">
+    ShopReshuffle ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-shoprestockfull" class="md-nav__link">
-    void ShopRestockFull ()
+        
+          <li class="md-nav__item">
+  <a href="#shoprestockfull" class="md-nav__link">
+    ShopRestockFull ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-shoprestockpartial" class="md-nav__link">
-    void ShopRestockPartial ()
+        
+          <li class="md-nav__item">
+  <a href="#shoprestockpartial" class="md-nav__link">
+    ShopRestockPartial ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-spawnclearaward" class="md-nav__link">
-    void SpawnClearAward ()
+        
+          <li class="md-nav__item">
+  <a href="#spawnclearaward" class="md-nav__link">
+    SpawnClearAward ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-spawngridentity-integer-gridindex-gridentitytype-type-integer-variant-integer-seed-integer-vardata" class="md-nav__link">
-    boolean SpawnGridEntity (integer GridIndex, GridEntityType Type, integer Variant, integer Seed, integer VarData )
+        
+          <li class="md-nav__item">
+  <a href="#spawngridentity" class="md-nav__link">
+    SpawnGridEntity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-trymakebridge-gridentity-pit" class="md-nav__link">
-    boolean TryMakeBridge (GridEntity pit)
+        
+          <li class="md-nav__item">
+  <a href="#trymakebridge" class="md-nav__link">
+    TryMakeBridge ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-tryplaceladder-vector-playerpos-vector-playervelocity-entity-ladder" class="md-nav__link">
-    void TryPlaceLadder (Vector PlayerPos, Vector PlayerVelocity, Entity Ladder )
+        
+          <li class="md-nav__item">
+  <a href="#tryplaceladder" class="md-nav__link">
+    TryPlaceLadder ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnbluewombdoor-boolean-firsttime-boolean-ignoretime" class="md-nav__link">
-    boolean TrySpawnBlueWombDoor (boolean FirstTime, boolean IgnoreTime )
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnbluewombdoor" class="md-nav__link">
+    TrySpawnBlueWombDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnbossrushdoor-boolean-ignoretime" class="md-nav__link">
-    boolean TrySpawnBossRushDoor (boolean IgnoreTime)
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnbossrushdoor" class="md-nav__link">
+    TrySpawnBossRushDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawndevilroomdoor-boolean-animate" class="md-nav__link">
-    boolean TrySpawnDevilRoomDoor (boolean Animate)
+        
+          <li class="md-nav__item">
+  <a href="#tryspawndevilroomdoor" class="md-nav__link">
+    TrySpawnDevilRoomDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnmegasatanroomdoor" class="md-nav__link">
-    boolean TrySpawnMegaSatanRoomDoor ()
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnmegasatanroomdoor" class="md-nav__link">
+    TrySpawnMegaSatanRoomDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnthevoiddoor" class="md-nav__link">
-    boolean TrySpawnTheVoidDoor ()
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnthevoiddoor" class="md-nav__link">
+    TrySpawnTheVoidDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-turngold" class="md-nav__link">
-    void TurnGold ()
+        
+          <li class="md-nav__item">
+  <a href="#turngold" class="md-nav__link">
+    TurnGold ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-update" class="md-nav__link">
-    void Update ()
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    Update ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-worldtoscreenposition-vector-worldpos" class="md-nav__link">
-    Vector WorldToScreenPosition (Vector WorldPos)
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreenposition" class="md-nav__link">
+    WorldToScreenPosition ()
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2228,730 +2243,743 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#boolean-checkline-vector-pos1-vector-pos2-linecheckmode-mode-integer-gridpaththreshold-boolean-ignorewalls-boolean-ignorecrushable" class="md-nav__link">
-    boolean CheckLine (Vector Pos1, Vector Pos2, LinecheckMode Mode, integer GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable )
+  <a href="#functions" class="md-nav__link">
+    Functions
   </a>
   
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#checkline" class="md-nav__link">
+    CheckLine ()
+  </a>
+  
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-damagegrid-integer-index-integer-damage" class="md-nav__link">
-    boolean DamageGrid (integer Index, integer Damage )
+        
+          <li class="md-nav__item">
+  <a href="#damagegrid" class="md-nav__link">
+    DamageGrid ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-destroygrid-integer-index-boolean-immediate" class="md-nav__link">
-    boolean DestroyGrid (integer Index, boolean Immediate )
+        
+          <li class="md-nav__item">
+  <a href="#destroygrid" class="md-nav__link">
+    DestroyGrid ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-emitbloodfromwalls-integer-duration-integer-count" class="md-nav__link">
-    void EmitBloodFromWalls (integer Duration, integer Count )
+        
+          <li class="md-nav__item">
+  <a href="#emitbloodfromwalls" class="md-nav__link">
+    EmitBloodFromWalls ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-findfreepickupspawnposition-vector-pos-float-initialstep-boolean-avoidactiveentities" class="md-nav__link">
-    Vector FindFreePickupSpawnPosition (Vector Pos, float InitialStep, boolean AvoidActiveEntities )
+        
+          <li class="md-nav__item">
+  <a href="#findfreepickupspawnposition" class="md-nav__link">
+    FindFreePickupSpawnPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-findfreetileposition-vector-pos-float-distancethreshold" class="md-nav__link">
-    Vector FindFreeTilePosition (Vector Pos, float DistanceThreshold )
+        
+          <li class="md-nav__item">
+  <a href="#findfreetileposition" class="md-nav__link">
+    FindFreeTilePosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getalivebossescount" class="md-nav__link">
-    integer GetAliveBossesCount ()
+        
+          <li class="md-nav__item">
+  <a href="#getalivebossescount" class="md-nav__link">
+    GetAliveBossesCount ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getaliveenemiescount" class="md-nav__link">
-    integer GetAliveEnemiesCount ()
+        
+          <li class="md-nav__item">
+  <a href="#getaliveenemiescount" class="md-nav__link">
+    GetAliveEnemiesCount ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getawardseed" class="md-nav__link">
-    integer GetAwardSeed ()
+        
+          <li class="md-nav__item">
+  <a href="#getawardseed" class="md-nav__link">
+    GetAwardSeed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#backdropbackdrop-getbackdroptype" class="md-nav__link">
-    Backdrop::Backdrop GetBackdropType ()
+        
+          <li class="md-nav__item">
+  <a href="#getbackdroptype" class="md-nav__link">
+    GetBackdropType ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bossid-getbossid" class="md-nav__link">
-    BossId GetBossID ()
+        
+          <li class="md-nav__item">
+  <a href="#getbossid" class="md-nav__link">
+    GetBossID ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getbottomrightpos" class="md-nav__link">
-    Vector GetBottomRightPos ()
+        
+          <li class="md-nav__item">
+  <a href="#getbottomrightpos" class="md-nav__link">
+    GetBottomRightPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getbrokenwatchstate" class="md-nav__link">
-    integer GetBrokenWatchState ()
+        
+          <li class="md-nav__item">
+  <a href="#getbrokenwatchstate" class="md-nav__link">
+    GetBrokenWatchState ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getcenterpos" class="md-nav__link">
-    Vector GetCenterPos ()
+        
+          <li class="md-nav__item">
+  <a href="#getcenterpos" class="md-nav__link">
+    GetCenterPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getclampedgridindex-vector-position" class="md-nav__link">
-    integer GetClampedGridIndex (Vector Position)
+        
+          <li class="md-nav__item">
+  <a href="#getclampedgridindex" class="md-nav__link">
+    GetClampedGridIndex ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getclampedposition-vector-pos-float-margin" class="md-nav__link">
-    Vector GetClampedPosition (Vector Pos, float Margin )
+        
+          <li class="md-nav__item">
+  <a href="#getclampedposition" class="md-nav__link">
+    GetClampedPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getdecorationseed" class="md-nav__link">
-    integer GetDecorationSeed ()
+        
+          <li class="md-nav__item">
+  <a href="#getdecorationseed" class="md-nav__link">
+    GetDecorationSeed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getdeliriumdistance" class="md-nav__link">
-    integer GetDeliriumDistance ()
+        
+          <li class="md-nav__item">
+  <a href="#getdeliriumdistance" class="md-nav__link">
+    GetDeliriumDistance ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#float-getdevilroomchance" class="md-nav__link">
-    float GetDevilRoomChance ()
+        
+          <li class="md-nav__item">
+  <a href="#getdevilroomchance" class="md-nav__link">
+    GetDevilRoomChance ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridentitydoor-getdoor-doorslot-slot" class="md-nav__link">
-    GridEntityDoor GetDoor (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#getdoor" class="md-nav__link">
+    GetDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getdoorslotposition-doorslot-slot" class="md-nav__link">
-    Vector GetDoorSlotPosition (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#getdoorslotposition" class="md-nav__link">
+    GetDoorSlotPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getdungeonrockidx" class="md-nav__link">
-    integer GetDungeonRockIdx ()
+        
+          <li class="md-nav__item">
+  <a href="#getdungeonrockidx" class="md-nav__link">
+    GetDungeonRockIdx ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#entitylist-getentities" class="md-nav__link">
-    EntityList GetEntities ()
+        
+          <li class="md-nav__item">
+  <a href="#getentities" class="md-nav__link">
+    GetEntities ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getframecount" class="md-nav__link">
-    integer GetFrameCount ()
+        
+          <li class="md-nav__item">
+  <a href="#getframecount" class="md-nav__link">
+    GetFrameCount ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridcollisionclass-getgridcollision-integer-gridindex" class="md-nav__link">
-    GridCollisionClass GetGridCollision (integer GridIndex)
+        
+          <li class="md-nav__item">
+  <a href="#getgridcollision" class="md-nav__link">
+    GetGridCollision ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridcollisionclass-getgridcollisionatpos-vector-pos" class="md-nav__link">
-    GridCollisionClass GetGridCollisionAtPos (Vector Pos)
+        
+          <li class="md-nav__item">
+  <a href="#getgridcollisionatpos" class="md-nav__link">
+    GetGridCollisionAtPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridentity-getgridentity-integer-index" class="md-nav__link">
-    GridEntity GetGridEntity (integer Index)
+        
+          <li class="md-nav__item">
+  <a href="#getgridentity" class="md-nav__link">
+    GetGridEntity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#gridentity-getgridentityfrompos-vector-position" class="md-nav__link">
-    GridEntity GetGridEntityFromPos (Vector Position)
+        
+          <li class="md-nav__item">
+  <a href="#getgridentityfrompos" class="md-nav__link">
+    GetGridEntityFromPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridheight" class="md-nav__link">
-    integer GetGridHeight ()
+        
+          <li class="md-nav__item">
+  <a href="#getgridheight" class="md-nav__link">
+    GetGridHeight ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridindex-vector-position" class="md-nav__link">
-    integer GetGridIndex (Vector Position)
+        
+          <li class="md-nav__item">
+  <a href="#getgridindex" class="md-nav__link">
+    GetGridIndex ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridpath-integer-index" class="md-nav__link">
-    integer GetGridPath (integer Index)
+        
+          <li class="md-nav__item">
+  <a href="#getgridpath" class="md-nav__link">
+    GetGridPath ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridpathfrompos-integer-index" class="md-nav__link">
-    integer GetGridPathFromPos (integer Index)
+        
+          <li class="md-nav__item">
+  <a href="#getgridpathfrompos" class="md-nav__link">
+    GetGridPathFromPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getgridposition-integer-gridindex" class="md-nav__link">
-    Vector GetGridPosition (integer GridIndex)
+        
+          <li class="md-nav__item">
+  <a href="#getgridposition" class="md-nav__link">
+    GetGridPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridsize" class="md-nav__link">
-    integer GetGridSize ()
+        
+          <li class="md-nav__item">
+  <a href="#getgridsize" class="md-nav__link">
+    GetGridSize ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getgridwidth" class="md-nav__link">
-    integer GetGridWidth ()
+        
+          <li class="md-nav__item">
+  <a href="#getgridwidth" class="md-nav__link">
+    GetGridWidth ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getlasertarget-vector-pos-vector-dir" class="md-nav__link">
-    Vector GetLaserTarget (Vector Pos, Vector Dir )
+        
+          <li class="md-nav__item">
+  <a href="#getlasertarget" class="md-nav__link">
+    GetLaserTarget ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#float-getlightingalpha" class="md-nav__link">
-    float GetLightingAlpha ()
+        
+          <li class="md-nav__item">
+  <a href="#getlightingalpha" class="md-nav__link">
+    GetLightingAlpha ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lroomareadesc-getlroomareadesc" class="md-nav__link">
-    LRoomAreaDesc GetLRoomAreaDesc ()
+        
+          <li class="md-nav__item">
+  <a href="#getlroomareadesc" class="md-nav__link">
+    GetLRoomAreaDesc ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#lroomtiledesc-getlroomtiledesc" class="md-nav__link">
-    LRoomTileDesc GetLRoomTileDesc ()
+        
+          <li class="md-nav__item">
+  <a href="#getlroomtiledesc" class="md-nav__link">
+    GetLRoomTileDesc ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getnextshockwaveid" class="md-nav__link">
-    integer GetNextShockwaveId ()
+        
+          <li class="md-nav__item">
+  <a href="#getnextshockwaveid" class="md-nav__link">
+    GetNextShockwaveId ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-getrandomposition-float-margin" class="md-nav__link">
-    Vector GetRandomPosition (float Margin)
+        
+          <li class="md-nav__item">
+  <a href="#getrandomposition" class="md-nav__link">
+    GetRandomPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getrandomtileindex-integer-seed" class="md-nav__link">
-    integer GetRandomTileIndex (integer Seed)
+        
+          <li class="md-nav__item">
+  <a href="#getrandomtileindex" class="md-nav__link">
+    GetRandomTileIndex ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-getredheartdamage" class="md-nav__link">
-    boolean GetRedHeartDamage ()
+        
+          <li class="md-nav__item">
+  <a href="#getredheartdamage" class="md-nav__link">
+    GetRedHeartDamage ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#const-vector-getrenderscrolloffset" class="md-nav__link">
-    const Vector GetRenderScrollOffset ()
+        
+          <li class="md-nav__item">
+  <a href="#vector" class="md-nav__link">
+    Vector ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#const-vector-getrendersurfacetopleft" class="md-nav__link">
-    const Vector GetRenderSurfaceTopLeft ()
+        
+          <li class="md-nav__item">
+  <a href="#vector_1" class="md-nav__link">
+    Vector ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#roomconfigstage-getroomconfigstage" class="md-nav__link">
-    RoomConfig::Stage GetRoomConfigStage ()
+        
+          <li class="md-nav__item">
+  <a href="#getroomconfigstage" class="md-nav__link">
+    GetRoomConfigStage ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#roomshape-getroomshape" class="md-nav__link">
-    RoomShape GetRoomShape ()
+        
+          <li class="md-nav__item">
+  <a href="#getroomshape" class="md-nav__link">
+    GetRoomShape ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#bossid-getsecondbossid" class="md-nav__link">
-    BossId GetSecondBossID ()
+        
+          <li class="md-nav__item">
+  <a href="#getsecondbossid" class="md-nav__link">
+    GetSecondBossID ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#collectibletype-getseededcollectible-integer-seed" class="md-nav__link">
-    CollectibleType GetSeededCollectible (integer Seed)
+        
+          <li class="md-nav__item">
+  <a href="#getseededcollectible" class="md-nav__link">
+    GetSeededCollectible ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getshoplevel" class="md-nav__link">
-    integer GetShopLevel ()
+        
+          <li class="md-nav__item">
+  <a href="#getshoplevel" class="md-nav__link">
+    GetShopLevel ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-getspawnseed" class="md-nav__link">
-    integer GetSpawnSeed ()
+        
+          <li class="md-nav__item">
+  <a href="#getspawnseed" class="md-nav__link">
+    GetSpawnSeed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#integer-gettintedrockidx" class="md-nav__link">
-    integer GetTintedRockIdx ()
+        
+          <li class="md-nav__item">
+  <a href="#gettintedrockidx" class="md-nav__link">
+    GetTintedRockIdx ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-gettopleftpos" class="md-nav__link">
-    Vector GetTopLeftPos ()
+        
+          <li class="md-nav__item">
+  <a href="#gettopleftpos" class="md-nav__link">
+    GetTopLeftPos ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#roomtype-gettype" class="md-nav__link">
-    RoomType GetType ()
+        
+          <li class="md-nav__item">
+  <a href="#gettype" class="md-nav__link">
+    GetType ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-hasslowdown" class="md-nav__link">
-    boolean HasSlowDown ()
+        
+          <li class="md-nav__item">
+  <a href="#hasslowdown" class="md-nav__link">
+    HasSlowDown ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-hastriggerpressureplates" class="md-nav__link">
-    boolean HasTriggerPressurePlates ()
+        
+          <li class="md-nav__item">
+  <a href="#hastriggerpressureplates" class="md-nav__link">
+    HasTriggerPressurePlates ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-haswater" class="md-nav__link">
-    boolean HasWater ()
+        
+          <li class="md-nav__item">
+  <a href="#haswater" class="md-nav__link">
+    HasWater ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-haswaterpits" class="md-nav__link">
-    boolean HasWaterPits ()
+        
+          <li class="md-nav__item">
+  <a href="#haswaterpits" class="md-nav__link">
+    HasWaterPits ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isambushactive" class="md-nav__link">
-    boolean IsAmbushActive ()
+        
+          <li class="md-nav__item">
+  <a href="#isambushactive" class="md-nav__link">
+    IsAmbushActive ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isambushdone" class="md-nav__link">
-    boolean IsAmbushDone ()
+        
+          <li class="md-nav__item">
+  <a href="#isambushdone" class="md-nav__link">
+    IsAmbushDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isclear" class="md-nav__link">
-    boolean IsClear ()
+        
+          <li class="md-nav__item">
+  <a href="#isclear" class="md-nav__link">
+    IsClear ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-iscurrentroomlastboss" class="md-nav__link">
-    boolean IsCurrentRoomLastBoss ()
+        
+          <li class="md-nav__item">
+  <a href="#iscurrentroomlastboss" class="md-nav__link">
+    IsCurrentRoomLastBoss ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isdoorslotallowed-doorslot-slot" class="md-nav__link">
-    boolean IsDoorSlotAllowed (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#isdoorslotallowed" class="md-nav__link">
+    IsDoorSlotAllowed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isfirstenemydead" class="md-nav__link">
-    boolean IsFirstEnemyDead ()
+        
+          <li class="md-nav__item">
+  <a href="#isfirstenemydead" class="md-nav__link">
+    IsFirstEnemyDead ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isfirstvisit" class="md-nav__link">
-    boolean IsFirstVisit ()
+        
+          <li class="md-nav__item">
+  <a href="#isfirstvisit" class="md-nav__link">
+    IsFirstVisit ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-isinitialized" class="md-nav__link">
-    boolean IsInitialized ()
+        
+          <li class="md-nav__item">
+  <a href="#isinitialized" class="md-nav__link">
+    IsInitialized ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-islshapedroom" class="md-nav__link">
-    boolean IsLShapedRoom ()
+        
+          <li class="md-nav__item">
+  <a href="#islshapedroom" class="md-nav__link">
+    IsLShapedRoom ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-ispositioninroom-vector-pos-float-margin" class="md-nav__link">
-    boolean IsPositionInRoom (Vector Pos, float Margin )
+        
+          <li class="md-nav__item">
+  <a href="#ispositioninroom" class="md-nav__link">
+    IsPositionInRoom ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-issacrificedone" class="md-nav__link">
-    boolean IsSacrificeDone ()
+        
+          <li class="md-nav__item">
+  <a href="#issacrificedone" class="md-nav__link">
+    IsSacrificeDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-keepdoorsclosed" class="md-nav__link">
-    void KeepDoorsClosed ()
+        
+          <li class="md-nav__item">
+  <a href="#keepdoorsclosed" class="md-nav__link">
+    KeepDoorsClosed ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-mamamegaexplossion" class="md-nav__link">
-    void MamaMegaExplossion ()
+        
+          <li class="md-nav__item">
+  <a href="#mamamegaexplossion" class="md-nav__link">
+    MamaMegaExplossion ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-playmusic" class="md-nav__link">
-    void PlayMusic ()
+        
+          <li class="md-nav__item">
+  <a href="#playmusic" class="md-nav__link">
+    PlayMusic ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-removedoor-doorslot-slot" class="md-nav__link">
-    void RemoveDoor (DoorSlot Slot)
+        
+          <li class="md-nav__item">
+  <a href="#removedoor" class="md-nav__link">
+    RemoveDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-removegridentity-integer-gridindex-integer-pathtrail-boolean-keepdecoration" class="md-nav__link">
-    void RemoveGridEntity (integer GridIndex, integer PathTrail, boolean KeepDecoration )
+        
+          <li class="md-nav__item">
+  <a href="#removegridentity" class="md-nav__link">
+    RemoveGridEntity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-render" class="md-nav__link">
-    void Render ()
+        
+          <li class="md-nav__item">
+  <a href="#render" class="md-nav__link">
+    Render ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-respawnenemies" class="md-nav__link">
-    void RespawnEnemies ()
+        
+          <li class="md-nav__item">
+  <a href="#respawnenemies" class="md-nav__link">
+    RespawnEnemies ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-screenwrapposition-vector-pos-float-margin" class="md-nav__link">
-    Vector ScreenWrapPosition (Vector Pos, float Margin )
+        
+          <li class="md-nav__item">
+  <a href="#screenwrapposition" class="md-nav__link">
+    ScreenWrapPosition ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setambushdone-boolean-value" class="md-nav__link">
-    void SetAmbushDone (boolean Value)
+        
+          <li class="md-nav__item">
+  <a href="#setambushdone" class="md-nav__link">
+    SetAmbushDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setbrokenwatchstate-integer-state" class="md-nav__link">
-    void SetBrokenWatchState (integer State)
+        
+          <li class="md-nav__item">
+  <a href="#setbrokenwatchstate" class="md-nav__link">
+    SetBrokenWatchState ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setcardagainsthumanity" class="md-nav__link">
-    void SetCardAgainstHumanity ()
+        
+          <li class="md-nav__item">
+  <a href="#setcardagainsthumanity" class="md-nav__link">
+    SetCardAgainstHumanity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setclear-boolean-clear" class="md-nav__link">
-    void SetClear (boolean Clear)
+        
+          <li class="md-nav__item">
+  <a href="#setclear" class="md-nav__link">
+    SetClear ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setfirstenemydead-boolean-value" class="md-nav__link">
-    void SetFirstEnemyDead (boolean Value)
+        
+          <li class="md-nav__item">
+  <a href="#setfirstenemydead" class="md-nav__link">
+    SetFirstEnemyDead ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setfloorcolor-color-floorcolor" class="md-nav__link">
-    void SetFloorColor (Color FloorColor)
+        
+          <li class="md-nav__item">
+  <a href="#setfloorcolor" class="md-nav__link">
+    SetFloorColor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-setgridpath-integer-index-integer-value" class="md-nav__link">
-    boolean SetGridPath (integer Index, integer Value )
+        
+          <li class="md-nav__item">
+  <a href="#setgridpath" class="md-nav__link">
+    SetGridPath ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setredheartdamage" class="md-nav__link">
-    void SetRedHeartDamage ()
+        
+          <li class="md-nav__item">
+  <a href="#setredheartdamage" class="md-nav__link">
+    SetRedHeartDamage ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setsacrificedone-boolean-done" class="md-nav__link">
-    void SetSacrificeDone (boolean Done)
+        
+          <li class="md-nav__item">
+  <a href="#setsacrificedone" class="md-nav__link">
+    SetSacrificeDone ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setshockwaveparam-integer-shockwaveid-shockwaveparams-params" class="md-nav__link">
-    void SetShockwaveParam (integer ShockwaveId, ShockwaveParams Params )
+        
+          <li class="md-nav__item">
+  <a href="#setshockwaveparam" class="md-nav__link">
+    SetShockwaveParam ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setslowdown-integer-duration" class="md-nav__link">
-    void SetSlowDown (integer Duration)
+        
+          <li class="md-nav__item">
+  <a href="#setslowdown" class="md-nav__link">
+    SetSlowDown ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-setwallcolor-color-wallcolor" class="md-nav__link">
-    void SetWallColor (Color WallColor)
+        
+          <li class="md-nav__item">
+  <a href="#setwallcolor" class="md-nav__link">
+    SetWallColor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-shopreshuffle-boolean-keepcollectibleidx-boolean-reselectsaleitem" class="md-nav__link">
-    void ShopReshuffle (boolean KeepCollectibleIdx, boolean ReselectSaleItem )
+        
+          <li class="md-nav__item">
+  <a href="#shopreshuffle" class="md-nav__link">
+    ShopReshuffle ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-shoprestockfull" class="md-nav__link">
-    void ShopRestockFull ()
+        
+          <li class="md-nav__item">
+  <a href="#shoprestockfull" class="md-nav__link">
+    ShopRestockFull ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-shoprestockpartial" class="md-nav__link">
-    void ShopRestockPartial ()
+        
+          <li class="md-nav__item">
+  <a href="#shoprestockpartial" class="md-nav__link">
+    ShopRestockPartial ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-spawnclearaward" class="md-nav__link">
-    void SpawnClearAward ()
+        
+          <li class="md-nav__item">
+  <a href="#spawnclearaward" class="md-nav__link">
+    SpawnClearAward ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-spawngridentity-integer-gridindex-gridentitytype-type-integer-variant-integer-seed-integer-vardata" class="md-nav__link">
-    boolean SpawnGridEntity (integer GridIndex, GridEntityType Type, integer Variant, integer Seed, integer VarData )
+        
+          <li class="md-nav__item">
+  <a href="#spawngridentity" class="md-nav__link">
+    SpawnGridEntity ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-trymakebridge-gridentity-pit" class="md-nav__link">
-    boolean TryMakeBridge (GridEntity pit)
+        
+          <li class="md-nav__item">
+  <a href="#trymakebridge" class="md-nav__link">
+    TryMakeBridge ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-tryplaceladder-vector-playerpos-vector-playervelocity-entity-ladder" class="md-nav__link">
-    void TryPlaceLadder (Vector PlayerPos, Vector PlayerVelocity, Entity Ladder )
+        
+          <li class="md-nav__item">
+  <a href="#tryplaceladder" class="md-nav__link">
+    TryPlaceLadder ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnbluewombdoor-boolean-firsttime-boolean-ignoretime" class="md-nav__link">
-    boolean TrySpawnBlueWombDoor (boolean FirstTime, boolean IgnoreTime )
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnbluewombdoor" class="md-nav__link">
+    TrySpawnBlueWombDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnbossrushdoor-boolean-ignoretime" class="md-nav__link">
-    boolean TrySpawnBossRushDoor (boolean IgnoreTime)
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnbossrushdoor" class="md-nav__link">
+    TrySpawnBossRushDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawndevilroomdoor-boolean-animate" class="md-nav__link">
-    boolean TrySpawnDevilRoomDoor (boolean Animate)
+        
+          <li class="md-nav__item">
+  <a href="#tryspawndevilroomdoor" class="md-nav__link">
+    TrySpawnDevilRoomDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnmegasatanroomdoor" class="md-nav__link">
-    boolean TrySpawnMegaSatanRoomDoor ()
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnmegasatanroomdoor" class="md-nav__link">
+    TrySpawnMegaSatanRoomDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#boolean-tryspawnthevoiddoor" class="md-nav__link">
-    boolean TrySpawnTheVoidDoor ()
+        
+          <li class="md-nav__item">
+  <a href="#tryspawnthevoiddoor" class="md-nav__link">
+    TrySpawnTheVoidDoor ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-turngold" class="md-nav__link">
-    void TurnGold ()
+        
+          <li class="md-nav__item">
+  <a href="#turngold" class="md-nav__link">
+    TurnGold ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#void-update" class="md-nav__link">
-    void Update ()
+        
+          <li class="md-nav__item">
+  <a href="#update" class="md-nav__link">
+    Update ()
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#vector-worldtoscreenposition-vector-worldpos" class="md-nav__link">
-    Vector WorldToScreenPosition (Vector WorldPos)
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreenposition" class="md-nav__link">
+    WorldToScreenPosition ()
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2973,39 +3001,49 @@
                 
                 
                 <h1 id="class-room">Class "Room"<a class="headerlink" href="#class-room" title="Permanent link">⚓︎</a></h1>
-<hr />
-<h2 id="boolean-checkline-vector-pos1-vector-pos2-linecheckmode-mode-integer-gridpaththreshold-boolean-ignorewalls-boolean-ignorecrushable">boolean CheckLine (Vector Pos1, Vector Pos2, LinecheckMode Mode, integer GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable )<a class="headerlink" href="#boolean-checkline-vector-pos1-vector-pos2-linecheckmode-mode-integer-gridpaththreshold-boolean-ignorewalls-boolean-ignorecrushable" title="Permanent link">⚓︎</a></h2>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="checkline">CheckLine ()<a class="headerlink" href="#checkline" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">CheckLine</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos1</span><span class="p">,</span> <span class="n">Vector</span> <span class="n">Pos2</span><span class="p">,</span> <span class="n">LinecheckMode</span> <span class="n">Mode</span><span class="p">,</span> <span class="kt">int</span> <span class="n">GridPathThreshold</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">IgnoreWalls</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">IgnoreCrushable</span> <span class="p">)</span></code></h4>
 <p>returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed </p>
-<h4>Notes</h4>
+<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>LinecheckModes:
 0 : makes the line check collide with anything that impedes ground movement
 1 : is a cheaper version of 0, but is not as reliable
 2 : is used for explosions, it only collides with walls and indestructible blocks
 3 : is a line check that only collides with obstacles that can block projectiles</p>
 <hr />
-<h2 id="boolean-damagegrid-integer-index-integer-damage">boolean DamageGrid (integer Index, integer Damage )<a class="headerlink" href="#boolean-damagegrid-integer-index-integer-damage" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="damagegrid">DamageGrid ()<a class="headerlink" href="#damagegrid" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">DamageGrid</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Damage</span> <span class="p">)</span></code></h4>
 <p>Damage Grid Entities currently this concerns <a class="el" href="class_grid_entity_poop.html">GridEntityPoop</a> and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc </p>
 <hr />
-<h2 id="boolean-destroygrid-integer-index-boolean-immediate">boolean DestroyGrid (integer Index, boolean Immediate )<a class="headerlink" href="#boolean-destroygrid-integer-index-boolean-immediate" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="destroygrid">DestroyGrid ()<a class="headerlink" href="#destroygrid" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">DestroyGrid</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">Immediate</span> <span class="p">)</span></code></h4>
 <p>calls DamageGrid internally to damage Poop/Fire removes rocks and opens secret doors returns true if something was destroyed returns false if not used for explosions mostly </p>
 <hr />
-<h2 id="void-emitbloodfromwalls-integer-duration-integer-count">void EmitBloodFromWalls (integer Duration, integer Count )<a class="headerlink" href="#void-emitbloodfromwalls-integer-duration-integer-count" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="emitbloodfromwalls">EmitBloodFromWalls ()<a class="headerlink" href="#emitbloodfromwalls" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">EmitBloodFromWalls</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Duration</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Count</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="vector-findfreepickupspawnposition-vector-pos-float-initialstep-boolean-avoidactiveentities">Vector FindFreePickupSpawnPosition (Vector Pos, float InitialStep, boolean AvoidActiveEntities )<a class="headerlink" href="#vector-findfreepickupspawnposition-vector-pos-float-initialstep-boolean-avoidactiveentities" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="findfreepickupspawnposition">FindFreePickupSpawnPosition ()<a class="headerlink" href="#findfreepickupspawnposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">FindFreePickupSpawnPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">InitialStep</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">AvoidActiveEntities</span> <span class="p">)</span></code></h4>
 <p>Starting from Pos, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned. </p>
 <hr />
-<h2 id="vector-findfreetileposition-vector-pos-float-distancethreshold">Vector FindFreeTilePosition (Vector Pos, float DistanceThreshold )<a class="headerlink" href="#vector-findfreetileposition-vector-pos-float-distancethreshold" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="findfreetileposition">FindFreeTilePosition ()<a class="headerlink" href="#findfreetileposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">FindFreeTilePosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">DistanceThreshold</span> <span class="p">)</span></code></h4>
 <p>Finds the nearest free tile based on position Stops immediately if the tile sampled has a squared distance less than DistanceThresholdSQ </p>
 <hr />
-<h2 id="integer-getalivebossescount">integer GetAliveBossesCount ()<a class="headerlink" href="#integer-getalivebossescount" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getalivebossescount">GetAliveBossesCount ()<a class="headerlink" href="#getalivebossescount" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetAliveBossesCount</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getaliveenemiescount">integer GetAliveEnemiesCount ()<a class="headerlink" href="#integer-getaliveenemiescount" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getaliveenemiescount">GetAliveEnemiesCount ()<a class="headerlink" href="#getaliveenemiescount" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetAliveEnemiesCount</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getawardseed">integer GetAwardSeed ()<a class="headerlink" href="#integer-getawardseed" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getawardseed">GetAwardSeed ()<a class="headerlink" href="#getawardseed" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetAwardSeed</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="backdropbackdrop-getbackdroptype">Backdrop::Backdrop GetBackdropType ()<a class="headerlink" href="#backdropbackdrop-getbackdroptype" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getbackdroptype">GetBackdropType ()<a class="headerlink" href="#getbackdroptype" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Backdrop</span><span class="o">::</span><span class="n">Backdrop</span> <span class="n">GetBackdropType</span> <span class="p">()</span></code></h4>
 <p>Returns the BackdropType (Background) of the current room.</p>
-<h4>Notes</h4>
+<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>BackdropTypes</p>
 <p>ID
 Backdrop</p>
@@ -3068,233 +3106,342 @@ Sheol</p>
 <p>28
 Ultra Greed Shop</p>
 <hr />
-<h2 id="bossid-getbossid">BossId GetBossID ()<a class="headerlink" href="#bossid-getbossid" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getbossid">GetBossID ()<a class="headerlink" href="#getbossid" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">BossId</span> <span class="n">GetBossID</span> <span class="p">()</span></code></h4>
 <p>This will return the subtype of the current room, since this value is used to determine the boss-portrait to display when entering.</p>
 <hr />
-<h2 id="vector-getbottomrightpos">Vector GetBottomRightPos ()<a class="headerlink" href="#vector-getbottomrightpos" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getbottomrightpos">GetBottomRightPos ()<a class="headerlink" href="#getbottomrightpos" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetBottomRightPos</span> <span class="p">()</span></code></h4>
 <p>returns bottom right position inside of walls </p>
 <hr />
-<h2 id="integer-getbrokenwatchstate">integer GetBrokenWatchState ()<a class="headerlink" href="#integer-getbrokenwatchstate" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getbrokenwatchstate">GetBrokenWatchState ()<a class="headerlink" href="#getbrokenwatchstate" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetBrokenWatchState</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="vector-getcenterpos">Vector GetCenterPos ()<a class="headerlink" href="#vector-getcenterpos" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getcenterpos">GetCenterPos ()<a class="headerlink" href="#getcenterpos" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetCenterPos</span> <span class="p">()</span></code></h4>
 <p>returns the room center position </p>
 <hr />
-<h2 id="integer-getclampedgridindex-vector-position">integer GetClampedGridIndex (Vector Position)<a class="headerlink" href="#integer-getclampedgridindex-vector-position" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getclampedgridindex">GetClampedGridIndex ()<a class="headerlink" href="#getclampedgridindex" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetClampedGridIndex</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Position</span><span class="p">)</span></code></h4>
 <p>converts float position (x,y) to grid index (similar to ingrid) clamps the values if out of bounds </p>
 <hr />
-<h2 id="vector-getclampedposition-vector-pos-float-margin">Vector GetClampedPosition (Vector Pos, float Margin )<a class="headerlink" href="#vector-getclampedposition-vector-pos-float-margin" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getclampedposition">GetClampedPosition ()<a class="headerlink" href="#getclampedposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetClampedPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Margin</span> <span class="p">)</span></code></h4>
 <p>returns Pos clamped to room borders inside of walls </p>
 <hr />
-<h2 id="integer-getdecorationseed">integer GetDecorationSeed ()<a class="headerlink" href="#integer-getdecorationseed" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getdecorationseed">GetDecorationSeed ()<a class="headerlink" href="#getdecorationseed" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetDecorationSeed</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getdeliriumdistance">integer GetDeliriumDistance ()<a class="headerlink" href="#integer-getdeliriumdistance" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getdeliriumdistance">GetDeliriumDistance ()<a class="headerlink" href="#getdeliriumdistance" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetDeliriumDistance</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="float-getdevilroomchance">float GetDevilRoomChance ()<a class="headerlink" href="#float-getdevilroomchance" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getdevilroomchance">GetDevilRoomChance ()<a class="headerlink" href="#getdevilroomchance" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">float</span> <span class="n">GetDevilRoomChance</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="gridentitydoor-getdoor-doorslot-slot">GridEntityDoor GetDoor (DoorSlot Slot)<a class="headerlink" href="#gridentitydoor-getdoor-doorslot-slot" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getdoor">GetDoor ()<a class="headerlink" href="#getdoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">GridEntityDoor</span> <span class="n">GetDoor</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="vector-getdoorslotposition-doorslot-slot">Vector GetDoorSlotPosition (DoorSlot Slot)<a class="headerlink" href="#vector-getdoorslotposition-doorslot-slot" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getdoorslotposition">GetDoorSlotPosition ()<a class="headerlink" href="#getdoorslotposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetDoorSlotPosition</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="integer-getdungeonrockidx">integer GetDungeonRockIdx ()<a class="headerlink" href="#integer-getdungeonrockidx" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getdungeonrockidx">GetDungeonRockIdx ()<a class="headerlink" href="#getdungeonrockidx" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetDungeonRockIdx</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="entitylist-getentities">EntityList GetEntities ()<a class="headerlink" href="#entitylist-getentities" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getentities">GetEntities ()<a class="headerlink" href="#getentities" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">EntityList</span> <span class="n">GetEntities</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getframecount">integer GetFrameCount ()<a class="headerlink" href="#integer-getframecount" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getframecount">GetFrameCount ()<a class="headerlink" href="#getframecount" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetFrameCount</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="gridcollisionclass-getgridcollision-integer-gridindex">GridCollisionClass GetGridCollision (integer GridIndex)<a class="headerlink" href="#gridcollisionclass-getgridcollision-integer-gridindex" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridcollision">GetGridCollision ()<a class="headerlink" href="#getgridcollision" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">GridCollisionClass</span> <span class="n">GetGridCollision</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">)</span></code></h4>
 <p>Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this grid index.</p>
 <hr />
-<h2 id="gridcollisionclass-getgridcollisionatpos-vector-pos">GridCollisionClass GetGridCollisionAtPos (Vector Pos)<a class="headerlink" href="#gridcollisionclass-getgridcollisionatpos-vector-pos" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridcollisionatpos">GetGridCollisionAtPos ()<a class="headerlink" href="#getgridcollisionatpos" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">GridCollisionClass</span> <span class="n">GetGridCollisionAtPos</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">)</span></code></h4>
 <p>Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this position in the room.</p>
 <hr />
-<h2 id="gridentity-getgridentity-integer-index">GridEntity GetGridEntity (integer Index)<a class="headerlink" href="#gridentity-getgridentity-integer-index" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridentity">GetGridEntity ()<a class="headerlink" href="#getgridentity" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">GridEntity</span> <span class="n">GetGridEntity</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">)</span></code></h4>
 <p>Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this grid index.</p>
 <hr />
-<h2 id="gridentity-getgridentityfrompos-vector-position">GridEntity GetGridEntityFromPos (Vector Position)<a class="headerlink" href="#gridentity-getgridentityfrompos-vector-position" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridentityfrompos">GetGridEntityFromPos ()<a class="headerlink" href="#getgridentityfrompos" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">GridEntity</span> <span class="n">GetGridEntityFromPos</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Position</span><span class="p">)</span></code></h4>
 <p>Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this position in the room.</p>
 <hr />
-<h2 id="integer-getgridheight">integer GetGridHeight ()<a class="headerlink" href="#integer-getgridheight" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridheight">GetGridHeight ()<a class="headerlink" href="#getgridheight" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridHeight</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getgridindex-vector-position">integer GetGridIndex (Vector Position)<a class="headerlink" href="#integer-getgridindex-vector-position" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridindex">GetGridIndex ()<a class="headerlink" href="#getgridindex" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridIndex</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Position</span><span class="p">)</span></code></h4>
 <p>converts float position (x,y) to grid index returns -1 for invalid index </p>
 <hr />
-<h2 id="integer-getgridpath-integer-index">integer GetGridPath (integer Index)<a class="headerlink" href="#integer-getgridpath-integer-index" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridpath">GetGridPath ()<a class="headerlink" href="#getgridpath" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridPath</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="integer-getgridpathfrompos-integer-index">integer GetGridPathFromPos (integer Index)<a class="headerlink" href="#integer-getgridpathfrompos-integer-index" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridpathfrompos">GetGridPathFromPos ()<a class="headerlink" href="#getgridpathfrompos" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridPathFromPos</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="vector-getgridposition-integer-gridindex">Vector GetGridPosition (integer GridIndex)<a class="headerlink" href="#vector-getgridposition-integer-gridindex" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridposition">GetGridPosition ()<a class="headerlink" href="#getgridposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetGridPosition</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">)</span></code></h4>
 <p>converts grid index to float (x,y) position undefined behaviour for invalid index </p>
 <hr />
-<h2 id="integer-getgridsize">integer GetGridSize ()<a class="headerlink" href="#integer-getgridsize" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridsize">GetGridSize ()<a class="headerlink" href="#getgridsize" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridSize</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getgridwidth">integer GetGridWidth ()<a class="headerlink" href="#integer-getgridwidth" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getgridwidth">GetGridWidth ()<a class="headerlink" href="#getgridwidth" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetGridWidth</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="vector-getlasertarget-vector-pos-vector-dir">Vector GetLaserTarget (Vector Pos, Vector Dir )<a class="headerlink" href="#vector-getlasertarget-vector-pos-vector-dir" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getlasertarget">GetLaserTarget ()<a class="headerlink" href="#getlasertarget" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetLaserTarget</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="n">Vector</span> <span class="n">Dir</span> <span class="p">)</span></code></h4>
 <p>returns the hit position for a laser beam (Technology, Robo-Baby) usually, the first poop, fire, rock, TNT, or wall encountered on a straight line </p>
 <hr />
-<h2 id="float-getlightingalpha">float GetLightingAlpha ()<a class="headerlink" href="#float-getlightingalpha" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getlightingalpha">GetLightingAlpha ()<a class="headerlink" href="#getlightingalpha" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">float</span> <span class="n">GetLightingAlpha</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="lroomareadesc-getlroomareadesc">LRoomAreaDesc GetLRoomAreaDesc ()<a class="headerlink" href="#lroomareadesc-getlroomareadesc" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getlroomareadesc">GetLRoomAreaDesc ()<a class="headerlink" href="#getlroomareadesc" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">LRoomAreaDesc</span> <span class="n">GetLRoomAreaDesc</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="lroomtiledesc-getlroomtiledesc">LRoomTileDesc GetLRoomTileDesc ()<a class="headerlink" href="#lroomtiledesc-getlroomtiledesc" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getlroomtiledesc">GetLRoomTileDesc ()<a class="headerlink" href="#getlroomtiledesc" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">LRoomTileDesc</span> <span class="n">GetLRoomTileDesc</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getnextshockwaveid">integer GetNextShockwaveId ()<a class="headerlink" href="#integer-getnextshockwaveid" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getnextshockwaveid">GetNextShockwaveId ()<a class="headerlink" href="#getnextshockwaveid" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetNextShockwaveId</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="vector-getrandomposition-float-margin">Vector GetRandomPosition (float Margin)<a class="headerlink" href="#vector-getrandomposition-float-margin" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getrandomposition">GetRandomPosition ()<a class="headerlink" href="#getrandomposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetRandomPosition</span> <span class="p">(</span><span class="kt">float</span> <span class="n">Margin</span><span class="p">)</span></code></h4>
 <p>returns random non tile aligned position </p>
 <hr />
-<h2 id="integer-getrandomtileindex-integer-seed">integer GetRandomTileIndex (integer Seed)<a class="headerlink" href="#integer-getrandomtileindex-integer-seed" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getrandomtileindex">GetRandomTileIndex ()<a class="headerlink" href="#getrandomtileindex" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetRandomTileIndex</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Seed</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-getredheartdamage">boolean GetRedHeartDamage ()<a class="headerlink" href="#boolean-getredheartdamage" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getredheartdamage">GetRedHeartDamage ()<a class="headerlink" href="#getredheartdamage" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">GetRedHeartDamage</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="const-vector-getrenderscrolloffset">const Vector GetRenderScrollOffset ()<a class="headerlink" href="#const-vector-getrenderscrolloffset" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="vector">Vector ()<a class="headerlink" href="#vector" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetRenderScrollOffset</span> <span class="p">()</span></code></h4>
 <p>The camera scroll offset and screen shake offsets are both represented here. </p>
 <hr />
-<h2 id="const-vector-getrendersurfacetopleft">const Vector GetRenderSurfaceTopLeft ()<a class="headerlink" href="#const-vector-getrendersurfacetopleft" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="vector_1">Vector ()<a class="headerlink" href="#vector_1" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetRenderSurfaceTopLeft</span> <span class="p">()</span></code></h4>
 <p>The position the floor and wall textures will be rendered at. </p>
 <hr />
-<h2 id="roomconfigstage-getroomconfigstage">RoomConfig::Stage GetRoomConfigStage ()<a class="headerlink" href="#roomconfigstage-getroomconfigstage" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getroomconfigstage">GetRoomConfigStage ()<a class="headerlink" href="#getroomconfigstage" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">RoomConfig</span><span class="o">::</span><span class="n">Stage</span> <span class="n">GetRoomConfigStage</span> <span class="p">()</span></code></h4>
 <p>returns the original stage the room was designed for (useful for The Void) </p>
 <hr />
-<h2 id="roomshape-getroomshape">RoomShape GetRoomShape ()<a class="headerlink" href="#roomshape-getroomshape" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getroomshape">GetRoomShape ()<a class="headerlink" href="#getroomshape" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">RoomShape</span> <span class="n">GetRoomShape</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="bossid-getsecondbossid">BossId GetSecondBossID ()<a class="headerlink" href="#bossid-getsecondbossid" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getsecondbossid">GetSecondBossID ()<a class="headerlink" href="#getsecondbossid" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">BossId</span> <span class="n">GetSecondBossID</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="collectibletype-getseededcollectible-integer-seed">CollectibleType GetSeededCollectible (integer Seed)<a class="headerlink" href="#collectibletype-getseededcollectible-integer-seed" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getseededcollectible">GetSeededCollectible ()<a class="headerlink" href="#getseededcollectible" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">CollectibleType</span> <span class="n">GetSeededCollectible</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Seed</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="integer-getshoplevel">integer GetShopLevel ()<a class="headerlink" href="#integer-getshoplevel" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getshoplevel">GetShopLevel ()<a class="headerlink" href="#getshoplevel" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetShopLevel</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-getspawnseed">integer GetSpawnSeed ()<a class="headerlink" href="#integer-getspawnseed" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="getspawnseed">GetSpawnSeed ()<a class="headerlink" href="#getspawnseed" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetSpawnSeed</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="integer-gettintedrockidx">integer GetTintedRockIdx ()<a class="headerlink" href="#integer-gettintedrockidx" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="gettintedrockidx">GetTintedRockIdx ()<a class="headerlink" href="#gettintedrockidx" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">int</span> <span class="n">GetTintedRockIdx</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="vector-gettopleftpos">Vector GetTopLeftPos ()<a class="headerlink" href="#vector-gettopleftpos" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="gettopleftpos">GetTopLeftPos ()<a class="headerlink" href="#gettopleftpos" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">GetTopLeftPos</span> <span class="p">()</span></code></h4>
 <p>returns top left position inside of walls </p>
 <hr />
-<h2 id="roomtype-gettype">RoomType GetType ()<a class="headerlink" href="#roomtype-gettype" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="gettype">GetType ()<a class="headerlink" href="#gettype" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">RoomType</span> <span class="n">GetType</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-hasslowdown">boolean HasSlowDown ()<a class="headerlink" href="#boolean-hasslowdown" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="hasslowdown">HasSlowDown ()<a class="headerlink" href="#hasslowdown" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasSlowDown</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-hastriggerpressureplates">boolean HasTriggerPressurePlates ()<a class="headerlink" href="#boolean-hastriggerpressureplates" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="hastriggerpressureplates">HasTriggerPressurePlates ()<a class="headerlink" href="#hastriggerpressureplates" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasTriggerPressurePlates</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-haswater">boolean HasWater ()<a class="headerlink" href="#boolean-haswater" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="haswater">HasWater ()<a class="headerlink" href="#haswater" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasWater</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-haswaterpits">boolean HasWaterPits ()<a class="headerlink" href="#boolean-haswaterpits" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="haswaterpits">HasWaterPits ()<a class="headerlink" href="#haswaterpits" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">HasWaterPits</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-isambushactive">boolean IsAmbushActive ()<a class="headerlink" href="#boolean-isambushactive" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isambushactive">IsAmbushActive ()<a class="headerlink" href="#isambushactive" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsAmbushActive</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-isambushdone">boolean IsAmbushDone ()<a class="headerlink" href="#boolean-isambushdone" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isambushdone">IsAmbushDone ()<a class="headerlink" href="#isambushdone" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsAmbushDone</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-isclear">boolean IsClear ()<a class="headerlink" href="#boolean-isclear" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isclear">IsClear ()<a class="headerlink" href="#isclear" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsClear</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-iscurrentroomlastboss">boolean IsCurrentRoomLastBoss ()<a class="headerlink" href="#boolean-iscurrentroomlastboss" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="iscurrentroomlastboss">IsCurrentRoomLastBoss ()<a class="headerlink" href="#iscurrentroomlastboss" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsCurrentRoomLastBoss</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-isdoorslotallowed-doorslot-slot">boolean IsDoorSlotAllowed (DoorSlot Slot)<a class="headerlink" href="#boolean-isdoorslotallowed-doorslot-slot" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isdoorslotallowed">IsDoorSlotAllowed ()<a class="headerlink" href="#isdoorslotallowed" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsDoorSlotAllowed</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
 <p>Returns whether this room design may have a door at a given position, disregarding whether those doors exist. </p>
 <hr />
-<h2 id="boolean-isfirstenemydead">boolean IsFirstEnemyDead ()<a class="headerlink" href="#boolean-isfirstenemydead" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isfirstenemydead">IsFirstEnemyDead ()<a class="headerlink" href="#isfirstenemydead" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsFirstEnemyDead</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-isfirstvisit">boolean IsFirstVisit ()<a class="headerlink" href="#boolean-isfirstvisit" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isfirstvisit">IsFirstVisit ()<a class="headerlink" href="#isfirstvisit" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsFirstVisit</span> <span class="p">()</span></code></h4>
 <p>Broken Watch <a class="el" href="class_room.html">Room</a> State - 0 = no watch effect, 1 = speed down, 2 = speed up. </p>
 <hr />
-<h2 id="boolean-isinitialized">boolean IsInitialized ()<a class="headerlink" href="#boolean-isinitialized" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="isinitialized">IsInitialized ()<a class="headerlink" href="#isinitialized" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsInitialized</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-islshapedroom">boolean IsLShapedRoom ()<a class="headerlink" href="#boolean-islshapedroom" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="islshapedroom">IsLShapedRoom ()<a class="headerlink" href="#islshapedroom" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsLShapedRoom</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-ispositioninroom-vector-pos-float-margin">boolean IsPositionInRoom (Vector Pos, float Margin )<a class="headerlink" href="#boolean-ispositioninroom-vector-pos-float-margin" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="ispositioninroom">IsPositionInRoom ()<a class="headerlink" href="#ispositioninroom" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsPositionInRoom</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Margin</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-issacrificedone">boolean IsSacrificeDone ()<a class="headerlink" href="#boolean-issacrificedone" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="issacrificedone">IsSacrificeDone ()<a class="headerlink" href="#issacrificedone" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">IsSacrificeDone</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-keepdoorsclosed">void KeepDoorsClosed ()<a class="headerlink" href="#void-keepdoorsclosed" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="keepdoorsclosed">KeepDoorsClosed ()<a class="headerlink" href="#keepdoorsclosed" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">KeepDoorsClosed</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-mamamegaexplossion">void MamaMegaExplossion ()<a class="headerlink" href="#void-mamamegaexplossion" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="mamamegaexplossion">MamaMegaExplossion ()<a class="headerlink" href="#mamamegaexplossion" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">MamaMegaExplossion</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-playmusic">void PlayMusic ()<a class="headerlink" href="#void-playmusic" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="playmusic">PlayMusic ()<a class="headerlink" href="#playmusic" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">PlayMusic</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-removedoor-doorslot-slot">void RemoveDoor (DoorSlot Slot)<a class="headerlink" href="#void-removedoor-doorslot-slot" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="removedoor">RemoveDoor ()<a class="headerlink" href="#removedoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">RemoveDoor</span> <span class="p">(</span><span class="n">DoorSlot</span> <span class="n">Slot</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-removegridentity-integer-gridindex-integer-pathtrail-boolean-keepdecoration">void RemoveGridEntity (integer GridIndex, integer PathTrail, boolean KeepDecoration )<a class="headerlink" href="#void-removegridentity-integer-gridindex-integer-pathtrail-boolean-keepdecoration" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="removegridentity">RemoveGridEntity ()<a class="headerlink" href="#removegridentity" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">RemoveGridEntity</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">,</span> <span class="kt">int</span> <span class="n">PathTrail</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">KeepDecoration</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-render">void Render ()<a class="headerlink" href="#void-render" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="render">Render ()<a class="headerlink" href="#render" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">Render</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-respawnenemies">void RespawnEnemies ()<a class="headerlink" href="#void-respawnenemies" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="respawnenemies">RespawnEnemies ()<a class="headerlink" href="#respawnenemies" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">RespawnEnemies</span> <span class="p">()</span></code></h4>
 <p>for D7 collectible </p>
 <hr />
-<h2 id="vector-screenwrapposition-vector-pos-float-margin">Vector ScreenWrapPosition (Vector Pos, float Margin )<a class="headerlink" href="#vector-screenwrapposition-vector-pos-float-margin" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="screenwrapposition">ScreenWrapPosition ()<a class="headerlink" href="#screenwrapposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">ScreenWrapPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">Pos</span><span class="p">,</span> <span class="kt">float</span> <span class="n">Margin</span> <span class="p">)</span></code></h4>
 <p>Returns Pos, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)</p>
-<h4>Notes</h4>
+<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. </p>
 <hr />
-<h2 id="void-setambushdone-boolean-value">void SetAmbushDone (boolean Value)<a class="headerlink" href="#void-setambushdone-boolean-value" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setambushdone">SetAmbushDone ()<a class="headerlink" href="#setambushdone" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetAmbushDone</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Value</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setbrokenwatchstate-integer-state">void SetBrokenWatchState (integer State)<a class="headerlink" href="#void-setbrokenwatchstate-integer-state" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setbrokenwatchstate">SetBrokenWatchState ()<a class="headerlink" href="#setbrokenwatchstate" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetBrokenWatchState</span> <span class="p">(</span><span class="kt">int</span> <span class="n">State</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setcardagainsthumanity">void SetCardAgainstHumanity ()<a class="headerlink" href="#void-setcardagainsthumanity" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setcardagainsthumanity">SetCardAgainstHumanity ()<a class="headerlink" href="#setcardagainsthumanity" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetCardAgainstHumanity</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-setclear-boolean-clear">void SetClear (boolean Clear)<a class="headerlink" href="#void-setclear-boolean-clear" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setclear">SetClear ()<a class="headerlink" href="#setclear" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetClear</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Clear</span><span class="p">)</span></code></h4>
 <p>Needed for angel room, so the clear flag can be set to false when the angel spawns void SetClear(bool Clear) {m_Desc-&gt;Clear = Clear;} </p>
 <hr />
-<h2 id="void-setfirstenemydead-boolean-value">void SetFirstEnemyDead (boolean Value)<a class="headerlink" href="#void-setfirstenemydead-boolean-value" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setfirstenemydead">SetFirstEnemyDead ()<a class="headerlink" href="#setfirstenemydead" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetFirstEnemyDead</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Value</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setfloorcolor-color-floorcolor">void SetFloorColor (Color FloorColor)<a class="headerlink" href="#void-setfloorcolor-color-floorcolor" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setfloorcolor">SetFloorColor ()<a class="headerlink" href="#setfloorcolor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetFloorColor</span> <span class="p">(</span><span class="n">Color</span> <span class="n">FloorColor</span><span class="p">)</span></code></h4>
 <p>Allows you to apply a color modifier to the floor texture of the current room.</p>
-<h4>Example Code</h4>
-<p>This code changes the floorcolor to red.</p>
-<pre><code class="language-lua">Game():GetRoom():SetFloorColor(Color(1,1,1,1,255,0,0))
-</code></pre>
+<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
+<p>This code changes the floorcolor to red.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetRoom</span><span class="p">()</span><span class="o">:</span><span class="n">SetFloorColor</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table></p>
 <hr />
-<h2 id="boolean-setgridpath-integer-index-integer-value">boolean SetGridPath (integer Index, integer Value )<a class="headerlink" href="#boolean-setgridpath-integer-index-integer-value" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setgridpath">SetGridPath ()<a class="headerlink" href="#setgridpath" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">SetGridPath</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Index</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Value</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setredheartdamage">void SetRedHeartDamage ()<a class="headerlink" href="#void-setredheartdamage" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setredheartdamage">SetRedHeartDamage ()<a class="headerlink" href="#setredheartdamage" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetRedHeartDamage</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-setsacrificedone-boolean-done">void SetSacrificeDone (boolean Done)<a class="headerlink" href="#void-setsacrificedone-boolean-done" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setsacrificedone">SetSacrificeDone ()<a class="headerlink" href="#setsacrificedone" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetSacrificeDone</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Done</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setshockwaveparam-integer-shockwaveid-shockwaveparams-params">void SetShockwaveParam (integer ShockwaveId, ShockwaveParams Params )<a class="headerlink" href="#void-setshockwaveparam-integer-shockwaveid-shockwaveparams-params" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setshockwaveparam">SetShockwaveParam ()<a class="headerlink" href="#setshockwaveparam" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetShockwaveParam</span> <span class="p">(</span><span class="kt">int</span> <span class="n">ShockwaveId</span><span class="p">,</span> <span class="n">ShockwaveParams</span> <span class="n">Params</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setslowdown-integer-duration">void SetSlowDown (integer Duration)<a class="headerlink" href="#void-setslowdown-integer-duration" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setslowdown">SetSlowDown ()<a class="headerlink" href="#setslowdown" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetSlowDown</span> <span class="p">(</span><span class="kt">int</span> <span class="n">Duration</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-setwallcolor-color-wallcolor">void SetWallColor (Color WallColor)<a class="headerlink" href="#void-setwallcolor-color-wallcolor" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="setwallcolor">SetWallColor ()<a class="headerlink" href="#setwallcolor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SetWallColor</span> <span class="p">(</span><span class="n">Color</span> <span class="n">WallColor</span><span class="p">)</span></code></h4>
 <p>Allows you to apply a color modifier to the wall texture of the current room.</p>
-<h4>Example Code</h4>
-<p>This code changes the wallcolor to red.</p>
-<pre><code class="language-lua">Game():GetRoom():SetWallColor(Color(1,1,1,1,255,0,0))
-</code></pre>
+<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
+<p>This code changes the wallcolor to red.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetRoom</span><span class="p">()</span><span class="o">:</span><span class="n">SetWallColor</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+</code></pre></div>
+</td></tr></table></p>
 <hr />
-<h2 id="void-shopreshuffle-boolean-keepcollectibleidx-boolean-reselectsaleitem">void ShopReshuffle (boolean KeepCollectibleIdx, boolean ReselectSaleItem )<a class="headerlink" href="#void-shopreshuffle-boolean-keepcollectibleidx-boolean-reselectsaleitem" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="shopreshuffle">ShopReshuffle ()<a class="headerlink" href="#shopreshuffle" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">ShopReshuffle</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">KeepCollectibleIdx</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ReselectSaleItem</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-shoprestockfull">void ShopRestockFull ()<a class="headerlink" href="#void-shoprestockfull" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="shoprestockfull">ShopRestockFull ()<a class="headerlink" href="#shoprestockfull" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">ShopRestockFull</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-shoprestockpartial">void ShopRestockPartial ()<a class="headerlink" href="#void-shoprestockpartial" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="shoprestockpartial">ShopRestockPartial ()<a class="headerlink" href="#shoprestockpartial" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">ShopRestockPartial</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-spawnclearaward">void SpawnClearAward ()<a class="headerlink" href="#void-spawnclearaward" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="spawnclearaward">SpawnClearAward ()<a class="headerlink" href="#spawnclearaward" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">SpawnClearAward</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-spawngridentity-integer-gridindex-gridentitytype-type-integer-variant-integer-seed-integer-vardata">boolean SpawnGridEntity (integer GridIndex, GridEntityType Type, integer Variant, integer Seed, integer VarData )<a class="headerlink" href="#boolean-spawngridentity-integer-gridindex-gridentitytype-type-integer-variant-integer-seed-integer-vardata" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="spawngridentity">SpawnGridEntity ()<a class="headerlink" href="#spawngridentity" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">SpawnGridEntity</span> <span class="p">(</span><span class="kt">int</span> <span class="n">GridIndex</span><span class="p">,</span> <span class="n">GridEntityType</span> <span class="n">Type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Variant</span><span class="p">,</span> <span class="kt">int</span> <span class="n">Seed</span><span class="p">,</span> <span class="kt">int</span> <span class="n">VarData</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-trymakebridge-gridentity-pit">boolean TryMakeBridge (GridEntity pit)<a class="headerlink" href="#boolean-trymakebridge-gridentity-pit" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="trymakebridge">TryMakeBridge ()<a class="headerlink" href="#trymakebridge" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TryMakeBridge</span> <span class="p">(</span><span class="n">GridEntity</span> <span class="n">pit</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="void-tryplaceladder-vector-playerpos-vector-playervelocity-entity-ladder">void TryPlaceLadder (Vector PlayerPos, Vector PlayerVelocity, Entity Ladder )<a class="headerlink" href="#void-tryplaceladder-vector-playerpos-vector-playervelocity-entity-ladder" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="tryplaceladder">TryPlaceLadder ()<a class="headerlink" href="#tryplaceladder" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">TryPlaceLadder</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">PlayerPos</span><span class="p">,</span> <span class="n">Vector</span> <span class="n">PlayerVelocity</span><span class="p">,</span> <span class="n">Entity</span> <span class="n">Ladder</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-tryspawnbluewombdoor-boolean-firsttime-boolean-ignoretime">boolean TrySpawnBlueWombDoor (boolean FirstTime, boolean IgnoreTime )<a class="headerlink" href="#boolean-tryspawnbluewombdoor-boolean-firsttime-boolean-ignoretime" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="tryspawnbluewombdoor">TrySpawnBlueWombDoor ()<a class="headerlink" href="#tryspawnbluewombdoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnBlueWombDoor</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">FirstTime</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">IgnoreTime</span> <span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-tryspawnbossrushdoor-boolean-ignoretime">boolean TrySpawnBossRushDoor (boolean IgnoreTime)<a class="headerlink" href="#boolean-tryspawnbossrushdoor-boolean-ignoretime" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="tryspawnbossrushdoor">TrySpawnBossRushDoor ()<a class="headerlink" href="#tryspawnbossrushdoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnBossRushDoor</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">IgnoreTime</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-tryspawndevilroomdoor-boolean-animate">boolean TrySpawnDevilRoomDoor (boolean Animate)<a class="headerlink" href="#boolean-tryspawndevilroomdoor-boolean-animate" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="tryspawndevilroomdoor">TrySpawnDevilRoomDoor ()<a class="headerlink" href="#tryspawndevilroomdoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnDevilRoomDoor</span> <span class="p">(</span><span class="kt">bool</span> <span class="n">Animate</span><span class="p">)</span></code></h4>
 <hr />
-<h2 id="boolean-tryspawnmegasatanroomdoor">boolean TrySpawnMegaSatanRoomDoor ()<a class="headerlink" href="#boolean-tryspawnmegasatanroomdoor" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="tryspawnmegasatanroomdoor">TrySpawnMegaSatanRoomDoor ()<a class="headerlink" href="#tryspawnmegasatanroomdoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnMegaSatanRoomDoor</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="boolean-tryspawnthevoiddoor">boolean TrySpawnTheVoidDoor ()<a class="headerlink" href="#boolean-tryspawnthevoiddoor" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="tryspawnthevoiddoor">TrySpawnTheVoidDoor ()<a class="headerlink" href="#tryspawnthevoiddoor" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">bool</span> <span class="n">TrySpawnTheVoidDoor</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-turngold">void TurnGold ()<a class="headerlink" href="#void-turngold" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="turngold">TurnGold ()<a class="headerlink" href="#turngold" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">TurnGold</span> <span class="p">()</span></code></h4>
 <hr />
-<h2 id="void-update">void Update ()<a class="headerlink" href="#void-update" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="update">Update ()<a class="headerlink" href="#update" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="kt">void</span> <span class="n">Update</span> <span class="p">()</span></code></h4>
 <p>Updates the current room.</p>
-<h4>Notes</h4>
+<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>Calling this function is NOT needed to apply changes!
 This function is pretty useless </p>
 <hr />
-<h2 id="vector-worldtoscreenposition-vector-worldpos">Vector WorldToScreenPosition (Vector WorldPos)<a class="headerlink" href="#vector-worldtoscreenposition-vector-worldpos" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="worldtoscreenposition">WorldToScreenPosition ()<a class="headerlink" href="#worldtoscreenposition" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Functions"><code class="highlight"><span class="n">Vector</span> <span class="n">WorldToScreenPosition</span> <span class="p">(</span><span class="n">Vector</span> <span class="n">WorldPos</span><span class="p">)</span></code></h4>
 <p>Converts an entity position to one that can be used to render to the screen. </p>
 <hr />
+                
+                  
+                    
+
+<hr>
+<div class="md-source-date">
+  <small>
+    
+      Last update: 2021-01-03
+    
+  </small>
+</div>
+                  
                 
               
               
@@ -3387,6 +3534,10 @@ This function is pretty useless </p>
           }, typeof search !== "undefined" && search)
         })
       </script>
+      
+        <script src="../js/jquery.min.js"></script>
+      
+        <script src="../js/customJS.js"></script>
       
     
   </body>

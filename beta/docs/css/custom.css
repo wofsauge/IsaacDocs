@@ -1,0 +1,51 @@
+nav[aria-label$='Functions'] { 
+    border-left: 5px solid rgb(64 81 181 / 0.30);
+    line-height: 1.1;
+}
+nav[aria-label$='Variables'] { 
+    border-left: 5px solid rgb(28 125 77 / 0.30);
+    line-height: 1.1;
+}
+.md-typeset h2{
+    margin:0 !important;
+    text-align: center;
+}
+
+.md-typeset h3{
+    border-radius: 5px 5px 0px 0px;
+    padding: 0px 10px;
+    margin:0 !important;
+}
+h3[aria-label$='Functions']{
+    background-color: rgb(64 81 181 / 0.30);
+    display: inline-block;
+}
+
+h3[aria-label$='Variables']{
+    background-color: rgb(28 125 77 / 0.30);
+    display: inline-block;
+}
+
+.md-typeset h4{
+    border-radius: 0px 5px 5px 5px;
+    padding: 2px 10px;
+    margin:0 !important;
+    font-weight: 400 !important;
+    font-family: "Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace;
+    font-size: .85em;
+}
+h4[aria-label$='Functions']{
+    background-color: rgb(64 81 181 / 0.15);
+}
+
+h4[aria-label$='Variables']{
+    background-color: rgb(28 125 77 / 0.15);
+}
+.md-content p{
+    text-align: justify
+}
+
+.subHeader {
+    border-bottom: 1px solid var(--md-default-fg-color--light);
+    font-size: 1em !important;
+}

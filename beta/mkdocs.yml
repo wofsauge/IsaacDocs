@@ -96,16 +96,28 @@ markdown_extensions:
   - toc:
       permalink: ⚓︎
       toc_depth: 3
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - attr_list
 plugins:
   - search:
         separator: '[\s\-\.]+'
-#  - git-revision-date:
-#      enabled_if_env: CI
+  - git-revision-date
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wofsauge/IsaacDocs
       name: "BoI: AB+ Lua Docs on GitHub"
+extra_css: 
+    - css/custom.css
+extra_javascript: 
+    - js/jquery.min.js
+    - js/customJS.js
 copyright: Copyright &copy; 2021 Wofsauge
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
