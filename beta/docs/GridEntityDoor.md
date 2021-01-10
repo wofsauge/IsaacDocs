@@ -33,7 +33,7 @@ ___
 
 ___ 
 ### IsRoomType () {: aria-label='Functions' }
-#### boolean IsRoomType ( RoomType Type)  {: aria-label='Functions' }
+#### boolean IsRoomType ( [RoomType](../enums/RoomType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### IsTargetRoomArcade () {: aria-label='Functions' }
@@ -49,7 +49,7 @@ ___
 
 ___ 
 ### SetRoomTypes () {: aria-label='Functions' }
-#### void SetRoomTypes ( RoomType CurrentRoomType, RoomType TargetRoomType )  {: aria-label='Functions' }
+#### void SetRoomTypes ( [RoomType](../enums/RoomType) CurrentRoomType, [RoomType](../enums/RoomType) TargetRoomType )  {: aria-label='Functions' }
 
 ___ 
 ### SpawnDust () {: aria-label='Functions' }
@@ -74,11 +74,11 @@ ___
 
 ___ 
 ### CurrentRoomType {: aria-label='Variables' }
-#### RoomType CurrentRoomType  {: aria-label='Variables' }
+#### [RoomType](../enums/RoomType) CurrentRoomType  {: aria-label='Variables' }
 
 ___ 
-### Direction {: aria-label='Variables' }
-#### Direction Direction  {: aria-label='Variables' }
+### [Direction](../enums/Direction) {: aria-label='Variables' }
+#### [Direction](../enums/Direction) [Direction](../enums/Direction)  {: aria-label='Variables' }
 
 ___ 
 ### ExtraSprite {: aria-label='Variables' }
@@ -110,7 +110,7 @@ ___
 
 ___ 
 ### Slot {: aria-label='Variables' }
-#### DoorSlot Slot  {: aria-label='Variables' }
+#### [DoorSlot](../enums/DoorSlot) Slot  {: aria-label='Variables' }
 
 ___ 
 ### TargetRoomIndex {: aria-label='Variables' }
@@ -118,6 +118,6 @@ ___
 
 ___ 
 ### TargetRoomType {: aria-label='Variables' }
-#### RoomType TargetRoomType  {: aria-label='Variables' }
+#### [RoomType](../enums/RoomType) TargetRoomType  {: aria-label='Variables' }
 
 ___ 

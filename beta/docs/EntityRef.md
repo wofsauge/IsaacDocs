@@ -22,7 +22,7 @@ ___
 
 ___ 
 ### SpawnerType {: aria-label='Variables' }
-#### EntityType SpawnerType  {: aria-label='Variables' }
+#### [EntityType](../enums/EntityType) SpawnerType  {: aria-label='Variables' }
 
 ___ 
 ### SpawnerVariant {: aria-label='Variables' }
@@ -30,7 +30,7 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-#### EntityType Type  {: aria-label='Variables' }
+#### [EntityType](../enums/EntityType) Type  {: aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

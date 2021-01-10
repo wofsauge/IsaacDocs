@@ -157,8 +157,8 @@ ___
 #### float StartAngleDegrees  {: aria-label='Variables' }
 Some lasers have a bit of random variation in rotation so they need to remember their starting point. 
 ___ 
-### TearFlags {: aria-label='Variables' }
-#### int TearFlags  {: aria-label='Variables' }
+### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+#### int [TearFlags](../enums/TearFlags)  {: aria-label='Variables' }
 float m_DepthOffset; 
 float GetDepthOffset(void) const { return m_DepthOffset; } void SetDepthOffset(float Value) { m_DepthOffset = Value; } 
 ___ 

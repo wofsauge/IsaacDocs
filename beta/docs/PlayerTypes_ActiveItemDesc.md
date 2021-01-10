@@ -10,7 +10,7 @@ ___
 For items like Jars this holds the number of flies/hearts. 
 ___ 
 ### [Item](../ItemConfig_Item) {: aria-label='Variables' }
-#### CollectibleType [Item](../ItemConfig_Item)  {: aria-label='Variables' }
+#### [CollectibleType](../enums/CollectibleType) [Item](../ItemConfig_Item)  {: aria-label='Variables' }
 
 ___ 
 ### Lock {: aria-label='Variables' }

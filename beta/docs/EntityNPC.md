@@ -67,7 +67,7 @@ ___
 
 ___ 
 ### Morph () {: aria-label='Functions' }
-#### boolean Morph ( EntityType , int Variant, int SubType, int ChampionColorIdx )  {: aria-label='Functions' }
+#### boolean Morph ( [EntityType](../enums/EntityType) , int Variant, int SubType, int ChampionColorIdx )  {: aria-label='Functions' }
 
 Morph the current entity into another one. 
 <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use `:::cpp -1` to turn it into a regular entity.
@@ -77,10 +77,10 @@ This code turns an entity into a gaper.
 ```cpp 
 entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### PlaySound () {: aria-label='Functions' }
-#### void PlaySound ( SoundEffect ID, float Volume, int FrameDelay, boolean Loop, float Pitch )  {: aria-label='Functions' }
+#### void PlaySound ( [SoundEffect](../enums/SoundEffect) ID, float Volume, int FrameDelay, boolean Loop, float Pitch )  {: aria-label='Functions' }
 
 ___ 
 ### QueryNPCsGroup () {: aria-label='Functions' }
@@ -88,11 +88,11 @@ ___
 
 ___ 
 ### QueryNPCsSpawnerType () {: aria-label='Functions' }
-#### [EntityList](../CppContainer_EntityList) QueryNPCsSpawnerType ( EntityType SpawnerType, EntityType Type, boolean OnlyEnemies )  {: aria-label='Functions' }
+#### [EntityList](../CppContainer_EntityList) QueryNPCsSpawnerType ( [EntityType](../enums/EntityType) SpawnerType, [EntityType](../enums/EntityType) Type, boolean OnlyEnemies )  {: aria-label='Functions' }
 
 ___ 
 ### QueryNPCsType () {: aria-label='Functions' }
-#### [EntityList](../CppContainer_EntityList) QueryNPCsType ( EntityType Type, int Variant )  {: aria-label='Functions' }
+#### [EntityList](../CppContainer_EntityList) QueryNPCsType ( [EntityType](../enums/EntityType) Type, int Variant )  {: aria-label='Functions' }
 
 ___ 
 ### ResetPathFinderTarget () {: aria-label='Functions' }

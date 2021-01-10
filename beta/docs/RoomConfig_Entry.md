@@ -6,7 +6,7 @@
 
 ___ 
 ### Type {: aria-label='Variables' }
-#### RoomType Type  {: aria-label='Variables' }
+#### [RoomType](../enums/RoomType) Type  {: aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

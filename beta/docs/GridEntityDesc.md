@@ -18,7 +18,7 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-#### GridEntityType Type  {: aria-label='Variables' }
+#### [GridEntityType](../enums/GridEntityType) Type  {: aria-label='Variables' }
 
 ___ 
 ### VarData {: aria-label='Variables' }

@@ -1,10 +1,10 @@
 # Class "RoomConfig::Room"
 ## Functions
-## Variables
-### Difficulty {: aria-label='Variables' }
-#### Difficulty Difficulty  {: aria-label='Variables' }
+### [Difficulty](../enums/Difficulty) () {: aria-label='Functions' }
+#### [Difficulty](../enums/Difficulty) [Difficulty](../enums/Difficulty)  {: aria-label='Functions' }
 
 ___ 
+## Variables
 ### Doors {: aria-label='Variables' }
 #### IntList Doors  {: aria-label='Variables' }
 
@@ -22,7 +22,7 @@ ___
 
 ___ 
 ### Shape {: aria-label='Variables' }
-#### RoomShape Shape  {: aria-label='Variables' }
+#### [RoomShape](../enums/RoomShape) Shape  {: aria-label='Variables' }
 
 ___ 
 ### SpawnCount {: aria-label='Variables' }
@@ -42,7 +42,7 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-#### RoomType Type  {: aria-label='Variables' }
+#### [RoomType](../enums/RoomType) Type  {: aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

@@ -42,7 +42,7 @@ Isaac.GetPlayer(0):AddBoneHearts(1)
 
 ___ 
 ### AddCacheFlags () {: aria-label='Functions' }
-#### void AddCacheFlags ( CacheFlag CacheFlag)  {: aria-label='Functions' }
+#### void AddCacheFlags ( [CacheFlag](../enums/CacheFlag) CacheFlag)  {: aria-label='Functions' }
 Will reevaluate the cache flags provided in the next cache reevaluation.
 ___ 
 ### AddCard () {: aria-label='Functions' }
@@ -61,7 +61,7 @@ Isaac.GetPlayer(0):AddCoins(1)
 
 ___ 
 ### AddCollectible () {: aria-label='Functions' }
-#### void AddCollectible ( CollectibleType Type, int Charge, boolean AddConsumables )  {: aria-label='Functions' }
+#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge, boolean AddConsumables )  {: aria-label='Functions' }
 
 ___ 
 ### AddControlsCooldown () {: aria-label='Functions' }
@@ -83,7 +83,8 @@ ___
 ### AddEternalHearts () {: aria-label='Functions' }
 #### void AddEternalHearts ( int EternalHearts)  {: aria-label='Functions' }
 
-Adds eternal hearts to the player. 1 unit is half a heart. Remove them with negative numbers. <br/>(Note that eternal hearts automatically turn to full hearts, when you have more than one.) 
+Adds eternal hearts to the player. 1 unit is half a heart. Remove them with negative numbers. 
+(Note that eternal hearts automatically turn to full hearts, when you have more than one.) 
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code adds 1 eternal heart to the player.
 ```cpp 
@@ -117,7 +118,7 @@ Adds red hearts to the player if there are any empty heart containers. 1 unit is
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code adds 1 full red heart to the player.
 ```cpp 
-Isaac.GetPlayer(0):AddkHearts(2)
+Isaac.GetPlayer(0):AddHearts(2)
 ```
 
 ___ 
@@ -164,11 +165,11 @@ ___
 for Lua 
 ___ 
 ### AddPill () {: aria-label='Functions' }
-#### void AddPill ( PillColor Pill)  {: aria-label='Functions' }
+#### void AddPill ( [PillColor](../enums/PillColor) Pill)  {: aria-label='Functions' }
 
 ___ 
 ### AddPlayerFormCostume () {: aria-label='Functions' }
-#### void AddPlayerFormCostume ( PlayerForm Form)  {: aria-label='Functions' }
+#### void AddPlayerFormCostume ( [PlayerForm](../enums/PlayerForm) Form)  {: aria-label='Functions' }
 
 ___ 
 ### AddPrettyFly () {: aria-label='Functions' }
@@ -187,7 +188,7 @@ Isaac.GetPlayer(0):AddSoulHearts(2)
 
 ___ 
 ### AddTrinket () {: aria-label='Functions' }
-#### void AddTrinket ( TrinketType Type)  {: aria-label='Functions' }
+#### void AddTrinket ( [TrinketType](../enums/TrinketType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### AnimateAppear () {: aria-label='Functions' }
@@ -199,7 +200,7 @@ ___
 
 ___ 
 ### AnimateCollectible () {: aria-label='Functions' }
-#### void AnimateCollectible ( CollectibleType Collectible, string AnimName, string SpriteAnimName )  {: aria-label='Functions' }
+#### void AnimateCollectible ( [CollectibleType](../enums/CollectibleType) Collectible, string AnimName, string SpriteAnimName )  {: aria-label='Functions' }
 
 ___ 
 ### AnimateHappy () {: aria-label='Functions' }
@@ -211,7 +212,7 @@ ___
 end of a stage 
 ___ 
 ### AnimatePill () {: aria-label='Functions' }
-#### void AnimatePill ( PillColor Pill, string AnimName )  {: aria-label='Functions' }
+#### void AnimatePill ( [PillColor](../enums/PillColor) Pill, string AnimName )  {: aria-label='Functions' }
 
 ___ 
 ### AnimatePitfallIn () {: aria-label='Functions' }
@@ -235,7 +236,7 @@ ___
 end of a stage 
 ___ 
 ### AnimateTrinket () {: aria-label='Functions' }
-#### void AnimateTrinket ( TrinketType Trinket, string AnimName, string SpriteAnimName )  {: aria-label='Functions' }
+#### void AnimateTrinket ( [TrinketType](../enums/TrinketType) Trinket, string AnimName, string SpriteAnimName )  {: aria-label='Functions' }
 
 ___ 
 ### AreControlsEnabled () {: aria-label='Functions' }
@@ -348,7 +349,7 @@ ___
 This replaces the protected fire_tear() to allow other entities (Such as bombs) to easily shoot tears in the same manner and with all the effects the player does. (Ex. Sad Bombs) 
 ___ 
 ### FireTechLaser () {: aria-label='Functions' }
-#### [EntityLaser](../EntityLaser) FireTechLaser ( [Vector](../Vector) Position, LaserOffset OffsetID, [Vector](../Vector) Direction, boolean LeftEye, boolean OneHit )  {: aria-label='Functions' }
+#### [EntityLaser](../EntityLaser) FireTechLaser ( [Vector](../Vector) Position, [LaserOffset](../enums/LaserOffset) OffsetID, [Vector](../Vector) Direction, boolean LeftEye, boolean OneHit )  {: aria-label='Functions' }
 
 ___ 
 ### FireTechXLaser () {: aria-label='Functions' }
@@ -369,7 +370,7 @@ ___
 Get the current charge of your active item.
 ___ 
 ### GetActiveItem () {: aria-label='Functions' }
-#### CollectibleType GetActiveItem ( )  {: aria-label='Functions' }
+#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( )  {: aria-label='Functions' }
 Returns the currently held item.
 ___ 
 ### GetActiveSubCharge () {: aria-label='Functions' }
@@ -386,7 +387,7 @@ ___
 
 ___ 
 ### GetBabySkin () {: aria-label='Functions' }
-#### BabySubType GetBabySkin ( )  {: aria-label='Functions' }
+#### [BabySubType](../enums/BabySubType) GetBabySkin ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetBatteryCharge () {: aria-label='Functions' }
@@ -432,15 +433,15 @@ ___
 
 ___ 
 ### GetCollectibleNum () {: aria-label='Functions' }
-#### int GetCollectibleNum ( CollectibleType Type)  {: aria-label='Functions' }
+#### int GetCollectibleNum ( [CollectibleType](../enums/CollectibleType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### GetCollectibleRNG () {: aria-label='Functions' }
-#### [RNG](../RNG) GetCollectibleRNG ( CollectibleType ID)  {: aria-label='Functions' }
+#### [RNG](../RNG) GetCollectibleRNG ( [CollectibleType](../enums/CollectibleType) ID)  {: aria-label='Functions' }
 
 ___ 
 ### GetCostumeNullPos () {: aria-label='Functions' }
-#### [Vector](../Vector) GetCostumeNullPos ( string NullFrameName, boolean HeadScale, [Vector](../Vector) Direction )  {: aria-label='Functions' }
+#### [Vector](../Vector) GetCostumeNullPos ( string NullFrameName, boolean HeadScale, [Vector](../Vector) [Direction](../enums/Direction) )  {: aria-label='Functions' }
 
 ___ 
 ### GetDamageCooldown () {: aria-label='Functions' }
@@ -467,7 +468,7 @@ ___
 
 ___ 
 ### GetFireDirection () {: aria-label='Functions' }
-#### Direction GetFireDirection ( )  {: aria-label='Functions' }
+#### [Direction](../enums/Direction) GetFireDirection ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetFlyingOffset () {: aria-label='Functions' }
@@ -484,7 +485,7 @@ ___
 
 ___ 
 ### GetHeadDirection () {: aria-label='Functions' }
-#### Direction GetHeadDirection ( )  {: aria-label='Functions' }
+#### [Direction](../enums/Direction) GetHeadDirection ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetHeartLimit () {: aria-label='Functions' }
@@ -497,7 +498,7 @@ ___
 Returns the amount of red hearts the player has inside their heart containers and bone hearts. 1 unit is half a heart.
 ___ 
 ### GetItemState () {: aria-label='Functions' }
-#### CollectibleType GetItemState ( )  {: aria-label='Functions' }
+#### [CollectibleType](../enums/CollectibleType) GetItemState ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetJarFlies () {: aria-label='Functions' }
@@ -509,7 +510,7 @@ ___
 
 ___ 
 ### GetLaserOffset () {: aria-label='Functions' }
-#### [Vector](../Vector) GetLaserOffset ( LaserOffset ID, [Vector](../Vector) Direction )  {: aria-label='Functions' }
+#### [Vector](../Vector) GetLaserOffset ( [LaserOffset](../enums/LaserOffset) ID, [Vector](../Vector) [Direction](../enums/Direction) )  {: aria-label='Functions' }
 
 ___ 
 ### GetLastActionTriggers () {: aria-label='Functions' }
@@ -546,7 +547,7 @@ ___
 Get the number of trinkets you can carry. (1 on default. 2 with moms purse or similar)
 ___ 
 ### GetMovementDirection () {: aria-label='Functions' }
-#### Direction GetMovementDirection ( )  {: aria-label='Functions' }
+#### [Direction](../enums/Direction) GetMovementDirection ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetMovementInput () {: aria-label='Functions' }
@@ -566,7 +567,7 @@ ___
 
 ___ 
 ### GetMultiShotPositionVelocity () {: aria-label='Functions' }
-#### [PosVel](../PlayerTypes_PosVel) GetMultiShotPositionVelocity ( int LoopIndex, WeaponType Weapon, [Vector](../Vector) ShotDirection, float ShotSpeed, MultiShotParams params )  {: aria-label='Functions' }
+#### [PosVel](../PlayerTypes_PosVel) GetMultiShotPositionVelocity ( int LoopIndex, [WeaponType](../enums/WeaponType) Weapon, [Vector](../Vector) ShotDirection, float ShotSpeed, MultiShotParams params )  {: aria-label='Functions' }
 Call this function in a loop with values from 0 to MultiShotParams.NumProjectiles-1 (inclusive) 
 ___ 
 ### GetName () {: aria-label='Functions' }
@@ -599,7 +600,7 @@ ___
 
 ___ 
 ### GetPill () {: aria-label='Functions' }
-#### PillColor GetPill ( int SlotId)  {: aria-label='Functions' }
+#### [PillColor](../enums/PillColor) GetPill ( int SlotId)  {: aria-label='Functions' }
 
 Gets the ID of the pill the player is holding in the given itemslot (0 or 1).
 ___ 
@@ -608,7 +609,7 @@ ___
 
 ___ 
 ### GetPlayerType () {: aria-label='Functions' }
-#### PlayerType GetPlayerType ( )  {: aria-label='Functions' }
+#### [PlayerType](../enums/PlayerType) GetPlayerType ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetPocketItem () {: aria-label='Functions' }
@@ -646,7 +647,7 @@ ___
 
 ___ 
 ### GetTearHitParams () {: aria-label='Functions' }
-#### [TearParams](../TearParams) GetTearHitParams ( WeaponType WeaponType, float DamageScale, int TearDisplacement )  {: aria-label='Functions' }
+#### [TearParams](../TearParams) GetTearHitParams ( [WeaponType](../enums/WeaponType) WeaponType, float DamageScale, int TearDisplacement )  {: aria-label='Functions' }
  Used for tear parameters that are calculated on hit (ex: Tough love, Common cold), DamageScale is used for scale calculation based on damage 
 ___ 
 ### GetTearMovementInheritance () {: aria-label='Functions' }
@@ -670,7 +671,7 @@ ___
 
 ___ 
 ### GetTrinket () {: aria-label='Functions' }
-#### TrinketType GetTrinket ( int TrinketIndex)  {: aria-label='Functions' }
+#### [TrinketType](../enums/TrinketType) GetTrinket ( int TrinketIndex)  {: aria-label='Functions' }
 
 Gets the ID of the trinket the player is holding in the given trinketslot (0 or 1).
 ___ 
@@ -679,7 +680,7 @@ ___
 
 ___ 
 ### GetTrinketRNG () {: aria-label='Functions' }
-#### [RNG](../RNG) GetTrinketRNG ( TrinketType ID)  {: aria-label='Functions' }
+#### [RNG](../RNG) GetTrinketRNG ( [TrinketType](../enums/TrinketType) ID)  {: aria-label='Functions' }
 
 ___ 
 ### GetVelocityBeforeUpdate () {: aria-label='Functions' }
@@ -687,11 +688,11 @@ ___
 
 ___ 
 ### GetZodiacEffect () {: aria-label='Functions' }
-#### CollectibleType GetZodiacEffect ( )  {: aria-label='Functions' }
+#### [CollectibleType](../enums/CollectibleType) GetZodiacEffect ( )  {: aria-label='Functions' }
 
 ___ 
 ### HasCollectible () {: aria-label='Functions' }
-#### boolean HasCollectible ( CollectibleType Type)  {: aria-label='Functions' }
+#### boolean HasCollectible ( [CollectibleType](../enums/CollectibleType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### HasFullHearts () {: aria-label='Functions' }
@@ -715,7 +716,7 @@ ___
 returns true when player is in an invincibility state 
 ___ 
 ### HasPlayerForm () {: aria-label='Functions' }
-#### boolean HasPlayerForm ( PlayerForm Form)  {: aria-label='Functions' }
+#### boolean HasPlayerForm ( [PlayerForm](../enums/PlayerForm) Form)  {: aria-label='Functions' }
 
 ___ 
 ### HasTimedItem () {: aria-label='Functions' }
@@ -723,11 +724,11 @@ ___
 Kept for avoiding modding issues. 
 ___ 
 ### HasTrinket () {: aria-label='Functions' }
-#### boolean HasTrinket ( TrinketType Type)  {: aria-label='Functions' }
+#### boolean HasTrinket ( [TrinketType](../enums/TrinketType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### HasWeaponType () {: aria-label='Functions' }
-#### boolean HasWeaponType ( WeaponType WeaponType)  {: aria-label='Functions' }
+#### boolean HasWeaponType ( [WeaponType](../enums/WeaponType) WeaponType)  {: aria-label='Functions' }
 
 ___ 
 ### InitBabySkin () {: aria-label='Functions' }
@@ -803,7 +804,7 @@ ___
 
 ___ 
 ### RemoveCollectible () {: aria-label='Functions' }
-#### void RemoveCollectible ( CollectibleType Type)  {: aria-label='Functions' }
+#### void RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### RemoveCostume () {: aria-label='Functions' }
@@ -848,7 +849,7 @@ ___
 ___ 
 ### ResetItemState () {: aria-label='Functions' }
 #### void ResetItemState ( )  {: aria-label='Functions' }
-Made this public so <a class="el" href="class_room.html">Room</a> transtiions can call this to prevent lock ups. 
+Made this public so <a class="el" href="class_room.html">Room</a> transtiions can call this to prevent lock ups.  WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### RespawnFamiliars () {: aria-label='Functions' }
 #### void RespawnFamiliars ( )  {: aria-label='Functions' }
@@ -876,7 +877,7 @@ ___
 
 ___ 
 ### SetPill () {: aria-label='Functions' }
-#### void SetPill ( int SlotId, PillColor Pill )  {: aria-label='Functions' }
+#### void SetPill ( int SlotId, [PillColor](../enums/PillColor) Pill )  {: aria-label='Functions' }
 
 Change the pill the player is holding in the given itemslot (0 or 1).
 ___ 
@@ -909,11 +910,11 @@ ___
 
 ___ 
 ### TryHoldTrinket () {: aria-label='Functions' }
-#### boolean TryHoldTrinket ( TrinketType Type)  {: aria-label='Functions' }
+#### boolean TryHoldTrinket ( [TrinketType](../enums/TrinketType) Type)  {: aria-label='Functions' }
 Returns true if an active item pickup cooldown is over. returns true if trinket can be added, else false 
 ___ 
 ### TryRemoveCollectibleCostume () {: aria-label='Functions' }
-#### void TryRemoveCollectibleCostume ( CollectibleType Collectible, boolean KeepPersistent )  {: aria-label='Functions' }
+#### void TryRemoveCollectibleCostume ( [CollectibleType](../enums/CollectibleType) Collectible, boolean KeepPersistent )  {: aria-label='Functions' }
 tries to remove a costume based on some filters 
 ___ 
 ### TryRemoveNullCostume () {: aria-label='Functions' }
@@ -921,11 +922,11 @@ ___
 
 ___ 
 ### TryRemoveTrinket () {: aria-label='Functions' }
-#### boolean TryRemoveTrinket ( TrinketType Type)  {: aria-label='Functions' }
+#### boolean TryRemoveTrinket ( [TrinketType](../enums/TrinketType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### TryRemoveTrinketCostume () {: aria-label='Functions' }
-#### void TryRemoveTrinketCostume ( TrinketType Trinket)  {: aria-label='Functions' }
+#### void TryRemoveTrinketCostume ( [TrinketType](../enums/TrinketType) Trinket)  {: aria-label='Functions' }
 tries to remove a costume based on some filters 
 ___ 
 ### TryUseKey () {: aria-label='Functions' }
@@ -937,7 +938,7 @@ ___
 
 ___ 
 ### UseActiveItem () {: aria-label='Functions' }
-#### void UseActiveItem ( CollectibleType Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume )  {: aria-label='Functions' }
+#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume )  {: aria-label='Functions' }
 
 ___ 
 ### UseCard () {: aria-label='Functions' }
@@ -945,18 +946,18 @@ ___
 
 ___ 
 ### UsePill () {: aria-label='Functions' }
-#### void UsePill ( [PillEffect](../ItemConfig_PillEffect) PillEffect, PillColor PillColor )  {: aria-label='Functions' }
+#### void UsePill ( [PillEffect](../ItemConfig_PillEffect) PillEffect, [PillColor](../enums/PillColor) [PillColor](../enums/PillColor) )  {: aria-label='Functions' }
 
 ___ 
 ### WillPlayerRevive () {: aria-label='Functions' }
 #### boolean WillPlayerRevive ( )  {: aria-label='Functions' }
 
 ___ 
-## Variables
-### BabySkin {: aria-label='Variables' }
-#### BabySubType BabySkin  {: aria-label='Variables' }
+### BabySkin () {: aria-label='Functions' }
+#### [BabySubType](../enums/BabySubType) BabySkin  {: aria-label='Functions' }
 P2 Skin section Used to hold the selected skin (in case of glitched baby it will pick a random one) 
 ___ 
+## Variables
 ### CanFly {: aria-label='Variables' }
 #### boolean CanFly  {: aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Can the player fly over rocks and pits? 
@@ -975,7 +976,7 @@ ___
 ___ 
 ### Damage {: aria-label='Variables' }
 #### float Damage  {: aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Damage Stat.**  How much damage do the players tears or other main weapons do? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Damage Stat.** How much damage do the players tears or other main weapons do? 
 ___ 
 ### FireDelay {: aria-label='Variables' }
 #### int FireDelay  {: aria-label='Variables' }
@@ -999,15 +1000,15 @@ ___
 ___ 
 ### Luck {: aria-label='Variables' }
 #### float Luck  {: aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Luck Stat.**  Better luck generally means better random events. 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Luck Stat.** Better luck generally means better random events. 
 ___ 
 ### MaxFireDelay {: aria-label='Variables' }
 #### int MaxFireDelay  {: aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Tears Stat.**  How long between each tear can spawn? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Tears Stat.** How long between each tear can spawn? 
 ___ 
 ### MoveSpeed {: aria-label='Variables' }
 #### float MoveSpeed  {: aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Speed Stat.**  How fast can the player move? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Speed Stat.** How fast can the player move? 
 ___ 
 ### QueuedItem {: aria-label='Variables' }
 #### [QueueItemData](../QueueItemData) QueuedItem  {: aria-label='Variables' }
@@ -1019,7 +1020,7 @@ ___
 ___ 
 ### ShotSpeed {: aria-label='Variables' }
 #### float ShotSpeed  {: aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the ShotSpeed Stat.**  How fast does the tear travel when spawned? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the ShotSpeed Stat.** How fast does the tear travel when spawned? 
 ___ 
 ### SpriteScale {: aria-label='Variables' }
 #### [Vector](../Vector) SpriteScale  {: aria-label='Variables' }
@@ -1037,8 +1038,8 @@ ___
 #### float TearFallingSpeed  {: aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How fast is the tear moving up or down when it spawns? Affects range. 
 ___ 
-### TearFlags {: aria-label='Variables' }
-#### int TearFlags  {: aria-label='Variables' }
+### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+#### int [TearFlags](../enums/TearFlags)  {: aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various <a href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">tear flags</a>. 
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code makes Isaac's tears spectral. 
@@ -1050,11 +1051,11 @@ end
 mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### TearHeight {: aria-label='Variables' }
 #### float TearHeight  {: aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Range Stat * -1.**  How high above the ground is the tear when it spawns? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Range Stat * -1.** How high above the ground is the tear when it spawns? 
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code gives Isaac a +5 range up.
 ```cpp 

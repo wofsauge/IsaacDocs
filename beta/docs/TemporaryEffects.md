@@ -1,7 +1,7 @@
 # Class "TemporaryEffects"
 ## Functions
 ### AddCollectibleEffect () {: aria-label='Functions' }
-#### void AddCollectibleEffect ( CollectibleType CollectibleType, boolean AddCostume )  {: aria-label='Functions' }
+#### void AddCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType, boolean AddCostume )  {: aria-label='Functions' }
 
 ___ 
 ### AddNullEffect () {: aria-label='Functions' }
@@ -9,7 +9,7 @@ ___
 
 ___ 
 ### AddTrinketEffect () {: aria-label='Functions' }
-#### void AddTrinketEffect ( TrinketType TrinketType, boolean AddCostume )  {: aria-label='Functions' }
+#### void AddTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType, boolean AddCostume )  {: aria-label='Functions' }
 
 ___ 
 ### ClearEffects () {: aria-label='Functions' }
@@ -17,11 +17,11 @@ ___
 
 ___ 
 ### GetCollectibleEffect () {: aria-label='Functions' }
-####  [TemporaryEffect](../TemporaryEffect) GetCollectibleEffect ( CollectibleType CollectibleType)  {: aria-label='Functions' }
+####  [TemporaryEffect](../TemporaryEffect) GetCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType)  {: aria-label='Functions' }
 
 ___ 
 ### GetCollectibleEffectNum () {: aria-label='Functions' }
-#### int GetCollectibleEffectNum ( CollectibleType CollectibleType)  {: aria-label='Functions' }
+#### int GetCollectibleEffectNum ( [CollectibleType](../enums/CollectibleType) CollectibleType)  {: aria-label='Functions' }
 
 ___ 
 ### GetEffectsList () {: aria-label='Functions' }
@@ -37,15 +37,15 @@ ___
 
 ___ 
 ### GetTrinketEffect () {: aria-label='Functions' }
-####  [TemporaryEffect](../TemporaryEffect) GetTrinketEffect ( TrinketType TrinketType)  {: aria-label='Functions' }
+####  [TemporaryEffect](../TemporaryEffect) GetTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType)  {: aria-label='Functions' }
 
 ___ 
 ### GetTrinketEffectNum () {: aria-label='Functions' }
-#### int GetTrinketEffectNum ( TrinketType TrinketType)  {: aria-label='Functions' }
+#### int GetTrinketEffectNum ( [TrinketType](../enums/TrinketType) TrinketType)  {: aria-label='Functions' }
 
 ___ 
 ### HasCollectibleEffect () {: aria-label='Functions' }
-#### boolean HasCollectibleEffect ( CollectibleType CollectibleType)  {: aria-label='Functions' }
+#### boolean HasCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType)  {: aria-label='Functions' }
 
 ___ 
 ### HasNullEffect () {: aria-label='Functions' }
@@ -53,11 +53,11 @@ ___
 
 ___ 
 ### HasTrinketEffect () {: aria-label='Functions' }
-#### boolean HasTrinketEffect ( TrinketType TrinketType)  {: aria-label='Functions' }
+#### boolean HasTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType)  {: aria-label='Functions' }
 
 ___ 
 ### RemoveCollectibleEffect () {: aria-label='Functions' }
-#### void RemoveCollectibleEffect ( CollectibleType CollectibleType)  {: aria-label='Functions' }
+#### void RemoveCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType)  {: aria-label='Functions' }
 
 ___ 
 ### RemoveNullEffect () {: aria-label='Functions' }
@@ -65,6 +65,6 @@ ___
 
 ___ 
 ### RemoveTrinketEffect () {: aria-label='Functions' }
-#### void RemoveTrinketEffect ( TrinketType TrinketType)  {: aria-label='Functions' }
+#### void RemoveTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType)  {: aria-label='Functions' }
 
 ___ 

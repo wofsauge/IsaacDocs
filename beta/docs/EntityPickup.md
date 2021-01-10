@@ -17,7 +17,7 @@ ___
 
 ___ 
 ### Morph () {: aria-label='Functions' }
-#### void Morph ( EntityType Type, int Variant, int SubType, boolean KeepPrice )  {: aria-label='Functions' }
+#### void Morph ( [EntityType](../enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice )  {: aria-label='Functions' }
 
 ___ 
 ### PlayDropSound () {: aria-label='Functions' }

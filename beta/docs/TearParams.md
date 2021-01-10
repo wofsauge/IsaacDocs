@@ -1,20 +1,20 @@
 # Class "TearParams"
 ## Functions
+### [BombVariant](../enums/BombVariant) () {: aria-label='Functions' }
+#### int [BombVariant](../enums/BombVariant)  {: aria-label='Functions' }
+
+___ 
+### TearColor () {: aria-label='Functions' }
+#### [Color](../Color) TearColor  {: aria-label='Functions' }
+
+___ 
 ## Variables
-### BombVariant {: aria-label='Variables' }
-#### int BombVariant  {: aria-label='Variables' }
-
-___ 
-### TearColor {: aria-label='Variables' }
-#### [Color](../Color) TearColor  {: aria-label='Variables' }
-
-___ 
 ### TearDamage {: aria-label='Variables' }
 #### float TearDamage  {: aria-label='Variables' }
 
 ___ 
-### TearFlags {: aria-label='Variables' }
-#### int TearFlags  {: aria-label='Variables' }
+### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+#### int [TearFlags](../enums/TearFlags)  {: aria-label='Variables' }
 
 ___ 
 ### TearHeight {: aria-label='Variables' }
@@ -25,7 +25,7 @@ ___
 #### float TearScale  {: aria-label='Variables' }
 
 ___ 
-### TearVariant {: aria-label='Variables' }
-#### int TearVariant  {: aria-label='Variables' }
+### [TearVariant](../enums/TearVariant) {: aria-label='Variables' }
+#### int [TearVariant](../enums/TearVariant)  {: aria-label='Variables' }
 
 ___ 

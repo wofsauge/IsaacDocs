@@ -90,6 +90,6 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-#### ItemType Type  {: aria-label='Variables' }
+#### [ItemType](../enums/ItemType) Type  {: aria-label='Variables' }
 mostly for Lua so it will not make a copy 
 ___ 

@@ -1,11 +1,11 @@
 # Class "Seeds"
 ## Functions
 ### AddSeedEffect () {: aria-label='Functions' }
-#### void AddSeedEffect ( SeedEffect Value)  {: aria-label='Functions' }
+#### void AddSeedEffect ( [SeedEffect](../enums/SeedEffect) Value)  {: aria-label='Functions' }
 
 ___ 
 ### CanAddSeedEffect () {: aria-label='Functions' }
-#### boolean CanAddSeedEffect ( SeedEffect Value)  {: aria-label='Functions' }
+#### boolean CanAddSeedEffect ( [SeedEffect](../enums/SeedEffect) Value)  {: aria-label='Functions' }
 
 ___ 
 ### ClearSeedEffects () {: aria-label='Functions' }
@@ -25,7 +25,7 @@ ___
 
 ___ 
 ### ForgetStageSeed () {: aria-label='Functions' }
-#### void ForgetStageSeed ( LevelStage Stage)  {: aria-label='Functions' }
+#### void ForgetStageSeed ( [LevelStage](../enums/LevelStage) Stage)  {: aria-label='Functions' }
 
 ___ 
 ### GetNextSeed () {: aria-label='Functions' }
@@ -37,11 +37,11 @@ ___
 
 ___ 
 ### GetSeedEffect () {: aria-label='Functions' }
-#### static SeedEffect GetSeedEffect ( string str)  {: aria-label='Functions' }
+#### static [SeedEffect](../enums/SeedEffect) GetSeedEffect ( string str)  {: aria-label='Functions' }
 
 ___ 
 ### GetStageSeed () {: aria-label='Functions' }
-#### int GetStageSeed ( LevelStage Stage)  {: aria-label='Functions' }
+#### int GetStageSeed ( [LevelStage](../enums/LevelStage) Stage)  {: aria-label='Functions' }
 
 ___ 
 ### GetStartSeed () {: aria-label='Functions' }
@@ -53,7 +53,7 @@ ___
 
 ___ 
 ### HasSeedEffect () {: aria-label='Functions' }
-#### boolean HasSeedEffect ( SeedEffect Value)  {: aria-label='Functions' }
+#### boolean HasSeedEffect ( [SeedEffect](../enums/SeedEffect) Value)  {: aria-label='Functions' }
 
 ___ 
 ### InitSeedInfo () {: aria-label='Functions' }
@@ -69,7 +69,7 @@ ___
 
 ___ 
 ### IsSeedComboBanned () {: aria-label='Functions' }
-#### boolean IsSeedComboBanned ( SeedEffect Seed1, SeedEffect Seed2 )  {: aria-label='Functions' }
+#### boolean IsSeedComboBanned ( [SeedEffect](../enums/SeedEffect) Seed1, [SeedEffect](../enums/SeedEffect) Seed2 )  {: aria-label='Functions' }
 
 ___ 
 ### IsSpecialSeed () {: aria-label='Functions' }
@@ -81,11 +81,11 @@ ___
 
 ___ 
 ### RemoveBlockingSeedEffects () {: aria-label='Functions' }
-#### void RemoveBlockingSeedEffects ( SeedEffect Value)  {: aria-label='Functions' }
+#### void RemoveBlockingSeedEffects ( [SeedEffect](../enums/SeedEffect) Value)  {: aria-label='Functions' }
 Removes seeds that are banned in conjunction with the given seed. 
 ___ 
 ### RemoveSeedEffect () {: aria-label='Functions' }
-#### void RemoveSeedEffect ( SeedEffect Value)  {: aria-label='Functions' }
+#### void RemoveSeedEffect ( [SeedEffect](../enums/SeedEffect) Value)  {: aria-label='Functions' }
 
 ___ 
 ### Reset () {: aria-label='Functions' }
@@ -93,7 +93,7 @@ ___
 Removes all seed effects, only goes into effect when the run is restarted
 ___ 
 ### Restart () {: aria-label='Functions' }
-#### void Restart ( Challenge CurrentChallenge)  {: aria-label='Functions' }
+#### void Restart ( [Challenge](../enums/Challenge) CurrentChallenge)  {: aria-label='Functions' }
 Re-selects a random start seed but only if the start seed was not custom. 
 ___ 
 ### Seed2String () {: aria-label='Functions' }

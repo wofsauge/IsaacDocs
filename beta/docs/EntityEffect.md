@@ -9,7 +9,7 @@ ___
 
 ___ 
 ### SetDamageSource () {: aria-label='Functions' }
-#### void SetDamageSource ( EntityType DamageSource)  {: aria-label='Functions' }
+#### void SetDamageSource ( [EntityType](../enums/EntityType) DamageSource)  {: aria-label='Functions' }
 
 ___ 
 ### SetRadii () {: aria-label='Functions' }
@@ -24,7 +24,6 @@ ___
 ### DamageSource {: aria-label='Variables' }
 #### int DamageSource  {: aria-label='Variables' }
 
-<!-- Removed false description -->
 ___ 
 ### FallingAcceleration {: aria-label='Variables' }
 #### float FallingAcceleration  {: aria-label='Variables' }

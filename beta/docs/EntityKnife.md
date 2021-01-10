@@ -61,7 +61,7 @@ ___
 #### float Scale  {: aria-label='Variables' }
 
 ___ 
-### TearFlags {: aria-label='Variables' }
-#### int TearFlags  {: aria-label='Variables' }
+### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+#### int [TearFlags](../enums/TearFlags)  {: aria-label='Variables' }
 
 ___ 

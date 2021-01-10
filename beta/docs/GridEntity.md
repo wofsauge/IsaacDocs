@@ -13,7 +13,7 @@ ___
 
 ___ 
 ### GetType () {: aria-label='Functions' }
-#### GridEntityType GetType ( )  {: aria-label='Functions' }
+#### [GridEntityType](../enums/GridEntityType) GetType ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetVariant () {: aria-label='Functions' }
@@ -37,7 +37,7 @@ ___
 
 ___ 
 ### SetType () {: aria-label='Functions' }
-#### void SetType ( GridEntityType Type)  {: aria-label='Functions' }
+#### void SetType ( [GridEntityType](../enums/GridEntityType) Type)  {: aria-label='Functions' }
 
 ___ 
 ### SetVariant () {: aria-label='Functions' }

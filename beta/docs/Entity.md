@@ -18,7 +18,8 @@ ___
 ### AddCharmed () {: aria-label='Functions' }
 #### void AddCharmed ( int Duration)  {: aria-label='Functions' }
 
-Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. <br/>`:::cpp AddCharmed(-1)` makes the effect permanent and the enemy will follow you even to different rooms.
+Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. 
+`:::cpp AddCharmed(-1)` makes the effect permanent and the enemy will follow you even to different rooms.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code charms every entity in the room for 1 second.
 ```cpp 
@@ -57,14 +58,13 @@ for i, entity in ipairs(Isaac.GetRoomEntities()) do
 end
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### AddFear () {: aria-label='Functions' }
 #### void AddFear ( [EntityRef](../EntityRef) Source, int Duration )  {: aria-label='Functions' }
 
 Adds a fear-effect to an entity.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-<h3>Examplecode:</h3>
 This code frightens every entity in the room for 1 second.
 ```cpp 
 local player =Isaac.GetPlayer(0) 
@@ -80,7 +80,6 @@ ___
 
 Freezes an entity, making it unable to move and attack.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-<h3>Examplecode:</h3>
 This code freezes every entity in the room for half a second.
 ```cpp 
 local player =Isaac.GetPlayer(0) 
@@ -129,7 +128,7 @@ ___
 ### ClearEntityFlags () {: aria-label='Functions' }
 #### void ClearEntityFlags ( int Flags)  {: aria-label='Functions' }
 
-Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a>  from the entity.
+Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> from the entity. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### CollidesWithGrid () {: aria-label='Functions' }
 #### boolean CollidesWithGrid ( )  {: aria-label='Functions' }
@@ -168,7 +167,7 @@ This code adds custom data to an entity or prints it in the console if it exists
 if type(entity:GetData()["MyValue"]) == type(nil) then -- checks, if the Data does exist already
 entity:GetData()["MyValue"] = "Cool" -- assign a value to the data
 else 
-print(entity:GetData()["MyValue"])  -- this will print "Cool" in the console
+print(entity:GetData()["MyValue"]) -- this will print "Cool" in the console
 end
 ```
 
@@ -189,7 +188,7 @@ if entity:GetEntityFlags() &amp; EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CO
 print("This entity is confused!")
 end
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetLastChild () {: aria-label='Functions' }
 #### [Entity](../Entity) GetLastChild ( )  {: aria-label='Functions' }
@@ -221,7 +220,7 @@ if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
 print("This entity is confused!")
 end
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### HasFullHealth () {: aria-label='Functions' }
 #### boolean HasFullHealth ( )  {: aria-label='Functions' }
@@ -406,8 +405,8 @@ ___
 
 Get/set the Seed of the Drop RNG.
 ___ 
-### EntityCollisionClass {: aria-label='Variables' }
-#### EntityCollisionClass EntityCollisionClass  {: aria-label='Variables' }
+### [EntityCollisionClass](../enums/EntityCollisionClass) {: aria-label='Variables' }
+#### [EntityCollisionClass](../enums/EntityCollisionClass) [EntityCollisionClass](../enums/EntityCollisionClass)  {: aria-label='Variables' }
 
 ___ 
 ### FlipX {: aria-label='Variables' }
@@ -422,8 +421,8 @@ ___
 #### float Friction  {: aria-label='Variables' }
 loaded from entity config 
 ___ 
-### GridCollisionClass {: aria-label='Variables' }
-#### GridCollisionClass GridCollisionClass  {: aria-label='Variables' }
+### [GridCollisionClass](../enums/GridCollisionClass) {: aria-label='Variables' }
+#### [GridCollisionClass](../enums/GridCollisionClass) [GridCollisionClass](../enums/GridCollisionClass)  {: aria-label='Variables' }
 
 ___ 
 ### HitPoints {: aria-label='Variables' }
@@ -475,7 +474,7 @@ ___
 
 ___ 
 ### SpawnerType {: aria-label='Variables' }
-#### EntityType SpawnerType  {: aria-label='Variables' }
+#### [EntityType](../enums/EntityType) SpawnerType  {: aria-label='Variables' }
 
 ___ 
 ### SpawnerVariant {: aria-label='Variables' }
@@ -515,13 +514,12 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-####  EntityType Type  {: aria-label='Variables' }
+####  [EntityType](../enums/EntityType) Type  {: aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }
 #### int Variant  {: aria-label='Variables' }
 
-<!-- Removed false description -->
 ___ 
 ### Velocity {: aria-label='Variables' }
 #### [Vector](../Vector) Velocity  {: aria-label='Variables' }

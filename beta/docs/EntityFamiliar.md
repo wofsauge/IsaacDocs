@@ -46,6 +46,8 @@ ___
 ### GetOrbitPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) GetOrbitPosition ( [Vector](../Vector) Pos)  {: aria-label='Functions' }
 
+Returns the position of an orbiting familiar relative to the player's position. Returns `:::cpp Vector(0,0) if its a normal familiar.`
+The "pos" argument is used as an offset.
 ___ 
 ### MoveDelayed () {: aria-label='Functions' }
 #### void MoveDelayed ( int NumFrames)  {: aria-label='Functions' }
@@ -60,15 +62,15 @@ ___
 
 ___ 
 ### PlayChargeAnim () {: aria-label='Functions' }
-#### void PlayChargeAnim ( Direction Dir)  {: aria-label='Functions' }
+#### void PlayChargeAnim ( [Direction](../enums/Direction) Dir)  {: aria-label='Functions' }
 
 ___ 
 ### PlayFloatAnim () {: aria-label='Functions' }
-#### void PlayFloatAnim ( Direction Dir)  {: aria-label='Functions' }
+#### void PlayFloatAnim ( [Direction](../enums/Direction) Dir)  {: aria-label='Functions' }
 
 ___ 
 ### PlayShootAnim () {: aria-label='Functions' }
-#### void PlayShootAnim ( Direction Dir)  {: aria-label='Functions' }
+#### void PlayShootAnim ( [Direction](../enums/Direction) Dir)  {: aria-label='Functions' }
 
 ___ 
 ### RecalculateOrbitOffset () {: aria-label='Functions' }
@@ -90,6 +92,8 @@ ___
 ### Shoot () {: aria-label='Functions' }
 #### void Shoot ( )  {: aria-label='Functions' }
 
+##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
+This function does not seem to work.
 ___ 
 ## Variables
 ### Coins {: aria-label='Variables' }
@@ -113,17 +117,29 @@ ___
 
 ___ 
 ### LastDirection {: aria-label='Variables' }
-#### Direction LastDirection  {: aria-label='Variables' }
+#### [Direction](../enums/Direction) LastDirection  {: aria-label='Variables' }
 
 ___ 
 ### MoveDirection {: aria-label='Variables' }
-#### Direction MoveDirection  {: aria-label='Variables' }
+#### [Direction](../enums/Direction) MoveDirection  {: aria-label='Variables' }
 
 ___ 
 ### OrbitAngleOffset {: aria-label='Variables' }
 #### float OrbitAngleOffset  {: aria-label='Variables' }
 
 Can be used to override the angular position of the familiar on its orbit based on the initial starting position of the orbit.
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code will make all of your orbitals move as a tight wall around you.
+```cpp 
+for i,v in ipairs(Isaac.GetRoomEntities()) do 
+if v.Type==3 then 
+v:ToFamiliar().OrbitAngleOffset = 0.25*i 
+end 
+end
+
+```
+Result: <a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"/></a>
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### OrbitDistance {: aria-label='Variables' }
 #### [Vector](../Vector) OrbitDistance  {: aria-label='Variables' }
@@ -139,7 +155,7 @@ ___
 
 ___ 
 ### ShootDirection {: aria-label='Variables' }
-#### Direction ShootDirection  {: aria-label='Variables' }
+#### [Direction](../enums/Direction) ShootDirection  {: aria-label='Variables' }
 
 ___ 
 ### State {: aria-label='Variables' }

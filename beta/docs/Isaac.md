@@ -59,7 +59,7 @@ ___
 ### ExecuteCommand () {: aria-label='Functions' }
 #### string ExecuteCommand ( string command)  {: aria-label='Functions' }
 
-This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands.
+This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### Explode () {: aria-label='Functions' }
 #### void Explode ( [Vector](../Vector) pos, [Entity](../Entity) source, float damage )  {: aria-label='Functions' }
@@ -74,7 +74,7 @@ ___
 #### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions )  {: aria-label='Functions' }
 Returns entities in range of Radius from Position filtered by Partitions mask (see <a href="group__enums.html#gaea2d06861d0d38120ea425aa76d2f398">EntityPartition enum</a>) (include all = 0xffffffff) 
 
-This function does not return the entities sorted by nearest first, but based on the order they were loaded.
+This function does not return the entities sorted by nearest first, but based on the order they were loaded. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetCardIdByName () {: aria-label='Functions' }
 #### int GetCardIdByName ( string cardHudName)  {: aria-label='Functions' }
@@ -169,7 +169,7 @@ ___
 
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
-This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207">`:::cpp Game():GetFrameCount()`</a>
+This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207">`:::cpp Game():GetFrameCount()`</a> WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetFreeNearPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) GetFreeNearPosition ( [Vector](../Vector) pos, float step )  {: aria-label='Functions' }
@@ -177,7 +177,7 @@ ___
 ___ 
 ### GetItemConfig () {: aria-label='Functions' }
 #### [Config](../ItemConfig_Config) GetItemConfig ( )  {: aria-label='Functions' }
-Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object.
+Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetItemIdByName () {: aria-label='Functions' }
 #### int GetItemIdByName ( string itemName)  {: aria-label='Functions' }
@@ -291,7 +291,7 @@ ___
 
 Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given position (world coordinates).
 ##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again.
+forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### HasModData () {: aria-label='Functions' }
 #### boolean HasModData ( table ref)  {: aria-label='Functions' }
@@ -301,11 +301,35 @@ ___
 ### LoadModData () {: aria-label='Functions' }
 #### string LoadModData ( table ref)  {: aria-label='Functions' }
 
+Returns a JSON array/table that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
+There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code loads data stored in the "saveX.dat" file, if it exists.
+```cpp 
+local yourMod = RegisterMod("someMod", 1)
+local json = require("json")
+-- ...
+function yourMod:OnGameStart(isSave)
+	--Loading Moddata--
+	if yourMod:HasData() then
+		local myTable = json.decode(Isaac.LoadModData(yourMod))
+	end
+end
+yourMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, yourMod.OnGameStart)
+
+```
+
 ___ 
 ### RegisterMod () {: aria-label='Functions' }
 #### void RegisterMod ( table ref, string modName, int apiVersion )  {: aria-label='Functions' }
 
 Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+```cpp 
+local yourMod = RegisterMod("someMod", 1)
+
+```
+
 ___ 
 ### RemoveCallback () {: aria-label='Functions' }
 #### void RemoveCallback ( table ref, int callbackId, table callbackFn )  {: aria-label='Functions' }
@@ -321,17 +345,50 @@ ___
 #### void RenderScaledText ( string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )  {: aria-label='Functions' }
 
 Renders a scaled text on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). ScaleX, ScaleY, R ,G ,B and A need to be between [0,1]. Some scale values can cause the font to display deformed and pixelated.
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code renders the player position on the screen.
+```cpp 
+local player = Isaac.GetPlayer(0)
+local pos = player.Position
+Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 0.5, 0.5, 1 ,1 ,1 ,1 )
+
+```
+
 ___ 
 ### RenderText () {: aria-label='Functions' }
 #### void RenderText ( string str, float X, float Y, float R, float G, float B, float A )  {: aria-label='Functions' }
 
 Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1]. 
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code renders the player position on the screen.
+```cpp 
+local player = Isaac.GetPlayer(0)
+local pos = player.Position
+Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 1 ,1 ,1 ,1 )
+
+```
+
 ___ 
 ### SaveModData () {: aria-label='Functions' }
 #### void SaveModData ( table ref, string data )  {: aria-label='Functions' }
 
 Stores a JSON array/table in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code saves a table in the "saveX.dat" file.
+```cpp 
+local yourMod = RegisterMod("someMod", 1)
+local json = require("json")
+-- ...
+--Saving Moddata--
+function yourMod:SaveGame()
+local table= {1,2,3}
+yourMod.SaveData(yourMod, json.encode(table))
+end
+yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
+
+```
+
 ___ 
 ### ScreenToWorld () {: aria-label='Functions' }
 #### [Vector](../Vector) ScreenToWorld ( [Vector](../Vector) pos)  {: aria-label='Functions' }
@@ -347,6 +404,13 @@ ___
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
 There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a> and <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code spawns a random collectible at in center of the current room.
+```cpp 
+Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
+
+```
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### WorldToRenderPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) WorldToRenderPosition ( [Vector](../Vector) pos)  {: aria-label='Functions' }
@@ -357,6 +421,15 @@ ___
 #### [Vector](../Vector) WorldToScreen ( [Vector](../Vector) pos)  {: aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. This can be used to render things next to an entity. The Screen coordinate system is x[0,inf) y[0,inf). Normally, it goes till ~500x ~300y. The return vector contains integer values or numbers ending with .5
+##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
+This code render "test" at the position of the player. The text will move with isaac.
+```cpp 
+local player = Isaac.GetPlayer(0)
+local screenpos = Isaac.WorldToScreen(player.Position)	
+Isaac.RenderText("test", screenpos.X, screenpos.Y, 1 ,1 ,1 ,1 )
+
+```
+
 ___ 
 ### WorldToScreenDistance () {: aria-label='Functions' }
 #### [Vector](../Vector) WorldToScreenDistance ( [Vector](../Vector) pos)  {: aria-label='Functions' }

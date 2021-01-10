@@ -7,7 +7,7 @@ Returns the current strength in which a button was pressed. This is 0 OR 1 with 
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code prints the current "strength" in which the analog stick was moved to the left.
 ```cpp 
-print(Input.GetActionValue(ButtonAction.ACTION_LEFT, 1))   
+print(Input.GetActionValue(ButtonAction.ACTION_LEFT, 1))  
 
 ```
 
@@ -38,12 +38,12 @@ Returns, if an action-button is pressed or not. An Action-button is any button t
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
 ```cpp 
-if Input.IsActionPressed(ButtonAction.ACTION_BOMB, 0)  then
-print("bomb Button pressed")   
+if Input.IsActionPressed(ButtonAction.ACTION_BOMB, 0) then
+print("bomb Button pressed")  
 end
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### IsActionTriggered () {: aria-label='Functions' }
 #### boolean IsActionTriggered ( int action, int controllerId )  {: aria-label='Functions' }
@@ -53,12 +53,12 @@ Returns, if an action-button was pressed some time before or not. An Action-butt
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
 ```cpp 
-if Input.IsActionTriggered(ButtonAction.ACTION_BOMB, 0)  then
-print("bomb Button pressed")   
+if Input.IsActionTriggered(ButtonAction.ACTION_BOMB, 0) then
+print("bomb Button pressed")  
 end
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### IsButtonPressed () {: aria-label='Functions' }
 #### boolean IsButtonPressed ( int button, int controllerId )  {: aria-label='Functions' }
@@ -68,12 +68,12 @@ Returns, if a button is pressed or not. This function will return true, as long 
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
 ```cpp 
-if Input.IsButtonPressed(Keyboard.KEY_ENTER, 0)  then
-print("Enter Button pressed.")   
+if Input.IsButtonPressed(Keyboard.KEY_ENTER, 0) then
+print("Enter Button pressed.")  
 end
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### IsButtonTriggered () {: aria-label='Functions' }
 #### boolean IsButtonTriggered ( int button, int controllerId )  {: aria-label='Functions' }
@@ -83,12 +83,12 @@ Returns, if a button was pressed some time before or not. This functions will on
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
 ```cpp 
-if Input.IsButtonTriggered(Keyboard.KEY_ENTER, 0)  then
-print("Enter Button was pressed.")   
+if Input.IsButtonTriggered(Keyboard.KEY_ENTER, 0) then
+print("Enter Button was pressed.")  
 end
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### IsMouseBtnPressed () {: aria-label='Functions' }
 #### boolean IsMouseBtnPressed ( int button)  {: aria-label='Functions' }
@@ -98,8 +98,8 @@ Left: 0, Right: 1, mousewheel: 2, back button: 3, forward button: 4
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code prints "Right Click", when the "right"-mousebutton was pressed.
 ```cpp 
-if Input.IsMouseBtnPressed(1)  then
-print("Right Click")   
+if Input.IsMouseBtnPressed(1) then
+print("Right Click")  
 end
 
 ```

@@ -12,7 +12,7 @@ LinecheckModes:
 ___ 
 ### DamageGrid () {: aria-label='Functions' }
 #### boolean DamageGrid ( int Index, int Damage )  {: aria-label='Functions' }
-Damage Grid Entities currently this concerns <a class="el" href="class_grid_entity_poop.html">GridEntityPoop</a> and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc 
+Damage Grid Entities currently this concerns <a class="el" href="class_grid_entity_poop.html">GridEntityPoop</a> and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc  WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### DestroyGrid () {: aria-label='Functions' }
 #### boolean DestroyGrid ( int Index, boolean Immediate )  {: aria-label='Functions' }
@@ -192,11 +192,11 @@ ___
 
 ___ 
 ### GetDoor () {: aria-label='Functions' }
-#### [GridEntityDoor](../GridEntityDoor) GetDoor ( DoorSlot Slot)  {: aria-label='Functions' }
+#### [GridEntityDoor](../GridEntityDoor) GetDoor ( [DoorSlot](../enums/DoorSlot) Slot)  {: aria-label='Functions' }
 
 ___ 
 ### GetDoorSlotPosition () {: aria-label='Functions' }
-#### [Vector](../Vector) GetDoorSlotPosition ( DoorSlot Slot)  {: aria-label='Functions' }
+#### [Vector](../Vector) GetDoorSlotPosition ( [DoorSlot](../enums/DoorSlot) Slot)  {: aria-label='Functions' }
 
 ___ 
 ### GetDungeonRockIdx () {: aria-label='Functions' }
@@ -212,24 +212,24 @@ ___
 
 ___ 
 ### GetGridCollision () {: aria-label='Functions' }
-#### GridCollisionClass GetGridCollision ( int GridIndex)  {: aria-label='Functions' }
+#### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollision ( int GridIndex)  {: aria-label='Functions' }
 
-Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this grid index.
+Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this grid index. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetGridCollisionAtPos () {: aria-label='Functions' }
-#### GridCollisionClass GetGridCollisionAtPos ( [Vector](../Vector) Pos)  {: aria-label='Functions' }
+#### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollisionAtPos ( [Vector](../Vector) Pos)  {: aria-label='Functions' }
 
-Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this position in the room.
+Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this position in the room. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetGridEntity () {: aria-label='Functions' }
 #### [GridEntity](../GridEntity) GetGridEntity ( int Index)  {: aria-label='Functions' }
 
-Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this grid index.
+Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this grid index. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetGridEntityFromPos () {: aria-label='Functions' }
 #### [GridEntity](../GridEntity) GetGridEntityFromPos ( [Vector](../Vector) Position)  {: aria-label='Functions' }
 
-Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this position in the room.
+Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this position in the room. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetGridHeight () {: aria-label='Functions' }
 #### int GetGridHeight ( )  {: aria-label='Functions' }
@@ -304,7 +304,7 @@ ___
 returns the original stage the room was designed for (useful for The Void) 
 ___ 
 ### GetRoomShape () {: aria-label='Functions' }
-#### RoomShape GetRoomShape ( )  {: aria-label='Functions' }
+#### [RoomShape](../enums/RoomShape) GetRoomShape ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetSecondBossID () {: aria-label='Functions' }
@@ -312,7 +312,7 @@ ___
 
 ___ 
 ### GetSeededCollectible () {: aria-label='Functions' }
-#### CollectibleType GetSeededCollectible ( int Seed)  {: aria-label='Functions' }
+#### [CollectibleType](../enums/CollectibleType) GetSeededCollectible ( int Seed)  {: aria-label='Functions' }
 
 ___ 
 ### GetShopLevel () {: aria-label='Functions' }
@@ -332,7 +332,7 @@ ___
 returns top left position inside of walls 
 ___ 
 ### GetType () {: aria-label='Functions' }
-#### RoomType GetType ( )  {: aria-label='Functions' }
+#### [RoomType](../enums/RoomType) GetType ( )  {: aria-label='Functions' }
 
 ___ 
 ### HasSlowDown () {: aria-label='Functions' }
@@ -368,7 +368,7 @@ ___
 
 ___ 
 ### IsDoorSlotAllowed () {: aria-label='Functions' }
-#### boolean IsDoorSlotAllowed ( DoorSlot Slot)  {: aria-label='Functions' }
+#### boolean IsDoorSlotAllowed ( [DoorSlot](../enums/DoorSlot) Slot)  {: aria-label='Functions' }
 Returns whether this room design may have a door at a given position, disregarding whether those doors exist. 
 ___ 
 ### IsFirstEnemyDead () {: aria-label='Functions' }
@@ -377,7 +377,7 @@ ___
 ___ 
 ### IsFirstVisit () {: aria-label='Functions' }
 #### boolean IsFirstVisit ( )  {: aria-label='Functions' }
-Broken Watch <a class="el" href="class_room.html">Room</a> State - 0 = no watch effect, 1 = speed down, 2 = speed up. 
+Broken Watch <a class="el" href="class_room.html">Room</a> State - 0 = no watch effect, 1 = speed down, 2 = speed up.  WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### IsInitialized () {: aria-label='Functions' }
 #### boolean IsInitialized ( )  {: aria-label='Functions' }
@@ -408,7 +408,7 @@ ___
 
 ___ 
 ### RemoveDoor () {: aria-label='Functions' }
-#### void RemoveDoor ( DoorSlot Slot)  {: aria-label='Functions' }
+#### void RemoveDoor ( [DoorSlot](../enums/DoorSlot) Slot)  {: aria-label='Functions' }
 
 ___ 
 ### RemoveGridEntity () {: aria-label='Functions' }
@@ -509,7 +509,7 @@ ___
 
 ___ 
 ### SpawnGridEntity () {: aria-label='Functions' }
-#### boolean SpawnGridEntity ( int GridIndex, GridEntityType Type, int Variant, int Seed, int VarData )  {: aria-label='Functions' }
+#### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](../enums/GridEntityType) Type, int Variant, int Seed, int VarData )  {: aria-label='Functions' }
 
 ___ 
 ### TryMakeBridge () {: aria-label='Functions' }

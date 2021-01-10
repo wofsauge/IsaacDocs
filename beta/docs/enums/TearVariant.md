@@ -1,0 +1,42 @@
+# Enum "TearVariant"
+|Enumerator|comment|id|
+|:--:|:--:|:--:|
+| BLUE |  | 0 |
+| BLOOD |  | 1 |
+| TOOTH |  | 2 |
+| METALLIC |  | 3 |
+| BOBS_HEAD |  | 4 |
+| FIRE_MIND |  | 5 |
+| DARK_MATTER |  | 6 |
+| MYSTERIOUS |  | 7 |
+| SCHYTHE |  | 8 |
+| CHAOS_CARD |  | 9 |
+| LOST_CONTACT |  | 10 |
+| CUPID_BLUE |  | 11 |
+| CUPID_BLOOD |  | 12 |
+| NAIL |  | 13 |
+| PUPULA |  | 14 |
+| PUPULA_BLOOD |  | 15 |
+| GODS_FLESH |  | 16 |
+| GODS_FLESH_BLOOD |  | 17 |
+| DIAMOND |  | 18 |
+| EXPLOSIVO |  | 19 |
+| COIN |  | 20 |
+| MULTIDIMENSIONAL |  | 21 |
+| STONE |  | 22 |
+| NAIL_BLOOD |  | 23 |
+| GLAUCOMA |  | 24 |
+| GLAUCOMA_BLOOD |  | 25 |
+| BOOGER |  | 26 |
+| EGG |  | 27 |
+| RAZOR |  | 28 |
+| BONE |  | 29 |
+| BLACK_TOOTH |  | 30 |
+| NEEDLE |  | 31 |
+| BELIAL |  | 32 |
+| EYE |  | 33 |
+| EYE_BLOOD |  | 34 |
+| BALLOON |  | 35 |
+| HUNGRY |  | 36 |
+| BALLOON_BRIMSTONE |  | 37 |
+| BALLOON_BOMB |  | 38 |

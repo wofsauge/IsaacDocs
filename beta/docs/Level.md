@@ -5,7 +5,7 @@
 
 ___ 
 ### AddCurse () {: aria-label='Functions' }
-#### void AddCurse ( LevelCurse Curse, boolean ShowName )  {: aria-label='Functions' }
+#### void AddCurse ( [LevelCurse](../enums/LevelCurse) Curse, boolean ShowName )  {: aria-label='Functions' }
 
 ___ 
 ### ApplyBlueMapEffect () {: aria-label='Functions' }
@@ -29,7 +29,7 @@ ___
 
 ___ 
 ### CanStageHaveCurseOfLabyrinth () {: aria-label='Functions' }
-#### boolean CanStageHaveCurseOfLabyrinth ( LevelStage Stage)  {: aria-label='Functions' }
+#### boolean CanStageHaveCurseOfLabyrinth ( [LevelStage](../enums/LevelStage) Stage)  {: aria-label='Functions' }
 
 ___ 
 ### ChangeRoom () {: aria-label='Functions' }
@@ -45,7 +45,7 @@ ___
 return true on success 
 ___ 
 ### GetAbsoluteStage () {: aria-label='Functions' }
-#### LevelStage GetAbsoluteStage ( )  {: aria-label='Functions' }
+#### [LevelStage](../enums/LevelStage) GetAbsoluteStage ( )  {: aria-label='Functions' }
 Returns the absolute stage, if its greed mode its converted to equivalent one. 
 ___ 
 ### GetAngelRoomChance () {: aria-label='Functions' }
@@ -103,7 +103,7 @@ ___
 
 ___ 
 ### GetName () {: aria-label='Functions' }
-#### string GetName ( LevelStage Stage, StageType Type, int Curses, int InfiniteLevel, boolean Dyslexia )  {: aria-label='Functions' }
+#### string GetName ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) Type, int Curses, int InfiniteLevel, boolean Dyslexia )  {: aria-label='Functions' }
 
 ___ 
 ### GetNonCompleteRoomIndex () {: aria-label='Functions' }
@@ -131,11 +131,11 @@ ___
 
 ___ 
 ### GetStage () {: aria-label='Functions' }
-#### LevelStage GetStage ( )  {: aria-label='Functions' }
+#### [LevelStage](../enums/LevelStage) GetStage ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetStageType () {: aria-label='Functions' }
-#### StageType GetStageType ( )  {: aria-label='Functions' }
+#### [StageType](../enums/StageType) GetStageType ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetStartingRoomIndex () {: aria-label='Functions' }
@@ -167,7 +167,7 @@ ___
 
 ___ 
 ### QueryRoomTypeIndex () {: aria-label='Functions' }
-#### int QueryRoomTypeIndex ( RoomType RoomType, boolean Visited, [RNG](../RNG) rng )  {: aria-label='Functions' }
+#### int QueryRoomTypeIndex ( [RoomType](../enums/RoomType) RoomType, boolean Visited, [RNG](../RNG) rng )  {: aria-label='Functions' }
 
 ___ 
 ### RemoveCompassEffect () {: aria-label='Functions' }
@@ -175,7 +175,7 @@ ___
 
 ___ 
 ### RemoveCurse () {: aria-label='Functions' }
-#### void RemoveCurse ( LevelCurse Curse)  {: aria-label='Functions' }
+#### void RemoveCurse ( [LevelCurse](../enums/LevelCurse) Curse)  {: aria-label='Functions' }
 
 ___ 
 ### RemoveCurses () {: aria-label='Functions' }
@@ -200,7 +200,7 @@ ___
 
 ___ 
 ### SetStage () {: aria-label='Functions' }
-#### void SetStage ( LevelStage Stage, StageType StageType )  {: aria-label='Functions' }
+#### void SetStage ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) [StageType](../enums/StageType) )  {: aria-label='Functions' }
 for SetStage/SetNextStage to have effect, call Init afterward 
 ___ 
 ### SetStateFlag () {: aria-label='Functions' }
@@ -216,7 +216,7 @@ ___
 
 ___ 
 ### UncoverHiddenDoor () {: aria-label='Functions' }
-#### void UncoverHiddenDoor ( int CurrentRoomIdx, DoorSlot Slot )  {: aria-label='Functions' }
+#### void UncoverHiddenDoor ( int CurrentRoomIdx, [DoorSlot](../enums/DoorSlot) Slot )  {: aria-label='Functions' }
 Uncovers the door on both sides by modifying the saved grid entities for neighboring room. 
 ___ 
 ### Update () {: aria-label='Functions' }
@@ -227,7 +227,7 @@ ___
 #### void UpdateVisibility ( )  {: aria-label='Functions' }
 
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call  UpdateVisibility() afterwards to apply any changes.
+Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call UpdateVisibility() afterwards to apply any changes.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code 
 ```cpp 
@@ -261,7 +261,7 @@ ___
 ### EnterDoor {: aria-label='Variables' }
 #### int EnterDoor  {: aria-label='Variables' }
 
-    This value defines on which doorslot you entered the room.
+  This value defines on which doorslot you entered the room.
 ##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
 Changing this value has no impact on anything. the EnterDoor value is always determined by the LeaveDoor Value and the game itself.
 ___ 
@@ -272,7 +272,7 @@ ___
 ### LeaveDoor {: aria-label='Variables' }
 #### int LeaveDoor  {: aria-label='Variables' }
 
-    This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
+  This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
 if level.LeaveDoor is set to anything other than -1, the function will transition based on the room you are currently in.
 ___ 

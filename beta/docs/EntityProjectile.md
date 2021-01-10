@@ -3,7 +3,7 @@
 ### AddChangeFlags () {: aria-label='Functions' }
 #### void AddChangeFlags ( int Flags)  {: aria-label='Functions' }
 
-See <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a>.
+See <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a>. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### AddFallingAccel () {: aria-label='Functions' }
 #### void AddFallingAccel ( float Value)  {: aria-label='Functions' }
@@ -20,7 +20,7 @@ ___
 ### AddProjectileFlags () {: aria-label='Functions' }
 #### void AddProjectileFlags ( int Flags)  {: aria-label='Functions' }
 
-Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes.
+Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### AddScale () {: aria-label='Functions' }
 #### void AddScale ( float Value)  {: aria-label='Functions' }
@@ -36,33 +36,39 @@ ___
 
 Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes after the "Changed" state was activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
-<hr/>
-**Informations about "Changed" State:**<br/>Projectiles can have two states: normal (default) and changed.<br/>
+____
+**Informations about "Changed" State:**
+Projectiles can have two states: normal (default) and changed.
+
 Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
-<hr/>
-Also used in: <a class="el" href="class_projectile_params.html#a94280d115acf598bf9f751da3f815a8c">ProjectileParams()</a>
+____
+Also used in: <a class="el" href="class_projectile_params.html#a94280d115acf598bf9f751da3f815a8c">ProjectileParams()</a> WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### ChangeTimeout {: aria-label='Variables' }
 #### int ChangeTimeout  {: aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
-<hr/>
-**Informations about "Changed" State:**<br/>Projectiles can have two states: normal (default) and changed.<br/>
+____
+**Informations about "Changed" State:**
+Projectiles can have two states: normal (default) and changed.
+
 Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
-<hr/>
-Also used in: <a class="el" href="class_projectile_params.html#a6738cae72bddb5bbc087f215f7f08bd2">ProjectileParams()</a>
+____
+Also used in: <a class="el" href="class_projectile_params.html#a6738cae72bddb5bbc087f215f7f08bd2">ProjectileParams()</a> WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### ChangeVelocity {: aria-label='Variables' }
 #### float ChangeVelocity  {: aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
-<hr/>
-**Informations about "Changed" State:**<br/>Projectiles can have two states: normal (default) and changed.<br/>
+____
+**Informations about "Changed" State:**
+Projectiles can have two states: normal (default) and changed.
+
 Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
-<hr/>
-Also used in: <a class="el" href="class_projectile_params.html#a8d480667cf7ba94ee10bbb9dcc008c6f">ProjectileParams()</a>
+____
+Also used in: <a class="el" href="class_projectile_params.html#a8d480667cf7ba94ee10bbb9dcc008c6f">ProjectileParams()</a> WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### CurvingStrength {: aria-label='Variables' }
 #### float CurvingStrength  {: aria-label='Variables' }
@@ -93,10 +99,10 @@ ___
 #### float HomingStrength  {: aria-label='Variables' }
 
 ___ 
-### ProjectileFlags {: aria-label='Variables' }
-#### int ProjectileFlags  {: aria-label='Variables' }
+### [ProjectileFlags](../enums/ProjectileFlags) {: aria-label='Variables' }
+#### int [ProjectileFlags](../enums/ProjectileFlags)  {: aria-label='Variables' }
 
-Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes.
+Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### Scale {: aria-label='Variables' }
 #### float Scale  {: aria-label='Variables' }

@@ -66,10 +66,10 @@ Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code returns a vector that has a 45 degree angle
 ```cpp 
-local vec = Vector.GetAngleDegrees(45)) --vec is now Vector(0.70711,0.70711)
+local vec = Vector.FromAngle(45)) --vec is now Vector(0.70711,0.70711)
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetAngleDegrees () {: aria-label='Functions' }
 #### float GetAngleDegrees ( )  {: aria-label='Functions' }
@@ -101,20 +101,20 @@ Linear interpolation between two vectors. For t = 0 it returns the first Vector,
 
 <div class="example_code">
 This function does the same as Lerp, but will not alter the input vectors.
-<pre>`:::cpp function Lerp(vec1, vec2, percent)
-    return vec1 * (1 - percent) + vec2 * percent
+```:::cpp function Lerp(vec1, vec2, percent)
+  return vec1 * (1 - percent) + vec2 * percent
 end
-`</pre>
+```
 </div>
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code will make v1 the vector 50% in between v1 and v2
 ```cpp 
 local v1 = Vector(0,0)
 local v2 = Vector(1,1)
-v1:Lerp(v2,0.5) -- v1 equals  Vector(0.5,0.5)  now
+v1:Lerp(v2,0.5) -- v1 equals Vector(0.5,0.5) now
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### Normalize () {: aria-label='Functions' }
 #### void Normalize ( )  {: aria-label='Functions' }

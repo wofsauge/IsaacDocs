@@ -12,7 +12,7 @@ ___
 ### Flags {: aria-label='Variables' }
 #### int Flags  {: aria-label='Variables' }
 
-Uses <a class="el" href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">TearFlags</a> to alter the behavior of the bomb.
+Uses <a class="el" href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">TearFlags</a> to alter the behavior of the bomb. WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### IsFetus {: aria-label='Variables' }
 #### boolean IsFetus  {: aria-label='Variables' }

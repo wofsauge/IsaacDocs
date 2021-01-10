@@ -15,8 +15,8 @@ ___
 #### int Type  {: aria-label='Variables' }
 
 ___ 
-### Difficulty {: aria-label='Variables' }
-#### int Difficulty  {: aria-label='Variables' }
+### [Difficulty](../enums/Difficulty) {: aria-label='Variables' }
+#### int [Difficulty](../enums/Difficulty)  {: aria-label='Variables' }
 
 ___ 
 ### Subtype {: aria-label='Variables' }
@@ -32,7 +32,7 @@ ___
 
 ___ 
 ### Shape {: aria-label='Variables' }
-#### RoomShape Shape  {: aria-label='Variables' }
+#### [RoomShape](../enums/RoomShape) Shape  {: aria-label='Variables' }
 
 ___ 
 ### SpawnCount {: aria-label='Variables' }

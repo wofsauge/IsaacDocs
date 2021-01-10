@@ -11,6 +11,18 @@ nav[aria-label$='Variables'] {
     text-align: center;
 }
 
+.WRONG_PARSE{
+    color: white !important;
+    background-color: red;
+    font-size: 20px !important;
+}
+.WRONG_PARSE::after {
+    content:"THIS PART IS NOT PARSED CORRECTLY! PLEASE FIX MANUALLY!!!!!";
+    color: red !important;
+    background-color: black;
+    display: block;
+}
+
 .md-typeset h3{
     border-radius: 5px 5px 0px 0px;
     padding: 0px 10px;

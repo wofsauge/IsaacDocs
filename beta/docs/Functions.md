@@ -11,7 +11,7 @@ Game():IsPaused()
 --returns true if the game is paused
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### [MusicManager](../MusicManager) () {: aria-label='Functions' }
 #### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( )  {: aria-label='Functions' }
@@ -23,7 +23,7 @@ Example usage:
 MusicManager():Disable()
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### Random () {: aria-label='Functions' }
 #### int Random ( )  {: aria-label='Functions' }
@@ -43,7 +43,7 @@ Example usage:
 SFXManager():Stop(SoundEffect.SOUND_1UP)
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetPtrHash () {: aria-label='Functions' }
 #### int GetPtrHash ( Objectobject)  {: aria-label='Functions' }

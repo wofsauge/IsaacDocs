@@ -9,7 +9,7 @@ Example usage.
 ```cpp 
 local f = Font() -- init font object
 f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawString("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
 ```
 
@@ -24,7 +24,7 @@ Example usage.
 ```cpp 
 local f = Font() -- init font object
 f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawString("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
 ```
 
@@ -38,7 +38,7 @@ Example usage.
 ```cpp 
 local f = Font() -- init font object
 f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawStringScaled("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+f:DrawStringScaled("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
 ```
 
@@ -51,7 +51,7 @@ Example usage.
 ```cpp 
 local f = Font() -- init font object
 f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawStringScaledUTF8("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+f:DrawStringScaledUTF8("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
 ```
 
@@ -65,7 +65,7 @@ Example usage.
 ```cpp 
 local f = Font() -- init font object
 f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawStringUTF8("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+f:DrawStringUTF8("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
 ```
 
@@ -102,7 +102,7 @@ Example usage.
 ```cpp 
 local f = Font() -- init font object
 f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawString("Hello World!",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
 ```
 

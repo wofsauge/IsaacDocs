@@ -5,7 +5,7 @@
 
 ___ 
 ### AddEncounteredBoss () {: aria-label='Functions' }
-#### void AddEncounteredBoss ( EntityType Boss, int Variant )  {: aria-label='Functions' }
+#### void AddEncounteredBoss ( [EntityType](../enums/EntityType) Boss, int Variant )  {: aria-label='Functions' }
 
 ___ 
 ### AddPixelation () {: aria-label='Functions' }
@@ -142,7 +142,7 @@ local mins= math.floor(curTime/30/60)%60
 local hours= math.floor(curTime/30/60/60)%60
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### GetGreedBossWaveNum () {: aria-label='Functions' }
 #### int GetGreedBossWaveNum ( )  {: aria-label='Functions' }
@@ -164,18 +164,18 @@ ___
 #### [ItemPool](../ItemPool) GetItemPool ( )  {: aria-label='Functions' }
 
 ___ 
-### LevelStage () {: aria-label='Functions' }
-#### void LevelStage ( UserData) GetLastDevilRoomStage ( )  {: aria-label='Functions' }
+### [LevelStage](../enums/LevelStage) () {: aria-label='Functions' }
+#### void [LevelStage](../enums/LevelStage) ( UserData) GetLastDevilRoomStage ( )  {: aria-label='Functions' }
 
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
 Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### GetLastLevelWithDamage () {: aria-label='Functions' }
-#### LevelStage GetLastLevelWithDamage ( )  {: aria-label='Functions' }
+#### [LevelStage](../enums/LevelStage) GetLastLevelWithDamage ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetLastLevelWithoutHalfHp () {: aria-label='Functions' }
-#### LevelStage GetLastLevelWithoutHalfHp ( )  {: aria-label='Functions' }
+#### [LevelStage](../enums/LevelStage) GetLastLevelWithoutHalfHp ( )  {: aria-label='Functions' }
 
 ___ 
 ### GetLevel () {: aria-label='Functions' }
@@ -239,7 +239,7 @@ ___
 
 ___ 
 ### HasEncounteredBoss () {: aria-label='Functions' }
-#### boolean HasEncounteredBoss ( EntityType Boss, int Variant )  {: aria-label='Functions' }
+#### boolean HasEncounteredBoss ( [EntityType](../enums/EntityType) Boss, int Variant )  {: aria-label='Functions' }
 
 ___ 
 ### HasHallucination () {: aria-label='Functions' }
@@ -280,15 +280,15 @@ ___
 
 ___ 
 ### SetLastDevilRoomStage () {: aria-label='Functions' }
-#### void SetLastDevilRoomStage ( LevelStage Stage)  {: aria-label='Functions' }
+#### void SetLastDevilRoomStage ( [LevelStage](../enums/LevelStage) Stage)  {: aria-label='Functions' }
 
 ___ 
 ### SetLastLevelWithDamage () {: aria-label='Functions' }
-#### void SetLastLevelWithDamage ( LevelStage Stage)  {: aria-label='Functions' }
+#### void SetLastLevelWithDamage ( [LevelStage](../enums/LevelStage) Stage)  {: aria-label='Functions' }
 
 ___ 
 ### SetLastLevelWithoutHalfHp () {: aria-label='Functions' }
-#### void SetLastLevelWithoutHalfHp ( LevelStage Stage)  {: aria-label='Functions' }
+#### void SetLastLevelWithoutHalfHp ( [LevelStage](../enums/LevelStage) Stage)  {: aria-label='Functions' }
 
 ___ 
 ### SetStateFlag () {: aria-label='Functions' }
@@ -337,24 +337,24 @@ ___
 
 ___ 
 ### [Spawn](../RoomConfig_Spawn) () {: aria-label='Functions' }
-#### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( EntityType Type, int Variant, [Vector](../Vector) Position, [Vector](../Vector) Velocity, [Entity](../Entity) Spawner, int SubType, int Seed )  {: aria-label='Functions' }
+#### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( [EntityType](../enums/EntityType) Type, int Variant, [Vector](../Vector) Position, [Vector](../Vector) Velocity, [Entity](../Entity) Spawner, int SubType, int Seed )  {: aria-label='Functions' }
 
 The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code spawns a Leech with specific seed.
 ```cpp 
 Game():Spawn(
-  EntityType.ENTITY_LEECH, -- Type
-  0, -- Variant
-  Game():GetRoom():GetCenterPos(), -- Position
-  Vector(0, 0), -- Velocity
-  nil, -- Parent
-  0, -- SubType
-  Game():GetRoom():GetSpawnSeed() -- Seed (the "GetSpawnSeed()" function gets a reproducible seed based on the room, e.g. "2496979501")
+ EntityType.ENTITY_LEECH, -- Type
+ 0, -- Variant
+ Game():GetRoom():GetCenterPos(), -- Position
+ Vector(0, 0), -- Velocity
+ nil, -- Parent
+ 0, -- SubType
+ Game():GetRoom():GetSpawnSeed() -- Seed (the "GetSpawnSeed()" function gets a reproducible seed based on the room, e.g. "2496979501")
 )
 
 ```
-
+ WRONG PARSING {: .WRONG_PARSE } 
 ___ 
 ### SpawnEntityDesc () {: aria-label='Functions' }
 #### [EntityNPC](../EntityNPC) SpawnEntityDesc ( Entity::EntityDesc desc, [Vector](../Vector) Position, [Entity](../Entity) Spawner )  {: aria-label='Functions' }
@@ -365,7 +365,7 @@ ___
 
 ___ 
 ### StartRoomTransition () {: aria-label='Functions' }
-#### void StartRoomTransition ( int RoomIndex, Direction Direction, RoomTransition::Animation Animation )  {: aria-label='Functions' }
+#### void StartRoomTransition ( int RoomIndex, [Direction](../enums/Direction) Direction, RoomTransition::Animation Animation )  {: aria-label='Functions' }
 
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
 Available Animation types (Discovered by "ilise rose" (@yatboim)):
@@ -391,11 +391,11 @@ ___
 
 Starts a transition animation like it`s playing when entering a trapdoor to switch between stages.
 **Stage Transition types:**
-<ul>
-<li>0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.</li>
-<li>1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.</li>
-<li>&gt;2: Same as 0</li>
-</ul>
+
+* 0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.
+* 1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.
+* &gt;2: Same as 0
+
 ___ 
 ### Update () {: aria-label='Functions' }
 #### void Update ( )  {: aria-label='Functions' }
@@ -414,12 +414,12 @@ ___
 #### int BossRushParTime  {: aria-label='Variables' }
 Number of frames of game time. 
 ___ 
-### Challenge {: aria-label='Variables' }
-#### Challenge Challenge  {: aria-label='Variables' }
+### [Challenge](../enums/Challenge) {: aria-label='Variables' }
+#### [Challenge](../enums/Challenge) [Challenge](../enums/Challenge)  {: aria-label='Variables' }
 
 ___ 
-### Difficulty {: aria-label='Variables' }
-####  Difficulty Difficulty  {: aria-label='Variables' }
+### [Difficulty](../enums/Difficulty) {: aria-label='Variables' }
+####  [Difficulty](../enums/Difficulty) [Difficulty](../enums/Difficulty)  {: aria-label='Variables' }
 
 ___ 
 ### ScreenShakeOffset {: aria-label='Variables' }

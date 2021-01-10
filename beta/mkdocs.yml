@@ -28,6 +28,71 @@ nav:
             - "EntityPtr": EntityPtr.md
             - "EntityRef": EntityRef.md
             - "EntityTear": EntityTear.md
+        - "Enums":
+            - "ActionTriggers": enums/ActionTriggers.md
+            - "BabySubType": enums/BabySubType.md
+            - "BombSubType": enums/BombSubType.md
+            - "BombVariant": enums/BombVariant.md
+            - "ButtonAction": enums/ButtonAction.md
+            - "CacheFlag": enums/CacheFlag.md
+            - "Card": enums/Card.md
+            - "Challenge": enums/Challenge.md
+            - "ChestSubType": enums/ChestSubType.md
+            - "CoinSubType": enums/CoinSubType.md
+            - "CollectibleType": enums/CollectibleType.md
+            - "DamageFlag": enums/DamageFlag.md
+            - "Difficulty": enums/Difficulty.md
+            - "Direction": enums/Direction.md
+            - "DoorSlot": enums/DoorSlot.md
+            - "DoorState": enums/DoorState.md
+            - "DoorVariant": enums/DoorVariant.md
+            - "EffectVariant": enums/EffectVariant.md
+            - "EntityCollisionClass": enums/EntityCollisionClass.md
+            - "EntityFlag": enums/EntityFlag.md
+            - "EntityGridCollisionClass": enums/EntityGridCollisionClass.md
+            - "EntityPartition": enums/EntityPartition.md
+            - "EntityType": enums/EntityType.md
+            - "FamiliarVariant": enums/FamiliarVariant.md
+            - "GameStateFlag": enums/GameStateFlag.md
+            - "GridCollisionClass": enums/GridCollisionClass.md
+            - "GridEntityType": enums/GridEntityType.md
+            - "GridRooms": enums/GridRooms.md
+            - "HeartSubType": enums/HeartSubType.md
+            - "InputHook": enums/InputHook.md
+            - "ItemPoolType": enums/ItemPoolType.md
+            - "ItemType": enums/ItemType.md
+            - "Keyboard": enums/Keyboard.md
+            - "KeySubType": enums/KeySubType.md
+            - "LaserOffset": enums/LaserOffset.md
+            - "LevelCurse": enums/LevelCurse.md
+            - "LevelStage": enums/LevelStage.md
+            - "LevelStateFlag": enums/LevelStateFlag.md
+            - "LocustSubtypes": enums/LocustSubtypes.md
+            - "ModCallbacks": enums/ModCallbacks.md
+            - "Mouse": enums/Mouse.md
+            - "Music": enums/Music.md
+            - "NpcState": enums/NpcState.md
+            - "NullItemID": enums/NullItemID.md
+            - "PickupPrice": enums/PickupPrice.md
+            - "PickupVariant": enums/PickupVariant.md
+            - "PillColor": enums/PillColor.md
+            - "PillEffect": enums/PillEffect.md
+            - "PlayerForm": enums/PlayerForm.md
+            - "PlayerItemState": enums/PlayerItemState.md
+            - "PlayerSpriteLayer": enums/PlayerSpriteLayer.md
+            - "PlayerType": enums/PlayerType.md
+            - "ProjectileFlags": enums/ProjectileFlags.md
+            - "ProjectileVariant": enums/ProjectileVariant.md
+            - "RoomShape": enums/RoomShape.md
+            - "RoomType": enums/RoomType.md
+            - "SeedEffect": enums/SeedEffect.md
+            - "SortingLayer": enums/SortingLayer.md
+            - "SoundEffect": enums/SoundEffect.md
+            - "StageType": enums/StageType.md
+            - "TearFlags": enums/TearFlags.md
+            - "TearVariant": enums/TearVariant.md
+            - "TrinketType": enums/TrinketType.md
+            - "WeaponType": enums/WeaponType.md
         - "Font": Font.md
         - "Functions": Functions.md
         - "Game": Game.md
