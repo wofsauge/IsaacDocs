@@ -1,4 +1,5 @@
 # Enum "ItemType"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ITEM_NULL |  | 0 |

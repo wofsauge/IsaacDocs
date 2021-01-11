@@ -1,4 +1,5 @@
 # Enum "Direction"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | NO_DIRECTION |  | -1 |

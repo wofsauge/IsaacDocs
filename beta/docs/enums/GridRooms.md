@@ -1,4 +1,5 @@
 # Enum "GridRooms"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | MAX_GRID_ROOMS |  | 128 |

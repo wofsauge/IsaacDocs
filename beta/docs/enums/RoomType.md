@@ -1,4 +1,5 @@
 # Enum "RoomType"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ROOM_NULL |  | 0 |

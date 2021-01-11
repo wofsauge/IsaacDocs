@@ -1,4 +1,5 @@
 # Enum "RoomShape"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|Preview|Possible Gridindicies|comment|id|
 |:--:|:--:|:--:|:--:|:--:|
 | ROOMSHAPE_1x1 |   | 0-134 | 1 |

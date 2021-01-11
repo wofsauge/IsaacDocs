@@ -1,4 +1,5 @@
 # Enum "CacheFlag"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|Value|comment|id|
 |:--:|:--:|:--:|:--:|
 | CACHE_DAMAGE | 1 | 1 |

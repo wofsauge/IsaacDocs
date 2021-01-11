@@ -1,4 +1,5 @@
 # Enum "Challenge"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | CHALLENGE_NULL |  | 0 |

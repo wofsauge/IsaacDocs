@@ -1,4 +1,5 @@
 # Enum "Card"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | CARD_RANDOM |  | -1 |

@@ -1,4 +1,5 @@
 # Enum "KeySubType"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | KEY_NORMAL |  | 1 |

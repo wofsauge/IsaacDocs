@@ -1,4 +1,5 @@
 # Enum "ButtonAction"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ACTION_LEFT |  | 0 |

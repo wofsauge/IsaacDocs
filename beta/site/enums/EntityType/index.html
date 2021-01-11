@@ -2352,1142 +2352,234 @@
                 
                 
                 <h1 id="enum-entitytype">Enum "EntityType"<a class="headerlink" href="#enum-entitytype" title="Permanent link">⚓︎</a></h1>
-<table>
-<thead>
-<tr>
-<th align="center">Enumerator</th>
-<th align="center">comment</th>
-<th align="center">id</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">ENTITY_NULL</td>
-<td align="center"></td>
-<td align="center">0</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PLAYER</td>
-<td align="center">1 player <br></td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">ENTITY_TEAR</td>
-<td align="center">2 tear projectile <br></td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FAMILIAR</td>
-<td align="center">3 familiar <br></td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BOMBDROP</td>
-<td align="center">4 bomb drop <br></td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PICKUP</td>
-<td align="center">5 pickup item <br></td>
-<td align="center">5</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SLOT</td>
-<td align="center">6 slot machine <br></td>
-<td align="center">6</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LASER</td>
-<td align="center">7 laser beam <br></td>
-<td align="center">7</td>
-</tr>
-<tr>
-<td align="center">ENTITY_KNIFE</td>
-<td align="center">8 mom's knife <br></td>
-<td align="center">8</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PROJECTILE</td>
-<td align="center">9 blood projectile <br></td>
-<td align="center">9</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GAPER</td>
-<td align="center">10 enemy: Gaper <br></td>
-<td align="center">10</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GUSHER</td>
-<td align="center">11 enemy: Gusher <br></td>
-<td align="center">11</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HORF</td>
-<td align="center">12 enemy: Horf <br></td>
-<td align="center">12</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FLY</td>
-<td align="center">13 enemy: Fly <br></td>
-<td align="center">13</td>
-</tr>
-<tr>
-<td align="center">ENTITY_POOTER</td>
-<td align="center">14 enemy: Pooter <br></td>
-<td align="center">14</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CLOTTY</td>
-<td align="center">15 enemy: Clotty <br></td>
-<td align="center">15</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MULLIGAN</td>
-<td align="center">16 enemy: Mulligan <br></td>
-<td align="center">16</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SHOPKEEPER</td>
-<td align="center"></td>
-<td align="center">17</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ATTACKFLY</td>
-<td align="center">18 enemy: Attack Fly <br></td>
-<td align="center">18</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LARRYJR</td>
-<td align="center">19 boss: Larry Jr./Hollow <br></td>
-<td align="center">19</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MONSTRO</td>
-<td align="center">20 boss: Monstro <br></td>
-<td align="center">20</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MAGGOT</td>
-<td align="center"></td>
-<td align="center">21</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HIVE</td>
-<td align="center"></td>
-<td align="center">22</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CHARGER</td>
-<td align="center"></td>
-<td align="center">23</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GLOBIN</td>
-<td align="center"></td>
-<td align="center">24</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BOOMFLY</td>
-<td align="center"></td>
-<td align="center">25</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MAW</td>
-<td align="center"></td>
-<td align="center">26</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HOST</td>
-<td align="center"></td>
-<td align="center">27</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CHUB</td>
-<td align="center"></td>
-<td align="center">28</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HOPPER</td>
-<td align="center">29 enemy: Hopper <br></td>
-<td align="center">29</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BOIL</td>
-<td align="center">30 enemy: Boil, variants: 1 - Gut, 2 - Sack <br></td>
-<td align="center">30</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SPITY</td>
-<td align="center"></td>
-<td align="center">31</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BRAIN</td>
-<td align="center"></td>
-<td align="center">32</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FIREPLACE</td>
-<td align="center"></td>
-<td align="center">33</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LEAPER</td>
-<td align="center"></td>
-<td align="center">34</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MRMAW</td>
-<td align="center"></td>
-<td align="center">35</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GURDY</td>
-<td align="center"></td>
-<td align="center">36</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BABY</td>
-<td align="center"></td>
-<td align="center">38</td>
-</tr>
-<tr>
-<td align="center">ENTITY_VIS</td>
-<td align="center"></td>
-<td align="center">39</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GUTS</td>
-<td align="center"></td>
-<td align="center">40</td>
-</tr>
-<tr>
-<td align="center">ENTITY_KNIGHT</td>
-<td align="center"></td>
-<td align="center">41</td>
-</tr>
-<tr>
-<td align="center">ENTITY_STONEHEAD</td>
-<td align="center"></td>
-<td align="center">42</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MONSTRO2</td>
-<td align="center"></td>
-<td align="center">43</td>
-</tr>
-<tr>
-<td align="center">ENTITY_POKY</td>
-<td align="center"></td>
-<td align="center">44</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOM</td>
-<td align="center"></td>
-<td align="center">45</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SLOTH</td>
-<td align="center">46 miniboss: Sloth <br></td>
-<td align="center">46</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LUST</td>
-<td align="center">47 miniboss: Lust <br></td>
-<td align="center">47</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WRATH</td>
-<td align="center">48 miniboss: Wrath <br></td>
-<td align="center">48</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GLUTTONY</td>
-<td align="center">49 miniboss: Gluttony <br></td>
-<td align="center">49</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GREED</td>
-<td align="center">50 miniboss: Greed <br></td>
-<td align="center">50</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ENVY</td>
-<td align="center">51 miniboss: Envy <br></td>
-<td align="center">51</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PRIDE</td>
-<td align="center">52 miniboss: Pride <br></td>
-<td align="center">52</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DOPLE</td>
-<td align="center"></td>
-<td align="center">53</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FLAMINGHOPPER</td>
-<td align="center">54 enemy: Flaming Hopper <br></td>
-<td align="center">54</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LEECH</td>
-<td align="center"></td>
-<td align="center">55</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LUMP</td>
-<td align="center"></td>
-<td align="center">56</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEMBRAIN</td>
-<td align="center">57 enemy: Membrain and Mama Guts <br></td>
-<td align="center">57</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PARA_BITE</td>
-<td align="center"></td>
-<td align="center">58</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FRED</td>
-<td align="center"></td>
-<td align="center">59</td>
-</tr>
-<tr>
-<td align="center">ENTITY_EYE</td>
-<td align="center"></td>
-<td align="center">60</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SUCKER</td>
-<td align="center">61 enemy: Sucker <br></td>
-<td align="center">61</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PIN</td>
-<td align="center">62 boss: Pin <br></td>
-<td align="center">62</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FAMINE</td>
-<td align="center"></td>
-<td align="center">63</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PESTILENCE</td>
-<td align="center"></td>
-<td align="center">64</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WAR</td>
-<td align="center">variant 1: Conquest <br></td>
-<td align="center">65</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DEATH</td>
-<td align="center"></td>
-<td align="center">66</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DUKE</td>
-<td align="center">67 boss: Duke of Flies/Husk <br></td>
-<td align="center">67</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PEEP</td>
-<td align="center"></td>
-<td align="center">68</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LOKI</td>
-<td align="center"></td>
-<td align="center">69</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FISTULA_BIG</td>
-<td align="center"></td>
-<td align="center">71</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FISTULA_MEDIUM</td>
-<td align="center"></td>
-<td align="center">72</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FISTULA_SMALL</td>
-<td align="center"></td>
-<td align="center">73</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLASTOCYST_BIG</td>
-<td align="center">74 boss: Blastocyst <br></td>
-<td align="center">74</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLASTOCYST_MEDIUM</td>
-<td align="center"></td>
-<td align="center">75</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLASTOCYST_SMALL</td>
-<td align="center"></td>
-<td align="center">76</td>
-</tr>
-<tr>
-<td align="center">ENTITY_EMBRYO</td>
-<td align="center"></td>
-<td align="center">77</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOMS_HEART</td>
-<td align="center"></td>
-<td align="center">78</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GEMINI</td>
-<td align="center">79 boss: Gemini <br></td>
-<td align="center">79</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOTER</td>
-<td align="center">80 enemy: Moter <br></td>
-<td align="center">80</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FALLEN</td>
-<td align="center">variant 1: Krampus <br></td>
-<td align="center">81</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HEADLESS_HORSEMAN</td>
-<td align="center">Headless Horseman <br></td>
-<td align="center">82</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HORSEMAN_HEAD</td>
-<td align="center">Head for Headless Horseman <br></td>
-<td align="center">83</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SATAN</td>
-<td align="center"></td>
-<td align="center">84</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SPIDER</td>
-<td align="center">85 enemy: Spider <br></td>
-<td align="center">85</td>
-</tr>
-<tr>
-<td align="center">ENTITY_KEEPER</td>
-<td align="center"></td>
-<td align="center">86</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GURGLE</td>
-<td align="center"></td>
-<td align="center">87</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WALKINGBOIL</td>
-<td align="center">ai for WalkingBoil, WalkingGut and WalkingSack <br></td>
-<td align="center">88</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BUTTLICKER</td>
-<td align="center"></td>
-<td align="center">89</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HANGER</td>
-<td align="center">90 enemy: Hanger <br></td>
-<td align="center">90</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SWARMER</td>
-<td align="center"></td>
-<td align="center">91</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HEART</td>
-<td align="center"></td>
-<td align="center">92</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MASK</td>
-<td align="center"></td>
-<td align="center">93</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BIGSPIDER</td>
-<td align="center"></td>
-<td align="center">94</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ETERNALFLY</td>
-<td align="center">96 enemy: Eternal Fly <br></td>
-<td align="center">96</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MASK_OF_INFAMY</td>
-<td align="center"></td>
-<td align="center">97</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HEART_OF_INFAMY</td>
-<td align="center"></td>
-<td align="center">98</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GURDY_JR</td>
-<td align="center">99 enemy: Gurdy Jr. <br></td>
-<td align="center">99</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WIDOW</td>
-<td align="center"></td>
-<td align="center">100</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DADDYLONGLEGS</td>
-<td align="center"></td>
-<td align="center">101</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ISAAC</td>
-<td align="center"></td>
-<td align="center">102</td>
-</tr>
-<tr>
-<td align="center">ENTITY_STONE_EYE</td>
-<td align="center">Rebirth enemies <br></td>
-<td align="center">201</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CONSTANT_STONE_SHOOTER</td>
-<td align="center"></td>
-<td align="center">202</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BRIMSTONE_HEAD</td>
-<td align="center"></td>
-<td align="center">203</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOBILE_HOST</td>
-<td align="center"></td>
-<td align="center">204</td>
-</tr>
-<tr>
-<td align="center">ENTITY_NEST</td>
-<td align="center"></td>
-<td align="center">205</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BABY_LONG_LEGS</td>
-<td align="center"></td>
-<td align="center">206</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CRAZY_LONG_LEGS</td>
-<td align="center"></td>
-<td align="center">207</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FATTY</td>
-<td align="center"></td>
-<td align="center">208</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FAT_SACK</td>
-<td align="center"></td>
-<td align="center">209</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLUBBER</td>
-<td align="center"></td>
-<td align="center">210</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HALF_SACK</td>
-<td align="center"></td>
-<td align="center">211</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DEATHS_HEAD</td>
-<td align="center"></td>
-<td align="center">212</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOMS_HAND</td>
-<td align="center"></td>
-<td align="center">213</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FLY_L2</td>
-<td align="center"></td>
-<td align="center">214</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SPIDER_L2</td>
-<td align="center"></td>
-<td align="center">215</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SWINGER</td>
-<td align="center"></td>
-<td align="center">216</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DIP</td>
-<td align="center"></td>
-<td align="center">217</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WALL_HUGGER</td>
-<td align="center"></td>
-<td align="center">218</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WIZOOB</td>
-<td align="center"></td>
-<td align="center">219</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SQUIRT</td>
-<td align="center"></td>
-<td align="center">220</td>
-</tr>
-<tr>
-<td align="center">ENTITY_COD_WORM</td>
-<td align="center"></td>
-<td align="center">221</td>
-</tr>
-<tr>
-<td align="center">ENTITY_RING_OF_FLIES</td>
-<td align="center"></td>
-<td align="center">222</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DINGA</td>
-<td align="center"></td>
-<td align="center">223</td>
-</tr>
-<tr>
-<td align="center">ENTITY_OOB</td>
-<td align="center"></td>
-<td align="center">224</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLACK_MAW</td>
-<td align="center"></td>
-<td align="center">225</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SKINNY</td>
-<td align="center"></td>
-<td align="center">226</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BONY</td>
-<td align="center"></td>
-<td align="center">227</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HOMUNCULUS</td>
-<td align="center"></td>
-<td align="center">228</td>
-</tr>
-<tr>
-<td align="center">ENTITY_TUMOR</td>
-<td align="center"></td>
-<td align="center">229</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CAMILLO_JR</td>
-<td align="center"></td>
-<td align="center">230</td>
-</tr>
-<tr>
-<td align="center">ENTITY_NERVE_ENDING</td>
-<td align="center"></td>
-<td align="center">231</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SKINBALL</td>
-<td align="center"></td>
-<td align="center">232</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOM_HEAD</td>
-<td align="center"></td>
-<td align="center">233</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ONE_TOOTH</td>
-<td align="center"></td>
-<td align="center">234</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GAPING_MAW</td>
-<td align="center"></td>
-<td align="center">235</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BROKEN_GAPING_MAW</td>
-<td align="center"></td>
-<td align="center">236</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GURGLING</td>
-<td align="center"></td>
-<td align="center">237</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SPLASHER</td>
-<td align="center"></td>
-<td align="center">238</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GRUB</td>
-<td align="center"></td>
-<td align="center">239</td>
-</tr>
-<tr>
-<td align="center">ENTITY_WALL_CREEP</td>
-<td align="center"></td>
-<td align="center">240</td>
-</tr>
-<tr>
-<td align="center">ENTITY_RAGE_CREEP</td>
-<td align="center"></td>
-<td align="center">241</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLIND_CREEP</td>
-<td align="center"></td>
-<td align="center">242</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CONJOINED_SPITTY</td>
-<td align="center"></td>
-<td align="center">243</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ROUND_WORM</td>
-<td align="center"></td>
-<td align="center">244</td>
-</tr>
-<tr>
-<td align="center">ENTITY_POOP</td>
-<td align="center"></td>
-<td align="center">245</td>
-</tr>
-<tr>
-<td align="center">ENTITY_RAGLING</td>
-<td align="center"></td>
-<td align="center">246</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FLESH_MOBILE_HOST</td>
-<td align="center"></td>
-<td align="center">247</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PSY_HORF</td>
-<td align="center"></td>
-<td align="center">248</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FULL_FLY</td>
-<td align="center"></td>
-<td align="center">249</td>
-</tr>
-<tr>
-<td align="center">ENTITY_TICKING_SPIDER</td>
-<td align="center"></td>
-<td align="center">250</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BEGOTTEN</td>
-<td align="center"></td>
-<td align="center">251</td>
-</tr>
-<tr>
-<td align="center">ENTITY_NULLS</td>
-<td align="center"></td>
-<td align="center">252</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PSY_TUMOR</td>
-<td align="center"></td>
-<td align="center">253</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FLOATING_KNIGHT</td>
-<td align="center"></td>
-<td align="center">254</td>
-</tr>
-<tr>
-<td align="center">ENTITY_NIGHT_CRAWLER</td>
-<td align="center"></td>
-<td align="center">255</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DART_FLY</td>
-<td align="center">Afterbirth <br></td>
-<td align="center">256</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CONJOINED_FATTY</td>
-<td align="center"></td>
-<td align="center">257</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FAT_BAT</td>
-<td align="center"></td>
-<td align="center">258</td>
-</tr>
-<tr>
-<td align="center">ENTITY_IMP</td>
-<td align="center"></td>
-<td align="center">259</td>
-</tr>
-<tr>
-<td align="center">ENTITY_THE_HAUNT</td>
-<td align="center">Rebirth bosses <br></td>
-<td align="center">260</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DINGLE</td>
-<td align="center"></td>
-<td align="center">261</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEGA_MAW</td>
-<td align="center"></td>
-<td align="center">262</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GATE</td>
-<td align="center"></td>
-<td align="center">263</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEGA_FATTY</td>
-<td align="center"></td>
-<td align="center">264</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CAGE</td>
-<td align="center"></td>
-<td align="center">265</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MAMA_GURDY</td>
-<td align="center"></td>
-<td align="center">266</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DARK_ONE</td>
-<td align="center"></td>
-<td align="center">267</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ADVERSARY</td>
-<td align="center"></td>
-<td align="center">268</td>
-</tr>
-<tr>
-<td align="center">ENTITY_POLYCEPHALUS</td>
-<td align="center"></td>
-<td align="center">269</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MR_FRED</td>
-<td align="center"></td>
-<td align="center">270</td>
-</tr>
-<tr>
-<td align="center">ENTITY_URIEL</td>
-<td align="center"></td>
-<td align="center">271</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GABRIEL</td>
-<td align="center"></td>
-<td align="center">272</td>
-</tr>
-<tr>
-<td align="center">ENTITY_THE_LAMB</td>
-<td align="center"></td>
-<td align="center">273</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEGA_SATAN</td>
-<td align="center"></td>
-<td align="center">274</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEGA_SATAN_2</td>
-<td align="center"></td>
-<td align="center">275</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ROUNDY</td>
-<td align="center">Afterbirth #2 <br></td>
-<td align="center">276</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLACK_BONY</td>
-<td align="center"></td>
-<td align="center">277</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLACK_GLOBIN</td>
-<td align="center"></td>
-<td align="center">278</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLACK_GLOBIN_HEAD</td>
-<td align="center"></td>
-<td align="center">279</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLACK_GLOBIN_BODY</td>
-<td align="center"></td>
-<td align="center">280</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SWARM</td>
-<td align="center"></td>
-<td align="center">281</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEGA_CLOTTY</td>
-<td align="center"></td>
-<td align="center">282</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BONE_KNIGHT</td>
-<td align="center"></td>
-<td align="center">283</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CYCLOPIA</td>
-<td align="center"></td>
-<td align="center">284</td>
-</tr>
-<tr>
-<td align="center">ENTITY_RED_GHOST</td>
-<td align="center"></td>
-<td align="center">285</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FLESH_DEATHS_HEAD</td>
-<td align="center"></td>
-<td align="center">286</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOMS_DEAD_HAND</td>
-<td align="center"></td>
-<td align="center">287</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DUKIE</td>
-<td align="center"></td>
-<td align="center">288</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ULCER</td>
-<td align="center"></td>
-<td align="center">289</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MEATBALL</td>
-<td align="center"></td>
-<td align="center">290</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PITFALL</td>
-<td align="center"></td>
-<td align="center">291</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MOVABLE_TNT</td>
-<td align="center"></td>
-<td align="center">292</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ULTRA_COIN</td>
-<td align="center"></td>
-<td align="center">293</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ULTRA_DOOR</td>
-<td align="center"></td>
-<td align="center">294</td>
-</tr>
-<tr>
-<td align="center">ENTITY_CORN_MINE</td>
-<td align="center"></td>
-<td align="center">295</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HUSH_FLY</td>
-<td align="center"></td>
-<td align="center">296</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HUSH_GAPER</td>
-<td align="center"></td>
-<td align="center">297</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HUSH_BOIL</td>
-<td align="center"></td>
-<td align="center">298</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GREED_GAPER</td>
-<td align="center"></td>
-<td align="center">299</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MUSHROOM</td>
-<td align="center"></td>
-<td align="center">300</td>
-</tr>
-<tr>
-<td align="center">ENTITY_POISON_MIND</td>
-<td align="center"></td>
-<td align="center">301</td>
-</tr>
-<tr>
-<td align="center">ENTITY_STONEY</td>
-<td align="center"></td>
-<td align="center">302</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BLISTER</td>
-<td align="center"></td>
-<td align="center">303</td>
-</tr>
-<tr>
-<td align="center">ENTITY_THE_THING</td>
-<td align="center"></td>
-<td align="center">304</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MINISTRO</td>
-<td align="center"></td>
-<td align="center">305</td>
-</tr>
-<tr>
-<td align="center">ENTITY_PORTAL</td>
-<td align="center"></td>
-<td align="center">306</td>
-</tr>
-<tr>
-<td align="center">ENTITY_TARBOY</td>
-<td align="center">Booster enemies <br></td>
-<td align="center">307</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FISTULOID</td>
-<td align="center"></td>
-<td align="center">308</td>
-</tr>
-<tr>
-<td align="center">ENTITY_GUSH</td>
-<td align="center"></td>
-<td align="center">309</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LEPER</td>
-<td align="center"></td>
-<td align="center">310</td>
-</tr>
-<tr>
-<td align="center">ENTITY_STAIN</td>
-<td align="center">Afterbirth bosses <br></td>
-<td align="center">401</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BROWNIE</td>
-<td align="center"></td>
-<td align="center">402</td>
-</tr>
-<tr>
-<td align="center">ENTITY_FORSAKEN</td>
-<td align="center"></td>
-<td align="center">403</td>
-</tr>
-<tr>
-<td align="center">ENTITY_LITTLE_HORN</td>
-<td align="center"></td>
-<td align="center">404</td>
-</tr>
-<tr>
-<td align="center">ENTITY_RAG_MAN</td>
-<td align="center"></td>
-<td align="center">405</td>
-</tr>
-<tr>
-<td align="center">ENTITY_ULTRA_GREED</td>
-<td align="center"></td>
-<td align="center">406</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HUSH</td>
-<td align="center"></td>
-<td align="center">407</td>
-</tr>
-<tr>
-<td align="center">ENTITY_HUSH_SKINLESS</td>
-<td align="center"></td>
-<td align="center">408</td>
-</tr>
-<tr>
-<td align="center">ENTITY_RAG_MEGA</td>
-<td align="center"></td>
-<td align="center">409</td>
-</tr>
-<tr>
-<td align="center">ENTITY_SISTERS_VIS</td>
-<td align="center"></td>
-<td align="center">410</td>
-</tr>
-<tr>
-<td align="center">ENTITY_BIG_HORN</td>
-<td align="center"></td>
-<td align="center">411</td>
-</tr>
-<tr>
-<td align="center">ENTITY_DELIRIUM</td>
-<td align="center"></td>
-<td align="center">412</td>
-</tr>
-<tr>
-<td align="center">ENTITY_MATRIARCH</td>
-<td align="center"></td>
-<td align="center">413</td>
-</tr>
-<tr>
-<td align="center">ENTITY_EFFECT</td>
-<td align="center">1000 special effects <br></td>
-<td align="center">1000</td>
-</tr>
-<tr>
-<td align="center">ENTITY_TEXT</td>
-<td align="center"></td>
-<td align="center">9001</td>
-</tr>
-</tbody>
-</table>
+<p><a class="abp tooltip badge" href="#"> </a>
+|Enumerator|comment|id|
+|:--:|:--:|:--:|
+| ENTITY_NULL |  | 0 |
+| ENTITY_PLAYER | 1 player <br> | 1 |
+| ENTITY_TEAR | 2 tear projectile <br> | 2 |
+| ENTITY_FAMILIAR | 3 familiar <br> | 3 |
+| ENTITY_BOMBDROP | 4 bomb drop <br> | 4 |
+| ENTITY_PICKUP | 5 pickup item <br> | 5 |
+| ENTITY_SLOT | 6 slot machine <br> | 6 |
+| ENTITY_LASER | 7 laser beam <br> | 7 |
+| ENTITY_KNIFE | 8 mom's knife <br> | 8 |
+| ENTITY_PROJECTILE | 9 blood projectile <br> | 9 |
+| ENTITY_GAPER | 10 enemy: Gaper <br> | 10 |
+| ENTITY_GUSHER | 11 enemy: Gusher <br> | 11 |
+| ENTITY_HORF | 12 enemy: Horf <br> | 12 |
+| ENTITY_FLY | 13 enemy: Fly <br> | 13 |
+| ENTITY_POOTER | 14 enemy: Pooter <br> | 14 |
+| ENTITY_CLOTTY | 15 enemy: Clotty <br> | 15 |
+| ENTITY_MULLIGAN | 16 enemy: Mulligan <br> | 16 |
+| ENTITY_SHOPKEEPER |  | 17 |
+| ENTITY_ATTACKFLY | 18 enemy: Attack Fly <br> | 18 |
+| ENTITY_LARRYJR | 19 boss: Larry Jr./Hollow <br> | 19 |
+| ENTITY_MONSTRO | 20 boss: Monstro <br> | 20 |
+| ENTITY_MAGGOT |  | 21 |
+| ENTITY_HIVE |  | 22 |
+| ENTITY_CHARGER |  | 23 |
+| ENTITY_GLOBIN |  | 24 |
+| ENTITY_BOOMFLY |  | 25 |
+| ENTITY_MAW |  | 26 |
+| ENTITY_HOST |  | 27 |
+| ENTITY_CHUB |  | 28 |
+| ENTITY_HOPPER | 29 enemy: Hopper <br> | 29 |
+| ENTITY_BOIL | 30 enemy: Boil, variants: 1 - Gut, 2 - Sack <br> | 30 |
+| ENTITY_SPITY |  | 31 |
+| ENTITY_BRAIN |  | 32 |
+| ENTITY_FIREPLACE |  | 33 |
+| ENTITY_LEAPER |  | 34 |
+| ENTITY_MRMAW |  | 35 |
+| ENTITY_GURDY |  | 36 |
+| ENTITY_BABY |  | 38 |
+| ENTITY_VIS |  | 39 |
+| ENTITY_GUTS |  | 40 |
+| ENTITY_KNIGHT |  | 41 |
+| ENTITY_STONEHEAD |  | 42 |
+| ENTITY_MONSTRO2 |  | 43 |
+| ENTITY_POKY |  | 44 |
+| ENTITY_MOM |  | 45 |
+| ENTITY_SLOTH | 46 miniboss: Sloth <br> | 46 |
+| ENTITY_LUST | 47 miniboss: Lust <br> | 47 |
+| ENTITY_WRATH | 48 miniboss: Wrath <br> | 48 |
+| ENTITY_GLUTTONY | 49 miniboss: Gluttony <br> | 49 |
+| ENTITY_GREED | 50 miniboss: Greed <br> | 50 |
+| ENTITY_ENVY | 51 miniboss: Envy <br> | 51 |
+| ENTITY_PRIDE | 52 miniboss: Pride <br> | 52 |
+| ENTITY_DOPLE |  | 53 |
+| ENTITY_FLAMINGHOPPER | 54 enemy: Flaming Hopper <br> | 54 |
+| ENTITY_LEECH |  | 55 |
+| ENTITY_LUMP |  | 56 |
+| ENTITY_MEMBRAIN | 57 enemy: Membrain and Mama Guts <br> | 57 |
+| ENTITY_PARA_BITE |  | 58 |
+| ENTITY_FRED |  | 59 |
+| ENTITY_EYE |  | 60 |
+| ENTITY_SUCKER | 61 enemy: Sucker <br> | 61 |
+| ENTITY_PIN | 62 boss: Pin <br> | 62 |
+| ENTITY_FAMINE |  | 63 |
+| ENTITY_PESTILENCE |  | 64 |
+| ENTITY_WAR | variant 1: Conquest <br> | 65 |
+| ENTITY_DEATH |  | 66 |
+| ENTITY_DUKE | 67 boss: Duke of Flies/Husk <br> | 67 |
+| ENTITY_PEEP |  | 68 |
+| ENTITY_LOKI |  | 69 |
+| ENTITY_FISTULA_BIG |  | 71 |
+| ENTITY_FISTULA_MEDIUM |  | 72 |
+| ENTITY_FISTULA_SMALL |  | 73 |
+| ENTITY_BLASTOCYST_BIG | 74 boss: Blastocyst <br> | 74 |
+| ENTITY_BLASTOCYST_MEDIUM |  | 75 |
+| ENTITY_BLASTOCYST_SMALL |  | 76 |
+| ENTITY_EMBRYO |  | 77 |
+| ENTITY_MOMS_HEART |  | 78 |
+| ENTITY_GEMINI | 79 boss: Gemini <br> | 79 |
+| ENTITY_MOTER | 80 enemy: Moter <br> | 80 |
+| ENTITY_FALLEN | variant 1: Krampus <br> | 81 |
+| ENTITY_HEADLESS_HORSEMAN | Headless Horseman <br> | 82 |
+| ENTITY_HORSEMAN_HEAD | Head for Headless Horseman <br> | 83 |
+| ENTITY_SATAN |  | 84 |
+| ENTITY_SPIDER | 85 enemy: Spider <br> | 85 |
+| ENTITY_KEEPER |  | 86 |
+| ENTITY_GURGLE |  | 87 |
+| ENTITY_WALKINGBOIL | ai for WalkingBoil, WalkingGut and WalkingSack <br> | 88 |
+| ENTITY_BUTTLICKER |  | 89 |
+| ENTITY_HANGER | 90 enemy: Hanger <br> | 90 |
+| ENTITY_SWARMER |  | 91 |
+| ENTITY_HEART |  | 92 |
+| ENTITY_MASK |  | 93 |
+| ENTITY_BIGSPIDER |  | 94 |
+| ENTITY_ETERNALFLY | 96 enemy: Eternal Fly <br> | 96 |
+| ENTITY_MASK_OF_INFAMY |  | 97 |
+| ENTITY_HEART_OF_INFAMY |  | 98 |
+| ENTITY_GURDY_JR | 99 enemy: Gurdy Jr. <br> | 99 |
+| ENTITY_WIDOW |  | 100 |
+| ENTITY_DADDYLONGLEGS |  | 101 |
+| ENTITY_ISAAC |  | 102 |
+| ENTITY_STONE_EYE | Rebirth enemies <br> | 201 |
+| ENTITY_CONSTANT_STONE_SHOOTER |  | 202 |
+| ENTITY_BRIMSTONE_HEAD |  | 203 |
+| ENTITY_MOBILE_HOST |  | 204 |
+| ENTITY_NEST |  | 205 |
+| ENTITY_BABY_LONG_LEGS |  | 206 |
+| ENTITY_CRAZY_LONG_LEGS |  | 207 |
+| ENTITY_FATTY |  | 208 |
+| ENTITY_FAT_SACK |  | 209 |
+| ENTITY_BLUBBER |  | 210 |
+| ENTITY_HALF_SACK |  | 211 |
+| ENTITY_DEATHS_HEAD |  | 212 |
+| ENTITY_MOMS_HAND |  | 213 |
+| ENTITY_FLY_L2 |  | 214 |
+| ENTITY_SPIDER_L2 |  | 215 |
+| ENTITY_SWINGER |  | 216 |
+| ENTITY_DIP |  | 217 |
+| ENTITY_WALL_HUGGER |  | 218 |
+| ENTITY_WIZOOB |  | 219 |
+| ENTITY_SQUIRT |  | 220 |
+| ENTITY_COD_WORM |  | 221 |
+| ENTITY_RING_OF_FLIES |  | 222 |
+| ENTITY_DINGA |  | 223 |
+| ENTITY_OOB |  | 224 |
+| ENTITY_BLACK_MAW |  | 225 |
+| ENTITY_SKINNY |  | 226 |
+| ENTITY_BONY |  | 227 |
+| ENTITY_HOMUNCULUS |  | 228 |
+| ENTITY_TUMOR |  | 229 |
+| ENTITY_CAMILLO_JR |  | 230 |
+| ENTITY_NERVE_ENDING |  | 231 |
+| ENTITY_SKINBALL |  | 232 |
+| ENTITY_MOM_HEAD |  | 233 |
+| ENTITY_ONE_TOOTH |  | 234 |
+| ENTITY_GAPING_MAW |  | 235 |
+| ENTITY_BROKEN_GAPING_MAW |  | 236 |
+| ENTITY_GURGLING |  | 237 |
+| ENTITY_SPLASHER |  | 238 |
+| ENTITY_GRUB |  | 239 |
+| ENTITY_WALL_CREEP |  | 240 |
+| ENTITY_RAGE_CREEP |  | 241 |
+| ENTITY_BLIND_CREEP |  | 242 |
+| ENTITY_CONJOINED_SPITTY |  | 243 |
+| ENTITY_ROUND_WORM |  | 244 |
+| ENTITY_POOP |  | 245 |
+| ENTITY_RAGLING |  | 246 |
+| ENTITY_FLESH_MOBILE_HOST |  | 247 |
+| ENTITY_PSY_HORF |  | 248 |
+| ENTITY_FULL_FLY |  | 249 |
+| ENTITY_TICKING_SPIDER |  | 250 |
+| ENTITY_BEGOTTEN |  | 251 |
+| ENTITY_NULLS |  | 252 |
+| ENTITY_PSY_TUMOR |  | 253 |
+| ENTITY_FLOATING_KNIGHT |  | 254 |
+| ENTITY_NIGHT_CRAWLER |  | 255 |
+| ENTITY_DART_FLY | Afterbirth <br> | 256 |
+| ENTITY_CONJOINED_FATTY |  | 257 |
+| ENTITY_FAT_BAT |  | 258 |
+| ENTITY_IMP |  | 259 |
+| ENTITY_THE_HAUNT | Rebirth bosses <br> | 260 |
+| ENTITY_DINGLE |  | 261 |
+| ENTITY_MEGA_MAW |  | 262 |
+| ENTITY_GATE |  | 263 |
+| ENTITY_MEGA_FATTY |  | 264 |
+| ENTITY_CAGE |  | 265 |
+| ENTITY_MAMA_GURDY |  | 266 |
+| ENTITY_DARK_ONE |  | 267 |
+| ENTITY_ADVERSARY |  | 268 |
+| ENTITY_POLYCEPHALUS |  | 269 |
+| ENTITY_MR_FRED |  | 270 |
+| ENTITY_URIEL |  | 271 |
+| ENTITY_GABRIEL |  | 272 |
+| ENTITY_THE_LAMB |  | 273 |
+| ENTITY_MEGA_SATAN |  | 274 |
+| ENTITY_MEGA_SATAN_2 |  | 275 |
+| ENTITY_ROUNDY | Afterbirth #2 <br> | 276 |
+| ENTITY_BLACK_BONY |  | 277 |
+| ENTITY_BLACK_GLOBIN |  | 278 |
+| ENTITY_BLACK_GLOBIN_HEAD |  | 279 |
+| ENTITY_BLACK_GLOBIN_BODY |  | 280 |
+| ENTITY_SWARM |  | 281 |
+| ENTITY_MEGA_CLOTTY |  | 282 |
+| ENTITY_BONE_KNIGHT |  | 283 |
+| ENTITY_CYCLOPIA |  | 284 |
+| ENTITY_RED_GHOST |  | 285 |
+| ENTITY_FLESH_DEATHS_HEAD |  | 286 |
+| ENTITY_MOMS_DEAD_HAND |  | 287 |
+| ENTITY_DUKIE |  | 288 |
+| ENTITY_ULCER |  | 289 |
+| ENTITY_MEATBALL |  | 290 |
+| ENTITY_PITFALL |  | 291 |
+| ENTITY_MOVABLE_TNT |  | 292 |
+| ENTITY_ULTRA_COIN |  | 293 |
+| ENTITY_ULTRA_DOOR |  | 294 |
+| ENTITY_CORN_MINE |  | 295 |
+| ENTITY_HUSH_FLY |  | 296 |
+| ENTITY_HUSH_GAPER |  | 297 |
+| ENTITY_HUSH_BOIL |  | 298 |
+| ENTITY_GREED_GAPER |  | 299 |
+| ENTITY_MUSHROOM |  | 300 |
+| ENTITY_POISON_MIND |  | 301 |
+| ENTITY_STONEY |  | 302 |
+| ENTITY_BLISTER |  | 303 |
+| ENTITY_THE_THING |  | 304 |
+| ENTITY_MINISTRO |  | 305 |
+| ENTITY_PORTAL |  | 306 |
+| ENTITY_TARBOY | Booster enemies <br> | 307 |
+| ENTITY_FISTULOID |  | 308 |
+| ENTITY_GUSH |  | 309 |
+| ENTITY_LEPER |  | 310 |
+| ENTITY_STAIN | Afterbirth bosses <br> | 401 |
+| ENTITY_BROWNIE |  | 402 |
+| ENTITY_FORSAKEN |  | 403 |
+| ENTITY_LITTLE_HORN |  | 404 |
+| ENTITY_RAG_MAN |  | 405 |
+| ENTITY_ULTRA_GREED |  | 406 |
+| ENTITY_HUSH |  | 407 |
+| ENTITY_HUSH_SKINLESS |  | 408 |
+| ENTITY_RAG_MEGA |  | 409 |
+| ENTITY_SISTERS_VIS |  | 410 |
+| ENTITY_BIG_HORN |  | 411 |
+| ENTITY_DELIRIUM |  | 412 |
+| ENTITY_MATRIARCH |  | 413 |
+| ENTITY_EFFECT | 1000 special effects <br> | 1000 |
+| ENTITY_TEXT |  | 9001 |</p>
                 
                   
                     

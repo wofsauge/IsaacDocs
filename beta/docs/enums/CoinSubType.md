@@ -1,4 +1,5 @@
 # Enum "CoinSubType"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | COIN_PENNY |  | 1 |

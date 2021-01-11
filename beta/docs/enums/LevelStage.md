@@ -1,4 +1,5 @@
 # Enum "LevelStage"
+[ ](#){: .abp .tooltip .badge }
 | Enumerator|internal id|possible stages|comment|id|
 |:--:|:--:|:--:|:--:|:--:|
 | STAGE_NULL | 0 | Special Rooms (Game crashes on entering this stage) | 0 |

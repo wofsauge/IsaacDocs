@@ -1,13 +1,16 @@
 # Class "ItemConfig::Config"
 ## Functions
+[ ](#){: .abp .tooltip .badge }
 ### GetCard () {: aria-label='Functions' }
 ####  [Card](../ItemConfig_Card) GetCard ( int ID)  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCards () {: aria-label='Functions' }
 ####  CardList GetCards ( )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCollectible () {: aria-label='Functions' }
 ####  [Item](../ItemConfig_Item) GetCollectible ( int ID)  {: aria-label='Functions' }
 
@@ -38,8 +41,10 @@ return Isaac.GetItemConfig():GetCollectibles().Size -1
 end
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCollectibles () {: aria-label='Functions' }
 ####  ItemList GetCollectibles ( )  {: aria-label='Functions' }
 
@@ -56,36 +61,44 @@ end
 ##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
 The objects stored in the returned list cant be accessed correctly and are therefore useless.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCostumes () {: aria-label='Functions' }
 ####  CostumeList GetCostumes ( )  {: aria-label='Functions' }
 
 ##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
 The Vector/Table returned by this function is always empty! 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetNullItem () {: aria-label='Functions' }
 ####  [Item](../ItemConfig_Item) GetNullItem ( int ID)  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetNullItems () {: aria-label='Functions' }
 ####  ItemList GetNullItems ( )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetPillEffect () {: aria-label='Functions' }
 ####  [PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../ItemConfig_PillEffect) PillEffectID)  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetPillEffects () {: aria-label='Functions' }
 ####  PillList GetPillEffects ( )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetTrinket () {: aria-label='Functions' }
 ####  [Item](../ItemConfig_Item) GetTrinket ( int ID)  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetTrinkets () {: aria-label='Functions' }
 ####  ItemList GetTrinkets ( )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### IsValidCollectible () {: aria-label='Functions' }
 #### static boolean IsValidCollectible ( [CollectibleType](../enums/CollectibleType) ID)  {: aria-label='Functions' }
 
@@ -100,6 +113,7 @@ ItemConfig.Config.IsValidCollectible(1)
 ##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
 This function returns false for modded items! Use itemConfig:GetCollectible() instead.
 ___ 
+[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### ShouldAddCostumeOnPickup () {: aria-label='Functions' }
 #### static boolean ShouldAddCostumeOnPickup ( [Item](../ItemConfig_Item) Config)  {: aria-label='Functions' }
 

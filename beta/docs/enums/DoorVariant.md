@@ -1,4 +1,5 @@
 # Enum "DoorVariant"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | DOOR_UNSPECIFIED |  | 0 |

@@ -4,3 +4,6 @@ $( document ).ready(function() {
       $("body").toggleClass("darkMode");
     });
 });
+app.document$.subscribe(function() {
+  $(".badge").parent().addClass("badgeLine");
+});

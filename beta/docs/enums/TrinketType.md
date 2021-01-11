@@ -1,4 +1,5 @@
 # Enum "TrinketType"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | TRINKET_NULL |  | 0 |

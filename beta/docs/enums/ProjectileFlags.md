@@ -1,4 +1,5 @@
 # Enum "ProjectileFlags"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | SMART | follow player <br> | 1 |

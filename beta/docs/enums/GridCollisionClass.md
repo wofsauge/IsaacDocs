@@ -1,4 +1,5 @@
 # Enum "GridCollisionClass"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | COLLISION_NONE |  | 0 |

@@ -1,4 +1,5 @@
 # Enum "TearVariant"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | BLUE |  | 0 |

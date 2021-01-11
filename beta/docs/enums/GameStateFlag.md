@@ -1,4 +1,5 @@
 # Enum "GameStateFlag"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | STATE_FAMINE_SPAWNED |  | 0 |

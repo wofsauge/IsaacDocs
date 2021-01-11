@@ -11,12 +11,12 @@ nav[aria-label$='Variables'] {
     text-align: center;
 }
 
-.WRONG_PARSE{
+.wrongParsing{
     color: white !important;
     background-color: red;
     font-size: 20px !important;
 }
-.WRONG_PARSE::after {
+.wrongParsing::after {
     content:"THIS PART IS NOT PARSED CORRECTLY! PLEASE FIX MANUALLY!!!!!";
     color: red !important;
     background-color: black;
@@ -55,6 +55,51 @@ h4[aria-label$='Variables']{
 }
 .md-content p{
     text-align: justify
+}
+
+.abp{
+    background-color: #00bfa5;
+    color: white !important;
+}
+.abp::before{
+    content:"ab+";
+}
+a.abp.tooltip:after{
+    content:"Compatible with Afterbirth+";
+}
+
+.static{
+    background-color: #c7c7c7;
+    color: black !important;
+}
+.static::before{
+    content:"static";
+}
+a.static.tooltip:after{
+    content:"This function is static";
+}
+.const{
+    background-color: #44d8cc;
+    color: black !important;
+}
+.const::before{
+    content:"const";
+}
+a.const.tooltip:after{
+    content:"This function returns a constant value";
+}
+
+.badge{
+    font-size: 8pt;
+    vertical-align: middle;
+    padding: 4px 5px 4px 6px;
+    border-radius: 10px;
+    margin: 0px 2px;
+}
+
+.badgeLine{
+    margin: 0 !important;
+    float: right;
 }
 
 .subHeader {
@@ -100,3 +145,32 @@ body.darkMode {
     --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
     --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
 }
+
+/* TOOLTIP */
+a.tooltip {
+    position: relative;
+    text-decoration: none;
+  }
+  a.tooltip:after {
+    content: inherit;
+    position: absolute;
+    bottom: 200%;
+    right: 0%;
+    background: inherit;
+    padding: 5px 15px;
+    color: inherit;
+    -webkit-border-radius: 10px;
+    -moz-border-radius : 10px;
+    border-radius : 10px;
+    white-space: nowrap;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition : all 0.4s ease;
+    transition : all 0.4s ease;
+  }
+  a.tooltip:hover:after {
+    bottom: 125%;
+  }
+  a.tooltip:hover:after {
+    opacity: 1;
+  }

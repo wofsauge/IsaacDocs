@@ -1,4 +1,5 @@
 # Enum "LevelCurse"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | CURSE_NONE |  | 0 |

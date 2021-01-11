@@ -1,4 +1,5 @@
 # Enum "EffectVariant"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | EFFECT_NULL |  | 0 |

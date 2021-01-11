@@ -1,4 +1,5 @@
 # Enum "BombVariant"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | BOMB_NORMAL |  | 0 |

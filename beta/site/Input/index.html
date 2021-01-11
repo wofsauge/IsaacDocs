@@ -2519,6 +2519,7 @@
                 
                 <h1 id="class-input">Class "Input"<a class="headerlink" href="#class-input" title="Permanent link">⚓︎</a></h1>
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getactionvalue">GetActionValue ()<a class="headerlink" href="#getactionvalue" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">float GetActionValue ( int action, int controllerId )</h4>
 <p>Returns the current strength in which a button was pressed. This is 0 OR 1 with a keyboard. With a controller, this can be used to get the strength in which you have moved the analog stick in a direction.</p>
@@ -2528,10 +2529,12 @@
 </code></pre></div>
 </td></tr></table></p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getbuttonvalue">GetButtonValue ()<a class="headerlink" href="#getbuttonvalue" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">float GetButtonValue ( int button, int controllerId )</h4>
 <p>Use "GetActionValue" instead of this function.</p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getmouseposition">GetMousePosition ()<a class="headerlink" href="#getmouseposition" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions"><a href="../Vector">Vector</a> GetMousePosition ( boolean gameCoords)</h4>
 <p>Returns the current mouse position in game coordinates (true) or render coordinates.</p>
@@ -2543,12 +2546,13 @@
 </code></pre></div>
 </td></tr></table></p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="isactionpressed">IsActionPressed ()<a class="headerlink" href="#isactionpressed" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">boolean IsActionPressed ( int action, int controllerId )</h4>
 <p>Returns, if an action-button is pressed or not. An Action-button is any button that got a default function assigned to it. This function will return true, as long the button is held down.
 <a href="group__enums.html#gafa717ac273a5a382f7c01ef7afba1ee7">List of all Action enums</a></p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
+<p class="wrongParsing">This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">Input</span><span class="p">.</span><span class="n">IsActionPressed</span><span class="p">(</span><span class="n">ButtonAction</span><span class="p">.</span><span class="n">ACTION_BOMB</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="n">then</span>
@@ -2556,14 +2560,15 @@
 <span class="n">end</span>
 </code></pre></div>
 </td></tr></table>
- WRONG PARSING {: .WRONG_PARSE } </p>
+ WRONG PARSING </p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="isactiontriggered">IsActionTriggered ()<a class="headerlink" href="#isactiontriggered" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">boolean IsActionTriggered ( int action, int controllerId )</h4>
 <p>Returns, if an action-button was pressed some time before or not. An Action-button is any button that got a default function assigned to it. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
 <a href="group__enums.html#gafa717ac273a5a382f7c01ef7afba1ee7">List of all Action enums</a></p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
+<p class="wrongParsing">This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">Input</span><span class="p">.</span><span class="n">IsActionTriggered</span><span class="p">(</span><span class="n">ButtonAction</span><span class="p">.</span><span class="n">ACTION_BOMB</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="n">then</span>
@@ -2571,14 +2576,15 @@
 <span class="n">end</span>
 </code></pre></div>
 </td></tr></table>
- WRONG PARSING {: .WRONG_PARSE } </p>
+ WRONG PARSING </p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="isbuttonpressed">IsButtonPressed ()<a class="headerlink" href="#isbuttonpressed" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">boolean IsButtonPressed ( int button, int controllerId )</h4>
 <p>Returns, if a button is pressed or not. This function will return true, as long the button is held down.
 <a href="group__enums.html#gabcabfff8e6138e0943763148d70e5005">List of all key enums</a></p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
+<p class="wrongParsing">This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">Input</span><span class="p">.</span><span class="n">IsButtonPressed</span><span class="p">(</span><span class="n">Keyboard</span><span class="p">.</span><span class="n">KEY_ENTER</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="n">then</span>
@@ -2586,14 +2592,15 @@
 <span class="n">end</span>
 </code></pre></div>
 </td></tr></table>
- WRONG PARSING {: .WRONG_PARSE } </p>
+ WRONG PARSING </p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="isbuttontriggered">IsButtonTriggered ()<a class="headerlink" href="#isbuttontriggered" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">boolean IsButtonTriggered ( int button, int controllerId )</h4>
 <p>Returns, if a button was pressed some time before or not. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
 <a href="group__enums.html#gabcabfff8e6138e0943763148d70e5005">List of all key enums</a></p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
+<p class="wrongParsing">This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="n">Input</span><span class="p">.</span><span class="n">IsButtonTriggered</span><span class="p">(</span><span class="n">Keyboard</span><span class="p">.</span><span class="n">KEY_ENTER</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="n">then</span>
@@ -2601,8 +2608,9 @@
 <span class="n">end</span>
 </code></pre></div>
 </td></tr></table>
- WRONG PARSING {: .WRONG_PARSE } </p>
+ WRONG PARSING </p>
 <hr />
+<p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="ismousebtnpressed">IsMouseBtnPressed ()<a class="headerlink" href="#ismousebtnpressed" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions">boolean IsMouseBtnPressed ( int button)</h4>
 <p>Returns, if a mousebutton is pressed or not.

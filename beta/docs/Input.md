@@ -1,5 +1,6 @@
 # Class "Input"
 ## Functions
+[ ](#){: .abp .tooltip .badge }
 ### GetActionValue () {: aria-label='Functions' }
 #### float GetActionValue ( int action, int controllerId )  {: aria-label='Functions' }
 
@@ -12,11 +13,13 @@ print(Input.GetActionValue(ButtonAction.ACTION_LEFT, 1))
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetButtonValue () {: aria-label='Functions' }
 #### float GetButtonValue ( int button, int controllerId )  {: aria-label='Functions' }
 
 Use "GetActionValue" instead of this function.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetMousePosition () {: aria-label='Functions' }
 #### [Vector](../Vector) GetMousePosition ( boolean gameCoords)  {: aria-label='Functions' }
 
@@ -30,6 +33,7 @@ Isaac.RenderText("Hello World!", mousePos.X, mousePos.Y, 1 ,1 ,1 ,1 )
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### IsActionPressed () {: aria-label='Functions' }
 #### boolean IsActionPressed ( int action, int controllerId )  {: aria-label='Functions' }
 
@@ -43,8 +47,10 @@ print("bomb Button pressed")
 end
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### IsActionTriggered () {: aria-label='Functions' }
 #### boolean IsActionTriggered ( int action, int controllerId )  {: aria-label='Functions' }
 
@@ -58,8 +64,10 @@ print("bomb Button pressed")
 end
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### IsButtonPressed () {: aria-label='Functions' }
 #### boolean IsButtonPressed ( int button, int controllerId )  {: aria-label='Functions' }
 
@@ -73,8 +81,10 @@ print("Enter Button pressed.")
 end
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### IsButtonTriggered () {: aria-label='Functions' }
 #### boolean IsButtonTriggered ( int button, int controllerId )  {: aria-label='Functions' }
 
@@ -88,8 +98,10 @@ print("Enter Button was pressed.")
 end
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### IsMouseBtnPressed () {: aria-label='Functions' }
 #### boolean IsMouseBtnPressed ( int button)  {: aria-label='Functions' }
 

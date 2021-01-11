@@ -2352,207 +2352,47 @@
                 
                 
                 <h1 id="enum-entityflag">Enum "EntityFlag"<a class="headerlink" href="#enum-entityflag" title="Permanent link">⚓︎</a></h1>
-<table>
-<thead>
-<tr>
-<th align="center">Enumerator</th>
-<th align="center">comment</th>
-<th align="center">id</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">FLAG_NO_STATUS_EFFECTS</td>
-<td align="center">prevent freeze/poison/slow/charm/confusion/fear/burn <br></td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_INTERPOLATE</td>
-<td align="center">do not interpolate position <br></td>
-<td align="center">1&lt;&lt;1</td>
-</tr>
-<tr>
-<td align="center">FLAG_APPEAR</td>
-<td align="center">play appear animation after Init <br></td>
-<td align="center">1&lt;&lt;2</td>
-</tr>
-<tr>
-<td align="center">FLAG_RENDER_FLOOR</td>
-<td align="center">will be rendered to floor texture <br></td>
-<td align="center">1&lt;&lt;3</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_TARGET</td>
-<td align="center">will not be a target of NPCs or familiars <br></td>
-<td align="center">1&lt;&lt;4</td>
-</tr>
-<tr>
-<td align="center">FLAG_FREEZE</td>
-<td align="center">freezing effect <br></td>
-<td align="center">1&lt;&lt;5</td>
-</tr>
-<tr>
-<td align="center">FLAG_POISON</td>
-<td align="center">poison effect <br></td>
-<td align="center">1&lt;&lt;6</td>
-</tr>
-<tr>
-<td align="center">FLAG_SLOW</td>
-<td align="center">slowing (velocity) <br></td>
-<td align="center">1&lt;&lt;7</td>
-</tr>
-<tr>
-<td align="center">FLAG_CHARM</td>
-<td align="center">Charmed <br></td>
-<td align="center">1&lt;&lt;8</td>
-</tr>
-<tr>
-<td align="center">FLAG_CONFUSION</td>
-<td align="center">Confused <br></td>
-<td align="center">1&lt;&lt;9</td>
-</tr>
-<tr>
-<td align="center">FLAG_MIDAS_FREEZE</td>
-<td align="center">Midas frozen <br></td>
-<td align="center">1&lt;&lt;10</td>
-</tr>
-<tr>
-<td align="center">FLAG_FEAR</td>
-<td align="center">Fleeing in Fear (like Mom's Pad) <br></td>
-<td align="center">1&lt;&lt;11</td>
-</tr>
-<tr>
-<td align="center">FLAG_BURN</td>
-<td align="center">Caused by Fire Mind tears, works like poison except with Red color effect. <br></td>
-<td align="center">1&lt;&lt;12</td>
-</tr>
-<tr>
-<td align="center">FLAG_RENDER_WALL</td>
-<td align="center">will be rendered to wall texture <br></td>
-<td align="center">1&lt;&lt;13</td>
-</tr>
-<tr>
-<td align="center">FLAG_INTERPOLATION_UPDATE</td>
-<td align="center">entity is updating at 60 fps, and this is an odd frame <br></td>
-<td align="center">1&lt;&lt;14</td>
-</tr>
-<tr>
-<td align="center">FLAG_APPLY_GRAVITY</td>
-<td align="center">In sidescrolling room, this indicates that we're in a gravity zone. <br></td>
-<td align="center">1&lt;&lt;15</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_BLOOD_SPLASH</td>
-<td align="center"></td>
-<td align="center">1&lt;&lt;16</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_REMOVE_ON_TEX_RENDER</td>
-<td align="center">for FLAG_RENDER_FLOOR and FLAG_RENDER_WALL <br></td>
-<td align="center">1&lt;&lt;17</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_DEATH_TRIGGER</td>
-<td align="center"></td>
-<td align="center">1&lt;&lt;18</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_SPIKE_DAMAGE</td>
-<td align="center"></td>
-<td align="center">1&lt;&lt;19</td>
-</tr>
-<tr>
-<td align="center">FLAG_BOSSDEATH_TRIGGERED</td>
-<td align="center"></td>
-<td align="center">1&lt;&lt;20</td>
-</tr>
-<tr>
-<td align="center">FLAG_DONT_OVERWRITE</td>
-<td align="center">Used in entityfactory to not remove this entity if there is no space left for new entity <br></td>
-<td align="center">1&lt;&lt;21</td>
-</tr>
-<tr>
-<td align="center">FLAG_SPAWN_STICKY_SPIDERS</td>
-<td align="center">Used by Sticky bombs to generate spiders on death <br></td>
-<td align="center">1&lt;&lt;22</td>
-</tr>
-<tr>
-<td align="center">FLAG_SPAWN_BLACK_HP</td>
-<td align="center">Used by black hp drop tear flag to drop a black hp on enemy death <br></td>
-<td align="center">1&lt;&lt;23</td>
-</tr>
-<tr>
-<td align="center">FLAG_SHRINK</td>
-<td align="center">God's flesh effect <br></td>
-<td align="center">1&lt;&lt;24</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_FLASH_ON_DAMAGE</td>
-<td align="center">Entity will not flash red when damaged <br></td>
-<td align="center">1&lt;&lt;25</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_KNOCKBACK</td>
-<td align="center">Bombs and farts have no knockback effects <br></td>
-<td align="center">1&lt;&lt;26</td>
-</tr>
-<tr>
-<td align="center">FLAG_SLIPPERY_PHYSICS</td>
-<td align="center">Standing on a slippery surface <br></td>
-<td align="center">1&lt;&lt;27</td>
-</tr>
-<tr>
-<td align="center">FLAG_ADD_JAR_FLY</td>
-<td align="center">Adds a fly to the jar when killed <br></td>
-<td align="center">1&lt;&lt;28</td>
-</tr>
-<tr>
-<td align="center">FLAG_FRIENDLY</td>
-<td align="center">Charmed and m_CharmCountdown&lt;0 <br></td>
-<td align="center">1&lt;&lt;29</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_PHYSICS_KNOCKBACK</td>
-<td align="center">No knockback from general collisions <br></td>
-<td align="center">1&lt;&lt;30</td>
-</tr>
-<tr>
-<td align="center">FLAG_DONT_COUNT_BOSS_HP</td>
-<td align="center">Do not count boss hp <br></td>
-<td align="center">1&lt;&lt;31</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_SPRITE_UPDATE</td>
-<td align="center">Do not update sprite animation <br></td>
-<td align="center">1&lt;&lt;32</td>
-</tr>
-<tr>
-<td align="center">FLAG_CONTAGIOUS</td>
-<td align="center">Used for Contagious item (if the enemy is infected) <br></td>
-<td align="center">1&lt;&lt;33</td>
-</tr>
-<tr>
-<td align="center">FLAG_BLEED_OUT</td>
-<td align="center">Used for Mom's Razor <br></td>
-<td align="center">1&lt;&lt;34</td>
-</tr>
-<tr>
-<td align="center">FLAG_HIDE_HP_BAR</td>
-<td align="center">Added for Ultra Greed so his HP can be hidden after he "dies" since his entity sticks around <br></td>
-<td align="center">1&lt;&lt;35</td>
-</tr>
-<tr>
-<td align="center">FLAG_NO_DAMAGE_BLINK</td>
-<td align="center">Player was given a short period of invulnerability by something other than damage, don't blink <br></td>
-<td align="center">1&lt;&lt;36</td>
-</tr>
-<tr>
-<td align="center">FLAG_PERSISTENT</td>
-<td align="center">Entity persists between rooms <br></td>
-<td align="center">1&lt;&lt;37</td>
-</tr>
-</tbody>
-</table>
+<p><a class="abp tooltip badge" href="#"> </a>
+|Enumerator|comment|id|
+|:--:|:--:|:--:|
+| FLAG_NO_STATUS_EFFECTS | prevent freeze/poison/slow/charm/confusion/fear/burn <br> | 1 |
+| FLAG_NO_INTERPOLATE | do not interpolate position <br> | 1&lt;&lt;1 |
+| FLAG_APPEAR | play appear animation after Init <br> | 1&lt;&lt;2 |
+| FLAG_RENDER_FLOOR | will be rendered to floor texture <br> | 1&lt;&lt;3 |
+| FLAG_NO_TARGET | will not be a target of NPCs or familiars <br> | 1&lt;&lt;4 |
+| FLAG_FREEZE | freezing effect <br> | 1&lt;&lt;5 |
+| FLAG_POISON | poison effect <br> | 1&lt;&lt;6 |
+| FLAG_SLOW | slowing (velocity) <br> | 1&lt;&lt;7 |
+| FLAG_CHARM | Charmed <br> | 1&lt;&lt;8 |
+| FLAG_CONFUSION | Confused <br> | 1&lt;&lt;9 |
+| FLAG_MIDAS_FREEZE | Midas frozen <br> | 1&lt;&lt;10 |
+| FLAG_FEAR | Fleeing in Fear (like Mom's Pad) <br> | 1&lt;&lt;11 |
+| FLAG_BURN | Caused by Fire Mind tears, works like poison except with Red color effect. <br> | 1&lt;&lt;12 |
+| FLAG_RENDER_WALL | will be rendered to wall texture <br> | 1&lt;&lt;13 |
+| FLAG_INTERPOLATION_UPDATE | entity is updating at 60 fps, and this is an odd frame <br> | 1&lt;&lt;14 |
+| FLAG_APPLY_GRAVITY | In sidescrolling room, this indicates that we're in a gravity zone. <br> | 1&lt;&lt;15 |
+| FLAG_NO_BLOOD_SPLASH |  | 1&lt;&lt;16 |
+| FLAG_NO_REMOVE_ON_TEX_RENDER | for FLAG_RENDER_FLOOR and FLAG_RENDER_WALL <br> | 1&lt;&lt;17 |
+| FLAG_NO_DEATH_TRIGGER |  | 1&lt;&lt;18 |
+| FLAG_NO_SPIKE_DAMAGE |  | 1&lt;&lt;19 |
+| FLAG_BOSSDEATH_TRIGGERED |  | 1&lt;&lt;20 |
+| FLAG_DONT_OVERWRITE | Used in entityfactory to not remove this entity if there is no space left for new entity <br> | 1&lt;&lt;21 |
+| FLAG_SPAWN_STICKY_SPIDERS | Used by Sticky bombs to generate spiders on death <br> | 1&lt;&lt;22 |
+| FLAG_SPAWN_BLACK_HP | Used by black hp drop tear flag to drop a black hp on enemy death <br> | 1&lt;&lt;23 |
+| FLAG_SHRINK | God's flesh effect <br> | 1&lt;&lt;24 |
+| FLAG_NO_FLASH_ON_DAMAGE | Entity will not flash red when damaged <br> | 1&lt;&lt;25 |
+| FLAG_NO_KNOCKBACK | Bombs and farts have no knockback effects <br> | 1&lt;&lt;26 |
+| FLAG_SLIPPERY_PHYSICS | Standing on a slippery surface <br> | 1&lt;&lt;27 |
+| FLAG_ADD_JAR_FLY | Adds a fly to the jar when killed <br> | 1&lt;&lt;28 |
+| FLAG_FRIENDLY | Charmed and m_CharmCountdown&lt;0 <br> | 1&lt;&lt;29 |
+| FLAG_NO_PHYSICS_KNOCKBACK | No knockback from general collisions <br> | 1&lt;&lt;30 |
+| FLAG_DONT_COUNT_BOSS_HP | Do not count boss hp <br> | 1&lt;&lt;31 |
+| FLAG_NO_SPRITE_UPDATE | Do not update sprite animation <br> | 1&lt;&lt;32 |
+| FLAG_CONTAGIOUS | Used for Contagious item (if the enemy is infected) <br> | 1&lt;&lt;33 |
+| FLAG_BLEED_OUT | Used for Mom's Razor <br> | 1&lt;&lt;34 |
+| FLAG_HIDE_HP_BAR | Added for Ultra Greed so his HP can be hidden after he "dies" since his entity sticks around <br> | 1&lt;&lt;35 |
+| FLAG_NO_DAMAGE_BLINK | Player was given a short period of invulnerability by something other than damage, don't blink <br> | 1&lt;&lt;36 |
+| FLAG_PERSISTENT | Entity persists between rooms <br> | 1&lt;&lt;37 |</p>
                 
                   
                     

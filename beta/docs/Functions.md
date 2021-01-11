@@ -1,5 +1,6 @@
 # Class "Functions"
 ## Functions
+[ ](#){: .abp .tooltip .badge }
 ### [Game](../Game) () {: aria-label='Functions' }
 #### [Game](../Game) [Game](../Game) ( )  {: aria-label='Functions' }
 
@@ -11,8 +12,10 @@ Game():IsPaused()
 --returns true if the game is paused
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### [MusicManager](../MusicManager) () {: aria-label='Functions' }
 #### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( )  {: aria-label='Functions' }
 
@@ -23,16 +26,20 @@ Example usage:
 MusicManager():Disable()
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### Random () {: aria-label='Functions' }
 #### int Random ( )  {: aria-label='Functions' }
 Returns a random integer. (0 to 2^32) 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### RandomVector () {: aria-label='Functions' }
 #### [Vector](../Vector) RandomVector ( )  {: aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### [SFXManager](../SFXManager) () {: aria-label='Functions' }
 #### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( )  {: aria-label='Functions' }
 
@@ -43,8 +50,10 @@ Example usage:
 SFXManager():Stop(SoundEffect.SOUND_1UP)
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetPtrHash () {: aria-label='Functions' }
 #### int GetPtrHash ( Objectobject)  {: aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::cpp Entity`, `:::cpp Room`, `:::cpp RNG`, `:::cpp Sprite`, `:::cpp Game` etc.

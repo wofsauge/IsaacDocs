@@ -1,13 +1,16 @@
 # Class "Isaac"
 ## Functions
+[ ](#){: .abp .tooltip .badge }
 ### AddCallback () {: aria-label='Functions' }
 #### void AddCallback ( table ref, int callbackId, table callbackFn, int entityId )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### AddPillEffectToPool () {: aria-label='Functions' }
 #### int AddPillEffectToPool ( int pillEffect)  {: aria-label='Functions' }
 returns pill color 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### ConsoleOutput () {: aria-label='Functions' }
 #### void ConsoleOutput ( string text)  {: aria-label='Functions' }
 
@@ -25,16 +28,19 @@ print("This is a Test.")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### CountBosses () {: aria-label='Functions' }
 #### int CountBosses ( )  {: aria-label='Functions' }
 
 Returns the number of bosses in the current room.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### CountEnemies () {: aria-label='Functions' }
 #### int CountEnemies ( )  {: aria-label='Functions' }
 
 Returns the number of enemies in the current room.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### CountEntities () {: aria-label='Functions' }
 #### int CountEntities ( [Entity](../Entity) Spawner, int Type, int Variant, int Subtype )  {: aria-label='Functions' }
 
@@ -43,6 +49,7 @@ Spawner refers to an entity object (can be `:::cpp nil`)
 Type refers to the found entity's type (Can be `:::cpp EntityType.ENTITY_NULL`) 
 Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::cpp -1`) 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### DebugString () {: aria-label='Functions' }
 #### void DebugString ( string str)  {: aria-label='Functions' }
 
@@ -56,26 +63,33 @@ Isaac.DebugString("This is a Test.")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### ExecuteCommand () {: aria-label='Functions' }
 #### string ExecuteCommand ( string command)  {: aria-label='Functions' }
 
-This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands. WRONG PARSING {: .WRONG_PARSE } 
+This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands. WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### Explode () {: aria-label='Functions' }
 #### void Explode ( [Vector](../Vector) pos, [Entity](../Entity) source, float damage )  {: aria-label='Functions' }
 
 Spawn an explosion on a specified location.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### FindByType () {: aria-label='Functions' }
 #### table FindByType ( int Type, int Variant, int Subtype, boolean Cache, boolean IgnoreFriendly )  {: aria-label='Functions' }
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### FindInRadius () {: aria-label='Functions' }
 #### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions )  {: aria-label='Functions' }
 Returns entities in range of Radius from Position filtered by Partitions mask (see <a href="group__enums.html#gaea2d06861d0d38120ea425aa76d2f398">EntityPartition enum</a>) (include all = 0xffffffff) 
 
-This function does not return the entities sorted by nearest first, but based on the order they were loaded. WRONG PARSING {: .WRONG_PARSE } 
+This function does not return the entities sorted by nearest first, but based on the order they were loaded. WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCardIdByName () {: aria-label='Functions' }
 #### int GetCardIdByName ( string cardHudName)  {: aria-label='Functions' }
 
@@ -91,10 +105,12 @@ Isaac.GetCardIdByName("16_TheTower")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetChallenge () {: aria-label='Functions' }
 #### int GetChallenge ( )  {: aria-label='Functions' }
 Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetChallengeIdByName () {: aria-label='Functions' }
 #### int GetChallengeIdByName ( string challengeName)  {: aria-label='Functions' }
 
@@ -108,6 +124,7 @@ Isaac.GetChallengeIdByName("Aprils fool")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCostumeIdByPath () {: aria-label='Functions' }
 #### int GetCostumeIdByPath ( string path)  {: aria-label='Functions' }
 
@@ -121,6 +138,7 @@ Isaac.GetCostumeIdByPath("gfx/characters/n027_Transformation_Poop.anm2")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetCurseIdByName () {: aria-label='Functions' }
 #### int GetCurseIdByName ( string curseName)  {: aria-label='Functions' }
 
@@ -134,6 +152,7 @@ Isaac.GetCurseIdByName("Curse of the Unknown")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetEntityTypeByName () {: aria-label='Functions' }
 #### int GetEntityTypeByName ( string entityName)  {: aria-label='Functions' }
 
@@ -149,6 +168,7 @@ Isaac.GetEntityTypeByName("Flaming Gaper")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetEntityVariantByName () {: aria-label='Functions' }
 #### int GetEntityVariantByName ( string entityName)  {: aria-label='Functions' }
 
@@ -164,21 +184,27 @@ Isaac.GetEntityVariantByName("Flaming Gaper")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetFrameCount () {: aria-label='Functions' }
 #### int GetFrameCount ( )  {: aria-label='Functions' }
 
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
-This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207">`:::cpp Game():GetFrameCount()`</a> WRONG PARSING {: .WRONG_PARSE } 
+This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207">`:::cpp Game():GetFrameCount()`</a> WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetFreeNearPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) GetFreeNearPosition ( [Vector](../Vector) pos, float step )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetItemConfig () {: aria-label='Functions' }
 #### [Config](../ItemConfig_Config) GetItemConfig ( )  {: aria-label='Functions' }
-Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object. WRONG PARSING {: .WRONG_PARSE } 
+Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object. WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetItemIdByName () {: aria-label='Functions' }
 #### int GetItemIdByName ( string itemName)  {: aria-label='Functions' }
 
@@ -192,6 +218,7 @@ Isaac.GetItemIdByName("Brimstone")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetMusicIdByName () {: aria-label='Functions' }
 #### int GetMusicIdByName ( string musicName)  {: aria-label='Functions' }
 
@@ -205,6 +232,7 @@ Isaac.GetMusicIdByName("Title Screen")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetPillEffectByName () {: aria-label='Functions' }
 #### int GetPillEffectByName ( string pillEffect)  {: aria-label='Functions' }
 
@@ -218,6 +246,7 @@ Isaac.GetPillEffectByName("I can see forever!")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetPlayer () {: aria-label='Functions' }
 #### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId)  {: aria-label='Functions' }
 
@@ -229,6 +258,7 @@ Isaac.GetPlayer(0)
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetPlayerTypeByName () {: aria-label='Functions' }
 #### int GetPlayerTypeByName ( string playerName)  {: aria-label='Functions' }
 
@@ -242,15 +272,18 @@ Isaac.GetPlayerTypeByName("Azazel")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetRandomPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) GetRandomPosition ( )  {: aria-label='Functions' }
 
 Returns a random position inside the current room. The Return value is a Vector containing the position in world coordinates.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetRoomEntities () {: aria-label='Functions' }
 #### table GetRoomEntities ( )  {: aria-label='Functions' }
 Returns a table containing all entities in the room.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetSoundIdByName () {: aria-label='Functions' }
 #### int GetSoundIdByName ( string soundName)  {: aria-label='Functions' }
 
@@ -263,16 +296,19 @@ Isaac.GetSoundIdByName("Custom Sound Effect")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetTextWidth () {: aria-label='Functions' }
 #### int GetTextWidth ( string str)  {: aria-label='Functions' }
 
 Returns the width of the given string in pixels based on the "terminus8" font (same font as used in Isaac.RenderText())
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetTime () {: aria-label='Functions' }
 #### int GetTime ( )  {: aria-label='Functions' }
 
 Returns the current game time in milliseconds. This includes pauses!
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GetTrinketIdByName () {: aria-label='Functions' }
 #### int GetTrinketIdByName ( string trinketName)  {: aria-label='Functions' }
 
@@ -286,18 +322,22 @@ Isaac.GetTrinketIdByName("Lucky Toe")
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### GridSpawn () {: aria-label='Functions' }
 #### [GridEntity](../GridEntity) GridSpawn ( [GridEntity](../GridEntity) gridEntityType, int Variant, [Vector](../Vector) position, boolean forced )  {: aria-label='Functions' }
 
 Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given position (world coordinates).
 ##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING {: .WRONG_PARSE } 
+forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### HasModData () {: aria-label='Functions' }
 #### boolean HasModData ( table ref)  {: aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### LoadModData () {: aria-label='Functions' }
 #### string LoadModData ( table ref)  {: aria-label='Functions' }
 
@@ -320,6 +360,7 @@ yourMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, yourMod.OnGameStart)
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### RegisterMod () {: aria-label='Functions' }
 #### void RegisterMod ( table ref, string modName, int apiVersion )  {: aria-label='Functions' }
 
@@ -331,16 +372,19 @@ local yourMod = RegisterMod("someMod", 1)
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### RemoveCallback () {: aria-label='Functions' }
 #### void RemoveCallback ( table ref, int callbackId, table callbackFn )  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### RemoveModData () {: aria-label='Functions' }
 #### void RemoveModData ( table ref)  {: aria-label='Functions' }
 
 Deletes the stored "saveX.dat" file if it exists. 
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### RenderScaledText () {: aria-label='Functions' }
 #### void RenderScaledText ( string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )  {: aria-label='Functions' }
 
@@ -355,6 +399,7 @@ Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 0.5, 0.5, 1 ,1 ,1 ,1 )
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### RenderText () {: aria-label='Functions' }
 #### void RenderText ( string str, float X, float Y, float R, float G, float B, float A )  {: aria-label='Functions' }
 
@@ -369,6 +414,7 @@ Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 1 ,1 ,1 ,1 )
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### SaveModData () {: aria-label='Functions' }
 #### void SaveModData ( table ref, string data )  {: aria-label='Functions' }
 
@@ -390,15 +436,18 @@ yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### ScreenToWorld () {: aria-label='Functions' }
 #### [Vector](../Vector) ScreenToWorld ( [Vector](../Vector) pos)  {: aria-label='Functions' }
 
 Transfers Screen (aka. Window coordinates) into Worldcoordinates. This can be used to get a specific location in the room in World coordnates The World coordinate system is x[0,inf) y[0,inf).
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### ScreenToWorldDistance () {: aria-label='Functions' }
 #### [Vector](../Vector) ScreenToWorldDistance ( [Vector](../Vector) pos)  {: aria-label='Functions' }
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### [Spawn](../RoomConfig_Spawn) () {: aria-label='Functions' }
 #### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( int entityType, int entityVariant, int entitySubtype, [Vector](../Vector) position, [Vector](../Vector) velocity, [Entity](../Entity) Spawner )  {: aria-label='Functions' }
 
@@ -410,13 +459,16 @@ This code spawns a random collectible at in center of the current room.
 Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
 
 ```
- WRONG PARSING {: .WRONG_PARSE } 
+ WRONG PARSING 
+{: .wrongParsing }
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### WorldToRenderPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) WorldToRenderPosition ( [Vector](../Vector) pos)  {: aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Rendercoordinates. This can be used to render things at fixed positions in a room. The Render coordinate system is x[0,inf) y[0,inf). It defines the Position on the rendering-plane in the current room.
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### WorldToScreen () {: aria-label='Functions' }
 #### [Vector](../Vector) WorldToScreen ( [Vector](../Vector) pos)  {: aria-label='Functions' }
 
@@ -431,6 +483,7 @@ Isaac.RenderText("test", screenpos.X, screenpos.Y, 1 ,1 ,1 ,1 )
 ```
 
 ___ 
+[ ](#){: .abp .tooltip .badge }
 ### WorldToScreenDistance () {: aria-label='Functions' }
 #### [Vector](../Vector) WorldToScreenDistance ( [Vector](../Vector) pos)  {: aria-label='Functions' }
 

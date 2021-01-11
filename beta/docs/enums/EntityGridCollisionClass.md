@@ -1,4 +1,5 @@
 # Enum "EntityGridCollisionClass"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | GRIDCOLL_NONE |  | 0 |

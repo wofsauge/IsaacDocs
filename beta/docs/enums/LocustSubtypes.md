@@ -1,4 +1,5 @@
 # Enum "LocustSubtypes"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | LOCUST_OF_WRATH |  | 1 |

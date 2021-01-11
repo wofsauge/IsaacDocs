@@ -1,4 +1,5 @@
 # Enum "PickupVariant"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | PICKUP_NULL |  | 0 |

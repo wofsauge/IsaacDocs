@@ -1,4 +1,5 @@
 # Enum "SoundEffect"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | SOUND_NULL |  | 0 |

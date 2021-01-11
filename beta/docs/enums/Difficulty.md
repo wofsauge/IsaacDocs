@@ -1,4 +1,5 @@
 # Enum "Difficulty"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | DIFFICULTY_NORMAL |  | 0 |

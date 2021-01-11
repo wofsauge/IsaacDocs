@@ -1,4 +1,5 @@
 # Enum "PlayerItemState"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ITEMSTATE_NORMAL |  | 0 |

@@ -1,4 +1,5 @@
 # Enum "EntityCollisionClass"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ENTCOLL_NONE | no collision with other entities <br> | 0 |

@@ -1,4 +1,5 @@
 # Enum "ModCallbacks"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | MC_NPC_UPDATEFunction Args: (EntityNPC)Optional callback Args: EntityType | Called after an NPC is updated.<br>Returning any value will have no effect on later callback executions.<br><br>This callback will NOT fire when the NPC is playing the "Appear" animation. For example, when a Gaper spawns, it will fire on frame 1, then on frame 31 and onwards.<br><br>This code will print "Hello World!" for every NPC Update. If the NPC is of the type "ENTITY_GAPER", it will also print "Gaper found".<br>function mod:myFunction(entity) -- 'entity' contains a reference to the NPC<br>    print("Hello World!")<br>end<br>mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction)<br><br>function mod:myFunction2(entity) -- 'entity' contains a reference to the NPC<br>    print("Gaper found!")<br>end<br>mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_GAPER)<br><br><br><br> | 0 |

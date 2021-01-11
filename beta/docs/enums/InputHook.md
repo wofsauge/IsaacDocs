@@ -1,4 +1,5 @@
 # Enum "InputHook"
+[ ](#){: .abp .tooltip .badge }
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | IS_ACTION_PRESSED |  | 0 |
