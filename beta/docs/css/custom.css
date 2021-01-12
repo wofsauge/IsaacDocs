@@ -139,14 +139,14 @@ a.const.tooltip:after {
 }
 
 body.darkMode {
-    --function-color: rgb(13 71 161 / 0.5);
-    --function-color-light: rgb(21 101 192 / 0.5);
-    --var-color: rgb(27 94 32 / 0.50);
-    --var-color-light: rgb(46 125 50 / 0.50);
+    --function-color: #405e9a;
+    --function-color-light: #272938;
+    --var-color: #128676;
+    --var-color-light: #272938;
     --md-hue: 232;
     --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
     --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
-    --md-default-fg-color--lighter: hsla(var(--md-hue), 75%, 90%, 0.32);
+    --md-default-fg-color--lighter: #ffc41e;
     --md-default-fg-color--lightest: hsla(var(--md-hue), 75%, 90%, 0.12);
     --md-default-bg-color: hsla(var(--md-hue), 15%, 21%, 1);
     --md-default-bg-color--light: hsla(var(--md-hue), 15%, 21%, 0.54);
@@ -162,6 +162,7 @@ body.darkMode {
     --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
     --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
     --md-typeset-a-color: #ffc41e;
+    --md-accent-fg-color: #ffc41e;
     /*var(--md-primary-fg-color--light);*/
     --md-typeset-mark-color: hsla(218, 100%, 63%, 0.3);
     --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);

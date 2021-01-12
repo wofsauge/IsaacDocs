@@ -1,9 +1,8 @@
 $(document).ready(function() {
-    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"../../images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
+    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
 });
 
 function toggleDarkMode() {
-    console.log("test");
     if (typeof(Storage) !== "undefined") {
         var darkModeState = localStorage.getItem("darkMode");
         if (darkModeState == null || darkModeState == 0) {
@@ -20,7 +19,6 @@ function toggleDarkMode() {
 }
 
 app.document$.subscribe(function() {
-    console.log("test");
     if (typeof(Storage) !== "undefined") {
         if (localStorage.getItem("darkMode") == 1) {
             $("body").addClass("darkMode");
