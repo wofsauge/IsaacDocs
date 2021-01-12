@@ -1,5 +1,5 @@
-# Enum "Music"
 [ ](#){: .abp .tooltip .badge }
+# Enum "Music"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | MUSIC_NULL |  | 0 |

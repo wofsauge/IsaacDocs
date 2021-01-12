@@ -1,5 +1,5 @@
-# Enum "SortingLayer"
 [ ](#){: .abp .tooltip .badge }
+# Enum "SortingLayer"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | SORTING_BACKGROUND | Background level, behind grid entities (creep, pitfalls) <br> | 0 |

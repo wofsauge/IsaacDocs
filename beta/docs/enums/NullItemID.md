@@ -1,5 +1,5 @@
-# Enum "NullItemID"
 [ ](#){: .abp .tooltip .badge }
+# Enum "NullItemID"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ID_NULL |  | -1 |

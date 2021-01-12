@@ -1,5 +1,5 @@
-# Enum "StageType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "StageType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | STAGETYPE_ORIGINAL |  | 0 |

@@ -1,5 +1,5 @@
-# Enum "NpcState"
 [ ](#){: .abp .tooltip .badge }
+# Enum "NpcState"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | STATE_INIT |  | 0 |

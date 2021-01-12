@@ -1,5 +1,5 @@
-# Enum "PlayerType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "PlayerType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | PLAYER_ISAAC |  | 0 |

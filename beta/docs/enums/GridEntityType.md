@@ -1,5 +1,5 @@
-# Enum "GridEntityType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "GridEntityType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | GRID_NULL |  | 0 |

@@ -1,5 +1,5 @@
-# Enum "Mouse"
 [ ](#){: .abp .tooltip .badge }
+# Enum "Mouse"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | MOUSE_BUTTON_1 |  | 0 |

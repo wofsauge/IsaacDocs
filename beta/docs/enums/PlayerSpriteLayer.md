@@ -1,5 +1,5 @@
-# Enum "PlayerSpriteLayer"
 [ ](#){: .abp .tooltip .badge }
+# Enum "PlayerSpriteLayer"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | SPRITE_GLOW |  | 0 |

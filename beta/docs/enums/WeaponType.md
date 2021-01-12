@@ -1,5 +1,5 @@
-# Enum "WeaponType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "WeaponType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | WEAPON_TEARS |  | 1 |

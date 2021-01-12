@@ -1,5 +1,5 @@
-# Enum "CollectibleType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "CollectibleType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | COLLECTIBLE_NULL |  | 0 |

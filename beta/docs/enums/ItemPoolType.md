@@ -1,5 +1,5 @@
-# Enum "ItemPoolType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "ItemPoolType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | POOL_NULL |  | -1 |

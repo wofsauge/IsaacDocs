@@ -1,5 +1,5 @@
-# Enum "LevelStateFlag"
 [ ](#){: .abp .tooltip .badge }
+# Enum "LevelStateFlag"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | STATE_BUM_KILLED |  | 0 |

@@ -1,5 +1,5 @@
-# Enum "TearFlags"
 [ ](#){: .abp .tooltip .badge }
+# Enum "TearFlags"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | TEAR_NORMAL | Normal Tear <br> | 0 |

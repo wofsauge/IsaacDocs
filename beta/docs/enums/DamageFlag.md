@@ -1,5 +1,5 @@
-# Enum "DamageFlag"
 [ ](#){: .abp .tooltip .badge }
+# Enum "DamageFlag"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | DAMAGE_NOKILL | Damage can not kill the receiver <br> | 1 |

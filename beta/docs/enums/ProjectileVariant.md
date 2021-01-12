@@ -1,5 +1,5 @@
-# Enum "ProjectileVariant"
 [ ](#){: .abp .tooltip .badge }
+# Enum "ProjectileVariant"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | PROJECTILE_NORMAL |  | 0 |

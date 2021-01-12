@@ -1,5 +1,5 @@
-# Enum "PickupPrice"
 [ ](#){: .abp .tooltip .badge }
+# Enum "PickupPrice"
 |Enumerator|Value|comment|id|
 |:--:|:--:|:--:|:--:|
 | PRICE_ONE_HEART | -1 | -1 |

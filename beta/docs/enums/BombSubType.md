@@ -1,5 +1,5 @@
-# Enum "BombSubType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "BombSubType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | BOMB_NORMAL |  | 1 |

@@ -1,5 +1,5 @@
-# Enum "HeartSubType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "HeartSubType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | HEART_FULL |  | 1 |

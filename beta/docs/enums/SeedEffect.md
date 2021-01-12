@@ -1,5 +1,5 @@
-# Enum "SeedEffect"
 [ ](#){: .abp .tooltip .badge }
+# Enum "SeedEffect"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | SEED_NORMAL |  | 0 |

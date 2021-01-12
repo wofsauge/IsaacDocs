@@ -1,5 +1,5 @@
-# Enum "ButtonAction"
 [ ](#){: .abp .tooltip .badge }
+# Enum "ButtonAction"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ACTION_LEFT |  | 0 |
@@ -29,4 +29,4 @@
 | ACTION_MENULT |  | 24 |
 | ACTION_MENURT |  | 25 |
 | ACTION_MENUTAB |  | 26 |
-| ACTION_CONSOLE | USE ONLY FOR HOOKING! To check the input use IsButtonTriggered with desired key <br> | 28 |
+| ACTION_CONSOLE | USE ONLY FOR HOOKING! To check the input use IsButtonTriggered with desired key <br> | 28 |  {: .enumerator }

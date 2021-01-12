@@ -1,5 +1,5 @@
-# Enum "BabySubType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "BabySubType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | BABY_UNASSIGNED |  | -1 |

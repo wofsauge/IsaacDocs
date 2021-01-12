@@ -1,5 +1,5 @@
-# Enum "Keyboard"
 [ ](#){: .abp .tooltip .badge }
+# Enum "Keyboard"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | KEY_SPACE |  | 32 |

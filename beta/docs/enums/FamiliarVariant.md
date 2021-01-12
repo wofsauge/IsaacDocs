@@ -1,5 +1,5 @@
-# Enum "FamiliarVariant"
 [ ](#){: .abp .tooltip .badge }
+# Enum "FamiliarVariant"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | FAMILIAR_NULL |  | 0 |

@@ -1,5 +1,5 @@
-# Enum "PillEffect"
 [ ](#){: .abp .tooltip .badge }
+# Enum "PillEffect"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | PILLEFFECT_NULL |  | -1 |

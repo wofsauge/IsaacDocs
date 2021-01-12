@@ -1,5 +1,5 @@
-# Enum "EntityPartition"
 [ ](#){: .abp .tooltip .badge }
+# Enum "EntityPartition"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | FAMILIAR |  | 1 |

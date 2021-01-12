@@ -1,5 +1,5 @@
-# Enum "EntityType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "EntityType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ENTITY_NULL |  | 0 |

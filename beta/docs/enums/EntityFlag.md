@@ -1,5 +1,5 @@
-# Enum "EntityFlag"
 [ ](#){: .abp .tooltip .badge }
+# Enum "EntityFlag"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | FLAG_NO_STATUS_EFFECTS | prevent freeze/poison/slow/charm/confusion/fear/burn <br> | 1 |

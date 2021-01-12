@@ -1,5 +1,5 @@
-# Enum "ChestSubType"
 [ ](#){: .abp .tooltip .badge }
+# Enum "ChestSubType"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | CHEST_OPENED |  | 0 |

@@ -1,5 +1,5 @@
-# Enum "PlayerForm"
 [ ](#){: .abp .tooltip .badge }
+# Enum "PlayerForm"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | PLAYERFORM_GUPPY |  | 0 |

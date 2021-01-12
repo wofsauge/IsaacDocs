@@ -1,5 +1,5 @@
-# Enum "PillColor"
 [ ](#){: .abp .tooltip .badge }
+# Enum "PillColor"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | PILL_NULL |  | 0 |

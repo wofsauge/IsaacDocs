@@ -1,5 +1,5 @@
-# Enum "LaserOffset"
 [ ](#){: .abp .tooltip .badge }
+# Enum "LaserOffset"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | LASER_TECH1_OFFSET |  | 0 |

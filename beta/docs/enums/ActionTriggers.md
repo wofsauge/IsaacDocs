@@ -1,5 +1,5 @@
-# Enum "ActionTriggers"
 [ ](#){: .abp .tooltip .badge }
+# Enum "ActionTriggers"
 |Enumerator|comment|id|
 |:--:|:--:|:--:|
 | ACTIONTRIGGER_NONE |  | 0 |
