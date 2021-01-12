@@ -2351,72 +2351,329 @@
                   </a>
                 
                 
-                <h1 id="enum-tearflags">Enum "TearFlags"<a class="headerlink" href="#enum-tearflags" title="Permanent link">⚓︎</a></h1>
-<p><a class="abp tooltip badge" href="#"> </a>
-|Enumerator|comment|id|
-|:--:|:--:|:--:|
-| TEAR_NORMAL | Normal Tear <br> | 0 |
-| TEAR_SPECTRAL | Ouija board type tear (goes thru obstacles) <br> | 1 |
-| TEAR_PIERCING | Cupid's arrow type tear (goes thru enemy) <br> | 1&lt;&lt;1 |
-| TEAR_HOMING | Spoon bender type tear (homes to enemy) <br> | 1&lt;&lt;2 |
-| TEAR_SLOW | Spider bite type tear (slows on contact) <br> | 1&lt;&lt;3 |
-| TEAR_POISON | Common cold type tear (poisons on contact) <br> | 1&lt;&lt;4 |
-| TEAR_FREEZE | Mom's contact type tear (freezes on contact) <br> | 1&lt;&lt;5 |
-| TEAR_SPLIT | Parasite type tear (splits on collision) <br> | 1&lt;&lt;6 |
-| TEAR_GROW | Lump of coal type tear (grows by range) <br> | 1&lt;&lt;7 |
-| TEAR_BOMBERANG | My reflection type tear (returns back) <br> | 1&lt;&lt;8 |
-| TEAR_PERSISTENT | Polyphemus type tear (Damages the entity and if the damage is more then enemy hp it continues with less damage) <br> | 1&lt;&lt;9 |
-| TEAR_WIGGLE | Wiggle worm type tear (wiggles) <br> | 1&lt;&lt;10 |
-| TEAR_MIGAN | Migan type tear (creates fly on hit) <br> | 1&lt;&lt;11 |
-| TEAR_EXPLOSIVE | IPECAC type tear (explodes on hit) <br> | 1&lt;&lt;12 |
-| TEAR_CHARM | Mom's Eyeshadow tear <br> | 1&lt;&lt;13 |
-| TEAR_CONFUSION | Iron Bar tear <br> | 1&lt;&lt;14 |
-| TEAR_HP_DROP | These tears cause enemy to drop hearts if killed (33% chance) <br> | 1&lt;&lt;15 |
-| TEAR_ORBIT | Used for Little Planet (orbit arounds the player) <br> | 1&lt;&lt;16 |
-| TEAR_WAIT | Anti gravity type tear (floats in place for some time before finally moving) (unset after first update) <br> | 1&lt;&lt;17 |
-| TEAR_QUADSPLIT | Splits into 4 smaller tears if it hits the ground <br> | 1&lt;&lt;18 |
-| TEAR_BOUNCE | Bounce off of enemies, walls, rocks (Higher priority than PERSISTENT &amp; PIERCING) <br> | 1&lt;&lt;19 |
-| TEAR_FEAR | Mom's Perfume type tear of fear (fear on contact) <br> | 1&lt;&lt;20 |
-| TEAR_SHRINK | Proptosis tears start large and shrink <br> | 1&lt;&lt;21 |
-| TEAR_BURN | Fire Mind tears cause Burn effect on enemies <br> | 1&lt;&lt;22 |
-| TEAR_ATTRACTOR | Attracts enemies and pickups <br> | 1&lt;&lt;23 |
-| TEAR_KNOCKBACK | Tear impact pushes enemies back further <br> | 1&lt;&lt;24 |
-| TEAR_PULSE | Makes the tear pulse <br> | 1&lt;&lt;25 |
-| TEAR_SPIRAL | Makes the tear path spiral <br> | 1&lt;&lt;26 |
-| TEAR_FLAT | Makes the tear oval in the direction of travel <br> | 1&lt;&lt;27 |
-| TEAR_SAD_BOMB | Used by Bombs (Sad Bomb) <br> | 1&lt;&lt;28 |
-| TEAR_BUTT_BOMB | Used by Bombs (Butt Bomb) <br> | 1&lt;&lt;29 |
-| TEAR_GLITTER_BOMB | Used by Bombs (Glitter Bomb) <br> | 1&lt;&lt;30 |
-| TEAR_SQUARE | Used for Hook Worm <br> | 1&lt;&lt;31 |
-| TEAR_GLOW | Used for GodHead (they will have a glow around them) <br> | 1&lt;&lt;32 |
-| TEAR_GISH | Used for Gish player tears (to color enemy black on slowing) <br> | 1&lt;&lt;33 |
-| TEAR_SCATTER_BOMB | Used for Scatter bombs <br> | 1&lt;&lt;34 |
-| TEAR_STICKY | Used for Sticky bombs and Explosivo tears <br> | 1&lt;&lt;35 |
-| TEAR_CONTINUUM | Tears loop around the screen <br> | 1&lt;&lt;36 |
-| TEAR_LIGHT_FROM_HEAVEN | Create damaging light beam on hit <br> | 1&lt;&lt;37 |
-| TEAR_COIN_DROP | Used by Bumbo, spawns a coin when tear hits <br> | 1&lt;&lt;38 |
-| TEAR_BLACK_HP_DROP | Enemy drops a black hp when dies <br> | 1&lt;&lt;39 |
-| TEAR_TRACTOR_BEAM | Tear with this flag will follow parent player's beam <br> | 1&lt;&lt;40 |
-| TEAR_GODS_FLESH | God's flesh flag to minimize enemies <br> | 1&lt;&lt;41 |
-| TEAR_GREED_COIN | Greed coin tears that has a chance to generate a coin when hit <br> | 1&lt;&lt;42 |
-| TEAR_MYSTERIOUS_LIQUID_CREEP |  | 1&lt;&lt;43 |
-| TEAR_BIG_SPIRAL | Ouroboros Worm, big radius oscilating tears <br> | 1&lt;&lt;44 |
-| TEAR_PERMANENT_CONFUSION | Glaucoma tears, permanently confuses enemies <br> | 1&lt;&lt;45 |
-| TEAR_BOOGER | Booger tears, stick and do damage over time <br> | 1&lt;&lt;46 |
-| TEAR_EGG | Egg tears, leave creep and spawns spiders or flies <br> | 1&lt;&lt;47 |
-| TEAR_ACID | Sulfuric Acid tears, can break grid entities <br> | 1&lt;&lt;48 |
-| TEAR_BONE | Bone tears, splits in 2 <br> | 1&lt;&lt;49 |
-| TEAR_BELIAL | Belial tears, piecing tears gets double damage + homing <br> | 1&lt;&lt;50 |
-| TEAR_MIDAS | Midas touch tears <br> | 1&lt;&lt;51 |
-| TEAR_NEEDLE | Needle tears <br> | 1&lt;&lt;52 |
-| TEAR_JACOBS | Jacobs ladder tears <br> | 1&lt;&lt;53 |
-| TEAR_HORN | Little Horn tears <br> | 1&lt;&lt;54 |
-| TEAR_LASER | Technology Zero <br> | 1&lt;&lt;55 |
-| TEAR_POP | Pop! <br> | 1&lt;&lt;56 |
-| TEAR_ABSORB | Lachryphagy <br> | 1&lt;&lt;57 |
-| TEAR_LASERSHOT | Trisagion, generates a laser on top of the tear <br> | 1&lt;&lt;58 |
-| TEAR_HYDROBOUNCE | Flat Stone <br> | 1&lt;&lt;59 |
-| TEAR_LUDOVICO | Used as a weapon for Ludovico Technique <br> | 1&lt;&lt;60 |</p>
+                <p><a class="abp tooltip badge" href="#"> </a></p>
+<h1 id="enum-tearflags">Enum "TearFlags"<a class="headerlink" href="#enum-tearflags" title="Permanent link">⚓︎</a></h1>
+<table>
+<thead>
+<tr>
+<th align="center">Enumerator</th>
+<th align="center">comment</th>
+<th align="center">id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">TEAR_NORMAL</td>
+<td align="center">Normal Tear <br></td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">TEAR_SPECTRAL</td>
+<td align="center">Ouija board type tear (goes thru obstacles) <br></td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">TEAR_PIERCING</td>
+<td align="center">Cupid's arrow type tear (goes thru enemy) <br></td>
+<td align="center">1&lt;&lt;1</td>
+</tr>
+<tr>
+<td align="center">TEAR_HOMING</td>
+<td align="center">Spoon bender type tear (homes to enemy) <br></td>
+<td align="center">1&lt;&lt;2</td>
+</tr>
+<tr>
+<td align="center">TEAR_SLOW</td>
+<td align="center">Spider bite type tear (slows on contact) <br></td>
+<td align="center">1&lt;&lt;3</td>
+</tr>
+<tr>
+<td align="center">TEAR_POISON</td>
+<td align="center">Common cold type tear (poisons on contact) <br></td>
+<td align="center">1&lt;&lt;4</td>
+</tr>
+<tr>
+<td align="center">TEAR_FREEZE</td>
+<td align="center">Mom's contact type tear (freezes on contact) <br></td>
+<td align="center">1&lt;&lt;5</td>
+</tr>
+<tr>
+<td align="center">TEAR_SPLIT</td>
+<td align="center">Parasite type tear (splits on collision) <br></td>
+<td align="center">1&lt;&lt;6</td>
+</tr>
+<tr>
+<td align="center">TEAR_GROW</td>
+<td align="center">Lump of coal type tear (grows by range) <br></td>
+<td align="center">1&lt;&lt;7</td>
+</tr>
+<tr>
+<td align="center">TEAR_BOMBERANG</td>
+<td align="center">My reflection type tear (returns back) <br></td>
+<td align="center">1&lt;&lt;8</td>
+</tr>
+<tr>
+<td align="center">TEAR_PERSISTENT</td>
+<td align="center">Polyphemus type tear (Damages the entity and if the damage is more then enemy hp it continues with less damage) <br></td>
+<td align="center">1&lt;&lt;9</td>
+</tr>
+<tr>
+<td align="center">TEAR_WIGGLE</td>
+<td align="center">Wiggle worm type tear (wiggles) <br></td>
+<td align="center">1&lt;&lt;10</td>
+</tr>
+<tr>
+<td align="center">TEAR_MIGAN</td>
+<td align="center">Migan type tear (creates fly on hit) <br></td>
+<td align="center">1&lt;&lt;11</td>
+</tr>
+<tr>
+<td align="center">TEAR_EXPLOSIVE</td>
+<td align="center">IPECAC type tear (explodes on hit) <br></td>
+<td align="center">1&lt;&lt;12</td>
+</tr>
+<tr>
+<td align="center">TEAR_CHARM</td>
+<td align="center">Mom's Eyeshadow tear <br></td>
+<td align="center">1&lt;&lt;13</td>
+</tr>
+<tr>
+<td align="center">TEAR_CONFUSION</td>
+<td align="center">Iron Bar tear <br></td>
+<td align="center">1&lt;&lt;14</td>
+</tr>
+<tr>
+<td align="center">TEAR_HP_DROP</td>
+<td align="center">These tears cause enemy to drop hearts if killed (33% chance) <br></td>
+<td align="center">1&lt;&lt;15</td>
+</tr>
+<tr>
+<td align="center">TEAR_ORBIT</td>
+<td align="center">Used for Little Planet (orbit arounds the player) <br></td>
+<td align="center">1&lt;&lt;16</td>
+</tr>
+<tr>
+<td align="center">TEAR_WAIT</td>
+<td align="center">Anti gravity type tear (floats in place for some time before finally moving) (unset after first update) <br></td>
+<td align="center">1&lt;&lt;17</td>
+</tr>
+<tr>
+<td align="center">TEAR_QUADSPLIT</td>
+<td align="center">Splits into 4 smaller tears if it hits the ground <br></td>
+<td align="center">1&lt;&lt;18</td>
+</tr>
+<tr>
+<td align="center">TEAR_BOUNCE</td>
+<td align="center">Bounce off of enemies, walls, rocks (Higher priority than PERSISTENT &amp; PIERCING) <br></td>
+<td align="center">1&lt;&lt;19</td>
+</tr>
+<tr>
+<td align="center">TEAR_FEAR</td>
+<td align="center">Mom's Perfume type tear of fear (fear on contact) <br></td>
+<td align="center">1&lt;&lt;20</td>
+</tr>
+<tr>
+<td align="center">TEAR_SHRINK</td>
+<td align="center">Proptosis tears start large and shrink <br></td>
+<td align="center">1&lt;&lt;21</td>
+</tr>
+<tr>
+<td align="center">TEAR_BURN</td>
+<td align="center">Fire Mind tears cause Burn effect on enemies <br></td>
+<td align="center">1&lt;&lt;22</td>
+</tr>
+<tr>
+<td align="center">TEAR_ATTRACTOR</td>
+<td align="center">Attracts enemies and pickups <br></td>
+<td align="center">1&lt;&lt;23</td>
+</tr>
+<tr>
+<td align="center">TEAR_KNOCKBACK</td>
+<td align="center">Tear impact pushes enemies back further <br></td>
+<td align="center">1&lt;&lt;24</td>
+</tr>
+<tr>
+<td align="center">TEAR_PULSE</td>
+<td align="center">Makes the tear pulse <br></td>
+<td align="center">1&lt;&lt;25</td>
+</tr>
+<tr>
+<td align="center">TEAR_SPIRAL</td>
+<td align="center">Makes the tear path spiral <br></td>
+<td align="center">1&lt;&lt;26</td>
+</tr>
+<tr>
+<td align="center">TEAR_FLAT</td>
+<td align="center">Makes the tear oval in the direction of travel <br></td>
+<td align="center">1&lt;&lt;27</td>
+</tr>
+<tr>
+<td align="center">TEAR_SAD_BOMB</td>
+<td align="center">Used by Bombs (Sad Bomb) <br></td>
+<td align="center">1&lt;&lt;28</td>
+</tr>
+<tr>
+<td align="center">TEAR_BUTT_BOMB</td>
+<td align="center">Used by Bombs (Butt Bomb) <br></td>
+<td align="center">1&lt;&lt;29</td>
+</tr>
+<tr>
+<td align="center">TEAR_GLITTER_BOMB</td>
+<td align="center">Used by Bombs (Glitter Bomb) <br></td>
+<td align="center">1&lt;&lt;30</td>
+</tr>
+<tr>
+<td align="center">TEAR_SQUARE</td>
+<td align="center">Used for Hook Worm <br></td>
+<td align="center">1&lt;&lt;31</td>
+</tr>
+<tr>
+<td align="center">TEAR_GLOW</td>
+<td align="center">Used for GodHead (they will have a glow around them) <br></td>
+<td align="center">1&lt;&lt;32</td>
+</tr>
+<tr>
+<td align="center">TEAR_GISH</td>
+<td align="center">Used for Gish player tears (to color enemy black on slowing) <br></td>
+<td align="center">1&lt;&lt;33</td>
+</tr>
+<tr>
+<td align="center">TEAR_SCATTER_BOMB</td>
+<td align="center">Used for Scatter bombs <br></td>
+<td align="center">1&lt;&lt;34</td>
+</tr>
+<tr>
+<td align="center">TEAR_STICKY</td>
+<td align="center">Used for Sticky bombs and Explosivo tears <br></td>
+<td align="center">1&lt;&lt;35</td>
+</tr>
+<tr>
+<td align="center">TEAR_CONTINUUM</td>
+<td align="center">Tears loop around the screen <br></td>
+<td align="center">1&lt;&lt;36</td>
+</tr>
+<tr>
+<td align="center">TEAR_LIGHT_FROM_HEAVEN</td>
+<td align="center">Create damaging light beam on hit <br></td>
+<td align="center">1&lt;&lt;37</td>
+</tr>
+<tr>
+<td align="center">TEAR_COIN_DROP</td>
+<td align="center">Used by Bumbo, spawns a coin when tear hits <br></td>
+<td align="center">1&lt;&lt;38</td>
+</tr>
+<tr>
+<td align="center">TEAR_BLACK_HP_DROP</td>
+<td align="center">Enemy drops a black hp when dies <br></td>
+<td align="center">1&lt;&lt;39</td>
+</tr>
+<tr>
+<td align="center">TEAR_TRACTOR_BEAM</td>
+<td align="center">Tear with this flag will follow parent player's beam <br></td>
+<td align="center">1&lt;&lt;40</td>
+</tr>
+<tr>
+<td align="center">TEAR_GODS_FLESH</td>
+<td align="center">God's flesh flag to minimize enemies <br></td>
+<td align="center">1&lt;&lt;41</td>
+</tr>
+<tr>
+<td align="center">TEAR_GREED_COIN</td>
+<td align="center">Greed coin tears that has a chance to generate a coin when hit <br></td>
+<td align="center">1&lt;&lt;42</td>
+</tr>
+<tr>
+<td align="center">TEAR_MYSTERIOUS_LIQUID_CREEP</td>
+<td align="center"></td>
+<td align="center">1&lt;&lt;43</td>
+</tr>
+<tr>
+<td align="center">TEAR_BIG_SPIRAL</td>
+<td align="center">Ouroboros Worm, big radius oscilating tears <br></td>
+<td align="center">1&lt;&lt;44</td>
+</tr>
+<tr>
+<td align="center">TEAR_PERMANENT_CONFUSION</td>
+<td align="center">Glaucoma tears, permanently confuses enemies <br></td>
+<td align="center">1&lt;&lt;45</td>
+</tr>
+<tr>
+<td align="center">TEAR_BOOGER</td>
+<td align="center">Booger tears, stick and do damage over time <br></td>
+<td align="center">1&lt;&lt;46</td>
+</tr>
+<tr>
+<td align="center">TEAR_EGG</td>
+<td align="center">Egg tears, leave creep and spawns spiders or flies <br></td>
+<td align="center">1&lt;&lt;47</td>
+</tr>
+<tr>
+<td align="center">TEAR_ACID</td>
+<td align="center">Sulfuric Acid tears, can break grid entities <br></td>
+<td align="center">1&lt;&lt;48</td>
+</tr>
+<tr>
+<td align="center">TEAR_BONE</td>
+<td align="center">Bone tears, splits in 2 <br></td>
+<td align="center">1&lt;&lt;49</td>
+</tr>
+<tr>
+<td align="center">TEAR_BELIAL</td>
+<td align="center">Belial tears, piecing tears gets double damage + homing <br></td>
+<td align="center">1&lt;&lt;50</td>
+</tr>
+<tr>
+<td align="center">TEAR_MIDAS</td>
+<td align="center">Midas touch tears <br></td>
+<td align="center">1&lt;&lt;51</td>
+</tr>
+<tr>
+<td align="center">TEAR_NEEDLE</td>
+<td align="center">Needle tears <br></td>
+<td align="center">1&lt;&lt;52</td>
+</tr>
+<tr>
+<td align="center">TEAR_JACOBS</td>
+<td align="center">Jacobs ladder tears <br></td>
+<td align="center">1&lt;&lt;53</td>
+</tr>
+<tr>
+<td align="center">TEAR_HORN</td>
+<td align="center">Little Horn tears <br></td>
+<td align="center">1&lt;&lt;54</td>
+</tr>
+<tr>
+<td align="center">TEAR_LASER</td>
+<td align="center">Technology Zero <br></td>
+<td align="center">1&lt;&lt;55</td>
+</tr>
+<tr>
+<td align="center">TEAR_POP</td>
+<td align="center">Pop! <br></td>
+<td align="center">1&lt;&lt;56</td>
+</tr>
+<tr>
+<td align="center">TEAR_ABSORB</td>
+<td align="center">Lachryphagy <br></td>
+<td align="center">1&lt;&lt;57</td>
+</tr>
+<tr>
+<td align="center">TEAR_LASERSHOT</td>
+<td align="center">Trisagion, generates a laser on top of the tear <br></td>
+<td align="center">1&lt;&lt;58</td>
+</tr>
+<tr>
+<td align="center">TEAR_HYDROBOUNCE</td>
+<td align="center">Flat Stone <br></td>
+<td align="center">1&lt;&lt;59</td>
+</tr>
+<tr>
+<td align="center">TEAR_LUDOVICO</td>
+<td align="center">Used as a weapon for Ludovico Technique <br></td>
+<td align="center">1&lt;&lt;60</td>
+</tr>
+</tbody>
+</table>
                 
                   
                     
@@ -2425,7 +2682,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-01-10
+      Last update: 2021-01-11
     
   </small>
 </div>

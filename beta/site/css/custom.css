@@ -1,105 +1,73 @@
-nav[aria-label$='Functions'] { 
-    border-left: 5px solid rgb(64 81 181 / 0.30);
+:root {
+    --function-color: #90CAF9;
+    --function-color-light: #BBDEFB;
+    --var-color: #A5D6A7;
+    --var-color-light: #E8F5E9;
+}
+
+nav[aria-label$='Functions'] {
+    border-left: 5px solid var(--function-color);
     line-height: 1.1;
 }
-nav[aria-label$='Variables'] { 
-    border-left: 5px solid rgb(28 125 77 / 0.30);
+
+nav[aria-label$='Variables'] {
+    border-left: 5px solid var(--var-color);
     line-height: 1.1;
 }
-.md-typeset h2{
-    margin:0 !important;
+
+.md-typeset h2 {
+    margin: 0 !important;
     text-align: center;
 }
 
-.wrongParsing{
+.wrongParsing {
     color: white !important;
     background-color: red;
     font-size: 20px !important;
 }
+
 .wrongParsing::after {
-    content:"THIS PART IS NOT PARSED CORRECTLY! PLEASE FIX MANUALLY!!!!!";
+    content: "THIS PART IS NOT PARSED CORRECTLY! PLEASE FIX MANUALLY!!!!!";
     color: red !important;
     background-color: black;
     display: block;
 }
 
-.md-typeset h3{
+.md-typeset h3 {
     border-radius: 5px 5px 0px 0px;
     padding: 0px 10px;
-    margin:0 !important;
+    margin: 0 !important;
 }
-h3[aria-label$='Functions']{
-    background-color: rgb(64 81 181 / 0.30);
+
+h3[aria-label$='Functions'] {
+    background-color: var(--function-color);
     display: inline-block;
 }
 
-h3[aria-label$='Variables']{
-    background-color: rgb(28 125 77 / 0.30);
+h3[aria-label$='Variables'] {
+    background-color: var(--var-color);
     display: inline-block;
 }
 
-.md-typeset h4{
+.md-typeset h4 {
     border-radius: 0px 5px 5px 5px;
     padding: 2px 10px;
-    margin:0 !important;
+    margin: 0 !important;
     font-weight: 400 !important;
-    font-family: "Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace;
+    font-family: "Roboto Mono", SFMono-Regular, Consolas, Menlo, monospace;
     font-size: .85em;
 }
-h4[aria-label$='Functions']{
-    background-color: rgb(64 81 181 / 0.15);
+
+h4[aria-label$='Functions'] {
+    background-color: var(--function-color-light);
 }
 
-h4[aria-label$='Variables']{
-    background-color: rgb(28 125 77 / 0.15);
+h4[aria-label$='Variables'] {
+    background-color: var(--var-color-light);
 }
-.md-content p{
+
+.md-content p {
     text-align: justify
-}
-
-.abp{
-    background-color: #00bfa5;
-    color: white !important;
-}
-.abp::before{
-    content:"ab+";
-}
-a.abp.tooltip:after{
-    content:"Compatible with Afterbirth+";
-}
-
-.static{
-    background-color: #c7c7c7;
-    color: black !important;
-}
-.static::before{
-    content:"static";
-}
-a.static.tooltip:after{
-    content:"This function is static";
-}
-.const{
-    background-color: #44d8cc;
-    color: black !important;
-}
-.const::before{
-    content:"const";
-}
-a.const.tooltip:after{
-    content:"This function returns a constant value";
-}
-
-.badge{
-    font-size: 8pt;
-    vertical-align: middle;
-    padding: 4px 5px 4px 6px;
-    border-radius: 10px;
-    margin: 0px 2px;
-}
-
-.badgeLine{
-    margin: 0 !important;
-    float: right;
 }
 
 .subHeader {
@@ -107,7 +75,74 @@ a.const.tooltip:after{
     font-size: 1em !important;
 }
 
+
+/**** BADGES ****/
+
+.abp {
+    background-color: #00bfa5;
+    color: white !important;
+}
+
+.abp::before {
+    content: "ab+";
+}
+
+a.abp.tooltip:after {
+    content: "Compatible with Afterbirth+";
+}
+
+.static {
+    background-color: #c7c7c7;
+    color: black !important;
+}
+
+.static::before {
+    content: "static";
+}
+
+a.static.tooltip:after {
+    content: "This function is static";
+}
+
+.const {
+    background-color: #44d8cc;
+    color: black !important;
+}
+
+.const::before {
+    content: "const";
+}
+
+a.const.tooltip:after {
+    content: "This function returns a constant value";
+}
+
+.badge {
+    font-size: 8pt;
+    vertical-align: middle;
+    padding: 4px 5px 4px 6px;
+    border-radius: 10px;
+    margin: 0px 2px;
+}
+
+.badgeLine {
+    margin: 0 !important;
+    float: right;
+}
+
+
+/**** DARK MODE ****/
+
+.darkmodeButton {
+    margin: 6px 8px;
+    cursor: pointer;
+}
+
 body.darkMode {
+    --function-color: rgb(13 71 161 / 0.5);
+    --function-color-light: rgb(21 101 192 / 0.5);
+    --var-color: rgb(27 94 32 / 0.50);
+    --var-color-light: rgb(46 125 50 / 0.50);
     --md-hue: 232;
     --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
     --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
@@ -126,7 +161,8 @@ body.darkMode {
     --md-code-hl-constant-color: hsla(250, 62%, 70%, 1);
     --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
     --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
-    --md-typeset-a-color: var(--md-primary-fg-color--light);
+    --md-typeset-a-color: #ffc41e;
+    /*var(--md-primary-fg-color--light);*/
     --md-typeset-mark-color: hsla(218, 100%, 63%, 0.3);
     --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);
     --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 94%, 0.2);
@@ -134,7 +170,6 @@ body.darkMode {
     --md-admonition-bg-color: hsla(var(--md-hue), 0%, 100%, 0.025);
     --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
     --md-footer-bg-color--dark: hsla(var(--md-hue), 15%, 10%, 1);
-    
     --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 1);
     --md-code-bg-color: hsla(var(--md-hue), 15%, 15%, 1) !important;
     --md-code-hl-color: hsla(218, 100%, 63%, 0.15);
@@ -146,12 +181,15 @@ body.darkMode {
     --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
 }
 
-/* TOOLTIP */
+
+/**** TOOLTIP ****/
+
 a.tooltip {
     position: relative;
     text-decoration: none;
-  }
-  a.tooltip:after {
+}
+
+a.tooltip:after {
     content: inherit;
     position: absolute;
     bottom: 200%;
@@ -160,17 +198,38 @@ a.tooltip {
     padding: 5px 15px;
     color: inherit;
     -webkit-border-radius: 10px;
-    -moz-border-radius : 10px;
-    border-radius : 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     white-space: nowrap;
     opacity: 0;
     -webkit-transition: all 0.4s ease;
-    -moz-transition : all 0.4s ease;
-    transition : all 0.4s ease;
-  }
-  a.tooltip:hover:after {
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+a.tooltip:hover:after {
     bottom: 125%;
-  }
-  a.tooltip:hover:after {
+}
+
+a.tooltip:hover:after {
     opacity: 1;
-  }
+}
+
+
+/**** WEBSITE FORMATTING ****/
+
+.md-grid {
+    max-width: initial;
+}
+
+.md-tabs__link {
+    margin-top: 0;
+}
+
+.md-tabs__item {
+    height: 1.4rem;
+}
+
+.md-header-nav__source {
+    width: 10rem;
+}
