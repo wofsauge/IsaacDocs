@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
+    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
 
 });
 
@@ -23,14 +23,13 @@ function toggleDarkMode() {
 function reevaluateLastVisit() {
     if (typeof(Storage) !== "undefined") {
         $(".md-nav[aria-label=\"Last visited\"]").find("a").each(function(index) {
-            console.log("Test" + index);
             var lastVisitEntry = getRecentList()[index];
-            if (lastVisitEntry !== null) {
+            if (lastVisitEntry !== undefined) {
                 $(this).attr("href", lastVisitEntry);
                 var linkName = lastVisitEntry.substring(1, lastVisitEntry.length - 1);
                 $(this).text(linkName);
             } else {
-                $(this).hide();
+                $(this).parent().hide();
             }
         });
 
@@ -78,5 +77,32 @@ app.document$.subscribe(function() {
 
     $(".md-nav[aria-label=\"Last visited\"]").siblings().click(function() {
         reevaluateLastVisit();
+    });
+
+    $(".copyable").append('<button class="md-clipboard copyButton md-icon" title="Copy to clipboard"></button>');
+
+    $(".copyButton").click(function() {
+        var parent = $(this).parent();
+        var pathname = window.location.pathname;
+        pathname = pathname.substring(1, pathname.length - 1);
+        var splitted = pathname.split("/");
+        pathname = splitted[splitted.length - 1];
+        var funcName = "";
+        parent.each(function(index) {
+            funcName = $(this).text();
+        });
+
+        var connector = ".";
+        if (funcName.includes("(")) {
+            connector = ":";
+            pathname = "";
+        }
+        parent.append('<textarea>' + pathname + connector + funcName + '</textarea>');
+        parent.find("textarea").each(function(index) {
+            $(this).select();
+            document.execCommand("copy");
+            $(this).remove();
+        });
+        alert("Copied to clipboard: \n" + pathname + connector + funcName);
     });
 });
