@@ -210,9 +210,6 @@ a.tooltip:after {
 
 a.tooltip:hover:after {
     bottom: 125%;
-}
-
-a.tooltip:hover:after {
     opacity: 1;
 }
 
@@ -233,4 +230,13 @@ a.tooltip:hover:after {
 
 .md-header-nav__source {
     width: 10rem;
+}
+
+.md-main__inner {
+    margin-top: 0.1rem;
+}
+
+.frequentlyUsed {
+    padding-bottom: 5pt;
+    border-bottom: 1pt solid var(--md-primary-fg-color);
 }

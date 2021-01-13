@@ -3,18 +3,39 @@ nav:
     - Home: index.md
     - Docs:
         - Home: index.md
+        - "Last visited":
+            - "1": PLACEHOLDER.md
+            - "2": PLACEHOLDER.md
+            - "3": PLACEHOLDER.md
+            - "4": PLACEHOLDER.md
+            - "5": PLACEHOLDER.md
+            - "6": PLACEHOLDER.md
+            - "7": PLACEHOLDER.md
+            - "8": PLACEHOLDER.md
+            - "9": PLACEHOLDER.md
+            - "10": PLACEHOLDER.md
+        - "Frequently used":
+            - "Isaac.": Isaac.md
+            - "Entity": Entity.md
+            - "-- EntityPlayer": EntityPlayer.md
+            - "-- EntityNPC": EntityNPC.md
+            - "-- EntityEffect": EntityEffect.md
+            - "Game():": Game.md
+            - "Room": Room.md
+            - "Level": Level.md
+            - "ModCallbacks": enums/ModCallbacks.md
         - "Color": Color.md        
-        - "> CppContainer":
-            - "CppContainer::ArrayProxy": CppContainer_ArrayProxy.md
-            - "CppContainer::ArrayProxy::RoomList": CppContainer_ArrayProxy_RoomList.md
-            - "CppContainer::EntityList": CppContainer_EntityList.md
-            - "CppContainer::Vector::CardConfigList": CppContainer_Vector_CardConfigList.md
-            - "CppContainer::Vector::CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
-            - "CppContainer::Vector::EffectList": CppContainer_Vector_EffectList.md
-            - "CppContainer::Vector::ItemConfigList": CppContainer_Vector_ItemConfigList.md
-            - "CppContainer::Vector::PillConfigList": CppContainer_Vector_PillConfigList.md
-            - "CppContainer::Vector::VectorList": CppContainer_Vector_VectorList.md
-        - "> Entity":
+        - "CppContainer":
+            - "ArrayProxy": CppContainer_ArrayProxy.md
+            - "ArrayProxy::RoomList": CppContainer_ArrayProxy_RoomList.md
+            - "EntityList": CppContainer_EntityList.md
+            - "Vector::CardConfigList": CppContainer_Vector_CardConfigList.md
+            - "Vector::CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
+            - "Vector::EffectList": CppContainer_Vector_EffectList.md
+            - "Vector::ItemConfigList": CppContainer_Vector_ItemConfigList.md
+            - "Vector::PillConfigList": CppContainer_Vector_PillConfigList.md
+            - "Vector::VectorList": CppContainer_Vector_VectorList.md
+        - "Entity":
             - "Entity": Entity.md
             - "EntityBomb": EntityBomb.md
             - "EntityEffect": EntityEffect.md
@@ -96,7 +117,7 @@ nav:
         - "Font": Font.md
         - "Functions": Functions.md
         - "Game": Game.md
-        - "> GridEntity":
+        - "GridEntity":
             - "GridEntity": GridEntity.md
             - "GridEntityDesc": GridEntityDesc.md
             - "GridEntityDoor": GridEntityDoor.md
@@ -106,7 +127,7 @@ nav:
             - "GridEntityRock": GridEntityRock.md
             - "GridEntitySpikes": GridEntitySpikes.md
             - "GridEntityTNT": GridEntityTNT.md
-        - "> ItemConfig":
+        - "ItemConfig":
             - "ItemConfig::Card": ItemConfig_Card.md
             - "ItemConfig::Config": ItemConfig_Config.md
             - "ItemConfig::Costume": ItemConfig_Costume.md
@@ -119,13 +140,13 @@ nav:
         - "Level": Level.md
         - "MusicManager": MusicManager.md
         - "PathFinder": PathFinder.md
-        - "> PlayerTypes":
+        - "PlayerTypes":
             - "PlayerTypes::ActiveItemDesc": PlayerTypes_ActiveItemDesc.md
             - "PlayerTypes::PosVel": PlayerTypes_PosVel.md
         - "ProjectileParams": ProjectileParams.md
         - "QueueItemData": QueueItemData.md
         - "Room": Room.md
-        - "> RoomConfig":
+        - "RoomConfig":
             - "RoomConfig::Entry": RoomConfig_Entry.md
             - "RoomConfig::Room": RoomConfig_Room.md
             - "RoomConfig::Spawn": RoomConfig_Spawn.md
