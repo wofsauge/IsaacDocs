@@ -291,6 +291,13 @@ a.tooltip:hover:after {
     font-family: "Roboto Mono", SFMono-Regular, Consolas, Menlo, monospace;
 }
 
+h4>.copyButton>span {
+    transform: translateY(-25%);
+    right: 150%;
+    top: 0%;
+    bottom: auto;
+}
+
 .copyButton>span::after {
     content: "";
     position: absolute;
@@ -300,6 +307,13 @@ a.tooltip:hover:after {
     border-width: 5px;
     border-style: solid;
     border-color: var(--md-accent-fg-color) transparent transparent transparent;
+}
+
+h4>.copyButton>span::after {
+    left: 100%;
+    top: 35%;
+    margin-left: 0px;
+    border-color: transparent transparent transparent var(--md-accent-fg-color);
 }
 
 .copyButton:hover>span {

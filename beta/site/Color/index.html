@@ -2936,7 +2936,7 @@
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="color"><a href="../Color">Color</a> ()<a class="headerlink" href="#color" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions">void <a href="../Color">Color</a> ( float R, float G, float B, float A, int RO, int GO, int BO )</h4>
+<h4 aria-label="Functions" class="copyable">void <a href="../Color">Color</a> ( float R, float G, float B, float A, int RO, int GO, int BO )</h4>
 <p class="wrongParsing">Constructor for the "Color" class.
 Notes: You need to use the <a class="el" href="class_k_color.html#adad4075b6c806d97b9b0134e9e9e519d">KColor()</a> constructor when using the <a class="el" href="class_font.html#ae12d76f0b59747bbf028333c9c7ed560">Font</a> class. 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the <code class="highlight"><span class="n">SetColorize</span><span class="p">()</span></code> function for a detailed description.
@@ -2945,21 +2945,21 @@ RO, GO and BO accept numbers between -255 and 255. WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="__mul">__mul ()<a class="headerlink" href="#__mul" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions"><a href="../Color">Color</a> __mul ( <a href="../Color">Color</a> right)</h4>
+<h4 aria-label="Functions" class="copyable"><a href="../Color">Color</a> __mul ( <a href="../Color">Color</a> right)</h4>
 <p>Multiplication of two colors.</p>
 <hr />
 <p><a class="static tooltip badge" href="#"> </a> <a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="lerp">Lerp ()<a class="headerlink" href="#lerp" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions">static <a href="../Color">Color</a> Lerp ( <a href="../Color">Color</a> m1, <a href="../Color">Color</a> m2, float t )</h4>
+<h4 aria-label="Functions" class="copyable">static <a href="../Color">Color</a> Lerp ( <a href="../Color">Color</a> m1, <a href="../Color">Color</a> m2, float t )</h4>
 <p>Linear Interpolation between two colors. <code class="highlight"><span class="n">t</span></code> is the "progress" of the interpolation. Setting <code class="highlight"><span class="n">t</span> <span class="o">=</span> <span class="mf">0.5</span></code> means that the color in the middle of m1 and m2 will be returned.</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="reset">Reset ()<a class="headerlink" href="#reset" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions">void Reset ( )</h4>
+<h4 aria-label="Functions" class="copyable">void Reset ( )</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="setcolorize">SetColorize ()<a class="headerlink" href="#setcolorize" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions">void SetColorize ( float Red, float Green, float Blue, float Amount )</h4>
+<h4 aria-label="Functions" class="copyable">void SetColorize ( float Red, float Green, float Blue, float Amount )</h4>
 <p>The colorize function can be used to change the color of sprites. Its the best for that purpose, since it doesnt affect existing coloranimations like the flashing of creep.
 The values can be between 0 and 1 for normal coloration. if you use higher numbers the color gets more vibrant.</p>
 <h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
@@ -2988,42 +2988,42 @@ Colorization is applied after the tint and before the offset function.</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="setoffset">SetOffset ()<a class="headerlink" href="#setoffset" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions">void SetOffset ( float RedOffset, float GreenOffset, float BlueOffset )</h4>
+<h4 aria-label="Functions" class="copyable">void SetOffset ( float RedOffset, float GreenOffset, float BlueOffset )</h4>
 <p>Offset is a color that gets added to the sprite after the Tint was applied.</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="settint">SetTint ()<a class="headerlink" href="#settint" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions">void SetTint ( float RedTint, float GreenTint, float BlueTint, float AlphaTint )</h4>
+<h4 aria-label="Functions" class="copyable">void SetTint ( float RedTint, float GreenTint, float BlueTint, float AlphaTint )</h4>
 <p>Tint acts like a color multiplicator.</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">⚓︎</a></h2>
 <h3 aria-label="Variables" id="a">A<a class="headerlink" href="#a" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float A</h4>
+<h4 aria-label="Variables" class="copyable">float A</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="b">B<a class="headerlink" href="#b" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float B</h4>
+<h4 aria-label="Variables" class="copyable">float B</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="bo">BO<a class="headerlink" href="#bo" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float BO</h4>
+<h4 aria-label="Variables" class="copyable">float BO</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="g">G<a class="headerlink" href="#g" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float G</h4>
+<h4 aria-label="Variables" class="copyable">float G</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="go">GO<a class="headerlink" href="#go" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float GO</h4>
+<h4 aria-label="Variables" class="copyable">float GO</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="r">R<a class="headerlink" href="#r" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float R</h4>
+<h4 aria-label="Variables" class="copyable">float R</h4>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="ro">RO<a class="headerlink" href="#ro" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Variables">float RO</h4>
+<h4 aria-label="Variables" class="copyable">float RO</h4>
 <hr />
                 
                   

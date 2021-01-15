@@ -89,17 +89,39 @@ app.document$.subscribe(function() {
         pathname = pathname.substring(1, pathname.length - 1);
         var splitted = pathname.split("/");
         pathname = splitted[splitted.length - 1];
-        var funcName = "";
+        var funcNameLine = "";
         parent.each(function(index) {
-            funcName = $(this).text();
+            funcNameLine = $(this).text();
         });
+        var functionString = funcNameLine;
+        if (funcNameLine.includes("(")) {
+            functionString = funcNameLine.replace(" ( ", "(").replace(" )", "").replace(")", "");
+            var funcPart1 = functionString.split("(")[0].split(" ");
+            var p1 = funcPart1[funcPart1.length - 1];
+            var funcPart2 = "";
+            $.each(functionString.split("(")[1].split(", "), function(index, value) {
+                if (index > 0) {
+                    funcPart2 += ", ";
+                }
+                if (value.split(" ").length > 1) {
+                    funcPart2 += value.split(" ")[1];
+                }
+            });
+            functionString = p1 + "(" + funcPart2 + ")";
+        } else {
+            functionString = functionString.split(" ")[functionString.split(" ").length - 1]
+        }
 
         var connector = ".";
-        if (funcName.includes("(")) {
+        if (funcNameLine.includes("(") && !pathname.includes("Isaac")) {
             connector = ":";
+        }
+        if (!window.location.pathname.includes("enums") && !pathname.includes("Isaac")) {
             pathname = "";
         }
-        var copyText = pathname + connector + funcName;
+
+        var copyText = pathname + connector + functionString;
+
         copyText = copyText.replace("Copy to clipboard", "");
         parent.append('<textarea>' + copyText + '</textarea>');
         parent.find("textarea").each(function(index) {
@@ -107,7 +129,7 @@ app.document$.subscribe(function() {
             document.execCommand("copy");
             $(this).remove();
         });
-        $(this).find("span").first().text("Copied: " + copyText);
+        $(this).find("span").first().text("Copied: \n" + copyText);
     });
 
     $(".copyButton").mouseleave(function() {
