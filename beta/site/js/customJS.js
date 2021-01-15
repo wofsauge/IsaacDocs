@@ -79,10 +79,12 @@ app.document$.subscribe(function() {
         reevaluateLastVisit();
     });
 
-    $(".copyable").append('<button class="md-clipboard copyButton md-icon" title="Copy to clipboard"></button>');
+    $(".copyable").append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
 
     $(".copyButton").click(function() {
         var parent = $(this).parent();
+        $(this).find("span").first().text("");
+
         var pathname = window.location.pathname;
         pathname = pathname.substring(1, pathname.length - 1);
         var splitted = pathname.split("/");
@@ -97,12 +99,18 @@ app.document$.subscribe(function() {
             connector = ":";
             pathname = "";
         }
-        parent.append('<textarea>' + pathname + connector + funcName + '</textarea>');
+        var copyText = pathname + connector + funcName;
+        copyText = copyText.replace("Copy to clipboard", "");
+        parent.append('<textarea>' + copyText + '</textarea>');
         parent.find("textarea").each(function(index) {
             $(this).select();
             document.execCommand("copy");
             $(this).remove();
         });
-        alert("Copied to clipboard: \n" + pathname + connector + funcName);
+        $(this).find("span").first().text("Copied: " + copyText);
+    });
+
+    $(".copyButton").mouseleave(function() {
+        $(this).find("span").first().text("Copy to clipboard");
     });
 });
