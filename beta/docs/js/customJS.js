@@ -79,6 +79,12 @@ app.document$.subscribe(function() {
         reevaluateLastVisit();
     });
 
+    // Make tables sortable
+    document.querySelectorAll("article table").forEach(function(table) {
+        new Tablesort(table)
+    })
+
+    // handle Copy Buttons
     $(".copyable").append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
 
     $(".copyButton").click(function() {

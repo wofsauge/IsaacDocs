@@ -162,13 +162,14 @@ nav:
         - "TemporaryEffects": TemporaryEffects.md
         - "Vector": Vector.md
     - Tutorials:
-        - "Tutorial - Adding Costumes to items without LUA": Tutorial-AddingCostumestoitemswithoutLUA.md
-        - "Using ZeroBrane Studio to debug your scripts": UsingZeroBraneStudiotodebugyourscripts.md
-        - "Debug Console": DebugConsole.md
-        - "Using additional .lua Files": Usingadditional.luaFiles.md
-        - "Writing screen shaders": Writingscreenshaders.md
-        - "Tutorial - Render text": Tutorial-Rendertext.md
-        - "XML File documentation": XMLFiledocumentation.md
+        - "Example Project": tutorials/ExampleProject.md
+        - "Adding Costumes to items without LUA": tutorials/AddingCostumesWithoutLUA.md
+        - "Debugging with ZeroBrane Studio": tutorials/ZeroBraneStudio.md
+        - "Debug Console": tutorials/DebugConsole.md
+        - "Using additional .lua Files": tutorials/Usingadditional.luaFiles.md
+        - "Writing screen shaders": tutorials/Writingscreenshaders.md
+        - "Tutorial - Render text": tutorials/Tutorial-Rendertext.md
+        - "XML File documentation": tutorials/XMLFiledocumentation.md
 theme:
     name: material
     features:
@@ -203,7 +204,8 @@ extra_css:
     - css/custom.css
 extra_javascript: 
     - js/jquery.min.js
-    - js/customJS.js
+    - js/customJS.js  
+    - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
 copyright: Copyright &copy; 2021 Wofsauge
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
