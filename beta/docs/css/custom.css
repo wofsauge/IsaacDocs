@@ -3,6 +3,8 @@
     --function-color-light: #BBDEFB;
     --var-color: #A5D6A7;
     --var-color-light: #E8F5E9;
+    --constructor-color: #FFCC80;
+    --constructor-color-light: #FFE0B2;
 }
 
 nav[aria-label$='Functions'] {
@@ -12,6 +14,11 @@ nav[aria-label$='Functions'] {
 
 nav[aria-label$='Variables'] {
     border-left: 5px solid var(--var-color);
+    line-height: 1.1;
+}
+
+nav[aria-label$='Constructors'] {
+    border-left: 5px solid var(--constructor-color);
     line-height: 1.1;
 }
 
@@ -49,6 +56,11 @@ h3[aria-label$='Variables'] {
     display: inline-block;
 }
 
+h3[aria-label$='Constructors'] {
+    background-color: var(--constructor-color);
+    display: inline-block;
+}
+
 .md-typeset h4 {
     border-radius: 0px 5px 5px 5px;
     padding: 2px 10px;
@@ -64,6 +76,10 @@ h4[aria-label$='Functions'] {
 
 h4[aria-label$='Variables'] {
     background-color: var(--var-color-light);
+}
+
+h4[aria-label$='Constructors'] {
+    background-color: var(--constructor-color-light);
 }
 
 .md-content p {
@@ -143,6 +159,8 @@ body.darkMode {
     --function-color-light: #272938;
     --var-color: #128676;
     --var-color-light: #272938;
+    --constructor-color: #e65100;
+    --constructor-color-light: #272938;
     --md-hue: 232;
     --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
     --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
@@ -238,7 +256,7 @@ a.tooltip:hover:after {
 
 .frequentlyUsed {
     padding-bottom: 5pt;
-    border-bottom: 1pt solid var(--md-primary-fg-color);
+    border-bottom: 2pt solid var(--md-primary-fg-color);
 }
 
 .md-typeset table:not([class]) {

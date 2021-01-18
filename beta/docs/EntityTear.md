@@ -2,32 +2,32 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### ChangeVariant () {: aria-label='Functions' }
-#### void ChangeVariant ( int NewVariant)  {: .copyable aria-label='Functions' }
+#### void ChangeVariant ( int NewVariant ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ResetSpriteScale () {: aria-label='Functions' }
-#### void ResetSpriteScale ( )  {: .copyable aria-label='Functions' }
+#### void ResetSpriteScale ( ) {: .copyable aria-label='Functions' }
 Resets the tear sprite animation depending on scale. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetDeadEyeIntensity () {: aria-label='Functions' }
-#### void SetDeadEyeIntensity ( float Intensity)  {: .copyable aria-label='Functions' }
+#### void SetDeadEyeIntensity ( float Intensity ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetKnockbackMultiplier () {: aria-label='Functions' }
-#### void SetKnockbackMultiplier ( float Multiplier)  {: .copyable aria-label='Functions' }
+#### void SetKnockbackMultiplier ( float Multiplier ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetParentOffset () {: aria-label='Functions' }
-#### void SetParentOffset ( [Vector](../Vector) Offset)  {: .copyable aria-label='Functions' }
+#### void SetParentOffset ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetWaitFrames () {: aria-label='Functions' }
-#### void SetWaitFrames ( int Value)  {: .copyable aria-label='Functions' }
+#### void SetWaitFrames ( int Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

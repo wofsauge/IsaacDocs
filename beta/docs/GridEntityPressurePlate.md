@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### Reward () {: aria-label='Functions' }
-#### void Reward ( )  {: .copyable aria-label='Functions' }
+#### void Reward ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

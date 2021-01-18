@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### Get () {: aria-label='Functions' }
-#### [PillEffect](../ItemConfig_PillEffect) Get ( int Idx)  {: .copyable aria-label='Functions' }
+#### [PillEffect](../ItemConfig_PillEffect) Get ( int Idx ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

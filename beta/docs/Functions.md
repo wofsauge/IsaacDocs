@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### [Game](../Game) () {: aria-label='Functions' }
-#### [Game](../Game) [Game](../Game) ( )  {: .copyable aria-label='Functions' }
+#### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_game.html">Game</a> object.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -17,7 +17,7 @@ Game():IsPaused()
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### [MusicManager](../MusicManager) () {: aria-label='Functions' }
-#### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( )  {: .copyable aria-label='Functions' }
+#### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -31,17 +31,17 @@ MusicManager():Disable()
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Random () {: aria-label='Functions' }
-#### int Random ( )  {: .copyable aria-label='Functions' }
+#### int Random ( ) {: .copyable aria-label='Functions' }
 Returns a random integer. (0 to 2^32) 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### RandomVector () {: aria-label='Functions' }
-#### [Vector](../Vector) RandomVector ( )  {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### [SFXManager](../SFXManager) () {: aria-label='Functions' }
-#### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( )  {: .copyable aria-label='Functions' }
+#### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -55,7 +55,7 @@ SFXManager():Stop(SoundEffect.SOUND_1UP)
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetPtrHash () {: aria-label='Functions' }
-#### int GetPtrHash ( Objectobject)  {: .copyable aria-label='Functions' }
+#### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::cpp Entity`, `:::cpp Room`, `:::cpp RNG`, `:::cpp Sprite`, `:::cpp Game` etc.
 It can be used to easily compare two entities, making equality checks very easy.
 **Example:**

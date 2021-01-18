@@ -2,27 +2,27 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### FollowParent () {: aria-label='Functions' }
-#### void FollowParent ( [Entity](../Entity) Parent)  {: .copyable aria-label='Functions' }
+#### void FollowParent ( [Entity](../Entity) Parent ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### IsPlayerCreep () {: aria-label='Functions' }
-#### static boolean IsPlayerCreep ( int Variant)  {: .copyable aria-label='Functions' }
+#### static boolean IsPlayerCreep ( int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetDamageSource () {: aria-label='Functions' }
-#### void SetDamageSource ( [EntityType](../enums/EntityType) DamageSource)  {: .copyable aria-label='Functions' }
+#### void SetDamageSource ( [EntityType](../enums/EntityType) DamageSource ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetRadii () {: aria-label='Functions' }
-#### void SetRadii ( float min, float max )  {: .copyable aria-label='Functions' }
+#### void SetRadii ( float min, float max ) {: .copyable aria-label='Functions' }
 For shockwaves. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetTimeout () {: aria-label='Functions' }
-#### void SetTimeout ( int Timeout)  {: .copyable aria-label='Functions' }
+#### void SetTimeout ( int Timeout ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

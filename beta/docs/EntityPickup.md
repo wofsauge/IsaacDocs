@@ -2,42 +2,42 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### AppearFast () {: aria-label='Functions' }
-#### void AppearFast ( )  {: .copyable aria-label='Functions' }
+#### void AppearFast ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### CanReroll () {: aria-label='Functions' }
-#### boolean CanReroll ( )  {: .copyable aria-label='Functions' }
+#### boolean CanReroll ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetCoinValue () {: aria-label='Functions' }
-#### int GetCoinValue ( )  {: .copyable aria-label='Functions' }
+#### int GetCoinValue ( ) {: .copyable aria-label='Functions' }
 If this is a coin, return its face value, else zero. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsShopItem () {: aria-label='Functions' }
-#### boolean IsShopItem ( )  {: .copyable aria-label='Functions' }
+#### boolean IsShopItem ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Morph () {: aria-label='Functions' }
-#### void Morph ( [EntityType](../enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice )  {: .copyable aria-label='Functions' }
+#### void Morph ( [EntityType](../enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### PlayDropSound () {: aria-label='Functions' }
-#### void PlayDropSound ( )  {: .copyable aria-label='Functions' }
+#### void PlayDropSound ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### PlayPickupSound () {: aria-label='Functions' }
-#### void PlayPickupSound ( )  {: .copyable aria-label='Functions' }
+#### void PlayPickupSound ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### TryOpenChest () {: aria-label='Functions' }
-#### boolean TryOpenChest ( )  {: .copyable aria-label='Functions' }
+#### boolean TryOpenChest ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

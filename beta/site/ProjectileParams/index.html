@@ -2275,11 +2275,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    Functions
+  <a href="#constructors" class="md-nav__link">
+    Constructors
   </a>
   
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Constructors">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2291,6 +2291,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
   
 </li>
       
@@ -2875,11 +2882,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    Functions
+  <a href="#constructors" class="md-nav__link">
+    Constructors
   </a>
   
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Constructors">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2891,6 +2898,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
   
 </li>
       
@@ -3086,11 +3100,12 @@
                 
                 
                 <h1 id="class-projectileparams">Class "ProjectileParams"<a class="headerlink" href="#class-projectileparams" title="Permanent link">⚓︎</a></h1>
-<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">⚓︎</a></h2>
 <p><a class="abp tooltip badge" href="#"> </a></p>
-<h3 aria-label="Functions" id="projectileparams"><a href="../ProjectileParams">ProjectileParams</a> ()<a class="headerlink" href="#projectileparams" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions" class="copyable">void <a href="../ProjectileParams">ProjectileParams</a> ( void )</h4>
+<h3 aria-label="Constructors" id="projectileparams"><a href="../ProjectileParams">ProjectileParams</a> ()<a class="headerlink" href="#projectileparams" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Constructors" class="copyable">void <a href="../ProjectileParams">ProjectileParams</a> ( void )</h4>
 <hr />
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">⚓︎</a></h2>
 <h3 aria-label="Variables" id="acceleration">Acceleration<a class="headerlink" href="#acceleration" title="Permanent link">⚓︎</a></h3>
@@ -3106,8 +3121,8 @@
 <p>Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes after the "Changed" state was activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!</p>
 <hr />
-<p><strong>Informations about "Changed" State:</strong>
-Projectiles can have two states: normal (default) and changed.</p>
+<p><strong>Informations about "Changed" State:</strong></p>
+<p>Projectiles can have two states: normal (default) and changed.</p>
 <p>Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.</p>
 <hr />
 <p class="wrongParsing">Also used in: <a class="el" href="class_entity_projectile.html#a6c5a69141dc132104776d0aa4ce8691e">EntityProjectile()</a> WRONG PARSING </p>
@@ -3118,8 +3133,8 @@ Projectiles can have two states: normal (default) and changed.</p>
 <p>Number of frames that need to elapse after spawn till the "Changed" state is activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!</p>
 <hr />
-<p><strong>Informations about "Changed" State:</strong>
-Projectiles can have two states: normal (default) and changed.</p>
+<p><strong>Informations about "Changed" State:</strong></p>
+<p>Projectiles can have two states: normal (default) and changed.</p>
 <p>Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.</p>
 <hr />
 <p class="wrongParsing">Also used in: <a class="el" href="class_entity_projectile.html#adc75976b47b0121d4faf956ee61f2a8d">EntityProjectile()</a> WRONG PARSING </p>
@@ -3130,8 +3145,8 @@ Projectiles can have two states: normal (default) and changed.</p>
 <p>Velocity value that gets applied when the "Changed" state is activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!</p>
 <hr />
-<p><strong>Informations about "Changed" State:</strong>
-Projectiles can have two states: normal (default) and changed.</p>
+<p><strong>Informations about "Changed" State:</strong></p>
+<p>Projectiles can have two states: normal (default) and changed.</p>
 <p>Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.</p>
 <hr />
 <p class="wrongParsing">Also used in: <a class="el" href="class_entity_projectile.html#adf22f7bcbe0ffbd7346ede9431c83df1">EntityProjectile()</a> WRONG PARSING </p>

@@ -78,6 +78,7 @@ app.document$.subscribe(function() {
     $(".md-nav[aria-label=\"Last visited\"]").siblings().click(function() {
         reevaluateLastVisit();
     });
+    $("div.md-footer-nav").find("a[href*='PLACEHOLDER']").first().hide();
 
     // Make tables sortable
     document.querySelectorAll("article table").forEach(function(table) {

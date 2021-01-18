@@ -2,82 +2,82 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### Bar () {: aria-label='Functions' }
-#### void Bar ( )  {: .copyable aria-label='Functions' }
+#### void Bar ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### CanBlowOpen () {: aria-label='Functions' }
-#### boolean CanBlowOpen ( )  {: .copyable aria-label='Functions' }
+#### boolean CanBlowOpen ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Close () {: aria-label='Functions' }
-#### void Close ( boolean Force)  {: .copyable aria-label='Functions' }
+#### void Close ( boolean Force ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetSpriteOffset () {: aria-label='Functions' }
-####  [Vector](../Vector) GetSpriteOffset ( )  {: .copyable aria-label='Functions' }
+####  [Vector](../Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsBusted () {: aria-label='Functions' }
-#### boolean IsBusted ( )  {: .copyable aria-label='Functions' }
+#### boolean IsBusted ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsKeyFamiliarTarget () {: aria-label='Functions' }
-#### boolean IsKeyFamiliarTarget ( )  {: .copyable aria-label='Functions' }
+#### boolean IsKeyFamiliarTarget ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsLocked () {: aria-label='Functions' }
-#### boolean IsLocked ( )  {: .copyable aria-label='Functions' }
+#### boolean IsLocked ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsOpen () {: aria-label='Functions' }
-#### boolean IsOpen ( )  {: .copyable aria-label='Functions' }
+#### boolean IsOpen ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsRoomType () {: aria-label='Functions' }
-#### boolean IsRoomType ( [RoomType](../enums/RoomType) Type)  {: .copyable aria-label='Functions' }
+#### boolean IsRoomType ( [RoomType](../enums/RoomType) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsTargetRoomArcade () {: aria-label='Functions' }
-#### boolean IsTargetRoomArcade ( )  {: .copyable aria-label='Functions' }
+#### boolean IsTargetRoomArcade ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Open () {: aria-label='Functions' }
-#### void Open ( )  {: .copyable aria-label='Functions' }
+#### void Open ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetLocked () {: aria-label='Functions' }
-#### void SetLocked ( boolean Locked)  {: .copyable aria-label='Functions' }
+#### void SetLocked ( boolean Locked ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetRoomTypes () {: aria-label='Functions' }
-#### void SetRoomTypes ( [RoomType](../enums/RoomType) CurrentRoomType, [RoomType](../enums/RoomType) TargetRoomType )  {: .copyable aria-label='Functions' }
+#### void SetRoomTypes ( [RoomType](../enums/RoomType) CurrentRoomType, [RoomType](../enums/RoomType) TargetRoomType ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SpawnDust () {: aria-label='Functions' }
-#### void SpawnDust ( )  {: .copyable aria-label='Functions' }
+#### void SpawnDust ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### TryBlowOpen () {: aria-label='Functions' }
-#### boolean TryBlowOpen ( boolean FromExplossion)  {: .copyable aria-label='Functions' }
+#### boolean TryBlowOpen ( boolean FromExplossion ) {: .copyable aria-label='Functions' }
 try to open the door by explosive force, true for success 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### TryUnlock () {: aria-label='Functions' }
-#### boolean TryUnlock ( boolean Force)  {: .copyable aria-label='Functions' }
+#### boolean TryUnlock ( boolean Force ) {: .copyable aria-label='Functions' }
 try to unlock the door using a key, true for success 
 ___ 
 [ ](#){: .abp .tooltip .badge }

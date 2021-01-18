@@ -2,37 +2,37 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### GetKnifeDistance () {: aria-label='Functions' }
-#### float GetKnifeDistance ( )  {: .copyable aria-label='Functions' }
+#### float GetKnifeDistance ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetKnifeVelocity () {: aria-label='Functions' }
-#### float GetKnifeVelocity ( )  {: .copyable aria-label='Functions' }
+#### float GetKnifeVelocity ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetRenderZ () {: aria-label='Functions' }
-#### int GetRenderZ ( )  {: .copyable aria-label='Functions' }
+#### int GetRenderZ ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsFlying () {: aria-label='Functions' }
-#### boolean IsFlying ( )  {: .copyable aria-label='Functions' }
+#### boolean IsFlying ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Reset () {: aria-label='Functions' }
-#### void Reset ( )  {: .copyable aria-label='Functions' }
+#### void Reset ( ) {: .copyable aria-label='Functions' }
 Used for master knifes, to get back to player. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetPathFollowSpeed () {: aria-label='Functions' }
-#### void SetPathFollowSpeed ( float Speed)  {: .copyable aria-label='Functions' }
+#### void SetPathFollowSpeed ( float Speed ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Shoot () {: aria-label='Functions' }
-#### void Shoot ( float Charge, float Range )  {: .copyable aria-label='Functions' }
+#### void Shoot ( float Charge, float Range ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

@@ -2,17 +2,17 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### IsCollectible () {: aria-label='Functions' }
-#### boolean IsCollectible ( )  {: .copyable aria-label='Functions' }
+#### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsNull () {: aria-label='Functions' }
-#### boolean IsNull ( )  {: .copyable aria-label='Functions' }
+#### boolean IsNull ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsTrinket () {: aria-label='Functions' }
-#### boolean IsTrinket ( )  {: .copyable aria-label='Functions' }
+#### boolean IsTrinket ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

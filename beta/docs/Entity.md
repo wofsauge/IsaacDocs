@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### AddBurn () {: aria-label='Functions' }
-#### void AddBurn ( [EntityRef](../EntityRef) Source, int Duration, float Damage )  {: .copyable aria-label='Functions' }
+#### void AddBurn ( [EntityRef](../EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
 Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -18,9 +18,10 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddCharmed () {: aria-label='Functions' }
-#### void AddCharmed ( int Duration)  {: .copyable aria-label='Functions' }
+#### void AddCharmed ( int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. 
+
 `:::cpp AddCharmed(-1)` makes the effect permanent and the enemy will follow you even to different rooms.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
 This code charms every entity in the room for 1 second.
@@ -34,7 +35,7 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddConfusion () {: aria-label='Functions' }
-#### void AddConfusion ( [EntityRef](../EntityRef) Source, int Duration, boolean IgnoreBosses )  {: .copyable aria-label='Functions' }
+#### void AddConfusion ( [EntityRef](../EntityRef) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a confusion effect to an entity.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -50,7 +51,7 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddEntityFlags () {: aria-label='Functions' }
-#### void AddEntityFlags ( int Flags)  {: .copyable aria-label='Functions' }
+#### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Add <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -67,7 +68,7 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddFear () {: aria-label='Functions' }
-#### void AddFear ( [EntityRef](../EntityRef) Source, int Duration )  {: .copyable aria-label='Functions' }
+#### void AddFear ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a fear-effect to an entity.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -83,7 +84,7 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddFreeze () {: aria-label='Functions' }
-#### void AddFreeze ( [EntityRef](../EntityRef) Source, int Duration )  {: .copyable aria-label='Functions' }
+#### void AddFreeze ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Freezes an entity, making it unable to move and attack.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -99,87 +100,87 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddHealth () {: aria-label='Functions' }
-#### void AddHealth ( float HitPoints)  {: .copyable aria-label='Functions' }
+#### void AddHealth ( float HitPoints ) {: .copyable aria-label='Functions' }
 Heals an entity. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddMidasFreeze () {: aria-label='Functions' }
-#### void AddMidasFreeze ( [EntityRef](../EntityRef) Source, int Duration )  {: .copyable aria-label='Functions' }
+#### void AddMidasFreeze ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 Turns the entity into a gold statue (can't move, can't attack, drops coins when killed)
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddPoison () {: aria-label='Functions' }
-#### void AddPoison ( [EntityRef](../EntityRef) Source, int Duration, float Damage )  {: .copyable aria-label='Functions' }
+#### void AddPoison ( [EntityRef](../EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
 Adds a poison effect to the entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddShrink () {: aria-label='Functions' }
-#### void AddShrink ( [EntityRef](../EntityRef) Source, int Duration )  {: .copyable aria-label='Functions' }
+#### void AddShrink ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a shrink effect to the entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddSlowing () {: aria-label='Functions' }
-#### void AddSlowing ( [EntityRef](../EntityRef) Source, int Duration, float SlowValue, [Color](../Color) SlowColor )  {: .copyable aria-label='Functions' }
+#### void AddSlowing ( [EntityRef](../EntityRef) Source, int Duration, float SlowValue, [Color](../Color) SlowColor ) {: .copyable aria-label='Functions' }
 Makes the friction higher. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddVelocity () {: aria-label='Functions' }
-#### void AddVelocity ( [Vector](../Vector) Velocity)  {: .copyable aria-label='Functions' }
+#### void AddVelocity ( [Vector](../Vector) Velocity ) {: .copyable aria-label='Functions' }
 
 Adds velocity to the entity. This can be used to move him in a certain direktion (for example as a result of collision)
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### BloodExplode () {: aria-label='Functions' }
-#### void BloodExplode ( )  {: .copyable aria-label='Functions' }
+#### void BloodExplode ( ) {: .copyable aria-label='Functions' }
 Explodes with gibs and blood. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### CanShutDoors () {: aria-label='Functions' }
-#### boolean CanShutDoors ( )  {: .copyable aria-label='Functions' }
+#### boolean CanShutDoors ( ) {: .copyable aria-label='Functions' }
 enemies keep the doors shut.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ClearEntityFlags () {: aria-label='Functions' }
-#### void ClearEntityFlags ( int Flags)  {: .copyable aria-label='Functions' }
+#### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> from the entity. WRONG PARSING 
 {: .wrongParsing }
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### CollidesWithGrid () {: aria-label='Functions' }
-#### boolean CollidesWithGrid ( )  {: .copyable aria-label='Functions' }
+#### boolean CollidesWithGrid ( ) {: .copyable aria-label='Functions' }
 
 Returns true, if the entity is able to collide with the grid.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Die () {: aria-label='Functions' }
-#### void Die ( )  {: .copyable aria-label='Functions' }
+#### void Die ( ) {: .copyable aria-label='Functions' }
 
 Kills the entity and trigger its death animation.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Exists () {: aria-label='Functions' }
-#### boolean Exists ( )  {: .copyable aria-label='Functions' }
+#### boolean Exists ( ) {: .copyable aria-label='Functions' }
 
 Returns true, if this entity still exists.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetBossID () {: aria-label='Functions' }
-#### BossId GetBossID ( )  {: .copyable aria-label='Functions' }
+#### BossId GetBossID ( ) {: .copyable aria-label='Functions' }
 
 If the entity is a boss, it returns its specific boss id. If it isnt a boss it will return 0.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetColor () {: aria-label='Functions' }
-####  [Color](../Color) GetColor ( )  {: .copyable aria-label='Functions' }
+####  [Color](../Color) GetColor ( ) {: .copyable aria-label='Functions' }
 
 Returns the Color object assosiated to this entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetData () {: aria-label='Functions' }
-#### table GetData ( )  {: .copyable aria-label='Functions' }
+#### table GetData ( ) {: .copyable aria-label='Functions' }
 
 Returns a table that contains all data assosiated with the entity. This can be used to add custom data as well.
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
@@ -197,13 +198,13 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetDropRNG () {: aria-label='Functions' }
-#### [RNG](../RNG) GetDropRNG ( )  {: .copyable aria-label='Functions' }
+#### [RNG](../RNG) GetDropRNG ( ) {: .copyable aria-label='Functions' }
 
 Returns the assigned RNG object for the entity. This RNG is used to determine the items that are dropped on the entities death.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetEntityFlags () {: aria-label='Functions' }
-#### int GetEntityFlags ( )  {: .copyable aria-label='Functions' }
+#### int GetEntityFlags ( ) {: .copyable aria-label='Functions' }
 
 Get the <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> of the entity. This will be a number which acts like a bitmask.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -218,30 +219,30 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetLastChild () {: aria-label='Functions' }
-#### [Entity](../Entity) GetLastChild ( )  {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) GetLastChild ( ) {: .copyable aria-label='Functions' }
 
 Returns the last entity spawned by this entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetLastParent () {: aria-label='Functions' }
-#### [Entity](../Entity) GetLastParent ( )  {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) GetLastParent ( ) {: .copyable aria-label='Functions' }
 
 Returns the last parent of this entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetSprite () {: aria-label='Functions' }
-#### [Sprite](../Sprite) GetSprite ( )  {: .copyable aria-label='Functions' }
+#### [Sprite](../Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 Return the sprite object of the entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### HasCommonParentWithEntity () {: aria-label='Functions' }
-#### boolean HasCommonParentWithEntity ( [Entity](../Entity) Other)  {: .copyable aria-label='Functions' }
+#### boolean HasCommonParentWithEntity ( [Entity](../Entity) Other ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### HasEntityFlags () {: aria-label='Functions' }
-#### boolean HasEntityFlags ( int Flags)  {: .copyable aria-label='Functions' }
+#### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Returns true, if the entity has all named <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> set.
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -256,12 +257,12 @@ end
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### HasFullHealth () {: aria-label='Functions' }
-#### boolean HasFullHealth ( )  {: .copyable aria-label='Functions' }
+#### boolean HasFullHealth ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### HasMortalDamage () {: aria-label='Functions' }
-#### boolean HasMortalDamage ( )  {: .copyable aria-label='Functions' }
+#### boolean HasMortalDamage ( ) {: .copyable aria-label='Functions' }
 
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
 The game adds taken damage to a damage buffer, which gets applied in the next frame. HasMortalDamage() returns true if the buffered damage is enough to kill the entity.
@@ -269,89 +270,89 @@ HasMortalDamage() will be updated additionally after TakeDamage() is called.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsActiveEnemy () {: aria-label='Functions' }
-#### boolean IsActiveEnemy ( boolean includeDead)  {: .copyable aria-label='Functions' }
+#### boolean IsActiveEnemy ( boolean includeDead ) {: .copyable aria-label='Functions' }
 return true for non background NPCs (ex: every enemy except fire and shopkeepers) 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsBoss () {: aria-label='Functions' }
-#### boolean IsBoss ( )  {: .copyable aria-label='Functions' }
+#### boolean IsBoss ( ) {: .copyable aria-label='Functions' }
 bosses display health bar 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsDead () {: aria-label='Functions' }
-#### boolean IsDead ( )  {: .copyable aria-label='Functions' }
+#### boolean IsDead ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsEnemy () {: aria-label='Functions' }
-#### boolean IsEnemy ( )  {: .copyable aria-label='Functions' }
+#### boolean IsEnemy ( ) {: .copyable aria-label='Functions' }
 return true for NPCs that are not controlled by the player 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsFlying () {: aria-label='Functions' }
-#### boolean IsFlying ( )  {: .copyable aria-label='Functions' }
+#### boolean IsFlying ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsFrame () {: aria-label='Functions' }
-#### boolean IsFrame ( int Frame, int Offset )  {: .copyable aria-label='Functions' }
+#### boolean IsFrame ( int Frame, int Offset ) {: .copyable aria-label='Functions' }
 true every X frames 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsInvincible () {: aria-label='Functions' }
-#### boolean IsInvincible ( )  {: .copyable aria-label='Functions' }
+#### boolean IsInvincible ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsVisible () {: aria-label='Functions' }
-#### boolean IsVisible ( )  {: .copyable aria-label='Functions' }
+#### boolean IsVisible ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsVulnerableEnemy () {: aria-label='Functions' }
-#### boolean IsVulnerableEnemy ( )  {: .copyable aria-label='Functions' }
+#### boolean IsVulnerableEnemy ( ) {: .copyable aria-label='Functions' }
 return true for enemies that can be damaged 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Kill () {: aria-label='Functions' }
-#### void Kill ( )  {: .copyable aria-label='Functions' }
+#### void Kill ( ) {: .copyable aria-label='Functions' }
 Kills the entity and makes a blood splat or gibs. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### MultiplyFriction () {: aria-label='Functions' }
-#### void MultiplyFriction ( float Value)  {: .copyable aria-label='Functions' }
+#### void MultiplyFriction ( float Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### PostRender () {: aria-label='Functions' }
-#### void PostRender ( )  {: .copyable aria-label='Functions' }
+#### void PostRender ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Remove () {: aria-label='Functions' }
-#### void Remove ( )  {: .copyable aria-label='Functions' }
+#### void Remove ( ) {: .copyable aria-label='Functions' }
 Remove the entity from the game instantly, without doing any additional effects/animations.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### RemoveStatusEffects () {: aria-label='Functions' }
-#### void RemoveStatusEffects ( )  {: .copyable aria-label='Functions' }
+#### void RemoveStatusEffects ( ) {: .copyable aria-label='Functions' }
 
 Removes all Status Effects from the entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Render () {: aria-label='Functions' }
-#### void Render ( [Vector](../Vector) Offset)  {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
 Render the current sprite of the Entity at the current entity position + offset.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### RenderShadowLayer () {: aria-label='Functions' }
-#### boolean RenderShadowLayer ( [Vector](../Vector) Offset)  {: .copyable aria-label='Functions' }
+#### boolean RenderShadowLayer ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
 
 Render the shadow / shadow layer again.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetColor () {: aria-label='Functions' }
-#### void SetColor ( [Color](../Color) Color, int Duration, int Priority, boolean Fadeout, boolean Share )  {: .copyable aria-label='Functions' }
+#### void SetColor ( [Color](../Color) Color, int Duration, int Priority, boolean Fadeout, boolean Share ) {: .copyable aria-label='Functions' }
 
 Set the colormask for the entity. This can be used to tint the sprites in different colors. 
 ##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
@@ -363,80 +364,80 @@ entity:SetColor(Color(1,1,1,1,255,255,255),15,1,false,false)
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetSize () {: aria-label='Functions' }
-#### void SetSize ( float Size, [Vector](../Vector) SizeMulti, int NumGridCollisionPoints )  {: .copyable aria-label='Functions' }
+#### void SetSize ( float Size, [Vector](../Vector) SizeMulti, int NumGridCollisionPoints ) {: .copyable aria-label='Functions' }
 
 Set the size ofthe entity.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetSpriteFrame () {: aria-label='Functions' }
-#### void SetSpriteFrame ( string AnimationName, int FrameNum )  {: .copyable aria-label='Functions' }
+#### void SetSpriteFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetSpriteOverlayFrame () {: aria-label='Functions' }
-#### void SetSpriteOverlayFrame ( string AnimationName, int FrameNum )  {: .copyable aria-label='Functions' }
+#### void SetSpriteOverlayFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### TakeDamage () {: aria-label='Functions' }
-#### boolean TakeDamage ( float Damage, int Flags, [EntityRef](../EntityRef) Source, int DamageCountdown )  {: .copyable aria-label='Functions' }
+#### boolean TakeDamage ( float Damage, int Flags, [EntityRef](../EntityRef) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
 
 ##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
 The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, TakeDamage() will not decremented the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToBomb () {: aria-label='Functions' }
-#### [EntityBomb](../EntityBomb) ToBomb ( )  {: .copyable aria-label='Functions' }
+#### [EntityBomb](../EntityBomb) ToBomb ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToEffect () {: aria-label='Functions' }
-#### [EntityEffect](../EntityEffect) ToEffect ( )  {: .copyable aria-label='Functions' }
+#### [EntityEffect](../EntityEffect) ToEffect ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToFamiliar () {: aria-label='Functions' }
-#### [EntityFamiliar](../EntityFamiliar) ToFamiliar ( )  {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) ToFamiliar ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToKnife () {: aria-label='Functions' }
-#### [EntityKnife](../EntityKnife) ToKnife ( )  {: .copyable aria-label='Functions' }
+#### [EntityKnife](../EntityKnife) ToKnife ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToLaser () {: aria-label='Functions' }
-#### [EntityLaser](../EntityLaser) ToLaser ( )  {: .copyable aria-label='Functions' }
+#### [EntityLaser](../EntityLaser) ToLaser ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToNPC () {: aria-label='Functions' }
-#### [EntityNPC](../EntityNPC) ToNPC ( )  {: .copyable aria-label='Functions' }
+#### [EntityNPC](../EntityNPC) ToNPC ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToPickup () {: aria-label='Functions' }
-#### [EntityPickup](../EntityPickup) ToPickup ( )  {: .copyable aria-label='Functions' }
+#### [EntityPickup](../EntityPickup) ToPickup ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToPlayer () {: aria-label='Functions' }
-#### [EntityPlayer](../EntityPlayer) ToPlayer ( )  {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../EntityPlayer) ToPlayer ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToProjectile () {: aria-label='Functions' }
-#### [EntityProjectile](../EntityProjectile) ToProjectile ( )  {: .copyable aria-label='Functions' }
+#### [EntityProjectile](../EntityProjectile) ToProjectile ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToTear () {: aria-label='Functions' }
-#### [EntityTear](../EntityTear) ToTear ( )  {: .copyable aria-label='Functions' }
+#### [EntityTear](../EntityTear) ToTear ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Update () {: aria-label='Functions' }
-#### void Update ( )  {: .copyable aria-label='Functions' }
+#### void Update ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

@@ -632,11 +632,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    Functions
+  <a href="#constructors" class="md-nav__link">
+    Constructors
   </a>
   
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Constructors">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -645,6 +645,19 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#__mul" class="md-nav__link">
@@ -2805,11 +2818,11 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    Functions
+  <a href="#constructors" class="md-nav__link">
+    Constructors
   </a>
   
-    <nav class="md-nav" aria-label="Functions">
+    <nav class="md-nav" aria-label="Constructors">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2818,6 +2831,19 @@
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#__mul" class="md-nav__link">
@@ -2946,19 +2972,20 @@
                 
                 
                 <h1 id="class-color">Class "Color"<a class="headerlink" href="#class-color" title="Permanent link">⚓︎</a></h1>
-<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
+<h2 id="constructors">Constructors<a class="headerlink" href="#constructors" title="Permanent link">⚓︎</a></h2>
 <p><a class="abp tooltip badge" href="#"> </a></p>
-<h3 aria-label="Functions" id="color"><a href="../Color">Color</a> ()<a class="headerlink" href="#color" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions" class="copyable">void <a href="../Color">Color</a> ( float R, float G, float B, float A, int RO, int GO, int BO )</h4>
+<h3 aria-label="Constructors" id="color"><a href="../Color">Color</a> ()<a class="headerlink" href="#color" title="Permanent link">⚓︎</a></h3>
+<h4 aria-label="Constructors" class="copyable">void <a href="../Color">Color</a> ( float R, float G, float B, float A, int RO, int GO, int BO )</h4>
 <p class="wrongParsing">Constructor for the "Color" class.
 Notes: You need to use the <a class="el" href="class_k_color.html#adad4075b6c806d97b9b0134e9e9e519d">KColor()</a> constructor when using the <a class="el" href="class_font.html#ae12d76f0b59747bbf028333c9c7ed560">Font</a> class. 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the <code class="highlight"><span class="n">SetColorize</span><span class="p">()</span></code> function for a detailed description.
 R, G, B and A accept numbers between 0 and 1.
 RO, GO and BO accept numbers between -255 and 255. WRONG PARSING </p>
 <hr />
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="__mul">__mul ()<a class="headerlink" href="#__mul" title="Permanent link">⚓︎</a></h3>
-<h4 aria-label="Functions" class="copyable"><a href="../Color">Color</a> __mul ( <a href="../Color">Color</a> right)</h4>
+<h4 aria-label="Functions" class="copyable"><a href="../Color">Color</a> __mul ( <a href="../Color">Color</a> right )</h4>
 <p>Multiplication of two colors.</p>
 <hr />
 <p><a class="static tooltip badge" href="#"> </a> <a class="abp tooltip badge" href="#"> </a></p>
@@ -2973,14 +3000,14 @@ RO, GO and BO accept numbers between -255 and 255. WRONG PARSING </p>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="setcolorize">SetColorize ()<a class="headerlink" href="#setcolorize" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void SetColorize ( float Red, float Green, float Blue, float Amount )</h4>
-<p>The colorize function can be used to change the color of sprites. Its the best for that purpose, since it doesnt affect existing coloranimations like the flashing of creep.
-The values can be between 0 and 1 for normal coloration. if you use higher numbers the color gets more vibrant.</p>
+<p>The colorize function can be used to change the color of sprites. Its the best for that purpose, since it doesnt affect existing coloranimations like the flashing of creep.</p>
+<p>The values can be between 0 and 1 for normal coloration. if you use higher numbers the color gets more vibrant.</p>
 <h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
 <p>The alpha component determines how much colorization must be applied. The function takes the original color, converts it to grayscale, multiplies it by the RGB components and then blends it back with the original color. The alpha value determines the blending factor.
 Colorization is applied after the tint and before the offset function.</p>
 <h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p><code class="highlight"><span class="n">SetColorize</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code> will turn the sprite into grayscale.
- <code class="highlight"><span class="n">SetColorize</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code> will turn it red but not as a red tint but as shades of red.</p>
+<p><code class="highlight"><span class="n">SetColorize</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code> will turn the sprite into grayscale.</p>
+<p><code class="highlight"><span class="n">SetColorize</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span></code> will turn it red but not as a red tint but as shades of red.</p>
 <p><code class="highlight"><span class="n">SetColorize</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span></code> will invert the sprite without touching its luminosity.</p>
 <p>This code changes the color of red Creep to be purple
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1

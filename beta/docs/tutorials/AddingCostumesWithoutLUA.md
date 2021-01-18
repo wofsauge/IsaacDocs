@@ -2,7 +2,7 @@
 
 #### :fontawesome-solid-code: Example mod & code can be found here:
 
-[→ Download the example mod for this Tutorial ←](customData/costumes%20examplemod.zip)
+[→ Download the example mod for this Tutorial ←](https://github.com/wofsauge/IsaacDocs/raw/master/customData/costumes%20examplemod.zip)
 
 ## Default costume types
 ### Defining items

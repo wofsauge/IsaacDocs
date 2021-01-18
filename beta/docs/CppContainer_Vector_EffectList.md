@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### Get () {: aria-label='Functions' }
-#### [TemporaryEffect](../TemporaryEffect) Get ( int Idx)  {: .copyable aria-label='Functions' }
+#### [TemporaryEffect](../TemporaryEffect) Get ( int Idx ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

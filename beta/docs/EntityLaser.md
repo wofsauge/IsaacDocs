@@ -2,77 +2,77 @@
 ## Functions
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### CalculateEndPoint () {: aria-label='Functions' }
-#### static [Vector](../Vector) CalculateEndPoint ( [Vector](../Vector) Start, [Vector](../Vector) Dir, [Vector](../Vector) PositionOffset, [Entity](../Entity) Parent, float Margin )  {: .copyable aria-label='Functions' }
+#### static [Vector](../Vector) CalculateEndPoint ( [Vector](../Vector) Start, [Vector](../Vector) Dir, [Vector](../Vector) PositionOffset, [Entity](../Entity) Parent, float Margin ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetEndPoint () {: aria-label='Functions' }
-####  [Vector](../Vector) GetEndPoint ( )  {: .copyable aria-label='Functions' }
+####  [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetNonOptimizedSamples () {: aria-label='Functions' }
-####  HomingLaser::SampleList GetNonOptimizedSamples ( )  {: .copyable aria-label='Functions' }
+####  HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetRenderZ () {: aria-label='Functions' }
-#### int GetRenderZ ( )  {: .copyable aria-label='Functions' }
+#### int GetRenderZ ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetSamples () {: aria-label='Functions' }
-####  HomingLaser::SampleList GetSamples ( )  {: .copyable aria-label='Functions' }
+####  HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsCircleLaser () {: aria-label='Functions' }
-#### boolean IsCircleLaser ( )  {: .copyable aria-label='Functions' }
+#### boolean IsCircleLaser ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsSampleLaser () {: aria-label='Functions' }
-#### boolean IsSampleLaser ( )  {: .copyable aria-label='Functions' }
+#### boolean IsSampleLaser ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetActiveRotation () {: aria-label='Functions' }
-#### void SetActiveRotation ( int Delay, float AngleDegrees, float RotationSpd, boolean TimeoutComplete )  {: .copyable aria-label='Functions' }
+#### void SetActiveRotation ( int Delay, float AngleDegrees, float RotationSpd, boolean TimeoutComplete ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetBlackHpDropChance () {: aria-label='Functions' }
-#### void SetBlackHpDropChance ( float Chance)  {: .copyable aria-label='Functions' }
+#### void SetBlackHpDropChance ( float Chance ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetHomingType () {: aria-label='Functions' }
-#### void SetHomingType ( LaserHomingType Type)  {: .copyable aria-label='Functions' }
+#### void SetHomingType ( LaserHomingType Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetMaxDistance () {: aria-label='Functions' }
-#### void SetMaxDistance ( float Distance)  {: .copyable aria-label='Functions' }
+#### void SetMaxDistance ( float Distance ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetMultidimensionalTouched () {: aria-label='Functions' }
-#### void SetMultidimensionalTouched ( boolean Value)  {: .copyable aria-label='Functions' }
+#### void SetMultidimensionalTouched ( boolean Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetOneHit () {: aria-label='Functions' }
-#### void SetOneHit ( boolean Value)  {: .copyable aria-label='Functions' }
+#### void SetOneHit ( boolean Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetTimeout () {: aria-label='Functions' }
-#### void SetTimeout ( int Value)  {: .copyable aria-label='Functions' }
+#### void SetTimeout ( int Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### ShootAngle () {: aria-label='Functions' }
-#### static [EntityLaser](../EntityLaser) ShootAngle ( int Variant, [Vector](../Vector) SourcePos, float AngleDegrees, int Timeout, [Vector](../Vector) PosOffset, [Entity](../Entity) Source )  {: .copyable aria-label='Functions' }
+#### static [EntityLaser](../EntityLaser) ShootAngle ( int Variant, [Vector](../Vector) SourcePos, float AngleDegrees, int Timeout, [Vector](../Vector) PosOffset, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
 static helper to simplify spawning lasers 
 ___ 
 [ ](#){: .abp .tooltip .badge }

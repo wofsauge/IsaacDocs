@@ -1,13 +1,14 @@
 # Class "KColor"
-## Functions
+## Constructors
 [ ](#){: .abp .tooltip .badge }
-### [KColor](../KColor) () {: aria-label='Functions' }
-#### void [KColor](../KColor) ( float red, float green, float blue, float alpha )  {: .copyable aria-label='Functions' }
+### [KColor](../KColor) () {: aria-label='Constructors' }
+#### void [KColor](../KColor) ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "KColor" class.
 Notes: "KColor" is only used in the <a class="el" href="class_font.html#ae12d76f0b59747bbf028333c9c7ed560">Font</a> class. For most other situations you will need to use the <a class="el" href="class_color.html#abfab99e1ad10cdb66e5f8cfd7d273cd6">Color()</a> constructor. WRONG PARSING 
 {: .wrongParsing }
 ___ 
+## Functions
 [ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Alpha {: aria-label='Variables' }

@@ -2,12 +2,12 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### ReduceSpawnRate () {: aria-label='Functions' }
-#### void ReduceSpawnRate ( )  {: .copyable aria-label='Functions' }
+#### void ReduceSpawnRate ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### RespawnRedPoop () {: aria-label='Functions' }
-#### void RespawnRedPoop ( )  {: .copyable aria-label='Functions' }
+#### void RespawnRedPoop ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

@@ -1,10 +1,11 @@
 # Class "ProjectileParams"
-## Functions
+## Constructors
 [ ](#){: .abp .tooltip .badge }
-### [ProjectileParams](../ProjectileParams) () {: aria-label='Functions' }
-#### void [ProjectileParams](../ProjectileParams) ( void )  {: .copyable aria-label='Functions' }
+### [ProjectileParams](../ProjectileParams) () {: aria-label='Constructors' }
+#### void [ProjectileParams](../ProjectileParams) ( void ) {: .copyable aria-label='Constructors' }
 
 ___ 
+## Functions
 [ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Acceleration {: aria-label='Variables' }
@@ -24,7 +25,9 @@ Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">P
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
+
 Projectiles can have two states: normal (default) and changed.
+
 
 Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
 ____
@@ -39,7 +42,9 @@ Number of frames that need to elapse after spawn till the "Changed" state is act
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
+
 Projectiles can have two states: normal (default) and changed.
+
 
 Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
 ____
@@ -54,7 +59,9 @@ Velocity value that gets applied when the "Changed" state is activated.
 The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
+
 Projectiles can have two states: normal (default) and changed.
+
 
 Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
 ____

@@ -55,20 +55,27 @@ Indicates what is visible on the minimap.
 The flags are hard to interpret, but here are some examples:
 
 
+
 000 = invisible, this is how most rooms start
+
 
 
 101 = standard room visibility, this includes rooms that are adjacent and you haven't actively visited. This will usually show icons.
 
 
+
 011 = secret room, locked rooms, sac rooms pre-entry*
+
 
 
 111 = 011 rooms after entry, but also the rooms directly adjacent to them* (applied after entry)
 
 
 
+
+
 * If you have spelunker's hat, bit 1 is completely unused. All special rooms will have the normal behavior of either 000 or 101. iirc this is unique to spelunker's hat, mapping items follow the normal rules.
+
 
 
   From this my best guess is that bits 1 and 2 are special rendering (display hehe) flags that may have more meaning down below. The important bit for using them is minding that they're used differently mostly for special rooms. As far as I've seen, 001 is completely unused. 010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100

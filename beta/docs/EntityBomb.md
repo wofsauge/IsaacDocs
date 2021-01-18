@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### SetExplosionCountdown () {: aria-label='Functions' }
-#### void SetExplosionCountdown ( int Countdown)  {: .copyable aria-label='Functions' }
+#### void SetExplosionCountdown ( int Countdown ) {: .copyable aria-label='Functions' }
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

@@ -2,7 +2,7 @@
 ## Functions
 [ ](#){: .abp .tooltip .badge }
 ### PickEntry () {: aria-label='Functions' }
-####  [Entry](../RoomConfig_Entry) PickEntry ( float r)  {: .copyable aria-label='Functions' }
+####  [Entry](../RoomConfig_Entry) PickEntry ( float r ) {: .copyable aria-label='Functions' }
 r is a value between 0 and 1 
 ___ 
 [ ](#){: .abp .tooltip .badge }

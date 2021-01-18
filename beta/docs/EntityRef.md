@@ -1,10 +1,11 @@
 # Class "EntityRef"
-## Functions
+## Constructors
 [ ](#){: .abp .tooltip .badge }
-### [EntityRef](../EntityRef) () {: aria-label='Functions' }
-#### void [EntityRef](../EntityRef) ( [Entity](../Entity) )  {: .copyable aria-label='Functions' }
+### [EntityRef](../EntityRef) () {: aria-label='Constructors' }
+#### void [EntityRef](../EntityRef) ( [Entity](../Entity ) {: .copyable aria-label='Constructors' }
 
 ___ 
+## Functions
 [ ](#){: .abp .tooltip .badge }
 ### [Entity](../Entity) () {: aria-label='Functions' }
 #### [Entity](../Entity) [Entity](../Entity)  {: .copyable aria-label='Functions' }
