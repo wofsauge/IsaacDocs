@@ -4,12 +4,13 @@
 ### CheckLine () {: aria-label='Functions' }
 #### boolean CheckLine ( [Vector](../Vector) Pos1, [Vector](../Vector) Pos2, LinecheckMode Mode, int GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable ) {: .copyable aria-label='Functions' }
 returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-LinecheckModes:
-0 : makes the line check collide with anything that impedes ground movement
-1 : is a cheaper version of 0, but is not as reliable
-2 : is used for explosions, it only collides with walls and indestructible blocks
-3 : is a line check that only collides with obstacles that can block projectiles
+
+???- note "Notes"
+    LinecheckModes:
+    0 : makes the line check collide with anything that impedes ground movement
+    1 : is a cheaper version of 0, but is not as reliable
+    2 : is used for explosions, it only collides with walls and indestructible blocks
+    3 : is a line check that only collides with obstacles that can block projectiles
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### DamageGrid () {: aria-label='Functions' }
@@ -57,113 +58,114 @@ ___
 #### Backdrop::Backdrop GetBackdropType ( ) {: .copyable aria-label='Functions' }
 
 Returns the BackdropType (Background) of the current room.
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-BackdropTypes
 
-
-ID
-Backdrop
-
-ID
-Backdrop
-
-
-1
-Basement
-
-15
-Cathedral
-
-
-2
-Cellar
-
-16
-Dark Room
-
-
-3
-Burning Basement
-
-17
-Chest
-
-
-4
-Caves
-
-18
-Mega Satan
-
-
-5
-Catacombs
-
-19
-Library
-
-
-6
-Drowned Caves
-
-20
-Shop
-
-
-7
-Depths
-
-21
-Isaacs Room
-
-
-8
-Necropolis
-
-22
-Barren Room
-
-
-9
-Dank Depths
-
-23
-Secret Room
-
-
-10
-Womb
-
-24
-Dice Room
-
-
-11
-Utero
-
-25
-Arcade
-
-
-12
-Scarred Womb
-
-26
-Error Room
-
-
-13
-Blue Womb (Hush)
- 
-27
-Blue Secret
-
-
-14
-Sheol
-
-28
-Ultra Greed Shop
+???- note "Notes"
+    BackdropTypes
+    
+    
+    ID
+    Backdrop
+    
+    ID
+    Backdrop
+    
+    
+    1
+    Basement
+    
+    15
+    Cathedral
+    
+    
+    2
+    Cellar
+    
+    16
+    Dark Room
+    
+    
+    3
+    Burning Basement
+    
+    17
+    Chest
+    
+    
+    4
+    Caves
+    
+    18
+    Mega Satan
+    
+    
+    5
+    Catacombs
+    
+    19
+    Library
+    
+    
+    6
+    Drowned Caves
+    
+    20
+    Shop
+    
+    
+    7
+    Depths
+    
+    21
+    Isaacs Room
+    
+    
+    8
+    Necropolis
+    
+    22
+    Barren Room
+    
+    
+    9
+    Dank Depths
+    
+    23
+    Secret Room
+    
+    
+    10
+    Womb
+    
+    24
+    Dice Room
+    
+    
+    11
+    Utero
+    
+    25
+    Arcade
+    
+    
+    12
+    Scarred Womb
+    
+    26
+    Error Room
+    
+    
+    13
+    Blue Womb (Hush)
+     
+    27
+    Blue Secret
+    
+    
+    14
+    Sheol
+    
+    28
+    Ultra Greed Shop
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetBossID () {: aria-label='Functions' }
@@ -510,8 +512,9 @@ ___
 #### [Vector](../Vector) ScreenWrapPosition ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 
 Returns Pos, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
- This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. 
+
+???- note "Notes"
+     This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SetAmbushDone () {: aria-label='Functions' }
@@ -543,11 +546,12 @@ ___
 #### void SetFloorColor ( [Color](../Color) FloorColor ) {: .copyable aria-label='Functions' }
 
 Allows you to apply a color modifier to the floor texture of the current room.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code changes the floorcolor to red.
-```cpp 
-Game():GetRoom():SetFloorColor(Color(1,1,1,1,255,0,0))
-```
+
+???- example "Example Code"
+    This code changes the floorcolor to red.
+    ```lua 
+    Game():GetRoom():SetFloorColor(Color(1,1,1,1,255,0,0))
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -580,11 +584,12 @@ ___
 #### void SetWallColor ( [Color](../Color) WallColor ) {: .copyable aria-label='Functions' }
 
 Allows you to apply a color modifier to the wall texture of the current room.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code changes the wallcolor to red.
-```cpp 
-Game():GetRoom():SetWallColor(Color(1,1,1,1,255,0,0))
-```
+
+???- example "Example Code"
+    This code changes the wallcolor to red.
+    ```lua 
+    Game():GetRoom():SetWallColor(Color(1,1,1,1,255,0,0))
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -657,9 +662,10 @@ ___
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 Updates the current room.
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Calling this function is NOT needed to apply changes!
-This function is pretty useless 
+
+???- note "Notes"
+    Calling this function is NOT needed to apply changes!
+    This function is pretty useless 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### WorldToScreenPosition () {: aria-label='Functions' }

@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -4156,8 +4166,8 @@
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getcurrentroomindex">GetCurrentRoomIndex ()<a class="headerlink" href="#getcurrentroomindex" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetCurrentRoomIndex ( )</h4>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>This will always return the roomindex on the levelgrid, on which you entered the current room from. (see black entries in graphic below) </p>
+<details class="- note"><summary>Notes</summary><p>This will always return the roomindex on the levelgrid, on which you entered the current room from. (see black entries in graphic below) </p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getcursename">GetCurseName ()<a class="headerlink" href="#getcursename" title="Permanent link">⚓︎</a></h3>
@@ -4318,10 +4328,9 @@
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="updatevisibility">UpdateVisibility ()<a class="headerlink" href="#updatevisibility" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void UpdateVisibility ( )</h4>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call UpdateVisibility() afterwards to apply any changes.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code 
+<details class="- note"><summary>Notes</summary><p>Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call  UpdateVisibility() afterwards to apply any changes.</p>
+</details>
+<details class="- example"><summary>Example Code</summary><p>This code 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -4335,22 +4344,23 @@
 11
 12
 13
-14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="o">--</span> <span class="n">Local</span> <span class="n">variables</span>
-<span class="n">local</span> <span class="n">game</span> <span class="o">=</span> <span class="n">Game</span><span class="p">()</span>
-<span class="n">local</span> <span class="n">level</span> <span class="o">=</span> <span class="nl">game</span><span class="p">:</span><span class="n">GetLevel</span><span class="p">()</span>
+14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="c1">-- Local variables</span>
+<span class="kd">local</span> <span class="n">game</span> <span class="o">=</span> <span class="n">Game</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">level</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetLevel</span><span class="p">()</span>
 
-<span class="o">--</span> <span class="n">Give</span> <span class="n">the</span> <span class="n">player</span> <span class="n">the</span> <span class="n">Compass</span> <span class="n">effect</span><span class="p">,</span> <span class="n">which</span> <span class="n">will</span> <span class="n">display</span> <span class="n">all</span> <span class="n">of</span> <span class="n">the</span> <span class="n">floor</span><span class="err">&#39;</span><span class="n">s</span> <span class="n">special</span> <span class="n">rooms</span> <span class="n">on</span> <span class="n">the</span> <span class="n">mini</span><span class="o">-</span><span class="n">map</span>
-<span class="nl">level</span><span class="p">:</span><span class="n">ApplyCompassEffect</span><span class="p">()</span>
+<span class="c1">-- Give the player the Compass effect, which will display all of the floor&#39;s special rooms on the mini-map</span>
+<span class="n">level</span><span class="p">:</span><span class="n">ApplyCompassEffect</span><span class="p">()</span>
 
-<span class="o">--</span> <span class="n">Remove</span> <span class="n">the</span> <span class="n">icon</span> <span class="k">for</span> <span class="n">the</span> <span class="n">Treasure</span> <span class="n">Room</span> <span class="n">specifically</span>
-<span class="n">local</span> <span class="n">treasureIndex</span> <span class="o">=</span> <span class="nl">level</span><span class="p">:</span><span class="n">QueryRoomTypeIndex</span><span class="p">(</span><span class="n">RoomType</span><span class="p">.</span><span class="n">ROOM_TREASURE</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="n">RNG</span><span class="p">())</span>
-<span class="n">local</span> <span class="n">treasureRoom</span> <span class="o">=</span> <span class="nl">level</span><span class="p">:</span><span class="n">GetRoomByIdx</span><span class="p">(</span><span class="n">treasureIndex</span><span class="p">)</span>
+<span class="c1">-- Remove the icon for the Treasure Room specifically</span>
+<span class="kd">local</span> <span class="n">treasureIndex</span> <span class="o">=</span> <span class="n">level</span><span class="p">:</span><span class="n">QueryRoomTypeIndex</span><span class="p">(</span><span class="n">RoomType</span><span class="p">.</span><span class="n">ROOM_TREASURE</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="n">RNG</span><span class="p">())</span>
+<span class="kd">local</span> <span class="n">treasureRoom</span> <span class="o">=</span> <span class="n">level</span><span class="p">:</span><span class="n">GetRoomByIdx</span><span class="p">(</span><span class="n">treasureIndex</span><span class="p">)</span>
 <span class="n">treasureRoom</span><span class="p">.</span><span class="n">DisplayFlags</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="o">--</span> <span class="n">Since</span> <span class="n">the</span> <span class="n">mini</span><span class="o">-</span><span class="n">map</span> <span class="n">is</span> <span class="n">cached</span><span class="p">,</span> <span class="n">changing</span> <span class="n">display</span> <span class="n">flags</span> <span class="n">won</span><span class="err">&#39;</span><span class="n">t</span> <span class="n">update</span> <span class="n">it</span> <span class="n">unless</span> <span class="n">we</span> <span class="n">explicitly</span> <span class="n">call</span> <span class="k">this</span> <span class="n">function</span>
-<span class="nl">level</span><span class="p">:</span><span class="n">UpdateVisibility</span><span class="p">()</span>
+<span class="c1">-- Since the mini-map is cached, changing display flags won&#39;t update it unless we explicitly call this function</span>
+<span class="n">level</span><span class="p">:</span><span class="n">UpdateVisibility</span><span class="p">()</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="dungeonreturnposition">DungeonReturnPosition ()<a class="headerlink" href="#dungeonreturnposition" title="Permanent link">⚓︎</a></h3>
@@ -4364,9 +4374,11 @@
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="enterdoor">EnterDoor<a class="headerlink" href="#enterdoor" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">int EnterDoor</h4>
-<p>This value defines on which doorslot you entered the room.</p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>Changing this value has no impact on anything. the EnterDoor value is always determined by the LeaveDoor Value and the game itself.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>This value defines on which doorslot you entered the room.
+</code></pre></div>
+</td></tr></table>
+<details class="bug" open="open"><summary>Bugs</summary><p>Changing this value has no impact on anything. the EnterDoor value is always determined by the LeaveDoor Value and the game itself.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="greedmodewave">GreedModeWave<a class="headerlink" href="#greedmodewave" title="Permanent link">⚓︎</a></h3>
@@ -4375,9 +4387,11 @@
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="leavedoor">LeaveDoor<a class="headerlink" href="#leavedoor" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">int LeaveDoor</h4>
-<p>This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>if level.LeaveDoor is set to anything other than -1, the function will transition based on the room you are currently in.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
+</code></pre></div>
+</td></tr></table>
+<details class="- note"><summary>Notes</summary><p>if level.LeaveDoor is set to anything other than -1, the function will transition based on the room you are currently in.</p>
+</details>
 <hr />
                 
                   

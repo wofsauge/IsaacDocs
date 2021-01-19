@@ -120,7 +120,7 @@ ___
 ### Height {: aria-label='Variables' }
 #### float Height  {: .copyable aria-label='Variables' }
 
-Defines the height of a projectile. Height should be a negative value. Default is `:::cpp -23`.
+Defines the height of a projectile. Height should be a negative value. Default is `:::lua -23`.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### HomingStrength {: aria-label='Variables' }

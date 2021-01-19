@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -3396,21 +3406,21 @@
 <h3 aria-label="Functions" id="consoleoutput">ConsoleOutput ()<a class="headerlink" href="#consoleoutput" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void ConsoleOutput ( string text )</h4>
 <p>Prints a string into the Debug Console</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>You can use this example as an alternative.
+<details class="- example"><summary>Example Code</summary><p>You can use this example as an alternative.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
 5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">ConsoleOutput</span><span class="p">(</span><span class="s">&quot;This is a Test.&quot;</span><span class="p">)</span>
-<span class="o">--</span> <span class="nl">Output</span><span class="p">:</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">Test</span><span class="p">.</span>
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">ConsoleOutput</span><span class="p">(</span><span class="s2">&quot;This is a Test.&quot;</span><span class="p">)</span>
+<span class="c1">-- Output: This is a Test.</span>
 
-<span class="o">--</span> <span class="nl">Alternatively</span><span class="p">:</span>
-<span class="n">print</span><span class="p">(</span><span class="s">&quot;This is a Test.&quot;</span><span class="p">)</span>
-<span class="o">--</span> <span class="nl">Output</span><span class="p">:</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">Test</span><span class="p">.</span>
+<span class="c1">-- Alternatively:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a Test.&quot;</span><span class="p">)</span>
+<span class="c1">-- Output: This is a Test.</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="countbosses">CountBosses ()<a class="headerlink" href="#countbosses" title="Permanent link">⚓︎</a></h3>
@@ -3426,21 +3436,21 @@
 <h3 aria-label="Functions" id="countentities">CountEntities ()<a class="headerlink" href="#countentities" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int CountEntities ( <a href="../Entity">Entity</a> Spawner, int Type, int Variant, int Subtype )</h4>
 <p>Returns the number of entities in the current room that fulfill the specified requirements.
-Spawner refers to an entity object (can be <code class="highlight"><span class="n">nil</span></code>) 
+Spawner refers to an entity object (can be <code class="highlight"><span class="kc">nil</span></code>) 
 Type refers to the found entity's type (Can be <code class="highlight"><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_NULL</span></code>) 
 Variant and Subtype refer to the found entitys Variant and Subtype (Can be <code class="highlight"><span class="o">-</span><span class="mi">1</span></code>) </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="debugstring">DebugString ()<a class="headerlink" href="#debugstring" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void DebugString ( string str )</h4>
-<p>Prints a string into the log file. You can find this file here <code class="highlight"><span class="nl">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">Jan</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">Binding</span> <span class="n">of</span> <span class="n">Isaac</span> <span class="n">Afterbirth</span><span class="o">+</span><span class="err">\</span><span class="n">log</span><span class="p">.</span><span class="n">txt</span></code> </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code prints <code class="highlight"><span class="s">&quot;This is a Test.&quot;</span></code> in the log.txt file.
+<p>Prints a string into the log file. You can find this file here <code class="highlight"><span class="n">C</span><span class="p">:</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="n">Jan</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">Binding</span> <span class="n">of</span> <span class="n">Isaac</span> <span class="n">Afterbirth</span><span class="o">+</span><span class="err">\</span><span class="n">log</span><span class="p">.</span><span class="n">txt</span></code> </p>
+<details class="- example"><summary>Example Code</summary><p>This code prints <code class="highlight"><span class="s2">&quot;This is a Test.&quot;</span></code> in the log.txt file.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">DebugString</span><span class="p">(</span><span class="s">&quot;This is a Test.&quot;</span><span class="p">)</span>
-<span class="o">--</span> <span class="nl">Output</span><span class="p">:</span> <span class="n">Lua</span> <span class="nl">Debug</span><span class="p">:</span> <span class="n">This</span> <span class="n">is</span> <span class="n">a</span> <span class="n">Test</span><span class="p">.</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">DebugString</span><span class="p">(</span><span class="s2">&quot;This is a Test.&quot;</span><span class="p">)</span>
+<span class="c1">-- Output: Lua Debug: This is a Test.</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="executecommand">ExecuteCommand ()<a class="headerlink" href="#executecommand" title="Permanent link">⚓︎</a></h3>
@@ -3467,15 +3477,15 @@ Variant and Subtype refer to the found entitys Variant and Subtype (Can be <code
 <h3 aria-label="Functions" id="getcardidbyname">GetCardIdByName ()<a class="headerlink" href="#getcardidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetCardIdByName ( string cardHudName )</h4>
 <p>Returns the CardID based on its hud value. (File: pocketitems.xml)</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the CardID of XVI - The Tower. 
+<details class="- note"><summary>Notes</summary><p>The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.</p>
+</details>
+<details class="- example"><summary>Example Code</summary><p>This code gets the CardID of XVI - The Tower. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCardIdByName</span><span class="p">(</span><span class="s">&quot;16_TheTower&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">17</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCardIdByName</span><span class="p">(</span><span class="s2">&quot;16_TheTower&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 17</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getchallenge">GetChallenge ()<a class="headerlink" href="#getchallenge" title="Permanent link">⚓︎</a></h3>
@@ -3486,72 +3496,72 @@ Variant and Subtype refer to the found entitys Variant and Subtype (Can be <code
 <h3 aria-label="Functions" id="getchallengeidbyname">GetChallengeIdByName ()<a class="headerlink" href="#getchallengeidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetChallengeIdByName ( string challengeName )</h4>
 <p>Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the ChallengeID of Aprils fool. 
+<details class="- example"><summary>Example Code</summary><p>This code gets the ChallengeID of Aprils fool. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetChallengeIdByName</span><span class="p">(</span><span class="s">&quot;Aprils fool&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">32</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetChallengeIdByName</span><span class="p">(</span><span class="s2">&quot;Aprils fool&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 32</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getcostumeidbypath">GetCostumeIdByPath ()<a class="headerlink" href="#getcostumeidbypath" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetCostumeIdByPath ( string path )</h4>
 <p>Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the CostumeID of the Poop transformation costume.
+<details class="- example"><summary>Example Code</summary><p>This code gets the CostumeID of the Poop transformation costume.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCostumeIdByPath</span><span class="p">(</span><span class="s">&quot;gfx/characters/n027_Transformation_Poop.anm2&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">27</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCostumeIdByPath</span><span class="p">(</span><span class="s2">&quot;gfx/characters/n027_Transformation_Poop.anm2&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 27</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getcurseidbyname">GetCurseIdByName ()<a class="headerlink" href="#getcurseidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetCurseIdByName ( string curseName )</h4>
 <p>Returns the CurseID of a curse based on its name. (File: curses.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the CurseID of Curse of the Unknown.
+<details class="- example"><summary>Example Code</summary><p>This code gets the CurseID of Curse of the Unknown.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCurseIdByName</span><span class="p">(</span><span class="s">&quot;Curse of the Unknown&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">4</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCurseIdByName</span><span class="p">(</span><span class="s2">&quot;Curse of the Unknown&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 4</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getentitytypebyname">GetEntityTypeByName ()<a class="headerlink" href="#getentitytypebyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetEntityTypeByName ( string entityName )</h4>
 <p>Returns the EntityType of an entity based on its name. (File: entities2.xml)</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>There is no SubType version of this function.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the EntityType of Flaming Gaper. 
+<details class="- note"><summary>Notes</summary><p>There is no SubType version of this function.</p>
+</details>
+<details class="- example"><summary>Example Code</summary><p>This code gets the EntityType of Flaming Gaper. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetEntityTypeByName</span><span class="p">(</span><span class="s">&quot;Flaming Gaper&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">10</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetEntityTypeByName</span><span class="p">(</span><span class="s2">&quot;Flaming Gaper&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 10</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getentityvariantbyname">GetEntityVariantByName ()<a class="headerlink" href="#getentityvariantbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetEntityVariantByName ( string entityName )</h4>
 <p>Returns the variant of an entity based on its name. (File: entities2.xml)</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>There is no SubType version of this function.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the variant of Flaming Gaper. 
+<details class="- note"><summary>Notes</summary><p>There is no SubType version of this function.</p>
+</details>
+<details class="- example"><summary>Example Code</summary><p>This code gets the variant of Flaming Gaper. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetEntityVariantByName</span><span class="p">(</span><span class="s">&quot;Flaming Gaper&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">2</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetEntityVariantByName</span><span class="p">(</span><span class="s2">&quot;Flaming Gaper&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 2</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getframecount">GetFrameCount ()<a class="headerlink" href="#getframecount" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetFrameCount ( )</h4>
 <p class="wrongParsing">Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
-This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207"><code class="highlight"><span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetFrameCount</span><span class="p">()</span></code></a> WRONG PARSING </p>
+This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207"><code class="highlight"><span class="n">Game</span><span class="p">():</span><span class="n">GetFrameCount</span><span class="p">()</span></code></a> WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getfreenearposition">GetFreeNearPosition ()<a class="headerlink" href="#getfreenearposition" title="Permanent link">⚓︎</a></h3>
@@ -3566,58 +3576,58 @@ This function therefore works drastically different than <a href="class_game.htm
 <h3 aria-label="Functions" id="getitemidbyname">GetItemIdByName ()<a class="headerlink" href="#getitemidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetItemIdByName ( string itemName )</h4>
 <p>Returns the ItemID of a Collectible. (File: items.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the ItemID of Brimstone.
+<details class="- example"><summary>Example Code</summary><p>This code gets the ItemID of Brimstone.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetItemIdByName</span><span class="p">(</span><span class="s">&quot;Brimstone&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">118</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetItemIdByName</span><span class="p">(</span><span class="s2">&quot;Brimstone&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 118</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getmusicidbyname">GetMusicIdByName ()<a class="headerlink" href="#getmusicidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetMusicIdByName ( string musicName )</h4>
 <p>Returns the MusicID of a music track. (File: music.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the MusicID of the Title Screen.
+<details class="- example"><summary>Example Code</summary><p>This code gets the MusicID of the Title Screen.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetMusicIdByName</span><span class="p">(</span><span class="s">&quot;Title Screen&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">61</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetMusicIdByName</span><span class="p">(</span><span class="s2">&quot;Title Screen&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 61</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getpilleffectbyname">GetPillEffectByName ()<a class="headerlink" href="#getpilleffectbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetPillEffectByName ( string pillEffect )</h4>
 <p>Returns the PillEffectID based on its name. (File: pocketitems.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the PillEffectID of I can see forever!.
+<details class="- example"><summary>Example Code</summary><p>This code gets the PillEffectID of I can see forever!.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPillEffectByName</span><span class="p">(</span><span class="s">&quot;I can see forever!&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">23</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPillEffectByName</span><span class="p">(</span><span class="s2">&quot;I can see forever!&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 23</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getplayer">GetPlayer ()<a class="headerlink" href="#getplayer" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable"><a href="../EntityPlayer">EntityPlayer</a> GetPlayer ( int playerId )</h4>
 <p>Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getplayertypebyname">GetPlayerTypeByName ()<a class="headerlink" href="#getplayertypebyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetPlayerTypeByName ( string playerName )</h4>
 <p>Returns the PlayerType of a character based on its name. (File: players.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the PlayerType of Azazel. 
+<details class="- example"><summary>Example Code</summary><p>This code gets the PlayerType of Azazel. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayerTypeByName</span><span class="p">(</span><span class="s">&quot;Azazel&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">7</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayerTypeByName</span><span class="p">(</span><span class="s2">&quot;Azazel&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 7</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getrandomposition">GetRandomPosition ()<a class="headerlink" href="#getrandomposition" title="Permanent link">⚓︎</a></h3>
@@ -3633,11 +3643,11 @@ This function therefore works drastically different than <a href="class_game.htm
 <h3 aria-label="Functions" id="getsoundidbyname">GetSoundIdByName ()<a class="headerlink" href="#getsoundidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetSoundIdByName ( string soundName )</h4>
 <p>Returns the SoundEffectID of a sound based on its name. (File: sounds.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the SoundEffectID of a sound named "Custom Sound Effect"
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetSoundIdByName</span><span class="p">(</span><span class="s">&quot;Custom Sound Effect&quot;</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code gets the SoundEffectID of a sound named "Custom Sound Effect"
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetSoundIdByName</span><span class="p">(</span><span class="s2">&quot;Custom Sound Effect&quot;</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="gettextwidth">GetTextWidth ()<a class="headerlink" href="#gettextwidth" title="Permanent link">⚓︎</a></h3>
@@ -3653,20 +3663,21 @@ This function therefore works drastically different than <a href="class_game.htm
 <h3 aria-label="Functions" id="gettrinketidbyname">GetTrinketIdByName ()<a class="headerlink" href="#gettrinketidbyname" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetTrinketIdByName ( string trinketName )</h4>
 <p>Returns the TrinketType of a trinket based on its name. (File: items.xml)</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the TrinketType of Lucky Toe. 
+<details class="- example"><summary>Example Code</summary><p>This code gets the TrinketType of Lucky Toe. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetTrinketIdByName</span><span class="p">(</span><span class="s">&quot;Lucky Toe&quot;</span><span class="p">)</span>
-<span class="o">--</span><span class="nl">Returns</span><span class="p">:</span> <span class="mi">42</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetTrinketIdByName</span><span class="p">(</span><span class="s2">&quot;Lucky Toe&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 42</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="gridspawn">GridSpawn ()<a class="headerlink" href="#gridspawn" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable"><a href="../GridEntity">GridEntity</a> GridSpawn ( <a href="../GridEntity">GridEntity</a> gridEntityType, int Variant, <a href="../Vector">Vector</a> position, boolean forced )</h4>
 <p>Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given position (world coordinates).</p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p class="wrongParsing">forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING </p>
+<details class="bug" open="open"><summary>Bugs</summary><p>forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING </p>
+</details>
+<p>{: .wrongParsing }</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="hasmoddata">HasModData ()<a class="headerlink" href="#hasmoddata" title="Permanent link">⚓︎</a></h3>
@@ -3676,10 +3687,9 @@ This function therefore works drastically different than <a href="class_game.htm
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="loadmoddata">LoadModData ()<a class="headerlink" href="#loadmoddata" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">string LoadModData ( table ref )</h4>
-<p>Returns a JSON array/table that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
+<p>Returns a  JSON array/table that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code loads data stored in the "saveX.dat" file, if it exists.
+<details class="- example"><summary>Example Code</summary><p>This code loads data stored in the "saveX.dat" file, if it exists.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -3689,27 +3699,28 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
  7
  8
  9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">yourMod</span> <span class="o">=</span> <span class="n">RegisterMod</span><span class="p">(</span><span class="s">&quot;someMod&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">local</span> <span class="n">json</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">&quot;json&quot;</span><span class="p">)</span>
-<span class="o">--</span> <span class="p">...</span>
-<span class="n">function</span> <span class="nl">yourMod</span><span class="p">:</span><span class="n">OnGameStart</span><span class="p">(</span><span class="n">isSave</span><span class="p">)</span>
-    <span class="o">--</span><span class="n">Loading</span> <span class="n">Moddata</span><span class="o">--</span>
-    <span class="k">if</span> <span class="nl">yourMod</span><span class="p">:</span><span class="n">HasData</span><span class="p">()</span> <span class="n">then</span>
-        <span class="n">local</span> <span class="n">myTable</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="n">Isaac</span><span class="p">.</span><span class="n">LoadModData</span><span class="p">(</span><span class="n">yourMod</span><span class="p">))</span>
-    <span class="n">end</span>
-<span class="n">end</span>
-<span class="nl">yourMod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_POST_GAME_STARTED</span><span class="p">,</span> <span class="n">yourMod</span><span class="p">.</span><span class="n">OnGameStart</span><span class="p">)</span>
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">yourMod</span> <span class="o">=</span> <span class="n">RegisterMod</span><span class="p">(</span><span class="s2">&quot;someMod&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">json</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">)</span>
+<span class="c1">-- ...</span>
+<span class="kr">function</span> <span class="nc">yourMod</span><span class="p">:</span><span class="nf">OnGameStart</span><span class="p">(</span><span class="n">isSave</span><span class="p">)</span>
+    <span class="c1">--Loading Moddata--</span>
+    <span class="kr">if</span> <span class="n">yourMod</span><span class="p">:</span><span class="n">HasData</span><span class="p">()</span> <span class="kr">then</span>
+        <span class="kd">local</span> <span class="n">myTable</span> <span class="o">=</span> <span class="n">json</span><span class="p">.</span><span class="n">decode</span><span class="p">(</span><span class="n">Isaac</span><span class="p">.</span><span class="n">LoadModData</span><span class="p">(</span><span class="n">yourMod</span><span class="p">))</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+<span class="n">yourMod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_POST_GAME_STARTED</span><span class="p">,</span> <span class="n">yourMod</span><span class="p">.</span><span class="n">OnGameStart</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="registermod">RegisterMod ()<a class="headerlink" href="#registermod" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void RegisterMod ( table ref, string modName, int apiVersion )</h4>
 <p>Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">yourMod</span> <span class="o">=</span> <span class="n">RegisterMod</span><span class="p">(</span><span class="s">&quot;someMod&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">yourMod</span> <span class="o">=</span> <span class="n">RegisterMod</span><span class="p">(</span><span class="s2">&quot;someMod&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="removecallback">RemoveCallback ()<a class="headerlink" href="#removecallback" title="Permanent link">⚓︎</a></h3>
@@ -3725,37 +3736,36 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 <h3 aria-label="Functions" id="renderscaledtext">RenderScaledText ()<a class="headerlink" href="#renderscaledtext" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void RenderScaledText ( string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )</h4>
 <p>Renders a scaled text on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). ScaleX, ScaleY, R ,G ,B and A need to be between [0,1]. Some scale values can cause the font to display deformed and pixelated.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code renders the player position on the screen.
+<details class="- example"><summary>Example Code</summary><p>This code renders the player position on the screen.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">local</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span>
-<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s">&quot;X: &quot;</span><span class="p">..</span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="p">..</span><span class="s">&quot; Y: &quot;</span><span class="p">..</span><span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s2">&quot;X: &quot;</span><span class="o">..</span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="o">..</span><span class="s2">&quot; Y: &quot;</span><span class="o">..</span><span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="rendertext">RenderText ()<a class="headerlink" href="#rendertext" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void RenderText ( string str, float X, float Y, float R, float G, float B, float A )</h4>
 <p>Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1]. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code renders the player position on the screen.
+<details class="- example"><summary>Example Code</summary><p>This code renders the player position on the screen.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">local</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span>
-<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s">&quot;X: &quot;</span><span class="p">..</span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="p">..</span><span class="s">&quot; Y: &quot;</span><span class="p">..</span><span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s2">&quot;X: &quot;</span><span class="o">..</span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="o">..</span><span class="s2">&quot; Y: &quot;</span><span class="o">..</span><span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="savemoddata">SaveModData ()<a class="headerlink" href="#savemoddata" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void SaveModData ( table ref, string data )</h4>
 <p>Stores a JSON array/table in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code saves a table in the "saveX.dat" file.
+<details class="- example"><summary>Example Code</summary><p>This code saves a table in the "saveX.dat" file.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -3764,17 +3774,18 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 6
 7
 8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">yourMod</span> <span class="o">=</span> <span class="n">RegisterMod</span><span class="p">(</span><span class="s">&quot;someMod&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-<span class="n">local</span> <span class="n">json</span> <span class="o">=</span> <span class="n">require</span><span class="p">(</span><span class="s">&quot;json&quot;</span><span class="p">)</span>
-<span class="o">--</span> <span class="p">...</span>
-<span class="o">--</span><span class="n">Saving</span> <span class="n">Moddata</span><span class="o">--</span>
-<span class="n">function</span> <span class="nl">yourMod</span><span class="p">:</span><span class="n">SaveGame</span><span class="p">()</span>
-<span class="n">local</span> <span class="n">table</span><span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">yourMod</span> <span class="o">=</span> <span class="n">RegisterMod</span><span class="p">(</span><span class="s2">&quot;someMod&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">json</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s2">&quot;json&quot;</span><span class="p">)</span>
+<span class="c1">-- ...</span>
+<span class="c1">--Saving Moddata--</span>
+<span class="kr">function</span> <span class="nc">yourMod</span><span class="p">:</span><span class="nf">SaveGame</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">table</span><span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
 <span class="n">yourMod</span><span class="p">.</span><span class="n">SaveData</span><span class="p">(</span><span class="n">yourMod</span><span class="p">,</span> <span class="n">json</span><span class="p">.</span><span class="n">encode</span><span class="p">(</span><span class="n">table</span><span class="p">))</span>
-<span class="n">end</span>
-<span class="nl">yourMod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_PRE_GAME_EXIT</span><span class="p">,</span> <span class="n">yourMod</span><span class="p">.</span><span class="n">SaveGame</span><span class="p">)</span>
+<span class="kr">end</span>
+<span class="n">yourMod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_PRE_GAME_EXIT</span><span class="p">,</span> <span class="n">yourMod</span><span class="p">.</span><span class="n">SaveGame</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="screentoworld">ScreenToWorld ()<a class="headerlink" href="#screentoworld" title="Permanent link">⚓︎</a></h3>
@@ -3790,12 +3801,12 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 <h4 aria-label="Functions" class="copyable"><a href="../Entity">Entity</a> <a href="../RoomConfig_Spawn">Spawn</a> ( int entityType, int entityVariant, int entitySubtype, <a href="../Vector">Vector</a> position, <a href="../Vector">Vector</a> velocity, <a href="../Entity">Entity</a> Spawner )</h4>
 <p>Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
 There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a> and <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p class="wrongParsing">This code spawns a random collectible at in center of the current room.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">Spawn</span><span class="p">(</span><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_PICKUP</span><span class="p">,</span> <span class="n">PickupVariant</span><span class="p">.</span><span class="n">PICKUP_COLLECTIBLE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">320</span><span class="p">,</span><span class="mi">280</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="n">nil</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code spawns a random collectible at in center of the current room.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">Spawn</span><span class="p">(</span><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_PICKUP</span><span class="p">,</span> <span class="n">PickupVariant</span><span class="p">.</span><span class="n">PICKUP_COLLECTIBLE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">320</span><span class="p">,</span><span class="mi">280</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="kc">nil</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
- WRONG PARSING </p>
+</td></tr></table></p>
+</details>
+<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="worldtorenderposition">WorldToRenderPosition ()<a class="headerlink" href="#worldtorenderposition" title="Permanent link">⚓︎</a></h3>
@@ -3806,15 +3817,15 @@ There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af
 <h3 aria-label="Functions" id="worldtoscreen">WorldToScreen ()<a class="headerlink" href="#worldtoscreen" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable"><a href="../Vector">Vector</a> WorldToScreen ( <a href="../Vector">Vector</a> pos )</h4>
 <p>Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. This can be used to render things next to an entity. The Screen coordinate system is x[0,inf) y[0,inf). Normally, it goes till ~500x ~300y. The return vector contains integer values or numbers ending with .5</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code render "test" at the position of the player. The text will move with isaac.
+<details class="- example"><summary>Example Code</summary><p>This code render "test" at the position of the player. The text will move with isaac.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">local</span> <span class="n">screenpos</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">WorldToScreen</span><span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="n">Position</span><span class="p">)</span>  
-<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s">&quot;test&quot;</span><span class="p">,</span> <span class="n">screenpos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">screenpos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">screenpos</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">WorldToScreen</span><span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="n">Position</span><span class="p">)</span>  
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">screenpos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">screenpos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="worldtoscreendistance">WorldToScreenDistance ()<a class="headerlink" href="#worldtoscreendistance" title="Permanent link">⚓︎</a></h3>

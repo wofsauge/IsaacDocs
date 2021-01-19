@@ -5,15 +5,16 @@
 #### void AddBurn ( [EntityRef](../EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
 Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 30.
-```cpp 
-local player =Isaac.GetPlayer(0)
-for i, entity in ipairs(Isaac.GetRoomEntities()) do
-	entity:AddBurn(player,30,1)
-end
 
-```
+???- example "Example Code"
+    This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 30.
+    ```lua 
+    local player =Isaac.GetPlayer(0)
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddBurn(player,30,1)
+    end
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -22,15 +23,16 @@ ___
 
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. 
 
-`:::cpp AddCharmed(-1)` makes the effect permanent and the enemy will follow you even to different rooms.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code charms every entity in the room for 1 second.
-```cpp 
-for i, entity in ipairs(Isaac.GetRoomEntities()) do
-	entity:AddCharmed(30)
-end
+`:::lua AddCharmed(-1)` makes the effect permanent and the enemy will follow you even to different rooms.
 
-```
+???- example "Example Code"
+    This code charms every entity in the room for 1 second.
+    ```lua 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddCharmed(30)
+    end
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -38,15 +40,16 @@ ___
 #### void AddConfusion ( [EntityRef](../EntityRef) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a confusion effect to an entity.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code confuses every entity in the room for 1 second while ignoring bosses.
-```cpp 
-local player =Isaac.GetPlayer(0) 
-for i, entity in ipairs(Isaac.GetRoomEntities()) do
-	entity:AddConfusion(player,30,true)
-end
 
-```
+???- example "Example Code"
+    This code confuses every entity in the room for 1 second while ignoring bosses.
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddConfusion(player,30,true)
+    end
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -54,15 +57,16 @@ ___
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Add <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds slowing and confusion to the enetity.
-```cpp 
-local player =Isaac.GetPlayer(0) 
-for i, entity in ipairs(Isaac.GetRoomEntities()) do
-	entity:AddEntityFlags(EntityFlag.FLAG_SLOW | EntityFlag.FLAG_CONFUSION)
-end
 
-```
+???- example "Example Code"
+    This code adds slowing and confusion to the enetity.
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddEntityFlags(EntityFlag.FLAG_SLOW | EntityFlag.FLAG_CONFUSION)
+    end
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -71,15 +75,16 @@ ___
 #### void AddFear ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a fear-effect to an entity.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code frightens every entity in the room for 1 second.
-```cpp 
-local player =Isaac.GetPlayer(0) 
-for i, entity in ipairs(Isaac.GetRoomEntities()) do
-	entity:AddFear(player, 30)
-end
 
-```
+???- example "Example Code"
+    This code frightens every entity in the room for 1 second.
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddFear(player, 30)
+    end
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -87,15 +92,16 @@ ___
 #### void AddFreeze ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Freezes an entity, making it unable to move and attack.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code freezes every entity in the room for half a second.
-```cpp 
-local player =Isaac.GetPlayer(0) 
-for i, entity in ipairs(Isaac.GetRoomEntities()) do
-	entity:AddFreeze(player, 30)
-end
 
-```
+???- example "Example Code"
+    This code freezes every entity in the room for half a second.
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddFreeze(player, 30)
+    end
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -145,7 +151,7 @@ ___
 ### ClearEntityFlags () {: aria-label='Functions' }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> from the entity. WRONG PARSING 
+Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a>  from the entity. WRONG PARSING 
 {: .wrongParsing }
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -183,17 +189,19 @@ ___
 #### table GetData ( ) {: .copyable aria-label='Functions' }
 
 Returns a table that contains all data assosiated with the entity. This can be used to add custom data as well.
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Data associated with an entity does only persists in between rooms, when the entity is a player, familiar or the entity has the "EntityFlag.FLAG_PERSISTENT" Flag active. Data does not persists in between exiting the game to a menu, or when restarting/finishing a run.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds custom data to an entity or prints it in the console if it exists.
-```cpp 
-if type(entity:GetData()["MyValue"]) == type(nil) then -- checks, if the Data does exist already
-entity:GetData()["MyValue"] = "Cool" -- assign a value to the data
-else 
-print(entity:GetData()["MyValue"]) -- this will print "Cool" in the console
-end
-```
+
+???- note "Notes"
+    Data associated with an entity does only persists in between rooms, when the entity is a player, familiar or the entity has the "EntityFlag.FLAG_PERSISTENT" Flag active. Data does not persists in between exiting the game to a menu, or when restarting/finishing a run.
+
+???- example "Example Code"
+    This code adds custom data to an entity or prints it in the console if it exists.
+    ```lua 
+    if type(entity:GetData()["MyValue"]) == type(nil) then -- checks, if the Data does exist already
+    entity:GetData()["MyValue"] = "Cool" -- assign a value to the data
+    else 
+    print(entity:GetData()["MyValue"])  -- this will print "Cool" in the console
+    end
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -207,13 +215,14 @@ ___
 #### int GetEntityFlags ( ) {: .copyable aria-label='Functions' }
 
 Get the <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> of the entity. This will be a number which acts like a bitmask.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code prints something in the console, if the entity has a specific <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
-```cpp 
-if entity:GetEntityFlags() &amp; EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
-print("This entity is confused!")
-end
-```
+
+???- example "Example Code"
+    This code prints something in the console, if the entity has a specific <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+    ```lua 
+    if entity:GetEntityFlags() &amp; EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
+    print("This entity is confused!")
+    end
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -245,13 +254,14 @@ ___
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Returns true, if the entity has all named <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> set.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code prints something in the console, if the entity has a specific <a class="el" href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
-```cpp 
-if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
-print("This entity is confused!")
-end
-```
+
+???- example "Example Code"
+    This code prints something in the console, if the entity has a specific <a class="el" href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+    ```lua 
+    if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
+    print("This entity is confused!")
+    end
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -264,9 +274,10 @@ ___
 ### HasMortalDamage () {: aria-label='Functions' }
 #### boolean HasMortalDamage ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-The game adds taken damage to a damage buffer, which gets applied in the next frame. HasMortalDamage() returns true if the buffered damage is enough to kill the entity.
-HasMortalDamage() will be updated additionally after TakeDamage() is called.
+
+???- note "Notes"
+    The game adds taken damage to a damage buffer, which gets applied in the next frame. HasMortalDamage() returns true if the buffered damage is enough to kill the entity.
+    HasMortalDamage() will be updated additionally after TakeDamage() is called.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### IsActiveEnemy () {: aria-label='Functions' }
@@ -355,11 +366,12 @@ ___
 #### void SetColor ( [Color](../Color) Color, int Duration, int Priority, boolean Fadeout, boolean Share ) {: .copyable aria-label='Functions' }
 
 Set the colormask for the entity. This can be used to tint the sprites in different colors. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code changes the color of the sprite to a fully white sprite for 15 frames.
-```cpp 
-entity:SetColor(Color(1,1,1,1,255,255,255),15,1,false,false)
-```
+
+???- example "Example Code"
+    This code changes the color of the sprite to a fully white sprite for 15 frames.
+    ```lua 
+    entity:SetColor(Color(1,1,1,1,255,255,255),15,1,false,false)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -382,8 +394,9 @@ ___
 ### TakeDamage () {: aria-label='Functions' }
 #### boolean TakeDamage ( float Damage, int Flags, [EntityRef](../EntityRef) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, TakeDamage() will not decremented the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
+
+???- note "Notes"
+    The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, TakeDamage() will not decremented the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ToBomb () {: aria-label='Functions' }
@@ -456,18 +469,19 @@ ___
 #### float DepthOffset  {: .copyable aria-label='Variables' }
 
 Get/Set the depth-offset of the entity. This value is added to the Y Position of the entity, which is then used to determine the rendering order of each entity. Default value is 0 for all entities.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code explains how this variable works.
-```cpp 
-entity1.Position.Y -- =&gt; 50
-entity2.Position.Y -- =&gt; 45
--- Entity1 is rendered in front of Entity2
 
-entity1.DepthOffset = -10
--- new Entity1 renderYPosition =&gt; 40
--- Entity2 is rendered in front of Entity1
-
-```
+???- example "Example Code"
+    This code explains how this variable works.
+    ```lua 
+    entity1.Position.Y -- =&gt; 50
+    entity2.Position.Y -- =&gt; 45
+    -- Entity1 is rendered in front of Entity2
+    
+    entity1.DepthOffset = -10
+    -- new Entity1 renderYPosition =&gt; 40
+    -- Entity2 is rendered in front of Entity1
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -505,8 +519,9 @@ ___
 ### HitPoints {: aria-label='Variables' }
 #### float HitPoints  {: .copyable aria-label='Variables' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-The HitPoints value is not decremented immediately upon taking damage like you would expect. Rather, it is only updated on the frame after the entity takes damage.
+
+???- note "Notes"
+    The HitPoints value is not decremented immediately upon taking damage like you would expect. Rather, it is only updated on the frame after the entity takes damage.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Index {: aria-label='Variables' }
@@ -547,8 +562,9 @@ ___
 ### RenderZOffset {: aria-label='Variables' }
 #### int RenderZOffset  {: .copyable aria-label='Variables' }
 
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This variable doesnt seem to do anything useful. Use DepthOffset instead.
+
+???+ bug "Bugs"
+    This variable doesnt seem to do anything useful. Use DepthOffset instead.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SizeMulti {: aria-label='Variables' }

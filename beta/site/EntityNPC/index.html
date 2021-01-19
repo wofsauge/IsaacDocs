@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -3304,14 +3314,14 @@
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getbosscoloridx">GetBossColorIdx ()<a class="headerlink" href="#getbosscoloridx" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetBossColorIdx ( )</h4>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>This will return the boss color idx reduced by 1. To get the actual color as set in bosscolors.xml, add +1 to the result.</p>
+<details class="- note"><summary>Notes</summary><p>This will return the boss color idx reduced by 1. To get the actual color as set in bosscolors.xml, add +1 to the result.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getchampioncoloridx">GetChampionColorIdx ()<a class="headerlink" href="#getchampioncoloridx" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetChampionColorIdx ( )</h4>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>A list of Champion colors can be found here : ChampionColorIdx </p>
+<details class="- note"><summary>Notes</summary><p>A list of Champion colors can be found here : ChampionColorIdx </p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getplayertarget">GetPlayerTarget ()<a class="headerlink" href="#getplayertarget" title="Permanent link">⚓︎</a></h3>
@@ -3335,8 +3345,8 @@
 <h3 aria-label="Functions" id="makechampion">MakeChampion ()<a class="headerlink" href="#makechampion" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void MakeChampion ( int Seed )</h4>
 <p>Forces a non champion to become a champion, resets hp to max hp. </p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>Hard to use because there are millions of possible seeds to input here.Use Morph() to change the champion Color instead!</p>
+<details class="- note"><summary>Notes</summary><p>Hard to use because there are millions of possible seeds to input here.Use Morph() to change the champion Color instead!</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="makesplat">MakeSplat ()<a class="headerlink" href="#makesplat" title="Permanent link">⚓︎</a></h3>
@@ -3348,12 +3358,12 @@
 <p>Morph the current entity into another one. 
 <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use <code class="highlight"><span class="o">-</span><span class="mi">1</span></code> to turn it into a regular entity.
 A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p class="wrongParsing">This code turns an entity into a gaper.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="nl">entity</span><span class="p">:</span><span class="n">ToNPC</span><span class="p">()</span><span class="o">:</span><span class="n">Morph</span><span class="p">(</span><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_GAPER</span> <span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code turns an entity into a gaper.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">entity</span><span class="p">:</span><span class="n">ToNPC</span><span class="p">():</span><span class="n">Morph</span><span class="p">(</span><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_GAPER</span> <span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
- WRONG PARSING </p>
+</td></tr></table></p>
+</details>
+<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="playsound">PlaySound ()<a class="headerlink" href="#playsound" title="Permanent link">⚓︎</a></h3>

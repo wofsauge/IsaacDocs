@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -3118,23 +3128,25 @@
 <h4 aria-label="Variables" class="copyable">int DisplayFlags</h4>
 <p>Indicates what is visible on the minimap.
 <strong>Display Flags (bitwise):</strong>
-<code class="highlight"><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="o">-</span><span class="mi">1</span> <span class="o">--</span> <span class="n">Invisible</span><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">0</span> <span class="o">--</span> <span class="n">Visible</span><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">1</span> <span class="o">--</span> <span class="n">Room</span> <span class="n">Shadow</span><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">2</span> <span class="o">--</span> <span class="n">Show</span> <span class="n">Icon</span></code></p>
+<code class="highlight"><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="o">-</span><span class="mi">1</span> <span class="c1">-- Invisible</span><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">0</span> <span class="c1">-- Visible</span><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">1</span> <span class="c1">-- Room Shadow</span><span class="mi">1</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span><span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">2</span> <span class="c1">-- Show Icon</span></code></p>
 <p>The flags are hard to interpret, but here are some examples:</p>
 <p>000 = invisible, this is how most rooms start</p>
 <p>101 = standard room visibility, this includes rooms that are adjacent and you haven't actively visited. This will usually show icons.</p>
 <p>011 = secret room, locked rooms, sac rooms pre-entry*</p>
 <p>111 = 011 rooms after entry, but also the rooms directly adjacent to them* (applied after entry)</p>
 <ul>
-<li>If you have spelunker's hat, bit 1 is completely unused. All special rooms will have the normal behavior of either 000 or 101. iirc this is unique to spelunker's hat, mapping items follow the normal rules.</li>
-</ul>
+<li>
+<p>If you have spelunker's hat, bit 1 is completely unused. All special rooms will have the normal behavior of either 000 or 101. iirc this is unique to spelunker's hat, mapping items follow the normal rules.</p>
 <p>From this my best guess is that bits 1 and 2 are special rendering (display hehe) flags that may have more meaning down below. The important bit for using them is minding that they're used differently mostly for special rooms. As far as I've seen, 001 is completely unused. 010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="gridindex">GridIndex<a class="headerlink" href="#gridindex" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">int GridIndex</h4>
 <p>index in the level grid (always top left) </p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)</p>
+</li>
+</ul>
+<details class="- note"><summary>Notes</summary><p>This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="haswater">HasWater<a class="headerlink" href="#haswater" title="Permanent link">⚓︎</a></h3>
@@ -3175,8 +3187,8 @@
 <h3 aria-label="Variables" id="safegridindex">SafeGridIndex<a class="headerlink" href="#safegridindex" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">int SafeGridIndex</h4>
 <p>index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!) </p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below) </p>
+<details class="- note"><summary>Notes</summary><p>This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below) </p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="shopitemdiscountidx">ShopItemDiscountIdx<a class="headerlink" href="#shopitemdiscountidx" title="Permanent link">⚓︎</a></h3>

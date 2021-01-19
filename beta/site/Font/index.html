@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -2951,15 +2961,15 @@
 <h3 aria-label="Constructors" id="font"><a href="../Font">Font</a> ()<a class="headerlink" href="#font" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Constructors" class="copyable">void <a href="../Font">Font</a> ( void )</h4>
 <p>Constructor for the "Font" class.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>Example usage.
+<details class="- example"><summary>Example Code</summary><p>Example usage.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="o">--</span> <span class="n">init</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="o">--</span> <span class="n">load</span> <span class="n">a</span> <span class="n">font</span> <span class="n">into</span> <span class="n">the</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">DrawString</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span> <span class="o">--</span> <span class="n">render</span> <span class="n">string</span> <span class="n">with</span> <span class="n">loaded</span> <span class="n">font</span> <span class="n">on</span> <span class="n">position</span> <span class="mi">60</span><span class="n">x50y</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="c1">-- init font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="c1">-- load a font into the font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">DrawString</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span> <span class="c1">-- render string with loaded font on position 60x50y</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -2968,59 +2978,59 @@
 <p>Draws a string of text to the screen
 Converts UTF8 to UTF16, then draws the string. 
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>Example usage.
+<details class="- example"><summary>Example Code</summary><p>Example usage.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="o">--</span> <span class="n">init</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="o">--</span> <span class="n">load</span> <span class="n">a</span> <span class="n">font</span> <span class="n">into</span> <span class="n">the</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">DrawString</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span> <span class="o">--</span> <span class="n">render</span> <span class="n">string</span> <span class="n">with</span> <span class="n">loaded</span> <span class="n">font</span> <span class="n">on</span> <span class="n">position</span> <span class="mi">60</span><span class="n">x50y</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="c1">-- init font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="c1">-- load a font into the font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">DrawString</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span> <span class="c1">-- render string with loaded font on position 60x50y</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="drawstringscaled">DrawStringScaled ()<a class="headerlink" href="#drawstringscaled" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void DrawStringScaled ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, <a href="../KColor">KColor</a> RenderColor, u_int BoxWidth, boolean Center )</h4>
 <p>Draws a scaled string of text on the screen.
 Converts UTF8 to UTF16, then draws the string. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>Example usage.
+<details class="- example"><summary>Example Code</summary><p>Example usage.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="o">--</span> <span class="n">init</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="o">--</span> <span class="n">load</span> <span class="n">a</span> <span class="n">font</span> <span class="n">into</span> <span class="n">the</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">DrawStringScaled</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span> <span class="o">--</span> <span class="n">render</span> <span class="n">string</span> <span class="n">with</span> <span class="n">loaded</span> <span class="n">font</span> <span class="n">on</span> <span class="n">position</span> <span class="mi">60</span><span class="n">x50y</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="c1">-- init font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="c1">-- load a font into the font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">DrawStringScaled</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span> <span class="c1">-- render string with loaded font on position 60x50y</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="drawstringscaledutf8">DrawStringScaledUTF8 ()<a class="headerlink" href="#drawstringscaledutf8" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, <a href="../KColor">KColor</a> RenderColor, u_int BoxWidth, boolean Center )</h4>
 <p>Draws a scaled string of Unicode text on the screen.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>Example usage.
+<details class="- example"><summary>Example Code</summary><p>Example usage.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="o">--</span> <span class="n">init</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="o">--</span> <span class="n">load</span> <span class="n">a</span> <span class="n">font</span> <span class="n">into</span> <span class="n">the</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">DrawStringScaledUTF8</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span> <span class="o">--</span> <span class="n">render</span> <span class="n">string</span> <span class="n">with</span> <span class="n">loaded</span> <span class="n">font</span> <span class="n">on</span> <span class="n">position</span> <span class="mi">60</span><span class="n">x50y</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="c1">-- init font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="c1">-- load a font into the font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">DrawStringScaledUTF8</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span> <span class="c1">-- render string with loaded font on position 60x50y</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="drawstringutf8">DrawStringUTF8 ()<a class="headerlink" href="#drawstringutf8" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void DrawStringUTF8 ( string String, float PositionX, float PositionY, <a href="../KColor">KColor</a> RenderColor, u_int BoxWidth, boolean Center )</h4>
 <p>Draws a string of Unicode text to the screen
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>Example usage.
+<details class="- example"><summary>Example Code</summary><p>Example usage.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="o">--</span> <span class="n">init</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="o">--</span> <span class="n">load</span> <span class="n">a</span> <span class="n">font</span> <span class="n">into</span> <span class="n">the</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">DrawStringUTF8</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span> <span class="o">--</span> <span class="n">render</span> <span class="n">string</span> <span class="n">with</span> <span class="n">loaded</span> <span class="n">font</span> <span class="n">on</span> <span class="n">position</span> <span class="mi">60</span><span class="n">x50y</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="c1">-- init font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="c1">-- load a font into the font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">DrawStringUTF8</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span> <span class="c1">-- render string with loaded font on position 60x50y</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getbaselineheight">GetBaselineHeight ()<a class="headerlink" href="#getbaselineheight" title="Permanent link">⚓︎</a></h3>
@@ -3056,15 +3066,15 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
 <h3 aria-label="Functions" id="load">Load ()<a class="headerlink" href="#load" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">boolean Load ( string FilePath )</h4>
 <p>Loads a font. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>Example usage.
+<details class="- example"><summary>Example Code</summary><p>Example usage.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
-3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="o">--</span> <span class="n">init</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="o">--</span> <span class="n">load</span> <span class="n">a</span> <span class="n">font</span> <span class="n">into</span> <span class="n">the</span> <span class="n">font</span> <span class="n">object</span>
-<span class="nl">f</span><span class="p">:</span><span class="n">DrawString</span><span class="p">(</span><span class="s">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span> <span class="o">--</span> <span class="n">render</span> <span class="n">string</span> <span class="n">with</span> <span class="n">loaded</span> <span class="n">font</span> <span class="n">on</span> <span class="n">position</span> <span class="mi">60</span><span class="n">x50y</span>
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">f</span> <span class="o">=</span> <span class="n">Font</span><span class="p">()</span> <span class="c1">-- init font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">Load</span><span class="p">(</span><span class="s2">&quot;font/terminus.fnt&quot;</span><span class="p">)</span> <span class="c1">-- load a font into the font object</span>
+<span class="n">f</span><span class="p">:</span><span class="n">DrawString</span><span class="p">(</span><span class="s2">&quot;Hello World!&quot;</span><span class="p">,</span><span class="mi">60</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="n">KColor</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="mi">0</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span> <span class="c1">-- render string with loaded font on position 60x50y</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="setmissingcharacter">SetMissingCharacter ()<a class="headerlink" href="#setmissingcharacter" title="Permanent link">⚓︎</a></h3>

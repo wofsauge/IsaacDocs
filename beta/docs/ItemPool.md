@@ -64,8 +64,9 @@ ___
 ### RemoveCollectible () {: aria-label='Functions' }
 #### boolean RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Collectible ) {: .copyable aria-label='Functions' }
 Removes a collectible from the itempool.
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This function will always return true, even when the given id does not exist!
+
+???+ bug "Bugs"
+    This function will always return true, even when the given id does not exist!
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### RemoveTrinket () {: aria-label='Functions' }

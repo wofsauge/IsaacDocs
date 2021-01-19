@@ -5,11 +5,12 @@
 #### void AddBlackHearts ( int BlackHearts ) {: .copyable aria-label='Functions' }
 
 Adds Black hearts to the player. 1 unit is half a heart. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 full black heart to the player.
-```cpp 
-Isaac.GetPlayer(0):AddBlackHearts(2)
-```
+
+???- example "Example Code"
+    This code adds 1 full black heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddBlackHearts(2)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -27,11 +28,12 @@ ___
 #### void AddBombs ( int Amount ) {: .copyable aria-label='Functions' }
 
 Adds bombs to the player. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code removes 1 bomb from the player.
-```cpp 
-Isaac.GetPlayer(0):AddBombs(-1)
-```
+
+???- example "Example Code"
+    This code removes 1 bomb from the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddBombs(-1)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -39,11 +41,12 @@ ___
 #### void AddBoneHearts ( int Hearts ) {: .copyable aria-label='Functions' }
 
 Adds bone hearts to the player. 1 unit is a single bone heart. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 bone heart to the player.
-```cpp 
-Isaac.GetPlayer(0):AddBoneHearts(1)
-```
+
+???- example "Example Code"
+    This code adds 1 bone heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddBoneHearts(1)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -61,11 +64,12 @@ ___
 #### void AddCoins ( int Amount ) {: .copyable aria-label='Functions' }
 
 Adds coins to the player. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 coin to the player.
-```cpp 
-Isaac.GetPlayer(0):AddCoins(1)
-```
+
+???- example "Example Code"
+    This code adds 1 coin to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddCoins(1)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -100,11 +104,12 @@ ___
 Adds eternal hearts to the player. 1 unit is half a heart. Remove them with negative numbers. 
 
 (Note that eternal hearts automatically turn to full hearts, when you have more than one.) 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 eternal heart to the player.
-```cpp 
-Isaac.GetPlayer(0):AddEternalHearts(1)
-```
+
+???- example "Example Code"
+    This code adds 1 eternal heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddEternalHearts(1)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -117,11 +122,12 @@ ___
 #### void AddGoldenHearts ( int Hearts ) {: .copyable aria-label='Functions' }
 
 Adds golden hearts to the player. 1 unit is a single gold heart. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 golden heart to the player.
-```cpp 
-Isaac.GetPlayer(0):AddGoldenHearts(1)
-```
+
+???- example "Example Code"
+    This code adds 1 golden heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddGoldenHearts(1)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -134,11 +140,12 @@ ___
 #### void AddHearts ( int Hearts ) {: .copyable aria-label='Functions' }
 
 Adds red hearts to the player if there are any empty heart containers. 1 unit is half a heart. Remove health with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 full red heart to the player.
-```cpp 
-Isaac.GetPlayer(0):AddHearts(2)
-```
+
+???- example "Example Code"
+    This code adds 1 full red heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddHearts(2)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -156,11 +163,12 @@ ___
 #### void AddKeys ( int Amount ) {: .copyable aria-label='Functions' }
 
 Adds keys to the player. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 key to the player.
-```cpp 
-Isaac.GetPlayer(0):AddKeys(1)
-```
+
+???- example "Example Code"
+    This code adds 1 key to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddKeys(1)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -168,20 +176,23 @@ ___
 #### void AddMaxHearts ( int MaxHearts, boolean IgnoreKeeper ) {: .copyable aria-label='Functions' }
 
 Adds heart containers to the player. 2 units is a full heart container. Remove them with negative numbers. 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-It is possible to add a half heart container to the player. This will appear as a regular heart container but can only be filled half-way.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 heart container to the player.
-```cpp 
-Isaac.GetPlayer(0):AddMaxHearts(2,true)
-```
 
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-IgnoreKeeper does not appear to work as intended.
+???- note "Notes"
+    It is possible to add a half heart container to the player. This will appear as a regular heart container but can only be filled half-way.
 
-Max hearts can be added or removed from Keeper regardless of what this boolean is.
-If Keeper has Greed's Gullet and this boolean is set to false, max hearts cannot be added to Keeper, but can be removed normally.
-If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be added or removed from Keeper normally.
+???- example "Example Code"
+    This code adds 1 heart container to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddMaxHearts(2,true)
+    ```
+
+
+???+ bug "Bugs"
+    IgnoreKeeper does not appear to work as intended.
+    
+    Max hearts can be added or removed from Keeper regardless of what this boolean is.
+    If Keeper has Greed's Gullet and this boolean is set to false, max hearts cannot be added to Keeper, but can be removed normally.
+    If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be added or removed from Keeper normally.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### AddNullCostume () {: aria-label='Functions' }
@@ -208,11 +219,12 @@ ___
 #### void AddSoulHearts ( int SoulHearts ) {: .copyable aria-label='Functions' }
 
 Adds soul hearts to the player. 1 unit is half a heart. Remove them with negative numbers. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code adds 1 full soul heart to the player.
-```cpp 
-Isaac.GetPlayer(0):AddSoulHearts(2)
-```
+
+???- example "Example Code"
+    This code adds 1 full soul heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddSoulHearts(2)
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -376,9 +388,10 @@ ___
 #### void DropPoketItem ( int PocketNum, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
 Drops a held pocketitem (Card, Pill, Rune...) from the given itemslot at the given position. Possible pocketnumbers are [0, 1]
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This function is spelled wrong.
-Removing the pocketitem in slot 0, while having a second item in slot 1 will not update the UI correctly. The second item will still be in the second slot, which will in turn prevent the player from using this card right away. The player needs to switch between cards to fix this.
+
+???+ bug "Bugs"
+    This function is spelled wrong.
+    Removing the pocketitem in slot 0, while having a second item in slot 1 will not update the UI correctly. The second item will still be in the second slot, which will in turn prevent the player from using this card right away. The player needs to switch between cards to fix this.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### DropTrinket () {: aria-label='Functions' }
@@ -492,13 +505,14 @@ ___
 ### GetBoneHearts () {: aria-label='Functions' }
 #### int GetBoneHearts ( ) {: .copyable aria-label='Functions' }
 Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. 
-```cpp 
-local player = Isaac.GetPlayer(0)
-player:GetMaxHearts()+player:GetBoneHearts()*2
 
-```
+???- example "Example Code"
+    This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. 
+    ```lua 
+    local player = Isaac.GetPlayer(0)
+    player:GetMaxHearts()+player:GetBoneHearts()*2
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -648,8 +662,9 @@ ___
 #### int GetMaxPoketItems ( ) {: .copyable aria-label='Functions' }
 
 Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This function is spelled wrong.
+
+???+ bug "Bugs"
+    This function is spelled wrong.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetMaxTrinkets () {: aria-label='Functions' }
@@ -744,8 +759,9 @@ ___
 ####  PlayerPocketItem GetPocketItem ( int SlotId ) {: .copyable aria-label='Functions' }
 
 Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This function returns userdata, which cant be processed. It is therefore broken and should not be used! 
+
+???+ bug "Bugs"
+    This function returns userdata, which cant be processed. It is therefore broken and should not be used! 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetRecentMovementVector () {: aria-label='Functions' }
@@ -772,8 +788,9 @@ ___
 #### int GetSoulHearts ( ) {: .copyable aria-label='Functions' }
 
 Returns the amount of Soul Hearts the player has. 1 unit is half a heart.
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Black Hearts count toward this total, as the game sees them as soul hearts.
+
+???- note "Notes"
+    Black Hearts count toward this total, as the game sees them as soul hearts.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetSubPlayer () {: aria-label='Functions' }
@@ -1193,7 +1210,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 ### Damage {: aria-label='Variables' }
 #### float Damage  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Damage Stat.** How much damage do the players tears or other main weapons do? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Damage Stat.**  How much damage do the players tears or other main weapons do? 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### FireDelay {: aria-label='Variables' }
@@ -1223,17 +1240,17 @@ ___
 [ ](#){: .abp .tooltip .badge }
 ### Luck {: aria-label='Variables' }
 #### float Luck  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Luck Stat.** Better luck generally means better random events. 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Luck Stat.**  Better luck generally means better random events. 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### MaxFireDelay {: aria-label='Variables' }
 #### int MaxFireDelay  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Tears Stat.** How long between each tear can spawn? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Tears Stat.**  How long between each tear can spawn? 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### MoveSpeed {: aria-label='Variables' }
 #### float MoveSpeed  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Speed Stat.** How fast can the player move? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Speed Stat.**  How fast can the player move? 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### QueuedItem {: aria-label='Variables' }
@@ -1248,7 +1265,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 ### ShotSpeed {: aria-label='Variables' }
 #### float ShotSpeed  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the ShotSpeed Stat.** How fast does the tear travel when spawned? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the ShotSpeed Stat.**  How fast does the tear travel when spawned? 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### SpriteScale {: aria-label='Variables' }
@@ -1274,34 +1291,36 @@ ___
 ### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
 #### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various <a href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">tear flags</a>. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code makes Isaac's tears spectral. 
-```cpp 
-local mod:OnEvaluateTearFlags(player, flag)
-player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
-end
 
-mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
-
-```
+???- example "Example Code"
+    This code makes Isaac's tears spectral. 
+    ```lua 
+    local mod:OnEvaluateTearFlags(player, flag)
+    player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
+    end
+    
+    mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### TearHeight {: aria-label='Variables' }
 #### float TearHeight  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Range Stat * -1.** How high above the ground is the tear when it spawns? 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code gives Isaac a +5 range up.
-```cpp 
-local mod:OnEvaluateRange(player, flag)
--- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels
-player.TearHeight = player.TearHeight - 5
-end
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Range Stat * -1.**  How high above the ground is the tear when it spawns? 
 
-mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateRange, CacheFlag.CACHE_RANGE)
-
-```
+???- example "Example Code"
+    This code gives Isaac a +5 range up.
+    ```lua 
+    local mod:OnEvaluateRange(player, flag)
+    -- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels
+    player.TearHeight = player.TearHeight - 5
+    end
+    
+    mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateRange, CacheFlag.CACHE_RANGE)
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

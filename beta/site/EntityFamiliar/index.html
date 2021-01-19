@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -3292,7 +3302,7 @@ This function will not play the shoot animation of the familiar.</p>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getorbitposition">GetOrbitPosition ()<a class="headerlink" href="#getorbitposition" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable"><a href="../Vector">Vector</a> GetOrbitPosition ( <a href="../Vector">Vector</a> Pos )</h4>
-<p>Returns the position of an orbiting familiar relative to the player's position. Returns <code class="highlight"><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="k">if</span> <span class="n">its</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">familiar</span><span class="p">.</span></code>
+<p>Returns the position of an orbiting familiar relative to the player's position. Returns <code class="highlight"><span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="kr">if</span> <span class="n">its</span> <span class="n">a</span> <span class="n">normal</span> <span class="n">familiar</span><span class="p">.</span></code>
 The "pos" argument is used as an offset.</p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -3339,8 +3349,8 @@ The "pos" argument is used as an offset.</p>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="shoot">Shoot ()<a class="headerlink" href="#shoot" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void Shoot ( )</h4>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>This function does not seem to work.</p>
+<details class="bug" open="open"><summary>Bugs</summary><p>This function does not seem to work.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h2 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">⚓︎</a></h2>
@@ -3375,21 +3385,21 @@ The "pos" argument is used as an offset.</p>
 <h3 aria-label="Variables" id="orbitangleoffset">OrbitAngleOffset<a class="headerlink" href="#orbitangleoffset" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">float OrbitAngleOffset</h4>
 <p>Can be used to override the angular position of the familiar on its orbit based on the initial starting position of the orbit.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p class="wrongParsing">This code will make all of your orbitals move as a tight wall around you.
+<details class="- example"><summary>Example Code</summary><p>This code will make all of your orbitals move as a tight wall around you.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">v</span> <span class="n">in</span> <span class="n">ipairs</span><span class="p">(</span><span class="n">Isaac</span><span class="p">.</span><span class="n">GetRoomEntities</span><span class="p">())</span> <span class="k">do</span> 
-<span class="k">if</span> <span class="n">v</span><span class="p">.</span><span class="n">Type</span><span class="o">==</span><span class="mi">3</span> <span class="n">then</span> 
-<span class="nl">v</span><span class="p">:</span><span class="n">ToFamiliar</span><span class="p">().</span><span class="n">OrbitAngleOffset</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">i</span> 
-<span class="n">end</span> 
-<span class="n">end</span>
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kr">for</span> <span class="n">i</span><span class="p">,</span><span class="n">v</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">Isaac</span><span class="p">.</span><span class="n">GetRoomEntities</span><span class="p">())</span> <span class="kr">do</span> 
+<span class="kr">if</span> <span class="n">v</span><span class="p">.</span><span class="n">Type</span><span class="o">==</span><span class="mi">3</span> <span class="kr">then</span> 
+<span class="n">v</span><span class="p">:</span><span class="n">ToFamiliar</span><span class="p">().</span><span class="n">OrbitAngleOffset</span> <span class="o">=</span> <span class="mf">0.25</span><span class="o">*</span><span class="n">i</span> 
+<span class="kr">end</span> 
+<span class="kr">end</span>
 </code></pre></div>
 </td></tr></table>
-Result: <a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"/></a>
- WRONG PARSING </p>
+Result: <a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"/></a></p>
+</details>
+<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="orbitdistance">OrbitDistance<a class="headerlink" href="#orbitdistance" title="Permanent link">⚓︎</a></h3>

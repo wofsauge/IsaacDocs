@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -6019,11 +6029,11 @@
 <h3 aria-label="Functions" id="addblackhearts">AddBlackHearts ()<a class="headerlink" href="#addblackhearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddBlackHearts ( int BlackHearts )</h4>
 <p>Adds Black hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 full black heart to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddBlackHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 full black heart to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddBlackHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addblueflies">AddBlueFlies ()<a class="headerlink" href="#addblueflies" title="Permanent link">⚓︎</a></h3>
@@ -6037,21 +6047,21 @@
 <h3 aria-label="Functions" id="addbombs">AddBombs ()<a class="headerlink" href="#addbombs" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddBombs ( int Amount )</h4>
 <p>Adds bombs to the player. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code removes 1 bomb from the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddBombs</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code removes 1 bomb from the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddBombs</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addbonehearts">AddBoneHearts ()<a class="headerlink" href="#addbonehearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddBoneHearts ( int Hearts )</h4>
 <p>Adds bone hearts to the player. 1 unit is a single bone heart. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 bone heart to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddBoneHearts</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 bone heart to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddBoneHearts</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addcacheflags">AddCacheFlags ()<a class="headerlink" href="#addcacheflags" title="Permanent link">⚓︎</a></h3>
@@ -6066,11 +6076,11 @@
 <h3 aria-label="Functions" id="addcoins">AddCoins ()<a class="headerlink" href="#addcoins" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddCoins ( int Amount )</h4>
 <p>Adds coins to the player. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 coin to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddCoins</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 coin to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddCoins</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addcollectible">AddCollectible ()<a class="headerlink" href="#addcollectible" title="Permanent link">⚓︎</a></h3>
@@ -6097,11 +6107,11 @@
 <h4 aria-label="Functions" class="copyable">void AddEternalHearts ( int EternalHearts )</h4>
 <p>Adds eternal hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
 <p>(Note that eternal hearts automatically turn to full hearts, when you have more than one.) </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 eternal heart to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddEternalHearts</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 eternal heart to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddEternalHearts</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addgoldenbomb">AddGoldenBomb ()<a class="headerlink" href="#addgoldenbomb" title="Permanent link">⚓︎</a></h3>
@@ -6111,11 +6121,11 @@
 <h3 aria-label="Functions" id="addgoldenhearts">AddGoldenHearts ()<a class="headerlink" href="#addgoldenhearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddGoldenHearts ( int Hearts )</h4>
 <p>Adds golden hearts to the player. 1 unit is a single gold heart. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 golden heart to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddGoldenHearts</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 golden heart to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddGoldenHearts</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addgoldenkey">AddGoldenKey ()<a class="headerlink" href="#addgoldenkey" title="Permanent link">⚓︎</a></h3>
@@ -6125,11 +6135,11 @@
 <h3 aria-label="Functions" id="addhearts">AddHearts ()<a class="headerlink" href="#addhearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddHearts ( int Hearts )</h4>
 <p>Adds red hearts to the player if there are any empty heart containers. 1 unit is half a heart. Remove health with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 full red heart to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 full red heart to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addjarflies">AddJarFlies ()<a class="headerlink" href="#addjarflies" title="Permanent link">⚓︎</a></h3>
@@ -6143,28 +6153,28 @@
 <h3 aria-label="Functions" id="addkeys">AddKeys ()<a class="headerlink" href="#addkeys" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddKeys ( int Amount )</h4>
 <p>Adds keys to the player. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 key to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddKeys</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 key to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddKeys</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addmaxhearts">AddMaxHearts ()<a class="headerlink" href="#addmaxhearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddMaxHearts ( int MaxHearts, boolean IgnoreKeeper )</h4>
 <p>Adds heart containers to the player. 2 units is a full heart container. Remove them with negative numbers. </p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>It is possible to add a half heart container to the player. This will appear as a regular heart container but can only be filled half-way.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 heart container to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddMaxHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="nb">true</span><span class="p">)</span>
+<details class="- note"><summary>Notes</summary><p>It is possible to add a half heart container to the player. This will appear as a regular heart container but can only be filled half-way.</p>
+</details>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 heart container to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddMaxHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="kc">true</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>IgnoreKeeper does not appear to work as intended.</p>
+</details>
+<details class="bug" open="open"><summary>Bugs</summary><p>IgnoreKeeper does not appear to work as intended.</p>
 <p>Max hearts can be added or removed from Keeper regardless of what this boolean is.
 If Keeper has Greed's Gullet and this boolean is set to false, max hearts cannot be added to Keeper, but can be removed normally.
 If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be added or removed from Keeper normally.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addnullcostume">AddNullCostume ()<a class="headerlink" href="#addnullcostume" title="Permanent link">⚓︎</a></h3>
@@ -6187,11 +6197,11 @@ If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be 
 <h3 aria-label="Functions" id="addsoulhearts">AddSoulHearts ()<a class="headerlink" href="#addsoulhearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void AddSoulHearts ( int SoulHearts )</h4>
 <p>Adds soul hearts to the player. 1 unit is half a heart. Remove them with negative numbers. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code adds 1 full soul heart to the player.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="n">AddSoulHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<details class="- example"><summary>Example Code</summary><p>This code adds 1 full soul heart to the player.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">):</span><span class="n">AddSoulHearts</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="addtrinket">AddTrinket ()<a class="headerlink" href="#addtrinket" title="Permanent link">⚓︎</a></h3>
@@ -6338,9 +6348,9 @@ If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be 
 <h3 aria-label="Functions" id="droppoketitem">DropPoketItem ()<a class="headerlink" href="#droppoketitem" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void DropPoketItem ( int PocketNum, <a href="../Vector">Vector</a> Pos )</h4>
 <p>Drops a held pocketitem (Card, Pill, Rune...) from the given itemslot at the given position. Possible pocketnumbers are [0, 1]</p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>This function is spelled wrong.
+<details class="bug" open="open"><summary>Bugs</summary><p>This function is spelled wrong.
 Removing the pocketitem in slot 0, while having a second item in slot 1 will not update the UI correctly. The second item will still be in the second slot, which will in turn prevent the player from using this card right away. The player needs to switch between cards to fix this.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="droptrinket">DropTrinket ()<a class="headerlink" href="#droptrinket" title="Permanent link">⚓︎</a></h3>
@@ -6440,13 +6450,13 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <h3 aria-label="Functions" id="getbonehearts">GetBoneHearts ()<a class="headerlink" href="#getbonehearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetBoneHearts ( )</h4>
 <p>Returns the number of bone hearts as an integer value. 1 Boneheart = 1.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. 
+<details class="- example"><summary>Example Code</summary><p>This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="nl">player</span><span class="p">:</span><span class="n">GetMaxHearts</span><span class="p">()</span><span class="o">+</span><span class="nl">player</span><span class="p">:</span><span class="n">GetBoneHearts</span><span class="p">()</span><span class="o">*</span><span class="mi">2</span>
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">player</span><span class="p">:</span><span class="n">GetMaxHearts</span><span class="p">()</span><span class="o">+</span><span class="n">player</span><span class="p">:</span><span class="n">GetBoneHearts</span><span class="p">()</span><span class="o">*</span><span class="mi">2</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getcard">GetCard ()<a class="headerlink" href="#getcard" title="Permanent link">⚓︎</a></h3>
@@ -6567,8 +6577,8 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <h3 aria-label="Functions" id="getmaxpoketitems">GetMaxPoketItems ()<a class="headerlink" href="#getmaxpoketitems" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetMaxPoketItems ( )</h4>
 <p>Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)</p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>This function is spelled wrong.</p>
+<details class="bug" open="open"><summary>Bugs</summary><p>This function is spelled wrong.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getmaxtrinkets">GetMaxTrinkets ()<a class="headerlink" href="#getmaxtrinkets" title="Permanent link">⚓︎</a></h3>
@@ -6647,8 +6657,8 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <h3 aria-label="Functions" id="getpocketitem">GetPocketItem ()<a class="headerlink" href="#getpocketitem" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">PlayerPocketItem GetPocketItem ( int SlotId )</h4>
 <p>Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.</p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>This function returns userdata, which cant be processed. It is therefore broken and should not be used! </p>
+<details class="bug" open="open"><summary>Bugs</summary><p>This function returns userdata, which cant be processed. It is therefore broken and should not be used! </p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getrecentmovementvector">GetRecentMovementVector ()<a class="headerlink" href="#getrecentmovementvector" title="Permanent link">⚓︎</a></h3>
@@ -6671,8 +6681,8 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <h3 aria-label="Functions" id="getsoulhearts">GetSoulHearts ()<a class="headerlink" href="#getsoulhearts" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">int GetSoulHearts ( )</h4>
 <p>Returns the amount of Soul Hearts the player has. 1 unit is half a heart.</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>Black Hearts count toward this total, as the game sees them as soul hearts.</p>
+<details class="- note"><summary>Notes</summary><p>Black Hearts count toward this total, as the game sees them as soul hearts.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getsubplayer">GetSubPlayer ()<a class="headerlink" href="#getsubplayer" title="Permanent link">⚓︎</a></h3>
@@ -7024,7 +7034,7 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="damage">Damage<a class="headerlink" href="#damage" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">float Damage</h4>
-<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. <strong>This is equal to the Damage Stat.</strong> How much damage do the players tears or other main weapons do? </p>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Damage Stat.</strong>  How much damage do the players tears or other main weapons do? </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="firedelay">FireDelay<a class="headerlink" href="#firedelay" title="Permanent link">⚓︎</a></h3>
@@ -7051,17 +7061,17 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="luck">Luck<a class="headerlink" href="#luck" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">float Luck</h4>
-<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. <strong>This is equal to the Luck Stat.</strong> Better luck generally means better random events. </p>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Luck Stat.</strong>  Better luck generally means better random events. </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="maxfiredelay">MaxFireDelay<a class="headerlink" href="#maxfiredelay" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">int MaxFireDelay</h4>
-<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. <strong>This is equal to the Tears Stat.</strong> How long between each tear can spawn? </p>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Tears Stat.</strong>  How long between each tear can spawn? </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="movespeed">MoveSpeed<a class="headerlink" href="#movespeed" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">float MoveSpeed</h4>
-<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. <strong>This is equal to the Speed Stat.</strong> How fast can the player move? </p>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Speed Stat.</strong>  How fast can the player move? </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="queueditem">QueuedItem<a class="headerlink" href="#queueditem" title="Permanent link">⚓︎</a></h3>
@@ -7075,7 +7085,7 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="shotspeed">ShotSpeed<a class="headerlink" href="#shotspeed" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">float ShotSpeed</h4>
-<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. <strong>This is equal to the ShotSpeed Stat.</strong> How fast does the tear travel when spawned? </p>
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the ShotSpeed Stat.</strong>  How fast does the tear travel when spawned? </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="spritescale">SpriteScale<a class="headerlink" href="#spritescale" title="Permanent link">⚓︎</a></h3>
@@ -7098,40 +7108,40 @@ Removing the pocketitem in slot 0, while having a second item in slot 1 will not
 <h3 aria-label="Variables" id="tearflags"><a href="../enums/TearFlags">TearFlags</a><a class="headerlink" href="#tearflags" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">int <a href="../enums/TearFlags">TearFlags</a></h4>
 <p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various <a href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">tear flags</a>. </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p class="wrongParsing">This code makes Isaac's tears spectral. 
+<details class="- example"><summary>Example Code</summary><p>This code makes Isaac's tears spectral. 
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="nl">mod</span><span class="p">:</span><span class="n">OnEvaluateTearFlags</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">flag</span><span class="p">)</span>
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mod</span><span class="p">:</span><span class="n">OnEvaluateTearFlags</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">flag</span><span class="p">)</span>
 <span class="n">player</span><span class="p">.</span><span class="n">TearFlags</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">TearFlags</span> <span class="o">|</span> <span class="n">TearFlags</span><span class="p">.</span><span class="n">TEAR_SPECTRAL</span>
-<span class="n">end</span>
+<span class="kr">end</span>
 
-<span class="nl">mod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_EVALUATE_CACHE</span><span class="p">,</span> <span class="n">mod</span><span class="p">.</span><span class="n">OnEvaluateTearFlags</span><span class="p">,</span> <span class="n">CacheFlag</span><span class="p">.</span><span class="n">CACHE_TEARFLAG</span><span class="p">)</span>
+<span class="n">mod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_EVALUATE_CACHE</span><span class="p">,</span> <span class="n">mod</span><span class="p">.</span><span class="n">OnEvaluateTearFlags</span><span class="p">,</span> <span class="n">CacheFlag</span><span class="p">.</span><span class="n">CACHE_TEARFLAG</span><span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
- WRONG PARSING </p>
+</td></tr></table></p>
+</details>
+<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="tearheight">TearHeight<a class="headerlink" href="#tearheight" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Variables" class="copyable">float TearHeight</h4>
-<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE. <strong>This is equal to the Range Stat * -1.</strong> How high above the ground is the tear when it spawns? </p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code gives Isaac a +5 range up.
+<p>Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  <strong>This is equal to the Range Stat * -1.</strong>  How high above the ground is the tear when it spawns? </p>
+<details class="- example"><summary>Example Code</summary><p>This code gives Isaac a +5 range up.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
 5
-6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="nl">mod</span><span class="p">:</span><span class="n">OnEvaluateRange</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">flag</span><span class="p">)</span>
-<span class="o">--</span> <span class="n">we</span> <span class="n">give</span> <span class="o">-</span><span class="mi">5</span> <span class="n">because</span> <span class="n">the</span> <span class="n">TearHeight</span> <span class="n">stat</span> <span class="n">is</span> <span class="n">always</span> <span class="n">negative</span><span class="p">;</span> <span class="n">the</span> <span class="n">lower</span> <span class="n">the</span> <span class="n">number</span> <span class="o">-</span> <span class="n">the</span> <span class="n">further</span> <span class="n">the</span> <span class="n">tear</span> <span class="n">travels</span>
+6</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mod</span><span class="p">:</span><span class="n">OnEvaluateRange</span><span class="p">(</span><span class="n">player</span><span class="p">,</span> <span class="n">flag</span><span class="p">)</span>
+<span class="c1">-- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels</span>
 <span class="n">player</span><span class="p">.</span><span class="n">TearHeight</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">TearHeight</span> <span class="o">-</span> <span class="mi">5</span>
-<span class="n">end</span>
+<span class="kr">end</span>
 
-<span class="nl">mod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_EVALUATE_CACHE</span><span class="p">,</span> <span class="n">mod</span><span class="p">.</span><span class="n">OnEvaluateRange</span><span class="p">,</span> <span class="n">CacheFlag</span><span class="p">.</span><span class="n">CACHE_RANGE</span><span class="p">)</span>
+<span class="n">mod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_EVALUATE_CACHE</span><span class="p">,</span> <span class="n">mod</span><span class="p">.</span><span class="n">OnEvaluateRange</span><span class="p">,</span> <span class="n">CacheFlag</span><span class="p">.</span><span class="n">CACHE_RANGE</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Variables" id="tearsoffset">TearsOffset<a class="headerlink" href="#tearsoffset" title="Permanent link">⚓︎</a></h3>

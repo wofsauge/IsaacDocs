@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -4955,12 +4965,12 @@
 <h3 aria-label="Functions" id="checkline">CheckLine ()<a class="headerlink" href="#checkline" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">boolean CheckLine ( <a href="../Vector">Vector</a> Pos1, <a href="../Vector">Vector</a> Pos2, LinecheckMode Mode, int GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable )</h4>
 <p>returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed </p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>LinecheckModes:
+<details class="- note"><summary>Notes</summary><p>LinecheckModes:
 0 : makes the line check collide with anything that impedes ground movement
 1 : is a cheaper version of 0, but is not as reliable
 2 : is used for explosions, it only collides with walls and indestructible blocks
 3 : is a line check that only collides with obstacles that can block projectiles</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="damagegrid">DamageGrid ()<a class="headerlink" href="#damagegrid" title="Permanent link">⚓︎</a></h3>
@@ -5002,8 +5012,7 @@
 <h3 aria-label="Functions" id="getbackdroptype">GetBackdropType ()<a class="headerlink" href="#getbackdroptype" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">Backdrop::Backdrop GetBackdropType ( )</h4>
 <p>Returns the BackdropType (Background) of the current room.</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>BackdropTypes</p>
+<details class="- note"><summary>Notes</summary><p>BackdropTypes</p>
 <p>ID
 Backdrop</p>
 <p>ID
@@ -5064,6 +5073,7 @@ Blue Secret</p>
 Sheol</p>
 <p>28
 Ultra Greed Shop</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getbossid">GetBossID ()<a class="headerlink" href="#getbossid" title="Permanent link">⚓︎</a></h3>
@@ -5353,8 +5363,8 @@ Ultra Greed Shop</p>
 <h3 aria-label="Functions" id="screenwrapposition">ScreenWrapPosition ()<a class="headerlink" href="#screenwrapposition" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable"><a href="../Vector">Vector</a> ScreenWrapPosition ( <a href="../Vector">Vector</a> Pos, float Margin )</h4>
 <p>Returns Pos, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. </p>
+<details class="- note"><summary>Notes</summary><p>This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. </p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="setambushdone">SetAmbushDone ()<a class="headerlink" href="#setambushdone" title="Permanent link">⚓︎</a></h3>
@@ -5381,11 +5391,11 @@ Ultra Greed Shop</p>
 <h3 aria-label="Functions" id="setfloorcolor">SetFloorColor ()<a class="headerlink" href="#setfloorcolor" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void SetFloorColor ( <a href="../Color">Color</a> FloorColor )</h4>
 <p>Allows you to apply a color modifier to the floor texture of the current room.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code changes the floorcolor to red.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetRoom</span><span class="p">()</span><span class="o">:</span><span class="n">SetFloorColor</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<details class="- example"><summary>Example Code</summary><p>This code changes the floorcolor to red.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">():</span><span class="n">GetRoom</span><span class="p">():</span><span class="n">SetFloorColor</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="setgridpath">SetGridPath ()<a class="headerlink" href="#setgridpath" title="Permanent link">⚓︎</a></h3>
@@ -5411,11 +5421,11 @@ Ultra Greed Shop</p>
 <h3 aria-label="Functions" id="setwallcolor">SetWallColor ()<a class="headerlink" href="#setwallcolor" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void SetWallColor ( <a href="../Color">Color</a> WallColor )</h4>
 <p>Allows you to apply a color modifier to the wall texture of the current room.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code changes the wallcolor to red.
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetRoom</span><span class="p">()</span><span class="o">:</span><span class="n">SetWallColor</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<details class="- example"><summary>Example Code</summary><p>This code changes the wallcolor to red.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">():</span><span class="n">GetRoom</span><span class="p">():</span><span class="n">SetWallColor</span><span class="p">(</span><span class="n">Color</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
 </code></pre></div>
 </td></tr></table></p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="shopreshuffle">ShopReshuffle ()<a class="headerlink" href="#shopreshuffle" title="Permanent link">⚓︎</a></h3>
@@ -5473,9 +5483,9 @@ Ultra Greed Shop</p>
 <h3 aria-label="Functions" id="update">Update ()<a class="headerlink" href="#update" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void Update ( )</h4>
 <p>Updates the current room.</p>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>Calling this function is NOT needed to apply changes!
+<details class="- note"><summary>Notes</summary><p>Calling this function is NOT needed to apply changes!
 This function is pretty useless </p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="worldtoscreenposition">WorldToScreenPosition ()<a class="headerlink" href="#worldtoscreenposition" title="Permanent link">⚓︎</a></h3>

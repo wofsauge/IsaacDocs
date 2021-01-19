@@ -20,6 +20,10 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.3b61ea93.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
     
     
     
@@ -41,7 +45,13 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -4076,20 +4086,20 @@
 <p>Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
 1 second equals 30 frames.
 This function therefore works drastically different than <a href="namespace_isaac.html#a880a22350f53acea378bf7c721bd5bd5"><code class="highlight"><span class="n">Isaac</span><span class="p">.</span><span class="n">GetFrameCount</span><span class="p">()</span></code></a></p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p class="wrongParsing">This code returns hours, minutes, seconds, and milliseconds of the game running actively:
+<details class="- example"><summary>Example Code</summary><p>This code returns hours, minutes, seconds, and milliseconds of the game running actively:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">curTime</span> <span class="o">=</span> <span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetFrameCount</span><span class="p">()</span>
-<span class="n">local</span> <span class="n">msecs</span><span class="o">=</span> <span class="n">curTime</span><span class="o">%</span><span class="mi">30</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">--</span> <span class="n">turns</span> <span class="n">the</span> <span class="n">millisecond</span> <span class="n">value</span> <span class="n">range</span> <span class="n">from</span> <span class="p">[</span><span class="mi">0</span> <span class="n">to</span> <span class="mi">30</span><span class="p">]</span> <span class="n">to</span> <span class="p">[</span><span class="mi">0</span> <span class="n">to</span> <span class="mi">100</span><span class="p">]</span>
-<span class="n">local</span> <span class="n">secs</span><span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">floor</span><span class="p">(</span><span class="n">curTime</span><span class="o">/</span><span class="mi">30</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span>
-<span class="n">local</span> <span class="n">mins</span><span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">floor</span><span class="p">(</span><span class="n">curTime</span><span class="o">/</span><span class="mi">30</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span>
-<span class="n">local</span> <span class="n">hours</span><span class="o">=</span> <span class="n">math</span><span class="p">.</span><span class="n">floor</span><span class="p">(</span><span class="n">curTime</span><span class="o">/</span><span class="mi">30</span><span class="o">/</span><span class="mi">60</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span>
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">curTime</span> <span class="o">=</span> <span class="n">Game</span><span class="p">():</span><span class="n">GetFrameCount</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">msecs</span><span class="o">=</span> <span class="n">curTime</span><span class="o">%</span><span class="mi">30</span> <span class="o">*</span> <span class="p">(</span><span class="mi">10</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="c1">-- turns the millisecond value range from [0 to 30] to [0 to 100]</span>
+<span class="kd">local</span> <span class="n">secs</span><span class="o">=</span> <span class="nb">math.floor</span><span class="p">(</span><span class="n">curTime</span><span class="o">/</span><span class="mi">30</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span>
+<span class="kd">local</span> <span class="n">mins</span><span class="o">=</span> <span class="nb">math.floor</span><span class="p">(</span><span class="n">curTime</span><span class="o">/</span><span class="mi">30</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span>
+<span class="kd">local</span> <span class="n">hours</span><span class="o">=</span> <span class="nb">math.floor</span><span class="p">(</span><span class="n">curTime</span><span class="o">/</span><span class="mi">30</span><span class="o">/</span><span class="mi">60</span><span class="o">/</span><span class="mi">60</span><span class="p">)</span><span class="o">%</span><span class="mi">60</span>
 </code></pre></div>
-</td></tr></table>
- WRONG PARSING </p>
+</td></tr></table></p>
+</details>
+<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getgreedbosswavenum">GetGreedBossWaveNum ()<a class="headerlink" href="#getgreedbosswavenum" title="Permanent link">⚓︎</a></h3>
@@ -4114,8 +4124,8 @@ This function therefore works drastically different than <a href="namespace_isaa
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="levelstage"><a href="../enums/LevelStage">LevelStage</a> ()<a class="headerlink" href="#levelstage" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void <a href="../enums/LevelStage">LevelStage</a> ( UserData) GetLastDevilRoomStage ( )</h4>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>Since it returns UserData, this function is unusable and therefore broken.</p>
+<details class="- note"><summary>Notes</summary><p>Since it returns UserData, this function is unusable and therefore broken.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="getlastlevelwithdamage">GetLastLevelWithDamage ()<a class="headerlink" href="#getlastlevelwithdamage" title="Permanent link">⚓︎</a></h3>
@@ -4254,8 +4264,7 @@ This function therefore works drastically different than <a href="namespace_isaa
 <h3 aria-label="Functions" id="showhallucination">ShowHallucination ()<a class="headerlink" href="#showhallucination" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void ShowHallucination ( int FrameCount, Backdrop::Backdrop HallucinationBackdrop )</h4>
 <p>Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p>This code emulated the effect of this function by hijacking the Delirious item effect
+<details class="- example"><summary>Example Code</summary><p>This code emulated the effect of this function by hijacking the Delirious item effect
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
  3
@@ -4272,27 +4281,28 @@ This function therefore works drastically different than <a href="namespace_isaa
 14
 15
 16
-17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">local</span> <span class="n">usagetime</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="o">--</span> <span class="n">stores</span> <span class="n">the</span> <span class="n">last</span> <span class="n">time</span> <span class="n">the</span> <span class="n">effect</span> <span class="n">was</span> <span class="n">called</span><span class="p">.</span>
+17</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">usagetime</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span> <span class="c1">-- stores the last time the effect was called.</span>
 
-<span class="o">--</span> <span class="n">call</span> <span class="k">this</span> <span class="n">function</span> <span class="n">to</span> <span class="n">play</span> <span class="n">the</span> <span class="n">Hallucination</span> <span class="n">effect</span>
-<span class="n">function</span> <span class="n">playHallucination</span><span class="p">()</span>
-<span class="n">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="c1">-- call this function to play the Hallucination effect</span>
+<span class="kr">function</span> <span class="nf">playHallucination</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">usagetime</span> <span class="o">=</span> <span class="n">Game</span><span class="p">().</span><span class="n">TimeCounter</span>
-<span class="nl">player</span><span class="p">:</span><span class="n">UseActiveItem</span><span class="p">(</span><span class="mi">510</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="nb">false</span><span class="p">)</span> <span class="o">--</span> <span class="n">use</span> <span class="n">the</span> <span class="n">delirious</span> <span class="n">item</span> <span class="n">without</span> <span class="n">applying</span> <span class="n">the</span> <span class="n">costume</span>
-<span class="nl">player</span><span class="p">:</span><span class="n">GetEffects</span><span class="p">()</span><span class="o">:</span><span class="n">RemoveCollectibleEffect</span><span class="p">(</span><span class="mi">510</span><span class="p">)</span> <span class="o">--</span> <span class="n">remove</span> <span class="n">any</span> <span class="n">unwanted</span> <span class="n">side</span> <span class="n">effects</span> <span class="n">of</span> <span class="n">the</span> <span class="n">item</span> <span class="n">usage</span>
-<span class="n">end</span>
+<span class="n">player</span><span class="p">:</span><span class="n">UseActiveItem</span><span class="p">(</span><span class="mi">510</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span> <span class="c1">-- use the delirious item without applying the costume</span>
+<span class="n">player</span><span class="p">:</span><span class="n">GetEffects</span><span class="p">():</span><span class="n">RemoveCollectibleEffect</span><span class="p">(</span><span class="mi">510</span><span class="p">)</span> <span class="c1">-- remove any unwanted side effects of the item usage</span>
+<span class="kr">end</span>
 
-<span class="o">--</span> <span class="n">Removes</span> <span class="n">all</span> <span class="n">spawned</span> <span class="n">NPC</span> <span class="n">entities</span> <span class="n">when</span> <span class="n">activating</span> <span class="n">the</span> <span class="n">function</span>
-<span class="n">function</span> <span class="nl">mod</span><span class="p">:</span><span class="n">onFriendlyInit</span><span class="p">(</span><span class="n">npc</span><span class="p">)</span> 
-    <span class="k">if</span> <span class="n">Game</span><span class="p">().</span><span class="n">TimeCounter</span><span class="o">-</span><span class="n">usagetime</span> <span class="o">==</span> <span class="mi">0</span> <span class="n">then</span> <span class="o">--</span> <span class="n">only</span> <span class="n">remove</span> <span class="n">enemies</span> <span class="n">that</span> <span class="n">spawned</span> <span class="n">when</span> <span class="n">the</span> <span class="n">effect</span> <span class="n">was</span> <span class="n">called</span><span class="o">!</span>
-        <span class="nl">npc</span><span class="p">:</span><span class="n">Remove</span><span class="p">()</span>
-    <span class="n">end</span>
-<span class="n">end</span>
-<span class="nl">mod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_POST_NPC_INIT</span><span class="p">,</span> <span class="n">mod</span><span class="p">.</span><span class="n">onFriendlyInit</span><span class="p">)</span>
+<span class="c1">-- Removes all spawned NPC entities when activating the function</span>
+<span class="kr">function</span> <span class="nc">mod</span><span class="p">:</span><span class="nf">onFriendlyInit</span><span class="p">(</span><span class="n">npc</span><span class="p">)</span> 
+    <span class="kr">if</span> <span class="n">Game</span><span class="p">().</span><span class="n">TimeCounter</span><span class="o">-</span><span class="n">usagetime</span> <span class="o">==</span> <span class="mi">0</span> <span class="kr">then</span> <span class="c1">-- only remove enemies that spawned when the effect was called!</span>
+        <span class="n">npc</span><span class="p">:</span><span class="n">Remove</span><span class="p">()</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+<span class="n">mod</span><span class="p">:</span><span class="n">AddCallback</span><span class="p">(</span><span class="n">ModCallbacks</span><span class="p">.</span><span class="n">MC_POST_NPC_INIT</span><span class="p">,</span> <span class="n">mod</span><span class="p">.</span><span class="n">onFriendlyInit</span><span class="p">)</span>
 </code></pre></div>
 </td></tr></table></p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>This function does not work and will crash your game on use!</p>
+</details>
+<details class="bug" open="open"><summary>Bugs</summary><p>This function does not work and will crash your game on use!</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="showrule">ShowRule ()<a class="headerlink" href="#showrule" title="Permanent link">⚓︎</a></h3>
@@ -4302,8 +4312,7 @@ This function therefore works drastically different than <a href="namespace_isaa
 <h3 aria-label="Functions" id="spawn"><a href="../RoomConfig_Spawn">Spawn</a> ()<a class="headerlink" href="#spawn" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable"><a href="../Entity">Entity</a> <a href="../RoomConfig_Spawn">Spawn</a> ( <a href="../enums/EntityType">EntityType</a> Type, int Variant, <a href="../Vector">Vector</a> Position, <a href="../Vector">Vector</a> Velocity, <a href="../Entity">Entity</a> Spawner, int SubType, int Seed )</h4>
 <p>The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.</p>
-<h5 class="subHeader example_code"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"/></svg></span> Example Code</h5>
-<p class="wrongParsing">This code spawns a Leech with specific seed.
+<details class="- example"><summary>Example Code</summary><p>This code spawns a Leech with specific seed.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -4312,18 +4321,19 @@ This function therefore works drastically different than <a href="namespace_isaa
 6
 7
 8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">Spawn</span><span class="p">(</span>
- <span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_LEECH</span><span class="p">,</span> <span class="o">--</span> <span class="n">Type</span>
- <span class="mi">0</span><span class="p">,</span> <span class="o">--</span> <span class="n">Variant</span>
- <span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetRoom</span><span class="p">()</span><span class="o">:</span><span class="n">GetCenterPos</span><span class="p">(),</span> <span class="o">--</span> <span class="n">Position</span>
- <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="o">--</span> <span class="n">Velocity</span>
- <span class="n">nil</span><span class="p">,</span> <span class="o">--</span> <span class="n">Parent</span>
- <span class="mi">0</span><span class="p">,</span> <span class="o">--</span> <span class="n">SubType</span>
- <span class="n">Game</span><span class="p">()</span><span class="o">:</span><span class="n">GetRoom</span><span class="p">()</span><span class="o">:</span><span class="n">GetSpawnSeed</span><span class="p">()</span> <span class="o">--</span> <span class="n">Seed</span> <span class="p">(</span><span class="n">the</span> <span class="s">&quot;GetSpawnSeed()&quot;</span> <span class="n">function</span> <span class="n">gets</span> <span class="n">a</span> <span class="n">reproducible</span> <span class="n">seed</span> <span class="n">based</span> <span class="n">on</span> <span class="n">the</span> <span class="n">room</span><span class="p">,</span> <span class="n">e</span><span class="p">.</span><span class="n">g</span><span class="p">.</span> <span class="s">&quot;2496979501&quot;</span><span class="p">)</span>
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">Game</span><span class="p">():</span><span class="n">Spawn</span><span class="p">(</span>
+  <span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_LEECH</span><span class="p">,</span> <span class="c1">-- Type</span>
+  <span class="mi">0</span><span class="p">,</span> <span class="c1">-- Variant</span>
+  <span class="n">Game</span><span class="p">():</span><span class="n">GetRoom</span><span class="p">():</span><span class="n">GetCenterPos</span><span class="p">(),</span> <span class="c1">-- Position</span>
+  <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="c1">-- Velocity</span>
+  <span class="kc">nil</span><span class="p">,</span> <span class="c1">-- Parent</span>
+  <span class="mi">0</span><span class="p">,</span> <span class="c1">-- SubType</span>
+  <span class="n">Game</span><span class="p">():</span><span class="n">GetRoom</span><span class="p">():</span><span class="n">GetSpawnSeed</span><span class="p">()</span> <span class="c1">-- Seed (the &quot;GetSpawnSeed()&quot; function gets a reproducible seed based on the room, e.g. &quot;2496979501&quot;)</span>
 <span class="p">)</span>
 </code></pre></div>
-</td></tr></table>
- WRONG PARSING </p>
+</td></tr></table></p>
+</details>
+<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="spawnentitydesc">SpawnEntityDesc ()<a class="headerlink" href="#spawnentitydesc" title="Permanent link">⚓︎</a></h3>
@@ -4336,8 +4346,7 @@ This function therefore works drastically different than <a href="namespace_isaa
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="startroomtransition">StartRoomTransition ()<a class="headerlink" href="#startroomtransition" title="Permanent link">⚓︎</a></h3>
 <h4 aria-label="Functions" class="copyable">void StartRoomTransition ( int RoomIndex, <a href="../enums/Direction">Direction</a> Direction, RoomTransition::Animation Animation )</h4>
-<h5 class="subHeader notes"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg></span> Notes</h5>
-<p>Available Animation types (Discovered by "ilise rose" (@yatboim)):</p>
+<details class="- note"><summary>Notes</summary><p>Available Animation types (Discovered by "ilise rose" (@yatboim)):</p>
 <p>0: (Default) Standard transition, sweeps the room in from a direction
 1: (Fade) Fade to black transition, like its used for the "goto" - console command
 2: (Stage) Pixel out transition, like used for crawlspaces and the trapdoor at the end of floors
@@ -4351,8 +4360,9 @@ This function therefore works drastically different than <a href="namespace_isaa
 12: (Glowing Hourglass) Same as standard transition
 13: (D7) Same as standard transition
 14: (Missing Poster) Same as standard transition</p>
-<h5 class="subHeader bugs"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M511.988 288.9c-.478 17.43-15.217 31.1-32.653 31.1H424v16c0 21.864-4.882 42.584-13.6 61.145l60.228 60.228c12.496 12.497 12.496 32.758 0 45.255-12.498 12.497-32.759 12.496-45.256 0l-54.736-54.736C345.886 467.965 314.351 480 280 480V236c0-6.627-5.373-12-12-12h-24c-6.627 0-12 5.373-12 12v244c-34.351 0-65.886-12.035-90.636-32.108l-54.736 54.736c-12.498 12.497-32.759 12.496-45.256 0-12.496-12.497-12.496-32.758 0-45.255l60.228-60.228C92.882 378.584 88 357.864 88 336v-16H32.666C15.23 320 .491 306.33.013 288.9-.484 270.816 14.028 256 32 256h56v-58.745l-46.628-46.628c-12.496-12.497-12.496-32.758 0-45.255 12.498-12.497 32.758-12.497 45.256 0L141.255 160h229.489l54.627-54.627c12.498-12.497 32.758-12.497 45.256 0 12.496 12.497 12.496 32.758 0 45.255L424 197.255V256h56c17.972 0 32.484 14.816 31.988 32.9zM257 0c-61.856 0-112 50.144-112 112h224C369 50.144 318.856 0 257 0z"/></svg></span> Bugs</h5>
-<p>The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.</p>
+</details>
+<details class="bug" open="open"><summary>Bugs</summary><p>The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.</p>
+</details>
 <hr />
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h3 aria-label="Functions" id="startstagetransition">StartStageTransition ()<a class="headerlink" href="#startstagetransition" title="Permanent link">⚓︎</a></h3>

@@ -39,15 +39,17 @@ ___
 ### GetBossColorIdx () {: aria-label='Functions' }
 #### int GetBossColorIdx ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-This will return the boss color idx reduced by 1. To get the actual color as set in bosscolors.xml, add +1 to the result.
+
+???- note "Notes"
+    This will return the boss color idx reduced by 1. To get the actual color as set in bosscolors.xml, add +1 to the result.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetChampionColorIdx () {: aria-label='Functions' }
 #### int GetChampionColorIdx ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-A list of Champion colors can be found here : ChampionColorIdx 
+
+???- note "Notes"
+    A list of Champion colors can be found here : ChampionColorIdx 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetPlayerTarget () {: aria-label='Functions' }
@@ -73,8 +75,9 @@ ___
 ### MakeChampion () {: aria-label='Functions' }
 #### void MakeChampion ( int Seed ) {: .copyable aria-label='Functions' }
 Forces a non champion to become a champion, resets hp to max hp. 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Hard to use because there are millions of possible seeds to input here.Use Morph() to change the champion Color instead!
+
+???- note "Notes"
+    Hard to use because there are millions of possible seeds to input here.Use Morph() to change the champion Color instead!
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### MakeSplat () {: aria-label='Functions' }
@@ -86,13 +89,14 @@ ___
 #### boolean Morph ( [EntityType](../enums/EntityType) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
 Morph the current entity into another one. 
-<a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use `:::cpp -1` to turn it into a regular entity.
+<a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
 A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code turns an entity into a gaper.
-```cpp 
-entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)
-```
+
+???- example "Example Code"
+    This code turns an entity into a gaper.
+    ```lua 
+    entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 

@@ -5,13 +5,14 @@
 #### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_game.html">Game</a> object.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage:
-```cpp 
-Game():IsPaused()
---returns true if the game is paused
 
-```
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    Game():IsPaused()
+    --returns true if the game is paused
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -20,12 +21,13 @@ ___
 #### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage:
-```cpp 
-MusicManager():Disable()
 
-```
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    MusicManager():Disable()
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -44,34 +46,36 @@ ___
 #### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage:
-```cpp 
-SFXManager():Stop(SoundEffect.SOUND_1UP)
 
-```
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    SFXManager():Stop(SoundEffect.SOUND_1UP)
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetPtrHash () {: aria-label='Functions' }
 #### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
-Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::cpp Entity`, `:::cpp Room`, `:::cpp RNG`, `:::cpp Sprite`, `:::cpp Game` etc.
+Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
 It can be used to easily compare two entities, making equality checks very easy.
 **Example:**
-If you spawn a certain entity, save it in a variable and then compare it to the `:::cpp entity` parameter in `:::cpp MC_ENTITY_TAKE_DMG`, this comparison will never be true even if both variables refer to the exact same entity in the game. `:::cpp GetPtrHash()` turns pointer into a fixed number, which makes comparisons easier.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example on check if two entities saved in different variables are the same.
-```cpp 
--- don't do it like this
-if entity1 == entity2 then
--- this will always be false, because two different references on a pointer are not equal
-end
--- use GetPtrHash() to compare them
-if GetPtrHash(entity1) == GetPtrHash(entity2) then
--- this will be true, when the pointer of both variables point to the same object.
-end
+If you spawn a certain entity, save it in a variable and then compare it to the `:::lua entity` parameter in `:::lua MC_ENTITY_TAKE_DMG`, this comparison will never be true even if both variables refer to the exact same entity in the game. `:::lua GetPtrHash()` turns pointer into a fixed number, which makes comparisons easier.
 
-```
+???- example "Example Code"
+    Example on check if two entities saved in different variables are the same.
+    ```lua 
+    -- don't do it like this
+    if entity1 == entity2 then
+    -- this will always be false, because two different references on a pointer are not equal
+    end
+    -- use GetPtrHash() to compare them
+    if GetPtrHash(entity1) == GetPtrHash(entity2) then
+    -- this will be true, when the pointer of both variables point to the same object.
+    end
+    
+    ```
 
 ___ 

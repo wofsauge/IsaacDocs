@@ -175,8 +175,6 @@ theme:
     features:
         - navigation.tabs
         - navigation.instant
-    palette:
-        #scheme: slate
     icon:
         repo: fontawesome/brands/github
 markdown_extensions:
@@ -187,6 +185,9 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg

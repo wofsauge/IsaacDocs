@@ -10,8 +10,9 @@ ___
 ### Spawns {: aria-label='Variables' }
 #### userdata Spawns  {: .copyable aria-label='Variables' }
 
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-Uses userdata, which is a datatype that cant be read/altered via LUA.
+
+???+ bug "Bugs"
+    Uses userdata, which is a datatype that cant be read/altered via LUA.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Type {: aria-label='Variables' }

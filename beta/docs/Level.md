@@ -84,8 +84,9 @@ ___
 ### GetCurrentRoomIndex () {: aria-label='Functions' }
 #### int GetCurrentRoomIndex ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-This will always return the roomindex on the levelgrid, on which you entered the current room from. (see black entries in graphic below) 
+
+???- note "Notes"
+    This will always return the roomindex on the levelgrid, on which you entered the current room from. (see black entries in graphic below) 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetCurseName () {: aria-label='Functions' }
@@ -282,27 +283,29 @@ ___
 ### UpdateVisibility () {: aria-label='Functions' }
 #### void UpdateVisibility ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call UpdateVisibility() afterwards to apply any changes.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code 
-```cpp 
--- Local variables
-local game = Game()
-local level = game:GetLevel()
 
--- Give the player the Compass effect, which will display all of the floor's special rooms on the mini-map
-level:ApplyCompassEffect()
+???- note "Notes"
+    Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call  UpdateVisibility() afterwards to apply any changes.
 
--- Remove the icon for the Treasure Room specifically
-local treasureIndex = level:QueryRoomTypeIndex(RoomType.ROOM_TREASURE, false, RNG())
-local treasureRoom = level:GetRoomByIdx(treasureIndex)
-treasureRoom.DisplayFlags = 0
-
--- Since the mini-map is cached, changing display flags won't update it unless we explicitly call this function
-level:UpdateVisibility()
-
-```
+???- example "Example Code"
+    This code 
+    ```lua 
+    -- Local variables
+    local game = Game()
+    local level = game:GetLevel()
+    
+    -- Give the player the Compass effect, which will display all of the floor's special rooms on the mini-map
+    level:ApplyCompassEffect()
+    
+    -- Remove the icon for the Treasure Room specifically
+    local treasureIndex = level:QueryRoomTypeIndex(RoomType.ROOM_TREASURE, false, RNG())
+    local treasureRoom = level:GetRoomByIdx(treasureIndex)
+    treasureRoom.DisplayFlags = 0
+    
+    -- Since the mini-map is cached, changing display flags won't update it unless we explicitly call this function
+    level:UpdateVisibility()
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -320,9 +323,10 @@ ___
 ### EnterDoor {: aria-label='Variables' }
 #### int EnterDoor  {: .copyable aria-label='Variables' }
 
-  This value defines on which doorslot you entered the room.
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-Changing this value has no impact on anything. the EnterDoor value is always determined by the LeaveDoor Value and the game itself.
+    This value defines on which doorslot you entered the room.
+
+???+ bug "Bugs"
+    Changing this value has no impact on anything. the EnterDoor value is always determined by the LeaveDoor Value and the game itself.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GreedModeWave {: aria-label='Variables' }
@@ -333,7 +337,8 @@ ___
 ### LeaveDoor {: aria-label='Variables' }
 #### int LeaveDoor  {: .copyable aria-label='Variables' }
 
-  This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-if level.LeaveDoor is set to anything other than -1, the function will transition based on the room you are currently in.
+    This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
+
+???- note "Notes"
+    if level.LeaveDoor is set to anything other than -1, the function will transition based on the room you are currently in.
 ___ 

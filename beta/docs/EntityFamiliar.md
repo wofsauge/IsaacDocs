@@ -57,7 +57,7 @@ ___
 ### GetOrbitPosition () {: aria-label='Functions' }
 #### [Vector](../Vector) GetOrbitPosition ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
-Returns the position of an orbiting familiar relative to the player's position. Returns `:::cpp Vector(0,0) if its a normal familiar.`
+Returns the position of an orbiting familiar relative to the player's position. Returns `:::lua Vector(0,0) if its a normal familiar.`
 The "pos" argument is used as an offset.
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -114,8 +114,9 @@ ___
 ### Shoot () {: aria-label='Functions' }
 #### void Shoot ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This function does not seem to work.
+
+???+ bug "Bugs"
+    This function does not seem to work.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ## Variables
@@ -158,17 +159,18 @@ ___
 #### float OrbitAngleOffset  {: .copyable aria-label='Variables' }
 
 Can be used to override the angular position of the familiar on its orbit based on the initial starting position of the orbit.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code will make all of your orbitals move as a tight wall around you.
-```cpp 
-for i,v in ipairs(Isaac.GetRoomEntities()) do 
-if v.Type==3 then 
-v:ToFamiliar().OrbitAngleOffset = 0.25*i 
-end 
-end
 
-```
-Result: <a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"/></a>
+???- example "Example Code"
+    This code will make all of your orbitals move as a tight wall around you.
+    ```lua 
+    for i,v in ipairs(Isaac.GetRoomEntities()) do 
+    if v.Type==3 then 
+    v:ToFamiliar().OrbitAngleOffset = 0.25*i 
+    end 
+    end
+    
+    ```
+    Result: <a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"/></a>
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -176,7 +178,7 @@ ___
 ### OrbitDistance {: aria-label='Variables' }
 #### [Vector](../Vector) OrbitDistance  {: .copyable aria-label='Variables' }
 
-Defines the orbit of the familiar, if its an orbital. The Vector is interpreted as the dimensions of the circle/oval orbit. Example: `:::cpp Vector(110,90)` is the orbital of "Forever alone".
+Defines the orbit of the familiar, if its an orbital. The Vector is interpreted as the dimensions of the circle/oval orbit. Example: `:::lua Vector(110,90)` is the orbital of "Forever alone".
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### Player {: aria-label='Variables' }

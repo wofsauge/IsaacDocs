@@ -5,14 +5,15 @@
 #### void [Font](../Font) ( void ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Font" class.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage.
-```cpp 
-local f = Font() -- init font object
-f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
-```
+???- example "Example Code"
+    Example usage.
+    ```lua 
+    local f = Font() -- init font object
+    f:Load("font/terminus.fnt") -- load a font into the font object
+    f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    
+    ```
 
 ___ 
 ## Functions
@@ -22,14 +23,15 @@ ___
 Draws a string of text to the screen
 Converts UTF8 to UTF16, then draws the string. 
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage.
-```cpp 
-local f = Font() -- init font object
-f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
-```
+???- example "Example Code"
+    Example usage.
+    ```lua 
+    local f = Font() -- init font object
+    f:Load("font/terminus.fnt") -- load a font into the font object
+    f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -37,28 +39,30 @@ ___
 #### void DrawStringScaled ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a scaled string of text on the screen.
 Converts UTF8 to UTF16, then draws the string. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage.
-```cpp 
-local f = Font() -- init font object
-f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawStringScaled("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
-```
+???- example "Example Code"
+    Example usage.
+    ```lua 
+    local f = Font() -- init font object
+    f:Load("font/terminus.fnt") -- load a font into the font object
+    f:DrawStringScaled("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### DrawStringScaledUTF8 () {: aria-label='Functions' }
 #### void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a scaled string of Unicode text on the screen.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage.
-```cpp 
-local f = Font() -- init font object
-f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawStringScaledUTF8("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
-```
+???- example "Example Code"
+    Example usage.
+    ```lua 
+    local f = Font() -- init font object
+    f:Load("font/terminus.fnt") -- load a font into the font object
+    f:DrawStringScaledUTF8("Hello World!",60,50,0.5,0.5,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -66,14 +70,15 @@ ___
 #### void DrawStringUTF8 ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a string of Unicode text to the screen
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage.
-```cpp 
-local f = Font() -- init font object
-f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawStringUTF8("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
-```
+???- example "Example Code"
+    Example usage.
+    ```lua 
+    local f = Font() -- init font object
+    f:Load("font/terminus.fnt") -- load a font into the font object
+    f:DrawStringUTF8("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }
@@ -110,14 +115,15 @@ ___
 ### Load () {: aria-label='Functions' }
 #### boolean Load ( string FilePath ) {: .copyable aria-label='Functions' }
 Loads a font. 
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-Example usage.
-```cpp 
-local f = Font() -- init font object
-f:Load("font/terminus.fnt") -- load a font into the font object
-f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
-```
+???- example "Example Code"
+    Example usage.
+    ```lua 
+    local f = Font() -- init font object
+    f:Load("font/terminus.fnt") -- load a font into the font object
+    f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    
+    ```
 
 ___ 
 [ ](#){: .abp .tooltip .badge }

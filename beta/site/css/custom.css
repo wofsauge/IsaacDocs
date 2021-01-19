@@ -82,13 +82,14 @@ h4[aria-label$='Constructors'] {
     background-color: var(--constructor-color-light);
 }
 
-.md-content p {
-    text-align: justify
-}
-
 .subHeader {
     border-bottom: 1px solid var(--md-default-fg-color--light);
     font-size: 1em !important;
+}
+
+.frequentlyUsed {
+    padding-bottom: 5pt;
+    border-bottom: 2pt solid var(--md-primary-fg-color);
 }
 
 
@@ -234,7 +235,23 @@ a.tooltip:hover:after {
 
 /**** WEBSITE FORMATTING ****/
 
+.md-content p {
+    /* Block-text for content texts */
+    text-align: justify
+}
+
+.md-typeset details {
+    /* Increase text size for Admonitions / info boxes */
+    font-size: .74rem;
+}
+
+details>summary {
+    /* Increase text size for Admonitions / info boxes */
+    font-size: .64rem;
+}
+
 .md-grid {
+    /* Strech content to full content size */
     max-width: initial;
 }
 
@@ -252,11 +269,6 @@ a.tooltip:hover:after {
 
 .md-main__inner {
     margin-top: 0.1rem;
-}
-
-.frequentlyUsed {
-    padding-bottom: 5pt;
-    border-bottom: 2pt solid var(--md-primary-fg-color);
 }
 
 .md-typeset table:not([class]) {

@@ -162,17 +162,18 @@ ___
 
 Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
 1 second equals 30 frames.
-This function therefore works drastically different than <a href="namespace_isaac.html#a880a22350f53acea378bf7c721bd5bd5">`:::cpp Isaac.GetFrameCount()`</a>
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code returns hours, minutes, seconds, and milliseconds of the game running actively:
-```cpp 
-local curTime = Game():GetFrameCount()
-local msecs= curTime%30 * (10/3) -- turns the millisecond value range from [0 to 30] to [0 to 100]
-local secs= math.floor(curTime/30)%60
-local mins= math.floor(curTime/30/60)%60
-local hours= math.floor(curTime/30/60/60)%60
+This function therefore works drastically different than <a href="namespace_isaac.html#a880a22350f53acea378bf7c721bd5bd5">`:::lua Isaac.GetFrameCount()`</a>
 
-```
+???- example "Example Code"
+    This code returns hours, minutes, seconds, and milliseconds of the game running actively:
+    ```lua 
+    local curTime = Game():GetFrameCount()
+    local msecs= curTime%30 * (10/3) -- turns the millisecond value range from [0 to 30] to [0 to 100]
+    local secs= math.floor(curTime/30)%60
+    local mins= math.floor(curTime/30/60)%60
+    local hours= math.floor(curTime/30/60/60)%60
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -205,8 +206,9 @@ ___
 ### [LevelStage](../enums/LevelStage) () {: aria-label='Functions' }
 #### void [LevelStage](../enums/LevelStage) ( UserData) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Since it returns UserData, this function is unusable and therefore broken.
+
+???- note "Notes"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GetLastLevelWithDamage () {: aria-label='Functions' }
@@ -378,31 +380,33 @@ ___
 ### ShowHallucination () {: aria-label='Functions' }
 #### void ShowHallucination ( int FrameCount, Backdrop::Backdrop HallucinationBackdrop ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code emulated the effect of this function by hijacking the Delirious item effect
-```cpp 
-local usagetime = -1 -- stores the last time the effect was called.
 
--- call this function to play the Hallucination effect
-function playHallucination()
-local player = Isaac.GetPlayer(0)
-usagetime = Game().TimeCounter
-player:UseActiveItem(510, false, false, false, false) -- use the delirious item without applying the costume
-player:GetEffects():RemoveCollectibleEffect(510) -- remove any unwanted side effects of the item usage
-end
+???- example "Example Code"
+    This code emulated the effect of this function by hijacking the Delirious item effect
+    ```lua 
+    local usagetime = -1 -- stores the last time the effect was called.
+    
+    -- call this function to play the Hallucination effect
+    function playHallucination()
+    local player = Isaac.GetPlayer(0)
+    usagetime = Game().TimeCounter
+    player:UseActiveItem(510, false, false, false, false) -- use the delirious item without applying the costume
+    player:GetEffects():RemoveCollectibleEffect(510) -- remove any unwanted side effects of the item usage
+    end
+    
+    -- Removes all spawned NPC entities when activating the function
+    function mod:onFriendlyInit(npc) 
+    	if Game().TimeCounter-usagetime == 0 then -- only remove enemies that spawned when the effect was called!
+    		npc:Remove()
+    	end
+    end
+    mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.onFriendlyInit)
+    
+    ```
 
--- Removes all spawned NPC entities when activating the function
-function mod:onFriendlyInit(npc) 
-	if Game().TimeCounter-usagetime == 0 then -- only remove enemies that spawned when the effect was called!
-		npc:Remove()
-	end
-end
-mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.onFriendlyInit)
 
-```
-
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-This function does not work and will crash your game on use!
+???+ bug "Bugs"
+    This function does not work and will crash your game on use!
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ShowRule () {: aria-label='Functions' }
@@ -414,20 +418,21 @@ ___
 #### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( [EntityType](../enums/EntityType) Type, int Variant, [Vector](../Vector) Position, [Vector](../Vector) Velocity, [Entity](../Entity) Spawner, int SubType, int Seed ) {: .copyable aria-label='Functions' }
 
 The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.
-##### :fontawesome-solid-code: Example Code {: .subHeader .example_code }
-This code spawns a Leech with specific seed.
-```cpp 
-Game():Spawn(
- EntityType.ENTITY_LEECH, -- Type
- 0, -- Variant
- Game():GetRoom():GetCenterPos(), -- Position
- Vector(0, 0), -- Velocity
- nil, -- Parent
- 0, -- SubType
- Game():GetRoom():GetSpawnSeed() -- Seed (the "GetSpawnSeed()" function gets a reproducible seed based on the room, e.g. "2496979501")
-)
 
-```
+???- example "Example Code"
+    This code spawns a Leech with specific seed.
+    ```lua 
+    Game():Spawn(
+      EntityType.ENTITY_LEECH, -- Type
+      0, -- Variant
+      Game():GetRoom():GetCenterPos(), -- Position
+      Vector(0, 0), -- Velocity
+      nil, -- Parent
+      0, -- SubType
+      Game():GetRoom():GetSpawnSeed() -- Seed (the "GetSpawnSeed()" function gets a reproducible seed based on the room, e.g. "2496979501")
+    )
+    
+    ```
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
@@ -445,24 +450,26 @@ ___
 ### StartRoomTransition () {: aria-label='Functions' }
 #### void StartRoomTransition ( int RoomIndex, [Direction](../enums/Direction) Direction, RoomTransition::Animation Animation ) {: .copyable aria-label='Functions' }
 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-Available Animation types (Discovered by "ilise rose" (@yatboim)):
 
-0: (Default) Standard transition, sweeps the room in from a direction
-1: (Fade) Fade to black transition, like its used for the "goto" - console command
-2: (Stage) Pixel out transition, like used for crawlspaces and the trapdoor at the end of floors
-3: (Teleport) teleport transition, isaac teleports out of the current room and into the next
-5: (Ankh) Same as standard transition
-6: (Dead Cat) Same as standard transition
-7: (1Up) Same as standard transition
-8: (Guppys Collar) Same as standard transition
-9: (Judas Shadow) Same as standard transition
-10: (Lazarus Rags) Same as standard transition
-12: (Glowing Hourglass) Same as standard transition
-13: (D7) Same as standard transition
-14: (Missing Poster) Same as standard transition
-##### :fontawesome-solid-bug: Bugs {: .subHeader .bugs }
-The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
+???- note "Notes"
+    Available Animation types (Discovered by "ilise rose" (@yatboim)):
+    
+    0: (Default) Standard transition, sweeps the room in from a direction
+    1: (Fade) Fade to black transition, like its used for the "goto" - console command
+    2: (Stage) Pixel out transition, like used for crawlspaces and the trapdoor at the end of floors
+    3: (Teleport) teleport transition, isaac teleports out of the current room and into the next
+    5: (Ankh) Same as standard transition
+    6: (Dead Cat) Same as standard transition
+    7: (1Up) Same as standard transition
+    8: (Guppys Collar) Same as standard transition
+    9: (Judas Shadow) Same as standard transition
+    10: (Lazarus Rags) Same as standard transition
+    12: (Glowing Hourglass) Same as standard transition
+    13: (D7) Same as standard transition
+    14: (Missing Poster) Same as standard transition
+
+???+ bug "Bugs"
+    The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### StartStageTransition () {: aria-label='Functions' }

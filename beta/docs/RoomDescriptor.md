@@ -47,7 +47,7 @@ ___
 
 Indicates what is visible on the minimap.
 **Display Flags (bitwise):**
-```:::cpp 1 &lt;&lt; -1 -- Invisible
+```:::lua 1 &lt;&lt; -1 -- Invisible
 1 &lt;&lt; 0 -- Visible
 1 &lt;&lt; 1 -- Room Shadow
 1 &lt;&lt; 2 -- Show Icon```
@@ -78,14 +78,15 @@ The flags are hard to interpret, but here are some examples:
 
 
 
-  From this my best guess is that bits 1 and 2 are special rendering (display hehe) flags that may have more meaning down below. The important bit for using them is minding that they're used differently mostly for special rooms. As far as I've seen, 001 is completely unused. 010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100
+    From this my best guess is that bits 1 and 2 are special rendering (display hehe) flags that may have more meaning down below. The important bit for using them is minding that they're used differently mostly for special rooms. As far as I've seen, 001 is completely unused. 010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### GridIndex {: aria-label='Variables' }
 #### int GridIndex  {: .copyable aria-label='Variables' }
 index in the level grid (always top left) 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
+
+???- note "Notes"
+    This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### HasWater {: aria-label='Variables' }
@@ -131,8 +132,9 @@ ___
 ### SafeGridIndex {: aria-label='Variables' }
 #### int SafeGridIndex  {: .copyable aria-label='Variables' }
 index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!) 
-##### :fontawesome-solid-comment: Notes {: .subHeader .notes }
-This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below) 
+
+???- note "Notes"
+    This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below) 
 ___ 
 [ ](#){: .abp .tooltip .badge }
 ### ShopItemDiscountIdx {: aria-label='Variables' }
