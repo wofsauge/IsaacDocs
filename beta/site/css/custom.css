@@ -183,7 +183,7 @@ body.darkMode {
     --md-typeset-a-color: #ffc41e;
     --md-accent-fg-color: #ffc41e;
     /*var(--md-primary-fg-color--light);*/
-    --md-typeset-mark-color: hsla(218, 100%, 63%, 0.3);
+    --md-typeset-mark-color: #ffc41e;
     --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);
     --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 94%, 0.2);
     --md-typeset-kbd-border-color: hsla(var(--md-hue), 15%, 14%, 1);
@@ -230,6 +230,25 @@ a.tooltip:after {
 a.tooltip:hover:after {
     bottom: 125%;
     opacity: 1;
+}
+
+
+/**** Mark.js Highlights ****/
+
+.md-typeset mark {
+    color: black;
+}
+
+.clearSearchMarks {
+    float: right;
+    padding: 0 .8rem;
+    color: var(--md-default-fg-color--light);
+    font-size: .64rem;
+    line-height: 1.8rem;
+}
+
+.clearSearchMarks:hover {
+    cursor: pointer;
 }
 
 

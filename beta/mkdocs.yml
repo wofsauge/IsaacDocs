@@ -204,8 +204,9 @@ extra:
 extra_css: 
     - css/custom.css
 extra_javascript: 
-    - js/jquery.min.js
-    - js/customJS.js  
+    - https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+    - js/customJS.js
+    - js/jquery.mark.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
 copyright: Copyright &copy; 2021 Wofsauge
 repo_url: https://github.com/wofsauge/IsaacDocs

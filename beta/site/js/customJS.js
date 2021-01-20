@@ -1,7 +1,26 @@
 $(document).ready(function() {
+    loadDarkModeState();
     $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
-
+    //$(".md-search").append("<img onclick=\"toggleCollapse()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/images/darkMode.png\" title=\"Collapse content\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"Collapse Content\" />");
+    $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
 });
+
+function loadDarkModeState() {
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.getItem("darkMode") == 1) {
+            $("body").addClass("darkMode");
+        }
+    }
+}
+loadDarkModeState();
+
+function unmarkStuff() {
+    $content.unmark();
+}
+
+function toggleCollapse() {
+
+}
 
 function toggleDarkMode() {
     if (typeof(Storage) !== "undefined") {
@@ -49,12 +68,8 @@ function getRecentList() {
 }
 
 app.document$.subscribe(function() {
-    console.log("SUB");
+    loadDarkModeState();
     if (typeof(Storage) !== "undefined") {
-        if (localStorage.getItem("darkMode") == 1) {
-            $("body").addClass("darkMode");
-        }
-
         // handle recently visited
         var recentList = getRecentList();
 
@@ -142,4 +157,71 @@ app.document$.subscribe(function() {
     $(".copyButton").mouseleave(function() {
         $(this).find("span").first().text("Copy to clipboard");
     });
+    $("input[aria-label=\"Search\"]").change(function() {
+        var searchText = $(this).val();
+        $("li.md-search-result__item").find('a').each(function(e) {
+            var jumpTargetValue = $(this).attr('href').split("#");
+            var jumpTarget = "";
+            if (jumpTargetValue.length > 1) {
+                jumpTarget = "#" + jumpTargetValue[1];
+            }
+            var link = $(this).attr('href').split("?")[0].split("#")[0];
+            $(this).attr('href', link + "?q=" + searchText + jumpTarget);
+        });
+    });
+
+    mark();
 });
+
+
+// mark.js functionality
+var $results;
+var $content = $("article");
+var mark = function() {
+    // Read the url
+    var sPageURL = window.location.search;
+    if (sPageURL.indexOf("?") !== -1) {
+
+        // Generate an array with all referrer parameters
+        var qs = sPageURL.substr(sPageURL.indexOf('?') + 1);
+        var qsa = qs.split('&');
+
+        // Get search keywords
+        var keyword = "";
+        for (var i = 0; i < qsa.length; i++) {
+            var currentParam = qsa[i].split('=');
+            if (currentParam.length !== 2) {
+                continue;
+            }
+            if (currentParam[0] == "q") {
+                keyword = decodeURIComponent(currentParam[1].replace(/\+/g, "%20"));
+            }
+        }
+
+        if (keyword != "") {
+            // Mark the keyword inside the context
+            $content.unmark({
+                done: function() {
+                    $content.mark(keyword, {
+                        separateWordSearch: true,
+                        done: function() {
+                            $results = $content.find("mark");
+                            jumpToFirst();
+                        }
+                    });
+                }
+            });
+        }
+    }
+};
+
+function jumpToFirst() {
+    if ($results.length) {
+        var position,
+            $current = $results.eq(0);
+        if ($current.length) {
+            position = $current.offset().top - 75;
+            window.scrollTo(0, position);
+        }
+    }
+}
