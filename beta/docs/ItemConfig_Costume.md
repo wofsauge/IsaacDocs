@@ -1,5 +1,4 @@
 # Class "ItemConfig::Costume"
-## Functions
 ## Variables
 ### Anm2Path {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

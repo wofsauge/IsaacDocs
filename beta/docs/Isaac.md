@@ -69,8 +69,8 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### string ExecuteCommand ( string command ) {: .copyable aria-label='Functions' }
 
-This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands. WRONG PARSING 
-{: .wrongParsing }
+This function executes a debug console command. see the 
+[Debug Console Tutorial](../tutorials/DebugConsole) for informations on how to use commands.
 ___ 
 ### Explode () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -86,10 +86,9 @@ ___
 ### FindInRadius () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions ) {: .copyable aria-label='Functions' }
-Returns entities in range of Radius from Position filtered by Partitions mask (see <a href="group__enums.html#gaea2d06861d0d38120ea425aa76d2f398">EntityPartition enum</a>) (include all = 0xffffffff) 
+Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](../enums/EntityPartition)) (include all = 0xffffffff) 
 
-This function does not return the entities sorted by nearest first, but based on the order they were loaded. WRONG PARSING 
-{: .wrongParsing }
+This function does not return the entities sorted by nearest first, but based on the order they were loaded.
 ___ 
 ### GetCardIdByName () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -201,8 +200,7 @@ ___
 
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
-This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207">`:::lua Game():GetFrameCount()`</a> WRONG PARSING 
-{: .wrongParsing }
+This function therefore works drastically different than `:::lua Game():GetFrameCount()`[Link](../Game/#GetFrameCount)
 ___ 
 ### GetFreeNearPosition () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -212,8 +210,7 @@ ___
 ### GetItemConfig () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Config](../ItemConfig_Config) GetItemConfig ( ) {: .copyable aria-label='Functions' }
-Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object. WRONG PARSING 
-{: .wrongParsing }
+Returns the [ItemConfig::Config](../ItemConfig_Config) object.
 ___ 
 ### GetItemIdByName () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -344,11 +341,10 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntity](../GridEntity) GridSpawn ( [GridEntity](../GridEntity) gridEntityType, int Variant, [Vector](../Vector) position, boolean forced ) {: .copyable aria-label='Functions' }
 
-Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given position (world coordinates).
+Spawn a [GridEntity](../GridEntity) at the given position (world coordinates).
 
 ???+ bug "Bugs"
-    forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING 
-{: .wrongParsing }
+    forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again.
 ___ 
 ### HasModData () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -476,7 +472,7 @@ ___
 #### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( int entityType, int entityVariant, int entitySubtype, [Vector](../Vector) position, [Vector](../Vector) velocity, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
-There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a> and <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.
+There are two spawn functions. [Isaac.Spawn()](../Isaac/#spawn) and [Game():Spawn()](../Game/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](../Game/#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../Isaac/#spawn).
 
 ???- example "Example Code"
     This code spawns a random collectible at in center of the current room.
@@ -484,8 +480,6 @@ There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af
     Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### WorldToRenderPosition () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

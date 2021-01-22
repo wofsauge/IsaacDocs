@@ -15,8 +15,7 @@ ___
 ### DamageGrid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean DamageGrid ( int Index, int Damage ) {: .copyable aria-label='Functions' }
-Damage Grid Entities currently this concerns <a class="el" href="class_grid_entity_poop.html">GridEntityPoop</a> and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc  WRONG PARSING 
-{: .wrongParsing }
+Damage Grid Entities currently this concerns [GridEntityPoop](../GridEntityPoop) and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc
 ___ 
 ### DestroyGrid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -242,29 +241,25 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
 
-Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this grid index. WRONG PARSING 
-{: .wrongParsing }
+Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity at this grid index.
 ___ 
 ### GetGridCollisionAtPos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollisionAtPos ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
-Returns the <a class="el" href="group__enums.html#ga4c0d9bdd063a76821a5ad3030f586e17">GridCollisionClass</a> of the grid entity at this position in the room. WRONG PARSING 
-{: .wrongParsing }
+Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity at this position in the room.
 ___ 
 ### GetGridEntity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntity](../GridEntity) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' }
 
-Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this grid index. WRONG PARSING 
-{: .wrongParsing }
+Returns the [GridEntity](../GridEntity) at this grid index.
 ___ 
 ### GetGridEntityFromPos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntity](../GridEntity) GetGridEntityFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
-Returns the <a class="el" href="class_grid_entity.html">GridEntity</a> at this position in the room. WRONG PARSING 
-{: .wrongParsing }
+Returns the [GridEntity](../GridEntity) at this position in the room.
 ___ 
 ### GetGridHeight () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -449,8 +444,7 @@ ___
 ### IsFirstVisit () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsFirstVisit ( ) {: .copyable aria-label='Functions' }
-Broken Watch <a class="el" href="class_room.html">Room</a> State - 0 = no watch effect, 1 = speed down, 2 = speed up.  WRONG PARSING 
-{: .wrongParsing }
+
 ___ 
 ### IsInitialized () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

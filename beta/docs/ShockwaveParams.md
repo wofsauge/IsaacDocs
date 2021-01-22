@@ -1,5 +1,4 @@
 # Class "ShockwaveParams"
-## Functions
 ## Variables
 ### Age {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

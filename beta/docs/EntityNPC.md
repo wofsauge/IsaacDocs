@@ -88,17 +88,14 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### boolean Morph ( [EntityType](../enums/EntityType) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
-Morph the current entity into another one. 
-<a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
-A list of Champion colors can be found here : <a href="https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions">ChampionColorIdx</a> 
+Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions) can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
+A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
 
 ???- example "Example Code"
     This code turns an entity into a gaper.
     ```lua 
     entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### PlaySound () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

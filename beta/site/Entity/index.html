@@ -4905,7 +4905,7 @@
 <h3 aria-label="Functions" id="addentityflags">AddEntityFlags ()<a class="headerlink" href="#addentityflags" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable">void AddEntityFlags ( int Flags )</h4>
-<p>Add <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.</p>
+<p>Add <a href="../enums/EntityFlag">EntityFlags</a> to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.</p>
 <details class="- example"><summary>Example Code</summary><p>This code adds slowing and confusion to the enetity.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -4917,7 +4917,6 @@
 </code></pre></div>
 </td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <h3 aria-label="Functions" id="addfear">AddFear ()<a class="headerlink" href="#addfear" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -4994,7 +4993,7 @@
 <h3 aria-label="Functions" id="clearentityflags">ClearEntityFlags ()<a class="headerlink" href="#clearentityflags" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable">void ClearEntityFlags ( int Flags )</h4>
-<p class="wrongParsing">Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a>  from the entity. WRONG PARSING </p>
+<p>Removes all <a href="../enums/EntityFlag">EntityFlags</a> from the entity.</p>
 <hr />
 <h3 aria-label="Functions" id="collideswithgrid">CollidesWithGrid ()<a class="headerlink" href="#collideswithgrid" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -5049,8 +5048,8 @@
 <h3 aria-label="Functions" id="getentityflags">GetEntityFlags ()<a class="headerlink" href="#getentityflags" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable">int GetEntityFlags ( )</h4>
-<p>Get the <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> of the entity. This will be a number which acts like a bitmask.</p>
-<details class="- example"><summary>Example Code</summary><p>This code prints something in the console, if the entity has a specific <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+<p>Get the <a href="../enums/EntityFlag">EntityFlags</a>of the entity. This will be a number which acts like a bitmask.</p>
+<details class="- example"><summary>Example Code</summary><p>This code prints something in the console, if the entity has a specific <a href="../enums/EntityFlag">EntityFlags</a>.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">entity</span><span class="p">:</span><span class="n">GetEntityFlags</span><span class="p">()</span> <span class="o">&amp;</span><span class="n">amp</span><span class="p">;</span> <span class="n">EntityFlag</span><span class="p">.</span><span class="n">FLAG_CONFUSION</span> <span class="o">==</span> <span class="n">EntityFlag</span><span class="p">.</span><span class="n">FLAG_CONFUSION</span> <span class="kr">then</span>
@@ -5059,7 +5058,6 @@
 </code></pre></div>
 </td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <h3 aria-label="Functions" id="getlastchild">GetLastChild ()<a class="headerlink" href="#getlastchild" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -5083,8 +5081,8 @@
 <h3 aria-label="Functions" id="hasentityflags">HasEntityFlags ()<a class="headerlink" href="#hasentityflags" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable">boolean HasEntityFlags ( int Flags )</h4>
-<p>Returns true, if the entity has all named <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> set.</p>
-<details class="- example"><summary>Example Code</summary><p>This code prints something in the console, if the entity has a specific <a class="el" href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+<p>Returns true, if the entity has all named <a href="../enums/EntityFlag">EntityFlags</a> set.</p>
+<details class="- example"><summary>Example Code</summary><p>This code prints something in the console, if the entity has a specific <a href="../enums/EntityFlag">EntityFlags</a>.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">entity</span><span class="p">:</span><span class="n">HasEntityFlags</span><span class="p">(</span><span class="n">EntityFlag</span><span class="p">.</span><span class="n">FLAG_CONFUSION</span><span class="p">)</span> <span class="kr">then</span>
@@ -5093,7 +5091,6 @@
 </code></pre></div>
 </td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <h3 aria-label="Functions" id="hasfullhealth">HasFullHealth ()<a class="headerlink" href="#hasfullhealth" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -5427,7 +5424,7 @@ HasMortalDamage() will be updated additionally after TakeDamage() is called.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-01-20
+      Last update: 2021-01-22
     
   </small>
 </div>

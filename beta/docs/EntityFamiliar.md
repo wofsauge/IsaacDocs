@@ -170,9 +170,7 @@ Can be used to override the angular position of the familiar on its orbit based 
     end
     
     ```
-    Result: <a href="customImg/example_familiar_angleOffset.png"><img src="customImg/example_familiar_angleOffset.png" width="250px"/></a>
- WRONG PARSING 
-{: .wrongParsing }
+    Result: ![angle offset](https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/customImg/example_familiar_angleOffset.png)
 ___ 
 ### OrbitDistance {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

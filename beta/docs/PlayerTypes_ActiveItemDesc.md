@@ -1,5 +1,4 @@
 # Class "PlayerTypes::ActiveItemDesc"
-## Functions
 ## Variables
 ### BatteryCharge {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

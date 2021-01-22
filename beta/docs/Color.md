@@ -5,11 +5,14 @@
 #### void [Color](../Color) ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Color" class.
-Notes: You need to use the <a class="el" href="class_k_color.html#adad4075b6c806d97b9b0134e9e9e519d">KColor()</a> constructor when using the <a class="el" href="class_font.html#ae12d76f0b59747bbf028333c9c7ed560">Font</a> class. 
+
+When using the [Font](../Font) class, use [KColor()](../KColor) instead. 
+
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
+
 R, G, B and A accept numbers between 0 and 1.
-RO, GO and BO accept numbers between -255 and 255. WRONG PARSING 
-{: .wrongParsing }
+
+RO, GO and BO accept numbers between -255 and 255.
 ___ 
 ## Functions
 ### __mul () {: aria-label='Functions' }

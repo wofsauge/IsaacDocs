@@ -4,7 +4,7 @@
 [ ](#){: .abp .tooltip .badge }
 #### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Functions' }
 
-Returns a <a class="el" href="class_game.html">Game</a> object.
+Returns a [Game](../Game) object.
 
 ???- example "Example Code"
     Example usage:
@@ -13,14 +13,12 @@ Returns a <a class="el" href="class_game.html">Game</a> object.
     --returns true if the game is paused
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### [MusicManager](../MusicManager) () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Functions' }
 
-Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.
+Returns a [MusicManager](../MusicManager) object.
 
 ???- example "Example Code"
     Example usage:
@@ -28,8 +26,6 @@ Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.
     MusicManager():Disable()
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### Random () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -45,7 +41,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Functions' }
 
-Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.
+Returns a [SFXManager](../SFXManager) object.
 
 ???- example "Example Code"
     Example usage:
@@ -53,8 +49,6 @@ Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.
     SFXManager():Stop(SoundEffect.SOUND_1UP)
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### GetPtrHash () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

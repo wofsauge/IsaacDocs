@@ -56,7 +56,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Add <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
+Add [EntityFlags](../enums/EntityFlag) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
@@ -67,8 +67,6 @@ Add <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</
     end
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### AddFear () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -151,8 +149,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Removes all <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a>  from the entity. WRONG PARSING 
-{: .wrongParsing }
+Removes all [EntityFlags](../enums/EntityFlag) from the entity.
 ___ 
 ### CollidesWithGrid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -214,17 +211,15 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int GetEntityFlags ( ) {: .copyable aria-label='Functions' }
 
-Get the <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> of the entity. This will be a number which acts like a bitmask.
+Get the [EntityFlags](../enums/EntityFlag)of the entity. This will be a number which acts like a bitmask.
 
 ???- example "Example Code"
-    This code prints something in the console, if the entity has a specific <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+    This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag).
     ```lua 
     if entity:GetEntityFlags() &amp; EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
     print("This entity is confused!")
     end
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### GetLastChild () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -253,17 +248,15 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity has all named <a href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlags</a> set.
+Returns true, if the entity has all named [EntityFlags](../enums/EntityFlag) set.
 
 ???- example "Example Code"
-    This code prints something in the console, if the entity has a specific <a class="el" href="group__enums.html#gae47225424cc0ecbe50e6c49c44565b45">EntityFlag</a>.
+    This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag).
     ```lua 
     if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
     print("This entity is confused!")
     end
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### HasFullHealth () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

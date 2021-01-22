@@ -78,7 +78,7 @@ ___
 ### FromAngle () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static [Vector](../Vector) FromAngle ( float AngleDegrees ) {: .copyable aria-label='Functions' }
-Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). 
+Build a [Vector](../Vector) from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). 
 
 ???- example "Example Code"
     This code returns a vector that has a 45 degree angle
@@ -86,8 +86,6 @@ Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns
     local vec = Vector.FromAngle(45)) --vec is now Vector(0.70711,0.70711)
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### GetAngleDegrees () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -122,13 +120,13 @@ ___
 
 Linear interpolation between two vectors. For t = 0 it returns the first Vector, for t = 1 it returns the second.
 
-<div class="example_code">
-This function does the same as Lerp, but will not alter the input vectors.
-```:::lua function Lerp(vec1, vec2, percent)
-    return vec1 * (1 - percent) + vec2 * percent
-end
-```
-</div>
+???- example "Alternate Function example"
+    This function does the same as Lerp, but will not alter the input vectors.
+    ```lua 
+    function Lerp(vec1, vec2, percent)
+        return vec1 * (1 - percent) + vec2 * percent
+    end
+    ```
 
 ???- example "Example Code"
     This code will make v1 the vector 50% in between v1 and v2
@@ -138,8 +136,6 @@ end
     v1:Lerp(v2,0.5) -- v1 equals  Vector(0.5,0.5)  now
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### Normalize () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

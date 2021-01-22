@@ -4085,7 +4085,7 @@
 <h4 aria-label="Functions" class="copyable">int GetFrameCount ( )</h4>
 <p>Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
 1 second equals 30 frames.
-This function therefore works drastically different than <a href="namespace_isaac.html#a880a22350f53acea378bf7c721bd5bd5"><code class="highlight"><span class="n">Isaac</span><span class="p">.</span><span class="n">GetFrameCount</span><span class="p">()</span></code></a></p>
+This function therefore works drastically different than <code class="highlight"><span class="n">Isaac</span><span class="p">.</span><span class="n">GetFrameCount</span><span class="p">()</span></code></p>
 <details class="- example"><summary>Example Code</summary><p>This code returns hours, minutes, seconds, and milliseconds of the game running actively:
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -4099,7 +4099,6 @@ This function therefore works drastically different than <a href="namespace_isaa
 </code></pre></div>
 </td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <h3 aria-label="Functions" id="getgreedbosswavenum">GetGreedBossWaveNum ()<a class="headerlink" href="#getgreedbosswavenum" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -4308,10 +4307,10 @@ This function therefore works drastically different than <a href="namespace_isaa
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable">void ShowRule ( )</h4>
 <hr />
-<h3 aria-label="Functions" id="spawn"><a href="../RoomConfig_Spawn">Spawn</a> ()<a class="headerlink" href="#spawn" title="Permanent link">⚓︎</a></h3>
+<h3 aria-label="Functions" id="spawn">Spawn ()<a class="headerlink" href="#spawn" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
-<h4 aria-label="Functions" class="copyable"><a href="../Entity">Entity</a> <a href="../RoomConfig_Spawn">Spawn</a> ( <a href="../enums/EntityType">EntityType</a> Type, int Variant, <a href="../Vector">Vector</a> Position, <a href="../Vector">Vector</a> Velocity, <a href="../Entity">Entity</a> Spawner, int SubType, int Seed )</h4>
-<p>The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.</p>
+<h4 aria-label="Functions" class="copyable"><a href="../Entity">Entity</a> Spawn ( <a href="../enums/EntityType">EntityType</a> Type, int Variant, <a href="../Vector">Vector</a> Position, <a href="../Vector">Vector</a> Velocity, <a href="../Entity">Entity</a> Spawner, int SubType, int Seed )</h4>
+<p>The game has two spawn functions, <a href="#spawn">Game():Spawn()</a> (this one) and <a href="../Isaac/#spawn">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a href="#spawn">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a href="../Isaac/#spawn">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a href="../Isaac/#spawn">Isaac.Spawn()</a>.</p>
 <details class="- example"><summary>Example Code</summary><p>This code spawns a Leech with specific seed.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
@@ -4333,7 +4332,6 @@ This function therefore works drastically different than <a href="namespace_isaa
 </code></pre></div>
 </td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <h3 aria-label="Functions" id="spawnentitydesc">SpawnEntityDesc ()<a class="headerlink" href="#spawnentitydesc" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -4418,7 +4416,7 @@ This function therefore works drastically different than <a href="namespace_isaa
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-01-20
+      Last update: 2021-01-22
     
   </small>
 </div>

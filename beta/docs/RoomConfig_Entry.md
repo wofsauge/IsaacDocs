@@ -1,5 +1,4 @@
 # Class "RoomConfig::Entry"
-## Functions
 ## Variables
 ### Subtype {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

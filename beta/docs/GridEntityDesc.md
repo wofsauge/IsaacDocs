@@ -1,5 +1,4 @@
 # Class "GridEntityDesc"
-## Functions
 ## Variables
 ### Initialized {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

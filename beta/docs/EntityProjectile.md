@@ -4,8 +4,7 @@
 [ ](#){: .abp .tooltip .badge }
 #### void AddChangeFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-See <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a>. WRONG PARSING 
-{: .wrongParsing }
+See [ChangeFlags](#ChangeFlags).
 ___ 
 ### AddFallingAccel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -26,8 +25,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void AddProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes. WRONG PARSING 
-{: .wrongParsing }
+Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes.
 ___ 
 ### AddScale () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -44,52 +42,49 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
-Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes after the "Changed" state was activated.
-The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
+Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes after the "Changed" state was activated.
+The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
 Projectiles can have two states: normal (default) and changed.
 
 
-Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
+Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: <a class="el" href="class_projectile_params.html#a94280d115acf598bf9f751da3f815a8c">ProjectileParams()</a> WRONG PARSING 
-{: .wrongParsing }
+Also used in: [ProjectileParams()](../ProjectileParams)
 ___ 
 ### ChangeTimeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
-The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlags](../enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
 Projectiles can have two states: normal (default) and changed.
 
 
-Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
+Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: <a class="el" href="class_projectile_params.html#a6738cae72bddb5bbc087f215f7f08bd2">ProjectileParams()</a> WRONG PARSING 
-{: .wrongParsing }
+Also used in: [ProjectileParams()](../ProjectileParams)
 ___ 
 ### ChangeVelocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
-The <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlag</a> CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
 Projectiles can have two states: normal (default) and changed.
 
 
-Changed state activates when projectile's frame count reaches the value set in <a class="el" href="#adc75976b47b0121d4faf956ee61f2a8d">ChangeTimeout</a>. After that its flags get changed to what was set in <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a> and velocity will be resized to length set in <a class="el" href="#adf22f7bcbe0ffbd7346ede9431c83df1">ChangeVelocity</a>.
+Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: <a class="el" href="class_projectile_params.html#a8d480667cf7ba94ee10bbb9dcc008c6f">ProjectileParams()</a> WRONG PARSING 
-{: .wrongParsing }
+Also used in: [ProjectileParams()](../ProjectileParams)
 ___ 
 ### CurvingStrength {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -131,8 +126,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int [ProjectileFlags](../enums/ProjectileFlags)  {: .copyable aria-label='Variables' }
 
-Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes. WRONG PARSING 
-{: .wrongParsing }
+Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes.
 ___ 
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

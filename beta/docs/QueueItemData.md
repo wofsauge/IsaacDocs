@@ -1,5 +1,4 @@
 # Class "QueueItemData"
-## Functions
 ## Variables
 ### Charge {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

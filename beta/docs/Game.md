@@ -162,7 +162,7 @@ ___
 
 Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
 1 second equals 30 frames.
-This function therefore works drastically different than <a href="namespace_isaac.html#a880a22350f53acea378bf7c721bd5bd5">`:::lua Isaac.GetFrameCount()`</a>
+This function therefore works drastically different than `:::lua Isaac.GetFrameCount()`
 
 ???- example "Example Code"
     This code returns hours, minutes, seconds, and milliseconds of the game running actively:
@@ -174,8 +174,6 @@ This function therefore works drastically different than <a href="namespace_isaa
     local hours= math.floor(curTime/30/60/60)%60
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### GetGreedBossWaveNum () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -413,11 +411,11 @@ ___
 #### void ShowRule ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### [Spawn](../RoomConfig_Spawn) () {: aria-label='Functions' }
+### Spawn () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( [EntityType](../enums/EntityType) Type, int Variant, [Vector](../Vector) Position, [Vector](../Vector) Velocity, [Entity](../Entity) Spawner, int SubType, int Seed ) {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) Spawn ( [EntityType](../enums/EntityType) Type, int Variant, [Vector](../Vector) Position, [Vector](../Vector) Velocity, [Entity](../Entity) Spawner, int SubType, int Seed ) {: .copyable aria-label='Functions' }
 
-The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a> (this one) and <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. If you need to spawn something with a specific seed, then you use <a class="el" href="#a3e89d68066acde06705fa43413d3c0fa">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a class="el" href="namespace_isaac.html#aa0ae6af78258bd135855fee38601ba3f">Isaac.Spawn()</a>.
+The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac.Spawn()](../Isaac/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../Isaac/#spawn).
 
 ???- example "Example Code"
     This code spawns a Leech with specific seed.
@@ -433,8 +431,6 @@ The game has two spawn functions, <a class="el" href="#a3e89d68066acde06705fa434
     )
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### SpawnEntityDesc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

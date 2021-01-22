@@ -1,5 +1,4 @@
 # Class "ItemConfig::PillEffect"
-## Functions
 ## Variables
 ### AchievementID {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

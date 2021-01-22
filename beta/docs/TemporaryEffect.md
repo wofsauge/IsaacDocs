@@ -1,5 +1,4 @@
 # Class "TemporaryEffect"
-## Functions
 ## Variables
 ### Cooldown {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

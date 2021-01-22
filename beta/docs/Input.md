@@ -40,7 +40,8 @@ ___
 #### boolean IsActionPressed ( int action, int controllerId ) {: .copyable aria-label='Functions' }
 
 Returns, if an action-button is pressed or not. An Action-button is any button that got a default function assigned to it. This function will return true, as long the button is held down.
-<a href="group__enums.html#gafa717ac273a5a382f7c01ef7afba1ee7">List of all Action enums</a>
+
+[List of all Action enums](../enums/ButtonAction)
 
 ???- example "Example Code"
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
@@ -50,15 +51,14 @@ Returns, if an action-button is pressed or not. An Action-button is any button t
     end
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### IsActionTriggered () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsActionTriggered ( int action, int controllerId ) {: .copyable aria-label='Functions' }
 
 Returns, if an action-button was pressed some time before or not. An Action-button is any button that got a default function assigned to it. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
-<a href="group__enums.html#gafa717ac273a5a382f7c01ef7afba1ee7">List of all Action enums</a>
+
+[List of all Action enums](../enums/ButtonAction)
 
 ???- example "Example Code"
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
@@ -68,15 +68,14 @@ Returns, if an action-button was pressed some time before or not. An Action-butt
     end
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### IsButtonPressed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsButtonPressed ( int button, int controllerId ) {: .copyable aria-label='Functions' }
 
 Returns, if a button is pressed or not. This function will return true, as long the button is held down.
-<a href="group__enums.html#gabcabfff8e6138e0943763148d70e5005">List of all key enums</a>
+
+[List of all Action enums](../enums/ButtonAction)
 
 ???- example "Example Code"
     This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
@@ -86,15 +85,14 @@ Returns, if a button is pressed or not. This function will return true, as long 
     end
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### IsButtonTriggered () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsButtonTriggered ( int button, int controllerId ) {: .copyable aria-label='Functions' }
 
 Returns, if a button was pressed some time before or not. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
-<a href="group__enums.html#gabcabfff8e6138e0943763148d70e5005">List of all key enums</a>
+
+[List of all Action enums](../enums/ButtonAction)
 
 ???- example "Example Code"
     This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
@@ -104,8 +102,6 @@ Returns, if a button was pressed some time before or not. This functions will on
     end
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### IsMouseBtnPressed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

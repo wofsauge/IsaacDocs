@@ -1,5 +1,4 @@
 # Class "GridEntitySpikes"
-## Functions
 ## Variables
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

@@ -1,5 +1,4 @@
 # Class "RoomDescriptor"
-## Functions
 ## Variables
 ### AllowedDoors {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -47,10 +46,12 @@ ___
 
 Indicates what is visible on the minimap.
 **Display Flags (bitwise):**
-```:::lua 1 &lt;&lt; -1 -- Invisible
+```lua 
+1 &lt;&lt; -1 -- Invisible
 1 &lt;&lt; 0 -- Visible
 1 &lt;&lt; 1 -- Room Shadow
-1 &lt;&lt; 2 -- Show Icon```
+1 &lt;&lt; 2 -- Show Icon
+```
 
 The flags are hard to interpret, but here are some examples:
 

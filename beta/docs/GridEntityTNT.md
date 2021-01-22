@@ -1,5 +1,4 @@
 # Class "GridEntityTNT"
-## Functions
 ## Variables
 ### FrameCnt {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

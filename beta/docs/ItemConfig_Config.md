@@ -35,15 +35,13 @@ Returns the Itemobject of a given CollectibleID.
     end
     
     ```
-    Using GetCollectibles(): (<b style="color:red">Crashes on Mac OS)**
+    Using GetCollectibles(): (**Crashes on Mac OS)**
     ```lua 
     function GetMaxCollectibleID()
     return Isaac.GetItemConfig():GetCollectibles().Size -1
     end
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### GetCollectibles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

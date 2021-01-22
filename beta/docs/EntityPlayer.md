@@ -1051,8 +1051,7 @@ ___
 ### ResetItemState () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ResetItemState ( ) {: .copyable aria-label='Functions' }
-Made this public so <a class="el" href="class_room.html">Room</a> transtiions can call this to prevent lock ups.  WRONG PARSING 
-{: .wrongParsing }
+[Room](../Room) transitions call this to prevent lock ups.
 ___ 
 ### RespawnFamiliars () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -1290,7 +1289,7 @@ ___
 ### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various <a href="group__enums.html#ga497749198295d1f3d5ecd1c6d5ea2cce">tear flags</a>. 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [TearFlags](../enums/TearFlags). 
 
 ???- example "Example Code"
     This code makes Isaac's tears spectral. 
@@ -1302,8 +1301,6 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various <a hr
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
     
     ```
- WRONG PARSING 
-{: .wrongParsing }
 ___ 
 ### TearHeight {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

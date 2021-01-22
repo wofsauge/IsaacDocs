@@ -3194,13 +3194,12 @@
 <h3 aria-label="Functions" id="fromangle">FromAngle ()<a class="headerlink" href="#fromangle" title="Permanent link">⚓︎</a></h3>
 <p><a class="static tooltip badge" href="#"> </a> <a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable">static <a href="../Vector">Vector</a> FromAngle ( float AngleDegrees )</h4>
-<p>Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). </p>
+<p>Build a <a href="../Vector">Vector</a> from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). </p>
 <details class="- example"><summary>Example Code</summary><p>This code returns a vector that has a 45 degree angle
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">vec</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">.</span><span class="n">FromAngle</span><span class="p">(</span><span class="mi">45</span><span class="p">))</span> <span class="c1">--vec is now Vector(0.70711,0.70711)</span>
 </code></pre></div>
 </td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
 <hr />
 <h3 aria-label="Functions" id="getangledegrees">GetAngleDegrees ()<a class="headerlink" href="#getangledegrees" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -3232,22 +3231,24 @@
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable"><a href="../Vector">Vector</a> Lerp ( <a href="../Vector">Vector</a> first, <a href="../Vector">Vector</a> second, float t )</h4>
 <p>Linear interpolation between two vectors. For t = 0 it returns the first Vector, for t = 1 it returns the second.</p>
-<div class="example_code">
-This function does the same as Lerp, but will not alter the input vectors.
-```:::lua function Lerp(vec1, vec2, percent)
-    return vec1 * (1 - percent) + vec2 * percent
-end
-```
-</div>
-
-<details class="- example"><summary>Example Code</summary><p>This code will make v1 the vector 50% in between v1 and v2
-```lua 
-local v1 = Vector(0,0)
-local v2 = Vector(1,1)
-v1:Lerp(v2,0.5) -- v1 equals  Vector(0.5,0.5)  now</p>
-<p>```</p>
+<details class="- example"><summary>Alternate Function example</summary><p>This function does the same as Lerp, but will not alter the input vectors.
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kr">function</span> <span class="nf">Lerp</span><span class="p">(</span><span class="n">vec1</span><span class="p">,</span> <span class="n">vec2</span><span class="p">,</span> <span class="n">percent</span><span class="p">)</span>
+    <span class="kr">return</span> <span class="n">vec1</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">percent</span><span class="p">)</span> <span class="o">+</span> <span class="n">vec2</span> <span class="o">*</span> <span class="n">percent</span>
+<span class="kr">end</span>
+</code></pre></div>
+</td></tr></table></p>
 </details>
-<p class="wrongParsing">WRONG PARSING </p>
+<details class="- example"><summary>Example Code</summary><p>This code will make v1 the vector 50% in between v1 and v2
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">v1</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">v2</span> <span class="o">=</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">v1</span><span class="p">:</span><span class="n">Lerp</span><span class="p">(</span><span class="n">v2</span><span class="p">,</span><span class="mf">0.5</span><span class="p">)</span> <span class="c1">-- v1 equals  Vector(0.5,0.5)  now</span>
+</code></pre></div>
+</td></tr></table></p>
+</details>
 <hr />
 <h3 aria-label="Functions" id="normalize">Normalize ()<a class="headerlink" href="#normalize" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
@@ -3292,7 +3293,7 @@ v1:Lerp(v2,0.5) -- v1 equals  Vector(0.5,0.5)  now</p>
 <div class="md-source-date">
   <small>
     
-      Last update: 2021-01-20
+      Last update: 2021-01-22
     
   </small>
 </div>
