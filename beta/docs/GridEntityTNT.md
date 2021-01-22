@@ -1,8 +1,8 @@
 # Class "GridEntityTNT"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### FrameCnt {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int FrameCnt  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -1,17 +1,17 @@
 # Class "ItemConfig::Config"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### GetCard () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Card](../ItemConfig_Card) GetCard ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCards () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  CardList GetCards ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCollectible () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Item](../ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
 
 Returns the Itemobject of a given CollectibleID.
@@ -45,8 +45,8 @@ Returns the Itemobject of a given CollectibleID.
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCollectibles () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  ItemList GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles. 
@@ -64,46 +64,46 @@ Returns the List of all Collectibles.
 ???+ bug "Bugs"
     The objects stored in the returned list cant be accessed correctly and are therefore useless.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCostumes () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  CostumeList GetCostumes ( ) {: .copyable aria-label='Functions' }
 
 
 ???+ bug "Bugs"
     The Vector/Table returned by this function is always empty! 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetNullItem () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Item](../ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetNullItems () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  ItemList GetNullItems ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetPillEffect () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  [PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../ItemConfig_PillEffect) PillEffectID ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetPillEffects () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  PillList GetPillEffects ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetTrinket () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Item](../ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetTrinkets () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  ItemList GetTrinkets ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### IsValidCollectible () {: aria-label='Functions' }
+[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static boolean IsValidCollectible ( [CollectibleType](../enums/CollectibleType) ID ) {: .copyable aria-label='Functions' }
 
 Function to check if a given item id is a valid collectible id (aka. this item exists). Returns **True** when it exists and **False** when it doesnt.
@@ -119,8 +119,8 @@ Function to check if a given item id is a valid collectible id (aka. this item e
 ???+ bug "Bugs"
     This function returns false for modded items! Use itemConfig:GetCollectible() instead.
 ___ 
-[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### ShouldAddCostumeOnPickup () {: aria-label='Functions' }
+[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static boolean ShouldAddCostumeOnPickup ( [Item](../ItemConfig_Item) Config ) {: .copyable aria-label='Functions' }
 
 ___ 

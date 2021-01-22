@@ -1,18 +1,18 @@
 # Class "EntityPtr"
 ## Constructors
-[ ](#){: .abp .tooltip .badge }
 ### [EntityPtr](../EntityPtr) () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
 #### void [EntityPtr](../EntityPtr) ( [Entity](../Entity ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### SetReference () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetReference ( [Entity](../Entity) ref ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Ref () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Entity](../Entity) Ref  {: .copyable aria-label='Functions' }
 
 ___ 

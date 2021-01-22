@@ -1,49 +1,48 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "GameStateFlag"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 0 |STATE_FAMINE_SPAWNED {: .copyable } |  | 
-| 1 |STATE_PESTILENCE_SPAWNED {: .copyable } |  | 
-| 2 |STATE_WAR_SPAWNED {: .copyable } |  | 
-| 3 |STATE_DEATH_SPAWNED {: .copyable } |  | 
-| 4 |STATE_BOSSPOOL_SWITCHED {: .copyable } |  | 
-| 5 |STATE_DEVILROOM_SPAWNED {: .copyable } |  | 
-| 6 |STATE_DEVILROOM_VISITED {: .copyable } |  | 
-| 7 |STATE_BOOK_REVELATIONS_USED {: .copyable } |  | 
-| 8 |STATE_BOOK_PICKED_UP {: .copyable } |  | 
-| 9 |STATE_WRATH_SPAWNED {: .copyable } |  | 
-| 10 |STATE_GLUTTONY_SPAWNED {: .copyable } |  | 
-| 11 |STATE_LUST_SPAWNED {: .copyable } |  | 
-| 12 |STATE_SLOTH_SPAWNED {: .copyable } |  | 
-| 13 |STATE_ENVY_SPAWNED {: .copyable } |  | 
-| 14 |STATE_PRIDE_SPAWNED {: .copyable } |  | 
-| 15 |STATE_GREED_SPAWNED {: .copyable } |  | 
-| 16 |STATE_SUPERGREED_SPAWNED {: .copyable } |  | 
-| 17 |STATE_DONATION_SLOT_BROKEN {: .copyable } |  | 
-| 18 |STATE_DONATION_SLOT_JAMMED {: .copyable } |  | 
-| 19 |STATE_HEAVEN_PATH {: .copyable } |  | 
-| 20 |STATE_REBIRTH_BOSS_SWITCHED {: .copyable } |  | 
-| 21 |STATE_HAUNT_SELECTED {: .copyable } |  | 
-| 22 |STATE_ADVERSARY_SELECTED {: .copyable } |  | 
-| 23 |STATE_MR_FRED_SELECTED {: .copyable } |  | 
-| 24 |STATE_MAMA_GURDY_SELECTED {: .copyable } |  | 
-| 25 |STATE_URIEL_SPAWNED {: .copyable } |  | 
-| 26 |STATE_GABRIEL_SPAWNED {: .copyable } |  | 
-| 27 |STATE_FALLEN_SPAWNED {: .copyable } |  | 
-| 28 |STATE_HEADLESS_HORSEMAN_SPAWNED {: .copyable } |  | 
-| 29 |STATE_KRAMPUS_SPAWNED {: .copyable } |  | 
-| 30 |STATE_DONATION_SLOT_BLOWN {: .copyable } |  | 
-| 31 |STATE_SHOPKEEPER_KILLED {: .copyable } |  | 
-| 32 |STATE_ULTRAPRIDE_SPAWNED {: .copyable } |  | 
-| 33 |STATE_BOSSRUSH_DONE {: .copyable } |  | 
-| 34 |STATE_GREED_SLOT_JAMMED {: .copyable } |  | 
-| 35 |STATE_AFTERBIRTH_BOSS_SWITCHED {: .copyable } |  | 
-| 36 |STATE_BROWNIE_SELECTED {: .copyable } |  | 
-| 37 |STATE_SUPERBUM_APPEARED {: .copyable } |  | 
-| 38 |STATE_BOSSRUSH_DOOR_SPAWNED {: .copyable } |  | 
-| 39 |STATE_BLUEWOMB_DOOR_SPAWNED {: .copyable } |  | 
-| 40 |STATE_BLUEWOMB_DONE {: .copyable } |  | 
-| 41 |STATE_HEART_BOMB_COIN_PICKED {: .copyable } |  | 
-| 42 |STATE_ABPLUS_BOSS_SWITCHED {: .copyable } |  | 
-| 43 |STATE_SISTERS_VIS_SELECTED {: .copyable } |  | 
-| 44 |NUM_STATE_FLAGS {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|0 |STATE_FAMINE_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |STATE_PESTILENCE_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |STATE_WAR_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |STATE_DEATH_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |STATE_BOSSPOOL_SWITCHED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|5 |STATE_DEVILROOM_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|6 |STATE_DEVILROOM_VISITED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|7 |STATE_BOOK_REVELATIONS_USED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|8 |STATE_BOOK_PICKED_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|9 |STATE_WRATH_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|10 |STATE_GLUTTONY_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|11 |STATE_LUST_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|12 |STATE_SLOTH_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|13 |STATE_ENVY_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|14 |STATE_PRIDE_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|15 |STATE_GREED_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|16 |STATE_SUPERGREED_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|17 |STATE_DONATION_SLOT_BROKEN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|18 |STATE_DONATION_SLOT_JAMMED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|19 |STATE_HEAVEN_PATH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|20 |STATE_REBIRTH_BOSS_SWITCHED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|21 |STATE_HAUNT_SELECTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|22 |STATE_ADVERSARY_SELECTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|23 |STATE_MR_FRED_SELECTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|24 |STATE_MAMA_GURDY_SELECTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|25 |STATE_URIEL_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|26 |STATE_GABRIEL_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|27 |STATE_FALLEN_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|28 |STATE_HEADLESS_HORSEMAN_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|29 |STATE_KRAMPUS_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|30 |STATE_DONATION_SLOT_BLOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|31 |STATE_SHOPKEEPER_KILLED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|32 |STATE_ULTRAPRIDE_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|33 |STATE_BOSSRUSH_DONE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|34 |STATE_GREED_SLOT_JAMMED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|35 |STATE_AFTERBIRTH_BOSS_SWITCHED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|36 |STATE_BROWNIE_SELECTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|37 |STATE_SUPERBUM_APPEARED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|38 |STATE_BOSSRUSH_DOOR_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|39 |STATE_BLUEWOMB_DOOR_SPAWNED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|40 |STATE_BLUEWOMB_DONE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|41 |STATE_HEART_BOMB_COIN_PICKED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|42 |STATE_ABPLUS_BOSS_SWITCHED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|43 |STATE_SISTERS_VIS_SELECTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|44 |NUM_STATE_FLAGS {: .copyable } |  | 

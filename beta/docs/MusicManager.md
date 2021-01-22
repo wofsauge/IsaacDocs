@@ -1,98 +1,98 @@
 # Class "MusicManager"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### Crossfade () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Crossfade ( [MusicManager](../MusicManager) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Disable () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Disable ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DisableLayer () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void DisableLayer ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Enable () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Enable ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### EnableLayer () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void EnableLayer ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Fadein () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Fadein ( [MusicManager](../MusicManager) ID, float Volume ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Fadeout () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Fadeout ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCurrentMusicID () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetQueuedMusicID () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
 if nothing is queued, return the current music id 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsEnabled () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsEnabled ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsLayerEnabled () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsLayerEnabled ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Pause () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Pause ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PitchSlide () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void PitchSlide ( float TargetPitch ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Play () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Play ( [MusicManager](../MusicManager) ID, float Volume ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Queue () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Queue ( [MusicManager](../MusicManager) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ResetPitch () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void ResetPitch ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Resume () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Resume ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### UpdateVolume () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void UpdateVolume ( ) {: .copyable aria-label='Functions' }
 
 This function sets the music volume to the volume defined in the options menu.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### VolumeSlide () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void VolumeSlide ( float TargetVolume ) {: .copyable aria-label='Functions' }
 
 ___ 

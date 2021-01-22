@@ -1,53 +1,52 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "PillEffect"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| -1 |PILLEFFECT_NULL {: .copyable } |  | 
-| 0 |PILLEFFECT_BAD_GAS {: .copyable } |  | 
-| 1 |PILLEFFECT_BAD_TRIP {: .copyable } |  | 
-| 2 |PILLEFFECT_BALLS_OF_STEEL {: .copyable } |  | 
-| 3 |PILLEFFECT_BOMBS_ARE_KEYS {: .copyable } |  | 
-| 4 |PILLEFFECT_EXPLOSIVE_DIARRHEA {: .copyable } |  | 
-| 5 |PILLEFFECT_FULL_HEALTH {: .copyable } |  | 
-| 6 |PILLEFFECT_HEALTH_DOWN {: .copyable } |  | 
-| 7 |PILLEFFECT_HEALTH_UP {: .copyable } |  | 
-| 8 |PILLEFFECT_I_FOUND_PILLS {: .copyable } |  | 
-| 9 |PILLEFFECT_PUBERTY {: .copyable } |  | 
-| 10 |PILLEFFECT_PRETTY_FLY {: .copyable } |  | 
-| 11 |PILLEFFECT_RANGE_DOWN {: .copyable } |  | 
-| 12 |PILLEFFECT_RANGE_UP {: .copyable } |  | 
-| 13 |PILLEFFECT_SPEED_DOWN {: .copyable } |  | 
-| 14 |PILLEFFECT_SPEED_UP {: .copyable } |  | 
-| 15 |PILLEFFECT_TEARS_DOWN {: .copyable } |  | 
-| 16 |PILLEFFECT_TEARS_UP {: .copyable } |  | 
-| 17 |PILLEFFECT_LUCK_DOWN {: .copyable } |  | 
-| 18 |PILLEFFECT_LUCK_UP {: .copyable } |  | 
-| 19 |PILLEFFECT_TELEPILLS {: .copyable } |  | 
-| 20 |PILLEFFECT_48HOUR_ENERGY {: .copyable } |  | 
-| 21 |PILLEFFECT_HEMATEMESIS {: .copyable } |  | 
-| 22 |PILLEFFECT_PARALYSIS {: .copyable } |  | 
-| 23 |PILLEFFECT_SEE_FOREVER {: .copyable } |  | 
-| 24 |PILLEFFECT_PHEROMONES {: .copyable } |  | 
-| 25 |PILLEFFECT_AMNESIA {: .copyable } |  | 
-| 26 |PILLEFFECT_LEMON_PARTY {: .copyable } |  | 
-| 27 |PILLEFFECT_WIZARD {: .copyable } |  | 
-| 28 |PILLEFFECT_PERCS {: .copyable } |  | 
-| 29 |PILLEFFECT_ADDICTED {: .copyable } |  | 
-| 30 |PILLEFFECT_RELAX {: .copyable } |  | 
-| 31 |PILLEFFECT_QUESTIONMARK {: .copyable } |  | 
-| 32 |PILLEFFECT_LARGER {: .copyable } |  | 
-| 33 |PILLEFFECT_SMALLER {: .copyable } |  | 
-| 34 |PILLEFFECT_INFESTED_EXCLAMATION {: .copyable } |  | 
-| 35 |PILLEFFECT_INFESTED_QUESTION {: .copyable } |  | 
-| 36 |PILLEFFECT_POWER {: .copyable } |  | 
-| 37 |PILLEFFECT_RETRO_VISION {: .copyable } |  | 
-| 38 |PILLEFFECT_FRIENDS_TILL_THE_END {: .copyable } |  | 
-| 39 |PILLEFFECT_X_LAX {: .copyable } |  | 
-| 40 |PILLEFFECT_SOMETHINGS_WRONG {: .copyable } |  | 
-| 41 |PILLEFFECT_IM_DROWSY {: .copyable } |  | 
-| 42 |PILLEFFECT_IM_EXCITED {: .copyable } |  | 
-| 43 |PILLEFFECT_GULP {: .copyable } |  | 
-| 44 |PILLEFFECT_HORF {: .copyable } |  | 
-| 45 |PILLEFFECT_SUNSHINE {: .copyable } |  | 
-| 46 |PILLEFFECT_VURP {: .copyable } |  | 
-| 47 |NUM_PILL_EFFECTS {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|-1 |PILLEFFECT_NULL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|0 |PILLEFFECT_BAD_GAS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |PILLEFFECT_BAD_TRIP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |PILLEFFECT_BALLS_OF_STEEL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |PILLEFFECT_BOMBS_ARE_KEYS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |PILLEFFECT_EXPLOSIVE_DIARRHEA {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|5 |PILLEFFECT_FULL_HEALTH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|6 |PILLEFFECT_HEALTH_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|7 |PILLEFFECT_HEALTH_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|8 |PILLEFFECT_I_FOUND_PILLS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|9 |PILLEFFECT_PUBERTY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|10 |PILLEFFECT_PRETTY_FLY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|11 |PILLEFFECT_RANGE_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|12 |PILLEFFECT_RANGE_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|13 |PILLEFFECT_SPEED_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|14 |PILLEFFECT_SPEED_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|15 |PILLEFFECT_TEARS_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|16 |PILLEFFECT_TEARS_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|17 |PILLEFFECT_LUCK_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|18 |PILLEFFECT_LUCK_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|19 |PILLEFFECT_TELEPILLS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|20 |PILLEFFECT_48HOUR_ENERGY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|21 |PILLEFFECT_HEMATEMESIS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|22 |PILLEFFECT_PARALYSIS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|23 |PILLEFFECT_SEE_FOREVER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|24 |PILLEFFECT_PHEROMONES {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|25 |PILLEFFECT_AMNESIA {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|26 |PILLEFFECT_LEMON_PARTY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|27 |PILLEFFECT_WIZARD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|28 |PILLEFFECT_PERCS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|29 |PILLEFFECT_ADDICTED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|30 |PILLEFFECT_RELAX {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|31 |PILLEFFECT_QUESTIONMARK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|32 |PILLEFFECT_LARGER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|33 |PILLEFFECT_SMALLER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|34 |PILLEFFECT_INFESTED_EXCLAMATION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|35 |PILLEFFECT_INFESTED_QUESTION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|36 |PILLEFFECT_POWER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|37 |PILLEFFECT_RETRO_VISION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|38 |PILLEFFECT_FRIENDS_TILL_THE_END {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|39 |PILLEFFECT_X_LAX {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|40 |PILLEFFECT_SOMETHINGS_WRONG {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|41 |PILLEFFECT_IM_DROWSY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|42 |PILLEFFECT_IM_EXCITED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|43 |PILLEFFECT_GULP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|44 |PILLEFFECT_HORF {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|45 |PILLEFFECT_SUNSHINE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|46 |PILLEFFECT_VURP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|47 |NUM_PILL_EFFECTS {: .copyable } |  | 

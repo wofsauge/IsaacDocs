@@ -1,53 +1,53 @@
 # Class "Vector"
 ## Constructors
-[ ](#){: .abp .tooltip .badge }
 ### [Vector](../Vector) () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
 #### void [Vector](../Vector) ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### __add () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __add ( [Vector](../Vector) Right ) {: .copyable aria-label='Functions' }
 Addition operators 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### __div () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __div ( float Modifier ) {: .copyable aria-label='Functions' }
 Division operators 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### __mul () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __mul ( float Modifier ) {: .copyable aria-label='Functions' }
 Multiplication operators 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### __sub () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __sub ( [Vector](../Vector) Right ) {: .copyable aria-label='Functions' }
 Subtraction operators 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### __unm () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __unm ( [Vector](../Vector) Right ) {: .copyable aria-label='Functions' }
 Subtraction operators 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Clamp () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Clamp ( float MinX, float MinY, float MaxX, float MaxY ) {: .copyable aria-label='Functions' }
 Clamps the vector based on left, top, right, bottom boundings. Doesn't keep direction 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Clamped () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) Clamped ( float MinX, float MinY, float MaxX, float MaxY ) {: .copyable aria-label='Functions' }
 Returns a clamped version of the vector. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Cross () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float Cross ( [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
 Cross product this is the 2x2 matrix determinant or the resulting z value for their 3D versions with z=0 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Distance () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float Distance ( [Vector](../Vector) first, [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
 Returns distance between two vectors 
 
@@ -58,8 +58,8 @@ Returns distance between two vectors
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DistanceSquared () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float DistanceSquared ( [Vector](../Vector) first, [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
 Returns squared distance between two vectors 
 
@@ -70,13 +70,13 @@ Returns squared distance between two vectors
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Dot () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float Dot ( [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
 Dot product 
 ___ 
-[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### FromAngle () {: aria-label='Functions' }
+[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static [Vector](../Vector) FromAngle ( float AngleDegrees ) {: .copyable aria-label='Functions' }
 Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). 
 
@@ -89,8 +89,8 @@ Build a <a class="el" href="class_vector.html">Vector</a> from an angle, returns
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetAngleDegrees () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float GetAngleDegrees ( ) {: .copyable aria-label='Functions' }
 
 Returns the angle the vector is facing. The vector (1, 0) will be at 0 degrees. The vector (0, 1) will be at 90 degrees. 
@@ -106,18 +106,18 @@ Returns the angle the vector is facing. The vector (1, 0) will be at 0 degrees. 
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Length () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float Length ( ) {: .copyable aria-label='Functions' }
 Returns the length of the vector 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### LengthSquared () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float LengthSquared ( ) {: .copyable aria-label='Functions' }
 Returns the length squared of the vector 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Lerp () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) Lerp ( [Vector](../Vector) first, [Vector](../Vector) second, float t ) {: .copyable aria-label='Functions' }
 
 Linear interpolation between two vectors. For t = 0 it returns the first Vector, for t = 1 it returns the second.
@@ -141,39 +141,39 @@ end
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Normalize () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Normalize ( ) {: .copyable aria-label='Functions' }
 Normalizes this vector 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Normalized () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) Normalized ( ) {: .copyable aria-label='Functions' }
 Returns a normalized version of this vector 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Resize () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Resize ( float NewLength ) {: .copyable aria-label='Functions' }
 Resizes the vector length. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Resized () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) Resized ( float NewLength ) {: .copyable aria-label='Functions' }
 Returns a resized version of the vector. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Rotated () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) Rotated ( float AngleDegrees ) {: .copyable aria-label='Functions' }
 Returns a rotated version of the vector by AngleDegrees 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### X {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float X  {: .copyable aria-label='Variables' }
 Components of vector. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Y {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Y  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -1,43 +1,43 @@
 # Class "ItemConfig::Costume"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Anm2Path {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string Anm2Path  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### HasOverlay {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean HasOverlay  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### HasSkinAlt {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean HasSkinAlt  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ID {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ID  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsFlying {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsFlying  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### OverwriteColor {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean OverwriteColor  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Priority {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Priority  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SkinColor {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### SkinColor SkinColor  {: .copyable aria-label='Variables' }
 
 ___ 

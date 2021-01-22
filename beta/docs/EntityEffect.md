@@ -1,93 +1,93 @@
 # Class "EntityEffect"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### FollowParent () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void FollowParent ( [Entity](../Entity) Parent ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 ### IsPlayerCreep () {: aria-label='Functions' }
+[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static boolean IsPlayerCreep ( int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetDamageSource () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetDamageSource ( [EntityType](../enums/EntityType) DamageSource ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetRadii () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetRadii ( float min, float max ) {: .copyable aria-label='Functions' }
 For shockwaves. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetTimeout () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetTimeout ( int Timeout ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### DamageSource {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int DamageSource  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FallingAcceleration {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float FallingAcceleration  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FallingSpeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float FallingSpeed  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsFollowing {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsFollowing  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### LifeSpan {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int LifeSpan  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### m_Height {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float m_Height  {: .copyable aria-label='Variables' }
 for particles .dy 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### MaxRadius {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float MaxRadius  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### MinRadius {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float MinRadius  {: .copyable aria-label='Variables' }
 For shockwaves. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ParentOffset {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ParentOffset  {: .copyable aria-label='Variables' }
 probably obsolete soon, in favor of m_SpriteOffset 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Rotation {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Rotation  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Scale {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Scale  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### State {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int State  {: .copyable aria-label='Variables' }
 state var, may be used ad lib initialized to 0 in Init() 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Timeout {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }
 
 ___ 

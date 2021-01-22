@@ -1,7 +1,7 @@
 # Class "Functions"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### [Game](../Game) () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_game.html">Game</a> object.
@@ -16,8 +16,8 @@ Returns a <a class="el" href="class_game.html">Game</a> object.
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [MusicManager](../MusicManager) () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.
@@ -31,18 +31,18 @@ Returns a <a class="el" href="class_music_manager.html">MusicManager</a> object.
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Random () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int Random ( ) {: .copyable aria-label='Functions' }
 Returns a random integer. (0 to 2^32) 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RandomVector () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [SFXManager](../SFXManager) () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Functions' }
 
 Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.
@@ -56,8 +56,8 @@ Returns a <a class="el" href="class_s_f_x_manager.html">SFXManager</a> object.
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetPtrHash () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
 It can be used to easily compare two entities, making equality checks very easy.

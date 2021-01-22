@@ -139,7 +139,6 @@ a.const.tooltip:after {
     vertical-align: middle;
     padding: 4px 5px 4px 6px;
     border-radius: 10px;
-    margin: 0px 2px;
 }
 
 .badgeLine {
@@ -222,6 +221,7 @@ a.tooltip:after {
     border-radius: 10px;
     white-space: nowrap;
     opacity: 0;
+    visibility: hidden;
     -webkit-transition: all 0.4s ease;
     -moz-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -229,6 +229,7 @@ a.tooltip:after {
 
 a.tooltip:hover:after {
     bottom: 125%;
+    visibility: visible;
     opacity: 1;
 }
 
@@ -290,6 +291,9 @@ details>summary {
     margin-top: 0.1rem;
 }
 
+
+/*Format default table layout*/
+
 .md-typeset table:not([class]) {
     display: table;
 }
@@ -300,6 +304,7 @@ details>summary {
 
 .md-typeset table:not([class]) tr td {
     border-left: .05rem solid var(--md-default-fg-color--lightest);
+    padding: .8em .9em;
 }
 
 .md-typeset table:not([class]) tr th:first-child {
@@ -308,6 +313,7 @@ details>summary {
 
 .md-typeset table:not([class]) tr th {
     border-left: .05rem solid var(--md-default-fg-color--lighter);
+    min-width: 0rem;
 }
 
 

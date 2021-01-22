@@ -1,23 +1,23 @@
 # Class "RoomConfig::Entry"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Subtype {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### u16 Subtype  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Type {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [RoomType](../enums/RoomType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Variant {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### u16 Variant  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Weight {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Weight  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -1,22 +1,21 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "NpcState"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 0 |STATE_INIT {: .copyable } |  | 
-| 1 |STATE_APPEAR {: .copyable } |  | 
-| 2 |STATE_APPEAR_CUSTOM {: .copyable } |  | 
-| 3 |STATE_IDLE {: .copyable } |  | 
-| 4 |STATE_MOVE {: .copyable } |  | 
-| 5 |STATE_SUICIDE {: .copyable } |  | 
-| 6 |STATE_JUMP {: .copyable } |  | 
-| 7 |STATE_STOMP {: .copyable } |  | 
-| 8 |STATE_ATTACK {: .copyable } |  | 
-| 9 |STATE_ATTACK2 {: .copyable } |  | 
-| 10 |STATE_ATTACK3 {: .copyable } |  | 
-| 11 |STATE_ATTACK4 {: .copyable } |  | 
-| 12 |STATE_SUMMON {: .copyable } |  | 
-| 13 |STATE_SUMMON2 {: .copyable } |  | 
-| 14 |STATE_SUMMON3 {: .copyable } |  | 
-| 15 |STATE_SPECIAL {: .copyable } |  | 
-| 16 |STATE_UNIQUE_DEATH {: .copyable } |  | 
-| 17 |STATE_DEATH {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|0 |STATE_INIT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |STATE_APPEAR {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |STATE_APPEAR_CUSTOM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |STATE_IDLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |STATE_MOVE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|5 |STATE_SUICIDE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|6 |STATE_JUMP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|7 |STATE_STOMP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|8 |STATE_ATTACK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|9 |STATE_ATTACK2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|10 |STATE_ATTACK3 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|11 |STATE_ATTACK4 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|12 |STATE_SUMMON {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|13 |STATE_SUMMON2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|14 |STATE_SUMMON3 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|15 |STATE_SPECIAL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|16 |STATE_UNIQUE_DEATH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|17 |STATE_DEATH {: .copyable } |  | 

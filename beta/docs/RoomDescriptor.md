@@ -1,48 +1,48 @@
 # Class "RoomDescriptor"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### AllowedDoors {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### DoorSet AllowedDoors  {: .copyable aria-label='Variables' }
 Contains just on load swapped data (in cases like minibosses, or other such events) 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AwardSeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AwardSeed  {: .copyable aria-label='Variables' }
 used to spawn clear awards (normal, miniboss, boss rooms) and initialize shop items (shop, devil rooms) 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ChallengeDone {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean ChallengeDone  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Clear {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean Clear  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ClearCount {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ClearCount  {: .copyable aria-label='Variables' }
 room is clear, don't spawn enemies when visiting bool Clear; 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Data {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [RoomDescriptorData](../RoomDescriptorData) Data  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DecorationSeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int DecorationSeed  {: .copyable aria-label='Variables' }
 bool AltBossMusic; used for cosmetic stuff like backdrops, room decorations, shopkeeper skins 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DeliriumDistance {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int DeliriumDistance  {: .copyable aria-label='Variables' }
 Helper for The Void stage, holds the distance to the Delirium boss in room nr. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DisplayFlags {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int DisplayFlags  {: .copyable aria-label='Variables' }
 
 Indicates what is visible on the minimap.
@@ -80,84 +80,84 @@ The flags are hard to interpret, but here are some examples:
 
     From this my best guess is that bits 1 and 2 are special rendering (display hehe) flags that may have more meaning down below. The important bit for using them is minding that they're used differently mostly for special rooms. As far as I've seen, 001 is completely unused. 010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GridIndex {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int GridIndex  {: .copyable aria-label='Variables' }
 index in the level grid (always top left) 
 
 ???- note "Notes"
     This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### HasWater {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean HasWater  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ListIndex {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ListIndex  {: .copyable aria-label='Variables' }
 index in the room list 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### NoReward {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean NoReward  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### OverrideData {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [RoomDescriptorData](../RoomDescriptorData) OverrideData  {: .copyable aria-label='Variables' }
 Tim's reminder to himself: The room variant is in Data. Because Room::Init uses a mix of datas, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PitsCount {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int PitsCount  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PoopCount {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int PoopCount  {: .copyable aria-label='Variables' }
 bool HasWater; 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PressurePlatesTriggered {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean PressurePlatesTriggered  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SacrificeDone {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean SacrificeDone  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SafeGridIndex {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int SafeGridIndex  {: .copyable aria-label='Variables' }
 index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!) 
 
 ???- note "Notes"
     This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below) 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ShopItemDiscountIdx {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ShopItemDiscountIdx  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ShopItemIdx {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ShopItemIdx  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SpawnSeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int SpawnSeed  {: .copyable aria-label='Variables' }
 used to spawn entities at room load and initialize enemy drop seeds 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SurpriseMiniboss {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean SurpriseMiniboss  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### VisitedCount {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int VisitedCount  {: .copyable aria-label='Variables' }
 how often the room has been visited 
 ___ 

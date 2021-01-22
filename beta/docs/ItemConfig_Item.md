@@ -1,118 +1,118 @@
 # Class "ItemConfig::Item"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### IsCollectible () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsNull () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsNull ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsTrinket () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsTrinket ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### AchievementID {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AchievementID  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddBlackHearts {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddBlackHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddBombs {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddBombs  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddCoins {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddCoins  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddHearts {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddKeys {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddKeys  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddMaxHearts {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddMaxHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddSoulHearts {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddSoulHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### CacheFlags {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int CacheFlags  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [Costume](../ItemConfig_Costume) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 ####   [Costume](../ItemConfig_Costume) [Costume](../ItemConfig_Costume)  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Description {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string Description  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DevilPrice {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int DevilPrice  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Discharged {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean Discharged  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GfxFileName {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string GfxFileName  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ID {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ID  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### MaxCharges {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int MaxCharges  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### MaxCooldown {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int MaxCooldown  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Name {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Special {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean Special  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Type {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [ItemType](../enums/ItemType) Type  {: .copyable aria-label='Variables' }
 mostly for Lua so it will not make a copy 
 ___ 

@@ -1,33 +1,33 @@
 # Class "ItemConfig::Card"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### AchievementID {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int AchievementID  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Description {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string Description  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GreedModeAllowed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean GreedModeAllowed  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### HudAnim {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string HudAnim  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ID {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ID  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Name {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
 ___ 

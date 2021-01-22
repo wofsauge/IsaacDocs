@@ -1,47 +1,47 @@
 # Class "EntityProjectile"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### AddChangeFlags () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddChangeFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 See <a class="el" href="#a6c5a69141dc132104776d0aa4ce8691e">ChangeFlags</a>. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddFallingAccel () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddFallingAccel ( float Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddFallingSpeed () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddFallingSpeed ( float Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddHeight () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddHeight ( float Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddProjectileFlags () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddScale () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddScale ( float Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Acceleration {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Acceleration  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ChangeFlags {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
 Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes after the "Changed" state was activated.
@@ -57,8 +57,8 @@ ____
 Also used in: <a class="el" href="class_projectile_params.html#a94280d115acf598bf9f751da3f815a8c">ProjectileParams()</a> WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ChangeTimeout {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
@@ -74,8 +74,8 @@ ____
 Also used in: <a class="el" href="class_projectile_params.html#a6738cae72bddb5bbc087f215f7f08bd2">ProjectileParams()</a> WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ChangeVelocity {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
@@ -91,56 +91,56 @@ ____
 Also used in: <a class="el" href="class_projectile_params.html#a8d480667cf7ba94ee10bbb9dcc008c6f">ProjectileParams()</a> WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### CurvingStrength {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float CurvingStrength  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Damage {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Damage  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DepthOffset {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float DepthOffset  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FallingAccel {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float FallingAccel  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FallingSpeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float FallingSpeed  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Height {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Height  {: .copyable aria-label='Variables' }
 
 Defines the height of a projectile. Height should be a negative value. Default is `:::lua -23`.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### HomingStrength {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float HomingStrength  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [ProjectileFlags](../enums/ProjectileFlags) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int [ProjectileFlags](../enums/ProjectileFlags)  {: .copyable aria-label='Variables' }
 
 Uses <a class="el" href="group__enums.html#ga0302119ed82822df78af258ee457e6a6">ProjectileFlags</a> to define the projectile attributes. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Scale {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Scale  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### WiggleFrameOffset {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int WiggleFrameOffset  {: .copyable aria-label='Variables' }
 
 ___ 

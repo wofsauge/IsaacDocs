@@ -1,9 +1,8 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "DoorState"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 0 |STATE_INIT {: .copyable } |  | 
-| 1 |STATE_CLOSED {: .copyable } |  | 
-| 2 |STATE_OPEN {: .copyable } |  | 
-| 3 |STATE_ONE_CHAIN {: .copyable } |  | 
-| 4 |STATE_HALF_CRACKED {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|0 |STATE_INIT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |STATE_CLOSED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |STATE_OPEN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |STATE_ONE_CHAIN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |STATE_HALF_CRACKED {: .copyable } |  | 

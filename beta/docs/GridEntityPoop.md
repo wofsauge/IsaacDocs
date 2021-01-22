@@ -1,33 +1,33 @@
 # Class "GridEntityPoop"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### ReduceSpawnRate () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void ReduceSpawnRate ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RespawnRedPoop () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RespawnRedPoop ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### ReducedSpawnRate {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean ReducedSpawnRate  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ReviveTimer {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int ReviveTimer  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### StateAnimation {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string StateAnimation  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### UnderPlayer {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean UnderPlayer  {: .copyable aria-label='Variables' }
 Used to determine when player moves away from the poop. 
 ___ 

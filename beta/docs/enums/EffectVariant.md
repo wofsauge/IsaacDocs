@@ -1,122 +1,121 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "EffectVariant"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 0 |EFFECT_NULL {: .copyable } |  | 
-| 1 |BOMB_EXPLOSION {: .copyable } |  | 
-| 2 |BLOOD_EXPLOSION {: .copyable } |  | 
-| 3 |FLY_EXPLOSION {: .copyable } |  | 
-| 4 |ROCK_PARTICLE {: .copyable } |  | 
-| 5 |BLOOD_PARTICLE {: .copyable } |  | 
-| 6 |DEVIL {: .copyable } |  | 
-| 7 |BLOOD_SPLAT {: .copyable } |  | 
-| 8 |LADDER {: .copyable } |  | 
-| 9 |ANGEL {: .copyable } |  | 
-| 10 |BLUE_FLAME {: .copyable } |  | 
-| 11 |BULLET_POOF {: .copyable } |  | 
-| 12 |TEAR_POOF_A {: .copyable } |  | 
-| 13 |TEAR_POOF_B {: .copyable } |  | 
-| 14 |CROSS_POOF {: .copyable } |  | 
-| 15 |POOF01 {: .copyable } |  | 
-| 16 |POOF02 {: .copyable } |  | 
-| 17 |POOF04 {: .copyable } |  | 
-| 18 |BOMB_CRATER {: .copyable } |  | 
-| 19 |CRACK_THE_SKY {: .copyable } |  | 
-| 20 |SCYTHE_BREAK {: .copyable } |  | 
-| 21 |TINY_BUG {: .copyable } |  | 
-| 22 |CREEP_RED {: .copyable } |  | 
-| 23 |CREEP_GREEN {: .copyable } |  | 
-| 24 |CREEP_YELLOW {: .copyable } |  | 
-| 25 |CREEP_WHITE {: .copyable } |  | 
-| 26 |CREEP_BLACK {: .copyable } |  | 
-| 27 |WOOD_PARTICLE {: .copyable } |  | 
-| 28 |MONSTROS_TOOTH {: .copyable } |  | 
-| 29 |MOM_FOOT_STOMP {: .copyable } |  | 
-| 30 |TARGET {: .copyable } |  | 
-| 31 |ROCKET {: .copyable } |  | 
-| 32 |PLAYER_CREEP_LEMON_MISHAP {: .copyable } |  | 
-| 33 |TINY_FLY {: .copyable } |  | 
-| 34 |FART {: .copyable } |  | 
-| 35 |TOOTH_PARTICLE {: .copyable } |  | 
-| 36 |XRAY_WALL {: .copyable } |  | 
-| 37 |PLAYER_CREEP_HOLYWATER {: .copyable } |  | 
-| 38 |SPIDER_EXPLOSION {: .copyable } |  | 
-| 39 |HEAVEN_LIGHT_DOOR {: .copyable } |  | 
-| 40 |STARFLASH {: .copyable } |  | 
-| 41 |WATER_DROPLET {: .copyable } |  | 
-| 42 |BLOOD_GUSH {: .copyable } |  | 
-| 43 |POOP_EXPLOSION {: .copyable } |  | 
-| 44 |PLAYER_CREEP_WHITE {: .copyable } |  | 
-| 45 |PLAYER_CREEP_BLACK {: .copyable } |  | 
-| 46 |PLAYER_CREEP_RED {: .copyable } |  | 
-| 47 |TRINITY_SHIELD {: .copyable } |  | 
-| 48 |BATTERY {: .copyable } |  | 
-| 49 |HEART {: .copyable } |  | 
-| 50 |LASER_IMPACT {: .copyable } |  | 
-| 51 |HOT_BOMB_FIRE {: .copyable } |  | 
-| 52 |RED_CANDLE_FLAME {: .copyable } |  | 
-| 53 |PLAYER_CREEP_GREEN {: .copyable } |  | 
-| 54 |PLAYER_CREEP_HOLYWATER_TRAIL {: .copyable } |  | 
-| 55 |SPIKE {: .copyable } |  | 
-| 56 |CREEP_BROWN {: .copyable } | Bullet leaves a brown creep <br> | 
-| 57 |PULLING_EFFECT {: .copyable } |  | 
-| 58 |POOP_PARTICLE {: .copyable } |  | 
-| 59 |DUST_CLOUD {: .copyable } |  | 
-| 60 |BOOMERANG {: .copyable } | come back <br> | 
-| 61 |SHOCKWAVE {: .copyable } |  | 
-| 62 |ROCK_EXPLOSION {: .copyable } |  | 
-| 63 |WORM {: .copyable } |  | 
-| 64 |BEETLE {: .copyable } |  | 
-| 65 |WISP {: .copyable } |  | 
-| 66 |EMBER_PARTICLE {: .copyable } |  | 
-| 67 |SHOCKWAVE_DIRECTIONAL {: .copyable } |  | 
-| 68 |WALL_BUG {: .copyable } |  | 
-| 69 |BUTTERFLY {: .copyable } |  | 
-| 70 |BLOOD_DROP {: .copyable } |  | 
-| 71 |BRIMSTONE_SWIRL {: .copyable } |  | 
-| 72 |CRACKWAVE {: .copyable } |  | 
-| 73 |SHOCKWAVE_RANDOM {: .copyable } |  | 
-| 74 |ISAACS_CARPET {: .copyable } |  | 
-| 75 |BAR_PARTICLE {: .copyable } |  | 
-| 76 |DICE_FLOOR {: .copyable } |  | 
-| 77 |LARGE_BLOOD_EXPLOSION {: .copyable } |  | 
-| 78 |PLAYER_CREEP_LEMON_PARTY {: .copyable } |  | 
-| 79 |TEAR_POOF_SMALL {: .copyable } |  | 
-| 80 |TEAR_POOF_VERYSMALL {: .copyable } |  | 
-| 81 |FRIEND_BALL {: .copyable } |  | 
-| 82 |WOMB_TELEPORT {: .copyable } |  | 
-| 83 |SPEAR_OF_DESTINY {: .copyable } |  | 
-| 84 |EVIL_EYE {: .copyable } |  | 
-| 85 |DIAMOND_PARTICLE {: .copyable } |  | 
-| 86 |NAIL_PARTICLE {: .copyable } |  | 
-| 87 |FALLING_EMBER {: .copyable } |  | 
-| 88 |DARK_BALL_SMOKE_PARTICLE {: .copyable } |  | 
-| 89 |ULTRA_GREED_FOOTPRINT {: .copyable } |  | 
-| 90 |PLAYER_CREEP_PUDDLE_MILK {: .copyable } |  | 
-| 91 |MOMS_HAND {: .copyable } |  | 
-| 92 |PLAYER_CREEP_BLACKPOWDER {: .copyable } |  | 
-| 93 |PENTAGRAM_BLACKPOWDER {: .copyable } |  | 
-| 94 |CREEP_SLIPPERY_BROWN {: .copyable } |  | 
-| 95 |GOLD_PARTICLE {: .copyable } |  | 
-| 96 |HUSH_LASER {: .copyable } |  | 
-| 97 |IMPACT {: .copyable } |  | 
-| 98 |COIN_PARTICLE {: .copyable } |  | 
-| 99 |WATER_SPLASH {: .copyable } |  | 
-| 100 |HUSH_ASHES {: .copyable } |  | 
-| 101 |HUSH_LASER_UP {: .copyable } |  | 
-| 102 |BULLET_POOF_HUSH {: .copyable } |  | 
-| 103 |ULTRA_GREED_BLING {: .copyable } |  | 
-| 104 |FIREWORKS {: .copyable } |  | 
-| 105 |BROWN_CLOUD {: .copyable } |  | 
-| 106 |FART_RING {: .copyable } |  | 
-| 107 |BLACK_HOLE {: .copyable } |  | 
-| 108 |MR_ME {: .copyable } |  | 
-| 109 |DEATH_SKULL {: .copyable } |  | 
-| 110 |ENEMY_BRIMSTONE_SWIRL {: .copyable } |  | 
-| 111 |HAEMO_TRAIL {: .copyable } |  | 
-| 112 |HALLOWED_GROUND {: .copyable } |  | 
-| 113 |BRIMSTONE_BALL {: .copyable } |  | 
-| 114 |FORGOTTEN_CHAIN {: .copyable } |  | 
-| 115 |BROKEN_SHOVEL_SHADOW {: .copyable } |  | 
-| 116 |DIRT_PATCH {: .copyable } |  | 
-| 117 |FORGOTTEN_SOUL {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|0 |EFFECT_NULL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |BOMB_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |BLOOD_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |FLY_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |ROCK_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|5 |BLOOD_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|6 |DEVIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|7 |BLOOD_SPLAT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|8 |LADDER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|9 |ANGEL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|10 |BLUE_FLAME {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|11 |BULLET_POOF {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|12 |TEAR_POOF_A {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|13 |TEAR_POOF_B {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|14 |CROSS_POOF {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|15 |POOF01 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|16 |POOF02 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|17 |POOF04 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|18 |BOMB_CRATER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|19 |CRACK_THE_SKY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|20 |SCYTHE_BREAK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|21 |TINY_BUG {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|22 |CREEP_RED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|23 |CREEP_GREEN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|24 |CREEP_YELLOW {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|25 |CREEP_WHITE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|26 |CREEP_BLACK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|27 |WOOD_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|28 |MONSTROS_TOOTH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|29 |MOM_FOOT_STOMP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|30 |TARGET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|31 |ROCKET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|32 |PLAYER_CREEP_LEMON_MISHAP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|33 |TINY_FLY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|34 |FART {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|35 |TOOTH_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|36 |XRAY_WALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|37 |PLAYER_CREEP_HOLYWATER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|38 |SPIDER_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|39 |HEAVEN_LIGHT_DOOR {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|40 |STARFLASH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|41 |WATER_DROPLET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|42 |BLOOD_GUSH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|43 |POOP_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|44 |PLAYER_CREEP_WHITE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|45 |PLAYER_CREEP_BLACK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|46 |PLAYER_CREEP_RED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|47 |TRINITY_SHIELD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|48 |BATTERY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|49 |HEART {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|50 |LASER_IMPACT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|51 |HOT_BOMB_FIRE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|52 |RED_CANDLE_FLAME {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|53 |PLAYER_CREEP_GREEN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|54 |PLAYER_CREEP_HOLYWATER_TRAIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|55 |SPIKE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|56 |CREEP_BROWN {: .copyable } | Bullet leaves a brown creep <br> | 
+|[ ](#){: .abp .tooltip .badge }|57 |PULLING_EFFECT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|58 |POOP_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|59 |DUST_CLOUD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|60 |BOOMERANG {: .copyable } | come back <br> | 
+|[ ](#){: .abp .tooltip .badge }|61 |SHOCKWAVE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|62 |ROCK_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|63 |WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|64 |BEETLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|65 |WISP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|66 |EMBER_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|67 |SHOCKWAVE_DIRECTIONAL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|68 |WALL_BUG {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|69 |BUTTERFLY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|70 |BLOOD_DROP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|71 |BRIMSTONE_SWIRL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|72 |CRACKWAVE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|73 |SHOCKWAVE_RANDOM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|74 |ISAACS_CARPET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|75 |BAR_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|76 |DICE_FLOOR {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|77 |LARGE_BLOOD_EXPLOSION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|78 |PLAYER_CREEP_LEMON_PARTY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|79 |TEAR_POOF_SMALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|80 |TEAR_POOF_VERYSMALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|81 |FRIEND_BALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|82 |WOMB_TELEPORT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|83 |SPEAR_OF_DESTINY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|84 |EVIL_EYE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|85 |DIAMOND_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|86 |NAIL_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|87 |FALLING_EMBER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|88 |DARK_BALL_SMOKE_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|89 |ULTRA_GREED_FOOTPRINT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|90 |PLAYER_CREEP_PUDDLE_MILK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|91 |MOMS_HAND {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|92 |PLAYER_CREEP_BLACKPOWDER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|93 |PENTAGRAM_BLACKPOWDER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|94 |CREEP_SLIPPERY_BROWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|95 |GOLD_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|96 |HUSH_LASER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|97 |IMPACT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|98 |COIN_PARTICLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|99 |WATER_SPLASH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|100 |HUSH_ASHES {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|101 |HUSH_LASER_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|102 |BULLET_POOF_HUSH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|103 |ULTRA_GREED_BLING {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|104 |FIREWORKS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|105 |BROWN_CLOUD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|106 |FART_RING {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|107 |BLACK_HOLE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|108 |MR_ME {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|109 |DEATH_SKULL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|110 |ENEMY_BRIMSTONE_SWIRL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|111 |HAEMO_TRAIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|112 |HALLOWED_GROUND {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|113 |BRIMSTONE_BALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|114 |FORGOTTEN_CHAIN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|115 |BROKEN_SHOVEL_SHADOW {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|116 |DIRT_PATCH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|117 |FORGOTTEN_SOUL {: .copyable } |  | 

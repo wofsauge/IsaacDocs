@@ -1,61 +1,60 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "Card"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| -1 |CARD_RANDOM {: .copyable } |  | 
-| 0 |CARD_NULL {: .copyable } |  | 
-| 1 |CARD_FOOL {: .copyable } |  | 
-| 2 |CARD_MAGICIAN {: .copyable } |  | 
-| 3 |CARD_HIGH_PRIESTESS {: .copyable } |  | 
-| 4 |CARD_EMPRESS {: .copyable } |  | 
-| 5 |CARD_EMPEROR {: .copyable } |  | 
-| 6 |CARD_HIEROPHANT {: .copyable } |  | 
-| 7 |CARD_LOVERS {: .copyable } |  | 
-| 8 |CARD_CHARIOT {: .copyable } |  | 
-| 9 |CARD_JUSTICE {: .copyable } |  | 
-| 10 |CARD_HERMIT {: .copyable } |  | 
-| 11 |CARD_WHEEL_OF_FORTUNE {: .copyable } |  | 
-| 12 |CARD_STRENGTH {: .copyable } |  | 
-| 13 |CARD_HANGED_MAN {: .copyable } |  | 
-| 14 |CARD_DEATH {: .copyable } |  | 
-| 15 |CARD_TEMPERANCE {: .copyable } |  | 
-| 16 |CARD_DEVIL {: .copyable } |  | 
-| 17 |CARD_TOWER {: .copyable } |  | 
-| 18 |CARD_STARS {: .copyable } |  | 
-| 19 |CARD_MOON {: .copyable } |  | 
-| 20 |CARD_SUN {: .copyable } |  | 
-| 21 |CARD_JUDGEMENT {: .copyable } |  | 
-| 22 |CARD_WORLD {: .copyable } |  | 
-| 23 |CARD_CLUBS_2 {: .copyable } |  | 
-| 24 |CARD_DIAMONDS_2 {: .copyable } |  | 
-| 25 |CARD_SPADES_2 {: .copyable } |  | 
-| 26 |CARD_HEARTS_2 {: .copyable } |  | 
-| 27 |CARD_ACE_OF_CLUBS {: .copyable } |  | 
-| 28 |CARD_ACE_OF_DIAMONDS {: .copyable } |  | 
-| 29 |CARD_ACE_OF_SPADES {: .copyable } |  | 
-| 30 |CARD_ACE_OF_HEARTS {: .copyable } |  | 
-| 31 |CARD_JOKER {: .copyable } |  | 
-| 32 |RUNE_HAGALAZ {: .copyable } |  | 
-| 33 |RUNE_JERA {: .copyable } |  | 
-| 34 |RUNE_EHWAZ {: .copyable } |  | 
-| 35 |RUNE_DAGAZ {: .copyable } |  | 
-| 36 |RUNE_ANSUZ {: .copyable } |  | 
-| 37 |RUNE_PERTHRO {: .copyable } |  | 
-| 38 |RUNE_BERKANO {: .copyable } |  | 
-| 39 |RUNE_ALGIZ {: .copyable } |  | 
-| 40 |RUNE_BLANK {: .copyable } |  | 
-| 41 |RUNE_BLACK {: .copyable } |  | 
-| 42 |CARD_CHAOS {: .copyable } |  | 
-| 43 |CARD_CREDIT {: .copyable } |  | 
-| 44 |CARD_RULES {: .copyable } |  | 
-| 45 |CARD_HUMANITY {: .copyable } |  | 
-| 46 |CARD_SUICIDE_KING {: .copyable } |  | 
-| 47 |CARD_GET_OUT_OF_JAIL {: .copyable } |  | 
-| 48 |CARD_QUESTIONMARK {: .copyable } |  | 
-| 49 |CARD_DICE_SHARD {: .copyable } |  | 
-| 50 |CARD_EMERGENCY_CONTACT {: .copyable } |  | 
-| 51 |CARD_HOLY {: .copyable } |  | 
-| 52 |CARD_HUGE_GROWTH {: .copyable } | <br> | 
-| 53 |CARD_ANCIENT_RECALL {: .copyable } |  | 
-| 54 |CARD_ERA_WALK {: .copyable } |  | 
-| 55 |NUM_CARDS {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|-1 |CARD_RANDOM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|0 |CARD_NULL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |CARD_FOOL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |CARD_MAGICIAN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |CARD_HIGH_PRIESTESS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |CARD_EMPRESS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|5 |CARD_EMPEROR {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|6 |CARD_HIEROPHANT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|7 |CARD_LOVERS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|8 |CARD_CHARIOT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|9 |CARD_JUSTICE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|10 |CARD_HERMIT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|11 |CARD_WHEEL_OF_FORTUNE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|12 |CARD_STRENGTH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|13 |CARD_HANGED_MAN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|14 |CARD_DEATH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|15 |CARD_TEMPERANCE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|16 |CARD_DEVIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|17 |CARD_TOWER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|18 |CARD_STARS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|19 |CARD_MOON {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|20 |CARD_SUN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|21 |CARD_JUDGEMENT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|22 |CARD_WORLD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|23 |CARD_CLUBS_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|24 |CARD_DIAMONDS_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|25 |CARD_SPADES_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|26 |CARD_HEARTS_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|27 |CARD_ACE_OF_CLUBS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|28 |CARD_ACE_OF_DIAMONDS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|29 |CARD_ACE_OF_SPADES {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|30 |CARD_ACE_OF_HEARTS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|31 |CARD_JOKER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|32 |RUNE_HAGALAZ {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|33 |RUNE_JERA {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|34 |RUNE_EHWAZ {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|35 |RUNE_DAGAZ {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|36 |RUNE_ANSUZ {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|37 |RUNE_PERTHRO {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|38 |RUNE_BERKANO {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|39 |RUNE_ALGIZ {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|40 |RUNE_BLANK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|41 |RUNE_BLACK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|42 |CARD_CHAOS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|43 |CARD_CREDIT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|44 |CARD_RULES {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|45 |CARD_HUMANITY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|46 |CARD_SUICIDE_KING {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|47 |CARD_GET_OUT_OF_JAIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|48 |CARD_QUESTIONMARK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|49 |CARD_DICE_SHARD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|50 |CARD_EMERGENCY_CONTACT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|51 |CARD_HOLY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|52 |CARD_HUGE_GROWTH {: .copyable } | <br> | 
+|[ ](#){: .abp .tooltip .badge }|53 |CARD_ANCIENT_RECALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|54 |CARD_ERA_WALK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|55 |NUM_CARDS {: .copyable } |  | 

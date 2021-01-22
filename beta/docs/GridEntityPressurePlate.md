@@ -1,23 +1,23 @@
 # Class "GridEntityPressurePlate"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### Reward () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Reward ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GreedModeRNG () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [RNG](../RNG) GreedModeRNG  {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### NextGreedAnimation {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string NextGreedAnimation  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### TimerPlate {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [Sprite](../Sprite) TimerPlate  {: .copyable aria-label='Variables' }
 
 ___ 

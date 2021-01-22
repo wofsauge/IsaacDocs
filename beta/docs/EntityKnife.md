@@ -1,83 +1,83 @@
 # Class "EntityKnife"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### GetKnifeDistance () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float GetKnifeDistance ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetKnifeVelocity () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### float GetKnifeVelocity ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetRenderZ () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetRenderZ ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsFlying () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsFlying ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Reset () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 Used for master knifes, to get back to player. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetPathFollowSpeed () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetPathFollowSpeed ( float Speed ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Shoot () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Shoot ( float Charge, float Range ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Charge {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Charge  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsFlying {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsFlying  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### MaxDistance {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float MaxDistance  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PathFollowSpeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float PathFollowSpeed  {: .copyable aria-label='Variables' }
 Unit speed of path moving knifes. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PathOffset {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float PathOffset  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Rotation {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Rotation  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RotationOffset {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float RotationOffset  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Scale {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Scale  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
 
 ___ 

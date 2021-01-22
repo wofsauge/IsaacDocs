@@ -85,7 +85,11 @@ app.document$.subscribe(function() {
         }
     }
     // handle badge line object
-    $(".badge").parent().addClass("badgeLine");
+    $(".badge").each(function(table) {
+        if ($(this).parent().prop("tagName") == "P") {
+            $(this).parent().addClass("badgeLine");
+        }
+    });
 
     // handle frequently used Entry
     $("nav[aria-label=\"Frequently used\"]").parent().addClass("frequentlyUsed");

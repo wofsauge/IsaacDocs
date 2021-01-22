@@ -1,134 +1,133 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "TrinketType"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 0 |TRINKET_NULL {: .copyable } |  | 
-| 1 |TRINKET_SWALLOWED_PENNY {: .copyable } |  | 
-| 2 |TRINKET_PETRIFIED_POOP {: .copyable } |  | 
-| 3 |TRINKET_AAA_BATTERY {: .copyable } |  | 
-| 4 |TRINKET_BROKEN_REMOTE {: .copyable } |  | 
-| 5 |TRINKET_PURPLE_HEART {: .copyable } |  | 
-| 6 |TRINKET_BROKEN_MAGNET {: .copyable } |  | 
-| 7 |TRINKET_ROSARY_BEAD {: .copyable } |  | 
-| 8 |TRINKET_CARTRIDGE {: .copyable } |  | 
-| 9 |TRINKET_PULSE_WORM {: .copyable } |  | 
-| 10 |TRINKET_WIGGLE_WORM {: .copyable } |  | 
-| 11 |TRINKET_RING_WORM {: .copyable } |  | 
-| 12 |TRINKET_FLAT_WORM {: .copyable } |  | 
-| 13 |TRINKET_STORE_CREDIT {: .copyable } |  | 
-| 14 |TRINKET_CALLUS {: .copyable } |  | 
-| 15 |TRINKET_LUCKY_ROCK {: .copyable } |  | 
-| 16 |TRINKET_MOMS_TOENAIL {: .copyable } |  | 
-| 17 |TRINKET_BLACK_LIPSTICK {: .copyable } |  | 
-| 18 |TRINKET_BIBLE_TRACT {: .copyable } |  | 
-| 19 |TRINKET_PAPER_CLIP {: .copyable } |  | 
-| 20 |TRINKET_MONKEY_PAW {: .copyable } |  | 
-| 21 |TRINKET_MYSTERIOUS_PAPER {: .copyable } |  | 
-| 22 |TRINKET_DAEMONS_TAIL {: .copyable } |  | 
-| 23 |TRINKET_MISSING_POSTER {: .copyable } |  | 
-| 24 |TRINKET_BUTT_PENNY {: .copyable } |  | 
-| 25 |TRINKET_MYSTERIOUS_CANDY {: .copyable } |  | 
-| 26 |TRINKET_HOOK_WORM {: .copyable } |  | 
-| 27 |TRINKET_WHIP_WORM {: .copyable } |  | 
-| 28 |TRINKET_BROKEN_ANKH {: .copyable } |  | 
-| 29 |TRINKET_FISH_HEAD {: .copyable } |  | 
-| 30 |TRINKET_PINKY_EYE {: .copyable } |  | 
-| 31 |TRINKET_PUSH_PIN {: .copyable } |  | 
-| 32 |TRINKET_LIBERTY_CAP {: .copyable } |  | 
-| 33 |TRINKET_UMBILICAL_CORD {: .copyable } |  | 
-| 34 |TRINKET_CHILDS_HEART {: .copyable } |  | 
-| 35 |TRINKET_CURVED_HORN {: .copyable } |  | 
-| 36 |TRINKET_RUSTED_KEY {: .copyable } |  | 
-| 37 |TRINKET_GOAT_HOOF {: .copyable } |  | 
-| 38 |TRINKET_MOMS_PEARL {: .copyable } |  | 
-| 39 |TRINKET_CANCER {: .copyable } |  | 
-| 40 |TRINKET_RED_PATCH {: .copyable } |  | 
-| 41 |TRINKET_MATCH_STICK {: .copyable } |  | 
-| 42 |TRINKET_LUCKY_TOE {: .copyable } |  | 
-| 43 |TRINKET_CURSED_SKULL {: .copyable } |  | 
-| 44 |TRINKET_SAFETY_CAP {: .copyable } |  | 
-| 45 |TRINKET_ACE_SPADES {: .copyable } |  | 
-| 46 |TRINKET_ISAACS_FORK {: .copyable } |  | 
-| 47 |TRINKET_POLAROID_OBSOLETE {: .copyable } |  | 
-| 48 |TRINKET_MISSING_PAGE {: .copyable } |  | 
-| 49 |TRINKET_BLOODY_PENNY {: .copyable } |  | 
-| 50 |TRINKET_BURNT_PENNY {: .copyable } |  | 
-| 51 |TRINKET_FLAT_PENNY {: .copyable } |  | 
-| 52 |TRINKET_COUNTERFEIT_PENNY {: .copyable } |  | 
-| 53 |TRINKET_TICK {: .copyable } |  | 
-| 54 |TRINKET_ISAACS_HEAD {: .copyable } |  | 
-| 55 |TRINKET_MAGGYS_FAITH {: .copyable } |  | 
-| 56 |TRINKET_JUDAS_TONGUE {: .copyable } |  | 
-| 57 |TRINKET_SOUL {: .copyable } |  | 
-| 58 |TRINKET_SAMSONS_LOCK {: .copyable } |  | 
-| 59 |TRINKET_CAINS_EYE {: .copyable } |  | 
-| 60 |TRINKET_EVES_BIRD_FOOT {: .copyable } |  | 
-| 61 |TRINKET_LEFT_HAND {: .copyable } |  | 
-| 62 |TRINKET_SHINY_ROCK {: .copyable } |  | 
-| 63 |TRINKET_SAFETY_SCISSORS {: .copyable } |  | 
-| 64 |TRINKET_RAINBOW_WORM {: .copyable } |  | 
-| 65 |TRINKET_TAPE_WORM {: .copyable } |  | 
-| 66 |TRINKET_LAZY_WORM {: .copyable } |  | 
-| 67 |TRINKET_CRACKED_DICE {: .copyable } |  | 
-| 68 |TRINKET_SUPER_MAGNET {: .copyable } |  | 
-| 69 |TRINKET_FADED_POLAROID {: .copyable } |  | 
-| 70 |TRINKET_LOUSE {: .copyable } |  | 
-| 71 |TRINKET_BOBS_BLADDER {: .copyable } |  | 
-| 72 |TRINKET_WATCH_BATTERY {: .copyable } |  | 
-| 73 |TRINKET_BLASTING_CAP {: .copyable } |  | 
-| 74 |TRINKET_STUD_FINDER {: .copyable } |  | 
-| 75 |TRINKET_ERROR {: .copyable } |  | 
-| 76 |TRINKET_POKER_CHIP {: .copyable } |  | 
-| 77 |TRINKET_BLISTER {: .copyable } |  | 
-| 78 |TRINKET_SECOND_HAND {: .copyable } |  | 
-| 79 |TRINKET_ENDLESS_NAMELESS {: .copyable } |  | 
-| 80 |TRINKET_BLACK_FEATHER {: .copyable } |  | 
-| 81 |TRINKET_BLIND_RAGE {: .copyable } |  | 
-| 82 |TRINKET_GOLDEN_HORSE_SHOE {: .copyable } |  | 
-| 83 |TRINKET_STORE_KEY {: .copyable } |  | 
-| 84 |TRINKET_RIB_OF_GREED {: .copyable } |  | 
-| 85 |TRINKET_KARMA {: .copyable } |  | 
-| 86 |TRINKET_LIL_LARVA {: .copyable } |  | 
-| 87 |TRINKET_MOMS_LOCKET {: .copyable } |  | 
-| 88 |TRINKET_NO {: .copyable } |  | 
-| 89 |TRINKET_CHILD_LEASH {: .copyable } |  | 
-| 90 |TRINKET_BROWN_CAP {: .copyable } |  | 
-| 91 |TRINKET_MECONIUM {: .copyable } |  | 
-| 92 |TRINKET_CRACKED_CROWN {: .copyable } |  | 
-| 93 |TRINKET_USED_DIAPER {: .copyable } |  | 
-| 94 |TRINKET_FISH_TAIL {: .copyable } |  | 
-| 95 |TRINKET_BLACK_TOOTH {: .copyable } |  | 
-| 96 |TRINKET_OUROBOROS_WORM {: .copyable } |  | 
-| 97 |TRINKET_TONSIL {: .copyable } |  | 
-| 98 |TRINKET_NOSE_GOBLIN {: .copyable } |  | 
-| 99 |TRINKET_SUPER_BALL {: .copyable } |  | 
-| 100 |TRINKET_VIBRANT_BULB {: .copyable } |  | 
-| 101 |TRINKET_DIM_BULB {: .copyable } |  | 
-| 102 |TRINKET_FRAGMENTED_CARD {: .copyable } |  | 
-| 103 |TRINKET_EQUALITY {: .copyable } |  | 
-| 104 |TRINKET_WISH_BONE {: .copyable } |  | 
-| 105 |TRINKET_BAG_LUNCH {: .copyable } |  | 
-| 106 |TRINKET_LOST_CORK {: .copyable } |  | 
-| 107 |TRINKET_CROW_HEART {: .copyable } |  | 
-| 108 |TRINKET_WALNUT {: .copyable } |  | 
-| 109 |TRINKET_DUCT_TAPE {: .copyable } |  | 
-| 110 |TRINKET_SILVER_DOLLAR {: .copyable } |  | 
-| 111 |TRINKET_BLOODY_CROWN {: .copyable } |  | 
-| 112 |TRINKET_PAY_TO_WIN {: .copyable } |  | 
-| 113 |TRINKET_LOCUST_OF_WRATH {: .copyable } |  | 
-| 114 |TRINKET_LOCUST_OF_PESTILENCE {: .copyable } |  | 
-| 115 |TRINKET_LOCUST_OF_FAMINE {: .copyable } |  | 
-| 116 |TRINKET_LOCUST_OF_DEATH {: .copyable } |  | 
-| 117 |TRINKET_LOCUST_OF_CONQUEST {: .copyable } |  | 
-| 118 |TRINKET_BAT_WING {: .copyable } |  | 
-| 119 |TRINKET_STEM_CELL {: .copyable } |  | 
-| 120 |TRINKET_HAIRPIN {: .copyable } | Booster pack #1 <br> | 
-| 121 |TRINKET_WOODEN_CROSS {: .copyable } |  | 
-| 122 |TRINKET_BUTTER {: .copyable } |  | 
-| 123 |TRINKET_FILIGREE_FEATHERS {: .copyable } | Booster pack #2 <br> | 
-| 124 |TRINKET_DOOR_STOP {: .copyable } | Booster pack #3 <br> | 
-| 125 |TRINKET_EXTENSION_CORD {: .copyable } | Booster pack #4 <br> | 
-| 126 |TRINKET_ROTTEN_PENNY {: .copyable } | Booster pack #5 <br> | 
-| 127 |TRINKET_BABY_BENDER {: .copyable } |  | 
-| 128 |TRINKET_FINGER_BONE {: .copyable } |  | 
-| 129 |NUM_TRINKETS {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|0 |TRINKET_NULL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |TRINKET_SWALLOWED_PENNY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |TRINKET_PETRIFIED_POOP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |TRINKET_AAA_BATTERY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |TRINKET_BROKEN_REMOTE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|5 |TRINKET_PURPLE_HEART {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|6 |TRINKET_BROKEN_MAGNET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|7 |TRINKET_ROSARY_BEAD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|8 |TRINKET_CARTRIDGE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|9 |TRINKET_PULSE_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|10 |TRINKET_WIGGLE_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|11 |TRINKET_RING_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|12 |TRINKET_FLAT_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|13 |TRINKET_STORE_CREDIT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|14 |TRINKET_CALLUS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|15 |TRINKET_LUCKY_ROCK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|16 |TRINKET_MOMS_TOENAIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|17 |TRINKET_BLACK_LIPSTICK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|18 |TRINKET_BIBLE_TRACT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|19 |TRINKET_PAPER_CLIP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|20 |TRINKET_MONKEY_PAW {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|21 |TRINKET_MYSTERIOUS_PAPER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|22 |TRINKET_DAEMONS_TAIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|23 |TRINKET_MISSING_POSTER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|24 |TRINKET_BUTT_PENNY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|25 |TRINKET_MYSTERIOUS_CANDY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|26 |TRINKET_HOOK_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|27 |TRINKET_WHIP_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|28 |TRINKET_BROKEN_ANKH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|29 |TRINKET_FISH_HEAD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|30 |TRINKET_PINKY_EYE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|31 |TRINKET_PUSH_PIN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|32 |TRINKET_LIBERTY_CAP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|33 |TRINKET_UMBILICAL_CORD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|34 |TRINKET_CHILDS_HEART {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|35 |TRINKET_CURVED_HORN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|36 |TRINKET_RUSTED_KEY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|37 |TRINKET_GOAT_HOOF {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|38 |TRINKET_MOMS_PEARL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|39 |TRINKET_CANCER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|40 |TRINKET_RED_PATCH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|41 |TRINKET_MATCH_STICK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|42 |TRINKET_LUCKY_TOE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|43 |TRINKET_CURSED_SKULL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|44 |TRINKET_SAFETY_CAP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|45 |TRINKET_ACE_SPADES {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|46 |TRINKET_ISAACS_FORK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|47 |TRINKET_POLAROID_OBSOLETE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|48 |TRINKET_MISSING_PAGE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|49 |TRINKET_BLOODY_PENNY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|50 |TRINKET_BURNT_PENNY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|51 |TRINKET_FLAT_PENNY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|52 |TRINKET_COUNTERFEIT_PENNY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|53 |TRINKET_TICK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|54 |TRINKET_ISAACS_HEAD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|55 |TRINKET_MAGGYS_FAITH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|56 |TRINKET_JUDAS_TONGUE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|57 |TRINKET_SOUL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|58 |TRINKET_SAMSONS_LOCK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|59 |TRINKET_CAINS_EYE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|60 |TRINKET_EVES_BIRD_FOOT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|61 |TRINKET_LEFT_HAND {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|62 |TRINKET_SHINY_ROCK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|63 |TRINKET_SAFETY_SCISSORS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|64 |TRINKET_RAINBOW_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|65 |TRINKET_TAPE_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|66 |TRINKET_LAZY_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|67 |TRINKET_CRACKED_DICE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|68 |TRINKET_SUPER_MAGNET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|69 |TRINKET_FADED_POLAROID {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|70 |TRINKET_LOUSE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|71 |TRINKET_BOBS_BLADDER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|72 |TRINKET_WATCH_BATTERY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|73 |TRINKET_BLASTING_CAP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|74 |TRINKET_STUD_FINDER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|75 |TRINKET_ERROR {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|76 |TRINKET_POKER_CHIP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|77 |TRINKET_BLISTER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|78 |TRINKET_SECOND_HAND {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|79 |TRINKET_ENDLESS_NAMELESS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|80 |TRINKET_BLACK_FEATHER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|81 |TRINKET_BLIND_RAGE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|82 |TRINKET_GOLDEN_HORSE_SHOE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|83 |TRINKET_STORE_KEY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|84 |TRINKET_RIB_OF_GREED {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|85 |TRINKET_KARMA {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|86 |TRINKET_LIL_LARVA {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|87 |TRINKET_MOMS_LOCKET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|88 |TRINKET_NO {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|89 |TRINKET_CHILD_LEASH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|90 |TRINKET_BROWN_CAP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|91 |TRINKET_MECONIUM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|92 |TRINKET_CRACKED_CROWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|93 |TRINKET_USED_DIAPER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|94 |TRINKET_FISH_TAIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|95 |TRINKET_BLACK_TOOTH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|96 |TRINKET_OUROBOROS_WORM {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|97 |TRINKET_TONSIL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|98 |TRINKET_NOSE_GOBLIN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|99 |TRINKET_SUPER_BALL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|100 |TRINKET_VIBRANT_BULB {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|101 |TRINKET_DIM_BULB {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|102 |TRINKET_FRAGMENTED_CARD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|103 |TRINKET_EQUALITY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|104 |TRINKET_WISH_BONE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|105 |TRINKET_BAG_LUNCH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|106 |TRINKET_LOST_CORK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|107 |TRINKET_CROW_HEART {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|108 |TRINKET_WALNUT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|109 |TRINKET_DUCT_TAPE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|110 |TRINKET_SILVER_DOLLAR {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|111 |TRINKET_BLOODY_CROWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|112 |TRINKET_PAY_TO_WIN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|113 |TRINKET_LOCUST_OF_WRATH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|114 |TRINKET_LOCUST_OF_PESTILENCE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|115 |TRINKET_LOCUST_OF_FAMINE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|116 |TRINKET_LOCUST_OF_DEATH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|117 |TRINKET_LOCUST_OF_CONQUEST {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|118 |TRINKET_BAT_WING {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|119 |TRINKET_STEM_CELL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|120 |TRINKET_HAIRPIN {: .copyable } | Booster pack #1 <br> | 
+|[ ](#){: .abp .tooltip .badge }|121 |TRINKET_WOODEN_CROSS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|122 |TRINKET_BUTTER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|123 |TRINKET_FILIGREE_FEATHERS {: .copyable } | Booster pack #2 <br> | 
+|[ ](#){: .abp .tooltip .badge }|124 |TRINKET_DOOR_STOP {: .copyable } | Booster pack #3 <br> | 
+|[ ](#){: .abp .tooltip .badge }|125 |TRINKET_EXTENSION_CORD {: .copyable } | Booster pack #4 <br> | 
+|[ ](#){: .abp .tooltip .badge }|126 |TRINKET_ROTTEN_PENNY {: .copyable } | Booster pack #5 <br> | 
+|[ ](#){: .abp .tooltip .badge }|127 |TRINKET_BABY_BENDER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|128 |TRINKET_FINGER_BONE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|129 |NUM_TRINKETS {: .copyable } |  | 

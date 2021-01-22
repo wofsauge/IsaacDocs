@@ -1,38 +1,38 @@
 # Class "TearParams"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### [BombVariant](../enums/BombVariant) () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int [BombVariant](../enums/BombVariant)  {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### TearColor () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Color](../Color) TearColor  {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### TearDamage {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float TearDamage  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### TearHeight {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float TearHeight  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### TearScale {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float TearScale  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [TearVariant](../enums/TearVariant) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int [TearVariant](../enums/TearVariant)  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -1,9 +1,8 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "Direction"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| -1 |NO_DIRECTION {: .copyable } |  | 
-| 0 |LEFT {: .copyable } |  | 
-| 1 |UP {: .copyable } |  | 
-| 2 |RIGHT {: .copyable } |  | 
-| 3 |DOWN {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|-1 |NO_DIRECTION {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|0 |LEFT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|1 |UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |RIGHT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |DOWN {: .copyable } |  | 

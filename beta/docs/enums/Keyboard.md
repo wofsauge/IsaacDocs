@@ -1,124 +1,123 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "Keyboard"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 32 |KEY_SPACE {: .copyable } |  | 
-| 39 |KEY_APOSTROPHE {: .copyable } |  | 
-| 44 |KEY_COMMA {: .copyable } |  | 
-| 45 |KEY_MINUS {: .copyable } |  | 
-| 46 |KEY_PERIOD {: .copyable } |  | 
-| 47 |KEY_SLASH {: .copyable } |  | 
-| 48 |KEY_0 {: .copyable } |  | 
-| 49 |KEY_1 {: .copyable } |  | 
-| 50 |KEY_2 {: .copyable } |  | 
-| 51 |KEY_3 {: .copyable } |  | 
-| 52 |KEY_4 {: .copyable } |  | 
-| 53 |KEY_5 {: .copyable } |  | 
-| 54 |KEY_6 {: .copyable } |  | 
-| 55 |KEY_7 {: .copyable } |  | 
-| 56 |KEY_8 {: .copyable } |  | 
-| 57 |KEY_9 {: .copyable } |  | 
-| 59 |KEY_SEMICOLON {: .copyable } |  | 
-| 61 |KEY_EQUAL {: .copyable } |  | 
-| 65 |KEY_A {: .copyable } |  | 
-| 66 |KEY_B {: .copyable } |  | 
-| 67 |KEY_C {: .copyable } |  | 
-| 68 |KEY_D {: .copyable } |  | 
-| 69 |KEY_E {: .copyable } |  | 
-| 70 |KEY_F {: .copyable } |  | 
-| 71 |KEY_G {: .copyable } |  | 
-| 72 |KEY_H {: .copyable } |  | 
-| 73 |KEY_I {: .copyable } |  | 
-| 74 |KEY_J {: .copyable } |  | 
-| 75 |KEY_K {: .copyable } |  | 
-| 76 |KEY_L {: .copyable } |  | 
-| 77 |KEY_M {: .copyable } |  | 
-| 78 |KEY_N {: .copyable } |  | 
-| 79 |KEY_O {: .copyable } |  | 
-| 80 |KEY_P {: .copyable } |  | 
-| 81 |KEY_Q {: .copyable } |  | 
-| 82 |KEY_R {: .copyable } |  | 
-| 83 |KEY_S {: .copyable } |  | 
-| 84 |KEY_T {: .copyable } |  | 
-| 85 |KEY_U {: .copyable } |  | 
-| 86 |KEY_V {: .copyable } |  | 
-| 87 |KEY_W {: .copyable } |  | 
-| 88 |KEY_X {: .copyable } |  | 
-| 89 |KEY_Y {: .copyable } |  | 
-| 90 |KEY_Z {: .copyable } |  | 
-| 91 |KEY_LEFT_BRACKET {: .copyable } |  | 
-| 92 |KEY_BACKSLASH {: .copyable } |  | 
-| 93 |KEY_RIGHT_BRACKET {: .copyable } |  | 
-| 96 |KEY_GRAVE_ACCENT {: .copyable } |  | 
-| 161 |KEY_WORLD_1 {: .copyable } |  | 
-| 162 |KEY_WORLD_2 {: .copyable } |  | 
-| 256 |KEY_ESCAPE {: .copyable } |  | 
-| 257 |KEY_ENTER {: .copyable } |  | 
-| 258 |KEY_TAB {: .copyable } |  | 
-| 259 |KEY_BACKSPACE {: .copyable } |  | 
-| 260 |KEY_INSERT {: .copyable } |  | 
-| 261 |KEY_DELETE {: .copyable } |  | 
-| 262 |KEY_RIGHT {: .copyable } |  | 
-| 263 |KEY_LEFT {: .copyable } |  | 
-| 264 |KEY_DOWN {: .copyable } |  | 
-| 265 |KEY_UP {: .copyable } |  | 
-| 266 |KEY_PAGE_UP {: .copyable } |  | 
-| 267 |KEY_PAGE_DOWN {: .copyable } |  | 
-| 268 |KEY_HOME {: .copyable } |  | 
-| 269 |KEY_END {: .copyable } |  | 
-| 280 |KEY_CAPS_LOCK {: .copyable } |  | 
-| 281 |KEY_SCROLL_LOCK {: .copyable } |  | 
-| 282 |KEY_NUM_LOCK {: .copyable } |  | 
-| 283 |KEY_PRINT_SCREEN {: .copyable } |  | 
-| 284 |KEY_PAUSE {: .copyable } |  | 
-| 290 |KEY_F1 {: .copyable } |  | 
-| 291 |KEY_F2 {: .copyable } |  | 
-| 292 |KEY_F3 {: .copyable } |  | 
-| 293 |KEY_F4 {: .copyable } |  | 
-| 294 |KEY_F5 {: .copyable } |  | 
-| 295 |KEY_F6 {: .copyable } |  | 
-| 296 |KEY_F7 {: .copyable } |  | 
-| 297 |KEY_F8 {: .copyable } |  | 
-| 298 |KEY_F9 {: .copyable } |  | 
-| 299 |KEY_F10 {: .copyable } |  | 
-| 300 |KEY_F11 {: .copyable } |  | 
-| 301 |KEY_F12 {: .copyable } |  | 
-| 302 |KEY_F13 {: .copyable } |  | 
-| 303 |KEY_F14 {: .copyable } |  | 
-| 304 |KEY_F15 {: .copyable } |  | 
-| 305 |KEY_F16 {: .copyable } |  | 
-| 306 |KEY_F17 {: .copyable } |  | 
-| 307 |KEY_F18 {: .copyable } |  | 
-| 308 |KEY_F19 {: .copyable } |  | 
-| 309 |KEY_F20 {: .copyable } |  | 
-| 310 |KEY_F21 {: .copyable } |  | 
-| 311 |KEY_F22 {: .copyable } |  | 
-| 312 |KEY_F23 {: .copyable } |  | 
-| 313 |KEY_F24 {: .copyable } |  | 
-| 314 |KEY_F25 {: .copyable } |  | 
-| 320 |KEY_KP_0 {: .copyable } |  | 
-| 321 |KEY_KP_1 {: .copyable } |  | 
-| 322 |KEY_KP_2 {: .copyable } |  | 
-| 323 |KEY_KP_3 {: .copyable } |  | 
-| 324 |KEY_KP_4 {: .copyable } |  | 
-| 325 |KEY_KP_5 {: .copyable } |  | 
-| 326 |KEY_KP_6 {: .copyable } |  | 
-| 327 |KEY_KP_7 {: .copyable } |  | 
-| 328 |KEY_KP_8 {: .copyable } |  | 
-| 329 |KEY_KP_9 {: .copyable } |  | 
-| 330 |KEY_KP_DECIMAL {: .copyable } |  | 
-| 331 |KEY_KP_DIVIDE {: .copyable } |  | 
-| 332 |KEY_KP_MULTIPLY {: .copyable } |  | 
-| 333 |KEY_KP_SUBTRACT {: .copyable } |  | 
-| 334 |KEY_KP_ADD {: .copyable } |  | 
-| 335 |KEY_KP_ENTER {: .copyable } |  | 
-| 336 |KEY_KP_EQUAL {: .copyable } |  | 
-| 340 |KEY_LEFT_SHIFT {: .copyable } |  | 
-| 341 |KEY_LEFT_CONTROL {: .copyable } |  | 
-| 342 |KEY_LEFT_ALT {: .copyable } |  | 
-| 343 |KEY_LEFT_SUPER {: .copyable } |  | 
-| 344 |KEY_RIGHT_SHIFT {: .copyable } |  | 
-| 345 |KEY_RIGHT_CONTROL {: .copyable } |  | 
-| 346 |KEY_RIGHT_ALT {: .copyable } |  | 
-| 347 |KEY_RIGHT_SUPER {: .copyable } |  | 
-| 348 |KEY_MENU {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|32 |KEY_SPACE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|39 |KEY_APOSTROPHE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|44 |KEY_COMMA {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|45 |KEY_MINUS {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|46 |KEY_PERIOD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|47 |KEY_SLASH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|48 |KEY_0 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|49 |KEY_1 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|50 |KEY_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|51 |KEY_3 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|52 |KEY_4 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|53 |KEY_5 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|54 |KEY_6 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|55 |KEY_7 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|56 |KEY_8 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|57 |KEY_9 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|59 |KEY_SEMICOLON {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|61 |KEY_EQUAL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|65 |KEY_A {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|66 |KEY_B {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|67 |KEY_C {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|68 |KEY_D {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|69 |KEY_E {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|70 |KEY_F {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|71 |KEY_G {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|72 |KEY_H {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|73 |KEY_I {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|74 |KEY_J {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|75 |KEY_K {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|76 |KEY_L {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|77 |KEY_M {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|78 |KEY_N {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|79 |KEY_O {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|80 |KEY_P {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|81 |KEY_Q {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|82 |KEY_R {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|83 |KEY_S {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|84 |KEY_T {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|85 |KEY_U {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|86 |KEY_V {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|87 |KEY_W {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|88 |KEY_X {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|89 |KEY_Y {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|90 |KEY_Z {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|91 |KEY_LEFT_BRACKET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|92 |KEY_BACKSLASH {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|93 |KEY_RIGHT_BRACKET {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|96 |KEY_GRAVE_ACCENT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|161 |KEY_WORLD_1 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|162 |KEY_WORLD_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|256 |KEY_ESCAPE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|257 |KEY_ENTER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|258 |KEY_TAB {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|259 |KEY_BACKSPACE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|260 |KEY_INSERT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|261 |KEY_DELETE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|262 |KEY_RIGHT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|263 |KEY_LEFT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|264 |KEY_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|265 |KEY_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|266 |KEY_PAGE_UP {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|267 |KEY_PAGE_DOWN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|268 |KEY_HOME {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|269 |KEY_END {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|280 |KEY_CAPS_LOCK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|281 |KEY_SCROLL_LOCK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|282 |KEY_NUM_LOCK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|283 |KEY_PRINT_SCREEN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|284 |KEY_PAUSE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|290 |KEY_F1 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|291 |KEY_F2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|292 |KEY_F3 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|293 |KEY_F4 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|294 |KEY_F5 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|295 |KEY_F6 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|296 |KEY_F7 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|297 |KEY_F8 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|298 |KEY_F9 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|299 |KEY_F10 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|300 |KEY_F11 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|301 |KEY_F12 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|302 |KEY_F13 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|303 |KEY_F14 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|304 |KEY_F15 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|305 |KEY_F16 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|306 |KEY_F17 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|307 |KEY_F18 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|308 |KEY_F19 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|309 |KEY_F20 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|310 |KEY_F21 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|311 |KEY_F22 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|312 |KEY_F23 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|313 |KEY_F24 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|314 |KEY_F25 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|320 |KEY_KP_0 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|321 |KEY_KP_1 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|322 |KEY_KP_2 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|323 |KEY_KP_3 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|324 |KEY_KP_4 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|325 |KEY_KP_5 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|326 |KEY_KP_6 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|327 |KEY_KP_7 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|328 |KEY_KP_8 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|329 |KEY_KP_9 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|330 |KEY_KP_DECIMAL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|331 |KEY_KP_DIVIDE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|332 |KEY_KP_MULTIPLY {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|333 |KEY_KP_SUBTRACT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|334 |KEY_KP_ADD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|335 |KEY_KP_ENTER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|336 |KEY_KP_EQUAL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|340 |KEY_LEFT_SHIFT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|341 |KEY_LEFT_CONTROL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|342 |KEY_LEFT_ALT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|343 |KEY_LEFT_SUPER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|344 |KEY_RIGHT_SHIFT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|345 |KEY_RIGHT_CONTROL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|346 |KEY_RIGHT_ALT {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|347 |KEY_RIGHT_SUPER {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|348 |KEY_MENU {: .copyable } |  | 

@@ -1,214 +1,214 @@
 # Class "Sprite"
 ## Constructors
-[ ](#){: .abp .tooltip .badge }
 ### [Sprite](../Sprite) () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
 #### void [Sprite](../Sprite) ( void ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### GetDefaultAnimation () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetDefaultAnimationName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 ####  string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetFilename () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### string GetFilename ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetFrame () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetFrame ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetLayerCount () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetLayerCount ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetOverlayFrame () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetOverlayFrame ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetTexel () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Color](../Color) GetTexel ( [Vector](../Vector) SamplePos, [Vector](../Vector) RenderPos, float AlphaThreshold ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsEventTriggered () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsFinished () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsLoaded () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsLoaded ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsOverlayFinished () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsOverlayFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsOverlayPlaying () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsOverlayPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### IsPlaying () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean IsPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Load () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Load ( string Filename, boolean LoadGraphics ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### LoadGraphics () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void LoadGraphics ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Play () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PlayOverlay () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PlayRandom () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void PlayRandom ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Reload () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Reload ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RemoveOverlay () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RemoveOverlay ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Render () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Render ( [Vector](../Vector) Pos, [Vector](../Vector) TopLeftClamp, [Vector](../Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RenderLayer () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RenderLayer ( int LayerId, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ReplaceSpritesheet () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Reset () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetAnimation () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean SetAnimation ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetFrame () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetLastFrame () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetLastFrame ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetLayerFrame () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetLayerFrame ( int LayerId, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetOverlayAnimation () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean SetOverlayAnimation ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetOverlayFrame () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetOverlayFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetOverlayRenderPriority () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetOverlayRenderPriority ( boolean RenderFirst ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Stop () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Stop ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Update () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### WasEventTriggered () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean WasEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### FlipX {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean FlipX  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FlipY {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean FlipY  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [Color](../Color) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Color](../Color) [Color](../Color)  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Offset {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Vector](../Vector) Offset  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### PlaybackSpeed {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float PlaybackSpeed  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Rotation {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Rotation  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Scale {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 ####  [Vector](../Vector) Scale  {: .copyable aria-label='Variables' }
 
 ___ 

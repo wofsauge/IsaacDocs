@@ -1,18 +1,18 @@
 # Class "TemporaryEffect"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Cooldown {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Cooldown  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Count {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Count  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [Item](../ItemConfig_Item) {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### Config::Item [Item](../ItemConfig_Item)  {: .copyable aria-label='Variables' }
 
 ___ 

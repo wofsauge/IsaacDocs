@@ -1,23 +1,23 @@
 # Class "GridEntityPit"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### MakeBridge () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void MakeBridge ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SetLadder () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SetLadder ( boolean Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### UpdateCollision () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void UpdateCollision ( ) {: .copyable aria-label='Functions' }
 void InitSubclass(void); 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### HasLadder {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean HasLadder  {: .copyable aria-label='Variables' }
 
 ___ 

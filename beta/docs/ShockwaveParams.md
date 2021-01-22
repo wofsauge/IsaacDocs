@@ -1,33 +1,33 @@
 # Class "ShockwaveParams"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Age {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Age  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### LifeSpan {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int LifeSpan  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Position {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Strength {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Strength  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Time {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Time  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### TimeDT {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float TimeDT  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -1,13 +1,13 @@
 # Class "CppContainer::Vector::PillConfigList"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### Get () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [PillEffect](../ItemConfig_PillEffect) Get ( int Idx ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Size {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 ####  int Size  {: .copyable aria-label='Variables' }
 
 ___ 

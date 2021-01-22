@@ -1,8 +1,7 @@
-[ ](#){: .abp .tooltip .badge }
 # Enum "KeySubType"
-|Value|Enumerator|Comment|
-|:--|:--|:--|
-| 1 |KEY_NORMAL {: .copyable } |  | 
-| 2 |KEY_GOLDEN {: .copyable } |  | 
-| 3 |KEY_DOUBLEPACK {: .copyable } |  | 
-| 4 |KEY_CHARGED {: .copyable } |  | 
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .abp .tooltip .badge }|1 |KEY_NORMAL {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|2 |KEY_GOLDEN {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|3 |KEY_DOUBLEPACK {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|4 |KEY_CHARGED {: .copyable } |  | 

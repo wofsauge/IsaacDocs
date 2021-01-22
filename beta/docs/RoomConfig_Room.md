@@ -1,73 +1,73 @@
 # Class "RoomConfig::Room"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### [Difficulty](../enums/Difficulty) () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Difficulty](../enums/Difficulty) [Difficulty](../enums/Difficulty)  {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Doors {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### IntList Doors  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Height {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Height  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### InitialWeight {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float InitialWeight  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Name {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Shape {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [RoomShape](../enums/RoomShape) Shape  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SpawnCount {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int SpawnCount  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Spawns {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### SpawnList Spawns  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### StageID {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### s32 StageID  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Subtype {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Subtype  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Type {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### [RoomType](../enums/RoomType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Variant {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Variant  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Weight {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Weight  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Width {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### int Width  {: .copyable aria-label='Variables' }
 
 ___ 

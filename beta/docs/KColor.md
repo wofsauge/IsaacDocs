@@ -1,7 +1,7 @@
 # Class "KColor"
 ## Constructors
-[ ](#){: .abp .tooltip .badge }
 ### [KColor](../KColor) () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
 #### void [KColor](../KColor) ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "KColor" class.
@@ -9,24 +9,24 @@ Notes: "KColor" is only used in the <a class="el" href="class_font.html#ae12d76f
 {: .wrongParsing }
 ___ 
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ## Variables
 ### Alpha {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Alpha  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Blue {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Blue  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Green {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Green  {: .copyable aria-label='Variables' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Red {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
 #### float Red  {: .copyable aria-label='Variables' }
 
 ___ 

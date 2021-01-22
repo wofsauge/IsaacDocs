@@ -1,17 +1,17 @@
 # Class "Isaac"
 ## Functions
-[ ](#){: .abp .tooltip .badge }
 ### AddCallback () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void AddCallback ( table ref, int callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### AddPillEffectToPool () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int AddPillEffectToPool ( int pillEffect ) {: .copyable aria-label='Functions' }
 returns pill color 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ConsoleOutput () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void ConsoleOutput ( string text ) {: .copyable aria-label='Functions' }
 
 Prints a string into the Debug Console
@@ -29,20 +29,20 @@ Prints a string into the Debug Console
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### CountBosses () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int CountBosses ( ) {: .copyable aria-label='Functions' }
 
 Returns the number of bosses in the current room.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### CountEnemies () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int CountEnemies ( ) {: .copyable aria-label='Functions' }
 
 Returns the number of enemies in the current room.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### CountEntities () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int CountEntities ( [Entity](../Entity) Spawner, int Type, int Variant, int Subtype ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
@@ -50,8 +50,8 @@ Spawner refers to an entity object (can be `:::lua nil`)
 Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`) 
 Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`) 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### DebugString () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void DebugString ( string str ) {: .copyable aria-label='Functions' }
 
 Prints a string into the log file. You can find this file here `:::lua C:\Users\Jan\Documents\My Games\Binding of Isaac Afterbirth+\log.txt` 
@@ -65,34 +65,34 @@ Prints a string into the log file. You can find this file here `:::lua C:\Users\
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ExecuteCommand () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### string ExecuteCommand ( string command ) {: .copyable aria-label='Functions' }
 
 This function executes a debug console command. see <a href="tutorial_debug_console.html">[Tutorial] Debug Console</a> for informations on how to use commands. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### Explode () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void Explode ( [Vector](../Vector) pos, [Entity](../Entity) source, float damage ) {: .copyable aria-label='Functions' }
 
 Spawn an explosion on a specified location.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FindByType () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### table FindByType ( int Type, int Variant, int Subtype, boolean Cache, boolean IgnoreFriendly ) {: .copyable aria-label='Functions' }
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### FindInRadius () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions ) {: .copyable aria-label='Functions' }
 Returns entities in range of Radius from Position filtered by Partitions mask (see <a href="group__enums.html#gaea2d06861d0d38120ea425aa76d2f398">EntityPartition enum</a>) (include all = 0xffffffff) 
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCardIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
 
 Returns the CardID based on its hud value. (File: pocketitems.xml)
@@ -109,13 +109,13 @@ Returns the CardID based on its hud value. (File: pocketitems.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetChallenge () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetChallenge ( ) {: .copyable aria-label='Functions' }
 Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetChallengeIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetChallengeIdByName ( string challengeName ) {: .copyable aria-label='Functions' }
 
 Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)
@@ -129,8 +129,8 @@ Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCostumeIdByPath () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetCostumeIdByPath ( string path ) {: .copyable aria-label='Functions' }
 
 Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
@@ -144,8 +144,8 @@ Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetCurseIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetCurseIdByName ( string curseName ) {: .copyable aria-label='Functions' }
 
 Returns the CurseID of a curse based on its name. (File: curses.xml)
@@ -159,8 +159,8 @@ Returns the CurseID of a curse based on its name. (File: curses.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetEntityTypeByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetEntityTypeByName ( string entityName ) {: .copyable aria-label='Functions' }
 
 Returns the EntityType of an entity based on its name. (File: entities2.xml)
@@ -177,8 +177,8 @@ Returns the EntityType of an entity based on its name. (File: entities2.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetEntityVariantByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetEntityVariantByName ( string entityName ) {: .copyable aria-label='Functions' }
 
 Returns the variant of an entity based on its name. (File: entities2.xml)
@@ -195,8 +195,8 @@ Returns the variant of an entity based on its name. (File: entities2.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetFrameCount () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
 
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
@@ -204,19 +204,19 @@ Returns the amount of frames the game as a whole is running. The counter increas
 This function therefore works drastically different than <a href="class_game.html#aa73e5db19effb746a5e5da21e7d92207">`:::lua Game():GetFrameCount()`</a> WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetFreeNearPosition () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetFreeNearPosition ( [Vector](../Vector) pos, float step ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetItemConfig () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Config](../ItemConfig_Config) GetItemConfig ( ) {: .copyable aria-label='Functions' }
 Returns the <a class="el" href="class_item_config_1_1_config.html">ItemConfig::Config</a> object. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetItemIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetItemIdByName ( string itemName ) {: .copyable aria-label='Functions' }
 
 Returns the ItemID of a Collectible. (File: items.xml)
@@ -230,8 +230,8 @@ Returns the ItemID of a Collectible. (File: items.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetMusicIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetMusicIdByName ( string musicName ) {: .copyable aria-label='Functions' }
 
 Returns the MusicID of a music track. (File: music.xml)
@@ -245,8 +245,8 @@ Returns the MusicID of a music track. (File: music.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetPillEffectByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetPillEffectByName ( string pillEffect ) {: .copyable aria-label='Functions' }
 
 Returns the PillEffectID based on its name. (File: pocketitems.xml)
@@ -260,8 +260,8 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetPlayer () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId ) {: .copyable aria-label='Functions' }
 
 Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies.
@@ -273,8 +273,8 @@ Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher 
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetPlayerTypeByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetPlayerTypeByName ( string playerName ) {: .copyable aria-label='Functions' }
 
 Returns the PlayerType of a character based on its name. (File: players.xml)
@@ -288,19 +288,19 @@ Returns the PlayerType of a character based on its name. (File: players.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetRandomPosition () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetRandomPosition ( ) {: .copyable aria-label='Functions' }
 
 Returns a random position inside the current room. The Return value is a Vector containing the position in world coordinates.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetRoomEntities () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### table GetRoomEntities ( ) {: .copyable aria-label='Functions' }
 Returns a table containing all entities in the room.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetSoundIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetSoundIdByName ( string soundName ) {: .copyable aria-label='Functions' }
 
 Returns the SoundEffectID of a sound based on its name. (File: sounds.xml)
@@ -313,20 +313,20 @@ Returns the SoundEffectID of a sound based on its name. (File: sounds.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetTextWidth () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetTextWidth ( string str ) {: .copyable aria-label='Functions' }
 
 Returns the width of the given string in pixels based on the "terminus8" font (same font as used in Isaac.RenderText())
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetTime () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetTime ( ) {: .copyable aria-label='Functions' }
 
 Returns the current game time in milliseconds. This includes pauses!
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GetTrinketIdByName () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### int GetTrinketIdByName ( string trinketName ) {: .copyable aria-label='Functions' }
 
 Returns the TrinketType of a trinket based on its name. (File: items.xml)
@@ -340,8 +340,8 @@ Returns the TrinketType of a trinket based on its name. (File: items.xml)
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### GridSpawn () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [GridEntity](../GridEntity) GridSpawn ( [GridEntity](../GridEntity) gridEntityType, int Variant, [Vector](../Vector) position, boolean forced ) {: .copyable aria-label='Functions' }
 
 Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given position (world coordinates).
@@ -350,14 +350,14 @@ Spawn a <a class="el" href="class_grid_entity.html">GridEntity</a> at the given 
     forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again. WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### HasModData () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### boolean HasModData ( table ref ) {: .copyable aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### LoadModData () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### string LoadModData ( table ref ) {: .copyable aria-label='Functions' }
 
 Returns a  JSON array/table that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
@@ -380,8 +380,8 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RegisterMod () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RegisterMod ( table ref, string modName, int apiVersion ) {: .copyable aria-label='Functions' }
 
 Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!
@@ -393,20 +393,20 @@ Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RemoveCallback () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RemoveCallback ( table ref, int callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RemoveModData () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RemoveModData ( table ref ) {: .copyable aria-label='Functions' }
 
 Deletes the stored "saveX.dat" file if it exists. 
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RenderScaledText () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RenderScaledText ( string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A ) {: .copyable aria-label='Functions' }
 
 Renders a scaled text on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). ScaleX, ScaleY, R ,G ,B and A need to be between [0,1]. Some scale values can cause the font to display deformed and pixelated.
@@ -421,8 +421,8 @@ Renders a scaled text on the Screen. X and Y coordinates need to be in screen co
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### RenderText () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void RenderText ( string str, float X, float Y, float R, float G, float B, float A ) {: .copyable aria-label='Functions' }
 
 Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1]. 
@@ -437,8 +437,8 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### SaveModData () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### void SaveModData ( table ref, string data ) {: .copyable aria-label='Functions' }
 
 Stores a JSON array/table in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
@@ -460,19 +460,19 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ScreenToWorld () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ScreenToWorld ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
 
 Transfers Screen (aka. Window coordinates) into Worldcoordinates. This can be used to get a specific location in the room in World coordnates The World coordinate system is x[0,inf) y[0,inf).
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### ScreenToWorldDistance () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ScreenToWorldDistance ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### [Spawn](../RoomConfig_Spawn) () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( int entityType, int entityVariant, int entitySubtype, [Vector](../Vector) position, [Vector](../Vector) velocity, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
@@ -487,14 +487,14 @@ There are two spawn functions. <a class="el" href="namespace_isaac.html#aa0ae6af
  WRONG PARSING 
 {: .wrongParsing }
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### WorldToRenderPosition () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) WorldToRenderPosition ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Rendercoordinates. This can be used to render things at fixed positions in a room. The Render coordinate system is x[0,inf) y[0,inf). It defines the Position on the rendering-plane in the current room.
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### WorldToScreen () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) WorldToScreen ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. This can be used to render things next to an entity. The Screen coordinate system is x[0,inf) y[0,inf). Normally, it goes till ~500x ~300y. The return vector contains integer values or numbers ending with .5
@@ -509,8 +509,8 @@ Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. T
     ```
 
 ___ 
-[ ](#){: .abp .tooltip .badge }
 ### WorldToScreenDistance () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) WorldToScreenDistance ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
 
 ___ 
