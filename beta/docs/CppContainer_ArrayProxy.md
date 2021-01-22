@@ -5,8 +5,9 @@
 #### [Vector](../Vector) Get ( int Idx ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Size () {: aria-label='Functions' }
+## Variables
+### Size {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### class [RoomList](../CppContainer_ArrayProxy_RoomList) Size  {: .copyable aria-label='Functions' }
+#### [RoomList](../CppContainer_ArrayProxy_RoomList) Size  {: .copyable aria-label='Variables' }
 
 ___ 

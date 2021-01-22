@@ -1,19 +1,19 @@
 # Class "Sprite"
 ## Constructors
-### [Sprite](../Sprite) () {: aria-label='Constructors' }
+### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void [Sprite](../Sprite) ( void ) {: .copyable aria-label='Constructors' }
+#### void Sprite ( void ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
 ### GetDefaultAnimation () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
+#### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetDefaultAnimationName () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
+#### string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetFilename () {: aria-label='Functions' }
@@ -187,14 +187,14 @@ ___
 #### boolean FlipY  {: .copyable aria-label='Variables' }
 
 ___ 
-### [Color](../Color) {: aria-label='Variables' }
+### Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Color](../Color) [Color](../Color)  {: .copyable aria-label='Variables' }
+#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) Offset  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) Offset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### PlaybackSpeed {: aria-label='Variables' }
@@ -209,6 +209,6 @@ ___
 ___ 
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) Scale  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) Scale  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -1,8 +1,8 @@
 # Class "RNG"
 ## Constructors
-### [RNG](../RNG) () {: aria-label='Constructors' }
+### RNG () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void [RNG](../RNG) ( void ) {: .copyable aria-label='Constructors' }
+#### void RNG ( void ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions

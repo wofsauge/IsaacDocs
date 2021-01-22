@@ -3796,9 +3796,9 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 <p><a class="abp tooltip badge" href="#"> </a></p>
 <h4 aria-label="Functions" class="copyable"><a href="../Vector">Vector</a> ScreenToWorldDistance ( <a href="../Vector">Vector</a> pos )</h4>
 <hr />
-<h3 aria-label="Functions" id="spawn"><a href="../RoomConfig_Spawn">Spawn</a> ()<a class="headerlink" href="#spawn" title="Permanent link">⚓︎</a></h3>
+<h3 aria-label="Functions" id="spawn">Spawn ()<a class="headerlink" href="#spawn" title="Permanent link">⚓︎</a></h3>
 <p><a class="abp tooltip badge" href="#"> </a></p>
-<h4 aria-label="Functions" class="copyable"><a href="../Entity">Entity</a> <a href="../RoomConfig_Spawn">Spawn</a> ( int entityType, int entityVariant, int entitySubtype, <a href="../Vector">Vector</a> position, <a href="../Vector">Vector</a> velocity, <a href="../Entity">Entity</a> Spawner )</h4>
+<h4 aria-label="Functions" class="copyable"><a href="../Entity">Entity</a> Spawn ( int entityType, int entityVariant, int entitySubtype, <a href="../Vector">Vector</a> position, <a href="../Vector">Vector</a> velocity, <a href="../Entity">Entity</a> Spawner )</h4>
 <p>Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
 There are two spawn functions. <a href="../Isaac/#spawn">Isaac.Spawn()</a> and <a href="../Game/#spawn">Game():Spawn()</a>. If you need to spawn something with a specific seed, then you use <a href="../Game/#spawn">Game():Spawn()</a>. If you need to spawn something with a randomly generated seed, then use <a href="../Isaac/#spawn">Isaac.Spawn()</a>. Most of the time, you will probably want to use <a href="../Isaac/#spawn">Isaac.Spawn()</a>.</p>
 <details class="- example"><summary>Example Code</summary><p>This code spawns a random collectible at in center of the current room.

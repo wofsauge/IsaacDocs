@@ -375,3 +375,39 @@ h4>.copyButton>span::after {
     visibility: visible;
     opacity: 1;
 }
+
+
+/******* Content Overview *******/
+
+.contentTable {
+    font-size: .70rem;
+}
+
+.contentTable td,
+.contentTable th {
+    padding: .2em .5em;
+    border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.contentTable th {
+    color: var(--md-default-bg-color);
+    vertical-align: top;
+    text-align: left;
+    background-color: var(--md-default-fg-color--light);
+}
+
+.contentTable tr td:first-child {
+    text-align: right;
+}
+
+.contentTable tr[aria-label$='Functions'] {
+    background-color: var(--function-color);
+}
+
+.contentTable tr[aria-label$='Variables'] {
+    background-color: var(--var-color);
+}
+
+.contentTable tr[aria-label$='Constructors'] {
+    background-color: var(--constructor-color);
+}

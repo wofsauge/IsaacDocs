@@ -338,12 +338,12 @@ ___
 ___ 
 ### GetRenderScrollOffset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
 The camera scroll offset and screen shake offsets are both represented here. 
 ___ 
 ### GetRenderSurfaceTopLeft () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
 The position the floor and wall textures will be rendered at. 
 ___ 
 ### GetRoomConfigStage () {: aria-label='Functions' }

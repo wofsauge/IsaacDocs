@@ -472,7 +472,7 @@ ___
 ___ 
 ### GetAimDirection () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetAimDirection ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetAimDirection ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetBabySkin () {: aria-label='Functions' }
@@ -543,7 +543,7 @@ ___
 ___ 
 ### GetCostumeNullPos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetCostumeNullPos ( string NullFrameName, boolean HeadScale, [Vector](../Vector) [Direction](../enums/Direction ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetCostumeNullPos ( string NullFrameName, boolean HeadScale, [Vector](../Vector) Direction ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetDamageCooldown () {: aria-label='Functions' }
@@ -628,7 +628,7 @@ ___
 ___ 
 ### GetLaserOffset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetLaserOffset ( [LaserOffset](../enums/LaserOffset) ID, [Vector](../Vector) [Direction](../enums/Direction ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetLaserOffset ( [LaserOffset](../enums/LaserOffset) ID, [Vector](../Vector) Direction ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetLastActionTriggers () {: aria-label='Functions' }
@@ -643,12 +643,12 @@ ___
 ___ 
 ### GetLastDamageSource () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [EntityRef](../EntityRef) GetLastDamageSource ( ) {: .copyable aria-label='Functions' }
+#### [EntityRef](../EntityRef) GetLastDamageSource ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetLastDirection () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetLastDirection ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetLastDirection ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetMaxHearts () {: aria-label='Functions' }
@@ -689,7 +689,7 @@ ___
 ___ 
 ### GetMovementVector () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetMovementVector ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetMovementVector ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetMultiShotParams () {: aria-label='Functions' }
@@ -756,7 +756,7 @@ ___
 ___ 
 ### GetPocketItem () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  PlayerPocketItem GetPocketItem ( int SlotId ) {: .copyable aria-label='Functions' }
+#### PlayerPocketItem GetPocketItem ( int SlotId ) {: .copyable aria-label='Functions' }
 
 Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
 
@@ -765,7 +765,7 @@ Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
 ___ 
 ### GetRecentMovementVector () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetRecentMovementVector ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetRecentMovementVector ( ) {: .copyable aria-label='Functions' }
 Returns the joystick direction that drives player movement, taking into account certain modifiers like disabled controls and seed effects. 
 ___ 
 ### GetShootingInput () {: aria-label='Functions' }
@@ -845,7 +845,7 @@ ___
 ___ 
 ### GetVelocityBeforeUpdate () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetVelocityBeforeUpdate ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetVelocityBeforeUpdate ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetZodiacEffect () {: aria-label='Functions' }
@@ -1070,7 +1070,7 @@ ___
 ___ 
 ### SetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetCard ( int SlotId, [Card](../ItemConfig_Card) [Card](../ItemConfig_Card ) {: .copyable aria-label='Functions' }
+#### void SetCard ( int SlotId, [Card](../ItemConfig_Card) Card ) {: .copyable aria-label='Functions' }
 
 Change the card/rune the player is holding in the given itemslot (0 or 1).
 ___ 
@@ -1172,7 +1172,7 @@ ___
 ___ 
 ### UsePill () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void UsePill ( [PillEffect](../ItemConfig_PillEffect) PillEffect, [PillColor](../enums/PillColor) [PillColor](../enums/PillColor ) {: .copyable aria-label='Functions' }
+#### void UsePill ( [PillEffect](../ItemConfig_PillEffect) PillEffect, [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### WillPlayerRevive () {: aria-label='Functions' }
@@ -1180,12 +1180,12 @@ ___
 #### boolean WillPlayerRevive ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### BabySkin () {: aria-label='Functions' }
+## Variables
+### BabySkin {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [BabySubType](../enums/BabySubType) BabySkin  {: .copyable aria-label='Functions' }
+#### [BabySubType](../enums/BabySubType) BabySkin  {: .copyable aria-label='Variables' }
 P2 Skin section Used to hold the selected skin (in case of glitched baby it will pick a random one) 
 ___ 
-## Variables
 ### CanFly {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean CanFly  {: .copyable aria-label='Variables' }
@@ -1193,7 +1193,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Can the playe
 ___ 
 ### ControllerIndex {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int ControllerIndex  {: .copyable aria-label='Variables' }
+#### int ControllerIndex  {: .copyable aria-label='Variables' }
 s32 GetItemStateCooldown( void ) const { return m_ItemStateCooldown; } 
 ___ 
 ### ControlsCooldown {: aria-label='Variables' }
@@ -1218,7 +1218,7 @@ How long until the player can spawn their next tear?
 ___ 
 ### FriendBallEnemy {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  EntityDesc FriendBallEnemy  {: .copyable aria-label='Variables' }
+#### EntityDesc FriendBallEnemy  {: .copyable aria-label='Variables' }
 
 ___ 
 ### HeadFrameDelay {: aria-label='Variables' }
@@ -1286,9 +1286,9 @@ ___
 #### float TearFallingSpeed  {: .copyable aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How fast is the tear moving up or down when it spawns? Affects range. 
 ___ 
-### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+### TearFlags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags) TearFlags {: .copyable aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [TearFlags](../enums/TearFlags). 
 
 ???- example "Example Code"
@@ -1322,6 +1322,6 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is eq
 ___ 
 ### TearsOffset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) TearsOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) TearsOffset  {: .copyable aria-label='Variables' }
 
 ___ 

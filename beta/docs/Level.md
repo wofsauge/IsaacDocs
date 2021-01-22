@@ -77,7 +77,7 @@ ___
 ___ 
 ### GetCurrentRoomDesc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [RoomDescriptor](../RoomDescriptor) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
+#### [RoomDescriptor](../RoomDescriptor) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCurrentRoomIndex () {: aria-label='Functions' }
@@ -125,7 +125,7 @@ ___
 ___ 
 ### GetLastRoomDesc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [RoomDescriptor](../RoomDescriptor) GetLastRoomDesc ( ) {: .copyable aria-label='Functions' }
+#### [RoomDescriptor](../RoomDescriptor) GetLastRoomDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetName () {: aria-label='Functions' }
@@ -150,7 +150,7 @@ ___
 ___ 
 ### GetRoomByIdx () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
+#### [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetRoomCount () {: aria-label='Functions' }
@@ -251,7 +251,7 @@ ___
 ___ 
 ### SetStage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetStage ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) [StageType](../enums/StageType ) {: .copyable aria-label='Functions' }
+#### void SetStage ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) StageType ) {: .copyable aria-label='Functions' }
 for SetStage/SetNextStage to have effect, call Init afterward 
 ___ 
 ### SetStateFlag () {: aria-label='Functions' }
@@ -308,12 +308,12 @@ ___
     ```
 
 ___ 
-### DungeonReturnPosition () {: aria-label='Functions' }
+## Variables
+### DungeonReturnPosition {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) DungeonReturnPosition  {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) DungeonReturnPosition {: .copyable aria-label='Variables' }
 
 ___ 
-## Variables
 ### DungeonReturnRoomIndex {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int DungeonReturnRoomIndex  {: .copyable aria-label='Variables' }

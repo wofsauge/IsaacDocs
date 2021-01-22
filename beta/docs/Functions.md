@@ -1,8 +1,8 @@
 # Class "Global Functions"
 ## Constructors
-### [Game](../Game) () {: aria-label='Constructors' }
+### Game () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Constructors' }
+#### [Game](../Game) Game ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [Game](../Game) object.
 
@@ -14,9 +14,9 @@ Returns a [Game](../Game) object.
     
     ```
 ___ 
-### [MusicManager](../MusicManager) () {: aria-label='Constructors' }
+### MusicManager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Constructors' }
+#### [MusicManager](../MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [MusicManager](../MusicManager) object.
 
@@ -37,9 +37,9 @@ ___
 #### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Constructors' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
-### [SFXManager](../SFXManager) () {: aria-label='Constructors' }
+### SFXManager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Constructors' }
+#### [SFXManager](../SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [SFXManager](../SFXManager) object.
 

@@ -108,17 +108,17 @@ ___
 ___ 
 ### Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
 returns the position of the grid cell's center point 
 ___ 
-### [RNG](../RNG) {: aria-label='Variables' }
+### RNG {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) [RNG](../RNG)  {: .copyable aria-label='Variables' }
+#### [RNG](../RNG) RNG {: .copyable aria-label='Variables' }
 
 ___ 
-### [Sprite](../Sprite) {: aria-label='Variables' }
+### Sprite {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Sprite](../Sprite) [Sprite](../Sprite)  {: .copyable aria-label='Variables' }
+#### [Sprite](../Sprite) Sprite {: .copyable aria-label='Variables' }
 
 ___ 
 ### State {: aria-label='Variables' }

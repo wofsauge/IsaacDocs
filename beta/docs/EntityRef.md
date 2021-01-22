@@ -1,17 +1,17 @@
 # Class "EntityRef"
 ## Constructors
-### [EntityRef](../EntityRef) () {: aria-label='Constructors' }
+### EntityRef () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void [EntityRef](../EntityRef) ( [Entity](../Entity ) {: .copyable aria-label='Constructors' }
+#### void EntityRef ( [Entity](../Entity ) {: .copyable aria-label='Constructors' }
 
 ___ 
-## Functions
-### [Entity](../Entity) () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) [Entity](../Entity)  {: .copyable aria-label='Functions' }
-optional 
-___ 
 ## Variables
+### Entity {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
+#### [Entity](../Entity) Entity {: .copyable aria-label='Variables' }
+optional 
+
+___ 
 ### IsCharmed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsCharmed  {: .copyable aria-label='Variables' }

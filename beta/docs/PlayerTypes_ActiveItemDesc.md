@@ -10,9 +10,9 @@ ___
 #### int Charge  {: .copyable aria-label='Variables' }
 For items like Jars this holds the number of flies/hearts. 
 ___ 
-### [Item](../ItemConfig_Item) {: aria-label='Variables' }
+### Item {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) [Item](../ItemConfig_Item)  {: .copyable aria-label='Variables' }
+#### [CollectibleType](../enums/CollectibleType) Item {: .copyable aria-label='Variables' }
 
 ___ 
 ### Lock {: aria-label='Variables' }

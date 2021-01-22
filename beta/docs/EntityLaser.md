@@ -7,12 +7,12 @@
 ___ 
 ### GetEndPoint () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetNonOptimizedSamples () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
+#### HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetRenderZ () {: aria-label='Functions' }
@@ -22,7 +22,7 @@ ___
 ___ 
 ### GetSamples () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
+#### HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### IsCircleLaser () {: aria-label='Functions' }
@@ -196,9 +196,9 @@ ___
 #### float StartAngleDegrees  {: .copyable aria-label='Variables' }
 Some lasers have a bit of random variation in rotation so they need to remember their starting point. 
 ___ 
-### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+### TearFlags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
 float m_DepthOffset; 
 float GetDepthOffset(void) const { return m_DepthOffset; } void SetDepthOffset(float Value) { m_DepthOffset = Value; } 
 ___ 

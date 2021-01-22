@@ -18,9 +18,9 @@ ___
 #### int Type  {: .copyable aria-label='Variables' }
 
 ___ 
-### [Difficulty](../enums/Difficulty) {: aria-label='Variables' }
+### Difficulty {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### int [Difficulty](../enums/Difficulty)  {: .copyable aria-label='Variables' }
+#### [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
 ### Subtype {: aria-label='Variables' }

@@ -467,9 +467,9 @@ ___
 #### [Vector](../Vector) ScreenToWorldDistance ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
 
 ___ 
-### [Spawn](../RoomConfig_Spawn) () {: aria-label='Functions' }
+### Spawn () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) [Spawn](../RoomConfig_Spawn) ( int entityType, int entityVariant, int entitySubtype, [Vector](../Vector) position, [Vector](../Vector) velocity, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](../Vector) position, [Vector](../Vector) velocity, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
 There are two spawn functions. [Isaac.Spawn()](../Isaac/#spawn) and [Game():Spawn()](../Game/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](../Game/#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../Isaac/#spawn).

@@ -1,12 +1,12 @@
 # Class "PlayerTypes::PosVel"
-## Functions
-### Position () {: aria-label='Functions' }
+## Variables
+### Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Position  {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) Position {: .copyable aria-label='Variables' }
 
 ___ 
-### Velocity () {: aria-label='Functions' }
+### Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Velocity  {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) Velocity {: .copyable aria-label='Variables' }
 
 ___ 

@@ -122,9 +122,9 @@ ___
 #### float HomingStrength  {: .copyable aria-label='Variables' }
 
 ___ 
-### [ProjectileFlags](../enums/ProjectileFlags) {: aria-label='Variables' }
+### ProjectileFlags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### int [ProjectileFlags](../enums/ProjectileFlags)  {: .copyable aria-label='Variables' }
+#### [ProjectileFlags](../enums/ProjectileFlags) ProjectileFlags {: .copyable aria-label='Variables' }
 
 Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes.
 ___ 

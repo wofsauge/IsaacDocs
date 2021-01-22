@@ -177,7 +177,7 @@ If the entity is a boss, it returns its specific boss id. If it isnt a boss it w
 ___ 
 ### GetColor () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Color](../Color) GetColor ( ) {: .copyable aria-label='Functions' }
+#### [Color](../Color) GetColor ( ) {: .copyable aria-label='Functions' }
 
 Returns the Color object assosiated to this entity.
 ___ 
@@ -446,12 +446,12 @@ ___
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Child () {: aria-label='Functions' }
+## Variables
+### Child {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Child  {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) Child {: .copyable aria-label='Variables' }
 
 ___ 
-## Variables
 ### CollisionDamage {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float CollisionDamage  {: .copyable aria-label='Variables' }
@@ -479,13 +479,13 @@ Get/Set the depth-offset of the entity. This value is added to the Y Position of
 ___ 
 ### DropSeed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int DropSeed  {: .copyable aria-label='Variables' }
+#### int DropSeed  {: .copyable aria-label='Variables' }
 
 Get/set the Seed of the Drop RNG.
 ___ 
-### [EntityCollisionClass](../enums/EntityCollisionClass) {: aria-label='Variables' }
+### EntityCollisionClass {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityCollisionClass](../enums/EntityCollisionClass) [EntityCollisionClass](../enums/EntityCollisionClass)  {: .copyable aria-label='Variables' }
+#### [EntityCollisionClass](../enums/EntityCollisionClass) EntityCollisionClass {: .copyable aria-label='Variables' }
 
 ___ 
 ### FlipX {: aria-label='Variables' }
@@ -495,7 +495,7 @@ ___
 ___ 
 ### FrameCount {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int FrameCount  {: .copyable aria-label='Variables' }
+#### int FrameCount  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Friction {: aria-label='Variables' }
@@ -503,9 +503,9 @@ ___
 #### float Friction  {: .copyable aria-label='Variables' }
 loaded from entity config 
 ___ 
-### [GridCollisionClass](../enums/GridCollisionClass) {: aria-label='Variables' }
+### GridCollisionClass {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass) [GridCollisionClass](../enums/GridCollisionClass)  {: .copyable aria-label='Variables' }
+#### [GridCollisionClass](../enums/GridCollisionClass) GridCollisionClass {: .copyable aria-label='Variables' }
 
 ___ 
 ### HitPoints {: aria-label='Variables' }
@@ -518,12 +518,12 @@ ___
 ___ 
 ### Index {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int Index  {: .copyable aria-label='Variables' }
+#### int Index  {: .copyable aria-label='Variables' }
 
 ___ 
 ### InitSeed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int InitSeed  {: .copyable aria-label='Variables' }
+#### int InitSeed  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Mass {: aria-label='Variables' }
@@ -548,7 +548,7 @@ ___
 ___ 
 ### PositionOffset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### RenderZOffset {: aria-label='Variables' }
@@ -581,17 +581,17 @@ ___
 ___ 
 ### SpawnGridIndex {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int SpawnGridIndex  {: .copyable aria-label='Variables' }
+#### int SpawnGridIndex  {: .copyable aria-label='Variables' }
 
 ___ 
 ### SplatColor {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Color](../Color) SplatColor  {: .copyable aria-label='Variables' }
+#### [Color](../Color) SplatColor  {: .copyable aria-label='Variables' }
 
 ___ 
 ### SpriteOffset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) SpriteOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) SpriteOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### SpriteRotation {: aria-label='Variables' }
@@ -601,7 +601,7 @@ ___
 ___ 
 ### SpriteScale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) SpriteScale  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) SpriteScale  {: .copyable aria-label='Variables' }
 
 ___ 
 ### SubType {: aria-label='Variables' }
@@ -616,12 +616,12 @@ ___
 ___ 
 ### TargetPosition {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) TargetPosition  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) TargetPosition  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
+#### [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

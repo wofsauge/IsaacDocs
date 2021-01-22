@@ -5,12 +5,12 @@
 #### void Reward ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GreedModeRNG () {: aria-label='Functions' }
+## Variables
+### GreedModeRNG {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) GreedModeRNG  {: .copyable aria-label='Functions' }
+#### [RNG](../RNG) GreedModeRNG {: .copyable aria-label='Variables' }
 
 ___ 
-## Variables
 ### NextGreedAnimation {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### string NextGreedAnimation  {: .copyable aria-label='Variables' }

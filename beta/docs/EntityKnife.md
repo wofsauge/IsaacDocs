@@ -76,8 +76,8 @@ ___
 #### float Scale  {: .copyable aria-label='Variables' }
 
 ___ 
-### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+### TearFlags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
 
 ___ 

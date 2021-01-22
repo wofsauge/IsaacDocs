@@ -12,7 +12,7 @@ ___
 ___ 
 ### GetSprite () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Sprite](../Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
+#### [Sprite](../Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### SetBigRockFrame () {: aria-label='Functions' }

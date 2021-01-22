@@ -1,8 +1,8 @@
 # Class "ProjectileParams"
 ## Constructors
-### [ProjectileParams](../ProjectileParams) () {: aria-label='Constructors' }
+### ProjectileParams () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void [ProjectileParams](../ProjectileParams) ( void ) {: .copyable aria-label='Constructors' }
+#### void ProjectileParams ( void ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Variables
@@ -114,9 +114,9 @@ ___
 #### float HomingStrength  {: .copyable aria-label='Variables' }
 Multiplier on normal homing strength. Unused if SMART bullet flag is not set. 
 ___ 
-### [Color](../Color) {: aria-label='Variables' }
+### Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) [Color](../Color)  {: .copyable aria-label='Variables' }
+#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### PositionOffset {: aria-label='Variables' }

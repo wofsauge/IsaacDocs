@@ -33,12 +33,12 @@ ___
 ## Variables
 ### BaseDamage {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  float BaseDamage  {: .copyable aria-label='Variables' }
+#### float BaseDamage  {: .copyable aria-label='Variables' }
 
 ___ 
 ### BaseScale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  float BaseScale  {: .copyable aria-label='Variables' }
+#### float BaseScale  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Bounced {: aria-label='Variables' }
@@ -88,7 +88,7 @@ Used for Position adjustment (vs PositionOffset which is a render offset)
 ___ 
 ### PosDisplacement {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####   [Vector](../Vector) PosDisplacement  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) PosDisplacement  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Rotation {: aria-label='Variables' }
@@ -116,14 +116,14 @@ ___
 #### int StickTimer  {: .copyable aria-label='Variables' }
 
 ___ 
-### [TearFlags](../enums/TearFlags) {: aria-label='Variables' }
+### TearFlags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### int [TearFlags](../enums/TearFlags)  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags) TearFlags {: .copyable aria-label='Variables' }
 
 ___ 
 ### TearIndex {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int TearIndex  {: .copyable aria-label='Variables' }
+#### int TearIndex  {: .copyable aria-label='Variables' }
 
 ___ 
 ### WaitFrames {: aria-label='Variables' }

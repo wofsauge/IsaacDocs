@@ -17,7 +17,7 @@ ___
 ___ 
 ### GetSpriteOffset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### IsBusted () {: aria-label='Functions' }
@@ -96,9 +96,9 @@ ___
 #### [RoomType](../enums/RoomType) CurrentRoomType  {: .copyable aria-label='Variables' }
 
 ___ 
-### [Direction](../enums/Direction) {: aria-label='Variables' }
+### Direction {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Direction](../enums/Direction) [Direction](../enums/Direction)  {: .copyable aria-label='Variables' }
+#### [Direction](../enums/Direction) Direction {: .copyable aria-label='Variables' }
 
 ___ 
 ### ExtraSprite {: aria-label='Variables' }

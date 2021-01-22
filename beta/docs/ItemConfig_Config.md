@@ -2,17 +2,17 @@
 ## Functions
 ### GetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Card](../ItemConfig_Card) GetCard ( int ID ) {: .copyable aria-label='Functions' }
+#### [Card](../ItemConfig_Card) GetCard ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCards () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  CardList GetCards ( ) {: .copyable aria-label='Functions' }
+#### CardList GetCards ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCollectible () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Item](../ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
+#### [Item](../ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
 
 Returns the Itemobject of a given CollectibleID.
 
@@ -45,7 +45,7 @@ Returns the Itemobject of a given CollectibleID.
 ___ 
 ### GetCollectibles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  ItemList GetCollectibles ( ) {: .copyable aria-label='Functions' }
+#### ItemList GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles. 
 
@@ -64,7 +64,7 @@ Returns the List of all Collectibles.
 ___ 
 ### GetCostumes () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  CostumeList GetCostumes ( ) {: .copyable aria-label='Functions' }
+#### CostumeList GetCostumes ( ) {: .copyable aria-label='Functions' }
 
 
 ???+ bug "Bugs"
@@ -72,32 +72,32 @@ ___
 ___ 
 ### GetNullItem () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Item](../ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
+#### [Item](../ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetNullItems () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  ItemList GetNullItems ( ) {: .copyable aria-label='Functions' }
+#### ItemList GetNullItems ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetPillEffect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../ItemConfig_PillEffect) PillEffectID ) {: .copyable aria-label='Functions' }
+#### [PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../ItemConfig_PillEffect) PillEffectID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetPillEffects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  PillList GetPillEffects ( ) {: .copyable aria-label='Functions' }
+#### PillList GetPillEffects ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetTrinket () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  [Item](../ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
+#### [Item](../ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetTrinkets () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  ItemList GetTrinkets ( ) {: .copyable aria-label='Functions' }
+#### ItemList GetTrinkets ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### IsValidCollectible () {: aria-label='Functions' }

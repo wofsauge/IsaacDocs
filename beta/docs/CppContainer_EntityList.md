@@ -13,6 +13,6 @@ ___
 ## Variables
 ### Size {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  int Size  {: .copyable aria-label='Variables' }
+#### int Size  {: .copyable aria-label='Variables' }
 
 ___ 

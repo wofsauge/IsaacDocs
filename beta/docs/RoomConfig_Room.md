@@ -1,11 +1,10 @@
 # Class "RoomConfig::Room"
-## Functions
-### [Difficulty](../enums/Difficulty) () {: aria-label='Functions' }
+## Variables
+### Difficulty {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Difficulty](../enums/Difficulty) [Difficulty](../enums/Difficulty)  {: .copyable aria-label='Functions' }
+#### [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
-## Variables
 ### Doors {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### IntList Doors  {: .copyable aria-label='Variables' }

@@ -200,7 +200,7 @@ ___
 #### [ItemPool](../ItemPool) GetItemPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### [LevelStage](../enums/LevelStage) () {: aria-label='Functions' }
+### LevelStage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void [LevelStage](../enums/LevelStage) ( UserData) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
@@ -255,7 +255,7 @@ ___
 ___ 
 ### GetScreenShakeCountdown () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-####  int GetScreenShakeCountdown ( ) {: .copyable aria-label='Functions' }
+#### int GetScreenShakeCountdown ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetSeeds () {: aria-label='Functions' }
@@ -500,19 +500,19 @@ ___
 #### int BossRushParTime  {: .copyable aria-label='Variables' }
 Number of frames of game time. 
 ___ 
-### [Challenge](../enums/Challenge) {: aria-label='Variables' }
+### Challenge {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Challenge](../enums/Challenge) [Challenge](../enums/Challenge)  {: .copyable aria-label='Variables' }
+#### [Challenge](../enums/Challenge) Challenge {: .copyable aria-label='Variables' }
 
 ___ 
-### [Difficulty](../enums/Difficulty) {: aria-label='Variables' }
+### Difficulty {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Difficulty](../enums/Difficulty) [Difficulty](../enums/Difficulty)  {: .copyable aria-label='Variables' }
+#### [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
 ### ScreenShakeOffset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####  [Vector](../Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### TimeCounter {: aria-label='Variables' }

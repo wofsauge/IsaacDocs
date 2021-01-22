@@ -1,8 +1,8 @@
 # Class "Font"
 ## Constructors
-### [Font](../Font) () {: aria-label='Constructors' }
+### Font () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void [Font](../Font) ( void ) {: .copyable aria-label='Constructors' }
+#### void Font ( void ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Font" class.
 

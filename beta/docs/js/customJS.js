@@ -67,6 +67,26 @@ function getRecentList() {
     return recentList;
 }
 
+function buildContentMap() {
+    $("<div class=\"contentMap\"><h2>Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table></div>").insertAfter("h1");
+    var tableContent = "";
+    $("h4").each(function(index) {
+        var funcParts = $(this).html().split(" (");
+        var funcFront = funcParts[0].split(" ");
+        var funcName = funcFront.pop();
+        var funcLink = $("h3").eq(index).find("a").last().attr("href");
+        funcName = "<a href=\"" + funcLink + "\">" + funcName + "</a>";
+        var ariaLabel = $(this).attr("aria-label");
+        if (funcParts.length > 1) {
+            tableContent = tableContent + "<tr aria-label=\"" + ariaLabel + "\"><td>" + funcFront.join(" ") + "</td><td aria-label=\"" + ariaLabel + "\" class=\"copyable\">" + funcName + " (" + funcParts[1] + "</td></tr>";
+        } else {
+            tableContent = tableContent + "<tr aria-label=\"" + ariaLabel + "\"><td>" + funcFront.join(" ") + "</td><td aria-label=\"" + ariaLabel + "\" class=\"copyable\">" + funcName + "</td></tr>";
+        }
+    });
+
+    $('#contentOverviewTable > tbody').append(tableContent);
+}
+
 app.document$.subscribe(function() {
     loadDarkModeState();
     if (typeof(Storage) !== "undefined") {
@@ -90,6 +110,8 @@ app.document$.subscribe(function() {
             $(this).parent().addClass("badgeLine");
         }
     });
+
+    buildContentMap();
 
     // handle frequently used Entry
     $("nav[aria-label=\"Frequently used\"]").parent().addClass("frequentlyUsed");

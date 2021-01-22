@@ -61,9 +61,9 @@ ___
 #### int CacheFlags  {: .copyable aria-label='Variables' }
 
 ___ 
-### [Costume](../ItemConfig_Costume) {: aria-label='Variables' }
+### Costume {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-####   [Costume](../ItemConfig_Costume) [Costume](../ItemConfig_Costume)  {: .copyable aria-label='Variables' }
+#### [Costume](../ItemConfig_Costume) Costume {: .copyable aria-label='Variables' }
 
 ___ 
 ### Description {: aria-label='Variables' }

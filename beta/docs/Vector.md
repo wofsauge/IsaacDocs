@@ -1,8 +1,8 @@
 # Class "Vector"
 ## Constructors
-### [Vector](../Vector) () {: aria-label='Constructors' }
+### Vector () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void [Vector](../Vector) ( float , float ) {: .copyable aria-label='Constructors' }
+#### void Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
