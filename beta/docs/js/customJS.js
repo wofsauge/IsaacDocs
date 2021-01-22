@@ -142,6 +142,9 @@ app.document$.subscribe(function() {
         if (funcNameLine.includes("(") && !pathname.includes("Isaac")) {
             connector = ":";
         }
+        if (parent.attr("aria-label") == "Constructors") {
+            connector = "";
+        }
         if (!window.location.pathname.includes("enums") && !pathname.includes("Isaac")) {
             pathname = "";
         }

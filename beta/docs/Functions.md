@@ -1,8 +1,8 @@
-# Class "Functions"
-## Functions
-### [Game](../Game) () {: aria-label='Functions' }
+# Class "Global Functions"
+## Constructors
+### [Game](../Game) () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Functions' }
+#### [Game](../Game) [Game](../Game) ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [Game](../Game) object.
 
@@ -14,9 +14,9 @@ Returns a [Game](../Game) object.
     
     ```
 ___ 
-### [MusicManager](../MusicManager) () {: aria-label='Functions' }
+### [MusicManager](../MusicManager) () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Functions' }
+#### [MusicManager](../MusicManager) [MusicManager](../MusicManager) ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [MusicManager](../MusicManager) object.
 
@@ -27,19 +27,19 @@ Returns a [MusicManager](../MusicManager) object.
     
     ```
 ___ 
-### Random () {: aria-label='Functions' }
+### Random () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### int Random ( ) {: .copyable aria-label='Functions' }
+#### int Random ( ) {: .copyable aria-label='Constructors' }
 Returns a random integer. (0 to 2^32) 
 ___ 
-### RandomVector () {: aria-label='Functions' }
+### RandomVector () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Constructors' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
-### [SFXManager](../SFXManager) () {: aria-label='Functions' }
+### [SFXManager](../SFXManager) () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Functions' }
+#### [SFXManager](../SFXManager) [SFXManager](../SFXManager) ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [SFXManager](../SFXManager) object.
 
@@ -50,12 +50,15 @@ Returns a [SFXManager](../SFXManager) object.
     
     ```
 ___ 
-### GetPtrHash () {: aria-label='Functions' }
+### GetPtrHash () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
+#### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Constructors' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
+
 It can be used to easily compare two entities, making equality checks very easy.
+
 **Example:**
+
 If you spawn a certain entity, save it in a variable and then compare it to the `:::lua entity` parameter in `:::lua MC_ENTITY_TAKE_DMG`, this comparison will never be true even if both variables refer to the exact same entity in the game. `:::lua GetPtrHash()` turns pointer into a fixed number, which makes comparisons easier.
 
 ???- example "Example Code"
