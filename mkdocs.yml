@@ -139,6 +139,7 @@ nav:
         - "KColor": KColor.md
         - "Level": Level.md
         - "MusicManager": MusicManager.md
+        - "Mod Reference": ModReference.md
         - "PathFinder": PathFinder.md
         - "PlayerTypes":
             - "PlayerTypes::ActiveItemDesc": PlayerTypes_ActiveItemDesc.md

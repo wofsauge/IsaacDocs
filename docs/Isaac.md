@@ -2,7 +2,9 @@
 ## Functions
 ### AddCallback () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddCallback ( table ref, int callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddCallback ( table modRef, function callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+
+It is recommended to use the [AddCallback](../ModReference/#addcallback) function on a [Mod Reference](../ModReference) instead.
 
 ___ 
 ### AddPillEffectToPool () {: aria-label='Functions' }
@@ -348,58 +350,45 @@ Spawn a [GridEntity](../GridEntity) at the given position (world coordinates).
 ___ 
 ### HasModData () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasModData ( table ref ) {: .copyable aria-label='Functions' }
+#### boolean HasModData ( table modRef ) {: .copyable aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+
+It is recommended to use the [HasData](../ModReference/#hasdata) function on a [Mod Reference](../ModReference) instead.
 ___ 
 ### LoadModData () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### string LoadModData ( table ref ) {: .copyable aria-label='Functions' }
+#### string LoadModData ( table modRef ) {: .copyable aria-label='Functions' }
 
-Returns a  JSON array/table that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
+Returns a string that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
-???- example "Example Code"
-    This code loads data stored in the "saveX.dat" file, if it exists.
-    ```lua 
-    local yourMod = RegisterMod("someMod", 1)
-    local json = require("json")
-    -- ...
-    function yourMod:OnGameStart(isSave)
-    	--Loading Moddata--
-    	if yourMod:HasData() then
-    		local myTable = json.decode(Isaac.LoadModData(yourMod))
-    	end
-    end
-    yourMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, yourMod.OnGameStart)
-    
-    ```
-
+It is recommended to use the [LoadData](../ModReference/#loaddata) function on a [Mod Reference](../ModReference) instead.
 ___ 
 ### RegisterMod () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RegisterMod ( table ref, string modName, int apiVersion ) {: .copyable aria-label='Functions' }
+#### void RegisterMod ( table modRef, string modName, int apiVersion ) {: .copyable aria-label='Functions' }
 
-Method to define a mod in the game. THIS NEEDS TO BE DEFINED IN EVERY MOD!
+Registers a table with the game to use as a [Mod Reference](../ModReference).
 
-???- example "Example Code"
-    ```lua 
-    local yourMod = RegisterMod("someMod", 1)
-    
-    ```
+It is recommended to use the global [RegisterMod](../Functions/#registermod) function instead.
 
 ___ 
 ### RemoveCallback () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveCallback ( table ref, int callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
+#### void RemoveCallback ( table modRef, function callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
+
+It is recommended to use the [RemoveCallback](../ModReference/#removecallback) function on a [Mod Reference](../ModReference) instead.
 
 ___ 
 ### RemoveModData () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveModData ( table ref ) {: .copyable aria-label='Functions' }
+#### void RemoveModData ( table modRef ) {: .copyable aria-label='Functions' }
 
 Deletes the stored "saveX.dat" file if it exists. 
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+
+It is recommended to use the [RemoveData](../ModReference/#removedata) function on a [Mod Reference](../ModReference) instead.
 ___ 
 ### RenderScaledText () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -435,26 +424,12 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
 ___ 
 ### SaveModData () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SaveModData ( table ref, string data ) {: .copyable aria-label='Functions' }
+#### void SaveModData ( table modRef, string data ) {: .copyable aria-label='Functions' }
 
-Stores a JSON array/table in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
+Stores a string in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
-???- example "Example Code"
-    This code saves a table in the "saveX.dat" file.
-    ```lua 
-    local yourMod = RegisterMod("someMod", 1)
-    local json = require("json")
-    -- ...
-    --Saving Moddata--
-    function yourMod:SaveGame()
-    local table= {1,2,3}
-    yourMod.SaveData(yourMod, json.encode(table))
-    end
-    yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
-    
-    ```
-
+It is recommended to use the [SaveData](../ModReference/#savedata) function on a [Mod Reference](../ModReference) instead.
 ___ 
 ### ScreenToWorld () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
