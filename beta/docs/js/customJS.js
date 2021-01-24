@@ -68,6 +68,10 @@ function getRecentList() {
 }
 
 function buildContentMap() {
+    if (!$("h1").first().text().includes("Class")) {
+        //only build map on class-related pages
+        return;
+    }
     $("<div class=\"contentMap\"><h2>Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table></div>").insertAfter("h1");
     var tableContent = "";
     $("h4").each(function(index) {
