@@ -101,6 +101,7 @@ app.document$.subscribe(function() {
         var recentList = getRecentList();
 
         var pathname = window.location.pathname;
+        pathname = pathname.replace("IsaacDocs/", "");
         if (pathname !== "/") {
             const index = recentList.indexOf(pathname);
             if (index > -1) {
