@@ -1,6 +1,6 @@
 $(document).ready(function() {
     loadDarkModeState();
-    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"/IsaacDocs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
+    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/docs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
     $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
 });
 
@@ -43,7 +43,8 @@ function reevaluateLastVisit() {
         $(".md-nav[aria-label=\"Last visited\"]").find("a").each(function(index) {
             var lastVisitEntry = getRecentList()[index];
             if (lastVisitEntry !== undefined) {
-                $(this).attr("href", "/IsaacDocs" + lastVisitEntry);
+                $(this).attr("href", lastVisitEntry);
+                lastVisitEntry = lastVisitEntry.replace("IsaacDocs", "").replace("docs", "");
                 var linkName = lastVisitEntry.substring(1, lastVisitEntry.length - 1);
                 $(this).text(linkName);
             } else {
@@ -101,7 +102,6 @@ app.document$.subscribe(function() {
         var recentList = getRecentList();
 
         var pathname = window.location.pathname;
-        pathname = pathname.replace("IsaacDocs/", "");
         if (pathname !== "/") {
             const index = recentList.indexOf(pathname);
             if (index > -1) {

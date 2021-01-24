@@ -5,12 +5,16 @@
 #### boolean CheckLine ( [Vector](../Vector) Pos1, [Vector](../Vector) Pos2, LinecheckMode Mode, int GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable ) {: .copyable aria-label='Functions' }
 returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed 
 
-???- note "Notes"
-    LinecheckModes:
-    0 : makes the line check collide with anything that impedes ground movement
-    1 : is a cheaper version of 0, but is not as reliable
-    2 : is used for explosions, it only collides with walls and indestructible blocks
-    3 : is a line check that only collides with obstacles that can block projectiles
+???+ note "Notes"
+    Linecheck Modes:
+
+    **0** : makes the line check collide with anything that impedes ground movement
+
+    **1** : is a cheaper version of 0, but is not as reliable
+
+    **2** : is used for explosions, it only collides with walls and indestructible blocks
+
+    **3** : is a line check that only collides with obstacles that can block projectiles
 ___ 
 ### DamageGrid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -58,113 +62,38 @@ ___
 
 Returns the BackdropType (Background) of the current room.
 
-???- note "Notes"
-    BackdropTypes
+???- note "BackdropTypes"
     
-    
-    ID
-    Backdrop
-    
-    ID
-    Backdrop
-    
-    
-    1
-    Basement
-    
-    15
-    Cathedral
-    
-    
-    2
-    Cellar
-    
-    16
-    Dark Room
-    
-    
-    3
-    Burning Basement
-    
-    17
-    Chest
-    
-    
-    4
-    Caves
-    
-    18
-    Mega Satan
-    
-    
-    5
-    Catacombs
-    
-    19
-    Library
-    
-    
-    6
-    Drowned Caves
-    
-    20
-    Shop
-    
-    
-    7
-    Depths
-    
-    21
-    Isaacs Room
-    
-    
-    8
-    Necropolis
-    
-    22
-    Barren Room
-    
-    
-    9
-    Dank Depths
-    
-    23
-    Secret Room
-    
-    
-    10
-    Womb
-    
-    24
-    Dice Room
-    
-    
-    11
-    Utero
-    
-    25
-    Arcade
-    
-    
-    12
-    Scarred Womb
-    
-    26
-    Error Room
-    
-    
-    13
-    Blue Womb (Hush)
-     
-    27
-    Blue Secret
-    
-    
-    14
-    Sheol
-    
-    28
-    Ultra Greed Shop
+    | ID | Backdrop |
+    |--:|:--|
+    |1|Basement|
+    |2|Cellar|
+    |3|Burning Basement|
+    |4|Caves|
+    |5|Catacombs|
+    |6|Drowned Caves|
+    |7|Depths|
+    |8|Necropolis|
+    |9|Dank Depths|
+    |10|Womb|
+    |11|Utero|
+    |12|Scarred Womb|
+    |13|Blue Womb (Hush)|
+    |14|Sheol|
+    |15|Cathedral|
+    |16|Dark Room|
+    |17|Chest|
+    |18|Mega Satan|
+    |19|Library|
+    |20|Shop|
+    |21|Isaacs Room|
+    |22|Barren Room|
+    |23|Secret Room|
+    |24|Dice Room|
+    |25|Arcade|
+    |26|Error Room|
+    |27|Blue Secret|
+    |28|Ultra Greed Shop|
 ___ 
 ### GetBossID () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
