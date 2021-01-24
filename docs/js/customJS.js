@@ -129,6 +129,14 @@ app.document$.subscribe(function() {
     });
     $("div.md-footer-nav").find("a[href*='PLACEHOLDER']").first().hide();
 
+    //moves scroll position on href clicking a bit further up
+    $('a[href^="#"]').on('click', function(e) {
+        var href = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(href).offset().top - 75
+        }, 'faster');
+    });
+
     // Make tables sortable
     document.querySelectorAll("article table").forEach(function(table) {
         new Tablesort(table)
@@ -194,6 +202,8 @@ app.document$.subscribe(function() {
     $(".copyButton").mouseleave(function() {
         $(this).find("span").first().text("Copy to clipboard");
     });
+
+    //Adds search query string to search result links
     $("input[aria-label=\"Search\"]").change(function() {
         var searchText = $(this).val();
         $("li.md-search-result__item").find('a').each(function(e) {
