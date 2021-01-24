@@ -72,7 +72,7 @@ function buildContentMap() {
         //only build map on class-related pages
         return;
     }
-    $("<div class=\"contentMap\"><h2>Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table></div>").insertAfter("h1");
+    $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table><hr/></div>").insertAfter("h1");
     var tableContent = "";
     $("h4").each(function(index) {
         var funcParts = $(this).html().split(" (");
@@ -89,6 +89,10 @@ function buildContentMap() {
     });
 
     $('#contentOverviewTable > tbody').append(tableContent);
+    $(".overviewHeader").click(function() {
+        $(this).toggleClass("collapsed");
+        $(".contentTable").toggle();
+    });
 }
 
 app.document$.subscribe(function() {

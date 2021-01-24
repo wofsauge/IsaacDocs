@@ -411,3 +411,29 @@ h4>.copyButton>span::after {
 .contentTable tr[aria-label$='Constructors'] {
     background-color: var(--constructor-color);
 }
+
+.overviewHeader {
+    position: relative;
+    cursor: pointer;
+}
+
+.overviewHeader::after {
+    position: absolute;
+    top: .4rem;
+    width: 1rem;
+    height: 1rem;
+    background-color: currentColor;
+    -webkit-mask-image: var(--md-details-icon);
+    mask-image: var(--md-details-icon);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    transform: rotate(90deg);
+    transition: transform 250ms;
+    content: "";
+}
+
+.overviewHeader.collapsed::after {
+    transform: rotate(-90deg);
+}
