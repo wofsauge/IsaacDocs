@@ -169,7 +169,36 @@ nav:
         - "Using additional .lua Files": tutorials/Usingadditional.luaFiles.md
         - "Writing screen shaders": tutorials/Writingscreenshaders.md
         - "Tutorial - Render text": tutorials/Tutorial-Rendertext.md
-        - "XML File documentation": tutorials/XMLFiledocumentation.md
+    - XMLs:
+        - "XML Overview": xml/XMLFiledocumentation.md
+        - "achievements.xml" : xml/achievements.md
+        - "ambush.xml" : xml/ambush.md
+        - "babies.xml" : xml/babies.md
+        - "backdrops.xml" : xml/backdrops.md
+        - "bosscolors.xml" : xml/bosscolors.md
+        - "bossportraits.xml" : xml/bossportraits.md
+        - "challenges.xml" : xml/challenges.md
+        - "costumes2.xml" : xml/costumes2.md
+        - "curses.xml" : xml/curses.md
+        - "cutscenes.xml" : xml/cutscenes.md
+        - "entities2.xml" : xml/entities2.md
+        - "fortunes.txt" : xml/fortunes.md
+        - "fxlayers.xml" : xml/fxlayers.md
+        - "giantbook.xml" : xml/giantbook.md
+        - "itempools.xml" : xml/itempools.md
+        - "items.xml" : xml/items.md
+        - "minibosses.xml" : xml/minibosses.md
+        - "music.xml" : xml/music.md
+        - "nightmares.xml" : xml/nightmares.md
+        - "players.xml" : xml/players.md
+        - "pocketitems.xml" : xml/pocketitems.md
+        - "preload.xml" : xml/preload.md
+        - "rules.xml" : xml/rules.md
+        - "seedmenu.xml" : xml/seedmenu.md
+        - "seeds.xml" : xml/seeds.md
+        - "sounds.xml" : xml/sounds.md
+        - "stages.xml" : xml/stages.md
+        - "translations.xml" : xml/translations.md
 theme:
     name: material
     features:

@@ -443,3 +443,24 @@ h4>.copyButton>span::after {
 .overviewHeader.collapsed::after {
     transform: rotate(-90deg);
 }
+
+
+/*** XML File pages***/
+
+.info {
+    color: #fff;
+    padding: 0.5em;
+    font-size: 75%;
+    font-weight: 700;
+    vertical-align: middle;
+    border-radius: .25rem;
+    background-color: #6c757d;
+}
+
+.info.red {
+    background-color: #dc3545;
+}
+
+.info.green {
+    background-color: #28a745;
+}
