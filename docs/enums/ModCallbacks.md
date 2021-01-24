@@ -1,5 +1,5 @@
 # Enum "ModCallbacks"
-Execution order diagram: [![callback diagram](/images/infographics/Isaac Callbacks.svg){: width='500' }](/images/infographics/Isaac Callbacks.svg)
+Execution order diagram: [![callback diagram](/IsaacDocs/images/infographics/Isaac Callbacks.svg){: width='500' }](/IsaacDocs/images/infographics/Isaac Callbacks.svg)
 
 ### Example Usage
 This code will print "Hello World!" for every NPC Update. If the NPC is of the type "ENTITY_GAPER", it will also print "Gaper found".
