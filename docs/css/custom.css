@@ -150,7 +150,7 @@ a.const.tooltip:after {
 /**** DARK MODE ****/
 
 .darkmodeButton {
-    margin: 6px 8px;
+    margin: 10px 8px 0px 8px;
     cursor: pointer;
 }
 

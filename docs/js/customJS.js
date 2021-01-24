@@ -1,6 +1,6 @@
 $(document).ready(function() {
     loadDarkModeState();
-    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
+    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"/IsaacDocs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
     //$(".md-search").append("<img onclick=\"toggleCollapse()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/images/darkMode.png\" title=\"Collapse content\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"Collapse Content\" />");
     $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
 });
