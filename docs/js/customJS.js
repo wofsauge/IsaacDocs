@@ -43,10 +43,9 @@ function reevaluateLastVisit() {
         $(".md-nav[aria-label=\"Last visited\"]").find("a").each(function(index) {
             var lastVisitEntry = getRecentList()[index];
             if (lastVisitEntry !== undefined) {
+                $(this).attr("href", "IsaacDocs" + lastVisitEntry);
                 var linkName = lastVisitEntry.substring(1, lastVisitEntry.length - 1);
                 $(this).text(linkName);
-                lastVisitEntry = "IsaacDocs/" + lastVisitEntry;
-                $(this).attr("href", lastVisitEntry);
             } else {
                 $(this).parent().hide();
             }
