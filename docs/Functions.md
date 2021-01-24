@@ -27,16 +27,6 @@ Returns a [MusicManager](../MusicManager) object.
     
     ```
 ___ 
-### Random () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
-#### int Random ( ) {: .copyable aria-label='Constructors' }
-Returns a random integer. (0 to 2^32) 
-___ 
-### RandomVector () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Constructors' }
-Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
-___ 
 ### SFXManager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [SFXManager](../SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
@@ -50,9 +40,35 @@ Returns a [SFXManager](../SFXManager) object.
     
     ```
 ___ 
-### GetPtrHash () {: aria-label='Constructors' }
+## Functions
+### Random () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Constructors' }
+#### int Random ( ) {: .copyable aria-label='Functions' }
+Returns a random integer. (0 to 2^32) 
+___ 
+### RandomVector () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
+Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
+___ 
+### RegisterMod () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
+#### [Mod Reference](../ModReference) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Functions' }
+
+Method to define a mod in the game. This needs to be defined to handle callbacks and save data in your mod.
+
+Returns a table which acts as the [Mod Reference](../ModReference).
+
+???- example "Example Code"
+    ```lua 
+    local yourMod = RegisterMod("someMod", 1)
+    
+    ```
+
+___ 
+### GetPtrHash () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
+#### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
 
 It can be used to easily compare two entities, making equality checks very easy.
