@@ -194,7 +194,7 @@ markdown_extensions:
   - attr_list
 plugins:
   - search:
-        separator: '[\s\-\.]+'
+        separator: '[\s\-\.\_]+'
   - git-revision-date
 extra:
   social:
