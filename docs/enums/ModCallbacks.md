@@ -1,9 +1,23 @@
 # Enum "ModCallbacks"
-![callback diagram](/IsaacDocs/images/infographics/Isaac Callbacks.svg)
+Execution order diagram: [![callback diagram](/images/infographics/Isaac Callbacks.svg){: width='500' }](/images/infographics/Isaac Callbacks.svg)
+
+### Example Usage
+This code will print "Hello World!" for every NPC Update. If the NPC is of the type "ENTITY_GAPER", it will also print "Gaper found".
+```lua
+function mod:myFunction(entity) -- 'entity' contains a reference to the NPC
+    print("Hello World!")
+end
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction)
+
+function mod:myFunction2(entity) -- 'entity' contains a reference to the NPC
+    print("Gaper found!")
+end
+mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_GAPER)
+```
 
 |DLC|Value|Enumerator|Args|Comment|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|0 |**MC_NPC_UPDATE** {: .copyable } | *Function Args*: (EntityNPC)<br>*Optional callback Args*: EntityType | Called after an NPC is updated.<br>Returning any value will have no effect on later callback executions.<br><br>This callback will NOT fire when the NPC is playing the "Appear" animation. For example, when a Gaper spawns, it will fire on frame 1, then on frame 31 and onwards.<br><br>This code will print "Hello World!" for every NPC Update. If the NPC is of the type "ENTITY_GAPER", it will also print "Gaper found".<br>function mod:myFunction(entity) -- 'entity' contains a reference to the NPC<br>    print("Hello World!")<br>end<br>mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction)<br><br>function mod:myFunction2(entity) -- 'entity' contains a reference to the NPC<br>    print("Gaper found!")<br>end<br>mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction2, EntityType.ENTITY_GAPER) |
+|[ ](#){: .abp .tooltip .badge }|0 |**MC_NPC_UPDATE** {: .copyable } | *Function Args*: (EntityNPC)<br>*Optional callback Args*: EntityType | Called after an NPC is updated.<br>Returning any value will have no effect on later callback executions.<br><br>This callback will NOT fire when the NPC is playing the "Appear" animation. For example, when a Gaper spawns, it will fire on frame 1, then on frame 31 and onwards. |
 |[ ](#){: .abp .tooltip .badge }|1 |**MC_POST_UPDATE** {: .copyable } | *Function Args*: - | Called after every game update. Returning any value will have no effect on later callback executions.<br>This callback is called every few frames the game is active. It will not be called, when its paused (for example on screentransitions or on the pause menu). |
 |[ ](#){: .abp .tooltip .badge }|2 |**MC_POST_RENDER** {: .copyable } | *Function Args*: - | Called after every game render. <br>    Returning any value will have no effect on later callback executions.<br>It is highly recommended to only use this function when you want to render something. Its not recommended to use this function for things which are not frequently used or need constant recalculation. |
 |[ ](#){: .abp .tooltip .badge }|3 |**MC_USE_ITEM** {: .copyable } | *Function Args*: (CollectibleType, RNG)<br>*Optional callback Args*: CollectibleType | Called when a custom active item is used, after discharging it. <br>The item RNG allows for the item's random events to be seeded. <br>Return true to show the "use item" animation, otherwise false.Returning any value will have no effect on later callback executions. |
