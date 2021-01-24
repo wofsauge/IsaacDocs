@@ -5,6 +5,9 @@
     --var-color-light: #E8F5E9;
     --constructor-color: #FFCC80;
     --constructor-color-light: #FFE0B2;
+    --function-overview-bg-color: #BBDEFB;
+    --var-overview-bg-color: #E8F5E9;
+    --constructor-overview-bg-color: #FFE0B2;
 }
 
 nav[aria-label$='Functions'] {
@@ -161,6 +164,9 @@ body.darkMode {
     --var-color-light: #272938;
     --constructor-color: #e65100;
     --constructor-color-light: #272938;
+    --function-overview-bg-color: rgb(64 94 154 / 50%);
+    --var-overview-bg-color: rgb(18 134 118 / 50%);
+    --constructor-overview-bg-color: rgb(230 81 0 / 50%);
     --md-hue: 232;
     --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
     --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
@@ -401,15 +407,15 @@ h4>.copyButton>span::after {
 }
 
 .contentTable tr[aria-label$='Functions'] {
-    background-color: var(--function-color);
+    background-color: var(--function-overview-bg-color);
 }
 
 .contentTable tr[aria-label$='Variables'] {
-    background-color: var(--var-color);
+    background-color: var(--var-overview-bg-color);
 }
 
 .contentTable tr[aria-label$='Constructors'] {
-    background-color: var(--constructor-color);
+    background-color: var(--constructor-overview-bg-color);
 }
 
 .overviewHeader {

@@ -44,7 +44,7 @@ function reevaluateLastVisit() {
             var lastVisitEntry = getRecentList()[index];
             if (lastVisitEntry !== undefined) {
                 $(this).attr("href", lastVisitEntry);
-                lastVisitEntry = lastVisitEntry.replace("IsaacDocs", "").replace("docs", "");
+                lastVisitEntry = lastVisitEntry.replace("IsaacDocs/", "").replace("docs/", "");
                 var linkName = lastVisitEntry.substring(1, lastVisitEntry.length - 1);
                 $(this).text(linkName);
             } else {
