@@ -16,6 +16,7 @@ This project aims to make the Binding of Isaac modding documentation better by p
 ## Technology used
 - [MkDocs](https://www.mkdocs.org/) as the static site generator 
 - [MKDocs Material Theme](https://squidfunk.github.io/mkdocs-material/)
+- [mark.js](https://markjs.io/) for better search highlighting
 - Python 3.x + Beautiful Soup for conversion tools
 - CSS3 & JQuery for custom scripts
 
