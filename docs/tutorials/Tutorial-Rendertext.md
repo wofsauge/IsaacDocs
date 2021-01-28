@@ -79,7 +79,7 @@ prints:
 
 ## List of all supported characters and their counterpart
 
-![](customImg/tutorial_special_chars/b3.png)  
+![](../images/tutorial_special_chars/b3.png)  
 
 * * *
 
@@ -89,7 +89,7 @@ The Developer __Kilburn_ mentioned that fonts can be created using this Tool: [h
 
 The best results can be made by converting Bitmap fonts, since they allow for smaller fontsizes.
 
-![](customImg/BM_font-settings.png)
+![](../images/BM_font-settings.png){: style="float:right"}
 
 **Font Settings:**
 
@@ -106,7 +106,7 @@ The best results can be made by converting Bitmap fonts, since they allow for sm
 
 *   **Outline thickness** - Define if an outline should be drawn around the character. In Isaac, this is always ~1px
 
-![](../images/BM_export-settings.png)
+![](../images/BM_export-settings.png){: style="float:right"}
 
 **Export Options:**
 
