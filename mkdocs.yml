@@ -200,6 +200,8 @@ nav:
         - "sounds.xml" : xml/sounds.md
         - "stages.xml" : xml/stages.md
         - "translations.xml" : xml/translations.md
+    - FAQs:
+        - "Using Mods" : tutorials/faq.md
 theme:
     name: material
     features:

@@ -43,28 +43,30 @@ nav[aria-label$='Constructors'] {
     display: block;
 }
 
-.md-typeset h3 {
+h3[aria-label$='Functions'],
+h3[aria-label$='Variables'],
+h3[aria-label$='Constructors'] {
     border-radius: 5px 5px 0px 0px;
     padding: 0px 10px;
     margin: 0 !important;
+    display: inline-block;
 }
 
 h3[aria-label$='Functions'] {
     background-color: var(--function-color);
-    display: inline-block;
 }
 
 h3[aria-label$='Variables'] {
     background-color: var(--var-color);
-    display: inline-block;
 }
 
 h3[aria-label$='Constructors'] {
     background-color: var(--constructor-color);
-    display: inline-block;
 }
 
-.md-typeset h4 {
+h4[aria-label$='Functions'],
+h4[aria-label$='Variables'],
+h4[aria-label$='Constructors'] {
     border-radius: 0px 5px 5px 5px;
     padding: 2px 10px;
     margin: 0 !important;
