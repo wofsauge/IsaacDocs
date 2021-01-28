@@ -505,7 +505,7 @@ ___
 ### GetBombVariant () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### EntityBomb::BombVariant GetBombVariant ( int TearFlags, boolean ForceSmallBomb ) {: .copyable aria-label='Functions' }
-Pass tear flags to add extra effects to the bomb visual like burn -&gt; hot bombs, even if player doesn't have Hot Bombs collectible. ForceSmallBomb will override large bomb variants for TEAR_PERSISTENT. 
+Pass tear flags to add extra effects to the bomb visual like burn -> hot bombs, even if player doesn't have Hot Bombs collectible. ForceSmallBomb will override large bomb variants for TEAR_PERSISTENT. 
 ___ 
 ### GetBoneHearts () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -514,10 +514,10 @@ Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
 
 ???- example "Example Code"
     This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart. 
+
     ```lua 
     local player = Isaac.GetPlayer(0)
-    player:GetMaxHearts()+player:GetBoneHearts()*2
-    
+    local totalRedHearts = player:GetMaxHearts() + player:GetBoneHearts() * 2
     ```
 
 ___ 
@@ -1301,7 +1301,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [Tear
     This code makes Isaac's tears spectral. 
     ```lua 
     local mod:OnEvaluateTearFlags(player, flag)
-    player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
+        player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
     end
     
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
@@ -1315,14 +1315,14 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is eq
 
 ???- example "Example Code"
     This code gives Isaac a +5 range up.
+
     ```lua 
     local mod:OnEvaluateRange(player, flag)
-    -- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels
-    player.TearHeight = player.TearHeight - 5
+        -- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels
+        player.TearHeight = player.TearHeight - 5
     end
     
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateRange, CacheFlag.CACHE_RANGE)
-    
     ```
 
 ___ 

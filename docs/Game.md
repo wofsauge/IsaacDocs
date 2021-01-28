@@ -386,10 +386,10 @@ Plays the Delirium animation (Static noise intersected with past gameplay fotage
     
     -- call this function to play the Hallucination effect
     function playHallucination()
-    local player = Isaac.GetPlayer(0)
-    usagetime = Game().TimeCounter
-    player:UseActiveItem(510, false, false, false, false) -- use the delirious item without applying the costume
-    player:GetEffects():RemoveCollectibleEffect(510) -- remove any unwanted side effects of the item usage
+        local player = Isaac.GetPlayer(0)
+        usagetime = Game().TimeCounter
+        player:UseActiveItem(510, false, false, false, false) -- use the delirious item without applying the costume
+        player:GetEffects():RemoveCollectibleEffect(510) -- remove any unwanted side effects of the item usage
     end
     
     -- Removes all spawned NPC entities when activating the function

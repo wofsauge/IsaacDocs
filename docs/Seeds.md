@@ -133,5 +133,4 @@ ___
 ### String2Seed () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static int String2Seed ( string str ) {: .copyable aria-label='Functions' }
-void RestoreGameState(const GameState&amp; State); void SaveGameState(GameState&amp; State); 
 ___ 

@@ -162,14 +162,15 @@ Can be used to override the angular position of the familiar on its orbit based 
 
 ???- example "Example Code"
     This code will make all of your orbitals move as a tight wall around you.
+
     ```lua 
     for i,v in ipairs(Isaac.GetRoomEntities()) do 
-    if v.Type==3 then 
-    v:ToFamiliar().OrbitAngleOffset = 0.25*i 
-    end 
+        if v.Type==3 then 
+            v:ToFamiliar().OrbitAngleOffset = 0.25*i 
+        end 
     end
-    
     ```
+    
     Result: ![angle offset](../images/example_familiar_angleOffset.png)
 ___ 
 ### OrbitDistance {: aria-label='Variables' }

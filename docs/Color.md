@@ -57,11 +57,11 @@ The values can be between 0 and 1 for normal coloration. if you use higher numbe
     This code changes the color of red Creep to be purple
     ```lua 
     Test:AddCallback(ModCallbacks.MC_POST_EFFECT_INIT, function(_, self)
-    if self.Variant == EffectVariant.CREEP_RED then
-    local color = Color(1, 1, 1, 1, 0, 0, 0)
-    color:SetColorize(4, 0, 4, 1)
-    self:GetSprite().Color = color
-    end
+        if self.Variant == EffectVariant.CREEP_RED then
+            local color = Color(1, 1, 1, 1, 0, 0, 0)
+            color:SetColorize(4, 0, 4, 1)
+            self:GetSprite().Color = color
+        end
     end)
     
     ```

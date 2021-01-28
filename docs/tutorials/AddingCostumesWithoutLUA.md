@@ -75,30 +75,30 @@ Define a null costume in the "costumes2.xml" file by setting the type to "none".
 Get the automatically generated CostumeID of the null-Costume, and then apply it to the player
 
 ```lua
-    -- get the internal costumeID
-        NullItemID.ID_SOME_NULL_COSTUME = Isaac.GetCostumeIdByPath("gfx/characters/some_null_costume.anm2")
+-- get the internal costumeID
+    NullItemID.ID_SOME_NULL_COSTUME = Isaac.GetCostumeIdByPath("gfx/characters/some_null_costume.anm2")
 
-    -- adding a nullcostume using "AddNullCostume" (persistent till its removed / run is restarted)
-    function mod:myFunction1(player)
-        print("adding null costume")
-        if(somethingHappend) then
-            player:AddNullCostume (NullItemID.ID_SOME_NULL_COSTUME)
-        end
-        -- removing the null costume
-        if(somethingDifferentHappend) then
-            player:TryRemoveNullCostume(NullItemID.ID_SOME_NULL_COSTUME)
-        end
+-- adding a nullcostume using "AddNullCostume" (persistent till its removed / run is restarted)
+function mod:myFunction1(player)
+    print("adding null costume")
+    if(somethingHappend) then
+        player:AddNullCostume (NullItemID.ID_SOME_NULL_COSTUME)
     end
-    mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, mod.myFunction1, 0)
+    -- removing the null costume
+    if(somethingDifferentHappend) then
+        player:TryRemoveNullCostume(NullItemID.ID_SOME_NULL_COSTUME)
+    end
+end
+mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, mod.myFunction1, 0)
 
-    -- adding a nullcostume using "NullEffects" (persists for current room and gets removed afterwards)
-    function mod:myFunction2(player)
-        if not player:GetEffects():HasNullEffect(NullItemID.ID_SOME_NULL_COSTUME) then
-            print("adding null costume") -- will get triggered everytime the room is changed
-            player:GetEffects():AddNullEffect(NullItemID.ID_SOME_NULL_COSTUME, true)
-        end
+-- adding a nullcostume using "NullEffects" (persists for current room and gets removed afterwards)
+function mod:myFunction2(player)
+    if not player:GetEffects():HasNullEffect(NullItemID.ID_SOME_NULL_COSTUME) then
+        print("adding null costume") -- will get triggered everytime the room is changed
+        player:GetEffects():AddNullEffect(NullItemID.ID_SOME_NULL_COSTUME, true)
     end
-    mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, mod.myFunction2, 0)
+end
+mod:AddCallback(ModCallbacks.MC_POST_PLAYER_UPDATE, mod.myFunction2, 0)
 ```
 
 * * *

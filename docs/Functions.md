@@ -82,11 +82,11 @@ If you spawn a certain entity, save it in a variable and then compare it to the 
     ```lua 
     -- don't do it like this
     if entity1 == entity2 then
-    -- this will always be false, because two different references on a pointer are not equal
+        -- this will always be false, because two different references on a pointer are not equal
     end
     -- use GetPtrHash() to compare them
     if GetPtrHash(entity1) == GetPtrHash(entity2) then
-    -- this will be true, when the pointer of both variables point to the same object.
+        -- this will be true, when the pointer of both variables point to the same object.
     end
     
     ```

@@ -8,12 +8,12 @@ Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the D
 
 ???- example "Example Code"
     This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 30.
+
     ```lua 
     local player =Isaac.GetPlayer(0)
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
     	entity:AddBurn(player, 30, 1)
     end
-    
     ```
 
 ___ 
@@ -27,11 +27,11 @@ Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enem
 
 ???- example "Example Code"
     This code charms every entity in the room for 1 second.
+
     ```lua 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
     	entity:AddCharmed(30)
     end
-    
     ```
 
 ___ 
@@ -43,12 +43,12 @@ Adds a confusion effect to an entity.
 
 ???- example "Example Code"
     This code confuses every entity in the room for 1 second while ignoring bosses.
+
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
     	entity:AddConfusion(player, 30, true)
     end
-    
     ```
 
 ___ 
@@ -60,12 +60,12 @@ Add [EntityFlags](../enums/EntityFlag) to the entity. Flags are used to add spec
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
+
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
     	entity:AddEntityFlags(EntityFlag.FLAG_SLOW | EntityFlag.FLAG_CONFUSION)
     end
-    
     ```
 ___ 
 ### AddFear () {: aria-label='Functions' }
@@ -76,12 +76,12 @@ Adds a fear-effect to an entity.
 
 ???- example "Example Code"
     This code frightens every entity in the room for 1 second.
+
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
     	entity:AddFear(player, 30)
     end
-    
     ```
 
 ___ 
@@ -93,12 +93,12 @@ Freezes an entity, making it unable to move and attack.
 
 ???- example "Example Code"
     This code freezes every entity in the room for half a second.
+
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
     	entity:AddFreeze(player, 30)
     end
-    
     ```
 
 ___ 
@@ -192,11 +192,12 @@ Returns a table that contains all data assosiated with the entity. This can be u
 
 ???- example "Example Code"
     This code adds custom data to an entity or prints it in the console if it exists.
+
     ```lua 
     if type(entity:GetData()["MyValue"]) == type(nil) then -- checks, if the Data does exist already
-    entity:GetData()["MyValue"] = "Cool" -- assign a value to the data
+        entity:GetData()["MyValue"] = "Cool" -- assign a value to the data
     else 
-    print(entity:GetData()["MyValue"])  -- this will print "Cool" in the console
+        print(entity:GetData()["MyValue"])  -- this will print "Cool" in the console
     end
     ```
 
@@ -215,9 +216,10 @@ Get the [EntityFlags](../enums/EntityFlag)of the entity. This will be a number w
 
 ???- example "Example Code"
     This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag).
+
     ```lua 
-    if entity:GetEntityFlags() &amp; EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
-    print("This entity is confused!")
+    if entity:GetEntityFlags() & EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
+        print("This entity is confused!")
     end
     ```
 ___ 
@@ -252,9 +254,10 @@ Returns true, if the entity has all named [EntityFlags](../enums/EntityFlag) set
 
 ???- example "Example Code"
     This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag).
+
     ```lua 
     if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
-    print("This entity is confused!")
+        print("This entity is confused!")
     end
     ```
 ___ 
@@ -362,6 +365,7 @@ Set the colormask for the entity. This can be used to tint the sprites in differ
 
 ???- example "Example Code"
     This code changes the color of the sprite to a fully white sprite for 15 frames.
+
     ```lua 
     entity:SetColor(Color(1, 1, 1, 1, 255, 255, 255), 15, 1, false, false)
     ```
@@ -465,15 +469,15 @@ Get/Set the depth-offset of the entity. This value is added to the Y Position of
 
 ???- example "Example Code"
     This code explains how this variable works.
+
     ```lua 
-    entity1.Position.Y -- =&gt; 50
-    entity2.Position.Y -- =&gt; 45
+    entity1.Position.Y -- => 50
+    entity2.Position.Y -- => 45
     -- Entity1 is rendered in front of Entity2
     
     entity1.DepthOffset = -10
-    -- new Entity1 renderYPosition =&gt; 40
+    -- new Entity1 renderYPosition => 40
     -- Entity2 is rendered in front of Entity1
-    
     ```
 
 ___ 

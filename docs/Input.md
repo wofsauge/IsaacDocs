@@ -47,7 +47,7 @@ Returns, if an action-button is pressed or not. An Action-button is any button t
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
     ```lua 
     if Input.IsActionPressed(ButtonAction.ACTION_BOMB, 0)  then
-    print("bomb Button pressed")   
+        print("bomb Button pressed")   
     end
     
     ```
@@ -64,7 +64,7 @@ Returns, if an action-button was pressed some time before or not. An Action-butt
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
     ```lua 
     if Input.IsActionTriggered(ButtonAction.ACTION_BOMB, 0)  then
-    print("bomb Button pressed")   
+        print("bomb Button pressed")   
     end
     
     ```
@@ -81,7 +81,7 @@ Returns, if a button is pressed or not. This function will return true, as long 
     This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
     ```lua 
     if Input.IsButtonPressed(Keyboard.KEY_ENTER, 0)  then
-    print("Enter Button pressed.")   
+        print("Enter Button pressed.")   
     end
     
     ```
@@ -98,7 +98,7 @@ Returns, if a button was pressed some time before or not. This functions will on
     This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
     ```lua 
     if Input.IsButtonTriggered(Keyboard.KEY_ENTER, 0)  then
-    print("Enter Button was pressed.")   
+        print("Enter Button was pressed.")   
     end
     
     ```
@@ -114,7 +114,7 @@ Left: 0, Right: 1, mousewheel: 2, back button: 3, forward button: 4
     This code prints "Right Click", when the "right"-mousebutton was pressed.
     ```lua 
     if Input.IsMouseBtnPressed(1)  then
-    print("Right Click")   
+        print("Right Click")   
     end
     
     ```

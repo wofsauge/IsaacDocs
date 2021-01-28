@@ -20,6 +20,7 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 
 ???- example "Example Code"
     This code loads a string that was stored in the "saveX.dat" file, if it exists, and converts it into a table using JSON.
+
     ```lua 
     local yourMod = RegisterMod("someMod", 1)
     local json = require("json")
@@ -62,8 +63,8 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
     -- ...
     --Saving Moddata--
     function yourMod:SaveGame()
-    local table= {1,2,3}
-    yourMod:SaveData(json.encode(table))
+        local table= {1,2,3}
+        yourMod:SaveData(json.encode(table))
     end
     yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
     

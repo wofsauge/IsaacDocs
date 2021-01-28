@@ -19,26 +19,28 @@ Returns the Itemobject of a given CollectibleID.
 ???- example "Example Code"
     This Code gets the highest possible collectibleid including modded items. It uses the Binary Search algorithm to do it.
     Using GetCollectible(): (**recommended!**)
+
     ```lua 
     function GetMaxCollectibleID()
-    local id = CollectibleType.NUM_COLLECTIBLES-1
-    local step = 16
-    while step &gt; 0 do
-    if Isaac.GetItemConfig():GetCollectible(id+step) ~= nil then
-    id = id + step
-    else
-    step = step // 2
-    end
-    end
+        local id = CollectibleType.NUM_COLLECTIBLES-1
+        local step = 16
+        while step > 0 do
+            if Isaac.GetItemConfig():GetCollectible(id+step) ~= nil then
+                id = id + step
+            else
+                step = step // 2
+            end
+        end
     
     return id
     end
     
     ```
     Using GetCollectibles(): (**Crashes on Mac OS)**
+
     ```lua 
     function GetMaxCollectibleID()
-    return Isaac.GetItemConfig():GetCollectibles().Size -1
+        return Isaac.GetItemConfig():GetCollectibles().Size -1
     end
     
     ```
@@ -53,7 +55,7 @@ Returns the List of all Collectibles.
     This Code gets the highest possible collectibleid including modded items.
     ```lua 
     function GetMaxCollectibleID()
-    return Isaac.GetItemConfig():GetCollectibles().Size -1
+        return Isaac.GetItemConfig():GetCollectibles().Size -1
     end
     
     ```
