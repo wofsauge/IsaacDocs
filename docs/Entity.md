@@ -11,7 +11,7 @@ Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the D
     ```lua 
     local player =Isaac.GetPlayer(0)
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
-    	entity:AddBurn(player,30,1)
+    	entity:AddBurn(player, 30, 1)
     end
     
     ```
@@ -46,7 +46,7 @@ Adds a confusion effect to an entity.
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
-    	entity:AddConfusion(player,30,true)
+    	entity:AddConfusion(player, 30, true)
     end
     
     ```
@@ -363,7 +363,7 @@ Set the colormask for the entity. This can be used to tint the sprites in differ
 ???- example "Example Code"
     This code changes the color of the sprite to a fully white sprite for 15 frames.
     ```lua 
-    entity:SetColor(Color(1,1,1,1,255,255,255),15,1,false,false)
+    entity:SetColor(Color(1, 1, 1, 1, 255, 255, 255), 15, 1, false, false)
     ```
 
 ___ 
