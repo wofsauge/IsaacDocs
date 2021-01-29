@@ -283,20 +283,72 @@ details>summary {
     max-width: initial;
 }
 
+.md-footer-nav__inner {
+    /* Previous/next bar a bit smaller */
+    padding: 0;
+}
+
+.md-footer-nav__link {
+    /* Previous/next bar a bit smaller */
+    padding-top: 0.6rem;
+    padding-bottom: 0;
+}
+
+.md-footer-nav__button {
+    /* Previous/next bar a bit smaller */
+    margin: 0;
+}
+
+.md-footer-meta__inner {
+    /* footer bar a bit smaller */
+    padding: 0;
+}
+
 .md-tabs__link {
+    /* smaller top bar */
     margin-top: 0;
 }
 
 .md-tabs__item {
+    /* smaller top bar */
     height: 1.4rem;
 }
 
 .md-header-nav__source {
+    /* lesser padding to github top bar entry */
     width: 10rem;
 }
 
 .md-main__inner {
-    margin-top: 0.1rem;
+    /* no distance between content and nav bar */
+    margin-top: 0;
+}
+
+
+/* Smaller Search results */
+
+.md-search-result__icon {
+    margin: .1rem;
+}
+
+.md-search-result__article--document .md-search-result__title {
+    line-height: 0.5;
+}
+
+.md-search-result__article {
+    padding-left: 1.7rem;
+}
+
+.md-search-result__link:last-child p:last-child {
+    margin-bottom: 0.3rem;
+}
+
+.md-search-result__title {
+    line-height: 0.7;
+}
+
+.md-search-result__more summary {
+    padding: 0.5em .8rem;
 }
 
 
@@ -389,6 +441,7 @@ h4>.copyButton>span::after {
 
 .contentTable {
     font-size: .70rem;
+    width: 100%;
 }
 
 .contentTable td,
