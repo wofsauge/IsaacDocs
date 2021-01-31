@@ -1,4 +1,4 @@
-# Class "ItemConfig::Config"
+# Class "ItemConfig"
 ## Functions
 ### GetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

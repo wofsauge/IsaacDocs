@@ -162,7 +162,7 @@ ___
 ___ 
 ### GetRooms () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### LuaArrayProxy<RoomDescriptor, true> GetRooms ( ) {: .copyable aria-label='Functions' }
+#### [RoomDescriptor List](../CppContainer_ArrayProxy_RoomDescriptor) GetRooms ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetStage () {: aria-label='Functions' }

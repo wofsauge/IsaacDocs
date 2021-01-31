@@ -27,15 +27,19 @@ nav:
         - "Global Functions": GlobalFunctions.md
         - "Color": Color.md        
         - "CppContainer":
-            - "ArrayProxy": CppContainer_ArrayProxy.md
-            - "ArrayProxy::RoomList": CppContainer_ArrayProxy_RoomList.md
+            - "ArrayProxy":
+                - "RoomConfigEntries": index.md
+                - "RoomConfigSpawns": index.md
+                - "RoomDescriptor": CppContainer_ArrayProxy_RoomDescriptor.md
+                - "intValues": index.md
             - "EntityList": CppContainer_EntityList.md
-            - "Vector::CardConfigList": CppContainer_Vector_CardConfigList.md
-            - "Vector::CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
-            - "Vector::EffectList": CppContainer_Vector_EffectList.md
-            - "Vector::ItemConfigList": CppContainer_Vector_ItemConfigList.md
-            - "Vector::PillConfigList": CppContainer_Vector_PillConfigList.md
-            - "Vector::VectorList": CppContainer_Vector_VectorList.md
+            - "Vector":
+                - "CardConfigList": CppContainer_Vector_CardConfigList.md
+                - "CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
+                - "EffectList": CppContainer_Vector_EffectList.md
+                - "ItemConfigList": CppContainer_Vector_ItemConfigList.md
+                - "PillConfigList": CppContainer_Vector_PillConfigList.md
+                - "VectorList": CppContainer_Vector_VectorList.md
         - "Entity":
             - "Entity": Entity.md
             - "EntityBomb": EntityBomb.md
