@@ -200,8 +200,8 @@ nav:
         - "sounds.xml" : xml/sounds.md
         - "stages.xml" : xml/stages.md
         - "translations.xml" : xml/translations.md
-    - FAQs:
-        - "Using Mods" : tutorials/faq.md
+    - FAQ: tutorials/faq.md
+    - Lua 5.3 Docs: https://www.lua.org/manual/5.3/
 theme:
     name: material
     features:
@@ -226,7 +226,7 @@ markdown_extensions:
   - attr_list
 plugins:
   - search:
-        separator: '[\s\-\.]+'
+        separator: '[\s\-\.\_]+'
   - git-revision-date
 extra:
   social:

@@ -14,13 +14,14 @@ R, G, B and A accept numbers between 0 and 1.
 
 RO, GO and BO accept numbers between -255 and 255.
 ___ 
-## Functions
-### __mul () {: aria-label='Functions' }
+## Operators
+### __mul () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) __mul ( [Color](../Color) right ) {: .copyable aria-label='Functions' }
+#### [Color](../Color) __mul ( [Color](../Color) right ) {: .copyable aria-label='Operators' }
 
-Multiplication of two colors.
+Defines the multiplication of two [Color](../Color) objects using the `*` operator.
 ___ 
+## Functions
 ### Lerp () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static [Color](../Color) Lerp ( [Color](../Color) m1, [Color](../Color) m2, float t ) {: .copyable aria-label='Functions' }

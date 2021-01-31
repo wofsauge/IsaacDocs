@@ -8,6 +8,9 @@
     --function-overview-bg-color: #BBDEFB;
     --var-overview-bg-color: #E8F5E9;
     --constructor-overview-bg-color: #FFE0B2;
+    --operator-color: #CE93D8;
+    --operator-color-light: #E1BEE7;
+    --operator-overview-bg-color: #F3E5F5;
 }
 
 nav[aria-label$='Functions'] {
@@ -22,6 +25,11 @@ nav[aria-label$='Variables'] {
 
 nav[aria-label$='Constructors'] {
     border-left: 5px solid var(--constructor-color);
+    line-height: 1.1;
+}
+
+nav[aria-label$='Operators'] {
+    border-left: 5px solid var(--operator-color);
     line-height: 1.1;
 }
 
@@ -45,6 +53,7 @@ nav[aria-label$='Constructors'] {
 
 h3[aria-label$='Functions'],
 h3[aria-label$='Variables'],
+h3[aria-label$='Operators'],
 h3[aria-label$='Constructors'] {
     border-radius: 5px 5px 0px 0px;
     padding: 0px 10px;
@@ -64,8 +73,13 @@ h3[aria-label$='Constructors'] {
     background-color: var(--constructor-color);
 }
 
+h3[aria-label$='Operators'] {
+    background-color: var(--operator-color);
+}
+
 h4[aria-label$='Functions'],
 h4[aria-label$='Variables'],
+h4[aria-label$='Operators'],
 h4[aria-label$='Constructors'] {
     border-radius: 0px 5px 5px 5px;
     padding: 2px 10px;
@@ -85,6 +99,10 @@ h4[aria-label$='Variables'] {
 
 h4[aria-label$='Constructors'] {
     background-color: var(--constructor-color-light);
+}
+
+h4[aria-label$='Operators'] {
+    background-color: var(--operator-color-light);
 }
 
 .subHeader {
@@ -169,6 +187,9 @@ body.darkMode {
     --function-overview-bg-color: rgb(64 94 154 / 50%);
     --var-overview-bg-color: rgb(18 134 118 / 50%);
     --constructor-overview-bg-color: rgb(230 81 0 / 50%);
+    --operator-color: #BA68C8;
+    --operator-color-light: #272938;
+    --operator-overview-bg-color: rgb(186 104 200 / 50%);
     --md-hue: 232;
     --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
     --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
@@ -471,6 +492,10 @@ h4>.copyButton>span::after {
 
 .contentTable tr[aria-label$='Constructors'] {
     background-color: var(--constructor-overview-bg-color);
+}
+
+.contentTable tr[aria-label$='Operators'] {
+    background-color: var(--operator-overview-bg-color);
 }
 
 .overviewHeader {
