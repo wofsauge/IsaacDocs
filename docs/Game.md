@@ -391,7 +391,7 @@ ___
 ___ 
 ### ShowHallucination () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void ShowHallucination ( int FrameCount, Backdrop::Backdrop HallucinationBackdrop ) {: .copyable aria-label='Functions' }
+#### void ShowHallucination ( int FrameCount, int HallucinationBackdrop ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
 
 ???- example "Example Code"
