@@ -2,7 +2,7 @@
 ## Constructors
 ### Font () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void Font ( void ) {: .copyable aria-label='Constructors' }
+#### void Font ( ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Font" class.
 

@@ -2,35 +2,44 @@
 ## Constructors
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void Vector ( float , float ) {: .copyable aria-label='Constructors' }
+#### void Vector ( float x , float y ) {: .copyable aria-label='Constructors' }
+
+___ 
+## Operators
+### __add () {: aria-label='Operators' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) __add ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
+Defines the Addition of two Vector objects using the `+` operator.
+___ 
+### __div () {: aria-label='Operators' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) __div ( float Modifier ) {: .copyable aria-label='Operators' }
+Defines the Division of two Vector objects using the `/` operator.
+___ 
+### __mul () {: aria-label='Operators' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) __mul ( float Modifier ) {: .copyable aria-label='Operators' }
+ operators 
+Defines the Multiplication of two Vector objects using the `*` operator.
+___ 
+### __sub () {: aria-label='Operators' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) __sub ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
+Defines the Subtraction of two Vector objects using the `-` operator.
+___ 
+### __unm () {: aria-label='Operators' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) __unm ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
+Defines the inversion of a Vector object using the `-` operator.
+
+???- example "Example Code"
+    ```lua 
+    local vec1 = Vector(2,1)
+    local result = -vec1 -- result equals Vector(-2,-1) now
+    ```
 
 ___ 
 ## Functions
-### __add () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __add ( [Vector](../Vector) Right ) {: .copyable aria-label='Functions' }
-Addition operators 
-___ 
-### __div () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __div ( float Modifier ) {: .copyable aria-label='Functions' }
-Division operators 
-___ 
-### __mul () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __mul ( float Modifier ) {: .copyable aria-label='Functions' }
-Multiplication operators 
-___ 
-### __sub () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __sub ( [Vector](../Vector) Right ) {: .copyable aria-label='Functions' }
-Subtraction operators 
-___ 
-### __unm () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __unm ( [Vector](../Vector) Right ) {: .copyable aria-label='Functions' }
-Subtraction operators 
-___ 
 ### Clamp () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void Clamp ( float MinX, float MinY, float MaxX, float MaxY ) {: .copyable aria-label='Functions' }

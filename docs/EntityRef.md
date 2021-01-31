@@ -2,7 +2,7 @@
 ## Constructors
 ### EntityRef () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void EntityRef ( [Entity](../Entity ) {: .copyable aria-label='Constructors' }
+#### void EntityRef ( [Entity](../Entity) entity ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Variables
