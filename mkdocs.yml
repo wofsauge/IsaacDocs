@@ -24,6 +24,7 @@ nav:
             - "Room": Room.md
             - "Level": Level.md
             - "ModCallbacks": enums/ModCallbacks.md
+        - "Global Functions": GlobalFunctions.md
         - "Color": Color.md        
         - "CppContainer":
             - "ArrayProxy": CppContainer_ArrayProxy.md
@@ -115,7 +116,6 @@ nav:
             - "TrinketType": enums/TrinketType.md
             - "WeaponType": enums/WeaponType.md
         - "Font": Font.md
-        - "Functions": Functions.md
         - "Game": Game.md
         - "GridEntity":
             - "GridEntity": GridEntity.md
