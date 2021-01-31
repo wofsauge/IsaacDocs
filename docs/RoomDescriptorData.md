@@ -1,4 +1,4 @@
-# Class "RoomDescriptorData"
+# Class "RoomDescriptor Data"
 ## Variables
 ### StageID {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

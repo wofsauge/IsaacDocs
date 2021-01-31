@@ -2,7 +2,7 @@
 ## Constructors
 ### ProjectileParams () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void ProjectileParams ( ) {: .copyable aria-label='Constructors' }
+#### [ProjectileParams](../ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Variables

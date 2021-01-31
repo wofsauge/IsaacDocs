@@ -1,4 +1,19 @@
 # Class "Game"
+## Constructors
+### Game () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
+#### [Game](../Game) Game ( ) {: .copyable aria-label='Constructors' }
+
+Returns a Game object.
+
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    Game():IsPaused()
+    --returns true if the game is paused
+    
+    ```
+___ 
 ## Functions
 ### AddDevilRoomDeal () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -376,7 +391,7 @@ ___
 ___ 
 ### ShowHallucination () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void ShowHallucination ( int FrameCount, Backdrop::Backdrop HallucinationBackdrop ) {: .copyable aria-label='Functions' }
+#### void ShowHallucination ( int FrameCount, int HallucinationBackdrop ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
 
 ???- example "Example Code"

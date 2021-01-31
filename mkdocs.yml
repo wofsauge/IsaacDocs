@@ -24,17 +24,22 @@ nav:
             - "Room": Room.md
             - "Level": Level.md
             - "ModCallbacks": enums/ModCallbacks.md
+        - "Global Functions": GlobalFunctions.md
         - "Color": Color.md        
         - "CppContainer":
-            - "ArrayProxy": CppContainer_ArrayProxy.md
-            - "ArrayProxy::RoomList": CppContainer_ArrayProxy_RoomList.md
+            - "ArrayProxy":
+                - "RoomConfigEntries": CppContainer_ArrayProxy_RoomConfigEntries.md
+                - "RoomConfigSpawns": CppContainer_ArrayProxy_RoomConfigSpawns.md
+                - "RoomDescriptor": CppContainer_ArrayProxy_RoomDescriptor.md
+                - "intValues": CppContainer_ArrayProxy_intValues.md
             - "EntityList": CppContainer_EntityList.md
-            - "Vector::CardConfigList": CppContainer_Vector_CardConfigList.md
-            - "Vector::CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
-            - "Vector::EffectList": CppContainer_Vector_EffectList.md
-            - "Vector::ItemConfigList": CppContainer_Vector_ItemConfigList.md
-            - "Vector::PillConfigList": CppContainer_Vector_PillConfigList.md
-            - "Vector::VectorList": CppContainer_Vector_VectorList.md
+            - "Vector":
+                - "CardConfigList": CppContainer_Vector_CardConfigList.md
+                - "CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
+                - "EffectList": CppContainer_Vector_EffectList.md
+                - "ItemConfigList": CppContainer_Vector_ItemConfigList.md
+                - "PillConfigList": CppContainer_Vector_PillConfigList.md
+                - "VectorList": CppContainer_Vector_VectorList.md
         - "Entity":
             - "Entity": Entity.md
             - "EntityBomb": EntityBomb.md
@@ -46,9 +51,9 @@ nav:
             - "EntityPickup": EntityPickup.md
             - "EntityPlayer": EntityPlayer.md
             - "EntityProjectile": EntityProjectile.md
-            - "EntityPtr": EntityPtr.md
-            - "EntityRef": EntityRef.md
             - "EntityTear": EntityTear.md
+        - "EntityPtr": EntityPtr.md
+        - "EntityRef": EntityRef.md
         - "Enums":
             - "ActionTriggers": enums/ActionTriggers.md
             - "BabySubType": enums/BabySubType.md
@@ -115,11 +120,9 @@ nav:
             - "TrinketType": enums/TrinketType.md
             - "WeaponType": enums/WeaponType.md
         - "Font": Font.md
-        - "Functions": Functions.md
         - "Game": Game.md
         - "GridEntity":
             - "GridEntity": GridEntity.md
-            - "GridEntityDesc": GridEntityDesc.md
             - "GridEntityDoor": GridEntityDoor.md
             - "GridEntityPit": GridEntityPit.md
             - "GridEntityPoop": GridEntityPoop.md
@@ -127,12 +130,13 @@ nav:
             - "GridEntityRock": GridEntityRock.md
             - "GridEntitySpikes": GridEntitySpikes.md
             - "GridEntityTNT": GridEntityTNT.md
+        - "GridEntityDesc": GridEntityDesc.md
         - "ItemConfig":
-            - "ItemConfig::Card": ItemConfig_Card.md
-            - "ItemConfig::Config": ItemConfig_Config.md
-            - "ItemConfig::Costume": ItemConfig_Costume.md
-            - "ItemConfig::Item": ItemConfig_Item.md
-            - "ItemConfig::PillEffect": ItemConfig_PillEffect.md
+            - "ItemConfig Functions": ItemConfig.md
+            - "ItemConfig - Card": ItemConfig_Card.md
+            - "ItemConfig - Costume": ItemConfig_Costume.md
+            - "ItemConfig - Item": ItemConfig_Item.md
+            - "ItemConfig - PillEffect": ItemConfig_PillEffect.md
         - "Input": Input.md
         - "Isaac": Isaac.md
         - "ItemPool": ItemPool.md
@@ -152,7 +156,7 @@ nav:
             - "RoomConfig::Room": RoomConfig_Room.md
             - "RoomConfig::Spawn": RoomConfig_Spawn.md
         - "RoomDescriptor": RoomDescriptor.md
-        - "RoomDescriptorData": RoomDescriptorData.md
+        - "RoomDescriptor Data": RoomDescriptorData.md
         - "RNG": RNG.md
         - "Seeds": Seeds.md
         - "ShockwaveParams": ShockwaveParams.md

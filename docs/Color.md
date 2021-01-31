@@ -2,7 +2,7 @@
 ## Constructors
 ### Color () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
+#### [Color](../Color) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Color" class.
 

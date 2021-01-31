@@ -2,7 +2,7 @@
 ## Constructors
 ### EntityPtr () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void EntityPtr ( [Entity](../Entity) entity ) {: .copyable aria-label='Constructors' }
+#### [EntityPtr](../EntityPtr) EntityPtr ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions

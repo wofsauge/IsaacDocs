@@ -1,4 +1,18 @@
 # Class "MusicManager"
+## Constructors
+### MusicManager () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
+#### [MusicManager](../MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
+
+Returns a [MusicManager](../MusicManager) object.
+
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    MusicManager():Disable()
+    
+    ```
+___ 
 ## Functions
 ### Crossfade () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

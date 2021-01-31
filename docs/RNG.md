@@ -2,7 +2,7 @@
 ## Constructors
 ### RNG () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void RNG ( ) {: .copyable aria-label='Constructors' }
+#### [RNG](../RNG) RNG ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions

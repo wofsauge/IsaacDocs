@@ -2,7 +2,7 @@
 ## Constructors
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void Vector ( float x , float y ) {: .copyable aria-label='Constructors' }
+#### [Vector](../Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Operators
