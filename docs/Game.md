@@ -1,4 +1,19 @@
 # Class "Game"
+## Constructors
+### Game () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
+#### [Game](../Game) Game ( ) {: .copyable aria-label='Constructors' }
+
+Returns a Game object.
+
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    Game():IsPaused()
+    --returns true if the game is paused
+    
+    ```
+___ 
 ## Functions
 ### AddDevilRoomDeal () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

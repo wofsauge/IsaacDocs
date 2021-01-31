@@ -1,4 +1,18 @@
 # Class "SFXManager"
+## Constructors
+### SFXManager () {: aria-label='Constructors' }
+[ ](#){: .abp .tooltip .badge }
+#### [SFXManager](../SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
+
+Returns a [SFXManager](../SFXManager) object.
+
+???- example "Example Code"
+    Example usage:
+    ```lua 
+    SFXManager():Stop(SoundEffect.SOUND_1UP)
+    
+    ```
+___ 
 ## Functions
 ### AdjustPitch () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

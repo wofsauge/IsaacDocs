@@ -211,8 +211,8 @@ ___
 ___ 
 ### GetItemConfig () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Config](../ItemConfig_Config) GetItemConfig ( ) {: .copyable aria-label='Functions' }
-Returns the [ItemConfig::Config](../ItemConfig_Config) object.
+#### [Config](../ItemConfig) GetItemConfig ( ) {: .copyable aria-label='Functions' }
+Returns the [ItemConfig::Config](../ItemConfig) object.
 ___ 
 ### GetItemIdByName () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

@@ -47,9 +47,9 @@ nav:
             - "EntityPickup": EntityPickup.md
             - "EntityPlayer": EntityPlayer.md
             - "EntityProjectile": EntityProjectile.md
-            - "EntityPtr": EntityPtr.md
-            - "EntityRef": EntityRef.md
             - "EntityTear": EntityTear.md
+        - "EntityPtr": EntityPtr.md
+        - "EntityRef": EntityRef.md
         - "Enums":
             - "ActionTriggers": enums/ActionTriggers.md
             - "BabySubType": enums/BabySubType.md
@@ -119,7 +119,6 @@ nav:
         - "Game": Game.md
         - "GridEntity":
             - "GridEntity": GridEntity.md
-            - "GridEntityDesc": GridEntityDesc.md
             - "GridEntityDoor": GridEntityDoor.md
             - "GridEntityPit": GridEntityPit.md
             - "GridEntityPoop": GridEntityPoop.md
@@ -127,12 +126,13 @@ nav:
             - "GridEntityRock": GridEntityRock.md
             - "GridEntitySpikes": GridEntitySpikes.md
             - "GridEntityTNT": GridEntityTNT.md
+        - "GridEntityDesc": GridEntityDesc.md
         - "ItemConfig":
-            - "ItemConfig::Card": ItemConfig_Card.md
-            - "ItemConfig::Config": ItemConfig_Config.md
-            - "ItemConfig::Costume": ItemConfig_Costume.md
-            - "ItemConfig::Item": ItemConfig_Item.md
-            - "ItemConfig::PillEffect": ItemConfig_PillEffect.md
+            - "ItemConfig Functions": ItemConfig.md
+            - "ItemConfig - Card": ItemConfig_Card.md
+            - "ItemConfig - Costume": ItemConfig_Costume.md
+            - "ItemConfig - Item": ItemConfig_Item.md
+            - "ItemConfig - PillEffect": ItemConfig_PillEffect.md
         - "Input": Input.md
         - "Isaac": Isaac.md
         - "ItemPool": ItemPool.md
@@ -152,7 +152,7 @@ nav:
             - "RoomConfig::Room": RoomConfig_Room.md
             - "RoomConfig::Spawn": RoomConfig_Spawn.md
         - "RoomDescriptor": RoomDescriptor.md
-        - "RoomDescriptorData": RoomDescriptorData.md
+        - "RoomDescriptor Data": RoomDescriptorData.md
         - "RNG": RNG.md
         - "Seeds": Seeds.md
         - "ShockwaveParams": ShockwaveParams.md

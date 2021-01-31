@@ -2,7 +2,7 @@
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### void Sprite ( void ) {: .copyable aria-label='Constructors' }
+#### [Sprite](../Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
