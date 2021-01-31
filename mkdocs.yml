@@ -28,10 +28,10 @@ nav:
         - "Color": Color.md        
         - "CppContainer":
             - "ArrayProxy":
-                - "RoomConfigEntries": index.md
-                - "RoomConfigSpawns": index.md
+                - "RoomConfigEntries": CppContainer_ArrayProxy_RoomConfigEntries.md
+                - "RoomConfigSpawns": CppContainer_ArrayProxy_RoomConfigSpawns.md
                 - "RoomDescriptor": CppContainer_ArrayProxy_RoomDescriptor.md
-                - "intValues": index.md
+                - "intValues": CppContainer_ArrayProxy_intValues.md
             - "EntityList": CppContainer_EntityList.md
             - "Vector":
                 - "CardConfigList": CppContainer_Vector_CardConfigList.md

@@ -1,4 +1,4 @@
-# Class "CppContainer::Vector::VectorList"
+# Class "CppContainer::ArrayProxy::RoomConfigSpawns"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
@@ -10,7 +10,7 @@ ___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Get ( int idx ) {: .copyable aria-label='Functions' }
+#### userdata Get ( int idx ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables

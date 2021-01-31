@@ -7,7 +7,10 @@
 ___ 
 ### GetCards () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### CardList GetCards ( ) {: .copyable aria-label='Functions' }
+#### [CardList](../CppContainer_Vector_CardConfigList) GetCards ( ) {: .copyable aria-label='Functions' }
+
+???+ bug "Bugs"
+    Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 
 ___ 
 ### GetCollectible () {: aria-label='Functions' }
@@ -47,7 +50,7 @@ Returns the Itemobject of a given CollectibleID.
 ___ 
 ### GetCollectibles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### ItemList GetCollectibles ( ) {: .copyable aria-label='Functions' }
+#### [ItemList](../CppContainer_Vector_ItemConfigList) GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles. 
 
@@ -62,15 +65,15 @@ Returns the List of all Collectibles.
 
 
 ???+ bug "Bugs"
-    The objects stored in the returned list cant be accessed correctly and are therefore useless.
+    Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 ___ 
 ### GetCostumes () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### CostumeList GetCostumes ( ) {: .copyable aria-label='Functions' }
+#### [CostumeList](../CppContainer_Vector_CostumeConfigList) GetCostumes ( ) {: .copyable aria-label='Functions' }
 
 
 ???+ bug "Bugs"
-    The Vector/Table returned by this function is always empty! 
+    The list returned by this function is always empty, rendering it useless.
 ___ 
 ### GetNullItem () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -79,7 +82,10 @@ ___
 ___ 
 ### GetNullItems () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### ItemList GetNullItems ( ) {: .copyable aria-label='Functions' }
+#### [ItemList](../CppContainer_Vector_ItemConfigList) GetNullItems ( ) {: .copyable aria-label='Functions' }
+
+???+ bug "Bugs"
+    Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 
 ___ 
 ### GetPillEffect () {: aria-label='Functions' }
@@ -89,7 +95,10 @@ ___
 ___ 
 ### GetPillEffects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### PillList GetPillEffects ( ) {: .copyable aria-label='Functions' }
+#### [PillList](../CppContainer_Vector_PillConfigList) GetPillEffects ( ) {: .copyable aria-label='Functions' }
+
+???+ bug "Bugs"
+    Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 
 ___ 
 ### GetTrinket () {: aria-label='Functions' }
@@ -99,7 +108,10 @@ ___
 ___ 
 ### GetTrinkets () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### ItemList GetTrinkets ( ) {: .copyable aria-label='Functions' }
+#### [ItemList](../CppContainer_Vector_ItemConfigList) GetTrinkets ( ) {: .copyable aria-label='Functions' }
+
+???+ bug "Bugs"
+    Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 
 ___ 
 ### IsValidCollectible () {: aria-label='Functions' }
