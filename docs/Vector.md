@@ -10,22 +10,49 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __add ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
 Defines the Addition of two Vector objects using the `+` operator.
+
+???- example "Example Code"
+    ```lua 
+    local vec1 = Vector(2,1)
+    local vec2 = Vector(5,3)
+    local result = vec1+vec2 -- result equals Vector(7,4) now
+    ```
 ___ 
 ### __div () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __div ( float Modifier ) {: .copyable aria-label='Operators' }
 Defines the Division of two Vector objects using the `/` operator.
+
+???- example "Example Code"
+    ```lua 
+    local vec1 = Vector(6,4)
+    local vec2 = Vector(2,4)
+    local result = vec1/vec2 -- result equals Vector(3,1) now
+    ```
 ___ 
 ### __mul () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __mul ( float Modifier ) {: .copyable aria-label='Operators' }
- operators 
 Defines the Multiplication of two Vector objects using the `*` operator.
+
+???- example "Example Code"
+    ```lua 
+    local vec1 = Vector(2,3)
+    local vec2 = Vector(5,3)
+    local result = vec1*vec2 -- result equals Vector(10,9) now
+    ```
 ___ 
 ### __sub () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) __sub ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
 Defines the Subtraction of two Vector objects using the `-` operator.
+
+???- example "Example Code"
+    ```lua 
+    local vec1 = Vector(2,1)
+    local vec2 = Vector(5,3)
+    local result = vec1-vec2 -- result equals Vector(-3,-2) now
+    ```
 ___ 
 ### __unm () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
