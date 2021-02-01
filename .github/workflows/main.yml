@@ -32,16 +32,11 @@ jobs:
       - run: pip install mkdocs-git-revision-date-plugin
       - run: mkdocs gh-deploy --force
         
-      - name: Copycat
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: /old
-          dst_path: /old/
-          dst_owner: wofsauge
-          dst_repo_name: wofsauge.github.io
-          dst_branch: gh-pages
-          src_branch: master
-          src_wiki: false
-          dst_wiki: false
-          username: wofsauge
+      - name: Deploy
+        uses: s0/git-publish-subdir-action@develop
+        env:
+            REPO: self
+            BRANCH: gh-pages
+            FOLDER: oldDocs
+            SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
+            KNOWN_HOSTS_FILE: resources/known_hosts # Needed if target repo is not on github.com
