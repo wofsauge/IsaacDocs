@@ -32,10 +32,16 @@ jobs:
       - run: pip install mkdocs-git-revision-date-plugin
       - run: mkdocs gh-deploy --force
         
-      - name: Deploy
-        uses: s0/git-publish-subdir-action@develop
-        env:
-          REPO: self
-          BRANCH: gh-pages
-          FOLDER: old
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Copycat
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /old
+          dst_path: /old/
+          dst_owner: wofsauge
+          dst_repo_name: wofsauge.github.io
+          dst_branch: master
+          src_branch: master
+          src_wiki: true
+          dst_wiki: false
+          username: wofsauge
