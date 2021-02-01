@@ -39,4 +39,4 @@ jobs:
             BRANCH: gh-pages
             FOLDER: oldDocs
             SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-            KNOWN_HOSTS_FILE: resources/known_hosts # Needed if target repo is not on github.com
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
