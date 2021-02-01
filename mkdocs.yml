@@ -152,11 +152,10 @@ nav:
         - "QueueItemData": QueueItemData.md
         - "Room": Room.md
         - "RoomConfig":
-            - "RoomConfig::Entry": RoomConfig_Entry.md
-            - "RoomConfig::Room": RoomConfig_Room.md
-            - "RoomConfig::Spawn": RoomConfig_Spawn.md
+            - "Entry": RoomConfig_Entry.md
+            - "Room": RoomConfig_Room.md
+            - "Spawn": RoomConfig_Spawn.md
         - "RoomDescriptor": RoomDescriptor.md
-        - "RoomDescriptor Data": RoomDescriptorData.md
         - "RNG": RNG.md
         - "Seeds": Seeds.md
         - "ShockwaveParams": ShockwaveParams.md

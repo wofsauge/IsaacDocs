@@ -12,12 +12,12 @@ ___
 ___ 
 ### ForceAddPillEffect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [PillColor](../enums/PillColor) ForceAddPillEffect ( [PillEffect](../ItemConfig_PillEffect) PillEffect ) {: .copyable aria-label='Functions' }
+#### [PillColor](../enums/PillColor) ForceAddPillEffect ( [PillEffect](../enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
 Forces a pill effect to be in the pool, usually for challenges, returns PillColor for that effect. 
 ___ 
 ### GetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Card](../ItemConfig_Card) GetCard ( int Seed, boolean Playing, boolean Rune, boolean OnlyRunes ) {: .copyable aria-label='Functions' }
+#### [Card](../enums/Card) GetCard ( int Seed, boolean Playing, boolean Rune, boolean OnlyRunes ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCollectible () {: aria-label='Functions' }
@@ -37,7 +37,7 @@ ___
 ___ 
 ### GetPillEffect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
+#### [ItemConfig PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetPoolForRoom () {: aria-label='Functions' }

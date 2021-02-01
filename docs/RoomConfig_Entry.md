@@ -2,17 +2,17 @@
 ## Variables
 ### Subtype {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### u16 Subtype  {: .copyable aria-label='Variables' }
+#### int Subtype  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomType](../enums/RoomType) Type  {: .copyable aria-label='Variables' }
+#### [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### u16 Variant  {: .copyable aria-label='Variables' }
+#### int Variant  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Weight {: aria-label='Variables' }
