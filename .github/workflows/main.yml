@@ -40,8 +40,8 @@ jobs:
           dst_path: /old/
           dst_owner: wofsauge
           dst_repo_name: wofsauge.github.io
-          dst_branch: master
+          dst_branch: gh-pages
           src_branch: master
-          src_wiki: true
+          src_wiki: false
           dst_wiki: false
           username: wofsauge
