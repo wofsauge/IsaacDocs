@@ -278,7 +278,7 @@ ___
 ### GetRoomConfigStage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetRoomConfigStage ( ) {: .copyable aria-label='Functions' }
-Returns the original stage the room was designed for. (useful for The Void) 
+Returns the stage the room was designed for.
 
 ???- note "Stage IDs (corresponds to ids in stages.xml)"
     

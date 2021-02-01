@@ -62,7 +62,7 @@ Will reevaluate the cache flags provided in the next cache reevaluation.
 ___ 
 ### AddCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddCard ( [Card](../ItemConfig_Card) Card ) {: .copyable aria-label='Functions' }
+#### void AddCard ( [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### AddCoins () {: aria-label='Functions' }
@@ -245,7 +245,7 @@ Play the animation that is normally played at the beginning of a stage.
 ___ 
 ### AnimateCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AnimateCard ( [Card](../ItemConfig_Card) Card, string AnimName ) {: .copyable aria-label='Functions' }
+#### void AnimateCard ( [Card](../enums/Card) ID, string AnimName ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### AnimateCollectible () {: aria-label='Functions' }
@@ -523,13 +523,13 @@ Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
 ___ 
 ### GetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Card](../ItemConfig_Card) GetCard ( int SlotId ) {: .copyable aria-label='Functions' }
+#### [Card](../enums/Card) GetCard ( int SlotId ) {: .copyable aria-label='Functions' }
 
 Gets the ID of the card the player is holding in the given itemslot (0 or 1).
 ___ 
 ### GetCardRNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) GetCardRNG ( [Card](../ItemConfig_Card) ID ) {: .copyable aria-label='Functions' }
+#### [RNG](../RNG) GetCardRNG ( [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCollectibleCount () {: aria-label='Functions' }
@@ -752,7 +752,7 @@ Gets the ID of the pill the player is holding in the given itemslot (0 or 1).
 ___ 
 ### GetPillRNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) GetPillRNG ( [PillEffect](../ItemConfig_PillEffect) ID ) {: .copyable aria-label='Functions' }
+#### [RNG](../RNG) GetPillRNG ( [PillEffect](../enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetPlayerType () {: aria-label='Functions' }
@@ -1076,7 +1076,7 @@ ___
 ___ 
 ### SetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetCard ( int SlotId, [Card](../ItemConfig_Card) Card ) {: .copyable aria-label='Functions' }
+#### void SetCard ( int SlotId, [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
 
 Change the card/rune the player is holding in the given itemslot (0 or 1).
 ___ 
@@ -1173,12 +1173,12 @@ ___
 ___ 
 ### UseCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void UseCard ( [Card](../ItemConfig_Card) Card ) {: .copyable aria-label='Functions' }
+#### void UseCard ( [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### UsePill () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void UsePill ( [PillEffect](../ItemConfig_PillEffect) PillEffect, [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
+#### void UsePill ( [PillEffect](../enums/PillEffect) ID, [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### WillPlayerRevive () {: aria-label='Functions' }

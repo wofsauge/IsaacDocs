@@ -4,18 +4,22 @@
 [ ](#){: .abp .tooltip .badge }
 #### int __len ( ) {: .copyable aria-label='Operators' }
 
-The length (#) operation. Returns the size of this list.
+The length (#) operation. Returns the amount of spawnables in this list.
 
 ___ 
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### userdata Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [RoomConfig Spawn](../RoomConfig_Spawn) Get ( int idx ) {: .copyable aria-label='Functions' }
+
+Returns a [RoomConfig Spawn](../RoomConfig_Spawn) at the index of the list provided.
 
 ___ 
 ## Variables
 ### Size {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int Size  {: .copyable aria-label='Variables' }
+
+The amount of spawnables in the list.
 
 ___ 

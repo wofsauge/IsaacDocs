@@ -2,7 +2,7 @@
 ## Functions
 ### GetCard () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Card](../ItemConfig_Card) GetCard ( int ID ) {: .copyable aria-label='Functions' }
+#### [ItemConfig Card](../ItemConfig_Card) GetCard ( [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCards () {: aria-label='Functions' }
@@ -15,7 +15,7 @@ ___
 ___ 
 ### GetCollectible () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Item](../ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
+#### [ItemConfig Item](../ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
 
 Returns the Itemobject of a given CollectibleID.
 
@@ -77,7 +77,7 @@ ___
 ___ 
 ### GetNullItem () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Item](../ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
+#### [ItemConfig Item](../ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetNullItems () {: aria-label='Functions' }
@@ -90,7 +90,7 @@ ___
 ___ 
 ### GetPillEffect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../ItemConfig_PillEffect) PillEffectID ) {: .copyable aria-label='Functions' }
+#### [ItemConfig PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetPillEffects () {: aria-label='Functions' }
@@ -103,7 +103,7 @@ ___
 ___ 
 ### GetTrinket () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Item](../ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
+#### [ItemConfig Item](../ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetTrinkets () {: aria-label='Functions' }
@@ -133,6 +133,6 @@ Function to check if a given item id is a valid collectible id (aka. this item e
 ___ 
 ### ShouldAddCostumeOnPickup () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static boolean ShouldAddCostumeOnPickup ( [Item](../ItemConfig_Item) Config ) {: .copyable aria-label='Functions' }
+#### static boolean ShouldAddCostumeOnPickup ( [ItemConfig Item](../ItemConfig_Item) Config ) {: .copyable aria-label='Functions' }
 
 ___ 

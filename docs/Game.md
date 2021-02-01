@@ -265,7 +265,7 @@ ___
 ___ 
 ### GetRoom () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Room](../RoomConfig_Room) GetRoom ( ) {: .copyable aria-label='Functions' }
+#### [Room](../Room) GetRoom ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetScreenShakeCountdown () {: aria-label='Functions' }
