@@ -72,7 +72,7 @@ ___
 ___ 
 ### GetCurrentRoom () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Room](../RoomConfig_Room) GetCurrentRoom ( ) {: .copyable aria-label='Functions' }
+#### [Room](../Room) GetCurrentRoom ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### GetCurrentRoomDesc () {: aria-label='Functions' }

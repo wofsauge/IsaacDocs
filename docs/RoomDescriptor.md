@@ -27,7 +27,7 @@ room is clear, don't spawn enemies when visiting bool Clear;
 ___ 
 ### Data {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomDescriptor Data](../RoomDescriptorData) Data  {: .copyable aria-label='Variables' }
+#### [RoomConfig Room](../RoomConfig_Room) Data  {: .copyable aria-label='Variables' }
 
 ___ 
 ### DecorationSeed {: aria-label='Variables' }
@@ -101,7 +101,7 @@ ___
 ___ 
 ### OverrideData {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomDescriptor Data](../RoomDescriptorData) OverrideData  {: .copyable aria-label='Variables' }
+#### [RoomConfig Room](../RoomConfig_Room) OverrideData  {: .copyable aria-label='Variables' }
 Tim's reminder to himself: The room variant is in Data. Because Room::Init uses a mix of datas, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere. 
 ___ 
 ### PitsCount {: aria-label='Variables' }
