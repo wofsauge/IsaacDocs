@@ -24,36 +24,6 @@ nav:
             - "Room": Room.md
             - "Level": Level.md
             - "ModCallbacks": enums/ModCallbacks.md
-        - "Global Functions": GlobalFunctions.md
-        - "Color": Color.md        
-        - "CppContainer":
-            - "ArrayProxy":
-                - "RoomConfigEntries": CppContainer_ArrayProxy_RoomConfigEntries.md
-                - "RoomConfigSpawns": CppContainer_ArrayProxy_RoomConfigSpawns.md
-                - "RoomDescriptor": CppContainer_ArrayProxy_RoomDescriptor.md
-                - "intValues": CppContainer_ArrayProxy_intValues.md
-            - "EntityList": CppContainer_EntityList.md
-            - "Vector":
-                - "CardConfigList": CppContainer_Vector_CardConfigList.md
-                - "CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
-                - "EffectList": CppContainer_Vector_EffectList.md
-                - "ItemConfigList": CppContainer_Vector_ItemConfigList.md
-                - "PillConfigList": CppContainer_Vector_PillConfigList.md
-                - "VectorList": CppContainer_Vector_VectorList.md
-        - "Entity":
-            - "Entity": Entity.md
-            - "EntityBomb": EntityBomb.md
-            - "EntityEffect": EntityEffect.md
-            - "EntityFamiliar": EntityFamiliar.md
-            - "EntityKnife": EntityKnife.md
-            - "EntityLaser": EntityLaser.md
-            - "EntityNPC": EntityNPC.md
-            - "EntityPickup": EntityPickup.md
-            - "EntityPlayer": EntityPlayer.md
-            - "EntityProjectile": EntityProjectile.md
-            - "EntityTear": EntityTear.md
-        - "EntityPtr": EntityPtr.md
-        - "EntityRef": EntityRef.md
         - "Enums":
             - "ActionTriggers": enums/ActionTriggers.md
             - "BabySubType": enums/BabySubType.md
@@ -119,6 +89,36 @@ nav:
             - "TearVariant": enums/TearVariant.md
             - "TrinketType": enums/TrinketType.md
             - "WeaponType": enums/WeaponType.md
+        - "Global Functions": GlobalFunctions.md
+        - "Color": Color.md        
+        - "CppContainer":
+            - "ArrayProxy":
+                - "RoomConfigEntries": CppContainer_ArrayProxy_RoomConfigEntries.md
+                - "RoomConfigSpawns": CppContainer_ArrayProxy_RoomConfigSpawns.md
+                - "RoomDescriptor": CppContainer_ArrayProxy_RoomDescriptor.md
+                - "intValues": CppContainer_ArrayProxy_intValues.md
+            - "EntityList": CppContainer_EntityList.md
+            - "Vector":
+                - "CardConfigList": CppContainer_Vector_CardConfigList.md
+                - "CostumeConfigList": CppContainer_Vector_CostumeConfigList.md
+                - "EffectList": CppContainer_Vector_EffectList.md
+                - "ItemConfigList": CppContainer_Vector_ItemConfigList.md
+                - "PillConfigList": CppContainer_Vector_PillConfigList.md
+                - "VectorList": CppContainer_Vector_VectorList.md
+        - "Entity":
+            - "Entity": Entity.md
+            - "EntityBomb": EntityBomb.md
+            - "EntityEffect": EntityEffect.md
+            - "EntityFamiliar": EntityFamiliar.md
+            - "EntityKnife": EntityKnife.md
+            - "EntityLaser": EntityLaser.md
+            - "EntityNPC": EntityNPC.md
+            - "EntityPickup": EntityPickup.md
+            - "EntityPlayer": EntityPlayer.md
+            - "EntityProjectile": EntityProjectile.md
+            - "EntityTear": EntityTear.md
+        - "EntityPtr": EntityPtr.md
+        - "EntityRef": EntityRef.md
         - "Font": Font.md
         - "Game": Game.md
         - "GridEntity":
