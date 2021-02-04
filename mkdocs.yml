@@ -204,6 +204,7 @@ nav:
         - "stages.xml" : xml/stages.md
         - "translations.xml" : xml/translations.md
     - FAQ: tutorials/faq.md
+    - Tools: tutorials/Tools.md
     - Lua 5.3 Docs: https://www.lua.org/manual/5.3/
 theme:
     name: material
