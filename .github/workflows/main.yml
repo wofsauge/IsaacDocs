@@ -27,10 +27,6 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-      - run: pip install mkdocs
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-git-revision-date-plugin
-      - run: mkdocs gh-deploy --force
         
       - name: Deploy
         uses: s0/git-publish-subdir-action@develop
@@ -39,4 +35,8 @@ jobs:
             BRANCH: gh-pages
             FOLDER: oldDocs
             SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-            KNOWN_HOSTS_FILE: resources/known_hosts # Needed if target repo is not on github.com
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: pip install mkdocs
+      - run: pip install mkdocs-material
+      - run: pip install mkdocs-git-revision-date-plugin
+      - run: mkdocs gh-deploy --force --dirty
