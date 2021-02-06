@@ -217,7 +217,7 @@ ___
 ___ 
 ### LevelStage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void [LevelStage](../enums/LevelStage) ( UserData) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](../enums/LevelStage) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
 
 ???- note "Notes"
