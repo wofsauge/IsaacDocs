@@ -1,12 +1,10 @@
-# File "seeds.xml"
+# File "seeds.txt"
 
-This page needs some content. You can contribute to it using the Edit Button!
+A text file containing special seeds, mostly used for Easter Egg seeds.
 
-**Resource-Folder**{: .info }: Using this file in a resource folder of a mod is not tested yet.
+Any Seed listed in this file can not be used in the "seed input" dialog. (Blacklist-Behavior)
 
-**Content-Folder**{: .info }: Using this file in a content folder of a mod is not tested yet.
+**Resource-Folder**{: .info .green}: Placing this file in your mods "resource" folder will add all listed seeds to the seed-blacklist. (Easter-Egg seeds still work and are still blocked)
 
+**Content-Folder**{: .info  .green}: Placing this file in your mods "resource" folder will add all listed seeds to the seed-blacklist.
 
-| Variable-Name | Possible Values | Description |
-|:--|:--|:--|
-|*todo*|||

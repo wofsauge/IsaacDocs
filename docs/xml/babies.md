@@ -10,4 +10,7 @@ Placing this file in a resource folder of a mod and removing entries causes cras
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|*todo*|||
+|id|int|Identifier of the Baby|
+|name|string|Name of the Baby|
+|skin|string|Filepath to the .png file used by the baby|
+|achievement|int|Achievement id needed tp unlock this Baby|

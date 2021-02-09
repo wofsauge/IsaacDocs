@@ -1,12 +1,12 @@
-# File "rules.xml"
+# File "rules.txt"
 
-This page needs some content. You can contribute to it using the Edit Button!
+This file is used to store all "rules" displayed when using the "Rules" card.
 
-**Resource-Folder**{: .info }: Using this file in a resource folder of a mod is not tested yet.
+Rule-entries can have up to 3 rows and should be seperated with an empty line.
 
-**Content-Folder**{: .info }: Using this file in a content folder of a mod is not tested yet.
+???+ bug
+    Having more than 24 character in a row will cause the text to flow outside of the display-box.
 
+**Resource-Folder**{: .info .green}: Placing this file in your mods "resource" folder will replace the original file.
 
-| Variable-Name | Possible Values | Description |
-|:--|:--|:--|
-|*todo*|||
+**Content-Folder**{: .info .red}: Placing this file in your mods "content" folder has no effect!

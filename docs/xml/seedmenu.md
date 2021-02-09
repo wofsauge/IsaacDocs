@@ -1,12 +1,7 @@
 # File "seedmenu.xml"
 
-This page needs some content. You can contribute to it using the Edit Button!
+File that defines the display of the Easter Egg seed menu.
 
-**Resource-Folder**{: .info }: Using this file in a resource folder of a mod is not tested yet.
+**Resource-Folder**{: .info .red}: Placing this file in your mods "resources" folder has no effect!
 
-**Content-Folder**{: .info }: Using this file in a content folder of a mod is not tested yet.
-
-
-| Variable-Name | Possible Values | Description |
-|:--|:--|:--|
-|*todo*|||
+**Content-Folder**{: .info .red}: Placing this file in your mods "content" folder has no effect!

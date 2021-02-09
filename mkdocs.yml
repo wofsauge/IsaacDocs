@@ -197,9 +197,9 @@ nav:
         - "players.xml" : xml/players.md
         - "pocketitems.xml" : xml/pocketitems.md
         - "preload.xml" : xml/preload.md
-        - "rules.xml" : xml/rules.md
+        - "rules.txt" : xml/rules.md
         - "seedmenu.xml" : xml/seedmenu.md
-        - "seeds.xml" : xml/seeds.md
+        - "seeds.txt" : xml/seeds.md
         - "sounds.xml" : xml/sounds.md
         - "stages.xml" : xml/stages.md
         - "translations.xml" : xml/translations.md

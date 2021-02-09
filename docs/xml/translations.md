@@ -1,12 +1,16 @@
 # File "translations.xml"
 
-This page needs some content. You can contribute to it using the Edit Button!
+This file is used to store a mapping of possible game translation packages. Used for Japanese and Korean.
 
-**Resource-Folder**{: .info }: Using this file in a resource folder of a mod is not tested yet.
+???+ bug
+    This file seems to to nothing useful!
 
-**Content-Folder**{: .info }: Using this file in a content folder of a mod is not tested yet.
+**Resource-Folder**{: .info .red}: Placing this file in your mods "resources" folder has no effect!
+
+**Content-Folder**{: .info .red}: Placing this file in your mods "content" folder has no effect!
 
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|*todo*|||
+|id|string|short ID of the language. Used in the options.ini file and possible indicator for the resources package extention (eg. folder: "resources.jp")|
+|name|string|Name of the language. No usage for it found yet|
