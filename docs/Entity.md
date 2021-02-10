@@ -6,13 +6,28 @@
 
 Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
 
+???- info "Duration infos"
+    The Duration must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart. 
+    
+    ```
+    2 Damage-ticks = 22 frames
+    3 = 42
+    4 = 62
+    ...
+    ```
+
+???+ bug
+    Changing the Damage value doesnt seem to have an effect. It always deals the amount of damage of the player.
+
+    The Duration value seems to have an upper limit. For a PlayerEntity, its only lasting for the duration of one damage interval. For Entities its up to 6 damage-intervals.
+
 ???- example "Example Code"
-    This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 30.
+    This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 1.
 
     ```lua 
     local player =Isaac.GetPlayer(0)
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
-    	entity:AddBurn(player, 30, 1)
+    	entity:AddBurn(EntityRef(player), 30, 1)
     end
     ```
 
@@ -41,13 +56,16 @@ ___
 
 Adds a confusion effect to an entity.
 
+???- info "Duration infos"
+    The Duration has a maximum of 5 seconds
+
 ???- example "Example Code"
     This code confuses every entity in the room for 1 second while ignoring bosses.
 
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
-    	entity:AddConfusion(player, 30, true)
+    	entity:AddConfusion(EntityRef(player), 30, true)
     end
     ```
 
@@ -74,13 +92,16 @@ ___
 
 Adds a fear-effect to an entity.
 
+???- info "Duration infos"
+    The Duration has a maximum of 5 seconds
+
 ???- example "Example Code"
     This code frightens every entity in the room for 1 second.
 
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
-    	entity:AddFear(player, 30)
+    	entity:AddFear(EntityRef(player), 30)
     end
     ```
 
@@ -91,13 +112,16 @@ ___
 
 Freezes an entity, making it unable to move and attack.
 
+???- info "Duration infos"
+    The Duration has a maximum of 5 seconds
+
 ???- example "Example Code"
-    This code freezes every entity in the room for half a second.
+    This code freezes every entity in the room for 1 second.
 
     ```lua 
     local player =Isaac.GetPlayer(0) 
     for i, entity in ipairs(Isaac.GetRoomEntities()) do
-    	entity:AddFreeze(player, 30)
+    	entity:AddFreeze(EntityRef(player), 30)
     end
     ```
 
@@ -111,23 +135,88 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void AddMidasFreeze ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 Turns the entity into a gold statue (can't move, can't attack, drops coins when killed)
+
+???- info "Duration infos"
+    The Duration has a maximum of 5 seconds
+
+???+ bug
+    The golden color applied to the entity will stay for the full duration passed into the function, despite the freeze effect only lasting for a maximum of 5 seconds. 
+
+???- example "Example Code"
+    This code turns every entity in the room into gold for 1 second.
+
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddMidasFreeze(EntityRef(player), 30)
+    end
+    ```
 ___ 
 ### AddPoison () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddPoison ( [EntityRef](../EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
 Adds a poison effect to the entity.
+
+???- info "Duration infos"
+    The Duration must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart. 
+    
+    ```
+    2 Damage-ticks = 22 frames
+    3 = 42
+    4 = 62
+    ...
+    ```
+
+???+ bug
+    Changing the Damage value doesnt seem to have an effect. It always deals the amount of damage of the player.
+    
+    The Duration value seems to have an upper limit. For a PlayerEntity, its only lasting for the duration of one damage interval. For Entities its up to 6 damage-intervals.
+
+???- example "Example Code"
+    This code applies a poison effect to every entity in the room for 1 second.
+
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddPoison(EntityRef(player), 30, 1)
+    end
+    ```
 ___ 
 ### AddShrink () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddShrink ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a shrink effect to the entity.
+
+???- info "Duration infos"
+    The Duration has a maximum of 5 seconds
+
+???- example "Example Code"
+    This code shrinks every entity in the room for 1 second.
+
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddShrink(EntityRef(player), 30)
+    end
+    ```
 ___ 
 ### AddSlowing () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddSlowing ( [EntityRef](../EntityRef) Source, int Duration, float SlowValue, [Color](../Color) SlowColor ) {: .copyable aria-label='Functions' }
-Makes the friction higher. 
+Makes the friction higher effectively slowing down the entity. 
+
+???- example "Example Code"
+    This code slows every entity in the room for 1 second with 0.5 original speed and applying a red color to it.
+
+    ```lua 
+    local player =Isaac.GetPlayer(0) 
+    local slowColor = Color(1, 0, 0, 1, 0, 0, 0)
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    	entity:AddSlowing(EntityRef(player), 30, 0.5, slowColor)
+    end
+    ```
 ___ 
 ### AddVelocity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

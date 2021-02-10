@@ -3,7 +3,7 @@
 This file is used to store a mapping of possible game translation packages. Used for Japanese and Korean.
 
 ???+ bug
-    This file seems to to nothing useful!
+    This file seems to do nothing useful!
 
 **Resource-Folder**{: .info .red}: Placing this file in your mods "resources" folder has no effect!
 
