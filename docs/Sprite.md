@@ -74,12 +74,31 @@ ___
 ### Load () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void Load ( string Filename, boolean LoadGraphics ) {: .copyable aria-label='Functions' }
+Loads a given ".anm2" file. The filepath is relative to the "resources" folder. The boolean can be used to load the graphics (.png files) as well, without calling the [LoadGraphics()](#LoadGraphics) function.
 
+???- example "Example Code"
+    This code creates a new sprite object, loads an .anm2 file and renders it on the screen.
+
+    ```lua 
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+    mySprite:Render(Vector(75,75), Vector(0,0), Vector(0,0))
+    ```
 ___ 
 ### LoadGraphics () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void LoadGraphics ( ) {: .copyable aria-label='Functions' }
+Loads and applies assosiated graphic-objects like ".png" files.
 
+???- example "Example Code"
+    This code creates a new sprite object and replaces the spritesheet of layer 0 of a sprite object with a different spritesheet.
+
+    ```lua 
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+	mySprite:ReplaceSpritesheet(0, "gfx/my_new_spritesheet.png")
+	mySprite:LoadGraphics()
+    ```
 ___ 
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -119,7 +138,20 @@ ___
 ### ReplaceSpritesheet () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
+Changes the ".png" file assosiated to a specific layer of a sprite.
 
+???+ note "Notes"
+    The effect is only applied after calling the [LoadGraphics()](#LoadGraphics) function afterwards.
+
+???- example "Example Code"
+    This code creates a new sprite object and replaces the spritesheet of layer 0 of a sprite object with a different spritesheet.
+
+    ```lua 
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+	mySprite:ReplaceSpritesheet(0, "gfx/my_new_spritesheet.png")
+	mySprite:LoadGraphics()
+    ```
 ___ 
 ### Reset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
