@@ -1,4 +1,8 @@
 # Class "Entity"
+
+### Children Classes {: .inheritance }
+[EntityBomb](EntityBomb.md), [EntityEffect](EntityEffect.md), [EntityFamiliar](EntityFamiliar.md), [EntityKnife](EntityKnife.md), [EntityLaser](EntityLaser.md), [EntityNPC](EntityNPC.md), [EntityPickup](EntityPickup.md), [EntityPlayer](EntityPlayer.md), [EntityProjectile](EntityProjectile.md), [EntityTear](EntityTear.md)
+
 ## Functions
 ### AddBurn () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

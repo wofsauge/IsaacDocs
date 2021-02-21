@@ -1,4 +1,6 @@
 # Class "EntityKnife"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### GetKnifeDistance () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

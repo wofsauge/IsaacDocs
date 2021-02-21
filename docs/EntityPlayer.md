@@ -1,4 +1,6 @@
 # Class "EntityPlayer"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### AddBlackHearts () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

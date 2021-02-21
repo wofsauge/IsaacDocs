@@ -1,4 +1,6 @@
 # Class "EntityTear"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### ChangeVariant () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

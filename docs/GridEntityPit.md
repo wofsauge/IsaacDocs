@@ -1,4 +1,6 @@
 # Class "GridEntityPit"
+### Inherits from Class: {: .inheritance }
+[GridEntity](GridEntity.md)
 ## Functions
 ### MakeBridge () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

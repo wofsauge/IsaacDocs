@@ -1,4 +1,6 @@
 # Class "EntityNPC"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### AnimWalkFrame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

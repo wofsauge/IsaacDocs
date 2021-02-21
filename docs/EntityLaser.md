@@ -1,4 +1,6 @@
 # Class "EntityLaser"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### CalculateEndPoint () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }

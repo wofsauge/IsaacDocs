@@ -1,4 +1,6 @@
 # Class "GridEntityDoor"
+### Inherits from Class: {: .inheritance }
+[GridEntity](GridEntity.md)
 ## Functions
 ### Bar () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

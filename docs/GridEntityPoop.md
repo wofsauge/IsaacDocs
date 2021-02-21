@@ -1,4 +1,6 @@
 # Class "GridEntityPoop"
+### Inherits from Class: {: .inheritance }
+[GridEntity](GridEntity.md)
 ## Functions
 ### ReduceSpawnRate () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

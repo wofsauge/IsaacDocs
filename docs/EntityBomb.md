@@ -1,4 +1,8 @@
 # Class "EntityBomb"
+
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
+
 ## Functions
 ### SetExplosionCountdown () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

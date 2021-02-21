@@ -1,4 +1,8 @@
 # Class "GridEntity"
+
+### Children Classes {: .inheritance }
+[GridEntityDoor](GridEntityDoor.md), [GridEntityPit](GridEntityPit.md), [GridEntityPoop](GridEntityPoop.md), [GridEntityPressurePlate](GridEntityPressurePlate.md), [GridEntityRock](GridEntityRock.md), [GridEntitySpikes](GridEntitySpikes.md), [GridEntityTNT](GridEntityTNT.md)
+
 ## Functions
 ### Destroy () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

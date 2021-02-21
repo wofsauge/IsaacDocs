@@ -1,4 +1,6 @@
 # Class "GridEntityPressurePlate"
+### Inherits from Class: {: .inheritance }
+[GridEntity](GridEntity.md)
 ## Functions
 ### Reward () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

@@ -1,4 +1,6 @@
 # Class "EntityFamiliar"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### AddCoins () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

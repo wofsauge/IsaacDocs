@@ -1,4 +1,6 @@
 # Class "EntityPickup"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### AppearFast () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

@@ -1,4 +1,6 @@
 # Class "GridEntityRock"
+### Inherits from Class: {: .inheritance }
+[GridEntity](GridEntity.md)
 ## Functions
 ### GetBigRockFrame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

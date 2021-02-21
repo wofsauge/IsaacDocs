@@ -17,10 +17,6 @@ function unmarkStuff() {
     $content.unmark();
 }
 
-function toggleCollapse() {
-
-}
-
 function toggleDarkMode() {
     if (typeof(Storage) !== "undefined") {
         var darkModeState = localStorage.getItem("darkMode");
@@ -72,7 +68,13 @@ function buildContentMap() {
         //only build map on class-related pages
         return;
     }
-    $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table><hr/></div>").insertAfter("h1");
+    var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table><hr/></div>");
+    if ($(".inheritance").length == 0) {
+        mapObj.insertAfter("h1");
+    } else {
+        mapObj.insertAfter($("p").first());
+    }
+
     var tableContent = "";
     $("h4").each(function(index) {
         var funcParts = $(this).html().split(" (");

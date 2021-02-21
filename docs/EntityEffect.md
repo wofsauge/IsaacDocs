@@ -1,4 +1,6 @@
 # Class "EntityEffect"
+### Inherits from Class: {: .inheritance }
+[Entity](Entity.md)
 ## Functions
 ### FollowParent () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
