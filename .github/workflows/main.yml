@@ -42,5 +42,5 @@ jobs:
           destination_repo: 'wofsauge/IsaacDocs'
           destination_branch: 'gh-pages'
           destination_folder: 'oldDocs'
-          user_email: 'Bot@wofsauge.com'
+          user_email: '245725+wofsauge@users.noreply.github.com'
           user_name: 'wofsauge'
