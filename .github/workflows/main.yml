@@ -39,4 +39,17 @@ jobs:
       - run: pip install mkdocs
       - run: pip install mkdocs-material
       - run: pip install mkdocs-git-revision-date-plugin
-      - run: mkdocs gh-deploy --force --dirty
+      - run: mkdocs gh-deploy --force
+        
+      - name: Pushes test file
+        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source_file: 'oldDocs'
+          destination_repo: 'wofsauge/IsaacDocs'
+          destination_branch: 'gh-pages'
+          destination_folder: 'oldDocs'
+          user_email: 'Bot@wofsauge.com'
+          user_name: 'wofsauge'
+          commit_message: 'Copy old documentation files'
