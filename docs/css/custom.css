@@ -345,6 +345,10 @@ details>summary {
     margin-top: 0;
 }
 
+div[data-md-component$="announce"] {
+    display: none;
+}
+
 
 /* Smaller Search results */
 

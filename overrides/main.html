@@ -1,9 +1,8 @@
-{% extends "base.html" %} {% block scripts %} {{ super() }}
-<script type="text/javascript">
+{% extends "base.html" %} {% block announce %} {{ super() }}
+<script>
     if (typeof(Storage) !== "undefined") {
         if (localStorage.getItem("darkMode") == 1) {
-            var body = document.body;
-            body.classList.add("darkMode");
+            document.body.classList.add("darkMode");
         }
     }
 </script>
