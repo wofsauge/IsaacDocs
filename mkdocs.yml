@@ -208,6 +208,7 @@ nav:
     - Lua 5.3 Docs: https://www.lua.org/manual/5.3/
 theme:
     name: material
+    custom_dir: overrides
     features:
         - navigation.tabs
         - navigation.instant
