@@ -1,17 +1,7 @@
 $(document).ready(function() {
-    loadDarkModeState();
     $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/docs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
     $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
 });
-
-function loadDarkModeState() {
-    if (typeof(Storage) !== "undefined") {
-        if (localStorage.getItem("darkMode") == 1) {
-            $("body").addClass("darkMode");
-        }
-    }
-}
-loadDarkModeState();
 
 function unmarkStuff() {
     $content.unmark();
@@ -97,8 +87,7 @@ function buildContentMap() {
     });
 }
 
-app.document$.subscribe(function() {
-    loadDarkModeState();
+document$.subscribe(function() {
     if (typeof(Storage) !== "undefined") {
         // handle recently visited
         var recentList = getRecentList();
