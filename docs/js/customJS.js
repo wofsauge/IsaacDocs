@@ -218,7 +218,7 @@ document$.subscribe(function() {
     observer.observe(target, config);
 
     //Hide Placeholder chars everywhere
-    $("h3 ").each(function(e) {
+    $("h3, li.md-nav__item").each(function(e) {
         hidePlaceholderChar($(this));
     })
 
