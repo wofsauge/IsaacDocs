@@ -1,6 +1,10 @@
 $(document).ready(function() {
     $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/docs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
     $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
+
+    if (window.location.hash.replace("#", "") != "") {
+        jumpToElement($(window.location.hash));
+    }
 });
 
 function unmarkStuff() {
@@ -70,7 +74,7 @@ function buildContentMap() {
         var funcParts = $(this).html().split(" (");
         var funcFront = funcParts[0].split(" ");
         var funcName = funcFront.pop();
-        var funcLink = $("h3").eq(index).find("a").last().attr("href");
+        var funcLink = $("h3:not(.inheritance)").eq(index).find("a").last().attr("href");
         funcName = "<a href=\"" + funcLink + "\">" + funcName + "</a>";
         var ariaLabel = $(this).attr("aria-label");
         if (funcParts.length > 1) {
@@ -123,10 +127,9 @@ document$.subscribe(function() {
     //moves scroll position on href clicking a bit further up
     $('a[href^="#"]').on('click', function(e) {
         var href = $(this).attr('href');
-        $('html, body').animate({
-            scrollTop: $(href).offset().top - 75
-        }, 'faster');
+        jumpToElement(href);
     });
+
 
     // Make tables sortable
     document.querySelectorAll("article table").forEach(function(table) {
@@ -262,4 +265,13 @@ function jumpToFirst() {
             window.scrollTo(0, position);
         }
     }
+    if (window.location.hash.replace("#", "") != "") {
+        jumpToElement($(window.location.hash));
+    }
+}
+
+function jumpToElement(element) {
+    $('html, body').animate({
+        scrollTop: $(element).offset().top - 75
+    }, 5);
 }
