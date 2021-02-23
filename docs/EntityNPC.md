@@ -2,42 +2,42 @@
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)
 ## Functions
-### AnimWalkFrame () {: aria-label='Functions' }
+### Anim·Walk·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AnimWalkFrame ( string HorizontalAnim, string VerticalAnim, float SpeedThreshold ) {: .copyable aria-label='Functions' }
 
 ___ 
-### CalcTargetPosition () {: aria-label='Functions' }
+### Calc·Target·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) CalcTargetPosition ( float DistanceLimit ) {: .copyable aria-label='Functions' }
 
 ___ 
-### CanBeDamagedFromVelocity () {: aria-label='Functions' }
+### Can·Be·Damaged·From·Velocity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean CanBeDamagedFromVelocity ( [Vector](../Vector) Velocity ) {: .copyable aria-label='Functions' }
 
 ___ 
-### CanReroll () {: aria-label='Functions' }
+### Can·Reroll () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean CanReroll ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### FireBossProjectiles () {: aria-label='Functions' }
+### Fire·Boss·Projectiles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityProjectile](../EntityProjectile) FireBossProjectiles ( int NumProjectiles, [Vector](../Vector) TargetPos, float TrajectoryModifier, [ProjectileParams](../ProjectileParams) Params ) {: .copyable aria-label='Functions' }
 fire a number of projectiles, optionally targeting the player direction is randomized, or slightly randomized when targeting the player FallingAccelModifier can be used to make projectiles fall faster to the ground returns a pointer to the projectile spawned last (useful e.g. when NumProjectiles=1) 
 ___ 
-### FireProjectiles () {: aria-label='Functions' }
+### Fire·Projectiles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void FireProjectiles ( [Vector](../Vector) Pos, [Vector](../Vector) Velocity, ProjectilesMode Mode, [ProjectileParams](../ProjectileParams) Params ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetAliveEnemyCount () {: aria-label='Functions' }
+### Get·Alive·Enemy·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetAliveEnemyCount ( ) {: .copyable aria-label='Functions' }
 Used to redirect close door enemies to any enemies for friendly npcs. 
 ___ 
-### GetBossColorIdx () {: aria-label='Functions' }
+### Get·Boss·Color·Idx () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetBossColorIdx ( ) {: .copyable aria-label='Functions' }
 
@@ -45,7 +45,7 @@ ___
 ???- note "Notes"
     This will return the boss color idx reduced by 1. To get the actual color as set in bosscolors.xml, add +1 to the result.
 ___ 
-### GetChampionColorIdx () {: aria-label='Functions' }
+### Get·Champion·Color·Idx () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetChampionColorIdx ( ) {: .copyable aria-label='Functions' }
 
@@ -53,27 +53,27 @@ ___
 ???- note "Notes"
     A list of Champion colors can be found here : ChampionColorIdx 
 ___ 
-### GetPlayerTarget () {: aria-label='Functions' }
+### Get·Player·Target () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Entity](../Entity) GetPlayerTarget ( ) {: .copyable aria-label='Functions' }
 if there are no modifiers (best friend) this will return the player 
 ___ 
-### IsBoss () {: aria-label='Functions' }
+### Is·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsBoss ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsChampion () {: aria-label='Functions' }
+### Is·Champion () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsChampion ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### KillUnique () {: aria-label='Functions' }
+### Kill·Unique () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void KillUnique ( ) {: .copyable aria-label='Functions' }
 For entities with unique death animation, like Flush! vs poop enemies. 
 ___ 
-### MakeChampion () {: aria-label='Functions' }
+### Make·Champion () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void MakeChampion ( int Seed ) {: .copyable aria-label='Functions' }
 Forces a non champion to become a champion, resets hp to max hp. 
@@ -81,7 +81,7 @@ Forces a non champion to become a champion, resets hp to max hp.
 ???- note "Notes"
     Hard to use because there are millions of possible seeds to input here.Use Morph() to change the champion Color instead!
 ___ 
-### MakeSplat () {: aria-label='Functions' }
+### Make·Splat () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityEffect](../EntityEffect) MakeSplat ( float Size ) {: .copyable aria-label='Functions' }
 
@@ -99,53 +99,53 @@ A list of Champion colors can be found here : [ChampionColorIdx](https://binding
     entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)
     ```
 ___ 
-### PlaySound () {: aria-label='Functions' }
+### Play·Sound () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void PlaySound ( [SoundEffect](../enums/SoundEffect) ID, float Volume, int FrameDelay, boolean Loop, float Pitch ) {: .copyable aria-label='Functions' }
 
 ___ 
-### QueryNPCsGroup () {: aria-label='Functions' }
+### Query·NPCs·Group () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityList](../CppContainer_EntityList) QueryNPCsGroup ( int GroupIdx ) {: .copyable aria-label='Functions' }
 
 ___ 
-### QueryNPCsSpawnerType () {: aria-label='Functions' }
+### Query·NPCs·Spawner·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityList](../CppContainer_EntityList) QueryNPCsSpawnerType ( [EntityType](../enums/EntityType) SpawnerType, [EntityType](../enums/EntityType) Type, boolean OnlyEnemies ) {: .copyable aria-label='Functions' }
 
 ___ 
-### QueryNPCsType () {: aria-label='Functions' }
+### Query·NPCs·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityList](../CppContainer_EntityList) QueryNPCsType ( [EntityType](../enums/EntityType) Type, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ResetPathFinderTarget () {: aria-label='Functions' }
+### Reset·Path·Finder·Target () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ResetPathFinderTarget ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ThrowSpider () {: aria-label='Functions' }
+### Throw·Spider () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static ThrowSpider ( [Vector](../Vector) Position, [Entity](../Entity) Spawner, [Vector](../Vector) TargetPos, boolean Big, float YOffset ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
-### CanShutDoors {: aria-label='Variables' }
+### Can·Shut·Doors {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean CanShutDoors  {: .copyable aria-label='Variables' }
 
 ___ 
-### ChildNPC {: aria-label='Variables' }
+### Child·NPC {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityNPC](../EntityNPC) ChildNPC  {: .copyable aria-label='Variables' }
 
 ___ 
-### EntityRef {: aria-label='Variables' }
+### Entity·Ref {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Entity](../Entity) EntityRef {: .copyable aria-label='Variables' }
 
 ___ 
-### GroupIdx {: aria-label='Variables' }
+### Group·Idx {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int GroupIdx  {: .copyable aria-label='Variables' }
 Used to identify multichunks groups. 
@@ -160,7 +160,7 @@ ___
 #### int I2  {: .copyable aria-label='Variables' }
 same as m_I1 
 ___ 
-### ParentNPC {: aria-label='Variables' }
+### Parent·NPC {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityNPC](../EntityNPC) ParentNPC  {: .copyable aria-label='Variables' }
 parent entity, for multi-entity NPCs like Larry Jr. 
@@ -170,12 +170,12 @@ ___
 #### [PathFinder](../PathFinder) Pathfinder  {: .copyable aria-label='Variables' }
 
 ___ 
-### ProjectileCooldown {: aria-label='Variables' }
+### Projectile·Cooldown {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ProjectileCooldown  {: .copyable aria-label='Variables' }
 projectiles can fire again when it reaches 0 
 ___ 
-### ProjectileDelay {: aria-label='Variables' }
+### Projectile·Delay {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ProjectileDelay  {: .copyable aria-label='Variables' }
 &gt;0: projectile will be fired in n frames 
@@ -190,7 +190,7 @@ ___
 #### int State  {: .copyable aria-label='Variables' }
 
 ___ 
-### StateFrame {: aria-label='Variables' }
+### State·Frame {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int StateFrame  {: .copyable aria-label='Variables' }
 

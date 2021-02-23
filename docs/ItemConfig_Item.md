@@ -1,62 +1,62 @@
 # Class "ItemConfig::Item"
 ## Functions
-### IsCollectible () {: aria-label='Functions' }
+### Is·Collectible () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsNull () {: aria-label='Functions' }
+### Is·Null () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsNull ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsTrinket () {: aria-label='Functions' }
+### Is·Trinket () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsTrinket ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
-### AchievementID {: aria-label='Variables' }
+### Achievement·ID {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AchievementID  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddBlackHearts {: aria-label='Variables' }
+### Add·Black·Hearts {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddBlackHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddBombs {: aria-label='Variables' }
+### Add·Bombs {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddBombs  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddCoins {: aria-label='Variables' }
+### Add·Coins {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddCoins  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddHearts {: aria-label='Variables' }
+### Add·Hearts {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddKeys {: aria-label='Variables' }
+### Add·Keys {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddKeys  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddMaxHearts {: aria-label='Variables' }
+### Add·Max·Hearts {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddMaxHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-### AddSoulHearts {: aria-label='Variables' }
+### Add·Soul·Hearts {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AddSoulHearts  {: .copyable aria-label='Variables' }
 
 ___ 
-### CacheFlags {: aria-label='Variables' }
+### Cache·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int CacheFlags  {: .copyable aria-label='Variables' }
 
@@ -71,7 +71,7 @@ ___
 #### string Description  {: .copyable aria-label='Variables' }
 
 ___ 
-### DevilPrice {: aria-label='Variables' }
+### Devil·Price {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int DevilPrice  {: .copyable aria-label='Variables' }
 
@@ -81,7 +81,7 @@ ___
 #### boolean Discharged  {: .copyable aria-label='Variables' }
 
 ___ 
-### GfxFileName {: aria-label='Variables' }
+### Gfx·File·Name {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### string GfxFileName  {: .copyable aria-label='Variables' }
 
@@ -91,12 +91,12 @@ ___
 #### int ID  {: .copyable aria-label='Variables' }
 
 ___ 
-### MaxCharges {: aria-label='Variables' }
+### Max·Charges {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int MaxCharges  {: .copyable aria-label='Variables' }
 
 ___ 
-### MaxCooldown {: aria-label='Variables' }
+### Max·Cooldown {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int MaxCooldown  {: .copyable aria-label='Variables' }
 

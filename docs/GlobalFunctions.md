@@ -14,12 +14,12 @@ R, G, B and A accept numbers between 0 and 1.
 
 RO, GO and BO accept numbers between -255 and 255.
 ___ 
-### EntityPtr () {: aria-label='Constructors' }
+### Entity·Ptr () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityPtr](../EntityPtr) EntityPtr ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
-### EntityRef () {: aria-label='Constructors' }
+### Entity·Ref () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityRef](../EntityRef) EntityRef ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
 
@@ -61,7 +61,7 @@ ___
 Constructor for the "[KColor](../KColor)" class.
 Notes: "[KColor](../KColor)" is only used in the [Font](../Font) class. For most other situations you will need to use the [Color()](../Color) constructor.
 ___ 
-### MusicManager () {: aria-label='Constructors' }
+### Music·Manager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
@@ -74,12 +74,12 @@ Returns a [MusicManager](../MusicManager) object.
     
     ```
 ___ 
-### ProjectileParams () {: aria-label='Constructors' }
+### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [ProjectileParams](../ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
-### RegisterMod () {: aria-label='Constructors' }
+### Register·Mod () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [Mod Reference](../ModReference) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
 
@@ -128,12 +128,12 @@ ___
 #### int Random ( ) {: .copyable aria-label='Functions' }
 Returns a random integer. (0 to 2^32) 
 ___ 
-### RandomVector () {: aria-label='Functions' }
+### Random·Vector () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
-### GetPtrHash () {: aria-label='Functions' }
+### Get·Ptr·Hash () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.

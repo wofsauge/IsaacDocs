@@ -1,6 +1,6 @@
 # Class "MusicManager"
 ## Constructors
-### MusicManager () {: aria-label='Constructors' }
+### Music·Manager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
@@ -24,7 +24,7 @@ ___
 #### void Disable ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### DisableLayer () {: aria-label='Functions' }
+### Disable·Layer () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DisableLayer ( ) {: .copyable aria-label='Functions' }
 
@@ -34,7 +34,7 @@ ___
 #### void Enable ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### EnableLayer () {: aria-label='Functions' }
+### Enable·Layer () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void EnableLayer ( ) {: .copyable aria-label='Functions' }
 
@@ -49,22 +49,22 @@ ___
 #### void Fadeout ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetCurrentMusicID () {: aria-label='Functions' }
+### Get·Current·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetQueuedMusicID () {: aria-label='Functions' }
+### Get·Queued·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [MusicManager](../MusicManager) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
 if nothing is queued, return the current music id 
 ___ 
-### IsEnabled () {: aria-label='Functions' }
+### Is·Enabled () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsEnabled ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsLayerEnabled () {: aria-label='Functions' }
+### Is·Layer·Enabled () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsLayerEnabled ( ) {: .copyable aria-label='Functions' }
 
@@ -74,7 +74,7 @@ ___
 #### void Pause ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### PitchSlide () {: aria-label='Functions' }
+### Pitch·Slide () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void PitchSlide ( float TargetPitch ) {: .copyable aria-label='Functions' }
 
@@ -89,7 +89,7 @@ ___
 #### void Queue ( [MusicManager](../MusicManager) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ResetPitch () {: aria-label='Functions' }
+### Reset·Pitch () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ResetPitch ( ) {: .copyable aria-label='Functions' }
 
@@ -99,13 +99,13 @@ ___
 #### void Resume ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### UpdateVolume () {: aria-label='Functions' }
+### Update·Volume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void UpdateVolume ( ) {: .copyable aria-label='Functions' }
 
 This function sets the music volume to the volume defined in the options menu.
 ___ 
-### VolumeSlide () {: aria-label='Functions' }
+### Volume·Slide () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void VolumeSlide ( float TargetVolume ) {: .copyable aria-label='Functions' }
 

@@ -198,8 +198,10 @@ document$.subscribe(function() {
     });
 
     //Adds search query string to search result links
-    $("input[aria-label=\"Search\"]").change(function() {
-        var searchText = $(this).val();
+    // We use an Element observer, to change the search results AFTER they where placed
+    var target = document.querySelector('.md-search-result__list')
+    var observer = new MutationObserver(function(mutations) {
+        var searchText = $("input[aria-label=\"Search\"]").val();
         $("li.md-search-result__item").find('a').each(function(e) {
             var jumpTargetValue = $(this).attr('href').split("#");
             var jumpTarget = "";
@@ -208,8 +210,17 @@ document$.subscribe(function() {
             }
             var link = $(this).attr('href').split("?")[0].split("#")[0];
             $(this).attr('href', link + "?q=" + searchText + jumpTarget);
+
+            hidePlaceholderChar($(this));
         });
     });
+    var config = { attributes: true, childList: true, characterData: true };
+    observer.observe(target, config);
+
+    //Hide Placeholder chars everywhere
+    $("h3 ").each(function(e) {
+        hidePlaceholderChar($(this));
+    })
 
     mark();
 });
@@ -274,4 +285,8 @@ function jumpToElement(element) {
     $('html, body').animate({
         scrollTop: $(element).offset().top - 75
     }, 5);
+}
+
+function hidePlaceholderChar(element) {
+    element.html(element.html().replaceAll('·', ""));
 }

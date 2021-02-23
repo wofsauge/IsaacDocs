@@ -1,6 +1,6 @@
 # Class "Input"
 ## Functions
-### GetActionValue () {: aria-label='Functions' }
+### Get·Action·Value () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetActionValue ( int action, int controllerId ) {: .copyable aria-label='Functions' }
 
@@ -14,13 +14,13 @@ Returns the current strength in which a button was pressed. This is 0 OR 1 with 
     ```
 
 ___ 
-### GetButtonValue () {: aria-label='Functions' }
+### Get·Button·Value () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetButtonValue ( int button, int controllerId ) {: .copyable aria-label='Functions' }
 
 Use "GetActionValue" instead of this function.
 ___ 
-### GetMousePosition () {: aria-label='Functions' }
+### Get·Mouse·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetMousePosition ( boolean gameCoords ) {: .copyable aria-label='Functions' }
 
@@ -35,7 +35,7 @@ Returns the current mouse position in game coordinates (true) or render coordina
     ```
 
 ___ 
-### IsActionPressed () {: aria-label='Functions' }
+### Is·Action·Pressed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsActionPressed ( int action, int controllerId ) {: .copyable aria-label='Functions' }
 
@@ -52,7 +52,7 @@ Returns, if an action-button is pressed or not. An Action-button is any button t
     
     ```
 ___ 
-### IsActionTriggered () {: aria-label='Functions' }
+### Is·Action·Triggered () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsActionTriggered ( int action, int controllerId ) {: .copyable aria-label='Functions' }
 
@@ -69,7 +69,7 @@ Returns, if an action-button was pressed some time before or not. An Action-butt
     
     ```
 ___ 
-### IsButtonPressed () {: aria-label='Functions' }
+### Is·Button·Pressed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsButtonPressed ( int button, int controllerId ) {: .copyable aria-label='Functions' }
 
@@ -86,7 +86,7 @@ Returns, if a button is pressed or not. This function will return true, as long 
     
     ```
 ___ 
-### IsButtonTriggered () {: aria-label='Functions' }
+### Is·Button·Triggered () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsButtonTriggered ( int button, int controllerId ) {: .copyable aria-label='Functions' }
 
@@ -103,7 +103,7 @@ Returns, if a button was pressed some time before or not. This functions will on
     
     ```
 ___ 
-### IsMouseBtnPressed () {: aria-label='Functions' }
+### Is·Mouse·Btn·Pressed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsMouseBtnPressed ( int button ) {: .copyable aria-label='Functions' }
 

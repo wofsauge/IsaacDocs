@@ -5,7 +5,7 @@
 #### int Age  {: .copyable aria-label='Variables' }
 
 ___ 
-### LifeSpan {: aria-label='Variables' }
+### Life·Span {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int LifeSpan  {: .copyable aria-label='Variables' }
 
@@ -25,7 +25,7 @@ ___
 #### float Time  {: .copyable aria-label='Variables' }
 
 ___ 
-### TimeDT {: aria-label='Variables' }
+### Time·DT {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float TimeDT  {: .copyable aria-label='Variables' }
 

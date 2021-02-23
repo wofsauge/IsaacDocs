@@ -14,22 +14,22 @@ Returns a [SFXManager](../SFXManager) object.
     ```
 ___ 
 ## Functions
-### AdjustPitch () {: aria-label='Functions' }
+### Adjust·Pitch () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AdjustPitch ( [SoundEffect](../enums/SoundEffect) ID, float Pitch ) {: .copyable aria-label='Functions' }
 mostly useful for repeating sounds 
 ___ 
-### AdjustVolume () {: aria-label='Functions' }
+### Adjust·Volume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AdjustVolume ( [SoundEffect](../enums/SoundEffect) ID, float Volume ) {: .copyable aria-label='Functions' }
 mostly useful for repeating sounds 
 ___ 
-### GetAmbientSoundVolume () {: aria-label='Functions' }
+### Get·Ambient·Sound·Volume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetAmbientSoundVolume ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsPlaying () {: aria-label='Functions' }
+### Is·Playing () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsPlaying ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
@@ -44,7 +44,7 @@ ___
 #### void Preload ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetAmbientSound () {: aria-label='Functions' }
+### Set·Ambient·Sound () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetAmbientSound ( [SoundEffect](../enums/SoundEffect) ID, float Volume, float Pitch ) {: .copyable aria-label='Functions' }
 
@@ -54,7 +54,7 @@ ___
 #### void Stop ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
-### StopLoopingSounds () {: aria-label='Functions' }
+### Stop·Looping·Sounds () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void StopLoopingSounds ( ) {: .copyable aria-label='Functions' }
 

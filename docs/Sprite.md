@@ -6,67 +6,67 @@
 
 ___ 
 ## Functions
-### GetDefaultAnimation () {: aria-label='Functions' }
+### Get·Default·Animation () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDefaultAnimationName () {: aria-label='Functions' }
+### Get·Default·Animation·Name () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetFilename () {: aria-label='Functions' }
+### Get·Filename () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string GetFilename ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetFrame () {: aria-label='Functions' }
+### Get·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetFrame ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetLayerCount () {: aria-label='Functions' }
+### Get·Layer·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetLayerCount ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetOverlayFrame () {: aria-label='Functions' }
+### Get·Overlay·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetOverlayFrame ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTexel () {: aria-label='Functions' }
+### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Color](../Color) GetTexel ( [Vector](../Vector) SamplePos, [Vector](../Vector) RenderPos, float AlphaThreshold ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsEventTriggered () {: aria-label='Functions' }
+### Is·Event·Triggered () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsFinished () {: aria-label='Functions' }
+### Is·Finished () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsLoaded () {: aria-label='Functions' }
+### Is·Loaded () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsLoaded ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsOverlayFinished () {: aria-label='Functions' }
+### Is·Overlay·Finished () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsOverlayFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsOverlayPlaying () {: aria-label='Functions' }
+### Is·Overlay·Playing () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsOverlayPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsPlaying () {: aria-label='Functions' }
+### Is·Playing () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
@@ -85,7 +85,7 @@ Loads a given ".anm2" file. The filepath is relative to the "resources" folder. 
     mySprite:Render(Vector(75,75), Vector(0,0), Vector(0,0))
     ```
 ___ 
-### LoadGraphics () {: aria-label='Functions' }
+### Load·Graphics () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void LoadGraphics ( ) {: .copyable aria-label='Functions' }
 Loads and applies assosiated graphic-objects like ".png" files.
@@ -105,12 +105,12 @@ ___
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
 
 ___ 
-### PlayOverlay () {: aria-label='Functions' }
+### Play·Overlay () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
 
 ___ 
-### PlayRandom () {: aria-label='Functions' }
+### Play·Random () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void PlayRandom ( int Seed ) {: .copyable aria-label='Functions' }
 
@@ -120,7 +120,7 @@ ___
 #### void Reload ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveOverlay () {: aria-label='Functions' }
+### Remove·Overlay () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveOverlay ( ) {: .copyable aria-label='Functions' }
 
@@ -130,12 +130,12 @@ ___
 #### void Render ( [Vector](../Vector) Pos, [Vector](../Vector) TopLeftClamp, [Vector](../Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RenderLayer () {: aria-label='Functions' }
+### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RenderLayer ( int LayerId, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ReplaceSpritesheet () {: aria-label='Functions' }
+### Replace·Spritesheet () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
 Changes the ".png" file assosiated to a specific layer of a sprite.
@@ -158,37 +158,37 @@ ___
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetAnimation () {: aria-label='Functions' }
+### Set·Animation () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean SetAnimation ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetFrame () {: aria-label='Functions' }
+### Set·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetLastFrame () {: aria-label='Functions' }
+### Set·Last·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetLastFrame ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetLayerFrame () {: aria-label='Functions' }
+### Set·Layer·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetLayerFrame ( int LayerId, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetOverlayAnimation () {: aria-label='Functions' }
+### Set·Overlay·Animation () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean SetOverlayAnimation ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetOverlayFrame () {: aria-label='Functions' }
+### Set·Overlay·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetOverlayFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetOverlayRenderPriority () {: aria-label='Functions' }
+### Set·Overlay·Render·Priority () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetOverlayRenderPriority ( boolean RenderFirst ) {: .copyable aria-label='Functions' }
 
@@ -203,7 +203,7 @@ ___
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### WasEventTriggered () {: aria-label='Functions' }
+### Was·Event·Triggered () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean WasEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
 
@@ -229,7 +229,7 @@ ___
 #### [Vector](../Vector) Offset  {: .copyable aria-label='Variables' }
 
 ___ 
-### PlaybackSpeed {: aria-label='Variables' }
+### Playback·Speed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float PlaybackSpeed  {: .copyable aria-label='Variables' }
 

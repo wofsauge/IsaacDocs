@@ -1,6 +1,6 @@
 # Class "ProjectileParams"
 ## Constructors
-### ProjectileParams () {: aria-label='Constructors' }
+### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
 #### [ProjectileParams](../ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
@@ -11,12 +11,12 @@ ___
 #### float Acceleration  {: .copyable aria-label='Variables' }
 
 ___ 
-### BulletFlags {: aria-label='Variables' }
+### Bullet·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int BulletFlags  {: .copyable aria-label='Variables' }
 
 ___ 
-### ChangeFlags {: aria-label='Variables' }
+### Change·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
@@ -32,7 +32,7 @@ Changed state activates when projectile's frame count reaches the value set in [
 ____
 Also used in: [EntityProjectile](../EntityProjectile)
 ___ 
-### ChangeTimeout {: aria-label='Variables' }
+### Change·Timeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
@@ -48,7 +48,7 @@ Changed state activates when projectile's frame count reaches the value set in [
 ____
 Also used in: [EntityProjectile](../EntityProjectile)
 ___ 
-### ChangeVelocity {: aria-label='Variables' }
+### Change·Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
@@ -64,52 +64,52 @@ Changed state activates when projectile's frame count reaches the value set in [
 ____
 Also used in: [EntityProjectile](../EntityProjectile)
 ___ 
-### CircleAngle {: aria-label='Variables' }
+### Circle·Angle {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float CircleAngle  {: .copyable aria-label='Variables' }
 Angle offset used by fire_projectiles PROJECTILES_CIRCLE type emitter. Random by default. 
 ___ 
-### CurvingStrength {: aria-label='Variables' }
+### Curving·Strength {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float CurvingStrength  {: .copyable aria-label='Variables' }
 Use very small values for curving like 0.005. 
 ___ 
-### DepthOffset {: aria-label='Variables' }
+### Depth·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float DepthOffset  {: .copyable aria-label='Variables' }
 
 ___ 
-### DotProductLimit {: aria-label='Variables' }
+### Dot·Product·Limit {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float DotProductLimit  {: .copyable aria-label='Variables' }
 Direction bullets are being fired in Dot product of FireDirectionLimit, bullet direction must be &gt;= this value 
 ___ 
-### FallingAccelModifier {: aria-label='Variables' }
+### Falling·Accel·Modifier {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float FallingAccelModifier  {: .copyable aria-label='Variables' }
 
 ___ 
-### FallingSpeedModifier {: aria-label='Variables' }
+### Falling·Speed·Modifier {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float FallingSpeedModifier  {: .copyable aria-label='Variables' }
 
 ___ 
-### FireDirectionLimit {: aria-label='Variables' }
+### Fire·Direction·Limit {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) FireDirectionLimit  {: .copyable aria-label='Variables' }
 
 ___ 
-### GridCollision {: aria-label='Variables' }
+### Grid·Collision {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean GridCollision  {: .copyable aria-label='Variables' }
 
 ___ 
-### HeightModifier {: aria-label='Variables' }
+### Height·Modifier {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float HeightModifier  {: .copyable aria-label='Variables' }
 
 ___ 
-### HomingStrength {: aria-label='Variables' }
+### Homing·Strength {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float HomingStrength  {: .copyable aria-label='Variables' }
 Multiplier on normal homing strength. Unused if SMART bullet flag is not set. 
@@ -119,7 +119,7 @@ ___
 #### [Color](../Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
-### PositionOffset {: aria-label='Variables' }
+### Position·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
 
@@ -134,7 +134,7 @@ ___
 #### float Spread  {: .copyable aria-label='Variables' }
 For quad/quint/etc spread shots. 
 ___ 
-### TargetPosition {: aria-label='Variables' }
+### Target·Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) TargetPosition  {: .copyable aria-label='Variables' }
 
@@ -144,12 +144,12 @@ ___
 #### int Variant  {: .copyable aria-label='Variables' }
 
 ___ 
-### VelocityMulti {: aria-label='Variables' }
+### Velocity·Multi {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float VelocityMulti  {: .copyable aria-label='Variables' }
 
 ___ 
-### WiggleFrameOffset {: aria-label='Variables' }
+### Wiggle·Frame·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int WiggleFrameOffset  {: .copyable aria-label='Variables' }
 Used to offset the wiggle wave. 

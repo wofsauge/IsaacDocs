@@ -1,46 +1,46 @@
 # Class "PathFinder"
 ## Functions
-### EvadeTarget () {: aria-label='Functions' }
+### Evade·Target () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void EvadeTarget ( [Vector](../Vector) TargetPos ) {: .copyable aria-label='Functions' }
 
 ___ 
-### FindGridPath () {: aria-label='Functions' }
+### Find·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void FindGridPath ( [Vector](../Vector) Pos, float Speed, int PathMarker, boolean UseDirectPath ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetEvadeMovementCountdown () {: aria-label='Functions' }
+### Get·Evade·Movement·Countdown () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetEvadeMovementCountdown ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridIndex () {: aria-label='Functions' }
+### Get·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridIndex ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasDirectPath () {: aria-label='Functions' }
+### Has·Direct·Path () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasDirectPath ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasPathToPos () {: aria-label='Functions' }
+### Has·Path·To·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasPathToPos ( [Vector](../Vector) Pos, boolean IgnorePoop ) {: .copyable aria-label='Functions' }
 Used for safe check if any NPC is behind rocks/pits, doesn't disturb class members. 
 ___ 
-### MoveRandomly () {: aria-label='Functions' }
+### Move·Randomly () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean MoveRandomly ( boolean IgnoreStatusEffects ) {: .copyable aria-label='Functions' }
 
 ___ 
-### MoveRandomlyAxisAligned () {: aria-label='Functions' }
+### Move·Randomly·Axis·Aligned () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void MoveRandomlyAxisAligned ( float Speed, boolean IgnoreStatusEffects ) {: .copyable aria-label='Functions' }
 
 ___ 
-### MoveRandomlyBoss () {: aria-label='Functions' }
+### Move·Randomly·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void MoveRandomlyBoss ( boolean IgnoreStatusEffects ) {: .copyable aria-label='Functions' }
 
@@ -50,17 +50,17 @@ ___
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ResetMovementTarget () {: aria-label='Functions' }
+### Reset·Movement·Target () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ResetMovementTarget ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetCanCrushRocks () {: aria-label='Functions' }
+### Set·Can·Crush·Rocks () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetCanCrushRocks ( boolean value ) {: .copyable aria-label='Functions' }
 
 ___ 
-### UpdateGridIndex () {: aria-label='Functions' }
+### Update·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void UpdateGridIndex ( ) {: .copyable aria-label='Functions' }
 

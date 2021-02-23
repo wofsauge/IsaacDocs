@@ -1,11 +1,11 @@
 # Class "ItemConfig::PillEffect"
 ## Variables
-### AchievementID {: aria-label='Variables' }
+### Achievement·ID {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int AchievementID  {: .copyable aria-label='Variables' }
 
 ___ 
-### GreedModeAllowed {: aria-label='Variables' }
+### Greed·Mode·Allowed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean GreedModeAllowed  {: .copyable aria-label='Variables' }
 

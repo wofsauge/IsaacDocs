@@ -2,43 +2,43 @@
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)
 ## Functions
-### ChangeVariant () {: aria-label='Functions' }
+### Change·Variant () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ChangeVariant ( int NewVariant ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ResetSpriteScale () {: aria-label='Functions' }
+### Reset·Sprite·Scale () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ResetSpriteScale ( ) {: .copyable aria-label='Functions' }
 Resets the tear sprite animation depending on scale. 
 ___ 
-### SetDeadEyeIntensity () {: aria-label='Functions' }
+### Set·Dead·Eye·Intensity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetDeadEyeIntensity ( float Intensity ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetKnockbackMultiplier () {: aria-label='Functions' }
+### Set·Knockback·Multiplier () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetKnockbackMultiplier ( float Multiplier ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetParentOffset () {: aria-label='Functions' }
+### Set·Parent·Offset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetParentOffset ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetWaitFrames () {: aria-label='Functions' }
+### Set·Wait·Frames () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetWaitFrames ( int Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
-### BaseDamage {: aria-label='Variables' }
+### Base·Damage {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float BaseDamage  {: .copyable aria-label='Variables' }
 
 ___ 
-### BaseScale {: aria-label='Variables' }
+### Base·Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float BaseScale  {: .copyable aria-label='Variables' }
 
@@ -48,22 +48,22 @@ ___
 #### boolean Bounced  {: .copyable aria-label='Variables' }
 true if tear bounced of something 
 ___ 
-### CanTriggerStreakEnd {: aria-label='Variables' }
+### Can·Trigger·Streak·End {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean CanTriggerStreakEnd  {: .copyable aria-label='Variables' }
 For Onan's strak and Dead Eye. 
 ___ 
-### ContinueVelocity {: aria-label='Variables' }
+### Continue·Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ContinueVelocity  {: .copyable aria-label='Variables' }
 
 ___ 
-### FallingAcceleration {: aria-label='Variables' }
+### Falling·Acceleration {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float FallingAcceleration  {: .copyable aria-label='Variables' }
 
 ___ 
-### FallingSpeed {: aria-label='Variables' }
+### Falling·Speed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float FallingSpeed  {: .copyable aria-label='Variables' }
 
@@ -73,22 +73,22 @@ ___
 #### float Height  {: .copyable aria-label='Variables' }
 
 ___ 
-### HomingFriction {: aria-label='Variables' }
+### Homing·Friction {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float HomingFriction  {: .copyable aria-label='Variables' }
 
 ___ 
-### KnockbackMultiplier {: aria-label='Variables' }
+### Knockback·Multiplier {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float KnockbackMultiplier  {: .copyable aria-label='Variables' }
 
 ___ 
-### ParentOffset {: aria-label='Variables' }
+### Parent·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ParentOffset  {: .copyable aria-label='Variables' }
 Used for Position adjustment (vs PositionOffset which is a render offset) 
 ___ 
-### PosDisplacement {: aria-label='Variables' }
+### Pos·Displacement {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) PosDisplacement  {: .copyable aria-label='Variables' }
 
@@ -103,32 +103,32 @@ ___
 #### float Scale  {: .copyable aria-label='Variables' }
 
 ___ 
-### StickDiff {: aria-label='Variables' }
+### Stick·Diff {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) StickDiff  {: .copyable aria-label='Variables' }
 
 ___ 
-### StickTarget {: aria-label='Variables' }
+### Stick·Target {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Entity](../Entity) StickTarget  {: .copyable aria-label='Variables' }
 
 ___ 
-### StickTimer {: aria-label='Variables' }
+### Stick·Timer {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int StickTimer  {: .copyable aria-label='Variables' }
 
 ___ 
-### TearFlags {: aria-label='Variables' }
+### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [TearFlags](../enums/TearFlags) TearFlags {: .copyable aria-label='Variables' }
 
 ___ 
-### TearIndex {: aria-label='Variables' }
+### Tear·Index {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int TearIndex  {: .copyable aria-label='Variables' }
 
 ___ 
-### WaitFrames {: aria-label='Variables' }
+### Wait·Frames {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int WaitFrames  {: .copyable aria-label='Variables' }
 

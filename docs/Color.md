@@ -33,7 +33,7 @@ ___
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetColorize () {: aria-label='Functions' }
+### Set·Colorize () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetColorize ( float Red, float Green, float Blue, float Amount ) {: .copyable aria-label='Functions' }
 
@@ -68,13 +68,13 @@ The values can be between 0 and 1 for normal coloration. if you use higher numbe
     ```
 
 ___ 
-### SetOffset () {: aria-label='Functions' }
+### Set·Offset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetOffset ( float RedOffset, float GreenOffset, float BlueOffset ) {: .copyable aria-label='Functions' }
 
 Offset is a color that gets added to the sprite after the Tint was applied.
 ___ 
-### SetTint () {: aria-label='Functions' }
+### Set·Tint () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetTint ( float RedTint, float GreenTint, float BlueTint, float AlphaTint ) {: .copyable aria-label='Functions' }
 

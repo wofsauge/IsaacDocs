@@ -4,13 +4,13 @@
 [Entity](Entity.md)
 
 ## Functions
-### SetExplosionCountdown () {: aria-label='Functions' }
+### Set·Explosion·Countdown () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetExplosionCountdown ( int Countdown ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
-### ExplosionDamage {: aria-label='Variables' }
+### Explosion·Damage {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float ExplosionDamage  {: .copyable aria-label='Variables' }
 
@@ -21,12 +21,12 @@ ___
 
 Uses [TearFlags](../enums/TearFlags) to alter the behavior of the bomb.
 ___ 
-### IsFetus {: aria-label='Variables' }
+### Is·Fetus {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsFetus  {: .copyable aria-label='Variables' }
 
 ___ 
-### RadiusMultiplier {: aria-label='Variables' }
+### Radius·Multiplier {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float RadiusMultiplier  {: .copyable aria-label='Variables' }
 

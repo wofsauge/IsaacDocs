@@ -6,7 +6,7 @@
 
 ___ 
 ## Functions
-### GetSeed () {: aria-label='Functions' }
+### Get·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetSeed ( ) {: .copyable aria-label='Functions' }
 
@@ -16,17 +16,17 @@ ___
 #### int Next ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RandomFloat () {: aria-label='Functions' }
+### Random·Float () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float RandomFloat ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RandomInt () {: aria-label='Functions' }
+### Random·Int () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int RandomInt ( int Max ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetSeed () {: aria-label='Functions' }
+### Set·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetSeed ( int Seed, int ShiftIdx ) {: .copyable aria-label='Functions' }
 

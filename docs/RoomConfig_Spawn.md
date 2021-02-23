@@ -1,17 +1,17 @@
 # Class "RoomConfig::Spawn"
 ## Functions
-### PickEntry () {: aria-label='Functions' }
+### Pick·Entry () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [RoomConfig Entry](../RoomConfig_Entry) PickEntry ( float r ) {: .copyable aria-label='Functions' }
 r is a value between 0 and 1 
 ___ 
 ## Variables
-### EntryCount {: aria-label='Variables' }
+### Entry·Count {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int EntryCount  {: .copyable aria-label='Variables' }
 
 ___ 
-### SumWeights {: aria-label='Variables' }
+### Sum·Weights {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float SumWeights  {: .copyable aria-label='Variables' }
 

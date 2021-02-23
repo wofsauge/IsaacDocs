@@ -1,6 +1,6 @@
 # Class "Room"
 ## Functions
-### CheckLine () {: aria-label='Functions' }
+### Check·Line () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean CheckLine ( [Vector](../Vector) Pos1, [Vector](../Vector) Pos2, LinecheckMode Mode, int GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable ) {: .copyable aria-label='Functions' }
 returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed 
@@ -16,47 +16,47 @@ returns true if there is a direct line of sight between Pos1 and Pos2 returns fa
 
     **3** : is a line check that only collides with obstacles that can block projectiles
 ___ 
-### DamageGrid () {: aria-label='Functions' }
+### Damage·Grid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean DamageGrid ( int Index, int Damage ) {: .copyable aria-label='Functions' }
 Damage Grid Entities currently this concerns [GridEntityPoop](../GridEntityPoop) and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc
 ___ 
-### DestroyGrid () {: aria-label='Functions' }
+### Destroy·Grid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean DestroyGrid ( int Index, boolean Immediate ) {: .copyable aria-label='Functions' }
 calls DamageGrid internally to damage Poop/Fire removes rocks and opens secret doors returns true if something was destroyed returns false if not used for explosions mostly 
 ___ 
-### EmitBloodFromWalls () {: aria-label='Functions' }
+### Emit·Blood·From·Walls () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void EmitBloodFromWalls ( int Duration, int Count ) {: .copyable aria-label='Functions' }
 
 ___ 
-### FindFreePickupSpawnPosition () {: aria-label='Functions' }
+### Find·Free·Pickup·Spawn·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) FindFreePickupSpawnPosition ( [Vector](../Vector) Pos, float InitialStep, boolean AvoidActiveEntities ) {: .copyable aria-label='Functions' }
 Starting from Pos, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned. 
 ___ 
-### FindFreeTilePosition () {: aria-label='Functions' }
+### Find·Free·Tile·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) FindFreeTilePosition ( [Vector](../Vector) Pos, float DistanceThreshold ) {: .copyable aria-label='Functions' }
 Finds the nearest free tile based on position Stops immediately if the tile sampled has a squared distance less than DistanceThresholdSQ 
 ___ 
-### GetAliveBossesCount () {: aria-label='Functions' }
+### Get·Alive·Bosses·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetAliveBossesCount ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetAliveEnemiesCount () {: aria-label='Functions' }
+### Get·Alive·Enemies·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetAliveEnemiesCount ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetAwardSeed () {: aria-label='Functions' }
+### Get·Award·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetAwardSeed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetBackdropType () {: aria-label='Functions' }
+### Get·Backdrop·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetBackdropType ( ) {: .copyable aria-label='Functions' }
 
@@ -95,187 +95,187 @@ Returns the BackdropType (Background) of the current room.
     |27|Blue Secret|
     |28|Ultra Greed Shop|
 ___ 
-### GetBossID () {: aria-label='Functions' }
+### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### BossId GetBossID ( ) {: .copyable aria-label='Functions' }
 
 This will return the subtype of the current room, since this value is used to determine the boss-portrait to display when entering.
 ___ 
-### GetBottomRightPos () {: aria-label='Functions' }
+### Get·Bottom·Right·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetBottomRightPos ( ) {: .copyable aria-label='Functions' }
 returns bottom right position inside of walls 
 ___ 
-### GetBrokenWatchState () {: aria-label='Functions' }
+### Get·Broken·Watch·State () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetBrokenWatchState ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetCenterPos () {: aria-label='Functions' }
+### Get·Center·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetCenterPos ( ) {: .copyable aria-label='Functions' }
 returns the room center position 
 ___ 
-### GetClampedGridIndex () {: aria-label='Functions' }
+### Get·Clamped·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetClampedGridIndex ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 converts float position (x,y) to grid index (similar to ingrid) clamps the values if out of bounds 
 ___ 
-### GetClampedPosition () {: aria-label='Functions' }
+### Get·Clamped·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetClampedPosition ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 returns Pos clamped to room borders inside of walls 
 ___ 
-### GetDecorationSeed () {: aria-label='Functions' }
+### Get·Decoration·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetDecorationSeed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDeliriumDistance () {: aria-label='Functions' }
+### Get·Delirium·Distance () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetDeliriumDistance ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDevilRoomChance () {: aria-label='Functions' }
+### Get·Devil·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetDevilRoomChance ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDoor () {: aria-label='Functions' }
+### Get·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityDoor](../GridEntityDoor) GetDoor ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDoorSlotPosition () {: aria-label='Functions' }
+### Get·Door·Slot·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetDoorSlotPosition ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDungeonRockIdx () {: aria-label='Functions' }
+### Get·Dungeon·Rock·Idx () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetDungeonRockIdx ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetEntities () {: aria-label='Functions' }
+### Get·Entities () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityList](../CppContainer_EntityList) GetEntities ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetFrameCount () {: aria-label='Functions' }
+### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridCollision () {: aria-label='Functions' }
+### Get·Grid·Collision () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
 
 Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity at this grid index.
 ___ 
-### GetGridCollisionAtPos () {: aria-label='Functions' }
+### Get·Grid·Collision·At·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollisionAtPos ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
 Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity at this position in the room.
 ___ 
-### GetGridEntity () {: aria-label='Functions' }
+### Get·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntity](../GridEntity) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' }
 
 Returns the [GridEntity](../GridEntity) at this grid index.
 ___ 
-### GetGridEntityFromPos () {: aria-label='Functions' }
+### Get·Grid·Entity·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntity](../GridEntity) GetGridEntityFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 Returns the [GridEntity](../GridEntity) at this position in the room.
 ___ 
-### GetGridHeight () {: aria-label='Functions' }
+### Get·Grid·Height () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridHeight ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridIndex () {: aria-label='Functions' }
+### Get·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridIndex ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 converts float position (x,y) to grid index returns -1 for invalid index 
 ___ 
-### GetGridPath () {: aria-label='Functions' }
+### Get·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridPath ( int Index ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridPathFromPos () {: aria-label='Functions' }
+### Get·Grid·Path·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridPathFromPos ( int Index ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridPosition () {: aria-label='Functions' }
+### Get·Grid·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetGridPosition ( int GridIndex ) {: .copyable aria-label='Functions' }
 converts grid index to float (x,y) position undefined behaviour for invalid index 
 ___ 
-### GetGridSize () {: aria-label='Functions' }
+### Get·Grid·Size () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridSize ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridWidth () {: aria-label='Functions' }
+### Get·Grid·Width () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridWidth ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetLaserTarget () {: aria-label='Functions' }
+### Get·Laser·Target () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetLaserTarget ( [Vector](../Vector) Pos, [Vector](../Vector) Dir ) {: .copyable aria-label='Functions' }
 returns the hit position for a laser beam (Technology, Robo-Baby) usually, the first poop, fire, rock, TNT, or wall encountered on a straight line 
 ___ 
-### GetLightingAlpha () {: aria-label='Functions' }
+### Get·Lighting·Alpha () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetLightingAlpha ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetLRoomAreaDesc () {: aria-label='Functions' }
+### Get·LRoom·Area·Desc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### LRoomAreaDesc GetLRoomAreaDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetLRoomTileDesc () {: aria-label='Functions' }
+### Get·LRoom·Tile·Desc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### LRoomTileDesc GetLRoomTileDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetNextShockwaveId () {: aria-label='Functions' }
+### Get·Next·Shockwave·Id () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetNextShockwaveId ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetRandomPosition () {: aria-label='Functions' }
+### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
 returns random non tile aligned position 
 ___ 
-### GetRandomTileIndex () {: aria-label='Functions' }
+### Get·Random·Tile·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetRandomTileIndex ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetRedHeartDamage () {: aria-label='Functions' }
+### Get·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean GetRedHeartDamage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetRenderScrollOffset () {: aria-label='Functions' }
+### Get·Render·Scroll·Offset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
 The camera scroll offset and screen shake offsets are both represented here. 
 ___ 
-### GetRenderSurfaceTopLeft () {: aria-label='Functions' }
+### Get·Render·Surface·Top·Left () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
 The position the floor and wall textures will be rendered at. 
 ___ 
-### GetRoomConfigStage () {: aria-label='Functions' }
+### Get·Room·Config·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetRoomConfigStage ( ) {: .copyable aria-label='Functions' }
 Returns the stage the room was designed for.
@@ -312,142 +312,142 @@ Returns the stage the room was designed for.
     |25|Ultra Greed (Greed Mode)||
     |26|The Void|Normally inaccessible. This stage uses rooms from other stages, and will return their respective values.|
 ___ 
-### GetRoomShape () {: aria-label='Functions' }
+### Get·Room·Shape () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [RoomShape](../enums/RoomShape) GetRoomShape ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetSecondBossID () {: aria-label='Functions' }
+### Get·Second·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### BossId GetSecondBossID ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetSeededCollectible () {: aria-label='Functions' }
+### Get·Seeded·Collectible () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [CollectibleType](../enums/CollectibleType) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetShopLevel () {: aria-label='Functions' }
+### Get·Shop·Level () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetShopLevel ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetSpawnSeed () {: aria-label='Functions' }
+### Get·Spawn·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetSpawnSeed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTintedRockIdx () {: aria-label='Functions' }
+### Get·Tinted·Rock·Idx () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetTintedRockIdx ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTopLeftPos () {: aria-label='Functions' }
+### Get·Top·Left·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) GetTopLeftPos ( ) {: .copyable aria-label='Functions' }
 returns top left position inside of walls 
 ___ 
-### GetType () {: aria-label='Functions' }
+### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [RoomType](../enums/RoomType) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasSlowDown () {: aria-label='Functions' }
+### Has·Slow·Down () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasSlowDown ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasTriggerPressurePlates () {: aria-label='Functions' }
+### Has·Trigger·Pressure·Plates () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasTriggerPressurePlates ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasWater () {: aria-label='Functions' }
+### Has·Water () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasWater ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasWaterPits () {: aria-label='Functions' }
+### Has·Water·Pits () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasWaterPits ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsAmbushActive () {: aria-label='Functions' }
+### Is·Ambush·Active () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsAmbushActive ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsAmbushDone () {: aria-label='Functions' }
+### Is·Ambush·Done () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsAmbushDone ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsClear () {: aria-label='Functions' }
+### Is·Clear () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsClear ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsCurrentRoomLastBoss () {: aria-label='Functions' }
+### Is·Current·Room·Last·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsCurrentRoomLastBoss ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsDoorSlotAllowed () {: aria-label='Functions' }
+### Is·Door·Slot·Allowed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsDoorSlotAllowed ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 Returns whether this room design may have a door at a given position, disregarding whether those doors exist. 
 ___ 
-### IsFirstEnemyDead () {: aria-label='Functions' }
+### Is·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsFirstEnemyDead ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsFirstVisit () {: aria-label='Functions' }
+### Is·First·Visit () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsFirstVisit ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsInitialized () {: aria-label='Functions' }
+### Is·Initialized () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsInitialized ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsLShapedRoom () {: aria-label='Functions' }
+### Is·LShaped·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsLShapedRoom ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsPositionInRoom () {: aria-label='Functions' }
+### Is·Position·In·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsPositionInRoom ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsSacrificeDone () {: aria-label='Functions' }
+### Is·Sacrifice·Done () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsSacrificeDone ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### KeepDoorsClosed () {: aria-label='Functions' }
+### Keep·Doors·Closed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void KeepDoorsClosed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### MamaMegaExplossion () {: aria-label='Functions' }
+### Mama·Mega·Explossion () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void MamaMegaExplossion ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### PlayMusic () {: aria-label='Functions' }
+### Play·Music () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void PlayMusic ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveDoor () {: aria-label='Functions' }
+### Remove·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveDoor ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveGridEntity () {: aria-label='Functions' }
+### Remove·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveGridEntity ( int GridIndex, int PathTrail, boolean KeepDecoration ) {: .copyable aria-label='Functions' }
 
@@ -457,12 +457,12 @@ ___
 #### void Render ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RespawnEnemies () {: aria-label='Functions' }
+### Respawn·Enemies () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RespawnEnemies ( ) {: .copyable aria-label='Functions' }
 for D7 collectible 
 ___ 
-### ScreenWrapPosition () {: aria-label='Functions' }
+### Screen·Wrap·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ScreenWrapPosition ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 
@@ -471,32 +471,32 @@ Returns Pos, screen-wrapped (if it is just outside the room on the right it will
 ???- note "Notes"
      This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively. 
 ___ 
-### SetAmbushDone () {: aria-label='Functions' }
+### Set·Ambush·Done () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetAmbushDone ( boolean Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetBrokenWatchState () {: aria-label='Functions' }
+### Set·Broken·Watch·State () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetBrokenWatchState ( int State ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetCardAgainstHumanity () {: aria-label='Functions' }
+### Set·Card·Against·Humanity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetCardAgainstHumanity ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetClear () {: aria-label='Functions' }
+### Set·Clear () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetClear ( boolean Clear ) {: .copyable aria-label='Functions' }
 Needed for angel room, so the clear flag can be set to false when the angel spawns void SetClear(bool Clear) {m_Desc-&gt;Clear = Clear;} 
 ___ 
-### SetFirstEnemyDead () {: aria-label='Functions' }
+### Set·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetFirstEnemyDead ( boolean Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetFloorColor () {: aria-label='Functions' }
+### Set·Floor·Color () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetFloorColor ( [Color](../Color) FloorColor ) {: .copyable aria-label='Functions' }
 
@@ -509,32 +509,32 @@ Allows you to apply a color modifier to the floor texture of the current room.
     ```
 
 ___ 
-### SetGridPath () {: aria-label='Functions' }
+### Set·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean SetGridPath ( int Index, int Value ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetRedHeartDamage () {: aria-label='Functions' }
+### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetRedHeartDamage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetSacrificeDone () {: aria-label='Functions' }
+### Set·Sacrifice·Done () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetSacrificeDone ( boolean Done ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetShockwaveParam () {: aria-label='Functions' }
+### Set·Shockwave·Param () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetShockwaveParam ( int ShockwaveId, [ShockwaveParams](../ShockwaveParams) Params ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetSlowDown () {: aria-label='Functions' }
+### Set·Slow·Down () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetSlowDown ( int Duration ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetWallColor () {: aria-label='Functions' }
+### Set·Wall·Color () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetWallColor ( [Color](../Color) WallColor ) {: .copyable aria-label='Functions' }
 
@@ -547,67 +547,67 @@ Allows you to apply a color modifier to the wall texture of the current room.
     ```
 
 ___ 
-### ShopReshuffle () {: aria-label='Functions' }
+### Shop·Reshuffle () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShopReshuffle ( boolean KeepCollectibleIdx, boolean ReselectSaleItem ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ShopRestockFull () {: aria-label='Functions' }
+### Shop·Restock·Full () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShopRestockFull ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ShopRestockPartial () {: aria-label='Functions' }
+### Shop·Restock·Partial () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShopRestockPartial ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SpawnClearAward () {: aria-label='Functions' }
+### Spawn·Clear·Award () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SpawnClearAward ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SpawnGridEntity () {: aria-label='Functions' }
+### Spawn·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](../enums/GridEntityType) Type, int Variant, int Seed, int VarData ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TryMakeBridge () {: aria-label='Functions' }
+### Try·Make·Bridge () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean TryMakeBridge ( [GridEntity](../GridEntity) pit ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TryPlaceLadder () {: aria-label='Functions' }
+### Try·Place·Ladder () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void TryPlaceLadder ( [Vector](../Vector) PlayerPos, [Vector](../Vector) PlayerVelocity, [Entity](../Entity) Ladder ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TrySpawnBlueWombDoor () {: aria-label='Functions' }
+### Try·Spawn·Blue·Womb·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean TrySpawnBlueWombDoor ( boolean FirstTime, boolean IgnoreTime ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TrySpawnBossRushDoor () {: aria-label='Functions' }
+### Try·Spawn·Boss·Rush·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean TrySpawnBossRushDoor ( boolean IgnoreTime ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TrySpawnDevilRoomDoor () {: aria-label='Functions' }
+### Try·Spawn·Devil·Room·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean TrySpawnDevilRoomDoor ( boolean Animate ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TrySpawnMegaSatanRoomDoor () {: aria-label='Functions' }
+### Try·Spawn·Mega·Satan·Room·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean TrySpawnMegaSatanRoomDoor ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TrySpawnTheVoidDoor () {: aria-label='Functions' }
+### Try·Spawn·The·Void·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean TrySpawnTheVoidDoor ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### TurnGold () {: aria-label='Functions' }
+### Turn·Gold () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void TurnGold ( ) {: .copyable aria-label='Functions' }
 
@@ -622,7 +622,7 @@ Updates the current room.
     Calling this function is NOT needed to apply changes!
     This function is pretty useless 
 ___ 
-### WorldToScreenPosition () {: aria-label='Functions' }
+### World·To·Screen·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) WorldToScreenPosition ( [Vector](../Vector) WorldPos ) {: .copyable aria-label='Functions' }
 Converts an entity position to one that can be used to render to the screen. 

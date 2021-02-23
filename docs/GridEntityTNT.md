@@ -2,7 +2,7 @@
 ### Inherits from Class: {: .inheritance }
 [GridEntity](GridEntity.md)
 ## Variables
-### FrameCnt {: aria-label='Variables' }
+### Frame·Cnt {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int FrameCnt  {: .copyable aria-label='Variables' }
 

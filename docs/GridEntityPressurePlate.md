@@ -8,17 +8,17 @@
 
 ___ 
 ## Variables
-### GreedModeRNG {: aria-label='Variables' }
+### Greed·Mode·RNG {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [RNG](../RNG) GreedModeRNG {: .copyable aria-label='Variables' }
 
 ___ 
-### NextGreedAnimation {: aria-label='Variables' }
+### Next·Greed·Animation {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### string NextGreedAnimation  {: .copyable aria-label='Variables' }
 
 ___ 
-### TimerPlate {: aria-label='Variables' }
+### Timer·Plate {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Sprite](../Sprite) TimerPlate  {: .copyable aria-label='Variables' }
 

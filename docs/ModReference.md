@@ -1,17 +1,17 @@
 # Class "Mod Reference"
 ## Functions
-### AddCallback () {: aria-label='Functions' }
+### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddCallback ( int callbackId, function callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasData () {: aria-label='Functions' }
+### Has·Data () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasData ( ) {: .copyable aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveData()" function. Aka. if there is a "saveX.dat" file in your mod folder. There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
-### LoadData () {: aria-label='Functions' }
+### Load·Data () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string LoadData ( ) {: .copyable aria-label='Functions' }
 
@@ -36,19 +36,19 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
     ```
 
 ___ 
-### RemoveCallback () {: aria-label='Functions' }
+### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveCallback ( int callbackId, function callbackFn ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveData () {: aria-label='Functions' }
+### Remove·Data () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveData ( ) {: .copyable aria-label='Functions' }
 
 Deletes the stored "saveX.dat" file if it exists. 
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
-### SaveData () {: aria-label='Functions' }
+### Save·Data () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SaveData ( string data ) {: .copyable aria-label='Functions' }
 

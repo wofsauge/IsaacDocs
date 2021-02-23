@@ -9,22 +9,22 @@
 #### boolean Destroy ( boolean Immediate ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGridIndex () {: aria-label='Functions' }
+### Get·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGridIndex ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetSaveState () {: aria-label='Functions' }
+### Get·Save·State () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityDesc](GridEntityDesc.md) GetSaveState ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetType () {: aria-label='Functions' }
+### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityType](../enums/GridEntityType) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetVariant () {: aria-label='Functions' }
+### Get·Variant () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetVariant ( ) {: .copyable aria-label='Functions' }
 
@@ -39,7 +39,7 @@ ___
 #### void Init ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
-### PostInit () {: aria-label='Functions' }
+### Post·Init () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void PostInit ( ) {: .copyable aria-label='Functions' }
 
@@ -49,47 +49,47 @@ ___
 #### void Render ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetType () {: aria-label='Functions' }
+### Set·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetType ( [GridEntityType](../enums/GridEntityType) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetVariant () {: aria-label='Functions' }
+### Set·Variant () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetVariant ( int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToDoor () {: aria-label='Functions' }
+### To·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityDoor](../GridEntityDoor) ToDoor ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToPit () {: aria-label='Functions' }
+### To·Pit () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityPit](../GridEntityPit) ToPit ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToPoop () {: aria-label='Functions' }
+### To·Poop () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityPoop](../GridEntityPoop) ToPoop ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToPressurePlate () {: aria-label='Functions' }
+### To·Pressure·Plate () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityPressurePlate](../GridEntityPressurePlate) ToPressurePlate ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToRock () {: aria-label='Functions' }
+### To·Rock () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityRock](../GridEntityRock) ToRock ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToSpikes () {: aria-label='Functions' }
+### To·Spikes () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntitySpikes](../GridEntitySpikes) ToSpikes ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ToTNT () {: aria-label='Functions' }
+### To·TNT () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [GridEntityTNT](../GridEntityTNT) ToTNT ( ) {: .copyable aria-label='Functions' }
 
@@ -100,7 +100,7 @@ ___
 
 ___ 
 ## Variables
-### CollisionClass {: aria-label='Variables' }
+### Collision·Class {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### CollisionClass CollisionClass  {: .copyable aria-label='Variables' }
 
@@ -130,7 +130,7 @@ ___
 #### int State  {: .copyable aria-label='Variables' }
 
 ___ 
-### VarData {: aria-label='Variables' }
+### Var·Data {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int VarData  {: .copyable aria-label='Variables' }
 A Variable that stores some entity-specific data. The content can have completely different effects for different GridEntities.

@@ -1,86 +1,86 @@
 # Class "TemporaryEffects"
 ## Functions
-### AddCollectibleEffect () {: aria-label='Functions' }
+### Add·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType, boolean AddCostume ) {: .copyable aria-label='Functions' }
 
 ___ 
-### AddNullEffect () {: aria-label='Functions' }
+### Add·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddNullEffect ( Config::NullItemID NullId, boolean AddCostume ) {: .copyable aria-label='Functions' }
 
 ___ 
-### AddTrinketEffect () {: aria-label='Functions' }
+### Add·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType, boolean AddCostume ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ClearEffects () {: aria-label='Functions' }
+### Clear·Effects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ClearEffects ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetCollectibleEffect () {: aria-label='Functions' }
+### Get·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [TemporaryEffect](../TemporaryEffect) GetCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetCollectibleEffectNum () {: aria-label='Functions' }
+### Get·Collectible·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetCollectibleEffectNum ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetEffectsList () {: aria-label='Functions' }
+### Get·Effects·List () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EffectList](../CppContainer_Vector_EffectList) GetEffectsList ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetNullEffect () {: aria-label='Functions' }
+### Get·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [TemporaryEffect](../TemporaryEffect) GetNullEffect ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetNullEffectNum () {: aria-label='Functions' }
+### Get·Null·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetNullEffectNum ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTrinketEffect () {: aria-label='Functions' }
+### Get·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [TemporaryEffect](../TemporaryEffect) GetTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTrinketEffectNum () {: aria-label='Functions' }
+### Get·Trinket·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetTrinketEffectNum ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasCollectibleEffect () {: aria-label='Functions' }
+### Has·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasNullEffect () {: aria-label='Functions' }
+### Has·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasNullEffect ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasTrinketEffect () {: aria-label='Functions' }
+### Has·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveCollectibleEffect () {: aria-label='Functions' }
+### Remove·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveNullEffect () {: aria-label='Functions' }
+### Remove·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveNullEffect ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RemoveTrinketEffect () {: aria-label='Functions' }
+### Remove·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
 

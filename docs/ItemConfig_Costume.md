@@ -5,12 +5,12 @@
 #### string Anm2Path  {: .copyable aria-label='Variables' }
 
 ___ 
-### HasOverlay {: aria-label='Variables' }
+### Has·Overlay {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasOverlay  {: .copyable aria-label='Variables' }
 
 ___ 
-### HasSkinAlt {: aria-label='Variables' }
+### Has·Skin·Alt {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasSkinAlt  {: .copyable aria-label='Variables' }
 
@@ -20,12 +20,12 @@ ___
 #### int ID  {: .copyable aria-label='Variables' }
 
 ___ 
-### IsFlying {: aria-label='Variables' }
+### Is·Flying {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsFlying  {: .copyable aria-label='Variables' }
 
 ___ 
-### OverwriteColor {: aria-label='Variables' }
+### Overwrite·Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean OverwriteColor  {: .copyable aria-label='Variables' }
 
@@ -35,7 +35,7 @@ ___
 #### int Priority  {: .copyable aria-label='Variables' }
 
 ___ 
-### SkinColor {: aria-label='Variables' }
+### Skin·Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### SkinColor SkinColor  {: .copyable aria-label='Variables' }
 

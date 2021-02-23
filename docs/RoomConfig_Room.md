@@ -15,7 +15,7 @@ ___
 #### int Height  {: .copyable aria-label='Variables' }
 
 ___ 
-### InitialWeight {: aria-label='Variables' }
+### Initial·Weight {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float InitialWeight  {: .copyable aria-label='Variables' }
 
@@ -30,7 +30,7 @@ ___
 #### [RoomShape](../enums/RoomShape) Shape  {: .copyable aria-label='Variables' }
 
 ___ 
-### SpawnCount {: aria-label='Variables' }
+### Spawn·Count {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int SpawnCount  {: .copyable aria-label='Variables' }
 
@@ -40,7 +40,7 @@ ___
 #### [SpawnList](../CppContainer_ArrayProxy_RoomConfigSpawns) Spawns  {: .copyable aria-label='Variables' }
 
 ___ 
-### StageID {: aria-label='Variables' }
+### Stage·ID {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int StageID  {: .copyable aria-label='Variables' }
 The stage the room was designed for.

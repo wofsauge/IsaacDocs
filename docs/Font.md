@@ -17,7 +17,7 @@ Constructor for the "Font" class.
 
 ___ 
 ## Functions
-### DrawString () {: aria-label='Functions' }
+### Draw·String () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DrawString ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a string of text to the screen
@@ -34,7 +34,7 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
     ```
 
 ___ 
-### DrawStringScaled () {: aria-label='Functions' }
+### Draw·String·Scaled () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DrawStringScaled ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a scaled string of text on the screen.
@@ -50,7 +50,7 @@ Converts UTF8 to UTF16, then draws the string.
     ```
 
 ___ 
-### DrawStringScaledUTF8 () {: aria-label='Functions' }
+### Draw·String·Scaled·UTF8 () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a scaled string of Unicode text on the screen.
@@ -65,7 +65,7 @@ Draws a scaled string of Unicode text on the screen.
     ```
 
 ___ 
-### DrawStringUTF8 () {: aria-label='Functions' }
+### Draw·String·UTF8 () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DrawStringUTF8 ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
 Draws a string of Unicode text to the screen
@@ -81,32 +81,32 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
     ```
 
 ___ 
-### GetBaselineHeight () {: aria-label='Functions' }
+### Get·Baseline·Height () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### u_int GetBaselineHeight ( ) {: .copyable aria-label='Functions' }
 Get the number of pixels from the absolute top of the line to the base of the characters 
 ___ 
-### GetCharacterWidth () {: aria-label='Functions' }
+### Get·Character·Width () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### u_int GetCharacterWidth ( char Character ) {: .copyable aria-label='Functions' }
 Returns the width of a specific character 
 ___ 
-### GetLineHeight () {: aria-label='Functions' }
+### Get·Line·Height () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### u_int GetLineHeight ( ) {: .copyable aria-label='Functions' }
 Get the distance in pixels between each line of text 
 ___ 
-### GetStringWidth () {: aria-label='Functions' }
+### Get·String·Width () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### u_int GetStringWidth ( string String ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16 and returns string width
 ___ 
-### GetStringWidthUTF8 () {: aria-label='Functions' }
+### Get·String·Width·UTF8 () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### u_int GetStringWidthUTF8 ( string String ) {: .copyable aria-label='Functions' }
 returns string width of a Unicode text. 
 ___ 
-### IsLoaded () {: aria-label='Functions' }
+### Is·Loaded () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsLoaded ( ) {: .copyable aria-label='Functions' }
 Returns whether a font is loaded or not. 
@@ -126,7 +126,7 @@ Loads a font.
     ```
 
 ___ 
-### SetMissingCharacter () {: aria-label='Functions' }
+### Set·Missing·Character () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetMissingCharacter ( u16 MissingCharacter ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16, then draws

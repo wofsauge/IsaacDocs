@@ -15,86 +15,86 @@ Returns a Game object.
     ```
 ___ 
 ## Functions
-### AddDevilRoomDeal () {: aria-label='Functions' }
+### Add·Devil·Room·Deal () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddDevilRoomDeal ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### AddEncounteredBoss () {: aria-label='Functions' }
+### Add·Encountered·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddEncounteredBoss ( [EntityType](../enums/EntityType) Boss, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
-### AddPixelation () {: aria-label='Functions' }
+### Add·Pixelation () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddPixelation ( int Duration ) {: .copyable aria-label='Functions' }
 
 Triggers the effect of the "retro vision" pill.
 ___ 
-### AddStageWithoutDamage () {: aria-label='Functions' }
+### Add·Stage·Without·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddStageWithoutDamage ( ) {: .copyable aria-label='Functions' }
 
 Increases the ingame counter, that keeps track of the stages you cleared without taking damage. (useful for Devil deal manipulations)
 ___ 
-### AddStageWithoutHeartsPicked () {: aria-label='Functions' }
+### Add·Stage·Without·Hearts·Picked () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddStageWithoutHeartsPicked ( ) {: .copyable aria-label='Functions' }
 
 Increases the ingame counter, that keeps track of stages you cleared without picking up hearts.
 ___ 
-### AddTreasureRoomsVisited () {: aria-label='Functions' }
+### Add·Treasure·Rooms·Visited () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddTreasureRoomsVisited ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### BombDamage () {: aria-label='Functions' }
+### Bomb·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void BombDamage ( [Vector](../Vector) Position, float Damage, float Radius, boolean LineCheck, [Entity](../Entity) Source, int TearFlags, int DamageFlags, boolean DamageSource ) {: .copyable aria-label='Functions' }
 
 ___ 
-### BombExplosionEffects () {: aria-label='Functions' }
+### Bomb·Explosion·Effects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void BombExplosionEffects ( [Vector](../Vector) Position, float Damage, int TearFlags, [Color](../Color) Color, [Entity](../Entity) Source, float RadiusMult, boolean LineCheck, boolean DamageSource ) {: .copyable aria-label='Functions' }
 The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects. 
 ___ 
-### BombTearflagEffects () {: aria-label='Functions' }
+### Bomb·Tearflag·Effects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void BombTearflagEffects ( [Vector](../Vector) Position, float Radius, int TearFlags, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
 Does bomb-exclusive special effects. 
 ___ 
-### ButterBeanFart () {: aria-label='Functions' }
+### Butter·Bean·Fart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ButterBeanFart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, boolean ShowEffect ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ChangeRoom () {: aria-label='Functions' }
+### Change·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ChangeRoom ( int RoomIndex ) {: .copyable aria-label='Functions' }
 
 ___ 
-### CharmFart () {: aria-label='Functions' }
+### Charm·Fart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void CharmFart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ClearDonationModAngel () {: aria-label='Functions' }
+### Clear·Donation·Mod·Angel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ClearDonationModAngel ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ClearDonationModGreed () {: aria-label='Functions' }
+### Clear·Donation·Mod·Greed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ClearDonationModGreed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ClearStagesWithoutDamage () {: aria-label='Functions' }
+### Clear·Stages·Without·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ClearStagesWithoutDamage ( ) {: .copyable aria-label='Functions' }
 
 Sets the counter for stages cleared without damage to 0.
 ___ 
-### ClearStagesWithoutHeartsPicked () {: aria-label='Functions' }
+### Clear·Stages·Without·Hearts·Picked () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ClearStagesWithoutHeartsPicked ( ) {: .copyable aria-label='Functions' }
 
@@ -105,12 +105,12 @@ ___
 #### void Darken ( float Darkness, int Timeout ) {: .copyable aria-label='Functions' }
 
 ___ 
-### DonateAngel () {: aria-label='Functions' }
+### Donate·Angel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DonateAngel ( int Donate ) {: .copyable aria-label='Functions' }
 
 ___ 
-### DonateGreed () {: aria-label='Functions' }
+### Donate·Greed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void DonateGreed ( int Donate ) {: .copyable aria-label='Functions' }
 
@@ -135,43 +135,43 @@ ___
 #### void Fart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, float FartScale, int FartSubType ) {: .copyable aria-label='Functions' }
 
 ___ 
-### FinishChallenge () {: aria-label='Functions' }
+### Finish·Challenge () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void FinishChallenge ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetAmbush () {: aria-label='Functions' }
+### Get·Ambush () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### Ambush GetAmbush ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDarknessModifier () {: aria-label='Functions' }
+### Get·Darkness·Modifier () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetDarknessModifier ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDevilRoomDeals () {: aria-label='Functions' }
+### Get·Devil·Room·Deals () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetDevilRoomDeals ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetDonationModAngel () {: aria-label='Functions' }
+### Get·Donation·Mod·Angel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetDonationModAngel ( ) {: .copyable aria-label='Functions' }
 
 Get the value that indicates the angel-counter of a shop-donation maschine. This Stat increases everytime you donate to a shop. A higher number grants a few advantages.
 ___ 
-### GetDonationModGreed () {: aria-label='Functions' }
+### Get·Donation·Mod·Greed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetDonationModGreed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetFont () {: aria-label='Functions' }
+### Get·Font () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Font](../Font) GetFont ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetFrameCount () {: aria-label='Functions' }
+### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
 
@@ -190,32 +190,32 @@ This function therefore works drastically different than `:::lua Isaac.GetFrameC
     
     ```
 ___ 
-### GetGreedBossWaveNum () {: aria-label='Functions' }
+### Get·Greed·Boss·Wave·Num () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGreedBossWaveNum ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetGreedWavesNum () {: aria-label='Functions' }
+### Get·Greed·Waves·Num () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetGreedWavesNum ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetItemHistory () {: aria-label='Functions' }
+### Get·Item·History () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### History GetItemHistory ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetItemOverlay () {: aria-label='Functions' }
+### Get·Item·Overlay () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### ItemOverlay GetItemOverlay ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetItemPool () {: aria-label='Functions' }
+### Get·Item·Pool () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [ItemPool](../ItemPool) GetItemPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### LevelStage () {: aria-label='Functions' }
+### Level·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [LevelStage](../enums/LevelStage) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
@@ -223,118 +223,118 @@ ___
 ???- note "Notes"
     Since it returns UserData, this function is unusable and therefore broken.
 ___ 
-### GetLastLevelWithDamage () {: aria-label='Functions' }
+### Get·Last·Level·With·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [LevelStage](../enums/LevelStage) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetLastLevelWithoutHalfHp () {: aria-label='Functions' }
+### Get·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [LevelStage](../enums/LevelStage) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetLevel () {: aria-label='Functions' }
+### Get·Level () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Level](../Level) GetLevel ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetNearestPlayer () {: aria-label='Functions' }
+### Get·Nearest·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetNearestPlayer ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetNumEncounteredBosses () {: aria-label='Functions' }
+### Get·Num·Encountered·Bosses () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetNumEncounteredBosses ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetNumPlayers () {: aria-label='Functions' }
+### Get·Num·Players () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetNumPlayers ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetPlayer () {: aria-label='Functions' }
+### Get·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetPlayer ( int Index ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetRandomPlayer () {: aria-label='Functions' }
+### Get·Random·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetRandomPlayer ( [Vector](../Vector) Pos, float Radius ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetRoom () {: aria-label='Functions' }
+### Get·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Room](../Room) GetRoom ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetScreenShakeCountdown () {: aria-label='Functions' }
+### Get·Screen·Shake·Countdown () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetScreenShakeCountdown ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetSeeds () {: aria-label='Functions' }
+### Get·Seeds () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [Seeds](../Seeds) GetSeeds ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetStagesWithoutDamage () {: aria-label='Functions' }
+### Get·Stages·Without·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetStagesWithoutDamage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetStagesWithoutHeartsPicked () {: aria-label='Functions' }
+### Get·Stages·Without·Hearts·Picked () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetStagesWithoutHeartsPicked ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetStateFlag () {: aria-label='Functions' }
+### Get·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean GetStateFlag ( StateFlag StateFlag ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTargetDarkness () {: aria-label='Functions' }
+### Get·Target·Darkness () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetTargetDarkness ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetTreasureRoomVisitCount () {: aria-label='Functions' }
+### Get·Treasure·Room·Visit·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetTreasureRoomVisitCount ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### GetVictoryLap () {: aria-label='Functions' }
+### Get·Victory·Lap () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetVictoryLap ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasEncounteredBoss () {: aria-label='Functions' }
+### Has·Encountered·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasEncounteredBoss ( [EntityType](../enums/EntityType) Boss, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
-### HasHallucination () {: aria-label='Functions' }
+### Has·Hallucination () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int HasHallucination ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsGreedMode () {: aria-label='Functions' }
+### Is·Greed·Mode () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsGreedMode ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### IsPaused () {: aria-label='Functions' }
+### Is·Paused () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean IsPaused ( ) {: .copyable aria-label='Functions' }
 
 Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes hiving the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.
 ___ 
-### MoveToRandomRoom () {: aria-label='Functions' }
+### Move·To·Random·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void MoveToRandomRoom ( boolean IAmErrorRoom, int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
-### NextVictoryLap () {: aria-label='Functions' }
+### Next·Victory·Lap () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void NextVictoryLap ( ) {: .copyable aria-label='Functions' }
 
@@ -344,52 +344,52 @@ ___
 #### void Render ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RerollEnemy () {: aria-label='Functions' }
+### Reroll·Enemy () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean RerollEnemy ( [Entity](../Entity) e ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RerollLevelCollectibles () {: aria-label='Functions' }
+### Reroll·Level·Collectibles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RerollLevelCollectibles ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### RerollLevelPickups () {: aria-label='Functions' }
+### Reroll·Level·Pickups () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RerollLevelPickups ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetLastDevilRoomStage () {: aria-label='Functions' }
+### Set·Last·Devil·Room·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetLastDevilRoomStage ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetLastLevelWithDamage () {: aria-label='Functions' }
+### Set·Last·Level·With·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetLastLevelWithDamage ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetLastLevelWithoutHalfHp () {: aria-label='Functions' }
+### Set·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetLastLevelWithoutHalfHp ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SetStateFlag () {: aria-label='Functions' }
+### Set·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetStateFlag ( StateFlag StateFlag, boolean Val ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ShakeScreen () {: aria-label='Functions' }
+### Shake·Screen () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShakeScreen ( int Timeout ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ShowFortune () {: aria-label='Functions' }
+### Show·Fortune () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShowFortune ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### ShowHallucination () {: aria-label='Functions' }
+### Show·Hallucination () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShowHallucination ( int FrameCount, int HallucinationBackdrop ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
@@ -421,7 +421,7 @@ Plays the Delirium animation (Static noise intersected with past gameplay fotage
 ???+ bug "Bugs"
     This function does not work and will crash your game on use!
 ___ 
-### ShowRule () {: aria-label='Functions' }
+### Show·Rule () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ShowRule ( ) {: .copyable aria-label='Functions' }
 
@@ -447,17 +447,17 @@ The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac
     
     ```
 ___ 
-### SpawnEntityDesc () {: aria-label='Functions' }
+### Spawn·Entity·Desc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityNPC](../EntityNPC) SpawnEntityDesc ( Entity::EntityDesc desc, [Vector](../Vector) Position, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
 
 ___ 
-### SpawnParticles () {: aria-label='Functions' }
+### Spawn·Particles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SpawnParticles ( [Vector](../Vector) Pos, EntityEffect::Variant ParticleType, int NumParticles, float Speed, [Color](../Color) Color, float Height ) {: .copyable aria-label='Functions' }
 
 ___ 
-### StartRoomTransition () {: aria-label='Functions' }
+### Start·Room·Transition () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void StartRoomTransition ( int RoomIndex, [Direction](../enums/Direction) Direction, RoomTransition::Animation Animation ) {: .copyable aria-label='Functions' }
 
@@ -482,7 +482,7 @@ ___
 ???+ bug "Bugs"
     The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
 ___ 
-### StartStageTransition () {: aria-label='Functions' }
+### Start·Stage·Transition () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void StartStageTransition ( boolean SameStage, StageTransition::Animation Animation ) {: .copyable aria-label='Functions' }
 
@@ -499,18 +499,18 @@ ___
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### UpdateStrangeAttractor () {: aria-label='Functions' }
+### Update·Strange·Attractor () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void UpdateStrangeAttractor ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
-### BlueWombParTime {: aria-label='Variables' }
+### Blue·Womb·Par·Time {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int BlueWombParTime  {: .copyable aria-label='Variables' }
 
 ___ 
-### BossRushParTime {: aria-label='Variables' }
+### Boss·Rush·Par·Time {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int BossRushParTime  {: .copyable aria-label='Variables' }
 Number of frames of game time. 
@@ -525,12 +525,12 @@ ___
 #### [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
-### ScreenShakeOffset {: aria-label='Variables' }
+### Screen·Shake·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
 
 ___ 
-### TimeCounter {: aria-label='Variables' }
+### Time·Counter {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int TimeCounter  {: .copyable aria-label='Variables' }
 same as FrameCounter but can be modified, mostly used for timed events (bossrush, daily, ...) and not for timestepping 

@@ -94,7 +94,7 @@ Returns distance between two vectors
     ```
 
 ___ 
-### DistanceSquared () {: aria-label='Functions' }
+### Distance·Squared () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float DistanceSquared ( [Vector](../Vector) first, [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
 Returns squared distance between two vectors 
@@ -111,7 +111,7 @@ ___
 #### float Dot ( [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
 Dot product 
 ___ 
-### FromAngle () {: aria-label='Functions' }
+### From·Angle () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
 #### static [Vector](../Vector) FromAngle ( float AngleDegrees ) {: .copyable aria-label='Functions' }
 Build a [Vector](../Vector) from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). 
@@ -123,7 +123,7 @@ Build a [Vector](../Vector) from an angle, returns a normalized vector. Angle 0 
     
     ```
 ___ 
-### GetAngleDegrees () {: aria-label='Functions' }
+### Get·Angle·Degrees () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float GetAngleDegrees ( ) {: .copyable aria-label='Functions' }
 
@@ -145,7 +145,7 @@ ___
 #### float Length ( ) {: .copyable aria-label='Functions' }
 Returns the length of the vector 
 ___ 
-### LengthSquared () {: aria-label='Functions' }
+### Length·Squared () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### float LengthSquared ( ) {: .copyable aria-label='Functions' }
 Returns the length squared of the vector 
