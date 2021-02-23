@@ -127,6 +127,7 @@ document$.subscribe(function() {
     //moves scroll position on href clicking a bit further up
     $('a[href^="#"]').on('click', function(e) {
         var href = $(this).attr('href');
+        console.log(href);
         jumpToElement(href);
     });
 
@@ -218,7 +219,7 @@ document$.subscribe(function() {
     observer.observe(target, config);
 
     //Hide Placeholder chars everywhere
-    $("h3, li.md-nav__item").each(function(e) {
+    $("h3, a.md-nav__link").each(function(e) {
         hidePlaceholderChar($(this));
     })
 
