@@ -118,7 +118,7 @@ ___
 ### End () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void End ( Ending Ending ) {: .copyable aria-label='Functions' }
-remove entity from the update list (render only) void EnableEntity(Entity* e); add entity back to the update list (update + render) void DisableEntity(Entity* e); 
+
 ___ 
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
