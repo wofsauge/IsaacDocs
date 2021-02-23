@@ -127,7 +127,6 @@ document$.subscribe(function() {
     //moves scroll position on href clicking a bit further up
     $('a[href^="#"]').on('click', function(e) {
         var href = $(this).attr('href');
-        console.log(href);
         jumpToElement(href);
     });
 
