@@ -1,36 +1,39 @@
-# The Binding of Isaac: Afterbirth+ Community Documentation Project
+This project aims to make the Binding of Isaac modding documentation better by providing additional informations and features.
 
-This project aims to make the Binding of Isaac modding documentation better by providing additional informations, features and a more modern design.
-
-## New features
-- Fully responsive and **modern design**
-- Vastly **improved search function**
-- **Last visited pages** - history
-- **Darkmode**
-- **Quick Edit** - Button
-- **Smart-Copy** Feature to quickly copy 
-- Automatic deployment & updates (using Github actions)
-- and a lot more!
-- ...
-
-## Technology used
-- [MkDocs](https://www.mkdocs.org/) as the static site generator 
-- [MKDocs Material Theme](https://squidfunk.github.io/mkdocs-material/)
-- [mark.js](https://markjs.io/) for better search highlighting
-- Python 3.x + Beautiful Soup for conversion tools
-- CSS3 & JQuery for custom scripts
+ Process of adding new content to a file:
+1. make sure to add this line of code at the top of the head       `<!--Lua Codehightlight--><link href="prism.css" rel="stylesheet" />`  
+2. make sure to add this line of code at the bottom of the body     `<!--Lua Codehightlight--><script src="prism.js"></script>`
+3. add the following to the "memdoc" div you want to add the text to:
+```html
+<!--start Custom comment -->
+<p>YOUR DESCRIPTION HERE</p>
+<div class="example_code">
+YOUR CODE DESCRIPTION HERE
+<pre><code class="language-lua">CODE HERE
+</code></pre>	
+</div>
+<!--End Custom comment -->
+```
 
 
-## Creating a local version
 
-1. Clone the repo
-2. Install a current version of Python 3.x
-3. Do the following Installations: 
-    ```
-    pip install mkdocs
-    pip install mkdocs-material
-    pip install mkdocs-git-revision-date-plugin
-    ```
-4. Navigate into the folder, where the `mkdocs.yml` file is located
-5. Use the command `mkdocs serve` to create a locally hosted version of the page available at `http://127.0.0.1:8000/`
-6. OR use command `mkdocs build` to build a static version of the page.
+Add notes like this:
+```html 
+<div class="notes">
+YOU CONTENT HERE
+</div>
+```
+
+Add bugs like this
+```html 
+<div class="bugs">
+YOU CONTENT HERE
+</div>
+```
+
+Removed original description can be marked like this:
+```html
+<!--start Custom comment -->
+<!-- Removed false description -->
+<!--End Custom comment -->
+```

@@ -1,8 +1,0 @@
-#{4}(.)*([^\)]\s\{:)(.)*(\bFunctions\b)
--- searches for variables that are falsely marked as functions
-
-#{3}(.)*([\(\)]\s\{:)(.)*(\bVariables\b)
--- searches for variables with function or links in the title
-
-^#{3}\s\[
--- searches for headers that have a link in them
