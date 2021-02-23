@@ -32,15 +32,14 @@ jobs:
       - run: pip install mkdocs-material
       - run: pip install mkdocs-git-revision-date-plugin
       - run: mkdocs gh-deploy --force
-        
-      - name: Pushes old documentaiton files
-        uses: dmnemec/copy_file_to_another_repo_action@v1.0.4
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+
+      - name: Copy
+        uses: andstor/copycat-action@v3
         with:
-          source_file: 'oldDocs'
-          destination_repo: 'wofsauge/IsaacDocs'
-          destination_branch: 'gh-pages'
-          destination_folder: 'oldDocs'
-          user_email: 'jan-.-@t-online.de'
-          user_name: 'wofsauge'
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /oldDocs/
+          dst_path: /oldDocs/
+          dst_owner: wofsauge
+          dst_repo_name: IsaacDocs
+          src_branch: master
+          dst_branch: gh-pages
