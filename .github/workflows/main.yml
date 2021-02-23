@@ -27,16 +27,19 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
-        
-      - name: Deploy
-        uses: s0/git-publish-subdir-action@develop
-        env:
-            REPO: self
-            BRANCH: gh-pages
-            FOLDER: oldDocs
-            SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
       - run: pip install mkdocs
       - run: pip install mkdocs-material
       - run: pip install mkdocs-git-revision-date-plugin
-      - run: mkdocs gh-deploy --force --dirty
+      - run: mkdocs gh-deploy --force
+
+      - name: Copy
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /oldDocs/
+          dst_path: /oldDocs/
+          dst_owner: wofsauge
+          dst_repo_name: IsaacDocs
+          src_branch: master
+          dst_branch: gh-pages
