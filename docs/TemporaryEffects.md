@@ -3,7 +3,18 @@
 ### Add·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType, boolean AddCostume ) {: .copyable aria-label='Functions' }
+Adds the effect of a collectible to the player, without actually giving him the assosiated item.
 
+???+ bug
+    This function does only work for some collectibles, but not all. For example, it doesnt work for "Chocolate milk".
+
+???- example "Example Code"
+    This code applies the effect and costume of the item "Sad Onion" to the player.
+
+    ```lua
+    local player = Isaac.GetPlayer(0)
+    player:GetEffects():AddCollectibleEffect(CollectibleType.COLLECTIBLE_SAD_ONION, true)
+    ```
 ___ 
 ### Add·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
