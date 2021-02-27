@@ -431,6 +431,7 @@ div[data-md-component$="announce"] {
     font-family: "Roboto Mono", SFMono-Regular, Consolas, Menlo, monospace;
 }
 
+h3>.copyButton>span,
 h4>.copyButton>span,
 td>.copyButton>span {
     transform: translateY(-25%);
@@ -450,6 +451,7 @@ td>.copyButton>span {
     border-color: var(--md-accent-fg-color) transparent transparent transparent;
 }
 
+h3>.copyButton>span::after,
 h4>.copyButton>span::after,
 td>.copyButton>span::after {
     left: 100%;
@@ -533,7 +535,7 @@ td>.copyButton>span::after {
 
 /*** XML File pages***/
 
-.info {
+.xmlInfo {
     color: #fff;
     padding: 0.5em;
     font-size: 75%;
@@ -543,10 +545,10 @@ td>.copyButton>span::after {
     background-color: #6c757d;
 }
 
-.info.red {
+.xmlInfo.red {
     background-color: #dc3545;
 }
 
-.info.green {
+.xmlInfo.green {
     background-color: #28a745;
 }

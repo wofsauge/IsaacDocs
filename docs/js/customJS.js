@@ -27,7 +27,6 @@ function toggleDarkMode() {
     }
 }
 
-
 function reevaluateLastVisit() {
     if (typeof(Storage) !== "undefined") {
         $(".md-nav[aria-label=\"Last visited\"]").find("a").each(function(index) {
@@ -85,10 +84,41 @@ function buildContentMap() {
     });
 
     $('#contentOverviewTable > tbody').append(tableContent);
-    $(".overviewHeader").click(function() {
-        $(this).toggleClass("collapsed");
-        $(".contentTable").toggle();
+}
+
+function modifyCallbackPageLayout() {
+    if (!window.location.pathname.includes("ModCallbacks")) {
+        return;
+    }
+
+    var curH3;
+    var textContent = "";
+    var mcTableData;
+    var tableContent = "";
+    $("article.md-content__inner").children().each(function(index) {
+        console.log($(this).get(0).tagName);
+        if ($(this).get(0).tagName == "H3") {
+            if (mcTableData != null && curH3 != null) {
+                var headerLink = mcTableData.find("td:eq(2)").text().toLowerCase();
+                tableContent = tableContent + "<tr><td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>"
+                tableContent = tableContent + "<td>" + mcTableData.find("td:eq(3)").html() + "</td><td>" + mcTableData.find("td:eq(4)").html() + "</td></tr>";
+            }
+            curH3 = $(this);
+            textContent = "";
+        } else if ($(this).get(0).tagName == "DIV") {
+            if (curH3 != null) {
+                mcTableData = $(this);
+            }
+        } else {
+            if (curH3 != null) {
+                textContent = $(this).html();
+            }
+        }
     });
+    var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Name</th><th>Function Args</th><th>Optional Args</th></tr></thead><tbody></tbody></table><hr/></div>");
+    mapObj.insertAfter($("p").first());
+
+    $('#contentOverviewTable > tbody').append(tableContent);
 }
 
 document$.subscribe(function() {
@@ -114,7 +144,12 @@ document$.subscribe(function() {
         }
     });
 
+    modifyCallbackPageLayout();
     buildContentMap();
+    $(".overviewHeader").click(function() {
+        $(this).toggleClass("collapsed");
+        $(".contentTable").toggle();
+    });
 
     // handle frequently used Entry
     $("nav[aria-label=\"Frequently used\"]").parent().addClass("frequentlyUsed");

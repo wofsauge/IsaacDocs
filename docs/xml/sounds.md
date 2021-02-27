@@ -4,9 +4,9 @@ This file is used to store informations about the Soundeffect used in the game.
 
 old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3ebqat/all_about_music_soundfiles/](https://www.reddit.com/r/themoddingofisaac/comments/3ebqat/all_about_music_soundfiles/)
 
-**Resource-Folder**{: .info .green}: Placing this file in your mods "resource" folder will replace the original file.
+**Resource-Folder**{: .xmlInfo .green}: Placing this file in your mods "resource" folder will replace the original file.
 
-**Content-Folder**{: .info .green}: Placing this file in your mods "content" folder will add new sound effects.
+**Content-Folder**{: .xmlInfo .green}: Placing this file in your mods "content" folder will add new sound effects.
 
 
 ## "sound" node

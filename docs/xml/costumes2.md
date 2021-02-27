@@ -2,9 +2,9 @@
 
 Defines Costume informations.
 
-**Resource-Folder**{: .info .green }: Placing this file in a resource folder of a mod will override the original.
+**Resource-Folder**{: .xmlInfo .green }: Placing this file in a resource folder of a mod will override the original.
 
-**Content-Folder**{: .info .green }: Placing this file in a content folder of a mod will add a new Costumes. See the Tutorial on "Adding Costumes" for more informations.
+**Content-Folder**{: .xmlInfo .green }: Placing this file in a content folder of a mod will add a new Costumes. See the Tutorial on "Adding Costumes" for more informations.
 
 
 | Variable-Name | Possible Values | Description |

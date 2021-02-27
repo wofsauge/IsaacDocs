@@ -3,9 +3,9 @@
 Stores the names and ids of the available curses.
 
 
-**Resource-Folder**{: .info .green }: Placing this file inside a mods resources folder will rename curses.
+**Resource-Folder**{: .xmlInfo .green }: Placing this file inside a mods resources folder will rename curses.
 
-**Content-Folder**{: .info .green }: Placing this file in a content folder of a mod will add a new Curse. The new curse must be applied using lua, since it cant be encountered normally!
+**Content-Folder**{: .xmlInfo .green }: Placing this file in a content folder of a mod will add a new Curse. The new curse must be applied using lua, since it cant be encountered normally!
 
 
 | Variable-Name | Possible Values | Description |

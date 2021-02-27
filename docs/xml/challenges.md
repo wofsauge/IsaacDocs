@@ -2,9 +2,9 @@
 
 Used to store all challenges and some of their attributes.
 
-**Resource-Folder**{: .info .green }: Placing this file in a resource folder of a mod will override the original.
+**Resource-Folder**{: .xmlInfo .green }: Placing this file in a resource folder of a mod will override the original.
 
-**Content-Folder**{: .info .green }: Placing this file in a content folder of a mod will add a new **Custom challenge**.
+**Content-Folder**{: .xmlInfo .green }: Placing this file in a content folder of a mod will add a new **Custom challenge**.
 
 
 | Variable-Name | Possible Values | Description |

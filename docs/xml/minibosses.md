@@ -2,9 +2,9 @@
 
 This file is used to store the name of the miniboss in certain miniboss-rooms. The name will be displayed on a "streak"-animation like "Isaac vs. MINIBOSS_NAME"
 
-**Resource-Folder**{: .info .green}: Placing this file in your mods "resource" folder will replace the original file.
+**Resource-Folder**{: .xmlInfo .green}: Placing this file in your mods "resource" folder will replace the original file.
 
-**Content-Folder**{: .info .red}: Placing this file in your mods "content" folder has no effect!
+**Content-Folder**{: .xmlInfo .red}: Placing this file in your mods "content" folder has no effect!
 
 
 | Variable-Name | Possible Values | Description |

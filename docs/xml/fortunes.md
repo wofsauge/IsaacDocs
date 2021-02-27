@@ -7,6 +7,6 @@ Fortunes-entries can have up to 3 rows and should be seperated with an empty lin
 ???+ bug
     Having more than 24 character in a row will cause the text to flow outside of the display-box.
 
-**Resource-Folder**{: .info .green}: Placing this file in your mods "resource" folder will replace the original file.
+**Resource-Folder**{: .xmlInfo .green}: Placing this file in your mods "resource" folder will replace the original file.
 
-**Content-Folder**{: .info .red}: Placing this file in your mods "content" folder has no effect!
+**Content-Folder**{: .xmlInfo .red}: Placing this file in your mods "content" folder has no effect!
