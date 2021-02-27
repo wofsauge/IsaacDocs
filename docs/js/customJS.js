@@ -92,7 +92,6 @@ function modifyCallbackPageLayout() {
     }
 
     var curH3;
-    var textContent = "";
     var mcTableData;
     var tableContent = "";
     $("article.md-content__inner").children().each(function(index) {
@@ -103,14 +102,9 @@ function modifyCallbackPageLayout() {
                 tableContent = tableContent + "<td>" + mcTableData.find("td:eq(3)").html() + "</td><td>" + mcTableData.find("td:eq(4)").html() + "</td></tr>";
             }
             curH3 = $(this);
-            textContent = "";
         } else if ($(this).get(0).tagName == "DIV") {
             if (curH3 != null) {
                 mcTableData = $(this);
-            }
-        } else {
-            if (curH3 != null) {
-                textContent = $(this).html();
             }
         }
     });
@@ -250,6 +244,7 @@ document$.subscribe(function() {
             $(this).attr('href', link + "?q=" + searchText + jumpTarget);
 
             hidePlaceholderChar($(this));
+            colorizeSearchResults($(this));
         });
     });
     var config = { attributes: true, childList: true, characterData: true };
@@ -327,4 +322,17 @@ function jumpToElement(element) {
 
 function hidePlaceholderChar(element) {
     element.html(element.html().replaceAll('·', ""));
+}
+
+function colorizeSearchResults(element) {
+    var text = element.text();
+    if (text.includes("Class ")) {
+        element.addClass("searchClass");
+    } else if (text.includes("Tutorial")) {
+        element.addClass("searchTutorial");
+    } else if (text.includes("Enum ")) {
+        element.addClass("searchEnum");
+    } else if (text.includes("File ")) {
+        element.addClass("searchFile");
+    }
 }

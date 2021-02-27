@@ -533,7 +533,7 @@ td>.copyButton>span::after {
 }
 
 
-/*** XML File pages***/
+/*** XML File pages ***/
 
 .xmlInfo {
     color: #fff;
@@ -551,4 +551,23 @@ td>.copyButton>span::after {
 
 .xmlInfo.green {
     background-color: #28a745;
+}
+
+
+/*** Search result coloring ***/
+
+.searchClass .md-search-result__icon {
+    color: var(--function-color);
+}
+
+.searchEnum .md-search-result__icon {
+    color: var(--operator-color);
+}
+
+.searchFile .md-search-result__icon {
+    color: var(--constructor-color);
+}
+
+.searchTutorial .md-search-result__icon {
+    color: var(--var-color);
 }
