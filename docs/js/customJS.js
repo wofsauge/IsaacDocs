@@ -71,16 +71,21 @@ function buildContentMap() {
     var tableContent = "";
     $("h4").each(function(index) {
         var funcParts = $(this).html().split(" (");
+        console.log(funcParts);
         var funcFront = funcParts[0].split(" ");
+        console.log(funcFront);
         var funcName = funcFront.pop();
+        console.log(funcName);
         var funcLink = $("h3:not(.inheritance)").eq(index).find("a").last().attr("href");
         funcName = "<a href=\"" + funcLink + "\">" + funcName + "</a>";
+        console.log(funcName);
         var ariaLabel = $(this).attr("aria-label");
         if (funcParts.length > 1) {
+            console.log("1");
             tableContent = tableContent + "<tr aria-label=\"" + ariaLabel + "\"><td>" + funcFront.join(" ") + "</td><td aria-label=\"" + ariaLabel + "\" class=\"copyable\">" + funcName + " (" + funcParts[1] + "</td></tr>";
         } else {
-            funcName = $(this).html().split(" ")[1];
-            tableContent = tableContent + "<tr aria-label=\"" + ariaLabel + "\"><td>" + funcFront.join(" ") + "</td><td aria-label=\"" + ariaLabel + "\" class=\"copyable\"><a href=\"#" + funcName.toLowerCase() + "\">" + funcName + "</a></td></tr>";
+            console.log("2");
+            tableContent = tableContent + "<tr aria-label=\"" + ariaLabel + "\"><td>" + funcFront.join(" ") + "</td><td aria-label=\"" + ariaLabel + "\" class=\"copyable\">" + funcName + "</td></tr>";
         }
     });
 
