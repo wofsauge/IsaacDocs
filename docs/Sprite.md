@@ -9,32 +9,70 @@ ___
 ### Get·Default·Animation () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
+This function returns the name of the "Default" animation of a given sprite based on its .anm2 file.
 
+???- info "Info"
+    This function seems to be the same as `GetDefaultAnimationName()`.
+
+???- example "Example Code"
+    This code print the default animation name "WalkDown" of the player sprite.
+
+    ```lua 
+    local player = Isaac.GetPlayer(0)
+    local sprite = player:GetSprite()
+    print(sprite:GetDefaultAnimation()) -- this prints "WalkDown"
+    ```
 ___ 
 ### Get·Default·Animation·Name () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
+This function returns the name of the "Default" animation of a given sprite based on its .anm2 file.
+
+???- info "Info"
+    This function seems to be the same as `GetDefaultAnimation()`.
+
+???- example "Example Code"
+    This code print the default animation name "WalkDown" of the player sprite.
+
+    ```lua 
+    local player = Isaac.GetPlayer(0)
+    local sprite = player:GetSprite()
+    print(sprite:GetDefaultAnimationName()) -- this prints "WalkDown"
+    ```
 
 ___ 
 ### Get·Filename () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### string GetFilename ( ) {: .copyable aria-label='Functions' }
+This function returns the path to the .anm2 file used by the sprite.
+
+???- info "Info"
+    This function seems to be the same as `GetDefaultAnimation()`.
+
+???- example "Example Code"
+    This code print the .anm2 path of the player sprite.
+
+    ```lua 
+    local player = Isaac.GetPlayer(0)
+    local sprite = player:GetSprite()
+    print(sprite:GetFilename()) -- this prints "gfx/001.000_Player.anm2"
+    ```
 
 ___ 
 ### Get·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetFrame ( ) {: .copyable aria-label='Functions' }
-
+Returns the currently rendered Frame of the given Sprite.
 ___ 
 ### Get·Layer·Count () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetLayerCount ( ) {: .copyable aria-label='Functions' }
-
+Returns the number of layers of the .anm2 file of the sprite. All Animations use the same amount of Layers.
 ___ 
 ### Get·Overlay·Frame () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetOverlayFrame ( ) {: .copyable aria-label='Functions' }
-
+Returns the currently rendered Frame of the Overlay of the given Sprite. It acts independent from the normal Frame count.
 ___ 
 ### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
