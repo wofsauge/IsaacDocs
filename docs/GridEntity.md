@@ -61,37 +61,37 @@ ___
 ___ 
 ### To·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityDoor](../GridEntityDoor) ToDoor ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityDoor](../GridEntityDoor) ToDoor ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Pit () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityPit](../GridEntityPit) ToPit ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityPit](../GridEntityPit) ToPit ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Poop () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityPoop](../GridEntityPoop) ToPoop ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityPoop](../GridEntityPoop) ToPoop ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Pressure·Plate () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityPressurePlate](../GridEntityPressurePlate) ToPressurePlate ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityPressurePlate](../GridEntityPressurePlate) ToPressurePlate ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Rock () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityRock](../GridEntityRock) ToRock ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityRock](../GridEntityRock) ToRock ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Spikes () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntitySpikes](../GridEntitySpikes) ToSpikes ( ) {: .copyable aria-label='Functions' }
+#### [GridEntitySpikes](../GridEntitySpikes) ToSpikes ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·TNT () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityTNT](../GridEntityTNT) ToTNT ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityTNT](../GridEntityTNT) ToTNT ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### Update () {: aria-label='Functions' }

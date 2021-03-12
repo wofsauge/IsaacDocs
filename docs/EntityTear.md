@@ -110,7 +110,7 @@ ___
 ___ 
 ### Stick·Target {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) StickTarget  {: .copyable aria-label='Variables' }
+#### [Entity](../Entity) StickTarget  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Stick·Timer {: aria-label='Variables' }

@@ -95,7 +95,7 @@ For maw of void.
 ___ 
 ### Bounce·Laser {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) BounceLaser  {: .copyable aria-label='Variables' }
+#### [Entity](../Entity) BounceLaser  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Curve·Strength {: aria-label='Variables' }

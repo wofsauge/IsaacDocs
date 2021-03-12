@@ -143,7 +143,8 @@ ___
 ___ 
 ### Get·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityDoor](../GridEntityDoor) GetDoor ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
+#### [GridEntityDoor](../GridEntityDoor) GetDoor ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [GridEntityDoor](../GridEntityDoor) at the given [DoorSlot](../enums/DoorSlot) position. Returns nil if no Door is located there.
 
 ___ 
 ### Get·Door·Slot·Position () {: aria-label='Functions' }
@@ -180,15 +181,15 @@ Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity
 ___ 
 ### Get·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntity](../GridEntity) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' }
+#### [GridEntity](../GridEntity) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the [GridEntity](../GridEntity) at this grid index.
+Returns the [GridEntity](../GridEntity) at this grid index. Returns `nil`, when no [GridEntity](../GridEntity) is found.
 ___ 
 ### Get·Grid·Entity·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntity](../GridEntity) GetGridEntityFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### [GridEntity](../GridEntity) GetGridEntityFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the [GridEntity](../GridEntity) at this position in the room.
+Returns the [GridEntity](../GridEntity) at this position in the room. Returns `nil`, when no [GridEntity](../GridEntity) is found.
 ___ 
 ### Get·Grid·Height () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

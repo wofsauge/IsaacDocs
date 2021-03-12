@@ -318,15 +318,21 @@ Get the [EntityFlags](../enums/EntityFlag)of the entity. This will be a number w
 ___ 
 ### Get·Last·Child () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) GetLastChild ( ) {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) GetLastChild ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the last entity spawned by this entity.
+
+???+ note "Return behavior"
+    If no child is found, this function returns `nil`.
 ___ 
 ### Get·Last·Parent () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) GetLastParent ( ) {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) GetLastParent ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the last parent of this entity.
+
+???+ note "Return behavior"
+    If no parent is found, this function returns `nil`.
 ___ 
 ### Get·Sprite () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -490,52 +496,91 @@ ___
 ___ 
 ### To·Bomb () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityBomb](../EntityBomb) ToBomb ( ) {: .copyable aria-label='Functions' }
+#### [EntityBomb](../EntityBomb) ToBomb ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityBomb](../EntityBomb) object.
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityEffect](../EntityEffect) ToEffect ( ) {: .copyable aria-label='Functions' }
+#### [EntityEffect](../EntityEffect) ToEffect ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityEffect](../EntityEffect) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·Familiar () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityFamiliar](../EntityFamiliar) ToFamiliar ( ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) ToFamiliar ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityFamiliar](../EntityFamiliar) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·Knife () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityKnife](../EntityKnife) ToKnife ( ) {: .copyable aria-label='Functions' }
+#### [EntityKnife](../EntityKnife) ToKnife ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityKnife](../EntityKnife) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·Laser () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityLaser](../EntityLaser) ToLaser ( ) {: .copyable aria-label='Functions' }
+#### [EntityLaser](../EntityLaser) ToLaser ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityLaser](../EntityLaser) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·NPC () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityNPC](../EntityNPC) ToNPC ( ) {: .copyable aria-label='Functions' }
+#### [EntityNPC](../EntityNPC) ToNPC ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityNPC](../EntityNPC) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·Pickup () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPickup](../EntityPickup) ToPickup ( ) {: .copyable aria-label='Functions' }
+#### [EntityPickup](../EntityPickup) ToPickup ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityPickup](../EntityPickup) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) ToPlayer ( ) {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../EntityPlayer) ToPlayer ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityPlayer](../EntityPlayer) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### To·Projectile () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityProjectile](../EntityProjectile) ToProjectile ( ) {: .copyable aria-label='Functions' }
+#### [EntityProjectile](../EntityProjectile) ToProjectile ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../Entity) object to an [EntityProjectile](../EntityProjectile) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
-### To·Tear () {: aria-label='Functions' }
+### To·Tear () {: aria-label='Functions' data-altreturn='nil' }
 [ ](#){: .abp .tooltip .badge }
 #### [EntityTear](../EntityTear) ToTear ( ) {: .copyable aria-label='Functions' }
+Used to cast an [Entity](../Entity) object to an [EntityTear](../EntityTear) object.
+
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 
 ___ 
 ### Update () {: aria-label='Functions' }
@@ -635,7 +680,7 @@ ___
 ___ 
 ### Parent {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Parent  {: .copyable aria-label='Variables' }
+#### [Entity](../Entity) Parent  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Position {: aria-label='Variables' }
@@ -663,7 +708,7 @@ ___
 ___ 
 ### Spawner·Entity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) SpawnerEntity  {: .copyable aria-label='Variables' }
+#### [Entity](../Entity) SpawnerEntity  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Spawner·Type {: aria-label='Variables' }

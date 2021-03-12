@@ -475,7 +475,7 @@ Get the current items subcharge. (Useful for items that charge up over time.)
 ___ 
 ### Get·Active·Weapon·Entity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) GetActiveWeaponEntity ( ) {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) GetActiveWeaponEntity ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### Get·Aim·Direction () {: aria-label='Functions' }
@@ -802,7 +802,7 @@ Returns the amount of Soul Hearts the player has. 1 unit is half a heart.
 ___ 
 ### Get·Sub·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetSubPlayer ( ) {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../EntityPlayer) GetSubPlayer ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### Get·Tear·Hit·Params () {: aria-label='Functions' }
@@ -832,7 +832,7 @@ ___
 ___ 
 ### Get·Tractor·Beam () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) GetTractorBeam ( ) {: .copyable aria-label='Functions' }
+#### [Entity](../Entity) GetTractorBeam ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### Get·Trinket () {: aria-label='Functions' }
@@ -1266,7 +1266,7 @@ item queue for when the player is picking up an item. the item is in effect as s
 ___ 
 ### Secondary·Active·Item {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [ActiveItemDesc](../PlayerTypes_ActiveItemDesc) SecondaryActiveItem  {: .copyable aria-label='Variables' }
+#### [ActiveItemDesc](../PlayerTypes_ActiveItemDesc) SecondaryActiveItem  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Shot·Speed {: aria-label='Variables' }

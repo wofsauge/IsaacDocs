@@ -137,7 +137,7 @@ ___
 ___ 
 ### Child·NPC {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityNPC](../EntityNPC) ChildNPC  {: .copyable aria-label='Variables' }
+#### [EntityNPC](../EntityNPC) ChildNPC  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Entity·Ref {: aria-label='Variables' }
@@ -162,7 +162,7 @@ same as m_I1
 ___ 
 ### Parent·NPC {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityNPC](../EntityNPC) ParentNPC  {: .copyable aria-label='Variables' }
+#### [EntityNPC](../EntityNPC) ParentNPC  {: .copyable aria-label='Variables' data-altreturn='nil' }
 parent entity, for multi-entity NPCs like Larry Jr. 
 ___ 
 ### Pathfinder {: aria-label='Variables' }
