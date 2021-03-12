@@ -5,7 +5,8 @@ If you don't have any mods to enable, download one from Steam Workshop, or creat
 
 |Language|Keyboard|Key|
 |--- |--- |--- |
-|English|QWERTY|` or ~|
+|English (US)|QWERTY|` or ~|
+|English (UK)|QWERTY|' or @|
 |French|AZERTY|ù|
 |German|QWERTZ|ö|
 |Spanish|QWERTY|ñ|
