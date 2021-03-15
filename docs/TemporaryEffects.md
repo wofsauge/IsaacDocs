@@ -18,7 +18,7 @@ Adds the effect of a collectible to the player, without actually giving him the 
 ___ 
 ### Add·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddNullEffect ( Config::NullItemID NullId, boolean AddCostume ) {: .copyable aria-label='Functions' }
+#### void AddNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId, boolean AddCostume ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Trinket·Effect () {: aria-label='Functions' }
@@ -48,12 +48,12 @@ ___
 ___ 
 ### Get·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [TemporaryEffect](../TemporaryEffect) GetNullEffect ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
+#### [TemporaryEffect](../TemporaryEffect) GetNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Null·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### int GetNullEffectNum ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
+#### int GetNullEffectNum ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Trinket·Effect () {: aria-label='Functions' }
@@ -73,7 +73,7 @@ ___
 ___ 
 ### Has·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasNullEffect ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
+#### boolean HasNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Trinket·Effect () {: aria-label='Functions' }
@@ -88,7 +88,7 @@ ___
 ___ 
 ### Remove·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveNullEffect ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
+#### void RemoveNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Trinket·Effect () {: aria-label='Functions' }

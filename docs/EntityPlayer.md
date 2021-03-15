@@ -92,7 +92,7 @@ ___
 ___ 
 ### Add·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddCostume ( Config::Item Item, boolean ItemStateOnly ) {: .copyable aria-label='Functions' }
+#### void AddCostume ( [ItemConfig::Item](../ItemConfig_Item) Item, boolean ItemStateOnly ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Dead·Eye·Charge () {: aria-label='Functions' }
@@ -204,7 +204,7 @@ Adds heart containers to the player. 2 units is a full heart container. Remove t
 ___ 
 ### Add·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddNullCostume ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
+#### void AddNullCostume ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 for Lua 
 ___ 
 ### Add·Pill () {: aria-label='Functions' }
@@ -984,7 +984,7 @@ ___
 ___ 
 ### Queue·Item () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void QueueItem ( Config::Item Item, int Charge, boolean Touched ) {: .copyable aria-label='Functions' }
+#### void QueueItem ( [ItemConfig::Item](../ItemConfig_Item) Item, int Charge, boolean Touched ) {: .copyable aria-label='Functions' }
 Add Collectible/Trinket after animation is finished. 
 ___ 
 ### Remove·Black·Heart () {: aria-label='Functions' }
@@ -1009,7 +1009,7 @@ ___
 ___ 
 ### Remove·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveCostume ( Config::Item Item ) {: .copyable aria-label='Functions' }
+#### void RemoveCostume ( [ItemConfig::Item](../ItemConfig_Item) Item ) {: .copyable aria-label='Functions' }
 Removes a given costume based on its item config entry.
 
 ???- example "Example code"
@@ -1058,7 +1058,7 @@ ___
 ___ 
 ### Replace·Costume·Sprite () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void ReplaceCostumeSprite ( Config::Item Item, string SpritePath, int SpriteId ) {: .copyable aria-label='Functions' }
+#### void ReplaceCostumeSprite ( [ItemConfig::Item](../ItemConfig_Item) Item, string SpritePath, int SpriteId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Damage·Cooldown () {: aria-label='Functions' }
@@ -1162,7 +1162,7 @@ Tries to remove a costume of the given collectible. `KeepPersistent` is used to 
 ___ 
 ### Try·Remove·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void TryRemoveNullCostume ( Config::NullItemID NullId ) {: .copyable aria-label='Functions' }
+#### void TryRemoveNullCostume ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Remove·Trinket () {: aria-label='Functions' }
