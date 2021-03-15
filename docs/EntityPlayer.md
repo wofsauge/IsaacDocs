@@ -215,6 +215,7 @@ ___
 ### Add·Player·Form·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void AddPlayerFormCostume ( [PlayerForm](../enums/PlayerForm) Form ) {: .copyable aria-label='Functions' }
+Adds the costume of the given transformation.
 
 ___ 
 ### Add·Pretty·Fly () {: aria-label='Functions' }
@@ -363,7 +364,7 @@ ___
 ### Clear·Costumes () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void ClearCostumes ( ) {: .copyable aria-label='Functions' }
-
+Removes all costumes.
 ___ 
 ### Clear·Dead·Eye·Charge () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -1009,7 +1010,15 @@ ___
 ### Remove·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveCostume ( Config::Item Item ) {: .copyable aria-label='Functions' }
+Removes a given costume based on its item config entry.
 
+???- example "Example code"
+    This code removes the costume of the Spoon Bender collectible.
+    ```lua
+    local player = Isaac.GetPlayer(0)
+    local itemConfig = Isaac.GetItemConfig():GetCollectible(CollectibleType.COLLECTIBLE_SPOON_BENDER)
+    player:RemoveCostume(itemConfig)
+    ```
 ___ 
 ### Remove·Golden·Bomb () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -1024,6 +1033,7 @@ ___
 ### Remove·Skin·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void RemoveSkinCostume ( ) {: .copyable aria-label='Functions' }
+Removes player-specific costumes like Magdalene's Hair or Cain's eyepatch.
 
 ___ 
 ### Render·Body () {: aria-label='Functions' }
@@ -1141,7 +1151,14 @@ ___
 ### Try·Remove·Collectible·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void TryRemoveCollectibleCostume ( [CollectibleType](../enums/CollectibleType) Collectible, boolean KeepPersistent ) {: .copyable aria-label='Functions' }
-tries to remove a costume based on some filters 
+Tries to remove a costume of the given collectible. `KeepPersistent` is used to define if persistent costumes should be removed. If its set to `false`, it will only remove temporary costumes.
+
+???- example "Example code"
+    This code removes the costume of the Spoon Bender collectible.
+    ```lua
+    local player = Isaac.GetPlayer(0)
+    player:TryRemoveCollectibleCostume(CollectibleType.COLLECTIBLE_SPOON_BENDER, false)
+    ```
 ___ 
 ### Try·Remove·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -1156,7 +1173,7 @@ ___
 ### Try·Remove·Trinket·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void TryRemoveTrinketCostume ( [TrinketType](../enums/TrinketType) Trinket ) {: .copyable aria-label='Functions' }
-tries to remove a costume based on some filters 
+Tries to remove a trinket costume
 ___ 
 ### Try·Use·Key () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
