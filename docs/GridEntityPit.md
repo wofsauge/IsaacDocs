@@ -15,7 +15,7 @@ ___
 ### Update·Collision () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void UpdateCollision ( ) {: .copyable aria-label='Functions' }
-void InitSubclass(void); 
+
 ___ 
 ## Variables
 ### Has·Ladder {: aria-label='Variables' }

@@ -1,8 +1,8 @@
 # Class "EntityPtr"
 ## Constructors
 ### Entity·Ptr () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityPtr](../EntityPtr) EntityPtr ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [EntityPtr](../EntityPtr) EntityPtr ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions

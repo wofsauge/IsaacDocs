@@ -76,8 +76,8 @@ ___
 
 ___ 
 ### Get·Current·Room·Desc () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [RoomDescriptor](../RoomDescriptor) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [RoomDescriptor](../RoomDescriptor) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Current·Room·Index () {: aria-label='Functions' }
@@ -126,8 +126,8 @@ ___
 
 ___ 
 ### Get·Last·Room·Desc () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [RoomDescriptor](../RoomDescriptor) GetLastRoomDesc ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [RoomDescriptor](../RoomDescriptor) GetLastRoomDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Name () {: aria-label='Functions' }
@@ -151,8 +151,8 @@ ___
 
 ___ 
 ### Get·Room·By·Idx () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Room·Count () {: aria-label='Functions' }

@@ -32,8 +32,8 @@ ___
 
 ___ 
 ### Get·Collectible·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [TemporaryEffect](../TemporaryEffect) GetCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [TemporaryEffect](../TemporaryEffect) GetCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Collectible·Effect·Num () {: aria-label='Functions' }
@@ -42,13 +42,13 @@ ___
 
 ___ 
 ### Get·Effects·List () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EffectList](../CppContainer_Vector_EffectList) GetEffectsList ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [EffectList](../CppContainer_Vector_EffectList) GetEffectsList ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Null·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [TemporaryEffect](../TemporaryEffect) GetNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [TemporaryEffect](../TemporaryEffect) GetNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Null·Effect·Num () {: aria-label='Functions' }
@@ -57,8 +57,8 @@ ___
 
 ___ 
 ### Get·Trinket·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [TemporaryEffect](../TemporaryEffect) GetTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [TemporaryEffect](../TemporaryEffect) GetTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Trinket·Effect·Num () {: aria-label='Functions' }

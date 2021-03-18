@@ -267,13 +267,13 @@ ___
 
 ___ 
 ### Get·Render·Scroll·Offset () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
 The camera scroll offset and screen shake offsets are both represented here. 
 ___ 
 ### Get·Render·Surface·Top·Left () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
 The position the floor and wall textures will be rendered at. 
 ___ 
 ### Get·Room·Config·Stage () {: aria-label='Functions' }
@@ -490,7 +490,7 @@ ___
 ### Set·Clear () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void SetClear ( boolean Clear ) {: .copyable aria-label='Functions' }
-Needed for angel room, so the clear flag can be set to false when the angel spawns void SetClear(bool Clear) {m_Desc-&gt;Clear = Clear;} 
+Needed for angel room, so the clear flag can be set to false when the angel spawns
 ___ 
 ### Set·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

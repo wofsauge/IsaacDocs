@@ -480,8 +480,8 @@ ___
 
 ___ 
 ### Get·Aim·Direction () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetAimDirection ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetAimDirection ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Baby·Skin () {: aria-label='Functions' }
@@ -651,13 +651,13 @@ ___
 
 ___ 
 ### Get·Last·Damage·Source () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityRef](../EntityRef) GetLastDamageSource ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [EntityRef](../EntityRef) GetLastDamageSource ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Last·Direction () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetLastDirection ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetLastDirection ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Max·Hearts () {: aria-label='Functions' }
@@ -687,8 +687,8 @@ ___
 
 ___ 
 ### Get·Movement·Input () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetMovementInput ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetMovementInput ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Movement·Joystick () {: aria-label='Functions' }
@@ -764,8 +764,8 @@ ___
 
 ___ 
 ### Get·Pocket·Item () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### PlayerPocketItem GetPocketItem ( int SlotId ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const PlayerPocketItem GetPocketItem ( int SlotId ) {: .copyable aria-label='Functions' }
 
 Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
 
@@ -773,8 +773,8 @@ Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
     This function returns userdata, which cant be processed. It is therefore broken and should not be used! 
 ___ 
 ### Get·Recent·Movement·Vector () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetRecentMovementVector ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetRecentMovementVector ( ) {: .copyable aria-label='Functions' }
 Returns the joystick direction that drives player movement, taking into account certain modifiers like disabled controls and seed effects. 
 ___ 
 ### Get·Shooting·Input () {: aria-label='Functions' }
@@ -853,8 +853,8 @@ ___
 
 ___ 
 ### Get·Velocity·Before·Update () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetVelocityBeforeUpdate ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetVelocityBeforeUpdate ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Zodiac·Effect () {: aria-label='Functions' }
@@ -1217,9 +1217,9 @@ ___
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Can the player fly over rocks and pits? 
 ___ 
 ### Controller·Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int ControllerIndex  {: .copyable aria-label='Variables' }
-s32 GetItemStateCooldown( void ) const { return m_ItemStateCooldown; } 
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int ControllerIndex  {: .copyable aria-label='Variables' }
+
 ___ 
 ### Controls·Cooldown {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -1242,9 +1242,11 @@ ___
 How long until the player can spawn their next tear? 
 ___ 
 ### Friend·Ball·Enemy {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### EntityDesc FriendBallEnemy  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const EntityDesc FriendBallEnemy  {: .copyable aria-label='Variables' }
 
+???+ bug "Bugs"
+    This function returns userdata that cant be edited or accessed.
 ___ 
 ### Head·Frame·Delay {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

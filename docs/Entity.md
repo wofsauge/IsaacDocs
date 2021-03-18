@@ -269,8 +269,8 @@ ___
 If the entity is a boss, it returns its specific boss id. If it isnt a boss it will return 0.
 ___ 
 ### Get·Color () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) GetColor ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Color](../Color) GetColor ( ) {: .copyable aria-label='Functions' }
 
 Returns the Color object assosiated to this entity.
 ___ 
@@ -620,10 +620,10 @@ Get/Set the depth-offset of the entity. This value is added to the Y Position of
 
 ___ 
 ### Drop·Seed {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int DropSeed  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int DropSeed  {: .copyable aria-label='Variables' }
 
-Get/set the Seed of the Drop RNG.
+Get the Seed of the Drop RNG.
 ___ 
 ### Entity·Collision·Class {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -636,8 +636,8 @@ ___
 
 ___ 
 ### Frame·Count {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int FrameCount  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int FrameCount  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Friction {: aria-label='Variables' }
@@ -659,13 +659,13 @@ ___
     The HitPoints value is not decremented immediately upon taking damage like you would expect. Rather, it is only updated on the frame after the entity takes damage.
 ___ 
 ### Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int Index  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int Index  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Init·Seed {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int InitSeed  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int InitSeed  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Mass {: aria-label='Variables' }
@@ -689,8 +689,8 @@ ___
 
 ___ 
 ### Position·Offset {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Render·ZOffset {: aria-label='Variables' }
@@ -722,8 +722,8 @@ ___
 
 ___ 
 ### Spawn·Grid·Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int SpawnGridIndex  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int SpawnGridIndex  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Splat·Color {: aria-label='Variables' }
@@ -744,7 +744,7 @@ ___
 ### Sprite·Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) SpriteScale  {: .copyable aria-label='Variables' }
-
+Get/set the scale of the enemy sprite. This can be used to also Scale the shadow of the entity.
 ___ 
 ### Sub·Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -762,8 +762,8 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

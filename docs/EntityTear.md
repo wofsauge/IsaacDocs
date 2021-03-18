@@ -34,13 +34,13 @@ ___
 ___ 
 ## Variables
 ### Base·Damage {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### float BaseDamage  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const float BaseDamage  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Base·Scale {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### float BaseScale  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const float BaseScale  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Bounced {: aria-label='Variables' }
@@ -89,8 +89,8 @@ ___
 Used for Position adjustment (vs PositionOffset which is a render offset) 
 ___ 
 ### Pos·Displacement {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) PosDisplacement  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) PosDisplacement  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Rotation {: aria-label='Variables' }
@@ -124,9 +124,9 @@ ___
 
 ___ 
 ### Tear·Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int TearIndex  {: .copyable aria-label='Variables' }
-
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int TearIndex  {: .copyable aria-label='Variables' }
+Returns the index of the tear. Its analog to the number of tears fired in the current game.
 ___ 
 ### Wait·Frames {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

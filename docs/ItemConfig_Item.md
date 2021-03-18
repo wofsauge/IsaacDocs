@@ -62,8 +62,8 @@ ___
 
 ___ 
 ### Costume {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Costume](../ItemConfig_Costume) Costume {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Costume](../ItemConfig_Costume) Costume {: .copyable aria-label='Variables' }
 
 ___ 
 ### Description {: aria-label='Variables' }

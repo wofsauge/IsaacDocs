@@ -111,8 +111,8 @@ ___
 
 ___ 
 ### Position {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
 Returns the position of the grid cell's center point 
 ___ 
 ### RNG {: aria-label='Variables' }

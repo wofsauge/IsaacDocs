@@ -521,13 +521,13 @@ ___
 
 ___ 
 ### Difficulty {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
 ### Screen·Shake·Offset {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Time·Counter {: aria-label='Variables' }

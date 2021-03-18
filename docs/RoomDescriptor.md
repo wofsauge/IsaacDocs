@@ -23,7 +23,7 @@ ___
 ### Clear·Count {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ClearCount  {: .copyable aria-label='Variables' }
-room is clear, don't spawn enemies when visiting bool Clear; 
+room is clear, don't spawn enemies when visiting
 ___ 
 ### Data {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -33,7 +33,7 @@ ___
 ### Decoration·Seed {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int DecorationSeed  {: .copyable aria-label='Variables' }
-bool AltBossMusic; used for cosmetic stuff like backdrops, room decorations, shopkeeper skins 
+used for cosmetic stuff like backdrops, room decorations, shopkeeper skins 
 ___ 
 ### Delirium·Distance {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -112,7 +112,7 @@ ___
 ### Poop·Count {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int PoopCount  {: .copyable aria-label='Variables' }
-bool HasWater; 
+
 ___ 
 ### Pressure·Plates·Triggered {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

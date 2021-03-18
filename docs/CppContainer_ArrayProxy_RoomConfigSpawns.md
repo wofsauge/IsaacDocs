@@ -17,8 +17,8 @@ Returns a [RoomConfig Spawn](../RoomConfig_Spawn) at the index of the list provi
 ___ 
 ## Variables
 ### Size {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int Size  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int Size  {: .copyable aria-label='Variables' }
 
 The amount of spawnables in the list.
 

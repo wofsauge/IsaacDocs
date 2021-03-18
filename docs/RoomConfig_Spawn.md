@@ -1,8 +1,8 @@
 # Class "RoomConfig::Spawn"
 ## Functions
 ### Pick·Entry () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [RoomConfig Entry](../RoomConfig_Entry) PickEntry ( float r ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [RoomConfig Entry](../RoomConfig_Entry) PickEntry ( float r ) {: .copyable aria-label='Functions' }
 r is a value between 0 and 1 
 ___ 
 ## Variables

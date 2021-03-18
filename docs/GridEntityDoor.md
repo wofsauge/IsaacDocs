@@ -18,8 +18,8 @@ ___
 
 ___ 
 ### Get·Sprite·Offset () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Busted () {: aria-label='Functions' }

@@ -8,13 +8,13 @@
 
 ___ 
 ### Get·End·Point () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Non·Optimized·Samples () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·RenderZ () {: aria-label='Functions' }
@@ -23,8 +23,8 @@ ___
 
 ___ 
 ### Get·Samples () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Circle·Laser () {: aria-label='Functions' }
@@ -201,8 +201,6 @@ ___
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
-float m_DepthOffset; 
-float GetDepthOffset(void) const { return m_DepthOffset; } void SetDepthOffset(float Value) { m_DepthOffset = Value; } 
 ___ 
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

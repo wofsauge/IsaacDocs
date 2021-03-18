@@ -17,8 +17,8 @@ Returns an [Entity](../Entity) at the index of the list provided.
 ___ 
 ## Variables
 ### Size {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int Size  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int Size  {: .copyable aria-label='Variables' }
 
 The amount of entities in the list.
 

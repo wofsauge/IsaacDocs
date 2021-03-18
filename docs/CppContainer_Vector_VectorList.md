@@ -15,7 +15,7 @@ ___
 ___ 
 ## Variables
 ### Size {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### int Size  {: .copyable aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+#### const int Size  {: .copyable aria-label='Variables' }
 
 ___ 
