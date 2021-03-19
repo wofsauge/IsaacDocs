@@ -465,8 +465,8 @@ Get the current charge of your active item.
 ___ 
 ### Get·Active·Item () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( ) {: .copyable aria-label='Functions' }
-Returns the currently held item.
+#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( ) {: .copyable aria-label='Functions' data-altreturn='0' }
+Returns the currently held item. Returns `0` when no item is held.
 ___ 
 ### Get·Active·Sub·Charge () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -526,9 +526,9 @@ Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
 ___ 
 ### Get·Card () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Card](../enums/Card) GetCard ( int SlotId ) {: .copyable aria-label='Functions' }
+#### [Card](../enums/Card) GetCard ( int SlotId ) {: .copyable aria-label='Functions' data-altreturn='0' }
 
-Gets the ID of the card the player is holding in the given itemslot (0 or 1).
+Gets the ID of the card the player is holding in the given itemslot (0 or 1). Returns `0` when no card is held in the slot.
 ___ 
 ### Get·Card·RNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -749,9 +749,9 @@ ___
 ___ 
 ### Get·Pill () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [PillColor](../enums/PillColor) GetPill ( int SlotId ) {: .copyable aria-label='Functions' }
+#### [PillColor](../enums/PillColor) GetPill ( int SlotId ) {: .copyable aria-label='Functions' data-altreturn='0' }
 
-Gets the ID of the pill the player is holding in the given itemslot (0 or 1).
+Gets the ID of the pill the player is holding in the given itemslot (0 or 1). Returns `0` when no pill is held in the given slot.
 ___ 
 ### Get·Pill·RNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -838,9 +838,9 @@ ___
 ___ 
 ### Get·Trinket () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [TrinketType](../enums/TrinketType) GetTrinket ( int TrinketIndex ) {: .copyable aria-label='Functions' }
+#### [TrinketType](../enums/TrinketType) GetTrinket ( int TrinketIndex ) {: .copyable aria-label='Functions' data-altreturn='0' }
 
-Gets the ID of the trinket the player is holding in the given trinketslot (0 or 1).
+Gets the ID of the trinket the player is holding in the given trinketslot (0 or 1). Returns `0` when no trinket is held in the given slot.
 ___ 
 ### Get·Trinket·Multiplier () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
