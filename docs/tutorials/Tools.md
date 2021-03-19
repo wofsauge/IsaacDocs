@@ -13,6 +13,7 @@
 * [Color Usage Visualizer](https://wofsauge.github.io/Sprite-color-usage-Visualizer/index.html) : Interactive 3D tool to display color usage frequencies in Isaac Sprites
 * [Config & Mod Management Tool](https://moddingofisaac.com/mod/3386/tboi-afterbirth-configuration-tool) : UI to edit the game config and enable/ disable mods or modpacks
 * [PC -> Console Mod Converter](https://moddingofisaac.com/mod/2297/tboir-mod-conversion-kit): Converts Rebirth and Afterbirth mods to be useable on consoles. DOES NOT WORK FOR AFTERBIRTH+ MODS!
+*[Text Sprite Generator](https://wofsauge.github.io/IsaacTools/text_generator.html): Automatically generates Character- and VS Screen text sprites
 
 ## Coding Tools
 * [Visual Studio Code](https://code.visualstudio.com/) : Free Coding environment
