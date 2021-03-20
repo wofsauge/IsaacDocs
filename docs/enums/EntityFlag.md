@@ -38,4 +38,4 @@
 |[ ](#){: .abp .tooltip .badge }|1<<34 |FLAG_BLEED_OUT {: .copyable } | Used for Mom's Razor <br> | 
 |[ ](#){: .abp .tooltip .badge }|1<<35 |FLAG_HIDE_HP_BAR {: .copyable } | Added for Ultra Greed so his HP can be hidden after he "dies" since his entity sticks around <br> | 
 |[ ](#){: .abp .tooltip .badge }|1<<36 |FLAG_NO_DAMAGE_BLINK {: .copyable } | Player was given a short period of invulnerability by something other than damage, don't blink <br> | 
-|[ ](#){: .abp .tooltip .badge }|1<<37 |FLAG_PERSISTENT {: .copyable } | Entity persists between rooms <br> | 
+|[ ](#){: .abp .tooltip .badge }|1<<37 |FLAG_PERSISTENT {: .copyable } | The entity will persists between rooms. (It will appear in every room, as opposed to the game remembering the specific room that it was spawned in.) <br> | 
