@@ -261,9 +261,13 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml)
 ___ 
 ### Get·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId ) {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies.
+Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies. If an index is given, that is not used, it will return the last player in the list.
+
+This function can return `nil` if the function is called before any player is initialized. 
+
+This function is the same as [`Game():GetPlayer()`](../Game/#getplayer).
 
 ???- example "Example Code"
     ```lua 

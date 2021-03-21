@@ -255,8 +255,10 @@ ___
 ___ 
 ### Get·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetPlayer ( int Index ) {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../EntityPlayer) GetPlayer ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [EntityPlayer](../EntityPlayer) with the given index. This function can return `nil` if the function is called before any player is initialized. If an index is given, that is not used, it will return the last player in the list.
 
+This function is the same as [`Isaac.GetPlayer()`](../Isaac/#getplayer).
 ___ 
 ### Get·Random·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
