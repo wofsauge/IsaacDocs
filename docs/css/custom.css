@@ -11,6 +11,8 @@
     --operator-color: #CE93D8;
     --operator-color-light: #E1BEE7;
     --operator-overview-bg-color: #F3E5F5;
+    --abp-color: #FDD835;
+    --rep-color: #F44336;
 }
 
 nav[aria-label$='Functions'] {
@@ -119,21 +121,47 @@ h4[aria-label$='Operators'] {
 /**** BADGES ****/
 
 .abp {
-    background-color: #00bfa5;
-    color: white !important;
+    background-color: var(--abp-color);
 }
 
 .abp::before {
-    content: "ab+";
+    content: "AB+";
 }
 
 a.abp.tooltip:after {
-    content: "Compatible with Afterbirth+";
+    content: "Only compatible with Afterbirth+";
+}
+
+.rep {
+    background-color: var(--rep-color);
+}
+
+.rep::before {
+    content: "Rep";
+}
+
+a.rep.tooltip:after {
+    content: "Only compatible with Repentence";
+}
+
+.abrep {
+    background: var(--abp-color);
+    background: -moz-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
+    background: linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--abp-color), endColorstr=var(--rep-color), GradientType=1);
+}
+
+.abrep::before {
+    content: "AB+ | Rep";
+}
+
+a.abrep.tooltip:after {
+    content: "Compatible with Afterbirth+ and Repentence";
 }
 
 .static {
     background-color: #c7c7c7;
-    color: black !important;
 }
 
 .static::before {
@@ -146,7 +174,6 @@ a.static.tooltip:after {
 
 .const {
     background-color: #44d8cc;
-    color: black !important;
 }
 
 .const::before {
@@ -162,6 +189,7 @@ a.const.tooltip:after {
     vertical-align: middle;
     padding: 4px 5px 4px 6px;
     border-radius: 10px;
+    color: black !important;
 }
 
 .badgeLine {
