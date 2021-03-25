@@ -233,7 +233,7 @@ plugins:
   - search:
       separator: '[\s\-\.\_\·]+'
   - git-revision-date:
-      enabled_if_env: CI
+      enabled_if_env: 1
 extra:
   social:
     - icon: fontawesome/brands/github
