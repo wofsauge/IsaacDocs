@@ -231,8 +231,9 @@ markdown_extensions:
   - attr_list
 plugins:
   - search:
-        separator: '[\s\-\.\_\·]+'
-  - git-revision-date
+      separator: '[\s\-\.\_\·]+'
+  - git-revision-date:
+      enabled_if_env: CI
 extra:
   social:
     - icon: fontawesome/brands/github
