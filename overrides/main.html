@@ -6,4 +6,22 @@
         }
     }
 </script>
+{% endblock %} {% block config %} {{ super() }}
+<script>
+    var __search = {
+        transform: function(query) {
+            query = query.replace("_", " ")
+                /* Original Search query filter code*/
+            return query
+                .split(/"([^"]+)"/g) /* => 1 */
+                .map((terms, index) => index & 1 ?
+                    terms.replace(/^\b|^(?![^\x00-\x7F]|$)|\s+/g, " +") :
+                    terms
+                )
+                .join("")
+                .replace(/"|(?:^|\s+)[*+\-:^~]+(?=\s+|$)/g, "") /* => 2 */
+                .trim()
+        }
+    }
+</script>
 {% endblock %}
