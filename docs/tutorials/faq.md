@@ -53,7 +53,7 @@ If a mod doesn`t work for you, there are multiple possible solutions:
 
 4. Disable all other mods you have installed and see if one of those caused any errors.
 
-5. Execute the "Verify Game cache files" function in steam for the Game. Step by step guide can be found here Verify Game Cache Files [inxile.zendesk.com]
+5. Execute the "Verify Game cache files" function in steam for the Game. Step by step guide can be found here Verify Game Cache Files [inxile.zendesk.com](https://inxile.zendesk.com/hc/en-us/articles/115004662908-Verify-game-cache-files-Steam-)
 
 ### A big mod has invisible enemies, and everything seems broken {: .subHeader}
 It is highly likely that this is due to Steam not downloading all of the mod's files, rather than any error in the mod.
