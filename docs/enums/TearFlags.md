@@ -10,7 +10,7 @@
 |[ ](#){: .abp .tooltip .badge }|1<<5 |TEAR_FREEZE {: .copyable } | Mom's contact type tear (freezes on contact) <br> | 
 |[ ](#){: .abp .tooltip .badge }|1<<6 |TEAR_SPLIT {: .copyable } | Parasite type tear (splits on collision) <br> | 
 |[ ](#){: .abp .tooltip .badge }|1<<7 |TEAR_GROW {: .copyable } | Lump of coal type tear (grows by range) <br> | 
-|[ ](#){: .abp .tooltip .badge }|1<<8 |TEAR_BOMBERANG {: .copyable } | My reflection type tear (returns back) <br> | 
+|[ ](#){: .abp .tooltip .badge }|1<<8 |TEAR_BOMBERANG {: .copyable } | My reflection type tear (returns back) <br> **Bug**: the name of the enum contains a typo. It should be Boomerang| 
 |[ ](#){: .abp .tooltip .badge }|1<<9 |TEAR_PERSISTENT {: .copyable } | Polyphemus type tear (Damages the entity and if the damage is more then enemy hp it continues with less damage) <br> | 
 |[ ](#){: .abp .tooltip .badge }|1<<10 |TEAR_WIGGLE {: .copyable } | Wiggle worm type tear (wiggles) <br> | 
 |[ ](#){: .abp .tooltip .badge }|1<<11 |TEAR_MIGAN {: .copyable } | Migan type tear (creates fly on hit) <br> | 
