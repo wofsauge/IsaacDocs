@@ -373,8 +373,22 @@ details>summary {
     margin-top: 0;
 }
 
+
+/* Hide Announcement bar */
+
+
+/*
 div[data-md-component$="announce"] {
     display: none;
+}
+*/
+
+
+/* Visible announcement bar */
+
+.md-announce__inner {
+    line-height: 1.2;
+    text-align: center;
 }
 
 
