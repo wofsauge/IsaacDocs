@@ -171,6 +171,9 @@ document$.subscribe(function() {
         new Tablesort(table)
     })
 
+    // Handle Version-selector list
+    $(".md-version__list").append('<li class="md-version__item"><a href="/IsaacDocs/oldDocs" class="md-version__link">Original AB+ Docs</a></li>')
+
     // handle Copy Buttons
     $(".copyable").append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
 
