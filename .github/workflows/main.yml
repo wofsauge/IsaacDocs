@@ -51,22 +51,12 @@ jobs:
           ref: ab_plus
           
       - run: mike deploy abp Afterbirth+ -t Afterbirth+ -p
-          
-      - name: Copy redirect file
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: index.html
-          dst_owner: wofsauge
-          dst_repo_name: IsaacDocs
-          dst_branch: gh-pages
 
-      - name: Copy old ab+ docs
+      - name: Copy old ab+ docs and index.html
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
           src_path: /.
-          dst_path: /oldDocs/
           dst_owner: wofsauge
           dst_repo_name: IsaacDocs
           src_branch: old_docs
