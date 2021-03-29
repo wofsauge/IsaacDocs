@@ -67,8 +67,8 @@ jobs:
         uses: andstor/copycat-action@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: /index.html
-          dst_path: /
+          src_path: index.html
+          dst_path: index.html
           dst_owner: wofsauge
           dst_repo_name: IsaacDocs
           src_branch: master
