@@ -172,7 +172,10 @@ document$.subscribe(function() {
     })
 
     // Handle Version-selector list
-    $(".md-version__list").append('<li class="md-version__item"><a href="/IsaacDocs/oldDocs" class="md-version__link">Original AB+ Docs</a></li>')
+    waitForElementToDisplay(".md-version__list", function() {
+        $(".md-version__list").append('<li class="md-version__item"><a href="/IsaacDocs/oldDocs" class="md-version__link">Original AB+ Docs</a></li>')
+    }, 500, 9000);
+
 
     // handle Copy Buttons
     $(".copyable").append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
@@ -341,4 +344,21 @@ function colorizeSearchResults(element) {
     } else if (text.includes("File ")) {
         element.addClass("searchFile");
     }
+}
+
+
+function waitForElementToDisplay(selector, callback, checkFrequencyInMs, timeoutInMs) {
+    var startTimeInMs = Date.now();
+    (function loopSearch() {
+        if (document.querySelector(selector) != null) {
+            callback();
+            return;
+        } else {
+            setTimeout(function() {
+                if (timeoutInMs && Date.now() - startTimeInMs > timeoutInMs)
+                    return;
+                loopSearch();
+            }, checkFrequencyInMs);
+        }
+    })();
 }
