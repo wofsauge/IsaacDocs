@@ -23,6 +23,18 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+          
+      - name: Copy redirect file
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: index.html
+          dst_path: index.html
+          dst_owner: wofsauge
+          dst_repo_name: IsaacDocs
+          dst_branch: gh-pages
+          
+          
       - uses: actions/checkout@v2
         with:
          fetch-depth: 0
@@ -61,15 +73,4 @@ jobs:
           dst_owner: wofsauge
           dst_repo_name: IsaacDocs
           src_branch: old_docs
-          dst_branch: gh-pages
-          
-      - name: Copy redirect file
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: index.html
-          dst_path: index.html
-          dst_owner: wofsauge
-          dst_repo_name: IsaacDocs
-          src_branch: master
           dst_branch: gh-pages
