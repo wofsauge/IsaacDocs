@@ -38,6 +38,9 @@ jobs:
       - run: pip install mike
       - run: pip install mkdocs-git-revision-date-plugin
       - run: pip install mkdocs-git-revision-date-localized-plugin
+      - name: Clear mk-docs branch
+        run: mike delete --all
+      
       - run: mike deploy rep Repentance -t Repentance -p
       - run: mike set-default rep
       
@@ -46,6 +49,7 @@ jobs:
         with:
           fetch-depth: 0
           ref: ab_plus
+          
       - run: mike deploy abp Afterbirth+ -t Afterbirth+ -p
 
       - name: Copy old ab+ docs
