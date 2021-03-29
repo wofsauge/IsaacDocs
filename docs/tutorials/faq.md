@@ -29,6 +29,10 @@ All mods are located in this location:
 C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods\
 ```
 
+:fontawesome-brands-apple: **Mac OS**:
+```lua
+/Users/[YOURUSERNAME]/Library/Application Support/Binding of Isaac Afterbirth+ Mods
+```
 
 :fontawesome-brands-linux: **Linux**:
 ```lua
