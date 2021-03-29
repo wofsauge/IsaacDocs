@@ -141,7 +141,7 @@ a.abp.tooltip:after {
 }
 
 a.rep.tooltip:after {
-    content: "Only compatible with Repentence";
+    content: "Only compatible with Repentance";
 }
 
 .abrep {
@@ -157,7 +157,7 @@ a.rep.tooltip:after {
 }
 
 a.abrep.tooltip:after {
-    content: "Compatible with Afterbirth+ and Repentence";
+    content: "Compatible with Afterbirth+ and Repentance";
 }
 
 .static {
