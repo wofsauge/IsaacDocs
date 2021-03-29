@@ -22,19 +22,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-          
-      - name: Copy redirect file
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: index.html
-          dst_path: index.html
-          dst_owner: wofsauge
-          dst_repo_name: IsaacDocs
-          dst_branch: gh-pages
-          
-          
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it          
       - uses: actions/checkout@v2
         with:
          fetch-depth: 0
@@ -52,6 +40,17 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - name: Clear mk-docs branch
         run: mike delete --all
+          
+      - name: Copy redirect file
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: index.html
+          dst_path: index.html
+          dst_owner: wofsauge
+          dst_repo_name: IsaacDocs
+          dst_branch: gh-pages
+          
       
       - run: mike deploy rep Repentance -t Repentance -p
       - run: mike set-default rep
