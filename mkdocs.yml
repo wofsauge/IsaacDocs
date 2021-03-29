@@ -1,4 +1,4 @@
-site_name: "BoI: AB+ Lua Docs"
+site_name: "BoI: Lua API Docs"
 nav:
     - Home: index.md
     - Docs:
@@ -239,7 +239,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/wofsauge/IsaacDocs
-      name: "BoI: AB+ Lua Docs on GitHub"
+      name: "BoI: Lua API Docs on GitHub"
+  version:
+    provider: mike
+    default: rep
 extra_css: 
     - css/custom.css
 extra_javascript: 

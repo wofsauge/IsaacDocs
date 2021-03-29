@@ -30,9 +30,13 @@ jobs:
   
       - run: pip install mkdocs
       - run: pip install mkdocs-material
+      - run: pip install mike
       - run: pip install mkdocs-git-revision-date-plugin
       - run: pip install mkdocs-git-revision-date-localized-plugin
-      - run: mkdocs gh-deploy --force
+      #- run: mike delete rep
+      #- run: mike deploy rep Repentence -t Repentence
+      #- run: mike set-default rep
+      - run: mike deploy abp Afterbirth+ -t Afterbirth+
 
       - name: Copy
         uses: andstor/copycat-action@v3
