@@ -62,3 +62,14 @@ jobs:
           dst_repo_name: IsaacDocs
           src_branch: old_docs
           dst_branch: gh-pages
+          
+      - name: Copy redirect file
+        uses: andstor/copycat-action@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          src_path: /index.html
+          dst_path: /
+          dst_owner: wofsauge
+          dst_repo_name: IsaacDocs
+          src_branch: master
+          dst_branch: gh-pages
