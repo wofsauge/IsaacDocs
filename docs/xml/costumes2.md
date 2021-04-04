@@ -18,3 +18,5 @@ Defines Costume informations.
 |skinColor|int|Define what skincolor that costume has. (default: 0)|
 |hasSkinAlt|bool|Define if a costume has alternative versions for all other the skin colors (default: false)|
 |hasOverlay|bool|Define if a costume has an overlayeffect (default: false)|
+|forceBodyColor|bool|Forces the body color (default: false) [ ](#){: .rep .tooltip .badge }|
+|forceHeadColor|bool|Forces the head color (default: false) [ ](#){: .rep .tooltip .badge }|

@@ -11,4 +11,33 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|*todo*|||
+| name | str ||
+| id | int ||
+| variant | int ||
+| subtype | int ||
+| anm2path | string ||
+| baseHP | int ||
+| boss | int |Entity is a boss. Possible values: ['0', '1']|
+| bossID | int ||
+| champion | int |Allow champion variants of this entity. Possible values: ['0', '1']|
+| collisionDamage | float ||
+| collisionMass | float ||
+| collisionRadius | float ||
+| collisionRadiusXMulti | float ||
+| collisionRadiusYMulti | float ||
+| collisionInterval | int ||
+| numGridCollisionPoints | int ||
+| friction | int ||
+| shadowSize | int ||
+| stageHP | int ||
+| tags | string | possible values: ['nodelirium', 'spider', 'explosive_soul', 'cansacrifice', 'ghost', 'brimstone_soul', 'homing_soul', 'fly', 'noreroll']|
+| gridCollision | string | possible values: ['nopits', 'ground', 'none', 'walls', 'floor']|
+| portrait | int ||
+| hasFloorAlts | bool ||
+| reroll | bool ||
+| shutdoors | bool ||
+| shieldStrength | int ||
+| gibAmount | int ||
+| gibFlags | string | used Values: ['poop']|
+| bestiaryAnim | string ||
+| bestiaryOverlay | string ||

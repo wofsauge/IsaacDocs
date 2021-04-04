@@ -12,6 +12,7 @@ Used to store all challenges and some of their attributes.
 |id|int|Ingame-Id of the Challenge (Not needed for Content Folder)|
 |name|string|Name of the Challenge|
 |startingitems|string list|Comma separated (nospace) item ids that will be added at the start.|
+|startingitems2|string list|Starting items for Player 2. Comma separated (nospace) item ids that will be added at the start. [ ](#){: .rep .tooltip .badge }|
 |startingtrinkets|string list|comma separated (nospace) trinket ids that will be added at the start (max 2)|
 |startingpill|string list|startingpill = effect id of the starting pill (-1 for no pill | default))|
 |playertype|string|player type id  (0 for Isaac | default). Custom characters cant be defined this way! Use LUA code instead.|
@@ -34,3 +35,4 @@ Used to store all challenges and some of their attributes.
 |bigrange|bool|Enable high starting range value|
 |difficulty|bool|game difficulty (0 - normal | default, 1 - hard | 2 - Greed | 3 - Greedier) Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy|
 |megasatan|bool|last boss is megasatan. Adds the Key to the player.|
+|secretpath|bool|Force the Repentance alt path [ ](#){: .rep .tooltip .badge }|
