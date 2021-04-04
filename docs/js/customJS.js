@@ -63,9 +63,9 @@ function buildContentMap() {
     }
     var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table><hr/></div>");
     if ($(".inheritance").length == 0) {
-        mapObj.insertAfter("h1");
+        mapObj.insertAfter($(".md-content__inner").find("h1"));
     } else {
-        mapObj.insertAfter($("p").first());
+        mapObj.insertAfter($(".md-content__inner").find("p").first());
     }
 
     var tableContent = "";
@@ -112,7 +112,7 @@ function modifyCallbackPageLayout() {
         }
     });
     var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Name</th><th>Function Args</th><th>Optional Args</th></tr></thead><tbody></tbody></table><hr/></div>");
-    mapObj.insertAfter($("p").first());
+    mapObj.insertAfter($(".md-content__inner").find("p").first());
 
     $('#contentOverviewTable > tbody').append(tableContent);
 }
