@@ -166,8 +166,8 @@ nav:
         - "TemporaryEffects": TemporaryEffects.md
         - "Vector": Vector.md
     - Entities:
-        - "Fissure Spawner":entities/FissureSpawner.md
-        - "Ball & Chain":entities/SpikeBallChain.md
+        - "Fissure Spawner": entities/FissureSpawner.md
+        - "Ball & Chain": entities/SpikeBallChain.md
     - Tutorials:
         - "Example Project": tutorials/ExampleProject.md
         - "Adding Costumes to items without LUA": tutorials/AddingCostumesWithoutLUA.md
