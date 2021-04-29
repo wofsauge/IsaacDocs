@@ -169,8 +169,8 @@ ___
 
 ___ 
 ### Render·Layer () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void RenderLayer ( int LayerId, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void RenderLayer ( int LayerId, [Vector](../Vector) Pos, [Vector](../Vector) TopLeftClamp, [Vector](../Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Replace·Spritesheet () {: aria-label='Functions' }

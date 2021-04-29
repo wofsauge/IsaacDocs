@@ -1209,7 +1209,11 @@ ___
 ### Baby·Skin {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [BabySubType](../enums/BabySubType) BabySkin  {: .copyable aria-label='Variables' }
-P2 Skin section Used to hold the selected skin (in case of glitched baby it will pick a random one) 
+P2 Skin section Used to hold the selected skin (in case of glitched baby it will pick a random one)
+
+???+ bug "Bugs"
+    This variable actually contains userdata and is not usable within API. Attempt to change it will results in a crash.
+    
 ___ 
 ### Can·Fly {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
