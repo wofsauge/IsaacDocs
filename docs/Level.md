@@ -41,8 +41,8 @@ ___
 
 ___ 
 ### Change·Room () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void ChangeRoom ( int RoomIndex ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ChangeRoom ( int RoomIndex, int Dimension ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Disable·Devil·Room () {: aria-label='Functions' }
@@ -151,8 +151,8 @@ ___
 
 ___ 
 ### Get·Room·By·Idx () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .rep .tooltip .badge }
+#### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx, int Dimension ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Room·Count () {: aria-label='Functions' }
