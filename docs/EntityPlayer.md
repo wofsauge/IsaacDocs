@@ -81,8 +81,13 @@ Adds coins to the player. Remove them with negative numbers.
 
 ___ 
 ### Add·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge, boolean AddConsumables ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge, boolean AddConsumables, int ActiveSlot, int VarData ) {: .copyable aria-label='Functions' }
+
+Slot 0 is default (normal active item)
+Slot 1 is used by Schoolbag
+Slot 2 is used for pocket active items
+Please note that slot 2 cannot be used if character did not start with a pocket active
 
 ___ 
 ### Add·Controls·Cooldown () {: aria-label='Functions' }
@@ -237,8 +242,8 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
 
 ___ 
 ### Add·Trinket () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AddTrinket ( [TrinketType](../enums/TrinketType) Type ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddTrinket ( [TrinketType](../enums/TrinketType) Type, boolean AddConsumables ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Appear () {: aria-label='Functions' }
@@ -357,8 +362,8 @@ ___
 returns true if head should react to keys or false otherwise 
 ___ 
 ### Check·Familiar () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](../RNG) rng ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](../RNG) rng, int SourceItem, int SubType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Costumes () {: aria-label='Functions' }
@@ -377,8 +382,8 @@ ___
 Will be called when player exits the room. 
 ___ 
 ### Discharge·Active·Item () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void DischargeActiveItem ( ) {: .copyable aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### void DischargeActiveItem ( int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 Sets the charge of your active item to 0 without triggering the active item effect. 
 ___ 
@@ -452,25 +457,26 @@ ___
 #### boolean FlushQueueItem ( ) {: .copyable aria-label='Functions' }
 called after animation is finished, or on special occasions to prevent bugs 
 ___ 
-### Full·Charge () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean FullCharge ( ) {: .copyable aria-label='Functions' }
+### Full·Charge ( ) {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### boolean FullCharge ( int ActiveSlot, int Force) {: .copyable aria-label='Functions' }
 Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot. 
 ___ 
 ### Get·Active·Charge () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int GetActiveCharge ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int 
+Charge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 Get the current charge of your active item.
 ___ 
-### Get·Active·Item () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( ) {: .copyable aria-label='Functions' data-altreturn='0' }
+### Get·Active·Item ( ) {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( int ActiveSlot ) {: .copyable aria-label='Functions' data-altreturn='0' }
 Returns the currently held item. Returns `0` when no item is held.
 ___ 
 ### Get·Active·Sub·Charge () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int GetActiveSubCharge ( ) {: .copyable aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetActiveSubCharge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 Get the current items subcharge. (Useful for items that charge up over time.)
 ___ 
@@ -490,8 +496,8 @@ ___
 
 ___ 
 ### Get·Battery·Charge () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int GetBatteryCharge ( ) {: .copyable aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetBatteryCharge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 Get the current charge progress of the second charge of your current active item. This bar is only active, when you have the Collectible "The Battery"
 ___ 
@@ -702,8 +708,8 @@ ___
 
 ___ 
 ### Get·Multi·Shot·Params () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### MultiShotParams GetMultiShotParams ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### MultiShotParams GetMultiShotParams ( int WeaponType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Multi·Shot·Position·Velocity () {: aria-label='Functions' }
@@ -889,7 +895,7 @@ ___
 ___ 
 ### Has·Invincibility () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasInvincibility ( ) {: .copyable aria-label='Functions' }
+#### boolean HasInvincibility ( int DamageFlags ) {: .copyable aria-label='Functions' }
 returns true when player is in an invincibility state 
 ___ 
 ### Has·Player·Form () {: aria-label='Functions' }
@@ -968,8 +974,8 @@ ___
 This is for players that require multiple player entities, such as the Forgotten (this has nothing to do with co-players!) 
 ___ 
 ### Needs·Charge () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean NeedsCharge ( ) {: .copyable aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### boolean NeedsCharge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Extra·Animation () {: aria-label='Functions' }
@@ -1082,8 +1088,8 @@ ___
 revive player 
 ___ 
 ### Set·Active·Charge () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void SetActiveCharge ( int Charge ) {: .copyable aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### void SetActiveCharge ( int Charge, int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Card () {: aria-label='Functions' }
@@ -1186,8 +1192,8 @@ ___
 
 ___ 
 ### Use·Active·Item () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume, int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Use·Card () {: aria-label='Functions' }
