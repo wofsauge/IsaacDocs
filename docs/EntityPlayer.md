@@ -894,7 +894,7 @@ ___
 
 ___ 
 ### Has·Invincibility () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### boolean HasInvincibility ( int DamageFlags ) {: .copyable aria-label='Functions' }
 returns true when player is in an invincibility state 
 ___ 
