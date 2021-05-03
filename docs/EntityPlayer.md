@@ -464,8 +464,7 @@ Fully charges the active item. Returns true if the item was fully charged, false
 ___ 
 ### Get·Active·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int 
-Charge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### int Charge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
 
 Get the current charge of your active item.
 ___ 
