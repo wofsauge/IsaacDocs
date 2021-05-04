@@ -421,15 +421,11 @@ ___
 #### void DoZitEffect ( [Vector](../Vector) Direction ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Drop·Poket·Item () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void DropPoketItem ( int PocketNum, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+### Drop·Pocket·Item () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void DropPocketItem ( int PocketNum, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
 
-Drops a held pocketitem (Card, Pill, Rune...) from the given itemslot at the given position. Possible pocketnumbers are [0, 1]
-
-???+ bug "Bugs"
-    This function is spelled wrong.
-    Removing the pocketitem in slot 0, while having a second item in slot 1 will not update the UI correctly. The second item will still be in the second slot, which will in turn prevent the player from using this card right away. The player needs to switch between cards to fix this.
+Drops a held pocketitem (Card, Pill, Rune... but not pocket items/dice bag dice!) from the given itemslot at the given position. Possible pocketnumbers are [0, 1, 2]
 ___ 
 ### Drop·Trinket () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
