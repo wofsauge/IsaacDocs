@@ -153,6 +153,11 @@ ___
 ### Get·Room·By·Idx () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .rep .tooltip .badge }
 #### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx, int Dimension ) {: .copyable aria-label='Functions' }
+Dimensions are a way to store extra floor layouts for the same floor used by Knife Piece puzzles and Death Certificate. Default dimension goes by id 0.
+Dimension 1 is a dimension used by Knife Piece puzzles
+Dimension 2 is a dimension used by Death Certificate item
+Attempt to access further dimensions will result in a crash.
+Negative id dimensions are the same as dimension 0.
 
 ___ 
 ### Get·Room·Count () {: aria-label='Functions' }
