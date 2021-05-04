@@ -200,11 +200,6 @@ ___
 #### int GetGreedWavesNum ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Get·Item·History () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### History GetItemHistory ( ) {: .copyable aria-label='Functions' }
-
-___ 
 ### Get·Item·Overlay () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### ItemOverlay GetItemOverlay ( ) {: .copyable aria-label='Functions' }
