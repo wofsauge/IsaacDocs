@@ -21,8 +21,8 @@ ___
 
 ___ 
 ### Get·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetCollectible ( [ItemPoolType](../enums/ItemPoolType) PoolType, boolean Decrease, int Seed ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [CollectibleType](../enums/CollectibleType) GetCollectible ( [ItemPoolType](../enums/ItemPoolType) PoolType, boolean Decrease, int Seed, int DefaultItem ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Last·Pool () {: aria-label='Functions' }
@@ -46,8 +46,8 @@ ___
 
 ___ 
 ### Get·Trinket () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [TrinketType](../enums/TrinketType) GetTrinket ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [TrinketType](../enums/TrinketType) GetTrinket ( boolean NoAdvance ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Identify·Pill () {: aria-label='Functions' }
@@ -61,12 +61,10 @@ ___
 
 ___ 
 ### Remove·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### boolean RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Collectible ) {: .copyable aria-label='Functions' }
-Removes a collectible from the itempool.
+Removes a collectible from the itempool. Returns true if given item did exist in the pool before.
 
-???+ bug "Bugs"
-    This function will always return true, even when the given id does not exist!
 ___ 
 ### Remove·Trinket () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
