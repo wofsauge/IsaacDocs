@@ -43,7 +43,24 @@ ___
 ### Change·Room () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ChangeRoom ( int RoomIndex, int Dimension ) {: .copyable aria-label='Functions' }
+???- note "Notes"
+    List of technical ids:
+    -1: Deal room
+    -2: Error room
+    -3: used for goto rooms
+    -4: Item dungeon (crawl space)
+    -5: Boss rush
+    -6: Black market
+    -7: Mega Satan
+    -8: Hush entrance
+    -10: Used for alt/backwards path entrances and The Beast room
+    -12: Genesis Room
+    -13: The Stairway room
+    -16: Blue Key rooms
+    -18: Member Card room
 
+    Most of Repentance out-of-bounds rooms are empty by default but get filled later on so teleporting to them might cause a game crash.
+    Other negative ids are free for you to override, limit is -2147483648
 ___ 
 ### Disable·Devil·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
