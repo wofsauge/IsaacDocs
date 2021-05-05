@@ -146,6 +146,7 @@ ___
 ### Target·Room·Index {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int TargetRoomIndex  {: .copyable aria-label='Variables' }
+Note: this value only affects the room transition animation and does not actually change the target room.
 
 ___ 
 ### Target·Room·Type {: aria-label='Variables' }
