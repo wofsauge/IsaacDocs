@@ -128,7 +128,12 @@ ___
 ### State {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int State  {: .copyable aria-label='Variables' }
+Used for various different usecases.
 
+???- example "Example States"
+    ```
+    Rocks with state = 2 are destroyed rocks (The rubble is the rock basically)
+    ```
 ___ 
 ### Var·Data {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
