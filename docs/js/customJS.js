@@ -173,7 +173,11 @@ document$.subscribe(function() {
 
     // Handle Version-selector list
     waitForElementToDisplay(".md-version__list", function() {
-        $(".md-version__list").append('<li class="md-version__item"><a href="/IsaacDocs/oldDocs/index.html" class="md-version__link">Original AB+ Docs</a></li>')
+        var sourceFolder = "IsaacDocs"
+        if (window.location.host.includes("moddingofisaac.com")) {
+            sourceFolder = "docs"
+        }
+        $(".md-version__list").append('<li class="md-version__item"><a href="/' + sourceFolder + '/oldDocs/index.html" class="md-version__link">Original AB+ Docs</a></li>')
     }, 500, 9000);
 
 
