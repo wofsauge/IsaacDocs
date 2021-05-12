@@ -86,8 +86,8 @@ ___
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
 ___ 
 ### Find·In·Radius () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
 Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](../enums/EntityPartition)) (include all = 0xffffffff) 
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded.
@@ -368,11 +368,6 @@ Returns a string that was stored in a "saveX.dat" file using the "SaveModData()"
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
 It is recommended to use the [LoadData](../ModReference/#loaddata) function on a [Mod Reference](../ModReference) instead.
-___ 
-### Query·Radius () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### table  QueryRadius( Vector Position, float Radius, int Partitions = 0xFFFFFFFF ) {: .copyable aria-label='Functions' }
-Same as [FindInRadius()](#findinradius)
 ___ 
 ### Register·Mod () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
