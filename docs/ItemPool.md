@@ -22,7 +22,7 @@ ___
 ___ 
 ### Get·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetCollectible ( [ItemPoolType](../enums/ItemPoolType) PoolType, boolean Decrease, int Seed, int DefaultItem ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](../enums/CollectibleType) GetCollectible ( [ItemPoolType](../enums/ItemPoolType) PoolType, boolean Decrease = false, int Seed = Random(), [CollectibleType](../enums/CollectibleType) DefaultItem = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Last·Pool () {: aria-label='Functions' }
@@ -36,8 +36,8 @@ ___
 
 ___ 
 ### Get·Pill·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [ItemConfig PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [ItemConfig PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor, [EntityPlayer](../EntityPlayer) Player = nil ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pool·For·Room () {: aria-label='Functions' }
@@ -47,7 +47,7 @@ ___
 ___ 
 ### Get·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [TrinketType](../enums/TrinketType) GetTrinket ( boolean NoAdvance ) {: .copyable aria-label='Functions' }
+#### [TrinketType](../enums/TrinketType) GetTrinket ( boolean DontAdvanceRNG = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Identify·Pill () {: aria-label='Functions' }

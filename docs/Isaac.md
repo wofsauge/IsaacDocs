@@ -44,8 +44,8 @@ ___
 Returns the number of enemies in the current room.
 ___ 
 ### Count·Entities () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int CountEntities ( [Entity](../Entity) Spawner, int Type, int Variant, int Subtype ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int CountEntities ( [Entity](../Entity) Spawner, [EntityType](..enums/EntityType) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
 Spawner refers to an entity object (can be `:::lua nil`) 
@@ -81,8 +81,8 @@ ___
 Spawn an explosion on a specified location.
 ___ 
 ### Find·By·Type () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### table FindByType ( int Type, int Variant, int Subtype, boolean Cache, boolean IgnoreFriendly ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### table FindByType ( [EntityType](..enums/EntityType) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
 ___ 
 ### Find·In·Radius () {: aria-label='Functions' }
@@ -260,8 +260,8 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml)
 
 ___ 
 ### Get·Player () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies. If an index is given, that is not used, it will return the last player in the list.
 
@@ -277,8 +277,8 @@ This function is the same as [`Game():GetPlayer()`](../Game/#getplayer).
 
 ___ 
 ### Get·Player·Type·By·Name () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int GetPlayerTypeByName ( string playerName ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
 
 Returns the PlayerType of a character based on its name. (File: players.xml)
 
@@ -368,6 +368,11 @@ Returns a string that was stored in a "saveX.dat" file using the "SaveModData()"
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
 It is recommended to use the [LoadData](../ModReference/#loaddata) function on a [Mod Reference](../ModReference) instead.
+___ 
+### Query·Radius () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### table  QueryRadius( Vector Position, float Radius, int Partitions = 0xFFFFFFFF ) {: .copyable aria-label='Functions' }
+Same as [FindInRadius()](#findinradius)
 ___ 
 ### Register·Mod () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

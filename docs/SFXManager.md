@@ -35,8 +35,8 @@ ___
 
 ___ 
 ### Play () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void Play ( [SoundEffect](../enums/SoundEffect) ID, float Volume, int FrameDelay, boolean Loop, float Pitch ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void Play ( [SoundEffect](../enums/SoundEffect) ID, float Volume = 1, int FrameDelay = 2, boolean Loop = false, float Pitch = 1, float Pan = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Preload () {: aria-label='Functions' }

@@ -1,9 +1,11 @@
 # Class "Room"
 ## Functions
 ### Check·Line () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean CheckLine ( [Vector](../Vector) Pos1, [Vector](../Vector) Pos2, LinecheckMode Mode, int GridPathThreshold, boolean IgnoreWalls, boolean IgnoreCrushable ) {: .copyable aria-label='Functions' }
-returns true if there is a direct line of sight between Pos1 and Pos2 returns false if the line is obstructed 
+[ ](#){: .rep .tooltip .badge }
+#### boolean CheckLine ( [Vector](../Vector) Pos1, [Vector](../Vector) Pos2, LinecheckMode Mode, int GridPathThreshold = 0, boolean IgnoreWalls = false, boolean IgnoreCrushable = false ) {: .copyable aria-label='Functions' }
+Returns 2 values:
+		* boolean: true if there are no obstructions between Pos1 and Pos2, false otherwise
+		* Vector: first hit position from Pos1 to Pos2 (returns Pos2 if the line didn't hit anything)
 
 ???+ note "Notes"
     Linecheck Modes:
@@ -32,8 +34,8 @@ ___
 
 ___ 
 ### Find·Free·Pickup·Spawn·Position () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) FindFreePickupSpawnPosition ( [Vector](../Vector) Pos, float InitialStep, boolean AvoidActiveEntities ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [Vector](../Vector) FindFreePickupSpawnPosition ( [Vector](../Vector) Pos, float InitialStep = 0, boolean AvoidActiveEntities = false, boolean AllowPits = false ) {: .copyable aria-label='Functions' }
 Starting from Pos, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned. 
 ___ 
 ### Find·Free·Tile·Position () {: aria-label='Functions' }

@@ -74,12 +74,13 @@ ___
 For entities with unique death animation, like Flush! vs poop enemies. 
 ___ 
 ### Make·Champion () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void MakeChampion ( int Seed ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void MakeChampion ( int Seed, ChampionColor ChampionColorIdx = -1, boolean Init = false ) {: .copyable aria-label='Functions' }
 Forces a non champion to become a champion, resets hp to max hp. 
 
-???- note "Notes"
-    Hard to use because there are millions of possible seeds to input here.Use Morph() to change the champion Color instead!
+**ChampionColorIdx**: The type of champion to turn this enemy into (-1 results in a random champion type)
+
+**Init**: Set to true when called while initializing the enemy, false otherwise
 ___ 
 ### Make·Splat () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

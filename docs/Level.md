@@ -42,7 +42,7 @@ ___
 ___ 
 ### Change·Room () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ChangeRoom ( int RoomIndex, int Dimension ) {: .copyable aria-label='Functions' }
+#### void ChangeRoom ( int RoomIndex, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 ???- note "Notes"
     List of technical ids:
     -1: Deal room
@@ -61,6 +61,13 @@ ___
 
     Most of Repentance out-of-bounds rooms are empty by default but get filled later on so teleporting to them might cause a game crash.
     Other negative ids are free for you to override, limit is -2147483648
+    
+???- info "Dimension Info"
+    Dimension: ID of the dimension to get the room from
+		* -1: Current dimension
+		* 0: Main dimension
+		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
+		* 2: Death Certificate dimension
 ___ 
 ### Disable·Devil·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -169,12 +176,14 @@ ___
 ___ 
 ### Get·Room·By·Idx () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .rep .tooltip .badge }
-#### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx, int Dimension ) {: .copyable aria-label='Functions' }
-Dimensions are a way to store extra floor layouts for the same floor used by Knife Piece puzzles and Death Certificate. Default dimension goes by id 0.
-Dimension 1 is a dimension used by Knife Piece puzzles
-Dimension 2 is a dimension used by Death Certificate item
-Attempt to access further dimensions will result in a crash.
-Negative id dimensions are the same as dimension 0.
+#### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+
+???- info "Dimension Info"
+    Dimension: ID of the dimension to get the room from
+		* -1: Current dimension
+		* 0: Main dimension
+		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
+		* 2: Death Certificate dimension
 
 ___ 
 ### Get·Room·Count () {: aria-label='Functions' }
@@ -233,9 +242,9 @@ ___
 
 ___ 
 ### Query·Room·Type·Index () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int QueryRoomTypeIndex ( [RoomType](../enums/RoomType) RoomType, boolean Visited, [RNG](../RNG) rng ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### int QueryRoomTypeIndex ( [RoomType](../enums/RoomType) RoomType, boolean Visited, [RNG](../RNG) rng, boolean IgnoreGroup = false ) {: .copyable aria-label='Functions' }
+IgnoreGroup: If set to true, includes rooms that do not have the same group ID as the current room (currently unused)
 ___ 
 ### Remove·Compass·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }

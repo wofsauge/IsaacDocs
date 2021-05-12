@@ -1,8 +1,8 @@
 # Class "Color"
 ## Constructors
 ### Color () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
+[ ](#){: .rep .tooltip .badge }
+#### [Color](../Color) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Color" class.
 
@@ -10,9 +10,7 @@ When using the [Font](../Font) class, use [KColor()](../KColor) instead.
 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
 
-R, G, B and A accept numbers between 0 and 1.
-
-RO, GO and BO accept numbers between -255 and 255.
+R, G, B, A, RO, GO and BO accept numbers between 0 and 1.
 ___ 
 ## Operators
 ### __mul () {: aria-label='Operators' }

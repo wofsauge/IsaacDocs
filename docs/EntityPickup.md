@@ -23,9 +23,11 @@ ___
 
 ___ 
 ### Morph () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void Morph ( [EntityType](../enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void Morph ( [EntityType](../enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice = false, boolean KeepSeed = false, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
+**KeepSeed**: If set to true, keeps the initial RNG seed of the pickup instead of rerolling it
 
+**IgnoreModifiers**: If set to true, ignores item effects that might turn this pickup into something other than the specificed variant and subtype
 ___ 
 ### Play·Drop·Sound () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -38,9 +40,9 @@ ___
 
 ___ 
 ### Try·Open·Chest () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean TryOpenChest ( ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### boolean TryOpenChest ( [EntityPlayer](../EntityPlayer) Player = nil ) {: .copyable aria-label='Functions' }
+**Player**: The player that opened this chest
 ___ 
 ## Variables
 ### Auto·Update·Price {: aria-label='Variables' }

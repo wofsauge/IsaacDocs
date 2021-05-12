@@ -82,7 +82,7 @@ Adds coins to the player. Remove them with negative numbers.
 ___ 
 ### Add·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge, boolean AddConsumables, int ActiveSlot, int VarData ) {: .copyable aria-label='Functions' }
+#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge = 0, boolean AddConsumables = true, ActiveSlot Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
 
 Slot 0 is default (normal active item)  
 Slot 1 is used by Schoolbag  
@@ -267,7 +267,7 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
 ___ 
 ### Add·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddTrinket ( [TrinketType](../enums/TrinketType) Type, boolean AddConsumables ) {: .copyable aria-label='Functions' }
+#### void AddTrinket ( [TrinketType](../enums/TrinketType) Type, boolean AddConsumables = true ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Appear () {: aria-label='Functions' }
@@ -276,13 +276,13 @@ ___
 Play the animation that is normally played at the beginning of a stage. 
 ___ 
 ### Animate·Card () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AnimateCard ( [Card](../enums/Card) ID, string AnimName ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AnimateCard ( [Card](../enums/Card) ID, string AnimName = "Pickup" ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AnimateCollectible ( [CollectibleType](../enums/CollectibleType) Collectible, string AnimName, string SpriteAnimName ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AnimateCollectible ( [CollectibleType](../enums/CollectibleType) Collectible, string AnimName = "Pickup", string SpriteAnimName = "PlayerPickupSparkle" ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Happy () {: aria-label='Functions' }
@@ -296,8 +296,8 @@ ___
 end of a stage 
 ___ 
 ### Animate·Pill () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AnimatePill ( [PillColor](../enums/PillColor) Pill, string AnimName ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AnimatePill ( [PillColor](../enums/PillColor) Pill, string AnimName = "Pickup" ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Pitfall·In () {: aria-label='Functions' }
@@ -326,8 +326,8 @@ ___
 end of a stage 
 ___ 
 ### Animate·Trinket () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AnimateTrinket ( [TrinketType](../enums/TrinketType) Trinket, string AnimName, string SpriteAnimName ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AnimateTrinket ( [TrinketType](../enums/TrinketType) Trinket, string AnimName = "Pickup", string SpriteAnimName = "PlayerPickupSparkle" ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Are·Controls·Enabled () {: aria-label='Functions' }
@@ -341,8 +341,8 @@ ___
 Returns the non-zero joystick direction from the most recent movement input, but goes to zero after the player comes to a stop. 
 ___ 
 ### Can·Add·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean CanAddCollectible ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean CanAddCollectible ( [CollectibleType](../enums/CollectibleType/) Type = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Can·Pick·Black·Hearts () {: aria-label='Functions' }
@@ -387,8 +387,10 @@ returns true if head should react to keys or false otherwise
 ___ 
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](../RNG) rng, int SourceItem, int SubType ) {: .copyable aria-label='Functions' }
+#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](../RNG) rng, ItemConfig::Item SourceItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
+**SourceItem**: The item this type of familiar was created by
 
+**FamiliarSubType**: The subtype of the familiar to check (-1 matches any subtype)
 ___ 
 ### Clear·Costumes () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -407,7 +409,7 @@ Will be called when player exits the room.
 ___ 
 ### Discharge·Active·Item () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### void DischargeActiveItem ( int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void DischargeActiveItem ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Sets the charge of your active item to 0 without triggering the active item effect. 
 ___ 
@@ -438,13 +440,13 @@ ___
 Triggers a cache reevaluation. Will trigger the MC_EVALUATE_CACHE callback.
 ___ 
 ### Fire·Bomb () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityBomb](../EntityBomb) FireBomb ( [Vector](../Vector) Position, [Vector](../Vector) Velocity ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityBomb](../EntityBomb) FireBomb ( [Vector](../Vector) Position, [Vector](../Vector) Velocity, Entity Source = nil ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Fire·Brimstone () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityLaser](../EntityLaser) FireBrimstone ( [Vector](../Vector) Direction ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityLaser](../EntityLaser) FireBrimstone ( [Vector](../Vector) Direction, Entity Source = nil, float DamageMultiplier = 1 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Fire·Delayed·Brimstone () {: aria-label='Functions' }
@@ -453,23 +455,23 @@ ___
 
 ___ 
 ### Fire·Knife () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityKnife](../EntityKnife) FireKnife ( [Entity](../Entity) Parent, float RotationOffset, boolean CantOverwrite, int SubType ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityKnife](../EntityKnife) FireKnife ( [Entity](../Entity) Parent, float RotationOffset = 0, boolean CantOverwrite = false, int SubType = 0, int Variant = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Fire·Tear () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityTear](../EntityTear) FireTear ( [Vector](../Vector) Position, [Vector](../Vector) Velocity, boolean CanBeEye, boolean NoTractorBeam, boolean CanTriggerStreakEnd ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityTear](../EntityTear) FireTear ( [Vector](../Vector) Position, [Vector](../Vector) Velocity, boolean CanBeEye = true, boolean NoTractorBeam = false, boolean CanTriggerStreakEnd = true, Entity Source = nil, float DamageMultiplier = 1 ) {: .copyable aria-label='Functions' }
 This replaces the protected fire_tear() to allow other entities (Such as bombs) to easily shoot tears in the same manner and with all the effects the player does. (Ex. Sad Bombs) 
 ___ 
 ### Fire·Tech·Laser () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityLaser](../EntityLaser) FireTechLaser ( [Vector](../Vector) Position, [LaserOffset](../enums/LaserOffset) OffsetID, [Vector](../Vector) Direction, boolean LeftEye, boolean OneHit ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityLaser](../EntityLaser) FireTechLaser ( [Vector](../Vector) Position, [LaserOffset](../enums/LaserOffset) OffsetID, [Vector](../Vector) Direction, boolean LeftEye, boolean OneHit = false, Entity Source = nil, float DamageMultiplier = 1 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Fire·Tech·XLaser () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [EntityLaser](../EntityLaser) FireTechXLaser ( [Vector](../Vector) Position, [Vector](../Vector) Direction, float Radius ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityLaser](../EntityLaser) FireTechXLaser ( [Vector](../Vector) Position, [Vector](../Vector) Direction, float Radius, Entity Source = nil, float DamageMultiplier = 1 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Flush·Queue·Item () {: aria-label='Functions' }
@@ -479,23 +481,25 @@ called after animation is finished, or on special occasions to prevent bugs
 ___ 
 ### Full·Charge ( ) {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### boolean FullCharge ( int ActiveSlot, int Force) {: .copyable aria-label='Functions' }
+#### boolean FullCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY, int Force = false ) {: .copyable aria-label='Functions' }
 Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot. 
+
+**Force**: If set, items will always be charged even if they normally cannot be recharged by batteries
 ___ 
 ### Get·Active·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int Charge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### int Charge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current charge of your active item.
 ___ 
 ### Get·Active·Item ( ) {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( int ActiveSlot ) {: .copyable aria-label='Functions' data-altreturn='0' }
+#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' data-altreturn='0' }
 Returns the currently held item. Returns `0` when no item is held.
 ___ 
 ### Get·Active·Sub·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### int GetActiveSubCharge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### int GetActiveSubCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current items subcharge. (Useful for items that charge up over time.)
 ___ 
@@ -516,7 +520,7 @@ ___
 ___ 
 ### Get·Battery·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### int GetBatteryCharge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### int GetBatteryCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current charge progress of the second charge of your current active item. This bar is only active, when you have the Collectible "The Battery"
 ___ 
@@ -566,9 +570,9 @@ ___
 
 ___ 
 ### Get·Collectible·Num () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int GetCollectibleNum ( [CollectibleType](../enums/CollectibleType) Type ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### int GetCollectibleNum ( [CollectibleType](../enums/CollectibleType) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
+**IgnoreModifiers**: If set to true, only counts collectibles the player actually owns and ignores effects granted by items like Zodiac, 3 Dollar Bill and Lemegeton
 ___ 
 ### Get·Collectible·RNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -691,14 +695,11 @@ ___
 
 Returns the amount of Heart Containers the player has. 1 unit is half a heart container.
 ___ 
-### Get·Max·Poket·Items () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int GetMaxPoketItems ( ) {: .copyable aria-label='Functions' }
+### Get·Max·Pocket·Items () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetMaxPocketItems ( ) {: .copyable aria-label='Functions' }
 
 Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)
-
-???+ bug "Bugs"
-    This function is spelled wrong.
 ___ 
 ### Get·Max·Trinkets () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -728,7 +729,7 @@ ___
 ___ 
 ### Get·Multi·Shot·Params () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### MultiShotParams GetMultiShotParams ( int WeaponType ) {: .copyable aria-label='Functions' }
+#### MultiShotParams GetMultiShotParams ( [WeaponType](../enums/WeaponType/) WeaponType = WeaponType.WEAPON_TEARS ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Multi·Shot·Position·Velocity () {: aria-label='Functions' }
@@ -832,8 +833,8 @@ ___
 
 ___ 
 ### Get·Tear·Hit·Params () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [TearParams](../TearParams) GetTearHitParams ( [WeaponType](../enums/WeaponType) WeaponType, float DamageScale, int TearDisplacement ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [TearParams](../TearParams) GetTearHitParams ( [WeaponType](../enums/WeaponType) WeaponType, float DamageScale = 1, int TearDisplacement = 1, Entity Source = nil ) {: .copyable aria-label='Functions' }
  Used for tear parameters that are calculated on hit (ex: Tough love, Common cold), DamageScale is used for scale calculation based on damage 
 ___ 
 ### Get·Tear·Movement·Inheritance () {: aria-label='Functions' }
@@ -888,9 +889,9 @@ ___
 
 ___ 
 ### Has·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean HasCollectible ( [CollectibleType](../enums/CollectibleType) Type ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasCollectible ( [CollectibleType](../enums/CollectibleType) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
+**IgnoreModifiers**: If set to true, only counts collectibles the player actually owns and ignores effects granted by items like Zodiac, 3 Dollar Bill and Lemegeton
 ___ 
 ### Has·Full·Hearts () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -914,7 +915,7 @@ ___
 ___ 
 ### Has·Invincibility () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean HasInvincibility ( int DamageFlags ) {: .copyable aria-label='Functions' }
+#### boolean HasInvincibility ( [DamageFlag](../enums/DamageFlags) Flags = 0 ) {: .copyable aria-label='Functions' }
 returns true when player is in an invincibility state 
 ___ 
 ### Has·Player·Form () {: aria-label='Functions' }
@@ -928,9 +929,9 @@ ___
 Kept for avoiding modding issues. 
 ___ 
 ### Has·Trinket () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### boolean HasTrinket ( [TrinketType](../enums/TrinketType) Type ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasTrinket ( [TrinketType](../enums/TrinketType) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
+**IgnoreModifiers**: If set to true, only counts trinkets the player actually holds and ignores effects granted by other items
 ___ 
 ### Has·Weapon·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -994,7 +995,7 @@ This is for players that require multiple player entities, such as the Forgotten
 ___ 
 ### Needs·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### boolean NeedsCharge ( int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### boolean NeedsCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Extra·Animation () {: aria-label='Functions' }
@@ -1008,8 +1009,8 @@ ___
 
 ___ 
 ### Queue·Item () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void QueueItem ( [ItemConfig::Item](../ItemConfig_Item) Item, int Charge, boolean Touched ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void QueueItem ( [ItemConfig::Item](../ItemConfig_Item) Item, int Charge = 0, boolean Touched = false, bool Golden = false, int VarData = 0 ) {: .copyable aria-label='Functions' }
 Add Collectible/Trinket after animation is finished. 
 ___ 
 ### Remove·Black·Heart () {: aria-label='Functions' }
@@ -1028,9 +1029,13 @@ ___
 
 ___ 
 ### Remove·Collectible () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Type ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Type, boolean IgnoreModifiers = false, ActiveSlot Slot = ActiveSlot.SLOT_PRIMARY, boolean RemoveFromPlayerForm = true ) {: .copyable aria-label='Functions' }
+**IgnoreModifiers**: Ignores collectible effects granted by other items (i.e. Void)
 
+**Slot**: Sets the active slot this collectible should be removed from
+    
+**RemoveFromPlayerForm**: If successfully removed and part of a transformation, decrease that transformation's counter by 1
 ___ 
 ### Remove·Costume () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -1108,7 +1113,7 @@ revive player
 ___ 
 ### Set·Active·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### void SetActiveCharge ( int Charge, int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void SetActiveCharge ( int Charge, int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Card () {: aria-label='Functions' }
@@ -1212,17 +1217,19 @@ ___
 ___ 
 ### Use·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim, boolean KeepActiveItem, boolean AllowNonMainPlayer, boolean ToAddCostume, int ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, UseFlag UseFlags = 0, ActiveSlot Slot = -1 ) {: .copyable aria-label='Functions' }
 
+#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim = false, boolean KeepActiveItem = false, boolean AllowNonMainPlayer = true, boolean ToAddCostume = false, ActiveSlot Slot = -1 ) {: .copyable .secondH4 aria-label='Functions' }
+**Slot**: The active slot this item was used from (set to -1 if this item wasn't triggered by any active slot)
 ___ 
 ### Use·Card () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void UseCard ( [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void UseCard ( [Card](../enums/Card) ID, UseFlag UseFlags = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Use·Pill () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void UsePill ( [PillEffect](../enums/PillEffect) ID, [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void UsePill ( [PillEffect](../enums/PillEffect) ID, [PillColor](../enums/PillColor) PillColor, UseFlag UseFlags = 0  ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Will·Player·Revive () {: aria-label='Functions' }

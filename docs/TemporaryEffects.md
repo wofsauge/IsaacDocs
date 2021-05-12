@@ -1,8 +1,8 @@
 # Class "TemporaryEffects"
 ## Functions
 ### Add·Collectible·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AddCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType, boolean AddCostume ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 Adds the effect of a collectible to the player, without actually giving him the assosiated item.
 
 ???+ bug
@@ -17,13 +17,13 @@ Adds the effect of a collectible to the player, without actually giving him the 
     ```
 ___ 
 ### Add·Null·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AddNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId, boolean AddCostume ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Trinket·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void AddTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType, boolean AddCostume ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Effects () {: aria-label='Functions' }
@@ -82,17 +82,17 @@ ___
 
 ___ 
 ### Remove·Collectible·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void RemoveCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### void RemoveCollectibleEffect ( [CollectibleType](../enums/CollectibleType) CollectibleType, int Count = 1 ) {: .copyable aria-label='Functions' }
+Count = -1 removes all instances of the effect
 ___ 
 ### Remove·Null·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void RemoveNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### void RemoveNullEffect ( [ItemConfig::NullItemID](../ItemConfig_Item) NullId, int Count = 1 ) {: .copyable aria-label='Functions' }
+Count = -1 removes all instances of the effect
 ___ 
 ### Remove·Trinket·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void RemoveTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### void RemoveTrinketEffect ( [TrinketType](../enums/TrinketType) TrinketType, int Count = 1 ) {: .copyable aria-label='Functions' }
+Count = -1 removes all instances of the effect
 ___ 

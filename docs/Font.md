@@ -18,8 +18,8 @@ Constructor for the "Font" class.
 ___ 
 ## Functions
 ### Draw·String () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void DrawString ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void DrawString ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a string of text to the screen
 Converts UTF8 to UTF16, then draws the string. 
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size 
@@ -35,8 +35,8 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
 
 ___ 
 ### Draw·String·Scaled () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void DrawStringScaled ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void DrawStringScaled ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a scaled string of text on the screen.
 Converts UTF8 to UTF16, then draws the string. 
 
@@ -51,8 +51,8 @@ Converts UTF8 to UTF16, then draws the string.
 
 ___ 
 ### Draw·String·Scaled·UTF8 () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](../KColor) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a scaled string of Unicode text on the screen.
 
 ???- example "Example Code"
@@ -66,8 +66,8 @@ Draws a scaled string of Unicode text on the screen.
 
 ___ 
 ### Draw·String·UTF8 () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void DrawStringUTF8 ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, u_int BoxWidth, boolean Center ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void DrawStringUTF8 ( string String, float PositionX, float PositionY, [KColor](../KColor) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a string of Unicode text to the screen
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size 
 

@@ -49,18 +49,18 @@ ___
 
 ___ 
 ### Bomb·Damage () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void BombDamage ( [Vector](../Vector) Position, float Damage, float Radius, boolean LineCheck, [Entity](../Entity) Source, int TearFlags, int DamageFlags, boolean DamageSource ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void BombDamage ( [Vector](../Vector) Position, float Damage, float Radius, boolean LineCheck = true, [Entity](../Entity) Source = nil, int TearFlags = [TearFlags](../enums/TearFlags/).TEAR_NORMAL, int DamageFlags = [DamageFlags](../enums/DamageFlags/).DAMAGE_EXPLOSION, boolean DamageSource = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Bomb·Explosion·Effects () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void BombExplosionEffects ( [Vector](../Vector) Position, float Damage, int TearFlags, [Color](../Color) Color, [Entity](../Entity) Source, float RadiusMult, boolean LineCheck, boolean DamageSource ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void BombExplosionEffects ( [Vector](../Vector) Position, float Damage, int TearFlags = [TearFlags](../enums/TearFlags/).TEAR_NORMAL, [Color](../Color/) Color = Color.Default, [Entity](../Entity) Source = nil, float RadiusMult = 1, boolean LineCheck = true, boolean DamageSource = false, int DamageFlags = [DamageFlags](../enums/DamageFlags/).DAMAGE_EXPLOSION ) {: .copyable aria-label='Functions' }
 The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects. 
 ___ 
 ### Bomb·Tearflag·Effects () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void BombTearflagEffects ( [Vector](../Vector) Position, float Radius, int TearFlags, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void BombTearflagEffects ( [Vector](../Vector) Position, float Radius, int [TearFlags](../enums/TearFlags/), [Entity](../Entity) Source = nil, float RadiusMult = 1) {: .copyable aria-label='Functions' }
 Does bomb-exclusive special effects. 
 ___ 
 ### Butter·Bean·Fart () {: aria-label='Functions' }
@@ -69,9 +69,15 @@ ___
 
 ___ 
 ### Change·Room () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void ChangeRoom ( int RoomIndex ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ChangeRoom ( int RoomIndex, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
+???- info "Dimension Info"
+    Dimension: ID of the dimension to get the room from
+		* -1: Current dimension
+		* 0: Main dimension
+		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
+		* 2: Death Certificate dimension
 ___ 
 ### Charm·Fart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -131,8 +137,8 @@ ___
 
 ___ 
 ### Fart () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void Fart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, float FartScale, int FartSubType ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void Fart ( [Vector](../Vector) Position, float Radius = 85, Entity Source = nil, float FartScale = 1, int FartSubType = 0, [Color](../Color) FartColor = Color.Default ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Finish·Challenge () {: aria-label='Functions' }
@@ -387,8 +393,8 @@ ___
 
 ___ 
 ### Show·Hallucination () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void ShowHallucination ( int FrameCount, int HallucinationBackdrop ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ShowHallucination ( int FrameCount, BackdropType Backdrop = BackdropType.NUM_BACKDROPS ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
 
 ???- example "Example Code"
@@ -450,14 +456,20 @@ ___
 
 ___ 
 ### Spawn·Particles () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void SpawnParticles ( [Vector](../Vector) Pos, EntityEffect::Variant ParticleType, int NumParticles, float Speed, [Color](../Color) Color, float Height ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void SpawnParticles ( [Vector](../Vector) Pos, EffectVariant ParticleType, int NumParticles, float Speed, [Color](../Color) Color = Color.Default, float Height = 100000, int SubType = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Start·Room·Transition () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void StartRoomTransition ( int RoomIndex, [Direction](../enums/Direction) Direction, RoomTransition::Animation Animation ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void StartRoomTransition ( int RoomIndex, [Direction](../enums/Direction) Direction, RoomTransitionAnim Animation = RoomTransitionAnim.WALK, [EntityPlayer](../EntityPlayer) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
+???- info "Dimension Info"
+    Dimension: ID of the dimension to get the room from
+		* -1: Current dimension
+		* 0: Main dimension
+		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
+		* 2: Death Certificate dimension
 
 ???- note "Notes"
     Available Animation types (Discovered by "ilise rose" (@yatboim)):
@@ -497,8 +509,8 @@ ___
 
 ___ 
 ### Update·Strange·Attractor () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### void UpdateStrangeAttractor ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void UpdateStrangeAttractor ( [Vector](../Vector) Position, float Force = 10, float Radius = 250 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
