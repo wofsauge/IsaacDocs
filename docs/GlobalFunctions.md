@@ -1,7 +1,7 @@
 # Class "Global Functions"
 ## Constructors
 ### Color () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Color](../Color) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[Color](../Color)" class.
@@ -15,17 +15,17 @@ R, G, B and A accept numbers between 0 and 1.
 RO, GO and BO accept numbers between -255 and 255.
 ___ 
 ### Entity·Ptr () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [EntityPtr](../EntityPtr) EntityPtr ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Entity·Ref () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [EntityRef](../EntityRef) EntityRef ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Font () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Font](../Font) Font ( ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[Font](../Font)" class.
@@ -41,7 +41,7 @@ Constructor for the "[Font](../Font)" class.
 
 ___ 
 ### Game () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Game](../Game) Game ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [Game](../Game) object.
@@ -55,14 +55,14 @@ Returns a [Game](../Game) object.
     ```
 ___ 
 ### KColor () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [KColor](../KColor) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[KColor](../KColor)" class.
 Notes: "[KColor](../KColor)" is only used in the [Font](../Font) class. For most other situations you will need to use the [Color()](../Color) constructor.
 ___ 
 ### Music·Manager () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [MusicManager](../MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [MusicManager](../MusicManager) object.
@@ -75,12 +75,12 @@ Returns a [MusicManager](../MusicManager) object.
     ```
 ___ 
 ### Projectile·Params () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [ProjectileParams](../ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Register·Mod () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Mod Reference](../ModReference) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
 
 Method to define a mod in the game. This needs to be defined to handle callbacks and save data in your mod.
@@ -95,17 +95,17 @@ Returns a table which acts as the [Mod Reference](../ModReference).
 
 ___ 
 ### RNG () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [RNG](../RNG) RNG ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Sprite () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Sprite](../Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### SFXManager () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [SFXManager](../SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [SFXManager](../SFXManager) object.
@@ -118,13 +118,13 @@ Returns a [SFXManager](../SFXManager) object.
     ```
 ___ 
 ### Vector () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Vector](../Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
 ### Get·Ptr·Hash () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
 
@@ -150,12 +150,12 @@ If you spawn a certain entity, save it in a variable and then compare it to the 
 
 ___ 
 ### Random () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int Random ( ) {: .copyable aria-label='Functions' }
 Returns a random integer. (0 to 2^32) 
 ___ 
 ### Random·Vector () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 

@@ -1,25 +1,25 @@
 # Enum "PickupVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|0 |PICKUP_NULL {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|10 |PICKUP_HEART {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|20 |PICKUP_COIN {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|30 |PICKUP_KEY {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|40 |PICKUP_BOMB {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|50 |PICKUP_CHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|51 |PICKUP_BOMBCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|52 |PICKUP_SPIKEDCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|53 |PICKUP_ETERNALCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|54 |PICKUP_MIMICCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|60 |PICKUP_LOCKEDCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|69 |PICKUP_GRAB_BAG {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|70 |PICKUP_PILL {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|90 |PICKUP_LIL_BATTERY {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|100 |PICKUP_COLLECTIBLE {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|150 |PICKUP_SHOPITEM {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|300 |PICKUP_TAROTCARD {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|340 |PICKUP_BIGCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|350 |PICKUP_TRINKET {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|360 |PICKUP_REDCHEST {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|370 |PICKUP_TROPHY {: .copyable } |  | 
-|[ ](#){: .abp .tooltip .badge }|380 |PICKUP_BED {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|0 |PICKUP_NULL {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|10 |PICKUP_HEART {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|20 |PICKUP_COIN {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|30 |PICKUP_KEY {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|40 |PICKUP_BOMB {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|50 |PICKUP_CHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|51 |PICKUP_BOMBCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|52 |PICKUP_SPIKEDCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|53 |PICKUP_ETERNALCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|54 |PICKUP_MIMICCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|60 |PICKUP_LOCKEDCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|69 |PICKUP_GRAB_BAG {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|70 |PICKUP_PILL {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|90 |PICKUP_LIL_BATTERY {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|100 |PICKUP_COLLECTIBLE {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|150 |PICKUP_SHOPITEM {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|300 |PICKUP_TAROTCARD {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|340 |PICKUP_BIGCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|350 |PICKUP_TRINKET {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|360 |PICKUP_REDCHEST {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|370 |PICKUP_TROPHY {: .copyable } |  | 
+|[ ](#){: .abrep .tooltip .badge }|380 |PICKUP_BED {: .copyable } |  | 

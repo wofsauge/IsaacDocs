@@ -3,7 +3,7 @@
 [GridEntity](GridEntity.md)
 ## Variables
 ### Timeout {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }
 
 ___ 

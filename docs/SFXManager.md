@@ -1,7 +1,7 @@
 # Class "SFXManager"
 ## Constructors
 ### SFXManager () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [SFXManager](../SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [SFXManager](../SFXManager) object.
@@ -15,22 +15,22 @@ Returns a [SFXManager](../SFXManager) object.
 ___ 
 ## Functions
 ### Adjust·Pitch () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void AdjustPitch ( [SoundEffect](../enums/SoundEffect) ID, float Pitch ) {: .copyable aria-label='Functions' }
 mostly useful for repeating sounds 
 ___ 
 ### Adjust·Volume () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void AdjustVolume ( [SoundEffect](../enums/SoundEffect) ID, float Volume ) {: .copyable aria-label='Functions' }
 mostly useful for repeating sounds 
 ___ 
 ### Get·Ambient·Sound·Volume () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float GetAmbientSoundVolume ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Playing () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean IsPlaying ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -40,22 +40,22 @@ ___
 
 ___ 
 ### Preload () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void Preload ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Ambient·Sound () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void SetAmbientSound ( [SoundEffect](../enums/SoundEffect) ID, float Volume, float Pitch ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Stop () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void Stop ( [SoundEffect](../enums/SoundEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Stop·Looping·Sounds () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void StopLoopingSounds ( ) {: .copyable aria-label='Functions' }
 
 ___ 

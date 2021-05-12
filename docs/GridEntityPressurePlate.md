@@ -3,7 +3,7 @@
 [GridEntity](GridEntity.md)
 ## Functions
 ### Reward () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void Reward ( ) {: .copyable aria-label='Functions' }
 Triggers the spawning of the reward as if the plate would be pressed, without actually pressing it.
 
@@ -17,13 +17,13 @@ Triggers the spawning of the reward as if the plate would be pressed, without ac
 ___ 
 ## Variables
 ### Greed·Mode·RNG {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [RNG](../RNG) GreedModeRNG {: .copyable aria-label='Variables' }
 RNG object that determines the RNG of anything GreedMode related.
 
 ___ 
 ### Next·Greed·Animation {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### string NextGreedAnimation  {: .copyable aria-label='Variables' }
 Defines the animation that the greed-mode pressureplate should play. This effect is only visual!
 
@@ -31,7 +31,7 @@ Every Animation defined in the "grid_pressureplate.anm2" file can be used as an 
 
 ___ 
 ### Timer·Plate {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Sprite](../Sprite) TimerPlate  {: .copyable aria-label='Variables' data-altreturn='nil' }
 Reference to the Sprite of the Timerplate beneath the pressureplate in Greed mode.
 

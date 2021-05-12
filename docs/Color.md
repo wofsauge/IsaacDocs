@@ -14,25 +14,25 @@ R, G, B, A, RO, GO and BO accept numbers between 0 and 1.
 ___ 
 ## Operators
 ### __mul () {: aria-label='Operators' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Color](../Color) __mul ( [Color](../Color) right ) {: .copyable aria-label='Operators' }
 
 Defines the multiplication of two [Color](../Color) objects using the `*` operator.
 ___ 
 ## Functions
 ### Lerp () {: aria-label='Functions' }
-[ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
+[ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static [Color](../Color) Lerp ( [Color](../Color) m1, [Color](../Color) m2, float t ) {: .copyable aria-label='Functions' }
 
 Linear Interpolation between two colors. `:::lua t` is the "progress" of the interpolation. Setting `:::lua t = 0.5` means that the color in the middle of m1 and m2 will be returned.
 ___ 
 ### Reset () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Colorize () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void SetColorize ( float Red, float Green, float Blue, float Amount ) {: .copyable aria-label='Functions' }
 
 The colorize function can be used to change the color of sprites. Its the best for that purpose, since it doesnt affect existing coloranimations like the flashing of creep.
@@ -67,50 +67,50 @@ The values can be between 0 and 1 for normal coloration. if you use higher numbe
 
 ___ 
 ### Set·Offset () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void SetOffset ( float RedOffset, float GreenOffset, float BlueOffset ) {: .copyable aria-label='Functions' }
 
 Offset is a color that gets added to the sprite after the Tint was applied.
 ___ 
 ### Set·Tint () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void SetTint ( float RedTint, float GreenTint, float BlueTint, float AlphaTint ) {: .copyable aria-label='Functions' }
 
 Tint acts like a color multiplicator.
 ___ 
 ## Variables
 ### A {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float A  {: .copyable aria-label='Variables' }
 
 ___ 
 ### B {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float B  {: .copyable aria-label='Variables' }
 
 ___ 
 ### BO {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float BO  {: .copyable aria-label='Variables' }
 
 ___ 
 ### G {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float G  {: .copyable aria-label='Variables' }
 
 ___ 
 ### GO {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float GO  {: .copyable aria-label='Variables' }
 
 ___ 
 ### R {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float R  {: .copyable aria-label='Variables' }
 
 ___ 
 ### RO {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### float RO  {: .copyable aria-label='Variables' }
 
 ___ 

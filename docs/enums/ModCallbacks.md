@@ -26,7 +26,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|0 |MC_NPC_UPDATE {: .copyable } | ([EntityNPC](../../EntityNPC))|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|0 |MC_NPC_UPDATE {: .copyable } | ([EntityNPC](../../EntityNPC))|[EntityType](../EntityType) |
 
 ### MC_POST_UPDATE {: .copyable } 
 Called after every game update. 
@@ -38,7 +38,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|1 |MC_POST_UPDATE {: .copyable } | - | - |
+|[ ](#){: .abrep .tooltip .badge }|1 |MC_POST_UPDATE {: .copyable } | - | - |
 
 ### MC_POST_RENDER {: .copyable } 
 Called after every game render (60 times per second). 
@@ -50,7 +50,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|2 |MC_POST_RENDER {: .copyable } | - | - |
+|[ ](#){: .abrep .tooltip .badge }|2 |MC_POST_RENDER {: .copyable } | - | - |
 
 ### MC_USE_ITEM {: .copyable } 
 Called when a custom active item is used, after discharging it. 
@@ -61,7 +61,7 @@ Return true to show the "use item" animation, otherwise false.Returning any valu
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG))|[CollectibleType](../CollectibleType) |
+|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG))|[CollectibleType](../CollectibleType) |
 
 ### MC_POST_PEFFECT_UPDATE {: .copyable } 
 Called for each player, each frame, after the player evaluates the effects of items that must be constantly evaluated.
@@ -70,7 +70,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|4 |MC_POST_PEFFECT_UPDATE {: .copyable } | ([EntityPlayer](../../EntityPlayer))|[PlayerType](../PlayerType) |
+|[ ](#){: .abrep .tooltip .badge }|4 |MC_POST_PEFFECT_UPDATE {: .copyable } | ([EntityPlayer](../../EntityPlayer))|[PlayerType](../PlayerType) |
 
 ### MC_USE_CARD {: .copyable } 
 Called when a card/rune is used.
@@ -79,7 +79,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|5 |MC_USE_CARD {: .copyable } | ([Card](../Card))|[Card](../Card) |
+|[ ](#){: .abrep .tooltip .badge }|5 |MC_USE_CARD {: .copyable } | ([Card](../Card))|[Card](../Card) |
 
 ### MC_FAMILIAR_UPDATE {: .copyable } 
 Called every frame for each familiar. 
@@ -88,7 +88,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|6 |MC_FAMILIAR_UPDATE {: .copyable } | ([EntityFamiliar](../../EntityFamiliar))|[FamiliarVariant](../FamiliarVariant) |
+|[ ](#){: .abrep .tooltip .badge }|6 |MC_FAMILIAR_UPDATE {: .copyable } | ([EntityFamiliar](../../EntityFamiliar))|[FamiliarVariant](../FamiliarVariant) |
 
 ### MC_FAMILIAR_INIT {: .copyable } 
 Called just after a familiar is initialized. 
@@ -100,7 +100,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|7 |MC_FAMILIAR_INIT {: .copyable } | ([EntityFamiliar](../../EntityFamiliar))|[FamiliarVariant](../FamiliarVariant) |
+|[ ](#){: .abrep .tooltip .badge }|7 |MC_FAMILIAR_INIT {: .copyable } | ([EntityFamiliar](../../EntityFamiliar))|[FamiliarVariant](../FamiliarVariant) |
 
 ### MC_EVALUATE_CACHE {: .copyable } 
 Called one or more times when a player's stats must be re-evaluated, such as after picking up an item, using certain pills or manually calling EvaluateItems() on an [EntityPlayer](../../EntityPlayer). 
@@ -112,7 +112,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|8 |MC_EVALUATE_CACHE {: .copyable } | ([EntityPlayer](../../EntityPlayer),<br>[CacheFlag](../CacheFlag))|[CacheFlag](../CacheFlag) |
+|[ ](#){: .abrep .tooltip .badge }|8 |MC_EVALUATE_CACHE {: .copyable } | ([EntityPlayer](../../EntityPlayer),<br>[CacheFlag](../CacheFlag))|[CacheFlag](../CacheFlag) |
 
 ### MC_POST_PLAYER_INIT {: .copyable } 
 Called after a Player Entity is initialized. 
@@ -126,7 +126,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|9 |MC_POST_PLAYER_INIT {: .copyable } | ([EntityPlayer](../../EntityPlayer))|PlayerVariant* |
+|[ ](#){: .abrep .tooltip .badge }|9 |MC_POST_PLAYER_INIT {: .copyable } | ([EntityPlayer](../../EntityPlayer))|PlayerVariant* |
 
 ### MC_USE_PILL {: .copyable } 
 Called when a pill is used.
@@ -135,7 +135,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|10 |MC_USE_PILL {: .copyable } | ([PillEffect](../PillEffect))|[PillEffect](../PillEffect) |
+|[ ](#){: .abrep .tooltip .badge }|10 |MC_USE_PILL {: .copyable } | ([PillEffect](../PillEffect))|[PillEffect](../PillEffect) |
 
 ### MC_ENTITY_TAKE_DMG {: .copyable } 
 Called before new damage is applied.
@@ -149,7 +149,7 @@ Return true or nil if the entity or player should sustain the damage, otherwise 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (TookDamage [[Entity](../../Entity)],<br>DamageAmount [float],<br>DamageFlags [int],<br>DamageSource [[EntityRef](../../EntityRef)],<br>DamageCountdownFrames [int])|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (TookDamage [[Entity](../../Entity)],<br>DamageAmount [float],<br>DamageFlags [int],<br>DamageSource [[EntityRef](../../EntityRef)],<br>DamageCountdownFrames [int])|[EntityType](../EntityType) |
 
 ### MC_POST_CURSE_EVAL {: .copyable } 
 Curses is a bitmask containing current curses. Called after the current Level applied it's curses. Returns the new curse bitmask. Use Isaac.GetCurseIdByName() to get the curseID.
@@ -164,7 +164,7 @@ If a number is returned, it will be the "Curses" arg for later executed callback
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|12 |MC_POST_CURSE_EVAL {: .copyable } | (Curses) | - |
+|[ ](#){: .abrep .tooltip .badge }|12 |MC_POST_CURSE_EVAL {: .copyable } | (Curses) | - |
 
 ### MC_INPUT_ACTION {: .copyable } 
 It is called when game/game entities wants to read an action input. 
@@ -184,7 +184,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|13 |MC_INPUT_ACTION {: .copyable } | ([Entity](../../Entity),<br>[InputHook](../InputHook),<br>[ButtonAction](../ButtonAction))|[InputHook](../InputHook) |
+|[ ](#){: .abrep .tooltip .badge }|13 |MC_INPUT_ACTION {: .copyable } | ([Entity](../../Entity),<br>[InputHook](../InputHook),<br>[ButtonAction](../ButtonAction))|[InputHook](../InputHook) |
 
 ### MC_LEVEL_GENERATOR  {: .copyable }  
 
@@ -193,7 +193,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|14 |MC_LEVEL_GENERATOR  {: .copyable }  | - | - |
+|[ ](#){: .abrep .tooltip .badge }|14 |MC_LEVEL_GENERATOR  {: .copyable }  | - | - |
 
 ### MC_POST_GAME_STARTED {: .copyable } 
 
@@ -213,7 +213,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|15 |MC_POST_GAME_STARTED {: .copyable } | (IsContinued [bool]) | - |
+|[ ](#){: .abrep .tooltip .badge }|15 |MC_POST_GAME_STARTED {: .copyable } | (IsContinued [bool]) | - |
 
 ### MC_POST_GAME_END {: .copyable } 
 
@@ -231,7 +231,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|16 |MC_POST_GAME_END {: .copyable } | (IsGameOver [bool]) | - |
+|[ ](#){: .abrep .tooltip .badge }|16 |MC_POST_GAME_END {: .copyable } | (IsGameOver [bool]) | - |
 
 ### MC_PRE_GAME_EXIT {: .copyable } 
 
@@ -250,7 +250,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|17 |MC_PRE_GAME_EXIT {: .copyable } | (ShouldSave [bool]) | - |
+|[ ](#){: .abrep .tooltip .badge }|17 |MC_PRE_GAME_EXIT {: .copyable } | (ShouldSave [bool]) | - |
 
 ### MC_POST_NEW_LEVEL {: .copyable } 
 This triggers after transitioning a level or stage. 
@@ -261,7 +261,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|18 |MC_POST_NEW_LEVEL {: .copyable } | -  | - |
+|[ ](#){: .abrep .tooltip .badge }|18 |MC_POST_NEW_LEVEL {: .copyable } | -  | - |
 
 ### MC_POST_NEW_ROOM {: .copyable } 
 This triggers after entering a room.
@@ -270,7 +270,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|19 |MC_POST_NEW_ROOM {: .copyable } | -  | - |
+|[ ](#){: .abrep .tooltip .badge }|19 |MC_POST_NEW_ROOM {: .copyable } | -  | - |
 
 ### MC_GET_CARD {: .copyable } 
 This callback is used for handling Card Pools.
@@ -291,14 +291,14 @@ Returned values will not update the "[Card](../Card)" arg of later executed call
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|20 |MC_GET_CARD {: .copyable } | ([RNG](../../RNG),<br>[Card](../Card),<br>IncludePlayingCards [bool],<br>IncludeRunes [bool],<br>OnlyRunes [bool]) | - |
+|[ ](#){: .abrep .tooltip .badge }|20 |MC_GET_CARD {: .copyable } | ([RNG](../../RNG),<br>[Card](../Card),<br>IncludePlayingCards [bool],<br>IncludeRunes [bool],<br>OnlyRunes [bool]) | - |
 
 ### MC_GET_SHADER_PARAMS {: .copyable } 
 Returns a table containing a key -> value pair for custom shader parameters. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|21 |MC_GET_SHADER_PARAMS {: .copyable } | (ShaderName [string]) | - |
+|[ ](#){: .abrep .tooltip .badge }|21 |MC_GET_SHADER_PARAMS {: .copyable } | (ShaderName [string]) | - |
 
 ### MC_EXECUTE_CMD {: .copyable } 
 Returns a string separated by `<br />` (newline) per output line CMD is the first word of the Console input.
@@ -326,7 +326,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|22 |MC_EXECUTE_CMD {: .copyable } | (CMD [string],<br>Parameters [string]) | - |
+|[ ](#){: .abrep .tooltip .badge }|22 |MC_EXECUTE_CMD {: .copyable } | (CMD [string],<br>Parameters [string]) | - |
 
 ### MC_PRE_USE_ITEM {: .copyable } 
 Called before an item is used.
@@ -338,7 +338,7 @@ Return true to prevent the default code of an item to be triggered. This will st
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG))|[CollectibleType](../CollectibleType) |
+|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG))|[CollectibleType](../CollectibleType) |
 
 ### MC_PRE_ENTITY_SPAWN {: .copyable } 
 Called right before an entity is spawned. 
@@ -353,14 +353,14 @@ Optional: Return a table with new values `{ Type, Variant, Subtype, Seed }` to o
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|24 |MC_PRE_ENTITY_SPAWN {: .copyable } | ([EntityType](../EntityType),<br>Variant [int],<br>SubType [int],<br>Position [Vector],<br>Velocity [Vector],<br>Spawner [[Entity](../../Entity)],<br>Seed [int]) | - |
+|[ ](#){: .abrep .tooltip .badge }|24 |MC_PRE_ENTITY_SPAWN {: .copyable } | ([EntityType](../EntityType),<br>Variant [int],<br>SubType [int],<br>Position [Vector],<br>Velocity [Vector],<br>Spawner [[Entity](../../Entity)],<br>Seed [int]) | - |
 
 ### MC_POST_FAMILIAR_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|25 |MC_POST_FAMILIAR_RENDER {: .copyable } | ([EntityFamiliar](../../EntityFamiliar),<br>RenderOffset [Vector])|[FamiliarVariant](../FamiliarVariant) |
+|[ ](#){: .abrep .tooltip .badge }|25 |MC_POST_FAMILIAR_RENDER {: .copyable } | ([EntityFamiliar](../../EntityFamiliar),<br>RenderOffset [Vector])|[FamiliarVariant](../FamiliarVariant) |
 
 ### MC_PRE_FAMILIAR_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -372,7 +372,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|26 |MC_PRE_FAMILIAR_COLLISION {: .copyable } | ([EntityFamiliar](../../EntityFamiliar),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[FamiliarVariant](../FamiliarVariant) |
+|[ ](#){: .abrep .tooltip .badge }|26 |MC_PRE_FAMILIAR_COLLISION {: .copyable } | ([EntityFamiliar](../../EntityFamiliar),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[FamiliarVariant](../FamiliarVariant) |
 
 ### MC_POST_NPC_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -382,14 +382,14 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|27 |MC_POST_NPC_INIT {: .copyable } | ([EntityNPC](../../EntityNPC))|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|27 |MC_POST_NPC_INIT {: .copyable } | ([EntityNPC](../../EntityNPC))|[EntityType](../EntityType) |
 
 ### MC_POST_NPC_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|28 |MC_POST_NPC_RENDER {: .copyable } | ([EntityNPC](../../EntityNPC),<br>RenderOffset [Vector])|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|28 |MC_POST_NPC_RENDER {: .copyable } | ([EntityNPC](../../EntityNPC),<br>RenderOffset [Vector])|[EntityType](../EntityType) |
 
 ### MC_POST_NPC_DEATH {: .copyable } 
 Gets called after the Death animation is played.
@@ -398,7 +398,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|29 |MC_POST_NPC_DEATH {: .copyable } | ([EntityNPC](../../EntityNPC))|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|29 |MC_POST_NPC_DEATH {: .copyable } | ([EntityNPC](../../EntityNPC))|[EntityType](../EntityType) |
 
 ### MC_PRE_NPC_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -410,7 +410,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|30 |MC_PRE_NPC_COLLISION {: .copyable } | ([EntityNPC](../../EntityNPC),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|30 |MC_PRE_NPC_COLLISION {: .copyable } | ([EntityNPC](../../EntityNPC),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[EntityType](../EntityType) |
 
 ### MC_POST_PLAYER_UPDATE {: .copyable } 
 The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = Co-Op-Baby
@@ -422,7 +422,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|31 |MC_POST_PLAYER_UPDATE {: .copyable } | ([EntityPlayer](../../EntityPlayer))|PlayerVariant* |
+|[ ](#){: .abrep .tooltip .badge }|31 |MC_POST_PLAYER_UPDATE {: .copyable } | ([EntityPlayer](../../EntityPlayer))|PlayerVariant* |
 
 ### MC_POST_PLAYER_RENDER {: .copyable } 
 The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = Co-Op-Baby
@@ -431,7 +431,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|32 |MC_POST_PLAYER_RENDER {: .copyable } | ([EntityPlayer](../../EntityPlayer),<br>RenderOffset [Vector])|PlayerVariant* |
+|[ ](#){: .abrep .tooltip .badge }|32 |MC_POST_PLAYER_RENDER {: .copyable } | ([EntityPlayer](../../EntityPlayer),<br>RenderOffset [Vector])|PlayerVariant* |
 
 ### MC_PRE_PLAYER_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -445,7 +445,7 @@ The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|33 |MC_PRE_PLAYER_COLLISION {: .copyable } | ([EntityPlayer](../../EntityPlayer),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|PlayerVariant* |
+|[ ](#){: .abrep .tooltip .badge }|33 |MC_PRE_PLAYER_COLLISION {: .copyable } | ([EntityPlayer](../../EntityPlayer),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|PlayerVariant* |
 
 ### MC_POST_PICKUP_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -455,7 +455,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|34 |MC_POST_PICKUP_INIT {: .copyable } | ([EntityPickup](../../EntityPickup))|[PickupVariant](../PickupVariant) |
+|[ ](#){: .abrep .tooltip .badge }|34 |MC_POST_PICKUP_INIT {: .copyable } | ([EntityPickup](../../EntityPickup))|[PickupVariant](../PickupVariant) |
 
 ### MC_POST_PICKUP_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -465,14 +465,14 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|35 |MC_POST_PICKUP_UPDATE {: .copyable } | ([EntityPickup](../../EntityPickup))|[PickupVariant](../PickupVariant) |
+|[ ](#){: .abrep .tooltip .badge }|35 |MC_POST_PICKUP_UPDATE {: .copyable } | ([EntityPickup](../../EntityPickup))|[PickupVariant](../PickupVariant) |
 
 ### MC_POST_PICKUP_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|36 |MC_POST_PICKUP_RENDER {: .copyable } | ([EntityPickup](../../EntityPickup),<br>RenderOffset [Vector])|[PickupVariant](../PickupVariant) |
+|[ ](#){: .abrep .tooltip .badge }|36 |MC_POST_PICKUP_RENDER {: .copyable } | ([EntityPickup](../../EntityPickup),<br>RenderOffset [Vector])|[PickupVariant](../PickupVariant) |
 
 ### MC_POST_PICKUP_SELECTION {: .copyable } 
 Called after a Pickup was choosen from a list of random pickups to be spawned.Return nil to continue with default game code. 
@@ -492,7 +492,7 @@ Return a table `{ Variant, Subtype }` to override the specified values. This doe
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|37 |MC_POST_PICKUP_SELECTION {: .copyable } | ([EntityPickup](../../EntityPickup),<br>Variant [int],<br>Subtype [int]) | - |
+|[ ](#){: .abrep .tooltip .badge }|37 |MC_POST_PICKUP_SELECTION {: .copyable } | ([EntityPickup](../../EntityPickup),<br>Variant [int],<br>Subtype [int]) | - |
 
 ### MC_PRE_PICKUP_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -504,7 +504,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|38 |MC_PRE_PICKUP_COLLISION {: .copyable } | ([EntityPickup](../../EntityPickup),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[PickupVariant](../PickupVariant) |
+|[ ](#){: .abrep .tooltip .badge }|38 |MC_PRE_PICKUP_COLLISION {: .copyable } | ([EntityPickup](../../EntityPickup),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[PickupVariant](../PickupVariant) |
 
 ### MC_POST_TEAR_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -514,21 +514,21 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|39 |MC_POST_TEAR_INIT {: .copyable } | ([EntityTear](../../EntityTear))|[TearVariant](../TearVariant) |
+|[ ](#){: .abrep .tooltip .badge }|39 |MC_POST_TEAR_INIT {: .copyable } | ([EntityTear](../../EntityTear))|[TearVariant](../TearVariant) |
 
 ### MC_POST_TEAR_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|40 |MC_POST_TEAR_UPDATE {: .copyable } | ([EntityTear](../../EntityTear))|[TearVariant](../TearVariant) |
+|[ ](#){: .abrep .tooltip .badge }|40 |MC_POST_TEAR_UPDATE {: .copyable } | ([EntityTear](../../EntityTear))|[TearVariant](../TearVariant) |
 
 ### MC_POST_TEAR_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|41 |MC_POST_TEAR_RENDER {: .copyable } | ([EntityTear](../../EntityTear),<br>RenderOffset [Vector])|[TearVariant](../TearVariant) |
+|[ ](#){: .abrep .tooltip .badge }|41 |MC_POST_TEAR_RENDER {: .copyable } | ([EntityTear](../../EntityTear),<br>RenderOffset [Vector])|[TearVariant](../TearVariant) |
 
 ### MC_PRE_TEAR_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -540,7 +540,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|42 |MC_PRE_TEAR_COLLISION {: .copyable } | ([EntityTear](../../EntityTear),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[TearVariant](../TearVariant) |
+|[ ](#){: .abrep .tooltip .badge }|42 |MC_PRE_TEAR_COLLISION {: .copyable } | ([EntityTear](../../EntityTear),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[TearVariant](../TearVariant) |
 
 ### MC_POST_PROJECTILE_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -550,21 +550,21 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|43 |MC_POST_PROJECTILE_INIT {: .copyable } | ([EntityProjectile](../../EntityProjectile))|[ProjectileVariant](../ProjectileVariant) |
+|[ ](#){: .abrep .tooltip .badge }|43 |MC_POST_PROJECTILE_INIT {: .copyable } | ([EntityProjectile](../../EntityProjectile))|[ProjectileVariant](../ProjectileVariant) |
 
 ### MC_POST_PROJECTILE_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|44 |MC_POST_PROJECTILE_UPDATE {: .copyable } | ([EntityProjectile](../../EntityProjectile))|[ProjectileVariant](../ProjectileVariant) |
+|[ ](#){: .abrep .tooltip .badge }|44 |MC_POST_PROJECTILE_UPDATE {: .copyable } | ([EntityProjectile](../../EntityProjectile))|[ProjectileVariant](../ProjectileVariant) |
 
 ### MC_POST_PROJECTILE_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|45 |MC_POST_PROJECTILE_RENDER {: .copyable } | ([EntityProjectile](../../EntityProjectile),<br>RenderOffset [Vector])|[ProjectileVariant](../ProjectileVariant) |
+|[ ](#){: .abrep .tooltip .badge }|45 |MC_POST_PROJECTILE_RENDER {: .copyable } | ([EntityProjectile](../../EntityProjectile),<br>RenderOffset [Vector])|[ProjectileVariant](../ProjectileVariant) |
 
 ### MC_PRE_PROJECTILE_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -576,7 +576,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|46 |MC_PRE_PROJECTILE_COLLISION {: .copyable } | ([EntityProjectile](../../EntityProjectile),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[ProjectileVariant](../ProjectileVariant) |
+|[ ](#){: .abrep .tooltip .badge }|46 |MC_PRE_PROJECTILE_COLLISION {: .copyable } | ([EntityProjectile](../../EntityProjectile),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[ProjectileVariant](../ProjectileVariant) |
 
 ### MC_POST_LASER_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -586,21 +586,21 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|47 |MC_POST_LASER_INIT {: .copyable } | ([EntityLaser](../../EntityLaser))|LaserVariant |
+|[ ](#){: .abrep .tooltip .badge }|47 |MC_POST_LASER_INIT {: .copyable } | ([EntityLaser](../../EntityLaser))|LaserVariant |
 
 ### MC_POST_LASER_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|48 |MC_POST_LASER_UPDATE {: .copyable } | ([EntityLaser](../../EntityLaser))|LaserVariant |
+|[ ](#){: .abrep .tooltip .badge }|48 |MC_POST_LASER_UPDATE {: .copyable } | ([EntityLaser](../../EntityLaser))|LaserVariant |
 
 ### MC_POST_LASER_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|49 |MC_POST_LASER_RENDER {: .copyable } | ([EntityLaser](../../EntityLaser),<br>RenderOffset [Vector])|LaserVariant |
+|[ ](#){: .abrep .tooltip .badge }|49 |MC_POST_LASER_RENDER {: .copyable } | ([EntityLaser](../../EntityLaser),<br>RenderOffset [Vector])|LaserVariant |
 
 ### MC_POST_KNIFE_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -614,7 +614,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|50 |MC_POST_KNIFE_INIT {: .copyable } | ([EntityKnife](../../EntityKnife))|KnifeSubType * |
+|[ ](#){: .abrep .tooltip .badge }|50 |MC_POST_KNIFE_INIT {: .copyable } | ([EntityKnife](../../EntityKnife))|KnifeSubType * |
 
 ### MC_POST_KNIFE_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -624,7 +624,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|51 |MC_POST_KNIFE_UPDATE {: .copyable } | ([EntityKnife](../../EntityKnife))|KnifeSubType * |
+|[ ](#){: .abrep .tooltip .badge }|51 |MC_POST_KNIFE_UPDATE {: .copyable } | ([EntityKnife](../../EntityKnife))|KnifeSubType * |
 
 ### MC_POST_KNIFE_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -634,7 +634,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|52 |MC_POST_KNIFE_RENDER {: .copyable } | ([EntityKnife](../../EntityKnife),<br>RenderOffset [Vector])|KnifeSubType * |
+|[ ](#){: .abrep .tooltip .badge }|52 |MC_POST_KNIFE_RENDER {: .copyable } | ([EntityKnife](../../EntityKnife),<br>RenderOffset [Vector])|KnifeSubType * |
 
 ### MC_PRE_KNIFE_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -649,7 +649,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|53 |MC_PRE_KNIFE_COLLISION {: .copyable } | ([EntityKnife](../../EntityKnife),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|KnifeSubType * |
+|[ ](#){: .abrep .tooltip .badge }|53 |MC_PRE_KNIFE_COLLISION {: .copyable } | ([EntityKnife](../../EntityKnife),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|KnifeSubType * |
 
 ### MC_POST_EFFECT_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -659,21 +659,21 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|54 |MC_POST_EFFECT_INIT {: .copyable } | ([EntityEffect](../../EntityEffect))|[EffectVariant](../EffectVariant) |
+|[ ](#){: .abrep .tooltip .badge }|54 |MC_POST_EFFECT_INIT {: .copyable } | ([EntityEffect](../../EntityEffect))|[EffectVariant](../EffectVariant) |
 
 ### MC_POST_EFFECT_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|55 |MC_POST_EFFECT_UPDATE {: .copyable } | ([EntityEffect](../../EntityEffect))|[EffectVariant](../EffectVariant) |
+|[ ](#){: .abrep .tooltip .badge }|55 |MC_POST_EFFECT_UPDATE {: .copyable } | ([EntityEffect](../../EntityEffect))|[EffectVariant](../EffectVariant) |
 
 ### MC_POST_EFFECT_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|56 |MC_POST_EFFECT_RENDER {: .copyable } | ([EntityEffect](../../EntityEffect),<br>RenderOffset [Vector])|[EffectVariant](../EffectVariant) |
+|[ ](#){: .abrep .tooltip .badge }|56 |MC_POST_EFFECT_RENDER {: .copyable } | ([EntityEffect](../../EntityEffect),<br>RenderOffset [Vector])|[EffectVariant](../EffectVariant) |
 
 ### MC_POST_BOMB_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
@@ -683,21 +683,21 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|57 |MC_POST_BOMB_INIT {: .copyable } | ([EntityBomb](../../EntityBomb))|[BombVariant](../BombVariant) |
+|[ ](#){: .abrep .tooltip .badge }|57 |MC_POST_BOMB_INIT {: .copyable } | ([EntityBomb](../../EntityBomb))|[BombVariant](../BombVariant) |
 
 ### MC_POST_BOMB_UPDATE {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|58 |MC_POST_BOMB_UPDATE {: .copyable } | ([EntityBomb](../../EntityBomb))|[BombVariant](../BombVariant) |
+|[ ](#){: .abrep .tooltip .badge }|58 |MC_POST_BOMB_UPDATE {: .copyable } | ([EntityBomb](../../EntityBomb))|[BombVariant](../BombVariant) |
 
 ### MC_POST_BOMB_RENDER {: .copyable } 
 Returning any value will have no effect on later callback executions. 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|59 |MC_POST_BOMB_RENDER {: .copyable } | ([EntityBomb](../../EntityBomb),<br>Offset [Vector])|[BombVariant](../BombVariant) |
+|[ ](#){: .abrep .tooltip .badge }|59 |MC_POST_BOMB_RENDER {: .copyable } | ([EntityBomb](../../EntityBomb),<br>Offset [Vector])|[BombVariant](../BombVariant) |
 
 ### MC_PRE_BOMB_COLLISION {: .copyable } 
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
@@ -709,7 +709,7 @@ Return true to ignore collision, false to collide but not execute internal code 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|60 |MC_PRE_BOMB_COLLISION {: .copyable } | ([EntityBomb](../../EntityBomb),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[BombVariant](../BombVariant) |
+|[ ](#){: .abrep .tooltip .badge }|60 |MC_PRE_BOMB_COLLISION {: .copyable } | ([EntityBomb](../../EntityBomb),<br>Collider [[Entity](../../Entity)],<br>Low [bool])|[BombVariant](../BombVariant) |
 
 ### MC_POST_FIRE_TEAR {: .copyable } 
 Called when the player fires a tear.
@@ -720,7 +720,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|61 |MC_POST_FIRE_TEAR {: .copyable } | ([EntityTear](../../EntityTear)) | - |
+|[ ](#){: .abrep .tooltip .badge }|61 |MC_POST_FIRE_TEAR {: .copyable } | ([EntityTear](../../EntityTear)) | - |
 
 ### MC_PRE_GET_COLLECTIBLE {: .copyable } 
 
@@ -741,7 +741,7 @@ Returned values will not alter args of later executed callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|62 |MC_PRE_GET_COLLECTIBLE {: .copyable } | ([ItemPoolType](../ItemPoolType),<br>Decrease [bool],<br>Seed [int]) | - |
+|[ ](#){: .abrep .tooltip .badge }|62 |MC_PRE_GET_COLLECTIBLE {: .copyable } | ([ItemPoolType](../ItemPoolType),<br>Decrease [bool],<br>Seed [int]) | - |
 
 ### MC_POST_GET_COLLECTIBLE {: .copyable } 
 This function is called right after MC_PRE_GET_COLLECTIBLE and determines the Collectible that will be spawned from the given [ItemPoolType](../ItemPoolType).
@@ -758,7 +758,7 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|63 |MC_POST_GET_COLLECTIBLE {: .copyable } | (SelectedCollectible [[CollectibleType](../CollectibleType)],<br>[ItemPoolType](../ItemPoolType),<br>Decrease [bool],<br>Seed [int]) | - |
+|[ ](#){: .abrep .tooltip .badge }|63 |MC_POST_GET_COLLECTIBLE {: .copyable } | (SelectedCollectible [[CollectibleType](../CollectibleType)],<br>[ItemPoolType](../ItemPoolType),<br>Decrease [bool],<br>Seed [int]) | - |
 
 ### MC_GET_PILL_COLOR {: .copyable } 
 
@@ -776,7 +776,7 @@ Returned values will not alter the args of later executed callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|64 |MC_GET_PILL_COLOR {: .copyable } | (Seed [int]) | - |
+|[ ](#){: .abrep .tooltip .badge }|64 |MC_GET_PILL_COLOR {: .copyable } | (Seed [int]) | - |
 
 ### MC_GET_PILL_EFFECT {: .copyable } 
 Called every frames when the game get the [PillEffect](../PillEffect) of a pill. The effect of the pill can be choosed by returning the chosen [PillEffect](../PillEffect).
@@ -804,7 +804,7 @@ Returned values will not update the "SelectedPillEffect" arg of later executed c
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|65 |MC_GET_PILL_EFFECT {: .copyable } | (SelectedPillEffect [[PillEffect](../PillEffect)],<br>PillColor) | - |
+|[ ](#){: .abrep .tooltip .badge }|65 |MC_GET_PILL_EFFECT {: .copyable } | (SelectedPillEffect [[PillEffect](../PillEffect)],<br>PillColor) | - |
 
 ### MC_GET_TRINKET {: .copyable } 
 Called when a [TrinketType](../TrinketType) of a Trinket needs to be determined. 
@@ -821,7 +821,7 @@ Returned values will not update the "SelectedTrinket" arg of later executed call
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|66 |MC_GET_TRINKET {: .copyable } | (SelectedTrinket [[TrinketType](../TrinketType)],<br>[RNG](../../RNG)) | - |
+|[ ](#){: .abrep .tooltip .badge }|66 |MC_GET_TRINKET {: .copyable } | (SelectedTrinket [[TrinketType](../TrinketType)],<br>[RNG](../../RNG)) | - |
 
 ### MC_POST_ENTITY_REMOVE {: .copyable } 
 Called whenever an [Entity](../../Entity) gets removed by the game. This includes deaths, kills, removals and even unloading an entity on room transition or ending a run.
@@ -830,7 +830,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|67 |MC_POST_ENTITY_REMOVE {: .copyable } | ([Entity](../../Entity))|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|67 |MC_POST_ENTITY_REMOVE {: .copyable } | ([Entity](../../Entity))|[EntityType](../EntityType) |
 
 ### MC_POST_ENTITY_KILL {: .copyable } 
 Called right before a death animation is triggered for an [Entity](../../Entity).
@@ -839,7 +839,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|68 |MC_POST_ENTITY_KILL {: .copyable } | ([Entity](../../Entity))|[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|68 |MC_POST_ENTITY_KILL {: .copyable } | ([Entity](../../Entity))|[EntityType](../EntityType) |
 
 ### MC_PRE_NPC_UPDATE {: .copyable } 
 Return true if the internal AI of an NPC should be ignored, false or nil/nothing otherwise.
@@ -849,7 +849,7 @@ Return true if the internal AI of an NPC should be ignored, false or nil/nothing
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|69 |MC_PRE_NPC_UPDATE {: .copyable } | ([EntityNPC](../../EntityNPC)) |[EntityType](../EntityType) |
+|[ ](#){: .abrep .tooltip .badge }|69 |MC_PRE_NPC_UPDATE {: .copyable } | ([EntityNPC](../../EntityNPC)) |[EntityType](../EntityType) |
 
 ### MC_PRE_SPAWN_CLEAN_AWARD {: .copyable } 
 This function is triggered in every room that can be cleared, including boss and angel rooms, and even when it normally would not spawn a reward.
@@ -863,7 +863,7 @@ Return true if the spawn routine should be ignored, false or nil/nothing otherwi
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|70 |MC_PRE_SPAWN_CLEAN_AWARD {: .copyable } | ([RNG](../../RNG),<br>SpawnPosition [Vector]) | - |
+|[ ](#){: .abrep .tooltip .badge }|70 |MC_PRE_SPAWN_CLEAN_AWARD {: .copyable } | ([RNG](../../RNG),<br>SpawnPosition [Vector]) | - |
 
 ### MC_PRE_ROOM_ENTITY_SPAWN {: .copyable } 
 This is called when entering a new room, before spawning entities which are part of its layout. Grid entities will also trigger this callback and their type will the same as the type used by the gridspawn command. Because of this, effects are assigned the type 999 instead of 1000 in this callback. 
@@ -874,4 +874,4 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abp .tooltip .badge }|71 |MC_PRE_ROOM_ENTITY_SPAWN {: .copyable } | ([EntityType](../EntityType),<br>Variant [int],<br>SubType [int],<br>GridIndex [int],<br>Seed [int]) | - |
+|[ ](#){: .abrep .tooltip .badge }|71 |MC_PRE_ROOM_ENTITY_SPAWN {: .copyable } | ([EntityType](../EntityType),<br>Variant [int],<br>SubType [int],<br>GridIndex [int],<br>Seed [int]) | - |

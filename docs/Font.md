@@ -1,7 +1,7 @@
 # Class "Font"
 ## Constructors
 ### Font () {: aria-label='Constructors' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Font](../Font) Font ( ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Font" class.
@@ -82,37 +82,37 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
 
 ___ 
 ### Get·Baseline·Height () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### u_int GetBaselineHeight ( ) {: .copyable aria-label='Functions' }
 Get the number of pixels from the absolute top of the line to the base of the characters 
 ___ 
 ### Get·Character·Width () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### u_int GetCharacterWidth ( char Character ) {: .copyable aria-label='Functions' }
 Returns the width of a specific character 
 ___ 
 ### Get·Line·Height () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### u_int GetLineHeight ( ) {: .copyable aria-label='Functions' }
 Get the distance in pixels between each line of text 
 ___ 
 ### Get·String·Width () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### u_int GetStringWidth ( string String ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16 and returns string width
 ___ 
 ### Get·String·Width·UTF8 () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### u_int GetStringWidthUTF8 ( string String ) {: .copyable aria-label='Functions' }
 returns string width of a Unicode text. 
 ___ 
 ### Is·Loaded () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean IsLoaded ( ) {: .copyable aria-label='Functions' }
 Returns whether a font is loaded or not. 
 ___ 
 ### Load () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean Load ( string FilePath ) {: .copyable aria-label='Functions' }
 Loads a font. 
 
@@ -127,13 +127,13 @@ Loads a font.
 
 ___ 
 ### Set·Missing·Character () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void SetMissingCharacter ( u16 MissingCharacter ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16, then draws
 Sets the missing character to be used by the font (the character used when missing characters are encountered) 
 ___ 
 ### Unload () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void Unload ( ) {: .copyable aria-label='Functions' }
 Unloads all our data from memory 
 ___ 

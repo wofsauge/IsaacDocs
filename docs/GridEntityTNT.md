@@ -3,7 +3,7 @@
 [GridEntity](GridEntity.md)
 ## Variables
 ### Frame·Cnt {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int FrameCnt  {: .copyable aria-label='Variables' }
 
 ___ 

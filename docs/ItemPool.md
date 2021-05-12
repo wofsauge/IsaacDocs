@@ -1,22 +1,22 @@
 # Class "ItemPool"
 ## Functions
 ### Add·Bible·Upgrade () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void AddBibleUpgrade ( int Add, [ItemPoolType](../enums/ItemPoolType) PoolType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Room·Blacklist () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void AddRoomBlacklist ( [CollectibleType](../enums/CollectibleType) Item ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Force·Add·Pill·Effect () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [PillColor](../enums/PillColor) ForceAddPillEffect ( [PillEffect](../enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
 Forces a pill effect to be in the pool, usually for challenges, returns PillColor for that effect. 
 ___ 
 ### Get·Card () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [Card](../enums/Card) GetCard ( int Seed, boolean Playing, boolean Rune, boolean OnlyRunes ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -26,12 +26,12 @@ ___
 
 ___ 
 ### Get·Last·Pool () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [ItemPoolType](../enums/ItemPoolType) GetLastPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pill () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [PillColor](../enums/PillColor) GetPill ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -41,7 +41,7 @@ ___
 
 ___ 
 ### Get·Pool·For·Room () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [ItemPoolType](../enums/ItemPoolType) GetPoolForRoom ( [RoomType](../enums/RoomType) RoomType, int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -51,12 +51,12 @@ ___
 
 ___ 
 ### Identify·Pill () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void IdentifyPill ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Pill·Identified () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean IsPillIdentified ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -67,17 +67,17 @@ Removes a collectible from the itempool. Returns true if given item did exist in
 
 ___ 
 ### Remove·Trinket () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean RemoveTrinket ( [TrinketType](../enums/TrinketType) Trinket ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Room·Blacklist () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void ResetRoomBlacklist ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Trinkets () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void ResetTrinkets ( ) {: .copyable aria-label='Functions' }
 
 ___ 

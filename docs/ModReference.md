@@ -1,18 +1,18 @@
 # Class "Mod Reference"
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void AddCallback ( int callbackId, function callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Data () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean HasData ( ) {: .copyable aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveData()" function. Aka. if there is a "saveX.dat" file in your mod folder. There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
 ### Load·Data () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### string LoadData ( ) {: .copyable aria-label='Functions' }
 
 Returns a string that was stored in a "saveX.dat" file using the "SaveData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
@@ -37,19 +37,19 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 
 ___ 
 ### Remove·Callback () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void RemoveCallback ( int callbackId, function callbackFn ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Data () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void RemoveData ( ) {: .copyable aria-label='Functions' }
 
 Deletes the stored "saveX.dat" file if it exists. 
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___ 
 ### Save·Data () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void SaveData ( string data ) {: .copyable aria-label='Functions' }
 
 Stores a string in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
@@ -72,7 +72,7 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 ___ 
 ## Variables
 ### Name {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
 ___ 

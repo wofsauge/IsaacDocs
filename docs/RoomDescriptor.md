@@ -1,47 +1,47 @@
 # Class "RoomDescriptor"
 ## Variables
 ### Allowed·Doors {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### DoorSet AllowedDoors  {: .copyable aria-label='Variables' }
 Contains just on load swapped data (in cases like minibosses, or other such events) 
 ___ 
 ### Award·Seed {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int AwardSeed  {: .copyable aria-label='Variables' }
 used to spawn clear awards (normal, miniboss, boss rooms) and initialize shop items (shop, devil rooms) 
 ___ 
 ### Challenge·Done {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean ChallengeDone  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Clear {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean Clear  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Clear·Count {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int ClearCount  {: .copyable aria-label='Variables' }
 room is clear, don't spawn enemies when visiting
 ___ 
 ### Data {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [RoomConfig Room](../RoomConfig_Room) Data  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Decoration·Seed {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int DecorationSeed  {: .copyable aria-label='Variables' }
 used for cosmetic stuff like backdrops, room decorations, shopkeeper skins 
 ___ 
 ### Delirium·Distance {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int DeliriumDistance  {: .copyable aria-label='Variables' }
 Helper for The Void stage, holds the distance to the Delirium boss in room nr. 
 ___ 
 ### Display·Flags {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int DisplayFlags  {: .copyable aria-label='Variables' }
 
 Indicates what is visible on the minimap.
@@ -75,7 +75,7 @@ Indicates what is visible on the minimap.
     010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100
 ___ 
 ### Grid·Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int GridIndex  {: .copyable aria-label='Variables' }
 index in the level grid (always top left) 
 
@@ -85,47 +85,47 @@ index in the level grid (always top left)
     ![Room Grid indicies](../images/infographics/RoomGridIndicies.png)
 ___ 
 ### Has·Water {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean HasWater  {: .copyable aria-label='Variables' }
 
 ___ 
 ### List·Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int ListIndex  {: .copyable aria-label='Variables' }
 index in the room list 
 ___ 
 ### No·Reward {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean NoReward  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Override·Data {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### [RoomConfig Room](../RoomConfig_Room) OverrideData  {: .copyable aria-label='Variables' }
 Tim's reminder to himself: The room variant is in Data. Because Room::Init uses a mix of datas, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere. 
 ___ 
 ### Pits·Count {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int PitsCount  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Poop·Count {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int PoopCount  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Pressure·Plates·Triggered {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean PressurePlatesTriggered  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Sacrifice·Done {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean SacrificeDone  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Safe·Grid·Index {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int SafeGridIndex  {: .copyable aria-label='Variables' }
 index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!) 
 
@@ -135,27 +135,27 @@ index in the level grid (not always top left, but is guaranteed to point to the 
     ![Room Grid indicies](../images/infographics/RoomGridIndicies.png)
 ___ 
 ### Shop·Item·Discount·Idx {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int ShopItemDiscountIdx  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Shop·Item·Idx {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int ShopItemIdx  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawn·Seed {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int SpawnSeed  {: .copyable aria-label='Variables' }
 used to spawn entities at room load and initialize enemy drop seeds 
 ___ 
 ### Surprise·Miniboss {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### boolean SurpriseMiniboss  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Visited·Count {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### int VisitedCount  {: .copyable aria-label='Variables' }
 how often the room has been visited 
 ___ 
