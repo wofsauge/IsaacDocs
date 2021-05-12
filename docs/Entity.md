@@ -37,8 +37,10 @@ Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the D
 
 ___ 
 ### Add·Charmed () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### void AddCharmed ( int Duration ) {: .copyable aria-label='Functions' }
+
+#### void AddCharmed (EntityRef sourceEntity, int Duration ) {: .copyable .secondH4 aria-label='Functions' }
 
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. 
 
