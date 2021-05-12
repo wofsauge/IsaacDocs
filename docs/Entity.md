@@ -701,6 +701,12 @@ ___
 ???+ bug "Bugs"
     This variable doesnt seem to do anything useful. Use DepthOffset instead.
 ___ 
+### Size {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
+#### float Size  {: .copyable aria-label='Variables' }
+Returns the size of the hitbox on an entity.
+
+___ 
 ### Size·Multi {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### [Vector](../Vector) SizeMulti  {: .copyable aria-label='Variables' }
@@ -780,9 +786,4 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### boolean Visible  {: .copyable aria-label='Variables' }
 
-___ 
-### Size {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### float Size  {: .copyable aria-label='Variables' }
-Returns the size of the hitbox on an entity.
 ___ 

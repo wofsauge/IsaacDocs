@@ -249,6 +249,11 @@ ___
 
 ___ 
 ## Variables
+### Color {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
+#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
+
+___ 
 ### FlipX {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean FlipX  {: .copyable aria-label='Variables' }
@@ -257,11 +262,6 @@ ___
 ### FlipY {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean FlipY  {: .copyable aria-label='Variables' }
-
-___ 
-### Color {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Offset {: aria-label='Variables' }

@@ -123,16 +123,6 @@ ___
 
 ___ 
 ## Functions
-### Random () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### int Random ( ) {: .copyable aria-label='Functions' }
-Returns a random integer. (0 to 2^32) 
-___ 
-### Random·Vector () {: aria-label='Functions' }
-[ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
-Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
-___ 
 ### Get·Ptr·Hash () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
@@ -158,4 +148,14 @@ If you spawn a certain entity, save it in a variable and then compare it to the 
     
     ```
 
+___ 
+### Random () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
+#### int Random ( ) {: .copyable aria-label='Functions' }
+Returns a random integer. (0 to 2^32) 
+___ 
+### Random·Vector () {: aria-label='Functions' }
+[ ](#){: .abp .tooltip .badge }
+#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
+Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 

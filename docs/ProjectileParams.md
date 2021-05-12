@@ -69,6 +69,11 @@ ___
 #### float CircleAngle  {: .copyable aria-label='Variables' }
 Angle offset used by fire_projectiles PROJECTILES_CIRCLE type emitter. Random by default. 
 ___ 
+### Color {: aria-label='Variables' }
+[ ](#){: .abp .tooltip .badge }
+#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
+
+___ 
 ### Curving·Strength {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float CurvingStrength  {: .copyable aria-label='Variables' }
@@ -113,11 +118,6 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### float HomingStrength  {: .copyable aria-label='Variables' }
 Multiplier on normal homing strength. Unused if SMART bullet flag is not set. 
-___ 
-### Color {: aria-label='Variables' }
-[ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
-
 ___ 
 ### Position·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
