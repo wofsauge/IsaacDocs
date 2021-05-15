@@ -218,7 +218,7 @@ Adds red hearts to the player if there are any empty heart containers. 1 unit is
 ___ 
 ### Add·Item·Wisp () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFaimiliar](../EntityFamiliar) AddItemWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) AddItemWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position, boolean AdjustOrbitLayer = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Jar·Flies () {: aria-label='Functions' }
@@ -270,7 +270,7 @@ Adds heart containers to the player. 2 units is a full heart container. Remove t
 ___ 
 ### Add·Minisaac () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFaimiliar](../EntityFamiliar) AddMinisaac ( [Vector](../Vector) Position, boolean PlayAnim ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) AddMinisaac ( [Vector](../Vector) Position, boolean PlayAnim = true ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Null·Costume () {: aria-label='Functions' }
@@ -320,7 +320,7 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
 ___ 
 ### Add·Swarm·Fly·Orbital () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFaimiliar](../EntityFamiliar) AddSwarmFlyFamiliar ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) AddSwarmFlyFamiliar ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Trinket () {: aria-label='Functions' }
@@ -330,7 +330,7 @@ ___
 ___ 
 ### Add·Wisp () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFaimiliar](../EntityFamiliar) AddWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) AddWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position, boolean AdjustOrbitLayer = false, boolean DontUpdate = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Appear () {: aria-label='Functions' }
@@ -428,6 +428,12 @@ ___
 #### boolean CanPickRedHearts ( ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Can·Pick·Rotten·Hearts () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean CanPickRottenHearts ( ) {: .copyable aria-label='Functions' }
+returns true if player has room for more rotten hearts
+
+___ 
 ### Can·Pick·Soul·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanPickSoulHearts ( ) {: .copyable aria-label='Functions' }
@@ -448,6 +454,14 @@ ___
 #### boolean CanTurnHead ( ) {: .copyable aria-label='Functions' }
 returns true if head should react to keys or false otherwise 
 ___ 
+### Change·Player·Type () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ChangePlayerType ( [PlayerType](../enums/PlayerType) PlayerType ) {: .copyable aria-label='Functions' }
+???+ bug "Bugs"
+	Changing to Tainted Forgotten will result in no Tainted Soul appearing
+	Changing to Tainted Lazarus will result in player only having one form
+
+___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](../RNG) rng, ItemConfig::Item SourceItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
@@ -559,6 +573,7 @@ ___
 [[ ](#){: .rep .tooltip .badge }
 #### [CollectibleType](../enums/CollectibleType) GetActiveItem ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' data-altreturn='0' }
 Returns the currently held item. Returns `0` when no item is held.
+
 ___ 
 ### Get·Active·Sub·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
@@ -591,6 +606,12 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBlackHearts ( ) {: .copyable aria-label='Functions' }
 This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts. 
+
+___ 
+### Get·Blood·Charge () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetBloodCharge ( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Get·Bomb·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -614,6 +635,11 @@ Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
     local player = Isaac.GetPlayer(0)
     local totalRedHearts = player:GetMaxHearts() + player:GetBoneHearts() * 2
     ```
+
+___ 
+### Get·Broken·Hearts () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetBrokenHearts ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Card () {: aria-label='Functions' }
@@ -658,6 +684,17 @@ ___
 
 Returns the amount of Red Hearts the player can contain in their Heart Containers and Bone Hearts. 1 unit is half a red heart.
 **Example:** you have 3 red heart container and one bone heart. 6(red) + 2(bone) = 8 
+
+___ 
+### Get·Effective·Blood·Charge () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetEffectiveBloodCharge ( ) {: .copyable aria-label='Functions' }
+
+___ 
+### Get·Effective·Soul·Charge () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetEffectiveSoulCharge ( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Get·Effects () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -752,6 +789,13 @@ ___
 #### const [Vector](../Vector) GetLastDirection ( ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Get·Main·Twin () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### [EntityPlayer](../EntityPlayer) GetMainTwin ( ) {: .copyable aria-label='Functions' }
+
+Will return first player of pair characters or current form of characters with multiple forms.
+
+___ 
 ### Get·Max·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetMaxHearts ( ) {: .copyable aria-label='Functions' }
@@ -769,6 +813,12 @@ ___
 #### int GetMaxTrinkets ( ) {: .copyable aria-label='Functions' }
 
 Get the number of trinkets you can carry. (1 on default. 2 with moms purse or similar)
+
+___ 
+### Get·Modeling·Clay·Effect () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [CollectibleType](../enums/CollectibleType) GetModelingClayEffect ( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Get·Movement·Direction () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -831,9 +881,21 @@ ___
 #### int GetNumCoins ( ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Get·Num·Giga·Bombs () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetNumGigaBombs ( ) {: .copyable aria-label='Functions' }
+
+___ 
 ### Get·Num·Keys () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetNumKeys ( ) {: .copyable aria-label='Functions' }
+
+___ 
+### Get·Other·Twin () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### [EntityPlayer](../EntityPlayer) GetOtherTwin ( ) {: .copyable aria-label='Functions' }
+
+Will return second player of pair characters or other form of characters with multiple forms.
 
 ___ 
 ### Get·Pill () {: aria-label='Functions' }
@@ -865,6 +927,12 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Vector](../Vector) GetRecentMovementVector ( ) {: .copyable aria-label='Functions' }
 Returns the joystick direction that drives player movement, taking into account certain modifiers like disabled controls and seed effects. 
+
+___ 
+### Get·Rotten·Hearts () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetRottenHearts ( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Get·Shooting·Input () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -889,10 +957,18 @@ Returns the amount of Soul Hearts the player has. 1 unit is half a heart.
 
 ???- note "Notes"
     Black Hearts count toward this total, as the game sees them as soul hearts.
+	
+___ 
+### Get·Soul·Charge () {: aria-label='Functions' }
+[[ ](#){: .rep .tooltip .badge }
+#### int GetSoulCharge ( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Get·Sub·Player () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetSubPlayer ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+
+Returns the other form of The Forgotten.
 
 ___ 
 ### Get·Tear·Hit·Params () {: aria-label='Functions' }
@@ -955,6 +1031,12 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasCollectible ( [CollectibleType](../enums/CollectibleType) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
 **IgnoreModifiers**: If set to true, only counts collectibles the player actually owns and ignores effects granted by items like Zodiac, 3 Dollar Bill and Lemegeton
+
+___ 
+### Has·Curse·Mist·Effect () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasCurseMistEffect ( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Has·Full·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1014,6 +1096,11 @@ ___
 ### Is·Bone·Heart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsBoneHeart ( int heart ) {: .copyable aria-label='Functions' }
+
+___ 
+### Is·Coop·Ghost () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean IsCoopGhost ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Extra·Animation·Finished () {: aria-label='Functions' }
@@ -1112,6 +1199,12 @@ Removes a given costume based on its item config entry.
     local itemConfig = Isaac.GetItemConfig():GetCollectible(CollectibleType.COLLECTIBLE_SPOON_BENDER)
     player:RemoveCostume(itemConfig)
     ```
+	
+___ 
+### Remove·Curse·Mist·Effect () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void RemoveCurseMistEffect( ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Remove·Golden·Bomb () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1179,6 +1272,13 @@ ___
 #### void SetActiveCharge ( int Charge, int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Set·Blood·Charge () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void SetBloodCharge ( int Amount ) {: .copyable aria-label='Functions' }
+
+Only works on Tainted Bethany.
+
+___ 
 ### Set·Card () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetCard ( int SlotId, [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
@@ -1204,6 +1304,13 @@ ___
 ### Set·Shooting·Cooldown () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetShootingCooldown ( int Cooldown ) {: .copyable aria-label='Functions' }
+
+___ 
+### Add·Soul·Charge () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
+
+Only works on Bethany.
 
 ___ 
 ### Set·Target·Trap·Door () {: aria-label='Functions' }
@@ -1234,6 +1341,26 @@ ___
 ### Throw·Blue·Spider () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](../Entity) ThrowBlueSpider ( [Vector](../Vector) Position, [Vector](../Vector) Target ) {: .copyable aria-label='Functions' }
+
+___ 
+### Throw·Friendly·Dip () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityFamiliar](../EntityFamiliar) ThrowFriendlyDip ( int Subtype, [Vector](../Vector) Position, [Vector](../Vector) Target = Vector.Zero ) {: .copyable aria-label='Functions' }
+
+___ 
+### Throw·Held·Entity () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [Entity](../Entity) ThrowHeldEntity ( [Vector](../Vector) Velocity ) {: .copyable aria-label='Functions' }
+
+___ 
+### Trigger·Book·Of·Virtues () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void TriggerBookOfVirtues ( [CollectibleType](../enums/CollectibleType) Type = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
+
+___ 
+### Try·Hold·Entity () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean TryHoldEntity ( [Entity](../Entity) Ent ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Hold·Trinket () {: aria-label='Functions' }
