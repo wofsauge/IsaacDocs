@@ -131,6 +131,7 @@ nav:
             - "GridEntitySpikes": GridEntitySpikes.md
             - "GridEntityTNT": GridEntityTNT.md
         - "GridEntityDesc": GridEntityDesc.md
+        - "HUD": HUD.md
         - "ItemConfig":
             - "ItemConfig Functions": ItemConfig.md
             - "ItemConfig - Card": ItemConfig_Card.md
