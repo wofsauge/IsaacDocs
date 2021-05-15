@@ -15,6 +15,13 @@ Adds Black hearts to the player. 1 unit is half a heart. Remove them with negati
     ```
 
 ___ 
+### Add·Blood·Charge () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddBloodCharge ( int Amount ) {: .copyable aria-label='Functions' }
+
+Only works on Tainted Bethany.
+
+___ 
 ### Add·Blue·Flies () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](../Entity) AddBlueFlies ( int Amount, [Vector](../Vector) Position, [Entity](../Entity) Target ) {: .copyable aria-label='Functions' }
@@ -49,6 +56,11 @@ Adds bone hearts to the player. 1 unit is a single bone heart. Remove them with 
     ```lua 
     Isaac.GetPlayer(0):AddBoneHearts(1)
     ```
+	
+___ 
+### Add·Broken·Hearts () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddBrokenHearts ( int BrokenHearts ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Cache·Flags () {: aria-label='Functions' }
@@ -124,6 +136,11 @@ ___
 #### void AddCostume ( [ItemConfig::Item](../ItemConfig_Item) Item, boolean ItemStateOnly ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Add·Curse·Mist·Effect () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddCurseMistEffect( ) {: .copyable aria-label='Functions' }
+
+___ 
 ### Add·Dead·Eye·Charge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddDeadEyeCharge ( ) {: .copyable aria-label='Functions' }
@@ -147,6 +164,20 @@ Adds eternal hearts to the player. 1 unit is half a heart. Remove them with nega
     ```lua 
     Isaac.GetPlayer(0):AddEternalHearts(1)
     ```
+
+___ 
+### Add·Friendly·Dip () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddFriendlyDip ( int Subtype, [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+
+___ 
+### Add·Giga·Bombs () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddGigaBombs ( int GigaBombs ) {: .copyable aria-label='Functions' }
+
+???- note "Notes"
+	Giga bombs do not add to the bomb counter, make sure to increase the bomb count beforehand!
+	You can't add more giga bombs than player's current bomb count.
 
 ___ 
 ### Add·Golden·Bomb () {: aria-label='Functions' }
@@ -183,6 +214,11 @@ Adds red hearts to the player if there are any empty heart containers. 1 unit is
     ```lua 
     Isaac.GetPlayer(0):AddHearts(2)
     ```
+
+___ 
+### Add·Item·Wisp () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityFaimiliar](../EntityFamiliar) AddItemWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Jar·Flies () {: aria-label='Functions' }
@@ -230,6 +266,12 @@ Adds heart containers to the player. 2 units is a full heart container. Remove t
     Max hearts can be added or removed from Keeper regardless of what this boolean is.
     If Keeper has Greed's Gullet and this boolean is set to false, max hearts cannot be added to Keeper, but can be removed normally.
     If Keeper has Greed's Gullet and this boolean is set to true, Max hearts can be added or removed from Keeper normally.
+	
+___ 
+### Add·Minisaac () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityFaimiliar](../EntityFamiliar) AddMinisaac ( [Vector](../Vector) Position, boolean PlayAnim ) {: .copyable aria-label='Functions' }
+
 ___ 
 ### Add·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -252,6 +294,18 @@ ___
 #### void AddPrettyFly ( ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Add·Rotten·Hearts () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddRottenHearts ( int RottenHearts ) {: .copyable aria-label='Functions' }
+
+___ 
+### Add·Soul·Charge () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
+
+Only works on Bethany.
+
+___ 
 ### Add·Soul·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddSoulHearts ( int SoulHearts ) {: .copyable aria-label='Functions' }
@@ -263,11 +317,20 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
     ```lua 
     Isaac.GetPlayer(0):AddSoulHearts(2)
     ```
+___ 
+### Add·Swarm·Fly·Orbital () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityFaimiliar](../EntityFamiliar) AddSwarmFlyFamiliar ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddTrinket ( [TrinketType](../enums/TrinketType) Type, boolean AddConsumables = true ) {: .copyable aria-label='Functions' }
+
+___ 
+### Add·Wisp () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [EntityFaimiliar](../EntityFamiliar) AddWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Animate·Appear () {: aria-label='Functions' }
