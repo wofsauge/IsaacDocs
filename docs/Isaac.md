@@ -356,7 +356,13 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasModData ( table modRef ) {: .copyable aria-label='Functions' }
 
-Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.
+
+There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+
+For AB+, they are stored inside their mod's folder next to the "main.lua" file.
+
+For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
 It is recommended to use the [HasData](../ModReference/#hasdata) function on a [Mod Reference](../ModReference) instead.
 ___ 
@@ -365,7 +371,11 @@ ___
 #### string LoadModData ( table modRef ) {: .copyable aria-label='Functions' }
 
 Returns a string that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
-There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+
+For AB+, they are stored inside their mod's folder next to the "main.lua" file.
+
+For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
 It is recommended to use the [LoadData](../ModReference/#loaddata) function on a [Mod Reference](../ModReference) instead.
 ___ 
@@ -431,7 +441,12 @@ ___
 #### void SaveModData ( table modRef, string data ) {: .copyable aria-label='Functions' }
 
 Stores a string in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
-There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+
+There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+
+For AB+, they are stored inside their mod's folder next to the "main.lua" file.
+
+For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
 It is recommended to use the [SaveData](../ModReference/#savedata) function on a [Mod Reference](../ModReference) instead.
 ___ 
