@@ -24,3 +24,13 @@
 |[ ](#){: .abrep .tooltip .badge }|1<<20 |DAMAGE_CHEST {: .copyable } | Damage comes from spiked chest <br> | 
 |[ ](#){: .abrep .tooltip .badge }|1<<21 |DAMAGE_FAKE {: .copyable } | Fake damage that should trigger player's damage effects. <br> | 
 |[ ](#){: .abrep .tooltip .badge }|1<<22 |DAMAGE_BOOGER {: .copyable } | Damage from booger tear <br> | 
+|[ ](#){: .rep .tooltip .badge }|1<<23 |DAMAGE_SPAWN_BLACK_HEART {: .copyable } | should drop a black heart if damage is lethal | 
+|[ ](#){: .rep .tooltip .badge }|1<<24 |DAMAGE_CRUSH {: .copyable } | damage comes from a strong impact (Mom's foot, rock spikes, rock tears) | 
+|[ ](#){: .rep .tooltip .badge }|1<<25 |DAMAGE_NO_MODIFIERS {: .copyable } | ignore damage modifiers (such as doubled damage from the Womb and later floors or reduced damage from the Wafer) | 
+|[ ](#){: .rep .tooltip .badge }|1<<26 |DAMAGE_SPAWN_RED_HEART {: .copyable } | should drop a red heart if damage is lethal | 
+|[ ](#){: .rep .tooltip .badge }|1<<27 |DAMAGE_SPAWN_COIN {: .copyable } | should drop a coin if damage is lethal | 
+|[ ](#){: .rep .tooltip .badge }|1<<28 |DAMAGE_NO_PENALTIES {: .copyable } | damage shouldn't apply any penalties (such as devil deal chance) | 
+|[ ](#){: .rep .tooltip .badge }|1<<29 |DAMAGE_SPAWN_TEMP_HEART {: .copyable } | should drop a half red heart that quickly despawns if damage is lethal | 
+|[ ](#){: .rep .tooltip .badge }|1<<30 |DAMAGE_IGNORE_ARMOR {: .copyable } | damage ignores boss armor | 
+|[ ](#){: .rep .tooltip .badge }|1<<31 |DAMAGE_SPAWN_CARD {: .copyable } | should drop a card if damage is lethal | 
+|[ ](#){: .rep .tooltip .badge }|1<<32 |DAMAGE_SPAWN_RUNE {: .copyable } | should drop a rune if damage is lethal | 

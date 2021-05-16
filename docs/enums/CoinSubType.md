@@ -7,3 +7,4 @@
 |[ ](#){: .abrep .tooltip .badge }|4 |COIN_DOUBLEPACK {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|5 |COIN_LUCKYPENNY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|6 |COIN_STICKYNICKEL {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|7 |COIN_GOLDEN {: .copyable } |  | 

@@ -26,13 +26,18 @@ nav:
             - "ModCallbacks": enums/ModCallbacks.md
         - "Enums":
             - "ActionTriggers": enums/ActionTriggers.md
+            - "ActiveSlot": enums/ActiveSlot.md
             - "BabySubType": enums/BabySubType.md
+            - "BackdropType": enums/BackdropType.md
+            - "BatterySubType": enums/BatterySubType.md
+            - "BedSubType": enums/BedSubType.md
             - "BombSubType": enums/BombSubType.md
             - "BombVariant": enums/BombVariant.md
             - "ButtonAction": enums/ButtonAction.md
             - "CacheFlag": enums/CacheFlag.md
             - "Card": enums/Card.md
             - "Challenge": enums/Challenge.md
+            - "ChampionColor": enums/ChampionColor.md
             - "ChestSubType": enums/ChestSubType.md
             - "CoinSubType": enums/CoinSubType.md
             - "CollectibleType": enums/CollectibleType.md
@@ -55,6 +60,7 @@ nav:
             - "GridRooms": enums/GridRooms.md
             - "HeartSubType": enums/HeartSubType.md
             - "InputHook": enums/InputHook.md
+            - "ItemConfigEnums": enums/ItemConfigEnums.md
             - "ItemPoolType": enums/ItemPoolType.md
             - "ItemType": enums/ItemType.md
             - "Keyboard": enums/Keyboard.md
@@ -77,10 +83,13 @@ nav:
             - "PlayerItemState": enums/PlayerItemState.md
             - "PlayerSpriteLayer": enums/PlayerSpriteLayer.md
             - "PlayerType": enums/PlayerType.md
+            - "PoopPickupSubType": enums/PoopPickupSubType.md
             - "ProjectileFlags": enums/ProjectileFlags.md
             - "ProjectileVariant": enums/ProjectileVariant.md
             - "RoomShape": enums/RoomShape.md
+            - "RoomTransitionAnim": enums/RoomTransitionAnim.md
             - "RoomType": enums/RoomType.md
+            - "SackSubType": enums/SackSubType.md
             - "SeedEffect": enums/SeedEffect.md
             - "SortingLayer": enums/SortingLayer.md
             - "SoundEffect": enums/SoundEffect.md
@@ -88,6 +97,7 @@ nav:
             - "TearFlags": enums/TearFlags.md
             - "TearVariant": enums/TearVariant.md
             - "TrinketType": enums/TrinketType.md
+            - "UseFlag": enums/UseFlag.md
             - "WeaponType": enums/WeaponType.md
         - "Global Functions": GlobalFunctions.md
         - "Color": Color.md        

@@ -14,7 +14,7 @@
 |[ ](#){: .abrep .tooltip .badge }|10 |GRID_SPIDERWEB {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|11 |GRID_LOCK {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|12 |GRID_TNT {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|13 |GRID_FIREPLACE {: .copyable } | not used! <br> | 
+|[ ](#){: .abrep .tooltip .badge }|13 |GRID_FIREPLACE {: .copyable } | not used! | 
 |[ ](#){: .abrep .tooltip .badge }|14 |GRID_POOP {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|15 |GRID_WALL {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|16 |GRID_DOOR {: .copyable } |  | 
@@ -24,3 +24,8 @@
 |[ ](#){: .abrep .tooltip .badge }|20 |GRID_PRESSURE_PLATE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|21 |GRID_STATUE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|22 |GRID_ROCK_SS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|23 |GRID_TELEPORTER {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|24 |GRID_PILLAR {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|25 |GRID_ROCK_SPIKED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|26 |GRID_ROCK_ALT2 {: .copyable } | special skull in Depths 2 | 
+|[ ](#){: .rep .tooltip .badge }|27 |GRID_ROCK_GOLD {: .copyable } |  | 

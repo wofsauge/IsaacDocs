@@ -37,4 +37,14 @@
 |[ ](#){: .abrep .tooltip .badge }|33 |CHALLENGE_POKEY_MANS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|34 |CHALLENGE_ULTRA_HARD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|35 |CHALLENGE_PONG {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|36 |NUM_CHALLENGES {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|36 |CHALLENGE_SCAT_MAN {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|37 |CHALLENGE_BLOODY_MARY {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|38 |CHALLENGE_BAPTISM_BY_FIRE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|39 |CHALLENGE_ISAACS_AWAKENING {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|40 |CHALLENGE_SEEING_DOUBLE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|41 |CHALLENGE_PICA_RUN {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|42 |CHALLENGE_HOT_POTATO {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|43 |CHALLENGE_CANTRIPPED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|44 |CHALLENGE_RED_REDEMPTION {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|45 |CHALLENGE_DELETE_THIS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|46 |NUM_CHALLENGES {: .copyable } |  | 

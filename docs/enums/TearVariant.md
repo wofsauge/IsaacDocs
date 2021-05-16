@@ -40,3 +40,14 @@
 |[ ](#){: .abrep .tooltip .badge }|36 |HUNGRY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|37 |BALLOON_BRIMSTONE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|38 |BALLOON_BOMB {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|39 |FIST {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|40 |GRIDENT {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|41 |ICE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|42 |ROCK {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|43 |KEY {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|44 |KEY_BLOOD {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|45 |ERASER {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|46 |FIRE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|47 |SWORD_BEAM {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|48 |SPORE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|49 |TECH_SWORD_BEAM {: .copyable } |  | 

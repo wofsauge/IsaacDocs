@@ -49,4 +49,7 @@
 |[ ](#){: .abrep .tooltip .badge }|44 |PILLEFFECT_HORF {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|45 |PILLEFFECT_SUNSHINE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|46 |PILLEFFECT_VURP {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|47 |NUM_PILL_EFFECTS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|47 |PILLEFFECT_SHOT_SPEED_DOWN {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|48 |PILLEFFECT_SHOT_SPEED_UP {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|49 |PILLEFFECT_EXPERIMENTAL {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|50 |NUM_PILL_EFFECTS {: .copyable } |  | 

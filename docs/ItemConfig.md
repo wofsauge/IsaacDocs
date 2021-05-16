@@ -1,4 +1,6 @@
 # Class "ItemConfig"
+ItemConfig does have a special Enum.  you can find it here [ItemConfigEnums](../enums/ItemConfigEnums.md)
+
 ## Functions
 ### Get·Card () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }

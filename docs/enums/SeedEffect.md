@@ -68,4 +68,6 @@
 |[ ](#){: .abrep .tooltip .badge }|74 |SEED_SHOOT_IN_MOVEMENT_DIRECTION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|75 |SEED_SHOOT_OPPOSITE_MOVEMENT_DIRECTION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|76 |SEED_AXIS_ALIGNED_CONTROLS {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|77 |NUM_SEEDS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|77 |SEED_SUPER_HOT {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|78 |SEED_RETRO_VISION {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|79 |NUM_SEEDS {: .copyable } |  | 

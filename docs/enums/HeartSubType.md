@@ -12,3 +12,4 @@
 |[ ](#){: .abrep .tooltip .badge }|9 |HEART_SCARED {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|10 |HEART_BLENDED {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|11 |HEART_BONE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|12 |HEART_ROTTEN {: .copyable } |  | 

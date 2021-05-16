@@ -16,4 +16,13 @@
 |[ ](#){: .abrep .tooltip .badge }|12 |STATE_GREED_MONSTRO_SPAWNED {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|13 |STATE_ITEM_DUNGEON_FOUND {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|14 |STATE_MAMA_MEGA_USED {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|15 |NUM_STATE_FLAGS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|15 |STATE_WOODEN_CROSS_REMOVED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|16 |STATE_SHOVEL_QUEST_TRIGGERED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|17 |STATE_SATANIC_BIBLE_USED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|18 |STATE_SOL_EFFECT {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|19 |STATE_LEVEL_START_TRIGGERED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|20 |STATE_LUNA_EFFECT {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|21 |STATE_VOID_DOOR_DISABLED {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|22 |STATE_MINESHAFT_ESCAPE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|23 |STATE_MIRROR_BROKEN {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|24 |NUM_STATE_FLAGS {: .copyable } |  | 

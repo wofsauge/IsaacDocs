@@ -15,4 +15,8 @@
 |[ ](#){: .abrep .tooltip .badge }|11 |PILL_BLACK_YELLOW {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|12 |PILL_WHITE_BLACK {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|13 |PILL_WHITE_YELLOW {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|14 |NUM_PILLS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|14 |NUM_STANDARD_PILLS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|14 |PILL_GOLD {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|15 |NUM_PILLS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|0x800 |PILL_GIANT_FLAG {: .copyable } | 2047 Used for horsepills | 
+|[ ](#){: .rep .tooltip .badge }|0x7ff |PILL_COLOR_MASK {: .copyable } | 2048 | 

@@ -1,6 +1,7 @@
 # Enum "PlayerType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
+|[ ](#){: .rep .tooltip .badge }|-1 |PLAYER_POSSESSOR {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|0 |PLAYER_ISAAC {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|1 |PLAYER_MAGDALENA {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|2 |PLAYER_CAIN {: .copyable } |  | 
@@ -19,4 +20,27 @@
 |[ ](#){: .abrep .tooltip .badge }|15 |PLAYER_APOLLYON {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|16 |PLAYER_THEFORGOTTEN {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|17 |PLAYER_THESOUL {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|18 |NUM_PLAYER_TYPES {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|18 |PLAYER_BETHANY {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|19 |PLAYER_JACOB {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|20 |PLAYER_ESAU {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|21 |PLAYER_ISAAC_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|22 |PLAYER_MAGDALENA_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|23 |PLAYER_CAIN_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|24 |PLAYER_JUDAS_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|25 |PLAYER_XXX_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|26 |PLAYER_EVE_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|27 |PLAYER_SAMSON_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|28 |PLAYER_AZAZEL_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|29 |PLAYER_LAZARUS_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|30 |PLAYER_EDEN_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|31 |PLAYER_THELOST_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|32 |PLAYER_LILITH_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|33 |PLAYER_KEEPER_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|34 |PLAYER_APOLLYON_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|35 |PLAYER_THEFORGOTTEN_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|36 |PLAYER_BETHANY_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|37 |PLAYER_JACOB_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|38 |PLAYER_LAZARUS2_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|39 |PLAYER_JACOB2_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|40 |PLAYER_THESOUL_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|41 |NUM_PLAYER_TYPES {: .copyable } |  | 

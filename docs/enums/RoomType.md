@@ -25,4 +25,8 @@
 |[ ](#){: .abrep .tooltip .badge }|21 |ROOM_DICE {: .copyable } | ![img](../../images/roomtypes/21.png) |  | 
 |[ ](#){: .abrep .tooltip .badge }|22 |ROOM_BLACK_MARKET {: .copyable } |  |  | 
 |[ ](#){: .abrep .tooltip .badge }|23 |ROOM_GREED_EXIT {: .copyable } |  |  | 
-|[ ](#){: .abrep .tooltip .badge }|24 |NUM_ROOMTYPES {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|24 |ROOM_PLANETARIUM {: .copyable } |  |  | 
+|[ ](#){: .rep .tooltip .badge }|25 |ROOM_TELEPORTER {: .copyable } |  |  | 
+|[ ](#){: .rep .tooltip .badge }|26 |ROOM_TELEPORTER_EXIT {: .copyable } |  |  | 
+|[ ](#){: .rep .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } |  |  | 
+|[ ](#){: .rep .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  | 

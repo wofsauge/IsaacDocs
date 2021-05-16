@@ -61,4 +61,16 @@
 |[ ](#){: .abrep .tooltip .badge }|56 |BABY_APOLLYON {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|57 |BABY_BONE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|58 |BABY_BOUND {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|59 |BABY_BASIC {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|59 |BABY_FOUND_SOUL {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|60 |BABY_LOST_WHITE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|61 |BABY_LOST_BLACK {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|62 |BABY_LOST_BLUE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|63 |BABY_LOST_GREY {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|64 |BABY_WISP {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|65 |BABY_DOUBLE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|66 |BABY_GLOWING {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|67 |BABY_ILLUSION {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|68 |BABY_HOPE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|69 |BABY_SOLOMON_A {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|70 |BABY_SOLOMON_B {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|71 |BABY_BASIC {: .copyable } |  | 
