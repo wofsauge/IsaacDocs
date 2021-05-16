@@ -21,7 +21,7 @@ end
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(8) |TEAR_BOOMERANG {: .copyable } | My reflection type tear (returns back) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(9) |TEAR_PERSISTENT {: .copyable } | Polyphemus type tear (Damages the entity and if the damage is more then enemy hp it continues with less damage) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(10) |TEAR_WIGGLE {: .copyable } | Wiggle worm type tear (wiggles) | 
-|[ ](#){: .rep .tooltip .badge }| TEARFLAG(11) |TEAR_MULLIGAN {: .copyable } | Mulligan type tear (creates fly on hit) | 
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(11) |TEAR_MULLIGAN {: .copyable } | Mulligan type tear (creates fly on hit) <br> (ab+: TearFlags.TEAR_MIGAN) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(12) |TEAR_EXPLOSIVE {: .copyable } | IPECAC type tear (explodes on hit) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(13) |TEAR_CHARM {: .copyable } | Mom's Eyeshadow tear | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(14) |TEAR_CONFUSION {: .copyable } | Iron Bar tear | 

@@ -113,7 +113,7 @@
 |[ ](#){: .abrep .tooltip .badge }|118 |ANGRY_FLY {: .copyable } | Booster Pack #1 | 
 |[ ](#){: .abrep .tooltip .badge }|119 |BUDDY_IN_A_BOX {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|120 |SPRINKLER {: .copyable } |  | 
-|[ ](#){: .ab .tooltip .badge }|121 |LEPROCY {: .copyable } | DEPRICATED! | 
+|[ ](#){: .rep .tooltip .badge }|121 |LEPROSY {: .copyable } | (ab+: FamiliarVariant.LEPROCY) | 
 |[ ](#){: .abrep .tooltip .badge }|122 |LIL_HARBINGERS {: .copyable } | Booster Pack #3 | 
 |[ ](#){: .abrep .tooltip .badge }|123 |ANGELIC_PRISM {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|124 |MYSTERY_EGG {: .copyable } | Booster Pack #5 | 

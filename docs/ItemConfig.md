@@ -1,5 +1,5 @@
 # Class "ItemConfig"
-ItemConfig does have a special Enum.  you can find it here [ItemConfigEnums](../enums/ItemConfigEnums.md)
+ItemConfig does have a special Enum.  you can find it here [ItemConfigEnums](../enums/ItemConfigEnums)
 
 ## Functions
 ### Get·Card () {: aria-label='Functions' }

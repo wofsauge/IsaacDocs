@@ -5,14 +5,14 @@
 |[ ](#){: .abrep .tooltip .badge }|1 |COLLECTIBLE_SAD_ONION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|2 |COLLECTIBLE_INNER_EYE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|3 |COLLECTIBLE_SPOON_BENDER {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|4 |COLLECTIBLE_MAXS_HEAD {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|4 |COLLECTIBLE_CRICKETS_HEAD {: .copyable } | (ab+: COLLECTIBLE_MAXS_HEAD) | 
 |[ ](#){: .abrep .tooltip .badge }|5 |COLLECTIBLE_MY_REFLECTION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|6 |COLLECTIBLE_NUMBER_ONE {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|7 |COLLECTIBLE_BLOOD_MARTYR {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|7 |COLLECTIBLE_BLOOD_OF_THE_MARTYR {: .copyable } | (ab+: COLLECTIBLE_BLOOD_MARTYR) | 
 |[ ](#){: .abrep .tooltip .badge }|8 |COLLECTIBLE_BROTHER_BOBBY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|9 |COLLECTIBLE_SKATOLE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|10 |COLLECTIBLE_HALO_OF_FLIES {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|11 |COLLECTIBLE_ONE_UP {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|11 |COLLECTIBLE_1UP {: .copyable } | (ab+: COLLECTIBLE_ONE_UP) | 
 |[ ](#){: .abrep .tooltip .badge }|12 |COLLECTIBLE_MAGIC_MUSHROOM {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|13 |COLLECTIBLE_VIRUS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|14 |COLLECTIBLE_ROID_RAGE {: .copyable } |  | 
@@ -44,7 +44,7 @@
 |[ ](#){: .abrep .tooltip .badge }|40 |COLLECTIBLE_KAMIKAZE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|41 |COLLECTIBLE_MOMS_PAD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|42 |COLLECTIBLE_BOBS_ROTTEN_HEAD {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|43 |COLLECTIBLE_PILLS_HERE {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|43 | Does not exist anymore | (ab+: COLLECTIBLE_PILLS_HERE) | 
 |[ ](#){: .abrep .tooltip .badge }|44 |COLLECTIBLE_TELEPORT {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|45 |COLLECTIBLE_YUM_HEART {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|46 |COLLECTIBLE_LUCKY_FOOT {: .copyable } |  | 
@@ -60,9 +60,9 @@
 |[ ](#){: .abrep .tooltip .badge }|56 |COLLECTIBLE_LEMON_MISHAP {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|57 |COLLECTIBLE_DISTANT_ADMIRATION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|58 |COLLECTIBLE_BOOK_OF_SHADOWS {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|59 |COLLECTIBLE_059 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|59 | Does not exist anymore | (ab+: COLLECTIBLE_059) | 
 |[ ](#){: .abrep .tooltip .badge }|60 |COLLECTIBLE_LADDER {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|61 |COLLECTIBLE_TAROT_CARD {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|61 | Does not exist anymore | (ab+: COLLECTIBLE_TAROT_CARD) | 
 |[ ](#){: .abrep .tooltip .badge }|62 |COLLECTIBLE_CHARM_VAMPIRE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|63 |COLLECTIBLE_BATTERY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|64 |COLLECTIBLE_STEAM_SALE {: .copyable } |  | 
@@ -79,13 +79,13 @@
 |[ ](#){: .abrep .tooltip .badge }|75 |COLLECTIBLE_PHD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|76 |COLLECTIBLE_XRAY_VISION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|77 |COLLECTIBLE_MY_LITTLE_UNICORN {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|78 |COLLECTIBLE_BOOK_REVELATIONS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|78 |COLLECTIBLE_BOOK_OF_REVELATIONS {: .copyable } | (ab+: COLLECTIBLE_BOOK_REVELATIONS) | 
 |[ ](#){: .abrep .tooltip .badge }|79 |COLLECTIBLE_MARK {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|80 |COLLECTIBLE_PACT {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|81 |COLLECTIBLE_DEAD_CAT {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|82 |COLLECTIBLE_LORD_OF_THE_PIT {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|83 |COLLECTIBLE_THE_NAIL {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|84 |COLLECTIBLE_WE_NEED_GO_DEEPER {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|84 |COLLECTIBLE_WE_NEED_TO_GO_DEEPER {: .copyable } | (ab+: COLLECTIBLE_WE_NEED_GO_DEEPER) | 
 |[ ](#){: .abrep .tooltip .badge }|85 |COLLECTIBLE_DECK_OF_CARDS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|86 |COLLECTIBLE_MONSTROS_TOOTH {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|87 |COLLECTIBLE_LOKIS_HORNS {: .copyable } |  | 
@@ -103,26 +103,26 @@
 |[ ](#){: .abrep .tooltip .badge }|99 |COLLECTIBLE_LITTLE_GISH {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|100 |COLLECTIBLE_LITTLE_STEVEN {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|101 |COLLECTIBLE_HALO {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|102 |COLLECTIBLE_MOMS_BOTTLE_PILLS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|102 |COLLECTIBLE_MOMS_BOTTLE_OF_PILLS {: .copyable } | (ab+: COLLECTIBLE_MOMS_BOTTLE_PILLS) | 
 |[ ](#){: .abrep .tooltip .badge }|103 |COLLECTIBLE_COMMON_COLD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|104 |COLLECTIBLE_PARASITE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|105 |COLLECTIBLE_D6 {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|106 |COLLECTIBLE_MR_MEGA {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|107 |COLLECTIBLE_PINKING_SHEARS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|108 |COLLECTIBLE_WAFER {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|109 |COLLECTIBLE_MONEY_IS_POWER {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|109 |COLLECTIBLE_MONEY_EQUALS_POWER {: .copyable } | (ab+: COLLECTIBLE_MONEY_IS_POWER) | 
 |[ ](#){: .abrep .tooltip .badge }|110 |COLLECTIBLE_MOMS_CONTACTS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|111 |COLLECTIBLE_BEAN {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|112 |COLLECTIBLE_GUARDIAN_ANGEL {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|113 |COLLECTIBLE_DEMON_BABY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|114 |COLLECTIBLE_MOMS_KNIFE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|115 |COLLECTIBLE_OUIJA_BOARD {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|116 |COLLECTIBLE_NINE_VOLT {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|116 |COLLECTIBLE_9_VOLT {: .copyable } | (ab+: COLLECTIBLE_NINE_VOLT) | 
 |[ ](#){: .abrep .tooltip .badge }|117 |COLLECTIBLE_DEAD_BIRD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|118 |COLLECTIBLE_BRIMSTONE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|119 |COLLECTIBLE_BLOOD_BAG {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|120 |COLLECTIBLE_ODD_MUSHROOM_RATE {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|121 |COLLECTIBLE_ODD_MUSHROOM_DAMAGE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|120 |COLLECTIBLE_ODD_MUSHROOM_THIN {: .copyable } | (ab+: COLLECTIBLE_ODD_MUSHROOM_RATE) | 
+|[ ](#){: .rep .tooltip .badge }|121 |COLLECTIBLE_ODD_MUSHROOM_LARGE {: .copyable } | (ab+: COLLECTIBLE_ODD_MUSHROOM_DAMAGE) | 
 |[ ](#){: .abrep .tooltip .badge }|122 |COLLECTIBLE_WHORE_OF_BABYLON {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|123 |COLLECTIBLE_MONSTER_MANUAL {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|124 |COLLECTIBLE_DEAD_SEA_SCROLLS {: .copyable } |  | 
@@ -130,7 +130,7 @@
 |[ ](#){: .abrep .tooltip .badge }|126 |COLLECTIBLE_RAZOR_BLADE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|127 |COLLECTIBLE_FORGET_ME_NOW {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|128 |COLLECTIBLE_FOREVER_ALONE {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|129 |COLLECTIBLE_BUCKET_LARD {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|129 |COLLECTIBLE_BUCKET_OF_LARD {: .copyable } | (ab+: COLLECTIBLE_BUCKET_LARD) | 
 |[ ](#){: .abrep .tooltip .badge }|130 |COLLECTIBLE_PONY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|131 |COLLECTIBLE_BOMB_BAG {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|132 |COLLECTIBLE_LUMP_OF_COAL {: .copyable } |  | 
@@ -160,13 +160,13 @@
 |[ ](#){: .abrep .tooltip .badge }|156 |COLLECTIBLE_HABIT {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|157 |COLLECTIBLE_BLOODY_LUST {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|158 |COLLECTIBLE_CRYSTAL_BALL {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|159 |COLLECTIBLE_SPIRIT_NIGHT {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|159 |COLLECTIBLE_SPIRIT_OF_THE_NIGHT {: .copyable } | (ab+: COLLECTIBLE_SPIRIT_NIGHT) | 
 |[ ](#){: .abrep .tooltip .badge }|160 |COLLECTIBLE_CRACK_THE_SKY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|161 |COLLECTIBLE_ANKH {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|162 |COLLECTIBLE_CELTIC_CROSS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|163 |COLLECTIBLE_GHOST_BABY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|164 |COLLECTIBLE_CANDLE {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|165 |COLLECTIBLE_CAT_NINE_TAILS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|165 |COLLECTIBLE_CAT_O_NINE_TAILS {: .copyable } | (ab+: COLLECTIBLE_CAT_NINE_TAILS) | 
 |[ ](#){: .abrep .tooltip .badge }|166 |COLLECTIBLE_D20 {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|167 |COLLECTIBLE_HARLEQUIN_BABY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|168 |COLLECTIBLE_EPIC_FETUS {: .copyable } |  | 
@@ -236,7 +236,7 @@
 |[ ](#){: .abrep .tooltip .badge }|232 |COLLECTIBLE_STOP_WATCH {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|233 |COLLECTIBLE_TINY_PLANET {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|234 |COLLECTIBLE_INFESTATION_2 {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|235 |COLLECTIBLE_235 {: .copyable } |  | 
+|[ ](#){: .abp .tooltip .badge }|235 | Does not exist anymore | (ab+: COLLECTIBLE_235) | 
 |[ ](#){: .abrep .tooltip .badge }|236 |COLLECTIBLE_E_COLI {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|237 |COLLECTIBLE_DEATHS_TOUCH {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|238 |COLLECTIBLE_KEY_PIECE_1 {: .copyable } |  | 
@@ -321,7 +321,7 @@
 |[ ](#){: .abrep .tooltip .badge }|317 |COLLECTIBLE_MYSTERIOUS_LIQUID {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|318 |COLLECTIBLE_GEMINI {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|319 |COLLECTIBLE_CAINS_OTHER_EYE {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|320 |COLLECTIBLE_BLUEBABYS_ONLY_FRIEND {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|320 |COLLECTIBLE_BLUE_BABYS_ONLY_FRIEND {: .copyable } | (ab+: COLLECTIBLE_BLUEBABYS_ONLY_FRIEND) | 
 |[ ](#){: .abrep .tooltip .badge }|321 |COLLECTIBLE_SAMSONS_CHAINS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|322 |COLLECTIBLE_MONGO_BABY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|323 |COLLECTIBLE_ISAACS_TEARS {: .copyable } |  | 
@@ -400,7 +400,7 @@
 |[ ](#){: .abrep .tooltip .badge }|396 |COLLECTIBLE_VENTRICLE_RAZOR {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|397 |COLLECTIBLE_TRACTOR_BEAM {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|398 |COLLECTIBLE_GODS_FLESH {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|399 |COLLECTIBLE_MAW_OF_VOID {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|399 |COLLECTIBLE_MAW_OF_THE_VOID {: .copyable } | (ab+: COLLECTIBLE_MAW_OF_VOID) | 
 |[ ](#){: .abrep .tooltip .badge }|400 |COLLECTIBLE_SPEAR_OF_DESTINY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|401 |COLLECTIBLE_EXPLOSIVO {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|402 |COLLECTIBLE_CHAOS {: .copyable } |  | 
@@ -442,8 +442,8 @@
 |[ ](#){: .abrep .tooltip .badge }|438 |COLLECTIBLE_BINKY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|439 |COLLECTIBLE_MOMS_BOX {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|440 |COLLECTIBLE_KIDNEY_STONE {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|441 |COLLECTIBLE_MEGA_SATANS_BREATH {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|442 |COLLECTIBLE_DARK_PRINCESS_CROWN {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|441 |COLLECTIBLE_MEGA_BLAST {: .copyable } | (ab+: COLLECTIBLE_MEGA_SATANS_BREATH) | 
+|[ ](#){: .rep .tooltip .badge }|442 |COLLECTIBLE_DARK_PRINCES_CROWN {: .copyable } | (ab+: COLLECTIBLE_DARK_PRINCESS_CROWN) | 
 |[ ](#){: .abrep .tooltip .badge }|443 |COLLECTIBLE_APPLE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|444 |COLLECTIBLE_LEAD_PENCIL {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|445 |COLLECTIBLE_DOG_TOOTH {: .copyable } |  | 
@@ -457,7 +457,7 @@
 |[ ](#){: .abrep .tooltip .badge }|453 |COLLECTIBLE_COMPOUND_FRACTURE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|454 |COLLECTIBLE_POLYDACTYLY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|455 |COLLECTIBLE_DADS_LOST_COIN {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|456 |COLLECTIBLE_MOLDY_BREAD {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|456 |COLLECTIBLE_MIDNIGHT_SNACK {: .copyable } | (ab+: COLLECTIBLE_MOLDY_BREAD) | 
 |[ ](#){: .abrep .tooltip .badge }|457 |COLLECTIBLE_CONE_HEAD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|458 |COLLECTIBLE_BELLY_BUTTON {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|459 |COLLECTIBLE_SINUS_INFECTION {: .copyable } |  | 
@@ -475,7 +475,7 @@
 |[ ](#){: .abrep .tooltip .badge }|471 |COLLECTIBLE_LIL_MONSTRO {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|472 |COLLECTIBLE_KING_BABY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|473 |COLLECTIBLE_BIG_CHUBBY {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|474 |COLLECTIBLE_TONSIL {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|474 |COLLECTIBLE_BROKEN_GLASS_CANNON {: .copyable } | (ab+: COLLECTIBLE_TONSIL) | 
 |[ ](#){: .abrep .tooltip .badge }|475 |COLLECTIBLE_PLAN_C {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|476 |COLLECTIBLE_D1 {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|477 |COLLECTIBLE_VOID {: .copyable } |  | 
@@ -490,11 +490,11 @@
 |[ ](#){: .abrep .tooltip .badge }|486 |COLLECTIBLE_DULL_RAZOR {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|487 |COLLECTIBLE_POTATO_PEELER {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|488 |COLLECTIBLE_METRONOME {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|489 |COLLECTIBLE_DINF {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|489 |COLLECTIBLE_D_INFINITY {: .copyable } | (ab+: COLLECTIBLE_DINF) | 
 |[ ](#){: .abrep .tooltip .badge }|490 |COLLECTIBLE_EDENS_SOUL {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|491 |COLLECTIBLE_ACID_BABY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|492 |COLLECTIBLE_YO_LISTEN {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|493 |COLLECTIBLE_ADDERLINE {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|493 |COLLECTIBLE_ADRENALINE {: .copyable } | (ab+: COLLECTIBLE_ADDERLINE) | 
 |[ ](#){: .abrep .tooltip .badge }|494 |COLLECTIBLE_JACOBS_LADDER {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|495 |COLLECTIBLE_GHOST_PEPPER {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|496 |COLLECTIBLE_EUTHANASIA {: .copyable } |  | 
@@ -512,7 +512,7 @@
 |[ ](#){: .abrep .tooltip .badge }|508 |COLLECTIBLE_MOMS_RAZOR {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|509 |COLLECTIBLE_BLOODSHOT_EYE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|510 |COLLECTIBLE_DELIRIOUS {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|511 |COLLECTIBLE_ANGRY_FLY {: .copyable } | Booster Pack #1 <br> | 
+|[ ](#){: .abrep .tooltip .badge }|511 |COLLECTIBLE_ANGRY_FLY {: .copyable } | Booster Pack #1 | 
 |[ ](#){: .abrep .tooltip .badge }|512 |COLLECTIBLE_BLACK_HOLE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|513 |COLLECTIBLE_BOZO {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|514 |COLLECTIBLE_BROKEN_MODEM {: .copyable } |  | 
@@ -521,22 +521,22 @@
 |[ ](#){: .abrep .tooltip .badge }|517 |COLLECTIBLE_FAST_BOMBS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|518 |COLLECTIBLE_BUDDY_IN_A_BOX {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|519 |COLLECTIBLE_LIL_DELIRIUM {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|520 |COLLECTIBLE_JUMPER_CABLES {: .copyable } | Booster Pack #2 <br> | 
+|[ ](#){: .abrep .tooltip .badge }|520 |COLLECTIBLE_JUMPER_CABLES {: .copyable } | Booster Pack #2 | 
 |[ ](#){: .abrep .tooltip .badge }|521 |COLLECTIBLE_COUPON {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|522 |COLLECTIBLE_TELEKINESIS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|523 |COLLECTIBLE_MOVING_BOX {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|524 |COLLECTIBLE_TECHNOLOGY_ZERO {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|525 |COLLECTIBLE_LEPROCY {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|526 |COLLECTIBLE_LIL_HARBINGERS {: .copyable } | Booster Pack #3 <br> | 
+|[ ](#){: .rep .tooltip .badge }|525 |COLLECTIBLE_LEPROSY {: .copyable } | (ab+: COLLECTIBLE_LEPROCY) | 
+|[ ](#){: .rep .tooltip .badge }|526 |COLLECTIBLE_7_SEALS {: .copyable } | Booster Pack #3 <br> (ab+: COLLECTIBLE_LIL_HARBINGERS) | 
 |[ ](#){: .abrep .tooltip .badge }|527 |COLLECTIBLE_MR_ME {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|528 |COLLECTIBLE_ANGELIC_PRISM {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|529 |COLLECTIBLE_POP {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|530 |COLLECTIBLE_DEATH_LIST {: .copyable } | Booster Pack #4 <br> | 
+|[ ](#){: .rep .tooltip .badge }|530 |COLLECTIBLE_DEATHS_LIST {: .copyable } | Booster Pack #4 <br> (ab+: COLLECTIBLE_DEATH_LIST) | 
 |[ ](#){: .abrep .tooltip .badge }|531 |COLLECTIBLE_HAEMOLACRIA {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|532 |COLLECTIBLE_LACHRYPHAGY {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|533 |COLLECTIBLE_TRISAGION {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|534 |COLLECTIBLE_SCHOOLBAG {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|535 |COLLECTIBLE_BLANKET {: .copyable } | Booster Pack #5 <br> | 
+|[ ](#){: .abrep .tooltip .badge }|535 |COLLECTIBLE_BLANKET {: .copyable } | Booster Pack #5 | 
 |[ ](#){: .abrep .tooltip .badge }|536 |COLLECTIBLE_SACRIFICIAL_ALTAR {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|537 |COLLECTIBLE_LIL_SPEWER {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|538 |COLLECTIBLE_MARBLES {: .copyable } |  | 
@@ -551,7 +551,7 @@
 |[ ](#){: .abrep .tooltip .badge }|547 |COLLECTIBLE_DIVORCE_PAPERS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|548 |COLLECTIBLE_JAW_BONE {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|549 |COLLECTIBLE_BRITTLE_BONES {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|550 |COLLECTIBLE_BROKEN_SHOVEL {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|550 |COLLECTIBLE_BROKEN_SHOVEL_1 {: .copyable } | (ab+: COLLECTIBLE_BROKEN_SHOVEL) | 
 |[ ](#){: .abrep .tooltip .badge }|551 |COLLECTIBLE_BROKEN_SHOVEL_2 {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|552 |COLLECTIBLE_MOMS_SHOVEL {: .copyable } |  | 
 |[ ](#){: .rep .tooltip .badge }|553 |COLLECTIBLE_MUCORMYCOSIS {: .copyable } |  | 
