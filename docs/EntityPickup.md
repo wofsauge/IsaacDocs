@@ -70,11 +70,6 @@ ___
 #### int State  {: .copyable aria-label='Variables' }
 
 ___ 
-### Theres·Options·Pickup {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### boolean TheresOptionsPickup  {: .copyable aria-label='Variables' }
-
-___ 
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }

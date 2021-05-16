@@ -206,6 +206,11 @@ ___
 #### int GetGreedWavesNum ( ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Get·HUD () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [HUD](../HUD) GetHUD ( ) {: .copyable aria-label='Functions' }
+
+___ 
 ### Get·Item·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### ItemOverlay GetItemOverlay ( ) {: .copyable aria-label='Functions' }
