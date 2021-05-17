@@ -170,6 +170,20 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddFriendlyDip ( int Subtype, [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
+???- note "Dip Subtypes"
+    ```lua
+    0: normal
+    1: red
+    2: corny
+    3: golden
+    4: rainbow
+    5: black
+    6: holy
+    12: stone
+    13: flaming
+    14: poison
+    20: brownie
+    ```
 ___ 
 ### Add·Giga·Bombs () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
