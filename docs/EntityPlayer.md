@@ -1300,6 +1300,17 @@ ___
 #### void SetPill ( int SlotId, [PillColor](../enums/PillColor) Pill ) {: .copyable aria-label='Functions' }
 
 Change the pill the player is holding in the given itemslot (0 or 1).
+
+___ 
+### SetPocketActiveItem() {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void SetPocketActiveItem ( [CollectibleType](../enums/CollectibleType) Type, ActiveSlot Slot, boolean KeepInPools ) {: .copyable aria-label='Functions' }
+
+Sets the player's pocket active item to the given active item.
+Slot can be either SLOT_POCKET or SLOT_POCKET2.
+Items added to SLOT_POCKET2 will always be removed upon being used.
+If KeepInPools is set to true, the item will not be removed from the item pools.
+Use this to let the player start with a custom active item in their pocket active slot right away.
 ___ 
 ### Set·Shooting·Cooldown () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
