@@ -298,7 +298,7 @@ ___
 ___ 
 ### Get·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean GetStateFlag ( StateFlag StateFlag ) {: .copyable aria-label='Functions' }
+#### boolean GetStateFlag ( [GameStateFlag](../enums/GameStateFlag) GameStateFlag ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Target·Darkness () {: aria-label='Functions' }
@@ -384,7 +384,7 @@ ___
 ___ 
 ### Set·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetStateFlag ( StateFlag StateFlag, boolean Val ) {: .copyable aria-label='Functions' }
+#### void SetStateFlag ( [GameStateFlag](../enums/GameStateFlag) GameStateFlag, boolean Val ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Shake·Screen () {: aria-label='Functions' }
