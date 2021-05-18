@@ -529,6 +529,17 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void EvaluateItems ( ) {: .copyable aria-label='Functions' }
 Triggers a cache reevaluation. Will trigger the MC_EVALUATE_CACHE callback.
+
+Before you use this function, you need to set the appropriate cache flags first. See the example below.
+
+???- example "Example Code"
+    This code re-evaluates all of the stats for the player.
+    ```lua 
+    local player = Isaac.GetPlayer()
+    player:AddCacheFlag(CacheFlag.CACHE_ALL)
+    player:EvaluateItems()
+    ```
+
 ___ 
 ### Fire·Bomb () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
