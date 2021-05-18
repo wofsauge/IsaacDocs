@@ -52,7 +52,7 @@ Returns the Itemobject of a given CollectibleID.
 ___ 
 ### Get·Collectibles () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [ItemList](../CppContainer_Vector_ItemConfigList) GetCollectibles ( ) {: .copyable aria-label='Functions' }
+#### const [userdata] GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles. 
 
