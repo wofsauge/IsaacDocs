@@ -138,7 +138,7 @@ ___
 ___ 
 ### Add·Curse·Mist·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddCurseMistEffect( ) {: .copyable aria-label='Functions' }
+#### void AddCurseMistEffect ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Dead·Eye·Charge () {: aria-label='Functions' }
@@ -1228,7 +1228,7 @@ Removes a given costume based on its item config entry.
 ___ 
 ### Remove·Curse·Mist·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RemoveCurseMistEffect( ) {: .copyable aria-label='Functions' }
+#### void RemoveCurseMistEffect ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Golden·Bomb () {: aria-label='Functions' }
