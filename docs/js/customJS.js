@@ -76,7 +76,11 @@ function buildContentMap() {
         var funcParts = $(this).html().split(" (");
         var funcFront = funcParts[0].split(" ");
         var funcName = funcFront.pop();
-        var funcLink = $("h3:not(.inheritance)").eq(index).find("a").last().attr("href");
+        var parentH3Node = $(this).prev();
+        while (parentH3Node.prop("tagName") != "H3") {
+            parentH3Node = parentH3Node.prev();
+        }
+        var funcLink = parentH3Node.find("a").last().attr("href");
         funcName = "<a href=\"" + funcLink + "\">" + funcName + "</a>";
         var ariaLabel = $(this).attr("aria-label");
         if (funcParts.length > 1) {
