@@ -80,7 +80,6 @@ nav:
             - "PillColor": enums/PillColor.md
             - "PillEffect": enums/PillEffect.md
             - "PlayerForm": enums/PlayerForm.md
-            - "PlayerItemState": enums/PlayerItemState.md
             - "PlayerSpriteLayer": enums/PlayerSpriteLayer.md
             - "PlayerType": enums/PlayerType.md
             - "PoopPickupSubType": enums/PoopPickupSubType.md
@@ -192,8 +191,11 @@ nav:
         - "achievements.xml" : xml/achievements.md
         - "ambush.xml" : xml/ambush.md
         - "babies.xml" : xml/babies.md
+        - "bombcostumes.xml" : xml/bombcostumes.md
         - "backdrops.xml" : xml/backdrops.md
         - "bosscolors.xml" : xml/bosscolors.md
+        - "bossoverlays.xml" : xml/bossoverlays.md
+        - "bosspools.xml" : xml/bosspools.md
         - "bossportraits.xml" : xml/bossportraits.md
         - "challenges.xml" : xml/challenges.md
         - "costumes2.xml" : xml/costumes2.md
