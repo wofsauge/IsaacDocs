@@ -213,7 +213,7 @@ ___
 ___ 
 ### Get·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean GetStateFlag ( [GameStateFlag](../enums/GameStateFlag) GameStateFlag) {: .copyable aria-label='Functions' }
+#### boolean GetStateFlag ( [LevelStateFlag](../enums/LevelStateFlag) LevelStateFlag) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Boss·Challenge () {: aria-label='Functions' }
@@ -289,7 +289,7 @@ for SetStage/SetNextStage to have effect, call Init afterward
 ___ 
 ### Set·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetStateFlag ( [GameStateFlag](../enums/GameStateFlag) GameStateFlag, boolean Val ) {: .copyable aria-label='Functions' }
+#### void SetStateFlag ( [LevelStateFlag](../enums/LevelStateFlag) LevelStateFlag, boolean Val ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Show·Map () {: aria-label='Functions' }

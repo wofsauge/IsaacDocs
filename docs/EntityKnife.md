@@ -43,11 +43,6 @@ ___
 #### float Charge  {: .copyable aria-label='Variables' }
 
 ___ 
-### Is·Flying {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### boolean IsFlying  {: .copyable aria-label='Variables' }
-
-___ 
 ### Max·Distance {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float MaxDistance  {: .copyable aria-label='Variables' }
