@@ -1,5 +1,10 @@
 # Class "ItemConfig::Item"
 ## Functions
+___ 
+### Has·Tags () {: aria-label='Functions' }
+[ ](#){: .abrep .tooltip .badge }
+#### boolean HasTags ( int Tags ) {: .copyable aria-label='Functions' }
+
 ### Is·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }
@@ -61,6 +66,16 @@ ___
 #### int CacheFlags  {: .copyable aria-label='Variables' }
 
 ___ 
+### Charge·Type {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int ChargeType  {: .copyable aria-label='Variables' }
+
+___ 
+### Clear·Effects·On·Remove {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### boolean ClearEffectsOnRemove  {: .copyable aria-label='Variables' }
+
+___ 
 ### Costume {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Costume](../ItemConfig_Costume) Costume {: .copyable aria-label='Variables' }
@@ -86,9 +101,19 @@ ___
 #### string GfxFileName  {: .copyable aria-label='Variables' }
 
 ___ 
+### Hidden {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### boolean Hidden  {: .copyable aria-label='Variables' }
+
+___ 
 ### ID {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ID  {: .copyable aria-label='Variables' }
+
+___ 
+### Init·Charge {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int InitCharge  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Max·Charges {: aria-label='Variables' }
@@ -106,9 +131,34 @@ ___
 #### string Name  {: .copyable aria-label='Variables' }
 
 ___ 
+### Passive·Cache {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### boolean PassiveCache  {: .copyable aria-label='Variables' }
+
+___ 
+### Persistent·Effect {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### boolean PersistentEffect  {: .copyable aria-label='Variables' }
+
+___ 
+### Quality {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int Quality  {: .copyable aria-label='Variables' }
+
+___ 
+### Shop·Price {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int ShopPrice  {: .copyable aria-label='Variables' }
+
+___ 
 ### Special {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Special  {: .copyable aria-label='Variables' }
+
+___ 
+### Tags {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int Tags  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Type {: aria-label='Variables' }
