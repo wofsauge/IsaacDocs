@@ -52,9 +52,12 @@ Returns the Itemobject of a given CollectibleID.
 ___ 
 ### Get·Collectibles () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [userdata] GetCollectibles ( ) {: .copyable aria-label='Functions' }
+#### const userdata GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles. 
+
+???+ bug "Bug"
+    This function is broken and returns userdata.
 
 ???- example "Example Code"
     This Code gets the highest possible collectibleid including modded items.
