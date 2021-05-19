@@ -50,17 +50,17 @@ ___
 ___ 
 ### Bomb·Damage () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void BombDamage ( [Vector](../Vector) Position, float Damage, float Radius, boolean LineCheck = true, [Entity](../Entity) Source = nil, int TearFlags = [TearFlags](../enums/TearFlags/).TEAR_NORMAL, int DamageFlags = [DamageFlags](../enums/DamageFlags/).DAMAGE_EXPLOSION, boolean DamageSource = false ) {: .copyable aria-label='Functions' }
+#### void BombDamage ( [Vector](../Vector) Position, float Damage, float Radius, boolean LineCheck = true, [Entity](../Entity) Source = nil, [TearFlags](../enums/TearFlags) TearFlags = [TearFlags](../enums/TearFlags/).TEAR_NORMAL, int DamageFlags = [DamageFlags](../enums/DamageFlags/).DAMAGE_EXPLOSION, boolean DamageSource = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Bomb·Explosion·Effects () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void BombExplosionEffects ( [Vector](../Vector) Position, float Damage, int TearFlags = [TearFlags](../enums/TearFlags/).TEAR_NORMAL, [Color](../Color/) Color = Color.Default, [Entity](../Entity) Source = nil, float RadiusMult = 1, boolean LineCheck = true, boolean DamageSource = false, int DamageFlags = [DamageFlags](../enums/DamageFlags/).DAMAGE_EXPLOSION ) {: .copyable aria-label='Functions' }
+#### void BombExplosionEffects ( [Vector](../Vector) Position, float Damage, [TearFlags](../enums/TearFlags) TearFlags = [TearFlags](../enums/TearFlags/).TEAR_NORMAL, [Color](../Color/) Color = Color.Default, [Entity](../Entity) Source = nil, float RadiusMult = 1, boolean LineCheck = true, boolean DamageSource = false, int DamageFlags = [DamageFlags](../enums/DamageFlags/).DAMAGE_EXPLOSION ) {: .copyable aria-label='Functions' }
 The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects. 
 ___ 
 ### Bomb·Tearflag·Effects () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void BombTearflagEffects ( [Vector](../Vector) Position, float Radius, int [TearFlags](../enums/TearFlags/), [Entity](../Entity) Source = nil, float RadiusMult = 1) {: .copyable aria-label='Functions' }
+#### void BombTearflagEffects ( [Vector](../Vector) Position, float Radius, [TearFlags](../enums/TearFlags) TearFlags, [Entity](../Entity) Source = nil, float RadiusMult = 1) {: .copyable aria-label='Functions' }
 Does bomb-exclusive special effects. 
 ___ 
 ### Butter·Bean·Fart () {: aria-label='Functions' }

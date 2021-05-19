@@ -645,7 +645,7 @@ ___
 ___ 
 ### Get·Bomb·Variant () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### EntityBomb::BombVariant GetBombVariant ( int TearFlags, boolean ForceSmallBomb ) {: .copyable aria-label='Functions' }
+#### EntityBomb::BombVariant GetBombVariant ( [TearFlags](../enums/TearFlags) TearFlags, boolean ForceSmallBomb ) {: .copyable aria-label='Functions' }
 Pass tear flags to add extra effects to the bomb visual like burn -> hot bombs, even if player doesn't have Hot Bombs collectible. ForceSmallBomb will override large bomb variants for TEAR_PERSISTENT. 
 ___ 
 ### Get·Bone·Hearts () {: aria-label='Functions' }

@@ -17,7 +17,7 @@ ___
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [int](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Tear·Height {: aria-label='Variables' }

@@ -17,7 +17,7 @@ ___
 ___ 
 ### Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int Flags  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags) Flags  {: .copyable aria-label='Variables' }
 
 Uses [TearFlags](../enums/TearFlags) to alter the behavior of the bomb.
 ___ 
