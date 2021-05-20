@@ -210,7 +210,7 @@ ___
 ___ 
 ### Get·Grid·Path·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetGridPathFromPos ( int Index ) {: .copyable aria-label='Functions' }
+#### int GetGridPathFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Grid·Position () {: aria-label='Functions' }
