@@ -156,7 +156,7 @@ ___
 ___ 
 ### Get·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### string GetName ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) Type, int Curses, int InfiniteLevel, boolean Dyslexia ) {: .copyable aria-label='Functions' }
+#### string GetName ( [LevelStage](../enums/LevelStage) Stage = GetStage(), [StageType](../enums/StageType) Type = GetStageType(), int Curses = GetCurses(), int InfiniteLevel = 0, boolean Dyslexia = false) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Non·Complete·Room·Index () {: aria-label='Functions' }
