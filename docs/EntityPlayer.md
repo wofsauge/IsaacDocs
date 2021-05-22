@@ -1035,7 +1035,7 @@ Gets the ID of the trinket the player is holding in the given trinketslot (0 or 
 ___ 
 ### Get·Trinket·Multiplier () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetTrinketMultiplier ( [TrinketType](../enums/TrinketType) TrinketID) {: .copyable aria-label='Functions' }
+#### int GetTrinketMultiplier ( [TrinketType](../enums/TrinketType) TrinketID ) {: .copyable aria-label='Functions' }
 Gets the multiplier of a given Trinket effect. This is analog to the number of times the trinket effect is applied.
 
 ???- info "Multiplier Breakdown"
