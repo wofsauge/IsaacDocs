@@ -3,7 +3,10 @@
 ### Allowed·Doors {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### DoorSet AllowedDoors  {: .copyable aria-label='Variables' }
-Contains just on load swapped data (in cases like minibosses, or other such events) 
+Contains data swapped just on load (in cases like minibosses, or other such events) 
+
+???+ bug "Bug"
+    This variable contains userdata and is therefore not useable.
 ___ 
 ### Award·Seed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

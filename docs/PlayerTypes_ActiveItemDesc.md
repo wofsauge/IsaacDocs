@@ -15,8 +15,18 @@ ___
 #### [CollectibleType](../enums/CollectibleType) Item {: .copyable aria-label='Variables' }
 
 ___ 
-### Lock {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### boolean Lock  {: .copyable aria-label='Variables' }
-Helper, avoids double charge on full charge. 
+### PartialCharge {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### float PartialCharge {: .copyable aria-label='Variables' }
+How close the item is to gaining another charge (0-1 range, used by 4.5 Volt)
+___ 
+### TimedRechargeCooldown {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int TimedRechargeCooldown {: .copyable aria-label='Variables' }
+Number of frames before an item with a timed cooldown can recharge again (used by Spin To Win to pause its recharge after fully discharging it)
+___ 
+### VarData {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int VarData {: .copyable aria-label='Variables' }
+Holds extra information for some active items (such as the number of uses for Jar of Wisps)
 ___ 

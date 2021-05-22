@@ -19,6 +19,10 @@ ___
 
 Defines the multiplication of two [Color](../Color) objects using the `*` operator.
 ___ 
+## Constants
+### Color.Default {: aria-label='Constants' }
+[ ](#){: .rep .tooltip .badge }
+___ 
 ## Functions
 ### Lerp () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }

@@ -334,7 +334,7 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
 ___ 
 ### Add·Swarm·Fly·Orbital () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFamiliar](../EntityFamiliar) AddSwarmFlyFamiliar ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](../EntityFamiliar) AddSwarmFlyOrbital ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Trinket () {: aria-label='Functions' }
@@ -345,6 +345,7 @@ ___
 ### Add·Wisp () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [EntityFamiliar](../EntityFamiliar) AddWisp ( [CollectibleType](../enums/CollectibleType) Collectible, [Vector](../Vector) Position, boolean AdjustOrbitLayer = false, boolean DontUpdate = false ) {: .copyable aria-label='Functions' }
+The type of Wisp can be defined with the Collectible. If the ID is not corresponding to an active item with a special wisp, it will default to the regular blue wisp.
 
 ___ 
 ### Animate·Appear () {: aria-label='Functions' }
@@ -445,13 +446,13 @@ ___
 ### Can·Pick·Rotten·Hearts () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean CanPickRottenHearts ( ) {: .copyable aria-label='Functions' }
-returns true if player has room for more rotten hearts
+Returns true if player has room for more rotten hearts
 
 ___ 
 ### Can·Pick·Soul·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanPickSoulHearts ( ) {: .copyable aria-label='Functions' }
-returns true if player has room for more soul hearts 
+Returns true if player has room for more soul hearts 
 ___ 
 ### Can·Pickup·Item () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -466,7 +467,7 @@ ___
 ### Can·Turn·Head () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanTurnHead ( ) {: .copyable aria-label='Functions' }
-returns true if head should react to keys or false otherwise 
+Returns true if head should react to keys or false otherwise 
 ___ 
 ### Change·Player·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -1034,12 +1035,17 @@ Gets the ID of the trinket the player is holding in the given trinketslot (0 or 
 ___ 
 ### Get·Trinket·Multiplier () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetTrinketMultiplier ( ) {: .copyable aria-label='Functions' }
+#### int GetTrinketMultiplier ( [TrinketType](../enums/TrinketType) TrinketID) {: .copyable aria-label='Functions' }
+Gets the multiplier of a given Trinket effect. This is analog to the number of times the trinket effect is applied.
 
+???- info "Multiplier Breakdown"
+    * Per normal trinket of this type equipped / gulped : +1
+    * Per golden trinket of this type equipped / gulped : +2
+    * Mom's Box equipped : +1 (does not stack)
 ___ 
 ### Get·Trinket·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RNG](../RNG) GetTrinketRNG ( [TrinketType](../enums/TrinketType) ID ) {: .copyable aria-label='Functions' }
+#### [RNG](../RNG) GetTrinketRNG ( [TrinketType](../enums/TrinketType) TrinketID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Velocity·Before·Update () {: aria-label='Functions' }
@@ -1342,9 +1348,9 @@ ___
 #### void SetShootingCooldown ( int Cooldown ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Add·Soul·Charge () {: aria-label='Functions' }
+### Set·Soul·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
+#### void SetSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
 Only works on Bethany.
 
@@ -1383,6 +1389,20 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [EntityFamiliar](../EntityFamiliar) ThrowFriendlyDip ( int Subtype, [Vector](../Vector) Position, [Vector](../Vector) Target = Vector.Zero ) {: .copyable aria-label='Functions' }
 
+???- note "Dip Subtypes"
+    ```lua
+    0: normal
+    1: red
+    2: corny
+    3: golden
+    4: rainbow
+    5: black
+    6: holy
+    12: stone
+    13: flaming
+    14: poison
+    20: brownie
+    ```
 ___ 
 ### Throw·Held·Entity () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -1396,7 +1416,7 @@ ___
 ___ 
 ### Try·Hold·Entity () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean TryHoldEntity ( [Entity](../Entity) Ent ) {: .copyable aria-label='Functions' }
+#### boolean TryHoldEntity ( [Entity](../Entity) Entity ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Hold·Trinket () {: aria-label='Functions' }

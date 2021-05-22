@@ -59,9 +59,15 @@ The item [RNG](../../RNG) allows for the item's random events to be seeded.
 
 Return true to show the "use item" animation, otherwise false.Returning any value will have no effect on later callback executions. 
 
+If a table is returned instead of a boolean, the following fields can be set to a non-nil value for extra functionality:
+
+* Discharge: Determines whether the item should be discharged or not after being used
+* Remove: Determines whether the item should be removed from the player or not after being used
+* ShowAnim: Plays the default use animation if set to true (equivalent to simply returning true in AB+)
+
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG))|[CollectibleType](../CollectibleType) |
+|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int],<br>ActiveSlot [int],<br>CustomVarData [int])|[CollectibleType](../CollectibleType) |
 
 ### MC_POST_PEFFECT_UPDATE {: .copyable } 
 Called for each player, each frame, after the player evaluates the effects of items that must be constantly evaluated.
@@ -79,7 +85,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|5 |MC_USE_CARD {: .copyable } | ([Card](../Card))|[Card](../Card) |
+|[ ](#){: .abrep .tooltip .badge }|5 |MC_USE_CARD {: .copyable } | ([Card](../Card),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int])|[Card](../Card) |
 
 ### MC_FAMILIAR_UPDATE {: .copyable } 
 Called every frame for each familiar. 
@@ -135,7 +141,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|10 |MC_USE_PILL {: .copyable } | ([PillEffect](../PillEffect))|[PillEffect](../PillEffect) |
+|[ ](#){: .abrep .tooltip .badge }|10 |MC_USE_PILL {: .copyable } | ([PillEffect](../PillEffect),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int])|[PillEffect](../PillEffect) |
 
 ### MC_ENTITY_TAKE_DMG {: .copyable } 
 Called before new damage is applied.
@@ -296,6 +302,8 @@ Returned values will not update the "[Card](../Card)" arg of later executed call
 ### MC_GET_SHADER_PARAMS {: .copyable } 
 Returns a table containing a key -> value pair for custom shader parameters. 
 
+Will skip remaining callbacks when returning a table.
+
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|21 |MC_GET_SHADER_PARAMS {: .copyable } | (ShaderName [string]) | - |
@@ -338,7 +346,7 @@ Return true to prevent the default code of an item to be triggered. This will st
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG))|[CollectibleType](../CollectibleType) |
+|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int],<br>ActiveSlot [int],<br>CustomVarData [int])|[CollectibleType](../CollectibleType) |
 
 ### MC_PRE_ENTITY_SPAWN {: .copyable } 
 Called right before an entity is spawned. 
@@ -366,9 +374,8 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact). 
+Returning any non-nil value will skip remaining callbacks.
 
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback without defining a [FamiliarVariant](../FamiliarVariant) unless its absolutely nessesary! 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -404,9 +411,7 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact). 
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback without defining an [EntityType](../EntityType) unless its absolutely nessesary! 
+Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -437,11 +442,9 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
+Returning any non-nil value will skip remaining callbacks.
 
 The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = Co-Op-Baby
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary! 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -498,9 +501,7 @@ Return a table `{ Variant, Subtype }` to override the specified values. This doe
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact). 
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback without defining an [PickupVariant](../PickupVariant) unless its absolutely nessesary! 
+Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -534,9 +535,7 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact). 
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback without defining an [PickupVariant](../PickupVariant) unless its absolutely nessesary! 
+Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -570,9 +569,7 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact). 
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback without defining an [ProjectileVariant](../ProjectileVariant) unless its absolutely nessesary! 
+Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -640,12 +637,10 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
+Returning any non-nil value will skip remaining callbacks.
 
 ???+ note
     The optional parameter is a SubType and **NOT** a Variant! 
-
-???+ bug   
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback without defining an KnifeSubType unless its absolutely nessesary! 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -703,9 +698,7 @@ Returning any value will have no effect on later callback executions.
 The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary! 
+Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -842,10 +835,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .abrep .tooltip .badge }|68 |MC_POST_ENTITY_KILL {: .copyable } | ([Entity](../../Entity))|[EntityType](../EntityType) |
 
 ### MC_PRE_NPC_UPDATE {: .copyable } 
-Return true if the internal AI of an NPC should be ignored, false or nil/nothing otherwise.
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary! 
+Return true if the internal AI of an NPC should be ignored, nil/nothing otherwise. Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -856,10 +846,7 @@ This function is triggered in every room that can be cleared, including boss and
 
 This Callback also handles special spawns like the spawning of Trapdoors after a boss is killed, therefore returning true here will also cancel those events.
 
-Return true if the spawn routine should be ignored, false or nil/nothing otherwise.
-
-???+ bug
-    This Callback can only be used ONCE across all mods! It is highly recommended to not use this Callback unless its absolutely nessesary! 
+Return true if the spawn routine should be ignored, nil/nothing otherwise. Returning any non-nil value will skip remaining callbacks.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|

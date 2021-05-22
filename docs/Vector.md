@@ -5,6 +5,13 @@
 #### [Vector](../Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
+## Constants
+### Vector.Zero {: aria-label='Constants' }
+[ ](#){: .rep .tooltip .badge }
+___ 
+### Vector.One {: aria-label='Constants' }
+[ ](#){: .rep .tooltip .badge }
+___ 
 ## Operators
 ### __add () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

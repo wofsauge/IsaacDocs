@@ -2,9 +2,19 @@
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)
 ## Functions
+### Add·Tear·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
+
+___ 
 ### Calculate·End·Point () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static [Vector](../Vector) CalculateEndPoint ( [Vector](../Vector) Start, [Vector](../Vector) Dir, [Vector](../Vector) PositionOffset, [Entity](../Entity) Parent, float Margin ) {: .copyable aria-label='Functions' }
+
+___ 
+### Clear·Tear·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ClearTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·End·Point () {: aria-label='Functions' }
@@ -25,6 +35,11 @@ ___
 ### Get·Samples () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
+
+___ 
+### Has·Tear·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Circle·Laser () {: aria-label='Functions' }

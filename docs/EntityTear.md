@@ -2,9 +2,24 @@
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)
 ## Functions
+### Add·Tear·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
+
+___ 
 ### Change·Variant () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ChangeVariant ( int NewVariant ) {: .copyable aria-label='Functions' }
+
+___ 
+### Clear·Tear·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ClearTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
+
+___ 
+### Has·Tear·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Sprite·Scale () {: aria-label='Functions' }

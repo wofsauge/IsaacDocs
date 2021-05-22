@@ -14,9 +14,19 @@ ___
 #### int GetGridIndex ( ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Get·RNG () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [RNG](../RNG) GetGet·RNG ( ) {: .copyable aria-label='Functions' }
+
+___ 
 ### Get·Save·State () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityDesc](GridEntityDesc.md) GetSaveState ( ) {: .copyable aria-label='Functions' }
+
+___ 
+### Get·Sprite () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [Sprite](../Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Type () {: aria-label='Functions' }
@@ -114,16 +124,6 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
 Returns the position of the grid cell's center point 
-___ 
-### RNG {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### [RNG](../RNG) RNG {: .copyable aria-label='Variables' }
-
-___ 
-### Sprite {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### [Sprite](../Sprite) Sprite {: .copyable aria-label='Variables' }
-
 ___ 
 ### State {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

@@ -6,6 +6,12 @@
 
 ___ 
 ## Functions
+### Get·Animation () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### string GetAnimation ( ) {: .copyable aria-label='Functions' }
+Return the name of the currently played animation.
+
+___ 
 ### Get·Default·Animation () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
@@ -68,6 +74,12 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetLayerCount ( ) {: .copyable aria-label='Functions' }
 Returns the number of layers of the .anm2 file of the sprite. All Animations use the same amount of Layers.
+___ 
+### Get·Overlay·Animation () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### string GetOverlayAnimation ( ) {: .copyable aria-label='Functions' }
+Return the name of the currently played overlay animation.
+
 ___ 
 ### Get·Overlay·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

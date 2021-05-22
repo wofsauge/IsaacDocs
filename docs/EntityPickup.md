@@ -55,6 +55,15 @@ ___
 #### int Charge  {: .copyable aria-label='Variables' }
 
 ___ 
+### OptionsPickupIndex {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int OptionsPickupIndex  {: .copyable aria-label='Variables' }
+Any non-zero value causes the item to form an option group with any other item with the same OptionsPickupIndex value.
+
+When an item belonging to an option group is picked up, all other items belonging to the same group disappear.
+
+0 is the default value and means the item doesn't belong to any group.
+___ 
 ### Price {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Price  {: .copyable aria-label='Variables' }

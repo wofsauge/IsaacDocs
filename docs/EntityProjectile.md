@@ -34,6 +34,16 @@ ___
 #### void AddScale ( float Value ) {: .copyable aria-label='Functions' }
 
 ___ 
+### Clear·Projectile·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ClearProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
+
+___ 
+### Has·Projectile·Flags () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
+
+___ 
 ## Variables
 ### Acceleration {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
