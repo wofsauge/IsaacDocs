@@ -251,15 +251,16 @@ ___
 #### void RemoveCompassEffect ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Remove·Curse () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### void RemoveCurse ( [LevelCurse](../enums/LevelCurse) Curse ) {: .copyable aria-label='Functions' }
-
-___ 
 ### Remove·Curses () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### void RemoveCurses ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void RemoveCurses ( [LevelCurse](../enums/LevelCurse) Curses ) {: .copyable aria-label='Functions' }
+Curses: A bitmask of LevelCurse that indicates which curses will be removed
 
+???- example "Example Code"
+    This example removes curse of darkness and curse of the blind
+    ```lua 
+    Game():GetLevel():RemoveCurses(LevelCurse.CURSE_OF_DARKNESS | LevelCurse.CURSE_OF_BLIND)
+    ```
 ___ 
 ### Set·Can·See·Everything () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
