@@ -221,6 +221,7 @@ nav:
         - "translations.xml" : xml/translations.md
     - FAQ: tutorials/faq.md
     - Tools: tutorials/Tools.md
+    - Bugs: https://github.com/Meowlala/RepentanceAPIIssueTracker
     - Lua 5.3 Docs: https://www.lua.org/manual/5.3/
 theme:
     name: material
