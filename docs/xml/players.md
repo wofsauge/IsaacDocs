@@ -2,32 +2,33 @@
 
 This page needs some content. You can contribute to it using the Edit Button!
 
-**Resource-Folder**{: .xmlInfo }: Using this file in a resource folder of a mod is not tested yet.
+**Resource-Folder**{: .xmlInfo .red}: Using this file in a resource folder of a mod will replace the original file.
 
 **Content-Folder**{: .xmlInfo .green }: Using this file in a content folder will add new characters.
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|name|string|name of the character (has to match the one in CharacterMenu.anm2)|
-|skin|string|path of the character spritesheet|
+|name|string|Name of the character (has to match the one in CharacterMenu.anm2)|
+|skin|string|Path of the character spritesheet|
 |skinColor|int||
-|nameimage|string|name for vs. screen|
-|portrait|string|portrait for the vs. screen|
-|hp|int|starting red health (1 = half heart)|
-|armor|int|starting soul hearts (1 = half soul heart)|
-|black|int|starting  black hearts (1 = half black heart)|
-|items|int|starting item ID (can separate with a comma to add more than one)|
+|nameimage|string|Name for vs. screen|
+|portrait|string|Portrait for the vs. screen|
+|hp|int|Starting red health (1 = half heart)|
+|armor|int|Starting soul hearts (1 = half soul heart)|
+|black|int|Starting  black hearts (1 = half black heart)|
+|items|int|Starting item ID (can separate with a comma to add more than one)|
 |costume|int||
-|costumeSuffix|costume||
-|bombs|int|starting bombs|
-|keys|coins|starting keys|
-|coins|int|starting coins|
-|card|int|starting card ID|
+|costumeSuffix|string||
+|bombs|int|Starting bombs|
+|keys|coins|Starting keys|
+|coins|int|Starting coins|
+|card|int|Starting card ID|
 |pill|int||
-|canShoot|bool|false = blindfolded|
-|pocketActive|int|starting pocket active item ID[ ](#){: .rep .tooltip .badge }|
-|birthright|string|message when picking up Birthright [ ](#){: .rep .tooltip .badge }|
-|achievement|int|tie the character to an existing achievement [ ](#){: .rep .tooltip .badge }|
+|canShoot|bool|False = blindfolded|
+|achievement|int|Tie the character to a vanilla achievement|
+|pocketActive|int|Starting pocket active item ID[ ](#){: .rep .tooltip .badge }|
+|birthright|string|Message when picking up Birthright [ ](#){: .rep .tooltip .badge }|
+
 
 Example of a players.xml file:
 ```xml
@@ -41,6 +42,6 @@ Example of a players.xml file:
           portrait="playerportrait_Bob.png" 
           bigportrait="playerbigportrait_Bob.png"
           skinColor="-1" canShoot="false"
-          birthright="You are now a gamer/>
+          birthright="You are now a gamer"/>
 </players>
 ```
