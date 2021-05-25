@@ -74,12 +74,12 @@ ___
 ___ 
 ### Try·Blow·Open () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TryBlowOpen ( boolean FromExplossion ) {: .copyable aria-label='Functions' }
+#### boolean TryBlowOpen ( boolean FromExplosion, [Entity](../Entity) source ) {: .copyable aria-label='Functions' }
 try to open the door by explosive force, true for success 
 ___ 
 ### Try·Unlock () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TryUnlock ( boolean Force ) {: .copyable aria-label='Functions' }
+#### boolean TryUnlock ([EntityPlayer](../EntityPlayer) player, boolean Force ) {: .copyable aria-label='Functions' }
 try to unlock the door using a key, true for success 
 ___ 
 ## Variables
