@@ -1,12 +1,84 @@
 # File "pocketitems.xml"
 
-This page needs some content. You can contribute to it using the Edit Button!
+**Resource-Folder**{: .xmlInfo .red}: Using this file in a resource folder of a mod will replace the original file.
 
-**Resource-Folder**{: .xmlInfo }: Using this file in a resource folder of a mod is not tested yet.
+**Content-Folder**{: .xmlInfo .green }: Using this file in a content folder will add new cards and pill effects.
 
-**Content-Folder**{: .xmlInfo }: Using this file in a content folder of a mod is not tested yet.
+`pocketitems.xml` is used for two significantly different purposes: Adding cards, and adding pill effects. These have different xml syntaxes, seen below.
+
+## Cards
+
+Cards are marked by `<card ... />`, like so:
+
+
+```xml
+<card type="tarot" pickup="1" description="Where journey begins" id="1" name="0 - The Fool" announcer="375" announcerdelay="60" mimiccharge="2" />
+```
 
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|*todo*|||
+|name|string|Name of the card|
+|description|string|Description of the card|
+|hud|string|Name of the card's front animation in `content/gfx/ui_cardfronts.anm2`, only used in mods|
+|type|string|Either `tarot`, `tarot_reverse`, `suit`, `special`, `rune`, or `object`. All types other than `object` and `rune` can be mimicked with Blank Card, while cards of type `rune` can be mimicked with Clear Rune.[ ](#){: .rep .tooltip .badge }|
+|mimiccharge|int|Amount of charge the card should take to mimic with Blank Card / Clear Rune[ ](#){: .rep .tooltip .badge }|
+|pickup|int|The entities2.xml subtype corresponding to this card's pickup[ ](#){: .rep .tooltip .badge }|
+|announcer|int|Sound ID to play when the card is used|
+|announcerdelay|int|Delay in frames between card use and the sound provided being played|
+|achievement|int|Ties the card to a vanilla achievement|
+
+In both Afterbirth+ and Repentance, when adding a custom card you must include the `hud` tag, and an anm2 in your mod's `content/gfx/` folder called `ui_cardfronts.anm2`. This anm2 must contain an animation with the same name as specified in the `hud` tag, which will be displayed in the HUD as your card's front. Once you've added a card to the game, you'll be able to get its id through lua by using the `Isaac.GetCardIdByName(string cardHudName)` function, which takes the name specified in the `hud` tag.
+
+The `pickup` tag is very important for cards in Repentance, because it allows setting the card's HUD and pickup visuals easily through a single anm2. In order to use it, you must add a matching `entities2.xml` entry with the tarot card type and variant (5.300), using the subtype specified in the `pickup` tag, as seen below:
+
+
+In `pocketitems.xml`:
+```xml
+<card type="object" name="Custom Object" description="" hud="Custom Object" pickup="160"/>
+```
+
+
+In `entities2.xml`:
+```xml
+<entity anm2path="items/cards/custom_object.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Custom Object" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="160">
+	   <preload-snd id="8" /> <!-- BOOK_PAGE_TURN_12 -->
+</entity>
+```
+
+
+The anm2 specified in `entities2.xml` should have the animations HUD and HUDSmall, alongside general pickup animations. See `gfx/05.301_tarot card.anm2` in the vanilla resources for an example!
+
+
+Note that cards added through `pocketitems.xml` are **not** automatically added to the card pool, and you must set up their spawning manually. This can be done most easily through the `MC_GET_CARD` callback.
+
+
+## Pill Effects
+
+Pill effects are significantly easier to add than cards, and are automatically added to the pill pool when created. They are marked by `<pilleffect ... />`, like so:
+
+```xml
+<pilleffect announcer2="760" id="0" name="Bad Gas" announcer="328" class="1+" mimiccharge="1" />
+```
+
+
+| Variable-Name | Possible Values | Description |
+|:--|:--|:--|
+|name|string|Name of the pill effect|
+|description|string|Description of the pill effect (optional, used in I found pills)[ ](#){: .rep .tooltip .badge }|
+|class|string|A number from 0 - 3, indicating Joke, Minor, Medium, or Major effects. A `+` or `-` can be appended to note whether the pill is positive or negative, or excluded to denote neutral pills.[ ](#){: .rep .tooltip .badge }|
+|mimiccharge|int|Amount of charge the pill should take to mimic with Placebo[ ](#){: .rep .tooltip .badge }|
+|announcer|int|Sound ID to play when the pill is used|
+|announcer2|int|Sound ID to play when the pill is used as a horse pill[ ](#){: .rep .tooltip .badge }|
+|announcerdelay|int|Delay in frames between pill use and the sound provided being played|
+|achievement|int|Ties the pill effect to a vanilla achievement|
+
+
+Example of a `pocketitems.xml` file that adds one new card and one new pill effect:
+
+```xml
+<pocketitems>
+    <card type="object" name="Custom Object" description="It's custom!" hud="Custom Object" pickup="160"/>
+    <pilleffect name="Damage Up" class="3+" mimiccharge="12" />
+</pocketitems>
+```
