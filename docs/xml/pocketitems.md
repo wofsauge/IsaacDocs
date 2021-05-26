@@ -47,7 +47,7 @@ In `entities2.xml`:
 ```
 
 
-The anm2 specified in `entities2.xml` should have the animations HUD and HUDSmall, alongside general pickup animations. See `gfx/05.301_tarot card.anm2` in the vanilla resources for an example!
+The anm2 specified in `entities2.xml` should have the animations HUD and HUDSmall, alongside general pickup animations. See `gfx/05.301_tarot card.anm2` in the vanilla resources for an example! Note that the subtype used in `entities2.xml` and the `pickup` tag **cannot** be used to spawn your card, and will instead crash the game. You must spawn / give your card via the card id, which you can obtain from `Isaac.GetCardIdByName(string cardHudName)` as described above. You can also check your card's current ID easily in the console by typing `g kID` and checking autocomplete; the last base game card is `k97`, the Soul of Jacob, so modded ids will start at `k98`.
 
 
 Note that cards added through `pocketitems.xml` are **not** automatically added to the card pool, and you must set up their spawning manually. This can be done most easily through the `MC_GET_CARD` callback.
