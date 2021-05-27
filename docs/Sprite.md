@@ -52,9 +52,6 @@ ___
 #### string GetFilename ( ) {: .copyable aria-label='Functions' }
 This function returns the path to the .anm2 file used by the sprite.
 
-???- info "Info"
-    This function seems to be the same as `GetDefaultAnimation()`.
-
 ???- example "Example Code"
     This code print the .anm2 path of the player sprite.
 
