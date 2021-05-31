@@ -37,7 +37,7 @@ ___
 ___ 
 ### Get·Pill·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [ItemConfig PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor, [EntityPlayer](../EntityPlayer) Player = nil ) {: .copyable aria-label='Functions' }
+#### [PillEffect](../enums/PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor, [EntityPlayer](../EntityPlayer) Player = nil ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pool·For·Room () {: aria-label='Functions' }
