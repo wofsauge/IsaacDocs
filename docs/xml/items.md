@@ -9,6 +9,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
+| id | int | used for adding customes to items (don't use ID otherwise!)
 | cache | string | Possible values : [firedelay, damage, speed, range, tearcolor, tearflag, color, size. shotspeed, all, luck, flying, weapon, familiars]
 | name | string |  |
 | description | string |  |
