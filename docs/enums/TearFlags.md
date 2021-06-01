@@ -9,9 +9,9 @@ end
 
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .rep .tooltip .badge }| BitSet128(0,0) |TEAR_NORMAL {: .copyable } | Ouija board type tear (goes thru obstacles) | 
-|[ ](#){: .rep .tooltip .badge }| TEARFLAG(0) |TEAR_SPECTRAL {: .copyable } | Cupid's arrow type tear (goes thru enemy) | 
-|[ ](#){: .rep .tooltip .badge }| TEARFLAG(1) |TEAR_PIERCING {: .copyable } | Spoon bender type tear (homes to enemy) | 
+|[ ](#){: .rep .tooltip .badge }| BitSet128(0,0) |TEAR_NORMAL {: .copyable } | Default tear (no special effects) | 
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(0) |TEAR_SPECTRAL {: .copyable } | Ouija board type tear (goes thru obstacles) | 
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(1) |TEAR_PIERCING {: .copyable } | Cupid's arrow type tear (goes thru enemy) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(2) |TEAR_HOMING {: .copyable } | Spoon bender type tear (homes to enemy) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(3) |TEAR_SLOW {: .copyable } | Spider bite type tear (slows on contact) | 
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(4) |TEAR_POISON {: .copyable } | Common cold type tear (poisons on contact) | 
