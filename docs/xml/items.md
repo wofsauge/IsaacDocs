@@ -18,10 +18,10 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 | bombs | int |  |
 | keys | int |  |
 | coins | int |  |
-| hearts | int |  |
+| hearts | int | number of healed red hearts |
 | soulhearts | int |  |
 | blackhearts | int |  |
-| maxhearts |  | empty heart containers |
+| maxhearts |  | number of added heart containers (not full by default) |
 | maxcharges | int | |
 | chargetype | string | Possible values: [timed, special]|
 | cooldown | int | frames duration of the effect |
