@@ -3,9 +3,9 @@
 [GridEntity](GridEntity.md)
 ## Functions
 ### Make·Bridge () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### void MakeBridge ( ) {: .copyable aria-label='Functions' }
-
+[ ](#){: .rep .tooltip .badge }
+#### void MakeBridge ( [GridEntity](GridEntity.md) parentEntity) {: .copyable aria-label='Functions' }
+parentEntity can be `nil` to use the default texture as the bridge
 ___ 
 ### Set·Ladder () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
