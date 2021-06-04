@@ -165,12 +165,16 @@ ___
 ### I1 {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int I1  {: .copyable aria-label='Variables' }
-general usage ints for ai_ 
+General usage int for AI specific actions. The effect and usage is manually defined for each entity. It can also not be used at all for some.
+
+**Example**: The Frail sets I2 to 1 when entering the second phase.
 ___ 
 ### I2 {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int I2  {: .copyable aria-label='Variables' }
-same as m_I1 
+General usage int for AI specific actions. The effect and usage is manually defined for each entity. It can also not be used at all for some.
+
+**Example**: The Frail sets I2 to 1 when entering the second phase.
 ___ 
 ### Parent·NPC {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -210,10 +214,10 @@ ___
 ### V1 {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](../Vector) V1  {: .copyable aria-label='Variables' }
-general usage for ai_* functions, initialized to (0,0) 
+General usage Vector for AI specific actions. Initialized to be Vector(0,0). The effect and usage is manually defined for each entity. It can also not be used at all for some.
 ___ 
 ### V2 {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](../Vector) V2  {: .copyable aria-label='Variables' }
-like m_V1, in case we need two of those 
+General usage Vector for AI specific actions. Initialized to be Vector(0,0). The effect and usage is manually defined for each entity. It can also not be used at all for some.
 ___ 
