@@ -263,7 +263,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop babies. If an index is given, that is not used, it will return the last player in the list.
+Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop players or babies. If an index is given, that is not used, it will return the last player in the list.
 
 This function can return `nil` if the function is called before any player is initialized. 
 
@@ -278,9 +278,9 @@ This function is the same as [`Game():GetPlayer()`](../Game/#getplayer).
 ___ 
 ### Get·Player·Type·By·Name () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
+#### [PlayerType](../enums/PlayerType) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
 
-Returns the PlayerType of a character based on its name. (File: players.xml)
+Returns the PlayerType (ID) of a character based on its name. (File: players.xml)
 
 ???- example "Example Code"
     This code gets the PlayerType of Azazel. 
