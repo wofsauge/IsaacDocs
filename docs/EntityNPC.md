@@ -31,6 +31,17 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void FireProjectiles ( [Vector](../Vector) Pos, [Vector](../Vector) Velocity, ProjectilesMode Mode, [ProjectileParams](../ProjectileParams) Params ) {: .copyable aria-label='Functions' }
 
+???- info "ProjectilesMode"
+    * 0 : single projectile
+    * 1 : two projectiles (uses params.Spread)
+    * 2 : three projectiles (uses params.Spread)
+    * 3 : three projectiles (uses params.Spread, more spread out?)
+    * 4 : four projectiles (uses params.Spread)
+    * 5 : five projectiles (uses params.Spread)
+    * 6 : four projectiles in a + pattern (uses velocity.x as speed)
+    * 7 : four projectiles in a x pattern (uses velocity.x as speed)
+    * 8 : eight projectiles in a star pattern (uses velocity.x as speed)
+    * 9 : N projectiles in a circle (velocity.x = speed, velocity.y = N, params.FireDirectionLimit and params.DotProductLimit to fire in an arc only)
 ___ 
 ### Get·Alive·Enemy·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
