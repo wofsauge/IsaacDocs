@@ -64,8 +64,8 @@ ___
 Does bomb-exclusive special effects. 
 ___ 
 ### Butter·Bean·Fart () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### void ButterBeanFart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, boolean ShowEffect ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void ButterBeanFart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, boolean ShowEffect, boolean DoSuperKnockback ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Change·Room () {: aria-label='Functions' }
