@@ -85,8 +85,8 @@ Returns the currently rendered Frame of the Overlay of the given Sprite. It acts
 ___ 
 ### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](../Color) GetTexel ( [Vector](../Vector) SamplePos, [Vector](../Vector) RenderPos, float AlphaThreshold ) {: .copyable aria-label='Functions' }
-
+#### [Color](../Color) GetTexel ( [Vector](../Vector) SamplePos, [Vector](../Vector) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
+Returns the color of the pixel of the Sprite at the given sample position. RenderPos can be neglected and set to a null vector
 ___ 
 ### Is·Event·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
