@@ -194,6 +194,7 @@ a.const.tooltip:after {
     vertical-align: middle;
     padding: 4px 5px 4px 6px;
     border-radius: 10px;
+    white-space: nowrap;
     color: black !important;
 }
 
