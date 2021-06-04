@@ -381,12 +381,9 @@ details>summary {
 
 /* Hide Announcement bar */
 
-
-/*
 div[data-md-component$="announce"] {
     display: none;
 }
-*/
 
 
 /* Visible announcement bar */
