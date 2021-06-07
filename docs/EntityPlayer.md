@@ -94,7 +94,7 @@ Adds coins to the player. Remove them with negative numbers.
 ___ 
 ### Add·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge = 0, boolean AddConsumables = true, ActiveSlot Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
+#### void AddCollectible ( [CollectibleType](../enums/CollectibleType) Type, int Charge = 0, boolean AddConsumables = true, [ActiveSlot](../enums/ActiveSlot) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
 
 Slot 0 is default (normal active item)  
 Slot 1 is used by Schoolbag  
@@ -501,7 +501,7 @@ Will be called when player exits the room.
 ___ 
 ### Discharge·Active·Item () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### void DischargeActiveItem ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
+#### void DischargeActiveItem ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Sets the charge of your active item to 0 without triggering the active item effect. 
 ___ 
@@ -584,26 +584,26 @@ called after animation is finished, or on special occasions to prevent bugs
 ___ 
 ### Full·Charge ( ) {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### boolean FullCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY, int Force = false ) {: .copyable aria-label='Functions' }
+#### boolean FullCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY, int Force = false ) {: .copyable aria-label='Functions' }
 Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot. 
 
 **Force**: If set, items will always be charged even if they normally cannot be recharged by batteries
 ___ 
 ### Get·Active·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int GetActiveCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
+#### int GetActiveCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current charge of your active item.
 ___ 
 ### Get·Active·Item ( ) {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' data-altreturn='0' }
+#### [CollectibleType](../enums/CollectibleType) GetActiveItem ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' data-altreturn='0' }
 Returns the currently held item. Returns `0` when no item is held.
 
 ___ 
 ### Get·Active·Sub·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### int GetActiveSubCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
+#### int GetActiveSubCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current items subcharge. (Useful for items that charge up over time.)
 ___ 
@@ -624,7 +624,7 @@ ___
 ___ 
 ### Get·Battery·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### int GetBatteryCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
+#### int GetBatteryCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current charge progress of the second charge of your current active item. This bar is only active, when you have the Collectible "The Battery"
 ___ 
@@ -1176,7 +1176,7 @@ This is for players that require multiple player entities, such as the Forgotten
 ___ 
 ### Needs·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### boolean NeedsCharge ( int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
+#### boolean NeedsCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Extra·Animation () {: aria-label='Functions' }
@@ -1211,7 +1211,7 @@ ___
 ___ 
 ### Remove·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Type, boolean IgnoreModifiers = false, ActiveSlot Slot = ActiveSlot.SLOT_PRIMARY, boolean RemoveFromPlayerForm = true ) {: .copyable aria-label='Functions' }
+#### void RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Type, boolean IgnoreModifiers = false, [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY, boolean RemoveFromPlayerForm = true ) {: .copyable aria-label='Functions' }
 **IgnoreModifiers**: Ignores collectible effects granted by other items (i.e. Void)
 
 **Slot**: Sets the active slot this collectible should be removed from
@@ -1300,7 +1300,7 @@ revive player
 ___ 
 ### Set·Active·Charge () {: aria-label='Functions' }
 [[ ](#){: .rep .tooltip .badge }
-#### void SetActiveCharge ( int Charge, int ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
+#### void SetActiveCharge ( int Charge, [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Blood·Charge () {: aria-label='Functions' }
@@ -1335,7 +1335,7 @@ Change the pill the player is holding in the given itemslot (0 or 1).
 ___ 
 ### SetPocketActiveItem() {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void SetPocketActiveItem ( [CollectibleType](../enums/CollectibleType) Type, ActiveSlot Slot, boolean KeepInPools ) {: .copyable aria-label='Functions' }
+#### void SetPocketActiveItem ( [CollectibleType](../enums/CollectibleType) Type, [ActiveSlot](../enums/ActiveSlot) Slot, boolean KeepInPools ) {: .copyable aria-label='Functions' }
 
 Sets the player's pocket active item to the given active item.
 Slot can be either SLOT_POCKET or SLOT_POCKET2.
@@ -1463,9 +1463,9 @@ ___
 ___ 
 ### Use·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, UseFlag UseFlags = 0, ActiveSlot Slot = -1 ) {: .copyable aria-label='Functions' }
+#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, UseFlag UseFlags = 0, [ActiveSlot](../enums/ActiveSlot) Slot = -1 ) {: .copyable aria-label='Functions' }
 
-#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim = false, boolean KeepActiveItem = false, boolean AllowNonMainPlayer = true, boolean ToAddCostume = false, ActiveSlot Slot = -1 ) {: .copyable .secondH4 aria-label='Functions' }
+#### void UseActiveItem ( [CollectibleType](../enums/CollectibleType) Item, boolean ShowAnim = false, boolean KeepActiveItem = false, boolean AllowNonMainPlayer = true, boolean ToAddCostume = false, [ActiveSlot](../enums/ActiveSlot) Slot = -1 ) {: .copyable .secondH4 aria-label='Functions' }
 **Slot**: The active slot this item was used from (set to -1 if this item wasn't triggered by any active slot)
 ___ 
 ### Use·Card () {: aria-label='Functions' }

@@ -67,7 +67,7 @@ If a table is returned instead of a boolean, the following fields can be set to 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int],<br>ActiveSlot [int],<br>CustomVarData [int])|[CollectibleType](../CollectibleType) |
+|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int],<br>[ActiveSlot](../ActiveSlot),<br>CustomVarData [int])|[CollectibleType](../CollectibleType) |
 
 ### MC_POST_PEFFECT_UPDATE {: .copyable } 
 Called for each player, each frame, after the player evaluates the effects of items that must be constantly evaluated.
@@ -346,7 +346,7 @@ Return true to prevent the default code of an item to be triggered. This will st
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int],<br>ActiveSlot [int],<br>CustomVarData [int])|[CollectibleType](../CollectibleType) |
+|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](../CollectibleType),<br>[RNG](../../RNG),<br>[EntityPlayer](../../EntityPlayer),<br>UseFlags [int],<br>[ActiveSlot](../ActiveSlot),<br>CustomVarData [int])|[CollectibleType](../CollectibleType) |
 
 ### MC_PRE_ENTITY_SPAWN {: .copyable } 
 Called right before an entity is spawned. 
