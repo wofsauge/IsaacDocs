@@ -45,7 +45,7 @@ Returns the number of enemies in the current room.
 ___ 
 ### Count·Entities () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int CountEntities ( [Entity](Entity.html) Spawner, [EntityType](../enums/EntityType.html) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
+#### int CountEntities ( [Entity](Entity.html) Spawner, [EntityType](enums/EntityType.html) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
 Spawner refers to an entity object (can be `:::lua nil`) 
@@ -82,13 +82,13 @@ Spawn an explosion on a specified location.
 ___ 
 ### Find·By·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### table FindByType ( [EntityType](../enums/EntityType.html) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
+#### table FindByType ( [EntityType](enums/EntityType.html) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
 ___ 
 ### Find·In·Radius () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### table FindInRadius ( [Vector](Vector.html) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
-Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](../enums/EntityPartition.html)) (include all = 0xffffffff) 
+Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](enums/EntityPartition.html)) (include all = 0xffffffff) 
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded.
 ___ 
@@ -278,7 +278,7 @@ This function is the same as [`Game():GetPlayer()`](Game.html#getplayer).
 ___ 
 ### Get·Player·Type·By·Name () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [PlayerType](../enums/PlayerType.html) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
+#### [PlayerType](enums/PlayerType.html) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
 
 Returns the PlayerType (ID) of a character based on its name. (File: players.xml)
 

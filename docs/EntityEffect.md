@@ -14,7 +14,7 @@ ___
 ___ 
 ### Set·Damage·Source () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetDamageSource ( [EntityType](../enums/EntityType.html) DamageSource ) {: .copyable aria-label='Functions' }
+#### void SetDamageSource ( [EntityType](enums/EntityType.html) DamageSource ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Radii () {: aria-label='Functions' }

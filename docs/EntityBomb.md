@@ -32,9 +32,9 @@ ___
 ___ 
 ### Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [TearFlags](../enums/TearFlags.html) Flags  {: .copyable aria-label='Variables' }
+#### [TearFlags](enums/TearFlags.html) Flags  {: .copyable aria-label='Variables' }
 
-Uses [TearFlags](../enums/TearFlags.html) to alter the behavior of the bomb.
+Uses [TearFlags](enums/TearFlags.html) to alter the behavior of the bomb.
 ___ 
 ### Is·Fetus {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

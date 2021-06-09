@@ -100,7 +100,7 @@ ___
 ___ 
 ### Morph () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean Morph ( [EntityType](../enums/EntityType.html) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
+#### boolean Morph ( [EntityType](enums/EntityType.html) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
 Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions) can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
 A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
@@ -113,7 +113,7 @@ A list of Champion colors can be found here : [ChampionColorIdx](https://binding
 ___ 
 ### Play·Sound () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlaySound ( [SoundEffect](../enums/SoundEffect.html) ID, float Volume, int FrameDelay, boolean Loop, float Pitch ) {: .copyable aria-label='Functions' }
+#### void PlaySound ( [SoundEffect](enums/SoundEffect.html) ID, float Volume, int FrameDelay, boolean Loop, float Pitch ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Query·NPCs·Group () {: aria-label='Functions' }
@@ -123,12 +123,12 @@ ___
 ___ 
 ### Query·NPCs·Spawner·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.html) QueryNPCsSpawnerType ( [EntityType](../enums/EntityType.html) SpawnerType, [EntityType](../enums/EntityType.html) Type, boolean OnlyEnemies ) {: .copyable aria-label='Functions' }
+#### [EntityList](CppContainer_EntityList.html) QueryNPCsSpawnerType ( [EntityType](enums/EntityType.html) SpawnerType, [EntityType](enums/EntityType.html) Type, boolean OnlyEnemies ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Query·NPCs·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.html) QueryNPCsType ( [EntityType](../enums/EntityType.html) Type, int Variant ) {: .copyable aria-label='Functions' }
+#### [EntityList](CppContainer_EntityList.html) QueryNPCsType ( [EntityType](enums/EntityType.html) Type, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Path·Finder·Target () {: aria-label='Functions' }

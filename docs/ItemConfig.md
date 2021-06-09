@@ -1,10 +1,10 @@
 # Class "ItemConfig"
-ItemConfig does have a special Enum.  you can find it here [ItemConfigEnums](../enums/ItemConfigEnums.html)
+ItemConfig does have a special Enum.  you can find it here [ItemConfigEnums](enums/ItemConfigEnums.html)
 
 ## Functions
 ### Get·Card () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [ItemConfig Card](ItemConfig_Card.html) GetCard ( [Card](../enums/Card.html) ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Card](ItemConfig_Card.html) GetCard ( [Card](enums/Card.html) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Cards () {: aria-label='Functions' }
@@ -95,7 +95,7 @@ ___
 ___ 
 ### Get·Pill·Effect () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [ItemConfig PillEffect](ItemConfig_PillEffect.html) GetPillEffect ( [PillEffect](../enums/PillEffect.html) ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig PillEffect](ItemConfig_PillEffect.html) GetPillEffect ( [PillEffect](enums/PillEffect.html) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pill·Effects () {: aria-label='Functions' }
@@ -121,7 +121,7 @@ ___
 ___ 
 ### Is·Valid·Collectible () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static boolean IsValidCollectible ( [CollectibleType](../enums/CollectibleType.html) ID ) {: .copyable aria-label='Functions' }
+#### static boolean IsValidCollectible ( [CollectibleType](enums/CollectibleType.html) ID ) {: .copyable aria-label='Functions' }
 
 Function to check if a given item id is a valid collectible id (aka. this item exists). Returns **True** when it exists and **False** when it doesnt.
 

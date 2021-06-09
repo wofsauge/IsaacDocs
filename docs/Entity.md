@@ -79,7 +79,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Add [EntityFlags](../enums/EntityFlag.html) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
+Add [EntityFlags](enums/EntityFlag.html) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
@@ -243,7 +243,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Removes all [EntityFlags](../enums/EntityFlag.html) from the entity.
+Removes all [EntityFlags](enums/EntityFlag.html) from the entity.
 ___ 
 ### Collides·With·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -306,10 +306,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetEntityFlags ( ) {: .copyable aria-label='Functions' }
 
-Get the [EntityFlags](../enums/EntityFlag.html)of the entity. This will be a number which acts like a bitmask.
+Get the [EntityFlags](enums/EntityFlag.html)of the entity. This will be a number which acts like a bitmask.
 
 ???- example "Example Code"
-    This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag.html).
+    This code prints something in the console, if the entity has a specific [EntityFlags](enums/EntityFlag.html).
 
     ```lua 
     if entity:GetEntityFlags() & EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
@@ -350,10 +350,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity has all named [EntityFlags](../enums/EntityFlag.html) set.
+Returns true, if the entity has all named [EntityFlags](enums/EntityFlag.html) set.
 
 ???- example "Example Code"
-    This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag.html).
+    This code prints something in the console, if the entity has a specific [EntityFlags](enums/EntityFlag.html).
 
     ```lua 
     if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
@@ -628,7 +628,7 @@ Get the Seed of the Drop RNG.
 ___ 
 ### Entity·Collision·Class {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityCollisionClass](../enums/EntityCollisionClass.html) EntityCollisionClass {: .copyable aria-label='Variables' }
+#### [EntityCollisionClass](enums/EntityCollisionClass.html) EntityCollisionClass {: .copyable aria-label='Variables' }
 
 ___ 
 ### FlipX {: aria-label='Variables' }
@@ -648,7 +648,7 @@ loaded from entity config
 ___ 
 ### Grid·Collision·Class {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass.html) GridCollisionClass {: .copyable aria-label='Variables' }
+#### [GridCollisionClass](enums/GridCollisionClass.html) GridCollisionClass {: .copyable aria-label='Variables' }
 
 ___ 
 ### Hit·Points {: aria-label='Variables' }
@@ -720,7 +720,7 @@ ___
 ___ 
 ### Spawner·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityType](../enums/EntityType.html) SpawnerType  {: .copyable aria-label='Variables' }
+#### [EntityType](enums/EntityType.html) SpawnerType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawner·Variant {: aria-label='Variables' }
@@ -770,7 +770,7 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [EntityType](../enums/EntityType.html) Type  {: .copyable aria-label='Variables' }
+#### const [EntityType](enums/EntityType.html) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

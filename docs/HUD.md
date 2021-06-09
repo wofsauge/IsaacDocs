@@ -7,12 +7,12 @@ Refreshes the HUD (e.g. Characters that have Parent specified no longer show the
 ___ 
 ### Flash·Charge·Bar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void FlashChargeBar ( [EntityPlayer](EntityPlayer.html) Player, [ActiveSlot](../enums/ActiveSlot.html) ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void FlashChargeBar ( [EntityPlayer](EntityPlayer.html) Player, [ActiveSlot](enums/ActiveSlot.html) ActiveSlot ) {: .copyable aria-label='Functions' }
 Chargebar flashes as if item was actually charged.
 ___ 
 ### Invalidate·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void InvalidateActiveItem ( [EntityPlayer](EntityPlayer.html) Player, [ActiveSlot](../enums/ActiveSlot.html) ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void InvalidateActiveItem ( [EntityPlayer](EntityPlayer.html) Player, [ActiveSlot](enums/ActiveSlot.html) ActiveSlot ) {: .copyable aria-label='Functions' }
 ___ 
 ### Invalidate·Crafting·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

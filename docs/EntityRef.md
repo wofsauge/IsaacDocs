@@ -29,7 +29,7 @@ ___
 ___ 
 ### Spawner·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityType](../enums/EntityType.html) SpawnerType  {: .copyable aria-label='Variables' }
+#### [EntityType](enums/EntityType.html) SpawnerType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawner·Variant {: aria-label='Variables' }
@@ -39,7 +39,7 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityType](../enums/EntityType.html) Type  {: .copyable aria-label='Variables' }
+#### [EntityType](enums/EntityType.html) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

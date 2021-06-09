@@ -145,13 +145,13 @@ ___
 ___ 
 ### Get·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityDoor](GridEntityDoor.html) GetDoor ( [DoorSlot](../enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Returns the [GridEntityDoor](GridEntityDoor.html) at the given [DoorSlot](../enums/DoorSlot.html) position. Returns nil if no Door is located there.
+#### [GridEntityDoor](GridEntityDoor.html) GetDoor ( [DoorSlot](enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [GridEntityDoor](GridEntityDoor.html) at the given [DoorSlot](enums/DoorSlot.html) position. Returns nil if no Door is located there.
 
 ___ 
 ### Get·Door·Slot·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) GetDoorSlotPosition ( [DoorSlot](../enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
+#### [Vector](Vector.html) GetDoorSlotPosition ( [DoorSlot](enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Dungeon·Rock·Idx () {: aria-label='Functions' }
@@ -174,15 +174,15 @@ ___
 ___ 
 ### Get·Grid·Collision () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass.html) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
+#### [GridCollisionClass](enums/GridCollisionClass.html) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
 
-Returns the [GridCollisionClass](../enums/GridCollisionClass.html) of the grid entity at this grid index.
+Returns the [GridCollisionClass](enums/GridCollisionClass.html) of the grid entity at this grid index.
 ___ 
 ### Get·Grid·Collision·At·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass.html) GetGridCollisionAtPos ( [Vector](Vector.html) Pos ) {: .copyable aria-label='Functions' }
+#### [GridCollisionClass](enums/GridCollisionClass.html) GetGridCollisionAtPos ( [Vector](Vector.html) Pos ) {: .copyable aria-label='Functions' }
 
-Returns the [GridCollisionClass](../enums/GridCollisionClass.html) of the grid entity at this position in the room.
+Returns the [GridCollisionClass](enums/GridCollisionClass.html) of the grid entity at this position in the room.
 ___ 
 ### Get·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -320,7 +320,7 @@ Returns the stage the room was designed for.
 ___ 
 ### Get·Room·Shape () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomShape](../enums/RoomShape.html) GetRoomShape ( ) {: .copyable aria-label='Functions' }
+#### [RoomShape](enums/RoomShape.html) GetRoomShape ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Second·Boss·ID () {: aria-label='Functions' }
@@ -330,7 +330,7 @@ ___
 ___ 
 ### Get·Seeded·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType.html) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](enums/CollectibleType.html) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Shop·Level () {: aria-label='Functions' }
@@ -355,7 +355,7 @@ returns top left position inside of walls
 ___ 
 ### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomType](../enums/RoomType.html) GetType ( ) {: .copyable aria-label='Functions' }
+#### [RoomType](enums/RoomType.html) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Slow·Down () {: aria-label='Functions' }
@@ -400,7 +400,7 @@ ___
 ___ 
 ### Is·Door·Slot·Allowed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsDoorSlotAllowed ( [DoorSlot](../enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
+#### boolean IsDoorSlotAllowed ( [DoorSlot](enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
 Returns whether this room design may have a door at a given position, disregarding whether those doors exist. 
 ___ 
 ### Is·First·Enemy·Dead () {: aria-label='Functions' }
@@ -450,7 +450,7 @@ ___
 ___ 
 ### Remove·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveDoor ( [DoorSlot](../enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
+#### void RemoveDoor ( [DoorSlot](enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Grid·Entity () {: aria-label='Functions' }
@@ -575,7 +575,7 @@ ___
 ___ 
 ### Spawn·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](../enums/GridEntityType.html) Type, int Variant, int Seed, int VarData ) {: .copyable aria-label='Functions' }
+#### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](enums/GridEntityType.html) Type, int Variant, int Seed, int VarData ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Make·Bridge () {: aria-label='Functions' }

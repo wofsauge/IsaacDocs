@@ -163,6 +163,6 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ItemType](../enums/ItemType.html) Type  {: .copyable aria-label='Variables' }
+#### [ItemType](enums/ItemType.html) Type  {: .copyable aria-label='Variables' }
 mostly for Lua so it will not make a copy 
 ___ 

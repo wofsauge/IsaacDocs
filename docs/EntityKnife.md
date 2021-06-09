@@ -90,6 +90,6 @@ ___
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [TearFlags](../enums/TearFlags.html) TearFlags  {: .copyable aria-label='Variables' }
+#### [TearFlags](enums/TearFlags.html) TearFlags  {: .copyable aria-label='Variables' }
 
 ___ 

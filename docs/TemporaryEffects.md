@@ -2,7 +2,7 @@
 ## Functions
 ### Add·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddCollectibleEffect ( [CollectibleType](../enums/CollectibleType.html) CollectibleType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void AddCollectibleEffect ( [CollectibleType](enums/CollectibleType.html) CollectibleType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 Adds the effect of a collectible to the player, without actually giving him the assosiated item.
 
 ???+ bug
@@ -23,7 +23,7 @@ ___
 ___ 
 ### Add·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddTrinketEffect ( [TrinketType](../enums/TrinketType.html) TrinketType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void AddTrinketEffect ( [TrinketType](enums/TrinketType.html) TrinketType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Effects () {: aria-label='Functions' }
@@ -33,12 +33,12 @@ ___
 ___ 
 ### Get·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [TemporaryEffect](TemporaryEffect.html) GetCollectibleEffect ( [CollectibleType](../enums/CollectibleType.html) CollectibleType ) {: .copyable aria-label='Functions' }
+#### const [TemporaryEffect](TemporaryEffect.html) GetCollectibleEffect ( [CollectibleType](enums/CollectibleType.html) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Collectible·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetCollectibleEffectNum ( [CollectibleType](../enums/CollectibleType.html) CollectibleType ) {: .copyable aria-label='Functions' }
+#### int GetCollectibleEffectNum ( [CollectibleType](enums/CollectibleType.html) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Effects·List () {: aria-label='Functions' }
@@ -58,17 +58,17 @@ ___
 ___ 
 ### Get·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [TemporaryEffect](TemporaryEffect.html) GetTrinketEffect ( [TrinketType](../enums/TrinketType.html) TrinketType ) {: .copyable aria-label='Functions' }
+#### const [TemporaryEffect](TemporaryEffect.html) GetTrinketEffect ( [TrinketType](enums/TrinketType.html) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Trinket·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetTrinketEffectNum ( [TrinketType](../enums/TrinketType.html) TrinketType ) {: .copyable aria-label='Functions' }
+#### int GetTrinketEffectNum ( [TrinketType](enums/TrinketType.html) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean HasCollectibleEffect ( [CollectibleType](../enums/CollectibleType.html) CollectibleType ) {: .copyable aria-label='Functions' }
+#### boolean HasCollectibleEffect ( [CollectibleType](enums/CollectibleType.html) CollectibleType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Null·Effect () {: aria-label='Functions' }
@@ -78,12 +78,12 @@ ___
 ___ 
 ### Has·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean HasTrinketEffect ( [TrinketType](../enums/TrinketType.html) TrinketType ) {: .copyable aria-label='Functions' }
+#### boolean HasTrinketEffect ( [TrinketType](enums/TrinketType.html) TrinketType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RemoveCollectibleEffect ( [CollectibleType](../enums/CollectibleType.html) CollectibleType, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void RemoveCollectibleEffect ( [CollectibleType](enums/CollectibleType.html) CollectibleType, int Count = 1 ) {: .copyable aria-label='Functions' }
 Count = -1 removes all instances of the effect
 ___ 
 ### Remove·Null·Effect () {: aria-label='Functions' }
@@ -93,6 +93,6 @@ Count = -1 removes all instances of the effect
 ___ 
 ### Remove·Trinket·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RemoveTrinketEffect ( [TrinketType](../enums/TrinketType.html) TrinketType, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void RemoveTrinketEffect ( [TrinketType](enums/TrinketType.html) TrinketType, int Count = 1 ) {: .copyable aria-label='Functions' }
 Count = -1 removes all instances of the effect
 ___ 

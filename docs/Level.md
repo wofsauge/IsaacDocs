@@ -7,7 +7,7 @@
 ___ 
 ### Add·Curse () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddCurse ( [LevelCurse](../enums/LevelCurse.html) Curse, boolean ShowName ) {: .copyable aria-label='Functions' }
+#### void AddCurse ( [LevelCurse](enums/LevelCurse.html) Curse, boolean ShowName ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Apply·Blue·Map·Effect () {: aria-label='Functions' }
@@ -37,7 +37,7 @@ ___
 ___ 
 ### Can·Stage·Have·Curse·Of·Labyrinth () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean CanStageHaveCurseOfLabyrinth ( [LevelStage](../enums/LevelStage.html) Stage ) {: .copyable aria-label='Functions' }
+#### boolean CanStageHaveCurseOfLabyrinth ( [LevelStage](enums/LevelStage.html) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Change·Room () {: aria-label='Functions' }
@@ -81,7 +81,7 @@ return true on success
 ___ 
 ### Get·Absolute·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [LevelStage](../enums/LevelStage.html) GetAbsoluteStage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](enums/LevelStage.html) GetAbsoluteStage ( ) {: .copyable aria-label='Functions' }
 Returns the absolute stage, if its greed mode its converted to equivalent one. 
 ___ 
 ### Get·Angel·Room·Chance () {: aria-label='Functions' }
@@ -198,12 +198,12 @@ ___
 ___ 
 ### Get·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [LevelStage](../enums/LevelStage.html) GetStage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](enums/LevelStage.html) GetStage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Stage·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [StageType](../enums/StageType.html) GetStageType ( ) {: .copyable aria-label='Functions' }
+#### [StageType](enums/StageType.html) GetStageType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Starting·Room·Index () {: aria-label='Functions' }
@@ -213,7 +213,7 @@ ___
 ___ 
 ### Get·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean GetStateFlag ( [LevelStateFlag](../enums/LevelStateFlag.html) LevelStateFlag) {: .copyable aria-label='Functions' }
+#### boolean GetStateFlag ( [LevelStateFlag](enums/LevelStateFlag.html) LevelStateFlag) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Boss·Challenge () {: aria-label='Functions' }
@@ -243,7 +243,7 @@ ___
 ___ 
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int QueryRoomTypeIndex ( [RoomType](../enums/RoomType.html) RoomType, boolean Visited, [RNG](RNG.html) rng, boolean IgnoreGroup = false ) {: .copyable aria-label='Functions' }
+#### int QueryRoomTypeIndex ( [RoomType](enums/RoomType.html) RoomType, boolean Visited, [RNG](RNG.html) rng, boolean IgnoreGroup = false ) {: .copyable aria-label='Functions' }
 IgnoreGroup: If set to true, includes rooms that do not have the same group ID as the current room (currently unused)
 ___ 
 ### Remove·Compass·Effect () {: aria-label='Functions' }
@@ -253,7 +253,7 @@ ___
 ___ 
 ### Remove·Curses () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RemoveCurses ( [LevelCurse](../enums/LevelCurse.html) Curses ) {: .copyable aria-label='Functions' }
+#### void RemoveCurses ( [LevelCurse](enums/LevelCurse.html) Curses ) {: .copyable aria-label='Functions' }
 Curses: A bitmask of LevelCurse that indicates which curses will be removed
 
 ???- example "Example Code"
@@ -285,12 +285,12 @@ ___
 ___ 
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetStage ( [LevelStage](../enums/LevelStage.html) Stage, [StageType](../enums/StageType.html) StageType ) {: .copyable aria-label='Functions' }
+#### void SetStage ( [LevelStage](enums/LevelStage.html) Stage, [StageType](enums/StageType.html) StageType ) {: .copyable aria-label='Functions' }
 for SetStage/SetNextStage to have effect, call Init afterward 
 ___ 
 ### Set·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetStateFlag ( [LevelStateFlag](../enums/LevelStateFlag.html) LevelStateFlag, boolean Val ) {: .copyable aria-label='Functions' }
+#### void SetStateFlag ( [LevelStateFlag](enums/LevelStateFlag.html) LevelStateFlag, boolean Val ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Show·Map () {: aria-label='Functions' }
@@ -305,7 +305,7 @@ ___
 ___ 
 ### Uncover·Hidden·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void UncoverHiddenDoor ( int CurrentRoomIdx, [DoorSlot](../enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
+#### void UncoverHiddenDoor ( int CurrentRoomIdx, [DoorSlot](enums/DoorSlot.html) Slot ) {: .copyable aria-label='Functions' }
 Uncovers the door on both sides by modifying the saved grid entities for neighboring room. 
 ___ 
 ### Update () {: aria-label='Functions' }

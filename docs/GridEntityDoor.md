@@ -44,7 +44,7 @@ ___
 ___ 
 ### Is·Room·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsRoomType ( [RoomType](../enums/RoomType.html) Type ) {: .copyable aria-label='Functions' }
+#### boolean IsRoomType ( [RoomType](enums/RoomType.html) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Target·Room·Arcade () {: aria-label='Functions' }
@@ -64,7 +64,7 @@ ___
 ___ 
 ### Set·Room·Types () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetRoomTypes ( [RoomType](../enums/RoomType.html) CurrentRoomType, [RoomType](../enums/RoomType.html) TargetRoomType ) {: .copyable aria-label='Functions' }
+#### void SetRoomTypes ( [RoomType](enums/RoomType.html) CurrentRoomType, [RoomType](enums/RoomType.html) TargetRoomType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Spawn·Dust () {: aria-label='Functions' }
@@ -95,12 +95,12 @@ ___
 ___ 
 ### Current·Room·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomType](../enums/RoomType.html) CurrentRoomType  {: .copyable aria-label='Variables' }
+#### [RoomType](enums/RoomType.html) CurrentRoomType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction.html) Direction {: .copyable aria-label='Variables' }
+#### [Direction](enums/Direction.html) Direction {: .copyable aria-label='Variables' }
 
 ___ 
 ### Extra·Sprite {: aria-label='Variables' }
@@ -140,7 +140,7 @@ ___
 ___ 
 ### Slot {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [DoorSlot](../enums/DoorSlot.html) Slot  {: .copyable aria-label='Variables' }
+#### [DoorSlot](enums/DoorSlot.html) Slot  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Target·Room·Index {: aria-label='Variables' }
@@ -151,6 +151,6 @@ Note: this value only affects the room transition animation and does not actuall
 ___ 
 ### Target·Room·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomType](../enums/RoomType.html) TargetRoomType  {: .copyable aria-label='Variables' }
+#### [RoomType](enums/RoomType.html) TargetRoomType  {: .copyable aria-label='Variables' }
 
 ___ 

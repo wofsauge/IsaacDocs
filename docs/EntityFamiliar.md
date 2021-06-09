@@ -89,17 +89,17 @@ ___
 ___ 
 ### Play·Charge·Anim () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlayChargeAnim ( [Direction](../enums/Direction.html) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayChargeAnim ( [Direction](enums/Direction.html) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Float·Anim () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlayFloatAnim ( [Direction](../enums/Direction.html) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayFloatAnim ( [Direction](enums/Direction.html) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Shoot·Anim () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlayShootAnim ( [Direction](../enums/Direction.html) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayShootAnim ( [Direction](enums/Direction.html) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Recalculate·Orbit·Offset () {: aria-label='Functions' }
@@ -158,12 +158,12 @@ ___
 ___ 
 ### Last·Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction.html) LastDirection  {: .copyable aria-label='Variables' }
+#### [Direction](enums/Direction.html) LastDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Move·Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction.html) MoveDirection  {: .copyable aria-label='Variables' }
+#### [Direction](enums/Direction.html) MoveDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Orbit·Angle·Offset {: aria-label='Variables' }
@@ -203,7 +203,7 @@ ___
 ___ 
 ### Shoot·Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction.html) ShootDirection  {: .copyable aria-label='Variables' }
+#### [Direction](enums/Direction.html) ShootDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### State {: aria-label='Variables' }

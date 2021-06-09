@@ -20,8 +20,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
-Uses [ProjectileFlags](../enums/ProjectileFlags.html) to define the projectile attributes after the "Changed" state was activated.
-The [ProjectileFlag](../enums/ProjectileFlags.html).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
+Uses [ProjectileFlags](enums/ProjectileFlags.html) to define the projectile attributes after the "Changed" state was activated.
+The [ProjectileFlag](enums/ProjectileFlags.html).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -37,7 +37,7 @@ ___
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
-The [ProjectileFlag](../enums/ProjectileFlags.html).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](enums/ProjectileFlags.html).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -53,7 +53,7 @@ ___
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
-The [ProjectileFlag](../enums/ProjectileFlags.html).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](enums/ProjectileFlags.html).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 

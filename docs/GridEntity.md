@@ -31,7 +31,7 @@ ___
 ___ 
 ### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityType](../enums/GridEntityType.html) GetType ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityType](enums/GridEntityType.html) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Variant () {: aria-label='Functions' }
@@ -61,7 +61,7 @@ ___
 ___ 
 ### Set·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetType ( [GridEntityType](../enums/GridEntityType.html) Type ) {: .copyable aria-label='Functions' }
+#### void SetType ( [GridEntityType](enums/GridEntityType.html) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Variant () {: aria-label='Functions' }
