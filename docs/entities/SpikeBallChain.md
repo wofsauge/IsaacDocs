@@ -12,4 +12,4 @@ The second block (Red) is used to define the Speed. 0000 will cause the ball to 
 
 The last block (In Image: Green) is used to define the distance of the ball to the source block. The distance is measured in Blocks. 0010 = 2 in Decimal, therefore 2 blocks distance to the source.
 
-[![](../images/infographics/ballAndChain.png)](../images/infographics/ballAndChain.png)
+[![](../rep/images/infographics/ballAndChain.png)](../rep/images/infographics/ballAndChain.png)

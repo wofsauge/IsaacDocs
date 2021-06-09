@@ -4,7 +4,7 @@
 [ ](#){: .abrep .tooltip .badge }
 #### void AddCallback ( table modRef, function callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
-It is recommended to use the [AddCallback](../ModReference/#addcallback) function on a [Mod Reference](../ModReference) instead.
+It is recommended to use the [AddCallback](../rep/ModReference/#addcallback) function on a [Mod Reference](../rep/ModReference) instead.
 
 ___ 
 ### Add·Pill·Effect·To·Pool () {: aria-label='Functions' }
@@ -45,7 +45,7 @@ Returns the number of enemies in the current room.
 ___ 
 ### Count·Entities () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int CountEntities ( [Entity](../Entity) Spawner, [EntityType](../enums/EntityType) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
+#### int CountEntities ( [Entity](../rep/Entity) Spawner, [EntityType](../rep/enums/EntityType) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
 Spawner refers to an entity object (can be `:::lua nil`) 
@@ -72,23 +72,23 @@ ___
 #### string ExecuteCommand ( string command ) {: .copyable aria-label='Functions' }
 
 This function executes a debug console command. see the 
-[Debug Console Tutorial](../tutorials/DebugConsole) for informations on how to use commands.
+[Debug Console Tutorial](../rep/tutorials/DebugConsole) for informations on how to use commands.
 ___ 
 ### Explode () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Explode ( [Vector](../Vector) pos, [Entity](../Entity) source, float damage ) {: .copyable aria-label='Functions' }
+#### void Explode ( [Vector](../rep/Vector) pos, [Entity](../rep/Entity) source, float damage ) {: .copyable aria-label='Functions' }
 
 Spawn an explosion on a specified location.
 ___ 
 ### Find·By·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### table FindByType ( [EntityType](../enums/EntityType) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
+#### table FindByType ( [EntityType](../rep/enums/EntityType) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
 ___ 
 ### Find·In·Radius () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### table FindInRadius ( [Vector](../Vector) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
-Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](../enums/EntityPartition)) (include all = 0xffffffff) 
+#### table FindInRadius ( [Vector](../rep/Vector) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
+Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](../rep/enums/EntityPartition)) (include all = 0xffffffff) 
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded.
 ___ 
@@ -202,17 +202,17 @@ ___
 
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
-This function therefore works drastically different than `:::lua Game():GetFrameCount()`[Link](../Game/#GetFrameCount)
+This function therefore works drastically different than `:::lua Game():GetFrameCount()`[Link](../rep/Game/#GetFrameCount)
 ___ 
 ### Get·Free·Near·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetFreeNearPosition ( [Vector](../Vector) pos, float step ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetFreeNearPosition ( [Vector](../rep/Vector) pos, float step ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Item·Config () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Config](../ItemConfig) GetItemConfig ( ) {: .copyable aria-label='Functions' }
-Returns the [ItemConfig::Config](../ItemConfig) object.
+#### [Config](../rep/ItemConfig) GetItemConfig ( ) {: .copyable aria-label='Functions' }
+Returns the [ItemConfig::Config](../rep/ItemConfig) object.
 ___ 
 ### Get·Item·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -261,13 +261,13 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml)
 ___ 
 ### Get·Player () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetPlayer ( int playerId = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [EntityPlayer](../rep/EntityPlayer) GetPlayer ( int playerId = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop players or babies. If an index is given, that is not used, it will return the last player in the list.
 
 This function can return `nil` if the function is called before any player is initialized. 
 
-This function is the same as [`Game():GetPlayer()`](../Game/#getplayer).
+This function is the same as [`Game():GetPlayer()`](../rep/Game/#getplayer).
 
 ???- example "Example Code"
     ```lua 
@@ -278,7 +278,7 @@ This function is the same as [`Game():GetPlayer()`](../Game/#getplayer).
 ___ 
 ### Get·Player·Type·By·Name () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [PlayerType](../enums/PlayerType) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
+#### [PlayerType](../rep/enums/PlayerType) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
 
 Returns the PlayerType (ID) of a character based on its name. (File: players.xml)
 
@@ -293,7 +293,7 @@ Returns the PlayerType (ID) of a character based on its name. (File: players.xml
 ___ 
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetRandomPosition ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetRandomPosition ( ) {: .copyable aria-label='Functions' }
 
 Returns a random position inside the current room. The Return value is a Vector containing the position in world coordinates.
 ___ 
@@ -345,9 +345,9 @@ Returns the TrinketType of a trinket based on its name. (File: items.xml)
 ___ 
 ### Grid·Spawn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntity](../GridEntity) GridSpawn ( [GridEntity](../GridEntity) gridEntityType, int Variant, [Vector](../Vector) position, boolean forced ) {: .copyable aria-label='Functions' }
+#### [GridEntity](../rep/GridEntity) GridSpawn ( [GridEntity](../rep/GridEntity) gridEntityType, int Variant, [Vector](../rep/Vector) position, boolean forced ) {: .copyable aria-label='Functions' }
 
-Spawn a [GridEntity](../GridEntity) at the given position (world coordinates).
+Spawn a [GridEntity](../rep/GridEntity) at the given position (world coordinates).
 
 ???+ bug "Bugs"
     forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again.
@@ -364,7 +364,7 @@ For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
-It is recommended to use the [HasData](../ModReference/#hasdata) function on a [Mod Reference](../ModReference) instead.
+It is recommended to use the [HasData](../rep/ModReference/#hasdata) function on a [Mod Reference](../rep/ModReference) instead.
 ___ 
 ### Load·Mod·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -377,22 +377,22 @@ For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
-It is recommended to use the [LoadData](../ModReference/#loaddata) function on a [Mod Reference](../ModReference) instead.
+It is recommended to use the [LoadData](../rep/ModReference/#loaddata) function on a [Mod Reference](../rep/ModReference) instead.
 ___ 
 ### Register·Mod () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RegisterMod ( table modRef, string modName, int apiVersion ) {: .copyable aria-label='Functions' }
 
-Registers a table with the game to use as a [Mod Reference](../ModReference).
+Registers a table with the game to use as a [Mod Reference](../rep/ModReference).
 
-It is recommended to use the global [RegisterMod](../Functions/#registermod) function instead.
+It is recommended to use the global [RegisterMod](../rep/Functions/#registermod) function instead.
 
 ___ 
 ### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveCallback ( table modRef, function callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
 
-It is recommended to use the [RemoveCallback](../ModReference/#removecallback) function on a [Mod Reference](../ModReference) instead.
+It is recommended to use the [RemoveCallback](../rep/ModReference/#removecallback) function on a [Mod Reference](../rep/ModReference) instead.
 
 ___ 
 ### Remove·Mod·Data () {: aria-label='Functions' }
@@ -402,7 +402,7 @@ ___
 Deletes the stored "saveX.dat" file if it exists. 
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
-It is recommended to use the [RemoveData](../ModReference/#removedata) function on a [Mod Reference](../ModReference) instead.
+It is recommended to use the [RemoveData](../rep/ModReference/#removedata) function on a [Mod Reference](../rep/ModReference) instead.
 ___ 
 ### Render·Scaled·Text () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -448,25 +448,25 @@ For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
-It is recommended to use the [SaveData](../ModReference/#savedata) function on a [Mod Reference](../ModReference) instead.
+It is recommended to use the [SaveData](../rep/ModReference/#savedata) function on a [Mod Reference](../rep/ModReference) instead.
 ___ 
 ### Screen·To·World () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) ScreenToWorld ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) ScreenToWorld ( [Vector](../rep/Vector) pos ) {: .copyable aria-label='Functions' }
 
 Transfers Screen (aka. Window coordinates) into Worldcoordinates. This can be used to get a specific location in the room in World coordnates The World coordinate system is x[0,inf) y[0,inf).
 ___ 
 ### Screen·To·World·Distance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) ScreenToWorldDistance ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) ScreenToWorldDistance ( [Vector](../rep/Vector) pos ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Spawn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Entity](../Entity) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](../Vector) position, [Vector](../Vector) velocity, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
+#### [Entity](../rep/Entity) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](../rep/Vector) position, [Vector](../rep/Vector) velocity, [Entity](../rep/Entity) Spawner ) {: .copyable aria-label='Functions' }
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
-There are two spawn functions. [Isaac.Spawn()](../Isaac/#spawn) and [Game():Spawn()](../Game/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](../Game/#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../Isaac/#spawn).
+There are two spawn functions. [Isaac.Spawn()](../rep/Isaac/#spawn) and [Game():Spawn()](../rep/Game/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](../rep/Game/#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../rep/Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../rep/Isaac/#spawn).
 
 ???- example "Example Code"
     This code spawns a random collectible at in center of the current room.
@@ -477,13 +477,13 @@ There are two spawn functions. [Isaac.Spawn()](../Isaac/#spawn) and [Game():Spaw
 ___ 
 ### World·To·Render·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) WorldToRenderPosition ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) WorldToRenderPosition ( [Vector](../rep/Vector) pos ) {: .copyable aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Rendercoordinates. This can be used to render things at fixed positions in a room. The Render coordinate system is x[0,inf) y[0,inf). It defines the Position on the rendering-plane in the current room.
 ___ 
 ### World·To·Screen () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) WorldToScreen ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) WorldToScreen ( [Vector](../rep/Vector) pos ) {: .copyable aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. This can be used to render things next to an entity. The Screen coordinate system is x[0,inf) y[0,inf). Normally, it goes till ~500x ~300y. The return vector contains integer values or numbers ending with .5
 
@@ -499,6 +499,6 @@ Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. T
 ___ 
 ### World·To·Screen·Distance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) WorldToScreenDistance ( [Vector](../Vector) pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) WorldToScreenDistance ( [Vector](../rep/Vector) pos ) {: .copyable aria-label='Functions' }
 
 ___ 

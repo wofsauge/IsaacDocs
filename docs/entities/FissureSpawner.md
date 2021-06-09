@@ -10,4 +10,4 @@ The second block (Red) is used to define the Speed, aka. the blocks the fissure 
 
 The last block (In Image: Green) is used to define the angle in which the fissures will launch.
 
-[![](../images/infographics/FissureSubtype.png)](../images/infographics/FissureSubtype.png)
+[![](../rep/images/infographics/FissureSubtype.png)](../rep/images/infographics/FissureSubtype.png)

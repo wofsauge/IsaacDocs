@@ -2,73 +2,73 @@
 ## Functions
 ### Add·Bible·Upgrade () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddBibleUpgrade ( int Add, [ItemPoolType](../enums/ItemPoolType) PoolType ) {: .copyable aria-label='Functions' }
+#### void AddBibleUpgrade ( int Add, [ItemPoolType](../rep/enums/ItemPoolType) PoolType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Room·Blacklist () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddRoomBlacklist ( [CollectibleType](../enums/CollectibleType) Item ) {: .copyable aria-label='Functions' }
+#### void AddRoomBlacklist ( [CollectibleType](../rep/enums/CollectibleType) Item ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Force·Add·Pill·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [PillColor](../enums/PillColor) ForceAddPillEffect ( [PillEffect](../enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
+#### [PillColor](../rep/enums/PillColor) ForceAddPillEffect ( [PillEffect](../rep/enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
 Forces a pill effect to be in the pool, usually for challenges, returns PillColor for that effect. 
 ___ 
 ### Get·Card () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Card](../enums/Card) GetCard ( int Seed, boolean Playing, boolean Rune, boolean OnlyRunes ) {: .copyable aria-label='Functions' }
+#### [Card](../rep/enums/Card) GetCard ( int Seed, boolean Playing, boolean Rune, boolean OnlyRunes ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetCollectible ( [ItemPoolType](../enums/ItemPoolType) PoolType, boolean Decrease = false, int Seed = Random(), [CollectibleType](../enums/CollectibleType) DefaultItem = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](../rep/enums/CollectibleType) GetCollectible ( [ItemPoolType](../rep/enums/ItemPoolType) PoolType, boolean Decrease = false, int Seed = Random(), [CollectibleType](../rep/enums/CollectibleType) DefaultItem = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Last·Pool () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ItemPoolType](../enums/ItemPoolType) GetLastPool ( ) {: .copyable aria-label='Functions' }
+#### [ItemPoolType](../rep/enums/ItemPoolType) GetLastPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [PillColor](../enums/PillColor) GetPill ( int Seed ) {: .copyable aria-label='Functions' }
+#### [PillColor](../rep/enums/PillColor) GetPill ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pill·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [PillEffect](../enums/PillEffect) GetPillEffect ( [PillColor](../enums/PillColor) PillColor, [EntityPlayer](../EntityPlayer) Player = nil ) {: .copyable aria-label='Functions' }
+#### [PillEffect](../rep/enums/PillEffect) GetPillEffect ( [PillColor](../rep/enums/PillColor) PillColor, [EntityPlayer](../rep/EntityPlayer) Player = nil ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pool·For·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ItemPoolType](../enums/ItemPoolType) GetPoolForRoom ( [RoomType](../enums/RoomType) RoomType, int Seed ) {: .copyable aria-label='Functions' }
+#### [ItemPoolType](../rep/enums/ItemPoolType) GetPoolForRoom ( [RoomType](../rep/enums/RoomType) RoomType, int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [TrinketType](../enums/TrinketType) GetTrinket ( boolean DontAdvanceRNG = false ) {: .copyable aria-label='Functions' }
+#### [TrinketType](../rep/enums/TrinketType) GetTrinket ( boolean DontAdvanceRNG = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Identify·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void IdentifyPill ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
+#### void IdentifyPill ( [PillColor](../rep/enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Pill·Identified () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsPillIdentified ( [PillColor](../enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
+#### boolean IsPillIdentified ( [PillColor](../rep/enums/PillColor) PillColor ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean RemoveCollectible ( [CollectibleType](../enums/CollectibleType) Collectible ) {: .copyable aria-label='Functions' }
+#### boolean RemoveCollectible ( [CollectibleType](../rep/enums/CollectibleType) Collectible ) {: .copyable aria-label='Functions' }
 Removes a collectible from the itempool. Returns true if given item did exist in the pool before.
 
 ___ 
 ### Remove·Trinket () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean RemoveTrinket ( [TrinketType](../enums/TrinketType) Trinket ) {: .copyable aria-label='Functions' }
+#### boolean RemoveTrinket ( [TrinketType](../rep/enums/TrinketType) Trinket ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Room·Blacklist () {: aria-label='Functions' }

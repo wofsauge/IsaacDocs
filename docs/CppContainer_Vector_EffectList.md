@@ -4,15 +4,15 @@
 [ ](#){: .abrep .tooltip .badge }
 #### int __len ( ) {: .copyable aria-label='Operators' }
 
-The length (#) operation. Returns the amount of [TemporaryEffects](../TemporaryEffects) in the list.
+The length (#) operation. Returns the amount of [TemporaryEffects](../rep/TemporaryEffects) in the list.
 
 ___ 
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [TemporaryEffect](../TemporaryEffect) Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [TemporaryEffect](../rep/TemporaryEffect) Get ( int idx ) {: .copyable aria-label='Functions' }
 
-Returns the [TemporaryEffect](../TemporaryEffect) at the index of the list provided.
+Returns the [TemporaryEffect](../rep/TemporaryEffect) at the index of the list provided.
 
 ___ 
 ## Variables
@@ -20,6 +20,6 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Size  {: .copyable aria-label='Variables' }
 
-The amount of [TemporaryEffects](../TemporaryEffects) in the list.
+The amount of [TemporaryEffects](../rep/TemporaryEffects) in the list.
 
 ___ 

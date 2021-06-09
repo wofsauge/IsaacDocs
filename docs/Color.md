@@ -2,11 +2,11 @@
 ## Constructors
 ### Color () {: aria-label='Constructors' }
 [ ](#){: .rep .tooltip .badge }
-#### [Color](../Color) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
+#### [Color](../rep/Color) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Color" class.
 
-When using the [Font](../Font) class, use [KColor()](../KColor) instead. 
+When using the [Font](../rep/Font) class, use [KColor()](../rep/KColor) instead. 
 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
 
@@ -15,9 +15,9 @@ ___
 ## Operators
 ### __mul () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](../Color) __mul ( [Color](../Color) right ) {: .copyable aria-label='Operators' }
+#### [Color](../rep/Color) __mul ( [Color](../rep/Color) right ) {: .copyable aria-label='Operators' }
 
-Defines the multiplication of two [Color](../Color) objects using the `*` operator.
+Defines the multiplication of two [Color](../rep/Color) objects using the `*` operator.
 ___ 
 ## Constants
 ### Color.Default {: aria-label='Constants' }
@@ -26,7 +26,7 @@ ___
 ## Functions
 ### Lerp () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [Color](../Color) Lerp ( [Color](../Color) m1, [Color](../Color) m2, float t ) {: .copyable aria-label='Functions' }
+#### static [Color](../rep/Color) Lerp ( [Color](../rep/Color) m1, [Color](../rep/Color) m2, float t ) {: .copyable aria-label='Functions' }
 
 Linear Interpolation between two colors. `:::lua t` is the "progress" of the interpolation. Setting `:::lua t = 0.5` means that the color in the middle of m1 and m2 will be returned.
 ___ 

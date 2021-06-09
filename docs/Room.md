@@ -2,7 +2,7 @@
 ## Functions
 ### Check·Line () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean CheckLine ( [Vector](../Vector) Pos1, [Vector](../Vector) Pos2, LinecheckMode Mode, int GridPathThreshold = 0, boolean IgnoreWalls = false, boolean IgnoreCrushable = false ) {: .copyable aria-label='Functions' }
+#### boolean CheckLine ( [Vector](../rep/Vector) Pos1, [Vector](../rep/Vector) Pos2, LinecheckMode Mode, int GridPathThreshold = 0, boolean IgnoreWalls = false, boolean IgnoreCrushable = false ) {: .copyable aria-label='Functions' }
 Returns 2 values:
 		* boolean: true if there are no obstructions between Pos1 and Pos2, false otherwise
 		* Vector: first hit position from Pos1 to Pos2 (returns Pos2 if the line didn't hit anything)
@@ -21,7 +21,7 @@ ___
 ### Damage·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean DamageGrid ( int Index, int Damage ) {: .copyable aria-label='Functions' }
-Damage Grid Entities currently this concerns [GridEntityPoop](../GridEntityPoop) and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc
+Damage Grid Entities currently this concerns [GridEntityPoop](../rep/GridEntityPoop) and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc
 ___ 
 ### Destroy·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -35,12 +35,12 @@ ___
 ___ 
 ### Find·Free·Pickup·Spawn·Position () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [Vector](../Vector) FindFreePickupSpawnPosition ( [Vector](../Vector) Pos, float InitialStep = 0, boolean AvoidActiveEntities = false, boolean AllowPits = false ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) FindFreePickupSpawnPosition ( [Vector](../rep/Vector) Pos, float InitialStep = 0, boolean AvoidActiveEntities = false, boolean AllowPits = false ) {: .copyable aria-label='Functions' }
 Starting from Pos, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned. 
 ___ 
 ### Find·Free·Tile·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) FindFreeTilePosition ( [Vector](../Vector) Pos, float DistanceThreshold ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) FindFreeTilePosition ( [Vector](../rep/Vector) Pos, float DistanceThreshold ) {: .copyable aria-label='Functions' }
 Finds the nearest free tile based on position Stops immediately if the tile sampled has a squared distance less than DistanceThresholdSQ 
 ___ 
 ### Get·Alive·Bosses·Count () {: aria-label='Functions' }
@@ -105,7 +105,7 @@ This will return the subtype of the current room, since this value is used to de
 ___ 
 ### Get·Bottom·Right·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetBottomRightPos ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetBottomRightPos ( ) {: .copyable aria-label='Functions' }
 returns bottom right position inside of walls 
 ___ 
 ### Get·Broken·Watch·State () {: aria-label='Functions' }
@@ -115,17 +115,17 @@ ___
 ___ 
 ### Get·Center·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetCenterPos ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetCenterPos ( ) {: .copyable aria-label='Functions' }
 returns the room center position 
 ___ 
 ### Get·Clamped·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetClampedGridIndex ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### int GetClampedGridIndex ( [Vector](../rep/Vector) Position ) {: .copyable aria-label='Functions' }
 converts float position (x,y) to grid index (similar to ingrid) clamps the values if out of bounds 
 ___ 
 ### Get·Clamped·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetClampedPosition ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetClampedPosition ( [Vector](../rep/Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 returns Pos clamped to room borders inside of walls 
 ___ 
 ### Get·Decoration·Seed () {: aria-label='Functions' }
@@ -145,13 +145,13 @@ ___
 ___ 
 ### Get·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityDoor](../GridEntityDoor) GetDoor ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Returns the [GridEntityDoor](../GridEntityDoor) at the given [DoorSlot](../enums/DoorSlot) position. Returns nil if no Door is located there.
+#### [GridEntityDoor](../rep/GridEntityDoor) GetDoor ( [DoorSlot](../rep/enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [GridEntityDoor](../rep/GridEntityDoor) at the given [DoorSlot](../rep/enums/DoorSlot) position. Returns nil if no Door is located there.
 
 ___ 
 ### Get·Door·Slot·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetDoorSlotPosition ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetDoorSlotPosition ( [DoorSlot](../rep/enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Dungeon·Rock·Idx () {: aria-label='Functions' }
@@ -161,7 +161,7 @@ ___
 ___ 
 ### Get·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](../CppContainer_EntityList) GetEntities ( ) {: .copyable aria-label='Functions' }
+#### [EntityList](../rep/CppContainer_EntityList) GetEntities ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
     This function returns userdata, which can't be processed. Use [Isaac.GetRoomEntities()](../rep/Isaac#getroomentities) instead!
@@ -174,27 +174,27 @@ ___
 ___ 
 ### Get·Grid·Collision () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
+#### [GridCollisionClass](../rep/enums/GridCollisionClass) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
 
-Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity at this grid index.
+Returns the [GridCollisionClass](../rep/enums/GridCollisionClass) of the grid entity at this grid index.
 ___ 
 ### Get·Grid·Collision·At·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass) GetGridCollisionAtPos ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### [GridCollisionClass](../rep/enums/GridCollisionClass) GetGridCollisionAtPos ( [Vector](../rep/Vector) Pos ) {: .copyable aria-label='Functions' }
 
-Returns the [GridCollisionClass](../enums/GridCollisionClass) of the grid entity at this position in the room.
+Returns the [GridCollisionClass](../rep/enums/GridCollisionClass) of the grid entity at this position in the room.
 ___ 
 ### Get·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntity](../GridEntity) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntity](../rep/GridEntity) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the [GridEntity](../GridEntity) at this grid index. Returns `nil`, when no [GridEntity](../GridEntity) is found.
+Returns the [GridEntity](../rep/GridEntity) at this grid index. Returns `nil`, when no [GridEntity](../rep/GridEntity) is found.
 ___ 
 ### Get·Grid·Entity·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntity](../GridEntity) GetGridEntityFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntity](../rep/GridEntity) GetGridEntityFromPos ( [Vector](../rep/Vector) Position ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the [GridEntity](../GridEntity) at this position in the room. Returns `nil`, when no [GridEntity](../GridEntity) is found.
+Returns the [GridEntity](../rep/GridEntity) at this position in the room. Returns `nil`, when no [GridEntity](../rep/GridEntity) is found.
 ___ 
 ### Get·Grid·Height () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -203,7 +203,7 @@ ___
 ___ 
 ### Get·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetGridIndex ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### int GetGridIndex ( [Vector](../rep/Vector) Position ) {: .copyable aria-label='Functions' }
 converts float position (x,y) to grid index returns -1 for invalid index 
 ___ 
 ### Get·Grid·Path () {: aria-label='Functions' }
@@ -213,12 +213,12 @@ ___
 ___ 
 ### Get·Grid·Path·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetGridPathFromPos ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### int GetGridPathFromPos ( [Vector](../rep/Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Grid·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetGridPosition ( int GridIndex ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetGridPosition ( int GridIndex ) {: .copyable aria-label='Functions' }
 converts grid index to float (x,y) position undefined behaviour for invalid index 
 ___ 
 ### Get·Grid·Size () {: aria-label='Functions' }
@@ -233,7 +233,7 @@ ___
 ___ 
 ### Get·Laser·Target () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetLaserTarget ( [Vector](../Vector) Pos, [Vector](../Vector) Dir ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetLaserTarget ( [Vector](../rep/Vector) Pos, [Vector](../rep/Vector) Dir ) {: .copyable aria-label='Functions' }
 returns the hit position for a laser beam (Technology, Robo-Baby) usually, the first poop, fire, rock, TNT, or wall encountered on a straight line 
 ___ 
 ### Get·Lighting·Alpha () {: aria-label='Functions' }
@@ -258,7 +258,7 @@ ___
 ___ 
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
 returns random non tile aligned position 
 ___ 
 ### Get·Random·Tile·Index () {: aria-label='Functions' }
@@ -273,12 +273,12 @@ ___
 ___ 
 ### Get·Render·Scroll·Offset () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Vector](../Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
+#### const [Vector](../rep/Vector) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
 The camera scroll offset and screen shake offsets are both represented here. 
 ___ 
 ### Get·Render·Surface·Top·Left () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Vector](../Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
+#### const [Vector](../rep/Vector) GetRenderSurfaceTopLeft ( ) {: .copyable aria-label='Functions' }
 The position the floor and wall textures will be rendered at. 
 ___ 
 ### Get·Room·Config·Stage () {: aria-label='Functions' }
@@ -320,7 +320,7 @@ Returns the stage the room was designed for.
 ___ 
 ### Get·Room·Shape () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomShape](../enums/RoomShape) GetRoomShape ( ) {: .copyable aria-label='Functions' }
+#### [RoomShape](../rep/enums/RoomShape) GetRoomShape ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Second·Boss·ID () {: aria-label='Functions' }
@@ -330,7 +330,7 @@ ___
 ___ 
 ### Get·Seeded·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [CollectibleType](../enums/CollectibleType) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](../rep/enums/CollectibleType) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Shop·Level () {: aria-label='Functions' }
@@ -350,12 +350,12 @@ ___
 ___ 
 ### Get·Top·Left·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetTopLeftPos ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetTopLeftPos ( ) {: .copyable aria-label='Functions' }
 returns top left position inside of walls 
 ___ 
 ### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomType](../enums/RoomType) GetType ( ) {: .copyable aria-label='Functions' }
+#### [RoomType](../rep/enums/RoomType) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Slow·Down () {: aria-label='Functions' }
@@ -400,7 +400,7 @@ ___
 ___ 
 ### Is·Door·Slot·Allowed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsDoorSlotAllowed ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
+#### boolean IsDoorSlotAllowed ( [DoorSlot](../rep/enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 Returns whether this room design may have a door at a given position, disregarding whether those doors exist. 
 ___ 
 ### Is·First·Enemy·Dead () {: aria-label='Functions' }
@@ -425,7 +425,7 @@ ___
 ___ 
 ### Is·Position·In·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsPositionInRoom ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
+#### boolean IsPositionInRoom ( [Vector](../rep/Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Sacrifice·Done () {: aria-label='Functions' }
@@ -450,7 +450,7 @@ ___
 ___ 
 ### Remove·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveDoor ( [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
+#### void RemoveDoor ( [DoorSlot](../rep/enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Grid·Entity () {: aria-label='Functions' }
@@ -470,7 +470,7 @@ for D7 collectible
 ___ 
 ### Screen·Wrap·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) ScreenWrapPosition ( [Vector](../Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) ScreenWrapPosition ( [Vector](../rep/Vector) Pos, float Margin ) {: .copyable aria-label='Functions' }
 
 Returns Pos, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)
 
@@ -504,7 +504,7 @@ ___
 ___ 
 ### Set·Floor·Color () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetFloorColor ( [Color](../Color) FloorColor ) {: .copyable aria-label='Functions' }
+#### void SetFloorColor ( [Color](../rep/Color) FloorColor ) {: .copyable aria-label='Functions' }
 
 Allows you to apply a color modifier to the floor texture of the current room.
 
@@ -532,7 +532,7 @@ ___
 ___ 
 ### Set·Shockwave·Param () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetShockwaveParam ( int ShockwaveId, [ShockwaveParams](../ShockwaveParams) Params ) {: .copyable aria-label='Functions' }
+#### void SetShockwaveParam ( int ShockwaveId, [ShockwaveParams](../rep/ShockwaveParams) Params ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Slow·Down () {: aria-label='Functions' }
@@ -542,7 +542,7 @@ ___
 ___ 
 ### Set·Wall·Color () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetWallColor ( [Color](../Color) WallColor ) {: .copyable aria-label='Functions' }
+#### void SetWallColor ( [Color](../rep/Color) WallColor ) {: .copyable aria-label='Functions' }
 
 Allows you to apply a color modifier to the wall texture of the current room.
 
@@ -575,17 +575,17 @@ ___
 ___ 
 ### Spawn·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](../enums/GridEntityType) Type, int Variant, int Seed, int VarData ) {: .copyable aria-label='Functions' }
+#### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](../rep/enums/GridEntityType) Type, int Variant, int Seed, int VarData ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Make·Bridge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TryMakeBridge ( [GridEntity](../GridEntity) pit ) {: .copyable aria-label='Functions' }
+#### boolean TryMakeBridge ( [GridEntity](../rep/GridEntity) pit ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Place·Ladder () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void TryPlaceLadder ( [Vector](../Vector) PlayerPos, [Vector](../Vector) PlayerVelocity, [Entity](../Entity) Ladder ) {: .copyable aria-label='Functions' }
+#### void TryPlaceLadder ( [Vector](../rep/Vector) PlayerPos, [Vector](../rep/Vector) PlayerVelocity, [Entity](../rep/Entity) Ladder ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Spawn·Blue·Womb·Door () {: aria-label='Functions' }
@@ -630,6 +630,6 @@ Updates the current room.
 ___ 
 ### World·To·Screen·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) WorldToScreenPosition ( [Vector](../Vector) WorldPos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) WorldToScreenPosition ( [Vector](../rep/Vector) WorldPos ) {: .copyable aria-label='Functions' }
 Converts an entity position to one that can be used to render to the screen. 
 ___ 

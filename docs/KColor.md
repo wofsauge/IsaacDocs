@@ -2,10 +2,10 @@
 ## Constructors
 ### KColor () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [KColor](../KColor) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
+#### [KColor](../rep/KColor) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "KColor" class.
-Notes: "KColor" is only used in the [Font](../Font) class. For most other situations you will need to use the [Color()](../Color) constructor.
+Notes: "KColor" is only used in the [Font](../rep/Font) class. For most other situations you will need to use the [Color()](../rep/Color) constructor.
 ___ 
 ## Variables
 ### Alpha {: aria-label='Variables' }

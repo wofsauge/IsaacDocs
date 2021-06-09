@@ -16,7 +16,7 @@ ___
 ___ 
 ### Get·RNG () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [RNG](../RNG) GetGet·RNG ( ) {: .copyable aria-label='Functions' }
+#### [RNG](../rep/RNG) GetGet·RNG ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Save·State () {: aria-label='Functions' }
@@ -26,12 +26,12 @@ ___
 ___ 
 ### Get·Sprite () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [Sprite](../Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
+#### [Sprite](../rep/Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityType](../enums/GridEntityType) GetType ( ) {: .copyable aria-label='Functions' }
+#### [GridEntityType](../rep/enums/GridEntityType) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Variant () {: aria-label='Functions' }
@@ -56,12 +56,12 @@ ___
 ___ 
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Render ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](../rep/Vector) Offset ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetType ( [GridEntityType](../enums/GridEntityType) Type ) {: .copyable aria-label='Functions' }
+#### void SetType ( [GridEntityType](../rep/enums/GridEntityType) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Variant () {: aria-label='Functions' }
@@ -71,37 +71,37 @@ ___
 ___ 
 ### To·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityDoor](../GridEntityDoor) ToDoor ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntityDoor](../rep/GridEntityDoor) ToDoor ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Pit () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityPit](../GridEntityPit) ToPit ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntityPit](../rep/GridEntityPit) ToPit ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Poop () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityPoop](../GridEntityPoop) ToPoop ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntityPoop](../rep/GridEntityPoop) ToPoop ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Pressure·Plate () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityPressurePlate](../GridEntityPressurePlate) ToPressurePlate ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntityPressurePlate](../rep/GridEntityPressurePlate) ToPressurePlate ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Rock () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityRock](../GridEntityRock) ToRock ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntityRock](../rep/GridEntityRock) ToRock ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·Spikes () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntitySpikes](../GridEntitySpikes) ToSpikes ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntitySpikes](../rep/GridEntitySpikes) ToSpikes ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### To·TNT () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridEntityTNT](../GridEntityTNT) ToTNT ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [GridEntityTNT](../rep/GridEntityTNT) ToTNT ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 ___ 
 ### Update () {: aria-label='Functions' }
@@ -122,7 +122,7 @@ ___
 ___ 
 ### Position {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
+#### const [Vector](../rep/Vector) Position  {: .copyable aria-label='Variables' }
 Returns the position of the grid cell's center point 
 ___ 
 ### State {: aria-label='Variables' }

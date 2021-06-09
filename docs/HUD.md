@@ -7,16 +7,16 @@ Refreshes the HUD (e.g. Characters that have Parent specified no longer show the
 ___ 
 ### Flash·Charge·Bar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void FlashChargeBar ( [EntityPlayer](../EntityPlayer) Player, [ActiveSlot](../enums/ActiveSlot) ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void FlashChargeBar ( [EntityPlayer](../rep/EntityPlayer) Player, [ActiveSlot](../rep/enums/ActiveSlot) ActiveSlot ) {: .copyable aria-label='Functions' }
 Chargebar flashes as if item was actually charged.
 ___ 
 ### Invalidate·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void InvalidateActiveItem ( [EntityPlayer](../EntityPlayer) Player, [ActiveSlot](../enums/ActiveSlot) ActiveSlot ) {: .copyable aria-label='Functions' }
+#### void InvalidateActiveItem ( [EntityPlayer](../rep/EntityPlayer) Player, [ActiveSlot](../rep/enums/ActiveSlot) ActiveSlot ) {: .copyable aria-label='Functions' }
 ___ 
 ### Invalidate·Crafting·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void InvalidateCraftingItem ( [EntityPlayer](../EntityPlayer) Player ) {: .copyable aria-label='Functions' }
+#### void InvalidateCraftingItem ( [EntityPlayer](../rep/EntityPlayer) Player ) {: .copyable aria-label='Functions' }
 ___
 ### Is·Visible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

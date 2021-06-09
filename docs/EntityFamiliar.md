@@ -34,7 +34,7 @@ Adds to orbitals. This doesn't remove other flags!
 ___ 
 ### Fire·Projectile () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityTear](../EntityTear) FireProjectile ( [Vector](../Vector) Dir ) {: .copyable aria-label='Functions' }
+#### [EntityTear](../rep/EntityTear) FireProjectile ( [Vector](../rep/Vector) Dir ) {: .copyable aria-label='Functions' }
 
 Shoots a projectile from the center of the familiar in the direction you defined.
 If used on a familiar that shoots multiple projectiles (example: harlequin baby), this function will only return the left most projectile based on the direction. If used on familiars with special tears (example: Lil Brimstone,...), this will just shoot a regular tear.
@@ -47,17 +47,17 @@ ___
 ___ 
 ### Follow·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void FollowPosition ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### void FollowPosition ( [Vector](../rep/Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Orbit·Distance () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [Vector](../Vector) GetOrbitDistance ( int Layer ) {: .copyable aria-label='Functions' }
+#### static [Vector](../rep/Vector) GetOrbitDistance ( int Layer ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Orbit·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) GetOrbitPosition ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../rep/Vector) GetOrbitPosition ( [Vector](../rep/Vector) Pos ) {: .copyable aria-label='Functions' }
 
 Returns the position of an orbiting familiar relative to the player's position. Returns `:::lua Vector(0,0) if its a normal familiar.`
 The "pos" argument is used as an offset.
@@ -74,7 +74,7 @@ ___
 ___ 
 ### Pick·Enemy·Target () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void PickEnemyTarget ( float MaxDistance, int FrameInterval = 13, int Flags = 0, [Vector](../Vector) ConeDir = Vector.Zero, float ConeAngle = 15 ) {: .copyable aria-label='Functions' }
+#### void PickEnemyTarget ( float MaxDistance, int FrameInterval = 13, int Flags = 0, [Vector](../rep/Vector) ConeDir = Vector.Zero, float ConeAngle = 15 ) {: .copyable aria-label='Functions' }
 **Flags**: A combination of the following flags (none of these are set by default)
 
     * 1: Allow switching to a better target even if we already have one
@@ -89,17 +89,17 @@ ___
 ___ 
 ### Play·Charge·Anim () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlayChargeAnim ( [Direction](../enums/Direction) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayChargeAnim ( [Direction](../rep/enums/Direction) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Float·Anim () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlayFloatAnim ( [Direction](../enums/Direction) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayFloatAnim ( [Direction](../rep/enums/Direction) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Shoot·Anim () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlayShootAnim ( [Direction](../enums/Direction) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayShootAnim ( [Direction](../rep/enums/Direction) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Recalculate·Orbit·Offset () {: aria-label='Functions' }
@@ -158,12 +158,12 @@ ___
 ___ 
 ### Last·Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction) LastDirection  {: .copyable aria-label='Variables' }
+#### [Direction](../rep/enums/Direction) LastDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Move·Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction) MoveDirection  {: .copyable aria-label='Variables' }
+#### [Direction](../rep/enums/Direction) MoveDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Orbit·Angle·Offset {: aria-label='Variables' }
@@ -183,17 +183,17 @@ Can be used to override the angular position of the familiar on its orbit based 
     end
     ```
     
-    Result: ![angle offset](../images/example_familiar_angleOffset.png)
+    Result: ![angle offset](../rep/images/example_familiar_angleOffset.png)
 ___ 
 ### Orbit·Distance {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) OrbitDistance  {: .copyable aria-label='Variables' }
+#### [Vector](../rep/Vector) OrbitDistance  {: .copyable aria-label='Variables' }
 
 Defines the orbit of the familiar, if its an orbital. The Vector is interpreted as the dimensions of the circle/oval orbit. Example: `:::lua Vector(110,90)` is the orbital of "Forever alone".
 ___ 
 ### Player {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) Player  {: .copyable aria-label='Variables' }
+#### [EntityPlayer](../rep/EntityPlayer) Player  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Room·Clear·Count {: aria-label='Variables' }
@@ -203,7 +203,7 @@ ___
 ___ 
 ### Shoot·Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../enums/Direction) ShootDirection  {: .copyable aria-label='Variables' }
+#### [Direction](../rep/enums/Direction) ShootDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### State {: aria-label='Variables' }

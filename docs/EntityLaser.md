@@ -9,7 +9,7 @@
 ___ 
 ### Calculate·End·Point () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [Vector](../Vector) CalculateEndPoint ( [Vector](../Vector) Start, [Vector](../Vector) Dir, [Vector](../Vector) PositionOffset, [Entity](../Entity) Parent, float Margin ) {: .copyable aria-label='Functions' }
+#### static [Vector](../rep/Vector) CalculateEndPoint ( [Vector](../rep/Vector) Start, [Vector](../rep/Vector) Dir, [Vector](../rep/Vector) PositionOffset, [Entity](../rep/Entity) Parent, float Margin ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Tear·Flags () {: aria-label='Functions' }
@@ -19,7 +19,7 @@ ___
 ___ 
 ### Get·End·Point () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
+#### const [Vector](../rep/Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Non·Optimized·Samples () {: aria-label='Functions' }
@@ -89,7 +89,7 @@ ___
 ___ 
 ### Shoot·Angle () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [EntityLaser](../EntityLaser) ShootAngle ( int Variant, [Vector](../Vector) SourcePos, float AngleDegrees, int Timeout, [Vector](../Vector) PosOffset, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
+#### static [EntityLaser](../rep/EntityLaser) ShootAngle ( int Variant, [Vector](../rep/Vector) SourcePos, float AngleDegrees, int Timeout, [Vector](../rep/Vector) PosOffset, [Entity](../rep/Entity) Source ) {: .copyable aria-label='Functions' }
 static helper to simplify spawning lasers 
 ___ 
 ## Variables
@@ -110,7 +110,7 @@ For maw of void.
 ___ 
 ### Bounce·Laser {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Entity](../Entity) BounceLaser  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### [Entity](../rep/Entity) BounceLaser  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Curve·Strength {: aria-label='Variables' }
@@ -125,7 +125,7 @@ Set on children of other lasers, for instance Rubber Cement reflections. Disable
 ___ 
 ### End·Point {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) EndPoint  {: .copyable aria-label='Variables' }
+#### [Vector](../rep/Vector) EndPoint  {: .copyable aria-label='Variables' }
 Will hold the endpoint so it will not need to be recalculated when accessed from extern. 
 ___ 
 ### First·Update {: aria-label='Variables' }
@@ -175,7 +175,7 @@ Laser hits only once.
 ___ 
 ### Parent·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) ParentOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../rep/Vector) ParentOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Radius {: aria-label='Variables' }
@@ -215,7 +215,7 @@ Some lasers have a bit of random variation in rotation so they need to remember 
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
+#### [TearFlags](../rep/enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
 ___ 
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

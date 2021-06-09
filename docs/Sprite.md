@@ -2,7 +2,7 @@
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Sprite](../Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
+#### [Sprite](../rep/Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
@@ -85,7 +85,7 @@ Returns the currently rendered Frame of the Overlay of the given Sprite. It acts
 ___ 
 ### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](../Color) GetTexel ( [Vector](../Vector) SamplePos, [Vector](../Vector) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
+#### [Color](../rep/Color) GetTexel ( [Vector](../rep/Vector) SamplePos, [Vector](../rep/Vector) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
 Returns the color of the pixel of the Sprite at the given sample position. RenderPos can be neglected and set to a null vector
 ___ 
 ### Is·Event·Triggered () {: aria-label='Functions' }
@@ -174,12 +174,12 @@ ___
 ___ 
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Render ( [Vector](../Vector) Pos, [Vector](../Vector) TopLeftClamp, [Vector](../Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](../rep/Vector) Pos, [Vector](../rep/Vector) TopLeftClamp, [Vector](../rep/Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RenderLayer ( int LayerId, [Vector](../Vector) Pos, [Vector](../Vector) TopLeftClamp = Vector.Zero, [Vector](../Vector) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
+#### void RenderLayer ( int LayerId, [Vector](../rep/Vector) Pos, [Vector](../rep/Vector) TopLeftClamp = Vector.Zero, [Vector](../rep/Vector) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Replace·Spritesheet () {: aria-label='Functions' }
@@ -260,7 +260,7 @@ ___
 ## Variables
 ### Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
+#### [Color](../rep/Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### FlipX {: aria-label='Variables' }
@@ -275,7 +275,7 @@ ___
 ___ 
 ### Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) Offset  {: .copyable aria-label='Variables' }
+#### [Vector](../rep/Vector) Offset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Playback·Speed {: aria-label='Variables' }
@@ -290,6 +290,6 @@ ___
 ___ 
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../Vector) Scale  {: .copyable aria-label='Variables' }
+#### [Vector](../rep/Vector) Scale  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -78,7 +78,7 @@ ___
 ___ 
 ### Costume {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Costume](../ItemConfig_Costume) Costume {: .copyable aria-label='Variables' }
+#### const [Costume](../rep/ItemConfig_Costume) Costume {: .copyable aria-label='Variables' }
 
 ___ 
 ### Description {: aria-label='Variables' }
@@ -163,6 +163,6 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ItemType](../enums/ItemType) Type  {: .copyable aria-label='Variables' }
+#### [ItemType](../rep/enums/ItemType) Type  {: .copyable aria-label='Variables' }
 mostly for Lua so it will not make a copy 
 ___ 
