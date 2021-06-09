@@ -193,7 +193,7 @@ document$.subscribe(function() {
         $(this).find("span").first().text("");
 
         var pathname = window.location.pathname;
-        pathname = pathname.substring(1, pathname.length - 1);
+        pathname = pathname.replace(".html", "").substring(1, pathname.length - 1);
         var splitted = pathname.split("/");
         pathname = splitted[splitted.length - 1];
         var funcNameLine = "";
