@@ -500,7 +500,7 @@ ___
 Will be called when player exits the room. 
 ___ 
 ### Discharge·Active·Item () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### void DischargeActiveItem ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Sets the charge of your active item to 0 without triggering the active item effect. 
@@ -583,7 +583,7 @@ ___
 called after animation is finished, or on special occasions to prevent bugs 
 ___ 
 ### Full·Charge ( ) {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### boolean FullCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY, int Force = false ) {: .copyable aria-label='Functions' }
 Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot. 
 
@@ -596,13 +596,13 @@ ___
 Get the current charge of your active item.
 ___ 
 ### Get·Active·Item ( ) {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### [CollectibleType](../enums/CollectibleType) GetActiveItem ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' data-altreturn='0' }
 Returns the currently held item. Returns `0` when no item is held.
 
 ___ 
 ### Get·Active·Sub·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetActiveSubCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current items subcharge. (Useful for items that charge up over time.)
@@ -623,7 +623,7 @@ ___
 
 ___ 
 ### Get·Battery·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetBatteryCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 Get the current charge progress of the second charge of your current active item. This bar is only active, when you have the Collectible "The Battery"
@@ -635,7 +635,7 @@ This does not return the # of black hearts, this returns the bit mask for which 
 
 ___ 
 ### Get·Blood·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetBloodCharge ( ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -664,7 +664,7 @@ Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
 
 ___ 
 ### Get·Broken·Hearts () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetBrokenHearts ( ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -713,12 +713,12 @@ Returns the amount of Red Hearts the player can contain in their Heart Container
 
 ___ 
 ### Get·Effective·Blood·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetEffectiveBloodCharge ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Effective·Soul·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetEffectiveSoulCharge ( ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -816,7 +816,7 @@ ___
 
 ___ 
 ### Get·Main·Twin () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetMainTwin ( ) {: .copyable aria-label='Functions' }
 
 Will return first player of pair characters or current form of characters with multiple forms.
@@ -922,7 +922,7 @@ ___
 
 ___ 
 ### Get·Other·Twin () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](../EntityPlayer) GetOtherTwin ( ) {: .copyable aria-label='Functions' }
 
 Will return second player of pair characters or other form of characters with multiple forms.
@@ -966,7 +966,7 @@ Returns the joystick direction that drives player movement, taking into account 
 
 ___ 
 ### Get·Rotten·Hearts () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetRottenHearts ( ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -996,7 +996,7 @@ Returns the amount of Soul Hearts the player has. 1 unit is half a heart.
 	
 ___ 
 ### Get·Soul·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### int GetSoulCharge ( ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -1185,7 +1185,7 @@ ___
 This is for players that require multiple player entities, such as the Forgotten (this has nothing to do with co-players!) 
 ___ 
 ### Needs·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### boolean NeedsCharge ( [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
@@ -1309,7 +1309,7 @@ ___
 revive player 
 ___ 
 ### Set·Active·Charge () {: aria-label='Functions' }
-[[ ](#){: .rep .tooltip .badge }
+[ ](#){: .rep .tooltip .badge }
 #### void SetActiveCharge ( int Charge, [ActiveSlot](../enums/ActiveSlot) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
 ___ 
