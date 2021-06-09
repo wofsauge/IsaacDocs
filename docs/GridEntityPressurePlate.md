@@ -18,7 +18,7 @@ ___
 ## Variables
 ### Greed·Mode·RNG {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RNG](../rep/RNG) GreedModeRNG {: .copyable aria-label='Variables' }
+#### [RNG](RNG.html) GreedModeRNG {: .copyable aria-label='Variables' }
 RNG object that determines the RNG of anything GreedMode related.
 
 ___ 
@@ -32,7 +32,7 @@ Every Animation defined in the "grid_pressureplate.anm2" file can be used as an 
 ___ 
 ### Timer·Plate {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Sprite](../rep/Sprite) TimerPlate  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### [Sprite](Sprite.html) TimerPlate  {: .copyable aria-label='Variables' data-altreturn='nil' }
 Reference to the Sprite of the Timerplate beneath the pressureplate in Greed mode.
 
 ___ 

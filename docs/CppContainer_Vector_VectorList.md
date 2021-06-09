@@ -10,7 +10,7 @@ ___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../rep/Vector) Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [Vector](Vector.html) Get ( int idx ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables

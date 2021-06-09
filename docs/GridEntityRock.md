@@ -14,7 +14,7 @@ ___
 ___ 
 ### Get·Sprite () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Sprite](../rep/Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
+#### const [Sprite](Sprite.html) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Big·Rock·Frame () {: aria-label='Functions' }

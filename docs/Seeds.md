@@ -2,12 +2,12 @@
 ## Functions
 ### Add·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddSeedEffect ( [SeedEffect](../rep/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### void AddSeedEffect ( [SeedEffect](../enums/SeedEffect.html) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Can·Add·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean CanAddSeedEffect ( [SeedEffect](../rep/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### boolean CanAddSeedEffect ( [SeedEffect](../enums/SeedEffect.html) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Seed·Effects () {: aria-label='Functions' }
@@ -32,7 +32,7 @@ ___
 ___ 
 ### Forget·Stage·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void ForgetStageSeed ( [LevelStage](../rep/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### void ForgetStageSeed ( [LevelStage](../enums/LevelStage.html) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Next·Seed () {: aria-label='Functions' }
@@ -47,12 +47,12 @@ ___
 ___ 
 ### Get·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [SeedEffect](../rep/enums/SeedEffect) GetSeedEffect ( string str ) {: .copyable aria-label='Functions' }
+#### static [SeedEffect](../enums/SeedEffect.html) GetSeedEffect ( string str ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Stage·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetStageSeed ( [LevelStage](../rep/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### int GetStageSeed ( [LevelStage](../enums/LevelStage.html) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Start·Seed () {: aria-label='Functions' }
@@ -67,7 +67,7 @@ ___
 ___ 
 ### Has·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean HasSeedEffect ( [SeedEffect](../rep/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### boolean HasSeedEffect ( [SeedEffect](../enums/SeedEffect.html) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Init·Seed·Info () {: aria-label='Functions' }
@@ -87,7 +87,7 @@ ___
 ___ 
 ### Is·Seed·Combo·Banned () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsSeedComboBanned ( [SeedEffect](../rep/enums/SeedEffect) Seed1, [SeedEffect](../rep/enums/SeedEffect) Seed2 ) {: .copyable aria-label='Functions' }
+#### boolean IsSeedComboBanned ( [SeedEffect](../enums/SeedEffect.html) Seed1, [SeedEffect](../enums/SeedEffect.html) Seed2 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Special·Seed () {: aria-label='Functions' }
@@ -102,12 +102,12 @@ ___
 ___ 
 ### Remove·Blocking·Seed·Effects () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveBlockingSeedEffects ( [SeedEffect](../rep/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### void RemoveBlockingSeedEffects ( [SeedEffect](../enums/SeedEffect.html) Value ) {: .copyable aria-label='Functions' }
 Removes seeds that are banned in conjunction with the given seed. 
 ___ 
 ### Remove·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveSeedEffect ( [SeedEffect](../rep/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### void RemoveSeedEffect ( [SeedEffect](../enums/SeedEffect.html) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset () {: aria-label='Functions' }
@@ -117,7 +117,7 @@ Removes all seed effects, only goes into effect when the run is restarted
 ___ 
 ### Restart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Restart ( [Challenge](../rep/enums/Challenge) CurrentChallenge ) {: .copyable aria-label='Functions' }
+#### void Restart ( [Challenge](../enums/Challenge.html) CurrentChallenge ) {: .copyable aria-label='Functions' }
 Re-selects a random start seed but only if the start seed was not custom. 
 ___ 
 ### Seed2String () {: aria-label='Functions' }

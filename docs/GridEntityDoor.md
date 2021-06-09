@@ -19,7 +19,7 @@ ___
 ___ 
 ### Get·Sprite·Offset () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [Vector](../rep/Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
+#### const [Vector](Vector.html) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Busted () {: aria-label='Functions' }
@@ -44,7 +44,7 @@ ___
 ___ 
 ### Is·Room·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsRoomType ( [RoomType](../rep/enums/RoomType) Type ) {: .copyable aria-label='Functions' }
+#### boolean IsRoomType ( [RoomType](../enums/RoomType.html) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Target·Room·Arcade () {: aria-label='Functions' }
@@ -64,7 +64,7 @@ ___
 ___ 
 ### Set·Room·Types () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetRoomTypes ( [RoomType](../rep/enums/RoomType) CurrentRoomType, [RoomType](../rep/enums/RoomType) TargetRoomType ) {: .copyable aria-label='Functions' }
+#### void SetRoomTypes ( [RoomType](../enums/RoomType.html) CurrentRoomType, [RoomType](../enums/RoomType.html) TargetRoomType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Spawn·Dust () {: aria-label='Functions' }
@@ -74,12 +74,12 @@ ___
 ___ 
 ### Try·Blow·Open () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TryBlowOpen ( boolean FromExplosion, [Entity](../rep/Entity) source ) {: .copyable aria-label='Functions' }
+#### boolean TryBlowOpen ( boolean FromExplosion, [Entity](Entity.html) source ) {: .copyable aria-label='Functions' }
 try to open the door by explosive force, true for success 
 ___ 
 ### Try·Unlock () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TryUnlock ([EntityPlayer](../rep/EntityPlayer) player, boolean Force ) {: .copyable aria-label='Functions' }
+#### boolean TryUnlock ([EntityPlayer](EntityPlayer.html) player, boolean Force ) {: .copyable aria-label='Functions' }
 try to unlock the door using a key, true for success 
 ___ 
 ## Variables
@@ -95,17 +95,17 @@ ___
 ___ 
 ### Current·Room·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomType](../rep/enums/RoomType) CurrentRoomType  {: .copyable aria-label='Variables' }
+#### [RoomType](../enums/RoomType.html) CurrentRoomType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Direction {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Direction](../rep/enums/Direction) Direction {: .copyable aria-label='Variables' }
+#### [Direction](../enums/Direction.html) Direction {: .copyable aria-label='Variables' }
 
 ___ 
 ### Extra·Sprite {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Sprite](../rep/Sprite) ExtraSprite  {: .copyable aria-label='Variables' }
+#### [Sprite](Sprite.html) ExtraSprite  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Extra·Visible {: aria-label='Variables' }
@@ -140,7 +140,7 @@ ___
 ___ 
 ### Slot {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [DoorSlot](../rep/enums/DoorSlot) Slot  {: .copyable aria-label='Variables' }
+#### [DoorSlot](../enums/DoorSlot.html) Slot  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Target·Room·Index {: aria-label='Variables' }
@@ -151,6 +151,6 @@ Note: this value only affects the room transition animation and does not actuall
 ___ 
 ### Target·Room·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomType](../rep/enums/RoomType) TargetRoomType  {: .copyable aria-label='Variables' }
+#### [RoomType](../enums/RoomType.html) TargetRoomType  {: .copyable aria-label='Variables' }
 
 ___ 

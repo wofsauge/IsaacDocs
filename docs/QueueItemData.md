@@ -7,7 +7,7 @@
 ___ 
 ### Item {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ItemConfig Item](../rep/ItemConfig_Item) Item {: .copyable aria-label='Variables' }
+#### [ItemConfig Item](ItemConfig_Item.html) Item {: .copyable aria-label='Variables' }
 
 ___ 
 ### Touched {: aria-label='Variables' }

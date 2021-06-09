@@ -271,3 +271,5 @@ copyright: Copyright &copy; 2021 Wofsauge
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
 edit_uri: edit/master/docs/
+site_url: ""
+use_directory_urls: False

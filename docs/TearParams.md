@@ -2,12 +2,12 @@
 ## Variables
 ### Bomb·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [int](../rep/enums/BombVariant) BombVariant {: .copyable aria-label='Variables' }
+#### [int](../enums/BombVariant.html) BombVariant {: .copyable aria-label='Variables' }
 
 ___ 
 ### Tear·Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](../rep/Color) TearColor  {: .copyable aria-label='Variables' }
+#### [Color](Color.html) TearColor  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Tear·Damage {: aria-label='Variables' }
@@ -17,7 +17,7 @@ ___
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [TearFlags](../rep/enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
+#### [TearFlags](../enums/TearFlags.html) TearFlags  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Tear·Height {: aria-label='Variables' }
@@ -32,6 +32,6 @@ ___
 ___ 
 ### Tear·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [int](../rep/enums/TearVariant) TearVariant {: .copyable aria-label='Variables' }
+#### [int](../enums/TearVariant.html) TearVariant {: .copyable aria-label='Variables' }
 
 ___ 

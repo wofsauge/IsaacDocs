@@ -12,7 +12,7 @@ ___
 ___ 
 ### Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](../rep/Vector) Position  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.html) Position  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Strength {: aria-label='Variables' }
