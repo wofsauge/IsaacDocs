@@ -202,16 +202,17 @@ document$.subscribe(function() {
         });
         var functionString = funcNameLine;
         if (funcNameLine.includes("(")) {
-            functionString = funcNameLine.replace(" ( ", "(").replace(" )", "").replace(")", "");
+            functionString = funcNameLine.replace(" ( ", "(");
             var funcPart1 = functionString.split("(")[0].split(" ");
             var p1 = funcPart1[funcPart1.length - 1];
             var funcPart2 = "";
-            $.each(functionString.split("(")[1].split(", "), function(index, value) {
+            var funcVars = functionString.replace(functionString.split("(")[0], "")
+            $.each(funcVars.split(", "), function(index, value) {
                 if (index > 0) {
                     funcPart2 += ", ";
                 }
                 if (value.split(" ").length > 1) {
-                    funcPart2 += value.split(" ")[1];
+                    funcPart2 += value.split(" ")[1].replace(" )", "").replace(")", "");
                 }
             });
             functionString = p1 + "(" + funcPart2 + ")";
