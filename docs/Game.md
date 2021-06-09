@@ -50,12 +50,12 @@ ___
 ___ 
 ### Bomb·Damage () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void BombDamage ( [Vector](Vector.html) Position, float Damage, float Radius, boolean LineCheck = true, [Entity](Entity.html) Source = nil, [TearFlags](../enums/TearFlags.html) TearFlags = [TearFlags](../enums/TearFlags.html).TEAR_NORMAL, int DamageFlags = [DamageFlags](../enums/DamageFlags.html).DAMAGE_EXPLOSION, boolean DamageSource = false ) {: .copyable aria-label='Functions' }
+#### void BombDamage ( [Vector](Vector.html) Position, float Damage, float Radius, boolean LineCheck = true, [Entity](Entity.html) Source = nil, [TearFlags](../enums/TearFlags.html) TearFlags = [TearFlags](../enums/TearFlags.html).TEAR_NORMAL, int DamageFlags = [DamageFlags](../enums/DamageFlag.html).DAMAGE_EXPLOSION, boolean DamageSource = false ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Bomb·Explosion·Effects () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void BombExplosionEffects ( [Vector](Vector.html) Position, float Damage, [TearFlags](../enums/TearFlags.html) TearFlags = [TearFlags](../enums/TearFlags.html).TEAR_NORMAL, [Color](Color.html) Color = Color.Default, [Entity](Entity.html) Source = nil, float RadiusMult = 1, boolean LineCheck = true, boolean DamageSource = false, int DamageFlags = [DamageFlags](../enums/DamageFlags.html).DAMAGE_EXPLOSION ) {: .copyable aria-label='Functions' }
+#### void BombExplosionEffects ( [Vector](Vector.html) Position, float Damage, [TearFlags](../enums/TearFlags.html) TearFlags = [TearFlags](../enums/TearFlags.html).TEAR_NORMAL, [Color](Color.html) Color = Color.Default, [Entity](Entity.html) Source = nil, float RadiusMult = 1, boolean LineCheck = true, boolean DamageSource = false, int DamageFlags = [DamageFlags](../enums/DamageFlag.html).DAMAGE_EXPLOSION ) {: .copyable aria-label='Functions' }
 The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects. 
 ___ 
 ### Bomb·Tearflag·Effects () {: aria-label='Functions' }

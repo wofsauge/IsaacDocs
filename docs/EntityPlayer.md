@@ -1101,7 +1101,7 @@ ___
 ___ 
 ### Has·Invincibility () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean HasInvincibility ( [DamageFlag](../enums/DamageFlags.html) Flags = 0 ) {: .copyable aria-label='Functions' }
+#### boolean HasInvincibility ( [DamageFlag](../enums/DamageFlag.html) Flags = 0 ) {: .copyable aria-label='Functions' }
 returns true when player is in an invincibility state 
 ___ 
 ### Has·Player·Form () {: aria-label='Functions' }
