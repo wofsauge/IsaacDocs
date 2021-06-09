@@ -57,7 +57,7 @@ function getRecentList() {
 }
 
 function buildContentMap() {
-    if (!$("h1").first().text().includes("Class")) {
+    if (!$("h1").first().text().includes("Class ")) {
         //only build map on class-related pages
         return;
     }
