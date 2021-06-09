@@ -163,6 +163,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityList](../CppContainer_EntityList) GetEntities ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bugs"
+    This function returns userdata, which can't be processed. Use [Isaac.GetRoomEntities()](../Isaac/#getroomentities) instead!
+
 ___ 
 ### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

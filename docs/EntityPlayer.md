@@ -821,6 +821,10 @@ ___
 
 Will return first player of pair characters or current form of characters with multiple forms.
 
+???- note "Note"
+	* When called on Jacob or Esau, returns Jacob
+	* When called on Tainted Forgotten or Tainted Forgotten's Soul, returns Tainted Forgotten
+	* When called on any other character, returns that character
 ___ 
 ### Get·Max·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -923,6 +927,12 @@ ___
 
 Will return second player of pair characters or other form of characters with multiple forms.
 
+???- note "Note"
+	* When called on Jacob, returns Esau
+	* When called on Esau, returns Jacob
+	* When called on Tainted Forgotten, returns Tainted Forgotten's Soul
+	* When called on Tainted Forgotten's Soul, returns Tainted Forgotten
+	* When called on any other character, returns nil
 ___ 
 ### Get·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -947,7 +957,7 @@ ___
 Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
 
 ???+ bug "Bugs"
-    This function returns userdata, which cant be processed. It is therefore broken and should not be used! 
+    This function returns userdata, which can't be processed. It is therefore broken and should not be used! 
 ___ 
 ### Get·Recent·Movement·Vector () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
