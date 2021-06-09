@@ -2,7 +2,7 @@
 ## Constructors
 ### Game () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Game](../Game) Game ( ) {: .copyable aria-label='Constructors' }
+#### [Game](../abp/Game) Game ( ) {: .copyable aria-label='Constructors' }
 
 Returns a Game object.
 
@@ -22,7 +22,7 @@ ___
 ___ 
 ### Add·Encountered·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddEncounteredBoss ( [EntityType](../enums/EntityType) Boss, int Variant ) {: .copyable aria-label='Functions' }
+#### void AddEncounteredBoss ( [EntityType](../abp/enums/EntityType) Boss, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Add·Pixelation () {: aria-label='Functions' }
@@ -50,22 +50,22 @@ ___
 ___ 
 ### Bomb·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void BombDamage ( [Vector](../Vector) Position, float Damage, float Radius, boolean LineCheck, [Entity](../Entity) Source, int TearFlags, int DamageFlags, boolean DamageSource ) {: .copyable aria-label='Functions' }
+#### void BombDamage ( [Vector](../abp/Vector) Position, float Damage, float Radius, boolean LineCheck, [Entity](../abp/Entity) Source, int TearFlags, int DamageFlags, boolean DamageSource ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Bomb·Explosion·Effects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void BombExplosionEffects ( [Vector](../Vector) Position, float Damage, int TearFlags, [Color](../Color) Color, [Entity](../Entity) Source, float RadiusMult, boolean LineCheck, boolean DamageSource ) {: .copyable aria-label='Functions' }
+#### void BombExplosionEffects ( [Vector](../abp/Vector) Position, float Damage, int TearFlags, [Color](../abp/Color) Color, [Entity](../abp/Entity) Source, float RadiusMult, boolean LineCheck, boolean DamageSource ) {: .copyable aria-label='Functions' }
 The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects. 
 ___ 
 ### Bomb·Tearflag·Effects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void BombTearflagEffects ( [Vector](../Vector) Position, float Radius, int TearFlags, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
+#### void BombTearflagEffects ( [Vector](../abp/Vector) Position, float Radius, int TearFlags, [Entity](../abp/Entity) Source ) {: .copyable aria-label='Functions' }
 Does bomb-exclusive special effects. 
 ___ 
 ### Butter·Bean·Fart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void ButterBeanFart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, boolean ShowEffect ) {: .copyable aria-label='Functions' }
+#### void ButterBeanFart ( [Vector](../abp/Vector) Position, float Radius, [Entity](../abp/Entity) Source, boolean ShowEffect ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Change·Room () {: aria-label='Functions' }
@@ -75,7 +75,7 @@ ___
 ___ 
 ### Charm·Fart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void CharmFart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
+#### void CharmFart ( [Vector](../abp/Vector) Position, float Radius, [Entity](../abp/Entity) Source ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Donation·Mod·Angel () {: aria-label='Functions' }
@@ -132,7 +132,7 @@ ___
 ___ 
 ### Fart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void Fart ( [Vector](../Vector) Position, float Radius, [Entity](../Entity) Source, float FartScale, int FartSubType ) {: .copyable aria-label='Functions' }
+#### void Fart ( [Vector](../abp/Vector) Position, float Radius, [Entity](../abp/Entity) Source, float FartScale, int FartSubType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Finish·Challenge () {: aria-label='Functions' }
@@ -168,7 +168,7 @@ ___
 ___ 
 ### Get·Font () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Font](../Font) GetFont ( ) {: .copyable aria-label='Functions' }
+#### [Font](../abp/Font) GetFont ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Frame·Count () {: aria-label='Functions' }
@@ -212,12 +212,12 @@ ___
 ___ 
 ### Get·Item·Pool () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [ItemPool](../ItemPool) GetItemPool ( ) {: .copyable aria-label='Functions' }
+#### [ItemPool](../abp/ItemPool) GetItemPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Level·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [LevelStage](../enums/LevelStage) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](../abp/enums/LevelStage) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
 
 ???- note "Notes"
@@ -225,22 +225,22 @@ ___
 ___ 
 ### Get·Last·Level·With·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [LevelStage](../enums/LevelStage) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](../abp/enums/LevelStage) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [LevelStage](../enums/LevelStage) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](../abp/enums/LevelStage) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Level () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Level](../Level) GetLevel ( ) {: .copyable aria-label='Functions' }
+#### [Level](../abp/Level) GetLevel ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Nearest·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetNearestPlayer ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../abp/EntityPlayer) GetNearestPlayer ( [Vector](../abp/Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Num·Encountered·Bosses () {: aria-label='Functions' }
@@ -255,19 +255,19 @@ ___
 ___ 
 ### Get·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetPlayer ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Returns the [EntityPlayer](../EntityPlayer) with the given index. This function can return `nil` if the function is called before any player is initialized. If an index is given, that is not used, it will return the last player in the list.
+#### [EntityPlayer](../abp/EntityPlayer) GetPlayer ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [EntityPlayer](../abp/EntityPlayer) with the given index. This function can return `nil` if the function is called before any player is initialized. If an index is given, that is not used, it will return the last player in the list.
 
-This function is the same as [`Isaac.GetPlayer()`](../Isaac/#getplayer).
+This function is the same as [`Isaac.GetPlayer()`](../abp/Isaac/#getplayer).
 ___ 
 ### Get·Random·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) GetRandomPlayer ( [Vector](../Vector) Pos, float Radius ) {: .copyable aria-label='Functions' }
+#### [EntityPlayer](../abp/EntityPlayer) GetRandomPlayer ( [Vector](../abp/Vector) Pos, float Radius ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Room](../Room) GetRoom ( ) {: .copyable aria-label='Functions' }
+#### [Room](../abp/Room) GetRoom ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Screen·Shake·Countdown () {: aria-label='Functions' }
@@ -277,7 +277,7 @@ ___
 ___ 
 ### Get·Seeds () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Seeds](../Seeds) GetSeeds ( ) {: .copyable aria-label='Functions' }
+#### [Seeds](../abp/Seeds) GetSeeds ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Stages·Without·Damage () {: aria-label='Functions' }
@@ -312,7 +312,7 @@ ___
 ___ 
 ### Has·Encountered·Boss () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasEncounteredBoss ( [EntityType](../enums/EntityType) Boss, int Variant ) {: .copyable aria-label='Functions' }
+#### boolean HasEncounteredBoss ( [EntityType](../abp/enums/EntityType) Boss, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Hallucination () {: aria-label='Functions' }
@@ -348,7 +348,7 @@ ___
 ___ 
 ### Reroll·Enemy () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean RerollEnemy ( [Entity](../Entity) e ) {: .copyable aria-label='Functions' }
+#### boolean RerollEnemy ( [Entity](../abp/Entity) e ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reroll·Level·Collectibles () {: aria-label='Functions' }
@@ -363,17 +363,17 @@ ___
 ___ 
 ### Set·Last·Devil·Room·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetLastDevilRoomStage ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### void SetLastDevilRoomStage ( [LevelStage](../abp/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Last·Level·With·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetLastLevelWithDamage ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### void SetLastLevelWithDamage ( [LevelStage](../abp/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetLastLevelWithoutHalfHp ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### void SetLastLevelWithoutHalfHp ( [LevelStage](../abp/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·State·Flag () {: aria-label='Functions' }
@@ -430,9 +430,9 @@ ___
 ___ 
 ### Spawn () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Spawn ( [EntityType](../enums/EntityType) Type, int Variant, [Vector](../Vector) Position, [Vector](../Vector) Velocity, [Entity](../Entity) Spawner, int SubType, int Seed ) {: .copyable aria-label='Functions' }
+#### [Entity](../abp/Entity) Spawn ( [EntityType](../abp/enums/EntityType) Type, int Variant, [Vector](../abp/Vector) Position, [Vector](../abp/Vector) Velocity, [Entity](../abp/Entity) Spawner, int SubType, int Seed ) {: .copyable aria-label='Functions' }
 
-The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac.Spawn()](../Isaac/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../Isaac/#spawn).
+The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac.Spawn()](../abp/Isaac/#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](../abp/Isaac/#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](../abp/Isaac/#spawn).
 
 ???- example "Example Code"
     This code spawns a Leech with specific seed.
@@ -451,17 +451,17 @@ The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac
 ___ 
 ### Spawn·Entity·Desc () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityNPC](../EntityNPC) SpawnEntityDesc ( Entity::EntityDesc desc, [Vector](../Vector) Position, [Entity](../Entity) Spawner ) {: .copyable aria-label='Functions' }
+#### [EntityNPC](../abp/EntityNPC) SpawnEntityDesc ( Entity::EntityDesc desc, [Vector](../abp/Vector) Position, [Entity](../abp/Entity) Spawner ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Spawn·Particles () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SpawnParticles ( [Vector](../Vector) Pos, EntityEffect::Variant ParticleType, int NumParticles, float Speed, [Color](../Color) Color, float Height ) {: .copyable aria-label='Functions' }
+#### void SpawnParticles ( [Vector](../abp/Vector) Pos, EntityEffect::Variant ParticleType, int NumParticles, float Speed, [Color](../abp/Color) Color, float Height ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Start·Room·Transition () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void StartRoomTransition ( int RoomIndex, [Direction](../enums/Direction) Direction, RoomTransition::Animation Animation ) {: .copyable aria-label='Functions' }
+#### void StartRoomTransition ( int RoomIndex, [Direction](../abp/enums/Direction) Direction, RoomTransition::Animation Animation ) {: .copyable aria-label='Functions' }
 
 
 ???- note "Notes"
@@ -503,7 +503,7 @@ ___
 ___ 
 ### Update·Strange·Attractor () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void UpdateStrangeAttractor ( [Vector](../Vector) Position ) {: .copyable aria-label='Functions' }
+#### void UpdateStrangeAttractor ( [Vector](../abp/Vector) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
@@ -519,17 +519,17 @@ Number of frames of game time.
 ___ 
 ### Challenge {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Challenge](../enums/Challenge) Challenge {: .copyable aria-label='Variables' }
+#### [Challenge](../abp/enums/Challenge) Challenge {: .copyable aria-label='Variables' }
 
 ___ 
 ### Difficulty {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
+#### const [Difficulty](../abp/enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
 ### Screen·Shake·Offset {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Vector](../Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
+#### const [Vector](../abp/Vector) ScreenShakeOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Time·Counter {: aria-label='Variables' }

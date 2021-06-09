@@ -27,7 +27,7 @@ room is clear, don't spawn enemies when visiting
 ___ 
 ### Data {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomConfig Room](../RoomConfig_Room) Data  {: .copyable aria-label='Variables' }
+#### [RoomConfig Room](../abp/RoomConfig_Room) Data  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Decoration·Seed {: aria-label='Variables' }
@@ -82,7 +82,7 @@ index in the level grid (always top left)
 ???- note "Notes"
     This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
     
-    ![Room Grid indicies](../images/infographics/RoomGridIndicies.png)
+    ![Room Grid indicies](../abp/images/infographics/RoomGridIndicies.png)
 ___ 
 ### Has·Water {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -101,7 +101,7 @@ ___
 ___ 
 ### Override·Data {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomConfig Room](../RoomConfig_Room) OverrideData  {: .copyable aria-label='Variables' }
+#### [RoomConfig Room](../abp/RoomConfig_Room) OverrideData  {: .copyable aria-label='Variables' }
 Tim's reminder to himself: The room variant is in Data. Because Room::Init uses a mix of datas, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere. 
 ___ 
 ### Pits·Count {: aria-label='Variables' }
@@ -132,7 +132,7 @@ index in the level grid (not always top left, but is guaranteed to point to the 
 ???- note "Notes"
     This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below)
     
-    ![Room Grid indicies](../images/infographics/RoomGridIndicies.png)
+    ![Room Grid indicies](../abp/images/infographics/RoomGridIndicies.png)
 ___ 
 ### Shop·Item·Discount·Idx {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

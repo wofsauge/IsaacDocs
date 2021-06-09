@@ -2,13 +2,13 @@
 ## Constructors
 ### Entity·Ref () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityRef](../EntityRef) EntityRef ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
+#### [EntityRef](../abp/EntityRef) EntityRef ( [Entity](../abp/Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Variables
 ### Entity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Entity {: .copyable aria-label='Variables' }
+#### [Entity](../abp/Entity) Entity {: .copyable aria-label='Variables' }
 optional 
 
 ___ 
@@ -24,12 +24,12 @@ ___
 ___ 
 ### Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) Position  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawner·Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityType](../enums/EntityType) SpawnerType  {: .copyable aria-label='Variables' }
+#### [EntityType](../abp/enums/EntityType) SpawnerType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawner·Variant {: aria-label='Variables' }
@@ -39,7 +39,7 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
+#### [EntityType](../abp/enums/EntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

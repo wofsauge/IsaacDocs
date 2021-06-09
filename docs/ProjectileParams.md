@@ -2,7 +2,7 @@
 ## Constructors
 ### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [ProjectileParams](../ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
+#### [ProjectileParams](../abp/ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Variables
@@ -20,8 +20,8 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
-Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes after the "Changed" state was activated.
-The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
+Uses [ProjectileFlags](../abp/enums/ProjectileFlags) to define the projectile attributes after the "Changed" state was activated.
+The [ProjectileFlag](../abp/enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -30,14 +30,14 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [EntityProjectile](../EntityProjectile)
+Also used in: [EntityProjectile](../abp/EntityProjectile)
 ___ 
 ### Change·Timeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
-The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](../abp/enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -46,14 +46,14 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [EntityProjectile](../EntityProjectile)
+Also used in: [EntityProjectile](../abp/EntityProjectile)
 ___ 
 ### Change·Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
-The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](../abp/enums/ProjectileFlags).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -62,7 +62,7 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [EntityProjectile](../EntityProjectile)
+Also used in: [EntityProjectile](../abp/EntityProjectile)
 ___ 
 ### Circle·Angle {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -96,7 +96,7 @@ ___
 ___ 
 ### Fire·Direction·Limit {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) FireDirectionLimit  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) FireDirectionLimit  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Grid·Collision {: aria-label='Variables' }
@@ -116,12 +116,12 @@ Multiplier on normal homing strength. Unused if SMART bullet flag is not set.
 ___ 
 ### Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
+#### [Color](../abp/Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Position·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) PositionOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Scale {: aria-label='Variables' }
@@ -136,7 +136,7 @@ For quad/quint/etc spread shots.
 ___ 
 ### Target·Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) TargetPosition  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) TargetPosition  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

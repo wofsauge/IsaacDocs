@@ -4,12 +4,12 @@
 ## Functions
 ### Calculate·End·Point () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static [Vector](../Vector) CalculateEndPoint ( [Vector](../Vector) Start, [Vector](../Vector) Dir, [Vector](../Vector) PositionOffset, [Entity](../Entity) Parent, float Margin ) {: .copyable aria-label='Functions' }
+#### static [Vector](../abp/Vector) CalculateEndPoint ( [Vector](../abp/Vector) Start, [Vector](../abp/Vector) Dir, [Vector](../abp/Vector) PositionOffset, [Entity](../abp/Entity) Parent, float Margin ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·End·Point () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Vector](../Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
+#### const [Vector](../abp/Vector) GetEndPoint ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Non·Optimized·Samples () {: aria-label='Functions' }
@@ -74,7 +74,7 @@ ___
 ___ 
 ### Shoot·Angle () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static [EntityLaser](../EntityLaser) ShootAngle ( int Variant, [Vector](../Vector) SourcePos, float AngleDegrees, int Timeout, [Vector](../Vector) PosOffset, [Entity](../Entity) Source ) {: .copyable aria-label='Functions' }
+#### static [EntityLaser](../abp/EntityLaser) ShootAngle ( int Variant, [Vector](../abp/Vector) SourcePos, float AngleDegrees, int Timeout, [Vector](../abp/Vector) PosOffset, [Entity](../abp/Entity) Source ) {: .copyable aria-label='Functions' }
 static helper to simplify spawning lasers 
 ___ 
 ## Variables
@@ -95,7 +95,7 @@ For maw of void.
 ___ 
 ### Bounce·Laser {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) BounceLaser  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### [Entity](../abp/Entity) BounceLaser  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Curve·Strength {: aria-label='Variables' }
@@ -110,7 +110,7 @@ Set on children of other lasers, for instance Rubber Cement reflections. Disable
 ___ 
 ### End·Point {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) EndPoint  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) EndPoint  {: .copyable aria-label='Variables' }
 Will hold the endpoint so it will not need to be recalculated when accessed from extern. 
 ___ 
 ### First·Update {: aria-label='Variables' }
@@ -160,7 +160,7 @@ Laser hits only once.
 ___ 
 ### Parent·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) ParentOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) ParentOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Radius {: aria-label='Variables' }
@@ -200,7 +200,7 @@ Some lasers have a bit of random variation in rotation so they need to remember 
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
+#### [TearFlags](../abp/enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
 ___ 
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

@@ -19,7 +19,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int Flags  {: .copyable aria-label='Variables' }
 
-Uses [TearFlags](../enums/TearFlags) to alter the behavior of the bomb.
+Uses [TearFlags](../abp/enums/TearFlags) to alter the behavior of the bomb.
 ___ 
 ### Is·Fetus {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

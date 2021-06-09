@@ -80,6 +80,6 @@ ___
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [TearFlags](../enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
+#### [TearFlags](../abp/enums/TearFlags) TearFlags  {: .copyable aria-label='Variables' }
 
 ___ 

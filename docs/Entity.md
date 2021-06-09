@@ -6,7 +6,7 @@
 ## Functions
 ### Add·Burn () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddBurn ( [EntityRef](../EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
+#### void AddBurn ( [EntityRef](../abp/EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
 Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
 
@@ -56,7 +56,7 @@ Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enem
 ___ 
 ### Add·Confusion () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddConfusion ( [EntityRef](../EntityRef) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
+#### void AddConfusion ( [EntityRef](../abp/EntityRef) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a confusion effect to an entity.
 
@@ -78,7 +78,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Add [EntityFlags](../enums/EntityFlag) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
+Add [EntityFlags](../abp/enums/EntityFlag) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
@@ -92,7 +92,7 @@ Add [EntityFlags](../enums/EntityFlag) to the entity. Flags are used to add spec
 ___ 
 ### Add·Fear () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddFear ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
+#### void AddFear ( [EntityRef](../abp/EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a fear-effect to an entity.
 
@@ -112,7 +112,7 @@ Adds a fear-effect to an entity.
 ___ 
 ### Add·Freeze () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddFreeze ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
+#### void AddFreeze ( [EntityRef](../abp/EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Freezes an entity, making it unable to move and attack.
 
@@ -137,7 +137,7 @@ Heals an entity.
 ___ 
 ### Add·Midas·Freeze () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddMidasFreeze ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
+#### void AddMidasFreeze ( [EntityRef](../abp/EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 Turns the entity into a gold statue (can't move, can't attack, drops coins when killed)
 
 ???- info "Duration infos"
@@ -158,7 +158,7 @@ Turns the entity into a gold statue (can't move, can't attack, drops coins when 
 ___ 
 ### Add·Poison () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddPoison ( [EntityRef](../EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
+#### void AddPoison ( [EntityRef](../abp/EntityRef) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
 Adds a poison effect to the entity.
 
@@ -189,7 +189,7 @@ Adds a poison effect to the entity.
 ___ 
 ### Add·Shrink () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddShrink ( [EntityRef](../EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
+#### void AddShrink ( [EntityRef](../abp/EntityRef) Source, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a shrink effect to the entity.
 
@@ -208,7 +208,7 @@ Adds a shrink effect to the entity.
 ___ 
 ### Add·Slowing () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddSlowing ( [EntityRef](../EntityRef) Source, int Duration, float SlowValue, [Color](../Color) SlowColor ) {: .copyable aria-label='Functions' }
+#### void AddSlowing ( [EntityRef](../abp/EntityRef) Source, int Duration, float SlowValue, [Color](../abp/Color) SlowColor ) {: .copyable aria-label='Functions' }
 Makes the friction higher effectively slowing down the entity. 
 
 ???- example "Example Code"
@@ -224,7 +224,7 @@ Makes the friction higher effectively slowing down the entity.
 ___ 
 ### Add·Velocity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddVelocity ( [Vector](../Vector) Velocity ) {: .copyable aria-label='Functions' }
+#### void AddVelocity ( [Vector](../abp/Vector) Velocity ) {: .copyable aria-label='Functions' }
 
 Adds velocity to the entity. This can be used to move him in a certain direktion (for example as a result of collision)
 ___ 
@@ -242,7 +242,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Removes all [EntityFlags](../enums/EntityFlag) from the entity.
+Removes all [EntityFlags](../abp/enums/EntityFlag) from the entity.
 ___ 
 ### Collides·With·Grid () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -270,7 +270,7 @@ If the entity is a boss, it returns its specific boss id. If it isnt a boss it w
 ___ 
 ### Get·Color () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Color](../Color) GetColor ( ) {: .copyable aria-label='Functions' }
+#### const [Color](../abp/Color) GetColor ( ) {: .copyable aria-label='Functions' }
 
 Returns the Color object assosiated to this entity.
 ___ 
@@ -297,7 +297,7 @@ Returns a table that contains all data assosiated with the entity. This can be u
 ___ 
 ### Get·Drop·RNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) GetDropRNG ( ) {: .copyable aria-label='Functions' }
+#### [RNG](../abp/RNG) GetDropRNG ( ) {: .copyable aria-label='Functions' }
 
 Returns the assigned RNG object for the entity. This RNG is used to determine the items that are dropped on the entities death.
 ___ 
@@ -305,10 +305,10 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int GetEntityFlags ( ) {: .copyable aria-label='Functions' }
 
-Get the [EntityFlags](../enums/EntityFlag)of the entity. This will be a number which acts like a bitmask.
+Get the [EntityFlags](../abp/enums/EntityFlag)of the entity. This will be a number which acts like a bitmask.
 
 ???- example "Example Code"
-    This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag).
+    This code prints something in the console, if the entity has a specific [EntityFlags](../abp/enums/EntityFlag).
 
     ```lua 
     if entity:GetEntityFlags() & EntityFlag.FLAG_CONFUSION == EntityFlag.FLAG_CONFUSION then
@@ -318,7 +318,7 @@ Get the [EntityFlags](../enums/EntityFlag)of the entity. This will be a number w
 ___ 
 ### Get·Last·Child () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) GetLastChild ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [Entity](../abp/Entity) GetLastChild ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the last entity spawned by this entity.
 
@@ -327,7 +327,7 @@ Returns the last entity spawned by this entity.
 ___ 
 ### Get·Last·Parent () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) GetLastParent ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [Entity](../abp/Entity) GetLastParent ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the last parent of this entity.
 
@@ -336,23 +336,23 @@ Returns the last parent of this entity.
 ___ 
 ### Get·Sprite () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Sprite](../Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
+#### [Sprite](../abp/Sprite) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 Return the sprite object of the entity.
 ___ 
 ### Has·Common·Parent·With·Entity () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasCommonParentWithEntity ( [Entity](../Entity) Other ) {: .copyable aria-label='Functions' }
+#### boolean HasCommonParentWithEntity ( [Entity](../abp/Entity) Other ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Entity·Flags () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity has all named [EntityFlags](../enums/EntityFlag) set.
+Returns true, if the entity has all named [EntityFlags](../abp/enums/EntityFlag) set.
 
 ???- example "Example Code"
-    This code prints something in the console, if the entity has a specific [EntityFlags](../enums/EntityFlag).
+    This code prints something in the console, if the entity has a specific [EntityFlags](../abp/enums/EntityFlag).
 
     ```lua 
     if entity:HasEntityFlags(EntityFlag.FLAG_CONFUSION) then
@@ -447,18 +447,18 @@ Removes all Status Effects from the entity.
 ___ 
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void Render ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](../abp/Vector) Offset ) {: .copyable aria-label='Functions' }
 Render the current sprite of the Entity at the current entity position + offset.
 ___ 
 ### Render·Shadow·Layer () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean RenderShadowLayer ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
+#### boolean RenderShadowLayer ( [Vector](../abp/Vector) Offset ) {: .copyable aria-label='Functions' }
 
 Render the shadow / shadow layer again.
 ___ 
 ### Set·Color () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetColor ( [Color](../Color) Color, int Duration, int Priority, boolean Fadeout, boolean Share ) {: .copyable aria-label='Functions' }
+#### void SetColor ( [Color](../abp/Color) Color, int Duration, int Priority, boolean Fadeout, boolean Share ) {: .copyable aria-label='Functions' }
 
 Set the colormask for the entity. This can be used to tint the sprites in different colors. 
 
@@ -472,7 +472,7 @@ Set the colormask for the entity. This can be used to tint the sprites in differ
 ___ 
 ### Set·Size () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetSize ( float Size, [Vector](../Vector) SizeMulti, int NumGridCollisionPoints ) {: .copyable aria-label='Functions' }
+#### void SetSize ( float Size, [Vector](../abp/Vector) SizeMulti, int NumGridCollisionPoints ) {: .copyable aria-label='Functions' }
 
 Set the size ofthe entity.
 ___ 
@@ -488,7 +488,7 @@ ___
 ___ 
 ### Take·Damage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean TakeDamage ( float Damage, int Flags, [EntityRef](../EntityRef) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
+#### boolean TakeDamage ( float Damage, int Flags, [EntityRef](../abp/EntityRef) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
 
 
 ???- note "Notes"
@@ -496,16 +496,16 @@ ___
 ___ 
 ### To·Bomb () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityBomb](../EntityBomb) ToBomb ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityBomb](../EntityBomb) object.
+#### [EntityBomb](../abp/EntityBomb) ToBomb ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityBomb](../abp/EntityBomb) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityEffect](../EntityEffect) ToEffect ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityEffect](../EntityEffect) object.
+#### [EntityEffect](../abp/EntityEffect) ToEffect ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityEffect](../abp/EntityEffect) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -513,8 +513,8 @@ Used to cast an [Entity](../Entity) object to an [EntityEffect](../EntityEffect)
 ___ 
 ### To·Familiar () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityFamiliar](../EntityFamiliar) ToFamiliar ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityFamiliar](../EntityFamiliar) object.
+#### [EntityFamiliar](../abp/EntityFamiliar) ToFamiliar ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityFamiliar](../abp/EntityFamiliar) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -522,8 +522,8 @@ Used to cast an [Entity](../Entity) object to an [EntityFamiliar](../EntityFamil
 ___ 
 ### To·Knife () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityKnife](../EntityKnife) ToKnife ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityKnife](../EntityKnife) object.
+#### [EntityKnife](../abp/EntityKnife) ToKnife ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityKnife](../abp/EntityKnife) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -531,8 +531,8 @@ Used to cast an [Entity](../Entity) object to an [EntityKnife](../EntityKnife) o
 ___ 
 ### To·Laser () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityLaser](../EntityLaser) ToLaser ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityLaser](../EntityLaser) object.
+#### [EntityLaser](../abp/EntityLaser) ToLaser ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityLaser](../abp/EntityLaser) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -540,8 +540,8 @@ Used to cast an [Entity](../Entity) object to an [EntityLaser](../EntityLaser) o
 ___ 
 ### To·NPC () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityNPC](../EntityNPC) ToNPC ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityNPC](../EntityNPC) object.
+#### [EntityNPC](../abp/EntityNPC) ToNPC ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityNPC](../abp/EntityNPC) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -549,8 +549,8 @@ Used to cast an [Entity](../Entity) object to an [EntityNPC](../EntityNPC) objec
 ___ 
 ### To·Pickup () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPickup](../EntityPickup) ToPickup ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityPickup](../EntityPickup) object.
+#### [EntityPickup](../abp/EntityPickup) ToPickup ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityPickup](../abp/EntityPickup) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -558,8 +558,8 @@ Used to cast an [Entity](../Entity) object to an [EntityPickup](../EntityPickup)
 ___ 
 ### To·Player () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) ToPlayer ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityPlayer](../EntityPlayer) object.
+#### [EntityPlayer](../abp/EntityPlayer) ToPlayer ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityPlayer](../abp/EntityPlayer) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -567,8 +567,8 @@ Used to cast an [Entity](../Entity) object to an [EntityPlayer](../EntityPlayer)
 ___ 
 ### To·Projectile () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityProjectile](../EntityProjectile) ToProjectile ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Used to cast an [Entity](../Entity) object to an [EntityProjectile](../EntityProjectile) object.
+#### [EntityProjectile](../abp/EntityProjectile) ToProjectile ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityProjectile](../abp/EntityProjectile) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -576,8 +576,8 @@ Used to cast an [Entity](../Entity) object to an [EntityProjectile](../EntityPro
 ___ 
 ### To·Tear () {: aria-label='Functions' data-altreturn='nil' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityTear](../EntityTear) ToTear ( ) {: .copyable aria-label='Functions' }
-Used to cast an [Entity](../Entity) object to an [EntityTear](../EntityTear) object.
+#### [EntityTear](../abp/EntityTear) ToTear ( ) {: .copyable aria-label='Functions' }
+Used to cast an [Entity](../abp/Entity) object to an [EntityTear](../abp/EntityTear) object.
 
 ???+ note "Return behavior"
     If the conversion is not successful, this function returns `nil`.
@@ -591,7 +591,7 @@ ___
 ## Variables
 ### Child {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Child {: .copyable aria-label='Variables' }
+#### [Entity](../abp/Entity) Child {: .copyable aria-label='Variables' }
 
 ___ 
 ### Collision·Damage {: aria-label='Variables' }
@@ -627,7 +627,7 @@ Get the Seed of the Drop RNG.
 ___ 
 ### Entity·Collision·Class {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityCollisionClass](../enums/EntityCollisionClass) EntityCollisionClass {: .copyable aria-label='Variables' }
+#### [EntityCollisionClass](../abp/enums/EntityCollisionClass) EntityCollisionClass {: .copyable aria-label='Variables' }
 
 ___ 
 ### FlipX {: aria-label='Variables' }
@@ -647,7 +647,7 @@ loaded from entity config
 ___ 
 ### Grid·Collision·Class {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridCollisionClass](../enums/GridCollisionClass) GridCollisionClass {: .copyable aria-label='Variables' }
+#### [GridCollisionClass](../abp/enums/GridCollisionClass) GridCollisionClass {: .copyable aria-label='Variables' }
 
 ___ 
 ### Hit·Points {: aria-label='Variables' }
@@ -680,17 +680,17 @@ ___
 ___ 
 ### Parent {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Parent  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### [Entity](../abp/Entity) Parent  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Position  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) Position  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Position·Offset {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Vector](../Vector) PositionOffset  {: .copyable aria-label='Variables' }
+#### const [Vector](../abp/Vector) PositionOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Render·ZOffset {: aria-label='Variables' }
@@ -703,17 +703,17 @@ ___
 ___ 
 ### Size·Multi {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) SizeMulti  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) SizeMulti  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawner·Entity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) SpawnerEntity  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### [Entity](../abp/Entity) SpawnerEntity  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Spawner·Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityType](../enums/EntityType) SpawnerType  {: .copyable aria-label='Variables' }
+#### [EntityType](../abp/enums/EntityType) SpawnerType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawner·Variant {: aria-label='Variables' }
@@ -728,12 +728,12 @@ ___
 ___ 
 ### Splat·Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) SplatColor  {: .copyable aria-label='Variables' }
+#### [Color](../abp/Color) SplatColor  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Sprite·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) SpriteOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) SpriteOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Sprite·Rotation {: aria-label='Variables' }
@@ -743,7 +743,7 @@ ___
 ___ 
 ### Sprite·Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) SpriteScale  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) SpriteScale  {: .copyable aria-label='Variables' }
 Get/set the scale of the enemy sprite. This can be used to also Scale the shadow of the entity.
 ___ 
 ### Sub·Type {: aria-label='Variables' }
@@ -753,17 +753,17 @@ ___
 ___ 
 ### Target {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Target  {: .copyable aria-label='Variables' }
+#### [Entity](../abp/Entity) Target  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Target·Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) TargetPosition  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) TargetPosition  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
+#### const [EntityType](../abp/enums/EntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }
@@ -773,7 +773,7 @@ ___
 ___ 
 ### Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Velocity  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) Velocity  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Visible {: aria-label='Variables' }

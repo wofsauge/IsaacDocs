@@ -2,7 +2,7 @@
 ## Variables
 ### Difficulty {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Difficulty](../enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
+#### [Difficulty](../abp/enums/Difficulty) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
 ### Doors {: aria-label='Variables' }
@@ -27,7 +27,7 @@ ___
 ___ 
 ### Shape {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomShape](../enums/RoomShape) Shape  {: .copyable aria-label='Variables' }
+#### [RoomShape](../abp/enums/RoomShape) Shape  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawn·Count {: aria-label='Variables' }
@@ -37,7 +37,7 @@ ___
 ___ 
 ### Spawns {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [SpawnList](../CppContainer_ArrayProxy_RoomConfigSpawns) Spawns  {: .copyable aria-label='Variables' }
+#### [SpawnList](../abp/CppContainer_ArrayProxy_RoomConfigSpawns) Spawns  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Stage·ID {: aria-label='Variables' }
@@ -85,7 +85,7 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomType](../enums/RoomType) Type  {: .copyable aria-label='Variables' }
+#### [RoomType](../abp/enums/RoomType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

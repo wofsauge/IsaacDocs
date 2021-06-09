@@ -7,8 +7,8 @@
 * [Backdrop Previewer](https://redd.it/8wmzu6) : Tool to preview Room-Backdrops
 * [Log Viewer](https://github.com/pipe01/abp-log) : Tool to display a live - view the Logfile
 * [Rebirth Item Tracker](https://github.com/Hyphen-ated/RebirthItemTracker) : External tool that displays Item-informations about your current run
-* [AB+ Mod Merger](../customData/abp%20modmerger%20by%20Sentinel.zip) : A Python script to merge AB+ Mods. This can improve performance.
-* [Anm2 Scaling Helper](../customData/anm2_scaler.zip) : Scales .anm2 files with a specific factor. Useful to create HD sprites. ([Source](../customData/anm2_scaler_(source_code).zip))
+* [AB+ Mod Merger](../abp/customData/abp%20modmerger%20by%20Sentinel.zip) : A Python script to merge AB+ Mods. This can improve performance.
+* [Anm2 Scaling Helper](../abp/customData/anm2_scaler.zip) : Scales .anm2 files with a specific factor. Useful to create HD sprites. ([Source](../abp/customData/anm2_scaler_(source_code).zip))
 * [Drawstic Online](https://wofsauge.github.io/DrawsticOnline/) : Online tool to edit BoI sprites quickly 
 * [Color Usage Visualizer](https://wofsauge.github.io/Sprite-color-usage-Visualizer/index.html) : Interactive 3D tool to display color usage frequencies in Isaac Sprites
 * [Config & Mod Management Tool](https://moddingofisaac.com/mod/3386/tboi-afterbirth-configuration-tool) : UI to edit the game config and enable/ disable mods or modpacks

@@ -12,6 +12,6 @@ ___
 ___ 
 ### Item {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [ItemConfig Item](../ItemConfig_Item) {: .copyable aria-label='Variables' }
+#### [ItemConfig Item](../abp/ItemConfig_Item) {: .copyable aria-label='Variables' }
 
 ___ 

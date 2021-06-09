@@ -2,12 +2,12 @@
 ## Functions
 ### Add·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddSeedEffect ( [SeedEffect](../enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### void AddSeedEffect ( [SeedEffect](../abp/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Can·Add·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean CanAddSeedEffect ( [SeedEffect](../enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### boolean CanAddSeedEffect ( [SeedEffect](../abp/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Seed·Effects () {: aria-label='Functions' }
@@ -32,7 +32,7 @@ ___
 ___ 
 ### Forget·Stage·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void ForgetStageSeed ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### void ForgetStageSeed ( [LevelStage](../abp/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Next·Seed () {: aria-label='Functions' }
@@ -47,12 +47,12 @@ ___
 ___ 
 ### Get·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static [SeedEffect](../enums/SeedEffect) GetSeedEffect ( string str ) {: .copyable aria-label='Functions' }
+#### static [SeedEffect](../abp/enums/SeedEffect) GetSeedEffect ( string str ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Stage·Seed () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### int GetStageSeed ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### int GetStageSeed ( [LevelStage](../abp/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Start·Seed () {: aria-label='Functions' }
@@ -67,7 +67,7 @@ ___
 ___ 
 ### Has·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasSeedEffect ( [SeedEffect](../enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### boolean HasSeedEffect ( [SeedEffect](../abp/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Init·Seed·Info () {: aria-label='Functions' }
@@ -87,7 +87,7 @@ ___
 ___ 
 ### Is·Seed·Combo·Banned () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean IsSeedComboBanned ( [SeedEffect](../enums/SeedEffect) Seed1, [SeedEffect](../enums/SeedEffect) Seed2 ) {: .copyable aria-label='Functions' }
+#### boolean IsSeedComboBanned ( [SeedEffect](../abp/enums/SeedEffect) Seed1, [SeedEffect](../abp/enums/SeedEffect) Seed2 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Special·Seed () {: aria-label='Functions' }
@@ -102,12 +102,12 @@ ___
 ___ 
 ### Remove·Blocking·Seed·Effects () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveBlockingSeedEffects ( [SeedEffect](../enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### void RemoveBlockingSeedEffects ( [SeedEffect](../abp/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
 Removes seeds that are banned in conjunction with the given seed. 
 ___ 
 ### Remove·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveSeedEffect ( [SeedEffect](../enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
+#### void RemoveSeedEffect ( [SeedEffect](../abp/enums/SeedEffect) Value ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset () {: aria-label='Functions' }
@@ -117,7 +117,7 @@ Removes all seed effects, only goes into effect when the run is restarted
 ___ 
 ### Restart () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void Restart ( [Challenge](../enums/Challenge) CurrentChallenge ) {: .copyable aria-label='Functions' }
+#### void Restart ( [Challenge](../abp/enums/Challenge) CurrentChallenge ) {: .copyable aria-label='Functions' }
 Re-selects a random start seed but only if the start seed was not custom. 
 ___ 
 ### Seed2String () {: aria-label='Functions' }

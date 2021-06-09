@@ -4,7 +4,7 @@
 ## Functions
 ### Follow·Parent () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void FollowParent ( [Entity](../Entity) Parent ) {: .copyable aria-label='Functions' }
+#### void FollowParent ( [Entity](../abp/Entity) Parent ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Player·Creep () {: aria-label='Functions' }
@@ -14,7 +14,7 @@ ___
 ___ 
 ### Set·Damage·Source () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetDamageSource ( [EntityType](../enums/EntityType) DamageSource ) {: .copyable aria-label='Functions' }
+#### void SetDamageSource ( [EntityType](../abp/enums/EntityType) DamageSource ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Radii () {: aria-label='Functions' }
@@ -70,7 +70,7 @@ For shockwaves.
 ___ 
 ### Parent·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) ParentOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) ParentOffset  {: .copyable aria-label='Variables' }
 probably obsolete soon, in favor of m_SpriteOffset 
 ___ 
 ### Rotation {: aria-label='Variables' }

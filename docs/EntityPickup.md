@@ -24,7 +24,7 @@ ___
 ___ 
 ### Morph () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void Morph ( [EntityType](../enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice ) {: .copyable aria-label='Functions' }
+#### void Morph ( [EntityType](../abp/enums/EntityType) Type, int Variant, int SubType, boolean KeepPrice ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Drop·Sound () {: aria-label='Functions' }

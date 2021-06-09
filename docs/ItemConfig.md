@@ -2,12 +2,12 @@
 ## Functions
 ### Get·Card () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemConfig Card](../ItemConfig_Card) GetCard ( [Card](../enums/Card) ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Card](../abp/ItemConfig_Card) GetCard ( [Card](../abp/enums/Card) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Cards () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [CardList](../CppContainer_Vector_CardConfigList) GetCards ( ) {: .copyable aria-label='Functions' }
+#### const [CardList](../abp/CppContainer_Vector_CardConfigList) GetCards ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
@@ -15,7 +15,7 @@ ___
 ___ 
 ### Get·Collectible () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemConfig Item](../ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Item](../abp/ItemConfig_Item) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
 
 Returns the Itemobject of a given CollectibleID.
 
@@ -50,7 +50,7 @@ Returns the Itemobject of a given CollectibleID.
 ___ 
 ### Get·Collectibles () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemList](../CppContainer_Vector_ItemConfigList) GetCollectibles ( ) {: .copyable aria-label='Functions' }
+#### const [ItemList](../abp/CppContainer_Vector_ItemConfigList) GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles. 
 
@@ -69,7 +69,7 @@ Returns the List of all Collectibles.
 ___ 
 ### Get·Costumes () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [CostumeList](../CppContainer_Vector_CostumeConfigList) GetCostumes ( ) {: .copyable aria-label='Functions' }
+#### const [CostumeList](../abp/CppContainer_Vector_CostumeConfigList) GetCostumes ( ) {: .copyable aria-label='Functions' }
 
 
 ???+ bug "Bugs"
@@ -77,12 +77,12 @@ ___
 ___ 
 ### Get·Null·Item () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemConfig Item](../ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Item](../abp/ItemConfig_Item) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Null·Items () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemList](../CppContainer_Vector_ItemConfigList) GetNullItems ( ) {: .copyable aria-label='Functions' }
+#### const [ItemList](../abp/CppContainer_Vector_ItemConfigList) GetNullItems ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
@@ -90,12 +90,12 @@ ___
 ___ 
 ### Get·Pill·Effect () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemConfig PillEffect](../ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig PillEffect](../abp/ItemConfig_PillEffect) GetPillEffect ( [PillEffect](../abp/enums/PillEffect) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Pill·Effects () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [PillList](../CppContainer_Vector_PillConfigList) GetPillEffects ( ) {: .copyable aria-label='Functions' }
+#### const [PillList](../abp/CppContainer_Vector_PillConfigList) GetPillEffects ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
@@ -103,12 +103,12 @@ ___
 ___ 
 ### Get·Trinket () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemConfig Item](../ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Item](../abp/ItemConfig_Item) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Trinkets () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [ItemList](../CppContainer_Vector_ItemConfigList) GetTrinkets ( ) {: .copyable aria-label='Functions' }
+#### const [ItemList](../abp/CppContainer_Vector_ItemConfigList) GetTrinkets ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
@@ -116,7 +116,7 @@ ___
 ___ 
 ### Is·Valid·Collectible () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static boolean IsValidCollectible ( [CollectibleType](../enums/CollectibleType) ID ) {: .copyable aria-label='Functions' }
+#### static boolean IsValidCollectible ( [CollectibleType](../abp/enums/CollectibleType) ID ) {: .copyable aria-label='Functions' }
 
 Function to check if a given item id is a valid collectible id (aka. this item exists). Returns **True** when it exists and **False** when it doesnt.
 
@@ -133,6 +133,6 @@ Function to check if a given item id is a valid collectible id (aka. this item e
 ___ 
 ### Should·Add·Costume·On·Pickup () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static boolean ShouldAddCostumeOnPickup ( [ItemConfig Item](../ItemConfig_Item) Config ) {: .copyable aria-label='Functions' }
+#### static boolean ShouldAddCostumeOnPickup ( [ItemConfig Item](../abp/ItemConfig_Item) Config ) {: .copyable aria-label='Functions' }
 
 ___ 

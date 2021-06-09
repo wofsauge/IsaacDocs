@@ -10,9 +10,9 @@ ___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [Entity](../abp/Entity) Get ( int idx ) {: .copyable aria-label='Functions' }
 
-Returns an [Entity](../Entity) at the index of the list provided.
+Returns an [Entity](../abp/Entity) at the index of the list provided.
 
 ___ 
 ## Variables

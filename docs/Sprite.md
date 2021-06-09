@@ -2,7 +2,7 @@
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Sprite](../Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
+#### [Sprite](../abp/Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
@@ -76,7 +76,7 @@ Returns the currently rendered Frame of the Overlay of the given Sprite. It acts
 ___ 
 ### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) GetTexel ( [Vector](../Vector) SamplePos, [Vector](../Vector) RenderPos, float AlphaThreshold ) {: .copyable aria-label='Functions' }
+#### [Color](../abp/Color) GetTexel ( [Vector](../abp/Vector) SamplePos, [Vector](../abp/Vector) RenderPos, float AlphaThreshold ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Event·Triggered () {: aria-label='Functions' }
@@ -165,12 +165,12 @@ ___
 ___ 
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void Render ( [Vector](../Vector) Pos, [Vector](../Vector) TopLeftClamp, [Vector](../Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](../abp/Vector) Pos, [Vector](../abp/Vector) TopLeftClamp, [Vector](../abp/Vector) BottomRightClamp ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RenderLayer ( int LayerId, [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### void RenderLayer ( int LayerId, [Vector](../abp/Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Replace·Spritesheet () {: aria-label='Functions' }
@@ -259,12 +259,12 @@ ___
 ___ 
 ### Color {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) Color  {: .copyable aria-label='Variables' }
+#### [Color](../abp/Color) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Offset  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) Offset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Playback·Speed {: aria-label='Variables' }
@@ -279,6 +279,6 @@ ___
 ___ 
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Scale  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) Scale  {: .copyable aria-label='Variables' }
 
 ___ 

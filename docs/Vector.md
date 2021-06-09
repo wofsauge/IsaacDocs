@@ -2,13 +2,13 @@
 ## Constructors
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
+#### [Vector](../abp/Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Operators
 ### __add () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __add ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
+#### [Vector](../abp/Vector) __add ( [Vector](../abp/Vector) Right ) {: .copyable aria-label='Operators' }
 Defines the Addition of two Vector objects using the `+` operator.
 
 ???- example "Example Code"
@@ -20,7 +20,7 @@ Defines the Addition of two Vector objects using the `+` operator.
 ___ 
 ### __div () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __div ( float Modifier ) {: .copyable aria-label='Operators' }
+#### [Vector](../abp/Vector) __div ( float Modifier ) {: .copyable aria-label='Operators' }
 Defines the Division of two Vector objects using the `/` operator.
 
 ???- example "Example Code"
@@ -32,7 +32,7 @@ Defines the Division of two Vector objects using the `/` operator.
 ___ 
 ### __mul () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __mul ( float Modifier ) {: .copyable aria-label='Operators' }
+#### [Vector](../abp/Vector) __mul ( float Modifier ) {: .copyable aria-label='Operators' }
 Defines the Multiplication of two Vector objects using the `*` operator.
 
 ???- example "Example Code"
@@ -44,7 +44,7 @@ Defines the Multiplication of two Vector objects using the `*` operator.
 ___ 
 ### __sub () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __sub ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
+#### [Vector](../abp/Vector) __sub ( [Vector](../abp/Vector) Right ) {: .copyable aria-label='Operators' }
 Defines the Subtraction of two Vector objects using the `-` operator.
 
 ???- example "Example Code"
@@ -56,7 +56,7 @@ Defines the Subtraction of two Vector objects using the `-` operator.
 ___ 
 ### __unm () {: aria-label='Operators' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) __unm ( [Vector](../Vector) Right ) {: .copyable aria-label='Operators' }
+#### [Vector](../abp/Vector) __unm ( [Vector](../abp/Vector) Right ) {: .copyable aria-label='Operators' }
 Defines the inversion of a Vector object using the `-` operator.
 
 ???- example "Example Code"
@@ -74,17 +74,17 @@ Clamps the vector based on left, top, right, bottom boundings. Doesn't keep dire
 ___ 
 ### Clamped () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Clamped ( float MinX, float MinY, float MaxX, float MaxY ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) Clamped ( float MinX, float MinY, float MaxX, float MaxY ) {: .copyable aria-label='Functions' }
 Returns a clamped version of the vector. 
 ___ 
 ### Cross () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### float Cross ( [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
+#### float Cross ( [Vector](../abp/Vector) second ) {: .copyable aria-label='Functions' }
 Cross product this is the 2x2 matrix determinant or the resulting z value for their 3D versions with z=0 
 ___ 
 ### Distance () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### float Distance ( [Vector](../Vector) first, [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
+#### float Distance ( [Vector](../abp/Vector) first, [Vector](../abp/Vector) second ) {: .copyable aria-label='Functions' }
 Returns distance between two vectors 
 
 ???- example "Example Code"
@@ -96,7 +96,7 @@ Returns distance between two vectors
 ___ 
 ### Distance·Squared () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### float DistanceSquared ( [Vector](../Vector) first, [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
+#### float DistanceSquared ( [Vector](../abp/Vector) first, [Vector](../abp/Vector) second ) {: .copyable aria-label='Functions' }
 Returns squared distance between two vectors 
 
 ???- example "Example Code"
@@ -108,13 +108,13 @@ Returns squared distance between two vectors
 ___ 
 ### Dot () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### float Dot ( [Vector](../Vector) second ) {: .copyable aria-label='Functions' }
+#### float Dot ( [Vector](../abp/Vector) second ) {: .copyable aria-label='Functions' }
 Dot product 
 ___ 
 ### From·Angle () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static [Vector](../Vector) FromAngle ( float AngleDegrees ) {: .copyable aria-label='Functions' }
-Build a [Vector](../Vector) from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). 
+#### static [Vector](../abp/Vector) FromAngle ( float AngleDegrees ) {: .copyable aria-label='Functions' }
+Build a [Vector](../abp/Vector) from an angle, returns a normalized vector. Angle 0 will result in (1, 0). Angle 90 will result in (0, 1). 
 
 ???- example "Example Code"
     This code returns a vector that has a 45 degree angle
@@ -152,7 +152,7 @@ Returns the length squared of the vector
 ___ 
 ### Lerp () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Lerp ( [Vector](../Vector) first, [Vector](../Vector) second, float t ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) Lerp ( [Vector](../abp/Vector) first, [Vector](../abp/Vector) second, float t ) {: .copyable aria-label='Functions' }
 
 Linear interpolation between two vectors. For t = 0 it returns the first Vector, for t = 1 it returns the second.
 
@@ -180,7 +180,7 @@ Normalizes this vector
 ___ 
 ### Normalized () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Normalized ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) Normalized ( ) {: .copyable aria-label='Functions' }
 Returns a normalized version of this vector 
 ___ 
 ### Resize () {: aria-label='Functions' }
@@ -190,12 +190,12 @@ Resizes the vector length.
 ___ 
 ### Resized () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Resized ( float NewLength ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) Resized ( float NewLength ) {: .copyable aria-label='Functions' }
 Returns a resized version of the vector. 
 ___ 
 ### Rotated () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Rotated ( float AngleDegrees ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) Rotated ( float AngleDegrees ) {: .copyable aria-label='Functions' }
 Returns a rotated version of the vector by AngleDegrees 
 ___ 
 ## Variables

@@ -19,7 +19,7 @@ ___
 ___ 
 ### Get·Sprite·Offset () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Vector](../Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
+#### const [Vector](../abp/Vector) GetSpriteOffset ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Busted () {: aria-label='Functions' }
@@ -44,7 +44,7 @@ ___
 ___ 
 ### Is·Room·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean IsRoomType ( [RoomType](../enums/RoomType) Type ) {: .copyable aria-label='Functions' }
+#### boolean IsRoomType ( [RoomType](../abp/enums/RoomType) Type ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Target·Room·Arcade () {: aria-label='Functions' }
@@ -64,7 +64,7 @@ ___
 ___ 
 ### Set·Room·Types () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetRoomTypes ( [RoomType](../enums/RoomType) CurrentRoomType, [RoomType](../enums/RoomType) TargetRoomType ) {: .copyable aria-label='Functions' }
+#### void SetRoomTypes ( [RoomType](../abp/enums/RoomType) CurrentRoomType, [RoomType](../abp/enums/RoomType) TargetRoomType ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Spawn·Dust () {: aria-label='Functions' }
@@ -95,17 +95,17 @@ ___
 ___ 
 ### Current·Room·Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomType](../enums/RoomType) CurrentRoomType  {: .copyable aria-label='Variables' }
+#### [RoomType](../abp/enums/RoomType) CurrentRoomType  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Direction {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Direction](../enums/Direction) Direction {: .copyable aria-label='Variables' }
+#### [Direction](../abp/enums/Direction) Direction {: .copyable aria-label='Variables' }
 
 ___ 
 ### Extra·Sprite {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Sprite](../Sprite) ExtraSprite  {: .copyable aria-label='Variables' }
+#### [Sprite](../abp/Sprite) ExtraSprite  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Extra·Visible {: aria-label='Variables' }
@@ -140,7 +140,7 @@ ___
 ___ 
 ### Slot {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [DoorSlot](../enums/DoorSlot) Slot  {: .copyable aria-label='Variables' }
+#### [DoorSlot](../abp/enums/DoorSlot) Slot  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Target·Room·Index {: aria-label='Variables' }
@@ -150,6 +150,6 @@ ___
 ___ 
 ### Target·Room·Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomType](../enums/RoomType) TargetRoomType  {: .copyable aria-label='Variables' }
+#### [RoomType](../abp/enums/RoomType) TargetRoomType  {: .copyable aria-label='Variables' }
 
 ___ 

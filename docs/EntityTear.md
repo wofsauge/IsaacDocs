@@ -24,7 +24,7 @@ ___
 ___ 
 ### Set·Parent·Offset () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetParentOffset ( [Vector](../Vector) Offset ) {: .copyable aria-label='Functions' }
+#### void SetParentOffset ( [Vector](../abp/Vector) Offset ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Wait·Frames () {: aria-label='Functions' }
@@ -55,7 +55,7 @@ For Onan's strak and Dead Eye.
 ___ 
 ### Continue·Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) ContinueVelocity  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) ContinueVelocity  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Falling·Acceleration {: aria-label='Variables' }
@@ -85,12 +85,12 @@ ___
 ___ 
 ### Parent·Offset {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) ParentOffset  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) ParentOffset  {: .copyable aria-label='Variables' }
 Used for Position adjustment (vs PositionOffset which is a render offset) 
 ___ 
 ### Pos·Displacement {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [Vector](../Vector) PosDisplacement  {: .copyable aria-label='Variables' }
+#### const [Vector](../abp/Vector) PosDisplacement  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Rotation {: aria-label='Variables' }
@@ -105,12 +105,12 @@ ___
 ___ 
 ### Stick·Diff {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) StickDiff  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) StickDiff  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Stick·Target {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Entity](../Entity) StickTarget  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### [Entity](../abp/Entity) StickTarget  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Stick·Timer {: aria-label='Variables' }
@@ -120,7 +120,7 @@ ___
 ___ 
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [TearFlags](../enums/TearFlags) TearFlags {: .copyable aria-label='Variables' }
+#### [TearFlags](../abp/enums/TearFlags) TearFlags {: .copyable aria-label='Variables' }
 
 ___ 
 ### Tear·Index {: aria-label='Variables' }

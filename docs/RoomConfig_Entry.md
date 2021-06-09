@@ -7,7 +7,7 @@
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityType](../enums/EntityType) Type  {: .copyable aria-label='Variables' }
+#### [EntityType](../abp/enums/EntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

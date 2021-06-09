@@ -22,7 +22,7 @@ ___
 ___ 
 ### Type {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [GridEntityType](../enums/GridEntityType) Type  {: .copyable aria-label='Variables' }
+#### [GridEntityType](../abp/enums/GridEntityType) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Var·Data {: aria-label='Variables' }

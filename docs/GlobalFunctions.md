@@ -2,11 +2,11 @@
 ## Constructors
 ### Color () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Color](../Color) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
+#### [Color](../abp/Color) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
 
-Constructor for the "[Color](../Color)" class.
+Constructor for the "[Color](../abp/Color)" class.
 
-When using the [Font](../Font) class, use [KColor()](../KColor) instead. 
+When using the [Font](../abp/Font) class, use [KColor()](../abp/KColor) instead. 
 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
 
@@ -16,19 +16,19 @@ RO, GO and BO accept numbers between -255 and 255.
 ___ 
 ### Entity·Ptr () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPtr](../EntityPtr) EntityPtr ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
+#### [EntityPtr](../abp/EntityPtr) EntityPtr ( [Entity](../abp/Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Entity·Ref () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityRef](../EntityRef) EntityRef ( [Entity](../Entity ) ) {: .copyable aria-label='Constructors' }
+#### [EntityRef](../abp/EntityRef) EntityRef ( [Entity](../abp/Entity ) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Font () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Font](../Font) Font ( ) {: .copyable aria-label='Constructors' }
+#### [Font](../abp/Font) Font ( ) {: .copyable aria-label='Constructors' }
 
-Constructor for the "[Font](../Font)" class.
+Constructor for the "[Font](../abp/Font)" class.
 
 ???- example "Example Code"
     Example usage.
@@ -42,9 +42,9 @@ Constructor for the "[Font](../Font)" class.
 ___ 
 ### Game () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Game](../Game) Game ( ) {: .copyable aria-label='Constructors' }
+#### [Game](../abp/Game) Game ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [Game](../Game) object.
+Returns a [Game](../abp/Game) object.
 
 ???- example "Example Code"
     Example usage:
@@ -56,16 +56,16 @@ Returns a [Game](../Game) object.
 ___ 
 ### KColor () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [KColor](../KColor) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
+#### [KColor](../abp/KColor) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
-Constructor for the "[KColor](../KColor)" class.
-Notes: "[KColor](../KColor)" is only used in the [Font](../Font) class. For most other situations you will need to use the [Color()](../Color) constructor.
+Constructor for the "[KColor](../abp/KColor)" class.
+Notes: "[KColor](../abp/KColor)" is only used in the [Font](../abp/Font) class. For most other situations you will need to use the [Color()](../abp/Color) constructor.
 ___ 
 ### Music·Manager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [MusicManager](../MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
+#### [MusicManager](../abp/MusicManager) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [MusicManager](../MusicManager) object.
+Returns a [MusicManager](../abp/MusicManager) object.
 
 ???- example "Example Code"
     Example usage:
@@ -76,16 +76,16 @@ Returns a [MusicManager](../MusicManager) object.
 ___ 
 ### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [ProjectileParams](../ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
+#### [ProjectileParams](../abp/ProjectileParams) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Register·Mod () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Mod Reference](../ModReference) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
+#### [Mod Reference](../abp/ModReference) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
 
 Method to define a mod in the game. This needs to be defined to handle callbacks and save data in your mod.
 
-Returns a table which acts as the [Mod Reference](../ModReference).
+Returns a table which acts as the [Mod Reference](../abp/ModReference).
 
 ???- example "Example Code"
     ```lua 
@@ -96,19 +96,19 @@ Returns a table which acts as the [Mod Reference](../ModReference).
 ___ 
 ### RNG () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) RNG ( ) {: .copyable aria-label='Constructors' }
+#### [RNG](../abp/RNG) RNG ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Sprite](../Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
+#### [Sprite](../abp/Sprite) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### SFXManager () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [SFXManager](../SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
+#### [SFXManager](../abp/SFXManager) SFXManager ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [SFXManager](../SFXManager) object.
+Returns a [SFXManager](../abp/SFXManager) object.
 
 ???- example "Example Code"
     Example usage:
@@ -119,7 +119,7 @@ Returns a [SFXManager](../SFXManager) object.
 ___ 
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
+#### [Vector](../abp/Vector) Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
@@ -130,7 +130,7 @@ Returns a random integer. (0 to 2^32)
 ___ 
 ### Random·Vector () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 
 ### Get·Ptr·Hash () {: aria-label='Functions' }

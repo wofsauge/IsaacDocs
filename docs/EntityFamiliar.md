@@ -34,7 +34,7 @@ Adds to orbitals. This doesn't remove other flags!
 ___ 
 ### Fire·Projectile () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityTear](../EntityTear) FireProjectile ( [Vector](../Vector) Dir ) {: .copyable aria-label='Functions' }
+#### [EntityTear](../abp/EntityTear) FireProjectile ( [Vector](../abp/Vector) Dir ) {: .copyable aria-label='Functions' }
 
 Shoots a projectile from the center of the familiar in the direction you defined.
 If used on a familiar that shoots multiple projectiles (example: harlequin baby), this function will only return the left most projectile based on the direction. If used on familiars with special tears (example: Lil Brimstone,...), this will just shoot a regular tear.
@@ -47,17 +47,17 @@ ___
 ___ 
 ### Follow·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void FollowPosition ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### void FollowPosition ( [Vector](../abp/Vector) Pos ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Orbit·Distance () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### static [Vector](../Vector) GetOrbitDistance ( int Layer ) {: .copyable aria-label='Functions' }
+#### static [Vector](../abp/Vector) GetOrbitDistance ( int Layer ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Orbit·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetOrbitPosition ( [Vector](../Vector) Pos ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) GetOrbitPosition ( [Vector](../abp/Vector) Pos ) {: .copyable aria-label='Functions' }
 
 Returns the position of an orbiting familiar relative to the player's position. Returns `:::lua Vector(0,0) if its a normal familiar.`
 The "pos" argument is used as an offset.
@@ -79,17 +79,17 @@ ___
 ___ 
 ### Play·Charge·Anim () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void PlayChargeAnim ( [Direction](../enums/Direction) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayChargeAnim ( [Direction](../abp/enums/Direction) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Float·Anim () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void PlayFloatAnim ( [Direction](../enums/Direction) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayFloatAnim ( [Direction](../abp/enums/Direction) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Shoot·Anim () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void PlayShootAnim ( [Direction](../enums/Direction) Dir ) {: .copyable aria-label='Functions' }
+#### void PlayShootAnim ( [Direction](../abp/enums/Direction) Dir ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Recalculate·Orbit·Offset () {: aria-label='Functions' }
@@ -148,12 +148,12 @@ ___
 ___ 
 ### Last·Direction {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Direction](../enums/Direction) LastDirection  {: .copyable aria-label='Variables' }
+#### [Direction](../abp/enums/Direction) LastDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Move·Direction {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Direction](../enums/Direction) MoveDirection  {: .copyable aria-label='Variables' }
+#### [Direction](../abp/enums/Direction) MoveDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Orbit·Angle·Offset {: aria-label='Variables' }
@@ -173,17 +173,17 @@ Can be used to override the angular position of the familiar on its orbit based 
     end
     ```
     
-    Result: ![angle offset](../images/example_familiar_angleOffset.png)
+    Result: ![angle offset](../abp/images/example_familiar_angleOffset.png)
 ___ 
 ### Orbit·Distance {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) OrbitDistance  {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) OrbitDistance  {: .copyable aria-label='Variables' }
 
 Defines the orbit of the familiar, if its an orbital. The Vector is interpreted as the dimensions of the circle/oval orbit. Example: `:::lua Vector(110,90)` is the orbital of "Forever alone".
 ___ 
 ### Player {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [EntityPlayer](../EntityPlayer) Player  {: .copyable aria-label='Variables' }
+#### [EntityPlayer](../abp/EntityPlayer) Player  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Room·Clear·Count {: aria-label='Variables' }
@@ -193,7 +193,7 @@ ___
 ___ 
 ### Shoot·Direction {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Direction](../enums/Direction) ShootDirection  {: .copyable aria-label='Variables' }
+#### [Direction](../abp/enums/Direction) ShootDirection  {: .copyable aria-label='Variables' }
 
 ___ 
 ### State {: aria-label='Variables' }

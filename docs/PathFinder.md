@@ -2,12 +2,12 @@
 ## Functions
 ### Evade·Target () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void EvadeTarget ( [Vector](../Vector) TargetPos ) {: .copyable aria-label='Functions' }
+#### void EvadeTarget ( [Vector](../abp/Vector) TargetPos ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Find·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void FindGridPath ( [Vector](../Vector) Pos, float Speed, int PathMarker, boolean UseDirectPath ) {: .copyable aria-label='Functions' }
+#### void FindGridPath ( [Vector](../abp/Vector) Pos, float Speed, int PathMarker, boolean UseDirectPath ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Evade·Movement·Countdown () {: aria-label='Functions' }
@@ -27,7 +27,7 @@ ___
 ___ 
 ### Has·Path·To·Pos () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean HasPathToPos ( [Vector](../Vector) Pos, boolean IgnorePoop ) {: .copyable aria-label='Functions' }
+#### boolean HasPathToPos ( [Vector](../abp/Vector) Pos, boolean IgnorePoop ) {: .copyable aria-label='Functions' }
 Used for safe check if any NPC is behind rocks/pits, doesn't disturb class members. 
 ___ 
 ### Move·Randomly () {: aria-label='Functions' }

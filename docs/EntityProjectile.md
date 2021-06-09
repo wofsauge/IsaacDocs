@@ -27,7 +27,7 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### void AddProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes.
+Uses [ProjectileFlags](../abp/enums/ProjectileFlags) to define the projectile attributes.
 ___ 
 ### Add·Scale () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -44,8 +44,8 @@ ___
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
-Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes after the "Changed" state was activated.
-The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
+Uses [ProjectileFlags](../abp/enums/ProjectileFlags) to define the projectile attributes after the "Changed" state was activated.
+The [ProjectileFlag](../abp/enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -54,14 +54,14 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [ProjectileParams()](../ProjectileParams)
+Also used in: [ProjectileParams()](../abp/ProjectileParams)
 ___ 
 ### Change·Timeout {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
-The [ProjectileFlags](../enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlags](../abp/enums/ProjectileFlags).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -70,14 +70,14 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [ProjectileParams()](../ProjectileParams)
+Also used in: [ProjectileParams()](../abp/ProjectileParams)
 ___ 
 ### Change·Velocity {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
-The [ProjectileFlag](../enums/ProjectileFlags).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](../abp/enums/ProjectileFlags).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -86,7 +86,7 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [ProjectileParams()](../ProjectileParams)
+Also used in: [ProjectileParams()](../abp/ProjectileParams)
 ___ 
 ### Curving·Strength {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
@@ -126,9 +126,9 @@ ___
 ___ 
 ### Projectile·Flags {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [ProjectileFlags](../enums/ProjectileFlags) ProjectileFlags {: .copyable aria-label='Variables' }
+#### [ProjectileFlags](../abp/enums/ProjectileFlags) ProjectileFlags {: .copyable aria-label='Variables' }
 
-Uses [ProjectileFlags](../enums/ProjectileFlags) to define the projectile attributes.
+Uses [ProjectileFlags](../abp/enums/ProjectileFlags) to define the projectile attributes.
 ___ 
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }

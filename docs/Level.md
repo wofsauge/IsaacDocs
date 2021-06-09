@@ -7,7 +7,7 @@
 ___ 
 ### Add·Curse () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void AddCurse ( [LevelCurse](../enums/LevelCurse) Curse, boolean ShowName ) {: .copyable aria-label='Functions' }
+#### void AddCurse ( [LevelCurse](../abp/enums/LevelCurse) Curse, boolean ShowName ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Apply·Blue·Map·Effect () {: aria-label='Functions' }
@@ -37,7 +37,7 @@ ___
 ___ 
 ### Can·Stage·Have·Curse·Of·Labyrinth () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### boolean CanStageHaveCurseOfLabyrinth ( [LevelStage](../enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
+#### boolean CanStageHaveCurseOfLabyrinth ( [LevelStage](../abp/enums/LevelStage) Stage ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Change·Room () {: aria-label='Functions' }
@@ -57,7 +57,7 @@ return true on success
 ___ 
 ### Get·Absolute·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [LevelStage](../enums/LevelStage) GetAbsoluteStage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](../abp/enums/LevelStage) GetAbsoluteStage ( ) {: .copyable aria-label='Functions' }
 Returns the absolute stage, if its greed mode its converted to equivalent one. 
 ___ 
 ### Get·Angel·Room·Chance () {: aria-label='Functions' }
@@ -72,12 +72,12 @@ ___
 ___ 
 ### Get·Current·Room () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Room](../Room) GetCurrentRoom ( ) {: .copyable aria-label='Functions' }
+#### [Room](../abp/Room) GetCurrentRoom ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Current·Room·Desc () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [RoomDescriptor](../RoomDescriptor) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
+#### const [RoomDescriptor](../abp/RoomDescriptor) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Current·Room·Index () {: aria-label='Functions' }
@@ -88,7 +88,7 @@ ___
 ???- note "Notes"
     This will always return the roomindex on the levelgrid, on which you entered the current room from. (see black entries in graphic below) 
     
-    ![Room Grid indicies](../images/infographics/RoomGridIndicies.png)
+    ![Room Grid indicies](../abp/images/infographics/RoomGridIndicies.png)
 ___ 
 ### Get·Curse·Name () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
@@ -102,7 +102,7 @@ ___
 ___ 
 ### Get·Devil·Angel·Room·RNG () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [RNG](../RNG) GetDevilAngelRoomRNG ( ) {: .copyable aria-label='Functions' }
+#### [RNG](../abp/RNG) GetDevilAngelRoomRNG ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Dungeon·Placement·Seed () {: aria-label='Functions' }
@@ -112,7 +112,7 @@ ___
 ___ 
 ### Get·Enter·Position () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) GetEnterPosition ( ) {: .copyable aria-label='Functions' }
+#### [Vector](../abp/Vector) GetEnterPosition ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Heart·Picked () {: aria-label='Functions' }
@@ -127,12 +127,12 @@ ___
 ___ 
 ### Get·Last·Room·Desc () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [RoomDescriptor](../RoomDescriptor) GetLastRoomDesc ( ) {: .copyable aria-label='Functions' }
+#### const [RoomDescriptor](../abp/RoomDescriptor) GetLastRoomDesc ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Name () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### string GetName ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) Type, int Curses, int InfiniteLevel, boolean Dyslexia ) {: .copyable aria-label='Functions' }
+#### string GetName ( [LevelStage](../abp/enums/LevelStage) Stage, [StageType](../abp/enums/StageType) Type, int Curses, int InfiniteLevel, boolean Dyslexia ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Non·Complete·Room·Index () {: aria-label='Functions' }
@@ -152,7 +152,7 @@ ___
 ___ 
 ### Get·Room·By·Idx () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abp .tooltip .badge }
-#### const [RoomDescriptor](../RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
+#### const [RoomDescriptor](../abp/RoomDescriptor) GetRoomByIdx ( int RoomIdx ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Room·Count () {: aria-label='Functions' }
@@ -162,17 +162,17 @@ ___
 ___ 
 ### Get·Rooms () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomDescriptor List](../CppContainer_ArrayProxy_RoomDescriptor) GetRooms ( ) {: .copyable aria-label='Functions' }
+#### [RoomDescriptor List](../abp/CppContainer_ArrayProxy_RoomDescriptor) GetRooms ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [LevelStage](../enums/LevelStage) GetStage ( ) {: .copyable aria-label='Functions' }
+#### [LevelStage](../abp/enums/LevelStage) GetStage ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Stage·Type () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [StageType](../enums/StageType) GetStageType ( ) {: .copyable aria-label='Functions' }
+#### [StageType](../abp/enums/StageType) GetStageType ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Starting·Room·Index () {: aria-label='Functions' }
@@ -212,7 +212,7 @@ ___
 ___ 
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### int QueryRoomTypeIndex ( [RoomType](../enums/RoomType) RoomType, boolean Visited, [RNG](../RNG) rng ) {: .copyable aria-label='Functions' }
+#### int QueryRoomTypeIndex ( [RoomType](../abp/enums/RoomType) RoomType, boolean Visited, [RNG](../abp/RNG) rng ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Compass·Effect () {: aria-label='Functions' }
@@ -222,7 +222,7 @@ ___
 ___ 
 ### Remove·Curse () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void RemoveCurse ( [LevelCurse](../enums/LevelCurse) Curse ) {: .copyable aria-label='Functions' }
+#### void RemoveCurse ( [LevelCurse](../abp/enums/LevelCurse) Curse ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Remove·Curses () {: aria-label='Functions' }
@@ -253,7 +253,7 @@ ___
 ___ 
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void SetStage ( [LevelStage](../enums/LevelStage) Stage, [StageType](../enums/StageType) StageType ) {: .copyable aria-label='Functions' }
+#### void SetStage ( [LevelStage](../abp/enums/LevelStage) Stage, [StageType](../abp/enums/StageType) StageType ) {: .copyable aria-label='Functions' }
 for SetStage/SetNextStage to have effect, call Init afterward 
 ___ 
 ### Set·State·Flag () {: aria-label='Functions' }
@@ -273,7 +273,7 @@ ___
 ___ 
 ### Uncover·Hidden·Door () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### void UncoverHiddenDoor ( int CurrentRoomIdx, [DoorSlot](../enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
+#### void UncoverHiddenDoor ( int CurrentRoomIdx, [DoorSlot](../abp/enums/DoorSlot) Slot ) {: .copyable aria-label='Functions' }
 Uncovers the door on both sides by modifying the saved grid entities for neighboring room. 
 ___ 
 ### Update () {: aria-label='Functions' }
@@ -313,7 +313,7 @@ ___
 ## Variables
 ### Dungeon·Return·Position {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
-#### [Vector](../Vector) DungeonReturnPosition {: .copyable aria-label='Variables' }
+#### [Vector](../abp/Vector) DungeonReturnPosition {: .copyable aria-label='Variables' }
 
 ___ 
 ### Dungeon·Return·Room·Index {: aria-label='Variables' }

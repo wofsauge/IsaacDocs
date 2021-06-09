@@ -10,9 +10,9 @@ ___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
-#### [RoomConfig Spawn](../RoomConfig_Spawn) Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [RoomConfig Spawn](../abp/RoomConfig_Spawn) Get ( int idx ) {: .copyable aria-label='Functions' }
 
-Returns a [RoomConfig Spawn](../RoomConfig_Spawn) at the index of the list provided.
+Returns a [RoomConfig Spawn](../abp/RoomConfig_Spawn) at the index of the list provided.
 
 ___ 
 ## Variables
