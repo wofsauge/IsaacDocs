@@ -2,7 +2,7 @@
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Sprite](Sprite.html) Sprite ( ) {: .copyable aria-label='Constructors' }
+#### [Sprite](Sprite.md) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
@@ -85,7 +85,7 @@ Returns the currently rendered Frame of the Overlay of the given Sprite. It acts
 ___ 
 ### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](Color.html) GetTexel ( [Vector](Vector.html) SamplePos, [Vector](Vector.html) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
+#### [Color](Color.md) GetTexel ( [Vector](Vector.md) SamplePos, [Vector](Vector.md) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
 Returns the color of the pixel of the Sprite at the given sample position. RenderPos can be neglected and set to a null vector
 ___ 
 ### Is·Event·Triggered () {: aria-label='Functions' }
@@ -174,12 +174,12 @@ ___
 ___ 
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Render ( [Vector](Vector.html) Pos, [Vector](Vector.html) TopLeftClamp, [Vector](Vector.html) BottomRightClamp ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](Vector.md) Pos, [Vector](Vector.md) TopLeftClamp, [Vector](Vector.md) BottomRightClamp ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RenderLayer ( int LayerId, [Vector](Vector.html) Pos, [Vector](Vector.html) TopLeftClamp = Vector.Zero, [Vector](Vector.html) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
+#### void RenderLayer ( int LayerId, [Vector](Vector.md) Pos, [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Replace·Spritesheet () {: aria-label='Functions' }
@@ -260,7 +260,7 @@ ___
 ## Variables
 ### Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](Color.html) Color  {: .copyable aria-label='Variables' }
+#### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### FlipX {: aria-label='Variables' }
@@ -275,7 +275,7 @@ ___
 ___ 
 ### Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) Offset  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) Offset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Playback·Speed {: aria-label='Variables' }
@@ -290,6 +290,6 @@ ___
 ___ 
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) Scale  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) Scale  {: .copyable aria-label='Variables' }
 
 ___ 

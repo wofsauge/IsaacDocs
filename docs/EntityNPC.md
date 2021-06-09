@@ -9,12 +9,12 @@
 ___ 
 ### Calc·Target·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) CalcTargetPosition ( float DistanceLimit ) {: .copyable aria-label='Functions' }
+#### [Vector](Vector.md) CalcTargetPosition ( float DistanceLimit ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Can·Be·Damaged·From·Velocity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean CanBeDamagedFromVelocity ( [Vector](Vector.html) Velocity ) {: .copyable aria-label='Functions' }
+#### boolean CanBeDamagedFromVelocity ( [Vector](Vector.md) Velocity ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Can·Reroll () {: aria-label='Functions' }
@@ -24,12 +24,12 @@ ___
 ___ 
 ### Fire·Boss·Projectiles () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityProjectile](EntityProjectile.html) FireBossProjectiles ( int NumProjectiles, [Vector](Vector.html) TargetPos, float TrajectoryModifier, [ProjectileParams](ProjectileParams.html) Params ) {: .copyable aria-label='Functions' }
+#### [EntityProjectile](EntityProjectile.md) FireBossProjectiles ( int NumProjectiles, [Vector](Vector.md) TargetPos, float TrajectoryModifier, [ProjectileParams](ProjectileParams.md) Params ) {: .copyable aria-label='Functions' }
 fire a number of projectiles, optionally targeting the player direction is randomized, or slightly randomized when targeting the player FallingAccelModifier can be used to make projectiles fall faster to the ground returns a pointer to the projectile spawned last (useful e.g. when NumProjectiles=1) 
 ___ 
 ### Fire·Projectiles () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void FireProjectiles ( [Vector](Vector.html) Pos, [Vector](Vector.html) Velocity, ProjectilesMode Mode, [ProjectileParams](ProjectileParams.html) Params ) {: .copyable aria-label='Functions' }
+#### void FireProjectiles ( [Vector](Vector.md) Pos, [Vector](Vector.md) Velocity, ProjectilesMode Mode, [ProjectileParams](ProjectileParams.md) Params ) {: .copyable aria-label='Functions' }
 
 ???- info "ProjectilesMode"
     * 0 : single projectile
@@ -66,7 +66,7 @@ ___
 ___ 
 ### Get·Player·Target () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Entity](Entity.html) GetPlayerTarget ( ) {: .copyable aria-label='Functions' }
+#### [Entity](Entity.md) GetPlayerTarget ( ) {: .copyable aria-label='Functions' }
 if there are no modifiers (best friend) this will return the player 
 ___ 
 ### Is·Boss () {: aria-label='Functions' }
@@ -95,12 +95,12 @@ Forces a non champion to become a champion, resets hp to max hp.
 ___ 
 ### Make·Splat () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityEffect](EntityEffect.html) MakeSplat ( float Size ) {: .copyable aria-label='Functions' }
+#### [EntityEffect](EntityEffect.md) MakeSplat ( float Size ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Morph () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean Morph ( [EntityType](enums/EntityType.html) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
+#### boolean Morph ( [EntityType](enums/EntityType.md) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
 Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions) can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
 A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
@@ -113,22 +113,22 @@ A list of Champion colors can be found here : [ChampionColorIdx](https://binding
 ___ 
 ### Play·Sound () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void PlaySound ( [SoundEffect](enums/SoundEffect.html) ID, float Volume, int FrameDelay, boolean Loop, float Pitch ) {: .copyable aria-label='Functions' }
+#### void PlaySound ( [SoundEffect](enums/SoundEffect.md) ID, float Volume, int FrameDelay, boolean Loop, float Pitch ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Query·NPCs·Group () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.html) QueryNPCsGroup ( int GroupIdx ) {: .copyable aria-label='Functions' }
+#### [EntityList](CppContainer_EntityList.md) QueryNPCsGroup ( int GroupIdx ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Query·NPCs·Spawner·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.html) QueryNPCsSpawnerType ( [EntityType](enums/EntityType.html) SpawnerType, [EntityType](enums/EntityType.html) Type, boolean OnlyEnemies ) {: .copyable aria-label='Functions' }
+#### [EntityList](CppContainer_EntityList.md) QueryNPCsSpawnerType ( [EntityType](enums/EntityType.md) SpawnerType, [EntityType](enums/EntityType.md) Type, boolean OnlyEnemies ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Query·NPCs·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.html) QueryNPCsType ( [EntityType](enums/EntityType.html) Type, int Variant ) {: .copyable aria-label='Functions' }
+#### [EntityList](CppContainer_EntityList.md) QueryNPCsType ( [EntityType](enums/EntityType.md) Type, int Variant ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Path·Finder·Target () {: aria-label='Functions' }
@@ -138,7 +138,7 @@ ___
 ___ 
 ### Throw·Spider () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static ThrowSpider ( [Vector](Vector.html) Position, [Entity](Entity.html) Spawner, [Vector](Vector.html) TargetPos, boolean Big, float YOffset ) {: .copyable aria-label='Functions' }
+#### static ThrowSpider ( [Vector](Vector.md) Position, [Entity](Entity.md) Spawner, [Vector](Vector.md) TargetPos, boolean Big, float YOffset ) {: .copyable aria-label='Functions' }
 
 ___ 
 ## Variables
@@ -149,12 +149,12 @@ ___
 ___ 
 ### Child·NPC {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [EntityNPC](EntityNPC.html) ChildNPC  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### const [EntityNPC](EntityNPC.md) ChildNPC  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___ 
 ### Entity·Ref {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Entity](Entity.html) EntityRef {: .copyable aria-label='Variables' }
+#### [Entity](Entity.md) EntityRef {: .copyable aria-label='Variables' }
 
 ___ 
 ### Group·Idx {: aria-label='Variables' }
@@ -178,12 +178,12 @@ General usage int for AI specific actions. The effect and usage is manually defi
 ___ 
 ### Parent·NPC {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [EntityNPC](EntityNPC.html) ParentNPC  {: .copyable aria-label='Variables' data-altreturn='nil' }
+#### const [EntityNPC](EntityNPC.md) ParentNPC  {: .copyable aria-label='Variables' data-altreturn='nil' }
 parent entity, for multi-entity NPCs like Larry Jr. 
 ___ 
 ### Pathfinder {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [PathFinder](PathFinder.html) Pathfinder  {: .copyable aria-label='Variables' }
+#### [PathFinder](PathFinder.md) Pathfinder  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Projectile·Cooldown {: aria-label='Variables' }
@@ -213,11 +213,11 @@ ___
 ___ 
 ### V1 {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) V1  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) V1  {: .copyable aria-label='Variables' }
 General usage Vector for AI specific actions. Initialized to be Vector(0,0). The effect and usage is manually defined for each entity. It can also not be used at all for some.
 ___ 
 ### V2 {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) V2  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) V2  {: .copyable aria-label='Variables' }
 General usage Vector for AI specific actions. Initialized to be Vector(0,0). The effect and usage is manually defined for each entity. It can also not be used at all for some.
 ___ 

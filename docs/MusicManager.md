@@ -2,9 +2,9 @@
 ## Constructors
 ### Music·Manager () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [MusicManager](MusicManager.html) MusicManager ( ) {: .copyable aria-label='Constructors' }
+#### [MusicManager](MusicManager.md) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [MusicManager](MusicManager.html) object.
+Returns a [MusicManager](MusicManager.md) object.
 
 ???- example "Example Code"
     Example usage:
@@ -16,7 +16,7 @@ ___
 ## Functions
 ### Crossfade () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void Crossfade ( [MusicManager](MusicManager.html) ID, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
+#### void Crossfade ( [MusicManager](MusicManager.md) ID, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Disable () {: aria-label='Functions' }
@@ -41,7 +41,7 @@ ___
 ___ 
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void Fadein ( [MusicManager](MusicManager.html) ID, float Volume = 1, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
+#### void Fadein ( [MusicManager](MusicManager.md) ID, float Volume = 1, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Fadeout () {: aria-label='Functions' }
@@ -51,12 +51,12 @@ ___
 ___ 
 ### Get·Current·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [MusicManager](MusicManager.html) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
+#### [MusicManager](MusicManager.md) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Queued·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [MusicManager](MusicManager.html) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
+#### [MusicManager](MusicManager.md) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
 if nothing is queued, return the current music id 
 ___ 
 ### Is·Enabled () {: aria-label='Functions' }
@@ -81,12 +81,12 @@ ___
 ___ 
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Play ( [MusicManager](MusicManager.html) ID, float Volume ) {: .copyable aria-label='Functions' }
+#### void Play ( [MusicManager](MusicManager.md) ID, float Volume ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Queue () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Queue ( [MusicManager](MusicManager.html) ID ) {: .copyable aria-label='Functions' }
+#### void Queue ( [MusicManager](MusicManager.md) ID ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reset·Pitch () {: aria-label='Functions' }

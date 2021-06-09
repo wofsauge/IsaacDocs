@@ -2,11 +2,11 @@
 ## Constructors
 ### Color () {: aria-label='Constructors' }
 [ ](#){: .rep .tooltip .badge }
-#### [Color](Color.html) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
+#### [Color](Color.md) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Color" class.
 
-When using the [Font](Font.html) class, use [KColor()](KColor.html) instead. 
+When using the [Font](Font.md) class, use [KColor()](KColor.md) instead. 
 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
 
@@ -15,9 +15,9 @@ ___
 ## Operators
 ### __mul () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](Color.html) __mul ( [Color](Color.html) right ) {: .copyable aria-label='Operators' }
+#### [Color](Color.md) __mul ( [Color](Color.md) right ) {: .copyable aria-label='Operators' }
 
-Defines the multiplication of two [Color](Color.html) objects using the `*` operator.
+Defines the multiplication of two [Color](Color.md) objects using the `*` operator.
 ___ 
 ## Constants
 ### Color.Default {: aria-label='Constants' }
@@ -26,7 +26,7 @@ ___
 ## Functions
 ### Lerp () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static [Color](Color.html) Lerp ( [Color](Color.html) m1, [Color](Color.html) m2, float t ) {: .copyable aria-label='Functions' }
+#### static [Color](Color.md) Lerp ( [Color](Color.md) m1, [Color](Color.md) m2, float t ) {: .copyable aria-label='Functions' }
 
 Linear Interpolation between two colors. `:::lua t` is the "progress" of the interpolation. Setting `:::lua t = 0.5` means that the color in the middle of m1 and m2 will be returned.
 ___ 

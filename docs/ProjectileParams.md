@@ -2,7 +2,7 @@
 ## Constructors
 ### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ProjectileParams](ProjectileParams.html) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
+#### [ProjectileParams](ProjectileParams.md) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Variables
@@ -20,8 +20,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
 
-Uses [ProjectileFlags](enums/ProjectileFlags.html) to define the projectile attributes after the "Changed" state was activated.
-The [ProjectileFlag](enums/ProjectileFlags.html).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
+Uses [ProjectileFlags](enums/ProjectileFlags.md) to define the projectile attributes after the "Changed" state was activated.
+The [ProjectileFlag](enums/ProjectileFlags.md).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -30,14 +30,14 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [EntityProjectile](EntityProjectile.html)
+Also used in: [EntityProjectile](EntityProjectile.md)
 ___ 
 ### Change·Timeout {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
 
 Number of frames that need to elapse after spawn till the "Changed" state is activated.
-The [ProjectileFlag](enums/ProjectileFlags.html).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](enums/ProjectileFlags.md).CHANGE_FLAGS_AFTER_TIMEOUT or CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -46,14 +46,14 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [EntityProjectile](EntityProjectile.html)
+Also used in: [EntityProjectile](EntityProjectile.md)
 ___ 
 ### Change·Velocity {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
 
 Velocity value that gets applied when the "Changed" state is activated.
-The [ProjectileFlag](enums/ProjectileFlags.html).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
+The [ProjectileFlag](enums/ProjectileFlags.md).CHANGE_VELOCITY_AFTER_TIMEOUT need to be set to allow for this change to apply!
 ____
 **Informations about "Changed" State:**
 
@@ -62,7 +62,7 @@ Projectiles can have two states: normal (default) and changed.
 
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
-Also used in: [EntityProjectile](EntityProjectile.html)
+Also used in: [EntityProjectile](EntityProjectile.md)
 ___ 
 ### Circle·Angle {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -71,7 +71,7 @@ Angle offset used by fire_projectiles PROJECTILES_CIRCLE type emitter. Random by
 ___ 
 ### Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](Color.html) Color  {: .copyable aria-label='Variables' }
+#### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Curving·Strength {: aria-label='Variables' }
@@ -101,7 +101,7 @@ ___
 ___ 
 ### Fire·Direction·Limit {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) FireDirectionLimit  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) FireDirectionLimit  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Grid·Collision {: aria-label='Variables' }
@@ -121,7 +121,7 @@ Multiplier on normal homing strength. Unused if SMART bullet flag is not set.
 ___ 
 ### Position·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) PositionOffset  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) PositionOffset  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Scale {: aria-label='Variables' }
@@ -136,7 +136,7 @@ For quad/quint/etc spread shots.
 ___ 
 ### Target·Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) TargetPosition  {: .copyable aria-label='Variables' }
+#### [Vector](Vector.md) TargetPosition  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }

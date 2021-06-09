@@ -10,9 +10,9 @@ ___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomDescriptor](RoomDescriptor.html) Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [RoomDescriptor](RoomDescriptor.md) Get ( int idx ) {: .copyable aria-label='Functions' }
 
-Returns a [RoomDescriptor](RoomDescriptor.html) at the index of the list provided.
+Returns a [RoomDescriptor](RoomDescriptor.md) at the index of the list provided.
 
 ___ 
 ## Variables

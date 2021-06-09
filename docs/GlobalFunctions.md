@@ -2,11 +2,11 @@
 ## Constructors
 ### Color () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Color](Color.html) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
+#### [Color](Color.md) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
 
-Constructor for the "[Color](Color.html)" class.
+Constructor for the "[Color](Color.md)" class.
 
-When using the [Font](Font.html) class, use [KColor()](KColor.html) instead. 
+When using the [Font](Font.md) class, use [KColor()](KColor.md) instead. 
 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
 
@@ -16,19 +16,19 @@ RO, GO and BO accept numbers between -255 and 255.
 ___ 
 ### Entity·Ptr () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityPtr](EntityPtr.html) EntityPtr ( [Entity](Entity.html ) ) {: .copyable aria-label='Constructors' }
+#### [EntityPtr](EntityPtr.md) EntityPtr ( [Entity](Entity.md) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Entity·Ref () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityRef](EntityRef.html) EntityRef ( [Entity](Entity.html ) ) {: .copyable aria-label='Constructors' }
+#### [EntityRef](EntityRef.md) EntityRef ( [Entity](Entity.md) ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Font () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Font](Font.html) Font ( ) {: .copyable aria-label='Constructors' }
+#### [Font](Font.md) Font ( ) {: .copyable aria-label='Constructors' }
 
-Constructor for the "[Font](Font.html)" class.
+Constructor for the "[Font](Font.md)" class.
 
 ???- example "Example Code"
     Example usage.
@@ -42,9 +42,9 @@ Constructor for the "[Font](Font.html)" class.
 ___ 
 ### Game () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Game](Game.html) Game ( ) {: .copyable aria-label='Constructors' }
+#### [Game](Game.md) Game ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [Game](Game.html) object.
+Returns a [Game](Game.md) object.
 
 ???- example "Example Code"
     Example usage:
@@ -56,16 +56,16 @@ Returns a [Game](Game.html) object.
 ___ 
 ### KColor () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [KColor](KColor.html) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
+#### [KColor](KColor.md) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
-Constructor for the "[KColor](KColor.html)" class.
-Notes: "[KColor](KColor.html)" is only used in the [Font](Font.html) class. For most other situations you will need to use the [Color()](Color.html) constructor.
+Constructor for the "[KColor](KColor.md)" class.
+Notes: "[KColor](KColor.md)" is only used in the [Font](Font.md) class. For most other situations you will need to use the [Color()](Color.md) constructor.
 ___ 
 ### Music·Manager () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [MusicManager](MusicManager.html) MusicManager ( ) {: .copyable aria-label='Constructors' }
+#### [MusicManager](MusicManager.md) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [MusicManager](MusicManager.html) object.
+Returns a [MusicManager](MusicManager.md) object.
 
 ???- example "Example Code"
     Example usage:
@@ -76,16 +76,16 @@ Returns a [MusicManager](MusicManager.html) object.
 ___ 
 ### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ProjectileParams](ProjectileParams.html) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
+#### [ProjectileParams](ProjectileParams.md) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Register·Mod () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Mod Reference](ModReference.html) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
+#### [Mod Reference](ModReference.md) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
 
 Method to define a mod in the game. This needs to be defined to handle callbacks and save data in your mod.
 
-Returns a table which acts as the [Mod Reference](ModReference.html).
+Returns a table which acts as the [Mod Reference](ModReference.md).
 
 ???- example "Example Code"
     ```lua 
@@ -96,19 +96,19 @@ Returns a table which acts as the [Mod Reference](ModReference.html).
 ___ 
 ### RNG () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RNG](RNG.html) RNG ( ) {: .copyable aria-label='Constructors' }
+#### [RNG](RNG.md) RNG ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Sprite](Sprite.html) Sprite ( ) {: .copyable aria-label='Constructors' }
+#### [Sprite](Sprite.md) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### SFXManager () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [SFXManager](SFXManager.html) SFXManager ( ) {: .copyable aria-label='Constructors' }
+#### [SFXManager](SFXManager.md) SFXManager ( ) {: .copyable aria-label='Constructors' }
 
-Returns a [SFXManager](SFXManager.html) object.
+Returns a [SFXManager](SFXManager.md) object.
 
 ???- example "Example Code"
     Example usage:
@@ -119,7 +119,7 @@ Returns a [SFXManager](SFXManager.html) object.
 ___ 
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) Vector ( float , float ) {: .copyable aria-label='Constructors' }
+#### [Vector](Vector.md) Vector ( float , float ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
@@ -156,6 +156,6 @@ Returns a random integer. (0 to 2^32)
 ___ 
 ### Random·Vector () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) RandomVector ( ) {: .copyable aria-label='Functions' }
+#### [Vector](Vector.md) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___ 

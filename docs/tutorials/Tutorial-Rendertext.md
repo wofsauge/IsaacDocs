@@ -2,7 +2,7 @@
 
 ## Fonts used by the game
 
-The Following fonts are used by the game and can be used with the [`Font()`](../Font.html) class:
+The Following fonts are used by the game and can be used with the [`Font()`](../Font.md) class:
 
 |**Font Name**|**Ingame Name/s**|**Ingame Example**|**Ingame Usage**|**Link to font**|
 |--- |--- |--- |--- |--- |

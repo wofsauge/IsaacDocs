@@ -12,7 +12,7 @@ For items like Jars this holds the number of flies/hearts.
 ___ 
 ### Item {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [CollectibleType](enums/CollectibleType.html) Item {: .copyable aria-label='Variables' }
+#### [CollectibleType](enums/CollectibleType.md) Item {: .copyable aria-label='Variables' }
 
 ___ 
 ### PartialCharge {: aria-label='Variables' }

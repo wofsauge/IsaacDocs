@@ -22,7 +22,7 @@ Use "GetActionValue" instead of this function.
 ___ 
 ### Get·Mouse·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.html) GetMousePosition ( boolean gameCoords ) {: .copyable aria-label='Functions' }
+#### [Vector](Vector.md) GetMousePosition ( boolean gameCoords ) {: .copyable aria-label='Functions' }
 
 Returns the current mouse position in game coordinates (true) or render coordinates.
 
@@ -41,7 +41,7 @@ ___
 
 Returns, if an action-button is pressed or not. An Action-button is any button that got a default function assigned to it. This function will return true, as long the button is held down.
 
-[List of all Action enums](enums/ButtonAction.html)
+[List of all Action enums](enums/ButtonAction.md)
 
 ???- example "Example Code"
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
@@ -58,7 +58,7 @@ ___
 
 Returns, if an action-button was pressed some time before or not. An Action-button is any button that got a default function assigned to it. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
 
-[List of all Action enums](enums/ButtonAction.html)
+[List of all Action enums](enums/ButtonAction.md)
 
 ???- example "Example Code"
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
@@ -75,7 +75,7 @@ ___
 
 Returns, if a button is pressed or not. This function will return true, as long the button is held down.
 
-[List of all Action enums](enums/ButtonAction.html)
+[List of all Action enums](enums/ButtonAction.md)
 
 ???- example "Example Code"
     This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
@@ -92,7 +92,7 @@ ___
 
 Returns, if a button was pressed some time before or not. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
 
-[List of all Action enums](enums/ButtonAction.html)
+[List of all Action enums](enums/ButtonAction.md)
 
 ???- example "Example Code"
     This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
