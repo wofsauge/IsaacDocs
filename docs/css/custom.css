@@ -533,6 +533,7 @@ td>.copyButton>span::after {
 
 .contentTable tr td:first-child {
     text-align: right;
+    white-space: nowrap;
 }
 
 .contentTable tr[aria-label$='Functions'] {
