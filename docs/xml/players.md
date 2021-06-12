@@ -10,7 +10,7 @@ This page needs some content. You can contribute to it using the Edit Button!
 |:--|:--|:--|
 |name|string|Name of the character (has to match the one in CharacterMenu.anm2)|
 |skin|string|Path of the character spritesheet|
-|skinColor|int||
+|skinColor|int|Default skin color of the character (-1 = all, 0 = white, 1 = black, 2 = blue, 3 = red, 4 = green, 5 = grey)|
 |nameimage|string|Name for vs. screen|
 |portrait|string|Portrait for the vs. screen|
 |hp|int|Starting red health (1 = half heart)|
