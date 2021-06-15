@@ -34,11 +34,11 @@
 |[ ](#){: .abrep .tooltip .badge }|1<<28 |FLAG_ADD_JAR_FLY {: .copyable } | Adds a fly to the jar when killed | 
 |[ ](#){: .abrep .tooltip .badge }|1<<29 |FLAG_FRIENDLY {: .copyable } | Charmed and m_CharmCountdown<0 | 
 |[ ](#){: .abrep .tooltip .badge }|1<<30 |FLAG_NO_PHYSICS_KNOCKBACK {: .copyable } | No knockback from general collisions | 
-|[ ](#){: .abrep .tooltip .badge }|1<<31 |FLAG_DONT_COUNT_BOSS_HP {: .copyable } | Do not count boss hp | 
+|[ ](#){: .abrep .tooltip .badge }|1<<31 |FLAG_DONT_COUNT_BOSS_HP {: .copyable } | Do not count boss hp. If all boss entities have this tag, the boss hp bar is hidden | 
 |[ ](#){: .abrep .tooltip .badge }|1<<32 |FLAG_NO_SPRITE_UPDATE {: .copyable } | Do not update sprite animation | 
 |[ ](#){: .abrep .tooltip .badge }|1<<33 |FLAG_CONTAGIOUS {: .copyable } | Used for Contagious item (if the enemy is infected) | 
 |[ ](#){: .abrep .tooltip .badge }|1<<34 |FLAG_BLEED_OUT {: .copyable } | Used for Mom's Razor | 
-|[ ](#){: .abrep .tooltip .badge }|1<<35 |FLAG_HIDE_HP_BAR {: .copyable } | Added for Ultra Greed so his HP can be hidden after he "dies" since his entity sticks around | 
+|[ ](#){: .abrep .tooltip .badge }|1<<35 |FLAG_HIDE_HP_BAR {: .copyable } | Hides the Spider Mod hp bar of an EntityNPC | 
 |[ ](#){: .abrep .tooltip .badge }|1<<36 |FLAG_NO_DAMAGE_BLINK {: .copyable } | Player was given a short period of invulnerability by something other than damage, don't blink | 
 |[ ](#){: .abrep .tooltip .badge }|1<<37 |FLAG_PERSISTENT {: .copyable } | The entity will persists between rooms. (It will appear in every room, as opposed to the game remembering the specific room that it was spawned in.) | 
 |[ ](#){: .rep .tooltip .badge }|1<<38 |FLAG_BACKDROP_DETAIL {: .copyable } | Was spawned as a backdrop decoration, should be deleted if the current backdrop changes (due to Delirium) | 
