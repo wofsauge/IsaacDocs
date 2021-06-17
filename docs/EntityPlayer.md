@@ -672,7 +672,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Card](enums/Card.md) GetCard ( int SlotId ) {: .copyable aria-label='Functions' data-altreturn='0' }
 
-Gets the ID of the card the player is holding in the given itemslot (0 or 1). Returns `0` when no card is held in the slot.
+Gets the ID of the card the player is holding in the given itemslot (0 = Main slot, 1 = secondary slot, 2 or 3). Returns `0` when no card is held in the slot.
 ___ 
 ### Get·Card·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -938,7 +938,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [PillColor](enums/PillColor.md) GetPill ( int SlotId ) {: .copyable aria-label='Functions' data-altreturn='0' }
 
-Gets the ID of the pill the player is holding in the given itemslot (0 or 1). Returns `0` when no pill is held in the given slot.
+Gets the ID of the pill the player is holding in the given itemslot (0 = Main slot, 1 = secondary slot, 2 or 3) Returns `0` when no pill is held in the given slot.
 ___ 
 ### Get·Pill·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
