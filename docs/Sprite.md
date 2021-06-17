@@ -207,7 +207,10 @@ ___
 ___ 
 ### Set·Animation () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean SetAnimation ( string AnimationName ) {: .copyable aria-label='Functions' }
+#### boolean SetAnimation ( string AnimationName, boolean Reset = true ) {: .copyable aria-label='Functions' }
+
+???+ note "Notes"
+    Passing Reset as false will continue the animation from the current frame. This is a really good tool for familiars that alternate between different FloatDirection animations dynamically and other entities that follow similar behaviors.
 
 ___ 
 ### Set·Frame () {: aria-label='Functions' }
