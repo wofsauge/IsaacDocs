@@ -60,7 +60,7 @@ nav:
             - "GridRooms": enums/GridRooms.md
             - "HeartSubType": enums/HeartSubType.md
             - "InputHook": enums/InputHook.md
-            - "ItemConfigEnums": enums/ItemConfig.md
+            - "ItemConfig": enums/ItemConfig.md
             - "ItemPoolType": enums/ItemPoolType.md
             - "ItemType": enums/ItemType.md
             - "Keyboard": enums/Keyboard.md

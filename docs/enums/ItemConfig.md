@@ -2,6 +2,17 @@
 
 The "ItemConfig" Class has separate Enums that are used for special information handling.
 
+All enums in this file are part of the "**ItemConfig**" enum.
+
+???+ example "Example usage:"
+
+    ```lua
+    local sadOnionConfig = Isaac.GetItemConfig():GetCollectible(1)
+    if sadOnionConfig.Tags & ItemConfig.TAG_SUMMONABLE == ItemConfig.TAG_SUMMONABLE then
+        print("This item has the tag 'summonable'")
+    end
+    ``` 
+
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|0 |CHARGE_NORMAL {: .copyable } |  | 
