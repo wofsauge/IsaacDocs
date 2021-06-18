@@ -60,13 +60,13 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void DebugString ( string str ) {: .copyable aria-label='Functions' }
 
-Prints a string into the log file. You can find this file here `:::lua C:\Users\Jan\Documents\My Games\Binding of Isaac Afterbirth+\log.txt` 
+Prints a string into the log file. You can find this file here `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt` 
 
 ???- example "Example Code"
     This code prints `:::lua "This is a Test."` in the log.txt file.
     ```lua 
     Isaac.DebugString("This is a Test.")
-    -- Output: Lua Debug: This is a Test.
+    -- Output: [INFO] - Lua Debug: This is a Test.
     
     ```
 
