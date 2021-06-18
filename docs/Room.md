@@ -164,7 +164,7 @@ ___
 #### [EntityList](CppContainer_EntityList.md) GetEntities ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
-    This function returns userdata, which can't be processed. Use [Isaac.GetRoomEntities()](Isaac.md#getroomentities) instead!
+    This function is bugged and you should use [Isaac.GetRoomEntities()](Isaac.md#getroomentities) instead!
 
 ___ 
 ### Get·Frame·Count () {: aria-label='Functions' }

@@ -42,7 +42,7 @@ ___
 #### int CountEnemies ( ) {: .copyable aria-label='Functions' }
 
 Returns the number of enemies in the current room.
-___ 
+___
 ### Count·Entities () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int CountEntities ( [Entity](Entity.md) Spawner, [EntityType](enums/EntityType.md) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
@@ -51,6 +51,10 @@ Returns the number of entities in the current room that fulfill the specified re
 Spawner refers to an entity object (can be `:::lua nil`) 
 Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`) 
 Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`) 
+
+???+ bug "Bugs"
+    This function is broken as of now and can return values from other segments of game's memory
+
 ___ 
 ### Debug·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -327,6 +331,7 @@ ___
 #### int GetTime ( ) {: .copyable aria-label='Functions' }
 
 Returns the current game time in milliseconds. This includes pauses!
+Is actually a binding to the os.clock() function that is not available without --luadebug
 ___ 
 ### Get·Trinket·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
