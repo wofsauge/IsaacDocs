@@ -276,7 +276,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetNextStage ( ) {: .copyable aria-label='Functions' }
 
-This function teleports you directly to the next stage without playing the leveltransition or updating the floors backdrop. Use other functions to fix those issues.
+This function puts you in the next stage without applying any of the floor changes except visuals until you use StartStageTransition()
 ___ 
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
