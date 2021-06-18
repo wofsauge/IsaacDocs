@@ -19,7 +19,9 @@
     var __search = {
         transform: function(query) {
             query = query.replace("_", " ")
-                /* Original Search query filter code*/
+            query = query + "^5 " + query // increase priority of query words in order to prefer matches with page titles. this makes the sorting better
+
+            /* Original Search query filter code*/
             return query
                 .split(/"([^"]+)"/g) /* => 1 */
                 .map((terms, index) => index & 1 ?
