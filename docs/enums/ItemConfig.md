@@ -2,7 +2,7 @@
 
 The "ItemConfig" Class has separate Enums that are used for special information handling.
 
-All enums in this file are part of the "**ItemConfig**" enum.
+Even though they have different prefixes, all enums on this page are part of the "**ItemConfig**" enum.
 
 ???+ example "Example usage:"
 
