@@ -74,6 +74,7 @@ ___
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
+
 		* -1: Current dimension
 		* 0: Main dimension
 		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
@@ -471,6 +472,7 @@ ___
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
+
 		* -1: Current dimension
 		* 0: Main dimension
 		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
@@ -480,17 +482,29 @@ ___
     Available Animation types (Discovered by "ilise rose" (@yatboim)):
     
     0: (Default) Standard transition, sweeps the room in from a direction
+
     1: (Fade) Fade to black transition, like its used for the "goto" - console command
+
     2: (Stage) Pixel out transition, like used for crawlspaces and the trapdoor at the end of floors
+
     3: (Teleport) teleport transition, isaac teleports out of the current room and into the next
+
     5: (Ankh) Same as standard transition
+
     6: (Dead Cat) Same as standard transition
+
     7: (1Up) Same as standard transition
+
     8: (Guppys Collar) Same as standard transition
+
     9: (Judas Shadow) Same as standard transition
+
     10: (Lazarus Rags) Same as standard transition
+
     12: (Glowing Hourglass) Same as standard transition
+
     13: (D7) Same as standard transition
+    
     14: (Missing Poster) Same as standard transition
 
 ???+ bug "Bugs"

@@ -5,6 +5,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTags ( int Tags ) {: .copyable aria-label='Functions' }
 
+___ 
 ### Is·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }

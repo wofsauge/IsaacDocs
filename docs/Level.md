@@ -64,6 +64,7 @@ ___
     
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
+
 		* -1: Current dimension
 		* 0: Main dimension
 		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
@@ -180,6 +181,7 @@ ___
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
+    
 		* -1: Current dimension
 		* 0: Main dimension
 		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
