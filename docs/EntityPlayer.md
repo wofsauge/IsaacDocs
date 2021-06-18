@@ -289,7 +289,7 @@ ___
 ___ 
 ### Add·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddNullCostume ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
+#### void AddNullCostume ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
 for Lua 
 ___ 
 ### Add·Pill () {: aria-label='Functions' }
@@ -1448,7 +1448,7 @@ Tries to remove a costume of the given collectible. `KeepPersistent` is used to 
 ___ 
 ### Try·Remove·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void TryRemoveNullCostume ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
+#### void TryRemoveNullCostume ( ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Remove·Trinket () {: aria-label='Functions' }
