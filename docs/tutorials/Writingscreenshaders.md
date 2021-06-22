@@ -65,7 +65,17 @@ uniform sampler2D Texture0;
 
 Because of engine limitation we can only pass data through the vertex shader.
 
-An example of a shader with custom parameters:
+## Shader Example Code:
+An example of a shader with custom parameters that changes the color tint of the screen based on the player position and the ingame framecounter.
+
+Code: [→ Download this example mod here ←](../customData/shader_example_mod.zip)
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" style="width:25rem">
+    <source src="../customData/shader example preview.mp4" type="video/mp4">
+  </video>
+  <figcaption>Result of this shader.</figcaption>
+</figure>
+
 
 ```xml
 <shaders>
