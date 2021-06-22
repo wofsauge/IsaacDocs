@@ -1,5 +1,9 @@
 # Tutorial: Writing screen shaders
 
+## Example Shaders:
+* Tilt Shift Shader: https://steamcommunity.com/sharedfiles/filedetails/?id=2524003926
+
+## Create your own shader:
 **Reload shaders of mods via console command:** `reloadshaders`
 
 In order to write your screen shader you need to create '_shaders.xml_' in the '_content_' folder that is part of your **Mod folder**.
