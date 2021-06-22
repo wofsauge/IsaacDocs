@@ -1,7 +1,7 @@
 # Tutorial: Writing screen shaders
 
 ## Example Shaders:
-* Tilt Shift Shader: https://steamcommunity.com/sharedfiles/filedetails/?id=2524003926
+* Tilt Shift Shader by im_tem: [https://steamcommunity.com/sharedfiles/filedetails/?id=2524003926](https://steamcommunity.com/sharedfiles/filedetails/?id=2524003926)
 
 ## Create your own shader:
 **Reload shaders of mods via console command:** `reloadshaders`
