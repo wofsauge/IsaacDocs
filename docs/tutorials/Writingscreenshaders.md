@@ -79,55 +79,55 @@ Code: [→ Download this example mod here ←](../customData/shader_example_mod.
 
 ```xml
 <shaders>
-    <shader name="RandomColors">
-        <parameters>
-            <param name="PlayerPos" type="vec2"/>
-            <param name="Time" type="float"/>
-        </parameters>
-        <vertex><![CDATA[
-            attribute vec3 Position;                                        
-            attribute vec4 Color;                                           
-            attribute vec2 TexCoord;                                        
-            attribute vec4 RenderData;                                                                  
-            attribute float Scale;
-            attribute vec2 PlayerPos;
-            attribute float Time;
-            varying vec4 Color0;                                            
-            varying vec2 TexCoord0;                                     
-            varying vec4 RenderDataOut; 
-            varying float ScaleOut;
-            varying vec2 PlayerPosOut;
-            varying float TimeOut;
-            uniform mat4 Transform;                                     
-            void main(void)                                             
-            {                                                               
-                RenderDataOut = RenderData;                             
-                ScaleOut = Scale;         // Passing data to fragment shader    
-                PlayerPosOut = PlayerPos; // Passing data to fragment shader
-                TimeOut = Time;           // Passing data to fragment shader
-                Color0 = Color;                                             
-                TexCoord0 = TexCoord;
-                gl_Position = Transform * vec4(Position.xyz, 1.0);          
-            }
-        ]]></vertex>
-        <fragment><![CDATA[
-            varying lowp vec4 Color0;                                       
-            varying mediump vec2 TexCoord0;                             
-            varying lowp vec4 RenderDataOut;
-            varying lowp float ScaleOut;            
-            varying mediump vec2 PlayerPosOut;
-            varying lowp float TimeOut; 
-            uniform sampler2D Texture0;                                         
-            void main(void)                                             
-            {                                                               
-                vec4 Color = Color0 * texture2D(Texture0, TexCoord0);       
-                Color.r *= PlayerPosOut.x * 0.5f;
-                Color.g *= PlayerPosOut.y * 0.5f;
-                Color.b *= sin(TimeOut * 0.1f);
-                gl_FragColor = Color;
-            }
-        ]]></fragment>
-    </shader>
+	<shader name="RandomColors">
+		<parameters>
+			<param name="PlayerPos" type="vec2"/>
+			<param name="Time" type="float"/>
+		</parameters>
+		<vertex><![CDATA[
+			attribute vec3 Position;
+			attribute vec4 Color;
+			attribute vec2 TexCoord;
+			attribute vec4 RenderData;
+			attribute float Scale;
+			attribute vec2 PlayerPos;
+			attribute float Time;
+			varying vec4 Color0;
+			varying vec2 TexCoord0;
+			varying vec4 RenderDataOut;
+			varying float ScaleOut;
+			varying vec2 PlayerPosOut;
+			varying float TimeOut;
+			uniform mat4 Transform;
+			void main(void)
+			{
+				RenderDataOut = RenderData;
+				ScaleOut = Scale;			// Passing data to fragment shader
+				PlayerPosOut = PlayerPos;	// Passing data to fragment shader
+				TimeOut = Time;				// Passing data to fragment shader
+				Color0 = Color;
+				TexCoord0 = TexCoord;
+				gl_Position = Transform * vec4(Position.xyz, 1.0);
+			}
+		]]></vertex>
+		<fragment><![CDATA[
+			varying lowp vec4 Color0;
+			varying mediump vec2 TexCoord0;
+			varying lowp vec4 RenderDataOut;
+			varying lowp float ScaleOut;
+			varying mediump vec2 PlayerPosOut;
+			varying lowp float TimeOut;
+			uniform sampler2D Texture0;
+			void main(void)
+			{
+				vec4 Color = Color0 * texture2D(Texture0, TexCoord0);
+				Color.r *= PlayerPosOut.x * 0.5f;
+				Color.g *= PlayerPosOut.y * 0.5f;
+				Color.b *= sin(TimeOut * 0.1f);
+				gl_FragColor = Color;
+			}
+		]]></fragment>
+	</shader>
 </shaders>
 ```
 
@@ -135,12 +135,15 @@ To pass the parameters we use the following Lua code:
 ```lua
 local mod = RegisterMod("ShaderMod", 1)
 function mod:GetShaderParams(shaderName)
-    local params = { 
-        PlayerPos = { Isaac.GetPlayer(0).Position.X / 100.0,
-                   Isaac.GetPlayer(0).Position.Y / 100.0 },
-                    Time = Isaac.GetFrameCount()
-        }
-    return params;
+	if shaderName == 'RandomColors' then
+        local playerPos = Isaac.GetPlayer(0).Position
+        local params = { 
+            PlayerPos = {   playerPos.X / 100.0,
+                            playerPos.Y / 100.0 },
+                            Time = Isaac.GetFrameCount()
+            }
+        return params;
+    end
 end
 mod:AddCallback(ModCallbacks.MC_GET_SHADER_PARAMS, mod.GetShaderParams)
 ```
