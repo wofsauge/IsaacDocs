@@ -23,13 +23,14 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 | blackhearts | int |  |
 | maxhearts |  | number of added heart containers (not full by default) |
 | maxcharges | int | |
-| chargetype | string | Possible values: [timed, special]|
+| chargetype | string | Possible values: [normal, timed, special]|
 | cooldown | int | frames duration of the effect |
 | passivecache | bool | calls a cache evaluation when picked up (Ex: mom's box) |
 | special | bool |  |
 | initcharge | int | (Example: Everything Jar[ ](#){: .rep .tooltip .badge }) |
-| devilprice | int | Posible values: ['1','2'] |
+| devilprice | int | Possible values: ['1','2'] |
 | shopprice | int |  |
 | addcostumeonpickup | bool |  |
 | persistent | bool | allows the effect to persist between rooms |
 | achievement | int | tie the item to be unlocked by a vanilla achievement |
+| quality | int | Possible values: ['0', '1', '2', '3', '4']
