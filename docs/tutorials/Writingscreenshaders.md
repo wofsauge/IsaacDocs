@@ -2,6 +2,7 @@
 
 ## Example Shaders:
 * Tilt Shift Shader by im_tem: [https://steamcommunity.com/sharedfiles/filedetails/?id=2524003926](https://steamcommunity.com/sharedfiles/filedetails/?id=2524003926)
+* Vortex Street background shader by Wofsauge [Preview Video](../customData/Vortex_Street_shader.mp4) - [Code](../customData/vortex_street_shader.zip) - [Original shader source](https://www.shadertoy.com/view/MlS3Rh)
 
 ## Create your own shader:
 **Reload shaders of mods via console command:** `reloadshaders`
