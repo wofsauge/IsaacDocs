@@ -400,11 +400,14 @@ ___
 ___ 
 ### Show·Hallucination () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ShowHallucination ( int FrameCount, BackdropType Backdrop = BackdropType.NUM_BACKDROPS ) {: .copyable aria-label='Functions' }
+#### void ShowHallucination ( int FrameCount, [BackdropType](enums/BackdropType.md) Backdrop = BackdropType.NUM_BACKDROPS ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
 
-???- example "Example Code"
+???- example "Workaround Code for AB+ mods"
+    This function was broken in AB+, so there was this implementation in order to recreate the effect.
+    
     This code emulated the effect of this function by hijacking the Delirious item effect
+    
     ```lua 
     local usagetime = -1 -- stores the last time the effect was called.
     
@@ -425,10 +428,6 @@ Plays the Delirium animation (Static noise intersected with past gameplay fotage
     mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.onFriendlyInit)
     
     ```
-
-
-???+ bug "Bugs"
-    This function does not work and will crash your game on use!
 ___ 
 ### Show·Rule () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
