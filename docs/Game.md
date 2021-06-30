@@ -227,7 +227,7 @@ ___
 #### [LevelStage](enums/LevelStage.md) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
 
-???- note "Notes"
+???+ bug "bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Last·Level·With·Damage () {: aria-label='Functions' }
