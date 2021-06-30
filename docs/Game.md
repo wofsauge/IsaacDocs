@@ -222,12 +222,11 @@ ___
 #### [ItemPool](ItemPool.md) GetItemPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Level·Stage () {: aria-label='Functions' }
+### Get·Last·Devil·Room·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
-
-???+ bug "bug"
+???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Last·Level·With·Damage () {: aria-label='Functions' }
