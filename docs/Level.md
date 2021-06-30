@@ -359,7 +359,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int EnterDoor  {: .copyable aria-label='Variables' }
 
-    This value defines on which doorslot you entered the room.
+This value defines on which doorslot you entered the room.
 
 ???+ bug "Bugs"
     Changing this value has no impact on anything. the EnterDoor value is always determined by the LeaveDoor Value and the game itself.
@@ -373,7 +373,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int LeaveDoor  {: .copyable aria-label='Variables' }
 
-    This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
+This value defines on which doorslot you are positioned after the transition. You will always end up at the oposite side of the door specified. Example: LeaveDoor=1 (Up0) will position you at Doorslot Down0 (Logic: Doorslot+2)
 
 ???- note "Notes"
     if level.LeaveDoor is set to anything other than -1, the function will transition based on the room you are currently in.
