@@ -374,7 +374,7 @@ ___
 ___ 
 ### Reroll·Enemy () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean RerollEnemy ( [Entity](Entity.md) Enemy ) {: .copyable aria-label='Functions' }
+#### boolean RerollEnemy ( [Entity](Entity.md) e ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Reroll·Level·Collectibles () {: aria-label='Functions' }
