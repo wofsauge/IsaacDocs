@@ -135,11 +135,23 @@ ___
 ### Fadeout () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Fadeout ( float Speed, FadeoutTarget Target ) {: .copyable aria-label='Functions' }
-
+???+ note "Notes"
+	FadeoutTarget types:
+	
+	0: File Select Menu
+	
+	1: File Selected Menu (New run, Start game, etc.)
+	
+	2: Title
+	
+	3: New Game (Starts a new run)
+	
+	4: Victory lap
+	
 ___ 
 ### Fart () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void Fart ( [Vector](Vector.md) Position, float Radius = 85, Entity Source = nil, float FartScale = 1, int FartSubType = 0, [Color](Color.md) FartColor = Color.Default ) {: .copyable aria-label='Functions' }
+#### void Fart ( [Vector](Vector.md) Position, float Radius = 85, [Entity](Entity.md) Source = nil, float FartScale = 1, int FartSubType = 0, [Color](Color.md) FartColor = Color.Default ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Finish·Challenge () {: aria-label='Functions' }
@@ -150,6 +162,8 @@ ___
 ### Get·Ambush () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### Ambush GetAmbush ( ) {: .copyable aria-label='Functions' }
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 
 ___ 
 ### Get·Darkness·Modifier () {: aria-label='Functions' }
@@ -215,6 +229,8 @@ ___
 ### Get·Item·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### ItemOverlay GetItemOverlay ( ) {: .copyable aria-label='Functions' }
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 
 ___ 
 ### Get·Item·Pool () {: aria-label='Functions' }
@@ -233,11 +249,15 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Level () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -461,12 +481,12 @@ ___
 ___ 
 ### Spawn·Particles () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void SpawnParticles ( [Vector](Vector.md) Pos, EffectVariant ParticleType, int NumParticles, float Speed, [Color](Color.md) Color = Color.Default, float Height = 100000, int SubType = 0 ) {: .copyable aria-label='Functions' }
+#### void SpawnParticles ( [Vector](Vector.md) Pos, [EffectVariant](enums/EffectVariant.md) ParticleType, int NumParticles, float Speed, [Color](Color.md) Color = Color.Default, float Height = 100000, int SubType = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Start·Room·Transition () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, RoomTransitionAnim Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+#### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, [RoomTransitionAnim](enums/RoomTransitionAnim.md) Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
