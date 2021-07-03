@@ -466,7 +466,7 @@ ___
 ___ 
 ### Start·Room·Transition () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, RoomTransitionAnim Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+#### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, [RoomTransitionAnim](enums/RoomTransitionAnim.md) Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
