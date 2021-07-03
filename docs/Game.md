@@ -249,11 +249,15 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Level () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
