@@ -8,6 +8,9 @@ ___
 ### Add·Room·Blacklist () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddRoomBlacklist ( [CollectibleType](enums/CollectibleType.md) Item ) {: .copyable aria-label='Functions' }
+Adds a given item to the blacklist. This item can no longer be chosen from itempools while the player is inside the current room. This effectively prevents the item from appearing.
+
+When the player changes the room, the Blacklist gets reset.
 
 ___ 
 ### Force·Add·Pill·Effect () {: aria-label='Functions' }
@@ -74,6 +77,9 @@ ___
 ### Reset·Room·Blacklist () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ResetRoomBlacklist ( ) {: .copyable aria-label='Functions' }
+Clears the current item black list.
+
+When the player changes the room, this function gets called automatically.
 
 ___ 
 ### Reset·Trinkets () {: aria-label='Functions' }
