@@ -46,6 +46,33 @@
 * [simple mod loader](https://moddingofisaac.com/mod/1568/) : Tool to install and manage Mods
 * [Itempool Editor+](https://moddingofisaac.com/mod/1498/itempool-editor-) : Itempool editor with graphics based UI
 
+## Binding of Isaac (Flash Version)
+### Spider Mod
+**Download Link:** [Spider Mod v09.1 for WotL 1.48](https://mega.nz/file/gYhTCbLK#AOBnB6qYxkBWXGhLmMFPHsEF8N-RmD7qoqAJi8s3GBs)
+
+Extended version of the default game with extra features, bugfixes and modding support. Its a standalone application and does work without having the main game installed. 
+
+This does not contain or work with the Eternal Update! 
+
+#### Install instructions (not verified / propably needs work)
+1. Download and unpack the zip file in any folder and directory you want.
+3. You may need to install Adobe Flash Player, for it to work. This can be a bit complicated because Flash Player is no longer access and downloadable because Flash is no longer supported.
+2. You may also need to set your Windows system time back to 2018, since Flash player is no longer supposed to work on newer systems
+4. Start the "Binding of Isaac WOTL SpiderMod.exe" file to play the mod
+
+If the window doesn't display anything or you have some "Class not registered" error, download Adobe Flash Player for **Internet Explorer**. Link [!PUT LINK HERE!]
+
+### Community Remix mod
+**Download Link:** [Community Remix mod](https://mega.nz/file/Xp00AIjL#FP_8hI46jtN_zB0O1C8Z2neU55hQdWr1oqOgoua8gEk)
+
+A mod that adds a lot of new content to the game. **Requires Spider Mod to work!**
+
+#### Installation instructions
+1. Download and unpack Spider Mod
+2. Download Community Remix mod
+3. Replace `.../Spidermod/Data/IsaacSpiderMod.isc` with the downloaded Community Remix mod file or the same name
+4. Start Spider mod
+
 ##  Misc
 
 * [Run Tracker](https://moddingofisaac.com/mod/900/the-finding-of-items) : Provides informations about your Runs and your savegames

@@ -100,7 +100,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
 
-Returns the CardID based on its hud value. (File: pocketitems.xml)
+Returns the CardID based on its hud value. (File: pocketitems.xml) Returns `-1` if no card with that name could be found.
 
 ???- note "Notes"
     The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.
@@ -123,7 +123,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetChallengeIdByName ( string challengeName ) {: .copyable aria-label='Functions' }
 
-Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)
+Returns the ChallengeID of a challenge based on its name. (File: challenges.xml) Returns `-1` if no challenge with that name could be found.
 
 ???- example "Example Code"
     This code gets the ChallengeID of Aprils fool. 
@@ -138,7 +138,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCostumeIdByPath ( string path ) {: .copyable aria-label='Functions' }
 
-Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
+Returns the CostumeID of a costume based on its file path. (File: costumes2.xml) Returns `-1` if no costume with that path could be found.
 
 ???- example "Example Code"
     This code gets the CostumeID of the Poop transformation costume.
@@ -153,7 +153,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCurseIdByName ( string curseName ) {: .copyable aria-label='Functions' }
 
-Returns the CurseID of a curse based on its name. (File: curses.xml)
+Returns the CurseID of a curse based on its name. (File: curses.xml) Returns `-1` if no curse with that name could be found.
 
 ???- example "Example Code"
     This code gets the CurseID of Curse of the Unknown.
@@ -168,7 +168,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetEntityTypeByName ( string entityName ) {: .copyable aria-label='Functions' }
 
-Returns the EntityType of an entity based on its name. (File: entities2.xml)
+Returns the EntityType of an entity based on its name. (File: entities2.xml) Returns `0` if no entity with that name could be found.
 
 ???- note "Notes"
     There is no SubType version of this function.
@@ -186,7 +186,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetEntityVariantByName ( string entityName ) {: .copyable aria-label='Functions' }
 
-Returns the variant of an entity based on its name. (File: entities2.xml)
+Returns the variant of an entity based on its name. (File: entities2.xml) Returns `-1` if no entity with that name could be found.
 
 ???- note "Notes"
     There is no SubType version of this function.
@@ -222,7 +222,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetItemIdByName ( string itemName ) {: .copyable aria-label='Functions' }
 
-Returns the ItemID of a Collectible. (File: items.xml)
+Returns the ItemID of a Collectible. (File: items.xml) Returns `-1` if no item with that name could be found.
 
 ???- example "Example Code"
     This code gets the ItemID of Brimstone.
@@ -237,7 +237,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetMusicIdByName ( string musicName ) {: .copyable aria-label='Functions' }
 
-Returns the MusicID of a music track. (File: music.xml)
+Returns the MusicID of a music track. (File: music.xml) Returns `-1` if no music with that name could be found.
 
 ???- example "Example Code"
     This code gets the MusicID of the Title Screen.
@@ -252,7 +252,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetPillEffectByName ( string pillEffect ) {: .copyable aria-label='Functions' }
 
-Returns the PillEffectID based on its name. (File: pocketitems.xml)
+Returns the PillEffectID based on its name. (File: pocketitems.xml) Returns `-1` if no pill with that name could be found.
 
 ???- example "Example Code"
     This code gets the PillEffectID of I can see forever!.
@@ -284,7 +284,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [PlayerType](enums/PlayerType.md) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
 
-Returns the PlayerType (ID) of a character based on its name. (File: players.xml)
+Returns the PlayerType (ID) of a character based on its name. (File: players.xml) Returns `-1` if no player with that name could be found.
 
 ???- example "Example Code"
     This code gets the PlayerType of Azazel. 
@@ -310,7 +310,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetSoundIdByName ( string soundName ) {: .copyable aria-label='Functions' }
 
-Returns the SoundEffectID of a sound based on its name. (File: sounds.xml)
+Returns the SoundEffectID of a sound based on its name. (File: sounds.xml) Returns `-1` if no sound with that name could be found.
 
 ???- example "Example Code"
     This code gets the SoundEffectID of a sound named "Custom Sound Effect"
@@ -337,7 +337,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTrinketIdByName ( string trinketName ) {: .copyable aria-label='Functions' }
 
-Returns the TrinketType of a trinket based on its name. (File: items.xml)
+Returns the TrinketType of a trinket based on its name. (File: items.xml) Returns `-1` if no trinket with that name could be found.
 
 ???- example "Example Code"
     This code gets the TrinketType of Lucky Toe. 

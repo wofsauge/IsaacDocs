@@ -135,11 +135,23 @@ ___
 ### Fadeout () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Fadeout ( float Speed, FadeoutTarget Target ) {: .copyable aria-label='Functions' }
-
+???+ note "Notes"
+	FadeoutTarget types:
+	
+	0: File Select Menu
+	
+	1: File Selected Menu (New run, Start game, etc.)
+	
+	2: Title
+	
+	3: New Game (Starts a new run)
+	
+	4: Victory lap
+	
 ___ 
 ### Fart () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void Fart ( [Vector](Vector.md) Position, float Radius = 85, Entity Source = nil, float FartScale = 1, int FartSubType = 0, [Color](Color.md) FartColor = Color.Default ) {: .copyable aria-label='Functions' }
+#### void Fart ( [Vector](Vector.md) Position, float Radius = 85, [Entity](Entity.md) Source = nil, float FartScale = 1, int FartSubType = 0, [Color](Color.md) FartColor = Color.Default ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Finish·Challenge () {: aria-label='Functions' }
@@ -150,6 +162,8 @@ ___
 ### Get·Ambush () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### Ambush GetAmbush ( ) {: .copyable aria-label='Functions' }
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 
 ___ 
 ### Get·Darkness·Modifier () {: aria-label='Functions' }
@@ -215,6 +229,8 @@ ___
 ### Get·Item·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### ItemOverlay GetItemOverlay ( ) {: .copyable aria-label='Functions' }
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 
 ___ 
 ### Get·Item·Pool () {: aria-label='Functions' }
@@ -222,23 +238,26 @@ ___
 #### [ItemPool](ItemPool.md) GetItemPool ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Level·Stage () {: aria-label='Functions' }
+### Get·Last·Devil·Room·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
-
-???- note "Notes"
+???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Last·Level·With·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Level () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -400,11 +419,14 @@ ___
 ___ 
 ### Show·Hallucination () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ShowHallucination ( int FrameCount, BackdropType Backdrop = BackdropType.NUM_BACKDROPS ) {: .copyable aria-label='Functions' }
+#### void ShowHallucination ( int FrameCount, [BackdropType](enums/BackdropType.md) Backdrop = BackdropType.NUM_BACKDROPS ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
 
-???- example "Example Code"
+???- example "Workaround Code for AB+ mods"
+    This function was broken in AB+, so there was this implementation in order to recreate the effect.
+    
     This code emulated the effect of this function by hijacking the Delirious item effect
+    
     ```lua 
     local usagetime = -1 -- stores the last time the effect was called.
     
@@ -425,10 +447,6 @@ Plays the Delirium animation (Static noise intersected with past gameplay fotage
     mod:AddCallback(ModCallbacks.MC_POST_NPC_INIT, mod.onFriendlyInit)
     
     ```
-
-
-???+ bug "Bugs"
-    This function does not work and will crash your game on use!
 ___ 
 ### Show·Rule () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -463,12 +481,12 @@ ___
 ___ 
 ### Spawn·Particles () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void SpawnParticles ( [Vector](Vector.md) Pos, EffectVariant ParticleType, int NumParticles, float Speed, [Color](Color.md) Color = Color.Default, float Height = 100000, int SubType = 0 ) {: .copyable aria-label='Functions' }
+#### void SpawnParticles ( [Vector](Vector.md) Pos, [EffectVariant](enums/EffectVariant.md) ParticleType, int NumParticles, float Speed, [Color](Color.md) Color = Color.Default, float Height = 100000, int SubType = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Start·Room·Transition () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, RoomTransitionAnim Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+#### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, [RoomTransitionAnim](enums/RoomTransitionAnim.md) Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
