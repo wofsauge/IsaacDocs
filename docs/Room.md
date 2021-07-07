@@ -332,6 +332,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Calling this function crashes the game
+
 ___ 
 ### Get·Shop·Level () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
