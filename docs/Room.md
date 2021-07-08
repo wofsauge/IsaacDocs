@@ -441,9 +441,9 @@ ___
 #### void KeepDoorsClosed ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Mama·Mega·Explossion () {: aria-label='Functions' }
+### Mama·Mega·Explosion () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void MamaMegaExplossion ( ) {: .copyable aria-label='Functions' }
+#### void MamaMegaExplosion ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Music () {: aria-label='Functions' }
