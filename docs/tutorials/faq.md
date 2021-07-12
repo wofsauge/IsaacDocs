@@ -1,6 +1,6 @@
 # Modding FAQ
 
-## Afterbirth+
+## Repentance
 
 ### Do mods disable Achievements? {: .subHeader}
 **Mods don't disable achievements**, as long as you have killed mom (Endboss of Necropolis or Depths 2) at least once on the savefile. Killing her on challenges or dailies doesnt count.
@@ -25,17 +25,23 @@ For a list of console commands, take a look at the wiki: [BoI Wiki](https://bind
 All mods are located in this location:
 
 :fontawesome-brands-windows: **Windows**:
-```lua
+```
+Repentance:
+...\Steam\steamapps\common\The Binding of Isaac Rebirth\mods\
+AB+:
 C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods\
 ```
 
 :fontawesome-brands-apple: **Mac OS**:
-```lua
+```
+Repentance:
+   Repentance does not work with Mac OS
+AB+:
 /Users/[YOURUSERNAME]/Library/Application Support/Binding of Isaac Afterbirth+ Mods
 ```
 
 :fontawesome-brands-linux: **Linux**:
-```lua
+```
 /Steam/steamapps/compatdata/250900/pfx/drive_c/users/steamuser/Documents/My Games/Binding of Isaac Afterbirth+ Mods
 ```
 
@@ -44,7 +50,7 @@ if mods are not visible in the mods folder even after you subscribed to the mod 
 
 1. You dont own all DLCs (Afterbirth and Afterbirth+). All Steam Workshop mods require those two DLCs to be installed in order for them to work correctly.
 
-1. Your Windows / Mac Username does contain special characters, that are not part of the standard english alphabet. Since the game is not able to interpret those correctly, it cant find the mods folder. In order to fix this issue, you sadly have to create a new Windows User on your computer which name only contains english characters.
+1. (Only in AB+:) Your Windows / Mac Username does contain special characters, that are not part of the standard english alphabet. Since the game is not able to interpret those correctly, it cant find the mods folder. In order to fix this issue, you sadly have to create a new Windows User on your computer which name only contains english characters.
 
 ### A mod doesn't work correctly {: .subHeader}
 If a mod doesn`t work for you, there are multiple possible solutions:
@@ -66,7 +72,7 @@ Here are a couple of steps you can take to try to fix it:
 
 1. Close the game
 1. Unsubscribe from the mod on Steam
-1. Find your Binding of Isaac Afterbirth+ Mods folder (See [here](#where-can-i-find-the-mod-files) )
+1. Find your mods folder (See [here](#where-can-i-find-the-mod-files) )
 1. Delete the folder of the broken mod
 1. Open the game, then close it after it finished loading (intro cutscene plays)
 1. Resubscribe to the mod
