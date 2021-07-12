@@ -443,7 +443,7 @@ ___
 ___ 
 ### Mama·Mega·Explosion () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void MamaMegaExplosion ( ) {: .copyable aria-label='Functions' }
+#### void MamaMegaExplosion ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Play·Music () {: aria-label='Functions' }
