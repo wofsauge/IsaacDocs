@@ -42,11 +42,11 @@
 |[ ](#){: .abrep .tooltip .badge }|37 |ID_BOOKWORM {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|38 |ID_ADULTHOOD {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|39 |ID_SPIDERBABY {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|40 |ID_BATWING_WINGS {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|41 |ID_HUGE_GROWTH {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|42 |ID_ERA_WALK {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|43 |ID_SACRIFICIAL_ALTAR {: .copyable } |  | 
-|[ ](#){: .abrep .tooltip .badge }|44 |ID_FORGOTTEN {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|40 |ID_BATWING_WINGS {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|41 |ID_HUGE_GROWTH {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|42 |ID_ERA_WALK {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|43 |ID_SACRIFICIAL_ALTAR {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|44 |ID_FORGOTTEN {: .copyable } |  | 
 |[ ](#){: .rep .tooltip .badge }|45 |ID_BRIMSTONE2 {: .copyable } |  | 
 |[ ](#){: .rep .tooltip .badge }|46 |ID_HOLY_CARD {: .copyable } |  | 
 |[ ](#){: .rep .tooltip .badge }|47 |ID_KEEPER {: .copyable } |  | 
