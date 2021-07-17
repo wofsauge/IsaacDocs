@@ -34,3 +34,4 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 | persistent | bool | allows the effect to persist between rooms |
 | achievement | int | tie the item to be unlocked by a vanilla achievement |
 | quality | int | Possible values: ['0', '1', '2', '3', '4']
+| hidden | bool | Prevent item from appearing on pedestals (e.g Sumptorium or Bag of Crafting)
