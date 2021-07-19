@@ -20,7 +20,7 @@
 |[ ](#){: .abrep .tooltip .badge }|16 |MUSIC_DANK_DEPTHS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|17 |MUSIC_SCARRED_WOMB {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|18 |MUSIC_BLUE_WOMB {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|18 |MUSIC_UTERO {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|19 |MUSIC_UTERO {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|20 |MUSIC_MOM_BOSS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|21 |MUSIC_MOMS_HEART_BOSS {: .copyable } |  | 
 |[ ](#){: .abrep .tooltip .badge }|22 |MUSIC_ISAAC_BOSS {: .copyable } |  | 
