@@ -21,7 +21,7 @@ ___
 ### Is·Visible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsVisible ( ) {: .copyable aria-label='Functions' }
-Returns false is HUD is invisible and true otherwise.
+Returns false if HUD is invisible and true otherwise.
 ___ 
 ### Show·Fortune·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
