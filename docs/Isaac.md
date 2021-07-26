@@ -123,7 +123,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetChallengeIdByName ( string challengeName ) {: .copyable aria-label='Functions' }
 
-Returns the ChallengeID of a challenge based on its name. (File: challenges.xml) Returns `-1` if no challenge with that name could be found.
+Returns the ChallengeID of a challenge based on its name. (File: challenges.xml) Returns `-1` if no challenge with that name could be found (Case sensitive).
 
 ???- example "Example Code"
     This code gets the ChallengeID of Aprils fool. 
