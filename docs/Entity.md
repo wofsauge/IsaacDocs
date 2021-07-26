@@ -475,7 +475,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSize ( float Size, [Vector](Vector.md) SizeMulti, int NumGridCollisionPoints ) {: .copyable aria-label='Functions' }
 
-Set the size ofthe entity.
+Set the size of the entity.
 ___ 
 ### Set·Sprite·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -493,7 +493,7 @@ ___
 
 
 ???- note "Notes"
-    The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, TakeDamage() will not decremented the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
+    The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, TakeDamage() will not decrement the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
 ___ 
 ### To·Bomb () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -604,7 +604,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### float DepthOffset  {: .copyable aria-label='Variables' }
 
-Get/Set the depth-offset of the entity. This value is added to the Y Position of the entity, which is then used to determine the rendering order of each entity. Default value is 0 for all entities.
+Get/Set the depth-offset of the entity. This value is added to the Y Position of the entity, which is then used to determine the rendering order of each entity. Default is 0 for all entities.
 
 ???- example "Example Code"
     This code explains how this variable works.
@@ -700,7 +700,7 @@ ___
 
 
 ???+ bug "Bugs"
-    This variable doesnt seem to do anything useful. Use DepthOffset instead.
+    This variable doesn't seem to do anything useful. Use DepthOffset instead.
 ___ 
 ### Size {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
