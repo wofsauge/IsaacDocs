@@ -197,13 +197,13 @@ document$.subscribe(function() {
         }
 
         var connector = ".";
-        if (funcNameLine.includes("(") && !pathname.includes("Isaac")) {
+        if (funcNameLine.includes("(") && !pathname.includes("Isaac") && !pathname.includes("Input")) {
             connector = ":";
         }
         if (parent.attr("aria-label") == "Constructors") {
             connector = "";
         }
-        if (!window.location.pathname.includes("enums") && !pathname.includes("Isaac")) {
+        if (!window.location.pathname.includes("enums") && !pathname.includes("Isaac") && !pathname.includes("Input")) {
             pathname = "";
         }
 
