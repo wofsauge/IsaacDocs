@@ -30,7 +30,7 @@ Cards are marked by `<card ... />`, like so:
 
 In both Afterbirth+ and Repentance, when adding a custom card you must include the `hud` tag, and an anm2 in your mod's `content/gfx/` folder called `ui_cardfronts.anm2`. This anm2 must contain an animation with the same name as specified in the `hud` tag, which will be displayed in the HUD as your card's front. Once you've added a card to the game, you'll be able to get its id through lua by using the `Isaac.GetCardIdByName(string cardHudName)` function, which takes the name specified in the `hud` tag.
 
-The `pickup` tag is very important for cards in Repentance, because it allows setting the card's HUD and pickup visuals easily through a single anm2. In order to use it, you must add a matching `entities2.xml` entry with the tarot card type and variant (5.300), using the subtype specified in the `pickup` tag, as seen below:
+**If the card uses the same backside as an already existing pickup**, you should set `pickup` to the subtype of the existing pickup and not worry about `entities2.xml`. Otherwise, you can use the `pickup` tag in Repentance, to set the card's HUD and pickup visuals through a single anm2. In order to use it, you must add a matching `entities2.xml` entry with the tarot card type and variant (5.300), using the subtype specified in the `pickup` tag, as seen below:
 
 
 In `pocketitems.xml`:
@@ -39,16 +39,19 @@ In `pocketitems.xml`:
 ```
 
 
-In `entities2.xml`:
+In `content/entities2.xml`:
 ```xml
-<entity anm2path="items/cards/custom_object.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Custom Object" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="160">
+<entities anm2root="gfx/" version="5">
+<entity anm2path="custom_object.anm2" baseHP="0" boss="0" champion="0" collisionDamage="0" collisionMass="3" collisionRadius="12" friction="1" id="5" name="Custom Object" numGridCollisionPoints="24" shadowSize="16" stageHP="0" variant="300" subtype="160">
 	   <preload-snd id="8" /> <!-- BOOK_PAGE_TURN_12 -->
 </entity>
+</entities>
 ```
 
 
-The anm2 specified in `entities2.xml` should have the animations HUD and HUDSmall, alongside general pickup animations. See `gfx/05.301_tarot card.anm2` in the vanilla resources for an example! Note that the subtype used in `entities2.xml` and the `pickup` tag **cannot** be used to spawn your card, and will instead crash the game. You must spawn / give your card via the card id, which you can obtain from `Isaac.GetCardIdByName(string cardHudName)` as described above. You can also check your card's current ID easily in the console by typing `g kID` and checking autocomplete; the last base game card is `k97`, the Soul of Jacob, so modded ids will start at `k98`.
+The anm2 specified in `entities2.xml` should have the animations HUD and HUDSmall, alongside general pickup animations. See `gfx/05.301_tarot card.anm2` in the vanilla resources for an example! Even if you put the `entities2.xml` in the `content` directory, you should add the `anm2` file in the `resources` directory, otherwise the game won't find it. For example, with the provided `entities2.xml`, you would need to place the animation file at `resources/gfx/custom_object.anm2`.
 
+Note that the subtype used in `entities2.xml` and the `pickup` tag **cannot** be used to spawn your card, and will instead crash the game. You must spawn / give your card via the card id, which you can obtain from `Isaac.GetCardIdByName(string cardHudName)` as described above. You can also check your card's current ID easily in the console by typing `g kID` and checking autocomplete; the last base game card is `k97`, the Soul of Jacob, so modded ids will start at `k98`.
 
 Note that cards added through `pocketitems.xml` are **not** automatically added to the card pool, and you must set up their spawning manually. This can be done most easily through the `MC_GET_CARD` callback.
 
