@@ -15,7 +15,7 @@ function reevaluateLastVisit() {
             if (lastVisitEntry !== undefined) {
                 $(this).attr("href", lastVisitEntry);
                 lastVisitEntry = lastVisitEntry.replace("IsaacDocs/", "").replace("rep/", "").replace("abp/", "").replace("docs/", "");
-                var linkName = lastVisitEntry.substring(1, lastVisitEntry.length - 1);
+                var linkName = lastVisitEntry.substring(1, lastVisitEntry.length).replace(".html", "");
                 $(this).text(linkName);
             } else {
                 $(this).parent().hide();
@@ -108,7 +108,7 @@ document$.subscribe(function() {
         var recentList = getRecentList();
 
         var pathname = window.location.pathname;
-        if (pathname !== "/") {
+        if (pathname !== "/" && !pathname.includes("index.html")) {
             const index = recentList.indexOf(pathname);
             if (index > -1) {
                 recentList.splice(index, 1);
