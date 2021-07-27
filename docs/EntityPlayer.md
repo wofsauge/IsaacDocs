@@ -341,8 +341,9 @@ ___
 ___ 
 ### Add·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddTrinket ( [TrinketType](enums/TrinketType.md) Type, boolean AddConsumables = true ) {: .copyable aria-label='Functions' }
+#### void AddTrinket ( [TrinketType](enums/TrinketType.md) Type, boolean FirstTimePickingUp = true ) {: .copyable aria-label='Functions' }
 
+Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the trinket and will cause it to not count towards transformations.
 ___ 
 ### Add·Wisp () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
