@@ -1,4 +1,10 @@
 # Class "PlayerTypes::PosVel"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityPlayer:GetMultiShotPositionVelocity()](EntityPlayer.md#getmultishotpositionvelocity)
+
 ## Variables
 ### Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

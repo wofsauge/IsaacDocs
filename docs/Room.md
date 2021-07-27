@@ -1,4 +1,16 @@
 # Class "Room"
+
+???+ info
+    You can get this class by using the following functions:
+
+    * [Game:GetRoom()](Game.md#getroom)
+    * [Level:GetCurrentRoom()](Level.md#getcurrentroom)
+
+    ???+ example "Example Code"
+        ```lua
+        local room = Game():GetRoom()
+        ```
+        
 ## Functions
 ### Check·Line () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

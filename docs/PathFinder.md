@@ -1,4 +1,10 @@
 # Class "PathFinder"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityNPC.Pathfinder](EntityNPC.md#pathfinder)
+
 ## Functions
 ### Evade·Target () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

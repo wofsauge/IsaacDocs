@@ -1,4 +1,18 @@
 # Class "RoomDescriptor"
+
+???+ info
+    You can get this class by using the following functions:
+
+    * [Level:GetCurrentRoomDesc()](Level.md#getcurrentroomdesc)
+    * [Level:GetLastRoomDesc()](Level.md#getlastroomdesc)
+    * [Level:GetRoomByIdx()](Level.md#getroombyidx)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        local roomDescriptor = level:GetCurrentRoomDesc()
+        ```
+        
 ## Variables
 ### Allowed·Doors {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

@@ -1,4 +1,13 @@
 # Class "ItemPool"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [Game:GetItemPool()](Game.md#getitempool)
+
+    ???+ example "Example Code"
+        `Game():GetItemPool()`
+
 ## Functions
 ### Add·Bible·Upgrade () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

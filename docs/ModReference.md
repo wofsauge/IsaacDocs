@@ -1,4 +1,10 @@
 # Class "Mod Reference"
+
+???+ info
+    You can get this class by using the following functions:
+
+    * [RegisterMod()](GlobalFunctions.md#registermod)
+    
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

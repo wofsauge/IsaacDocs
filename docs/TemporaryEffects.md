@@ -1,4 +1,16 @@
 # Class "TemporaryEffects"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityPlayer:GetEffects()](EntityPlayer.md#geteffects)
+
+    ???+ example "Example Code"
+        ```lua
+        local player = Isaac.GetPlayer(0)
+        local tempEffects = player:GetEffects()
+        ```
+        
 ## Functions
 ### Add·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

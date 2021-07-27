@@ -1,4 +1,16 @@
 # Class "QueueItemData"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityPlayer.QueuedItem](EntityPlayer.md#queueditem)
+
+    ???+ example "Example Code"
+        ```lua
+        local player = Isaac.GetPlayer(0)
+        local queueItemData = player.QueuedItem
+        ```
+        
 ## Variables
 ### Charge {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

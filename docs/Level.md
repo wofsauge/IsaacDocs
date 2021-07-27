@@ -1,4 +1,15 @@
 # Class "Level"
+
+???+ info
+    You can get this class by using the following functions:
+
+    * [Game:GetLevel()](GetLevel.md#getlevel)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        ```
+    
 ## Functions
 ### Add·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

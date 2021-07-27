@@ -1,4 +1,15 @@
 # Class "TearParams"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityPlayer:GetTearHitParams()](EntityPlayer.md#gettearhitparams)
+
+    ???+ example "Example Code"
+        ```lua
+        local player = Isaac.GetPlayer(0)
+        local tempEffects = player:GetTearHitParams(WeaponType.WEAPON_TEARS, 1, 1, nil)
+        ```
 ## Variables
 ### Bomb·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

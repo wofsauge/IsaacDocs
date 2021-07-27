@@ -1,4 +1,16 @@
 # Class "RoomConfig::Room"
+???+ info
+    You can get this class by using the following functions:
+
+    * [RoomDescriptor.Data](RoomDescriptor.md#data)
+    * [RoomDescriptor.OverrideData](RoomDescriptor.md#overridedata)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        local roomDescriptor = level:GetCurrentRoomDesc()
+        local roomConfigRoom = roomDescriptor.Data
+        ```
 ## Variables
 ### Difficulty {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

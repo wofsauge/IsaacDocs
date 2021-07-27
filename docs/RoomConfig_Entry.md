@@ -1,4 +1,18 @@
 # Class "RoomConfig::Entry"
+???+ info
+    You can get this class by using the following function:
+
+    * [RoomConfig_Spawn.PickEntry](RoomConfig_Spawn.md#pickentry)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        local roomDescriptor = level:GetCurrentRoomDesc()
+        local roomConfigRoom = roomDescriptor.Data
+        local spawnList = roomConfigRoom.Spawns
+        local roomConfigSpawn = spawnList:Get(0)
+        local roomConfigEntry = roomConfigSpawn:PickEntry(0)
+        ```
 ## Variables
 ### Subtype {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

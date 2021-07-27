@@ -1,4 +1,19 @@
 # Class "RoomConfig::Spawn"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [RoomConfigSpawns.Get](CppContainer_ArrayProxy_RoomConfigSpawns.md#get)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        local roomDescriptor = level:GetCurrentRoomDesc()
+        local roomConfigRoom = roomDescriptor.Data
+        local spawnList = roomConfigRoom.Spawns
+        local roomConfigSpawn = spawnList:Get(0)
+        ```
+
 ## Functions
 ### Pick·Entry () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }

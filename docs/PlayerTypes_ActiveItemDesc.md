@@ -1,4 +1,16 @@
 # Class "PlayerTypes::ActiveItemDesc"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityPlayer.SecondaryActiveItem](EntityPlayer.md#secondaryactiveitem)
+
+    ???+ example "Example Code"
+        ```lua
+        local player = Isaac.GetPlayer(0)
+        local activeitemDesc = player.SecondaryActiveItem
+        ```
+
 ## Variables
 ### Battery·Charge {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
