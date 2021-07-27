@@ -94,7 +94,9 @@ Adds coins to the player. Remove them with negative numbers.
 ___ 
 ### Add·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddCollectible ( [CollectibleType](enums/CollectibleType.md) Type, int Charge = 0, boolean AddConsumables = true, [ActiveSlot](enums/ActiveSlot.md) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
+#### void AddCollectible ( [CollectibleType](enums/CollectibleType.md) Type, int Charge = 0, boolean FirstTimePickingUp = true, [ActiveSlot](enums/ActiveSlot.md) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
+
+Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the item and will cause it to not count towards transformations.
 
 Slot 0 is default (normal active item)  
 Slot 1 is used by Schoolbag  
