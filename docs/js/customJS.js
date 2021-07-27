@@ -251,18 +251,8 @@ document$.subscribe(function() {
     // We use an Element observer, to change the search results AFTER they where placed
     var target = document.querySelector('.md-search-result__list')
     var observer = new MutationObserver(function(mutations) {
-        var searchText = $("input[aria-label=\"Search\"]").val();
         $("li.md-search-result__item").find('a').each(function(e) {
-            var jumpTargetValue = $(this).attr('href').split("#");
-            var jumpTarget = "";
-            if (jumpTargetValue.length > 1) {
-                jumpTarget = "#" + jumpTargetValue[1];
-            }
-            var link = $(this).attr('href').split("?")[0].split("#")[0];
-            $(this).attr('href', link + "?q=" + searchText + jumpTarget);
-
             hidePlaceholderChar($(this));
-            colorizeSearchResults($(this));
         });
     });
     var config = { attributes: true, childList: true, characterData: true };
@@ -275,7 +265,6 @@ document$.subscribe(function() {
 
     mark();
 });
-
 
 // mark.js functionality
 var $results;
@@ -296,7 +285,7 @@ var mark = function() {
             if (currentParam.length !== 2) {
                 continue;
             }
-            if (currentParam[0] == "q") {
+            if (currentParam[0] == "h") {
                 keyword = decodeURIComponent(currentParam[1].replace(/\+/g, "%20"));
             }
         }
@@ -331,6 +320,7 @@ function jumpToFirst() {
         jumpToElement($(window.location.hash));
     }
 }
+
 
 function jumpToElement(element) {
     $('html, body').animate({
