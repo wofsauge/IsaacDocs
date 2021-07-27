@@ -333,22 +333,6 @@ details>summary {
     max-width: initial;
 }
 
-.md-footer-nav__inner {
-    /* Previous/next bar a bit smaller */
-    padding: 0;
-}
-
-.md-footer-nav__link {
-    /* Previous/next bar a bit smaller */
-    padding-top: 0.6rem;
-    padding-bottom: 0;
-}
-
-.md-footer-nav__button {
-    /* Previous/next bar a bit smaller */
-    margin: 0;
-}
-
 .md-footer-meta__inner {
     /* footer bar a bit smaller */
     padding: 0;
