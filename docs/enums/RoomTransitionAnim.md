@@ -16,7 +16,7 @@
 |[ ](#){: .rep .tooltip .badge }|12 |GLOWING_HOURGLASS {: .copyable } | for glowing hourglass teleport | 
 |[ ](#){: .rep .tooltip .badge }|13 |D7 {: .copyable } |  | 
 |[ ](#){: .rep .tooltip .badge }|14 |MISSING_POSTER {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|15 |BOSS_FORCED {: .copyable } | No transition, goes directly to boss intro (for backwardass challenge) | 
+|[ ](#){: .rep .tooltip .badge }|15 |BOSS_FORCED {: .copyable } | No transition, goes directly to boss intro (for backasswards challenge) | 
 |[ ](#){: .rep .tooltip .badge }|16 |PORTAL_TELEPORT {: .copyable } | for card reading teleport | 
 |[ ](#){: .rep .tooltip .badge }|17 |FORGOTTEN_TELEPORT {: .copyable } | for the Forgotten's birthright | 
 |[ ](#){: .rep .tooltip .badge }|18 |FADE_MIRROR {: .copyable } |  | 
