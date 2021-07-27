@@ -165,11 +165,6 @@ document$.subscribe(function() {
         jumpToElement(href);
     });
 
-    // Add "jump to top" button into sidebar
-    var firstLink = $("a.headerlink").first().attr('href');
-    var jumpToEntry = $("<li class=\"md-nav__item\"><a href=\"" + firstLink + "\" class=\"md-nav__link\"> ~~~ Jump to Top ~~~</a></li>");
-    $(".md-nav__list[data-md-component=\"toc\"]").prepend(jumpToEntry);
-
     // Make tables sortable
     document.querySelectorAll("article table").forEach(function(table) {
         new Tablesort(table)
