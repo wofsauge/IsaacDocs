@@ -206,12 +206,7 @@ a.const.tooltip:after {
 
 /**** DARK MODE ****/
 
-.darkmodeButton {
-    margin: 10px 8px 0px 8px;
-    cursor: pointer;
-}
-
-body.darkMode {
+[data-md-color-scheme="slate"] {
     --function-color: #405e9a;
     --function-color-light: #272938;
     --var-color: #128676;

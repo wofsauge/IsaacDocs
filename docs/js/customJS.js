@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/docs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
-    $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
-
     if (window.location.hash.replace("#", "") != "") {
         jumpToElement($(window.location.hash));
     }
@@ -9,22 +6,6 @@ $(document).ready(function() {
 
 function unmarkStuff() {
     $content.unmark();
-}
-
-function toggleDarkMode() {
-    if (typeof(Storage) !== "undefined") {
-        var darkModeState = localStorage.getItem("darkMode");
-        if (darkModeState == null || darkModeState == 0) {
-            darkModeState = 1;
-            $("body").addClass("darkMode");
-        } else {
-            darkModeState = 0;
-            $("body").removeClass("darkMode");
-        }
-        localStorage.setItem("darkMode", darkModeState);
-    } else {
-        $("body").toggleClass("darkMode");
-    }
 }
 
 function reevaluateLastVisit() {
