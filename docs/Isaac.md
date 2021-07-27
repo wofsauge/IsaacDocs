@@ -1,4 +1,10 @@
 # Class "Isaac"
+
+???+ info
+    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!** 
+
+    **Example:** `Isaac.GetPlayer(0)`
+
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

@@ -1,4 +1,10 @@
 # Class "Input"
+
+???+ info
+    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!** 
+
+    **Example:** `Input.GetMousePosition(true)`
+
 ## Functions
 ### Get·Action·Value () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -29,8 +35,9 @@ Returns the current mouse position in game coordinates (true) or render coordina
 ???- example "Example Code"
     This code renders "Hello World!" at the current mouse position.
     ```lua 
-    local mousePos = Isaac.WorldToScreen(Input.GetMousePosition(true))-- transfer game- in screen coordinates
-    Isaac.RenderText("Hello World!", mousePos.X, mousePos.Y, 1 ,1 ,1 ,1 )
+    local mousePos = Input.GetMousePosition(true) -- get mouse position in world coordinates
+    local screenPos = Isaac.WorldToScreen(mousePos) -- transfer game- to screen coordinates
+    Isaac.RenderText("Hello World!", screenPos.X, screenPos.Y, 1 ,1 ,1 ,1 )
     
     ```
 
