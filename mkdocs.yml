@@ -227,7 +227,9 @@ theme:
     name: material
     custom_dir: overrides
     features:
+        - search.suggest
         - search.highlight
+        - search.share
         - navigation.tabs
         - navigation.instant
     icon:
