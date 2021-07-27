@@ -100,7 +100,7 @@ ___
 ___ 
 ### Morph () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean Morph ( [EntityType](enums/EntityType.md) , int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
+#### boolean Morph ( [EntityType](enums/EntityType.md) type, int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
 Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions) can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
 A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
