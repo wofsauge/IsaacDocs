@@ -355,7 +355,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPaused ( ) {: .copyable aria-label='Functions' }
 
-Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes hiving the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.
+Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes having the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.
 ___ 
 ### Move·To·Random·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
