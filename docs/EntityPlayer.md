@@ -1485,7 +1485,7 @@ ___
 
 ???- note "Notes"
 	As of Repentance, this method can be used to give the player a Passive Item's effect for the duration of the room.
-	This only applies to items that do not have the 'nocantrip' metadata tag.
+	This only applies to items that have the 'summonable' metadata tag.
 ___ 
 ### Use·Card () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
