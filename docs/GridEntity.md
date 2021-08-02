@@ -16,7 +16,7 @@ ___
 ___ 
 ### Get·RNG () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [RNG](RNG.md) GetGet·RNG ( ) {: .copyable aria-label='Functions' }
+#### [RNG](RNG.md) GetRNG ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Save·State () {: aria-label='Functions' }
