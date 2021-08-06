@@ -542,7 +542,7 @@ Before you use this function, you need to set the appropriate cache flags first.
     This code re-evaluates all of the stats for the player.
     ```lua 
     local player = Isaac.GetPlayer()
-    player:AddCacheFlag(CacheFlag.CACHE_ALL)
+    player:AddCacheFlags(CacheFlag.CACHE_ALL)
     player:EvaluateItems()
     ```
 
