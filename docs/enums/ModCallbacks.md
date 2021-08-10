@@ -320,6 +320,9 @@ Returning a string will print it to the console.
 
 Returning any value will have no effect on later callback executions.
 
+???+ bug
+    Returning any value beside nil will cause the game to crash, including a string.
+
 ???- example "Example code"
     ```lua
     function mod.oncmd(_, command, args)
