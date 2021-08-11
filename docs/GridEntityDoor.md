@@ -106,12 +106,12 @@ ___
 ### Extra·Sprite {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Sprite](Sprite.md) ExtraSprite  {: .copyable aria-label='Variables' }
-
+Additional sprite used for the door. The "Bars" graphic from the door is such an extra sprite.
 ___ 
 ### Extra·Visible {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean ExtraVisible  {: .copyable aria-label='Variables' }
-
+Toggles the visibility of the extra sprite. The "Bars" graphic from the door is such an extra sprite.
 ___ 
 ### Locked·Animation {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
