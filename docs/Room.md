@@ -595,7 +595,8 @@ ___
 ___ 
 ### Try·Make·Bridge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TryMakeBridge ( [GridEntity](GridEntity.md) pit ) {: .copyable aria-label='Functions' }
+#### boolean TryMakeBridge ( [GridEntity](GridEntity.md) pit, [GridEntity](GridEntity.md) rock ) {: .copyable aria-label='Functions' }
+Tries to create a bridge over a given pit. Returns true if the creation was successful. Returns false otherwise.
 
 ___ 
 ### Try·Place·Ladder () {: aria-label='Functions' }

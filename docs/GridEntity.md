@@ -112,7 +112,7 @@ ___
 ## Variables
 ### Collision·Class {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### CollisionClass CollisionClass  {: .copyable aria-label='Variables' }
+#### [GridCollisionClass](enums/GridCollisionClass.md) CollisionClass  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Desc {: aria-label='Variables' }
