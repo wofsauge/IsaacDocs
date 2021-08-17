@@ -16,12 +16,12 @@ RO, GO and BO accept numbers between -255 and 255.
 ___ 
 ### Entity·Ptr () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityPtr](EntityPtr.md) EntityPtr ( [Entity](Entity.md) ) {: .copyable aria-label='Constructors' }
+#### [EntityPtr](EntityPtr.md) EntityPtr ( [Entity](Entity.md) entity ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Entity·Ref () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityRef](EntityRef.md) EntityRef ( [Entity](Entity.md) ) {: .copyable aria-label='Constructors' }
+#### [EntityRef](EntityRef.md) EntityRef ( [Entity](Entity.md) entity ) {: .copyable aria-label='Constructors' }
 
 ___ 
 ### Font () {: aria-label='Constructors' }
@@ -119,13 +119,13 @@ Returns a [SFXManager](SFXManager.md) object.
 ___ 
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.md) Vector ( float , float ) {: .copyable aria-label='Constructors' }
+#### [Vector](Vector.md) Vector ( float x, float y) {: .copyable aria-label='Constructors' }
 
 ___ 
 ## Functions
 ### Get·Ptr·Hash () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetPtrHash ( Objectobject ) {: .copyable aria-label='Functions' }
+#### int GetPtrHash ( Object object ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
 
 It can be used to easily compare two entities, making equality checks very easy.
