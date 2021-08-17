@@ -1,11 +1,48 @@
 $(document).ready(function() {
+    var check = "checked";
+    if (typeof(Storage) !== "undefined" && localStorage.getItem("highlightResults") == 1) {
+        check = ""
+    }
+    $("div.md-search-result").prepend('<div class="clearSearchMarks"><input type="checkbox" onclick="unmarkStuff()" id="searchMarks" name="scales" ' + check + '><label for="searchMarks">Highlight search results</label></div>');
+});
+
+$(document).ready(function() {
     if (window.location.hash.replace("#", "") != "") {
         jumpToElement($(window.location.hash));
     }
 });
 
 function unmarkStuff() {
-    $content.unmark();
+    if (typeof(Storage) !== "undefined") {
+        var highlightResultsState = localStorage.getItem("highlightResults");
+        if (highlightResultsState == null || highlightResultsState == 0) {
+            highlightResultsState = 1;
+            $content.unmark();
+            $(".clearSearchMarks").prop('checked', false);
+        } else {
+            highlightResultsState = 0;
+            $(".clearSearchMarks").prop('checked', true);
+        }
+
+        $("li.md-search-result__item").find('a').each(function(e) {
+            var jumpTargetValue = $(this).attr('href').split("#");
+            var jumpTarget = "";
+            if (jumpTargetValue.length > 1) {
+                jumpTarget = "#" + jumpTargetValue[1];
+            }
+            var searchText = "?h=" + $("input[aria-label=\"Search\"]").val();
+            if (highlightResultsState == 1) {
+                searchText = ""
+            }
+            var link = $(this).attr('href').split("?")[0].split("#")[0];
+            $(this).attr('href', link + searchText + jumpTarget);
+
+            hidePlaceholderChar($(this));
+            colorizeSearchResults($(this));
+        });
+
+        localStorage.setItem("highlightResults", highlightResultsState);
+    }
 }
 
 function reevaluateLastVisit() {
@@ -239,7 +276,37 @@ document$.subscribe(function() {
         hidePlaceholderChar($(this));
     })
 
+    //remove search query string of search result links
+    // We use an Element observer, to change the search results AFTER they where placed
+    var target = document.querySelector('.md-search-result__list')
+    var observer = new MutationObserver(function(mutations) {
+        var searchText = $("input[aria-label=\"Search\"]").val();
+        if (typeof(Storage) !== "undefined" && localStorage.getItem("highlightResults") == 1) {
+            $("li.md-search-result__item").find('a').each(function(e) {
+                var jumpTargetValue = $(this).attr('href').split("#");
+                var jumpTarget = "";
+                if (jumpTargetValue.length > 1) {
+                    jumpTarget = "#" + jumpTargetValue[1];
+                }
+                var link = $(this).attr('href').split("?")[0].split("#")[0];
+                $(this).attr('href', link + jumpTarget);
+
+                hidePlaceholderChar($(this));
+                colorizeSearchResults($(this));
+            });
+        }
+    });
+    var config = { attributes: true, childList: true, characterData: true };
+    observer.observe(target, config);
+
     mark();
+
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.getItem("highlightResults") == 1) {
+            $(".clearSearchMarks").prop('checked', false);
+            $content.unmark();
+        }
+    }
 });
 
 // mark.js functionality
