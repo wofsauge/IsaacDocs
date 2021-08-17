@@ -21,12 +21,12 @@ Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the D
     ```
 
 ???+ bug
-    Changing the Damage value doesnt seem to have an effect. It always deals the amount of damage of the player.
+    Changing the Damage value doesn't seem to have an effect. It always deals the amount of damage of the player.
 
     The Duration value seems to have an upper limit. For a PlayerEntity, its only lasting for the duration of one damage interval. For Entities its up to 6 damage-intervals.
 
 ???- example "Example Code"
-    This code damages every entity in the room for 1 second with the damagesource set to the player. The total damage dealt is 1.
+    This code damages every entity in the room for 1 second with the damage source set to the player. The total damage dealt is 1.
 
     ```lua 
     local player =Isaac.GetPlayer(0)
@@ -38,7 +38,7 @@ Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the D
 ___ 
 ### Add·Charmed () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddCharmed (EntityRef sourceEntity, int Duration ) {: .copyable aria-label='Functions' }
+#### void AddCharmed ( [EntityRef](EntityRef.md) sourceEntity, int Duration ) {: .copyable aria-label='Functions' }
 
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards isaac and attack other enemies. 
 
