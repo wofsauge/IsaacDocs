@@ -384,6 +384,8 @@ ___
 Returns a string that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
 There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
+If you call this function in the main menu, it will return the save data for save slot 1 by default.
+
 For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
