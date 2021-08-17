@@ -48,26 +48,6 @@ Returns the List of all Collectibles.
     
     ```
 
-    This Code gets the highest possible collectibleid including modded items. It uses the Binary Search algorithm to do it.
-    Using GetCollectible(): (**recommended!**)
-
-    ```lua 
-    function GetMaxCollectibleID()
-        local id = CollectibleType.NUM_COLLECTIBLES-1
-        local step = 16
-        while step > 0 do
-            if Isaac.GetItemConfig():GetCollectible(id+step) ~= nil then
-                id = id + step
-            else
-                step = step // 2
-            end
-        end
-    
-    return id
-    end
-    
-    ```
-
 
 ???+ bug "Bugs"
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
