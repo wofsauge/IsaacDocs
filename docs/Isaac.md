@@ -491,6 +491,15 @@ ___
 #### [Vector](Vector.md) WorldToRenderPosition ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
 
 Transfers world (aka. game coordinates) into Rendercoordinates. This can be used to render things at fixed positions in a room. The Render coordinate system is x[0,inf) y[0,inf). It defines the Position on the rendering-plane in the current room.
+
+???- example "Example Code"
+    This code render "test" at the position of the mouse cursor independend on if the game is in full screen or not.
+    ```lua 
+    local mousePos = Input.GetMousePosition(true)
+    local renderpos = Isaac.WorldToRenderPosition(mousePos) * 2
+    Isaac.RenderText("test", renderpos.X, renderpos.Y, 1 ,1 ,1 ,1 )
+    ```
+
 ___ 
 ### World·To·Screen () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

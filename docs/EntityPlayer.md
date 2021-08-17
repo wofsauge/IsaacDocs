@@ -542,7 +542,7 @@ Before you use this function, you need to set the appropriate cache flags first.
     This code re-evaluates all of the stats for the player.
     ```lua 
     local player = Isaac.GetPlayer()
-    player:AddCacheFlag(CacheFlag.CACHE_ALL)
+    player:AddCacheFlags(CacheFlag.CACHE_ALL)
     player:EvaluateItems()
     ```
 
@@ -1453,7 +1453,7 @@ Tries to remove a costume of the given collectible. `KeepPersistent` is used to 
 ___ 
 ### Try·Remove·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void TryRemoveNullCostume ( ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
+#### void TryRemoveNullCostume ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Try·Remove·Trinket () {: aria-label='Functions' }
@@ -1482,6 +1482,10 @@ ___
 
 #### void UseActiveItem ( [CollectibleType](enums/CollectibleType.md) Item, boolean ShowAnim = false, boolean KeepActiveItem = false, boolean AllowNonMainPlayer = true, boolean ToAddCostume = false, [ActiveSlot](enums/ActiveSlot.md) Slot = -1 ) {: .copyable .secondH4 aria-label='Functions' }
 **Slot**: The active slot this item was used from (set to -1 if this item wasn't triggered by any active slot)
+
+???- note "Notes"
+	As of Repentance, this method can be used to give the player a Passive Item's effect for the duration of the room.
+	This only applies to items that have the 'summonable' metadata tag.
 ___ 
 ### Use·Card () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
