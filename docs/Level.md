@@ -3,7 +3,7 @@
 ???+ info
     You can get this class by using the following functions:
 
-    * [Game:GetLevel()](GetLevel.md#getlevel)
+    * [Game:GetLevel()](Game.md#getlevel)
 
     ???+ example "Example Code"
         ```lua
