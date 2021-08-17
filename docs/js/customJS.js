@@ -36,9 +36,6 @@ function unmarkStuff() {
             }
             var link = $(this).attr('href').split("?")[0].split("#")[0];
             $(this).attr('href', link + searchText + jumpTarget);
-
-            hidePlaceholderChar($(this));
-            colorizeSearchResults($(this));
         });
 
         localStorage.setItem("highlightResults", highlightResultsState);
@@ -266,6 +263,7 @@ document$.subscribe(function() {
     var observer = new MutationObserver(function(mutations) {
         $("li.md-search-result__item").find('a').each(function(e) {
             hidePlaceholderChar($(this));
+            colorizeSearchResults($(this));
         });
     });
     var config = { attributes: true, childList: true, characterData: true };
@@ -290,9 +288,6 @@ document$.subscribe(function() {
                 }
                 var link = $(this).attr('href').split("?")[0].split("#")[0];
                 $(this).attr('href', link + jumpTarget);
-
-                hidePlaceholderChar($(this));
-                colorizeSearchResults($(this));
             });
         }
     });
