@@ -1,63 +1,74 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: 'CI + CD'
 
-# Controls when the action will run. 
+# Controls when the action will run.
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches:
-      - master
-      - main
+    # Triggers the workflow on push or pull request events but only for the master branch
+    push:
+        branches:
+            - master
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+    code_checks:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v2
+            - name: Use Node.js 15.x
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 15.x
+            - name: Run code checks
+              run: node ./scripts/code_checks.js
+              shell: bash
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it          
-      - uses: actions/checkout@v2
-        with:
-         fetch-depth: 0
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - uses: oleksiyrudenko/gha-git-credentials@v2-latest
-        with:
-          token: '${{ secrets.GITHUB_TOKEN }}'
-  
-      - run: pip install mkdocs
-      - run: pip install mkdocs-material
-      - run: pip install mike
-      - run: pip install mkdocs-git-revision-date-plugin
-      - run: pip install mkdocs-git-revision-date-localized-plugin
-      - name: Clear mk-docs branch
-        run: mike delete --all
-          
-      - run: mike deploy rep Repentance -t Repentance -p
-      - run: mike set-default rep
-      
-      - name: Deploy AB+ Docs
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          ref: ab_plus
-          
-      - run: mike deploy abp Afterbirth+ -t Afterbirth+ -p
+    deployment:
+        # The type of runner that the job will run on
+        runs-on: ubuntu-latest
 
-      - name: Copy old ab+ docs and index.html
-        uses: andstor/copycat-action@v3
-        with:
-          personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          src_path: /.
-          dst_owner: wofsauge
-          dst_repo_name: IsaacDocs
-          src_branch: old_docs
-          dst_branch: gh-pages
+        # Steps represent a sequence of tasks that will be executed as part of the job
+        steps:
+            # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+            - uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - uses: actions/setup-python@v2
+              with:
+                  python-version: 3.x
+            - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+              with:
+                  token: '${{ secrets.GITHUB_TOKEN }}'
+
+            - run: pip install mkdocs
+            - run: pip install mkdocs-material
+            - run: pip install mike
+            - run: pip install mkdocs-git-revision-date-plugin
+            - run: pip install mkdocs-git-revision-date-localized-plugin
+            - name: Clear mk-docs branch
+              run: mike delete --all
+
+            - run: mike deploy rep Repentance -t Repentance -p
+            - run: mike set-default rep
+
+            - name: Deploy AB+ Docs
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+                  ref: ab_plus
+
+            - run: mike deploy abp Afterbirth+ -t Afterbirth+ -p
+
+            - name: Copy old ab+ docs and index.html
+              uses: andstor/copycat-action@v3
+              with:
+                  personal_token: ${{ secrets.PERSONAL_TOKEN }}
+                  src_path: /.
+                  dst_owner: wofsauge
+                  dst_repo_name: IsaacDocs
+                  src_branch: old_docs
+                  dst_branch: gh-pages
