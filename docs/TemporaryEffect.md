@@ -3,9 +3,9 @@
 ???+ info
     You can get this class by using the following functions:
 
-    * [TemporaryEffects:GetCollectibleEffect()](EntityPlayer.md#getcollectibleeffect)
-    * [TemporaryEffects:GetNullEffect()](EntityPlayer.md#getnulleffect)
-    * [TemporaryEffects:GetTrinketEffect()](EntityPlayer.md#gettrinketeffect)
+    * [TemporaryEffects:GetCollectibleEffect()](TemporaryEffects.md#getcollectibleeffect)
+    * [TemporaryEffects:GetNullEffect()](TemporaryEffects.md#getnulleffect)
+    * [TemporaryEffects:GetTrinketEffect()](TemporaryEffects.md#gettrinketeffect)
 
     ???+ example "Example Code"
         ```lua
