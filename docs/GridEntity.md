@@ -73,36 +73,50 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityDoor](GridEntityDoor.md) ToDoor ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Pit () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityPit](GridEntityPit.md) ToPit ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Poop () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityPoop](GridEntityPoop.md) ToPoop ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Pressure·Plate () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityPressurePlate](GridEntityPressurePlate.md) ToPressurePlate ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Rock () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityRock](GridEntityRock.md) ToRock ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·Spikes () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntitySpikes](GridEntitySpikes.md) ToSpikes ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### To·TNT () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityTNT](GridEntityTNT.md) ToTNT ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
+???+ note "Return behavior"
+    If the conversion is not successful, this function returns `nil`.
 ___ 
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
