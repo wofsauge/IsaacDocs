@@ -1595,7 +1595,11 @@ ___
 ### Shot·Speed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float ShotSpeed  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the ShotSpeed Stat.**  How fast does the tear travel when spawned? 
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the ShotSpeed Stat.**  
+
+Defines how fast the tear travel when spawned.
+
+The default velocity of a tear shot is 10 times the players ShotSpeed.
 ___ 
 ### Sprite·Scale {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
