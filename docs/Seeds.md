@@ -72,7 +72,7 @@ ___
 ___ 
 ### Init·Seed·Info () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static InitSeedInfo ( ) {: .copyable aria-label='Functions' }
+#### static void InitSeedInfo ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Is·Custom·Run () {: aria-label='Functions' }

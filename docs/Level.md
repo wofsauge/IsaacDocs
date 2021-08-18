@@ -187,8 +187,8 @@ ___
 
 ___ 
 ### Get·Room·By·Idx () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .rep .tooltip .badge }
-#### const [RoomDescriptor](RoomDescriptor.md) GetRoomByIdx ( int RoomIdx, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [RoomDescriptor](RoomDescriptor.md) GetRoomByIdx ( int RoomIdx, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from

@@ -265,9 +265,10 @@ Returns true, if this entity still exists.
 ___ 
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### BossId GetBossID ( ) {: .copyable aria-label='Functions' }
+#### int GetBossID ( ) {: .copyable aria-label='Functions' }
+If the entity is a boss, it returns its specific boss id. If it isn't a boss it will return 0.
 
-If the entity is a boss, it returns its specific boss id. If it isnt a boss it will return 0.
+A boss ID is **NOT** equal to the entity Type, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
 ___ 
 ### Get·Color () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }

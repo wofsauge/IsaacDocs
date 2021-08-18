@@ -130,12 +130,12 @@ ___
 ___ 
 ### Previous·State {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### State PreviousState  {: .copyable aria-label='Variables' }
+#### int PreviousState  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Previous·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### Variant PreviousVariant  {: .copyable aria-label='Variables' }
+#### int PreviousVariant  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Slot {: aria-label='Variables' }

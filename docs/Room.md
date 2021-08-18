@@ -111,9 +111,12 @@ Returns the BackdropType (Background) of the current room.
 ___ 
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### BossId GetBossID ( ) {: .copyable aria-label='Functions' }
+#### int GetBossID ( ) {: .copyable aria-label='Functions' }
+Returns the boss id of the second boss in a double trouble room. returns 0 otherwise.
 
 This will return the subtype of the current room, since this value is used to determine the boss-portrait to display when entering.
+
+A boss ID is **NOT** equal to the entity Type of the boss, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
 ___ 
 ### Get·Bottom·Right·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -257,11 +260,15 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### LRoomAreaDesc GetLRoomAreaDesc ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·LRoom·Tile·Desc () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### LRoomTileDesc GetLRoomTileDesc ( ) {: .copyable aria-label='Functions' }
 
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Next·Shockwave·Id () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -337,7 +344,10 @@ ___
 ___ 
 ### Get·Second·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### BossId GetSecondBossID ( ) {: .copyable aria-label='Functions' }
+#### int GetSecondBossID ( ) {: .copyable aria-label='Functions' }
+Returns the boss id of the second boss in a double trouble room. returns 0 otherwise.
+
+A boss ID is **NOT** equal to the entity Type of the boss, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
 
 ___ 
 ### Get·Seeded·Collectible () {: aria-label='Functions' }

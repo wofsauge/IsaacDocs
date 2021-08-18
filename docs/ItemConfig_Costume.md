@@ -38,5 +38,7 @@ ___
 ### Skin·Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### SkinColor SkinColor  {: .copyable aria-label='Variables' }
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 
 ___ 

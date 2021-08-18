@@ -476,7 +476,7 @@ The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac
 ___ 
 ### Spawn·Entity·Desc () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityNPC](EntityNPC.md) SpawnEntityDesc ( Entity::EntityDesc desc, [Vector](Vector.md) Position, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
+#### [EntityNPC](EntityNPC.md) SpawnEntityDesc ( EntityDesc desc, [Vector](Vector.md) Position, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Spawn·Particles () {: aria-label='Functions' }

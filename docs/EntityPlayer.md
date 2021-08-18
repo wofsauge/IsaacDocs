@@ -651,7 +651,7 @@ ___
 ___ 
 ### Get·Bomb·Variant () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### EntityBomb::BombVariant GetBombVariant ( [TearFlags](enums/TearFlags.md) TearFlags, boolean ForceSmallBomb ) {: .copyable aria-label='Functions' }
+#### [BombVariant](enums/BombVariant.md) GetBombVariant ( [TearFlags](enums/TearFlags.md) TearFlags, boolean ForceSmallBomb ) {: .copyable aria-label='Functions' }
 Pass tear flags to add extra effects to the bomb visual like burn -> hot bombs, even if player doesn't have Hot Bombs collectible. ForceSmallBomb will override large bomb variants for TEAR_PERSISTENT. 
 ___ 
 ### Get·Bone·Hearts () {: aria-label='Functions' }
@@ -880,7 +880,8 @@ ___
 ### Get·Multi·Shot·Params () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### MultiShotParams GetMultiShotParams ( [WeaponType](enums/WeaponType.md) WeaponType = WeaponType.WEAPON_TEARS ) {: .copyable aria-label='Functions' }
-
+???+ bug "Bug"
+    Since it returns UserData, this function is unusable and therefore broken.
 ___ 
 ### Get·Multi·Shot·Position·Velocity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

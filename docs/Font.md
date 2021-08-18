@@ -83,27 +83,27 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
 ___ 
 ### Get·Baseline·Height () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### u_int GetBaselineHeight ( ) {: .copyable aria-label='Functions' }
+#### int GetBaselineHeight ( ) {: .copyable aria-label='Functions' }
 Get the number of pixels from the absolute top of the line to the base of the characters 
 ___ 
 ### Get·Character·Width () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### u_int GetCharacterWidth ( char Character ) {: .copyable aria-label='Functions' }
+#### int GetCharacterWidth ( char Character ) {: .copyable aria-label='Functions' }
 Returns the width of a specific character 
 ___ 
 ### Get·Line·Height () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### u_int GetLineHeight ( ) {: .copyable aria-label='Functions' }
+#### int GetLineHeight ( ) {: .copyable aria-label='Functions' }
 Get the distance in pixels between each line of text 
 ___ 
 ### Get·String·Width () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### u_int GetStringWidth ( string String ) {: .copyable aria-label='Functions' }
+#### int GetStringWidth ( string String ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16 and returns string width
 ___ 
 ### Get·String·Width·UTF8 () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### u_int GetStringWidthUTF8 ( string String ) {: .copyable aria-label='Functions' }
+#### int GetStringWidthUTF8 ( string String ) {: .copyable aria-label='Functions' }
 returns string width of a Unicode text. 
 ___ 
 ### Is·Loaded () {: aria-label='Functions' }

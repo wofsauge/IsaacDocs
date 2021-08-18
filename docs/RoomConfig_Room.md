@@ -19,7 +19,7 @@
 ___ 
 ### Doors {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### Int Doors  {: .copyable aria-label='Variables' }
+#### int Doors  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Height {: aria-label='Variables' }
