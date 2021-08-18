@@ -101,8 +101,8 @@ Called just after a familiar is initialized.
 
 Returning any value will have no effect on later callback executions.
 
-???+ bug 
-    This Callback provides incomplete data in the [EntityFamiliar](../EntityFamiliar.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PEFFECT_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -127,8 +127,8 @@ The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = 
 
 Returning any value will have no effect on later callback executions.
 
-???+ bug 
-    This Callback provides incomplete data in the [EntityPlayer](../EntityPlayer.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PEFFECT_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -387,8 +387,8 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_NPC_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityNPC](../EntityNPC.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_NPC_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -456,8 +456,8 @@ The optional parameter can be used to specify a Player Variant. 0 = Player, 1 = 
 ### MC_POST_PICKUP_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityPickup](../EntityPickup.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PICKUP_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -513,8 +513,8 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_TEAR_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityTear](../EntityTear.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_TEAR_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -547,8 +547,8 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_PROJECTILE_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityProjectile](../EntityProjectile.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PROJECTILE_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -581,8 +581,8 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_LASER_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityLaser](../EntityLaser.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_LASER_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -609,8 +609,8 @@ Returning any value will have no effect on later callback executions.
 ???+ note
     The optional parameter is a SubType and **NOT** a Variant!
     
-???+ bug
-    This Callback provides incomplete data in the [EntityKnife](../EntityKnife.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_KNIFE_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -652,8 +652,8 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_EFFECT_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityEffect](../EntityEffect.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_EFFECT_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -676,8 +676,8 @@ Returning any value will have no effect on later callback executions.
 ### MC_POST_BOMB_INIT {: .copyable } 
 Returning any value will have no effect on later callback executions.
 
-???+ bug
-    This Callback provides incomplete data in the [EntityBomb](../EntityBomb.md) attribute. For example, the Position is always equal to Vector(0,0). 
+???- warning "Warning"
+    Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_BOMB_UPDATE and check those attributes on the first possible frame.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
