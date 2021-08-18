@@ -224,7 +224,9 @@ ___
 ### Get·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetGridPath ( int Index ) {: .copyable aria-label='Functions' }
+Grid path is a property of a grid square that represents the "cost" of traveling over this grid cell. Its used for the path finding algorithms which search the cheapest path to a given location. If a grid cell has a value higher than 0, it can prevent grid entities from being spawned on that square. Thus, you can get around it by resetting the grid path to 0, and then spawning the grid entity.
 
+Some enemies set it to 900 when they path over a square. Fireplaces set it to 950. Most grid entities set it to 1000 or higher, in order to prevent enemies to travel through them.
 ___ 
 ### Get·Grid·Path·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -543,7 +545,9 @@ ___
 ### Set·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean SetGridPath ( int Index, int Value ) {: .copyable aria-label='Functions' }
+Grid path is a property of a grid square that represents the "cost" of traveling over this grid cell. Its used for the path finding algorithms which search the cheapest path to a given location. If a grid cell has a value higher than 0, it can prevent grid entities from being spawned on that square. Thus, you can get around it by resetting the grid path to 0, and then spawning the grid entity.
 
+Some enemies set it to 900 when they path over a square. Fireplaces set it to 950. Most grid entities set it to 1000 or higher, in order to prevent enemies to travel through them.
 ___ 
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
