@@ -20,7 +20,20 @@ ___
 ### Doors {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Doors  {: .copyable aria-label='Variables' }
+Returns a bitmask of the positions of the doors in this room. It is  a combination of bit flags of the DoorSlotFlag enum, which is defined as follows:
 
+```lua
+enum DoorSlotFlag {
+  LEFT0 = 1 << DoorSlot.LEFT0,
+  UP0 = 1 << DoorSlot.UP0,
+  RIGHT0 = 1 << DoorSlot.RIGHT0,
+  DOWN0 = 1 << DoorSlot.DOWN0,
+  LEFT1 = 1 << DoorSlot.LEFT1,
+  UP1 = 1 << DoorSlot.UP1,
+  RIGHT1 = 1 << DoorSlot.RIGHT1,
+  DOWN1 = 1 << DoorSlot.DOWN1,
+}
+```
 ___ 
 ### Height {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
