@@ -2,13 +2,16 @@ const fs = require("fs");
 const path = require("path");
 
 const allFiles = getFilesForDirectory("./docs/");
+const defaultVariables = "int|static|const|userdata|table|void|boolean|float|string";
+const ignoreVars = "LRoomAreaDesc|LRoomTileDesc|Ambush|ItemOverlay|HomingLaser|LaserHomingType|SkinColor|PlayerPocketItem|DoorSet|MultiShotParams|EntityDesc";
 
 const regularExpressions = [
     ['Required spaces in headings', /#{4} \w+ \w+ \(\w/],
     ['Required spaces in code blocks', /```\w+\n\s+\w+/],
     ['Variable definitions that are falsely marked as functions', /#{4}(.)*([^\)]\s\{:)(.)*(\bFunctions\b)/],
     ['Variables with function or links in the title', /#{3}(.)*([\(\)]\s\{:)(.)*(\bVariables\b)/],
-    ['Headers that have a link in them', /^#{3}\s\[/]
+    ['Headers that have a link in them', /^#{3}\s\[/],
+    ['Link to return value is missing', new RegExp("#{4} (const\\s|static\\s)*(?!\\[)(?!" + defaultVariables + "|" + ignoreVars + ")")],
 ];
 
 for (const file of allFiles) {
@@ -24,17 +27,18 @@ for (const file of allFiles) {
             }
 
             console.log(`${file} at line ${index + 1}: ${regex[0]}`);
+            console.log(`\tLine: ` + regex[1].exec(line).input);
         }
     }
 }
 
-console.log("Ran code checks");
+console.log("All code checks run successfully!");
 
 function getFilesForDirectory(directory) {
     const foundFiles = [];
     const files = fs.readdirSync(directory);
 
-    files.forEach(function (file) {
+    files.forEach(function(file) {
         const filePath = path.join(directory, file);
 
         if (fs.statSync(filePath).isDirectory() === false && file.match(/\.md$/)) {
