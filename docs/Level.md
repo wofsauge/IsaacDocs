@@ -114,7 +114,15 @@ ___
 ### Get·Current·Room·Desc () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [RoomDescriptor](RoomDescriptor.md) GetCurrentRoomDesc ( ) {: .copyable aria-label='Functions' }
+This functions returns a read only version of the [RoomDescriptor](RoomDescriptor.md) of the current room. If you want to edit the [RoomDescriptor](RoomDescriptor.md), use `GetRoomByIdx()` with `GetCurrentRoomIndex()` instead.
 
+???- example "Example Code"
+    This gets the current rooms [RoomDescriptor](RoomDescriptor.md) class in read only and writeable versions.
+    ```lua
+    local level = Game():GetLevel()
+    local readOnlyRoomDesc = level:GetCurrentRoomDesc()
+    local writeableRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
+    ```
 ___ 
 ### Get·Current·Room·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -189,6 +197,13 @@ ___
 ### Get·Room·By·Idx () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [RoomDescriptor](RoomDescriptor.md) GetRoomByIdx ( int RoomIdx, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+
+???- example "Example Code"
+    This gets the current rooms [RoomDescriptor](RoomDescriptor.md) class.
+    ```lua
+    local level = Game():GetLevel()
+    local curRoomDesc = level:GetRoomByIdx(level:GetCurrentRoomIndex())
+    ```
 
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
