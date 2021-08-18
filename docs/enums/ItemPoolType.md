@@ -16,21 +16,21 @@
 |[ ](#){: .abrep .tooltip .badge }|11 |POOL_DEMON_BEGGAR {: .copyable } | demonBeggar |  |
 |[ ](#){: .abrep .tooltip .badge }|12 |POOL_CURSE {: .copyable } | curse |  |
 |[ ](#){: .abrep .tooltip .badge }|13 |POOL_KEY_MASTER {: .copyable } | keyMaster |  |
-|[ ](#){: .rep .tooltip .badge }|14 |POOL_BATTERY_BUM {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|15 |POOL_MOMS_CHEST {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|16 |POOL_GREED_TREASUREL {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|14 |POOL_BATTERY_BUM {: .copyable } | batteryBum |  |
+|[ ](#){: .rep .tooltip .badge }|15 |POOL_MOMS_CHEST {: .copyable } | momsChest |  |
+|[ ](#){: .rep .tooltip .badge }|16 |POOL_GREED_TREASUREL {: .copyable } | greedTreasure |  |
 |[ ](#){: .abrep .tooltip .badge }|17 |POOL_GREED_BOSS {: .copyable } | greedBoss |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |POOL_GREED_SHOP {: .copyable } | greedShop |  |
 |[ ](#){: .abrep .tooltip .badge }|19 |POOL_GREED_DEVIL {: .copyable } | greedDevil |  |
 |[ ](#){: .abrep .tooltip .badge }|20 |POOL_GREED_ANGEL {: .copyable } | greedAngel |  |
 |[ ](#){: .abrep .tooltip .badge }|21 |POOL_GREED_CURSE {: .copyable } | greedCurse |  |
 |[ ](#){: .abrep .tooltip .badge }|22 |POOL_GREED_SECRET {: .copyable } | greedSecret |  |
-|[ ](#){: .rep .tooltip .badge }|23 |POOL_CRANE_GAME {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|24 |POOL_24 {: .copyable } | unused | 
-|[ ](#){: .rep .tooltip .badge }|25 |POOL_BOMB_BUM {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|26 |POOL_PLANETARIUM {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|27 |POOL_OLD_CHEST {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|28 |POOL_BABY_SHOP {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|29 |POOL_WOODEN_CHEST {: .copyable } |  | 
-|[ ](#){: .rep .tooltip .badge }|30 |POOL_ROTTEN_BEGGAR {: .copyable } |  | 
+|[ ](#){: .rep .tooltip .badge }|23 |POOL_CRANE_GAME {: .copyable } | craneGame |  |
+|[ ](#){: .rep .tooltip .badge }|24 |POOL_24 {: .copyable } | unused24 |  | 
+|[ ](#){: .rep .tooltip .badge }|25 |POOL_BOMB_BUM {: .copyable } | bombBum |  | 
+|[ ](#){: .rep .tooltip .badge }|26 |POOL_PLANETARIUM {: .copyable } | planetarium |  | 
+|[ ](#){: .rep .tooltip .badge }|27 |POOL_OLD_CHEST {: .copyable } | oldChest |  | 
+|[ ](#){: .rep .tooltip .badge }|28 |POOL_BABY_SHOP {: .copyable } | babyShop |  | 
+|[ ](#){: .rep .tooltip .badge }|29 |POOL_WOODEN_CHEST {: .copyable } | woodenChest |  | 
+|[ ](#){: .rep .tooltip .badge }|30 |POOL_ROTTEN_BEGGAR {: .copyable } | rottenBeggar |  | 
 |[ ](#){: .rep .tooltip .badge }|31 |NUM_ITEMPOOLS {: .copyable } |  | 
