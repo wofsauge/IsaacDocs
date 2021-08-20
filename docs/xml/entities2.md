@@ -25,7 +25,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | collisionRadius | float | Radius of the collision circle. This value is used for both entity <--> entity and entity <--> grid collisions |
 | collisionRadiusXMulti | float | Multiplier for the X direction of the collision circle. This can be used to grant an entity an elliptical hitbox |
 | collisionRadiusYMulti | float | Multiplier for the Y direction of the collision circle. This can be used to grant an entity an elliptical hitbox |
-| collisionInterval | int | Number of game ticks to till the next collision should be evaluated. Default = 1 |
+| collisionInterval | int | Number of game ticks till the next collision should be evaluated. Default = 1 |
 | numGridCollisionPoints | int | Number of points along the edge of the collision circle, which are used to detect collisions with grid entities. |
 | friction | float | "Slippyness" of the entity. Default = 1. lower values make them slide more, similar as they would stand on ice. Higher values make them slide less |
 | shadowSize | int ||
@@ -51,6 +51,7 @@ Original Gaper sprite: monster_017_gaper.png
 Downpour Sprite: monster_017_gaper_downpour.png
 
 **Suffix per stage:**
+
 | Stage-Name | Suffix |
 |:--|:--|
 |Flooded Caves|_downpour|
