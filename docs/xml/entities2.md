@@ -52,9 +52,9 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 |spider|Indicates enemies which should be neutralized by Bursting Sack|
 |ghost|Marks enemies that "Vade Retro" does not spawn a ghost from (which are all ghost type enemies)|
 |noreroll| Immunity from D10 rerolls|
-|brimstone_soul| <Usage currently unknown. might be scrapped feature for Hungry Soul or Vade Retro>|
-|explosive_soul| <Usage currently unknown. might be scrapped feature for Hungry Soul or Vade Retro> |
-|homing_soul| <Usage currently unknown. might be scrapped feature for Hungry Soul or Vade Retro> |
+|brimstone_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro)|
+|explosive_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro) |
+|homing_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro) |
 
 
 ## Floor specific sprites
