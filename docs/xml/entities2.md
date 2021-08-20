@@ -50,7 +50,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 |nodelirium| Blacklists a boss from being used by Delirium|
 |fly|Indicates enemies which should be neutralized by Skatole and charmed by Beelzebub|
 |spider|Indicates enemies which should be neutralized by Bursting Sack|
-|ghost|Marks enemies that "Vade Retro" does not spawn a ghost from (which are all ghost type enemies)|
+|ghost| (*Usage currently unknown*. Its set for all ghost entities) |
 |noreroll| Immunity from D10 rerolls|
 |brimstone_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro)|
 |explosive_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro) |
