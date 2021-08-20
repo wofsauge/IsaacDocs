@@ -30,10 +30,10 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | friction | float | "Slippyness" of the entity. Default = 1. lower values make them slide more, similar as they would stand on ice. Higher values make them slide less |
 | shadowSize | int ||
 | stageHP | int ||
-| tags | string | possible values: ['nodelirium', 'spider', 'explosive_soul', 'cansacrifice', 'ghost', 'brimstone_soul', 'homing_soul', 'fly', 'noreroll'] |
+| tags | string | possible values: ['nodelirium', 'spider', 'explosive_soul', 'cansacrifice', 'ghost', 'brimstone_soul', 'homing_soul', 'fly', 'noreroll']<br>See Chapter below for in depth explanations of the tags. |
 | gridCollision | string | possible values: ['nopits', 'ground', 'none', 'walls', 'floor'] |
 | portrait | int ||
-| hasFloorAlts | bool | If set to true, floor specific sprites should be used for this entity if they exist. See the section below for more informations |
+| hasFloorAlts | bool | If set to true, floor specific sprites should be used for this entity if they exist. See the chapter below for more informations |
 | reroll | bool ||
 | shutdoors | bool ||
 | shieldStrength | int ||
@@ -41,6 +41,21 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | gibFlags | string | used Values: ['poop'] |
 | bestiaryAnim | string ||
 | bestiaryOverlay | string ||
+
+## Tags explanation 
+
+| Stage-Name | Suffix |
+|:--|:--|
+|cansacrifice| Marks familiars on which sacrificial altar can be used on|
+|nodelirium| Blacklists a boss from being used by Delirium|
+|fly|Indicates enemies which should be neutralized by Skatole and charmed by Beelzebub|
+|spider|Indicates enemies which should be neutralized by Bursting Sack|
+|ghost|Marks enemies that "Vade Retro" does not spawn a ghost from (which are all ghost type enemies)|
+|noreroll| Immunity from D10 rerolls|
+|brimstone_soul| <Usage currently unknown. might be scrapped feature for Hungry Soul or Vade Retro>|
+|explosive_soul| <Usage currently unknown. might be scrapped feature for Hungry Soul or Vade Retro> |
+|homing_soul| <Usage currently unknown. might be scrapped feature for Hungry Soul or Vade Retro> |
+
 
 ## Floor specific sprites
 If an entity has the attribute `hasFloorAlts` set to `true`, the game tries to load the spritesheet of the entity with an additional suffix, based on the current stage. The Suffix of a stage is defined in the `suffix` attribute in the stages.xml file. If no sprite can be found, it will load the default spritesheet.
