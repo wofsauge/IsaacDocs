@@ -1,4 +1,8 @@
 # Enum "EntityFlag"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+    
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|1 |FLAG_NO_STATUS_EFFECTS {: .copyable } | prevent freeze/poison/slow/charm/confusion/fear/burn | 

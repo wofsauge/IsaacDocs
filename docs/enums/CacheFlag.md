@@ -1,4 +1,8 @@
 # Enum "CacheFlag"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+
 |DLC|Value|Enumerator|Value|Comment|
 |:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|1 |CACHE_DAMAGE {: .copyable } | 0x1 | |

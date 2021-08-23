@@ -1,4 +1,8 @@
 # Enum "EntityPartition"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+    
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|1 |FAMILIAR {: .copyable } |  | 

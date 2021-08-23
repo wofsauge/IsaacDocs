@@ -136,6 +136,76 @@ function modifyCallbackPageLayout() {
     $('#contentOverviewTable > tbody').append(tableContent);
 }
 
+function addBitsetCalculator() {
+    $(".bitsetCalculator").each(function(header) {
+        $("<div id=\"bitsetCalculator\"><label for=\"bitsetCalcInput\" style=\"float:left\">Number:</label><input type=\"number\" min=\"0\" class=\"md-search__input\" id=\"bitsetCalcInput\" name=\"bitsetCalcInput\"><span id=\"bitsetCalcSplits\"></span><div id=\"bitsetCalcResult\"></div></div>").insertAfter($(this));
+        $("#bitsetCalcInput").on('input', function() {
+            $("#bitsetCalcSplits").empty();
+            $("#bitsetCalcResult").empty();
+            $(".md-typeset__table").find("tr").removeClass("tableHighlight");
+            if ($("#bitsetCalcInput").val() == "") {
+                return;
+            }
+
+            if (parseInt($("#bitsetCalcInput").val()) == "0") {
+                var isMatched = false;
+                $(".md-typeset__table").find("tr").each(function(index) {
+                    var val = $(this).find("td:eq(1)");
+                    if (val.length > 0) {
+                        val = val.text();
+                        val = val.replace("BitSet128(0,0)", "0");
+                        if ("0" === val) {
+                            isMatched = true;
+                            $(this).addClass("tableHighlight");
+                        }
+                    }
+                });
+                var classVar = isMatched ? "class=\"highVal\"" : "";
+                $("#bitsetCalcSplits").append($("<span " + classVar + ">" + $("#bitsetCalcInput").val() + "</span>"));
+                $("#bitsetCalcResult").append($("<span>Found " + (isMatched ? 1 : 0) + " matching enums.</span>"));
+
+            } else {
+                var binary = BigInt($("#bitsetCalcInput").val()).toString(2);
+                var len = binary.length - 1;
+                var completeCounter = 0;
+                for (let i = len; i >= 0; i--) {
+                    var bit = parseInt(binary.substring(len - i, len - i + 1));
+                    var bitToFull = BigInt(bit) << BigInt(i);
+                    var isMatched = false;
+                    $(".md-typeset__table").find("tr").each(function(index) {
+                        var val = $(this).find("td:eq(1)");
+                        if (val.length > 0 && bit == 1) {
+                            val = val.text();
+                            val = val.replace("BitSet128(0,0)", "0");
+                            if (val.indexOf("TEARFLAG") >= 0) {
+                                val = val.replace("TEARFLAG(", "").replace(")", "");
+                                val = "1<<" + val;
+                            }
+                            if (val.indexOf("<<") >= 0) {
+                                val = BigInt(1) << BigInt(parseInt(val.split("<<")[1]));
+                            }
+                            if (bitToFull == val) {
+                                $(this).addClass("tableHighlight");
+                                isMatched = true;
+                                completeCounter = completeCounter + 1;
+                                return false;
+                            }
+                        }
+                    });
+                    var classVar = bit == 1 && isMatched ? "class=\"highVal\"" : "";
+                    $("#bitsetCalcSplits").append($("<span " + classVar + ">" + bit + "</span>"));
+                    if (i % 4 == 0 && i != 0) {
+                        $("#bitsetCalcSplits").append($("<span>|</span>"));
+                    }
+                }
+                $("#bitsetCalcResult").append($("<span>Found " + completeCounter + " matching enums.</span>"));
+            }
+
+        });
+        $("<span>Highlights all bit-flag enums that construct the given integer value.</span><br>").insertAfter($(this));
+    });
+}
+
 document$.subscribe(function() {
     if (typeof(Storage) !== "undefined") {
         // handle recently visited
@@ -160,6 +230,7 @@ document$.subscribe(function() {
     });
 
     modifyCallbackPageLayout();
+    addBitsetCalculator();
     buildContentMap();
     $(".overviewHeader").click(function() {
         $(this).toggleClass("collapsed");

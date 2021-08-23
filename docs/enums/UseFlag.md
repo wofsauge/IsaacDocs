@@ -1,4 +1,8 @@
 # Enum "UseFlag"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+    
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|1 |USE_NOANIM {: .copyable } | Don't play use animations | 

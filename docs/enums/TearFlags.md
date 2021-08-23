@@ -7,6 +7,9 @@ local function TEARFLAG(x)
 end
 ```
 
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+
 |DLC|Value|Enumerator|Ingame Color|Comment|
 |:--|:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }| BitSet128(0,0) |TEAR_NORMAL {: .copyable } | `Color(1, 1, 1, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(255, 255, 255, 255, 0, 0, 0)` | Default tear (no special effects) | 

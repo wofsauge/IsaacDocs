@@ -1,4 +1,8 @@
 # Enum "LevelCurse"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+    
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|0 |CURSE_NONE {: .copyable } |  | 

@@ -1,4 +1,8 @@
 # Enum "DamageFlag"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|1 |DAMAGE_NOKILL {: .copyable } | Damage can not kill the receiver <br> | 

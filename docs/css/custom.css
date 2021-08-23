@@ -596,3 +596,39 @@ td>.copyButton>span::after {
 .searchTutorial .md-search-result__icon {
     color: var(--var-color);
 }
+
+
+/*** Bitset calculator ***/
+
+#bitsetCalculator {
+    margin: 1em 0em;
+}
+
+#bitsetCalcInput {
+    border: 1px solid var(--md-code-fg-color);
+    border-radius: 5px;
+    padding: 0.1em;
+    width: 5em;
+    height: 1rem;
+    margin-left: 5pt;
+    float: left;
+}
+
+#bitsetCalcSplits {
+    padding: 0.1em;
+    margin-left: 5pt;
+}
+
+#bitsetCalcSplits>span.highVal {
+    background-color: var(--var-color);
+    border-radius: 5px;
+    padding: 0.1em;
+}
+
+#bitsetCalcResult {
+    margin: 0.5em 0em;
+}
+
+.tableHighlight {
+    background-color: var(--var-color);
+}

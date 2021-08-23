@@ -1,4 +1,8 @@
 # Enum "ProjectileFlags"
+
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+    
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|1 |SMART {: .copyable } | follow player | 
