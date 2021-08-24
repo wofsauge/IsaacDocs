@@ -141,7 +141,9 @@ ___
 ### Tear·Index {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int TearIndex  {: .copyable aria-label='Variables' }
-Returns the index of the tear. Its analog to the number of tears fired in the current game.
+- In each run, the game keeps track of how many tears have been fired by the player in total. This is used for items such as Lead Pencil.
+- `TearIndex` represents this tear counter.
+- It is 0-indexed, meaning that the first tear fired by the player on a run will have a `TearIndex` of 0, the second tear fired by the player on a run will have a `TearIndex` of 1, and so on.
 ___ 
 ### Wait·Frames {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
