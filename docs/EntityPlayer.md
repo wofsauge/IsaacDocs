@@ -1218,7 +1218,7 @@ ___
 ### Queue·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void QueueItem ( [ItemConfig::Item](ItemConfig_Item.md) Item, int Charge = 0, boolean Touched = false, bool Golden = false, int VarData = 0 ) {: .copyable aria-label='Functions' }
-Add Collectible/Trinket after animation is finished. 
+When the player touches a collectible or trinket, they are not granted it immediately. Instead, the item is queued for the duration of the animation where the player holds the item above their head. When the animation is finished, the item(s) in the queue will be granted. This method adds a new item to the item queue. If the player is not currently playing an animation, then the queued item will simply be awarded instantly.
 ___ 
 ### Remove·Black·Heart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
