@@ -1197,7 +1197,7 @@ ___
 ### Is·Sub·Player () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsSubPlayer ( ) {: .copyable aria-label='Functions' }
-This is for players that require multiple player entities, such as the Forgotten (this has nothing to do with co-players!) 
+Returns true for The Soul. Otherwise, returns false. (This method is not related to multiplayer.) 
 ___ 
 ### Needs·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
