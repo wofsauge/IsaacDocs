@@ -86,35 +86,40 @@ ___
 ### A {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float A  {: .copyable aria-label='Variables' }
-
+Alpha value of the color, where 0 is fully transparent, 1 is fully opaque.
 ___ 
 ### B {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float B  {: .copyable aria-label='Variables' }
-
+Blue value of the color. Number between 0 and 1.
 ___ 
 ### BO {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float BO  {: .copyable aria-label='Variables' }
+Blue-Offset value of the color. Number can be positive or negative.
 
 ___ 
 ### G {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float G  {: .copyable aria-label='Variables' }
+Green value of the color. Number between 0 and 1.
 
 ___ 
 ### GO {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float GO  {: .copyable aria-label='Variables' }
+Green-Offset value of the color. Number can be positive or negative.
 
 ___ 
 ### R {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float R  {: .copyable aria-label='Variables' }
+Red value of the color. Number between 0 and 1.
 
 ___ 
 ### RO {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float RO  {: .copyable aria-label='Variables' }
+Red-Offset value of the color. Number can be positive or negative.
 
 ___ 
