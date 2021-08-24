@@ -524,7 +524,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void DropPocketItem ( int PocketNum, [Vector](Vector.md) Pos ) {: .copyable aria-label='Functions' }
 
-Drops a held pocketitem (Card, Pill, Rune... but not pocket items/dice bag dice!) from the given itemslot at the given position. Possible pocketnumbers are [0, 1, 2]
+Drops a held pocketitem (Card, Pill, Rune... from the given itemslot at the given position. Possible pocketnumbers are [0, 1, 2, 3].  Dropping pocket active items or dice bag dices does not work.
 ___ 
 ### Drop·Trinket () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
