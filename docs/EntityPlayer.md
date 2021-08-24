@@ -1276,7 +1276,7 @@ ___
 ### Remove·Skin·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveSkinCostume ( ) {: .copyable aria-label='Functions' }
-Removes player-specific costumes like Magdalene's Hair or Cain's eyepatch.
+Removes player-specific costumes like Magdalene's hair or Cain's eyepatch.
 
 ___ 
 ### Render·Body () {: aria-label='Functions' }
