@@ -1600,7 +1600,7 @@ ___
 #### [ActiveItemDesc](PlayerTypes_ActiveItemDesc.md) SecondaryActiveItem  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ???+ bug "Bug"
-    This function does not exist anymore in Repentance. As of right now, there is no other function to get the [ActiveItemDesc](PlayerTypes_ActiveItemDesc.md) of any active item the player holds. Till this is fixed, this info will say here.
+    This function does not exist anymore in Repentance. As of right now, there is no other function to get the [ActiveItemDesc](PlayerTypes_ActiveItemDesc.md) of any active item the player holds. Until this is fixed, this info will stay here.
 ___ 
 ### Shot·Speed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
