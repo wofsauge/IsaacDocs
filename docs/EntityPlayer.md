@@ -313,6 +313,13 @@ ___
 ### Add·Rotten·Hearts () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddRottenHearts ( int RottenHearts ) {: .copyable aria-label='Functions' }
+Adds rotten hearts to the player. 1 unit is half a heart. Remove rotten hearts with negative numbers. 
+
+???- example "Example Code"
+    This code adds 1 full rotten heart to the player.
+    ```lua 
+    Isaac.GetPlayer(0):AddRottenHearts(2)
+    ```
 
 ___ 
 ### Add·Soul·Charge () {: aria-label='Functions' }
@@ -1591,6 +1598,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [ActiveItemDesc](PlayerTypes_ActiveItemDesc.md) SecondaryActiveItem  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
+???+ bug "Bug"
+    This function does not exist anymore in Repentance. As of right now, there is no other function to get the [ActiveItemDesc](PlayerTypes_ActiveItemDesc.md) of any active item the player holds. Till this is fixed, this info will say here.
 ___ 
 ### Shot·Speed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
