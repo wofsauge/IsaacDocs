@@ -1157,6 +1157,7 @@ ___
 ### Is·Coop·Ghost () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsCoopGhost ( ) {: .copyable aria-label='Functions' }
+In a multiplayer game, if a player dies, they will return as a tiny ghost. This method returns true if the player is a co-op ghost.
 
 ___ 
 ### Is·Extra·Animation·Finished () {: aria-label='Functions' }
