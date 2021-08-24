@@ -904,7 +904,7 @@ ___
 ### Get·NPCTarget () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) GetNPCTarget ( ) {: .copyable aria-label='Functions' }
-normally returns the player itself. Can redirect enemy attacks to a different entity such as Best Friend 
+Normally, this function returns the player. However, in some cases, NPCs can be redirected to attack another target, in which case this function will return the alternate target (e.g. after using Best Friend).
 ___ 
 ### Get·Num·Blue·Flies () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
