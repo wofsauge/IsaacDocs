@@ -134,7 +134,14 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### float GetAngleDegrees ( ) {: .copyable aria-label='Functions' }
 
-Returns the angle the vector is facing. The vector (1, 0) will be at 0 degrees. The vector (0, 1) will be at 90 degrees. 
+Returns the angle the vector is facing. The vector (1, 0) will be at 0 degrees. The vector (0, 1) will be at 90 degrees.
+
+Practically, this means:
+
+- Right: 0
+- Up: -90
+- Left: 180
+- Down: 90
 
 ???- example "Example Code"
     This code returns the angle between two positions.
