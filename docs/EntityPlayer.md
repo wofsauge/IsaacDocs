@@ -594,7 +594,7 @@ ___
 #### boolean FlushQueueItem ( ) {: .copyable aria-label='Functions' }
 called after animation is finished, or on special occasions to prevent bugs 
 ___ 
-### Full·Charge ( ) {: aria-label='Functions' }
+### Full·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean FullCharge ( [ActiveSlot](enums/ActiveSlot.md) ActiveSlot = ActiveSlot.SLOT_PRIMARY, int Force = false ) {: .copyable aria-label='Functions' }
 Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot. 
@@ -607,7 +607,7 @@ ___
 
 Get the current charge of your active item.
 ___ 
-### Get·Active·Item ( ) {: aria-label='Functions' }
+### Get·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) GetActiveItem ( [ActiveSlot](enums/ActiveSlot.md) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' data-altreturn='0' }
 Returns the currently held item. Returns `0` when no item is held.
@@ -1359,7 +1359,7 @@ ___
 Change the pill the player is holding in the given itemslot (0 or 1).
 
 ___ 
-### SetPocketActiveItem() {: aria-label='Functions' }
+### Set·Pocket·Active·Item() {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void SetPocketActiveItem ( [CollectibleType](enums/CollectibleType.md) Type, [ActiveSlot](enums/ActiveSlot.md) Slot, boolean KeepInPools ) {: .copyable aria-label='Functions' }
 

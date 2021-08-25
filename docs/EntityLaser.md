@@ -27,7 +27,7 @@ ___
 #### const HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
 
 ___ 
-### Get·RenderZ () {: aria-label='Functions' }
+### Get·Render·Z () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetRenderZ ( ) {: .copyable aria-label='Functions' }
 

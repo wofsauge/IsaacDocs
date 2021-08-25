@@ -120,7 +120,7 @@ ___
 #### void Restart ( [Challenge](enums/Challenge.md) CurrentChallenge ) {: .copyable aria-label='Functions' }
 Re-selects a random start seed but only if the start seed was not custom. 
 ___ 
-### Seed2String () {: aria-label='Functions' }
+### Seed·2·String () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static string Seed2String ( int seed ) {: .copyable aria-label='Functions' }
 
@@ -130,7 +130,7 @@ ___
 #### void SetStartSeed ( string StartSeed ) {: .copyable aria-label='Functions' }
 Empty string means we will pick a new random seed. 
 ___ 
-### String2Seed () {: aria-label='Functions' }
+### String·2·Seed () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static int String2Seed ( string str ) {: .copyable aria-label='Functions' }
 ___ 

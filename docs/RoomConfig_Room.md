@@ -13,14 +13,14 @@
         ```
 ## Variables
 ### Difficulty {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Difficulty](enums/Difficulty.md) Difficulty {: .copyable aria-label='Variables' }
 
 ___ 
 ### Doors {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Doors  {: .copyable aria-label='Variables' }
-Returns a bitmask of the positions of the doors in this room. It is  a combination of bit flags of the DoorSlotFlag enum, which is defined as follows:
+Returns a bit mask of the positions of the doors in this room. It is  a combination of bit flags of the DoorSlotFlag enum, which is defined as follows:
 
 ```lua
 enum DoorSlotFlag {
@@ -36,37 +36,37 @@ enum DoorSlotFlag {
 ```
 ___ 
 ### Height {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Height  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Initial·Weight {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const float InitialWeight  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Name {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const string Name  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Shape {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [RoomShape](enums/RoomShape.md) Shape  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawn·Count {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int SpawnCount  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Spawns {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [SpawnList](CppContainer_ArrayProxy_RoomConfigSpawns.md) Spawns  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Stage·ID {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int StageID  {: .copyable aria-label='Variables' }
 The stage the room was designed for.
 
@@ -104,27 +104,27 @@ The stage the room was designed for.
 
 ___ 
 ### Subtype {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Subtype  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Type {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [RoomType](enums/RoomType.md) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Variant  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Weight {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const float Weight  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Width {: aria-label='Variables' }
-[ ](#){: .const .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Width  {: .copyable aria-label='Variables' }
 
 ___ 

@@ -8,10 +8,13 @@ const ignoreVars = "LRoomAreaDesc|LRoomTileDesc|Ambush|ItemOverlay|HomingLaser|L
 const regularExpressions = [
     ['Required spaces in headings', /#{4} \w+ \w+ \(\w/],
     ['Required spaces in code blocks', /```\w+\n\s+\w+/],
+    ['Function header has spaces between brackets', /^#{3} .*\(\s+\)/],
     ['Variable definitions that are falsely marked as functions', /#{4}(.)*([^\)]\s\{:)(.)*(\bFunctions\b)/],
     ['Variables with function or links in the title', /#{3}(.)*([\(\)]\s\{:)(.)*(\bVariables\b)/],
-    ['Headers that have a link in them', /^#{3}\s\[/],
+    ['Function header name is not split with middle dot characters "·"', /^#{3} .*([a-z][^·_][A-Z])+.*Functions/],
+    ['Headers should not have a link in them', /^#{3}\s\[/],
     ['Link to return value is missing', new RegExp("#{4} (const\\s|static\\s)*(?!\\[)(?!" + defaultVariables + "|" + ignoreVars + ")")],
+    ['Badge has more type-definitions than allowed', /\[ \]\(#\)\{: ((.static|.const|.abrep|.rep|.abp)\s){2,5}.tooltip .badge \}/],
 ];
 
 for (const file of allFiles) {
