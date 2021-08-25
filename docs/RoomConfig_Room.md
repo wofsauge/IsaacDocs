@@ -109,8 +109,8 @@ ___
 
 ___ 
 ### Type {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### [RoomType](enums/RoomType.md) Type  {: .copyable aria-label='Variables' }
+[ ](#){: .const .abrep .tooltip .badge }
+#### const [RoomType](enums/RoomType.md) Type  {: .copyable aria-label='Variables' }
 
 ___ 
 ### Variant {: aria-label='Variables' }
