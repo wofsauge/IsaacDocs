@@ -6,17 +6,17 @@
 ## Functions
 ### Add·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
+#### void AddTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Clear·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ClearTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
+#### void ClearTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Has·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean HasTearFlags ( BitSet128 Flags ) {: .copyable aria-label='Functions' }
+#### boolean HasTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Set·Explosion·Countdown () {: aria-label='Functions' }

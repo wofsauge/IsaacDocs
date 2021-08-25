@@ -176,7 +176,7 @@ ___
 ___ 
 ### Get·Name () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### string GetName () {: .copyable aria-label='Functions' }
+#### string GetName ( ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Get·Non·Complete·Room·Index () {: aria-label='Functions' }

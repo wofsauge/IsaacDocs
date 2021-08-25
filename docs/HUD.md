@@ -34,7 +34,7 @@ ___
 ___
 ### Show·Item·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ShowItemText ( EntityPlayer Player, Item Item) {: .copyable aria-label='Functions' }
+#### void ShowItemText ( [EntityPlayer](EntityPlayer.md) Player, Item Item) {: .copyable aria-label='Functions' }
 Allows to display an item splash text without picking it up.
 ___ 
 ### Set·Visible () {: aria-label='Functions' }

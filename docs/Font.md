@@ -128,7 +128,7 @@ Loads a font.
 ___ 
 ### Set·Missing·Character () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetMissingCharacter ( u16 MissingCharacter ) {: .copyable aria-label='Functions' }
+#### void SetMissingCharacter ( char MissingCharacter ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16, then draws
 Sets the missing character to be used by the font (the character used when missing characters are encountered) 
 ___ 

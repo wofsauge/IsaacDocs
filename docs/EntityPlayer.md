@@ -1489,7 +1489,7 @@ ___
 ___ 
 ### Use·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void UseActiveItem ( [CollectibleType](enums/CollectibleType.md) Item, UseFlag UseFlags = 0, [ActiveSlot](enums/ActiveSlot.md) Slot = -1 ) {: .copyable aria-label='Functions' }
+#### void UseActiveItem ( [CollectibleType](enums/CollectibleType.md) Item, [UseFlags](enums/UseFlag.md) UseFlags = 0, [ActiveSlot](enums/ActiveSlot.md) Slot = -1 ) {: .copyable aria-label='Functions' }
 
 #### void UseActiveItem ( [CollectibleType](enums/CollectibleType.md) Item, boolean ShowAnim = false, boolean KeepActiveItem = false, boolean AllowNonMainPlayer = true, boolean ToAddCostume = false, [ActiveSlot](enums/ActiveSlot.md) Slot = -1 ) {: .copyable .secondH4 aria-label='Functions' }
 **Slot**: The active slot this item was used from (set to -1 if this item wasn't triggered by any active slot)
@@ -1500,12 +1500,12 @@ ___
 ___ 
 ### Use·Card () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void UseCard ( [Card](enums/Card.md) ID, UseFlag UseFlags = 0 ) {: .copyable aria-label='Functions' }
+#### void UseCard ( [Card](enums/Card.md) ID, [UseFlags](enums/UseFlag.md) UseFlags = 0 ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Use·Pill () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void UsePill ( [PillEffect](enums/PillEffect.md) ID, [PillColor](enums/PillColor.md) PillColor, UseFlag UseFlags = 0  ) {: .copyable aria-label='Functions' }
+#### void UsePill ( [PillEffect](enums/PillEffect.md) ID, [PillColor](enums/PillColor.md) PillColor, [UseFlags](enums/UseFlag.md) UseFlags = 0  ) {: .copyable aria-label='Functions' }
 
 ___ 
 ### Will·Player·Revive () {: aria-label='Functions' }
