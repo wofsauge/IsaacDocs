@@ -100,7 +100,7 @@ Returns the BackdropType (Background) of the current room.
     |18|Mega Satan|
     |19|Library|
     |20|Shop|
-    |21|Isaacs Room|
+    |21|Isaac's Room|
     |22|Barren Room|
     |23|Secret Room|
     |24|Dice Room|
@@ -236,7 +236,7 @@ ___
 ### Get·Grid·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetGridPosition ( int GridIndex ) {: .copyable aria-label='Functions' }
-converts grid index to float (x,y) position undefined behaviour for invalid index 
+converts grid index to float (x,y) position undefined behavior for invalid index 
 ___ 
 ### Get·Grid·Size () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -536,7 +536,7 @@ ___
 Allows you to apply a color modifier to the floor texture of the current room.
 
 ???- example "Example Code"
-    This code changes the floorcolor to red.
+    This code changes the floor color to red.
     ```lua 
     Game():GetRoom():SetFloorColor(Color(1,1,1,1,255,0,0))
     ```
@@ -576,7 +576,7 @@ ___
 Allows you to apply a color modifier to the wall texture of the current room.
 
 ???- example "Example Code"
-    This code changes the wallcolor to red.
+    This code changes the wall color to red.
     ```lua 
     Game():GetRoom():SetWallColor(Color(1,1,1,1,255,0,0))
     ```
