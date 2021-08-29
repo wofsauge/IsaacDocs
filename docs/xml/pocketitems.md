@@ -18,14 +18,14 @@ Cards are marked by `<card ... />`, like so:
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|name|string|Name of the card|
-|description|string|Description of the card|
-|hud|string|Name of the card's front animation in `content/gfx/ui_cardfronts.anm2`, only used in mods|
+|name|string|The name of the card.|
+|description|string|The description of the card.|
+|hud|string|The name of the card's front animation in `content/gfx/ui_cardfronts.anm2`, which is only used in mods.|
 |type|string|Either `tarot`, `tarot_reverse`, `suit`, `special`, `rune`, or `object`. All types other than `object` and `rune` can be mimicked with Blank Card, while cards of type `rune` can be mimicked with Clear Rune. [ ](#){: .rep .tooltip .badge }|
-|mimiccharge|int|Amount of charge the card should take to mimic with Blank Card / Clear Rune. [ ](#){: .rep .tooltip .badge }|
+|mimiccharge|int|The amount of charge the card should take to mimic with Blank Card / Clear Rune. [ ](#){: .rep .tooltip .badge }|
 |pickup|int|The entities2.xml subtype corresponding to this card's pickup. [ ](#){: .rep .tooltip .badge }|
-|announcer|int|Sound ID to play when the card is used.|
-|announcerdelay|int|Delay in frames between card use and the sound provided being played.|
+|announcer|int|The sound ID to play when the card is used.|
+|announcerdelay|int|The delay in frames between card use and the sound provided being played.|
 |achievement|int|Ties the card to a vanilla achievement.|
 
 In both Afterbirth+ and Repentance, when adding a custom card you must include the `hud` tag, and an anm2 in your mod's `content/gfx/` folder called `ui_cardfronts.anm2`. This anm2 must contain an animation with the same name as specified in the `hud` tag, which will be displayed in the HUD as your card's front. Once you've added a card to the game, you'll be able to get its id through lua by using the `Isaac.GetCardIdByName(string cardHudName)` function, which takes the name specified in the `hud` tag.
