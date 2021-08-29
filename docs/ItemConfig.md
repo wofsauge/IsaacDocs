@@ -1,4 +1,13 @@
 # Class "ItemConfig"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [Isaac:GetItemConfig()](Isaac.md#getitemconfig)
+
+    ???+ example "Example Code"
+        `Isaac.GetItemConfig()`
+
 ItemConfig does have a special Enum.  you can find it here [ItemConfigEnums](enums/ItemConfig.md)
 
 ## Functions
