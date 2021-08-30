@@ -94,7 +94,14 @@ ___
 ### Get·Absolute·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetAbsoluteStage ( ) {: .copyable aria-label='Functions' }
-Returns the absolute stage, if its greed mode its converted to equivalent one. 
+In non-Greed Mode, returns the same thing as the `GetStage()` method. In Greed Mode, returns the adjusted stage similar to what it would be in non-Greed Mode.
+
+For example:
+
+- On Greed Mode Basement, `GetStage()` returns 1, and `GetAbsoluteStage()` returns 1.
+- On Greed Mode Caves, `GetStage()` returns 2, and `GetAbsoluteStage()` returns 3.
+- On Greed mode Depths, `GetStage()` returns 3, and `GetAbsoluteStage()` returns 5.
+
 ___ 
 ### Get·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
