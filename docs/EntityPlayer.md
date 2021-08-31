@@ -350,7 +350,10 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddTrinket ( [TrinketType](enums/TrinketType.md) Type, boolean FirstTimePickingUp = true ) {: .copyable aria-label='Functions' }
 
-Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the trinket and will cause it to not count towards transformations.
+- If the player does not have any open trinket slots, this function will do nothing.
+- If the player has an open trinket slot but already has a trinket, the new trinket will go to the first slot and the existing trinket will get pushed back to the second slot.
+- If you provide an argument of 0 or an otherwise invalid trinket ID, the game will crash.
+- Setting **FirstTimePickingUp** to false will not spawn or add pickups for the item and will not cause it to count towards transformations.
 ___ 
 ### Add·Wisp () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
