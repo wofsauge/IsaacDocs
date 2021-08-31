@@ -73,6 +73,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int ShopItemId  {: .copyable aria-label='Variables' }
 
+If in a shop, this value describes which slot the item is for sale in. For example, if the shop has 6 things for sale, the pickups in the room will have shop item IDs of 0, 1, 2, 3, 4, and 5.
+
+When spawning a new collectible item, the ShopItemId will be 0 by default. This has a side effect of making the collectible D6 roll into a red heart. By setting shop item id to -1, it will fix this behavior such that the collectible will properly roll into another collectible.
+
 ___ 
 ### State {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
