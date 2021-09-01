@@ -1653,7 +1653,7 @@ ___
 ### Tear·Height {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float TearHeight  {: .copyable aria-label='Variables' }
-Player stat - Only change this in a callback to MC_EVALUATE_CACHE. **This is equal to the Range Stat * -1.**  How high above the ground is the tear when it spawns?
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How high above the ground is the tear when it spawns?
 
 Note that tear height is not equivalent to the range stat. As of v820, there is no way for mods to update the player's range stat directly. As a workaround, you can award other range-up items.
 
