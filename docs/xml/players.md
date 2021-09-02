@@ -26,7 +26,7 @@ This page needs some content. You can contribute to it using the Edit Button!
 |pill|int||
 |canShoot|bool|False = blindfolded|
 |achievement|int|Tie the character to a vanilla achievement|
-|broken|string|Starting broken hearts [ ](#){: .rep .tooltip .badge }|
+|broken|int|Starting broken hearts [ ](#){: .rep .tooltip .badge }|
 |pocketActive|int|Starting pocket active item ID [ ](#){: .rep .tooltip .badge }|
 |birthright|string|Message when picking up Birthright [ ](#){: .rep .tooltip .badge }|
 |bSkinParent|string|Name of the normal version of your tainted character [ ](#){: .rep .tooltip .badge }|
