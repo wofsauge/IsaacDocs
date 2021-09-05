@@ -992,10 +992,18 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetShootingInput ( ) {: .copyable aria-label='Functions' }
 
+Returns a vector that corresponds to the shooting inputs that this player is pressing.
+
+![GetShootingInput diagram](../images/infographics/GetShootingInput.png){: width='350' }
+
 ___ 
 ### Get·Shooting·Joystick () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetShootingJoystick ( ) {: .copyable aria-label='Functions' }
+
+Returns a vector that corresponds to the shooting inputs that this player is holding.
+
+See the image for the [GetShootingInput](#getshootinginput) method.
 
 ___ 
 ### Get·Smooth·Body·Rotation () {: aria-label='Functions' }
