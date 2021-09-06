@@ -16,7 +16,7 @@ ___
 ### Get·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetSeed ( ) {: .copyable aria-label='Functions' }
-
+Returns the current seed of the RNG object.
 ___ 
 ### Next () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -50,6 +50,11 @@ ___
 ### Set·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSeed ( int Seed, int ShiftIdx ) {: .copyable aria-label='Functions' }
+Set the seed of a given RNG object.
+
+???+ bug "Bug"
+    If the seed is set to 0, the game will crash!!
+
 
 ???+ example "Example code"
     ```lua
