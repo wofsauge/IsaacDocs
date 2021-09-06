@@ -994,7 +994,8 @@ ___
 
 Returns a vector that corresponds to the shooting inputs that this player is pressing.
 
-![GetShootingInput diagram](../images/infographics/GetShootingInput.png){: width='350' }
+???- info "Shooting Angle diagram"
+    ![GetShootingInput diagram](images/infographics/GetShootingInput.png){: width='250' }
 
 ___ 
 ### Get·Shooting·Joystick () {: aria-label='Functions' }
