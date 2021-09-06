@@ -1,0 +1,1018 @@
+<items gfxroot="gfx/items/" version="1">
+	<passive cache="firedelay" description="Tears up" gfx="Collectibles_001_TheSadOnion.png" id="1" name="The Sad Onion" />
+	<passive cache="firedelay damage" description="Triple shot" gfx="Collectibles_002_TheInnerEye.png" id="2" name="The Inner Eye" />
+	<passive cache="speed tearcolor tearflag" description="Homing shots" gfx="Collectibles_003_SpoonBender.png" id="3" name="Spoon Bender" />
+	<passive cache="damage shotspeed" description="DMG up" gfx="Collectibles_004_CricketsHead.png" id="4" name="Cricket's Head" tags="dead" />
+	<passive cache="tearflag shotspeed range" description="Boomerang tears" gfx="Collectibles_005_MyReflection.png" id="5" name="My Reflection" />
+	<passive cache="firedelay range tearcolor" description="Tears up + range down" gfx="Collectibles_006_NumberOne.png" id="6" name="Number One" />
+	<passive cache="damage" description="DMG up" gfx="Collectibles_007_BloodOfTheMartyr.png" id="7" name="Blood of the Martyr" />
+	<familiar description="Friends 'till the end" gfx="Collectibles_008_BrotherBobby.png" id="8" name="Brother Bobby" tags="baby" />
+	<passive description="Fly love" gfx="Collectibles_009_Skatole.png" id="9" name="Skatole" tags="fly poop" />
+	<familiar description="Projectile protection" gfx="Collectibles_010_HaloOfFlies.png" id="10" name="Halo of Flies" tags="fly" />
+	<familiar description="Extra life" gfx="Collectibles_011_1Up.png" id="11" name="1up!" tags="mushroom" />
+	<passive cache="damage range speed size" description="All stats up!" gfx="Collectibles_012_MagicMushroom.png" hearts="100" id="12" maxhearts="2" name="Magic Mushroom" tags="mushroom" />
+	<passive cache="speed color" description="Poison touch + speed up" gfx="Collectibles_013_TheVirus.png" id="13" name="The Virus" tags="syringe" />
+	<passive cache="range speed" description="Speed and range up" gfx="Collectibles_014_RoidRage.png" id="14" name="Roid Rage" tags="syringe" />
+	<passive description="HP up" gfx="Collectibles_015_Heart.png" hearts="99" id="15" maxhearts="2" name="&lt;3" />
+	<passive description="HP up" gfx="Collectibles_016_RawLiver.png" hearts="99" id="16" maxhearts="4" name="Raw Liver" />
+	<passive description="99 keys" gfx="Collectibles_017_SkeletonKey.png" id="17" keys="99" name="Skeleton Key" />
+	<passive coins="100" description="$$$" gfx="Collectibles_018_ADollar.png" id="18" name="A Dollar" />
+	<passive bombs="10" description="10 bombs" gfx="Collectibles_019_Boom.png" id="19" name="Boom!" />
+	<passive achievement="8" cache="flying" description="We all float down here..." gfx="Collectibles_020_Transcendence.png" id="20" name="Transcendence" />
+	<passive description="The end is near" gfx="Collectibles_021_TheCompass.png" id="21" name="The Compass" />
+	<passive description="HP up" gfx="Collectibles_022_Lunch.png" hearts="4" id="22" maxhearts="2" name="Lunch" />
+	<passive description="HP up" gfx="Collectibles_023_Dinner.png" hearts="4" id="23" maxhearts="2" name="Dinner" />
+	<passive description="HP up" gfx="Collectibles_024_Dessert.png" hearts="4" id="24" maxhearts="2" name="Dessert" />
+	<passive description="HP up" gfx="Collectibles_025_Breakfast.png" hearts="4" id="25" maxhearts="2" name="Breakfast" />
+	<passive description="HP up" gfx="Collectibles_026_RottenMeat.png" hearts="4" id="26" maxhearts="2" name="Rotten Meat" />
+	<passive cache="speed" description="Speed up" gfx="Collectibles_027_WoodenSpoon.png" id="27" name="Wooden Spoon" />
+	<passive cache="speed" description="Speed up" gfx="Collectibles_028_TheBelt.png" id="28" name="The Belt" />
+	<passive cache="range" description="Range up" gfx="Collectibles_029_MomsUnderwear.png" id="29" name="Mom's Underwear" tags="mom" />
+	<passive cache="range" description="Range up" gfx="Collectibles_030_MomsHeels.png" id="30" name="Mom's Heels" tags="mom" />
+	<passive cache="range" description="Range up" gfx="Collectibles_031_MomsLipstick.png" id="31" name="Mom's Lipstick" tags="mom" />
+	<passive achievement="139" cache="firedelay" description="Tears up" gfx="Collectibles_032_WireCoatHanger.png" id="32" name="Wire Coat Hanger" />
+	<active cache="flying" description="Temporary flight" gfx="Collectibles_033_TheBible.png" id="33" maxcharges="4" name="The Bible" tags="angel book" />
+	<active cache="damage" description="Temporary DMG up" gfx="Collectibles_034_TheBookOfBelial.png" id="34" maxcharges="3" name="The Book of Belial" tags="book" />
+	<active achievement="36" description="Mass room damage" gfx="Collectibles_035_TheNecronomicon.png" id="35" maxcharges="4" name="The Necronomicon" tags="book" />
+	<active description="Plop!" gfx="Collectibles_036_ThePoop.png" id="36" maxcharges="1" name="The Poop" tags="poop" />
+	<active description="Reusable bomb buddy" gfx="Collectibles_037_MrBoom.png" id="37" maxcharges="2" name="Mr. Boom" />
+	<active description="Reusable tear burst" gfx="Collectibles_038_TammysHead.png" id="38" maxcharges="1" name="Tammy's Head" tags="dead" />
+	<active cooldown="220" description="Mass paralysis" gfx="Collectibles_039_MomsBra.png" id="39" maxcharges="3" name="Mom's Bra" tags="mom" />
+	<active cooldown="30" description="Become the bomb!" gfx="Collectibles_040_Kamikaze.png" id="40" maxcharges="0" name="Kamikaze!" addcostumeonpickup="true" />
+	<active cooldown="450" description="Mass fear" gfx="Collectibles_041_MomsPad.png" id="41" maxcharges="3" name="Mom's Pad" tags="mom" />
+	<active description="Reusable ranged bomb" gfx="Collectibles_042_BobsRottenHead.png" id="42" maxcharges="2" name="Bob's Rotten Head" tags="dead bob" />
+	<!-- <active description="" id="43" name="Pills here!" /> -->
+	<active cooldown="30" description="Teleport!" gfx="Collectibles_044_Teleport.png" id="44" maxcharges="2" name="Teleport!" />
+	<active description="Reusable regeneration" gfx="Collectibles_045_YumHeart.png" id="45" maxcharges="4" name="Yum Heart" />
+	<passive cache="luck" description="Luck up" gfx="Collectibles_046_LuckyFoot.png" id="46" name="Lucky Foot" />
+	<active description="Reusable air strike" gfx="Collectibles_047_DoctorsRemote.png" id="47" maxcharges="2" name="Doctor's Remote" />
+	<passive cache="tearflag" description="Piercing shots" gfx="Collectibles_048_CupidsArrow.png" id="48" name="Cupid's Arrow" />
+	<active description="BLLLARRRRGGG!" gfx="Collectibles_049_ShoopDaWhoop.png" id="49" maxcharges="2" name="Shoop da Whoop!" />
+	<passive cache="damage" description="DMG up" gfx="Collectibles_050_Steven.png" id="50" name="Steven" />
+	<passive cache="damage" description="DMG up" gfx="Collectibles_051_Pentagram.png" id="51" name="Pentagram" tags="devil" />
+	<passive achievement="11" cache="all" description="???" gfx="Collectibles_052_DrFetus.png" id="52" name="Dr. Fetus" special="true" />
+	<passive description="Item snatcher" gfx="Collectibles_053_Magneto.png" id="53" name="Magneto" />
+	<passive description="Full visible map" gfx="Collectibles_054_TreasureMap.png" id="54" name="Treasure Map" />
+	<passive description="Eye in the back of your head" gfx="Collectibles_055_MomsEye.png" id="55" name="Mom's Eye" tags="mom" />
+	<active description="Oops..." gfx="Collectibles_056_LemonMishap.png" id="56" maxcharges="2" name="Lemon Mishap" />
+	<familiar description="Attack fly" gfx="Collectibles_057_DistantAdmiration.png" id="57" name="Distant Admiration" tags="fly" />
+	<active cooldown="300" description="Temporary invincibility" gfx="Collectibles_058_BookOfShadows.png" id="58" maxcharges="3" name="Book of Shadows" tags="book" />
+	
+	<passive cache="tearflag" description="Building bridges" gfx="Collectibles_060_TheLadder.png" id="60" name="The Ladder" />
+	<!-- <passive description="" id="61" name="Tarot Card" /> -->
+	<passive description="Kills heal" gfx="Collectibles_062_CharmOfTheVampire.png" id="62" name="Charm of the Vampire" cache="damage" />
+	<passive description="Stores energy" gfx="Collectibles_063_TheBattery.png" id="63" name="The Battery" tags="battery" />
+	<passive description="50% off" gfx="Collectibles_064_SteamSale.png" id="64" name="Steam Sale" />
+	<active cooldown="35" description="Summon bombs" gfx="Collectibles_065_AnarchistCookbook.png" id="65" maxcharges="3" name="Anarchist Cookbook" tags="book" />
+	<active cooldown="240" description="Temporary enemy slowdown" gfx="Collectibles_066_TheHourglass.png" id="66" maxcharges="2" name="The Hourglass" />
+	<familiar description="Friends 'till the end" gfx="Collectibles_067_SisterMaggy.png" id="67" name="Sister Maggy" tags="baby" />
+	<passive cache="all" description="Laser tears" gfx="Collectibles_068_Technology.png" id="68" name="Technology" />
+	<passive cache="all" description="Charge shots" gfx="Collectibles_069_ChocolateMilk.png" id="69" name="Chocolate Milk" />
+	<passive cache="damage speed" description="Speed + DMG up" gfx="Collectibles_070_GrowthHormones.png" id="70" name="Growth Hormones" tags="syringe" />
+	<passive cache="speed range size" description="Speed + range up" gfx="Collectibles_071_MiniMushroom.png" id="71" name="Mini Mush" tags="mushroom" />
+	<passive description="Tears + faith up" gfx="Collectibles_072_Rosary.png" id="72" name="Rosary" soulhearts="6" cache="firedelay" tags="angel" />
+	<familiar achievement="6" description="Gotta meat 'em all" gfx="Collectibles_073_CubeOfMeat.png" id="73" name="Cube of Meat" />
+	<passive achievement="10" coins="25" description="+25 coins" gfx="Collectibles_074_AQuarter.png" id="74" name="A Quarter" />
+	<passive description="Better pills" gfx="Collectibles_075_PHD.png" hearts="4" id="75" name="PHD" />
+	<passive description="I've seen everything" gfx="Collectibles_076_XrayVision.png" id="76" name="X-Ray Vision" />
+	<active cache="speed" cooldown="180" description="Temporary badass" gfx="Collectibles_077_MyLittleUnicorn.png" id="77" maxcharges="4" name="My Little Unicorn" />
+	<active achievement="7" description="Reusable soul protection" gfx="Collectibles_078_BookOfRevelations.png" id="78" maxcharges="6" name="Book of Revelations" tags="book" />
+	<passive cache="damage speed" description="DMG + speed up" gfx="Collectibles_079_TheMark.png" devilprice="1" id="79" name="The Mark" blackhearts="2" tags="devil" />
+	<passive cache="damage firedelay" description="DMG + tears up" devilprice="2" gfx="Collectibles_080_ThePact.png" id="80" name="The Pact" blackhearts="4" tags="devil" />
+	<familiar description="9 lives" gfx="Collectibles_081_DeadCat.png" id="81" name="Dead Cat" tags="dead guppy" devilprice="2" />
+	<passive cache="flying speed" description="Demon wings" devilprice="2" gfx="Collectibles_082_LordOfThePit.png" id="82" name="Lord of the Pit" />
+	<active achievement="9" cache="speed damage" description="Temporary demon form" devilprice="2" gfx="Collectibles_083_TheNail.png" id="83" maxcharges="6" name="The Nail" tags="devil" />
+	<active description="Reusable level skip" gfx="Collectibles_084_WeNeedToGoDeeper.png" id="84" maxcharges="6" name="We Need To Go Deeper!" />
+	<active description="Reusable card generator " gfx="Collectibles_085_DeckOfCards.png" id="85" maxcharges="6" name="Deck of Cards" />
+	<active achievement="13" description="Summon Monstro" gfx="Collectibles_086_MonstrosTooth.png" id="86" maxcharges="3" name="Monstro's Tooth" addcostumeonpickup="true" />
+	<passive achievement="15" description="Cross tears" gfx="Collectibles_087_LokisHorns.png" id="87" name="Loki's Horns" />
+	<familiar achievement="14" description="Attack buddy" gfx="Collectibles_088_LittleChubby.png" id="88" name="Little Chubby" />
+	<passive cache="tearcolor tearflag" description="Slow effect" gfx="Collectibles_089_SpidersBite.png" id="89" name="Spider Bite" tags="spider" />
+	<passive achievement="12" cache="tearcolor damage speed firedelay" description="DMG up" gfx="Collectibles_090_SmallRock.png" id="90" name="The Small Rock" />
+	<passive description="See-through doors" gfx="Collectibles_091_SpelunkerHat.png" id="91" name="Spelunker Hat" />
+	<passive achievement="19" description="+2 hearts" gfx="Collectibles_092_SuperBandage.png" hearts="4" id="92" maxhearts="2" name="Super Bandage" soulhearts="4" />
+	<active achievement="26" cooldown="200" description="Temporary Man-Pac" gfx="Collectibles_093_TheGameKid.png" id="93" maxcharges="4" name="The Gamekid" />
+	<familiar achievement="21" description="Gives money" gfx="Collectibles_094_SackOfPennies.png" id="94" name="Sack of Pennies" />
+	<familiar description="Friends 'till the bbbbzzzt" gfx="Collectibles_095_RoboBaby.png" id="95" name="Robo-Baby" />
+	<familiar achievement="25" description="Gives kisses" gfx="Collectibles_096_LittleChad.png" id="96" name="Little C.H.A.D." />
+	<active achievement="22" description="Reusable item generator" gfx="Collectibles_097_BookOfSin.png" id="97" maxcharges="4" name="The Book of Sin" tags="book" />
+	<familiar achievement="20" description="Soul generator" gfx="Collectibles_098_TheRelic.png" id="98" name="The Relic" />
+	<familiar achievement="23" description="Sticky friend" gfx="Collectibles_099_LittleGish.png" id="99" name="Little Gish" />
+	<familiar achievement="24" description="Psychic friend" gfx="Collectibles_100_LittleSteve.png" id="100" name="Little Steven" tags="baby" />
+	<passive achievement="27" cache="damage firedelay range speed" description="All stats up" gfx="Collectibles_101_TheHalo.png" hearts="4" id="101" maxhearts="2" name="The Halo" tags="angel" />
+	<active description="Reusable pill generator" gfx="Collectibles_102_MomsBottleOfPills.png" id="102" maxcharges="6" name="Mom's Bottle of Pills" tags="mom" />
+	<passive cache="tearcolor tearflag" description="Poison damage" gfx="Collectibles_103_TheCommonCold.png" id="103" name="The Common Cold" />
+	<passive achievement="31" cache="tearcolor tearflag" description="Split shot" gfx="Collectibles_104_TheParasite.png" id="104" name="The Parasite" />
+	<active achievement="29" description="Reroll your destiny" gfx="Collectibles_105_Dice.png" id="105" maxcharges="6" name="The D6" special="true" />
+	<passive achievement="28" bombs="5" description="Bigger boom" gfx="Collectibles_106_MrMega.png" id="106" name="Mr. Mega" />
+    <active cache="familiars" description="Cut and run" gfx="Collectibles_107_PinkingShears.png" id="107" maxcharges="4" name="The Pinking Shears" />
+	<passive description="Damage resistance" gfx="Collectibles_108_TheWafer.png" id="108" name="The Wafer" />
+	<passive cache="damage" description="$$$ = DMG" gfx="Collectibles_109_MoneyisPower.png" id="109" name="Money = Power" />
+	<passive achievement="35" cache="tearcolor tearflag range" description="Freeze effect" gfx="Collectibles_110_MomsContacts.png" id="110" name="Mom's Contacts" tags="mom" />
+	<active description="Toot on command" gfx="Collectibles_111_TheBean.png" id="111" maxcharges="1" name="The Bean" />
+	<familiar achievement="45" description="Extra protection" gfx="Collectibles_112_GuardianAngel.png" id="112" name="Guardian Angel" tags="angel" />
+	<familiar achievement="47" description="Auto-turret friend" gfx="Collectibles_113_DemonBaby.png" id="113" name="Demon Baby" />
+	<passive achievement="43" cache="all" description="Stab stab stab" devilprice="2" gfx="Collectibles_114_MomsKnife.png" id="114" name="Mom's Knife" special="true" tags="mom" />
+	<passive cache="tearflag tearcolor" description="Spectral tears" gfx="Collectibles_115_OuijaBoard.png" id="115" name="Ouija Board" />
+	<passive description="Quicker charge" gfx="Collectibles_116_9Volt.png" id="116" name="9 Volt" tags="battery" />
+	<passive cache="familiars" description="Protective buddy" gfx="Collectibles_117_DeadBird.png" id="117" name="Dead Bird" />
+	<passive cache="all" description="Blood laser barrage" devilprice="2" gfx="Collectibles_118_Brimstone.png" id="118" name="Brimstone" special="true" tags="devil" />
+	<passive cache="speed" achievement="147" description="HP up" gfx="Collectibles_119_BloodBag.png" hearts="10" id="119" maxhearts="2" name="Blood Bag" />
+	<passive cache="damage firedelay speed size" description="Tears + speed up, DMG down" gfx="Collectibles_120_OddMushroomThin.png" id="120" name="Odd Mushroom" tags="mushroom" />
+	<passive cache="damage speed range size" description="HP + DMG up, speed down" gfx="Collectibles_121_OddMushroomLarge.png" id="121" hearts="2" maxhearts="2" name="Odd Mushroom" tags="mushroom" />
+	<passive cache="damage speed" description="Curse up" gfx="Collectibles_122_WhoreOFBabylon.png" id="122" name="Whore of Babylon" addcostumeonpickup="false" />
+	<active description="Temporary buddy generator" gfx="Collectibles_123_MonsterManual.png" id="123" maxcharges="6" name="Monster Manual" tags="book" />
+	<active description="It's a mystery" gfx="Collectibles_124_DeadSeaScrolls.png" id="124" maxcharges="2" name="Dead Sea Scrolls" />
+	<passive bombs="5" description="Homing bombs" gfx="Collectibles_125_BobbyBomb.png" id="125" name="Bobby-Bomb" />
+	<active achievement="44" cache="damage" description="Feel my pain" gfx="Collectibles_126_RazorBlade.png" id="126" maxcharges="0" name="Razor Blade" />
+	<active achievement="48" description="I don't remember..." gfx="Collectibles_127_ForgetMeNow.png" id="127" maxcharges="0" name="Forget Me Now" />
+	<familiar description="Attack fly" gfx="Collectibles_128_ForeverAlone.png" id="128" name="Forever Alone" tags="fly" />
+	<passive cache="speed" description="HP up" gfx="Collectibles_129_BucketofLard.png" hearts="4" id="129" maxhearts="4" name="Bucket of Lard" />
+	<active cache="flying speed" description="Flight + dash attack" gfx="Collectibles_130_APony.png" id="130" maxcharges="2" name="A Pony" passivecache="true" addcostumeonpickup="true" />
+	<familiar achievement="46" description="Gives bombs" gfx="Collectibles_131_BombBag.png" id="131" name="Bomb Bag" />
+	<passive cache="damage tearflag tearcolor" description="My Xmas present" gfx="Collectibles_132_ALumpOfCoal.png" id="132" name="A Lump of Coal" />
+	<active description="Soul converter" gfx="Collectibles_133_GuppysPaw.png" id="133" maxcharges="0" name="Guppy's Paw" tags="guppy" />
+	<passive description="Cursed?" gfx="Collectibles_134_GuppysTail.png" id="134" name="Guppy's Tail" tags="guppy" />
+	<active cooldown="15" description="Portable blood bank" gfx="Collectibles_135_IVBag.png" id="135" maxcharges="0" name="IV Bag" />
+	<active description="Friends 'till the end" gfx="Collectibles_136_BestFriend.png" id="136" maxcharges="3" name="Best Friend" />
+	<active bombs="5" cooldown="2" description="Remote bomb detonation" gfx="Collectibles_137_RemoteDetonator.png" id="137" maxcharges="0" name="Remote Detonator" />
+	<passive cache="damage" description="DMG + HP up" gfx="Collectibles_138_Stigmata.png" hearts="4" id="138" maxhearts="2" name="Stigmata" />
+	<passive description="More trinket room" gfx="Collectibles_139_MomsPurse.png" id="139" name="Mom's Purse" tags="mom" />
+	<passive bombs="5" description="+5 poison bombs" gfx="Collectibles_140_BobsCurse.png" id="140" name="Bob's Curse" tags="bob" />
+	<passive description="Ultimate grand supreme" gfx="Collectibles_141_PageantBoy.png" id="141" name="Pageant Boy" />
+	<passive description="Pray for a miracle" gfx="Collectibles_142_Scapular.png" id="142" name="Scapular" addcostumeonpickup="false" />
+	<passive cache="speed shotspeed" description="Speed + shot speed up" gfx="Collectibles_143_Speedball.png" id="143" name="Speed Ball" tags="syringe" />
+	<familiar description="He's greedy" gfx="Collectibles_144_BumFriend.png" id="144" name="Bum Friend" />
+	<active description="Reusable fly hive" gfx="Collectibles_145_GuppysHead.png" id="145" maxcharges="1" name="Guppy's Head" tags="guppy" />
+	<active description="Reusable eternity " gfx="Collectibles_146_PrayerCard.png" id="146" maxcharges="6" name="Prayer Card" />
+	<active description="Rocks don't stand a chance" gfx="Collectibles_147_NotchedAxe.png" id="147" maxcharges="64" chargetype="special" name="Notched Axe" persistent="1" />
+	<passive description="Fly revenge" gfx="Collectibles_148_Infestation.png" id="148" name="Infestation" tags="fly" />
+	<passive achievement="140" cache="all" description="Explosive shots" gfx="Collectibles_149_Ipecac.png" id="149" name="Ipecac" tags="bob" />
+	<passive description="Tooth shot" gfx="Collectibles_150_ToughLove.png" id="150" name="Tough Love" />
+	<passive cache="tearflag" description="They grow inside" gfx="Collectibles_151_TheMulligan.png" id="151" name="The Mulligan" tags="fly" />
+	<passive cache="weapon firedelay" description="Extra laser" gfx="Collectibles_152_Technology2.png" id="152" name="Technology 2" />
+	<passive cache="firedelay damage" description="Quad shot" gfx="Collectibles_153_MutantSpider.png" id="153" name="Mutant Spider" special="true" tags="spider" />
+	<passive cache="damage" description="DMG up" gfx="Collectibles_154_ChemicalPeel.png" id="154" name="Chemical Peel" />
+	<familiar description="Plop!" gfx="Collectibles_155_ThePeeper.png" id="155" name="The Peeper" />
+	<passive description="Item martyr" gfx="Collectibles_156_Habit.png" id="156" name="Habit" />
+	<passive achievement="54" cache="damage color" description="RAGE!" gfx="Collectibles_157_BloodyLust.png" id="157" name="Bloody Lust" devilprice="2" />
+	<active description="I see my future" gfx="Collectibles_158_CrystalBall.png" id="158" maxcharges="6" name="Crystal Ball" />
+	<passive cache="flying tearflag tearcolor" description="Scary" devilprice="2" gfx="Collectibles_159_SpiritOfTheNight.png" id="159" name="Spirit of the Night" tags="devil" />
+	<active cooldown="30" description="Holy white death" gfx="Collectibles_160_CrackTheSky.png" id="160" maxcharges="4" name="Crack the Sky" />
+	<passive description="Eternal life?" gfx="Collectibles_161_Ankh.png" id="161" name="Ankh" />
+	<passive achievement="50" cooldown="200" description="Blessing of protection" gfx="Collectibles_162_CelticCross.png" id="162" name="Celtic Cross" />
+	<familiar description="Spectral buddy" gfx="Collectibles_163_GhostBaby.png" id="163" name="Ghost Baby" />
+	<active achievement="59" description="Reusable flames" gfx="Collectibles_164_BlueCandle.png" id="164" maxcharges="110" name="The Candle" chargetype="timed" />
+	<passive cache="shotspeed damage" description="Shot speed + damage up" gfx="Collectibles_165_CatONineTails.png" id="165" name="Cat-o-nine-tails" />
+	<active achievement="49" description="Reroll the basics" gfx="Collectibles_166_D20.png" id="166" maxcharges="6" name="D20" />
+	<familiar description="Double shot buddy" gfx="Collectibles_167_HarlequinBaby.png" id="167" name="Harlequin Baby" tags="baby" />
+	<passive achievement="62" cache="all" description="On-demand air strike" gfx="Collectibles_168_EpicFetus.png" id="168" name="Epic Fetus" special="true" />
+	<passive cache="damage firedelay tearflag" description="Mega tears" gfx="Collectibles_169_Polyphemus.png" id="169" name="Polyphemus" special="true" />
+	<familiar description="Daddy's love" gfx="Collectibles_170_DaddyLonglegs.png" id="170" name="Daddy Longlegs" />
+	<active cooldown="120" description="Mass enemy slowdown + damage" gfx="Collectibles_171_SpiderButt.png" id="171" maxcharges="2" name="Spider Butt" tags="spider" />
+	<familiar achievement="53" description="My fate protects me" gfx="Collectibles_172_SacrificialDagger.png" id="172" name="Sacrificial Dagger" />
+	<passive description="Blessing of purity" gfx="Collectibles_173_Mitre.png" id="173" name="Mitre" tags="angel" />
+	<familiar description="Random buddy" gfx="Collectibles_174_RainbowBaby.png" id="174" name="Rainbow Baby" />
+	<active achievement="58" description="Opens all doors..." gfx="Collectibles_175_DadsKey.png" id="175" maxcharges="2" name="Dad's Key" />
+	<passive cache="shotspeed" description="HP + shot speed up" gfx="Collectibles_176_StemCells.png" hearts="4" id="176" maxhearts="2" name="Stem Cells" />
+	<active cooldown="0" description="Gamble 24/7" gfx="Collectibles_177_PortableSlot.png" id="177" maxcharges="0" name="Portable Slot" />
+	<familiar description="Splash!" gfx="Collectibles_178_HolyWater.png" id="178" name="Holy Water" />
+	<passive achievement="113" cache="flying" description="Flight eternal" gfx="Collectibles_179_Fate.png" id="179" name="Fate" />
+	<passive description="Toot on touch" gfx="Collectibles_180_BlackBean.png" id="180" name="The Black Bean" />
+	<active cache="flying speed" description="Flight + holy death" gfx="Collectibles_181_WhitePony.png" id="181" maxcharges="2" name="White Pony" passivecache="true" addcostumeonpickup="true" />
+	<passive cache="damage firedelay range shotspeed tearcolor tearflag" description="Homing shots + DMG up" gfx="Collectibles_182_SacredHeart.png" hearts="99" id="182" maxhearts="2" name="Sacred Heart" special="true" />
+	<passive cache="shotspeed firedelay" description="Tears + shot speed up" gfx="Collectibles_183_ToothPicks.png" id="183" name="Tooth Picks" />
+	<passive cache="flying" description="Flight + HP up" gfx="Collectibles_184_HolyGrail.png" hearts="4" id="184" maxhearts="2" name="Holy Grail" tags="angel" />
+	<passive cache="flying tearflag tearcolor" description="Flight + spectral tears" gfx="Collectibles_185_DeadDove.png" id="185" name="Dead Dove" tags="angel" />
+	<active achievement="56" description="Mass enemy damage at a cost" gfx="Collectibles_186_BloodRights.png" id="186" maxcharges="0" name="Blood Rights" />
+	<familiar achievement="65" description="Swing it" gfx="Collectibles_187_GuppysHairball.png" id="187" name="Guppy's Hairball" tags="guppy" />
+	<familiar achievement="51" description="Mirrored buddy" gfx="Collectibles_188_Abel.png" id="188" name="Abel" />
+	<passive achievement="63" cache="firedelay damage speed range" description="All stats up" gfx="Collectibles_189_SMBSuperFan.png" hearts="99" id="189" maxhearts="2" name="SMB Super Fan" />
+	<passive bombs="99" description="99 bombs" gfx="Collectibles_190_Pyro.png" id="190" name="Pyro" />
+	<passive cache="all" description="Rainbow tears" gfx="Collectibles_191_3DollarBill.png" id="191" name="3 Dollar Bill" />
+	<active cache="tearflag tearcolor range" description="Temporary psychic shot" gfx="Collectibles_192_TelepathyForDummies.png" id="192" maxcharges="2" name="Telepathy For Dummies" tags="book" />
+	<passive cache="damage" description="DMG + HP up" gfx="Collectibles_193_Meat.png" hearts="4" id="193" maxhearts="2" name="MEAT!" />
+	<passive cache="shotspeed" description="Shot speed up" gfx="Collectibles_194_Magic8Ball.png" id="194" name="Magic 8 Ball" />
+	<passive description="What's all this...?" gfx="Collectibles_195_MomsCoinPurse.png" id="195" name="Mom's Coin Purse" tags="mom" />
+	<passive cache="firedelay" description="Tears up" gfx="Collectibles_196_Squeezy.png" id="196" name="Squeezy" />
+	<passive cache="damage range" description="Damage + range up" gfx="Collectibles_197_JesusJuice.png" id="197" name="Jesus Juice" />
+	<passive description="Stuff" gfx="Collectibles_198_Box.png" id="198" name="Box" />
+	
+	<passive description="Better chest loot +2 keys" gfx="collectibles_199_momskey.png" id="199" keys="2" name="Mom's Key" tags="mom" cache="pickupvision" />
+	<passive cache="tearcolor" description="Charm tears" gfx="collectibles_200_momseyeshadow.png" id="200" name="Mom's Eyeshadow" tags="mom" />
+	<passive cache="damage" description="DMG up + concussive tears" gfx="collectibles_201_ironbar.png" id="201" name="Iron Bar" />
+	<passive description="Golden touch" gfx="collectibles_202_midastouch.png" id="202" name="Midas' Touch" />
+	<passive description="1+1 free 4Evar" gfx="collectibles_203_humblingbundle.png" id="203" name="Humbleing Bundle" />
+	<passive description="Filled with goodies" gfx="collectibles_204_fannypack.png" id="204" name="Fanny Pack" />
+	<passive description="Infinite charge... at a cost" gfx="collectibles_205_sharpplug.png" id="205" name="Sharp Plug" />
+	<familiar achievement="107" cache="damage firedelay" description="DMG + tears up. An out-of-body experience!" gfx="collectibles_206_guillotine.png" id="206" name="Guillotine" />
+	<familiar achievement="6" description="Gotta lick 'em all!" gfx="collectibles_207_ballofbandages.png" id="207" name="Ball of Bandages" />
+	<passive cache="damage" description="DMG + challenge up" gfx="collectibles_208_championbelt.png" id="208" name="Champion Belt" />
+	<passive bombs="5" description="Toxic blast +5 bombs" gfx="collectibles_209_buttbombs.png" id="209" name="Butt Bombs" tags="poop" />
+	<passive description="Unbreakable" gfx="Collectibles_210_GnawedLeaf.png" id="210" name="Gnawed Leaf" />
+	<passive description="Spider revenge" gfx="collectibles_211_spiderbaby.png" id="211" name="Spiderbaby" tags="spider" />
+	<passive description="Eternal life?" gfx="Collectibles_212_GuppysCollar.png" id="212" name="Guppy's Collar" tags="guppy" />
+	<passive cache="shotspeed tearflag" description="Shielded tears" gfx="collectibles_213_lostcontact.png" id="213" name="Lost Contact" />
+	<passive cache="range" description="Toxic blood" gfx="collectibles_214_anemic.png" id="214" name="Anemic" />
+	<passive cache="damage" description="He accepts your offering" gfx="collectibles_215_goathead.png" id="215" name="Goat Head" />
+	<passive cache="damage" blackhearts="6" description="DMG + evil up" gfx="Collectibles_216_CeremonialRobes.png" id="216" name="Ceremonial Robes" devilprice="2" />
+	<passive cache="firedelay" description="You feel itchy..." gfx="collectibles_217_momswig.png" hearts="2" id="217" name="Mom's Wig" tags="mom" />
+	<passive description="Regeneration + HP up" gfx="collectibles_218_placenta.png" hearts="4" id="218" maxhearts="2" name="Placenta" />
+	<passive description="HP up" gfx="collectibles_219_oldbandage.png" id="219" maxhearts="2" name="Old Bandage" />
+	<passive bombs="5" description="Tear blasts +5 bombs" gfx="collectibles_220_sadbombs.png" id="220" name="Sad Bombs" />
+	<passive achievement="150" cache="tearcolor tearflag" description="Bouncing tears" gfx="collectibles_221_rubbercement.png" id="221" name="Rubber Cement" />
+	<passive cache="firedelay tearflag color" description="Anti-gravity tears + tears up" gfx="collectibles_222_antigravity.png" id="222" name="Anti-Gravity" />
+	<passive bombs="5" description="It hurts so good +5 bombs" gfx="collectibles_223_pyromaniac.png" id="223" name="Pyromaniac" special="true" />
+	<passive cache="firedelay range tearflag" description="Bursting shots + tears up" gfx="collectibles_224_cricketsbody.png" id="224" name="Cricket's Body" />
+	<passive description="Sweet suffering" gfx="collectibles_225_gimpy.png" id="225" name="Gimpy" />
+	<passive blackhearts="2" description="HP up x3" gfx="collectibles_226_blacklotus.png" hearts="4" id="226" maxhearts="2" name="Black Lotus" soulhearts="2" />
+	<passive coins="3" description="My life savings" gfx="collectibles_227_piggybank.png" id="227" name="Piggy Bank" />
+	<passive cache="firedelay tearcolor" description="Fear shot + tears up" gfx="collectibles_228_momsperfume.png" id="228" name="Mom's Perfume" tags="mom" />
+	<passive cache="all" description="Charged burst attack" gfx="collectibles_229_monstroslung.png" id="229" name="Monstro's Lung" />
+	<passive achievement="128" cache="damage speed" description="Evil + DMG up + fear shot" devilprice="2" gfx="collectibles_230_abaddon.png" id="230" name="Abaddon" tags="devil" />
+	<passive cache="tearcolor" description="Sticky feet..." gfx="collectibles_231_balloftar.png" id="231" name="Ball of Tar" />
+	<passive achievement="138" cache="speed" description="Let's slow this down a bit..." gfx="collectibles_232_stopwatch.png" id="232" name="Stop Watch" />
+	<passive cache="all" description="Orbiting tears + range up" gfx="collectibles_233_tinyplanet.png" id="233" name="Tiny Planet" />
+	<passive description="Infestation shot" gfx="collectibles_234_infestation2.png" id="234" name="Infestation 2" tags="spider" />
+	
+	<passive description="Turdy touch" gfx="collectibles_236_ecoli.png" id="236" name="E. Coli" tags="poop" />
+	<passive achievement="103" cache="tearflag firedelay damage" description="Piercing shots + DMG up" devilprice="2" gfx="collectibles_237_deathstouch.png" id="237" name="Death's Touch" />
+	<familiar description="???" gfx="collectibles_238_keypiece1.png" id="238" name="Key Piece 1" tags="quest" />
+	<familiar description="???" gfx="collectibles_239_keypiece2.png" id="239" name="Key Piece 2" tags="quest" />
+	<passive achievement="141" cache="all" description="Some stats up, some stats down" gfx="collectibles_240_experimentaltreatment.png" id="240" name="Experimental Treatment" tags="syringe" />
+	<passive description="Wealth... but at what cost?" gfx="collectibles_241_contractfrombelow.png" id="241" name="Contract from Below" />
+	<passive description="Blocks damage... sometimes" gfx="collectibles_242_infamy.png" id="242" name="Infamy" />
+	<passive cache="weapon" description="You feel guarded" gfx="collectibles_243_trinityshield.png" id="243" name="Trinity Shield" />
+	<passive achievement="104" description="It's still being tested..." gfx="collectibles_244_techpointfive.png" id="244" name="Tech.5" />
+	<passive description="Double shot" gfx="collectibles_245_2020.png" id="245" name="20/20" cache="damage" />
+	<passive achievement="134" description="Secrets" gfx="collectibles_246_bluemap.png" id="246" name="Blue Map" />
+	<passive description="Your friends rule" gfx="collectibles_247_bffs.png" id="247" name="BFFS!" />
+	<passive description="Giant spiders and flies" gfx="collectibles_248_hivemind.png" id="248" name="Hive Mind" tags="fly spider" />
+	<passive achievement="135" description="More options" gfx="collectibles_249_theresoptions.png" id="249" name="There's Options" />
+	<passive description="1+1 BOOM!" gfx="collectibles_250_bogobombs.png" id="250" name="BOGO Bombs" />
+	<passive description="Extra card room" gfx="collectibles_251_starterdeck.png" id="251" name="Starter Deck" />
+	<passive achievement="146" description="Extra pill room" gfx="collectibles_252_littlebaggy.png" id="252" name="Little Baggy" />
+	<passive cache="luck" description="HP + luck up" gfx="collectibles_253_magicscab.png" hearts="4" id="253" maxhearts="2" name="Magic Scab" />
+	<passive description="DMG + range up" gfx="collectibles_254_bloodclot.png" id="254" name="Blood Clot" />
+	<passive cache="firedelay shotspeed" description="Tears + shot speed up" gfx="collectibles_255_screw.png" id="255" name="Screw" />
+	<passive bombs="5" description="Burning blast +5 bombs" gfx="collectibles_256_hotbombs.png" id="256" name="Hot Bombs" />
+	<passive cache="tearflag tearcolor" description="Flaming tears" gfx="collectibles_257_firemind.png" id="257" name="Fire Mind" />
+	<passive achievement="105" cache="all" description="Syntax error" gfx="collectibles_258_missingno.png" id="258" name="Missing No." />
+	<passive cache="damage tearcolor tearflag" description="DMG up + fear shot" gfx="collectibles_259_darkmatter.png" devilprice="1" id="259" name="Dark Matter" />
+	<passive cache="damage" achievement="136" blackhearts="2" description="Curse immunity + evil up" gfx="collectibles_260_blackcandle.png" id="260" name="Black Candle" />
+	<passive cache="tearflag damage" description="Short range mega tears" gfx="collectibles_261_proptosis.png" id="261" name="Proptosis" />
+	<passive cache="damage" blackhearts="2" description="Evil up. Your enemies will pay!" gfx="collectibles_262_missingpage2.png" id="262" name="Missing Page 2" />
+	
+	<!-- Afterbirth only, replaces unused id 263 -->
+	<active achievement="233" description="Rune mimic" gfx="Collectibles_263_BlankRune.png" id="263" name="Clear Rune" maxcharges="4" />
+	
+	<familiar description="Revenge fly" gfx="collectibles_264_smartfly.png" id="264" name="Smart Fly" tags="fly" />
+	<familiar description="Immortal friend" gfx="collectibles_265_drybaby.png" id="265" name="Dry Baby" />
+	<familiar description="Sticky babies" gfx="collectibles_266_juicysack.png" id="266" name="Juicy Sack" tags="spider" />
+	<familiar achievement="102" description="We worked out all the kinks" gfx="collectibles_267_robobaby2.png" id="267" name="Robo-Baby 2.0" />
+	<familiar description="Infested friend" gfx="collectibles_268_rottenbaby.png" id="268" name="Rotten Baby" tags="baby" />
+	<familiar description="Bloody friend" gfx="collectibles_269_headlessbaby.png" id="269" name="Headless Baby" tags="baby" />
+	<familiar description="Blood sucker" gfx="collectibles_270_leech.png" id="270" name="Leech" />
+	<familiar achievement="124" description="?" gfx="collectibles_271_mysterysack.png" id="271" name="Mystery Sack" />
+	<familiar description="Big Beautiful Fly" gfx="collectibles_272_bff.png" id="272" name="BBF" tags="fly" />
+	<familiar description="Explosive thoughts" gfx="collectibles_273_bobsbrain.png" id="273" name="Bob's Brain" tags="bob" />
+	<familiar description="Sworn protector" gfx="collectibles_274_bestbud.png" id="274" name="Best Bud" tags="fly" />
+	<familiar description="Evil friend" gfx="collectibles_275_lilbrimstone.png" devilprice="2" id="275" name="Lil Brimstone" />
+	<familiar achievement="129" description="Protect it" gfx="collectibles_276_isaacsheart.png" id="276" name="Isaac's Heart" />
+	<familiar description="Fear him" gfx="collectibles_277_lilhaunt.png" id="277" name="Lil Haunt" />
+	<familiar description="He wants to take your life" gfx="collectibles_278_darkbum.png" id="278" name="Dark Bum" />
+	<familiar description="Fat protector" gfx="collectibles_279_bigfan.png" id="279" name="Big Fan" tags="fly" />
+	<familiar description="She loves you" gfx="collectibles_280_sissylonglegs.png" id="280" name="Sissy Longlegs" />
+	<familiar description="Scape goat" gfx="collectibles_281_punchingbag.png" id="281" name="Punching Bag" />
+	<active cooldown="14" description="It's time you learned how" gfx="collectibles_282_howtojump.png" id="282" maxcharges="0" name="How to Jump" tags="book" />
+	<active achievement="133" description="REEROLLLLL!" gfx="collectibles_283_d100.png" id="283" maxcharges="6" name="D100" special="true" />
+	<active achievement="148" description="Reroll into something else" gfx="collectibles_284_d4.png" id="284" maxcharges="6" name="D4" />
+	<active description="Reroll enemies" gfx="collectibles_285_d10.png" id="285" maxcharges="1" name="D10" />
+	<active achievement="121" description="Card mimic" gfx="collectibles_286_blankcard.png" id="286" maxcharges="4" name="Blank Card" />
+	<active achievement="122" description="Tome of knowledge" gfx="collectibles_287_bookofsecrets.png" id="287" maxcharges="6" name="Book of Secrets" tags="book" />
+	<active description="It's a box of spiders" gfx="collectibles_288_boxofspiders.png" id="288" maxcharges="2" name="Box of Spiders" tags="spider" />
+	<active achievement="137" description="Flame on" gfx="collectibles_289_redcandle.png" id="289" maxcharges="110" name="Red Candle" chargetype="timed" />
+	<active description="Save your life" gfx="collectibles_290_thejar.png" id="290" maxcharges="0" name="The Jar" />
+	<active description="..." gfx="collectibles_291_flush.png" id="291" maxcharges="4" name="Flush!" tags="poop" />
+	<active achievement="126" description="Reusable evil... but at what cost?" devilprice="2" gfx="collectibles_292_satanicbible.png" id="292" maxcharges="6" name="Satanic Bible" tags="book" />
+	<active achievement="143" description="Krampus rage" gfx="collectibles_293_headofkrampus.png" id="293" maxcharges="3" name="Head of Krampus" />
+	<active achievement="145" description="Reusable knock-back" gfx="collectibles_294_butterbean.png" id="294" maxcharges="90" name="Butter Bean" chargetype="timed" />
+	<active description="Pay to win" gfx="collectibles_295_magicfingers.png" id="295" maxcharges="0" name="Magic Fingers" />
+	<active description="Convert your soul" gfx="collectibles_296_converter.png" id="296" maxcharges="0" name="Converter" />
+	<active achievement="119" description="? ?" gfx="collectibles_297_bluebox.png" id="297" maxcharges="0" name="Pandora's Box" />
+	<active cache="speed" cooldown="180" description="You feel stumped" gfx="collectibles_298_unicornstump.png" id="298" maxcharges="1" name="Unicorn Stump" />
+	<passive cache="speed" description="Speed down + rage is building" gfx="collectibles_299_taurus.png" id="299" name="Taurus" />
+	<passive cache="speed" description="Ramming speed" gfx="collectibles_300_aries.png" id="300" name="Aries" />
+	<passive description="HP up + you feel protected" gfx="collectibles_301_cancer.png" id="301" name="Cancer" soulhearts="6" />
+	<passive cache="size" description="Stompy" gfx="collectibles_302_leo.png" id="302" name="Leo" />
+	<passive description="You feel refreshed and protected" gfx="collectibles_303_virgo.png" id="303" name="Virgo" />
+	<passive bombs="6" cache="speed firedelay damage range" coins="6" description="You feel balanced" gfx="collectibles_304_libra.png" id="304" keys="6" name="Libra" />
+	<passive cache="tearflag tearcolor" description="Poison tears" gfx="collectibles_305_scorpio.png" id="305" name="Scorpio" />
+	<passive cache="tearflag speed" description="Piercing shots + speed up" gfx="collectibles_306_sagittarius.png" id="306" name="Sagittarius" />
+	<passive bombs="1" cache="speed firedelay damage range" coins="1" description="All stats up" gfx="collectibles_307_capricorn.png" hearts="4" id="307" keys="1" maxhearts="2" name="Capricorn" />
+	<passive description="Trail of tears" gfx="collectibles_308_aquarius.png" id="308" name="Aquarius" />
+	<passive cache="firedelay tearflag" description="Tears up + knock-back shot" gfx="collectibles_309_pisces.png" id="309" name="Pisces" />
+	<passive achievement="112" cache="shotspeed damage tearcolor firedelay" description="DMG up, tears + shot speed down" gfx="collectibles_310_evesmascara.png" id="310" name="Eve's Mascara" />
+	<passive achievement="108" description="Sweet revenge" devilprice="2" gfx="collectibles_311_judasshadow.png" id="311" name="Judas' Shadow" addcostumeonpickup="false" />
+	<passive achievement="109" description="HP up + you feel healthy" gfx="collectibles_312_maggysbow.png" hearts="4" id="312" maxhearts="2" name="Maggy's Bow" />
+	<passive description="Holy shield" gfx="collectibles_313_holymantle.png" id="313" name="Holy Mantle" tags="angel" addcostumeonpickup="false" />
+	<passive cache="speed" description="HP up + speed down + you feel stompy" gfx="collectibles_314_thunderthighs.png" hearts="4" id="314" maxhearts="2" name="Thunder Thighs" />
+	<passive cache="tearflag tearcolor" description="Magnetic tears" gfx="collectibles_315_strangeattractor.png" id="315" name="Strange Attractor" />
+	<passive cache="all" description="Cursed charge shot" gfx="collectibles_316_cursedeye.png" id="316" name="Cursed Eye" />
+	<passive cache="tearflag tearcolor" description="Toxic splash damage" gfx="collectibles_317_mysteriousliquid.png" id="317" name="Mysterious Liquid" />
+	<familiar description="Conjoined friend" gfx="collectibles_318_gemini.png" id="318" name="Gemini" />
+	<familiar achievement="110" description="Near-sighted friend" gfx="collectibles_319_cainseye.png" id="319" name="Cain's Other Eye" />
+	<familiar achievement="114" description="Controlled friend" gfx="collectibles_320_bluebabysonlyfriend.png" id="320" name="???'s Only Friend" tags="fly" />
+	<familiar achievement="115" description="The ol' ball and chain" gfx="collectibles_321_samsonschains.png" id="321" name="Samson's Chains" />
+	<familiar description="Mongo friend" gfx="collectibles_322_mongobaby.png" id="322" name="Mongo Baby" tags="baby" />
+	<active achievement="106" description="Collected tears" gfx="collectibles_323_isaacstears.png" id="323" maxcharges="6" name="Isaac's Tears" chargetype="special" />
+	<active achievement="125" description="Undefined" gfx="collectibles_324_Undefined.png" id="324" maxcharges="6" name="Undefined" />
+	<active achievement="30" cache="familiars" description="Lose your head" gfx="collectibles_325_scissors.png" id="325" maxcharges="4" name="Scissors" />
+	<active cooldown="31" description="Invincibility at a cost" gfx="collectibles_326_breathoflife.png" id="326" maxcharges="6" name="Breath of Life" chargetype="special" />
+	<passive achievement="57" cooldown="150" description="Fate chosen" gfx="collectibles_327_thepolaroid.png" id="327" name="The Polaroid" />
+	<passive achievement="78" cache="damage" description="Fate chosen" gfx="collectibles_328_thenegative.png" id="328" name="The Negative" />
+	<passive cache="all" description="Controlled tears" gfx="collectibles_329_theludovicotechnique.png" id="329" name="The Ludovico Technique" special="true" />
+	<passive cache="firedelay damage tearcolor" description="DMG down + tears way up" gfx="collectibles_330_soymilk.png" id="330" name="Soy Milk" />
+	<passive achievement="156" cache="tearflag shotspeed firedelay range damage" description="God tears" gfx="collectibles_331_godhead.png" id="331" name="Godhead" special="true" />
+	<passive achievement="116" cache="" description="Eternal life?" gfx="collectibles_332_lazarusrags.png" id="332" name="Lazarus' Rags" />
+	<passive achievement="130" cache="" description="I know all" gfx="collectibles_333_mind.png" id="333" name="The Mind" />
+	<passive achievement="131" cache="" description="I feel all" gfx="collectibles_334_body.png" hearts="6" id="334" maxhearts="6" name="The Body" />
+	<passive achievement="132" cache="" description="I am all" gfx="collectibles_335_soul.png" id="335" name="The Soul" soulhearts="4" />
+	<passive cache="tearcolor tearflag range shotspeed" description="Toxic aura tears" gfx="collectibles_336_deadonion.png" id="336" name="Dead Onion" />
+	<passive cache="" description="I think it's broken" gfx="collectibles_337_brokenwatch.png" id="337" name="Broken Watch" />
+	<active description="It will never leave you" gfx="collectibles_338_boomerang.png" id="338" maxcharges="70" name="The Boomerang" chargetype="timed" />
+	<passive blackhearts="2" cache="range shotspeed damage" description="Evil + range + shot speed up" gfx="collectibles_339_SafetyPin.png" id="339" name="Safety Pin" />
+	<passive cache="speed size" description="Speed up + size down" gfx="collectibles_340_CaffeinePill.png" id="340" name="Caffeine Pill" />
+	<passive cache="shotspeed firedelay" description="Tears + shot speed up" gfx="collectibles_341_TornPhoto.png" id="341" name="Torn Photo" />
+	<passive cache="shotspeed firedelay" description="HP + tears up + shot speed down" gfx="collectibles_342_BlueCap.png" hearts="4" id="342" maxhearts="2" name="Blue Cap" tags="mushroom" />
+	<passive cache="luck" description="Luck up" gfx="collectibles_343_LatchKey.png" id="343" name="Latch Key" soulhearts="2" />
+	<passive cache="damage" blackhearts="2" description="Evil up" gfx="collectibles_344_MatchBook.png" id="344" name="Match Book" />
+	<passive cache="damage range" description="DMG + range up" gfx="collectibles_345_Synthoil.png" id="345" name="Synthoil" tags="syringe" />
+	<passive description="HP up" gfx="collectibles_346_ASnack.png" hearts="4" id="346" maxhearts="2" name="A Snack" />
+
+	<!-- Afterbirth -->
+	<active description="Double item vision" gfx="Collectibles_347_Diplopia.png" id="347" name="Diplopia" maxcharges="0" />
+	<active description="Pill mimic" gfx="Collectibles_348_Placebo.png" id="348" name="Placebo" maxcharges="4" />
+	<active achievement="244" description="Flip a coin" gfx="Collectibles_349_WoodenNickel.png" id="349" name="Wooden Nickel" maxcharges="1" />
+	<passive description="Mass poison" gfx="Collectibles_350_ToxicShock.png" id="350" name="Toxic Shock" cache="color" />
+	<active description="Giga fart!" gfx="Collectibles_351_MegaBean.png" id="351" name="Mega Bean" maxcharges="3" />
+	<active description="Be gentle..." gfx="Collectibles_352_GlassCannon.png" id="352" name="Glass Cannon" maxcharges="110" chargetype="timed" />
+	<passive description="Cross blast + 5 bombs" gfx="Collectibles_353_BomberBoy.png" id="353" name="Bomber Boy" bombs="5" />
+	<passive description="HP up. Don't swallow the prize!" gfx="Collectibles_354_CrackJacks.png" id="354" name="Crack Jacks" maxhearts="2" hearts="4" />
+	<passive description="Range + luck up" gfx="Collectibles_355_MomsPearls.png" id="355" name="Mom's Pearls" cache="luck range" soulhearts="2" tags="mom" />
+	<passive description="Active power up" gfx="Collectibles_356_CarBattery.png" id="356" name="Car Battery" tags="battery" />
+	<active achievement="203" description="Double your friends" gfx="Collectibles_357_PandorasBox.png" id="357" name="Box of Friends" maxcharges="3" cache="familiars" />
+	<passive description="Double wiz shot!" gfx="Collectibles_358_TheWiz.png" id="358" name="The Wiz" cache="tearflag" />
+	<passive description="Stick it to 'em!" gfx="Collectibles_359_8InchNails.png" id="359" name="8 Inch Nails" cache="damage tearflag" />
+	<familiar achievement="190" description="Dark friend" gfx="Collectibles_360_Incubus.png" id="360" name="Incubus" devilprice="2" />
+	<familiar achievement="183" description="Your fate beside you" gfx="Collectibles_361_FatesReward.png" id="361" name="Fate's Reward" />
+	<familiar achievement="192" description="What's in the box?" gfx="Collectibles_362_LilChest.png" id="362" name="Lil Chest" />
+	<familiar achievement="189" description="Protective friend" gfx="Collectibles_363_SwornProtector.png" id="363" name="Sworn Protector" tags="angel" />
+	<familiar description="Friendly fly" gfx="Collectibles_364_FriendZone.png" id="364" name="Friend Zone" tags="fly" />
+	<familiar description="Lost protector" gfx="Collectibles_365_LostFly.png" id="365" name="Lost Fly" tags="fly" />
+	<passive description="We put bombs in your bombs!" gfx="Collectibles_366_ScatterBombs.png" id="366" name="Scatter Bombs" bombs="5" />
+	<passive description="Egg sack bombs!" gfx="Collectibles_367_StickyBombs.png" id="367" name="Sticky Bombs" bombs="5" />
+	<passive description="Intensifying tears" gfx="Collectibles_368_Epiphora.png" id="368" name="Epiphora" />
+	<passive description="Transcendent tears" gfx="Collectibles_369_Continuum.png" id="369" name="Continuum" cache="tearflag range" />
+	<passive description="Range + tears up" gfx="Collectibles_370_MrDolly.png" id="370" name="Mr. Dolly" cache="range firedelay" />
+	<passive description="Embrace chaos" gfx="Collectibles_371_CurseOfTheTower.png" id="371" name="Curse of the Tower" />
+	<familiar description="Bbbzzzzzt! " gfx="Collectibles_372_ChargedBaby.png" id="372" name="Charged Baby" />
+	<passive description="Accuracy brings power" gfx="Collectibles_373_DeadEye.png" id="373" name="Dead Eye" cache="damage" />
+	<passive description="Holy death shot" gfx="Collectibles_374_HolyLight.png" id="374" name="Holy Light" />
+	<passive description="Blast resistance" gfx="Collectibles_375_HostHat.png" id="375" name="Host Hat" />
+	<passive description="Never ending stores!" gfx="Collectibles_376_Restock.png" id="376" name="Restock" />
+	<passive description="Spider love" gfx="Collectibles_377_BurstingSack.png" id="377" name="Bursting Sack" tags="spider" />
+	<passive description="Uh oh..." gfx="Collectibles_378_NumberTwo.png" id="378" name="Number Two" />
+	<passive description="Wide shot" gfx="Collectibles_379_PupulaDuplex.png" id="379" name="Pupula Duplex" cache="tearflag" />
+	<passive description="Money talks" gfx="Collectibles_380_PayToPlay.png" id="380" name="Pay To Play" coins="5" />
+	<passive achievement="188" description="Tears up + your future shines brighter" gfx="Collectibles_381_EdensBlessing.png" id="381" name="Eden's Blessing" cache="firedelay" />
+	<active description="Gotta fetch 'em all!" gfx="Collectibles_382_FriendlyBall.png" id="382" name="Friendly Ball" maxcharges="2" />
+	<active description="Remote tear detonation" gfx="Collectibles_383_TearDetonator.png" id="383" name="Tear Detonator" maxcharges="450" chargetype="timed" />
+	<familiar description="A gurd of your own!" gfx="Collectibles_384_LilGurdy.png" id="384" name="Lil Gurdy" />
+	<familiar description="Bumbo want coin!" gfx="Collectibles_385_Bumbo.png" id="385" name="Bumbo" />
+	<active achievement="181" description="Rerolls rocks" gfx="Collectibles_386_D12.png" id="386" name="D12" maxcharges="3" />
+	<familiar achievement="193" description="Peace be with you" gfx="Collectibles_387_Censer.png" id="387" name="Censer" />
+	<familiar achievement="200" description="He wants your keys!" gfx="Collectibles_388_KeyBum.png" id="388" name="Key Bum" />
+	<familiar achievement="218" description="Rune generator" gfx="Collectibles_389_RuneBag.png" id="389" name="Rune Bag" />
+	<familiar description="Sworn friend" gfx="Collectibles_390_Seraphim.png" id="390" name="Seraphim" />
+	<passive achievement="182" description="Turn your enemy" gfx="Collectibles_391_Betrayal.png" id="391" name="Betrayal" />
+	<passive achievement="202" description="The heavens will change you" gfx="Collectibles_392_Zodiac.png" id="392" name="Zodiac" />
+	<passive achievement="220" description="The kiss of death" gfx="Collectibles_393_SerpentsKiss.png" id="393" name="Serpent's Kiss" />
+	<passive description="Directed tears" gfx="Collectibles_394_Marked.png" id="394" name="Marked" cache="firedelay range" />
+	<passive description="Laser ring tears" gfx="Collectibles_395_TechX.png" id="395" name="Tech X" cache="all" />
+	<active description="Short cutter" gfx="Collectibles_396_VentricleRazor.png" id="396" name="Ventricle Razor" />
+	<passive description="Controlled tears" gfx="Collectibles_397_TractorBeam.png" id="397" name="Tractor Beam" cache="firedelay tearflag range shotspeed" />
+	<passive description="Shrink shot!" gfx="Collectibles_398_GodsFlesh.png" id="398" name="God's Flesh" cache="tearcolor" tags="mushroom" />
+	<passive achievement="186" description="Consume thy enemy!" gfx="Collectibles_399_MawOfTheVoid.png" id="399" name="Maw of the Void" cache="tearcolor" devilprice="2" tags="devil" />
+	<passive description="Your destiny" gfx="Collectibles_400_SpearOfDestiny.png" id="400" name="Spear of Destiny" />
+	<passive description="Sticky bomb shot" gfx="Collectibles_401_Explosivo.png" id="401" name="Explosivo" cache="tearflag tearcolor" />
+	<passive description="!!!" gfx="Collectibles_402_Chaos.png" id="402" name="Chaos" />
+	<familiar description="Mod buddy" gfx="Collectibles_403_SpiderMod.png" id="403" name="Spider Mod" tags="spider" />
+	<familiar achievement="179" description="He farts" gfx="collectibles_404_fartbaby.png" id="404" name="Farting Baby" />
+	<familiar achievement="201" description="Double tap glitch" gfx="Collectibles_405_GBBug.png" id="405" name="GB Bug" />
+	<active achievement="231" description="Reroll stats" gfx="Collectibles_406_D8.png" id="406" name="D8" maxcharges="4" />
+	<passive achievement="180" description="Aura stat boost" gfx="Collectibles_407_Purity.png" id="407" name="Purity" cache="damage firedelay speed range" />
+	<passive achievement="184" description="Call to the void" gfx="Collectibles_408_Athame.png" id="408" name="Athame" />
+	<passive achievement="187" description="I reward an empty vessel" gfx="Collectibles_409_EmptyVessel.png" id="409" name="Empty Vessel" cache="flying" blackhearts="4" />
+	<passive achievement="194" description="Eye shot" gfx="Collectibles_410_EvilEye.png" id="410" name="Evil Eye" />
+	<passive achievement="198" description="Their blood brings rage!" gfx="Collectibles_411_LustyBlood.png" id="411" name="Lusty Blood" cache="damage color" devilprice="2" />
+	<passive achievement="219" description="Feed them hate" gfx="Collectibles_412_CambionConception.png" id="412" name="Cambion Conception" />
+	<passive achievement="222" description="Feed them love" gfx="Collectibles_413_ImmaculateConception.png" id="413" name="Immaculate Conception" />
+	<passive achievement="135" description="There's options" gfx="Collectibles_414_MoreOptions.png" id="414" name="More Options" />
+	<passive description="The untainted gain power" gfx="Collectibles_415_CrownOfLight.png" id="415" name="Crown of Light" soulhearts="4" cache="damage shotspeed range" />
+	<passive achievement="238" description="More money!" gfx="Collectibles_416_deeppockets.png" id="416" name="Deep Pockets" />
+	<familiar achievement="221" description="Damage booster" gfx="Collectibles_417_Succubus.png" id="417" name="Succubus" devilprice="2" />
+	
+	<passive description="Rainbow effects!" gfx="Collectibles_418_FruitCake.png" id="418" name="Fruit Cake" />
+	<active description="I-Teleport!" gfx="Collectibles_419_Teleport20.png" id="419" name="Teleport 2.0" maxcharges="4" />
+	<passive description="Spin the black circle!" gfx="Collectibles_420_BlackPowder.png" id="420" name="Black Powder" />
+	<active description="Love toots" gfx="Collectibles_421_KidneyBean.png" id="421" name="Kidney Bean" maxcharges="1" />
+	<active description="Turn back time" gfx="Collectibles_422_GlowingHourGlass.png" id="422" name="Glowing Hour Glass" maxcharges="3" />
+	<passive description="Protect me from myself" gfx="Collectibles_423_CircleOfProtection.png" id="423" name="Circle of Protection" />
+	<passive description="More sacks!" gfx="Collectibles_424_SackHead.png" id="424" name="Sack Head" />
+	<passive description="Scared of the dark?" gfx="Collectibles_425_NightLight.png" id="425" name="Night Light" />
+	<familiar description="Follows my every move..." gfx="Collectibles_426_ObsessedFan.png" id="426" name="Obsessed Fan" tags="fly" />
+	<active description="Booom!" gfx="Collectibles_427_MineCrafter.png" id="427" name="Mine Crafter" maxcharges="1" />
+	<passive description="You feel cozy" gfx="Collectibles_428_PJs.png" id="428" name="PJs" soulhearts="8" hearts="24" />
+	<passive cache="tearflag tearcolor" description="Penny tears" gfx="Collectibles_429_HeadOfTheKeeper.png" id="429" name="Head of the Keeper" />
+	<familiar description="Turret follower" gfx="Collectibles_430_PapaFly.png" id="430" name="Papa Fly" tags="fly" />
+	<familiar description="ydduB Buddy" gfx="Collectibles_431_MultidimensionalBaby.png" id="431" name="Multidimensional Baby" />
+	<passive description="Prize bombs" gfx="Collectibles_432_GlitterBombs.png" id="432" name="Glitter Bombs" bombs="5" />
+	<passive achievement="195" description="Me! And my shaaaadow!" gfx="Collectibles_433_MyShadow.png" id="433" name="My Shadow" />
+	<active description="Bug catcher" gfx="Collectibles_434_JarOfFlies.png" id="434" name="Jar of Flies" maxcharges="0" tags="fly" />
+	<familiar description="4-way buddy!" gfx="Collectibles_435_LilLoki.png" id="435" name="Lil Loki" />
+	<familiar description="Don't cry over it..." gfx="Collectibles_436_Milk.png" id="436" name="Milk!" cache="firedelay" />
+	<active description="Roll again" gfx="Collectibles_437_D7.png" id="437" name="D7" maxcharges="3" />
+	<passive description="Tears up" gfx="Collectibles_438_Binky.png" id="438" name="Binky" cache="firedelay size" soulhearts="2" />
+	<active description="What's inside?" gfx="Collectibles_439_MomsBox.png" id="439" name="Mom's Box" maxcharges="4" cache="all" tags="mom" passivecache="true" />
+	<passive achievement="232" description="Matt's kidney stone" gfx="Collectibles_440_KidneyStone.png" id="440" name="Kidney Stone" cache="range speed firedelay" />
+	<active achievement="276" description="Laser breath" gfx="collectibles_441_megasatansbreath.png" id="441" name="Mega Blast" maxcharges="12" />
+	
+	<!-- Afterbirth+ -->
+	<passive achievement="290" description="Loss is power" gfx="Collectibles_442_DarkPrincesCrown.png" id="442" name="Dark Prince's Crown" cache="range firedelay shotspeed" devilprice="1" />
+	<passive description="Trick or treat?" gfx="Collectibles_443_Apple.png" id="443" name="Apple!" cache="firedelay" />
+	<passive description="He's a bleeder!" gfx="Collectibles_444_LeadPencil.png" id="444" name="Lead Pencil" />
+	<passive description="Bark at the moon!" gfx="Collectibles_445_DogTooth.png" id="445" name="Dog Tooth" cache="damage speed" />
+	<passive description="Toxic breath" gfx="Collectibles_446_DeadTooth.png" id="446" name="Dead Tooth" />
+	<passive description="Crying makes me toot" gfx="Collectibles_447_LingerBean.png" id="447" name="Linger Bean" />
+	<passive description="Blood and guts!" gfx="Collectibles_448_ShardOfGlass.png" id="448" name="Shard of Glass" />
+	<passive description="It itches..." gfx="Collectibles_449_MetalPlate.png" id="449" name="Metal Plate" soulhearts="2" />
+	<passive achievement="308" description="Gold tears!" gfx="Collectibles_450_EyeOfGreed.png" id="450" name="Eye of Greed" />
+	<passive description="I see the future" gfx="Collectibles_451_TarotCloth.png" id="451" name="Tarot Cloth" />
+	<passive description="I'm leaking..." gfx="Collectibles_452_VaricoseVeins.png" id="452" name="Varicose Veins" />
+	<passive achievement="291" description="Bone tears!" gfx="Collectibles_453_CompoundFracture.png" id="453" name="Compound Fracture" cache="range tearflag" />
+	<passive description="Hold me!" gfx="Collectibles_454_Polydactyly.png" id="454" name="Polydactyly" />
+	<passive achievement="307" description="I remember this..." gfx="Collectibles_455_DadsLostCoin.png" id="455" name="Dad's Lost Coin" cache="range" />
+	<passive description="HP up" gfx="Collectibles_456_MoldyBread.png" id="456" name="Midnight Snack" hearts="4" maxhearts="2" />
+	<passive description="Hard headed!" gfx="Collectibles_457_Conehead.png" id="457" name="Cone Head" soulhearts="2" />
+	<passive description="What's in there?" gfx="Collectibles_458_BellyButton.png" id="458" name="Belly Button" />
+	<passive description="Booger tears!" gfx="Collectibles_459_SinusInfection.png" id="459" name="Sinus Infection" cache="tearcolor" />
+	<passive description="Blind tears!" gfx="Collectibles_460_Glaucoma.png" id="460" name="Glaucoma" />
+	<passive description="Egg tears!" gfx="Collectibles_461_Parasitoid.png" id="461" name="Parasitoid" cache="range" tags="fly spider" />
+	<passive achievement="299" description="Possessed tears!" gfx="Collectibles_462_EyeOfBelial.png" id="462" name="Eye of Belial" cache="range tearflag" devilprice="2" />
+	<passive description="Acid tears!" gfx="Collectibles_463_SulfuricAcid.png" id="463" name="Sulfuric Acid" cache="damage tearcolor tearflag" />
+	<passive achievement="297" description="A gift from above" gfx="Collectibles_464_GlyphOfBalance.png" id="464" name="Glyph of Balance" soulhearts="4" />
+	<passive description="360 tears!" gfx="Collectibles_465_AnalogStick.png" id="465" name="Analog Stick" cache="firedelay" />
+	<passive description="Outbreak!" gfx="Collectibles_466_Contagion.png" id="466" name="Contagion" />
+	<familiar description="Watch where you point that!" gfx="Collectibles_467_Finger.png" id="467" name="Finger!" />
+	<familiar achievement="285" description="It follows" gfx="Collectibles_468_Shade.png" id="468" name="Shade" />
+	<familiar description=":(" gfx="Collectibles_469_Depression.png" id="469" name="Depression" />
+	<familiar achievement="315" description="Lil hush!" gfx="Collectibles_470_Hushy.png" id="470" name="Hushy" />
+	<familiar description="Ain't he cute?" gfx="Collectibles_471_LilMonstro.png" id="471" name="Lil Monstro" />
+	<familiar achievement="286" description="Hail to the king baby" gfx="Collectibles_472_KingBaby.png" id="472" name="King Baby" />
+	<familiar description="Chub chub" gfx="Collectibles_473_BigChubby.png" id="473" name="Big Chubby" />
+	<active description="You broke it!" gfx="Collectibles_474_BrokenGlassCannon.png" id="474" name="Broken Glass Cannon" maxcharges="4" initcharge="0" />
+	<active achievement="305" description="My last resort" gfx="Collectibles_475_PlanC.png" id="475" name="Plan C" maxcharges="0" />
+	<active achievement="296" description="What will it be?" gfx="Collectibles_476_D1.png" id="476" name="D1" maxcharges="4" />
+	<active achievement="295" description="Consume" gfx="Collectibles_477_Void.png" id="477" name="Void" maxcharges="6" />
+	<active description="Stop!" gfx="Collectibles_478_Pause.png" id="478" name="Pause" maxcharges="2" />
+	<active achievement="318" description="Trinket melter!" gfx="Collectibles_479_Smelter.png" id="479" name="Smelter" maxcharges="6" />
+	<active description="Gain more friends!" gfx="Collectibles_480_Compost.png" id="480" name="Compost" maxcharges="2" />
+	<active description="109" gfx="Collectibles_481_Dataminer.png" id="481" name="Dataminer" maxcharges="4" />
+	<active description="Change" gfx="Collectibles_482_Clicker.png" id="482" name="Clicker" maxcharges="6" />
+	<active description="BOOOOOOOOOM!" gfx="Collectibles_483_MaMaMega.png" id="483" name="Mama Mega!" />
+	<active description="I can't believe it's not butter bean!" gfx="Collectibles_484_WaitWhat.png" id="484" name="Wait What?" maxcharges="300" chargetype="timed" />
+	
+	<active achievement="294" description="50/50" gfx="collectibles_485_crookedpenny.png" id="485" name="Crooked Penny" maxcharges="4" />
+	<active achievement="288" description="I feel numb..." gfx="collectibles_486_dullrazor.png" id="486" name="Dull Razor" maxcharges="2" />
+	<active description="A pound of flesh..." gfx="collectibles_487_potatopeeler.png" id="487" name="Potato Peeler" />
+	<active achievement="303" description="Waggles a finger" gfx="collectibles_488_metronome.png" id="488" name="Metronome" maxcharges="2" cache="all" />
+	<active achievement="282" description="Reroll forever" gfx="collectibles_489_dinfinity.png" id="489" name="D infinity" maxcharges="2" />
+	<active achievement="289" description="..." gfx="collectibles_490_edenssoul.png" id="490" name="Eden's Soul" maxcharges="12" initcharge="0" />
+	<familiar description="Pills pills pills!" gfx="collectibles_491_acidbaby.png" id="491" name="Acid Baby" />
+	<familiar description="Yo listen!" gfx="collectibles_492_yolisten.png" id="492" name="YO LISTEN!" cache="luck" />
+	<passive description="Panic = power" gfx="collectibles_493_adderline.png" id="493" name="Adrenaline" cache="damage" tags="syringe" />
+	<passive description="Electric tears" gfx="collectibles_494_jacobsladder.png" id="494" name="Jacob's Ladder" cache="tearflag tearcolor" />
+	<passive description="Flame tears" gfx="collectibles_495_ghostpepper.png" id="495" name="Ghost Pepper" />
+	<passive achievement="292" description="Needle shot" gfx="collectibles_496_euthanasia.png" id="496" name="Euthanasia" tags="syringe" />
+	<passive description="Camo kid" gfx="collectibles_497_camoundies.png" id="497" name="Camo Undies" />
+	<passive achievement="306" description="You feel very balanced" gfx="collectibles_498_duality.png" id="498" name="Duality" />
+	<passive achievement="283" description="Peace be with you" gfx="collectibles_499_eucharist.png" id="499" name="Eucharist" />
+	
+	<familiar achievement="298" description="Gives sacks" gfx="Collectibles_500_SackOfSacks.png" id="500" name="Sack of Sacks" />
+	<passive achievement="335" description="Money = health!" gfx="Collectibles_501_GreedsGullet.png" id="501" name="Greed's Gullet" />
+
+	<passive description="Creep shots" gfx="Collectibles_502_LargeZit.png" id="502" name="Large Zit" />
+	<passive description="Big brother is watching" gfx="Collectibles_503_LittleHorn.png" id="503" name="Little Horn" />
+	<active achievement="316" description="Friendly fly" gfx="Collectibles_504_BrownNugget.png" id="504" name="Brown Nugget" cache="familiars" maxcharges="250" chargetype="timed" />
+	<passive description="Gotta catch em..." gfx="Collectibles_505_PokeGo.png" id="505" name="Poke Go" />
+	<passive description="Watch your back!" gfx="Collectibles_506_Backstabber.png" id="506" name="Backstabber" />
+	<active description="More blood!" gfx="Collectibles_507_SharpStraw.png" id="507" name="Sharp Straw" maxcharges="300" chargetype="timed"/>
+	<familiar description="It's sharp!" gfx="Collectibles_508_MomsRazor.png" id="508" name="Mom's Razor" tags="mom" />
+	<familiar description="Bloody friend" gfx="Collectibles_509_BloodshotEye.png" id="509" name="Bloodshot Eye" />
+	
+	<active achievement="338" description="Unleash the power!" gfx="Collectibles_510_Delirious.png" id="510" name="Delirious" maxcharges="12" />
+	
+	<!-- Booster Pack #1 -->
+	<familiar achievement="352" description="He's violent" gfx="Collectibles_511_AngryFly.png" id="511" name="Angry Fly" tags="fly" />
+	<active achievement="349" description="Nothing can escape" gfx="Collectibles_512_BlackHole.png" id="512" maxcharges="4" name="Black Hole" />
+	<passive achievement="353" cache="damage" name="Bozo" description="Party time!" soulhearts="2" id="513" gfx="Collectibles_513_Bozo.png" />
+	<passive achievement="354" name="Broken Modem" description="Lag!" id="514" gfx="Collectibles_514_BrokenModem.png" />
+	<active achievement="350" description="Wrapped up nice for you!" id="515" gfx="Collectibles_515_MysteryGift.png" name="Mystery Gift" />
+	<active achievement="351" cache="familiars" name="Sprinkler" gfx="Collectibles_516_Sprinkler.png" description="Sprinkles." id="516" maxcharges="4" />
+	<passive achievement="356" name="Fast Bombs" gfx="Collectibles_517_FastBombs.png" description="Rapid bomb drops" id="517" bombs="7" />
+	<familiar achievement="355" description="What could it be?!" gfx="Collectibles_518_BuddyBox.png" id="518" name="Buddy in a Box" />
+	<familiar achievement="357" description="Delirious friend" gfx="Collectibles_519_LilDelirium.png" id="519" name="Lil Delirium" />
+	
+	<!-- Booster Pack #2 -->
+	<passive achievement="367" description="Bloody recharge" gfx="Collectibles_520_JumperCable.png" name="Jumper Cables" id="520" />
+	<active achievement="364" description="Allow 6 weeks for delivery" gfx="Collectibles_521_CerealCutout.png" maxcharges="6" name="Coupon" id="521" />
+	<active achievement="365" description="Power of the mind" gfx="Collectibles_522_Telekinesis.png" cooldown="100" maxcharges="200" name="Telekinesis" id="522" chargetype="timed" />
+	<active achievement="366" description="Pack and unpack" gfx="collectibles_523_movingbox.png" maxcharges="4" name="Moving Box" id="523" />
+	<passive achievement="369" description="Static tears" gfx="Collectibles_524_TechnologyZero.png" name="Technology Zero" id="524" cache="tearflag" />
+	<familiar achievement="368" description="You're tearing me apart!" gfx="Collectibles_525_Leprosy.png" name="Leprosy" id="525" />
+	
+	<!-- Booster Pack #3 -->
+	<familiar achievement="372" description="Lil harbingers!" gfx="Collectibles_526_7Seals.png" name="7 Seals" devilprice="1" id="526"/>
+	<active achievement="371" description="Caaan do!" gfx="Collectibles_527_Mr_Me.png" maxcharges="4" name="Mr. ME!" id="527" />
+	<familiar achievement="373" description="Eclipsed by the moon" gfx="collectibles_528_angelic prism.png" name="Angelic Prism" id="528" />
+	<passive achievement="374" cache="tearflag" description="Eyeball tears" gfx="Collectibles_529_Pop.png" name="Pop!" id="529" />
+	
+	<!-- Booster Pack #4 -->
+	<passive achievement="376" description="Just hope you're not next..." gfx="Collectibles_530_DeathsList.png" name="Death's List" id="530" />
+	<passive achievement="377" cache="weapon firedelay damage tearcolor range" description="I'm seeing red..." gfx="Collectibles_531_Haemolacria.png" name="Haemolacria" id="531" />
+	<passive achievement="378" cache="tearflag" description="Feed them!" gfx="Collectibles_532_Lachryphagy.png" name="Lachryphagy" id="532" />
+	<passive achievement="380" cache="tearflag" description="Smite thy enemy" gfx="Collectibles_533_Trisagion.png" name="Trisagion" id="533" />
+	<passive achievement="379" description="Extra active item room" gfx="collectibles_534_Schoolbag.png" name="Schoolbag" id="534" />
+	
+	<!-- Booster Pack #5 -->
+	<passive achievement="385" name="Blanket" description="You feel safe" gfx="Collectibles_535_Blanket.png" id="535" hearts="2" soulhearts="2" />
+	<active achievement="383" description="He demands a sacrifice" gfx="Collectibles_536_SacrificialAltar.png" name="Sacrificial Altar" id="536" maxcharges="0" devilprice="2" />
+	<familiar achievement="384" name="Lil Spewer" description="Puking buddy" gfx="Collectibles_537_LilSpewer.png" id="537" />
+	<passive achievement="386" cache="luck" description="Choking hazard" gfx="Collectibles_538_Marbles.png" name="Marbles" id="538" />
+	<familiar achievement="387" name="Mystery Egg" description="Sacrificial insemination" gfx="Collectibles_539_MysteryEgg.png" id="539" />
+	<passive achievement="382" cache="tearflag damage firedelay range" name="Flat Stone" gfx="Collectibles_540_FlatStone.png" description="Skipping tears" id="540" />
+	
+	<passive achievement="392" name="Marrow" gfx="Collectibles_541_Marrow.png" description="HP up?" id="541" />
+	<familiar achievement="393" name="Slipped Rib" gfx="Collectibles_542_SlippedRib.png" description="Projectile shield" id="542" />
+	<familiar achievement="398" name="Hallowed Ground" gfx="Collectibles_543_HallowedGround.png" description="Portable sanctuary" id="543" tags="poop" />
+	<familiar achievement="394" name="Pointy Rib" gfx="Collectibles_544_PointyRib.png" description="Stabbing time" id="544" />
+	<active achievement="401" name="Book of the Dead" gfx="Collectibles_545_BookOfTheDead.png" description="Rise from the grave" id="545" maxcharges="6" tags="book" />
+	<passive achievement="400" name="Dad's Ring" gfx="Collectibles_546_DadsRing.png" description="Father's blessing" id="546" />
+	<passive achievement="397" name="Divorce Papers" gfx="Collectibles_547_DivorcePapers.png" description="Tears up + you feel empty" id="547" cache="firedelay" />
+	<familiar achievement="395" name="Jaw Bone" gfx="Collectibles_548_JawBone.png" description="Fetch!" id="548" />
+	<passive achievement="396" name="Brittle Bones" gfx="Collectibles_549_BrittleBones.png" description="Everything hurts" id="549" />
+	
+	<active name="Broken Shovel" gfx="Collectibles_550_ShovelPiece1.png" description="It feels cursed" id="550" maxcharges="4" tags="quest" />
+	<passive name="Broken Shovel" gfx="Collectibles_551_ShovelPiece2.png" description="It feels cursed" id="551" tags="quest" />
+	<active name="Mom's Shovel" gfx="Collectibles_552_MomsShovel.png" description="Lost but not forgotten" id="552" maxcharges="4" tags="quest mom" />
+	
+<!-- REPENTANCE BEGIN -->
+	<passive	id="553"	gfx="Collectibles_553_Mucormycosis.png" name="Mucormycosis" description="Spore shot" cache="tearcolor" />
+	<passive	id="554"	gfx="Collectibles_554_2Spooky.png" name="2Spooky" description="4me" cache="color" />
+	<active		id="555"	achievement="583" gfx="Collectibles_555_GoldenRazor.png" name="Golden Razor" description="Pain from gain" maxcharges="0" cache="damage" coins="5" />
+	<active		id="556"	gfx="Collectibles_556_Sulfur.png" name="Sulfur" description="Temporary demon form" maxcharges="3" />
+	<active		id="557"	gfx="Collectibles_557_FortuneCookie.png" name="Fortune Cookie" description="Reusable fortunes" maxcharges="2" />
+	<passive	id="558"	gfx="Collectibles_558_EyeSore.png" name="Eye Sore" description="More eyes" />
+	<passive	id="559"	gfx="Collectibles_559_120Volt.png" name="120 Volt" description="Zap!" />
+	<passive	id="560"	gfx="Collectibles_560_ItHurts.png" name="It Hurts" description="No it doesn't..." />
+	<passive	id="561"	gfx="Collectibles_561_AlmondMilk.png" name="Almond Milk" description="DMG down + tears up + you feel nutty" cache="damage firedelay tearcolor" />
+	<passive	id="562"	achievement="433" gfx="Collectibles_562_RockBottom.png" name="Rock Bottom" description="It's only up from there" cache="all" />
+	<passive	id="563"	gfx="Collectibles_563_EnigmaBombs.png" name="Nancy Bombs" description="Random blast +5 bombs" bombs="5" />
+	<passive	id="564"	gfx="Collectibles_564_BarOfSoap.png" name="A Bar of Soap" description="Tears + shot speed up" cache="firedelay shotspeed" />
+	<familiar	id="565"	achievement="462" gfx="Collectibles_565_BloodPuppy.png" name="Blood Puppy" description="What a cute little thing!" />
+	<passive	id="566"	gfx="Collectibles_566_DreamCatcher.png" name="Dream Catcher" description="Sweet dreams" />
+	<familiar	id="567"	gfx="Collectibles_567_PaschalCandle.png" name="Paschal Candle" description="Keep the flame burning" cache="firedelay" />
+	<passive	id="568"	achievement="423" gfx="Collectibles_568_DivineIntervention.png" name="Divine Intervention" description="Double tap shield" />
+	<familiar	id="569"	gfx="Collectibles_569_BloodOath.png" name="Blood Oath" description="Bleed me dry" />
+	<passive	id="570"	gfx="Collectibles_570_PlaydohCookie.png" name="Playdough Cookie" description="Tasty rainbow" cache="tearflag" />
+	<passive	id="571"	gfx="Collectibles_571_Socks.png" name="Orphan Socks" description="Speed up + your feet feel stronger" cache="speed" soulhearts="4" />
+	<passive	id="572"	gfx="Collectibles_572_OccultEye.png" name="Eye of the Occult" description="DMG up + range up + controlled tears" cache="damage range shotspeed tearcolor tearflag" devilprice="2" />
+	<passive	id="573"	gfx="Collectibles_573_ImmaculateHeart.png" name="Immaculate Heart" description="Halo of tears" maxhearts="2" hearts="99" cache="damage" />
+	<passive	id="574"	gfx="Collectibles_574_Monstrance.png" name="Monstrance" description="Purifying light" />
+	<familiar	id="575"	gfx="Collectibles_575_TheIntruder.png" name="The Intruder" description="Invasive friend" />
+	<passive	id="576"	achievement="517" gfx="Collectibles_576_DirtyMind.png" name="Dirty Mind" description="Filthy friends" />
+	<active		id="577"	achievement="432" gfx="Collectibles_577_Damocles.png" name="Damocles" description="A king's fortune... but at what cost?" maxcharges="0" devilprice="2" cache="familiars" />
+	<active		id="578"	gfx="Collectibles_578_FreeLemonade.png" name="Free Lemonade" description="Party time!" maxcharges="4" />
+	<passive	id="579"	achievement="520" gfx="Collectibles_579_SpiritSword.png" name="Spirit Sword" description="Divine blade" cache="weapon damage firedelay" special="true" />
+	<active		id="580"	achievement="415" gfx="Collectibles_580_SecretKey.png" name="Red Key" description="Explore the other side" maxcharges="4" />
+	<familiar	id="581"	gfx="Collectibles_581_PsyFly.png" name="Psy Fly" description="Flamboyant protector" />
+	<active		id="582"	gfx="Collectibles_582_WavyCap.png" name="Wavy Cap" description="Tears up. A mind changing experience!" maxcharges="900" chargetype="timed" cache="firedelay speed" />
+	<passive	id="583"	gfx="Collectibles_583_RocketInAJar.png" name="Rocket in a Jar" description="Rocket propulsion +5 bombs" bombs="5" />
+	<passive	id="584"	achievement="417" gfx="Collectibles_584_BookOfVirtues.png" name="Book of Virtues" description="Spiritual companionship" maxcharges="4" />
+	<active		id="585"	achievement="420" gfx="Collectibles_585_AlabasterBox.png" name="Alabaster Box" description="A sacred offering" maxcharges="12" chargetype="special" initcharge="0" />
+	<passive	id="586"	achievement="429" gfx="Collectibles_586_JacobsLadder.png" name="The Stairway" description="May you get what you came for" />
+	
+	<passive	id="588"	gfx="Collectibles_588_Sol.png" name="Sol" description="Radiant victory" />
+	<passive	id="589"	gfx="Collectibles_589_Luna.png" name="Luna" description="The moon's blessing shines upon you" />
+	<passive	id="590"	gfx="Collectibles_590_Mercurius.png" name="Mercurius" description="Speed up + you feel elusive" cache="speed" />
+	<passive	id="591"	gfx="Collectibles_591_Venus.png" name="Venus" description="HP up + you feel pretty" maxhearts="2" hearts="4" />
+	<passive	id="592"	gfx="Collectibles_592_Terra.png" name="Terra" description="Born to rock" cache="damage tearflag" />
+	<passive	id="593"	gfx="Collectibles_593_Mars.png" name="Mars" description="Double tap dash" cooldown="10" />
+	<passive	id="594"	gfx="Collectibles_594_Jupiter.png" name="Jupiter" description="You're a gas giant!" maxhearts="4" hearts="1" cache="speed range" />
+	<passive	id="595"	gfx="Collectibles_595_Saturnus.png" name="Saturnus" description="Ring of tears" />
+	<passive	id="596"	gfx="Collectibles_596_Uranus.png" name="Uranus" description="Ice tears" cache="tearflag tearcolor" />
+	<passive	id="597"	gfx="Collectibles_597_Neptunus.png" name="Neptunus" description="Open the floodgates" />
+	<passive	id="598"	gfx="Collectibles_598_Pluto.png" name="Pluto" description="Size down" cache="range firedelay speed size" />
+	<passive	id="599"	gfx="Collectibles_599_VoodooHead.png" name="Voodoo Head" description="Extra curse rooms" />
+	<passive	id="600"	gfx="Collectibles_600_EyeDrops.png" name="Eye Drops" description="Tears up" cache="firedelay" />
+	<passive	id="601"	gfx="Collectibles_601_ActOfContrition.png" name="Act of Contrition" description="Tears up, you feel forgiven" cache="firedelay" />
+	<passive	id="602"	achievement="582" gfx="Collectibles_602_MemberCard.png" name="Member Card" description="Exclusive access!" />
+	<passive	id="603"	gfx="Collectibles_603_BatteryPack.png" name="Battery Pack" description="Instant energy!" />
+	<active		id="604"	gfx="Collectibles_604_MomsBracelet.png" name="Mom's Bracelet" description="Mother's strength" maxcharges="30" chargetype="timed" />
+	<active		id="605"	gfx="Collectibles_605_TheScooper.png" name="The Scooper" description="Plop!" maxcharges="3" cache="familiars" />
+	<passive	id="606"	gfx="Collectibles_606_OculusRift.png" name="Ocular Rift" description="Stare into the abyss" devilprice="2" />
+	<familiar	id="607"	gfx="Collectibles_607_BoiledBaby.png" name="Boiled Baby" description="Messy friend" />
+	<familiar	id="608"	gfx="Collectibles_608_FreezerBaby.png" name="Freezer Baby" description="Iced iced baby" />
+	<active		id="609"	achievement="448" gfx="Collectibles_609_FloriansD6.png" name="Eternal D6" description="???" maxcharges="2" />
+	<familiar	id="610"	achievement="450" gfx="Collectibles_610_BirdCage.png" name="Bird Cage" description="Fat buddy" />
+	<active		id="611"	achievement="497" gfx="Collectibles_611_Larynx.png" name="Larynx" description="Hear my pain" maxcharges="12" initcharge="1" cooldown="12" />
+	<familiar	id="612"	achievement="460" gfx="Collectibles_612_LostSoul.png" name="Lost Soul" description="Protect him" />
+	
+	<passive	id="614"	gfx="Collectibles_614_BloodBombs.png" name="Blood Bombs" description="Bloody blast + HP up" maxhearts="2" hearts="10" />
+	<familiar	id="615"	gfx="Collectibles_615_LilDumpy.png" name="Lil Dumpy" description="Puffy buddy" />
+	<passive	id="616"	gfx="Collectibles_616_BirdsEye.png" name="Bird's Eye" description="It burns" />
+	<passive	id="617"	gfx="Collectibles_617_Lodestone.png" name="Lodestone" description="Magnetizing tears" cache="tearcolor" />
+	<passive	id="618"	gfx="Collectibles_618_RottenTomato.png" name="Rotten Tomato" description="Delicious!" cache="tearcolor" />
+	<passive	id="619"	achievement="431" gfx="Collectibles_619_Birthright.png" name="Birthright" description="???" />
+	
+	<passive	id="621"	achievement="430" gfx="Collectibles_621_RedStew.png" name="Red Stew" description="Full HP + temporary DMG up" hearts="99" cache="damage" />
+	<active		id="622"	achievement="436" gfx="Collectibles_622_Genesis.png" name="Genesis" description="In the beginning" />
+	<active		id="623"	gfx="Collectibles_623_SharpKey.png" name="Sharp Key" description="Open your enemies" keys="5" maxcharges="0" />
+	<passive	id="624"	gfx="Collectibles_624_BoosterPack.png" name="Booster Pack" description="Collect them all!" />
+	<active		id="625"	achievement="547" gfx="Collectibles_625_MegaMush.png" name="Mega Mush" description="I'm a big boy now!" maxcharges="12" cooldown="900" persistent="true" cache="all" />
+	<familiar	id="626"	gfx="Collectibles_626_KnifePiece1.png" name="Knife Piece 1" description="???" />
+	<familiar	id="627"	gfx="Collectibles_627_KnifePiece2.png" name="Knife Piece 2" description="???" />
+	<active		id="628"	achievement="636" gfx="Collectibles_628_DeathCertificate.png" name="Death Certificate" description="Where am I?" maxcharges="0" />
+	<familiar	id="629"	gfx="Collectibles_629_BotFly.png" name="Bot Fly" description="Defense drone" />
+	
+	<active		id="631"	achievement="440" gfx="Collectibles_631_MeatCleaver.png" name="Meat Cleaver" description="Slice but no dice" maxcharges="2" />
+	<passive	id="632"	gfx="Collectibles_632_EvilCharm.png" name="Evil Charm" description="Luck up + you feel protected" cache="luck" />
+	<passive	id="633"	gfx="Collectibles_633_Dogma.png" name="Dogma" description="Ascended" cache="damage flying speed" />
+	<passive	id="634"	achievement="519" gfx="Collectibles_634_Purgatory.png" name="Purgatory" description="Help from beyond" />
+	<active		id="635"	gfx="Collectibles_635_Stitches.png" name="Stitches" description="Bait and switch" maxcharges="90" cache="familiars" chargetype="timed" passivecache="true" />
+	<active		id="636"	gfx="Collectibles_636_RKey.png" name="R Key" description="Time to start over" shopprice="99" devilprice="2" />
+	<passive	id="637"	gfx="Collectibles_637_KnockoutDrops.png" name="Knockout Drops" description="They pack a punch!" />
+	<active		id="638"	gfx="Collectibles_638_Eraser.png" name="Eraser" description="Erase thy enemy" maxcharges="1" chargetype="special" />
+	<active		id="639"	achievement="442" gfx="Collectibles_639_YuckHeart.png" name="Yuck Heart" description="Gross!" maxcharges="6" />
+	<active		id="640"	achievement="418" gfx="Collectibles_640_UrnOfSouls.png" name="Urn of Souls" description="Unleash their sorrow" maxcharges="0" persistent="true" />
+	<passive	id="641"	achievement="446" gfx="Collectibles_641_Akeldama.png" name="Akeldama" description="Spill your guts" />
+	<active		id="642"	achievement="472" gfx="Collectibles_642_MagicSkin.png" name="Magic Skin" description="All your desires fulfilled" maxcharges="6" />
+	<passive	id="643"	achievement="470" gfx="Collectibles_643_Revelation.png" name="Revelation" description="Awaken your faith" cache="firedelay shotspeed flying" soulhearts="4" />
+	<passive	id="644"	gfx="Collectibles_644_ConsolationPrize.png" name="Consolation Prize" description="+1 to lowest stat" />
+	<familiar	id="645"	achievement="456" gfx="Collectibles_645_Tinytoma.png" name="Tinytoma" description="Itching for revenge" />
+	<passive	id="646"	achievement="546" gfx="Collectibles_646_BrimstoneBombs.png" name="Brimstone Bombs" description="Demon blast +5 bombs" bombs="5" />
+	<passive	id="647"	gfx="Collectibles_647_AssaultBattery.png" name="4.5 Volt" description="Beat the juice out of them!" />
+	
+	<familiar	id="649"	achievement="409" gfx="Collectibles_649_FruityPlum.png" name="Fruity Plum" description="Bouncy friend" />
+	<active		id="650"	achievement="410" gfx="Collectibles_650_PlumFlute.png" name="Plum Flute" description="Play time!" maxcharges="4" />
+	<familiar	id="651"	achievement="425" gfx="Collectibles_651_StarOfBethlehem.png" name="Star of Bethlehem" description="Follow the light" />
+	<familiar	id="652"	gfx="Collectibles_652_CubeBaby.png" name="Cube Baby" description="Kick it!" />
+	<active		id="653"	achievement="424" gfx="Collectibles_653_VadeRetro.png" name="Vade Retro" description="Begone!" />
+	<passive	id="654"	gfx="Collectibles_654_FalsePhd.png" name="False PHD" description="Worse pills + evil up" cache="damage" blackhearts="2" />
+	<active		id="655"	gfx="Collectibles_655_SpinToWin.png" name="Spin to Win" description="Let it rip!" maxcharges="90" cache="familiars" chargetype="timed" passivecache="true" />
+	<familiar	id="656"	achievement="432" gfx="Collectibles_577_Damocles.png" name="Damocles" description="A king's fortune... but at what cost?" devilprice="2" cache="familiars" hidden="true" />
+	<passive	id="657"	gfx="Collectibles_657_Vasculitis.png" name="Vasculitis" description="Clogged enemies" />
+	<passive	id="658"	gfx="Collectibles_658_GiantCell.png" name="Giant Cell" description="Micro friends" />
+	<passive	id="659"	gfx="Collectibles_659_Tropicamide.png" name="Tropicamide" description="Tear size + range up" cache="range" />
+	<passive	id="660"	gfx="Collectibles_660_CardReading.png" name="Card Reading" description="A link to your future" />
+	<passive	id="661"	gfx="Collectibles_661_Quints.png" name="Quints" description="They lurk inside" />
+	
+	<passive	id="663"	gfx="Collectibles_663_ToothAndNail.png" name="Tooth and Nail" description="You feel prickly" />
+	<passive	id="664"	gfx="Collectibles_664_BingeEater.png" name="Binge Eater" description="All you can eat" hearts="99" maxhearts="2" cache="speed firedelay damage range shotspeed luck" />
+	<passive	id="665"	achievement="444" gfx="Collectibles_665_GuppysEye.png" name="Guppy's Eye" description="An eye for secrets" cache="pickupvision" />
+	
+	<familiar	id="667"	achievement="503" gfx="Collectibles_667_Strawman.png" name="Strawman" description="A helping hand" persistent="true" />
+	<passive	id="668"	gfx="Collectibles_668_DadsNote.png" name="Dad's Note" description="..." />
+	<passive	id="669"	gfx="Collectibles_669_Sausage.png" name="Sausage" description="All stats up" maxhearts="2" hearts="99" cache="all"  />
+	<passive	id="670"	achievement="441" gfx="Collectibles_670_Options.png" name="Options?" description="There might be options" />
+	<passive	id="671"	achievement="443" gfx="Collectibles_671_CandyHeart.png" name="Candy Heart" description="Power of love" />
+	<passive	id="672"	achievement="445" gfx="Collectibles_672_PoundOfFlesh.png" name="A Pound of Flesh" description="Blood money" />
+	<passive	id="673"	achievement="447" gfx="Collectibles_673_Redemption.png" name="Redemption" description="Deliver me from evil" persistent="true" />
+	<passive	id="674"	achievement="469" gfx="Collectibles_674_SpiritShackles.png" name="Spirit Shackles" description="Unfinished business" />
+	<passive	id="675"	achievement="451" gfx="Collectibles_675_CrackedOrb.png" name="Cracked Orb" description="Shards of knowledge" />
+	<passive	id="676"	achievement="453" gfx="Collectibles_676_EmptyHeart.png" name="Empty Heart" description="It multiplies" />
+	<passive	id="677"	achievement="457" gfx="Collectibles_677_AstralProjection.png" name="Astral Projection" description="The true out-of-body experience!" addcostumeonpickup="false" cache="flying tearflag tearcolor" />
+	<passive	id="678"	achievement="463" gfx="Collectibles_678_CSection.png" name="C Section" description="Fetus shots" />
+	<familiar	id="679"	achievement="455" gfx="Collectibles_679_LilAbaddon.png" name="Lil Abaddon" description="Abyssal friend" devilprice="2" />
+	<passive	id="680"	achievement="449" gfx="Collectibles_680_MontezumasRevenge.png" name="Montezuma's Revenge" description="Oh no..." />
+	<familiar	id="681"	achievement="466" gfx="Collectibles_681_LilPortal.png" name="Lil Portal" description="It hungers" />
+	<familiar	id="682"	achievement="467" gfx="Collectibles_682_WormFriend.png" name="Worm Friend" description="Clingy buddy" />
+	<passive	id="683"	achievement="468" gfx="Collectibles_683_BoneSpurs.png" name="Bone Spurs" description="Break your enemies" />
+	<passive	id="684"	achievement="461" gfx="Collectibles_684_HungrySoul.png" name="Hungry Soul" description="Out for blood" />
+	<active		id="685"	achievement="471" gfx="Collectibles_685_JarOfWisps.png" name="Jar of Wisps" description="Your faith grows" maxcharges="12" />
+	<passive	id="686"	achievement="422" gfx="Collectibles_686_SoulLocket.png" name="Soul Locket" description="Power of faith" />
+	<active		id="687"	achievement="473" gfx="Collectibles_687_FriendFinder.png" name="Friend Finder" description="Best friends forever!" maxcharges="4" />
+	<passive	id="688"	achievement="434" gfx="Collectibles_688_InnerChild.png" name="Inner Child" description="Let him free" persistent="true" cache="range firedelay speed size" addcostumeonpickup="false" />
+	<passive	id="689"	achievement="491" gfx="Collectibles_689_GlitchedCrown.png" name="Glitched Crown" description="?????" />
+	<passive	id="690"	achievement="492" gfx="Collectibles_690_BellyJelly.png" name="Belly Jelly" description="Bounce away!" />
+	<passive	id="691"	achievement="501" gfx="Collectibles_691_SacredOrb.png" name="Sacred Orb" description="Destined for greatness" />
+	<passive	id="692"	achievement="494" gfx="Collectibles_692_SanguineBond.png" name="Sanguine Bond" description="He awaits your offering" persistent="true" cache="damage" />
+	<passive	id="693"	achievement="495" gfx="Collectibles_693_TheSwarm.png" name="The Swarm" description="Infest" />
+	<passive	id="694"	achievement="496" gfx="Collectibles_694_Heartbreak.png" name="Heartbreak" description="Eternal sorrow" cache="damage" />
+	<passive	id="695"	achievement="452" gfx="Collectibles_695_BloodyGust.png" name="Bloody Gust" description="May your rage bring haste" cache="speed firedelay color" devilprice="2" />
+	<passive	id="696"	achievement="499" gfx="Collectibles_696_Salvation.png" name="Salvation" description="Divine protection" persistent="true" />
+	<familiar	id="697"	achievement="435" gfx="Collectibles_697_VanishingTwin.png" name="Vanishing Twin" description="He wants revenge" />
+	<familiar	id="698"	achievement="502" gfx="Collectibles_698_TwistedPair.png" name="Twisted Pair" description="Double trouble!" devilprice="2" />
+	<passive	id="699"	achievement="498" gfx="Collectibles_699_AzazelsRage.png" name="Azazel's Rage" description="Ancient power" persistent="true" />
+	<passive	id="700"	achievement="504" gfx="Collectibles_700_EchoChamber.png" name="Echo Chamber" description="I can see see the future future future" />
+	<passive	id="701"	achievement="505" gfx="Collectibles_701_IsaacsTomb.png" name="Isaac's Tomb" description="Buried memories" />
+	<passive	id="702"	achievement="506" gfx="Collectibles_702_BloodSoul.png" name="Vengeful Spirit" description="Hot blooded" />
+	<active		id="703"	achievement="507" gfx="Collectibles_703_EsauJr.png" name="Esau Jr." description="Lost brother" maxcharges="1" />
+	<active		id="704"	achievement="590" gfx="Collectibles_704_Berserk.png" name="Berserk!" description="Rip and tear" maxcharges="100000" chargetype="special" initcharge="50000" cache="all" cooldown="150" persistent="true" />
+	<active		id="705"	achievement="587" gfx="Collectibles_705_DarkArts.png" name="Dark Arts" description="One with the shadows" maxcharges="180" chargetype="timed" cooldown="30" cache="speed" />
+	<active		id="706"	achievement="597" gfx="Collectibles_706_Abyss.png" name="Abyss" description="Come forth from the depths" maxcharges="4" />
+	<passive	id="707"	gfx="Collectibles_707_Supper.png" name="Supper" description="HP up" hearts="4" maxhearts="2" />
+	<passive	id="708"	gfx="Collectibles_708_Stapler.png" name="Stapler" description="DMG up" cache="damage" />
+	<active		id="709"	achievement="437" gfx="Collectibles_709_Suplex.png" name="Suplex!" description="Angel breaker" maxcharges="200" chargetype="timed" />
+	<active		id="710"	achievement="586" gfx="Collectibles_710_BagOfCrafting.png" name="Bag of Crafting" description="Make your destiny" hidden="true" />
+	<active		id="711"	achievement="592" gfx="Collectibles_711_Flip.png" name="Flip" description="Life and death" maxcharges="6" hidden="true" />
+	<active		id="712"	achievement="599" gfx="Collectibles_712_Lemegeton.png" name="Lemegeton" description="Item summoner" maxcharges="6" />
+	<active		id="713"	achievement="589" gfx="Collectibles_713_Sumptorium.png" name="Sumptorium" description="Return" maxcharges="30" chargetype="timed" cooldown="30" hidden="true" />
+	<active		id="714"	gfx="Collectibles_714_Recall.png" name="Recall" description="Come back" maxcharges="90" chargetype="timed" cache="flying" cooldown="150" hidden="true" />
+	<active		id="715"	gfx="Collectibles_715_Hold.png" name="Hold" description="Saved for later" maxcharges="0" hidden="true" />
+	<passive	id="716"	achievement="464" gfx="Collectibles_716_KeepersSack.png" name="Keeper's Sack" description="Spending power" cache="damage speed range" />
+	<passive	id="717"	achievement="596" gfx="Collectibles_717_KeepersKin.png" name="Keeper's Kin" description="Under a rock" />
+	
+	<active		id="719"	achievement="465" gfx="Collectibles_719_KeepersBox.png" name="Keeper's Box" description="Portable shop" maxcharges="4" />
+	<active		id="720"	achievement="459" gfx="Collectibles_720_EverythingJar.png" name="Everything Jar" description="Anything is possible" maxcharges="12" initcharge="1" />
+	<passive	id="721"	achievement="500" gfx="Collectibles_721_TMTRAINER.png" name="TMTRAINER" description="Isaac and his mother lived alone in a small house on a hill" />
+	<active		id="722"	achievement="600" gfx="Collectibles_722_AnimaSola.png" name="Anima Sola" description="Repent" maxcharges="450" chargetype="timed" />
+	<active		id="723"	achievement="584" gfx="Collectibles_723_SpindownDice.png" name="Spindown Dice" description="-1" maxcharges="6" />
+	<passive	id="724"	achievement="585" gfx="Collectibles_724_Hypercoagulation.png" name="Hypercoagulation" description="Thick blooded" />
+	<passive	id="725"	achievement="588" gfx="Collectibles_725_IBS.png" name="IBS" description="Your stomach rumbles" />
+	<passive	id="726"	achievement="591" gfx="Collectibles_726_Hemoptysis.png" name="Hemoptysis" description="Double tap sneeze" cooldown="30" />
+	<passive	id="727"	achievement="594" gfx="Collectibles_727_GhostBombs.png" name="Ghost Bombs" description="Spooky blast +5 bombs" bombs="5" />
+	<active		id="728"	achievement="595" gfx="Collectibles_728_Gello.png" name="Gello" description="Demonic gestation" maxcharges="2" />
+	<active		id="729"	achievement="598" gfx="Collectibles_729_DecapAttack.png" name="Decap Attack" description="Chuck away!" maxcharges="110" chargetype="timed" />
+	
+<!-- REPENTANCE END -->
+	
+	<trinket achievement="101" description="Gulp!" gfx="trinket_001_swallowedpenny.png" id="1" name="Swallowed Penny" />
+	<trinket description="It feels lucky?" gfx="trinket_002_petrifiedpoop.png" id="2" name="Petrified Poop" tags="poop" />
+	<trinket description="Trickle charge" gfx="trinket_003_aaabattery.png" id="3" name="AAA Battery" tags="battery" />
+	<trinket description="It's broken" gfx="trinket_004_brokenremote.png" id="4" name="Broken Remote" />
+	<trinket description="Challenge up" gfx="trinket_005_purpleheart.png" id="5" name="Purple Heart" />
+	<trinket description="It kinda works" gfx="trinket_006_brokenmagnet.png" id="6" name="Broken Magnet" />
+	<trinket description="Faith up" gfx="trinket_007_rosarybead.png" id="7" name="Rosary Bead" />
+	<trinket description="I remember these" gfx="trinket_008_cartridge.png" id="8" name="Cartridge" />
+	<trinket cache="tearflag" description="Wub wub!" gfx="trinket_009_pulseworm.png" id="9" name="Pulse Worm" />
+	<trinket cache="tearflag firedelay" description="Wiggle waggle!" gfx="trinket_010_wiggleworm.png" id="10" name="Wiggle Worm" />
+	<trinket cache="tearflag" description="Woop woop!" gfx="trinket_011_ringworm.png" id="11" name="Ring Worm" />
+	<trinket cache="tearflag" description="Blub blub!" gfx="trinket_012_flatworm.png" id="12" name="Flat Worm" />
+	<trinket achievement="118" description="YES!" gfx="trinket_013_storecredit.png" id="13" name="Store Credit" />
+	<trinket description="Your feet feel stronger" gfx="trinket_014_callus.png" id="14" name="Callus" />
+	<trinket achievement="85" description="There's something inside it" gfx="trinket_015_luckyrock.png" id="15" name="Lucky Rock" />
+	<trinket description="???" gfx="trinket_016_momstoenail.png" id="16" name="Mom's Toenail" tags="mom" />
+	<trinket cache="damage" achievement="111" description="Evil up" gfx="trinket_017_blacklipstick.png" id="17" name="Black Lipstick" />
+	<trinket description="Faith up" gfx="trinket_018_bibletract.png" id="18" name="Bible Tract" />
+	<trinket description="Master of lockpicking" gfx="trinket_019_paperclip.png" id="19" name="Paper Clip" />
+	<trinket description="Wish granted" gfx="trinket_020_monkeypaw.png" id="20" name="Monkey Paw" />
+	<trinket achievement="123" description="???" gfx="trinket_021_mysteriouspaper.png" id="21" name="Mysterious Paper" />
+	<trinket cache="damage pickupvision" achievement="127" description="Evil up" gfx="trinket_022_daemonstail.png" id="22" name="Daemon's Tail" />
+	<trinket achievement="149" description="???" gfx="trinket_023_missingposter.png" id="23" name="Missing Poster" />
+	<trinket description="Wealth of gas" gfx="trinket_024_buttpenny.png" id="24" name="Butt Penny" />
+	<trinket description="Uh-oh!" gfx="trinket_025_mysteriouscandy.png" id="25" name="Mysterious Candy" />
+	<trinket cache="tearflag range" description="Zip zoop!" gfx="trinket_026_hookworm.png" id="26" name="Hook Worm" />
+	<trinket cache="shotspeed" description="Wooosh!" gfx="trinket_027_whipworm.png" id="27" name="Whip Worm" />
+	<trinket achievement="117" description="Eternal life?" gfx="trinket_028_brokenankh.png" id="28" name="Broken Ankh" />
+	<trinket description="It stinks" gfx="trinket_029_fishhead.png" id="29" name="Fish Head" />
+	<trinket description="Poison shots" gfx="trinket_030_pinkyeye.png" id="30" name="Pinky Eye" />
+	<trinket description="Piercing shots" gfx="trinket_031_pushpin.png" id="31" name="Push Pin" />
+	<trinket description="Touch fuzzy, get dizzy" gfx="trinket_032_libertycap.png" id="32" name="Liberty Cap" />
+	<trinket description="Fetal protection" gfx="trinket_033_umbilicalcord.png" id="33" name="Umbilical Cord" />
+	<trinket description="It calls out to its brothers" gfx="trinket_034_childsheart.png" id="34" name="Child's Heart" cache="pickupvision" />
+	<trinket achievement="52" cache="damage" description="DMG up" gfx="trinket_035_curvedhorn.png" id="35" name="Curved Horn" />
+	<trinket description="It feels lucky?" gfx="trinket_036_rustedkey.png" id="36" name="Rusted Key" cache="pickupvision" />
+	<trinket cache="speed" description="Speed up" gfx="trinket_037_goathoof.png" id="37" name="Goat Hoof" />
+	<trinket description="It emanates purity " gfx="trinket_038_momspearl.png" id="38" name="Mom's Pearl" />
+	<trinket cache="firedelay" description="Yay, cancer!" gfx="trinket_039_cancer.png" id="39" name="Cancer" />
+	<trinket cache="damage" description="Your rage grows" gfx="trinket_040_redpatch.png" id="40" name="Red Patch" addcostumeonpickup="false" />
+	<trinket description="Tastes like burning" gfx="trinket_041_matchstick.png" id="41" name="Match Stick" cache="pickupvision" />
+	<trinket achievement="61" cache="luck pickupvision" description="Luck up!" gfx="trinket_042_luckytoe.png" id="42" name="Lucky Toe" />
+	<trinket description="Cursed?" gfx="trinket_043_cursedskull.png" id="43" name="Cursed Skull" />
+	<trinket description="Don't swallow it" gfx="trinket_044_safetycap.png" id="44" name="Safety Cap" cache="pickupvision" />
+	<trinket description="Luck of the draw" gfx="trinket_045_aceofspades.png" id="45" name="Ace of Spades" cache="pickupvision" />
+	<trinket description="Consume thy enemy" gfx="trinket_046_isaacsfork.png" id="46" name="Isaac's Fork" />
+	
+	<trinket description="It glows with power" gfx="trinket_048_amissingpage.png" id="48" name="A Missing Page" />
+	<trinket achievement="55" description="Wealth of health" gfx="trinket_049_bloodypenny.png" id="49" name="Bloody Penny" />
+	<trinket achievement="60" description="Wealth of chaos" gfx="trinket_050_burntpenny.png" id="50" name="Burnt Penny" />
+	<trinket description="Wealth of answers" gfx="trinket_051_flatpenny.png" id="51" name="Flat Penny" />
+	<trinket achievement="64" description="Wealth of wealth" gfx="trinket_052_counterfeitpenny.png" id="52" name="Counterfeit Penny" />
+	<trinket description="Well, that's not coming off" gfx="trinket_053_tick.png" id="53" name="Tick" />
+	<trinket achievement="70" cache="familiars" description="Dead friend" gfx="trinket_054_isaacshead.png" id="54" name="Isaac's Head" />
+	<trinket achievement="71" description="Faith's reward" gfx="trinket_055_maggysfaith.png" id="55" name="Maggy's Faith" />
+	<trinket achievement="72" description="Payment received " gfx="trinket_056_judastongue.png" id="56" name="Judas' Tongue" />
+	<trinket achievement="73" cache="familiars" description="Imaginary friend" gfx="trinket_057_qmarkssoul.png" id="57" name="???'s Soul" />
+	<trinket achievement="74" cache="damage" description="Your rage grows" gfx="trinket_058_samsonslock.png" id="58" name="Samson's Lock" />
+	<trinket achievement="75" description="May you see your destination" gfx="trinket_059_cainseye.png" id="59" name="Cain's Eye" />
+	<trinket achievement="76" cache="familiars" description="Revenge from beyond" gfx="trinket_060_evesbirdfoot.png" id="60" name="Eve's Bird Foot" />
+	<trinket achievement="77" description="The left-hand path reaps dark rewards" gfx="trinket_061_thelefthand.png" id="61" name="The Left Hand" />
+	
+	<!-- Afterbirth Trinkets -->
+	<trinket description="It shines for its brothers" gfx="trinket_062_ShinyRock.png" id="62" name="Shiny Rock" />
+	<trinket description="Fuse cutter" gfx="trinket_063_SafetyScissors.png" id="63" name="Safety Scissors" />
+	<trinket description="Bleep bloop blop" gfx="trinket_064_RainbowWorm.png" id="64" name="Rainbow Worm" cache="range shotspeed tearflag firedelay"/>
+	<trinket description="Floooooooooop!" gfx="trinket_065_TapeWorm.png" id="65" name="Tape Worm" cache="range" />
+	<trinket description="Pft" gfx="trinket_066_LazyWorm.png" id="66" name="Lazy Worm" cache="range shotspeed" />
+	<trinket achievement="196" description="You feel cursed... kinda." gfx="trinket_067_CrackedDice.png" id="67" name="Cracked Dice" />
+	<trinket description="It pulls" gfx="trinket_068_SuperMagnet.png" id="68" name="Super Magnet" />
+	<trinket description="You feel faded" gfx="trinket_069_FadedPolaroid.png" id="69" name="Faded Polaroid" />
+	<trinket description="Itchy, tasty..." gfx="trinket_070_Louse.png" id="70" name="Louse" />
+	<trinket description="Creepy bombs" gfx="trinket_071_BobsBladder.png" id="71" name="Bob's Bladder" tags="bob" />
+	<trinket description="Lil charge" gfx="trinket_072_WatchBattery.png" id="72" name="Watch Battery" tags="battery" />
+	<trinket description="Pop! Pop!" gfx="trinket_073_BlastingCap.png" id="73" name="Blasting Cap" />
+	<trinket achievement="230" description="The ground below feels hollow..." gfx="trinket_074_StudFinder.png" id="74" name="Stud Finder" />
+	<trinket description="Effect not found?" gfx="trinket_075_Error.png" id="75" name="Error" cache="all" />
+	<trinket achievement="229" description="It's double down time!" gfx="trinket_076_PokerChip.png" id="76" name="Poker Chip" />
+	<trinket description="Bounce back!" gfx="trinket_077_Blister.png" id="77" name="Blister" cache="tearflag" />
+	<trinket description="Extended stat effect time!" gfx="trinket_078_SecondHand.png" id="78" name="Second Hand" />
+	<trinket description="I'm stuck in a loop..." gfx="trinket_079_EndlessNameless.png" id="79" name="Endless Nameless" />
+	<trinket achievement="197" description="With darkness comes power" gfx="trinket_080_BlackFeather.png" id="80" name="Black Feather" cache="damage" />
+	<trinket achievement="185" description="Blind to damage" gfx="trinket_081_BlindRage.png" id="81" name="Blind Rage" />
+	<trinket description="Feel lucky?" gfx="trinket_082_GoldenHorseShoe.png" id="82" name="Golden Horse Shoe" />
+	
+	<trinket achievement="249" description="Stores are open" gfx="trinket_083_storekey.png" id="83" name="Store Key" />
+	<trinket achievement="204" description="Feels greedy" gfx="trinket_084_ribofgreed.png" id="84" name="Rib of Greed" />
+	<trinket achievement="239" description="Karma up" gfx="trinket_085_karma.png" id="85" name="Karma" />
+	
+	<trinket description="The poop is moving..." gfx="Trinket_086_LilLarva.png" id="86" name="Lil Larva" />
+	<trinket description="You feel her love" gfx="Trinket_087_MomsLocket.png" id="87" name="Mom's Locket" />
+	<trinket description="Never again!" gfx="Trinket_088_NO.png" id="88" name="NO!" />
+	<trinket description="Keep your friends close..." gfx="Trinket_089_ChildLeash.png" id="89" name="Child Leash" />
+	<trinket description="Fartoom!" gfx="Trinket_090_BrownCap.png" id="90" name="Brown Cap" />
+	
+	<!-- Afterbirth+ Trinkets -->
+	<trinket achievement="300" description="Eww" gfx="Trinket_091_Meconium.png" id="91" name="Meconium" tags="poop" />
+	<trinket achievement="336" description="Stat booster" gfx="Trinket_092_CrackedCrown.png" id="92" name="Cracked Crown" cache="all" />
+	<trinket description="You stink" gfx="Trinket_093_UsedDiaper.png" id="93" name="Used Diaper" />
+	<trinket description="It also stinks!" gfx="Trinket_094_FishTail.png" id="94" name="Fish Tail" />
+	<trinket description="It looks dead" gfx="Trinket_095_BlackTooth.png" id="95" name="Black Tooth" />
+	<trinket description="Foop foop!" gfx="Trinket_096_OuroborosWorm.png" id="96" name="Ouroboros Worm" cache="tearflag range" />
+	<trinket description="Sick..." gfx="Trinket_097_Tonsil.png" id="97" name="Tonsil" />
+	<trinket description="Seems magic..." gfx="Trinket_098_NoseGoblin.png" id="98" name="Nose Goblin" />
+	<trinket description="Boing!" gfx="Trinket_099_SuperBall.png" id="99" name="Super Ball" />
+	<trinket description="It needs power" gfx="Trinket_100_VibrantBulb.png" id="100" name="Vibrant Bulb" cache="all" />
+	<trinket description="I think it's broken" gfx="Trinket_101_DimBulb.png" id="101" name="Dim Bulb" cache="all" />
+	<trinket description="Double moon" gfx="Trinket_102_FragmentedCard.png" id="102" name="Fragmented Card" />
+	<trinket description="=" gfx="Trinket_103_Equality.png" id="103" name="Equality!" />
+	
+	<trinket description="Make a wish" gfx="trinket_104_wishbone.png" id="104" name="Wish Bone" />
+	<trinket description="I wonder what it is" gfx="trinket_105_baglunch.png" id="105" name="Bag Lunch" />
+	<trinket description="Uncorked" gfx="trinket_106_lostcork.png" id="106" name="Lost Cork" />
+	<trinket achievement="302" description="Drain me" gfx="trinket_107_crowheart.png" id="107" name="Crow Heart" />
+	<trinket description="That's a hard nut to crack!" gfx="trinket_108_walnut.png" id="108" name="Walnut" />
+	<trinket description="Stuck!" gfx="trinket_109_ducttape.png" id="109" name="Duct Tape" />
+	<trinket achievement="284" description="Feels lucky..." gfx="trinket_110_silverdollar.png" id="110" name="Silver Dollar" />
+	<trinket achievement="287" description="Drips with blood..." gfx="trinket_111_bloodycrown.png" id="111" name="Bloody Crown" />
+	<trinket description="..." gfx="trinket_112_paytowin.png" id="112" name="Pay To Win" />	
+	
+	<trinket achievement="310" description="I bring War" gfx="trinket_113_LocustOfWrath.png" id="113" name="Locust of War" />	
+	<trinket achievement="311" description="I bring Pestilence" gfx="trinket_114_LocustOfPestilence.png" id="114" name="Locust of Pestilence" />	
+	<trinket achievement="312" description="I bring Famine" gfx="trinket_115_LocustOfFamine.png" id="115" name="Locust of Famine" />	
+	<trinket achievement="313" description="I bring Death" gfx="trinket_116_LocustOfDeath.png" id="116" name="Locust of Death" />	
+	<trinket achievement="314" description="I bring Conquest" gfx="trinket_117_LocustOfConquest.png" id="117" name="Locust of Conquest" />	
+	<trinket achievement="304" description="They are growing..." gfx="trinket_118_BatWing.png" id="118" name="Bat Wing" cache="flying" />	
+	<trinket achievement="301" description="Regen!" gfx="trinket_119_StemCell.png" id="119" name="Stem Cell" />	
+	
+	<!-- Booster Pack #1 -->
+	<trinket achievement="358" description="Danger charge" gfx="trinket_120_Hairpin.png" id="120" name="Hairpin" />
+	<trinket achievement="359" description="My faith protects me" gfx="trinket_121_WoodenCross.png" id="121" name="Wooden Cross" />
+	<trinket achievement="360" description="Can't hold it!" gfx="trinket_122_Butter.png" id="122" name="Butter!" />
+	
+	<!-- Booster Pack #2 -->
+	<trinket achievement="370" description="Angelic spoils" gfx="Trinket_123_FiligreeFeather.png" id="123" name="Filigree Feather" />
+	
+	<!-- Booster Pack #3 -->
+	<trinket achievement="375" description="Hold the door" gfx="trinket_124_woodendoorstop.png" id="124" name="Door Stop" />
+	
+	<!-- Booster Pack #4 -->
+	<trinket achievement="381" description="Charged friends" gfx="trinket_125_Extensioncord.png" id="125" name="Extension Cord" />
+	
+	<!-- Booster Pack #5 -->
+	<trinket achievement="388" description="Wealth of flies" gfx="trinket_126_RottenPenny.png" id="126" name="Rotten Penny" />
+	<trinket achievement="389" description="Feed them magic!" gfx="trinket_127_BabyBender.png" id="127" name="Baby-Bender" />
+	<trinket achievement="399" description="It looks brittle" gfx="trinket_128_FingerBone.png" id="128" name="Finger Bone" />
+	
+<!-- REPENTANCE BEGIN -->
+	<trinket	id="129"	gfx="trinket_129_Jawbreaker.png" name="Jawbreaker" description="Don't chew on it" />
+	<trinket	id="130"	gfx="trinket_130_ChewedPen.png" name="Chewed Pen" description="It's leaking" />
+	<trinket	id="131"	achievement="419" gfx="trinket_131_BlessedPenny.png" name="Blessed Penny" description="Wealth of purity" />
+	<trinket	id="132"	gfx="trinket_132_BrokenSyringe.png" name="Broken Syringe" description="Mystery medicine" />
+	<trinket	id="133"	gfx="trinket_133_ExplodedFirecracker.png" name="Short Fuse" description="Faster explosions" />
+	<trinket	id="134"	gfx="trinket_134_GiantBean.png" name="Gigante Bean" description="Mega farts" />
+	<trinket	id="135"	gfx="trinket_135_Lighter.png" name="A Lighter" description="Watch the world burn" />
+	<trinket	id="136"	gfx="trinket_136_BrokenPadlock.png" name="Broken Padlock" description="Bombs are key" />
+	<trinket	id="137"	gfx="trinket_137_Myosotis.png" name="Myosotis" description="Forget me not..." />
+	<trinket	id="138"	achievement="458" gfx="trinket_138_M.png" name=" 'M" description="t's broken9Reroll your dest       " />
+	<trinket	id="139"	gfx="trinket_139_TeardropCharm.png" name="Teardrop Charm" description="It feels lucky" />
+	<trinket	id="140"	gfx="trinket_140_AppleOfSodom.png" name="Apple of Sodom" description="It feels empty" />
+	<trinket	id="141"	achievement="408" gfx="trinket_141_SongOfTheSiren.png" name="Forgotten Lullaby" description="Sing for your friends" />
+	<trinket	id="142"	achievement="421" gfx="trinket_142_BethsFaith.png" name="Beth's Faith" description="My faith protects me" />
+	<trinket	id="143"	achievement="545" gfx="trinket_143_OldCapacitor.png" name="Old Capacitor" description="Voltage starving" />
+	<trinket	id="144"	gfx="trinket_144_BrainWorm.png" name="Brain Worm" description="Ding!" cache="tearflag" />
+	<trinket	id="145"	gfx="trinket_145_Perfection.png" name="Perfection" description="Luck way up. Don't lose it!" cache="luck" />
+	<trinket	id="146"	achievement="454" gfx="trinket_146_DevilsCrown.png" name="Devil's Crown" description="His special customer" />
+	<trinket	id="147"	achievement="523" gfx="trinket_147_ChargedPenny.png" name="Charged Penny" description="Wealth of power" />
+	<trinket	id="148"	gfx="trinket_148_FriendshipNecklace.png" name="Friendship Necklace" description="Gather round" />
+	<trinket	id="149"	gfx="trinket_149_PanicButton.png" name="Panic Button" description="Push in case of emergency" />
+	<trinket	id="150"	achievement="493" gfx="trinket_150_BlueKey.png" name="Blue Key" description="Look between the rooms" />
+	<trinket	id="151"	gfx="trinket_151_FlatFile.png" name="Flat File" description="No more spikes" />
+	<trinket	id="152"	achievement="406" gfx="trinket_152_TelescopeLens.png" name="Telescope Lens" description="Seek the stars" />
+	
+	<trinket	id="153" achievement="548" gfx="trinket_153_MomsLock.png" name="Mom's Lock" description="A piece of her love" />
+	<trinket	id="154" achievement="549" gfx="trinket_154_DiceBag.png" name="Dice Bag" description="Bonus roll" />
+	<trinket	id="155" achievement="550" gfx="trinket_155_HolyCrown.png" name="Holy Crown" description="Walk the path of the saint" />
+	<trinket	id="156" achievement="551" gfx="trinket_156_MothersKiss.png" name="Mother's Kiss" description="HP up" />
+	<trinket	id="157" achievement="565" gfx="trinket_157_TornCard.png" name="Torn Card" description="Death awaits" />
+	<trinket	id="158" achievement="564" gfx="trinket_158_TornPocket.png" name="Torn Pocket" description="A hole in your pocket" />
+	<trinket	id="159" achievement="552" gfx="trinket_159_GildedKey.png" name="Gilded Key" description="Less is more" cache="pickupvision" />
+	<trinket	id="160" achievement="553" gfx="trinket_160_LuckySack.png" name="Lucky Sack" description="Free goodies!" />
+	<trinket	id="161" achievement="562" gfx="trinket_161_WickedCrown.png" name="Wicked Crown" description="Walk the path of the wicked" />
+	<trinket	id="162" achievement="563" gfx="trinket_162_AzazelsStump.png" name="Azazel's Stump" description="Unleash your inner demon" cache="all" addcostumeonpickup="false" persistent="true" />
+	<trinket	id="163" achievement="556" gfx="trinket_163_DingleBerry.png" name="Dingle Berry" description="Oops!" />
+	<trinket	id="164" achievement="557" gfx="trinket_164_RingCap.png" name="Ring Cap" description="Twice the bang!" />
+	<trinket	id="165" achievement="566" gfx="trinket_165_NuhUh.png" name="Nuh Uh!" description="Don't want!" />
+	<trinket	id="166" achievement="567" gfx="trinket_166_ModelingClay.png" name="Modeling Clay" description="???" />
+	<trinket	id="167" achievement="576" gfx="trinket_167_PolishedBone.png" name="Polished Bone" description="Friends from beyond" />
+	<trinket	id="168" achievement="577" gfx="trinket_168_HollowHeart.png" name="Hollow Heart" description="A brittle blessing" />
+	<trinket	id="169" achievement="568" gfx="trinket_169_KidsDrawing.png" name="Kid's Drawing" description="Looks familiar..." />
+	<trinket	id="170" achievement="569" gfx="trinket_170_CrystalKey.png" name="Crystal Key" description="Call to the other side" />
+	<trinket	id="171" achievement="572" gfx="trinket_171_KeepersBargain.png" name="Keeper's Bargain" description="Money talks" />
+	<trinket	id="172" achievement="573" gfx="trinket_172_CursedPenny.png" name="Cursed Penny" description="Wealth of misery" />
+	<trinket	id="173" achievement="554" gfx="trinket_173_YourSoul.png" name="Your Soul" description="Give it to me" />
+	<trinket	id="174" achievement="555" gfx="trinket_174_NumberMagnet.png" name="Number Magnet" description="6" />
+	<trinket	id="175" achievement="558" gfx="trinket_175_StrangeKey.png" name="Strange Key" description="What could it open?" />
+	<trinket	id="176" achievement="559" gfx="trinket_176_LilClot.png" name="Lil Clot" description="Mini friend" />
+	<trinket	id="177" achievement="560" gfx="trinket_177_TemporaryTattoo.png" name="Temporary Tattoo" description="You feel braver" />
+	<trinket	id="178" achievement="561" gfx="trinket_178_SwallowedM80.png" name="Swallowed M80" description="Bang!" />
+	<trinket	id="179" achievement="580" gfx="trinket_179_RCRemote.png" name="RC Remote" description="Controllable buddies!" />
+	<trinket	id="180" achievement="581" gfx="trinket_180_FoundSoul.png" name="Found Soul" description="Finally!" persistent="true" cache="familiars" />
+	<trinket	id="181" achievement="578" gfx="trinket_181_ExpansionPack.png" name="Expansion Pack" description="Fun extras" />
+	<trinket	id="182" achievement="579" gfx="trinket_182_BethsEssence.png" name="Beth's Essence" description="Virtue's reward" />
+	<trinket	id="183" achievement="570" gfx="trinket_183_TheTwins.png" name="The Twins" description="I'm seeing double..." />
+	<trinket	id="184" achievement="571" gfx="trinket_184_AdoptionPapers.png" name="Adoption Papers" description="Give them a home" />
+	<trinket	id="185" achievement="574" gfx="trinket_185_CricketLeg.png" name="Cricket Leg" description="Infested" />
+	<trinket	id="186" achievement="575" gfx="trinket_186_ApollyonsBestFriend.png" name="Apollyon's Best Friend" description="Attack buddy" cache="familiars" />
+	<trinket	id="187" achievement="521" gfx="trinket_187_BrokenGlasses.png" name="Broken Glasses" description="Double vision?" />
+	<trinket	id="188" achievement="522" gfx="trinket_188_IceCube.png" name="Ice Cube" description="Stay frosty" />
+	<trinket	id="189" achievement="518" gfx="trinket_189_SigilOfBaphomet.png" name="Sigil of Baphomet" description="Revel in death" />
+<!-- REPENTANCE END -->
+	
+	<null id="41" name="huge growth" cache="damage range size" />
+	<null id="42" name="era walk" cache="speed shotspeed" />
+	<null id="46" name="holy card" persistent="true" />
+	
+<!-- REPENTANCE BEGIN -->
+	<null id="50" name="spin to win secondary" cache="speed" />
+	<null id="54" name="blood oath secondary" cache="damage speed" />
+	<null id="55" name="intruder secondary" />
+	<null id="56" name="sol secondary" cache="damage luck" />
+	<null id="57" name="it hurts secondary" cache="firedelay" />
+	<null id="59" name="tooth and nail statue" cache="speed" />
+	
+	<null id="60" name="reverse magician" cooldown="1800" persistent="true" />
+	<null id="61" name="reverse high priestess" cooldown="1800" persistent="true" />
+	<null id="62" name="reverse empress" cooldown="1800" cache="firedelay" persistent="true" />
+	<null id="63" name="reverse chariot" cooldown="300" cache="damage firedelay speed" persistent="true" />
+	<null id="64" name="reverse strength" cooldown="900" />
+	<null id="65" name="reverse hanged man" cooldown="900" cache="firedelay speed" persistent="true" />
+	<null id="66" name="reverse sun" cache="damage flying tearflag tearcolor" persistent="true" />
+	<null id="67" name="reverse devil" cooldown="900" cache="flying familiars" persistent="true" />
+	<null id="69" name="reverse temperance" persistent="true" />
+	<null id="70" name="reverse stars" cooldown="15" />
+	
+	<null id="71" name="wavy cap L1" cache="firedelay speed" persistent="true" />
+	<null id="72" name="wavy cap L2" />
+	<null id="73" name="wavy cap L3" />
+	<null id="74" name="luna secondary" cache="firedelay" persistent="true" />
+	
+	<null id="100" name="esau jr" cache="flying damage" persistent="true" />
+	<null id="101" name="spirit shackles soul" cooldown="300" cache="flying damage color" persistent="true" />
+	<null id="102" name="spirit shackles disabled" persistent="true" />
+	<null id="107" name="extra big fan" persistent="true" cache="familiars" />
+	<null id="109" name="jacob's curse" persistent="true" />
+	<null id="110" name="bloody babylon" persistent="true" cache="all" />
+	<null id="111" name="dark arts secondary" persistent="true" cache="damage" />
+	<null id="112" name="lost curse" persistent="true" cache="flying tearflag tearcolor" />
+	<null id="113" name="lazarus soul revive" persistent="true" />
+	<null id="114" name="soul of magdalene" />
+	<null id="115" name="soul of ???" cooldown="120" />
+	<null id="116" name="mirror death" persistent="true" cooldown="30" />
+	<null id="117" name="hemoptysis" cooldown="12" />
+	
+	<null id="120" name="soul of the forgotten" persistent="true"/>
+	<null id="121" name="soul of jacob" persistent="true"/>
+<!-- REPENTANCE END -->
+</items>
