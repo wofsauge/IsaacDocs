@@ -1609,8 +1609,8 @@ ___
 - When Isaac picks up a collectible or a trinket, he holds it above his head for a while. At this point, the collectible/trinket is not actually put into his inventory yet.
 - In other words, the item is queued for insertion until the animation completes, at which point the queue is processed and the item is inserted.
 - QueueItemData is an object that describes the item that a player is currently holding above their head.
-- Even if the player is not currently holding up any item, this will not be null, but `player.QueuedItem.Item` will be null.
-- QueueItemData only stores data for collectibles and trinkets. It does not store any data for pocket items (even though Isaac players a similar "holding above head" animation for pocket items).
+- Even if the player is not currently holding up any item, this will not be nil, but `player.QueuedItem.Item` will be nil.
+- QueueItemData only stores data for collectibles and trinkets. It does not store any data for pocket items (even though Isaac plays a similar "holding above head" animation for pocket items).
 - Also see `FlushQueueItem()`, `IsItemQueueEmpty()`, and `QueueItem()`.
 ___ 
 ### Secondary·Active·Item {: aria-label='Variables' }
