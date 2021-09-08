@@ -10,7 +10,7 @@
         ```lua
         local room = Game():GetRoom()
         ```
-        
+
 ## Functions
 ### Check·Line () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -483,6 +483,9 @@ ___
 ### Remove·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveGridEntity ( int GridIndex, int PathTrail, boolean KeepDecoration ) {: .copyable aria-label='Functions' }
+
+- `GridIndex` is the location of the grid as shown with the `debug 11` console command.
+- `PathTrail` is the "cost" to leave behind on the square. In most cases, you would want to pass 0 for this argument.
 
 ___ 
 ### Render () {: aria-label='Functions' }
