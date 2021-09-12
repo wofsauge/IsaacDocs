@@ -99,7 +99,7 @@ nav:
             - "UseFlag": enums/UseFlag.md
             - "WeaponType": enums/WeaponType.md
         - "Global Functions": GlobalFunctions.md
-        - "Color": Color.md        
+        - "Color": Color.md
         - "CppContainer":
             - "ArrayProxy":
                 - "RoomConfigEntries": CppContainer_ArrayProxy_RoomConfigEntries.md
@@ -180,6 +180,7 @@ nav:
         - "Ball & Chain": entities/SpikeBallChain.md
     - Tutorials:
         - "Example Project": tutorials/ExampleProject.md
+        - "Math and Lua Tips": tutorials/MathAndLuaTips.md
         - "Adding Costumes to items without LUA": tutorials/AddingCostumesWithoutLUA.md
         - "Debugging with ZeroBrane Studio": tutorials/ZeroBraneStudio.md
         - "Debug Console": tutorials/DebugConsole.md
@@ -224,7 +225,7 @@ nav:
         - "translations.xml" : xml/translations.md
         - "wisps.xml" : xml/wisps.md
     - FAQ: tutorials/faq.md
-    - Tools: 
+    - Tools:
         - "Tools Overview" : tutorials/Tools.md
         - "Itempool Editor" : tutorials/Tool_ItemPoolEditor.md
     - Bugs: https://github.com/Meowlala/RepentanceAPIIssueTracker
@@ -281,9 +282,9 @@ extra:
   version:
     provider: mike
     default: rep
-extra_css: 
+extra_css:
     - css/custom.css
-extra_javascript: 
+extra_javascript:
     - https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
     - js/customJS.js
     - js/jquery.mark.min.js
