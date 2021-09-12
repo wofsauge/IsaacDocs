@@ -5,6 +5,8 @@ This file is used to define additional informations for Collectibles or Trinkets
 
 **Content-Folder**{: .xmlInfo .green}: Using this file in a content folder of a mod will add new items.
 
+???+ warning "Warning! File not needed!"
+    The "items_metadata.xml" file is a relict from the dev process. All its features (Quality and Tag definition of items) can be achieved the same but more reliable way in the "items.xml" file.
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
