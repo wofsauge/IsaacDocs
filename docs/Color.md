@@ -48,25 +48,20 @@ The values can be between 0 and 1 for normal coloration. if you use higher numbe
     Colorization is applied after the tint and before the offset function.
 
 ???- example "Example Code"
-    `:::lua SetColorize(1, 1, 1, 1)` will turn the sprite into grayscale.
-    
-     `:::lua SetColorize(1, 0, 0, 1)` will turn it red but not as a red tint but as shades of red.
-    
-    
-    `:::lua SetColorize(1, 1, 1, 2)` will invert the sprite without touching its luminosity.
-    
-    
-    
+    - `:::lua SetColorize(1, 1, 1, 1)` will turn the sprite into grayscale.
+    - `:::lua SetColorize(1, 0, 0, 1)` will turn it red but not as a red tint but as shades of red.
+    - `:::lua SetColorize(1, 1, 1, 2)` will invert the sprite without touching its luminosity.
+
     This code changes the color of red Creep to be purple
     ```lua 
-    Test:AddCallback(ModCallbacks.MC_POST_EFFECT_INIT, function(_, self)
-        if self.Variant == EffectVariant.CREEP_RED then
-            local color = Color(1, 1, 1, 1, 0, 0, 0)
-            color:SetColorize(4, 0, 4, 1)
-            self:GetSprite().Color = color
-        end
+    mod:AddCallback(ModCallbacks.MC_POST_EFFECT_INIT, function(_, effect)
+      if effect.Variant == EffectVariant.CREEP_RED then
+        local color = Color(1, 1, 1, 1, 0, 0, 0)
+        color:SetColorize(4, 0, 4, 1)
+        local sprite = effect:GetSprite()
+        sprite.Color = color
+      end
     end)
-    
     ```
 
 ___ 
