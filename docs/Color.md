@@ -116,5 +116,3 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### float RO  {: .copyable aria-label='Variables' }
 Red-Offset value of the color. Number can be positive or negative.
-
-___ 
