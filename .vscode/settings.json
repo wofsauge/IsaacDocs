@@ -1,0 +1,14 @@
+// These are Visual Studio Code settings that should apply to this particular repository
+{
+  // ----------------
+  // Vanilla settings
+  // ----------------
+
+  "editor.tabSize": 4,
+
+  // Linux line endings are used in this project
+  "files.eol": "\n",
+
+  // Automatically removing all trailing whitespace when saving a file
+  "files.trimTrailingWhitespace": true,
+}
