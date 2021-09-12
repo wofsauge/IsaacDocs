@@ -8,6 +8,7 @@ This file is used to define the properties of Locust familiars, spawned by Abyss
 
 ### "color" nodes
 Used to define color a locust can have.
+
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 | name | str | Name of the color which will be used to reference it in the "locust" nodes|
@@ -20,6 +21,7 @@ Used to define color a locust can have.
 
 ### "locust" nodes
 Used to define the special properties of the locust created from the item with the given ID.
+
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 | id | int | Id of the Collectible which Abyss destroyed |
