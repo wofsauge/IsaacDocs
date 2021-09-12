@@ -21,13 +21,13 @@ The amount on how often an item will be in the itempool is determined with the f
 math.ceil( ( Weight - RemoveOn ) / DecreaseBy )
 ```
 ( `math.ceil` rounds a number to the next biggest integer )
-        
+
 ## Example
 
 ???+ example "Example Code"
     This code describes an item pool with 3 items in it.
 
-    ```xml 
+    ```xml
     <ItemPools>
         <Pool Name="myItempool">
                 <!--The Sad Onion --- 1 times in the Pool-->

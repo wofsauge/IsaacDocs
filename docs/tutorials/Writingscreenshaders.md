@@ -40,23 +40,23 @@ where:
 
 
 ```xml
-attribute vec3 Position;                                        
-attribute vec4 Color;                                           
-attribute vec2 TexCoord;                                        
-attribute vec4 RenderData;                                                                  
+attribute vec3 Position;
+attribute vec4 Color;
+attribute vec2 TexCoord;
+attribute vec4 RenderData;
 attribute float Scale;
 ...your attributes...
-uniform mat4 Transform; 
+uniform mat4 Transform;
 ...
 ```
 
 *   `FRAGMENT_SHADER` is your fragment shader which again should contain at least these:
 
 ```xml
-varying lowp vec4 Color0;                                       
-varying mediump vec2 TexCoord0;                             
+varying lowp vec4 Color0;
+varying mediump vec2 TexCoord0;
 varying lowp vec4 RenderDataOut;
-varying lowp float ScaleOut;            
+varying lowp float ScaleOut;
 uniform sampler2D Texture0;
 ```
 
@@ -138,7 +138,7 @@ local mod = RegisterMod("ShaderMod", 1)
 function mod:GetShaderParams(shaderName)
 	if shaderName == 'RandomColors' then
         local playerPos = Isaac.GetPlayer(0).Position
-        local params = { 
+        local params = {
             PlayerPos = {   playerPos.X / 100.0,
                             playerPos.Y / 100.0 },
                             Time = Isaac.GetFrameCount()

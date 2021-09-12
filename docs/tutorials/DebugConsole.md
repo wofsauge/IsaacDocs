@@ -1,5 +1,5 @@
 # Tutorial: DebugConsole
-**To access the debug console, at least 1 mod must be enabled.** 
+**To access the debug console, at least 1 mod must be enabled.**
 
 If you don't have any mods to enable, download one from Steam Workshop, or create an empty folder in your mods. **To show the console**, while in a run press the grave/tilde (`~) key. On english (American) keyboardlayouts, it should be below Esc.
 
@@ -14,17 +14,17 @@ If you don't have any mods to enable, download one from Steam Workshop, or creat
 |Danish|QWERTY|æ|
 |Portuguese|QWERTY|ç|
 
-**To hide the console**, just hit Enter without typing anything. **Beware of spoilers!** You can easily learn things accidentally via the debug console that you might have wanted to learn from regular gameplay! 
+**To hide the console**, just hit Enter without typing anything. **Beware of spoilers!** You can easily learn things accidentally via the debug console that you might have wanted to learn from regular gameplay!
 
-The debug console is a feature of Isaac that's been around since Rebirth, but until AB+ it's only been enabled in developer builds. Now modders can finally unleash its power! It can be a big time saver for testing your changes during development of mods. 
+The debug console is a feature of Isaac that's been around since Rebirth, but until AB+ it's only been enabled in developer builds. Now modders can finally unleash its power! It can be a big time saver for testing your changes during development of mods.
 
 The debug console is not completely stable, so if you enter commands like numbers outside certain ranges, it may crash. Some of the crashes are documented below, but there are likely others.
 
-If you're testing a specific item or item combo, it's useful to enter your commands and then exit and continue so your items are reloaded when you continue and you don't need to keep retyping the same command. Also, try the clipboard! You can paste multiple commands at once or copy the last few commands you entered using the copy command. 
+If you're testing a specific item or item combo, it's useful to enter your commands and then exit and continue so your items are reloaded when you continue and you don't need to keep retyping the same command. Also, try the clipboard! You can paste multiple commands at once or copy the last few commands you entered using the copy command.
 
-Some commands that are still in the game aren't listed here since they're only useful for Nicalis developers, or are no longer useful. For instance, the achievement and eggs commands unlock stuff in your game save, but saving your persistent data is disabled when mods are turned on. 
+Some commands that are still in the game aren't listed here since they're only useful for Nicalis developers, or are no longer useful. For instance, the achievement and eggs commands unlock stuff in your game save, but saving your persistent data is disabled when mods are turned on.
 
-## Commands 
+## Commands
 
 ### **spawn**
 
@@ -36,12 +36,12 @@ spawn 10.1
 spawn 10.2.0.4
 ```
 
-Very similar names are incredibly common among entities, so you'll likely need to type the name to figure out the number, then delete it and type the number manually. The decimal syntax lets you specify: 
+Very similar names are incredibly common among entities, so you'll likely need to type the name to figure out the number, then delete it and type the number manually. The decimal syntax lets you specify:
 
 ```
 Type.Variant.Subtype.Champion
 ```
-`spawn 10.2.0.4` will get you a gaper(10)'s flaming variant(.2) with a blue champion type(.4). 
+`spawn 10.2.0.4` will get you a gaper(10)'s flaming variant(.2) with a blue champion type(.4).
 
 ### **goto**
 Syntax:
@@ -71,20 +71,20 @@ gridspawn 9000
 gridspawn 9100
 ```
 
-Spawns the grid entity with the given ID at a random place in the room. For some reason it doesn't always do something, possibly because of failing to overwrite other grid entities or trying to spawn outside the room or something. Pits won't look right until you leave the room and come back. 
+Spawns the grid entity with the given ID at a random place in the room. For some reason it doesn't always do something, possibly because of failing to overwrite other grid entities or trying to spawn outside the room or something. Pits won't look right until you leave the room and come back.
 
 ### **debug**
-Various cheats that are useful for testing. Some of the ones not listed here are obsolete, not very useful, or possibly broken. Here are the ones that are still useful. 
+Various cheats that are useful for testing. Some of the ones not listed here are obsolete, not very useful, or possibly broken. Here are the ones that are still useful.
 
 **debug 3** Complete invincibility
 
-**debug 4** +40 damage. Good with Soy Milk. 
+**debug 4** +40 damage. Good with Soy Milk.
 
-**debug 7** Display damage values, similar to the Spider Mod item 
+**debug 7** Display damage values, similar to the Spider Mod item
 
-**debug 8** Your active item always has max charge. 
+**debug 8** Your active item always has max charge.
 
-**debug 9** Your luck is very high, so luck-based random events like random tear effects happen more often. 
+**debug 9** Your luck is very high, so luck-based random events like random tear effects happen more often.
 
 **debug 10** All enemies take rapid damage at all times, so rooms are usually cleared in under a second.
 
@@ -101,7 +101,7 @@ giveitem ipec
 g mutant sp
 g soy milk
 ```
-Name collisions are somewhat common among items, so you'll likely need to type the name to figure out the number, then delete it and type the number manually. For items, use "c15" to give the item by number instead of name. For trinkets numbers, use "t15" Notice how it can autocomplete if you don't type the full name. It doesn't work with some odd item names like "<3" so you'll have to figure out the collectible number and use "c15" instead. 
+Name collisions are somewhat common among items, so you'll likely need to type the name to figure out the number, then delete it and type the number manually. For items, use "c15" to give the item by number instead of name. For trinkets numbers, use "t15" Notice how it can autocomplete if you don't type the full name. It doesn't work with some odd item names like "<3" so you'll have to figure out the collectible number and use "c15" instead.
 
 Pill syntax:
 ```
@@ -115,7 +115,7 @@ giveitem k1
 g k45
 ```
 
-Unfortunately you can't type pills or cards by name, so you have to figure out the number. You can give yourself pills even if that pill's effect is not in the rotation. It won't subsequently appear in rotation afterwards. 
+Unfortunately you can't type pills or cards by name, so you have to figure out the number. You can give yourself pills even if that pill's effect is not in the rotation. It won't subsequently appear in rotation afterwards.
 
 ### **remove**
 ####  aliases: `r`
@@ -130,7 +130,7 @@ r experi
 remove *
 ```
 
-`remove *` is a special version of the command that should remove all items. 
+`remove *` is a special version of the command that should remove all items.
 
 ### **costumetest**
 
@@ -208,7 +208,7 @@ Generates a new layout for the current floor with a new floor seed. This floor w
 Copies the last three console commands to your clipboard. Paste one or more commands with ctrl+v, or command+v on mac.
 
 ### **clear**
-Clears the console. Useful for video recording purposes or if you want to dispose of incriminating evidence. 
+Clears the console. Useful for video recording purposes or if you want to dispose of incriminating evidence.
 
 ### **lua**
 Examples:

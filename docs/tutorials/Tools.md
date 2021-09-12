@@ -1,15 +1,15 @@
 # Modding Tools
 
-  
+
 ## General
- 
+
 * [Basement Renovator](https://github.com/Tempus/Basement-Renovator) : Powerful and intuitive Level and Room Editor
 * [Backdrop Previewer](https://redd.it/8wmzu6) : Tool to preview Room-Backdrops
 * [Log Viewer](https://github.com/pipe01/abp-log) : Tool to display a live - view the Logfile
 * [Rebirth Item Tracker](https://github.com/Hyphen-ated/RebirthItemTracker) : External tool that displays Item-informations about your current run
 * [AB+ Mod Merger](../customData/abp%20modmerger%20by%20Sentinel.zip) : A Python script to merge AB+ Mods. This can improve performance.
 * [Anm2 Scaling Helper](../customData/anm2_scaler.zip) : Scales .anm2 files with a specific factor. Useful to create HD sprites. ([Source](../customData/anm2_scaler_(source_code).zip))
-* [Drawstic Online](https://wofsauge.github.io/DrawsticOnline/) : Online tool to edit BoI sprites quickly 
+* [Drawstic Online](https://wofsauge.github.io/DrawsticOnline/) : Online tool to edit BoI sprites quickly
 * [Color Usage Visualizer](https://wofsauge.github.io/Sprite-color-usage-Visualizer/index.html) : Interactive 3D tool to display color usage frequencies in Isaac Sprites
 * [Config & Mod Management Tool](https://moddingofisaac.com/mod/3386/tboi-afterbirth-configuration-tool) : UI to edit the game config and enable/ disable mods or modpacks
 * [PC -> Console Mod Converter](https://moddingofisaac.com/mod/2297/tboir-mod-conversion-kit): Converts Rebirth and Afterbirth mods to be useable on consoles. DOES NOT WORK FOR AFTERBIRTH+ MODS!
@@ -50,9 +50,9 @@
 ### Spider Mod
 **Download Link:** [Spider Mod v09.1 for WotL 1.48](https://mega.nz/file/gYhTCbLK#AOBnB6qYxkBWXGhLmMFPHsEF8N-RmD7qoqAJi8s3GBs)
 
-Extended version of the default game with extra features, bugfixes and modding support. Its a standalone application and does work without having the main game installed. 
+Extended version of the default game with extra features, bugfixes and modding support. Its a standalone application and does work without having the main game installed.
 
-This does not contain or work with the Eternal Update! 
+This does not contain or work with the Eternal Update!
 
 #### Install instructions (not verified / propably needs work)
 1. Download and unpack the zip file in any folder and directory you want.

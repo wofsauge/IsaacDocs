@@ -1,7 +1,7 @@
 # Class "Input"
 
 ???+ info
-    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!** 
+    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!**
 
     **Example:** `Input.GetMousePosition(true)`
 
@@ -14,18 +14,18 @@ Returns the current strength in which a button was pressed. This is 0 OR 1 with 
 
 ???- example "Example Code"
     This code prints the current "strength" in which the analog stick was moved to the left.
-    ```lua 
-    print(Input.GetActionValue(ButtonAction.ACTION_LEFT, 1))   
-    
+    ```lua
+    print(Input.GetActionValue(ButtonAction.ACTION_LEFT, 1))
+
     ```
 
-___ 
+___
 ### Get·Button·Value () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### float GetButtonValue ( int button, int controllerId ) {: .copyable aria-label='Functions' }
 
 Use "GetActionValue" instead of this function.
-___ 
+___
 ### Get·Mouse·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetMousePosition ( boolean gameCoords ) {: .copyable aria-label='Functions' }
@@ -34,14 +34,14 @@ Returns the current mouse position in game coordinates (true) or render coordina
 
 ???- example "Example Code"
     This code renders "Hello World!" at the current mouse position.
-    ```lua 
+    ```lua
     local mousePos = Input.GetMousePosition(true) -- get mouse position in world coordinates
     local screenPos = Isaac.WorldToScreen(mousePos) -- transfer game- to screen coordinates
     Isaac.RenderText("Hello World!", screenPos.X, screenPos.Y, 1 ,1 ,1 ,1 )
-    
+
     ```
 
-___ 
+___
 ### Is·Action·Pressed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsActionPressed ( int action, int controllerId ) {: .copyable aria-label='Functions' }
@@ -52,13 +52,13 @@ Returns, if an action-button is pressed or not. An Action-button is any button t
 
 ???- example "Example Code"
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
-    ```lua 
+    ```lua
     if Input.IsActionPressed(ButtonAction.ACTION_BOMB, 0)  then
-        print("bomb Button pressed")   
+        print("bomb Button pressed")
     end
-    
+
     ```
-___ 
+___
 ### Is·Action·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsActionTriggered ( int action, int controllerId ) {: .copyable aria-label='Functions' }
@@ -69,13 +69,13 @@ Returns, if an action-button was pressed some time before or not. An Action-butt
 
 ???- example "Example Code"
     This code prints "bomb Button pressed", when any button was pressed that is assigned to the "place bomb" function.
-    ```lua 
+    ```lua
     if Input.IsActionTriggered(ButtonAction.ACTION_BOMB, 0)  then
-        print("bomb Button pressed")   
+        print("bomb Button pressed")
     end
-    
+
     ```
-___ 
+___
 ### Is·Button·Pressed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsButtonPressed ( int button, int controllerId ) {: .copyable aria-label='Functions' }
@@ -86,13 +86,13 @@ Returns, if a button is pressed or not. This function will return true, as long 
 
 ???- example "Example Code"
     This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
-    ```lua 
+    ```lua
     if Input.IsButtonPressed(Keyboard.KEY_ENTER, 0)  then
-        print("Enter Button pressed.")   
+        print("Enter Button pressed.")
     end
-    
+
     ```
-___ 
+___
 ### Is·Button·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsButtonTriggered ( int button, int controllerId ) {: .copyable aria-label='Functions' }
@@ -103,13 +103,13 @@ Returns, if a button was pressed some time before or not. This functions will on
 
 ???- example "Example Code"
     This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.
-    ```lua 
+    ```lua
     if Input.IsButtonTriggered(Keyboard.KEY_ENTER, 0)  then
-        print("Enter Button was pressed.")   
+        print("Enter Button was pressed.")
     end
-    
+
     ```
-___ 
+___
 ### Is·Mouse·Btn·Pressed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsMouseBtnPressed ( int button ) {: .copyable aria-label='Functions' }
@@ -119,11 +119,11 @@ Left: 0, Right: 1, mousewheel: 2, back button: 3, forward button: 4
 
 ???- example "Example Code"
     This code prints "Right Click", when the "right"-mousebutton was pressed.
-    ```lua 
+    ```lua
     if Input.IsMouseBtnPressed(1)  then
-        print("Right Click")   
+        print("Right Click")
     end
-    
+
     ```
 
-___ 
+___

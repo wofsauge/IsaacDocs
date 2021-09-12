@@ -2,14 +2,14 @@
 ----
 ## Example project
 Example project:
-To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory: 
+To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory:
 ```lua
 C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods
 ```
 Then, you have to create a new `:::cpp main.lua` file in the newly created folder. This file can then be used to contain the logic behind your mod.
 
 ### :fontawesome-brands-linux: For Linux {: .subHeader .notes }
-Mod tools aren't available in the native version. You need to run the game with Proton, the folder location is going to be inside your Steam folder 
+Mod tools aren't available in the native version. You need to run the game with Proton, the folder location is going to be inside your Steam folder
 ```lua
 /Steam/steamapps/compatdata/250900/pfx/drive_c/users/steamuser/Documents/My Games/Binding of Isaac Afterbirth+ Mods
 ```

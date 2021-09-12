@@ -42,7 +42,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | bestiaryAnim | string ||
 | bestiaryOverlay | string ||
 
-## Tags explanation 
+## Tags explanation
 
 | Stage-Name | Suffix |
 |:--|:--|

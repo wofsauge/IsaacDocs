@@ -6,7 +6,7 @@
 
 The length (#) operation. Returns the amount of spawnables in this list.
 
-___ 
+___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -14,7 +14,7 @@ ___
 
 Returns a [RoomConfig Spawn](RoomConfig_Spawn.md) at the index of the list provided.
 
-___ 
+___
 ## Variables
 ### Size {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -22,4 +22,4 @@ ___
 
 The amount of spawnables in the list.
 
-___ 
+___

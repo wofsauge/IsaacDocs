@@ -4,18 +4,18 @@
 [ ](#){: .abrep .tooltip .badge }
 #### [ProjectileParams](ProjectileParams.md) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
-___ 
+___
 ## Variables
 ### Acceleration {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Acceleration  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Bullet·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int BulletFlags  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Change·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ChangeFlags  {: .copyable aria-label='Variables' }
@@ -31,7 +31,7 @@ Projectiles can have two states: normal (default) and changed.
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
 Also used in: [EntityProjectile](EntityProjectile.md)
-___ 
+___
 ### Change·Timeout {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ChangeTimeout  {: .copyable aria-label='Variables' }
@@ -47,7 +47,7 @@ Projectiles can have two states: normal (default) and changed.
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
 Also used in: [EntityProjectile](EntityProjectile.md)
-___ 
+___
 ### Change·Velocity {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float ChangeVelocity  {: .copyable aria-label='Variables' }
@@ -63,94 +63,94 @@ Projectiles can have two states: normal (default) and changed.
 Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
 ____
 Also used in: [EntityProjectile](EntityProjectile.md)
-___ 
+___
 ### Circle·Angle {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float CircleAngle  {: .copyable aria-label='Variables' }
-Angle offset used by fire_projectiles PROJECTILES_CIRCLE type emitter. Random by default. 
-___ 
+Angle offset used by fire_projectiles PROJECTILES_CIRCLE type emitter. Random by default.
+___
 ### Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Curving·Strength {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float CurvingStrength  {: .copyable aria-label='Variables' }
-Use very small values for curving like 0.005. 
-___ 
+Use very small values for curving like 0.005.
+___
 ### Depth·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float DepthOffset  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Dot·Product·Limit {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float DotProductLimit  {: .copyable aria-label='Variables' }
-Direction bullets are being fired in Dot product of FireDirectionLimit, bullet direction must be &gt;= this value 
-___ 
+Direction bullets are being fired in Dot product of FireDirectionLimit, bullet direction must be &gt;= this value
+___
 ### Falling·Accel·Modifier {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float FallingAccelModifier  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Falling·Speed·Modifier {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float FallingSpeedModifier  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Fire·Direction·Limit {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) FireDirectionLimit  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Grid·Collision {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean GridCollision  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Height·Modifier {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float HeightModifier  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Homing·Strength {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float HomingStrength  {: .copyable aria-label='Variables' }
-Multiplier on normal homing strength. Unused if SMART bullet flag is not set. 
-___ 
+Multiplier on normal homing strength. Unused if SMART bullet flag is not set.
+___
 ### Position·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) PositionOffset  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Scale {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Scale  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Spread {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Spread  {: .copyable aria-label='Variables' }
-For quad/quint/etc spread shots. 
-___ 
+For quad/quint/etc spread shots.
+___
 ### Target·Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) TargetPosition  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Variant  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Velocity·Multi {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float VelocityMulti  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Wiggle·Frame·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int WiggleFrameOffset  {: .copyable aria-label='Variables' }
-Used to offset the wiggle wave. 
-___ 
+Used to offset the wiggle wave.
+___

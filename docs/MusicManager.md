@@ -8,105 +8,105 @@ Returns a [MusicManager](MusicManager.md) object.
 
 ???- example "Example Code"
     Example usage:
-    ```lua 
+    ```lua
     MusicManager():Disable()
-    
+
     ```
-___ 
+___
 ## Functions
 ### Crossfade () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void Crossfade ( [MusicManager](MusicManager.md) ID, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Disable () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Disable ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Disable·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void DisableLayer ( int LayerId = 0 ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Enable () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Enable ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Enable·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void EnableLayer ( int LayerId = 0, boolean Instant = false ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void Fadein ( [MusicManager](MusicManager.md) ID, float Volume = 1, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Fadeout () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void Fadeout ( float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Current·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [MusicManager](MusicManager.md) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Queued·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [MusicManager](MusicManager.md) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
-if nothing is queued, return the current music id 
-___ 
+if nothing is queued, return the current music id
+___
 ### Is·Enabled () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsEnabled ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·Layer·Enabled () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsLayerEnabled ( int LayerId = 0 ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Pause () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Pause ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Pitch·Slide () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PitchSlide ( float TargetPitch ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Play ( [MusicManager](MusicManager.md) ID, float Volume ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Queue () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Queue ( [MusicManager](MusicManager.md) ID ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Reset·Pitch () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ResetPitch ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Resume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Resume ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Update·Volume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void UpdateVolume ( ) {: .copyable aria-label='Functions' }
 
 This function sets the music volume to the volume defined in the options menu.
-___ 
+___
 ### Volume·Slide () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void VolumeSlide ( float TargetVolume, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
-___ 
+___

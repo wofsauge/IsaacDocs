@@ -26,7 +26,7 @@ This file is used to store informations about the bosses able to spawn on a give
 ???+ example "Example Code"
     This code describes a boss pool with 3 bosses in it.
 
-    ```xml 
+    ```xml
     <bosspools>
         <pool name="basement">
             <boss id="1" weight="1" />		<!-- Monstro -->

@@ -2,7 +2,7 @@
 
 If you want to load an additional .lua file besides your main.lua file, you can use the "require" function.
 
-???+ note 
+???+ note
     Reloading a mod that uses this method of loading additional files using the command "luamod" will not load the extra files correctly.
 
 #### Content "secondFile.lua":
@@ -55,7 +55,7 @@ If you want to load additional files the most correct way, you have to intention
 
 ```lua
 x = "Hello world" --define a new global variable x
-    --end of the file 
+    --end of the file
 Err:ForceError() --call a nonexistent function to throw an error intentionally
 ```
 
