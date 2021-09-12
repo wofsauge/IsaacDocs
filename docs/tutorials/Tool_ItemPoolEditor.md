@@ -12,7 +12,7 @@ It can be used to edit the "itempools.xml" file of the game or create new ones.
     To Fix this issue, you can replace the "Config.ini" file of the Tool with the "Config.ini" file provided here: [Fixed Config.ini file for Repentance](../customData/ItemPoolEditor_Config_for_Rep.zip)
 
 
-## UI 
+## UI
 ![](../images/itempool_editor.png){: width='400' }
 
 1. **List of Items**: The item list contains all items of the game. If a name is written in **bold** letters, it means that this item is in the current itempool. **Double click** on an entry to add it to the currently selected itempool.

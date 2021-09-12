@@ -15,7 +15,7 @@ Simply press the "**subscribe**" button on the Workshop page. This will automati
 This depends on the mod, but in most cases, they don't work.
 
 ### How do i open the Debug console? {: .subHeader}
-The Debug console is accessable as long as you have at least one mod activated. 
+The Debug console is accessable as long as you have at least one mod activated.
 
 To open the console, press the **grave/tilde (~)** key while in a run, or the appropriate key according to the keyboard used, as listed [**HERE**](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
 
@@ -56,7 +56,7 @@ if mods are not visible in the mods folder even after you subscribed to the mod 
 If a mod doesn`t work for you, there are multiple possible solutions:
 
 1. Check if the mod is listed and enabled in the "mods" menu. See the question aboth if that is not the case.
-2. Close the game, unsubscribe from the mod on the Workshop, delete the Mod 
+2. Close the game, unsubscribe from the mod on the Workshop, delete the Mod
 3. Check if the Debug Console contains any Error messages. [How to open the Console](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
 
     * If the error message reads  `... attempt to call a nil value (global 'RegisterMod')`, your game files are corrupt and you need to do **Step 5**.
