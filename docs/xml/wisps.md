@@ -7,6 +7,7 @@ This file is used to define the properties of Wisp familiars, spawned by Book of
 
 ### "color" nodes
 Used to define color a locust can have.
+
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 | name | str | Name of the color which will be used to reference it in the "locust" nodes|
