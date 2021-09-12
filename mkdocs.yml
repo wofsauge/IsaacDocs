@@ -207,10 +207,13 @@ nav:
         - "giantbook.xml" : xml/giantbook.md
         - "itempools.xml" : xml/itempools.md
         - "items.xml" : xml/items.md
+        - "items_metadata.xml" : xml/items_metadata.md
+        - "locusts.xml" : xml/locusts.md
         - "minibosses.xml" : xml/minibosses.md
         - "music.xml" : xml/music.md
         - "nightmares.xml" : xml/nightmares.md
         - "players.xml" : xml/players.md
+        - "playerforms.xml" : xml/playerforms.md
         - "pocketitems.xml" : xml/pocketitems.md
         - "preload.xml" : xml/preload.md
         - "rules.txt" : xml/rules.md
@@ -219,6 +222,7 @@ nav:
         - "sounds.xml" : xml/sounds.md
         - "stages.xml" : xml/stages.md
         - "translations.xml" : xml/translations.md
+        - "wisps.xml" : xml/wisps.md
     - FAQ: tutorials/faq.md
     - Tools: 
         - "Tools Overview" : tutorials/Tools.md
