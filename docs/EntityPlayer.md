@@ -1230,7 +1230,9 @@ ___
 ### Queue·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void QueueItem ( [ItemConfig::Item](ItemConfig_Item.md) Item, int Charge = 0, boolean Touched = false, bool Golden = false, int VarData = 0 ) {: .copyable aria-label='Functions' }
-When the player touches a collectible or trinket, they are not granted it immediately. Instead, the item is queued for the duration of the animation where the player holds the item above their head. When the animation is finished, the item(s) in the queue will be granted. This method adds a new item to the item queue. If the player is not currently playing an animation, then the queued item will simply be awarded instantly.
+When the player touches a collectible or trinket, they are not granted it immediately. Instead, the item is queued for the duration of the animation where the player holds the item above their head. When the animation is finished, the item in the queue will be granted. This method adds a new item to the item queue. If the player is not currently playing an animation, then the queued item will simply be awarded instantly.
+
+Also see `FlushQueueItem()`, `IsItemQueueEmpty()`, and `QueuedItem`.
 ___ 
 ### Remove·Black·Heart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1605,7 +1607,13 @@ ___
 ### Queued·Item {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [QueueItemData](QueueItemData.md) QueuedItem  {: .copyable aria-label='Variables' }
-item queue for when the player is picking up an item. the item is in effect as soon as the animation is finished and will be removed from the queue. 
+
+- When Isaac picks up a collectible or a trinket, he holds it above his head for a while. At this point, the collectible/trinket is not actually put into his inventory yet.
+- In other words, the item is queued for insertion until the animation completes, at which point the queue is processed and the item is inserted.
+- `QueuedItem` holds a object of type `QueueItemData` that describes the item that a player is currently holding above their head.
+- `QueuedItem` is never nil, even if the player is not currently holding up any item. (However, `player.QueuedItem.Item` will be nil if they are not currently holding up any item.)
+- This only stores data for collectibles and trinkets. It does not store any data for pocket items (even though Isaac plays a similar "holding above head" animation for pocket items).
+- Also see `FlushQueueItem()`, `IsItemQueueEmpty()`, and `QueueItem()`.
 ___ 
 ### Secondary·Active·Item {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

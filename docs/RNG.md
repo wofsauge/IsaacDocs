@@ -53,7 +53,7 @@ ___
 Set the seed of a given RNG object.
 
 ???+ bug "Bug"
-    If the seed is set to 0, the game will crash!!
+    If the seed of an RNG object is set to 0, the game will crash after invoking a method like `Next()`, `RandomInt()`, etc.
 
 
 ???+ example "Example code"
