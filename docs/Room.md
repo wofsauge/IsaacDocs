@@ -394,6 +394,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTriggerPressurePlates ( ) {: .copyable aria-label='Functions' }
 
+Returns true if there are one or more pressure plates in the room. (In order to see if the pressure plates are pressed or not, you will have to iterate over the grid entities in the room.)
+
 ___ 
 ### Has·Water () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
