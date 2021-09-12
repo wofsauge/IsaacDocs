@@ -14,14 +14,14 @@ Triggers the spawning of the reward as if the plate would be pressed, without ac
 
     When a wave is active, it will spawn a wave, wihtout increasing the wave counter.
 
-___ 
+___
 ## Variables
 ### Greed·Mode·RNG {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [RNG](RNG.md) GreedModeRNG {: .copyable aria-label='Variables' }
 RNG object that determines the RNG of anything GreedMode related.
 
-___ 
+___
 ### Next·Greed·Animation {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### string NextGreedAnimation  {: .copyable aria-label='Variables' }
@@ -29,10 +29,10 @@ Defines the animation that the greed-mode pressureplate should play. This effect
 
 Every Animation defined in the "grid_pressureplate.anm2" file can be used as an input. Any other input will crash the game!
 
-___ 
+___
 ### Timer·Plate {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Sprite](Sprite.md) TimerPlate  {: .copyable aria-label='Variables' data-altreturn='nil' }
 Reference to the Sprite of the Timerplate beneath the pressureplate in Greed mode.
 
-___ 
+___

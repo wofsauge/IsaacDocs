@@ -6,55 +6,55 @@
 [ ](#){: .abrep .tooltip .badge }
 #### void AppearFast ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Can·Reroll () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanReroll ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Coin·Value () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCoinValue ( ) {: .copyable aria-label='Functions' }
-If this is a coin, return its face value, else zero. 
-___ 
+If this is a coin, return its face value, else zero.
+___
 ### Is·Shop·Item () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsShopItem ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Morph () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void Morph ( [EntityType](enums/EntityType.md) Type, int Variant, int SubType, boolean KeepPrice = false, boolean KeepSeed = false, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
 **KeepSeed**: If set to true, keeps the initial RNG seed of the pickup instead of rerolling it
 
 **IgnoreModifiers**: If set to true, ignores item effects that might turn this pickup into something other than the specificed variant and subtype
-___ 
+___
 ### Play·Drop·Sound () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayDropSound ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Play·Pickup·Sound () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayPickupSound ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Try·Open·Chest () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean TryOpenChest ( [EntityPlayer](EntityPlayer.md) Player = nil ) {: .copyable aria-label='Functions' }
 **Player**: The player that opened this chest
-___ 
+___
 ## Variables
 ### Auto·Update·Price {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean AutoUpdatePrice  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Charge {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Charge  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### OptionsPickupIndex {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int OptionsPickupIndex  {: .copyable aria-label='Variables' }
@@ -63,12 +63,12 @@ Any non-zero value causes the item to form an option group with any other item w
 When an item belonging to an option group is picked up, all other items belonging to the same group disappear.
 
 0 is the default value and means the item doesn't belong to any group.
-___ 
+___
 ### Price {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Price  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Shop·Item·Id {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ShopItemId  {: .copyable aria-label='Variables' }
@@ -77,24 +77,24 @@ If in a shop, this value describes which slot the item is for sale in. For examp
 
 When spawning a new collectible item, the ShopItemId will be 0 by default. This has a side effect of making the D6 roll the collectible into a red heart. By setting shop item id to -1, it will fix this behavior such that the collectible will properly roll into another collectible.
 
-___ 
+___
 ### State {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int State  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Touched {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Touched  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Wait {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Wait  {: .copyable aria-label='Variables' }
 
-___ 
+___

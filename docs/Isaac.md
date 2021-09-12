@@ -1,7 +1,7 @@
 # Class "Isaac"
 
 ???+ info
-    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!** 
+    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!**
 
     **Example:** `Isaac.GetPlayer(0)`
 
@@ -12,12 +12,12 @@
 
 It is recommended to use the [AddCallback](ModReference.md#addcallback) function on a [Mod Reference](ModReference.md) instead.
 
-___ 
+___
 ### Add·Pill·Effect·To·Pool () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int AddPillEffectToPool ( int pillEffect ) {: .copyable aria-label='Functions' }
-returns pill color 
-___ 
+returns pill color
+___
 ### Console·Output () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ConsoleOutput ( string text ) {: .copyable aria-label='Functions' }
@@ -26,23 +26,23 @@ Prints a string into the Debug Console
 
 ???- example "Example Code"
     You can use this example as an alternative.
-    ```lua 
+    ```lua
     Isaac.ConsoleOutput("This is a Test.")
     -- Output: This is a Test.
-    
+
     -- Alternatively:
     print("This is a Test.")
     -- Output: This is a Test.
-    
+
     ```
 
-___ 
+___
 ### Count·Bosses () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int CountBosses ( ) {: .copyable aria-label='Functions' }
 
 Returns the number of bosses in the current room.
-___ 
+___
 ### Count·Enemies () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int CountEnemies ( ) {: .copyable aria-label='Functions' }
@@ -54,54 +54,54 @@ ___
 #### int CountEntities ( [Entity](Entity.md) Spawner, [EntityType](enums/EntityType.md) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
-Spawner refers to an entity object (can be `:::lua nil`) 
-Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`) 
-Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`) 
+Spawner refers to an entity object (can be `:::lua nil`)
+Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`)
+Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`)
 
 ???+ bug "Bugs"
     This function is broken as of now and can return values from other segments of game's memory
 
-___ 
+___
 ### Debug·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void DebugString ( string str ) {: .copyable aria-label='Functions' }
 
-Prints a string into the log file. You can find this file here `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt` 
+Prints a string into the log file. You can find this file here `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt`
 
 ???- example "Example Code"
     This code prints `:::lua "This is a Test."` in the log.txt file.
-    ```lua 
+    ```lua
     Isaac.DebugString("This is a Test.")
     -- Output: [INFO] - Lua Debug: This is a Test.
-    
+
     ```
 
-___ 
+___
 ### Execute·Command () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string ExecuteCommand ( string command ) {: .copyable aria-label='Functions' }
 
-This function executes a debug console command. see the 
+This function executes a debug console command. see the
 [Debug Console Tutorial](tutorials/DebugConsole.md) for informations on how to use commands.
-___ 
+___
 ### Explode () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Explode ( [Vector](Vector.md) pos, [Entity](Entity.md) source, float damage ) {: .copyable aria-label='Functions' }
 
 Spawn an explosion on a specified location.
-___ 
+___
 ### Find·By·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### table FindByType ( [EntityType](enums/EntityType.md) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
-Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame. 
-___ 
+Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame.
+___
 ### Find·In·Radius () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### table FindInRadius ( [Vector](Vector.md) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
-Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](enums/EntityPartition.md)) (include all = 0xffffffff) 
+Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](enums/EntityPartition.md)) (include all = 0xffffffff)
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded.
-___ 
+___
 ### Get·Card·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
@@ -112,19 +112,19 @@ Returns the CardID based on its hud value. (File: pocketitems.xml) Returns `-1` 
     The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.
 
 ???- example "Example Code"
-    This code gets the CardID of XVI - The Tower. 
-    ```lua 
+    This code gets the CardID of XVI - The Tower.
+    ```lua
     Isaac.GetCardIdByName("16_TheTower")
     --Returns: 17
-    
+
     ```
 
-___ 
+___
 ### Get·Challenge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetChallenge ( ) {: .copyable aria-label='Functions' }
 Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.
-___ 
+___
 ### Get·Challenge·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetChallengeIdByName ( string challengeName ) {: .copyable aria-label='Functions' }
@@ -132,14 +132,14 @@ ___
 Returns the ChallengeID of a challenge based on its name. (File: challenges.xml) Returns `-1` if no challenge with that name could be found (Case sensitive).
 
 ???- example "Example Code"
-    This code gets the ChallengeID of Aprils fool. 
-    ```lua 
+    This code gets the ChallengeID of Aprils fool.
+    ```lua
     Isaac.GetChallengeIdByName("Aprils fool")
     --Returns: 32
-    
+
     ```
 
-___ 
+___
 ### Get·Costume·Id·By·Path () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCostumeIdByPath ( string path ) {: .copyable aria-label='Functions' }
@@ -148,13 +148,13 @@ Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
 
 ???- example "Example Code"
     This code gets the CostumeID of the Poop transformation costume.
-    ```lua 
+    ```lua
     Isaac.GetCostumeIdByPath("gfx/characters/n027_Transformation_Poop.anm2")
     --Returns: 27
-    
+
     ```
 
-___ 
+___
 ### Get·Curse·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCurseIdByName ( string curseName ) {: .copyable aria-label='Functions' }
@@ -163,13 +163,13 @@ Returns the CurseID of a curse based on its name. (File: curses.xml) Returns `-1
 
 ???- example "Example Code"
     This code gets the CurseID of Curse of the Unknown.
-    ```lua 
+    ```lua
     Isaac.GetCurseIdByName("Curse of the Unknown")
     --Returns: 4
-    
+
     ```
 
-___ 
+___
 ### Get·Entity·Type·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetEntityTypeByName ( string entityName ) {: .copyable aria-label='Functions' }
@@ -180,14 +180,14 @@ Returns the EntityType of an entity based on its name. (File: entities2.xml) Ret
     There is no SubType version of this function.
 
 ???- example "Example Code"
-    This code gets the EntityType of Flaming Gaper. 
-    ```lua 
+    This code gets the EntityType of Flaming Gaper.
+    ```lua
     Isaac.GetEntityTypeByName("Flaming Gaper")
     --Returns: 10
-    
+
     ```
 
-___ 
+___
 ### Get·Entity·Variant·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetEntityVariantByName ( string entityName ) {: .copyable aria-label='Functions' }
@@ -198,14 +198,14 @@ Returns the variant of an entity based on its name. (File: entities2.xml) Return
     There is no SubType version of this function.
 
 ???- example "Example Code"
-    This code gets the variant of Flaming Gaper. 
-    ```lua 
+    This code gets the variant of Flaming Gaper.
+    ```lua
     Isaac.GetEntityVariantByName("Flaming Gaper")
     --Returns: 2
-    
+
     ```
 
-___ 
+___
 ### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
@@ -213,17 +213,17 @@ ___
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
 This function therefore works drastically different than `:::lua Game():GetFrameCount()`[Link](Game.md#GetFrameCount)
-___ 
+___
 ### Get·Free·Near·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetFreeNearPosition ( [Vector](Vector.md) pos, float step ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Item·Config () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Config](ItemConfig.md) GetItemConfig ( ) {: .copyable aria-label='Functions' }
 Returns the [ItemConfig::Config](ItemConfig.md) object.
-___ 
+___
 ### Get·Item·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetItemIdByName ( string itemName ) {: .copyable aria-label='Functions' }
@@ -232,13 +232,13 @@ Returns the ItemID of a Collectible. (File: items.xml) Returns `-1` if no item w
 
 ???- example "Example Code"
     This code gets the ItemID of Brimstone.
-    ```lua 
+    ```lua
     Isaac.GetItemIdByName("Brimstone")
     --Returns: 118
-    
+
     ```
 
-___ 
+___
 ### Get·Music·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetMusicIdByName ( string musicName ) {: .copyable aria-label='Functions' }
@@ -247,13 +247,13 @@ Returns the MusicID of a music track. (File: music.xml) Returns `-1` if no music
 
 ???- example "Example Code"
     This code gets the MusicID of the Title Screen.
-    ```lua 
+    ```lua
     Isaac.GetMusicIdByName("Title Screen")
     --Returns: 61
-    
+
     ```
 
-___ 
+___
 ### Get·Pill·Effect·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetPillEffectByName ( string pillEffect ) {: .copyable aria-label='Functions' }
@@ -262,30 +262,30 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml) Returns `-1`
 
 ???- example "Example Code"
     This code gets the PillEffectID of I can see forever!.
-    ```lua 
+    ```lua
     Isaac.GetPillEffectByName("I can see forever!")
     --Returns: 23
-    
+
     ```
 
-___ 
+___
 ### Get·Player () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetPlayer ( int playerId = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop players or babies. If an index is given, that is not used, it will return the last player in the list.
 
-This function can return `nil` if the function is called before any player is initialized. 
+This function can return `nil` if the function is called before any player is initialized.
 
 This function is the same as [`Game():GetPlayer()`](Game.md#getplayer).
 
 ???- example "Example Code"
-    ```lua 
+    ```lua
     Isaac.GetPlayer(0)
-    
+
     ```
 
-___ 
+___
 ### Get·Player·Type·By·Name () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [PlayerType](enums/PlayerType.md) GetPlayerTypeByName ( string playerName , boolean Tainted = false ) {: .copyable aria-label='Functions' }
@@ -293,25 +293,25 @@ ___
 Returns the PlayerType (ID) of a character based on its name. (File: players.xml) Returns `-1` if no player with that name could be found.
 
 ???- example "Example Code"
-    This code gets the PlayerType of Azazel. 
-    ```lua 
+    This code gets the PlayerType of Azazel.
+    ```lua
     Isaac.GetPlayerTypeByName("Azazel")
     --Returns: 7
-    
+
     ```
 
-___ 
+___
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetRandomPosition ( ) {: .copyable aria-label='Functions' }
 
 Returns a random position inside the current room. The Return value is a Vector containing the position in world coordinates.
-___ 
+___
 ### Get·Room·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### table GetRoomEntities ( ) {: .copyable aria-label='Functions' }
 Returns a table containing all entities in the room.
-___ 
+___
 ### Get·Sound·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetSoundIdByName ( string soundName ) {: .copyable aria-label='Functions' }
@@ -320,25 +320,25 @@ Returns the SoundEffectID of a sound based on its name. (File: sounds.xml) Retur
 
 ???- example "Example Code"
     This code gets the SoundEffectID of a sound named "Custom Sound Effect"
-    ```lua 
+    ```lua
     Isaac.GetSoundIdByName("Custom Sound Effect")
-    
+
     ```
 
-___ 
+___
 ### Get·Text·Width () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTextWidth ( string str ) {: .copyable aria-label='Functions' }
 
 Returns the width of the given string in pixels based on the "terminus8" font (same font as used in Isaac.RenderText())
-___ 
+___
 ### Get·Time () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTime ( ) {: .copyable aria-label='Functions' }
 
 Returns the current game time in milliseconds. This includes pauses!
 Is actually a binding to the os.clock() function that is not available without --luadebug
-___ 
+___
 ### Get·Trinket·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTrinketIdByName ( string trinketName ) {: .copyable aria-label='Functions' }
@@ -346,14 +346,14 @@ ___
 Returns the TrinketType of a trinket based on its name. (File: items.xml) Returns `-1` if no trinket with that name could be found.
 
 ???- example "Example Code"
-    This code gets the TrinketType of Lucky Toe. 
-    ```lua 
+    This code gets the TrinketType of Lucky Toe.
+    ```lua
     Isaac.GetTrinketIdByName("Lucky Toe")
     --Returns: 42
-    
+
     ```
 
-___ 
+___
 ### Grid·Spawn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntity](GridEntity.md) GridSpawn ( [GridEntity](GridEntity.md) gridEntityType, int Variant, [Vector](Vector.md) position, boolean forced ) {: .copyable aria-label='Functions' }
@@ -362,7 +362,7 @@ Spawn a [GridEntity](GridEntity.md) at the given position (world coordinates).
 
 ???+ bug "Bugs"
     forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again.
-___ 
+___
 ### Has·Mod·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasModData ( table modRef ) {: .copyable aria-label='Functions' }
@@ -376,7 +376,7 @@ For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
 It is recommended to use the [HasData](ModReference.md#hasdata) function on a [Mod Reference](ModReference.md) instead.
-___ 
+___
 ### Load·Mod·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string LoadModData ( table modRef ) {: .copyable aria-label='Functions' }
@@ -391,7 +391,7 @@ For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
 It is recommended to use the [LoadData](ModReference.md#loaddata) function on a [Mod Reference](ModReference.md) instead.
-___ 
+___
 ### Register·Mod () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RegisterMod ( table modRef, string modName, int apiVersion ) {: .copyable aria-label='Functions' }
@@ -400,23 +400,23 @@ Registers a table with the game to use as a [Mod Reference](ModReference.md).
 
 It is recommended to use the global [RegisterMod](GlobalFunctions.md#registermod) function instead.
 
-___ 
+___
 ### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveCallback ( table modRef, function callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [RemoveCallback](ModReference.md#removecallback) function on a [Mod Reference](ModReference.md) instead.
 
-___ 
+___
 ### Remove·Mod·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveModData ( table modRef ) {: .copyable aria-label='Functions' }
 
-Deletes the stored "saveX.dat" file if it exists. 
+Deletes the stored "saveX.dat" file if it exists.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 
 It is recommended to use the [RemoveData](ModReference.md#removedata) function on a [Mod Reference](ModReference.md) instead.
-___ 
+___
 ### Render·Scaled·Text () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RenderScaledText ( string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A ) {: .copyable aria-label='Functions' }
@@ -425,30 +425,30 @@ Renders a scaled text on the Screen. X and Y coordinates need to be in screen co
 
 ???- example "Example Code"
     This code renders the player position on the screen.
-    ```lua 
+    ```lua
     local player = Isaac.GetPlayer(0)
     local pos = player.Position
     Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 0.5, 0.5, 1 ,1 ,1 ,1 )
-    
+
     ```
 
-___ 
+___
 ### Render·Text () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RenderText ( string str, float X, float Y, float R, float G, float B, float A ) {: .copyable aria-label='Functions' }
 
-Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1]. 
+Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1].
 
 ???- example "Example Code"
     This code renders the player position on the screen.
-    ```lua 
+    ```lua
     local player = Isaac.GetPlayer(0)
     local pos = player.Position
     Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 1 ,1 ,1 ,1 )
-    
+
     ```
 
-___ 
+___
 ### Save·Mod·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SaveModData ( table modRef, string data ) {: .copyable aria-label='Functions' }
@@ -462,18 +462,18 @@ For AB+, they are stored inside their mod's folder next to the "main.lua" file.
 For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.
 
 It is recommended to use the [SaveData](ModReference.md#savedata) function on a [Mod Reference](ModReference.md) instead.
-___ 
+___
 ### Screen·To·World () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) ScreenToWorld ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
 
 Transfers Screen (aka. Window coordinates) into Worldcoordinates. This can be used to get a specific location in the room in World coordnates The World coordinate system is x[0,inf) y[0,inf).
-___ 
+___
 ### Screen·To·World·Distance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) ScreenToWorldDistance ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Spawn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](Vector.md) position, [Vector](Vector.md) velocity, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
@@ -483,11 +483,11 @@ There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) and [Game():Spawn
 
 ???- example "Example Code"
     This code spawns a random collectible at in center of the current room.
-    ```lua 
+    ```lua
     Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
-    
+
     ```
-___ 
+___
 ### World·To·Render·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) WorldToRenderPosition ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
@@ -496,13 +496,13 @@ Transfers world (aka. game coordinates) into Rendercoordinates. This can be used
 
 ???- example "Example Code"
     This code render "test" at the position of the mouse cursor independend on if the game is in full screen or not.
-    ```lua 
+    ```lua
     local mousePos = Input.GetMousePosition(true)
     local renderpos = Isaac.WorldToRenderPosition(mousePos) * 2
     Isaac.RenderText("test", renderpos.X, renderpos.Y, 1 ,1 ,1 ,1 )
     ```
 
-___ 
+___
 ### World·To·Screen () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) WorldToScreen ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
@@ -511,16 +511,16 @@ Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. T
 
 ???- example "Example Code"
     This code render "test" at the position of the player. The text will move with isaac.
-    ```lua 
+    ```lua
     local player = Isaac.GetPlayer(0)
-    local screenpos = Isaac.WorldToScreen(player.Position)	
+    local screenpos = Isaac.WorldToScreen(player.Position)
     Isaac.RenderText("test", screenpos.X, screenpos.Y, 1 ,1 ,1 ,1 )
-    
+
     ```
 
-___ 
+___
 ### World·To·Screen·Distance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) WorldToScreenDistance ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
 
-___ 
+___

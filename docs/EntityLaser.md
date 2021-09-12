@@ -6,219 +6,219 @@
 [ ](#){: .rep .tooltip .badge }
 #### void AddTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Calculate·End·Point () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static [Vector](Vector.md) CalculateEndPoint ( [Vector](Vector.md) Start, [Vector](Vector.md) Dir, [Vector](Vector.md) PositionOffset, [Entity](Entity.md) Parent, float Margin ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Clear·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ClearTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·End·Point () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Vector](Vector.md) GetEndPoint ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Non·Optimized·Samples () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Render·Z () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetRenderZ ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Samples () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Has·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·Circle·Laser () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCircleLaser ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·Sample·Laser () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsSampleLaser ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Active·Rotation () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetActiveRotation ( int Delay, float AngleDegrees, float RotationSpd, boolean TimeoutComplete ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Black·Hp·Drop·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetBlackHpDropChance ( float Chance ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Homing·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetHomingType ( LaserHomingType Type ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Max·Distance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetMaxDistance ( float Distance ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Multidimensional·Touched () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetMultidimensionalTouched ( boolean Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·One·Hit () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetOneHit ( boolean Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Timeout () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetTimeout ( int Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Shoot·Angle () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static [EntityLaser](EntityLaser.md) ShootAngle ( int Variant, [Vector](Vector.md) SourcePos, float AngleDegrees, int Timeout, [Vector](Vector.md) PosOffset, [Entity](Entity.md) Source ) {: .copyable aria-label='Functions' }
-static helper to simplify spawning lasers 
-___ 
+static helper to simplify spawning lasers
+___
 ## Variables
 ### Angle {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Angle  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Angle·Degrees {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float AngleDegrees  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Black·Hp·Drop·Chance {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float BlackHpDropChance  {: .copyable aria-label='Variables' }
-For maw of void. 
-___ 
+For maw of void.
+___
 ### Bounce·Laser {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) BounceLaser  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
-___ 
+___
 ### Curve·Strength {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float CurveStrength  {: .copyable aria-label='Variables' }
-My Reflection. 
-___ 
+My Reflection.
+___
 ### Disable·Follow·Parent {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean DisableFollowParent  {: .copyable aria-label='Variables' }
-Set on children of other lasers, for instance Rubber Cement reflections. Disables m_ParentOffset. 
-___ 
+Set on children of other lasers, for instance Rubber Cement reflections. Disables m_ParentOffset.
+___
 ### End·Point {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) EndPoint  {: .copyable aria-label='Variables' }
-Will hold the endpoint so it will not need to be recalculated when accessed from extern. 
-___ 
+Will hold the endpoint so it will not need to be recalculated when accessed from extern.
+___
 ### First·Update {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean FirstUpdate  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Grid·Hit {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean GridHit  {: .copyable aria-label='Variables' }
-true if laser can be clipped by grid entities and it was clipped at that frame. 
-___ 
+true if laser can be clipped by grid entities and it was clipped at that frame.
+___
 ### Homing·Laser {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### HomingLaser HomingLaser  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Homing·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### LaserHomingType HomingType  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Is·Active·Rotating {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsActiveRotating  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Laser·Length {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float LaserLength  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Last·Angle·Degrees {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float LastAngleDegrees  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Max·Distance {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float MaxDistance  {: .copyable aria-label='Variables' }
-Used to trim brimstone for Azazel (0 - off) 
-___ 
+Used to trim brimstone for Azazel (0 - off)
+___
 ### One·Hit {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean OneHit  {: .copyable aria-label='Variables' }
-Laser hits only once. 
-___ 
+Laser hits only once.
+___
 ### Parent·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) ParentOffset  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Radius {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Radius  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Rotation·Degrees {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float RotationDegrees  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Rotation·Delay {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int RotationDelay  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Rotation·Spd {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float RotationSpd  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Sample·Laser {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean SampleLaser  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Shrink {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Shrink  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Start·Angle·Degrees {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float StartAngleDegrees  {: .copyable aria-label='Variables' }
-Some lasers have a bit of random variation in rotation so they need to remember their starting point. 
-___ 
+Some lasers have a bit of random variation in rotation so they need to remember their starting point.
+___
 ### Tear·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [TearFlags](enums/TearFlags.md) TearFlags  {: .copyable aria-label='Variables' }
-___ 
+___
 ### Timeout {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }
 
-___ 
+___

@@ -4,16 +4,16 @@
 [ ](#){: .rep .tooltip .badge }
 #### void AssignPlayerHUDs ( ) {: .copyable aria-label='Functions' }
 Refreshes the HUD (e.g. Characters that have Parent specified no longer show their health in the main HUD).
-___ 
+___
 ### Flash·Charge·Bar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void FlashChargeBar ( [EntityPlayer](EntityPlayer.md) Player, [ActiveSlot](enums/ActiveSlot.md) ActiveSlot ) {: .copyable aria-label='Functions' }
 Chargebar flashes as if item was actually charged.
-___ 
+___
 ### Invalidate·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void InvalidateActiveItem ( [EntityPlayer](EntityPlayer.md) Player, [ActiveSlot](enums/ActiveSlot.md) ActiveSlot ) {: .copyable aria-label='Functions' }
-___ 
+___
 ### Invalidate·Crafting·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void InvalidateCraftingItem ( [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
@@ -22,7 +22,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsVisible ( ) {: .copyable aria-label='Functions' }
 Returns false if HUD is invisible and true otherwise.
-___ 
+___
 ### Show·Fortune·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowFortuneText ( string MainString, string SecondaryString, ... ) {: .copyable aria-label='Functions' }
@@ -36,7 +36,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void ShowItemText ( [EntityPlayer](EntityPlayer.md) Player, Item Item) {: .copyable aria-label='Functions' }
 Allows to display an item splash text without picking it up.
-___ 
+___
 ### Set·Visible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }

@@ -6,16 +6,16 @@
 
 The length (#) operation. Returns the size of this list.
 
-___ 
+___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) Get ( int idx ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ## Variables
 ### Size {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Size  {: .copyable aria-label='Variables' }
 
-___ 
+___

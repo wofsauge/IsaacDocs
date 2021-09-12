@@ -4,46 +4,46 @@
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityRef](EntityRef.md) EntityRef ( [Entity](Entity.md) ) {: .copyable aria-label='Constructors' }
 
-___ 
+___
 ## Variables
 ### Entity {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) Entity {: .copyable aria-label='Variables' }
-optional 
+optional
 
-___ 
+___
 ### Is·Charmed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCharmed  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Is·Friendly {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsFriendly  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) Position  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Spawner·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityType](enums/EntityType.md) SpawnerType  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Spawner·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int SpawnerVariant  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityType](enums/EntityType.md) Type  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Variant  {: .copyable aria-label='Variables' }
 
-___ 
+___

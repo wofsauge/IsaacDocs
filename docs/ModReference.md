@@ -4,19 +4,19 @@
     You can get this class by using the following functions:
 
     * [RegisterMod()](GlobalFunctions.md#registermod)
-    
+
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddCallback ( int callbackId, function callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Has·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasData ( ) {: .copyable aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveData()" function. Aka. if there is a "saveX.dat" file in your mod folder. There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
-___ 
+___
 ### Load·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string LoadData ( ) {: .copyable aria-label='Functions' }
@@ -27,7 +27,7 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 ???- example "Example Code"
     This code loads a string that was stored in the "saveX.dat" file, if it exists, and converts it into a table using JSON.
 
-    ```lua 
+    ```lua
     local yourMod = RegisterMod("someMod", 1)
     local json = require("json")
     -- ...
@@ -38,22 +38,22 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
     	end
     end
     yourMod:AddCallback(ModCallbacks.MC_POST_GAME_STARTED, yourMod.OnGameStart)
-    
+
     ```
 
-___ 
+___
 ### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveCallback ( int callbackId, function callbackFn ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Remove·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveData ( ) {: .copyable aria-label='Functions' }
 
-Deletes the stored "saveX.dat" file if it exists. 
+Deletes the stored "saveX.dat" file if it exists.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
-___ 
+___
 ### Save·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SaveData ( string data ) {: .copyable aria-label='Functions' }
@@ -63,7 +63,7 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 
 ???- example "Example Code"
     This code uses JSON to convert a table into a string, and saves it in the "saveX.dat" file.
-    ```lua 
+    ```lua
     local yourMod = RegisterMod("someMod", 1)
     local json = require("json")
     -- ...
@@ -73,12 +73,12 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
         yourMod:SaveData(json.encode(table))
     end
     yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
-    
+
     ```
-___ 
+___
 ## Variables
 ### Name {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
-___ 
+___

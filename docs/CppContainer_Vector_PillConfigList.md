@@ -6,7 +6,7 @@
 
 The length (#) operation. Returns the amount of pill effects in the list.
 
-___ 
+___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -17,7 +17,7 @@ Returns userdata at the index of the list provided.
 ???+ bug "Bugs"
     This function does not return usable userdata, rendering it useless.
 
-___ 
+___
 ## Variables
 ### Size {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -25,4 +25,4 @@ ___
 
 The amount of pill effects in the list.
 
-___ 
+___

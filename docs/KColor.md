@@ -6,25 +6,25 @@
 
 Constructor for the "KColor" class.
 Notes: "KColor" is only used in the [Font](Font.md) class. For most other situations you will need to use the [Color()](Color.md) constructor.
-___ 
+___
 ## Variables
 ### Alpha {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Alpha  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Blue {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Blue  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Green {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Green  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Red {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Red  {: .copyable aria-label='Variables' }
 
-___ 
+___

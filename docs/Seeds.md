@@ -4,133 +4,133 @@
 [ ](#){: .abrep .tooltip .badge }
 #### void AddSeedEffect ( [SeedEffect](enums/SeedEffect.md) Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Can·Add·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanAddSeedEffect ( [SeedEffect](enums/SeedEffect.md) Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Clear·Seed·Effects () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ClearSeedEffects ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Clear·Start·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ClearStartSeed ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Count·Seed·Effects () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int CountSeedEffects ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Count·Unlocked·Seed·Effects () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static int CountUnlockedSeedEffects ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Forget·Stage·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ForgetStageSeed ( [LevelStage](enums/LevelStage.md) Stage ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Next·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetNextSeed ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Player·Init·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetPlayerInitSeed ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static [SeedEffect](enums/SeedEffect.md) GetSeedEffect ( string str ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Stage·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStageSeed ( [LevelStage](enums/LevelStage.md) Stage ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Start·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStartSeed ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Get·Start·Seed·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string GetStartSeedString ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Has·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasSeedEffect ( [SeedEffect](enums/SeedEffect.md) Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Init·Seed·Info () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static void InitSeedInfo ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·Custom·Run () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCustomRun ( ) {: .copyable aria-label='Functions' }
 Returns true if the player is in a challenge run or a seeded run.
-___ 
+___
 ### Is·Initialized () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsInitialized ( ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·Seed·Combo·Banned () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsSeedComboBanned ( [SeedEffect](enums/SeedEffect.md) Seed1, [SeedEffect](enums/SeedEffect.md) Seed2 ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·Special·Seed () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static boolean IsSpecialSeed ( string str ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Is·String·Valid·Seed () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static boolean IsStringValidSeed ( string str ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Remove·Blocking·Seed·Effects () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveBlockingSeedEffects ( [SeedEffect](enums/SeedEffect.md) Value ) {: .copyable aria-label='Functions' }
-Removes seeds that are banned in conjunction with the given seed. 
-___ 
+Removes seeds that are banned in conjunction with the given seed.
+___
 ### Remove·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveSeedEffect ( [SeedEffect](enums/SeedEffect.md) Value ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Reset () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 Removes all seed effects, only goes into effect when the run is restarted
-___ 
+___
 ### Restart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Restart ( [Challenge](enums/Challenge.md) CurrentChallenge ) {: .copyable aria-label='Functions' }
-Re-selects a random start seed but only if the start seed was not custom. 
-___ 
+Re-selects a random start seed but only if the start seed was not custom.
+___
 ### Seed·2·String () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static string Seed2String ( int seed ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Start·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetStartSeed ( string StartSeed ) {: .copyable aria-label='Functions' }
-Empty string means we will pick a new random seed. 
-___ 
+Empty string means we will pick a new random seed.
+___
 ### String·2·Seed () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static int String2Seed ( string str ) {: .copyable aria-label='Functions' }
-___ 
+___

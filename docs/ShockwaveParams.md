@@ -4,29 +4,29 @@
 [ ](#){: .abrep .tooltip .badge }
 #### int Age  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Life·Span {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int LifeSpan  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) Position  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Strength {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Strength  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Time {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Time  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Time·DT {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float TimeDT  {: .copyable aria-label='Variables' }
 
-___ 
+___

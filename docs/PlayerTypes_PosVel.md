@@ -10,9 +10,9 @@
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) Position {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Velocity {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) Velocity {: .copyable aria-label='Variables' }
 
-___ 
+___

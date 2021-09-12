@@ -8,41 +8,41 @@
 [ ](#){: .rep .tooltip .badge }
 #### void AddTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Clear·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ClearTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Has·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasTearFlags ( [TearFlags](enums/TearFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ### Set·Explosion·Countdown () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetExplosionCountdown ( int Countdown ) {: .copyable aria-label='Functions' }
 
-___ 
+___
 ## Variables
 ### Explosion·Damage {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float ExplosionDamage  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [TearFlags](enums/TearFlags.md) Flags  {: .copyable aria-label='Variables' }
 
 Uses [TearFlags](enums/TearFlags.md) to alter the behavior of the bomb.
-___ 
+___
 ### Is·Fetus {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsFetus  {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Radius·Multiplier {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float RadiusMultiplier  {: .copyable aria-label='Variables' }
 
-___ 
+___

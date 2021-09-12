@@ -10,20 +10,20 @@
         local player = Isaac.GetPlayer(0)
         local queueItemData = player.QueuedItem
         ```
-        
+
 ## Variables
 ### Charge {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Charge {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Item {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [ItemConfig Item](ItemConfig_Item.md) Item {: .copyable aria-label='Variables' }
 
-___ 
+___
 ### Touched {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Touched {: .copyable aria-label='Variables' }
 
-___ 
+___
