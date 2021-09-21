@@ -7,6 +7,10 @@ local function TEARFLAG(x)
 end
 ```
 
+??? + bug
+	Due to a mistake in the definition of the TEARFLAG function, TearFlags above TEARFLAG(63) do not currently work. These flags *can* still be applied, but their enumeration is equivalent to `BitSet128(0, 0)`. This issue will be fixed by the release of the next patch.
+	See **[here](https://github.com/Meowlala/RepentanceAPIIssueTracker/issues/151)** for more info, and a solution
+
 ???+ tip "Bitset Calculator"
     [](#){: .bitsetCalculator }
 
@@ -96,3 +100,20 @@ end
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(80) |TEAR_RUNE_DROP_DEATH {: .copyable } | No changes | Killed enemies will drop a random rune |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(81) |TEAR_TELEPORT {: .copyable } | No changes | Hit enemies will teleport to a different part of the room |
 |[ ](#){: .rep .tooltip .badge }| 82 |TEAR_EFFECT_COUNT {: .copyable } | No changes |  |
+
+The following flags are reserved at the top end of the bitset, and cannot be selected randomly by any items that may attempt to do so.
+|DLC|Value|Enumerator|Comment|
+|:--|:--|:--|:--|
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(115) | TEAR_REROLL_ROCK_WISP {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(116) | TEAR_MOM_STOMP_WISP {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(117) | TEAR_ENEMY_TO_WISP {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(118) | TEAR_REROLL_ENEMY {: .copyable } | D10 Wisps, chance to reroll enemy on hit |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(119) | TEAR_GIGA_BOMB {: .copyable } | Causes giant explosions that create holes in the ground (for Giga Bombs) |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(120) | TEAR_EXTRA_GORE {: .copyable } | Causes enemies to explode into more gibs on death (for Donkey Jawbone) |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(121) | TEAR_RAINBOW {: .copyable } | Causes lasers to visually cycle between rainbow colors |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(122) | TEAR_DETONATE {: .copyable } | Can be detonated by Remote Detonator |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(123) | TEAR_CHAIN {: .copyable } | Akeldama tears, stick to each other and form a chain that can be swung around |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(124) | TEAR_DARK_MATTER {: .copyable } | Used to identify Dark Matter tears |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(125) | TEAR_GOLDEN_BOMB {: .copyable } | Used to identify bombs dropped while having a golden bomb |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(126) | TEAR_FAST_BOMB {: .copyable } | Used to identify bombs dropped while having Fast Bombs |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(127) | TEAR_LUDOVICO {: .copyable } | Used as a weapon for Ludovico Technique |
