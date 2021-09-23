@@ -67,6 +67,12 @@ ___
 ### Price {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Price  {: .copyable aria-label='Variables' }
+Price of the pickup in shops.
+
+???- info "Tainted Keeper Info"
+    On Tainted Keeper, all items are supposed to have a price. But any items spawned with Lua does not comply with this rule, so you have to manually set a price. On the next frame after assigning a price (for example `1`), it will snap to the correct price it would have for Tainted Keeper (e.g. 15). This is because of the AutoUpdatePrice feature.
+
+    This method works most of the time. However, it breaks in special rooms (e.g. Angel Rooms) such that sometimes, the price will snap to wrong values, such as 24, 99, and so on. The fix for this, set ShopItemId to an arbitrary negative value (e.g. -1).
 
 ___
 ### Shop·Item·Id {: aria-label='Variables' }
