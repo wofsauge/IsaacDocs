@@ -220,6 +220,9 @@ ___
 		* 1: Secondary dimension, used by Downpour mirror dimension and Mines escape sequence
 		* 2: Death Certificate dimension
 
+???- warn "Warning"
+    This function always returns a valid RoomDescriptor object, so error checking is recommended. The `GridIndex` property of an invalid RoomDescriptor object seems to always be -1. Note that this specific `GridIndex` is also used by the Devil/Angel Room, but those rooms will have a different `VisitedCount`.
+
 ___
 ### Get·Room·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
