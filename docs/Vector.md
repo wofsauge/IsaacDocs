@@ -190,12 +190,12 @@ ___
 ### Normalize () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Normalize ( ) {: .copyable aria-label='Functions' }
-Normalizes this vector
+Normalizes this vector, effectively making its length equal 1.
 ___
 ### Normalized () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) Normalized ( ) {: .copyable aria-label='Functions' }
-Returns a normalized version of this vector
+Returns a normalized version of this vector, effectively making its length equal 1.
 ___
 ### Resize () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

@@ -648,6 +648,19 @@ ___
 #### int GetBlackHearts ( ) {: .copyable aria-label='Functions' }
 This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts.
 
+???- example "Example"
+    Imagine we have the following setup of hearts, where S= Soul Heart, r= Red Hearts and B= Black heart:
+
+    ```
+    B S S B B S S B B
+    ```
+
+    Calling the function will return:
+
+    ```lua
+    Isaac.GetPlayer():GetBlackHearts() -- returns 409, which is 0001 1001 1001 in binary. Therefore, the read order is right to left
+    ```
+
 ___
 ### Get·Blood·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
