@@ -486,9 +486,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void RemoveGridEntity ( int GridIndex, int PathTrail, boolean KeepDecoration ) {: .copyable aria-label='Functions' }
 
-- `GridIndex` is the location of the grid as shown with the `debug 11` console command.
-- `PathTrail` is the "cost" to leave behind on the square. In most cases, you would want to pass 0 for this argument.
+* `GridIndex` is the location of the grid as shown with the `debug 11` console command.
+* `PathTrail` is the "cost" to leave behind on the square. In most cases, you would want to pass 0 for this argument.
 
+**It is recommended to call [Room:Update()](#update) after calling this function in order to correctly apply the changes.**
 ___
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -659,9 +660,16 @@ ___
 
 Updates the current room.
 
+**It is recommended to call this function after calling [Room:RemoveGridEntity()](#removegridentity) in order to correctly apply the changes.**
+
 ???- note "Notes"
-    Calling this function is NOT needed to apply changes!
-    This function is pretty useless
+    Calling this function is needed to apply some changes like spawning a trapdoor where a pit already exists.
+
+    To do this, remove the pit, call the Update() function and then spawn the trapdoor.
+
+???+ bug "Bug"
+    As mentioned in the Repentance API Issue Tracker, [calling room:Update() as a part of card functionality forces an instant use of pocket active items](https://github.com/Meowlala/RepentanceAPIIssueTracker/issues/211).
+
 ___
 ### World·To·Screen·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
