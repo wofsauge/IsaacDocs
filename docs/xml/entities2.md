@@ -12,9 +12,9 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 | name | str ||
-| id | int ||
-| variant | int ||
-| subtype | int ||
+| id | int | Type of the entity. Max Value: 4095 |
+| variant | int | Variant of the entity. Max Value: 4095 |
+| subtype | int | SubType of the entity. Max Value: 255 (Reason: The Hash Map generator of the .stb format expects a specific bit-depth) |
 | anm2path | string | path to the anm2 file, relative to the given anm2root. Example: `001.000_Player.anm2` |
 | baseHP | int ||
 | boss | int |Entity is a boss. Possible values: ['0', '1'] |
