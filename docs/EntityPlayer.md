@@ -1526,8 +1526,7 @@ ___
 **Slot**: The active slot this item was used from (set to -1 if this item wasn't triggered by any active slot)
 
 ???- note "Notes"
-	As of Repentance, this method can be used to give the player a Passive Item's effect for the duration of the room.
-	This only applies to items that have the 'summonable' metadata tag.
+	As of Repentance, this method can be used to give the player a Passive Item's CollectibleEffect (see [Temporary Effects](TemporaryEffects.md)) for the duration of the current room.
 ___
 ### Use·Card () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
