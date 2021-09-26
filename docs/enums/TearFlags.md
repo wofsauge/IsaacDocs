@@ -102,6 +102,7 @@ end
 |[ ](#){: .rep .tooltip .badge }| 82 |TEAR_EFFECT_COUNT {: .copyable } | No changes |  |
 
 The following flags are reserved at the top end of the bitset, and cannot be selected randomly by any items that may attempt to do so.
+
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(115) | TEAR_REROLL_ROCK_WISP {: .copyable } |  |
