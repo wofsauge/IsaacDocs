@@ -7,7 +7,7 @@ local function TEARFLAG(x)
 end
 ```
 
-??? + bug
+???+ bug
 	Due to a mistake in the definition of the TEARFLAG function, TearFlags above TEARFLAG(63) do not currently work. These flags *can* still be applied, but their enumeration is equivalent to `BitSet128(0, 0)`. This issue will be fixed by the release of the next patch.
 	See **[here](https://github.com/Meowlala/RepentanceAPIIssueTracker/issues/151)** for more info, and a solution
 
@@ -102,6 +102,7 @@ end
 |[ ](#){: .rep .tooltip .badge }| 82 |TEAR_EFFECT_COUNT {: .copyable } | No changes |  |
 
 The following flags are reserved at the top end of the bitset, and cannot be selected randomly by any items that may attempt to do so.
+
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(115) | TEAR_REROLL_ROCK_WISP {: .copyable } |  |
