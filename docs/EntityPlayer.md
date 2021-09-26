@@ -1526,7 +1526,7 @@ ___
 **Slot**: The active slot this item was used from (set to -1 if this item wasn't triggered by any active slot)
 
 ???- note "Notes"
-	As of Repentance, this method can be used to give the player a Passive Item's CollectibleEffect (see [Temporary Effects](TemporaryEffects.md)) for the duration of the current room.
+	This method will increment the number of CollectibleEffects (see [Temporary Effects](TemporaryEffects.md)) of the passed item by 1 for the current room, and will trigger any associated MC_USE_ITEM callbacks. As of Repentance, this method can also be used on Passive and Familiar ItemTypes.
 ___
 ### Use·Card () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
