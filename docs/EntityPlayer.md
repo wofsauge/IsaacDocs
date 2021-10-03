@@ -1587,8 +1587,12 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is eq
 ___
 ### Fire·Delay {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int FireDelay  {: .copyable aria-label='Variables' }
+#### float FireDelay  {: .copyable aria-label='Variables' }
 How long until the player can spawn their next tear?
+
+???- note "Version Difference"
+	In the Afterbirth+ version of the modding api, this variable is an integer
+
 ___
 ### Friend·Ball·Enemy {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -1619,8 +1623,12 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is eq
 ___
 ### Max·Fire·Delay {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int MaxFireDelay  {: .copyable aria-label='Variables' }
+#### float MaxFireDelay  {: .copyable aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is equal to the Tears Stat.**  How long between each tear can spawn?
+
+???- note "Version Difference"
+	In the Afterbirth+ version of the modding api, this variable is an integer
+
 ___
 ### Move·Speed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1687,7 +1695,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [Tear
     end
 
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
-
+    
     ```
 ___
 ### Tear·Height {: aria-label='Variables' }
