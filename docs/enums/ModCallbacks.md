@@ -53,7 +53,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .abrep .tooltip .badge }|2 |MC_POST_RENDER {: .copyable } | - | - |
 
 ### MC_USE_ITEM {: .copyable }
-Called when a custom active item is used, after discharging it.
+Called when an active item is used, or when any item is passed through EntityPlayer.UseActiveItem.
 
 The item [RNG](../RNG.md) allows for the item's random events to be seeded.
 
