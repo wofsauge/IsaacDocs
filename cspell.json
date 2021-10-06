@@ -3,9 +3,17 @@
     "words": [
         "abrep",
         "andstor",
+        "Budj",
+        "getcurrentroomdesc",
+        "getlastroomdesc",
+        "getroombyidx",
         "grayscale",
+        "infographics",
+        "miniboss",
+        "minibosses",
         "mkdocs",
         "oleksiyrudenko",
+        "overridedata",
         "userdata",
         "wofsauge"
     ]

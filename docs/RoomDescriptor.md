@@ -44,7 +44,7 @@ room is clear, don't spawn enemies when visiting
 ___
 ### Data {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomConfig Room](RoomConfig_Room.md) Data  {: .copyable aria-label='Variables' }
+#### [RoomConfigRoom](RoomConfig_Room.md) Data  {: .copyable aria-label='Variables' }
 
 ___
 ### Decoration·Seed {: aria-label='Variables' }
@@ -81,7 +81,7 @@ Indicates what is visible on the minimap.
 
     **111** = 011 rooms after entry, but also the rooms directly adjacent to them* (applied after entry)
 
-    \* If you have spelunker's hat, bit 1 is completely unused. All special rooms will have the normal behavior of either 000 or 101. iirc this is unique to spelunker's hat, mapping items follow the normal rules.
+    \* If you have Spelunker Hat, bit 1 is completely unused. All special rooms will have the normal behavior of either 000 or 101. This is unique to Spelunker Hat; mapping items follow the normal rules.
 
 ???+ quote "Quote from User 'Budj'"
     From this my best guess is that bits 1 and 2 are special rendering (display) flags that may have more meaning down below.
@@ -89,7 +89,7 @@ Indicates what is visible on the minimap.
     The important bit for using them is minding that they're used differently mostly for special rooms.
 
     As far as I've seen, 001 is completely unused.
-    010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100
+    010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100.
 ___
 ### Grid·Index {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -97,9 +97,9 @@ ___
 index in the level grid (always top left)
 
 ???- note "Notes"
-    This will always return the top left coordinate of the room on the levelgrid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
+    This will always return the top left coordinate of the room on the level grid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
 
-    ![Room Grid indicies](images/infographics/RoomGridIndicies.png)
+    ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Has·Water {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -118,8 +118,8 @@ ___
 ___
 ### Override·Data {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomConfig Room](RoomConfig_Room.md) OverrideData  {: .copyable aria-label='Variables' }
-Tim's reminder to himself: The room variant is in Data. Because Room::Init uses a mix of datas, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere.
+#### [RoomConfigRoom](RoomConfig_Room.md) OverrideData  {: .copyable aria-label='Variables' }
+The room variant is in Data. Because Room::Init uses a mix of data, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere.
 ___
 ### Pits·Count {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -147,9 +147,9 @@ ___
 index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!)
 
 ???- note "Notes"
-    This will always return the top left coordinate of the room on the levelgrid, except for J-shaped rooms, where it returns the top right index. (see graphic below)
+    This will always return the top left coordinate of the room on the level grid, except for J-shaped rooms, where it returns the top right index. (see graphic below)
 
-    ![Room Grid indicies](images/infographics/RoomGridIndicies.png)
+    ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Shop·Item·Discount·Idx {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
