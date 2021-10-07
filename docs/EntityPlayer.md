@@ -581,7 +581,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [EntityTear](EntityTear.md) FireTear ( [Vector](Vector.md) Position, [Vector](Vector.md) Velocity, boolean CanBeEye = true, boolean NoTractorBeam = false, boolean CanTriggerStreakEnd = true, Entity Source = nil, float DamageMultiplier = 1 ) {: .copyable aria-label='Functions' }
 - `CanBeEye`: If the player has the Evil Eye item, passing true allows the tear to have a chance of being an eye.
-- `NoTractorBeam`: If the player has the Tractor Beam item, passing false means that the tear will be exempt from the beam.
+- `NoTractorBeam`: If the player has the Tractor Beam item, passing true means that the tear will be exempt from the beam.
 - `CanTriggerStreakEnd`: If the player has the Dead Eye item, passing false means that the tear will be exempt from ending the streak.
 
 ___
