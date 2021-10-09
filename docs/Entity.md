@@ -595,6 +595,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) Child {: .copyable aria-label='Variables' }
 
+???- warning "Warning"
+    Sisters Vis bosses do have their counter part entity as their Child. But none of them have a Parent entity set.
 ___
 ### Collision·Damage {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
