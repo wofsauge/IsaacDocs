@@ -184,7 +184,8 @@ nav:
         - "Adding Costumes to items without LUA": tutorials/AddingCostumesWithoutLUA.md
         - "Debugging with ZeroBrane Studio": tutorials/ZeroBraneStudio.md
         - "Debug Console": tutorials/DebugConsole.md
-        - "Using additional .lua Files": tutorials/Usingadditional.luaFiles.md
+        - "Using additional .lua Files": tutorials/Using-Additional-Lua-Files.md
+        - "Using the standard library": tutorials/Standard-Library.md
         - "Writing screen shaders": tutorials/Writingscreenshaders.md
         - "Tutorial - Render text": tutorials/Tutorial-Rendertext.md
     - XMLs:
