@@ -653,10 +653,10 @@ ___
 ### Get·Black·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBlackHearts ( ) {: .copyable aria-label='Functions' }
-This does not return the # of black hearts, this returns the bit mask for which soul hearts are black hearts.
+This does not return the number of black hearts; it returns the bit mask for which soul hearts are black hearts.
 
 ???- example "Example"
-    Imagine we have the following setup of hearts, where S= Soul Heart, r= Red Hearts and B= Black heart:
+    Imagine we have the following setup of hearts, where S is a soul heart and B is a black heart:
 
     ```
     B S S B B S S B B
@@ -665,7 +665,7 @@ This does not return the # of black hearts, this returns the bit mask for which 
     Calling the function will return:
 
     ```lua
-    Isaac.GetPlayer():GetBlackHearts() -- returns 409, which is 0001 1001 1001 in binary. Therefore, the read order is right to left
+    Isaac.GetPlayer():GetBlackHearts() -- returns 409, which is 0001 1001 1001 in binary. Therefore, the read order is right to left.
     ```
 
 ___
