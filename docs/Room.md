@@ -72,42 +72,10 @@ ___
 ___
 ### Get·Backdrop·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetBackdropType ( ) {: .copyable aria-label='Functions' }
+#### [BackdropType](enums/BackdropType.md) GetBackdropType ( ) {: .copyable aria-label='Functions' }
 
-Returns the BackdropType (Background) of the current room.
+Returns the BackdropType of the current room.
 
-???- note "BackdropTypes (corresponds to ids in backdrops.xml)"
-
-    | ID | Backdrop |
-    |--:|:--|
-    |1|Basement|
-    |2|Cellar|
-    |3|Burning Basement|
-    |4|Caves|
-    |5|Catacombs|
-    |6|Drowned Caves|
-    |7|Depths|
-    |8|Necropolis|
-    |9|Dank Depths|
-    |10|Womb|
-    |11|Utero|
-    |12|Scarred Womb|
-    |13|Blue Womb (Hush)|
-    |14|Sheol|
-    |15|Cathedral|
-    |16|Dark Room|
-    |17|Chest|
-    |18|Mega Satan|
-    |19|Library|
-    |20|Shop|
-    |21|Isaac's Room|
-    |22|Barren Room|
-    |23|Secret Room|
-    |24|Dice Room|
-    |25|Arcade|
-    |26|Error Room|
-    |27|Blue Secret|
-    |28|Ultra Greed Shop|
 ___
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
