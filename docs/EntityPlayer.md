@@ -721,8 +721,8 @@ ___
 ___
 ### Get·Collectible·Num () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### int GetCollectibleNum ( [CollectibleType](enums/CollectibleType.md) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
-**IgnoreModifiers**: If set to true, only counts collectibles the player actually owns and ignores effects granted by items like Zodiac, 3 Dollar Bill and Lemegeton
+#### int GetCollectibleNum ( [CollectibleType](enums/CollectibleType.md) Type, boolean onlyCountTrueItems = false ) {: .copyable aria-label='Functions' }
+**onlyCountTrueItems**: If set to true, the function only counts collectibles that the player actually owns and ignores things like Lilith's Incubus, items granted by 3 Dollar Bill, and so forth.
 ___
 ### Get·Collectible·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
