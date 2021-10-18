@@ -336,8 +336,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTime ( ) {: .copyable aria-label='Functions' }
 
-Returns the current game time in milliseconds. This includes pauses!
-Is actually a binding to the os.clock() function that is not available without --luadebug
+This returns the number of seconds of CPU time for the program. It is simply a mapping to the [os.clock()](https://www.lua.org/pil/22.1.html) function. (`Isaac.GetTime()` can be used with or without the `--luadebug` flag turned on.)
 ___
 ### Get·Trinket·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
