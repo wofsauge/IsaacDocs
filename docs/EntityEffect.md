@@ -92,4 +92,5 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }
 
+This is decremented on every frame, even for custom effects. Custom effects have this value initialized to -1.
 ___
