@@ -106,10 +106,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
 
-Returns the CardID based on its hud value. (File: pocketitems.xml) Returns `-1` if no card with that name could be found.
-
-???- note "Notes"
-    The name of this function is misleading, this function will only work with the hud value of a card and not the name of a card.
+- Returns the card ID based on the its "hud" value in the "pocketitems.xml" file. Returns `-1` if no card with that "hud" entry could be found.
+- Note that the name of this function is misleading; it should actually be called `GetCardIdByHUD`.
+- For this reason, this function does not work with any vanilla cards, since none of the vanilla cards have a `hud` entry.
 
 ???- example "Example Code"
     This code gets the CardID of XVI - The Tower.
