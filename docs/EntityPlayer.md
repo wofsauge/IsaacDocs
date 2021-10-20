@@ -495,9 +495,25 @@ ___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, ItemConfig::Item SourceItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
-**SourceItem**: The item this type of familiar was created by
+
+**TargetCount**: Maximum number of familiars spawned by the provided item config entry. If the player already has reached the set amount, additional calls of the function will not spawn more familiars.
+
+**SourceItem**: The item this type of familiar was created by. This attribute is optional, but recommended to use in order to better associate it with items you obtained
 
 **FamiliarSubType**: The subtype of the familiar to check (-1 matches any subtype)
+
+???- example "Example Code"
+    This code spawns 3 "Sister Maggy" familiars.
+    ```lua
+    local player = Isaac.GetPlayer()
+    local sourceCollectibleID = CollectibleType.COLLECTIBLE_SAD_ONION
+    local collectibleRNG = player:GetCollectibleRNG(sourceCollectibleID)
+    local itemConfig = Isaac.GetItemConfig():GetCollectible(sourceCollectibleID)
+
+    player:CheckFamiliar(FamiliarVariant.SISTER_MAGGY, 3, collectibleRNG, itemConfig)
+    ```
+
+
 ___
 ### Clear·Costumes () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -727,7 +743,13 @@ ___
 ### Get·Collectible·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [RNG](RNG.md) GetCollectibleRNG ( [CollectibleType](enums/CollectibleType.md) ID ) {: .copyable aria-label='Functions' }
-
+Gets the [RNG](RNG.md) object of a collectible.
+???- example "Example Code"
+    this code gives you the RNG object of the "Sad Onion" collectible.
+    ```lua
+    local player = Isaac.GetPlayer()
+    local collectibleRNG = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_SAD_ONION)
+    ```
 ___
 ### Get·Costume·Null·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
