@@ -105,17 +105,23 @@ ___
 ### Get·Card·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
+Returns the [CardID](enums/Card.md) based on the "hud"-attribute defined in the "pocketitems.xml" file. Returns `-1` if no card with that "hud" attribute value could be found.
 
-- Returns the card ID based on the its "hud" value in the "pocketitems.xml" file. Returns `-1` if no card with that "hud" entry could be found.
-- Note that the name of this function is misleading; it should actually be called `GetCardIdByHUD`.
-- For this reason, this function does not work with any vanilla cards, since none of the vanilla cards have a "hud" entry.
+???+ warning "Warning"
+    The name of this function is misleading, this function will only work with the "hud"-attribute value of a card and not the name of a card.
+ 
+???+ bug "Bug"
+    This function does not work for vanilla cards/runes, because they don't have the "hud" attribute defined in their entry in the pocketitems.xml file. You need to use the [Card](enums/Card.md) enum to get those vanilla IDs instead. 
 
 ???- example "Example Code"
-    This code gets the CardID of XVI - The Tower.
+    This code gets the CardID of a modded card.
+    ```xml
+    <pocketitems>
+        <card type="tarot" pickup="1" description="some description"  name="My new card" hud="my_modded_card" />
+    </pocketitems>
+    ```
     ```lua
-    Isaac.GetCardIdByName("16_TheTower")
-    --Returns: 17
-
+    Isaac.GetCardIdByName("my_modded_card")
     ```
 
 ___
