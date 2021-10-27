@@ -3,9 +3,9 @@
 
 This file is used to store informations about the bosses able to spawn on a given stage.
 
-**Resource-Folder**{: .xmlInfo }: Using this file in a resource folder of a mod is not tested yet.
+**Resource-Folder**{: .xmlInfo .red}:  Placing this file in your mods "resource" folder has no effect!
 
-**Content-Folder**{: .xmlInfo }: Using this file in a content folder of a mod is not tested yet.
+**Content-Folder**{: .xmlInfo .red}: Placing this file in your mods "content" folder has no effect!
 
 ## "pool" Tag
 
