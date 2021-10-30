@@ -58,7 +58,14 @@ ___
 ### Get·Start·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStartSeed ( ) {: .copyable aria-label='Functions' }
+The initial seed of this run. This seed is the one displayed in the pause menu, if turned into its string representation.
 
+???- example "Example Code"
+  This code turns the current run seed into its string representation.
+  ```lua
+  local seed = Game():GetSeeds():GetStartSeed()
+  local seedString = Seeds.Seed2String(seed) -- Returns a string in the form of "ABCD DEFG"
+  ```
 ___
 ### Get·Start·Seed·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -123,6 +130,14 @@ ___
 ### Seed·2·String () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### static string Seed2String ( int seed ) {: .copyable aria-label='Functions' }
+Turns a seed into its String representation as used for any in-game seed display.
+
+???- example "Example Code"
+  This code turns the current run seed into its string representation.
+  ```lua
+  local seed = Game():GetSeeds():GetStartSeed()
+  local seedString = Seeds.Seed2String(seed) -- Returns a string in the form of "ABCD DEFG"
+  ```
 
 ___
 ### Set·Start·Seed () {: aria-label='Functions' }
