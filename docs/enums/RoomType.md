@@ -12,21 +12,21 @@
 |[ ](#){: .abrep .tooltip .badge }|8 |ROOM_SUPERSECRET {: .copyable } | ![img](../images/roomtypes/8.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|9 |ROOM_ARCADE {: .copyable } | ![img](../images/roomtypes/9.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|10 |ROOM_CURSE {: .copyable } | ![img](../images/roomtypes/10.png) |  |
-|[ ](#){: .abrep .tooltip .badge }|11 |ROOM_CHALLENGE {: .copyable } | ![img](../images/roomtypes/11.png) | Normal Challenge: Boss Challenge: |
+|[ ](#){: .abrep .tooltip .badge }|11 |ROOM_CHALLENGE {: .copyable } | ![img](../images/roomtypes/11.png) | Normal Challenge: ![img](../images/roomtypes/11.png) Boss Challenge: ![img](../images/roomtypes/17.png) |
 |[ ](#){: .abrep .tooltip .badge }|12 |ROOM_LIBRARY {: .copyable } | ![img](../images/roomtypes/12.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|13 |ROOM_SACRIFICE {: .copyable } | ![img](../images/roomtypes/13.png) |  |
-|[ ](#){: .abrep .tooltip .badge }|14 |ROOM_DEVIL {: .copyable } |  |  |
+|[ ](#){: .abrep .tooltip .badge }|14 |ROOM_DEVIL {: .copyable } |  | ![img](../images/roomtypes/14.png) |
 |[ ](#){: .abrep .tooltip .badge }|15 |ROOM_ANGEL {: .copyable } | ![img](../images/roomtypes/15.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|16 |ROOM_DUNGEON {: .copyable } |  | aka. Crawlspaces |
-|[ ](#){: .abrep .tooltip .badge }|17 |ROOM_BOSSRUSH {: .copyable } | ![img](../images/roomtypes/17.png) |  |
+|[ ](#){: .abrep .tooltip .badge }|17 |ROOM_BOSSRUSH {: .copyable } |  |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |ROOM_ISAACS {: .copyable } | ![img](../images/roomtypes/18.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|19 |ROOM_BARREN {: .copyable } | ![img](../images/roomtypes/19.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|20 |ROOM_CHEST {: .copyable } | ![img](../images/roomtypes/20.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|21 |ROOM_DICE {: .copyable } | ![img](../images/roomtypes/21.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|22 |ROOM_BLACK_MARKET {: .copyable } |  |  |
 |[ ](#){: .abrep .tooltip .badge }|23 |ROOM_GREED_EXIT {: .copyable } |  |  |
-|[ ](#){: .rep .tooltip .badge }|24 |ROOM_PLANETARIUM {: .copyable } |  |  |
-|[ ](#){: .rep .tooltip .badge }|25 |ROOM_TELEPORTER {: .copyable } |  |  |
+|[ ](#){: .rep .tooltip .badge }|24 |ROOM_PLANETARIUM {: .copyable } | ![img](../images/roomtypes/24.png) |  |
+|[ ](#){: .rep .tooltip .badge }|25 |ROOM_TELEPORTER {: .copyable } | ![img](../images/roomtypes/25.png) |  |
 |[ ](#){: .rep .tooltip .badge }|26 |ROOM_TELEPORTER_EXIT {: .copyable } |  |  |
-|[ ](#){: .rep .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } |  |  |
+|[ ](#){: .rep .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } | ![img](../images/roomtypes/29.png) |  |
 |[ ](#){: .rep .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  |
