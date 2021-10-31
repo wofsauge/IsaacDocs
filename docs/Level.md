@@ -139,7 +139,7 @@ ___
 ???- note "Notes"
     This will always return the roomindex on the levelgrid, on which you entered the current room from. (see black entries in graphic below)
 
-    ![Room Grid indicies](images/infographics/RoomGridIndicies.png)
+    ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Get·Curse·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
