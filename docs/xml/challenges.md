@@ -13,26 +13,36 @@ Used to store all challenges and some of their attributes.
 |name|string|Name of the Challenge|
 |startingitems|string list|Comma separated (nospace) item ids that will be added at the start.|
 |startingitems2|string list|Starting items for Player 2. Comma separated (nospace) item ids that will be added at the start. [ ](#){: .rep .tooltip .badge }|
-|startingtrinkets|string list|comma separated (nospace) trinket ids that will be added at the start (max 2)|
-|startingpill|string list|startingpill = effect id of the starting pill (-1 for no pill | default))|
-|playertype|string|player type id  (0 for Isaac | default). Custom characters cant be defined this way! Use LUA code instead.|
-|endstage|string|the last stage of the challenge (use LevelStage internal ids)|
-|roomfilter|string list|list of room ids to not be generated in challenge [Not all room ids can be used] (NORMAL - 1, Shop - 2, Error - 3, Treasure - 4, Boss - 5, Miniboss - 6, Secret - 7, SuperSecret - 8, Arcade - 9, Curse - 10, Challenge - 11, Library - 12, Sacrifice - 13, Devil - 14, Angel - 15, Dungeon - 16, Bossrush - 17, Isaacs - 18, Barren - 19, Chest - 20, Dice - 21, BMarket - 22).|
-|cursefilter|string|bitmask for curses to be removed (Darkness = 1, Labyrinth = 2, Lost = 4, Unknown = 8, Cursed = 16)|
-|getcurse|string|bitmask for curses to be forced (Same id's as curse filter)|
-|achievements|string list|list of achievement ids that are required to be able to play the challenge|
-|altpath|bool|alternative floor for light/dark path (isaac/satan)|
-|canshoot|bool|determines if player can shoot (true | default)|
+|startingtrinkets|string list|Comma separated (nospace) trinket ids that will be added at the start (max 2)|
+|startingpill|string list| [PillEffect id](../enums/PillEffect.md) of the starting pill<br>Default: -1 (no pill)|
+|playertype|string|Player type id. Custom characters cant be defined this way! Use LUA code instead.<br>Default: 0 (Isaac)|
+|endstage|string|The last stage of the challenge (use [LevelStage](../enums/LevelStage.md) internal ids)|
+|roomfilter|string list|List of [RoomTypes](../enums/RoomType.md) to not be generated in challenge [Not all room ids can be used]|
+|cursefilter|int|Bitmask for [curses](../enums/LevelCurse.md) to be removed.<br>(Darkness = 1, Labyrinth = 2, Lost = 4, Unknown = 8, Cursed = 16, Maze = 32, Blind = 64, Giant = 128)|
+|getcurse|int|Bitmask for [curses](../enums/LevelCurse.md) to be forced (Same id's as curse filter)|
+|achievements|string list|List of achievement ids that are required to be able to play the challenge|
+|altpath|bool|Alternative floor for light/dark path (isaac/satan)|
+|canshoot|bool|Determines if player can shoot<br>Default: true (shooting enabled)|
 |redhp|int|Add red hp to the base of the choosen character. 2 = 1 Heart. Negative numbers possible|
 |maxhp|int|Add red hp containers to the base of the choosen character. 2 = 1 Heartcontainer. Negative numbers possible|
 |soulhp|int|Add soul hp containers to the base of the choosen character. 2 = 1 Heartcontainer|
 |blackhp|int|Add black hp containers to the base of the choosen character. 2 = 1 Heartcontainer|
 |coins|int|Add starting coins|
 |maxdamage|bool|Max. damage actived (clamps at min 100) or deactivated|
-|adddamage|float|+ damage up|
-|minfirerate|float|minimal fire rate or more|
-|minshotspeed|bool|minimal shot speed actived or deactivated|
+|adddamage|float|+ Damage up|
+|minfirerate|float|Minimal fire rate or more|
+|minshotspeed|bool|Minimal shot speed actived or deactivated|
 |bigrange|bool|Enable high starting range value|
-|difficulty|bool|game difficulty (0 - normal | default, 1 - hard | 2 - Greed | 3 - Greedier) Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy|
-|megasatan|bool|last boss is megasatan. Adds the Key to the player.|
+|difficulty|bool|[Game difficulty](../enums/Difficulty.md) [0: normal(default), 1: hard, 2: Greed, 3: Greedier)<br>Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy|
+|megasatan|bool|Last boss is megasatan. Adds the Key to the player.|
 |secretpath|bool|Force the Repentance alt path [ ](#){: .rep .tooltip .badge }|
+
+## Example "challenges.xml" file:
+
+This code creates a new challenge called "My new challenge" in the custom challenges tab, which ends after Mom's heart/it lives. The player starts with Breakfast, Dead Cat and Little Steven, but cant shoot. Treasure rooms and the curse of Darkness are disabled.
+
+```xml
+<challenges version="1">
+	<challenge playertype="0" name="My new challenge" endstage="8" startingitems="25,81,100" roomfilter="1" cursefilter="1" canshoot="false" />
+</challenges>
+```
