@@ -15,7 +15,7 @@
 |[ ](#){: .abrep .tooltip .badge }|11 |ROOM_CHALLENGE {: .copyable } | ![img](../images/roomtypes/11.png) | Normal Challenge: ![img](../images/roomtypes/11.png) Boss Challenge: ![img](../images/roomtypes/17.png) |
 |[ ](#){: .abrep .tooltip .badge }|12 |ROOM_LIBRARY {: .copyable } | ![img](../images/roomtypes/12.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|13 |ROOM_SACRIFICE {: .copyable } | ![img](../images/roomtypes/13.png) |  |
-|[ ](#){: .abrep .tooltip .badge }|14 |ROOM_DEVIL {: .copyable } |  | ![img](../images/roomtypes/14.png) |
+|[ ](#){: .abrep .tooltip .badge }|14 |ROOM_DEVIL {: .copyable } | ![img](../images/roomtypes/14.png) | |
 |[ ](#){: .abrep .tooltip .badge }|15 |ROOM_ANGEL {: .copyable } | ![img](../images/roomtypes/15.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|16 |ROOM_DUNGEON {: .copyable } |  | aka. Crawlspaces |
 |[ ](#){: .abrep .tooltip .badge }|17 |ROOM_BOSSRUSH {: .copyable } |  |  |

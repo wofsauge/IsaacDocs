@@ -4,7 +4,7 @@
     [](#){: .bitsetCalculator }
 
 |DLC|Value|Enumerator|Icon|Comment|
-|:--|:--|:--|:--|
+|:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|0 |CURSE_NONE {: .copyable } | |  |
 |[ ](#){: .abrep .tooltip .badge }|1 |CURSE_OF_DARKNESS {: .copyable }| ![img](../images/levelcurse/darkness.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|1<<1 |CURSE_OF_LABYRINTH {: .copyable }| ![img](../images/levelcurse/xl.png) |  |
