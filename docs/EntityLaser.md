@@ -47,13 +47,13 @@ ___
 #### boolean IsCircleLaser ( ) {: .copyable aria-label='Functions' }
 
 ???- note "Note"
-  This function cannot differentiate between different types of Circle Laser, however these may be identified by their SubType:
+    This function cannot differentiate between different types of Circle Laser, however these may be identified by their SubType:
   
-	* 0 - Linear Laser (Typical laser with a start and end point)
-  * 1 - Ring Ludovico (Controlled laser ring for Ludo synergies)
-  * 2 - Ring Projectile (Tech X)
-  * 3 - Ring Follow Parent (Maw of the Void)
-  * 4 - No Impact (No impact splash, e.g. Tech Zero)
+    * 0 - Linear Laser (Typical laser with a start and end point)
+    * 1 - Ring Ludovico (Controlled laser ring for Ludo synergies)
+    * 2 - Ring Projectile (Tech X)
+    * 3 - Ring Follow Parent (Maw of the Void)
+    * 4 - No Impact (No impact splash, e.g. Tech Zero)
  
 ___
 ### Is·Sample·Laser () {: aria-label='Functions' }
