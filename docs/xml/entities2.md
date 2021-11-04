@@ -13,8 +13,8 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 |:--|:--|:--|
 | name | str ||
 | id | int | Type of the entity. Max Value: 4095 |
-| variant | int | Variant of the entity. Max Value: 4095 |
-| subtype | int | SubType of the entity. Max Value: 255 (Reason: The Hash Map generator of the .stb format expects a specific bit-depth) |
+| variant | int | Variant of the entity. The maximum value is 4095. If you leave this blank, then the game will automatically chose the next available number. |
+| subtype | int | SubType of the entity. The maximum value is 255. (The reason for this is that the hash map generator of the .stb format expects a specific bit-depth.) |
 | anm2path | string | path to the anm2 file, relative to the given anm2root. Example: `001.000_Player.anm2` |
 | baseHP | int ||
 | boss | int |Entity is a boss. Possible values: ['0', '1'] |
