@@ -13,6 +13,7 @@ This page needs some content. You can contribute to it using the Edit Button!
 |skinColor|int|Default skin color of the character (-1 = all, 0 = white, 1 = black, 2 = blue, 3 = red, 4 = green, 5 = grey)|
 |nameimage|string|Name for vs. screen|
 |portrait|string|Portrait for the vs. screen|
+|extraportrait|string|.anm2 file that will be displayed on the vs. screen alongside the defined image in the "portrait" attribute|
 |hp|int|Starting red health (1 = half heart)|
 |armor|int|Starting soul hearts (1 = half soul heart)|
 |black|int|Starting  black hearts (1 = half black heart)|
