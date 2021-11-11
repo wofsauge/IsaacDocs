@@ -293,10 +293,18 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddNullCostume ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
 for Lua
+
 ___
 ### Add·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddPill ( [PillColor](enums/PillColor.md) Pill ) {: .copyable aria-label='Functions' }
+
+___
+### Add·Poop·Mana () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddPoopMana ( int Num ) {: .copyable aria-label='Functions' }
+
+Adds (or remove) poop consumables from the player
 
 ___
 ### Add·Player·Form·Costume () {: aria-label='Functions' }
@@ -387,6 +395,14 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateLightTravel ( ) {: .copyable aria-label='Functions' }
 end of a stage
+
+___
+### Animate·Pickup () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AnimatePickup ( Sprite sprite, boolean HideShadow = false, string AnimName = "Pickup" ) {: .copyable aria-label='Functions' }
+Plays a pickup animation using any supplied Sprite object
+HideShadow should be usually set to true when rendering a sprite with a custom shadow layer
+
 ___
 ### Animate·Pill () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -896,6 +912,14 @@ ___
 Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)
 
 If you have a pocket active, it also increments the number by one.
+
+___
+### Get·Max·Poop·Mana () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetMaxPoopMana ( ) {: .copyable aria-label='Functions' }
+
+Returns the max amount of poop consumables that can be held by the player
+
 ___
 ### Get·Max·Trinkets () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1018,6 +1042,20 @@ Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
 
 ???+ bug "Bugs"
     This function returns userdata, which can't be processed. It is therefore broken and should not be used!
+___
+### Get·Poop·Mana () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetPoopMana ( ) {: .copyable aria-label='Functions' }
+
+Returns how many poop consumables the player is currently holding
+
+___
+### Get·Poop·Spell () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### PoopSpellType GetPoopSpell ( int Position ) {: .copyable aria-label='Functions' }
+
+Returns the poop spell at the given position in the player's spell queue
+
 ___
 ### Get·Recent·Movement·Vector () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -1575,6 +1613,12 @@ Right now, there are 3 items that grant conditional extra lives:
 * Mysterious Paper - This function will only successfully predict the revive from Missing Poster every 4 frames, because it evaluates only one of its 4 possible item effects each frame.
 
 ___
+### Use·Poop·Spell () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void UsePoopSpell ( PoopSpellType type ) {: .copyable aria-label='Functions' }
+Triggers one of Tainted ???'s poop spells (see PoopSpellType enum)
+
+___
 ## Variables
 ### Baby·Skin {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1743,8 +1787,12 @@ Note that tear height is not equivalent to the range stat. As of v820, there is 
     ```
 
 ___
+### Tear·Range {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### float TearRange  {: .copyable aria-label='Variables' }
+Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How far should a tear go when it spawns?
+
+___
 ### Tears·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) TearsOffset  {: .copyable aria-label='Variables' }
-
-___
