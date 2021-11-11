@@ -61,14 +61,6 @@ Returns the List of all Collectibles.
 ???+ bug "Bugs"
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 ___
-### Get·Costumes () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [CostumeList](CppContainer_Vector_CostumeConfigList.md) GetCostumes ( ) {: .copyable aria-label='Functions' }
-
-
-???+ bug "Bugs"
-    The list returned by this function is always empty, rendering it useless.
-___
 ### Get·Null·Item () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [ItemConfig Item](ItemConfig_Item.md) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
