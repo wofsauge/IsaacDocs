@@ -191,6 +191,12 @@ ___
 #### int GetNonCompleteRoomIndex ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Planetarium·Chance () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### float GetPlanetariumChance ( ) {: .copyable aria-label='Functions' }
+Returns the probability of getting a Planetarium (in the 0-1 range)
+
+___
 ### Get·Previous·Room·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetPreviousRoomIndex ( ) {: .copyable aria-label='Functions' }
@@ -269,6 +275,12 @@ ___
 #### boolean IsAltStage ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Is·Ascent () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean IsAscent ( ) {: .copyable aria-label='Functions' }
+Returns true if the player is in the Ascent
+
+___
 ### Is·Devil·Room·Disabled () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsDevilRoomDisabled ( ) {: .copyable aria-label='Functions' }
@@ -277,6 +289,22 @@ ___
 ### Is·Next·Stage·Available () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsNextStageAvailable ( ) {: .copyable aria-label='Functions' }
+
+___
+### Is·Pre·Ascent () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean IsPreAscent ( ) {: .copyable aria-label='Functions' }
+Returns true if the player is in the version of Mausoleum/Gehenna II leading to the Ascent
+
+___
+### Make·Red·Room·Dor () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean MakeRedRoomDor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
+Attempts to create a red room door in the given room at the given door slot
+Returns true on success
+
+???+ bug "Bugs"
+    The function is misspelled. It should be MakeRedRoomDoor, but it only works when MakeRedRoomDor (sic) is used.
 
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
