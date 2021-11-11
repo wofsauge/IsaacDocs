@@ -66,6 +66,7 @@ nav:
             - "Keyboard": enums/Keyboard.md
             - "KeySubType": enums/KeySubType.md
             - "LaserOffset": enums/LaserOffset.md
+            - "LaserSubType": enums/LaserSubType.md
             - "LevelCurse": enums/LevelCurse.md
             - "LevelStage": enums/LevelStage.md
             - "LevelStateFlag": enums/LevelStateFlag.md
@@ -83,6 +84,7 @@ nav:
             - "PlayerSpriteLayer": enums/PlayerSpriteLayer.md
             - "PlayerType": enums/PlayerType.md
             - "PoopPickupSubType": enums/PoopPickupSubType.md
+            - "PoopSpellType": enums/PoopSpellType.md
             - "ProjectileFlags": enums/ProjectileFlags.md
             - "ProjectileVariant": enums/ProjectileVariant.md
             - "RoomShape": enums/RoomShape.md
