@@ -134,8 +134,8 @@
 |[ ](#){: .rep .tooltip .badge }|130 |TRINKET_CHEWED_PEN {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|131 |TRINKET_BLESSED_PENNY {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|132 |TRINKET_BROKEN_SYRINGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|133 |TRINKET_FIRECRACKER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|134 |TRINKET_GIANT_BEAN {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|133 |TRINKET_SHORT_FUSE {: .copyable } | (legacy: TRINKET_FIRECRACKER) |
+|[ ](#){: .rep .tooltip .badge }|134 |TRINKET_GIGANTE_BEAN {: .copyable } | (legacy: TRINKET_GIANT_BEAN) |
 |[ ](#){: .rep .tooltip .badge }|135 |TRINKET_LIGHTER {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|136 |TRINKET_BROKEN_PADLOCK {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|137 |TRINKET_MYOSOTIS {: .copyable } |  |
