@@ -13,9 +13,10 @@
 |[ ](#){: .abrep .tooltip .badge }|9 |STATE_ATTACK2 {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|10 |STATE_ATTACK3 {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|11 |STATE_ATTACK4 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|12 |STATE_SUMMON {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|13 |STATE_SUMMON2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|14 |STATE_SUMMON3 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|15 |STATE_SPECIAL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|16 |STATE_UNIQUE_DEATH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|17 |STATE_DEATH {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|12 |STATE_ATTACK5 {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|13 |STATE_SUMMON {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|14 |STATE_SUMMON2 {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|15 |STATE_SUMMON3 {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|16 |STATE_SPECIAL {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|17 |STATE_UNIQUE_DEATH {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|18 |STATE_DEATH {: .copyable } |  |
