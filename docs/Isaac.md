@@ -318,11 +318,6 @@ ___
 Returns a table containing all entities in the room.
 
 ___
-### Get·Screen·Width () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### float GetScreenWidth ( ) {: .copyable aria-label='Functions' }
-
-___
 ### Get·Screen·Height () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### float GetScreenHeight ( ) {: .copyable aria-label='Functions' }
@@ -331,6 +326,11 @@ ___
 ### Get·Screen·Point·Scale () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### float GetScreenPointScale ( ) {: .copyable aria-label='Functions' }
+
+___
+### Get·Screen·Width () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### float GetScreenWidth ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Sound·Id·By·Name () {: aria-label='Functions' }
