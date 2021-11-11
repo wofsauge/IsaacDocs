@@ -22,7 +22,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | champion | int |Allow champion variants of this entity. Possible values: ['0', '1'] |
 | collisionDamage | float ||
 | collisionMass | float ||
-| collisionRadius | float | Radius of the collision circle. This value is used for both entity <--> entity and entity <--> grid collisions |
+| collisionRadius | float | Radius of the collision circle. This value is used for both entity <--> entity and entity <--> grid collisions. This changes the `Entity.Size` field. |
 | collisionRadiusXMulti | float | Multiplier for the X direction of the collision circle. This can be used to grant an entity an elliptical hitbox |
 | collisionRadiusYMulti | float | Multiplier for the Y direction of the collision circle. This can be used to grant an entity an elliptical hitbox |
 | collisionInterval | int | Number of game ticks till the next collision should be evaluated. Default = 1 |
