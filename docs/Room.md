@@ -220,6 +220,13 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetLaserTarget ( [Vector](Vector.md) Pos, [Vector](Vector.md) Dir ) {: .copyable aria-label='Functions' }
 returns the hit position for a laser beam (Technology, Robo-Baby) usually, the first poop, fire, rock, TNT, or wall encountered on a straight line
+
+___
+### Get·Lava·Intensity () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### float GetLavaIntensity ( ) {: .copyable aria-label='Functions' }
+Usually returns 1, unless the lava is in the process of being cooled down by Flush! or other room flooding effects, in which case this will gradually decrease down to 0
+
 ___
 ### Get·Lighting·Alpha () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -353,6 +360,24 @@ ___
 #### [RoomType](enums/RoomType.md) GetType ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Water·Current () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [Vector](Vector.md) GetWaterCurrent ( ) {: .copyable aria-label='Functions' }
+Returns a vector corresponding to any water current in the room
+
+___
+### Has·Curse·Mist () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasCurseMist ( ) {: .copyable aria-label='Functions' }
+Returns true if the player is inside the abandoned mineshaft
+
+___
+### Has·Lava () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean HasLava ( ) {: .copyable aria-label='Functions' }
+Returns true if the room contains lava pits
+
+___
 ### Has·Slow·Down () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasSlowDown ( ) {: .copyable aria-label='Functions' }
@@ -361,7 +386,6 @@ ___
 ### Has·Trigger·Pressure·Plates () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTriggerPressurePlates ( ) {: .copyable aria-label='Functions' }
-
 Returns true if there are one or more pressure plates in the room. (In order to see if the pressure plates are pressed or not, you will have to iterate over the grid entities in the room.)
 
 ___
@@ -373,6 +397,12 @@ ___
 ### Has·Water·Pits () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasWaterPits ( ) {: .copyable aria-label='Functions' }
+
+___
+### Invalidate·Pickup·Vision () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void InvalidatePickupVision ( ) {: .copyable aria-label='Functions' }
+Causes chest previews from Guppy's Eye to be updated on the next frame
 
 ___
 ### Is·Ambush·Active () {: aria-label='Functions' }
@@ -399,6 +429,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsDoorSlotAllowed ( [DoorSlot](enums/DoorSlot.md) Slot ) {: .copyable aria-label='Functions' }
 Returns whether this room design may have a door at a given position, disregarding whether those doors exist.
+
 ___
 ### Is·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -418,6 +449,12 @@ ___
 ### Is·LShaped·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsLShapedRoom ( ) {: .copyable aria-label='Functions' }
+
+___
+### Is·Mirror·World () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean IsMirrorWorld ( ) {: .copyable aria-label='Functions' }
+Returns true if the player is inside the mirror dimension
 
 ___
 ### Is·Position·In·Room () {: aria-label='Functions' }
@@ -581,6 +618,19 @@ ___
 #### boolean SpawnGridEntity ( int GridIndex, [GridEntityType](enums/GridEntityType.md) Type, int Variant, int Seed, int VarData ) {: .copyable aria-label='Functions' }
 
 ___
+### Stop·Rain () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void StopRain ( ) {: .copyable aria-label='Functions' }
+Stops any rain effects in the room
+
+___
+### Trigger·Clear () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void TriggerClear ( boolean Silent = false ) {: .copyable aria-label='Functions' }
+Triggers all room clear effects (does not actually clear the room)
+Door opening sounds can be muted by setting Silent to true
+
+___
 ### Try·Make·Bridge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TryMakeBridge ( [GridEntity](GridEntity.md) pit, [GridEntity](GridEntity.md) rock ) {: .copyable aria-label='Functions' }
@@ -594,27 +644,57 @@ ___
 ___
 ### Try·Spawn·Blue·Womb·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TrySpawnBlueWombDoor ( boolean FirstTime, boolean IgnoreTime ) {: .copyable aria-label='Functions' }
+#### boolean TrySpawnBlueWombDoor ( boolean FirstTime = true, boolean IgnoreTime = false, boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a door to the Blue Womb
+This usually does nothing outside of Mom's Heart's boss room unless Force is set to true
 
 ___
 ### Try·Spawn·Boss·Rush·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TrySpawnBossRushDoor ( boolean IgnoreTime ) {: .copyable aria-label='Functions' }
+#### boolean TrySpawnBossRushDoor ( boolean IgnoreTime = false, boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a door to the boss rush
+This usually does nothing outside of Mom's boss room unless Force is set to true
 
 ___
 ### Try·Spawn·Devil·Room·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TrySpawnDevilRoomDoor ( boolean Animate ) {: .copyable aria-label='Functions' }
+#### boolean TrySpawnDevilRoomDoor ( boolean Animate = false, boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a door to the devil or angel room
+This usually does nothing inside of non-boss rooms unless Force is set to true
 
 ___
 ### Try·Spawn·Mega·Satan·Room·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TrySpawnMegaSatanRoomDoor ( ) {: .copyable aria-label='Functions' }
+#### boolean TrySpawnMegaSatanRoomDoor ( boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a door to Mega Satan
+This usually does nothing outside of the starting room of the Chest/Dark Room unless Force is set to true
+
+___
+### Try·Spawn·Secret·Exit () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean TrySpawnSecretExit ( boolean Animate = false, boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a door to the Downpour, Mines or Mausoleum depending on the current floor
+This usually does nothing outside of boss rooms unless Force is set to true
+
+___
+### Try·Spawn·Secret·Shop () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean TrySpawnSecretShop ( boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a trapdoor to the Member Card shop within the current room
+This usually does nothing outside of shops or if the player doesn't hold a Member Card unless Force is set to true
+
+___
+### Try·Spawn·Special·Quest·Door () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean TrySpawnSpecialQuestDoor ( ) {: .copyable aria-label='Functions' }
+Attempts to spawn either a door to the Mirror Dimension in Downpour, or the abandoned mineshaft in the Mines
 
 ___
 ### Try·Spawn·The·Void·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TrySpawnTheVoidDoor ( ) {: .copyable aria-label='Functions' }
+#### boolean TrySpawnTheVoidDoor ( boolean Force = false ) {: .copyable aria-label='Functions' }
+Attempts to spawn a door to a room containing a Void portal
+This usually does nothing outside of Hush's boss room unless Force is set to true
 
 ___
 ### Turn·Gold () {: aria-label='Functions' }
