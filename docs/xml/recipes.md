@@ -1,7 +1,7 @@
 # File "recipes.xml"
 [ ](#){: .rep .tooltip .badge }
 
-Stores permenant recipes for Bag of Crafting that are not affected by per-run randomisation.
+Stores permenant recipes for Bag of Crafting that are not affected by per-run randomization.
 
 **Resource-Folder**{: .xmlInfo }: Using this file in a resource folder of a mod is not tested yet.
 
