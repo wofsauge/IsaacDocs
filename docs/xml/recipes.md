@@ -13,7 +13,7 @@ Stores permenant recipes for Bag of Crafting that are not affected by per-run ra
 |output|int|Item ID of the output|
 
 ???+ note "Notes"
-    Due to the lack of a way to add recipes without using an ItemID, it is not possible to add recipes for modded items
+    Due to the lack of a way to add recipes without using an ItemID, it is not possible to add recipes for modded items.
 
 ## Known Crafting Ingredient Representations
 
