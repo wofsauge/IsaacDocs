@@ -20,12 +20,17 @@ Stores permenant recipes for Bag of Crafting that are not affected by per-run ra
 | Crafting Ingredient | Coded Representation |
 |:--|:--|
 | Penny | "." (Period/Full Stop) |
+| Nickel | "o" |
+| Dime | "O" (Captial o) |
+| Lucky Penny | "Q" (Capital q) |
+| Golden Penny | "$" (Dollar) |
 | Bomb | "v" |
 | Golden Bomb | "^" (Caret) |
 | Giga Bomb | "V" (Capital v)
-| Poop Nugget | "_" (Underscore) |
+| Poop Nugget | "\_" (Underscore) |
 | Key | "/" (Forward Slash)
 | Golden Key | "\|" (Pipe) |
+| Charged Key | "%" (Percentage) |
 | Red Heart | "h" |
 | Rotten Heart | "r" |
 | Soul Heart | "s" |
@@ -33,16 +38,13 @@ Stores permenant recipes for Bag of Crafting that are not affected by per-run ra
 | Bone Heart | "B" (Captial b) |
 | Golden Heart | "g" |
 | Eternal Heart | "e" |
+| Micro Battery | "1" |
+| Lil' Battery | "2" |
+| Mega Battery | "3" |
+| Golden Battery | "4" |
 | Pill | "(" (Open Bracket) |
-| Card | "[" (Open Square Bracket) |
+| Golden Pill | "{" (Open Curly Bracket) |
+| Card | "\[" (Open Square Bracket) |
+| Rune | ">" (Greater Than) |
 | Dice Shard | "?" (Question Mark) |
 | Cracked Key | "~" (Tilde) |
-
-## Unknown Ingredient Represenations
-
-||||
-|:--|:--|:--|
-| Nickel | Dime | Golden Penny |
-| Micro Battery | Lil' Battery | Mega Battery |
-| Golden Battery | Charged Key | Rune |
-| Golden Pill | Lucky Penny | |
