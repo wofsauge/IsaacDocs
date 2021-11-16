@@ -58,9 +58,6 @@ Spawner refers to an entity object (can be `:::lua nil`)
 Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`)
 Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`)
 
-???+ bug "Bugs"
-    This function is broken as of now and can return values from other segments of game's memory
-
 ___
 ### Debug·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
