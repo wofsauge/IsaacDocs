@@ -724,4 +724,7 @@
 |[ ](#){: .rep .tooltip .badge }|727 |COLLECTIBLE_GHOST_BOMBS {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|728 |COLLECTIBLE_GELLO {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|729 |COLLECTIBLE_DECAP_ATTACK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|730 |NUM_COLLECTIBLES {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|730 |COLLECTIBLE_GLASS_EYE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|731 |COLLECTIBLE_STYE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|732 |COLLECTIBLE_MOMS_RING {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|733 |NUM_COLLECTIBLES {: .copyable } |  |
