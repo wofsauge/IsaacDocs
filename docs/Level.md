@@ -278,7 +278,7 @@ ___
 ### Is·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsAscent ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is in the Ascent
+Returns true if the player is in the Ascent.
 
 ___
 ### Is·Devil·Room·Disabled () {: aria-label='Functions' }
@@ -294,18 +294,15 @@ ___
 ### Is·Pre·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsPreAscent ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is in the version of Mausoleum/Gehenna II leading to the Ascent
+Returns true if the player is in the version of Mausoleum/Gehenna II leading to the Ascent.
 
 ___
-### Make·Red·Room·Dor () {: aria-label='Functions' }
+### Make·Red·Room·Door () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean MakeRedRoomDor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
+#### boolean MakeRedRoomDoor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
 Attempts to create a red room door in the given room at the given door slot
-Returns true on success
 
-???+ bug "Bugs"
-    The function is misspelled. It should be MakeRedRoomDoor, but it only works when MakeRedRoomDor (sic) is used.
-
+Returns true on success.
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
