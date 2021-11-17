@@ -297,15 +297,12 @@ ___
 Returns true if the player is in the version of Mausoleum/Gehenna II leading to the Ascent
 
 ___
-### Make·Red·Room·Dor () {: aria-label='Functions' }
+### Make·Red·Room·Door () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean MakeRedRoomDor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
+#### boolean MakeRedRoomDoor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
 Attempts to create a red room door in the given room at the given door slot
+
 Returns true on success
-
-???+ bug "Bugs"
-    The function is misspelled. It should be MakeRedRoomDoor, but it only works when MakeRedRoomDor (sic) is used.
-
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
