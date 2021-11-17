@@ -87,6 +87,7 @@ nav:
             - "PoopSpellType": enums/PoopSpellType.md
             - "ProjectileFlags": enums/ProjectileFlags.md
             - "ProjectileVariant": enums/ProjectileVariant.md
+            - "RoomDescriptor": enums/RoomDescriptor.md
             - "RoomShape": enums/RoomShape.md
             - "RoomTransitionAnim": enums/RoomTransitionAnim.md
             - "RoomType": enums/RoomType.md
