@@ -4,6 +4,7 @@
 ### Announcer·Voice·Mode {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int AnnouncerVoiceMode  {: .copyable aria-label='Variables' }
+0: random, 1: off, 2: always on
 
 ___
 ### Bullet·Visibility {: aria-label='Variables' }
@@ -14,6 +15,7 @@ ___
 ### Camera·Style {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int CameraStyle  {: .copyable aria-label='Variables' }
+active cam 1: on, 2: off
 
 ___
 ### Charge·Bars {: aria-label='Variables' }
@@ -24,6 +26,7 @@ ___
 ### Console·Font {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int ConsoleFont  {: .copyable aria-label='Variables' }
+0: default, 1: small, 2: tiny
 
 ___
 ### Display·Popups {: aria-label='Variables' }
@@ -39,6 +42,7 @@ ___
 ### Extra·HUD·Style {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int ExtraHUDStyle  {: .copyable aria-label='Variables' }
+0: off, 1: on, 2: mini
 
 ___
 ### Faded·Console·Display {: aria-label='Variables' }
@@ -64,31 +68,39 @@ ___
 ### Gamma {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### float Gamma  {: .copyable aria-label='Variables' }
+0.5-1.5
 
 ___
 ### HUD·Offset {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### float HUDOffset  {: .copyable aria-label='Variables' }
+0-1
+
+Each notch in the options menu increments or decrements this by 0.1.
 
 ___
 ### Language {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### string Language  {: .copyable aria-label='Variables' }
+Read only
 
 ___
 ### Map·Opacity {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### float MapOpacity  {: .copyable aria-label='Variables' }
+0-1
 
 ___
 ### Max·Render·Scale {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int MaxRenderScale  {: .copyable aria-label='Variables' }
+1-99
 
 ___
 ### Max·Scale {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int MaxScale  {: .copyable aria-label='Variables' }
+1-99
 
 ___
 ### Mouse·Control {: aria-label='Variables' }
@@ -99,6 +111,7 @@ ___
 ### Music·Volume {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### float MusicVolume  {: .copyable aria-label='Variables' }
+0-1
 
 ___
 ### Pause·On·Focus·Lost {: aria-label='Variables' }
@@ -119,11 +132,13 @@ ___
 ### SFX·Volume {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### float SFXVolume  {: .copyable aria-label='Variables' }
+0-1
 
 ___
 ### Use·Borderless·Fullscreen {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean UseBorderlessFullscreen  {: .copyable aria-label='Variables' }
+Only takes effect if Fullscreen is also true.
 
 ___
 ### VSync {: aria-label='Variables' }
