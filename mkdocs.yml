@@ -222,6 +222,7 @@ nav:
         - "playerforms.xml" : xml/playerforms.md
         - "pocketitems.xml" : xml/pocketitems.md
         - "preload.xml" : xml/preload.md
+        - "recipes.xml" : xml/recipes.md
         - "rules.txt" : xml/rules.md
         - "seedmenu.xml" : xml/seedmenu.md
         - "seeds.txt" : xml/seeds.md
