@@ -8,22 +8,18 @@
 [ ](#){: .abrep .tooltip .badge }
 #### void AddBurn ( [EntityRef](EntityRef.md) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
 
-Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the Damage taken per frame.
+Adds a burn effect to an enemy. `Duration` is in number of frames. `Damage` is the damage taken per frame.
 
-???- info "Duration infos"
-    The Duration must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart.
+???- info "Duration Information"
+    `Duration` must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart.
 
     ```
-    2 Damage-ticks = 22 frames
-    3 = 42
-    4 = 62
+    2 damage ticks = 22 frames
+    3 damage ticks = 42 frames
+    4 damage ticks = 62 frames
     ...
-    ```
 
-???+ bug
-    Changing the Damage value doesn't seem to have an effect. It always deals the amount of damage of the player.
-
-    The Duration value seems to have an upper limit. For a PlayerEntity, its only lasting for the duration of one damage interval. For Entities its up to 6 damage-intervals.
+    `Duration` has an upper limit. For an EntityPlayer, it maximum is one interval. For a normal entity, the maximum is 6 intervals.
 
 ???- example "Example Code"
     This code damages every entity in the room for 1 second with the damage source set to the player. The total damage dealt is 1.
