@@ -21,7 +21,7 @@ Adds a burn-effect to an enemy. Duration is in Number of Frames. Damage is the D
     ```
 
 ???+ bug
-    Changing the Damage value doesn't seem to have an effect. It always deals the amount of damage of the player.
+    (Fixed in Repentance) Changing the Damage value doesn't seem to have an effect. It always deals the amount of damage of the player.
 
     The Duration value seems to have an upper limit. For a PlayerEntity, its only lasting for the duration of one damage interval. For Entities its up to 6 damage-intervals.
 
