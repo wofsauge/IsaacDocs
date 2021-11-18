@@ -3,7 +3,7 @@
 Tearflag is defined as:
 ```lua
 local function TEARFLAG(x)
-	return x >= 64 and BitSet128(0,1<<x) or BitSet128(1<<x,0)
+	return x >= 64 and BitSet128(0,1<<(x-64)) or BitSet128(1<<x,0)
 end
 ```
 
