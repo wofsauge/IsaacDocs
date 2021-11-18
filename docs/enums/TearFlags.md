@@ -7,10 +7,6 @@ local function TEARFLAG(x)
 end
 ```
 
-???+ bug
-	Due to a mistake in the definition of the TEARFLAG function, TearFlags above TEARFLAG(63) do not currently work. These flags *can* still be applied, but their enumeration is equivalent to `BitSet128(0, 0)`. This issue will be fixed by the release of the next patch.
-	See **[here](https://github.com/Meowlala/RepentanceAPIIssueTracker/issues/151)** for more info, and a solution
-
 ???+ tip "Bitset Calculator"
     [](#){: .bitsetCalculator }
 
