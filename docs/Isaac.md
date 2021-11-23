@@ -349,6 +349,7 @@ ___
 #### int GetTextWidth ( string str ) {: .copyable aria-label='Functions' }
 
 Returns the width of the given string in pixels based on the "terminus8" font (same font as used in Isaac.RenderText())
+
 ___
 ### Get·Time () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -358,7 +359,6 @@ This returns the number of milliseconds of CPU time for the program. This is use
 
 For example, you might use this to implement an on-screen speedrunning timer based on real time, or to benchmark the performance impact of one function over another.
 
-Internally, this code simply calls `[os.clock()](https://www.lua.org/pil/22.1.html)` and then converts seconds to milliseconds. (`Isaac.GetTime()` can be used with or without the `--luadebug` flag turned on.)
 ___
 ### Get·Trinket·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
