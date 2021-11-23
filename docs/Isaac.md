@@ -354,7 +354,11 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTime ( ) {: .copyable aria-label='Functions' }
 
-This returns the number of seconds of CPU time for the program. It is simply a mapping to the [os.clock()](https://www.lua.org/pil/22.1.html) function. (`Isaac.GetTime()` can be used with or without the `--luadebug` flag turned on.)
+This returns the number of milliseconds of CPU time for the program. This is useful for measuring how much real time has passed independent of how many frames have passed. (Frames are not a very good indicator of how much time has passed, because the game locks up to load new data on every level transition and room transition.)
+
+For example, you might use this to implement an on-screen speedrunning timer based on real time, or to benchmark the performance impact of one function over another.
+
+Internally, this code simply calls `[os.clock()](https://www.lua.org/pil/22.1.html)` and then converts seconds to milliseconds. (`Isaac.GetTime()` can be used with or without the `--luadebug` flag turned on.)
 ___
 ### Get·Trinket·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
