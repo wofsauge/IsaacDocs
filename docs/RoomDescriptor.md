@@ -94,11 +94,14 @@ ___
 ### Grid·Index {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GridIndex  {: .copyable aria-label='Variables' }
-index in the level grid (always top left)
+
+- For a 1x1 room, this is equal to the 1x1 grid index of the room.
+- For a room bigger than a 1x1 room, this is equal to the top left 1x1 quadrant.
+- For `RoomType.ROOMSHAPE_LTL` rooms (i.e. rooms that look like a "J"), this is equal to the 1x1 quadrant where the gap in the room is. In other words, it returns a 1x1 quadrant that is not actually contained within the room.
+- Note that **this value is different** than the value returned by `Level:GetCurrentRoomIndex()`. (That function returns the 1x1 quadrant that the room was entered in.)
+- Data structures that store data per room should use `ListIndex` as a key instead of `GridIndex`, since the former is unique across different dimensions.
 
 ???- note "Notes"
-    This will always return the top left coordinate of the room on the level grid. Therefore, it will return an index not part of the actual room, when checking this value for J-shaped rooms. (See graphic below)
-
     ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Has·Water {: aria-label='Variables' }
@@ -109,7 +112,11 @@ ___
 ### List·Index {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ListIndex  {: .copyable aria-label='Variables' }
-index in the room list
+
+The index for this room corresponding to the `Level.GetRooms().Get()` method. In other words, this is equal to the order that the room was created by the floor generation algorithm.
+
+Use this as an index for data structures that store data per room, since it is unique across different dimensions.
+
 ___
 ### No·Reward {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -144,11 +151,14 @@ ___
 ### Safe·Grid·Index {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int SafeGridIndex  {: .copyable aria-label='Variables' }
-index in the level grid (not always top left, but is guaranteed to point to the room. this is important for LTL shapes!)
+
+- For a 1x1 room, this is equal to the 1x1 grid index of the room.
+- For a room bigger than a 1x1 room, this is equal to the top left 1x1 quadrant.
+- For `RoomType.ROOMSHAPE_LTL` rooms (i.e. rooms that look like a "J"), this is equal to the top right 1x1 quadrant.
+- Note that **this value is different** than the value returned by `Level:GetCurrentRoomIndex()`. (That function returns the 1x1 quadrant that the room was entered in.)
+- Data structures that store data per room should use `ListIndex` as a key instead of `SafeGridIndex`, since the former is unique across different dimensions.
 
 ???- note "Notes"
-    This will always return the top left coordinate of the room on the level grid, except for J-shaped rooms, where it returns the top right index. (see graphic below)
-
     ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Shop·Item·Discount·Idx {: aria-label='Variables' }
