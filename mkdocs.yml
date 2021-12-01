@@ -101,6 +101,7 @@ nav:
             - "TrinketType": enums/TrinketType.md
             - "UseFlag": enums/UseFlag.md
             - "WeaponType": enums/WeaponType.md
+        - "Globals": Globals.md
         - "Global Functions": GlobalFunctions.md
         - "Color": Color.md
         - "CppContainer":
