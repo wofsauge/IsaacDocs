@@ -93,6 +93,7 @@ nav:
             - "RoomType": enums/RoomType.md
             - "SackSubType": enums/SackSubType.md
             - "SeedEffect": enums/SeedEffect.md
+            - "SkinColor": enums/SkinColor.md
             - "SortingLayer": enums/SortingLayer.md
             - "SoundEffect": enums/SoundEffect.md
             - "StageType": enums/StageType.md
