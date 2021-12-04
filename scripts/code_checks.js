@@ -63,7 +63,7 @@ function getFileContents(filepath) {
 if (hasError) {
     console.log("Some Code checks failed!");
     const core = require('@actions/core');
-    run().catch(e => core.setFailed(e));
+    core.setFailed("Some Code checks failed!");
 } else {
     console.log("All code checks run successfully!");
 }
