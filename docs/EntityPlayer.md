@@ -837,6 +837,11 @@ ___
 #### float GetGreedDonationBreakChance ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Head·Color () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [SkinColor](enums/SkinColor.md) GetHeadColor ( ) {: .copyable aria-label='Functions' }
+
+___
 ### Get·Head·Direction () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Direction](enums/Direction.md) GetHeadDirection ( ) {: .copyable aria-label='Functions' }
@@ -1090,11 +1095,6 @@ ___
 Returns a vector that corresponds to the shooting inputs that this player is holding.
 
 See the image for the [GetShootingInput](#getshootinginput) method.
-
-___
-### Get·Skin·Color () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### [SkinColor](enums/SkinColor.md) GetSkinColor ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Smooth·Body·Rotation () {: aria-label='Functions' }
