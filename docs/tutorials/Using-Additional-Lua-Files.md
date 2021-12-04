@@ -74,6 +74,7 @@ local function unloadEverything()
   end
 end
 
+local vanillaRequire = require
 local function patchedRequire(file)
   __MY_MOD_REQUIRED_PATHS[file] = true
   return vanillaRequire(file)
@@ -81,7 +82,6 @@ end
 
 initGlobalVariable()
 unloadEverything()
-local vanillaRequire = require
 require = patchedRequire
 
 -- Mod code here
