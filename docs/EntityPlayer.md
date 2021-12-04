@@ -1625,8 +1625,8 @@ Right now, there are 3 items that grant conditional extra lives:
 ___
 ### Use·Poop·Spell () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void UsePoopSpell ( PoopSpellType type ) {: .copyable aria-label='Functions' }
-Triggers one of Tainted ???'s poop spells (see PoopSpellType enum)
+#### void UsePoopSpell ( [PoopSpellType](enums/PoopSpellType.md) type ) {: .copyable aria-label='Functions' }
+Triggers one of Tainted ???'s poop spells (see [PoopSpellType](enums/PoopSpellType.md) enum)
 
 ___
 ## Variables

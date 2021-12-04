@@ -62,7 +62,7 @@ ___
 
 
 ???- note "Notes"
-    A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
+    A list of Champion colors can be found here : [ChampionColorIdx](enums/ChampionColor.md)
 ___
 ### Get·Player·Target () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
