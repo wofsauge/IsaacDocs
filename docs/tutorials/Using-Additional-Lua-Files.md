@@ -44,7 +44,7 @@ Unfortunately, require caching causes the `luamod` console command to not work c
 
 ### The Namespacing Problem With `require`
 
-Because require caching is based on the string passed to the function, this causes a problem for mods that have an overlap in the string. For example, imagine that there are two mods, mod 1 and mod 2. Both mods have a file called "foo.lua" and both mods use a require statement similar to the one in the above example. Mod 1 will work as normal, but when mod 2 loads, its require statement will actually return the "foo.lua" file from mod 1.
+Because require caching is based on the string passed to the function, this causes a problem for mods that have an overlap in the string. For example, imagine that there are two mods, mod 1 and mod 2. Both mods have a file called "foo.lua" and both mods use a require statement of `local foo = require("foo")`. Mod 1 will work normally, but when mod 2 loads, its require statement will actually return the "foo.lua" file from mod 1.
 
 ### `include`
 
