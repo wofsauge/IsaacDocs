@@ -20,6 +20,8 @@ const regularExpressions = [
     ['Badge has more type-definitions than allowed', /\[ \]\(#\)\{: ((.static|.const|.abrep|.rep|.abp)\s){2,5}.tooltip .badge \}/],
 ];
 
+var hasError = false;
+
 for (const file of allFiles) {
     const fileContents = getFileContents(file);
     const lines = fileContents.split("\n");
@@ -34,11 +36,10 @@ for (const file of allFiles) {
 
             console.log(`${file} at line ${index + 1}: ${regex[0]}`);
             console.log(`\tLine: ` + regex[1].exec(line).input);
+            hasError = true;
         }
     }
 }
-
-console.log("All code checks run successfully!");
 
 function getFilesForDirectory(directory) {
     const foundFiles = [];
@@ -58,3 +59,11 @@ function getFilesForDirectory(directory) {
 function getFileContents(filepath) {
     return fs.readFileSync(filepath, "utf8");
 }
+
+if (hasError) {
+    console.log("Some Code checks failed!");
+    return 1;
+} else {
+    console.log("All code checks run successfully!");
+}
+return 0;

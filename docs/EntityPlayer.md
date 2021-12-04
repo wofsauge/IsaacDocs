@@ -399,7 +399,7 @@ end of a stage
 ___
 ### Animate·Pickup () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AnimatePickup ( Sprite sprite, boolean HideShadow = false, string AnimName = "Pickup" ) {: .copyable aria-label='Functions' }
+#### void AnimatePickup ( [Sprite](Sprite.md) sprite, boolean HideShadow = false, string AnimName = "Pickup" ) {: .copyable aria-label='Functions' }
 Plays a pickup animation using any supplied Sprite object
 HideShadow should be usually set to true when rendering a sprite with a custom shadow layer
 
@@ -1052,7 +1052,7 @@ Returns how many poop consumables the player is currently holding
 ___
 ### Get·Poop·Spell () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### PoopSpellType GetPoopSpell ( int Position ) {: .copyable aria-label='Functions' }
+#### [PoopSpellType](enums/PoopSpellType.md) GetPoopSpell ( int Position ) {: .copyable aria-label='Functions' }
 
 Returns the poop spell at the given position in the player's spell queue
 
@@ -1764,7 +1764,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [Tear
     end
 
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
-    
+
     ```
 ___
 ### Tear·Height {: aria-label='Variables' }
