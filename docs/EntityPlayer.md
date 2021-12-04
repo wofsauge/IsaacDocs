@@ -706,6 +706,11 @@ ___
 #### int GetBloodCharge ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Body·Color () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [SkinColor](enums/SkinColor.md) GetBodyColor ( ) {: .copyable aria-label='Functions' }
+
+___
 ### Get·Bomb·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBombFlags ( ) {: .copyable aria-label='Functions' }
@@ -1085,6 +1090,11 @@ ___
 Returns a vector that corresponds to the shooting inputs that this player is holding.
 
 See the image for the [GetShootingInput](#getshootinginput) method.
+
+___
+### Get·Skin·Color () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [SkinColor](enums/SkinColor.md) GetSkinColor ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Smooth·Body·Rotation () {: aria-label='Functions' }
