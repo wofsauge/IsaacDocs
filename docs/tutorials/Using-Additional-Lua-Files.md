@@ -96,5 +96,3 @@ require = vanillaRequire
 ### Alternate Workaround for Require Problems
 
 It's also worth noting that the `require` problems discussed above are non-problems if you are writing your mod with TypeScript using the [IsaacScript framework](https://isaacscript.github.io/). This is because the transpiler automatically combines all of your code into a single "main.lua" file. This means that you don't have to bother juggling between using `include` and `require`, worrying about state, or monkey patching the `require` function with a hack.
-
-(Beyond this, there are many other reasons to use TypeScript instead of Lua, so you may want to consider it for your current or future projects.)
