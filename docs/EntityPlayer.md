@@ -706,6 +706,11 @@ ___
 #### int GetBloodCharge ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Body·Color () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [SkinColor](enums/SkinColor.md) GetBodyColor ( ) {: .copyable aria-label='Functions' }
+
+___
 ### Get·Bomb·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBombFlags ( ) {: .copyable aria-label='Functions' }
@@ -830,6 +835,11 @@ ___
 ### Get·Greed·Donation·Break·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### float GetGreedDonationBreakChance ( ) {: .copyable aria-label='Functions' }
+
+___
+### Get·Head·Color () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [SkinColor](enums/SkinColor.md) GetHeadColor ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Head·Direction () {: aria-label='Functions' }
