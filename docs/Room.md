@@ -267,6 +267,11 @@ ___
 #### boolean GetRedHeartDamage ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Render·Mode () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### [RenderMode](enums/RenderMode.md) GetRenderMode ( ) {: .copyable aria-label='Functions' }
+Returns a RenderMode enum which can be used to render entities differently depending on context (i.e. custom water reflections)
+___
 ### Get·Render·Scroll·Offset () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Vector](Vector.md) GetRenderScrollOffset ( ) {: .copyable aria-label='Functions' }
