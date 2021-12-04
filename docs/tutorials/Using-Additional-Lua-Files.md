@@ -62,14 +62,6 @@ If you need to use `require` instead of `include`, you can work around the afore
 
 ```lua
 -- At the beginning of "main.lua"
-if __MY_MOD_REQUIRED_PATHS == nil then
-  __MY_MOD_REQUIRED_PATHS = {} -- This must be a global variable
-end
-
-local function patchedRequire(file)
-  __MY_MOD_REQUIRED_PATHS[file] = true
-  return vanillaRequire(file)
-end
 
 local function unloadEverything()
   for k, v in pairs(__MY_MOD_REQUIRED_PATHS) do
@@ -77,12 +69,26 @@ local function unloadEverything()
   end
 end
 
+local function patchedRequire(file)
+  __MY_MOD_REQUIRED_PATHS[file] = true
+  return vanillaRequire(file)
+end
+
+local function patchRequire()
+  if __MY_MOD_REQUIRED_PATHS == nil then
+    __MY_MOD_REQUIRED_PATHS = {} -- This must be a global variable
+  end
+  require = patchedRequire
+end
+
 unloadEverything()
 local vanillaRequire = require
-require = patchedRequire
+patchRequire()
 
 -- Mod code here
--- [...]
+-- It is cleanest to put all mod code in a separate file in order to keep the hack code separated, e.g.
+-- local myMod = require("myMod")
+-- myMod:init()
 
 -- At the end of "main.lua"
 require = vanillaRequire
