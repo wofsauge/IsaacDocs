@@ -58,7 +58,7 @@ Thus, if you have module-level state or need to share variables between files, y
 
 ### Workaround for Require Problems
 
-If you want to use `require` instead of `include`, you can work around the aforementioned problems by temporarily hacking `require` with something along the lines of:
+If you need to use `require` instead of `include`, you can work around the aforementioned problems by temporarily hacking `require` with something along the lines of:
 
 ```lua
 -- At the beginning of "main.lua"
