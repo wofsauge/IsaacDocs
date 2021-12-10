@@ -510,13 +510,22 @@ ___
 ___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
+#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItemConfigItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
 
-**TargetCount**: Maximum number of familiars spawned by the provided item config entry. If the player already has reached the set amount, additional calls of the function will not spawn more familiars.
+Call this in the PostPEffectUpdate callback to spawn the appropriate amount of familiars associated with a custom collectible.
 
-**SourceItem**: The item this type of familiar was created by. This attribute is optional, but recommended to use in order to better associate it with items you obtained
+- If the target count specified is less than the current amount of familiars, it will spawn more until the target count is met.
+- If the target count specified is than the current amount of familiars, it will despawn familiars until the target count is met.
 
-**FamiliarSubType**: The subtype of the familiar to check (-1 matches any subtype)
+**FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
+
+**TargetCount**: See the explanation above. In most cases, use the collectible count for the custom collectible.
+
+**rng**: In most cases, use the RNG object returned from `EntityPlayer.GetCollectibleRNG()`.
+
+**SourceItemConfigItem**: The ItemConfigItem that this familiar was created by.
+
+**FamiliarSubType**: The subtype of the familiar to check. -1 matches any subtype.
 
 ???- example "Example Code"
     This code spawns 3 "Sister Maggy" familiars.
@@ -528,7 +537,6 @@ ___
 
     player:CheckFamiliar(FamiliarVariant.SISTER_MAGGY, 3, collectibleRNG, itemConfig)
     ```
-
 
 ___
 ### Clear·Costumes () {: aria-label='Functions' }
