@@ -163,8 +163,8 @@ nav:
         - "Options": Options.md
         - "PathFinder": PathFinder.md
         - "PlayerTypes":
-            - "PlayerTypes::ActiveItemDesc": PlayerTypes_ActiveItemDesc.md
-            - "PlayerTypes::PosVel": PlayerTypes_PosVel.md
+            - "PlayerTypesActiveItemDesc": PlayerTypes_ActiveItemDesc.md
+            - "PlayerTypesPosVel": PlayerTypes_PosVel.md
         - "ProjectileParams": ProjectileParams.md
         - "QueueItemData": QueueItemData.md
         - "Room": Room.md

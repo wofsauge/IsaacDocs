@@ -30,7 +30,7 @@ Adds the effect of a collectible to the player, without actually giving him the 
 ___
 ### Add·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddNullEffect ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void AddNullEffect ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Trinket·Effect () {: aria-label='Functions' }
@@ -60,12 +60,12 @@ ___
 ___
 ### Get·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [TemporaryEffect](TemporaryEffect.md) GetNullEffect ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
+#### const [TemporaryEffect](TemporaryEffect.md) GetNullEffect ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Null·Effect·Num () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetNullEffectNum ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
+#### int GetNullEffectNum ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Trinket·Effect () {: aria-label='Functions' }
@@ -85,7 +85,7 @@ ___
 ___
 ### Has·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean HasNullEffect ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
+#### boolean HasNullEffect ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Trinket·Effect () {: aria-label='Functions' }
@@ -100,7 +100,7 @@ Count = -1 removes all instances of the effect
 ___
 ### Remove·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RemoveNullEffect ( [ItemConfig::NullItemID](ItemConfig_Item.md) NullId, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void RemoveNullEffect ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId, int Count = 1 ) {: .copyable aria-label='Functions' }
 Count = -1 removes all instances of the effect
 ___
 ### Remove·Trinket·Effect () {: aria-label='Functions' }

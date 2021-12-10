@@ -1,4 +1,4 @@
-# Class "ItemConfig::Item"
+# Class "ItemConfigItem"
 ## Functions
 ___
 ### Has·Tags () {: aria-label='Functions' }

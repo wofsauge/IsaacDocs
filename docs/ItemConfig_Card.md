@@ -1,4 +1,4 @@
-# Class "ItemConfig::Card"
+# Class "ItemConfigCard"
 ## Variables
 ### Achievement·ID {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

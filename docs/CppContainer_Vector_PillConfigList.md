@@ -1,4 +1,4 @@
-# Class "CppContainer::Vector::PillConfigList"
+# Class "PillConfigList"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

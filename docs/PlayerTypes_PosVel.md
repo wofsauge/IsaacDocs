@@ -1,4 +1,4 @@
-# Class "PlayerTypes::PosVel"
+# Class "PlayerTypesPosVel"
 
 ???+ info
     You can get this class by using the following function:

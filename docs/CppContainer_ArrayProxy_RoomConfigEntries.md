@@ -1,4 +1,4 @@
-# Class "CppContainer::ArrayProxy::RoomConfigEntries"
+# Class "RoomConfigEntries"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

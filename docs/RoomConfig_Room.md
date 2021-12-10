@@ -1,4 +1,4 @@
-# Class "RoomConfig::Room"
+# Class "RoomConfigRoom"
 ???+ info
     You can get this class by using the following functions:
 

@@ -106,9 +106,9 @@ Returns the [CardID](enums/Card.md) based on the "hud"-attribute defined in the 
 
 ???+ warning "Warning"
     The name of this function is misleading, this function will only work with the "hud"-attribute value of a card and not the name of a card.
- 
+
 ???+ bug "Bug"
-    This function does not work for vanilla cards/runes, because they don't have the "hud" attribute defined in their entry in the pocketitems.xml file. You need to use the [Card](enums/Card.md) enum to get those vanilla IDs instead. 
+    This function does not work for vanilla cards/runes, because they don't have the "hud" attribute defined in their entry in the pocketitems.xml file. You need to use the [Card](enums/Card.md) enum to get those vanilla IDs instead.
 
 ???- example "Example Code"
     This code gets the CardID of a modded card.
@@ -201,6 +201,7 @@ Returns the variant of an entity based on its name. (File: entities2.xml) Return
 
 ???- example "Example Code"
     This code gets the variant of Flaming Gaper.
+
     ```lua
     Isaac.GetEntityVariantByName("Flaming Gaper")
     --Returns: 2
@@ -215,6 +216,7 @@ ___
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
 This function therefore works drastically different than `:::lua Game():GetFrameCount()`[Link](Game.md#GetFrameCount)
+
 ___
 ### Get·Free·Near·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -224,7 +226,7 @@ ___
 ### Get·Item·Config () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Config](ItemConfig.md) GetItemConfig ( ) {: .copyable aria-label='Functions' }
-Returns the [ItemConfig::Config](ItemConfig.md) object.
+Returns the [ItemConfigConfig](ItemConfig.md) object.
 ___
 ### Get·Item·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -234,6 +236,7 @@ Returns the ItemID of a Collectible. (File: items.xml) Returns `-1` if no item w
 
 ???- example "Example Code"
     This code gets the ItemID of Brimstone.
+
     ```lua
     Isaac.GetItemIdByName("Brimstone")
     --Returns: 118
@@ -249,6 +252,7 @@ Returns the MusicID of a music track. (File: music.xml) Returns `-1` if no music
 
 ???- example "Example Code"
     This code gets the MusicID of the Title Screen.
+
     ```lua
     Isaac.GetMusicIdByName("Title Screen")
     --Returns: 61
@@ -264,6 +268,7 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml) Returns `-1`
 
 ???- example "Example Code"
     This code gets the PillEffectID of I can see forever!.
+
     ```lua
     Isaac.GetPillEffectByName("I can see forever!")
     --Returns: 23
@@ -282,6 +287,7 @@ This function can return `nil` if the function is called before any player is in
 This function is the same as [`Game():GetPlayer()`](Game.md#getplayer).
 
 ???- example "Example Code"
+
     ```lua
     Isaac.GetPlayer(0)
 
@@ -296,6 +302,7 @@ Returns the PlayerType (ID) of a character based on its name. (File: players.xml
 
 ???- example "Example Code"
     This code gets the PlayerType of Azazel.
+
     ```lua
     Isaac.GetPlayerTypeByName("Azazel")
     --Returns: 7
@@ -338,6 +345,7 @@ Returns the SoundEffectID of a sound based on its name. (File: sounds.xml) Retur
 
 ???- example "Example Code"
     This code gets the SoundEffectID of a sound named "Custom Sound Effect"
+
     ```lua
     Isaac.GetSoundIdByName("Custom Sound Effect")
 
@@ -368,6 +376,7 @@ Returns the TrinketType of a trinket based on its name. (File: items.xml) Return
 
 ???- example "Example Code"
     This code gets the TrinketType of Lucky Toe.
+
     ```lua
     Isaac.GetTrinketIdByName("Lucky Toe")
     --Returns: 42
@@ -446,6 +455,7 @@ Renders a scaled text on the Screen. X and Y coordinates need to be in screen co
 
 ???- example "Example Code"
     This code renders the player position on the screen.
+
     ```lua
     local player = Isaac.GetPlayer(0)
     local pos = player.Position
@@ -462,6 +472,7 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
 
 ???- example "Example Code"
     This code renders the player position on the screen.
+
     ```lua
     local player = Isaac.GetPlayer(0)
     local pos = player.Position

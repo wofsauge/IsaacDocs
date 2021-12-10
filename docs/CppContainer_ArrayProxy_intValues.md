@@ -1,4 +1,4 @@
-# Class "CppContainer::ArrayProxy::intValues"
+# Class "intValues"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

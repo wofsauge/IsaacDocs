@@ -1,4 +1,4 @@
-# Class "CppContainer::EntityList"
+# Class "EntityList"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

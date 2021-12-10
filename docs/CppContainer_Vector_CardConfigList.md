@@ -1,4 +1,4 @@
-# Class "CppContainer::Vector::CardConfigList"
+# Class "CardConfigList"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

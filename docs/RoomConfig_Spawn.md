@@ -1,4 +1,4 @@
-# Class "RoomConfig::Spawn"
+# Class "RoomConfigSpawn"
 
 ???+ info
     You can get this class by using the following function:

@@ -1,4 +1,4 @@
-# Class "CppContainer::Vector::EffectList"
+# Class "EffectList"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

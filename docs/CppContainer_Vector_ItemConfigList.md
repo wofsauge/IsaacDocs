@@ -1,4 +1,4 @@
-# Class "CppContainer::Vector::ItemConfigList"
+# Class "ItemConfigList"
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

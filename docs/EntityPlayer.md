@@ -135,7 +135,7 @@ ___
 ___
 ### Add·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddCostume ( [ItemConfig::Item](ItemConfig_Item.md) Item, boolean ItemStateOnly ) {: .copyable aria-label='Functions' }
+#### void AddCostume ( [ItemConfigItem](ItemConfig_Item.md) Item, boolean ItemStateOnly ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Curse·Mist·Effect () {: aria-label='Functions' }
@@ -510,7 +510,7 @@ ___
 ___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, ItemConfig::Item SourceItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
+#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
 
 **TargetCount**: Maximum number of familiars spawned by the provided item config entry. If the player already has reached the set amount, additional calls of the function will not spawn more familiars.
 
@@ -1319,7 +1319,7 @@ ___
 ___
 ### Queue·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void QueueItem ( [ItemConfig::Item](ItemConfig_Item.md) Item, int Charge = 0, boolean Touched = false, bool Golden = false, int VarData = 0 ) {: .copyable aria-label='Functions' }
+#### void QueueItem ( [ItemConfigItem](ItemConfig_Item.md) Item, int Charge = 0, boolean Touched = false, bool Golden = false, int VarData = 0 ) {: .copyable aria-label='Functions' }
 When the player touches a collectible or trinket, they are not granted it immediately. Instead, the item is queued for the duration of the animation where the player holds the item above their head. When the animation is finished, the item in the queue will be granted. This method adds a new item to the item queue. If the player is not currently playing an animation, then the queued item will simply be awarded instantly.
 
 Also see `FlushQueueItem()`, `IsItemQueueEmpty()`, and `QueuedItem`.
@@ -1350,7 +1350,7 @@ ___
 ___
 ### Remove·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveCostume ( [ItemConfig::Item](ItemConfig_Item.md) Item ) {: .copyable aria-label='Functions' }
+#### void RemoveCostume ( [ItemConfigItem](ItemConfig_Item.md) Item ) {: .copyable aria-label='Functions' }
 Removes a given costume based on its item config entry.
 
 ???- example "Example code"
@@ -1405,7 +1405,7 @@ ___
 ___
 ### Replace·Costume·Sprite () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void ReplaceCostumeSprite ( [ItemConfig::Item](ItemConfig_Item.md) Item, string SpritePath, int SpriteId ) {: .copyable aria-label='Functions' }
+#### void ReplaceCostumeSprite ( [ItemConfigItem](ItemConfig_Item.md) Item, string SpritePath, int SpriteId ) {: .copyable aria-label='Functions' }
 
 ___
 ### Reset·Damage·Cooldown () {: aria-label='Functions' }

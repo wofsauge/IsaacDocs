@@ -1,4 +1,4 @@
-# Class "PlayerTypes::ActiveItemDesc"
+# Class "PlayerTypesActiveItemDesc"
 
 ???+ info
     You can get this class by using the following function:
