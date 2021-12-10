@@ -288,7 +288,7 @@ document$.subscribe(function() {
         parent.each(function(index) {
             funcNameLine = $(this).text();
         });
-        var functionString = funcNameLine;
+        var functionString = funcNameLine.replace("⚓︎", "");
         if (funcNameLine.includes("(")) {
             functionString = funcNameLine.replace(" ( ", "(");
             var funcPart1 = functionString.split("(")[0].split(" ");
