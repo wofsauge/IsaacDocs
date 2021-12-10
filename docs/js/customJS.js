@@ -267,7 +267,14 @@ document$.subscribe(function() {
 
 
     // handle Copy Buttons
-    $(".copyable").append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
+    $(".copyable").each(function(e) {
+        if ($(this).prop("tagName") == "TD") {
+            $(this).attr('id', $(this).text())
+            $(this).append('<a class="headerlink" href="#' + $(this).text() + '" title="Permanent link">⚓︎</a>');
+        }
+        $(this).append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
+    })
+
 
     $(".copyButton").click(function() {
         var parent = $(this).parent();
