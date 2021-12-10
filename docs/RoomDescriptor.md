@@ -91,6 +91,11 @@ Indicates what is visible on the minimap.
     As far as I've seen, 001 is completely unused.
     010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100.
 ___
+### Flags {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int Flags  {: .copyable aria-label='Variables' }
+The RoomDescriptor flags for the room.
+___
 ### Grid·Index {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GridIndex  {: .copyable aria-label='Variables' }
