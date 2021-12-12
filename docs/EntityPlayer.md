@@ -1734,7 +1734,7 @@ ___
 - Also see `FlushQueueItem()`, `IsItemQueueEmpty()`, and `QueueItem()`.
 ___
 ### Secondary·Active·Item {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### [ActiveItemDesc](PlayerTypes_ActiveItemDesc.md) SecondaryActiveItem  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ???+ bug "Bug"
