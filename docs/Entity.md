@@ -736,6 +736,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Color](Color.md) SplatColor  {: .copyable aria-label='Variables' }
 
+The color of the gibs when an entity dies.
+
 ___
 ### Sprite·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
