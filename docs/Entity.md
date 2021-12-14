@@ -738,6 +738,8 @@ ___
 
 The color of the gibs when an entity dies.
 
+The Color of this property is read only, so if you want to change it, you have to replace the entire thing with a new Color object.
+
 ___
 ### Sprite·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
