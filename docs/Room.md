@@ -499,7 +499,7 @@ ___
 * `GridIndex` is the location of the grid as shown with the `debug 11` console command.
 * `PathTrail` is the "cost" to leave behind on the square. In most cases, you would want to pass 0 for this argument.
 
-Note that after removing a grid entity, you cannot spawn another grid entity on the same tile until a frame has passed. You can get around this restriction by calling the `[Room:Update()](#update)` method, but this can have other unwanted side effects, so it is only recommended to do that as a last resort. Specifically, `Room:Update` will update every entity in the room, including the player, causing them to continue to move in the direction that they are already moving. Furthermore, if `Room:Update` is called in the PostNewRoom callback, it will still cause the player to drift, even though they are standing still. (This is because their velocity has not been zeroed out at time that the callback fires.)
+Note that after removing a grid entity, you cannot spawn another grid entity on the same tile until a frame has passed. You can get around this restriction by calling the `[Room:Update()](#update)` method, but this can have other unwanted side effects, so it is only recommended to do this as a last resort. Specifically, `Room:Update` will update every entity in the room, including the player, causing them to continue to move in the direction that they are already moving. Furthermore, if `Room:Update` is called in the PostNewRoom callback, it will still cause the player to drift, even though they are standing still. (This is because their velocity has not been zeroed out at time that the callback fires.)
 
 ___
 ### Render () {: aria-label='Functions' }
