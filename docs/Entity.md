@@ -647,8 +647,11 @@ loaded from entity config
 ___
 ### Grid·Collision·Class {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [GridCollisionClass](enums/GridCollisionClass.md) GridCollisionClass {: .copyable aria-label='Variables' }
+#### [EntityGridCollisionClass](enums/EntityGridCollisionClass.md) GridCollisionClass {: .copyable aria-label='Variables' }
 
+
+???- note "Notes"
+    EntityPlayers can only use GRIDCOLL_NONE, GRIDCOLL_WALLS, and GRIDCOLL_GROUND. All other enums will behave like GRIDCOLL_WALLS.
 ___
 ### Hit·Points {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
