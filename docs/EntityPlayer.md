@@ -1027,14 +1027,11 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetOtherTwin ( ) {: .copyable aria-label='Functions' }
 
-Will return second player of pair characters or other form of characters with multiple forms.
-
-???- note "Note"
-	* When called on Jacob, returns Esau
-	* When called on Esau, returns Jacob
-	* When called on Tainted Forgotten, returns Tainted Forgotten's Soul
-	* When called on Tainted Forgotten's Soul, returns Tainted Forgotten
-	* When called on any other character, returns nil
+- When called on Jacob, returns Esau.
+- When called on Esau, returns Jacob.
+- When called on Tainted Forgotten, returns Tainted Forgotten's Soul.
+- When called on Tainted Forgotten's Soul, returns Tainted Forgotten.
+- When called on any other character, returns nil.
 ___
 ### Get·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
