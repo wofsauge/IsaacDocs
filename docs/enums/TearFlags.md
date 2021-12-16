@@ -29,7 +29,7 @@ end
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(13) |TEAR_CHARM {: .copyable } | `Color(1, 0, 1, 1, 0.196, 0, 0)`<br> Range 0-255: <br>`Color(255, 0, 255, 255, 50, 0, 0)` | Mom's Eyeshadow tear |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(14) |TEAR_CONFUSION {: .copyable } | `Color(0.5, 0.5, 0.5, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(127, 127, 127, 255, 0, 0, 0)` | Iron Bar tear |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(15) |TEAR_HP_DROP {: .copyable } | No changes | These tears cause enemy to drop hearts if killed (33% chance) |
-|[ ](#){: .rep .tooltip .badge }| TEARFLAG(16) |TEAR_ORBIT {: .copyable } | No changes | Used for Little Planet (orbit arounds the player) |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(16) |TEAR_ORBIT {: .copyable } | No changes | Used for Tiny Planet (orbit arounds the player) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(17) |TEAR_WAIT {: .copyable } | No changes | Anti gravity type tear (floats in place for some time before finally moving) (unset after first update) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(18) |TEAR_QUADSPLIT {: .copyable } | No changes | Cricket's Body type tear. Splits into 4 smaller tears if it hits the ground |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(19) |TEAR_BOUNCE {: .copyable } | `Color(1, 1, 0.8, 1, 0.1, 0.1, 0.1)`<br> Range 0-255: <br>`Color(255, 255, 204, 255, 25, 25, 25)` | Bounce off of enemies, walls, rocks (Higher priority than PERSISTENT & PIERCING) |
