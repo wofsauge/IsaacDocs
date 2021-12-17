@@ -28,5 +28,6 @@
 |[ ](#){: .rep .tooltip .badge }|24 |ROOM_PLANETARIUM {: .copyable } | ![img](../images/roomtypes/24.png) |  |
 |[ ](#){: .rep .tooltip .badge }|25 |ROOM_TELEPORTER {: .copyable } | ![img](../images/roomtypes/25.png) |  |
 |[ ](#){: .rep .tooltip .badge }|26 |ROOM_TELEPORTER_EXIT {: .copyable } |  |  |
+|[ ](#){: .rep .tooltip .badge }|27 |ROOM_SECRET_EXIT {: .copyable } |  |  |
 |[ ](#){: .rep .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } | ![img](../images/roomtypes/29.png) |  |
 |[ ](#){: .rep .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  |
