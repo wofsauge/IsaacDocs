@@ -17,7 +17,7 @@
 |[ ](#){: .abrep .tooltip .badge }|13 |ROOM_SACRIFICE {: .copyable } | ![img](../images/roomtypes/13.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|14 |ROOM_DEVIL {: .copyable } | ![img](../images/roomtypes/14.png) | |
 |[ ](#){: .abrep .tooltip .badge }|15 |ROOM_ANGEL {: .copyable } | ![img](../images/roomtypes/15.png) |  |
-|[ ](#){: .abrep .tooltip .badge }|16 |ROOM_DUNGEON {: .copyable } |  | aka. Crawlspaces |
+|[ ](#){: .abrep .tooltip .badge }|16 |ROOM_DUNGEON {: .copyable } |  | a.k.a. Crawlspaces |
 |[ ](#){: .abrep .tooltip .badge }|17 |ROOM_BOSSRUSH {: .copyable } |  |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |ROOM_ISAACS {: .copyable } | ![img](../images/roomtypes/18.png) |  |
 |[ ](#){: .abrep .tooltip .badge }|19 |ROOM_BARREN {: .copyable } | ![img](../images/roomtypes/19.png) |  |
