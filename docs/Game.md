@@ -72,6 +72,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void ChangeRoom ( int RoomIndex, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
+There are no known differences between this and the `Level.ChangeRoom` method.
+
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
 
