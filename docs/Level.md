@@ -54,6 +54,9 @@ ___
 ### Change·Room () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ChangeRoom ( int RoomIndex, int Dimension = -1 ) {: .copyable aria-label='Functions' }
+
+There are no known differences between this and the `Game.ChangeRoom` method.
+
 ???- note "Notes"
     List of technical ids:
     -1: Deal room
