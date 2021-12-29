@@ -26,7 +26,7 @@
 |[ ](#){: .abrep .tooltip .badge }|21 |POOL_GREED_CURSE {: .copyable } | greedCurse |  |
 |[ ](#){: .abrep .tooltip .badge }|22 |POOL_GREED_SECRET {: .copyable } | greedSecret |  |
 |[ ](#){: .rep .tooltip .badge }|23 |POOL_CRANE_GAME {: .copyable } | craneGame |  |
-|[ ](#){: .rep .tooltip .badge }|24 |POOL_24 {: .copyable } | unused24 |  |
+|[ ](#){: .rep .tooltip .badge }|24 |POOL_ULTRA_SECRET {: .copyable } | ultraSecret |  |
 |[ ](#){: .rep .tooltip .badge }|25 |POOL_BOMB_BUM {: .copyable } | bombBum |  |
 |[ ](#){: .rep .tooltip .badge }|26 |POOL_PLANETARIUM {: .copyable } | planetarium |  |
 |[ ](#){: .rep .tooltip .badge }|27 |POOL_OLD_CHEST {: .copyable } | oldChest |  |
