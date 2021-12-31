@@ -157,18 +157,25 @@ A Variable that stores some entity-specific data. The content can have completel
 ???- example "Example Code"
     This code spawns a functioning Void Portal into the center of the room. This will teleport you to the floor "The Void" and will have the same appearance as the vanilla portal:
     ```lua
-    -- get grid in center of room
-    local spawnPos = Game():GetRoom():GetGridPosition(67)
-    -- spawn Trapdoor
-    local portalEntity = Isaac.GridSpawn(GridEntityType.GRID_TRAPDOOR, 0, spawnPos, true)
-    -- set VoidPortal behavior (Teleport to void and Pulse effect shader)
-    portalEntity.VarData = 1
-    -- Replace spritesheet of trapdoor to look like a Void Portal
-    local sprite = portalEntity.Sprite
-    sprite:ReplaceSpritesheet(0, "gfx/grid/voidtrapdoor.png")
-    sprite:LoadGraphics()
+    -- From: https://github.com/IsaacScript/isaac-typescript-definitions/blob/main/typings/unofficial/enumsGridEntityVariants.d.ts
+    local TrapdoorVariant = {
+      NORMAL = 0,
+      VOID_PORTAL = 1,
+    }
+
+    local game = Game();
+    local room = game:GetRoom()
+    local centerPos = room:GetCenterPos()
+
+    -- By default, this will spawn a normal trapdoor, even though we specify the Void Portal variant
+    local voidPortal = Isaac.GridSpawn(GridEntityType.GRID_TRAPDOOR, TrapdoorVariant.VOID_PORTAL, centerPos, true)
+
+    -- Set the destination to The Void and apply the pulse effect shader
+    voidPortal.VarData = 1
+
+    -- Replace the spritesheet to make it look like a Void Portal
+    local sprite = portalEntity:GetSprite()
     sprite:Load("gfx/grid/voidtrapdoor.anm2", true)
-    portalEntity.Sprite = sprite
     ```
 
 ___
