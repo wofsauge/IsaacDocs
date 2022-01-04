@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/927985880021483571?color=blue&label=Discord&logo=Discord&logoColor=white)](https://discord.gg/435qCC6nHt)
+
 # The Binding of Isaac: Afterbirth+ Community Documentation Project
 
 This project aims to make the Binding of Isaac modding documentation better by providing additional information, features, and a more modern design.
@@ -7,7 +9,7 @@ This project aims to make the Binding of Isaac modding documentation better by p
 - Fully responsive and **modern design**
 - Vastly **improved search function**
 - **Last visited pages** - history
-- **Darkmode**
+- **Dark mode**
 - **Quick Edit** - Button
 - **Smart-Copy** Feature to quickly copy 
 - Automatic deployment & updates (using Github actions)
