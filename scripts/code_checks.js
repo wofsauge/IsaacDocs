@@ -18,6 +18,7 @@ const regularExpressions = [
     ['Function declaration first argument has no link', new RegExp("#{4}(.)*\\w \\( (?!" + defaultVariables + "|" + ignoreVars + "|\\)|\\[)")],
     ['Function declaration later argument has no link', new RegExp("#{4}(.)*\\w \\(.*,(?!\\s[" + defaultVariables + "|" + ignoreVars + "|(\\[.*\\]\\(.*\\))])")],
     ['Badge has more type-definitions than allowed', /\[ \]\(#\)\{: ((.static|.const|.abrep|.rep|.abp)\s){2,5}.tooltip .badge \}/],
+    ['Internal link doesnt work because its CamelCase.', /\[\w+\]\(([a-z][^·_][A-Z])*#[A-Z]\w+[A-Z]*/],
 ];
 
 var hasError = false;

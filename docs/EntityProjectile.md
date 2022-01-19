@@ -6,7 +6,7 @@
 [ ](#){: .abrep .tooltip .badge }
 #### void AddChangeFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-See [ChangeFlags](#ChangeFlags).
+See [ChangeFlags](#changeflags).
 ___
 ### Add·Falling·Accel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -62,7 +62,7 @@ ____
 Projectiles can have two states: normal (default) and changed.
 
 
-Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
+Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#changetimeout). After that its flags get changed to what was set in [ChangeFlags](#changeflags) and velocity will be resized to length set in [ChangeVelocity](#changevelocity).
 ____
 Also used in: [ProjectileParams()](ProjectileParams.md)
 ___
@@ -78,7 +78,7 @@ ____
 Projectiles can have two states: normal (default) and changed.
 
 
-Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
+Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#changetimeout). After that its flags get changed to what was set in [ChangeFlags](#changeflags) and velocity will be resized to length set in [ChangeVelocity](#changevelocity).
 ____
 Also used in: [ProjectileParams()](ProjectileParams.md)
 ___
@@ -94,7 +94,7 @@ ____
 Projectiles can have two states: normal (default) and changed.
 
 
-Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#ChangeTimeout). After that its flags get changed to what was set in [ChangeFlags](#ChangeFlags) and velocity will be resized to length set in [ChangeVelocity](#ChangeVelocity).
+Changed state activates when projectile's frame count reaches the value set in [ChangeTimeout](#changetimeout). After that its flags get changed to what was set in [ChangeFlags](#changeflags) and velocity will be resized to length set in [ChangeVelocity](#changevelocity).
 ____
 Also used in: [ProjectileParams()](ProjectileParams.md)
 ___
