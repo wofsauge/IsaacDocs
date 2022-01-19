@@ -121,7 +121,7 @@ ___
 ### Load () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Load ( string Filename, boolean LoadGraphics ) {: .copyable aria-label='Functions' }
-Loads a given ".anm2" file. The filepath is relative to the "resources" folder. The boolean can be used to load the graphics (.png files) as well, without calling the [LoadGraphics()](#LoadGraphics) function.
+Loads a given ".anm2" file. The filepath is relative to the "resources" folder. The boolean can be used to load the graphics (.png files) as well, without calling the [LoadGraphics()](#loadgraphics) function.
 
 ???- example "Example Code"
     This code creates a new sprite object, loads an .anm2 file and renders it on the screen.
@@ -150,7 +150,7 @@ ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
-Starts executing the given animation at Frame 0. Each consecutive frame, the sprite object will automatically increase its current frame by one.
+Starts executing the given animation at Frame 0. Using the [Update()](#update) function will den advance the animation by one frame.
 
 Calling this function again will always reset the current frame back to 0.
 
@@ -171,6 +171,7 @@ Setting the "**Force**" value to true will stop any already playing animation an
 	
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
+		mySprite:Update()
 		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
 	end
     ```
@@ -179,7 +180,7 @@ ___
 ### Play·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
-Starts executing the given overlay animation at Frame 0. Each consecutive frame, the sprite object will automatically increase its current frame by one.
+Starts executing the given overlay animation at Frame 0. Using the [Update()](#update) function will den advance the animation by one frame.
 
 Calling this function again will always reset the current frame back to 0.
 
@@ -207,7 +208,7 @@ ___
 ### Play·Random () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayRandom ( int Seed ) {: .copyable aria-label='Functions' }
-
+Play a randomly selected animation of the currently loaded .anm2 file.
 ___
 ### Reload () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -301,12 +302,12 @@ ___
 #### void SetFrame ( int FrameNum ) {: .copyable aria-label='Functions' }
 
 #### void SetFrame ( string AnimationName, int FrameNum ) {: .copyable .secondH4 aria-label='Functions' }
-
+Sets currently playing frame.
 ___
 ### Set·Last·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetLastFrame ( ) {: .copyable aria-label='Functions' }
-
+Sets the currently playing animation to be on its last frame.
 ___
 ### Set·Layer·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -336,6 +337,7 @@ ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
+Advances the currently playing animation by one frame()
 
 ___
 ### Was·Event·Triggered () {: aria-label='Functions' }
