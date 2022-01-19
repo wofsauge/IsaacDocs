@@ -150,12 +150,59 @@ ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
+Starts executing the given animation at Frame 0. Each consecutive frame, the sprite object will automatically increase its current frame by one.
+
+Calling this function again will always reset the current frame back to 0.
+
+Setting the "**Force**" value to true will stop any already playing animation and start the new one.
+
+???- example "Example Code"
+    This code plays and renders a sprite.
+
+    ```lua
+    	-- Sprite objects only need to be created and loaded once.
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+	
+	-- Execute this function only once! for example when an event is triggered
+	function myPlaySpriteFunction()
+		mySprite:Play("MyAnimation", true)
+	end
+	
+	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
+	function myRenderSpriteFunction()
+		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
+	end
+    ```
 
 ___
 ### Play·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
+Starts executing the given overlay animation at Frame 0. Each consecutive frame, the sprite object will automatically increase its current frame by one.
 
+Calling this function again will always reset the current frame back to 0.
+
+Setting the "**Force**" value to true will stop any already playing animation and start the new one.
+
+???- example "Example Code"
+    This code plays and renders an overlay sprite.
+
+    ```lua
+    	-- Sprite objects only need to be created and loaded once.
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+	
+	-- Execute this function only once! for example when an event is triggered
+	function myPlaySpriteFunction()
+		mySprite:PlayOverlay("MyOverlayAnimation", true)
+	end
+	
+	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
+	function myRenderSpriteFunction()
+		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
+	end
+    ```
 ___
 ### Play·Random () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -174,13 +221,49 @@ ___
 ___
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Render ( [Vector](Vector.md) Pos, [Vector](Vector.md) TopLeftClamp, [Vector](Vector.md) BottomRightClamp ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp, [Vector](Vector.md) BottomRightClamp ) {: .copyable aria-label='Functions' }
+Renders the sprite object at a given screen position, where (0,0) is the top left of the screen. 
 
+This function needs to be called every frame. For example in the MC_POST_RENDER callback.
+
+TopLeftClamp and BottomRightClamp can be used to crop the sprite.
+
+???- example "Example Code"
+    This code renders a sprite.
+
+    ```lua
+    	-- Sprite objects only need to be created and loaded once.
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+	
+	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
+	function myRenderSpriteFunction()
+		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
+	end
+    ```
 ___
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RenderLayer ( int LayerId, [Vector](Vector.md) Pos, [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
+#### void RenderLayer ( int LayerId, [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
+Renders the given layer of the sprite object at a given screen position, where (0,0) is the top left of the screen. 
 
+This function needs to be called every frame. For example in the MC_POST_RENDER callback.
+
+TopLeftClamp and BottomRightClamp can be used to crop the sprite.
+
+???- example "Example Code"
+    This code renders layer 3 of a sprite. Layer IDs in most cases start at index 0!
+
+    ```lua
+    	-- Sprite objects only need to be created and loaded once.
+	local mySprite = Sprite()
+	mySprite:Load("gfx/myCoolAnimation.anm2", true)
+	
+	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
+	function myRenderSpriteFunction()
+		mySprite:RenderLayer(2, Vector(50,50), Vector(0,0), Vector(0,0))
+	end
+    ```
 ___
 ### Replace·Spritesheet () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
