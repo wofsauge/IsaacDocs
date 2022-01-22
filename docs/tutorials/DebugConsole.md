@@ -3,7 +3,7 @@
 
 If you don't have any mods to enable, download one from Steam Workshop, or create an empty folder in your mods.
 
-**On repentance you also need to edit "C:\Users\%USERNAME%\Documents\My Games\Binding of Isaac Repentance\options.ini".
+**On repentance you also need to edit "C:\Users\%USERNAME%\Documents\My Games\Binding of Isaac Repentance\options.ini".**
 Make sure the game is closed then replace `EnableDebugConsole=0` with `EnableDebugConsole=1`.
 
 **To show the console**, while in a run press the grave/tilde (`~) key. On english (American) keyboardlayouts, it should be below Esc.
