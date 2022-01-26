@@ -169,12 +169,32 @@ ___
 ### Shop·Item·Discount·Idx {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ShopItemDiscountIdx  {: .copyable aria-label='Variables' }
-
+- The index that denotes which shop item(s) will be discounted.
+- Can be a value from -1 to 5.
+- All items in the room with this index will be affected by the discount.
+    - This is noticeable when there are more than 8 shop items in a room.
+- A value of -1 means there is no discounted item.
+- This value is unaffected by Steam Sale.
+- Defaults to -1 in non-shop rooms.
+- Read only. Cannot be modified directly.
 ___
 ### Shop·Item·Idx {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ShopItemIdx  {: .copyable aria-label='Variables' }
+- The index of the next shop item to add to the room.
+- Can be used as the total number of items in the shop, up to 7 items.
+- Can be a value between 0 and 7.
+- For every 8 items in a shop, this value resets itself to 0.
+    - For example, if a custom shop has 9 items, the 1st and 9th items will share the same index of 0, and the RoomDescriptor ShopItemIdx value will be 1.
+- Defaults to -1 in non-shop rooms.
+- Read only. Cannot be modified directly.
 
+???- note "Notes"
+    - In the image below, each item's index is written underneath it.  
+    - Notice how all items that share an index have the same PickupVariant, but aren't identical.  
+    - ShopItemDiscountIdx is 2, so all shop items with an index of 2 are on sale.  
+    - After all items are created, the ShopItemIdx for this room is 0.  
+    ![ShopItemIdx Example](images/shopItemIdxDiagram.png)  
 ___
 ### Spawn·Seed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -184,7 +204,6 @@ ___
 ### Surprise·Miniboss {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean SurpriseMiniboss  {: .copyable aria-label='Variables' }
-
 ___
 ### Visited·Count {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
