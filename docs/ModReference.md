@@ -82,6 +82,8 @@ ___
 
     mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.preGameExit)
     ```
+
+- Note that for security reasons, the game only allows you to write data to these three files. If you want to write data to arbitrary files, you have to use the `--luadebug` flag, which will enable the Lua standard library.
 ___
 ## Variables
 ### Name {: aria-label='Variables' }
