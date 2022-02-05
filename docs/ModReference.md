@@ -58,22 +58,28 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SaveData ( string data ) {: .copyable aria-label='Functions' }
 
-Stores a string in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.
-There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
+- Stores a string in a "saveX.dat" file. The stored data persists between runs and between game launches.
+- The filename will be either "save1.dat", "save2.dat", or "save3.dat", depending on which save file slot the user is playing on.
+- The file will be located in the "data" directory. For example: `C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\data\foo\save1.dat`
+- Since mods will often have to store more than a single variable, it is recommended to store all persistent variables for your mod in a Lua table, and then convert the table to a JSON string before using this function.
 
 ???- example "Example Code"
     This code uses JSON to convert a table into a string, and saves it in the "saveX.dat" file.
     ```lua
-    local yourMod = RegisterMod("someMod", 1)
+    local mod = RegisterMod("myMod", 1)
     local json = require("json")
-    -- ...
-    --Saving Moddata--
-    function yourMod:SaveGame()
-        local table= {1,2,3}
-        yourMod:SaveData(json.encode(table))
-    end
-    yourMod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.SaveGame)
 
+    local persistentData = {
+      foo = 1,
+      bar = 2,
+    }
+
+    function mod:preGameExit()
+      local jsonString = json.encode(persistentData)
+      mod:SaveData(jsonString)
+    end
+
+    mod:AddCallback(ModCallbacks.MC_PRE_GAME_EXIT, yourMod.preGameExit)
     ```
 ___
 ## Variables
