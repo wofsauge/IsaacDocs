@@ -66,8 +66,9 @@ ___
 ???- example "Example Code"
     This code uses JSON to convert a table into a string, and saves it in the "saveX.dat" file.
     ```lua
-    local mod = RegisterMod("myMod", 1)
     local json = require("json")
+
+    local mod = RegisterMod("myMod", 1)
 
     local persistentData = {
       foo = 1,
