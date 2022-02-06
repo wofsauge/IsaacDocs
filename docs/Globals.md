@@ -218,7 +218,3 @@ The following global variables are added:
 - io
 - os
 - package
-
-The following global variables are removed:
-
-- include
