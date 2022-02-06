@@ -158,6 +158,7 @@ This is a list of every global variable that is available in the Lua environment
 - SeedEffect
 - Seeds
 - ShockwaveParams
+- SkinColor
 - SortingLayer
 - SoundEffect
 - Sprite
