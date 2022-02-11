@@ -8,23 +8,28 @@ If you want to load an additional .lua file besides your main.lua file, you can 
 
 ```lua
 -- main.lua
-local foo = require("foo")
+local printHelpers = require("printHelpers")
 
-foo:bar() -- Prints "hello"
+printHelpers:printHello() -- Prints "Hello!"
+printHelpers:printGoodbye() -- Prints "Goodbye!"
 ```
 
 ```lua
--- foo.lua
-local foo = {}
+-- printHelpers.lua
+local printHelpers = {}
 
-function foo:bar()
-  print("hello")
+function printHelpers:printHello()
+  print("Hello!")
 end
 
-return foo
+function printHelpers:printGoodbye()
+  print("Goodbye!")
+end
+
+return printHelpers
 ```
 
-Here, "foo" is a Lua *module* that provides variables and methods. It's also possible to return functions or primitive values, but conventionally Lua modules always return a table.
+Here, "printHelpers" is a Lua *module* that provides variables and methods. It's also possible to return functions or primitive values, but conventionally Lua modules always return a table.
 
 One important aspect of `require` is that when it is used, it caches the result. Thus, when a file is required in two different places in the code, it will execute all the code normally on the first require, and then return a reference to the module on the second require. (This default behavior makes sense, because there is no need to execute the same code over and over.)
 
