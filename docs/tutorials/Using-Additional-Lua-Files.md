@@ -8,20 +8,22 @@ If you want to load an additional .lua file besides your main.lua file, you can 
 
 ```lua
 -- main.lua
-local foo = require("foo")
 
-foo:bar() -- Prints "hello"
+local foo = require("foo") -- loads the "foo.lua" file and saves its return value into the variable "foo"
+
+foo:bar() -- Calls the function "bar()" of the foo object. Here, it will print "hello"
 ```
 
 ```lua
 -- foo.lua
-local foo = {}
 
-function foo:bar()
+local foo = {} -- creates a table that will be returned later
+
+function foo:bar() -- Defines the function "bar()" and adds it to the "foo" table
   print("hello")
 end
 
-return foo
+return foo -- returns the "foo" table to let it be accessed by the file which calls "require()"
 ```
 
 Here, "foo" is a Lua *module* that provides variables and methods. It's also possible to return functions or primitive values, but conventionally Lua modules always return a table.
@@ -33,7 +35,7 @@ One important aspect of `require` is that when it is used, it caches the result.
 Unlike other programming languages, it is conventional in Lua to use a period as a path separator. For example, if you wanted to import a file called `bar.lua` in a subdirectory called `foo`, you would use the following `require` statement:
 
 ```lua
-local bar = require("foo.bar")
+local bar = require("foo.bar") -- loads file from path "/foo/bar.lua"
 ```
 
 ### The `luamod` Problem With `require`
