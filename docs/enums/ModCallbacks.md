@@ -67,7 +67,7 @@ If a table is returned instead of a boolean, the following fields can be set to 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](CollectibleType.md),<br>[RNG](../RNG.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlag](UseFlag.md),<br>[ActiveSlot](ActiveSlot.md),<br>CustomVarData [int])|[CollectibleType](CollectibleType.md) |
+|[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](CollectibleType.md),<br>[RNG](../RNG.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlags](UseFlag.md) [int],<br>[ActiveSlot](ActiveSlot.md),<br>CustomVarData [int])|[CollectibleType](CollectibleType.md) |
 
 ### MC_POST_PEFFECT_UPDATE {: .copyable }
 Called for each player, each frame, after the player evaluates the effects of items that must be constantly evaluated.
@@ -85,7 +85,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|5 |MC_USE_CARD {: .copyable } | ([Card](Card.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlag](UseFlag.md)|[Card](Card.md) |
+|[ ](#){: .abrep .tooltip .badge }|5 |MC_USE_CARD {: .copyable } | ([Card](Card.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlags](UseFlag.md) [int]|[Card](Card.md) |
 
 ### MC_FAMILIAR_UPDATE {: .copyable }
 Called every frame for each familiar.
@@ -141,7 +141,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|10 |MC_USE_PILL {: .copyable } | ([PillEffect](PillEffect.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlag](UseFlag.md))|[PillEffect](PillEffect.md) |
+|[ ](#){: .abrep .tooltip .badge }|10 |MC_USE_PILL {: .copyable } | ([PillEffect](PillEffect.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlags](UseFlag.md) [int])|[PillEffect](PillEffect.md) |
 
 ### MC_ENTITY_TAKE_DMG {: .copyable }
 Called before new damage is applied.
@@ -155,10 +155,10 @@ Return true or nil if the entity or player should sustain the damage, otherwise 
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (TookDamage [[Entity](../Entity.md)],<br>DamageAmount [float],<br>[DamageFlag](DamageFlag.md),<br>DamageSource [[EntityRef](../EntityRef.md)],<br>DamageCountdownFrames [int])|[EntityType](EntityType.md) |
+|[ ](#){: .abrep .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (TookDamage [[Entity](../Entity.md)],<br>DamageAmount [float],<br>[DamageFlags](DamageFlag.md) [int],<br>DamageSource [[EntityRef](../EntityRef.md)],<br>DamageCountdownFrames [int])|[EntityType](EntityType.md) |
 
 ### MC_POST_CURSE_EVAL {: .copyable }
-Curses is a bitmask containing current curses. Called after the current Level applied it's curses. Returns the new curse bitmask. Use Isaac.GetCurseIdByName() to get the curseID.
+Curses is a bitmask containing current [curses](LevelCurse.md). Called after the current Level applied it's curses. Returns the new curse bitmask. Use `Isaac.GetCurseIdByName()` to get the curseID.
 
 If a number is returned, it will be the "Curses" arg for later executed callbacks.
 
@@ -170,7 +170,7 @@ If a number is returned, it will be the "Curses" arg for later executed callback
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|12 |MC_POST_CURSE_EVAL {: .copyable } | (Curses) | - |
+|[ ](#){: .abrep .tooltip .badge }|12 |MC_POST_CURSE_EVAL {: .copyable } | ([Curses](LevelCurse.md) [int]) | - |
 
 ### MC_INPUT_ACTION {: .copyable }
 It is called when game/game entities wants to read an action input.
@@ -349,7 +349,7 @@ Return true to prevent the default code of an item to be triggered. This will st
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](CollectibleType.md),<br>[RNG](../RNG.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlag](UseFlag.md),<br>[ActiveSlot](ActiveSlot.md),<br>CustomVarData [int])|[CollectibleType](CollectibleType.md) |
+|[ ](#){: .abrep .tooltip .badge }|23 |MC_PRE_USE_ITEM {: .copyable } | ([CollectibleType](CollectibleType.md),<br>[RNG](../RNG.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlags](UseFlag.md) [int],<br>[ActiveSlot](ActiveSlot.md),<br>CustomVarData [int])|[CollectibleType](CollectibleType.md) |
 
 ### MC_PRE_ENTITY_SPAWN {: .copyable }
 Called right before an entity is spawned.
