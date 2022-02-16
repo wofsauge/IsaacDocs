@@ -1,12 +1,18 @@
 # Tutorial: DebugConsole
-**To access the debug console, at least 1 mod must be enabled.**
 
-If you don't have any mods to enable, download one from Steam Workshop, or create an empty folder in your mods.
+## Prerequisites
 
-**On repentance you also need to edit "C:\Users\%USERNAME%\Documents\My Games\Binding of Isaac Repentance\options.ini".**
-Make sure the game is closed then replace `EnableDebugConsole=0` with `EnableDebugConsole=1`.
+To access the debug console, you must have the `EnableDebugConsole` option enabled in your options.ini file. By default, this is located at:
 
-**To show the console**, while in a run press the grave/tilde (`~) key. On english (American) keyboardlayouts, it should be below Esc.
+```
+C:\Users\%USERNAME%\Documents\My Games\Binding of Isaac Repentance\options.ini
+```
+
+(Make sure the game is closed when you edit this file.)
+
+## Enabling
+
+**To show the console**, while in a run press the grave (`) or tilde (~) key. On most English keyboard layouts, it should be below Esc.
 
 |Language|Keyboard|Key|
 |--- |--- |--- |
