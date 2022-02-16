@@ -25,7 +25,11 @@ C:\Users\%USERNAME%\Documents\My Games\Binding of Isaac Repentance\options.ini
 |Danish|QWERTY|æ|
 |Portuguese|QWERTY|ç|
 
+## Hiding
+
 **To hide the console**, just hit Enter without typing anything. **Beware of spoilers!** You can easily learn things accidentally via the debug console that you might have wanted to learn from regular gameplay!
+
+## Description
 
 The debug console is a feature of Isaac that's been around since Rebirth, but until AB+ it's only been enabled in developer builds. Now modders can finally unleash its power! It can be a big time saver for testing your changes during development of mods.
 
