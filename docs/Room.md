@@ -95,6 +95,16 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBrokenWatchState ( ) {: .copyable aria-label='Functions' }
 
+Returns whether the room is slowed down, sped up or neither.
+
+???+ note Notes
+    Return values:
+
+    **0**: Room is neither slowed down nor sped up
+
+    **1**: Room is slowed down, either because of the Broken Watch or because of the I'm Drowsy pill
+
+    **2**: Room is sped up, either because of the Broken Watch or because of the I'm Excited!!! pill
 ___
 ### Get·Center·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -387,6 +397,12 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasSlowDown ( ) {: .copyable aria-label='Functions' }
 
+Returns whether the room is currently under the effect of the I'm Drowsy pill or not. The function will also return `true` if a call to [SetSlowDown](#setslowdown) was performed earlier and the specified `Duration` has not yet expired.
+
+Note that this function will return `false` if the effect of the I'm Drowsy pill was triggered through the Broken Watch. To check for that scenario, use the [GetBrokenWatchState](#getbrokenwatchstate) function.
+
+This function will also return `false` if the player is under the effect of the Stop Watch. To check for that scenario, check whether or not the player has the Stop Watch in their posession.
+
 ___
 ### Has·Trigger·Pressure·Plates () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -533,6 +549,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetBrokenWatchState ( int State ) {: .copyable aria-label='Functions' }
 
+Speed up, slow down or remove either of these states from the current room. See the notes section in [GetBrokenWatchState](#getbrokenwatchstate) for the different values of `State`.
+
 ___
 ### Set·Card·Against·Humanity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -587,6 +605,13 @@ ___
 ### Set·Slow·Down () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSlowDown ( int Duration ) {: .copyable aria-label='Functions' }
+
+Apply a slow down effect for `Duration` logic frames (there are 30 logic frames per second). 
+
+Using a negative `Duration` will not do anything at all, instead of making the slow down permanent as one might expect.
+
+???+ bug Bugs
+    This function will only apply a slow down effect on the player and not on all entities of the room. If you want to apply a slow down effect on all entities in the room, consider using [SetBrokenWatchState](#setbrokenwatchstate) with a `State` of `1` and add a timer to your script in order to count the elapsed frames.
 
 ___
 ### Set·Wall·Color () {: aria-label='Functions' }
