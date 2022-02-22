@@ -512,10 +512,12 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItemConfigItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
 
-Call this in the PostPEffectUpdate callback to spawn the appropriate amount of familiars associated with a custom collectible.
+Call this method to spawn the appropriate amount of familiars associated with a custom collectible.
 
 - If the target count specified is less than the current amount of familiars, it will spawn more until the target count is met.
 - If the target count specified is than the current amount of familiars, it will despawn familiars until the target count is met.
+
+This is meant to be called in the EvaluateCache callback (when the cache flag is equal to `CacheFlag.CACHE_FAMILIARS`).
 
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 
