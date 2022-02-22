@@ -523,7 +523,7 @@ Call this in the PostPEffectUpdate callback to spawn the appropriate amount of f
 
 **rng**: In most cases, use the RNG object returned from `EntityPlayer.GetCollectibleRNG()`.
 
-**SourceItemConfigItem**: The ItemConfigItem that this familiar was created by.
+**SourceItemConfigItem**: The ItemConfigItem that this familiar was created by. This is optional and not needed in most cases.
 
 **FamiliarSubType**: The subtype of the familiar to check. -1 matches any subtype.
 
