@@ -278,19 +278,31 @@ Returns the PillEffectID based on its name. (File: pocketitems.xml) Returns `-1`
 ___
 ### Get·Player () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityPlayer](EntityPlayer.md) GetPlayer ( int playerId = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+#### [EntityPlayer](EntityPlayer.md) GetPlayer ( int playerID = 0 ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the EntityPlayer which the user is controlling. 0 = Main player. Higher numbers refer to coop players or babies. If an index is given, that is not used, it will return the last player in the list.
+Returns the EntityPlayer that matches the provided player ID. Player IDs start at 0 and increment upwards. For example, when playing as Jacob & Esau, Jacob will have a player ID of 0 and Esau will have a player ID of 1.
 
-This function can return `nil` if the function is called before any player is initialized.
+If an invalid player ID is passed (such as -20 or 20), the function will instead assume a player index of 0.
+
+This function can return `nil` if the function is called before any player is initialized (i.e. when you call it in the main menu).
 
 This function is the same as [`Game():GetPlayer()`](Game.md#getplayer).
 
 ???- example "Example Code"
 
     ```lua
-    Isaac.GetPlayer(0)
+    local function getPlayers()
+      local game = Game()
+      local numPlayers = game:GetNumPlayers()
 
+      local players = {}
+      for i = 0, numPlayers do
+        local player = Isaac.GetPlayer(i)
+        table.insert(players, player)
+      end
+
+      return players
+    end
     ```
 
 ___
