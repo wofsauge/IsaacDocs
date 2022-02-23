@@ -284,7 +284,7 @@ Returns the EntityPlayer that matches the provided player ID. Player IDs start a
 
 If an invalid player ID is passed (such as -20 or 20), the function will instead assume a player index of 0.
 
-This function can return `nil` if the function is called before any player is initialized (i.e. when you call it in the main menu).
+This function can return `nil` if it is called before any player is initialized (i.e. if you call it in the main menu).
 
 This function is the same as [`Game():GetPlayer()`](Game.md#getplayer).
 
