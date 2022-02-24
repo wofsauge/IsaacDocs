@@ -1312,7 +1312,7 @@ ___
 ### Is·Sub·Player () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsSubPlayer ( ) {: .copyable aria-label='Functions' }
-Returns true for The Soul. Otherwise, returns false. (This method is not related to multiplayer.)
+Returns true if the player object was returned from the `EntityPlayer.GetSubPlayer` method. (This method is not related to multiplayer.)
 ___
 ### Needs·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
