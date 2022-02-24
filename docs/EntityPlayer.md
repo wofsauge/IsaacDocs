@@ -519,6 +519,10 @@ Call this method to spawn the appropriate amount of familiars associated with a 
 
 This is meant to be called in the EvaluateCache callback (when the cache flag is equal to `CacheFlag.CACHE_FAMILIARS`).
 
+Note that this function is bugged in that it will not increment the provided RNG, which will result in all spawned familiars having the same InitSeed. You can work around this by providing a new `RNG()` object (instead of the object provided by the `EntityPlayer.GetCollectibleRNG()`). However, this is not a good workaround because it will result in non-seeded randomness. For a proper solution:
+- [IsaacScript](https://isaacscript.github.io/) users should use the [`checkFamiliar`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliar) or [`checkFamiliarFromCollectibles`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliarFromCollectibles) functions from the standard library instead.
+- Lua users should code [a function like this](https://github.com/IsaacScript/isaacscript-common/blob/f791f59/src/functions/familiars.ts#L4-L58) from scratch.
+
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 
 **TargetCount**: See the explanation above. In most cases, use the collectible count for the custom collectible.
