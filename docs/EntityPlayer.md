@@ -504,8 +504,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void ChangePlayerType ( [PlayerType](enums/PlayerType.md) PlayerType ) {: .copyable aria-label='Functions' }
 ???+ bug "Bugs"
-	Changing to Tainted Forgotten will result in no Tainted Soul appearing
-	Changing to Tainted Lazarus will result in player only having one form
+	Changing to Tainted Forgotten will result in no Tainted Soul appearing.
+	Changing to Tainted Lazarus will result in player only having one form (because they won't have a Flip pocket item).
 
 ___
 ### Check·Familiar () {: aria-label='Functions' }
