@@ -18,6 +18,7 @@ This page needs some content. You can contribute to it using the Edit Button!
 |armor|int|Starting soul hearts (1 = half soul heart)|
 |black|int|Starting  black hearts (1 = half black heart)|
 |items|int|Starting item ID (can separate with a comma to add more than one)|
+|trinket|int|Starting trinket ID|
 |costume|int||
 |costumeSuffix|string||
 |bombs|int|Starting bombs|
