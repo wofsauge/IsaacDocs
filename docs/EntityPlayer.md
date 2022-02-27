@@ -754,6 +754,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int GetBrokenHearts ( ) {: .copyable aria-label='Functions' }
 
+Returns the amount of broken hearts that the player has. This is not doubled like the `EntityPlayer.GetMaxHearts` method is, so if e.g. the player has 3 broken hearts, this will return 3.
+
 ___
 ### Get·Card () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
