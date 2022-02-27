@@ -25,8 +25,9 @@ Adds a burn effect to an enemy. `Duration` is in number of frames. `Damage` is t
     This code damages every entity in the room for 1 second with the damage source set to the player. The total damage dealt is 1.
 
     ```lua
-    local player =Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddBurn(EntityRef(player), 30, 1)
     end
     ```
