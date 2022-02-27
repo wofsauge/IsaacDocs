@@ -45,8 +45,9 @@ Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enem
     This code charms every entity in the room for 1 second.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs() do
     	entity:AddCharmed(EntityRef(player), 30)
     end
     ```
@@ -65,8 +66,9 @@ Adds a confusion effect to an entity.
     This code confuses every entity in the room for 1 second while ignoring bosses.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddConfusion(EntityRef(player), 30, true)
     end
     ```
@@ -82,8 +84,9 @@ Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add spec
     This code adds slowing and confusion to the enetity.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddEntityFlags(EntityFlag.FLAG_SLOW | EntityFlag.FLAG_CONFUSION)
     end
     ```
@@ -101,8 +104,9 @@ Adds a fear-effect to an entity.
     This code frightens every entity in the room for 1 second.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddFear(EntityRef(player), 30)
     end
     ```
@@ -121,8 +125,9 @@ Freezes an entity, making it unable to move and attack.
     This code freezes every entity in the room for 1 second.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddFreeze(EntityRef(player), 30)
     end
     ```
@@ -148,8 +153,9 @@ Turns the entity into a gold statue (can't move, can't attack, drops coins when 
     This code turns every entity in the room into gold for 1 second.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddMidasFreeze(EntityRef(player), 30)
     end
     ```
@@ -179,8 +185,9 @@ Adds a poison effect to the entity.
     This code applies a poison effect to every entity in the room for 1 second.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddPoison(EntityRef(player), 30, 1)
     end
     ```
@@ -198,8 +205,9 @@ Adds a shrink effect to the entity.
     This code shrinks every entity in the room for 1 second.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local player = Isaac.GetPlayer()
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddShrink(EntityRef(player), 30)
     end
     ```
@@ -213,9 +221,10 @@ Makes the friction higher effectively slowing down the entity.
     This code slows every entity in the room for 1 second with 0.5 original speed and applying a red color to it.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local slowColor = Color(1, 0, 0, 1, 0, 0, 0)
-    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+    local entities = Isaac.GetRoomEntities()
+    for i, entity in ipairs(entities) do
     	entity:AddSlowing(EntityRef(player), 30, 0.5, slowColor)
     end
     ```
