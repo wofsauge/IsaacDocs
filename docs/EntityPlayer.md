@@ -739,15 +739,10 @@ ___
 ### Get·Bone·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBoneHearts ( ) {: .copyable aria-label='Functions' }
-Returns the number of bone hearts as an integer value. 1 Boneheart = 1.
 
-???- example "Example Code"
-    This code gets the total amount of red heart containers including bone hearts. The bonehearts need to be mulltiplied by 2, since in GetMaxHearts() 2 equals 1 full heart.
+Returns the amount of bone hearts that the player has. This is not doubled like the `EntityPlayer.GetMaxHearts` method is, so if e.g. the player has 3 bone hearts, this will return 3.
 
-    ```lua
-    local player = Isaac.GetPlayer(0)
-    local totalRedHearts = player:GetMaxHearts() + player:GetBoneHearts() * 2
-    ```
+Also see the `EntityPlayer.GetEffectiveMaxHearts` method, which accounts for bone hearts.
 
 ___
 ### Get·Broken·Hearts () {: aria-label='Functions' }
