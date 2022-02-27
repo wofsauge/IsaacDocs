@@ -301,7 +301,7 @@ There are three main problems with `GetData`:
 
 2. Most entities will despawn when leaving the room. For example, even though heart pickups are persisted by the game, they will be despawned and respawned each time the room is left and reentered, respectively. Thus, most entities will have their data deleted upon leaving the room. The exceptions to this are players, familiars, and entities with `EntityFlag.FLAG_PERSISTENT`.
 
-3. Even for entities that don't despawn when you leave a room, `GetData` is still not a suitable storage mechanism because it will be deleted when exiting to the menu or restarting/finishing a run.
+3. Even for entities that don't despawn when you leave a room, `GetData` is still not a suitable storage mechanism because it will be deleted when exiting to the menu or restarting/finishing a run. Well-programmed mods should never lose state when end-users save and quit the game, so instead of programming a `GetData` conversion + serialization routine, it's much simpler to just avoid using it to begin with.
 
 For these reasons, programmers who want their code to be the best that it can be should always avoid using `GetData` in favor of data structures that are local to their own mod (or local to the specific mod feature). The index for such data structures is usually the pointer hash, which can be retrieved for any entity by using the `GetPtrHash` function.
 
