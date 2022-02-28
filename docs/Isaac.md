@@ -331,7 +331,19 @@ ___
 ### Get·Room·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### table GetRoomEntities ( ) {: .copyable aria-label='Functions' }
-Returns a table containing all entities in the room.
+Returns an iterable table containing all entities in the room at the time the function was called.
+
+This behavior is different to [`Room::GetEntities()`](Room.md#getentities), which returns a raw pointer to the array that stores all entities of the room at any given time. **For most usecases, its advised to use [`Isaac.GetRoomEntities()`](Isaac.md#getroomentities)**!
+
+???- example "Example Code"
+    This code prints the Type, Variant and SubType of each entity in the room.
+
+    ```lua
+    for i, entity in ipairs(Isaac.GetRoomEntities()) do
+        print(entity.Type, entity.Variant, entity.SubType)
+    end
+
+    ```
 
 ___
 ### Get·Screen·Height () {: aria-label='Functions' }

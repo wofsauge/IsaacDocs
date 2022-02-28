@@ -106,7 +106,7 @@ Morph the current entity into another one. [ChampionColorIdx](https://bindingofi
 A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
 
 ???+ bug
-    This function can not turn a champion NPC, into a regular entity! for that, use the following code:
+    This function can not turn a champion NPC into a regular NPC! for that, use the following code:
     ```lua
     local previousNPC = entity:ToNPC()
     -- spawn the same entity at the same location as the old one

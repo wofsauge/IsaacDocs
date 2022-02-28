@@ -155,10 +155,22 @@ ___
 ### Get·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityList](CppContainer_EntityList.md) GetEntities ( ) {: .copyable aria-label='Functions' }
+Returns an raw pointer to the array that stores all entities in the current room. Therefore, iterating over the return value will always iterate over the entities present in the room during the current logic frame, regardless of then the initial instance of GetEntities was created.
 
-???+ bug "Bugs"
-    This function is bugged and you should use [Isaac.GetRoomEntities()](Isaac.md#getroomentities) instead!
+This behavior is different to [`Isaac.GetRoomEntities()`](Isaac.md#getroomentities), which returns an iterable table of the entities in the room at the time the function was called. **For most usecases, its advised to use [`Isaac.GetRoomEntities()`](Isaac.md#getroomentities)**!
 
+???- example "Example Code"
+    This code prints the Type, Variant and SubType of each entity in the room.
+
+    ```lua
+    local room = Game():GetRoom()
+    local roomEntities = room:GetEntities()
+    for i = 0, #roomEntities - 1 do
+        local entity = roomEntities:Get(i)
+        print(entity.Type, entity.Variant, entity.SubType)
+    end
+
+    ```
 ___
 ### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -606,7 +618,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSlowDown ( int Duration ) {: .copyable aria-label='Functions' }
 
-Apply a slow down effect for `Duration` logic frames (there are 30 logic frames per second). 
+Apply a slow down effect for `Duration` logic frames (there are 30 logic frames per second).
 
 Using a negative `Duration` will not do anything at all, instead of making the slow down permanent as one might expect.
 
