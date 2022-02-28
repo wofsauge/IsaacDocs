@@ -50,7 +50,9 @@ ___
 ### Set·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSeed ( int Seed, int ShiftIdx ) {: .copyable aria-label='Functions' }
-Set the seed of a given RNG object.
+Set the seed of a given RNG object. Both Seed and ShiftIdx need to be an integer number that is **not** 0. Otherwise it can cause crashes.
+
+Shift index table can be found here: https://gist.github.com/bladecoding/17b341ed08ff94d2deb704ebda8ffc5f
 
 ???+ bug "Bug"
     If the seed of an RNG object is set to 0, the game will crash after invoking a method like `Next()`, `RandomInt()`, etc.
@@ -62,5 +64,4 @@ Set the seed of a given RNG object.
     myRNG:SetSeed(Random(), 1)
     ```
 
-Shift index table can be found here: https://gist.github.com/bladecoding/17b341ed08ff94d2deb704ebda8ffc5f
 ___
