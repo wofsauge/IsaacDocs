@@ -102,13 +102,23 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Morph ( [EntityType](enums/EntityType.md) type, int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
-Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions) can be used to turn the entity into a champion. Use `:::lua -1` to turn it into a regular entity.
+Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions) can be used to turn the entity into a champion. Use `:::lua -1` in order to not add a champion color.
 A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
+
+???+ bug
+    This function can not turn a champion NPC, into a regular entity! for that, use the following code:
+    ```lua
+    local previousNPC = entity:ToNPC()
+    -- spawn the same entity at the same location as the old one
+    Isaac.Spawn(previousNPC.Type, previousNPC.Variant, previousNPC.SubType, previousNPC.Position, previousNPC.Velocity, previousNPC.Parent)
+    -- remove old entity
+    previousNPC:Remove()
+    ```
 
 ???- example "Example Code"
     This code turns an entity into a gaper.
     ```lua
-    entity:ToNPC():Morph(EntityType.ENTITY_GAPER , 0, 0,-1)
+    entity:ToNPC():Morph(EntityType.ENTITY_GAPER, 0, 0, -1)
     ```
 ___
 ### Play·Sound () {: aria-label='Functions' }
