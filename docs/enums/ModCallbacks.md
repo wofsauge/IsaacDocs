@@ -11,13 +11,16 @@ Returning any value will have no effect on later callback executions.
     This callback will NOT fire when the NPC is playing the "Appear" animation. For example, when a Gaper spawns, it will fire on frame 1, then on frame 31 and onwards.
 
 ???- example "Example Code"
-    This code will print "Hello World!" for every NPC Update. If the NPC is of the type "ENTITY_GAPER", it will also print "Gaper found".
+    This code will print "Hello World!" for every NPC Update.
     ```lua
     function mod:myFunction(entity) -- 'entity' contains a reference to the NPC
         print("Hello World!")
     end
     mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction)
+    ```
 
+    This function will only print "Gaper found", if the NPC is of the type "ENTITY_GAPER".
+    ```lua
     function mod:myFunction2(entity) -- 'entity' contains a reference to the NPC
         print("Gaper found!")
     end
@@ -36,6 +39,15 @@ Returning any value will have no effect on later callback executions.
 ???- info "Execution informations"
     This callback is called 30 times per second. It will not be called, when its paused (for example on screentransitions or on the pause menu).
 
+???- example "Example Code"
+    This code will print "Hello World!" for every Game Update.
+    ```lua
+    function mod:myFunction()
+        print("Hello World!")
+    end
+    mod:AddCallback(ModCallbacks.MC_POST_UPDATE, mod.myFunction)
+    ```
+
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|1 |MC_POST_UPDATE {: .copyable } | - | - |
@@ -47,6 +59,15 @@ Returning any value will have no effect on later callback executions.
 
 ???- info  "Execution informations"
     It is highly recommended to only use this function when you want to render something. Its not recommended to use this function for things which are not frequently used or need constant recalculation.
+
+???- example "Example Code"
+    This code will print "Hello World!" everytime the game renders.
+    ```lua
+    function mod:myFunction()
+        print("Hello World!")
+    end
+    mod:AddCallback(ModCallbacks.MC_POST_RENDER, mod.myFunction)
+    ```
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -65,6 +86,23 @@ If a table is returned instead of a boolean, the following fields can be set to 
 * Remove: Determines whether the item should be removed from the player or not after being used
 * ShowAnim: Plays the default use animation if set to true (equivalent to simply returning true in AB+)
 
+???- example "Example Code"
+    This code will print "Hello World!" everytime an active item is used.
+    ```lua
+    function mod:myFunction(collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
+        print("Hello World!")
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_ITEM, mod.myFunction)
+    ```
+
+    This code will only print "D6 used!" when the D6 is used.
+    ```lua
+    function mod:myFunction2(collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
+        print("D6 used!")
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_ITEM, mod.myFunction2, CollectibleType.COLLECTIBLE_D6)
+    ```
+
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|3 |MC_USE_ITEM {: .copyable } | ([CollectibleType](CollectibleType.md),<br>[RNG](../RNG.md),<br>[EntityPlayer](../EntityPlayer.md),<br>[UseFlags](UseFlag.md) [int],<br>[ActiveSlot](ActiveSlot.md),<br>CustomVarData [int])|[CollectibleType](CollectibleType.md) |
@@ -82,6 +120,23 @@ Returning any value will have no effect on later callback executions.
 Called when a card/rune is used.
 
 Returning any value will have no effect on later callback executions.
+
+???- example "Example Code"
+    This code will print "Hello World!" everytime any card is used.
+    ```lua
+    function mod:myFunction(cardID, playerWhoUsedItem, useFlags)
+        print("Hello World!")
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_CARD, mod.myFunction)
+    ```
+
+    This code will only print "Fool card used!" when the Fool card is used.
+    ```lua
+    function mod:myFunction2(cardID, playerWhoUsedItem, useFlags)
+        print("Fool card used!")
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_CARD, mod.myFunction2, Card.CARD_FOOL)
+    ```
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
@@ -138,6 +193,23 @@ Returning any value will have no effect on later callback executions.
 Called when a pill is used.
 
 Returning any value will have no effect on later callback executions.
+
+???- example "Example Code"
+    This code will print "Hello World!" everytime any pill is used.
+    ```lua
+    function mod:myFunction(pillEffectID, playerWhoUsedItem, useFlags)
+        print("Hello World!")
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_CARD, mod.myFunction)
+    ```
+
+    This code will only print "Bad Gas Pill used!" when the Fool pill is used.
+    ```lua
+    function mod:myFunction2(pillEffectID, playerWhoUsedItem, useFlags)
+        print("Bad Gas Pill used!")
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_CARD, mod.myFunction2, PillEffect.PILLEFFECT_BAD_GAS)
+    ```
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
