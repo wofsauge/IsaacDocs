@@ -9,32 +9,32 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 
 | Variable Name | Possible Values | Description |
 |:--|:--|:--|
-| id | int | used for adding costumes to items (don't use ID otherwise!)
-| cache | string | Possible values : [firedelay, damage, speed, range, tearcolor, tearflag, color, size. shotspeed, all, luck, flying, weapon, familiars]
+| id | int | Used for associating costumes and death-portrait/collection-page sprites with an item. |
+| cache | string | Possible values : [firedelay, damage, speed, range, tearcolor, tearflag, color, size. shotspeed, all, luck, flying, weapon, familiars]. |
 | name | string |  |
 | description | string |  |
-| gfx | string | path to the item image |
-| tags | string | multiple tags must be separated with a space; see below for possible values and descriptions |
+| gfx | string | Path to the item image. Must be a .png saved at a bit-depth of 32 bits. |
+| tags | string | Multiple tags must be separated with a space; see below for possible values and descriptions. |
 | bombs | int |  |
 | keys | int |  |
 | coins | int |  |
-| hearts | int | number of healed red hearts |
+| hearts | int | Distinct from MaxHearts, must be granted alongside MaxHearts in order to grant filled heart containers. |
 | soulhearts | int |  |
 | blackhearts | int |  |
-| maxhearts |  | number of added heart containers (not full by default) |
+| maxhearts | int | Number of added empty heart containers. |
 | maxcharges | int | |
 | chargetype | string | Possible values: [normal, timed, special]|
-| cooldown | int | frames duration of the effect |
-| passivecache | bool | calls a cache evaluation when picked up (Ex: mom's box) |
+| cooldown | int | Number of frames until this item's associated CollectibleEffect is auto-removed if granted. CollectibleEffects are automatically granted by active items on use. |
+| passivecache | bool | Calls a cache evaluation when picked up (used for acive items, e.g. Mom's Box). |
 | special | bool |  |
-| initcharge | int | (Example: Everything Jar[ ](#){: .rep .tooltip .badge }) |
+| initcharge | int | How many charges should this active item have when first picked up (e.g. Everything Jar[ ](#){: .rep .tooltip .badge }). |
 | devilprice | int | Possible values: ['1','2'] |
 | shopprice | int |  |
 | addcostumeonpickup | bool |  |
-| persistent | bool | allows the effect to persist between rooms |
-| achievement | int | tie the item to be unlocked by a vanilla achievement |
-| quality | int | Possible values: ['0', '1', '2', '3', '4']
-| hidden | bool | Prevent item from appearing on pedestals (e.g Sumptorium or Bag of Crafting)
+| persistent | bool | Determines whether the item's associated CollectibleEffect is retained when transitioning between rooms, or across save & continue. CollectibleEffects are automatically granted by active items on use. False by default. |
+| achievement | int | Ties the item to be unlocked by a vanilla achievement. |
+| quality | int | Possible values: ['0', '1', '2', '3', '4']. |
+| hidden | bool | Prevents the item from appearing in Death Certificate, or on the collection menu (e.g. Familiar-ItemType Damocles). |
 
 ## Tags Documentation
 
