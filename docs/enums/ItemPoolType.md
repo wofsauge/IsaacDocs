@@ -18,7 +18,7 @@
 |[ ](#){: .abrep .tooltip .badge }|13 |POOL_KEY_MASTER {: .copyable } | keyMaster |  |
 |[ ](#){: .rep .tooltip .badge }|14 |POOL_BATTERY_BUM {: .copyable } | batteryBum |  |
 |[ ](#){: .rep .tooltip .badge }|15 |POOL_MOMS_CHEST {: .copyable } | momsChest |  |
-|[ ](#){: .rep .tooltip .badge }|16 |POOL_GREED_TREASUREL {: .copyable } | greedTreasure |  |
+|[ ](#){: .rep .tooltip .badge }|16 |POOL_GREED_TREASURE {: .copyable } | greedTreasure |  |
 |[ ](#){: .abrep .tooltip .badge }|17 |POOL_GREED_BOSS {: .copyable } | greedBoss |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |POOL_GREED_SHOP {: .copyable } | greedShop |  |
 |[ ](#){: .abrep .tooltip .badge }|19 |POOL_GREED_DEVIL {: .copyable } | greedDevil |  |
