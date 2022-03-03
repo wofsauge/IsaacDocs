@@ -3,10 +3,10 @@
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|-1 |PLAYER_POSSESSOR {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|0 |PLAYER_ISAAC {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 |PLAYER_MAGDALENA {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|1 |PLAYER_MAGDALENE {: .copyable } | (ab+: PLAYER_MAGDALENA) |
 |[ ](#){: .abrep .tooltip .badge }|2 |PLAYER_CAIN {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|3 |PLAYER_JUDAS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|4 |PLAYER_XXX {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|4 |PLAYER_BLUEBABY {: .copyable } | (ab+: PLAYER_XXX) |
 |[ ](#){: .abrep .tooltip .badge }|5 |PLAYER_EVE {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|6 |PLAYER_SAMSON {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|7 |PLAYER_AZAZEL {: .copyable } |  |
@@ -24,10 +24,10 @@
 |[ ](#){: .rep .tooltip .badge }|19 |PLAYER_JACOB {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|20 |PLAYER_ESAU {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|21 |PLAYER_ISAAC_B {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|22 |PLAYER_MAGDALENA_B {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|22 |PLAYER_MAGDALENE_B {: .copyable } | (ab+: PLAYER_MAGDALENA_B) |
 |[ ](#){: .rep .tooltip .badge }|23 |PLAYER_CAIN_B {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|24 |PLAYER_JUDAS_B {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|25 |PLAYER_XXX_B {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|25 |PLAYER_BLUEBABY_B {: .copyable } | (ab+: PLAYER_XXX_B) |
 |[ ](#){: .rep .tooltip .badge }|26 |PLAYER_EVE_B {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|27 |PLAYER_SAMSON_B {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|28 |PLAYER_AZAZEL_B {: .copyable } |  |
