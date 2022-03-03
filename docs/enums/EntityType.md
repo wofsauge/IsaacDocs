@@ -5,7 +5,7 @@
 |[ ](#){: .abrep .tooltip .badge }|1 |ENTITY_PLAYER {: .copyable } | 1 player |
 |[ ](#){: .abrep .tooltip .badge }|2 |ENTITY_TEAR {: .copyable } | 2 tear projectile |
 |[ ](#){: .abrep .tooltip .badge }|3 |ENTITY_FAMILIAR {: .copyable } | 3 familiar |
-|[ ](#){: .abrep .tooltip .badge }|4 |ENTITY_BOMBDROP {: .copyable } | 4 bomb drop |
+|[ ](#){: .rep .tooltip .badge }|4 |ENTITY_BOMB {: .copyable } | 4 bomb drop (ab+: ENTITY_BOMBDROP) |
 |[ ](#){: .abrep .tooltip .badge }|5 |ENTITY_PICKUP {: .copyable } | 5 pickup item |
 |[ ](#){: .abrep .tooltip .badge }|6 |ENTITY_SLOT {: .copyable } | 6 slot machine |
 |[ ](#){: .abrep .tooltip .badge }|7 |ENTITY_LASER {: .copyable } | 7 laser beam |
@@ -32,7 +32,7 @@
 |[ ](#){: .abrep .tooltip .badge }|28 |ENTITY_CHUB {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|29 |ENTITY_HOPPER {: .copyable } | 29 enemy: Hopper |
 |[ ](#){: .abrep .tooltip .badge }|30 |ENTITY_BOIL {: .copyable } | 30 enemy: Boil, variants: 1 - Gut, 2 - Sack |
-|[ ](#){: .abrep .tooltip .badge }|31 |ENTITY_SPITY {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|31 |ENTITY_SPITTY {: .copyable } | (ab+: ENTITY_SPITY) |
 |[ ](#){: .abrep .tooltip .badge }|32 |ENTITY_BRAIN {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|33 |ENTITY_FIREPLACE {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|34 |ENTITY_LEAPER {: .copyable } |  |
