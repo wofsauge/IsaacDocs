@@ -5,7 +5,7 @@
 |[ ](#){: .abrep .tooltip .badge }|1 |ENTITY_PLAYER {: .copyable } | 1 player |
 |[ ](#){: .abrep .tooltip .badge }|2 |ENTITY_TEAR {: .copyable } | 2 tear projectile |
 |[ ](#){: .abrep .tooltip .badge }|3 |ENTITY_FAMILIAR {: .copyable } | 3 familiar |
-|[ ](#){: .rep .tooltip .badge }|4 |ENTITY_BOMB {: .copyable } | 4 placed bomb (ab+: ENTITY_BOMBDROP) |
+|[ ](#){: .rep .tooltip .badge }|4 |ENTITY_BOMB {: .copyable } | 4 bomb drop (ab+: ENTITY_BOMBDROP) |
 |[ ](#){: .abrep .tooltip .badge }|5 |ENTITY_PICKUP {: .copyable } | 5 pickup item |
 |[ ](#){: .abrep .tooltip .badge }|6 |ENTITY_SLOT {: .copyable } | 6 slot machine |
 |[ ](#){: .abrep .tooltip .badge }|7 |ENTITY_LASER {: .copyable } | 7 laser beam |
