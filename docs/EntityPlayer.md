@@ -503,9 +503,19 @@ ___
 ### Change·Player·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ChangePlayerType ( [PlayerType](enums/PlayerType.md) PlayerType ) {: .copyable aria-label='Functions' }
+Used to change one player into another player type. For example turning Cain into Maggy.
+
+Changing the player type within MC_POST_PLAYER_INIT will result in the player getting the default items for that character. E.g. Maggy will get her Yum Heart without you having to explicitly add it. Exceptions here include unlockable items (e.g. Isaac's D6) and default numbers of hearts/keys/bombs/coins. You can change the player type after init, but then you're generally responsible for adding any items you might associate with that character.
+
+Changing the player Type into Jacob will also spawn Esau.
+
+Changing the player into Lilith will not spawn the Incubus. You need to call [`RespawnFamiliars()`](#respawnfamiliars) on the next available MC_POST_PEFFECT_UPDATE to spawn it in.
+
+In some cases, you need to give a secondary character health otherwise it won't show up. E.g. The Soul won't show up with The Forgotten unless you explicitly give it some health. You can get a reference to The Soul with [`GetSubPlayer()`](#getsubplayer).
+
 ???+ bug "Bugs"
 	Changing to Tainted Forgotten will result in no Tainted Soul appearing.
-	Changing to Tainted Lazarus will result in player only having one form (because they won't have a Flip pocket item).
+	Changing to Tainted Lazarus will result in player only having one form (because they won't have the Flip pocket item).
 
 ___
 ### Check·Familiar () {: aria-label='Functions' }
@@ -1035,6 +1045,7 @@ ___
 - When called on Esau, returns Jacob.
 - When called on Tainted Forgotten, returns Tainted Forgotten's Soul.
 - When called on Tainted Forgotten's Soul, returns Tainted Forgotten.
+- When called on Tainted Lazarus, it will only return the Flip Lazarus, if the player has the Birthright item. Otherwise it return nil.
 - When called on any other character, returns nil.
 ___
 ### Get·Pill () {: aria-label='Functions' }
@@ -1430,12 +1441,13 @@ ___
 ### Respawn·Familiars () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RespawnFamiliars ( ) {: .copyable aria-label='Functions' }
+Respawns all familiars associated to the player.
 
 ___
 ### Revive () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Revive ( ) {: .copyable aria-label='Functions' }
-revive player
+Revives the player.
 ___
 ### Set·Active·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
