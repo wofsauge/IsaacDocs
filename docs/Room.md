@@ -24,7 +24,7 @@ Returns 2 values:
 
     **0** : makes the line check collide with anything that impedes ground movement
 
-    **1** : is a cheaper version of 0, but is not as reliable
+    **1** : is a cheaper version of 0, but is not as reliable (For example, can return true if line of sight can be gained between diagonally adjacent rocks)
 
     **2** : is used for explosions, it only collides with walls and indestructible blocks
 
