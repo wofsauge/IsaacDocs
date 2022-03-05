@@ -4,7 +4,7 @@ The `Options` class represents the values contained within the user's `options.i
 
 Note that mods have free reign to modify these values, so it is possible for a mod to e.g. change the volume to max and play sound effects. Please use this class responsibly.
 
-The `Options` class is a singelton that is exposed as a global variable. Thus, you can directly get and set values in the class without having to do anything first:
+The `Options` class is a singleton that is exposed as a global variable. Thus, you can directly get and set values in the class without having to do anything first:
 
 ```lua
 local bulletVisibility = Options.BulletVisibility -- "bulletVisibility" is now set to true or false
