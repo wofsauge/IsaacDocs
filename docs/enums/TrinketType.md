@@ -192,5 +192,5 @@
 |[ ](#){: .rep .tooltip .badge }|188 |TRINKET_ICE_CUBE {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|189 |TRINKET_SIGIL_OF_BAPHOMET {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|190 |NUM_TRINKETS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|0x8000 |TRINKET_GOLDEN_FLAG {: .copyable } | 32768 Used for Golden Trinkets |
-|[ ](#){: .rep .tooltip .badge }|0x7fff |TRINKET_ID_MASK {: .copyable } | 32767 |
+|[ ](#){: .rep .tooltip .badge }|1 << 15 |TRINKET_GOLDEN_FLAG {: .copyable } | 32768 Used for Golden Trinkets |
+|[ ](#){: .rep .tooltip .badge }|(1 << 15) - 1 |TRINKET_ID_MASK {: .copyable } | 32767 |
