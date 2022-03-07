@@ -95,12 +95,24 @@ If a table is returned instead of a boolean, the following fields can be set to 
     mod:AddCallback(ModCallbacks.MC_USE_ITEM, mod.myFunction)
     ```
 
-    This code will only print "D6 used!" when the D6 is used.
+    This code showcases how the return value can be used to alter the behavior of the item usage. Here, it will cause the item to not discharge, not be removed on use and not show the use animation.
     ```lua
     function mod:myFunction2(collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
+        return {
+            Discharge = false,
+            Remove = false,
+            ShowAnim = false,
+        }
+    end
+    mod:AddCallback(ModCallbacks.MC_USE_ITEM, mod.myFunction2)
+    ```
+
+    This code will only print "D6 used!" when the D6 is used.
+    ```lua
+    function mod:myFunction3(collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
         print("D6 used!")
     end
-    mod:AddCallback(ModCallbacks.MC_USE_ITEM, mod.myFunction2, CollectibleType.COLLECTIBLE_D6)
+    mod:AddCallback(ModCallbacks.MC_USE_ITEM, mod.myFunction3, CollectibleType.COLLECTIBLE_D6)
     ```
 
 |DLC|Value|Name|Function Args| Optional Args|
