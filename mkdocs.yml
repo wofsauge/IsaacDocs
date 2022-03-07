@@ -4,16 +4,16 @@ nav:
     - Docs:
         - Home: index.md
         - "Last visited":
-            - "1": PLACEHOLDER.md
-            - "2": PLACEHOLDER.md
-            - "3": PLACEHOLDER.md
-            - "4": PLACEHOLDER.md
-            - "5": PLACEHOLDER.md
-            - "6": PLACEHOLDER.md
-            - "7": PLACEHOLDER.md
-            - "8": PLACEHOLDER.md
-            - "9": PLACEHOLDER.md
-            - "10": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
         - "Frequently used":
             - "Isaac.": Isaac.md
             - "Entity": Entity.md
