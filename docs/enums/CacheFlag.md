@@ -5,7 +5,7 @@
 
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|1 |CACHE_DAMAGE {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 0 |CACHE_DAMAGE {: .copyable } | |
 |[ ](#){: .abrep .tooltip .badge }|1 << 1 |CACHE_FIREDELAY {: .copyable } | |
 |[ ](#){: .abrep .tooltip .badge }|1 << 2 |CACHE_SHOTSPEED {: .copyable } | |
 |[ ](#){: .abrep .tooltip .badge }|1 << 3 |CACHE_RANGE {: .copyable } | |
