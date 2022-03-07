@@ -125,6 +125,8 @@ ___
 #### float MusicVolume  {: .copyable aria-label='Variables' }
 0-1
 
+Attempting to set this to anything other than 0 or 1 will result in a bugged value. Thus, mods should never set this, lest they permanently blow away the end-user's previous setting.
+
 ___
 ### Pause·On·Focus·Lost {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
@@ -145,6 +147,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### float SFXVolume  {: .copyable aria-label='Variables' }
 0-1
+
+Attempting to set this to anything other than 0 or 1 will result in a bugged value. Thus, mods should never set this, lest they permanently blow away the end-user's previous setting.
 
 ___
 ### Use·Borderless·Fullscreen {: aria-label='Variables' }
