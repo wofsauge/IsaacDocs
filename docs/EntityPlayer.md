@@ -368,7 +368,7 @@ ___
 #### [EntityFamiliar](EntityFamiliar.md) AddWisp ( [CollectibleType](enums/CollectibleType.md) Collectible, [Vector](Vector.md) Position, boolean AdjustOrbitLayer = false, boolean DontUpdate = false ) {: .copyable aria-label='Functions' }
 The type of Wisp can be defined with the Collectible. If the ID is not corresponding to an active item with a special wisp, it will default to the regular blue wisp.
 
-To access special wisp variant like Delirious forms, you need to add `65536`(1<<16) to the id. Example: Delirious Monstro has `id = s14`, so the wisps id is `65550`.
+To access special wisp variant like Delirious forms, you need to add `65536` (1 << 16) to the id. Example: Delirious Monstro has `id = s14`, so the wisps id is `65550`.
 
 ___
 ### Animate·Appear () {: aria-label='Functions' }
