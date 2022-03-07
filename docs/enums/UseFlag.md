@@ -5,7 +5,7 @@
 
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .rep .tooltip .badge }|1 |USE_NOANIM {: .copyable } | Don't play use animations |
+|[ ](#){: .rep .tooltip .badge }|1 << 0 |USE_NOANIM {: .copyable } | Don't play use animations |
 |[ ](#){: .rep .tooltip .badge }|1 << 1 |USE_NOCOSTUME {: .copyable } | Don't add costume |
 |[ ](#){: .rep .tooltip .badge }|1 << 2 |USE_OWNED {: .copyable } | Effect was triggered by an active item owned by the player |
 |[ ](#){: .rep .tooltip .badge }|1 << 3 |USE_ALLOWNONMAIN {: .copyable } | Allow the effect to trigger on non-main players (i.e. coop babies) |
