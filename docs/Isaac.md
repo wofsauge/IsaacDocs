@@ -418,13 +418,14 @@ Spawn a [GridEntity](GridEntity.md) at the given position (world coordinates).
 ???+ bug "Bugs"
     The "forced" argument has no effect and will **not** override the grid entity at the given location. Instead, remove the grid entity at the given location if nessesary before spawning something on top of it.
 
-    ```lua
-    -- Spawn a super secret rock in the center of the room
-    local game = Game()
-    local room = game:GetRoom()
-    local centerPos = room:GetCenterPos()
-    Isaac.GridSpawn(GridEntityType.GRID_ROCK-SS, 0, centerPos, true)
-    ```
+For example, to spawn a super secret rock in the center of the room:
+
+```lua
+local game = Game()
+local room = game:GetRoom()
+local centerPos = room:GetCenterPos()
+Isaac.GridSpawn(GridEntityType.GRID_ROCK-SS, 0, centerPos, true)
+```
 
 ___
 ### Has·Mod·Data () {: aria-label='Functions' }
