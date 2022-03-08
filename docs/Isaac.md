@@ -427,7 +427,7 @@ For example, to spawn a super secret rock in the center of the room:
 local game = Game()
 local room = game:GetRoom()
 local centerPos = room:GetCenterPos()
-Isaac.GridSpawn(GridEntityType.GRID_ROCK-SS, 0, centerPos, true)
+Isaac.GridSpawn(GridEntityType.GRID_ROCK_SS, 0, centerPos, true)
 ```
 
 ___
