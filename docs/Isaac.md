@@ -1,9 +1,12 @@
 # Class "Isaac"
 
 ???+ info
-    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!**
+    **When accessing the methods of the Isaac class, you need to use a `.` (period) instead of a `:` (colon)!**
 
-    **Example:** `Isaac.GetPlayer()`
+    For example:
+    ```lua
+    local player = Isaac.GetPlayer()
+    ```
 
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
