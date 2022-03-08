@@ -24,7 +24,7 @@ This function returns the name of the "Default" animation of a given sprite base
     This code print the default animation name "WalkDown" of the player sprite.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local sprite = player:GetSprite()
     print(sprite:GetDefaultAnimation()) -- this prints "WalkDown"
     ```
@@ -41,7 +41,7 @@ This function returns the name of the "Default" animation of a given sprite base
     This code print the default animation name "WalkDown" of the player sprite.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local sprite = player:GetSprite()
     print(sprite:GetDefaultAnimationName()) -- this prints "WalkDown"
     ```
@@ -56,7 +56,7 @@ This function returns the path to the .anm2 file used by the sprite.
     This code print the .anm2 path of the player sprite.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local sprite = player:GetSprite()
     print(sprite:GetFilename()) -- this prints "gfx/001.000_Player.anm2"
     ```
@@ -163,12 +163,12 @@ Setting the "**Force**" value to true will stop any already playing animation an
     	-- Sprite objects only need to be created and loaded once.
 	local mySprite = Sprite()
 	mySprite:Load("gfx/myCoolAnimation.anm2", true)
-	
+
 	-- Execute this function only once! for example when an event is triggered
 	function myPlaySpriteFunction()
 		mySprite:Play("MyAnimation", true)
 	end
-	
+
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
 		mySprite:Update()
@@ -193,12 +193,12 @@ Setting the "**Force**" value to true will stop any already playing animation an
     	-- Sprite objects only need to be created and loaded once.
 	local mySprite = Sprite()
 	mySprite:Load("gfx/myCoolAnimation.anm2", true)
-	
+
 	-- Execute this function only once! for example when an event is triggered
 	function myPlaySpriteFunction()
 		mySprite:PlayOverlay("MyOverlayAnimation", true)
 	end
-	
+
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
 		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
@@ -223,7 +223,7 @@ ___
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Render ( [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp, [Vector](Vector.md) BottomRightClamp ) {: .copyable aria-label='Functions' }
-Renders the sprite object at a given screen position, where (0,0) is the top left of the screen. 
+Renders the sprite object at a given screen position, where (0,0) is the top left of the screen.
 
 This function needs to be called every frame. For example in the MC_POST_RENDER callback.
 
@@ -236,7 +236,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
     	-- Sprite objects only need to be created and loaded once.
 	local mySprite = Sprite()
 	mySprite:Load("gfx/myCoolAnimation.anm2", true)
-	
+
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
 		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
@@ -246,7 +246,7 @@ ___
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void RenderLayer ( int LayerId, [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
-Renders the given layer of the sprite object at a given screen position, where (0,0) is the top left of the screen. 
+Renders the given layer of the sprite object at a given screen position, where (0,0) is the top left of the screen.
 
 This function needs to be called every frame. For example in the MC_POST_RENDER callback.
 
@@ -259,7 +259,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
     	-- Sprite objects only need to be created and loaded once.
 	local mySprite = Sprite()
 	mySprite:Load("gfx/myCoolAnimation.anm2", true)
-	
+
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
 		mySprite:RenderLayer(2, Vector(50,50), Vector(0,0), Vector(0,0))

@@ -3,7 +3,7 @@
 ???+ info
     **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!**
 
-    **Example:** `Isaac.GetPlayer(0)`
+    **Example:** `Isaac.GetPlayer()`
 
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
@@ -499,7 +499,7 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
     This code renders the player position on the screen.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local pos = player.Position
     Isaac.RenderText("X: "..pos.X.." Y: "..pos.Y, 50, 50, 1 ,1 ,1 ,1 )
 
@@ -569,7 +569,7 @@ Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. T
 ???- example "Example Code"
     This code render "test" at the position of the player. The text will move with isaac.
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local screenpos = Isaac.WorldToScreen(player.Position)
     Isaac.RenderText("test", screenpos.X, screenpos.Y, 1 ,1 ,1 ,1 )
 

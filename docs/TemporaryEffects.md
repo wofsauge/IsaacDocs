@@ -7,7 +7,7 @@
 
     ???+ example "Example Code"
         ```lua
-        local player = Isaac.GetPlayer(0)
+        local player = Isaac.GetPlayer()
         local tempEffects = player:GetEffects()
         ```
 
@@ -24,7 +24,7 @@ Adds the effect of a collectible to the player, without actually giving him the 
     This code applies the effect and costume of the item "Sad Onion" to the player.
 
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     player:GetEffects():AddCollectibleEffect(CollectibleType.COLLECTIBLE_SAD_ONION, true)
     ```
 ___

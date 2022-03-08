@@ -11,7 +11,7 @@ Adds Black hearts to the player. 1 unit is half a heart. Remove them with negati
 ???- example "Example Code"
     This code adds 1 full black heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddBlackHearts(2)
+    Isaac.GetPlayer():AddBlackHearts(2)
     ```
 
 ___
@@ -41,7 +41,7 @@ Adds bombs to the player. Remove them with negative numbers.
 ???- example "Example Code"
     This code removes 1 bomb from the player.
     ```lua
-    Isaac.GetPlayer(0):AddBombs(-1)
+    Isaac.GetPlayer():AddBombs(-1)
     ```
 
 ___
@@ -54,7 +54,7 @@ Adds bone hearts to the player. 1 unit is a single bone heart. Remove them with 
 ???- example "Example Code"
     This code adds 1 bone heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddBoneHearts(1)
+    Isaac.GetPlayer():AddBoneHearts(1)
     ```
 
 ___
@@ -71,7 +71,7 @@ Will reevaluate the cache flags provided in the next cache reevaluation.
 ???- example "Example Code"
     This code will add several cacheflags.
     ```lua
-    Isaac.GetPlayer(0):AddCacheFlags(CacheFlag.CACHE_DAMAGE | CacheFlag.CACHE_FIREDELAY | CacheFlag.CACHE_LUCK)
+    Isaac.GetPlayer():AddCacheFlags(CacheFlag.CACHE_DAMAGE | CacheFlag.CACHE_FIREDELAY | CacheFlag.CACHE_LUCK)
     ```
 ___
 ### Add·Card () {: aria-label='Functions' }
@@ -88,7 +88,7 @@ Adds coins to the player. Remove them with negative numbers.
 ???- example "Example Code"
     This code adds 1 coin to the player.
     ```lua
-    Isaac.GetPlayer(0):AddCoins(1)
+    Isaac.GetPlayer():AddCoins(1)
     ```
 
 ___
@@ -164,7 +164,7 @@ Adds eternal hearts to the player. 1 unit is half a heart. Remove them with nega
 ???- example "Example Code"
     This code adds 1 eternal heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddEternalHearts(1)
+    Isaac.GetPlayer():AddEternalHearts(1)
     ```
 
 ___
@@ -210,7 +210,7 @@ Adds golden hearts to the player. 1 unit is a single gold heart. Remove them wit
 ???- example "Example Code"
     This code adds 1 golden heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddGoldenHearts(1)
+    Isaac.GetPlayer():AddGoldenHearts(1)
     ```
 
 ___
@@ -228,7 +228,7 @@ Adds red hearts to the player if there are any empty heart containers. 1 unit is
 ???- example "Example Code"
     This code adds 1 full red heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddHearts(2)
+    Isaac.GetPlayer():AddHearts(2)
     ```
 
 ___
@@ -256,7 +256,7 @@ Adds keys to the player. Remove them with negative numbers.
 ???- example "Example Code"
     This code adds 1 key to the player.
     ```lua
-    Isaac.GetPlayer(0):AddKeys(1)
+    Isaac.GetPlayer():AddKeys(1)
     ```
 
 ___
@@ -272,7 +272,7 @@ Adds heart containers to the player. 2 units is a full heart container. Remove t
 ???- example "Example Code"
     This code adds 1 heart container to the player.
     ```lua
-    Isaac.GetPlayer(0):AddMaxHearts(2,true)
+    Isaac.GetPlayer():AddMaxHearts(2,true)
     ```
 
 
@@ -326,7 +326,7 @@ Adds rotten hearts to the player. 1 unit is half a heart. Remove rotten hearts w
 ???- example "Example Code"
     This code adds 1 full rotten heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddRottenHearts(2)
+    Isaac.GetPlayer():AddRottenHearts(2)
     ```
 
 ___
@@ -346,7 +346,7 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
 ???- example "Example Code"
     This code adds 1 full soul heart to the player.
     ```lua
-    Isaac.GetPlayer(0):AddSoulHearts(2)
+    Isaac.GetPlayer():AddSoulHearts(2)
     ```
 ___
 ### Add·Swarm·Fly·Orbital () {: aria-label='Functions' }
@@ -1376,7 +1376,7 @@ Removes a given costume based on its item config entry.
 ???- example "Example code"
     This code removes the costume of the Spoon Bender collectible.
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     local itemConfig = Isaac.GetItemConfig():GetCollectible(CollectibleType.COLLECTIBLE_SPOON_BENDER)
     player:RemoveCostume(itemConfig)
     ```
@@ -1583,7 +1583,7 @@ Tries to remove a costume of the given collectible. `KeepPersistent` is used to 
 ???- example "Example code"
     This code removes the costume of the Spoon Bender collectible.
     ```lua
-    local player = Isaac.GetPlayer(0)
+    local player = Isaac.GetPlayer()
     player:TryRemoveCollectibleCostume(CollectibleType.COLLECTIBLE_SPOON_BENDER, false)
     ```
 ___

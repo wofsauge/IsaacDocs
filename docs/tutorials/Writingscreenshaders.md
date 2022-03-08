@@ -137,7 +137,7 @@ To pass the parameters we use the following Lua code:
 local mod = RegisterMod("ShaderMod", 1)
 function mod:GetShaderParams(shaderName)
 	if shaderName == 'RandomColors' then
-        local playerPos = Isaac.GetPlayer(0).Position
+        local playerPos = Isaac.GetPlayer().Position
         local params = {
             PlayerPos = {   playerPos.X / 100.0,
                             playerPos.Y / 100.0 },

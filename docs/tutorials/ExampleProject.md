@@ -14,7 +14,7 @@ This code creates a mod, that turns tears into dark matter tears (slowing black 
 local myMod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (dont change anything here, except the name)
 
 function myMod:onTear(tear)
-	local player = Isaac.GetPlayer(0) --get the player entity
+	local player = Isaac.GetPlayer() --get the player entity
 	player:AddCoins(1) -- add a coin
 	tear.TearFlags = tear.TearFlags |TearFlags.TEAR_SLOW  -- add slowing effect to the tear
 	tear:ChangeVariant(TearVariant.DARK_MATTER ) -- change appearance of the tear
@@ -28,7 +28,7 @@ myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR , myMod.onTear) -- Trigger the 
 local myMod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (don't change anything here, except the name)
 
 local function onTear(_, tear)
-    local player = Isaac.GetPlayer(0) -- get the player entity
+    local player = Isaac.GetPlayer() -- get the player entity
     player:AddCoins(1) -- add a coin
     tear.TearFlags = tear.TearFlags | TearFlags.TEAR_SLOW  -- add slowing effect to the tear
     tear:ChangeVariant(TearVariant.DARK_MATTER) -- change appearance of the tear
@@ -53,7 +53,7 @@ Example code:
 local myMod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (don't change anything here, except the name)
 
 myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, function(_, tear)
-    local player = Isaac.GetPlayer(0) -- get the player entity
+    local player = Isaac.GetPlayer() -- get the player entity
     player:AddCoins(1) -- add a coin
     tear.TearFlags = tear.TearFlags | TearFlags.TEAR_SLOW  -- add slowing effect to the tear
     tear:ChangeVariant(TearVariant.DARK_MATTER) -- change appearance of the tear

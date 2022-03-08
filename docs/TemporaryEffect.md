@@ -9,7 +9,7 @@
 
     ???+ example "Example Code"
         ```lua
-        local player = Isaac.GetPlayer(0)
+        local player = Isaac.GetPlayer()
         local tempEffects = player:GetEffects()
         local tempEffect = tempEffects:GetCollectibleEffect(CollectibleType.COLLECTIBLE_SAD_ONION)
         ```
