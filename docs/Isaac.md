@@ -406,7 +406,6 @@ Returns the TrinketType of a trinket based on its name. (File: items.xml) Return
     ```lua
     Isaac.GetTrinketIdByName("Lucky Toe")
     --Returns: 42
-
     ```
 
 ___
@@ -417,9 +416,9 @@ ___
 Spawn a [GridEntity](GridEntity.md) at the given position (world coordinates).
 
 ???+ bug "Bugs"
-    forced has no effect and will NOT override the grid entity at the given location. Remove a grid entity at the given location if nessesary before spawning something again.
+    The "forced" argument has no effect and will **not** override the grid entity at the given location. Instead, remove the grid entity at the given location if nessesary before spawning something on top of it.
 
-     ```lua
+    ```lua
     -- Spawn a super secret rock in the center of the room
     local game = Game()
     local room = game:GetRoom()
