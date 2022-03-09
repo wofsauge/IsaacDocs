@@ -926,11 +926,11 @@ ___
 
 Returns the main player of pair characters or the main form of characters with multiple forms.
 
-???- note "Note"
-	* When called on Jacob or Esau, returns Jacob
-	* When called on Tainted Forgotten or Tainted Forgotten's Soul, returns Tainted Forgotten
-	* When called on Tainted Lazarus or Flip Lazarus, it will return Tainted Lazarus, if the player has the Birthright item. Otherwise it returns that character.
-	* When called on any other character, returns that character
+- When called on Jacob or Esau, returns Jacob.
+- When called on Tainted Forgotten or Tainted Forgotten's Soul, returns Tainted Forgotten.
+- When called on Tainted Lazarus or Dead Tainted Lazarus, returns themself. If the player has Birthright, then it will return Tainted Lazarus.
+- When called on any other character, returns that character.
+
 ___
 ### Get·Max·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1044,13 +1044,12 @@ ___
 
 Returns the other player of pair characters or the other form of characters with multiple forms.
 
-???- note "Note"
-	* When called on Jacob, returns Esau.
-	* When called on Esau, returns Jacob.
-	* When called on Tainted Forgotten, returns Tainted Forgotten's Soul.
-	* When called on Tainted Forgotten's Soul, returns Tainted Forgotten.
-	* When called on Tainted Lazarus, it will only return the Flip Lazarus, if the player has the Birthright item. Otherwise it returns nil.
-	* When called on any other character, returns nil.
+- When called on Jacob, returns Esau.
+- When called on Esau, returns Jacob.
+- When called on Tainted Forgotten, returns Tainted Forgotten's Soul.
+- When called on Tainted Forgotten's Soul, returns Tainted Forgotten.
+- When called on Tainted Lazarus, it will only return the Flip Lazarus, if the player has the Birthright item. Otherwise it returns nil.
+- When called on any other character, returns nil.
 ___
 ### Get·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
