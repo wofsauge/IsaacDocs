@@ -924,11 +924,12 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetMainTwin ( ) {: .copyable aria-label='Functions' }
 
-Will return first player of pair characters or current form of characters with multiple forms.
+Returns the main player of pair characters or the main form of characters with multiple forms.
 
 ???- note "Note"
 	* When called on Jacob or Esau, returns Jacob
 	* When called on Tainted Forgotten or Tainted Forgotten's Soul, returns Tainted Forgotten
+	* When called on Tainted Lazarus or Flip Lazarus, it will return Tainted Lazarus, if the player has the Birthright item. Otherwise it returns that character.
 	* When called on any other character, returns that character
 ___
 ### Get·Max·Hearts () {: aria-label='Functions' }
@@ -1041,12 +1042,15 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetOtherTwin ( ) {: .copyable aria-label='Functions' }
 
-- When called on Jacob, returns Esau.
-- When called on Esau, returns Jacob.
-- When called on Tainted Forgotten, returns Tainted Forgotten's Soul.
-- When called on Tainted Forgotten's Soul, returns Tainted Forgotten.
-- When called on Tainted Lazarus, it will only return the Flip Lazarus, if the player has the Birthright item. Otherwise it return nil.
-- When called on any other character, returns nil.
+Returns the other player of pair characters or the other form of characters with multiple forms.
+
+???- note "Note"
+	* When called on Jacob, returns Esau.
+	* When called on Esau, returns Jacob.
+	* When called on Tainted Forgotten, returns Tainted Forgotten's Soul.
+	* When called on Tainted Forgotten's Soul, returns Tainted Forgotten.
+	* When called on Tainted Lazarus, it will only return the Flip Lazarus, if the player has the Birthright item. Otherwise it returns nil.
+	* When called on any other character, returns nil.
 ___
 ### Get·Pill () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
