@@ -1324,6 +1324,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsSubPlayer ( ) {: .copyable aria-label='Functions' }
 Returns true if the player object was returned from the `EntityPlayer.GetSubPlayer` method. (This method is not related to multiplayer.)
+
+Additionally, this also returns true for the player object representing Dead Tainted Lazarus that fires at the beginning of the run in the PostPlayerInit callback. (The PostPlayerInit callback fires first for Dead Tainted Lazarus before firing for the normal Tainted Lazarus.)
+
 ___
 ### Needs·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
