@@ -128,6 +128,7 @@ ___
 #### float Height  {: .copyable aria-label='Variables' }
 
 Defines the height of a projectile. Height should be a negative value. Default is `:::lua -23`.
+To make projectiles that remain at a perfectly stationary Height until collision, set FallingSpeed to `:::lua 0` and FallingAccel to `:::lua -0.1`.
 ___
 ### Homing·Strength {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
