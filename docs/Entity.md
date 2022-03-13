@@ -697,7 +697,8 @@ ___
 ### Mass {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Mass  {: .copyable aria-label='Variables' }
-
+???+ note "Notes"
+    Stationary enemies have a Mass of 100. This does not apply to some stationary non-enemies, like slots.
 ___
 ### Max·Hit·Points {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
