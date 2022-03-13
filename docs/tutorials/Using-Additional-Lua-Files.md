@@ -35,7 +35,7 @@ One important aspect of `require` is that when it is used, it caches the result.
 Unlike other programming languages, it is conventional in Lua to use a period as a path separator. For example, if you wanted to import a file called `bar.lua` in a subdirectory called `foo`, you would use the following `require` statement:
 
 ```lua
-local bar = require("foo.bar") -- loads file from path "/foo/bar.lua"
+local bar = require("foo.bar") -- loads file from path "./foo/bar.lua"
 ```
 
 ### The `luamod` Problem With `require`
