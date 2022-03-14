@@ -19,8 +19,8 @@ Returns 2 values:
 		* boolean: true if there are no obstructions between Pos1 and Pos2, false otherwise
 		* Vector: first hit position from Pos1 to Pos2 (returns Pos2 if the line didn't hit anything)
 
-???+ note "Notes"
-    Linecheck Modes:
+???+ note "LinecheckMode notes"
+    LinecheckMode pseudo-enumeration:
 
     **0** : makes the line check collide with anything that impedes ground movement
 
@@ -29,6 +29,19 @@ Returns 2 values:
     **2** : is used for explosions, it only collides with walls and indestructible blocks
 
     **3** : is a line check that only collides with obstacles that can block projectiles
+    
+???+ note "GridPathThreshold notes"
+    GridPath values pseudo-enumeration:
+    
+    **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
+    
+    **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
+    
+    **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Damage·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -216,12 +229,35 @@ ___
 #### int GetGridPath ( int Index ) {: .copyable aria-label='Functions' }
 Grid path is a property of a grid square that represents the "cost" of traveling over this grid cell. Its used for the path finding algorithms which search the cheapest path to a given location. If a grid cell has a value higher than 0, it can prevent grid entities from being spawned on that square. Thus, you can get around it by resetting the grid path to 0, and then spawning the grid entity.
 
-Some enemies set it to 900 when they path over a square. Fireplaces set it to 950. Most grid entities set it to 1000 or higher, in order to prevent enemies to travel through them.
+???+ note "notes"
+    GridPath values pseudo-enumeration:
+    
+    **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
+    
+    **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
+    
+    **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Get·Grid·Path·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetGridPathFromPos ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
 
+???+ note "notes"
+    GridPath values pseudo-enumeration:
+    
+    **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
+    
+    **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
+    
+    **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Get·Grid·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -597,7 +633,18 @@ ___
 #### boolean SetGridPath ( int Index, int Value ) {: .copyable aria-label='Functions' }
 Grid path is a property of a grid square that represents the "cost" of traveling over this grid cell. Its used for the path finding algorithms which search the cheapest path to a given location. If a grid cell has a value higher than 0, it can prevent grid entities from being spawned on that square. Thus, you can get around it by resetting the grid path to 0, and then spawning the grid entity.
 
-Some enemies set it to 900 when they path over a square. Fireplaces set it to 950. Most grid entities set it to 1000 or higher, in order to prevent enemies to travel through them.
+???+ note "notes"
+    GridPath values pseudo-enumeration:
+    
+    **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
+    
+    **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
+    
+    **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
+    
+    **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
