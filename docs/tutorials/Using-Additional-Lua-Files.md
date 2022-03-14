@@ -63,36 +63,66 @@ Thus, if you have module-level state or need to share variables between files, y
 If you need to use `require` instead of `include`, you can work around the aforementioned problems by temporarily hacking `require` with something along the lines of:
 
 ```lua
--- At the beginning of "main.lua"
+--[[ main.lua ]]--
+
+local MOD_NAME = "MyMod" -- Cannot have spaces, since it represents a path
+
+-- Players can boot the game with an launch option called "--luadebug", which will enable additional
+-- functionality that is considered to be unsafe. For more information about this flag, see the
+-- wiki: https://bindingofisaacrebirth.fandom.com/wiki/Launch_Options
+--
+-- When this flag is enabled, the global environment will be slightly different. The differences are
+-- documented here: https://wofsauge.github.io/IsaacDocs/rep/Globals.html
+--
+-- This function uses the `package` global variable as a proxy to determine if the "--luadebug" flag
+-- is enabled or not.
+local function isLuaDebugEnabled()
+  return package ~= nil
+end
+
+-- The require hack uses a global variable to store the paths that are cached for this particular
+-- mod. This cannot be a local variable because the state of any local variables is lost when the
+-- "luamod" command is executed. Rename the variable to correspond with the name of your mod.
 local function initGlobalVariable()
   if __MY_MOD_REQUIRED_PATHS == nil then
     __MY_MOD_REQUIRED_PATHS = {} -- This must be a global variable
   end
 end
 
+-- Reference the global variable to reset the caching status for every path used in the mod.
 local function unloadEverything()
   for k, v in pairs(__MY_MOD_REQUIRED_PATHS) do
     package.loaded[k] = nil
   end
 end
 
+-- Back up the vanilla require function so that we can restore it later.
 local vanillaRequire = require
+
+-- Define acustom require function that will keep track of which paths are required.
 local function patchedRequire(file)
   __MY_MOD_REQUIRED_PATHS[file] = true
   return vanillaRequire(file)
 end
 
-initGlobalVariable()
-unloadEverything()
-require = patchedRequire
+local function init()
+  if luaDebugEnabled() then
+    initGlobalVariable()
+    unloadEverything()
+    require = patchedRequire
+  end
 
--- Mod code here
--- It is cleanest to put all mod code in a separate file in order to keep the hack code separated, e.g.
--- local myMod = require("myMod")
--- myMod:init()
+  -- We put all mod-related code in a separate file in order to keep the hack code separated.
+  local mod = require(MOD_NAME .. ".init")
+  mod:init()
 
--- At the end of "main.lua"
-require = vanillaRequire
+  if luaDebugEnabled()
+    -- Restore the vanilla functionality.
+    require = vanillaRequire
+  end
+end
+
+init()
 ```
 
 ### Alternate Workaround for Require Problems
