@@ -99,7 +99,7 @@ end
 -- Back up the vanilla require function so that we can restore it later.
 local vanillaRequire = require
 
--- Define acustom require function that will keep track of which paths are required.
+-- Define a custom require function that will keep track of which paths are required.
 local function patchedRequire(file)
   __MY_MOD_REQUIRED_PATHS[file] = true
   return vanillaRequire(file)
