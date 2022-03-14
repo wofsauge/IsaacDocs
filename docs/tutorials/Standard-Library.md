@@ -66,5 +66,3 @@ As per the above table, the `--luadebug` launch option must be enabled in order 
 The game uses a "main.lua" file that is loaded before any other mods, located at: `C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resources\scripts\main.lua`
 
 Note that this file will always be executed, even if mods are set to be completely disabled. This allows the execution of Lua code even in scenarios it is normally not possible, like in Daily Challenges.
-
-If you use mod data inside the "main.lua" file, the "save#.dat" files are placed next to the "main.lua" file.
