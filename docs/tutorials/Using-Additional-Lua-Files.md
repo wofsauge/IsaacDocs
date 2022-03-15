@@ -116,7 +116,7 @@ local function init()
   local mod = require(MOD_NAME .. ".init")
   mod:init()
 
-  if luaDebugEnabled()
+  if isLuaDebugEnabled() then
     -- Restore the vanilla functionality.
     require = vanillaRequire
   end
