@@ -106,7 +106,7 @@ local function patchedRequire(file)
 end
 
 local function init()
-  if luaDebugEnabled() then
+  if isLuaDebugEnabled() then
     initGlobalVariable()
     unloadEverything()
     require = patchedRequire
