@@ -113,8 +113,8 @@ local function init()
   end
 
   -- We put all mod-related code in a separate file in order to keep the hack code separated.
-  local mod = require(MOD_NAME .. ".init")
-  mod:init()
+  local modInit = require(MOD_NAME .. ".init")
+  modInit:init()
 
   if isLuaDebugEnabled() then
     -- Restore the vanilla functionality.
