@@ -1,64 +1,39 @@
 # Tutorial: Example Project
 ----
-## Example project
-Example project:
-To make a new mod, you have to create a new folder, named as the mod you want to create, in the following directory:
+
+## An Example Mod
+
+To make a new mod, create a new subdirectory in the following directory:
+
 ```lua
-[STEAM_INSTALLATION_PATH]\steamapps\common\The Binding of Isaac Rebirth\mods
+C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\mods
 ```
-Then, you have to create a new `:::cpp main.lua` file in the newly created folder. This file can then be used to contain the logic behind your mod.
 
-### :fontawesome-solid-code: Example "main.lua" {: .subHeader .example_code }
-This code creates a mod, that turns tears into dark matter tears (slowing black tears). It also adds one coin to the player every shot.
+(This corresponds to your Steam installation directory. If you have the game installed to a custom location, then the path might be different.)
+
+Name the subdirectory after the name of your mod.
+
+Next, create a new `main.lua` file in the newly created folder. This file will contain Lua code, which will tell the game how your mod should respond to in-game events.
+
+The following is an example mod that always changes the player's tears to have a slowing effect and have the Dark Matter visual look:
+
 ```lua
-local myMod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (dont change anything here, except the name)
+-- Register the mod in the API
+local mod = RegisterMod("My Custom Tears", 1)
 
-function myMod:onTear(tear)
-	local player = Isaac.GetPlayer() --get the player entity
-	player:AddCoins(1) -- add a coin
-	tear.TearFlags = tear.TearFlags |TearFlags.TEAR_SLOW  -- add slowing effect to the tear
-	tear:ChangeVariant(TearVariant.DARK_MATTER ) -- change appearance of the tear
+local function postFireTear(_, tear)
+  -- Get the main player, which is an instance of the "EntityPlayer" class
+  local player = Isaac.GetPlayer()
+
+  player:AddCoins(1)
+
+  -- Add a slowing effect to the tear
+  tear.TearFlags = tear.TearFlags | TearFlags.TEAR_SLOW
+
+  -- Change the appearance of the tear
+  tear:ChangeVariant(TearVariant.DARK_MATTER)
 end
 
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR , myMod.onTear) -- Trigger the function "onTear()", when the "POST_FIRE_TEAR" callback is triggered.
+ -- Specify that the "onTear" function should be executed whenever the player fires a tear
+myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, postFireTear)
 ```
-
-### :fontawesome-solid-code: Local function example {: .subHeader .example_code }
-```lua
-local myMod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (don't change anything here, except the name)
-
-local function onTear(_, tear)
-    local player = Isaac.GetPlayer() -- get the player entity
-    player:AddCoins(1) -- add a coin
-    tear.TearFlags = tear.TearFlags | TearFlags.TEAR_SLOW  -- add slowing effect to the tear
-    tear:ChangeVariant(TearVariant.DARK_MATTER) -- change appearance of the tear
-end
-
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, onTear) -- Trigger the function "onTear()", when the "POST_FIRE_TEAR" callback is triggered.
-```
-#### Differences to the other method:
-
-Instead of the function being stored inside of the mod variable it is it's own variable local to the level of creation. When creating a local function the first parameter looks for itself and this argument is commonly disregarded by storing it as an underscore. When calling/triggering this function only the function name is necessary, as it is not stored within the mod variable. Local functions are able to be stored within a table just like any other variable, for example:
-```lua
-local functions = {
-    [1] = function(_, tear)
-
-    end,
-}
-```
-where this function would be called via functions[1], and is used in place of onTear in the AddCallback function of the main example
-Example code:
-### :fontawesome-solid-code: "Inline" definition of functions example {: .subHeader .example_code }
-```lua
-local myMod = RegisterMod("Dark Matter tears", 1) -- Register the mod in the API (don't change anything here, except the name)
-
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, function(_, tear)
-    local player = Isaac.GetPlayer() -- get the player entity
-    player:AddCoins(1) -- add a coin
-    tear.TearFlags = tear.TearFlags | TearFlags.TEAR_SLOW  -- add slowing effect to the tear
-    tear:ChangeVariant(TearVariant.DARK_MATTER) -- change appearance of the tear
-end) -- Trigger the function created within the function argument of the AddCallback function, when the "POST_FIRE_TEAR" callback is triggered.
-```
-#### Differences:
-
-In this example the function being triggered by the callback is defined within the AddCallback function. This method of creation removes the need for storing and referencing your function from a variable, similarly to the local function example the function given will attempt to pass itself has the first argument so it is disregarded with an underscore. Since this function is not stored within your code it is not possible to call it from other places, so this method should only be used if it is to only be triggered by the callback
