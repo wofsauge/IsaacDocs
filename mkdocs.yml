@@ -187,6 +187,7 @@ nav:
         - "Ball & Chain": entities/SpikeBallChain.md
     - Tutorials:
         - "Example Project": tutorials/ExampleProject.md
+        - "Functions in Lua": tutorials/FunctionsInLua.md
         - "Math and Lua Tips": tutorials/MathAndLuaTips.md
         - "Adding Costumes to items without LUA": tutorials/AddingCostumesWithoutLUA.md
         - "Debugging with ZeroBrane Studio": tutorials/ZeroBraneStudio.md
