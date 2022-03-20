@@ -4,6 +4,32 @@
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [EntityPtr](EntityPtr.md) EntityPtr ( [Entity](Entity.md) ) {: .copyable aria-label='Constructors' }
 
+The constructor is a global function. For example
+
+```lua
+local playerPtr = nil
+
+local function postPlayerInit(player)
+  playerPtr = EntityPtr(player)
+end
+
+local function postGameStarted()
+  local player = getPlayerFromPtr(playerPtr)
+end
+
+local function getPlayerFromPtr()
+  if playerPtr == nil then
+    return nil
+  end
+  
+  if playerPtr.Ref == nil then
+    return nil
+  end
+  
+  return playerPtr.Ref:ToPlayer()
+end
+```
+
 ___
 ## Functions
 ### Set·Reference () {: aria-label='Functions' }
