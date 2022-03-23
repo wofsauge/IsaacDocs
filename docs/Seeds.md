@@ -58,7 +58,7 @@ ___
 ### Get·Start·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStartSeed ( ) {: .copyable aria-label='Functions' }
-The "start seed" is a number between 1 and (2^32 - 1) that is used to generate the random elements for the current run. When converted to string form, it is displayed on the pause menu.
+The "start seed" is a number between 1 and (2^32 - 1) that is used to generate the random elements for the current run. The seed displayed in the pause menu is this number represented in string form.
 
 This method will return 0 if it is invoked in the main menu.
 
