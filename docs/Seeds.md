@@ -131,7 +131,7 @@ ___
 ### Restart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Restart ( [Challenge](enums/Challenge.md) CurrentChallenge ) {: .copyable aria-label='Functions' }
-Re-selects a random start seed but only if the start seed was not custom.
+Re-selects a random start seed, but only if the start seed was not custom.
 ___
 ### Seed·2·String () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
