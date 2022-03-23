@@ -389,7 +389,7 @@
 |[ ](#){: .rep .tooltip .badge }|499 |SOUND_BONE_BOUNCE {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|500 |SOUND_BONE_BREAK {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|501 |SOUND_BISHOP_HIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|502 |SOUND_PORTAL_LOOP {: .copyable } | unused |
+|[ ](#){: .rep .tooltip .badge }|502 |Does not exist anymore | (legacy: SOUND_PORTAL_LOOP) |
 |[ ](#){: .rep .tooltip .badge }|503 |SOUND_CHAIN_LOOP {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|504 |SOUND_CHAIN_BREAK {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|505 |SOUND_MINECART_LOOP {: .copyable } |  |
