@@ -506,9 +506,11 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsDoorSlotAllowed ( [DoorSlot](enums/DoorSlot.md) Slot ) {: .copyable aria-label='Functions' }
 
-Returns whether or not a door is valid for the current room shape. The value returned is independent of whether or not a door currently exists at the given slot.
+Returns whether or not the supplied door slot is valid for the current room. This is contingent room definition in the STB/XML file. (Basement Renovator displays valid doors as brown and invalid doors as white.) The value returned by this method is independent of whether or not a door currently exists at the given slot.
 
-For example, in a 1x1 room with doors on the left and right, this method will return true for `DoorSlot.LEFT0`, `DoorSlot.UP0`, `DoorSlot.RIGHT0`, and `DoorSlot.DOWN0`, and false for all other values.
+For example, in the starting room of a floor, this method would return true for `DoorSlot.LEFT0`, `DoorSlot.UP0`, `Doorslot.RIGHT0`, and `DoorSlot.DOWN0`, and false for all other values (regardless of what doors happen to exist or not).
+
+For example, there is a relatively common 1x1 room in the Caves with 4 Boom Flies and a narrow bridge from the top door to the bottom door. In this room, the doors on the left side and the right side are disabled. In this room, this method would return true for `DoorSlot.UP0` and `DoorSlot.DOWN0`, and false for all other values  (regardless of what doors happen to exist or not).
 
 ___
 ### Is·First·Enemy·Dead () {: aria-label='Functions' }
