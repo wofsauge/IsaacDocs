@@ -505,7 +505,10 @@ ___
 ### Is·Door·Slot·Allowed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsDoorSlotAllowed ( [DoorSlot](enums/DoorSlot.md) Slot ) {: .copyable aria-label='Functions' }
-Returns whether this room design may have a door at a given position, disregarding whether those doors exist.
+
+Returns whether or not a door is valid for the current room shape. The value returned is independent of whether or not a door currently exists at the given slot.
+
+For example, in a 1x1 room with doors on the left and right, this method will return true for `DoorSlot.LEFT0`, `DoorSlot.UP0`, `DoorSlot.RIGHT0`, and `DoorSlot.DOWN0`, and false for all other values.
 
 ___
 ### Is·First·Enemy·Dead () {: aria-label='Functions' }
