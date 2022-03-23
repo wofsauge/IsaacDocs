@@ -165,6 +165,14 @@ ___
 #### int GetDungeonRockIdx ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Enemy·Damage·Inflicted () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### float GetEnemyDamageInflicted ( ) {: .copyable aria-label='Functions' }
+Returns the total amount of HP lost by all enemies in the room within the current frame
+
+This is used by items that charge on damage inflicted such as Berserk
+
+___
 ### Get·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityList](CppContainer_EntityList.md) GetEntities ( ) {: .copyable aria-label='Functions' }
