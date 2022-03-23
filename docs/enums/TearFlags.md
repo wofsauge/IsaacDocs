@@ -21,7 +21,7 @@ end
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(5) |TEAR_FREEZE {: .copyable } | `Color(1.25, 0.05, 0.15, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(318, 13, 38, 255, 0, 0, 0)` | Mom's contact type tear (freezes on contact) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(6) |TEAR_SPLIT {: .copyable } | `Color(0.9, 0.3, 0.08, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(229, 76, 20, 255, 0, 0, 0)` | Parasite type tear (splits on collision) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(7) |TEAR_GROW {: .copyable } | `Color(0.2, 0.09, 0.06, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(51, 23, 17, 255, 0, 0, 0)` | Lump of coal type tear (grows by range) |
-|[ ](#){: .rep .tooltip .badge }| TEARFLAG(8) |TEAR_BOOMERANG {: .copyable } | No changes | My reflection type tear (returns back) |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(8) |TEAR_BOOMERANG {: .copyable } | No changes | My reflection type tear (returns back) <br> (ab+: TearFlags.TEAR_BOMBERANG) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(9) |TEAR_PERSISTENT {: .copyable } | No changes | Polyphemus type tear (Damages the entity and if the damage is more then enemy hp it continues with less damage) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(10) |TEAR_WIGGLE {: .copyable } | No changes | Wiggle worm type tear (wiggles) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(11) |TEAR_MULLIGAN {: .copyable } | No changes | Mulligan type tear (creates fly on hit) <br> (ab+: TearFlags.TEAR_MIGAN) |
