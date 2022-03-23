@@ -1568,7 +1568,7 @@ ___
 ___
 ### Trigger·Book·Of·Virtues () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void TriggerBookOfVirtues ( [CollectibleType](enums/CollectibleType.md) Type = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
+#### void TriggerBookOfVirtues ( [CollectibleType](enums/CollectibleType.md) Type = CollectibleType.COLLECTIBLE_NULL, int Charge = 0 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Try·Hold·Entity () {: aria-label='Functions' }
