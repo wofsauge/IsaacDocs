@@ -16,3 +16,4 @@
 |[ ](#){: .rep .tooltip .badge }|1 << 8 |USE_NOANNOUNCER {: .copyable } | Never play announcer voice |
 |[ ](#){: .rep .tooltip .badge }|1 << 9 |USE_ALLOWWISPSPAWN {: .copyable } | This allows an item to spawn wisps when called from another item usage as the wisps generator checks for NOANIM, so usually you want to use this with NOANIM call |
 |[ ](#){: .rep .tooltip .badge }|1 << 10 |USE_CUSTOMVARDATA {: .copyable } | If set, forces UseActiveItem to use the CustomVarData argument instead of the active item's stored VarData |
+|[ ](#){: .rep .tooltip .badge }|1 << 11 |USE_NOHUD {: .copyable } | Don't display text in the HUD (this is currently only used by Echo Chamber) |
