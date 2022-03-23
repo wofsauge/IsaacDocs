@@ -60,7 +60,7 @@
 |[ ](#){: .abrep .tooltip .badge }|56 |COLLECTIBLE_LEMON_MISHAP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|57 |COLLECTIBLE_DISTANT_ADMIRATION {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|58 |COLLECTIBLE_BOOK_OF_SHADOWS {: .copyable } |  |
-|[ ](#){: .abp .tooltip .badge }|59 | Does not exist anymore | (ab+: COLLECTIBLE_059) |
+|[ ](#){: .rep .tooltip .badge }|59 | COLLECTIBLE_BOOK_OF_BELIAL_PASSIVE | (ab+: COLLECTIBLE_059) |
 |[ ](#){: .abrep .tooltip .badge }|60 |COLLECTIBLE_LADDER {: .copyable } |  |
 |[ ](#){: .abp .tooltip .badge }|61 | Does not exist anymore | (ab+: COLLECTIBLE_TAROT_CARD) |
 |[ ](#){: .abrep .tooltip .badge }|62 |COLLECTIBLE_CHARM_VAMPIRE {: .copyable } |  |
