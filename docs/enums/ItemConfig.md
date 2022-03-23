@@ -58,3 +58,8 @@ Even though they have different prefixes, all enums on this page are part of the
 |[ ](#){: .rep .tooltip .badge }|1 << 25 |TAG_NO_CANTRIP {: .copyable } | Can't be obtained in Cantripped challenge |
 |[ ](#){: .rep .tooltip .badge }|1 << 26 |TAG_WISP {: .copyable } | Active items that have wisps attached to them (automatically set) |
 |[ ](#){: .rep .tooltip .badge }|1 << 27 |TAG_UNIQUE_FAMILIAR {: .copyable } | Unique familiars that cannot be duplicated |
+|[ ](#){: .rep .tooltip .badge }|1 << 28 |TAG_NO_CHALLENGE {: .copyable } | Items that shouldn't be obtainable in challenges |
+|[ ](#){: .rep .tooltip .badge }|1 << 29 |TAG_NO_DAILY {: .copyable } | Items that shouldn't be obtainable in daily runs |
+|[ ](#){: .rep .tooltip .badge }|1 << 30 |TAG_LAZ_SHARED {: .copyable } | Items that should be shared between Tainted Lazarus' forms |
+|[ ](#){: .rep .tooltip .badge }|1 << 31 |TAG_LAZ_SHARED_GLOBAL {: .copyable } | Items that should be shared between Tainted Lazarus' forms but only through global checks (such as PlayerManager::HasCollectible) |
+|[ ](#){: .rep .tooltip .badge }|1 << 32 |TAG_NO_EDEN {: .copyable } | Items that can't be randomly rolled |
