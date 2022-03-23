@@ -152,7 +152,10 @@ ___
 ### Random () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Random ( ) {: .copyable aria-label='Functions' }
-Returns a random integer. (0 to 2^32)
+Returns a random integer between 0 and 2^32. It is tested to be inclusive on the lower end and exclusive on the higher end.
+
+Since this function can return 0, you cannot safely use it as the seed for an RNG object, since RNG objects with a seed of 0 crash the game. It is recommended to abstract away this failure case by using a helper function that arbitrarily sets the seed to 1 when the seed is 0.
+
 ___
 ### Random·Vector () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
