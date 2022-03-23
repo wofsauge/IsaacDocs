@@ -1712,6 +1712,11 @@ ___
 #### int HeadFrameDelay  {: .copyable aria-label='Variables' }
 
 ___
+### IBS·Charge {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### float IBSCharge  {: .copyable aria-label='Variables' }
+Internally used by IBS, increases based on damage dealt, range is 0-1
+___
 ### Item·Hold·Cooldown {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int ItemHoldCooldown  {: .copyable aria-label='Variables' }
@@ -1751,6 +1756,11 @@ ___
 - `QueuedItem` is never nil, even if the player is not currently holding up any item. (However, `player.QueuedItem.Item` will be nil if they are not currently holding up any item.)
 - This only stores data for collectibles and trinkets. It does not store any data for pocket items (even though Isaac plays a similar "holding above head" animation for pocket items).
 - Also see `FlushQueueItem()`, `IsItemQueueEmpty()`, and `QueueItem()`.
+___
+### Samson·Berserk·Charge {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int SamsonBerserkCharge  {: .copyable aria-label='Variables' }
+Internally used by Tainted Samson, increases based on damage dealt, range is 0-100000
 ___
 ### Secondary·Active·Item {: aria-label='Variables' }
 [ ](#){: .abp .tooltip .badge }
