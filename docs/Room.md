@@ -510,7 +510,7 @@ Returns whether or not the supplied door slot is valid for the current room. Thi
 
 For example, in the starting room of a floor, this method would return true for `DoorSlot.LEFT0`, `DoorSlot.UP0`, `Doorslot.RIGHT0`, and `DoorSlot.DOWN0`, and false for all other values (regardless of what doors happen to exist or not).
 
-For example, there is a relatively common 1x1 room in the Caves with 4 Boom Flies and a narrow bridge from the top door to the bottom door. In this room, the doors on the left side and the right side are disabled. In this room, this method would return true for `DoorSlot.UP0` and `DoorSlot.DOWN0`, and false for all other values  (regardless of what doors happen to exist or not).
+For example, there is a relatively common 1x1 room in the Caves with 4 Boom Flies and a narrow bridge from the top door to the bottom door. In this room, the doors on the left side and the right side are disabled. In this room, this method would return true for `DoorSlot.UP0` and `DoorSlot.DOWN0`, and false for all other values (regardless of what doors happen to exist or not).
 
 ___
 ### Is·First·Enemy·Dead () {: aria-label='Functions' }
