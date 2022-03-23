@@ -126,7 +126,7 @@ ___
 ### Reset () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
-Removes all seed effects, only goes into effect when the run is restarted
+Removes all seed effects. Only takes effect when the run is restarted.
 ___
 ### Restart () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
