@@ -205,10 +205,6 @@ This is a list of every global variable that is available in the Lua environment
 - utf8
 - xpcall
 
-### Mods
-
-Mods can also add extra global variables to the environment. You can find out which variables are provided by mods by cross-referencing the current global variables to the previous list.
-
 ### With the "--luadebug" flag
 
 Having the "--luadebug" flag turned on changes the default global variables slightly.
@@ -219,3 +215,7 @@ The following global variables are added:
 - io
 - os
 - package
+
+### Mods
+
+Mods can also add extra global variables to the environment. You can find out which variables are provided by mods by cross-referencing the current global variables to the previous list.
