@@ -26,25 +26,39 @@ ___
 ### Random·Float () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### float RandomFloat ( ) {: .copyable aria-label='Functions' }
-Returns a number between 0 and 1. This includes 0, but excludes 1.
+Returns a number between 0 and 1. This is inclusive on the lower end and exclusive on the higher end.
+
+Note that this will automatically call the `RNG.Next` method before retrieving the random number. Since this mutates the RNG object, you should use this method with care.
 
 ???+ example "Example code"
     ```lua
-    local myRNG = RNG()
-    myRNG:SetSeed(Random(), 1)
-    myRNG:RandomFloat()  -- will generate a number between 0 and 1
+    local RECOMMENDED_SHIFT_IDX = 35
+    local MY_ENTITY_CHANCE = 0.3 -- 30%
+
+    function shouldEntityDoThing(entity)
+      local rng = RNG()
+      rng:SetSeed(entity.InitSeed, RECOMMENDED_SHIFT_IDX)
+      local randomChance = myRNG:RandomFloat()
+      return randomChance < MY_ENTITY_CHANCE
+    end
     ```
 ___
 ### Random·Int () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int RandomInt ( int Max ) {: .copyable aria-label='Functions' }
-Returns a number between 0 and the max value, excluding the max value.
+Returns a number between 0 and the max value. It is inclusive on the lower end and exclusive on the higher end.
+
+Note that this will automatically call the `RNG.Next` method before retrieving the random number. Since this mutates the RNG object, you should use this method with care.
 
 ???+ example "Example code"
     ```lua
-    local myRNG = RNG()
-    myRNG:SetSeed(Random(), 1)
-    myRNG:RandomInt(4)  -- will generate 0, 1, 2, or 3.
+    local RECOMMENDED_SHIFT_IDX = 35
+
+    function getZeroOneTwoOrThree(seed)
+      local rng = RNG()
+      rng:SetSeed(seed, RECOMMENDED_SHIFT_IDX)
+      return rng:RandomInt(4) -- Will generate 0, 1, 2, or 3.
+    end
     ```
 ___
 ### Set·Seed () {: aria-label='Functions' }
