@@ -58,7 +58,9 @@ ___
 ### Get·Start·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStartSeed ( ) {: .copyable aria-label='Functions' }
-The initial seed of this run. This seed is the one displayed in the pause menu, if turned into its string representation.
+The "start seed" is a number between 1 and (2^32 - 1) that is used to generate the random elements for the current run. When converted to string form, it is displayed on the pause menu.
+
+This method will return 0 if it is invoked in the main menu.
 
 ???- example "Example Code"
   This code turns the current run seed into its string representation.
@@ -70,6 +72,10 @@ ___
 ### Get·Start·Seed·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string GetStartSeedString ( ) {: .copyable aria-label='Functions' }
+
+The "start seed" is a number between 1 and (2^32 - 1) that is used to generate the random elements for the current run. When converted to a string, it looks like "ABCD EFGH". (This is the form that is displayed on the pause menu.)
+
+This method will return "B911 99JA" if it is invoked in the main menu.
 
 ___
 ### Has·Seed·Effect () {: aria-label='Functions' }
