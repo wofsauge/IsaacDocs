@@ -264,7 +264,7 @@
 |[ ](#){: .abrep .tooltip .badge }|260 |COLLECTIBLE_BLACK_CANDLE {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|261 |COLLECTIBLE_PROPTOSIS {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|262 |COLLECTIBLE_MISSING_PAGE_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|263 |COLLECTIBLE_CLEAR_RUNE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|263 |COLLECTIBLE_CLEAR_RUNE {: .copyable } | (ab+: COLLECTIBLE_263) |
 |[ ](#){: .abrep .tooltip .badge }|264 |COLLECTIBLE_SMART_FLY {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|265 |COLLECTIBLE_DRY_BABY {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|266 |COLLECTIBLE_JUICY_SACK {: .copyable } |  |
