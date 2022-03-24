@@ -352,6 +352,15 @@ document$.subscribe(function() {
         hidePlaceholderChar($(this));
     })
 
+    //Add Edit button to each header
+    var editButton = $(".md-content__button.md-icon")
+    $("h3>.headerlink").each(function(e) {
+        var editClone = editButton.clone();
+        editClone.addClass("inlineEditButton");
+        editClone.addClass("headerlink");
+        editClone.appendTo($(this).parent());
+    })
+
     //remove search query string of search result links
     // We use an Element observer, to change the search results AFTER they where placed
     var target = document.querySelector('.md-search-result__list')

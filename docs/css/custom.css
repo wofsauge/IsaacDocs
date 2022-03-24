@@ -632,3 +632,9 @@ td>.copyButton>span::after {
 .tableHighlight {
     background-color: var(--var-color);
 }
+
+.inlineEditButton {
+    height: 1rem;
+    width: 1rem;
+    margin: 0.3rem;
+}
