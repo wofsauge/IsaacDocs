@@ -354,7 +354,7 @@ document$.subscribe(function() {
 
     //Add Edit button to each header
     var editButton = $(".md-content__button.md-icon")
-    $("h3>.headerlink").each(function(e) {
+    $("h2>.headerlink,h3>.headerlink").each(function(e) {
         var editClone = editButton.clone();
         editClone.addClass("inlineEditButton");
         editClone.addClass("headerlink");
