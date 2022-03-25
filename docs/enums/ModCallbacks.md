@@ -212,7 +212,7 @@ Returning any value will have no effect on later callback executions.
     function mod:myFunction(pillEffectID, playerWhoUsedItem, useFlags)
         print("Hello World!")
     end
-    mod:AddCallback(ModCallbacks.MC_USE_CARD, mod.myFunction)
+    mod:AddCallback(ModCallbacks.MC_USE_PILL, mod.myFunction)
     ```
 
     This code will only print "Bad Gas Pill used!" when the Fool pill is used.
@@ -220,7 +220,7 @@ Returning any value will have no effect on later callback executions.
     function mod:myFunction2(pillEffectID, playerWhoUsedItem, useFlags)
         print("Bad Gas Pill used!")
     end
-    mod:AddCallback(ModCallbacks.MC_USE_CARD, mod.myFunction2, PillEffect.PILLEFFECT_BAD_GAS)
+    mod:AddCallback(ModCallbacks.MC_USE_PILL, mod.myFunction2, PillEffect.PILLEFFECT_BAD_GAS)
     ```
 
 |DLC|Value|Name|Function Args| Optional Args|
