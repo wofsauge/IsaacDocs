@@ -50,6 +50,8 @@
 |[ ](#){: .rep .tooltip .badge }|45 |ID_BRIMSTONE2 {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|46 |ID_HOLY_CARD {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|47 |ID_KEEPER {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|48 |ID_CAMO_BOOST {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|49 |ID_LAZARUS_BOOST {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|50 |ID_SPIN_TO_WIN {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|51 |ID_BETHANY {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|52 |ID_JACOB {: .copyable } |  |
@@ -122,4 +124,14 @@
 |[ ](#){: .rep .tooltip .badge }|119 |ID_HORSE_PUBERTY {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|120 |ID_SOUL_FORGOTTEN {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|121 |ID_SOUL_JACOB {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|122 |NUM_NULLITEMS {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|122 |ID_BETHANY_B_BIRTHRIGHT {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|123 |ID_JUDAS_BIRTHRIGHT {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|124 |ID_JUDAS_BIRTHRIGHT_TIMED {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|125 |ID_DOUBLE_GUPPYS_EYE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|126 |ID_DOUBLE_GLASS_EYE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|127 |ID_HEMOPTYSIS_BOOST {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|128 |ID_SOUL_JUDAS {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|129 |ID_JUDAS_BIRTHRIGHT_STAGE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|130 |ID_JUDAS_BIRTHRIGHT_PERMANENT {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|131 |ID_ESAU_JR_FAMILIAR {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|132 |NUM_NULLITEMS {: .copyable } |  |
