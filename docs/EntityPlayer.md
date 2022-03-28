@@ -536,11 +536,11 @@ Note that this function is bugged in that it will not increment the provided RNG
 
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 
-**TargetCount**: See the explanation above. In most cases, use the collectible count for the custom collectible.
+**TargetCount**: The expected amount of this FamiliarVariant that this EntityPlayer should have. This argument can simply be how many of an item that the current EntityPlayer owns, however if you want your familiar to synergise with Monster Manual and Box of Friends, then this argument should be  `EntityPlayer:GetCollectibleNum(CollectibleType) + EntityPlayer:GetEffects():GetCollectibleEffectNum(CollectibleType)`.
 
-**rng**: In most cases, use the RNG object returned from `EntityPlayer.GetCollectibleRNG()`.
+**rng**: In most cases, use the RNG object returned from `EntityPlayer:GetCollectibleRNG(CollectibleType)`.
 
-**SourceItemConfigItem**: The ItemConfigItem that this familiar was created by. This is optional and not needed in most cases.
+**SourceItemConfigItem**: The ItemConfigItem that this familiar was created by. Technically optional, but is used to tell Sacrificial Altar which item it needs to remove if your familiar is tagged with the "cansacrifice" entity tag. Can be obtained by doing, for example `Isaac.GetItemConfig():GetCollectible(CollectibleType)`.
 
 **FamiliarSubType**: The subtype of the familiar to check. -1 matches any subtype.
 
