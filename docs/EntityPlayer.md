@@ -529,10 +529,9 @@ Call this method to spawn the appropriate amount of familiars associated with a 
 
 This is meant to be called in the EvaluateCache callback (when the cache flag is equal to `CacheFlag.CACHE_FAMILIARS`).
 
-Note that this function is bugged in that it will not increment the provided RNG, which will result in all spawned familiars having the same InitSeed. You can work around this by providing a new `RNG()` object (instead of the object provided by the `EntityPlayer.GetCollectibleRNG()`). However, this is not a good workaround because it will result in non-seeded randomness. For a proper solution:
+Note that this function is bugged in that it will not increment the provided RNG. This is bad because if you provide the player's collectible RNG as the argument for `rng`, all of the resulting spawned familiars will have the same `InitSeed`. Since `InitSeed` is the main way to identiy unique familiars, it is important that each familiar has a unique `InitSeed`. Thus, a brand new `RNG` object should always be passed to the `EntityPlayer.CheckFamiliar` function so that each new spawned familiar will have a new, random `InitSeed`. Subsequently, you should handle random familiar events not with an RNG object based on the familiar's `InitSeed`, but with an RNG object that is initialized based on the seed from the `EntityPlayer.GetCollectibleRNG` method. 
 
-- [IsaacScript](https://isaacscript.github.io/) users should use the [`checkFamiliar`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliar) or [`checkFamiliarFromCollectibles`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliarFromCollectibles) functions from the standard library instead.
-- Lua users should code [a function like this](https://github.com/IsaacScript/isaacscript-common/blob/f791f59/src/functions/familiars.ts#L4-L58) from scratch.
+In most cases, [IsaacScript](https://isaacscript.github.io/) users should use the [`checkFamiliarFromCollectibles`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliarFromCollectibles) helper function instead of using this method directly, as it automatically calculates the appropriate target count.
 
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 
