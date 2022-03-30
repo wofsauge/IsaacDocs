@@ -535,11 +535,11 @@ In most cases, [IsaacScript](https://isaacscript.github.io/) users should use th
 
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 
-**TargetCount**: The expected amount of this FamiliarVariant that this EntityPlayer should have. This argument can simply be how many of an item that the current EntityPlayer owns, however if you want your familiar to synergise with Monster Manual and Box of Friends, then this argument should be  `EntityPlayer:GetCollectibleNum(CollectibleType) + EntityPlayer:GetEffects():GetCollectibleEffectNum(CollectibleType)`.
+**TargetCount**: The expected amount of this FamiliarVariant that this EntityPlayer should have. This argument can simply be how many of an item that the current EntityPlayer owns. However, if you want your familiar to synergize with Monster Manual and Box of Friends, then this argument should be  `EntityPlayer:GetCollectibleNum(collectibleType) + EntityPlayer:GetEffects():GetCollectibleEffectNum(collectibleType)`.
 
-**rng**: In most cases, use the RNG object returned from `EntityPlayer:GetCollectibleRNG(CollectibleType)`.
+**rng**: Always use a brand new RNG object. (See the previous explanation on why you should not use the RNG from the `EntityPlayer.GetCollectibleRNG` method.)
 
-**SourceItemConfigItem**: The ItemConfigItem that this familiar was created by. Technically optional, but is used to tell Sacrificial Altar which item it needs to remove if your familiar is tagged with the "cansacrifice" entity tag. Can be obtained by doing, for example `Isaac.GetItemConfig():GetCollectible(CollectibleType)`.
+**SourceItemConfigItem**: The `ItemConfigItem` that this familiar was created by. This is nil by default, but it should always be specified so that Sacrificial Altar will work properly. (It informs the game which collectible should be removed if the familiar is tagged with the "cansacrifice" entity tag.) This can be obtained with: `Isaac.GetItemConfig():GetCollectible(collectibleType)`
 
 **FamiliarSubType**: The subtype of the familiar to check. -1 matches any subtype.
 
