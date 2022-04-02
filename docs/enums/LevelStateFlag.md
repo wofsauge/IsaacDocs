@@ -8,10 +8,10 @@
 |[ ](#){: .abrep .tooltip .badge }|4 |STATE_EVIL_BUM_LEFT {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|5 |STATE_DAMAGED {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|6 |STATE_SHOPKEEPER_KILLED_LVL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|7 |STATE_COMPASS_EFFECT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|8 |STATE_MAP_EFFECT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|9 |STATE_BLUE_MAP_EFFECT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|10 |STATE_FULL_MAP_EFFECT {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|7 |STATE_COMPASS_EFFECT {: .copyable } | set by: The Compass, The Mind  |
+|[ ](#){: .abrep .tooltip .badge }|8 |STATE_MAP_EFFECT {: .copyable } | set by: Treasure Map, The Mind |
+|[ ](#){: .abrep .tooltip .badge }|9 |STATE_BLUE_MAP_EFFECT {: .copyable } | set by: Blue Map, The Mind, Ansuz |
+|[ ](#){: .abrep .tooltip .badge }|10 |STATE_FULL_MAP_EFFECT {: .copyable } | set by: Ansuz, The World, The Sun |
 |[ ](#){: .abrep .tooltip .badge }|11 |STATE_GREED_LOST_PENALTY {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|12 |STATE_GREED_MONSTRO_SPAWNED {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|13 |STATE_ITEM_DUNGEON_FOUND {: .copyable } |  |
