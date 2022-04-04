@@ -12,6 +12,9 @@ Even though they have different prefixes, all enums on this page are part of the
 |[ ](#){: .rep .tooltip .badge }|3 |DISPLAY_ICON {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|4 |DISPLAY_ALL {: .copyable } |  |
 
+???+ tip "Bitset Calculator"
+    [](#){: .bitsetCalculator }
+
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|1 << 0 |FLAG_CLEAR {: .copyable } | Room is clear, don't spawn enemies when visiting |
