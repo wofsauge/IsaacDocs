@@ -51,12 +51,12 @@ ___
 ___
 ### Get·Current·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [MusicManager](MusicManager.md) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
+#### [Music](enums/Music.md) GetCurrentMusicID ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Queued·Music·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [MusicManager](MusicManager.md) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
+#### [Music](enums/Music.md) GetQueuedMusicID ( ) {: .copyable aria-label='Functions' }
 if nothing is queued, return the current music id
 ___
 ### Is·Enabled () {: aria-label='Functions' }
