@@ -20,6 +20,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddCurse ( [LevelCurse](enums/LevelCurse.md) Curse, boolean ShowName ) {: .copyable aria-label='Functions' }
 
+???+ info
+    As entries in curses.xml enumerate from 1 instead of 0, the LevelCurse bitmask value for a new curse must be acquired by doing 1 << (Isaac.GetCurseIdByName("...") - 1). This bitmask value is what's accepted by Level:AddCurse and the return value of MC_POST_CURSE_EVAL.
 ___
 ### Apply·Blue·Map·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
