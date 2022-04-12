@@ -98,7 +98,7 @@ ModConfigMenu.AddSetting(
             return settings.myScrollBar
         end,
         Display = function()
-            return "$scroll" .. settings.myScrollBar
+            return "My Scroll Bar: $scroll" .. settings.myScrollBar
         end,
         OnChange = function(n)
             settings.myScrollBar = n
