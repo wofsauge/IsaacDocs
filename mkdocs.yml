@@ -196,6 +196,7 @@ nav:
         - "Using the standard library": tutorials/Standard-Library.md
         - "Writing screen shaders": tutorials/Writingscreenshaders.md
         - "Tutorial - Render text": tutorials/Tutorial-Rendertext.md
+        - "Mod Config Menu Quickstart Guide": tutorials/ModConfigMenu.md
     - XMLs:
         - "XML Overview": xml/XMLFiledocumentation.md
         - "achievements.xml" : xml/achievements.md
