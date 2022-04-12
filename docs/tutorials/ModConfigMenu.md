@@ -79,6 +79,35 @@ ModConfigMenu.AddSetting(
 )
 ```
 
+### Scroll bar
+
+A scroll bar is a multiple choice option that renders as a scroll bar with 10 bars. The player can choose between 0 and 10 out of 10 for a total of 11 options.
+
+This is commonly used to get a decimal number between 0 and 1. (Hint: divide by 10)
+
+```lua
+local settings = {}
+settings.myScrollBar = 0
+
+ModConfigMenu.AddSetting(
+    "My Settings Page",
+    "Tab 1",
+    {
+        Type = ModConfigMenu.OptionType.SCROLL,
+        CurrentSetting = function()
+            return settings.myScrollBar
+        end,
+        Display = function()
+            return "$scroll" .. settings.myScrollBar
+        end,
+        OnChange = function(n)
+            settings.myScrollBar = n
+        end,
+        Info = { "Info on 1st line" }
+    }
+)
+```
+
 ## Layout
 
 You can add a title, text, or vertical spacer like this:
