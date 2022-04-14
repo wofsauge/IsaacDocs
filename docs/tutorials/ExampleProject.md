@@ -35,5 +35,5 @@ local function postFireTear(_, tear)
 end
 
  -- Specify that the "onTear" function should be executed whenever the player fires a tear
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, postFireTear)
+mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, postFireTear)
 ```
