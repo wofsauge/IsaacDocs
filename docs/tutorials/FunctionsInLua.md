@@ -14,7 +14,7 @@ local function postFireTear(_, tear)
   -- Mod code
 end
 
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, postFireTear)
+mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, postFireTear)
 ```
 
 One potentially strange thing about this code is that we are denoting the first argument of the function as `_`.
@@ -32,13 +32,13 @@ Let's take a look at what a module-function would look like.
 The object that is returned from the `RegisterMod` function is a Lua table. Since it is a table, we can put arbitrary functions inside of the table:
 
 ```lua
-local myMod = RegisterMod("Dark Matter Tears", 1)
+local mod = RegisterMod("My Custom Tears", 1)
 
-function myMod.postFireTear(_, tear)
+function mod.postFireTear(_, tear)
   -- Mod code
 end
 
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, myMod.postFireTear)
+mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, myMod.postFireTear)
 ```
 
 Here, the "postFireTear" function is now a part of the "myMod" Lua table. We use a period to denote the connection. This code will work in an identical way to the local function.
@@ -46,13 +46,13 @@ Here, the "postFireTear" function is now a part of the "myMod" Lua table. We use
 We can also use the colon operator when declaring the function:
 
 ```lua
-local myMod = RegisterMod("Dark Matter Tears", 1)
+local mod = RegisterMod("My Custom Tears", 1)
 
-function myMod:postFireTear(tear)
+function mod:postFireTear(tear)
   -- Mod code
 end
 
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, myMod.postFireTear)
+mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, myMod.postFireTear)
 ```
 
 In this code, the colon operator specifies that the first argument of the function is really `self`, and the second argument is really `tear`, even though it isn't explicitly written that way. Like before, it will work in an identical way to the local function.
@@ -66,9 +66,9 @@ In Lua, functions are often part of modules, so calling them with a colon operat
 A third way to specify the callback function would be to use an anonymous function, which is simply a function without a name:
 
 ```lua
-local myMod = RegisterMod("Dark Matter Tears", 1)
+local mod = RegisterMod("My Custom Tears", 1)
 
-myMod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, function(_, tear)
+mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, function(_, tear)
   -- Mod code
 end)
 ```
