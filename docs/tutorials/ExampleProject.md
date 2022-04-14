@@ -5,7 +5,7 @@
 
 To make a new mod, create a new subdirectory in the following directory:
 
-```lua
+```
 C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\mods
 ```
 
