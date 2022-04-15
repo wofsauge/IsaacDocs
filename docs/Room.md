@@ -93,11 +93,11 @@ ___
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBossID ( ) {: .copyable aria-label='Functions' }
-Returns the boss id of the second boss in a double trouble room. returns 0 otherwise.
+Returns the boss ID of the first boss in the room. Returns 0 otherwise.
 
-This will return the subtype of the current room, since this value is used to determine the boss-portrait to display when entering.
+This will return the sub-type of the current room, since this value is used to determine the boss portrait to display when entering.
 
-A boss ID is **NOT** equal to the entity Type of the boss, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
+A boss ID is **NOT** equal to the entity type of the boss; it is a separate value in the entities2.xml file inside the "bossID" attribute.
 ___
 ### Get·Bottom·Right·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
