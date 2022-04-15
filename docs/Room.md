@@ -97,7 +97,7 @@ Returns the boss ID of the first boss in the room. Returns 0 otherwise.
 
 This will return the sub-type of the current room, since this value is used to determine the boss portrait to display when entering.
 
-A boss ID is **NOT** equal to the entity type of the boss; it is a separate value in the entities2.xml file inside the "bossID" attribute.
+A boss ID is not equal to the entity type of the boss; it is a separate value in the entities2.xml file inside the "bossID" attribute.
 ___
 ### Get·Bottom·Right·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -393,9 +393,11 @@ ___
 ### Get·Second·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetSecondBossID ( ) {: .copyable aria-label='Functions' }
-Returns the boss id of the second boss in a double trouble room. returns 0 otherwise.
+Returns the boss ID of the second boss in a double trouble room. Returns 0 otherwise.
 
-A boss ID is **NOT** equal to the entity Type of the boss, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
+A boss ID is not equal to the entity type of the boss; it is a separate value in the entities2.xml file inside the "bossID" attribute.
+
+Checking for this value is not sufficient to detect a Double Trouble room because a Double Trouble room can contain two of the same boss. If this is the case, then the value of the second boss ID will be equal to 0.
 
 ___
 ### Get·Seeded·Collectible () {: aria-label='Functions' }
