@@ -4,7 +4,7 @@
 [ ](#){: .abrep .tooltip .badge }
 #### [RNG](RNG.md) RNG ( ) {: .copyable aria-label='Constructors' }
 
-New RNG objects are always initialized with a seed of 2853650767. Thus, after invoking the constructor, you must set the seed of the RNG object to the initial seed that you want. In some cases, this can just be a new random number. Use the `Random` global function for these cases. However, in most cases, seeding with a completely random number would be a bug in your mod, because all behavior in Isaac should be deterministic based on the starting seed of the run, or the seed of the level, or the seed of the room, and so on.
+New RNG objects are always initialized with a seed of 2853650767. Thus, after invoking the constructor, you must set the seed of the new RNG object to the initial seed that you want. In some cases, this can just be a new random number between 1 and . Use the `Random` global function for these cases. However, in most cases, seeding with a completely random number would be a bug in your mod, because all behavior in Isaac should be deterministic based on the starting seed of the run, or the seed of the level, or the seed of the room, and so on.
 
 When setting the seed, it is recommended to use a shift index of 35, which is what most of the game's internal functions use. Document this number as a constant so that you avoid using [magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)).
 
