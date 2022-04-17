@@ -14,7 +14,7 @@ When setting the seed, it is recommended to use a shift index of 35, which is wh
     -- Any value between 0 and 80 should work equally well.
     -- https://www.jstatsoft.org/article/view/v008i14/xorshift.pdf
     local RECOMMENDED_SHIFT_IDX = 35
-
+    
     local game = Game()
     local seeds = game:GetSeeds()
     local startSeed = seeds:GetStartSeed()
@@ -25,14 +25,19 @@ When setting the seed, it is recommended to use a shift index of 35, which is wh
 
 ___
 ## Functions
+
 ### Get·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetSeed ( ) {: .copyable aria-label='Functions' }
+
 Returns the current seed of the RNG object.
+
 ___
 ### Next () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int Next ( ) {: .copyable aria-label='Functions' }
+
+"Iterates" the RNG's seed to the next random number in the psuedo-random sequence. (The internal PRNG algorithm used is [Xorshift](https://en.wikipedia.org/wiki/Xorshift).)
 
 ___
 ### Random·Float () {: aria-label='Functions' }
@@ -44,6 +49,9 @@ Note that this will automatically call the `RNG.Next` method before retrieving t
 
 ???+ example "Example code"
     ```lua
+    -- This is the ShiftIdx that Blade recommended after having reviewing the game's internal functions.
+    -- Any value between 0 and 80 should work equally well.
+    -- https://www.jstatsoft.org/article/view/v008i14/xorshift.pdf
     local RECOMMENDED_SHIFT_IDX = 35
     local MY_ENTITY_CHANCE = 0.3 -- 30%
 
