@@ -4,11 +4,21 @@
 [ ](#){: .abrep .tooltip .badge }
 #### [RNG](RNG.md) RNG ( ) {: .copyable aria-label='Constructors' }
 
+New RNG objects are always initialized with a seed of 2853650767. Thus, after invoking the constructor, you must set the seed to the initial seed that you want. In some cases, this can just be a new random number. But in most cases, seeding with a completely random number would be a bug, because all behavior in Isaac has to be deterministic based on the starting seed of the run
+
 ???+ example "Example code"
     ```lua
-    local myRNG = RNG()
-    myRNG:SetSeed(Random(), 1)
-    myRNG:RandomInt(4)  -- will generate 0, 1, 2, or 3.
+    -- This is the ShiftIdx that Blade recommended after having reviewing the game's internal functions.
+    -- Any value between 0 and 80 should work equally well.
+    -- https://www.jstatsoft.org/article/view/v008i14/xorshift.pdf
+    local RECOMMENDED_SHIFT_IDX = 35
+
+    local game = Game()
+    local seeds = game:GetSeeds()
+    local startSeed = seeds:GetStartSeed()
+    local rng = RNG()
+    rng:SetSeed(startSeed, RECOMMENDED_SHIFT_IDX)
+    local myRandomNumber = rng:RandomInt(4) -- Will be either 0, 1, 2, or 3.
     ```
 
 ___
