@@ -55,4 +55,13 @@ local function getEntityID(entity)
 end
 ```
 
+```lua
+-- Helper function to return a string containing a grid entity's type and variant.
+local function getGridEntityID(gridEntity)
+  local gridEntityType = gridEntity:GetType()
+  local gridEntityVariant = gridEntity:GetVariant()
+  return tostring(gridEntityType) .. "." .. tostring(gridEntityVariant)
+end
+```
+
 <br>
