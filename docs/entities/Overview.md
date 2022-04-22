@@ -41,7 +41,7 @@ Mods can spawn grid entities with the `Isaac.GridSpawn` method.
 Three integers make up the identity of an entity: `EntityType`, `Variant`, and `SubType`. These three values are often represented as a string with a period as a separator.
 
 - `EntityType` corresponds to the major entity type. For example, a Frowning Gaper (10.0.0) is different from a Pooter (14.0.0).
-- `Variant` corresponds to different kinds of the same `EntityType`. For example, a Frowning Gaper (10.0.0) is different from a Flaming Gaper (0.2.0).
+- `Variant` corresponds to different kinds of the same `EntityType`. For example, a Frowning Gaper (10.0.0) is different from a Flaming Gaper (10.2.0).
 - `SubType` corresponds to different kinds of the same `EntityType` and `Variant` combination. For example, a Sad Onion (5.100.1) is different from an Inner Eye (5.100.2).
 
 The `Entity` API class contains all three of these values as properties. The `GridEntity` API class offers a `GetType` and `GetVariant` method. (Grid entities do not use sub-types.)
