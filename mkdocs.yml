@@ -183,6 +183,7 @@ nav:
         - "TemporaryEffects": TemporaryEffects.md
         - "Vector": Vector.md
     - Entities:
+        - "Overview": entities/Overview.md
         - "Fissure Spawner": entities/FissureSpawner.md
         - "Ball & Chain": entities/SpikeBallChain.md
     - Tutorials:

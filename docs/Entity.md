@@ -1,5 +1,7 @@
 # Class "Entity"
 
+First, see [the tutorial on entities](entities/Overview.md).
+
 ### Children Classes {: .inheritance }
 [EntityBomb](EntityBomb.md), [EntityEffect](EntityEffect.md), [EntityFamiliar](EntityFamiliar.md), [EntityKnife](EntityKnife.md), [EntityLaser](EntityLaser.md), [EntityNPC](EntityNPC.md), [EntityPickup](EntityPickup.md), [EntityPlayer](EntityPlayer.md), [EntityProjectile](EntityProjectile.md), [EntityTear](EntityTear.md)
 
