@@ -1,7 +1,6 @@
 # Enum "ModCallbacks"
 Execution order diagram: [![callback diagram](../images/infographics/Isaac Callbacks.svg){: width='500' }](../images/infographics/Isaac Callbacks.svg)
 
-
 ### MC_NPC_UPDATE {: .copyable }
 Called after an NPC is updated.
 
@@ -176,12 +175,38 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .abrep .tooltip .badge }|7 |MC_FAMILIAR_INIT {: .copyable } | ([EntityFamiliar](../EntityFamiliar.md))|[FamiliarVariant](FamiliarVariant.md) |
 
 ### MC_EVALUATE_CACHE {: .copyable }
-Called one or more times when a player's stats must be re-evaluated, such as after picking up an item, using certain pills or manually calling EvaluateItems() on an [EntityPlayer](../EntityPlayer.md).
+Called one or more times when a player's stats are re-evaluated. For example, this will fire after the player picks up a collectible item or uses a stat pill.
 
 Returning any value will have no effect on later callback executions.
 
-???- info "Hint"
-    Use this to let custom items change the player's stats, familiars, flying, weapons, etc. Items tell the game which stats they affect using cache values in items.xml. Then the callback should respond to the [CacheFlag](CacheFlag.md) by setting the corresponding player stat. Other items' stat modifiers, multipliers, etc are applied before this callback is called.
+Use this callback to implement anything that changse the player's stats, familiars, flying, weapons, and so on.
+
+Custom collectibles and trinkets annotate which specific stats they affect with the "cache" tag in the "items.xml" file. For example, a custom passive collectible that increases tear rate and damage should have an "items.xml" entry with something along the lines of:
+
+```xml
+  <passive
+    name="Foo"
+    description="Bar"
+    gfx="foo.png"
+    cache="damage firedelay"
+  />
+```
+
+With this entry, the `MC_EVALUATE_CACHE` callback will fire twice when Foo item is picked up by the player, once with `CacheFlag.CACHE_DAMAGE`, and once with `CacheFlag.CACHE_FIREDELAY`.
+
+The stats for vanilla items and effects are applied before the callback is fired for any modded effects.
+
+You can force this callback to fire in other callbacks by 1) manually adding the appropriate cache flags to the player, and 2) calling the `EntityPlayer.EvaluateItems` method. For example:
+
+```lua
+-- My custom item changes the player's damage on every frame
+function barPostPEffectUpdate(player)
+  player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
+  player:EvaluateCache() -- The "MC_EVALUATE_CACHE" callback will now fire
+end
+```
+
+Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag.
 
 |DLC|Value|Name|Function Args| Optional Args|
 |:--|:--|:--|:--|:--|
