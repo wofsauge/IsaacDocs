@@ -186,7 +186,7 @@ Custom collectibles and trinkets annotate which specific stats they affect with 
 ```xml
   <passive
     name="Foo"
-    description="Bar"
+    description="My cool item"
     gfx="foo.png"
     cache="damage firedelay"
   />
