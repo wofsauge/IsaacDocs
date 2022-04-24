@@ -97,6 +97,8 @@ Various cheats that are useful for testing. Some of the ones not listed here are
 
 **debug 4** +40 damage. Good with Soy Milk.
 
+**debug 5** Displays text at the bottom of the screen about the current room
+
 **debug 6** Draws circles on the screen that represent an entity's damage hitbox. The color of the circle depends on the collision of the entity
 
 |Collision|Color|
@@ -116,6 +118,22 @@ Various cheats that are useful for testing. Some of the ones not listed here are
 **debug 9** Your luck is very high, so luck-based random events like random tear effects happen more often.
 
 **debug 10** All enemies take rapid damage at all times, so rooms are usually cleared in under a second.
+
+**debug 12** Displays held collectibles and temporary collectible effects
+
+**debug 13** Draws dotted circles on the screen that represent an entity's grid collision hitbox. The color of the circle depends on the grid collision of the entity. The number of dots depends on the `numGridCollisionPoint` variable set for the entity
+
+|Collision|Color|
+|--- |--- |
+|None|Nothing|
+|Walls X|Dark Red|
+|Walls Y|Dark Green|
+|Walls|Yellow|
+|Bullet|Orange|
+|Ground|Red|
+|No Pits|Cyan|
+|Pits Only|Light Purple|
+|Unknown Collision|Black|
 
 ### **giveitem**
 ####  aliases: `g`
@@ -217,7 +235,26 @@ combo 0.69
 Gives you an item combo, taking 69 random items from the specified item pool (in this case, 0 is the treasure room item pool).
 
 ### **macro**
+####  aliases: `m`
+
+Syntax:
+```
+macro mom
+macro hud
+m bigchest
+```
+
 This command wasn't designed for general consumption, as macros can only be added in C++ code. Sorry! If there's enough demand we can consider adding a similar feature for modder access. It just pastes a bunch of hardcoded console commands one after another using an abbrevition that's quick to type. You can use the clipboard to similar effect.
+
+### **playsfx**
+
+Syntax:
+```
+playsfx 1
+playsfx 1 0.5
+```
+
+Plays the specified sound effect id. Pitch can be specified in the second argument.
 
 ### **curse**
 
@@ -281,3 +318,14 @@ delirious 1
 ```
 This guarantees the next boss chosen when using Delirious.
 
+### **restock**
+Rerolls item pedestals and shop items in the current room.
+
+### **rewind**
+Makes the game forget about the changes in current room and teleports Isaac back to previous room. (Glowing Hourglass-like effect)
+
+## **testbosspool**
+Prints a list of boss names and percentage chance (100%=10000) for current floor.
+
+## **reloadwisps**
+Reloads wisps spawned by Book of Virtues and locusts spawned by Abyss.
