@@ -1382,8 +1382,9 @@ Removes a given costume based on its item config entry.
     This code removes the costume of the Spoon Bender collectible.
     ```lua
     local player = Isaac.GetPlayer()
-    local itemConfig = Isaac.GetItemConfig():GetCollectible(CollectibleType.COLLECTIBLE_SPOON_BENDER)
-    player:RemoveCostume(itemConfig)
+    local itemConfig = Isaac.GetItemConfig()
+    local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_SPOON_BENDER)
+    player:RemoveCostume(itemConfigItem)
     ```
 
 ___
