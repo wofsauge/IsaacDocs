@@ -175,7 +175,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .abrep .tooltip .badge }|7 |MC_FAMILIAR_INIT {: .copyable } | ([EntityFamiliar](../EntityFamiliar.md))|[FamiliarVariant](FamiliarVariant.md) |
 
 ### MC_EVALUATE_CACHE {: .copyable }
-Called one or more times when a player's stats are re-evaluated. For example, this will fire after the player picks up a collectible item or uses a stat pill.
+Called one or more times when a player's stats are re-evaluated. For example, this will fire after the player picks up a collectible item that grants stats or uses a stat pill.
 
 Returning any value will have no effect on later callback executions.
 
