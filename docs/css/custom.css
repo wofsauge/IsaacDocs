@@ -110,6 +110,7 @@ h4[aria-label$='Operators'] {
 .subHeader {
     border-bottom: 1px solid var(--md-default-fg-color--light);
     font-size: 1em !important;
+    font-weight: 800!important;
 }
 
 .frequentlyUsed {

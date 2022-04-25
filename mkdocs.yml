@@ -235,7 +235,13 @@ nav:
         - "stages.xml" : xml/stages.md
         - "translations.xml" : xml/translations.md
         - "wisps.xml" : xml/wisps.md
-    - FAQ: tutorials/faq.md
+    - FAQ:
+        - "General FAQ" : faq/faq.md
+        - "Troubleshooting" : faq/troubleshooting.md
+        - "Communication tips" : faq/communication-tips.md
+        - "Directories and save files" : faq/directories-and-save-files.md
+        - "Mod organization" : faq/mod-organization.md
+        - "Storing data" : faq/storing-data.md
     - Tools:
         - "Tools Overview" : tutorials/Tools.md
         - "Itempool Editor" : tutorials/Tool_ItemPoolEditor.md
@@ -274,10 +280,10 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed
   - attr_list
 plugins:
   - search:
