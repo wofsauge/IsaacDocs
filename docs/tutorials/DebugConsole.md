@@ -64,8 +64,10 @@ Syntax:
 goto s.boss.1010
 goto s.error.21
 goto d.10
+goto x.boss.1
+goto 9 5 1
 ```
-`s` is for special room types, and `d` is for normal room types. The rooms will be different depending on what floor you're on, so `goto d.10` will take you to a different room on stage 1 than it will on stage 3.
+`s` is for special room types, `d` is for normal room types, and `x` is for special room types which is packed inside of floor file. The rooms will be different depending on what floor you're on, so `goto d.10` will take you to a different room on stage 1 than it will on stage 3.
 
 ### **stage**
 Syntax:
@@ -95,6 +97,20 @@ Various cheats that are useful for testing. Some of the ones not listed here are
 
 **debug 4** +40 damage. Good with Soy Milk.
 
+**debug 5** Displays text at the bottom of the screen about the current room
+
+**debug 6** Draws circles on the screen that represent an entity's damage hitbox. The color of the circle depends on the collision of the entity
+
+|Collision|Color|
+|--- |--- |
+|None|Nothing|
+|Player Only|Orange|
+|Player Objects|Pink|
+|Enemies|Green|
+|All|Red|
+|Debug Shapes|Yellow|
+|Unknown Collision|Black|
+
 **debug 7** Display damage values, similar to the Spider Mod item
 
 **debug 8** Your active item always has max charge.
@@ -102,6 +118,22 @@ Various cheats that are useful for testing. Some of the ones not listed here are
 **debug 9** Your luck is very high, so luck-based random events like random tear effects happen more often.
 
 **debug 10** All enemies take rapid damage at all times, so rooms are usually cleared in under a second.
+
+**debug 12** Displays held collectibles and temporary collectible effects
+
+**debug 13** Draws dotted circles on the screen that represent an entity's grid collision hitbox. The color of the circle depends on the grid collision of the entity. The number of dots depends on the `numGridCollisionPoint` variable set for the entity
+
+|Collision|Color|
+|--- |--- |
+|None|Nothing|
+|Walls X|Dark Red|
+|Walls Y|Dark Green|
+|Walls|Yellow|
+|Bullet|Orange|
+|Ground|Red|
+|No Pits|Cyan|
+|Pits Only|Light Purple|
+|Unknown Collision|Black|
 
 ### **giveitem**
 ####  aliases: `g`
@@ -203,7 +235,26 @@ combo 0.69
 Gives you an item combo, taking 69 random items from the specified item pool (in this case, 0 is the treasure room item pool).
 
 ### **macro**
+####  aliases: `m`
+
+Syntax:
+```
+macro mom
+macro hud
+m bigchest
+```
+
 This command wasn't designed for general consumption, as macros can only be added in C++ code. Sorry! If there's enough demand we can consider adding a similar feature for modder access. It just pastes a bunch of hardcoded console commands one after another using an abbrevition that's quick to type. You can use the clipboard to similar effect.
+
+### **playsfx**
+
+Syntax:
+```
+playsfx 1
+playsfx 1 0.5
+```
+
+Plays the specified sound effect id. Pitch can be specified in the second argument.
 
 ### **curse**
 
@@ -214,7 +265,7 @@ curse 16
 curse 127
 ```
 
-Set a value corresponding to a sum of the desired curses. Darkness (1) + Labyrinth (2) + Lost (4) + Unknown (8) + Cursed (16) + Maze (32) + Blind (64) = 127 The stage or reseed commands are useful after adding curse of the labyrinth to force the floor to be re-generated.
+Set a value corresponding to a sum of the desired curses. Darkness (1) + Labyrinth (2) + Lost (4) + Unknown (8) + Cursed (16) + Maze (32) + Blind (64) + Giant (128) = 255 The stage or reseed commands are useful after adding curse of the labyrinth to force the floor to be re-generated.
 
 ### **reseed**
 Generates a new layout for the current floor with a new floor seed. This floor will no longer match other people playing the same seed.
@@ -252,3 +303,29 @@ Takes a mod folder name and runs the main.lua for it. This can be used to reload
 
 ### **luarun**
 Reports memory usage for Lua
+
+### **metro**
+Examples:
+```
+metro c1 
+```
+This guarantees the next item chosen when using Metronome.
+
+### **delirious**
+Examples:
+```
+delirious 1
+```
+This guarantees the next boss chosen when using Delirious.
+
+### **restock**
+Rerolls item pedestals and shop items in the current room.
+
+### **rewind**
+Makes the game forget about the changes in current room and teleports Isaac back to previous room. (Glowing Hourglass-like effect)
+
+## **testbosspool**
+Prints a list of boss names and percentage chance (100%=10000) for current floor.
+
+## **reloadwisps**
+Reloads wisps spawned by Book of Virtues and locusts spawned by Abyss.
