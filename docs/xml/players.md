@@ -20,7 +20,7 @@ This page needs some content. You can contribute to it using the Edit Button!
 |items|int|Starting item ID (can separate with a comma to add more than one)|
 |trinket|int|Starting trinket ID|
 |costume|int||
-|costumeSuffix|string|Equal to the suffix of a directory to use for character-specific costumes. For example, The Forgotten's costumeSuffix is "_forgotten", which means that his corresponding directory is located at "C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resources-dlc3\gfx\characters".|
+|costumeSuffix|string|Equal to the suffix of a directory to use for character-specific costumes. For example, The Forgotten's costumeSuffix is `_forgotten`, which means that his corresponding directory is located at `C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resources-dlc3\gfx\characters\costumes_forgotten`.|
 |bombs|int|Starting bombs|
 |keys|coins|Starting keys|
 |coins|int|Starting coins|
