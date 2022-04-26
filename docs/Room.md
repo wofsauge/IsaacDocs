@@ -354,6 +354,7 @@ ___
 Returns the ID of the stage the room was designed for.
 
 ???- note "Stage IDs (corresponds to IDs in stages.xml)"
+
 	|DLC|ID|Stage|Comment|
 	|:--|:--|:--|:--|
 	|[ ](#){: .abrep .tooltip .badge }|0 |Special Rooms |  |
