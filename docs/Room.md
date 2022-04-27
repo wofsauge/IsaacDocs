@@ -375,12 +375,12 @@ Returns the ID of the stage the room was designed for.
 	|[ ](#){: .abrep .tooltip .badge }|15 |Cathedral |  |
 	|[ ](#){: .abrep .tooltip .badge }|16 |Dark Room |  |
 	|[ ](#){: .abrep .tooltip .badge }|17 |Chest |  |
-	|[ ](#){: .ab .tooltip .badge }|18 |Greed Special Rooms |  |
-	|[ ](#){: .ab .tooltip .badge }|19 |Greed Basement |  |
-	|[ ](#){: .ab .tooltip .badge }|20 |Greed Caves |  |
-	|[ ](#){: .ab .tooltip .badge }|21 |Greed Depths |  |
-	|[ ](#){: .ab .tooltip .badge }|22 |Greed Womb |  |
-	|[ ](#){: .ab .tooltip .badge }|23 |Greed Sheol |  |
+	|[ ](#){: .abp .tooltip .badge }|18 |Greed Special Rooms |  |
+	|[ ](#){: .abp .tooltip .badge }|19 |Greed Basement |  |
+	|[ ](#){: .abp .tooltip .badge }|20 |Greed Caves |  |
+	|[ ](#){: .abp .tooltip .badge }|21 |Greed Depths |  |
+	|[ ](#){: .abp .tooltip .badge }|22 |Greed Womb |  |
+	|[ ](#){: .abp .tooltip .badge }|23 |Greed Sheol |  |
 	|[ ](#){: .abrep .tooltip .badge }|24 |The Shop |  |
 	|[ ](#){: .abrep .tooltip .badge }|25 |Ultra Greed |  |
 	|[ ](#){: .abrep .tooltip .badge }|26 |The Void |  |
