@@ -69,39 +69,48 @@ ___
 ### Stage·ID {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int StageID  {: .copyable aria-label='Variables' }
-The stage the room was designed for.
+The ID of the stage the room was designed for.
 
-???- note "Stage IDs (corresponds to ids in stages.xml)"
+???- note "Stage IDs (corresponds to IDs in stages.xml)"
 
-    | ID | Backdrop | Notes |
-    |--:|:--||
-    |0|Special Rooms||
-    |1|Basement||
-    |2|Cellar||
-    |3|Burning Basement||
-    |4|Caves||
-    |5|Catacombs||
-    |6|Drowned Caves||
-    |7|Depths||
-    |8|Necropolis||
-    |9|Dank Depths||
-    |10|Womb||
-    |11|Utero||
-    |12|Scarred Womb||
-    |13|Blue Womb (Hush)||
-    |14|Sheol||
-    |15|Cathedral||
-    |16|Dark Room||
-    |17|Chest||
-    |18|Special Rooms (Greed Mode)||
-    |19|Basement (Greed Mode)|Normally inaccessible. In greed mode, the main room is based off of the Special Rooms (Greed Mode) file.|
-    |20|Caves (Greed Mode)|Normally inaccessible unless in the first variant of unused stage 13. In greed mode, the main room is based off of the Special Rooms (Greed Mode) file.|
-    |21|Depths (Greed Mode)|Normally inaccessible unless in the second variant of unused stage 13. In greed mode, the main room is based off of the Special Rooms (Greed Mode) file.|
-    |22|Womb (Greed Mode)|Normally inaccessible unless in the third variant of unused stage 13. In greed mode, the main room is based off of the Special Rooms (Greed Mode) file.|
-    |23|Sheol (Greed Mode)|Normally inaccessible. In greed mode, the main room is based off of the Special Rooms (Greed Mode) file.|
-    |24|The Shop (Greed Mode)|Normally inaccessible. In greed mode, the main room is based off of the Special Rooms (Greed Mode) file.|
-    |25|Ultra Greed (Greed Mode)||
-    |26|The Void|Normally inaccessible. This stage uses rooms from other stages, and will return their respective values.|
+	|DLC|ID|Stage|Comment|
+	|:--|:--|:--|:--|
+	|[ ](#){: .abrep .tooltip .badge }|0 |Special Rooms |  |
+	|[ ](#){: .abrep .tooltip .badge }|1 |Basement |  |
+	|[ ](#){: .abrep .tooltip .badge }|2 |Cellar |  |
+	|[ ](#){: .abrep .tooltip .badge }|3 |Burning Basement |  |
+	|[ ](#){: .abrep .tooltip .badge }|4 |Caves |  |
+	|[ ](#){: .abrep .tooltip .badge }|5 |Catacombs |  |
+	|[ ](#){: .abrep .tooltip .badge }|6 |Flooded Caves |  |
+	|[ ](#){: .abrep .tooltip .badge }|7 |Depths |  |
+	|[ ](#){: .abrep .tooltip .badge }|8 |Necropolis |  |
+	|[ ](#){: .abrep .tooltip .badge }|9 |Dank Depths |  |
+	|[ ](#){: .abrep .tooltip .badge }|10 |Womb |  |
+	|[ ](#){: .abrep .tooltip .badge }|11 |Utero |  |
+	|[ ](#){: .abrep .tooltip .badge }|12 |Scarred Womb |  |
+	|[ ](#){: .abrep .tooltip .badge }|13 |Blue Womb |  |
+	|[ ](#){: .abrep .tooltip .badge }|14 |Sheol |  |
+	|[ ](#){: .abrep .tooltip .badge }|15 |Cathedral |  |
+	|[ ](#){: .abrep .tooltip .badge }|16 |Dark Room |  |
+	|[ ](#){: .abrep .tooltip .badge }|17 |Chest |  |
+	|[ ](#){: .abp .tooltip .badge }|18 |Greed Special Rooms |  |
+	|[ ](#){: .abp .tooltip .badge }|19 |Greed Basement |  |
+	|[ ](#){: .abp .tooltip .badge }|20 |Greed Caves |  |
+	|[ ](#){: .abp .tooltip .badge }|21 |Greed Depths |  |
+	|[ ](#){: .abp .tooltip .badge }|22 |Greed Womb |  |
+	|[ ](#){: .abp .tooltip .badge }|23 |Greed Sheol |  |
+	|[ ](#){: .abrep .tooltip .badge }|24 |The Shop |  |
+	|[ ](#){: .abrep .tooltip .badge }|25 |Ultra Greed |  |
+	|[ ](#){: .abrep .tooltip .badge }|26 |The Void |  |
+	|[ ](#){: .rep .tooltip .badge }|27 |Downpour |  |
+	|[ ](#){: .rep .tooltip .badge }|28 |Dross |  |
+	|[ ](#){: .rep .tooltip .badge }|29 |Mines |  |
+	|[ ](#){: .rep .tooltip .badge }|30 |Ashpit |  |
+	|[ ](#){: .rep .tooltip .badge }|31 |Mausoleum |  |
+	|[ ](#){: .rep .tooltip .badge }|32 |Gehenna |  |
+	|[ ](#){: .rep .tooltip .badge }|33 |Corpse |  |
+	|[ ](#){: .rep .tooltip .badge }|35 |Home |The Stage ID of 34 does not exist. |
+	|[ ](#){: .rep .tooltip .badge }|36 |Backwards |These rooms are used during the Ascent. |
 
 ___
 ### Subtype {: aria-label='Variables' }
