@@ -3,23 +3,25 @@
 ## General
 
 ### Do mods disable Achievements? {: .subHeader}
-**Mods don't disable achievements**, as long as you have killed mom (Endboss of Necropolis or Depths 2) at least once on the savefile. Killing her on challenges or dailies doesnt count.
+**Mods don't disable achievements**, as long as you have killed Mom (End Boss of Depths II and related floors) at least once on the savefile. Killing her on challenges or dailies doesn't count.
 
 
-### How do i install a mod? {: .subHeader}
-Simply press the "**subscribe**" button on the Workshop page. This will automatically download and install the mod. Just start your game again afterwards, and the mod will be listed in the "mods" menu in the main menu where it can be activated/deactivated.
+### How do I install a mod? {: .subHeader}
+Simply press the "**Subscribe**" button on the mod's Steam Workshop page. This will automatically download and install the mod. Just start your game again afterwards, and the mod will be listed in the "Mods" menu in the main menu where it can be activated/deactivated.
 
 
-### Do i need to have all DLCs installed to use mods? {: .subHeader}
-**Yes**, you need the basegame "Rebirth", the first DLC "Afterbirth" and the second DLC "Afterbirth+" installed to use mods.
+### Do I need to have all DLCs installed to use mods? {: .subHeader}
+**Yes**, you need the basegame "Rebirth", the first DLC "Afterbirth" and the second DLC "Afterbirth+" installed to use mods. Although the third DLC "Repentance" is not required, it's recommended as it adds new modding features meaning newer mods may not be compatible with just Afterbirth+.
 
 
-### Do Rebirth / Afterbirth mods work with Afterbirth+? {: .subHeader}
+### Do Rebirth / Afterbirth mods work with Afterbirth+ / Repentance? {: .subHeader}
 This depends on the mod, but in most cases, they don't work.
 
 
-### How do i open the Debug console? {: .subHeader}
-The Debug console is accessable as long as you have at least one mod activated.
+### How do I open the Debug console? {: .subHeader}
+In Afterbirth+, the Debug console is accessable as long as you have at least one mod activated.
+
+In Repentance, you enable the Debug console by setting the options.ini option "EnableDebugConsole" from "0" to "1".
 
 To open the console, press the **grave/tilde (~)** key while in a run, or the appropriate key according to the keyboard used, as listed [**HERE**](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
 
@@ -406,6 +408,3 @@ In general, it is idiomatic in Lua to invoke any function that is part of a modu
 Isaac.DebugString("foo") -- Works fine
 Isaac:DebugString("foo") -- Fails because the method does not expect the class as the first argument
 ```
-
-In general, it can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, I recommend programming mods in TypeScript using the [IsaacScript](https://isaacscript.github.io/) framework. In TypeScript, you invoke every function with a period, which is nice and consistent.
-
