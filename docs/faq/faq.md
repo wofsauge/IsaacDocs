@@ -408,3 +408,5 @@ In general, it is idiomatic in Lua to invoke any function that is part of a modu
 Isaac.DebugString("foo") -- Works fine
 Isaac:DebugString("foo") -- Fails because the method does not expect the class as the first argument
 ```
+
+In general, it can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you should try programming mods in TypeScript using the [IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is nice and consistent. Also, you get full type safety on your mod.)
