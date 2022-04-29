@@ -1,4 +1,4 @@
-# Mod Organization
+# [Tutorial] Mod Organization
 
 This is a short blog about how to organize a big Isaac mod - one that has thousands of lines of code. It's aimed at more experienced programmers who want to be the best coders that they can be, and not just get the job done as quickly as possible. The principles here are agnostic in that they equally apply to a mod written in TypeScript or a mod written in Lua.
 

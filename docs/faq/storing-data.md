@@ -1,4 +1,4 @@
-# Storing Data for Mods in The Binding of Isaac: Repentance
+# [Tutorial] Storing Data for Mods in The Binding of Isaac: Repentance
 
 ## The Problem
 
@@ -89,7 +89,7 @@ However, since the RNG value is the same for both Tainted Lazarus and Dead Taint
 
 Note that since The Forgotten and The Soul also share the same RNG, they will have the same index. This is usually what is desired, since they share the same collectibles. However, if this is not desired, then you can use the RNG for `CollectibleType.COLLECTIBLE_SPOON_BENDER` (3) for The Soul.
 
-All of this should be abstracted into a `getPlayerIndex` function. (In [IsaacScript](https://isaacscript.github.io/), this is included in the standard library.)
+All of this should be abstracted into a `getPlayerIndex` function. (In [:material-language-typescript:IsaacScript](https://isaacscript.github.io/), this is included in the standard library.)
 
 In conclusion, for this case:
 - You need to store variables on a table that is reset per run.
@@ -128,7 +128,7 @@ Also note that:
 - Collectibles that are shifted by Tainted Isaac's mechanic will have unique collectible indexes because the `SubType` is different. (The collectible entities share the same `InitSeed`.)
 - Collectibles that are rolled (with e.g. a D6) will have unique collectible indexes because both the `SubType` and `InitSeed` are different. If you want to track collectibles independently of any rerolls, then you can use the `PtrHash` as an index instead. (The `PtrHash` will not persist between rooms, however.)
 
-All of this should be abstracted into a `getCollectibleIndex` function. (In [IsaacScript](https://isaacscript.github.io/), this is included in the standard library.)
+All of this should be abstracted into a `getCollectibleIndex` function. (In [:material-language-typescript:IsaacScript](https://isaacscript.github.io/), this is included in the standard library.)
 
 In conclusion, for this case:
 - You need to store variables on a table that is reset per run. (You can also reset it per level if don't care about data persisting to a post-Ascent Treasure Room.)
@@ -185,6 +185,6 @@ For more advanced users, you will want to do better than this:
 
 Your end goal should try to be something that accomplishes all of the things that DeadInfinity outlines in [this GitHub issue](https://github.com/Meowlala/RepentanceAPIIssueTracker/issues/168).
 
-It's worth noting that if you are use [IsaacScript](https://isaacscript.github.io/), you can avoid dealing with any of this since you can easily leverage the well-tested save data manager this is included in the standard library.
+It's worth noting that if you are use [:material-language-typescript:IsaacScript](https://isaacscript.github.io/), you can avoid dealing with any of this since you can easily leverage the well-tested save data manager this is included in the standard library.
 
 <br>

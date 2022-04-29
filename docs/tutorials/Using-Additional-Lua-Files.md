@@ -1,4 +1,4 @@
-# Tutorial: Using Additional .lua Files
+# [Tutorial] Using Additional .lua Files
 
 If you want to load an additional .lua file besides your main.lua file, you can use either the `require` or `include` functions. Both have different purposes.
 
@@ -127,4 +127,4 @@ init()
 
 ### Alternate Workaround for Require Problems
 
-It's also worth noting that the `require` problems discussed above are non-problems if you are writing your mod with TypeScript using the [IsaacScript framework](https://isaacscript.github.io/). This is because the transpiler automatically combines all of your code into a single "main.lua" file. This means that you don't have to bother juggling between using `include` and `require`, worrying about state, or monkey patching the `require` function with a hack - you can simply write code that works.
+It's also worth noting that the `require` problems discussed above are non-problems if you are writing your mod with TypeScript using the [:material-language-typescript:IsaacScript framework](https://isaacscript.github.io/). This is because the transpiler automatically combines all of your code into a single "main.lua" file. This means that you don't have to bother juggling between using `include` and `require`, worrying about state, or monkey patching the `require` function with a hack - you can simply write code that works.

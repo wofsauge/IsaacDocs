@@ -1,6 +1,6 @@
-# Math and Lua Tips for BoI Modding
+# [Tutorial] Math and Lua Tips for BoI Modding
 
-# Lua Tips
+## Lua Tips
 
 ## Iterate over tables
 The best way to iterate over a table is by using the `ipairs()` or `pairs()` functions.
@@ -115,7 +115,7 @@ print(items[math.random(#items)])
 
 
 
-# Math tips
+## Math tips
 
 ## Modulo (Remainder of a division)
 The Modulo operator `%` is a very powerful tool in programming, because it can save you lots of code. It basically returns the whole number that would remain from a division by a given number.

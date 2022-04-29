@@ -1,4 +1,4 @@
-# Importing Lua Modules from the Standard Library
+# [Tutorial] Importing Lua Modules from the Standard Library
 
 Lua provides a standard library. However, since Isaac is a sandboxed environment, not everything is available for use:
 
@@ -34,13 +34,13 @@ Lua provides a standard library. However, since Isaac is a sandboxed environment
 | utf8
 | xpcall
 
-### --luadebug
+## --luadebug
 
 Normally, mods are restricted from doing anything harmful, like reading files from the file system or communicating over the network. Setting the `--luadebug` launch flag lifts these restrictions, allowing Lua code to use the `require` function to import arbitrary files and to use the "socket.lua" library.
 
 You should never enable --luadebug unless you have a very specific reason and you know what you are doing, as it could lead to your entire computer being compromised.
 
-#### Enabling
+### Enabling
 
 To enable it, perform the following steps:
 
@@ -51,17 +51,17 @@ To enable it, perform the following steps:
 - At the bottom of the screen, there will be a box to specify "Launch Options".
 - Enter `--luadebug` inside the text field.
 
-#### Functionality
+### Functionality
 
 The flag enables all of the packages and functions on the previous standard library table. Additionally, it causes the game to use an unmodified version of the `require` function that allows importing DLLs any any other arbitrary file.
 
-#### Networking
+### Networking
 
 Networking in Lua is accomplished via the `socket` library, which is provided with the game as a convenience and is located at: `C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resources\scripts\socket.lua`
 
 As per the above table, the `--luadebug` launch option must be enabled in order for the socket library to be correctly imported.
 
-### main.lua
+## main.lua
 
 The game uses a "main.lua" file that is loaded before any other mods, located at: `C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resources\scripts\main.lua`
 

@@ -1,4 +1,4 @@
-# Tutorial: Example Project
+# [Tutorial] Example Project
 ----
 
 ## An Example Mod

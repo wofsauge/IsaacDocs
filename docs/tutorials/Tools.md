@@ -24,7 +24,7 @@
 * [Notepad++](https://notepad-plus-plus.org/downloads/) : Free Coding environment
 * [ZeroBrane Studio](https://studio.zerobrane.com/) : Free Coding environment
     * Plug-In: [Afterbirth-API-for-ZeroBrane (outdated)](https://github.com/Yusyuriv/Afterbirth-API-for-ZeroBrane) Autocomplete for Isaac API functions and enums
-* [IsaacScript](https://isaacscript.github.io/) : Coding mods easily using Typescript
+* [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) : Coding mods easily using Typescript
 
 ## Afterbirth +
 * [Savegame Editor](https://moddingofisaac.com/mod/3236/afterbirth-save-editor-v10) : Savegame Editor for AB+

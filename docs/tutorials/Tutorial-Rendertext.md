@@ -1,4 +1,4 @@
-# Tutorial: Render text ingame
+# [Tutorial] Render text ingame
 
 ## Fonts used by the game
 

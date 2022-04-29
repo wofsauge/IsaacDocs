@@ -531,7 +531,7 @@ This is meant to be called in the EvaluateCache callback (when the cache flag is
 
 Note that this function is bugged in that it will not increment the provided RNG. This is bad because if you provide the player's collectible RNG as the argument for `rng`, all of the resulting spawned familiars will have the same `InitSeed`. Since `InitSeed` is the main way to identiy unique familiars, it is important that each familiar has a unique `InitSeed`. Thus, a brand new `RNG` object should always be passed to the `EntityPlayer.CheckFamiliar` method so that each new spawned familiar will have a new, random `InitSeed`. Subsequently, you should handle random familiar events not with an RNG object based on the familiar's `InitSeed`, but with a data structure that maps familiar `InitSeed `to RNG objects that are initialized based on the seed from the `EntityPlayer.GetCollectibleRNG` method.
 
-In most cases, [IsaacScript](https://isaacscript.github.io/) users should use the [`checkFamiliarFromCollectibles`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliarFromCollectibles) helper function instead of using this method directly, as it automatically calculates the appropriate target count.
+In most cases, [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) users should use the [`checkFamiliarFromCollectibles`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliarFromCollectibles) helper function instead of using this method directly, as it automatically calculates the appropriate target count.
 
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 

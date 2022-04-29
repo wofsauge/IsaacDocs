@@ -1,4 +1,4 @@
-# Tutorial: Functions in Lua
+# [Tutorial] Functions in Lua
 ----
 
 First, see the the [example project tutorial](ExampleProject.md).

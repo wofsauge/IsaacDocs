@@ -1,4 +1,4 @@
-# Tutorial: DebugConsole
+# [Tutorial] DebugConsole
 
 ## Prerequisites
 
@@ -307,7 +307,7 @@ Reports memory usage for Lua
 ### **metro**
 Examples:
 ```
-metro c1 
+metro c1
 ```
 This guarantees the next item chosen when using Metronome.
 
