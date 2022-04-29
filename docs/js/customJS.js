@@ -465,8 +465,12 @@ function colorizeSearchResults(element) {
         element.addClass("searchTutorial");
     } else if (text.includes("Enum ")) {
         element.addClass("searchEnum");
+    } else if (text.includes(".xml")) {
+        element.addClass("searchXML");
     } else if (text.includes("File ")) {
         element.addClass("searchFile");
+    } else if (text.includes("FAQ")) {
+        element.addClass("searchFAQ");
     }
 }
 
