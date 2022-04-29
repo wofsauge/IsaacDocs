@@ -328,7 +328,7 @@
 |[ ](#){: .rep .tooltip .badge }|918 |ENTITY_TURDLET {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|919 |ENTITY_RAGLICH {: .copyable } | currently unused |
 |[ ](#){: .rep .tooltip .badge }|920 |ENTITY_HORNY_BOYS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|921 |ENTITY_CLUTCH {: .copyable } | currently unused |
+|[ ](#){: .rep .tooltip .badge }|921 |ENTITY_CLUTCH {: .copyable } | |
 |[ ](#){: .rep .tooltip .badge }|922 |ENTITY_CADAVRA {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|950 |ENTITY_DOGMA {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|951 |ENTITY_BEAST {: .copyable } |  |
