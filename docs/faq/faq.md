@@ -39,7 +39,7 @@ Other resources:
 - [Written tutorials](../tutorials/ExampleProject.md)
 - [Collection of useful tools](../tutorials/Tools.md)
 - [AgentCucco's Video Tutorials](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) (playlist)
-- Alternative modding language [IsaacScript](https://isaacscript.github.io/): [text-based tutorial](https://isaacscript.github.io/docs/example-mod)
+- Alternative modding language [:material-language-typescript:IsaacScript](https://isaacscript.github.io/): [text-based tutorial](https://isaacscript.github.io/docs/example-mod)
 
 ### Where can I see the code for [some vanilla item] or [some vanilla mechanic]? {: .subHeader}
 
@@ -104,8 +104,6 @@ Once you run the extractor, the resources directory will fill up with all of the
     Note that you also have to re-run the resource extractor every time that there is a vanilla patch.
 
 
-
-
 ### How do I make sprites in the Isaac style? {: .subHeader}
 A good point to start, is by watching [this video](https://www.youtube.com/watch?v=cJ68vYqzSm0) by LeatherIceCream who explains the process fast and easy to understand.
 
@@ -144,6 +142,101 @@ In 2014, Chronometrics made a 3rd party room editor called [Basement Renovator](
 
 Basement Renovator is written in Python, so you can either run it from source or download a pre-bundled exe file from the [releases page](https://github.com/Basement-Renovator/Basement-Renovator/releases).
 
+
+
+## Troubleshooting
+
+### Why is my sprite showing up in-game as a black or red square? {: .subHeader}
+
+This happens when the sprite is saved with the wrong bit depth. Set it at 32-bit depth specifically. (Don't set it to be "Automatic".)
+
+
+### Mods are not visible in "mods" menu after subscription {: .subHeader}
+if mods are not visible in the mods folder even after you subscribed to the mod on the Steam Workshop, it could be caused by the following:
+
+1. You dont own all DLCs (Afterbirth and Afterbirth+). All Steam Workshop mods require those two DLCs to be installed in order for them to work correctly.
+
+2. (Only in AB+:) Your Windows / Mac Username does contain special characters, that are not part of the standard english alphabet. Since the game is not able to interpret those correctly, it cant find the mods folder. In order to fix this issue, you sadly have to create a new Windows User on your computer which name only contains english characters.
+
+### A mod doesn't work correctly {: .subHeader}
+If a mod doesn`t work for you, there are multiple possible solutions:
+
+1. Check if the mod is listed and enabled in the "mods" menu. See the question aboth if that is not the case.
+2. Close the game, unsubscribe from the mod on the Workshop, delete the Mod
+3. Check if the Debug Console contains any Error messages. [How to open the Console](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
+
+    * If the error message reads  `... attempt to call a nil value (global 'RegisterMod')`, your game files are corrupt and you need to do **Step 5**.
+
+4. Disable all other mods you have installed and see if one of those caused any errors.
+
+5. Execute the "Verify Game cache files" function in steam for the Game. Step by step guide can be found here Verify Game Cache Files [inxile.zendesk.com](https://inxile.zendesk.com/hc/en-us/articles/115004662908-Verify-game-cache-files-Steam-)
+
+
+### A big mod has invisible enemies, and everything seems broken {: .subHeader}
+It is highly likely that this is due to Steam not downloading all of the mod's files, rather than any error in the mod.
+
+Here are a couple of steps you can take to try to fix it:
+
+1. Close the game
+1. Unsubscribe from the mod on Steam
+1. Find your mods folder (See [here](#where-can-i-find-the-mod-files) )
+1. Delete the folder of the broken mod
+1. Open the game, then close it after it finished loading (intro cutscene plays)
+1. Resubscribe to the mod
+1. Open the game again. **DON'T** close the game when it seems to not respond anymore
+
+This process will delete all instances of the mod files, allowing steam to try and download them all again.
+
+
+### Why isn't my code working? How do I know when errors occur? Where is the log.txt file located? {: .subHeader}
+
+Lua is an interpreted language, which means that if you make a typo or have otherwise bad code, you will only be able to discover it once the program actually runs. If the Lua interpreters encounters an error, it will write it to the game's log.txt file.
+
+By default, this file is located at: `C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance\log.txt`
+
+Open this file and search it carefully for Lua-related errors. (Ctrl + f for "error" is a good start.) This will often tell you the line number that you messed up on.
+
+It is also recommended to set `FadedConsoleDisplay=1` in the options.ini file so that it is a little bit more easy to discover errors while you play.
+
+For people comfortable with command-line applications, use my [isaac-log-viewer](https://github.com/Zamiell/isaac-log-viewer) script and have it running on a second monitor as you code & test.
+
+
+### When is the log.txt cleared? {: .subHeader}
+
+Every time that you open the game, all of the contents of the log.txt is deleted. Thus, if you need information from the log after a bug occurs, make sure that you do not re-launch the game.
+
+
+### How do I troubleshoot my code? {: .subHeader}
+
+When you write programs, they may not work right away. Your first reaction should not be to paste a bunch of code into Discord and ask "why doesn't this work?". Doing that means you aren't putting forth very much effort to try and solve the problem on your own.
+
+The tried-and-true method to figure out almost any bug is called "print debugging". In Isaac, this means printing out a bunch of messages to the log.txt file so that you can view it and see which parts of your code are being executed, and which are not. So, go to a bunch of places in your code and add `Isaac.DebugString("GETTING HERE 1")`, `Isaac.DebugString("GETTING HERE 2")`, and so on. Then, run your code (i.e. walk around in-game and trigger the bug), and study the log.txt file to try and see what is happening.
+
+Often times, the reason that your code is not working is that your variables are not what you think they are. So, print out what the variables are at each step of the way so that you can confirm that they are what you think they are. Use something along the lines of: `Isaac.DebugString("GETTING HERE - FOO IS: " .. tostring(foo))`
+
+
+### I modified an XML file and the game crashes when I open it or when I go into a new run. {: .subHeader}
+
+A crash means that the XML file is invalid, meaning that you messed up somewhere while editing the file. Start over from scratch and make tiny edits one at a time until you find the exact part that crashes the game.
+
+Another helpful troubleshooting tool is validators like [xmlvalidation.com](https://www.xmlvalidation.com/).
+
+
+### I enabled a mod and now my game is crashing. How can I fix this? {: .subHeader}
+
+You can try looking through the log.txt file to see if anything interesting is there. However, in the vast majority of cases, the log will not show any helpful information when the game crashes.
+
+Instead, you can find the problem by disabling your mods one by one until you find the exact mod that is causing the crash. Then, you can report it to the developer of the mod, or try to manually fix the code yourself.
+
+
+### My mod is causing the game to crash. How do I figure out which line of code is causing the crash? {: .subHeader}
+
+First, check out the log.txt file for clues as to why the game is crashing. However, in the vast majority of cases, the log will not show any helpful information when the game crashes.
+
+If you are programming your mod in Lua, then your only option is to insert a lot of print statements to try and narrow down where the crash is occurring.
+
+If you are programming your mod in :material-language-typescript:TypeScript using the [IsaacScript framework](https://isaacscript.github.io/), then you can use [this crash debug plugin](https://github.com/IsaacScript/isaacscript/blob/main/src/plugins/addCrashDebugStatements.ts) that will put the exact line that the mod is crashing at in the log.txt, which is extremely handy.
+
 ## Coding
 
 ### How do I do X? How do I code X? {: .subHeader}
@@ -158,7 +251,7 @@ For example, the most basic callback is `MC_POST_GAME_STARTED`, which fires once
 
 Another common callback that mods use is `MC_POST_UPDATE`, which fires on every single update frame (i.e. 30 times per second). You would put code in this callback for custom items that have constant effects.
 
-Go through the [official docs](https://wofsauge.github.io/IsaacDocs/rep/enums/ModCallbacks.html) and read what all of the callbacks do so that you can get familiar with them.
+Go through the [ModCallbacks page](../enums/ModCallbacks.md) and read what all of the callbacks do so that you can get familiar with them.
 
 
 ### What is Single Line Responsibility (SLR)? {: .subHeader}
@@ -220,7 +313,7 @@ Unfortunately, Isaac does not natively support modded custom floors. BudJMT and 
 
 ### How do I modify the Devil Room / Angel Room chances? {: .subHeader}
 
-There is no built-in way to do this, so you will have to get inventive. For the most control, you can delete all vanilla Devil/Angel doors and completely re-implement the system from scratch. Otherwise, you can temporarily give items to the player such as Goat Head or Rosary Bead, or use things like [Game.SetLastDevilRoomStage()](SetLastDevilRoomStage ) or [Level.SetRedHeartDamage()](https://wofsauge.github.io/IsaacDocs/rep/Level.html#setredheartdamage). You also might want to use [LevelStateFlags](https://wofsauge.github.io/IsaacDocs/rep/enums/LevelStateFlag.html).
+There is no built-in way to do this, so you will have to get inventive. For the most control, you can delete all vanilla Devil/Angel doors and completely re-implement the system from scratch. Otherwise, you can temporarily give items to the player such as Goat Head or Rosary Bead, or use things like [Game.SetLastDevilRoomStage()](../Level.md#setlastdevilroomstage) or [Level.SetRedHeartDamage()](../Level.md#setredheartdamage). You also might want to use [LevelStateFlags](../enums/LevelStateFlag.md).
 
 
 ### How do I get a familiar to follow the player like Brother Bobby does? {: .subHeader}
@@ -256,7 +349,7 @@ See [this screenshot](https://cdn.discordapp.com/attachments/205854782542315520/
 
 There is no vanilla callback for this. As a workaround, you can check `EntityPlayer.IsItemQueueEmpty()` on every PostUpdate frame, and then check `EntityPlayer.QueuedItem` when it is not empty. Obviously, this will not work for items that never get queued.
 
-For IsaacScript users, you can use the provided `[MC_POST_ITEM_PICKUP](https://isaacscript.github.io/docs/function-signatures-custom#mc_post_item_pickup)` callback.
+For :material-language-typescript:IsaacScript users, you can use the provided [:material-language-typescript:MC_POST_ITEM_PICKUP](https://isaacscript.github.io/docs/function-signatures-custom#mc_post_item_pickup) callback.
 
 If you want to implement this callback yourself, the source code / algorithm is provided [here](https://github.com/IsaacScript/isaacscript-common/blob/main/src/callbacks/itemPickup.ts).
 
@@ -306,7 +399,7 @@ You can:
     ```
 
 === ":material-language-typescript: TypeScript"
-    If you are using [IsaacScript](https://isaacscript.github.io/), then all you have to do is call the `setBlindfold` function, like so:
+    If you are using [:material-language-typescript:IsaacScript](https://isaacscript.github.io/), then all you have to do is call the `setBlindfold` function, like so:
 
     ```ts
     const player = Isaac.GetPlayer();
@@ -411,4 +504,66 @@ Isaac:DebugString("foo") -- Fails because the method does not expect the class a
 
 In conclusion, you should only use a period with a function when it not part of a module, or it is the Isaac class, or you are passing the function as a reference.
 
-It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent.)
+It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent.)
+
+
+
+## Communication
+Some small tips on how to improve communication about modding via :fontawesome-brands-discord: Disord.
+
+### Use Discord Syntax Highlighting {: .subHeader}
+
+When pasting code into Discord, make sure to paste it in a "code block" by using triple backticks. And make sure to use syntax highlighting for the language, by typing the name of the language next to the backticks.
+
+=== ":material-language-lua: Lua Example"
+    ````
+    ```lua
+    local foo = "bar"
+    Isaac.DebugString(foo)
+    ```
+    ````
+
+=== ":material-language-typescript: TypeScript Example"
+    ````
+    ```ts
+    const foo = "bar";
+    Isaac.DebugString(foo);
+    ```
+    ````
+
+### Format Code {: .subHeader}
+
+When asking for help, it is common to post a code-snippet. Before posting code, **please format it with an auto-formatter** so that it can be easily understood by others.
+
+- In :material-language-lua: Lua, use [Lua Beautifier](https://goonlinetools.com/lua-beautifier/), [LuaFormatter](https://github.com/Koihik/LuaFormatter), or [lua-fmt](https://github.com/trixnz/lua-fmt).
+- In :material-language-typescript: TypeScript, use [Prettier](https://prettier.io/).
+
+### Avoid posting Screenshots {: .subHeader}
+
+When asking for help, it is common to post a screenshot of your code. **Don't do this**, because it isn't editable or copy-pasteable. Instead, post the actual text of the code. Also see the section on [Discord syntax highlighting](#use-discord-syntax-highlighting).
+
+### Use Minimal, Reproducible Examples {: .subHeader}
+
+When asking for help, it is common to post a bunch of code that is unrelated to the problem. This makes questions hard to understand and usually means that the person asking the question is putting forth very little effort.
+
+Please read [this StackOverflow post on how to create minimal, reproducible examples](https://stackoverflow.com/help/minimal-reproducible-example).
+
+### Avoid useing Link Previews {: .subHeader}
+
+Link previews can clutter the conversion, turning a tiny message into a massive wall of text. It is courteous to enclose all links in <>.
+
+For example:
+
+```
+Here's a link to my code: <https://github.com/IsaacScript/isaacscript-common/blob/main/src/functions/array.ts#L3-L16>
+```
+
+### What is the difference between an API and a library? {: .subHeader}
+
+Some mods on the workshop package functionality together as an abstraction for other people to use. In software, this is what is typically known as a "library". As a programmer, it is usually a lot easier to leverage other people's battle-tested libraries than to roll your own from scratch.
+
+On the other hand, an API is short for application programming interface, and it is exactly what it sounds like. An application might want to expose some functionality to external users and software, and it would do that through an explicitly defined interface. Libraries expose an API so that end-users can consume them. But note that *any* software can have an API, not just a library. For example, the Revelations Mod is a popular mod that adds new floors, bosses, and items to the game. But it also exposes an API so that it can be made compatible with other mods.
+
+Historically, Isaac libraries have labeled themselves as "APIs", but this is a misnomer. Some examples of this include [StageAPI](https://github.com/Meowlala/BOIStageAPI15) and [MinimapAPI](https://github.com/TazTxUK/MinimapAPI). On the other hand, an example of a library that is correctly named is Sanio's [Character Costume Protector](https://steamcommunity.com/sharedfiles/filedetails/?id=2541362255).
+
+If you are creating a new library, please use the correct terminology to name your project, which helps prevent confusion for newcomers to the Isaac modding scene.
