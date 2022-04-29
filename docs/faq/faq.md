@@ -402,11 +402,13 @@ foo:bar(arg1, arg)
 
 The point of using the colon is that it is a convienence to save you from typing out the longer function call, at the cost of some obfucation for those not familiar with Lua. This feature is included in the language since doing this is such a common task. (Lua modules are often used to emulate Java-style classes.)
 
-In general, it is idiomatic in Lua to invoke any function that is part of a module with a colon, and you should follow this convention when writing your own code. Additionally, most API class methods should be invoked with a colon. However, the `Isaac` class is an exception:
+It is idiomatic in Lua to invoke any function that is part of a module with a colon, and you should follow this convention when writing your own code. Additionally, most API class methods should be invoked with a colon. However, the `Isaac` class is an exception:
 
 ```lua
 Isaac.DebugString("foo") -- Works fine
 Isaac:DebugString("foo") -- Fails because the method does not expect the class as the first argument
 ```
 
-In general, it can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you should try programming mods in TypeScript using the [IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is nice and consistent. Also, you get full type safety on your mod.)
+In conclusion, you should only use a period with a function when it not part of a module, or it is the Isaac class, or you are passing the function as a reference.
+
+It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent.)
