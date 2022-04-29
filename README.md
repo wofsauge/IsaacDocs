@@ -2,6 +2,8 @@
 
 # The Binding of Isaac: Afterbirth+ Community Documentation Project
 
+You can view the website for this repository here: https://wofsauge.github.io/IsaacDocs/
+
 This project aims to make the Binding of Isaac modding documentation better by providing additional information, features, and a more modern design.
 
 ## New features
