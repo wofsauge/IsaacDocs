@@ -3,12 +3,15 @@
 This guide assumes you are on :fontawesome-brands-windows: Windows.
 
 ## 1 - The Game Directory
+
 By default, the game directly is located at:
 
 ```
 C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth
 ```
 This contains the game executable, "isaac-ng.exe", as well as some other miscellaneous files.
+
+<br>
 
 ## 2 - The "resources" Directory
 
@@ -33,6 +36,7 @@ C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\tools
 - Note that if a mod is enabled in the in-game "Mods" menu, and it has a resource file of the same name, it will overwrite what is in this directory.
 - Also note that every time after Nicalis patches the game, you should nuke all of the unpacked files and redo this entire process from scratch, or else you will be playing on game files meant for a previous patch.
 
+<br>
 
 ## 3 - The "resources-dlc3" Directory
 
@@ -44,6 +48,7 @@ C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\resou
 
 - This is similar to the "resources" directory, but it contains the files for Repentance. If a file is present in the "resources-dlc3" directory, it will take precedence over the same file in the "resources" directory.
 
+<br>
 
 ## 4 - The Documents "Save Data" Directory
 
@@ -61,6 +66,7 @@ C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance
 - If "SteamCloud" is set to 1, the game will look for save data from the Steam save data directory, listed below as #5.
 - If "SteamCloud" is set to 0, the game will look for save data from the same directory that the "options.ini" file is in (the "Documents" save data directory).
 
+<br>
 
 ## 5 - The Steam "Save Data" Directory
 
@@ -99,11 +105,13 @@ C:\Program Files (x86)\Steam\steamapps\workshop\content\250900
 - This is where mods from the Steam Workshop get downloaded to before they are sent to the "real" mods directory.
 - If you are unsubscribing from a mod for the purposes of redownloading it from Steam, you must also delete this directory in order to force a true redownload. Otherwise, Steam will just copy the mod from its cached directory.
 
+<br>
 
 ## Should I have "SteamCloud" on or off?
 
 - Either way is fine, but but I recommend that you turn it off, since it will prevent your save files from accidentally being deleted in case Steam messes up. Also, it becomes easier to manage your save files, since they will just exist in the same directory as everything else (options.ini, log.txt, and so on).
 
+<br>
 
 ## What are the save files called?
 
@@ -124,11 +132,13 @@ C:\Program Files (x86)\Steam\steamapps\workshop\content\250900
 - Furthermore, the game occasionally makes backups of the various save files. It will prepend the date to the name of the save file. For example, this is the name of a slot 1 save file backed up on January 15th, 2017:
   - 20170115.persistentgamedata1.dat
 
+<br>
 
 ## Additional Reading
 
 - This is a blog from Simon at Nicalis discussing some known issues: [https://steamcommunity.com/app/250900/discussions/0/613941122558099449/](https://steamcommunity.com/app/250900/discussions/0/613941122558099449/)
 
+<br>
 
 ## :fontawesome-brands-apple: MacOS File Locations
 
@@ -149,4 +159,3 @@ Unpacked resources directory (for Afterbirth+):
 ```
 /Users/[username]/Library/Application Support/Steam/steamapps/common/The Binding of Isaac Rebirth/tools/ResourceExtractor
 ```
-
