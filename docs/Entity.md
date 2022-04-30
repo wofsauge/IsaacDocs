@@ -15,11 +15,9 @@ Adds a burn effect to an enemy. `Duration` is in number of frames. `Damage` is t
 ???- info "Duration Information"
     `Duration` must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart.
 
-    ```
-    2 damage ticks = 22 frames
-    3 damage ticks = 42 frames
-    4 damage ticks = 62 frames
-    ...
+    - 2 damage ticks = 22 frames
+    - 3 damage ticks = 42 frames
+    - 4 damage ticks = 62 frames
 
     `Duration` has an upper limit. For an EntityPlayer, it maximum is one interval. For a normal entity, the maximum is 6 intervals.
 
