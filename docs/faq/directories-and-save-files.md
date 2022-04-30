@@ -115,22 +115,29 @@ C:\Program Files (x86)\Steam\steamapps\workshop\content\250900
 
 ## What are the save files called?
 
-- If you do not use SteamCloud, folder #4 will contain the files:
-  - persistentgamedata1.dat
-  - persistentgamedata2.dat
-  - persistentgamedata3.dat
-- If you use SteamCloud, folder #5 will contain the files:
-  - rep_persistentgamedata1.dat
-  - rep_persistentgamedata2.dat
-  - rep_persistentgamedata3.dat
-- These correspond to save file slots 1, 2, and 3 respectively.
-- If an in-game save slot is blank, the corresponding ".dat" file may not exist.
-- Furthermore, each save file slot may have a corresponding ".dat" file that contains the status of the current run, so that it may be resumed by the "Continue" feature. These files are called:
-  - gamestate1.dat
-  - gamestate2.dat
-  - gamestate3.dat
-- Furthermore, the game occasionally makes backups of the various save files. It will prepend the date to the name of the save file. For example, this is the name of a slot 1 save file backed up on January 15th, 2017:
-  - 20170115.persistentgamedata1.dat
+If you do not use SteamCloud, folder #4 will contain the files:
+
+- persistentgamedata1.dat
+- persistentgamedata2.dat
+- persistentgamedata3.dat
+
+If you use SteamCloud, folder #5 will contain the files:
+
+- rep_persistentgamedata1.dat
+- rep_persistentgamedata2.dat
+- rep_persistentgamedata3.dat
+
+These correspond to save file slots 1, 2, and 3 respectively. If an in-game save slot is blank, the corresponding ".dat" file may not exist.
+
+Furthermore, each save file slot may have a corresponding ".dat" file that contains the status of the current run, so that it may be resumed by the "Continue" feature. These files are called:
+
+- gamestate1.dat
+- gamestate2.dat
+- gamestate3.dat
+
+Furthermore, the game occasionally makes backups of the various save files. It will prepend the date to the name of the save file. For example, this is the name of a slot 1 save file backed up on January 15th, 2017:
+
+- 20170115.persistentgamedata1.dat
 
 <br>
 
