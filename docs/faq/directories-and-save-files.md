@@ -1,7 +1,5 @@
 # [Tutorial] Directories & Save Files Explanation (Repentance)
 
-The Isaac directory structure is rather complicated. Not to worry - I'll explain it all for you!
-
 This guide assumes you are on :fontawesome-brands-windows: Windows.
 
 ## 1 - The Game Directory
