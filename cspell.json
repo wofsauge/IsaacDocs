@@ -38,6 +38,7 @@
         "tostring",
         "userdata",
         "wofsauge",
-        "xpcall"
+        "xpcall",
+        "Zamiel"
     ]
 }
