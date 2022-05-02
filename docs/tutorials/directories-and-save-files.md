@@ -109,7 +109,7 @@ C:\Program Files (x86)\Steam\steamapps\workshop\content\250900
 
 ## Should I have "SteamCloud" on or off?
 
-- Either way is fine, but but I recommend that you turn it off, since it will prevent your save files from accidentally being deleted in case Steam messes up. Also, it becomes easier to manage your save files, since they will just exist in the same directory as everything else (options.ini, log.txt, and so on).
+- Either way is fine, but we recommend that you turn it off, since it will prevent your save files from accidentally being deleted in case Steam messes up. Also, it becomes easier to manage your save files, since they will just exist in the same directory as everything else (options.ini, log.txt, and so on).
 
 <br>
 
