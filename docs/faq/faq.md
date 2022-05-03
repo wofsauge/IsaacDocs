@@ -2,31 +2,33 @@
 
 ## General
 
-### Do mods disable Achievements? {: .subHeader}
-**Mods don't disable achievements**, as long as you have killed Mom (End Boss of Depths II and related floors) at least once on the savefile. Killing her on challenges or dailies doesn't count.
+### Do mods disable achievements? {: .subHeader}
 
+**Mods do not disable achievements**, as long as you have killed Mom (i.e. the boss of Depths II) at least once on the save file. Killing Mom on challenges or daily runs does not count.
 
 ### How do I install a mod? {: .subHeader}
+
 Simply press the "**Subscribe**" button on the mod's Steam Workshop page. This will automatically download and install the mod. Just start your game again afterwards, and the mod will be listed in the "Mods" menu in the main menu where it can be activated/deactivated.
 
+### Do I need to have all of the DLCs installed to use mods? {: .subHeader}
 
-### Do I need to have all DLCs installed to use mods? {: .subHeader}
-**Yes**, you need the basegame "Rebirth", the first DLC "Afterbirth" and the second DLC "Afterbirth+" installed to use mods. Although the third DLC "Repentance" is not required, it's recommended as it adds new modding features meaning newer mods may not be compatible with just Afterbirth+.
+You must have at least the base game (Rebirth), the first DLC (Afterbirth), and the second DLC (Afterbirth+) installed to use mods.
 
+The third DLC (Repentance) is not required, but it is recommended, as since it adds new modding features, many new mods are not backwards compatible with Afterbirth+.
 
 ### Do Rebirth / Afterbirth mods work with Afterbirth+ / Repentance? {: .subHeader}
-This depends on the mod, but in most cases, they don't work.
 
+This depends on the mod. However, in most cases, they do not work.
 
-### How do I open the Debug console? {: .subHeader}
-In Afterbirth+, the Debug console is accessable as long as you have at least one mod activated.
+### How do I open the debug console? {: .subHeader}
 
-In Repentance, you enable the Debug console by setting the options.ini option "EnableDebugConsole" from "0" to "1".
+In Afterbirth+, the debug console is enabled as long as you have at least one mod activated.
 
-To open the console, press the **grave/tilde (~)** key while in a run, or the appropriate key according to the keyboard used, as listed [**HERE**](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
+In Repentance, the debug console is enabled according to the "EnableDebugConsole" setting in the options.ini file. By default, it is set to "0", so if you want to use the debug console, you must change it from "0" to "1". (By default, the options.ini file is located at `C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance\options.ini`.)
 
-For a list of console commands, take a look at the wiki: [BoI Wiki](https://bindingofisaacrebirth.gamepedia.com/Debug_Console)
+To open the console, press the **grave/tilde (~)** key while in a run. If you are on a non-English keyboard, see the [wiki page on the debug console](https://bindingofisaacrebirth.gamepedia.com/Debug_Console) for more information.
 
+The wiki also has a [list of every console command](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
 
 ### How do I get started modding Isaac? (getting started) {: .subHeader}
 
@@ -39,7 +41,7 @@ Other resources:
 - [Written tutorials](../tutorials/ExampleProject.md)
 - [Collection of useful tools](../tutorials/Tools.md)
 - [AgentCucco's Video Tutorials](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) (playlist)
-- Alternative modding language [:material-language-typescript:IsaacScript](https://isaacscript.github.io/): [text-based tutorial](https://isaacscript.github.io/docs/example-mod)
+- [:material-language-typescript:IsaacScript](https://isaacscript.github.io/): [IsaacScript "Green Candle" tutorial](https://isaacscript.github.io/docs/example-mod)
 
 ### Where can I see the code for [some vanilla item] or [some vanilla mechanic]? {: .subHeader}
 
@@ -49,31 +51,31 @@ This means that if you want to make a custom item that works in a similar way to
 
 This also means that if you want to change the way a vanilla item works, you will often have to re-implement the item from scratch.
 
-### Who can I hire/comission to program an Isaac mod for me? {: .subHeader}
+### Who can I hire/commission to program an Isaac mod for me? {: .subHeader}
 
-Some members of the community can be comissioned to create mods for you. To get up-to-date informations on this topic, join the **[:fontawesome-brands-discord: Official BoI Discord-Server](https://discord.gg/isaac)**.
-
+Some members of the community can be commissioned to create mods for you. For specific recommendations, you can ask in the **[:fontawesome-brands-discord: official Discord server](https://discord.gg/isaac)**.
 
 ## Assets
 
 ### Where is the directory/folder for mods located? {: .subHeader}
+
 All mods are located in this location:
 
 === ":fontawesome-brands-windows: **Windows**"
 
     ```
     Repentance:
-    ...\Steam\steamapps\common\The Binding of Isaac Rebirth\mods\
+    C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\mods\
 
     Afterbirth+:
-    C:\Users\[YOURUSERNAME]\Documents\My Games\Binding of Isaac Afterbirth+ Mods\
+    C:\Users\[username]\Documents\My Games\Binding of Isaac Afterbirth+ Mods\
     ```
 
 === ":fontawesome-brands-apple: **Mac OS**"
 
     ```
     Afterbirth+:
-    /Users/[YOURUSERNAME]/Library/Application Support/Binding of Isaac Afterbirth+ Mods
+    /Users/[username]/Library/Application Support/Binding of Isaac Afterbirth+ Mods
     ```
 
 === ":fontawesome-brands-linux: **Linux**"
@@ -82,7 +84,6 @@ All mods are located in this location:
     Afterbirth+:
     /Steam/steamapps/compatdata/250900/pfx/drive_c/users/steamuser/Documents/My Games/Binding of Isaac Afterbirth+ Mods
     ```
-
 
 ### How do I unpack the game files? How do I use the resource extractor? {: .subHeader}
 
@@ -100,26 +101,20 @@ C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\tools
 
 Once you run the extractor, the resources directory will fill up with all of the XML files, ANM2 files, images, and other various files that the game uses.
 
-???+ info
-    Note that you also have to re-run the resource extractor every time that there is a vanilla patch.
-
+Note that you also have to re-run the resource extractor every time that there is a vanilla patch.
 
 ### How do I make sprites in the Isaac style? {: .subHeader}
-A good point to start, is by watching [this video](https://www.youtube.com/watch?v=cJ68vYqzSm0) by LeatherIceCream who explains the process fast and easy to understand.
 
-In addition its best to use ingame sprites as a reference for styles, colors and dimensions.
-
+Watch [this video](https://www.youtube.com/watch?v=cJ68vYqzSm0) by LeatherIceCream who explains the process.
 
 ### What is the ID of [the sound effect that I care about]? {: .subHeader}
 
 Use [this mod](misc/sounds-display.lua), which will tell you what the ID of any currently playing sound effect is.
 
-
 ### How do I overwrite vanilla music? {: .subHeader}
 
 - For normal music replacement, you can blow away the respective vanilla resource files.
 - For dynamic replacement, use Taz's [Music Mod Callback](https://steamcommunity.com/sharedfiles/filedetails/?id=2491006386).
-
 
 ### What are ANM2 files? {: .subHeader}
 
@@ -133,8 +128,11 @@ Use [this mod](misc/sounds-display.lua), which will tell you what the ID of any 
 
 ### How do I edit rooms? {: .subHeader}
 
-The official room editor is provided with the game and is located at:<br>
-`C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\tools\RoomEditor\RoomEditor.exe`
+The official room editor is provided with the game and is located at:
+
+```
+C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\tools\RoomEditor\RoomEditor.exe
+```
 
 This was the tool that Edmund used to create all of the rooms for Rebirth and Afterbirth. However, the official editor is not very good and does not work properly with any Repentance rooms.
 
@@ -142,69 +140,64 @@ In 2014, Chronometrics made a 3rd party room editor called [Basement Renovator](
 
 Basement Renovator is written in Python, so you can either run it from source or download a pre-bundled exe file from the [releases page](https://github.com/Basement-Renovator/Basement-Renovator/releases).
 
-
-
 ## Troubleshooting
 
 ### Why is my sprite showing up in-game as a black or red square? {: .subHeader}
 
 This happens when the sprite is saved with the wrong bit depth. Set it at 32-bit depth specifically. (Don't set it to be "Automatic".)
 
+### Why is a mod that I subscribed to not visible in the "mods" menu? {: .subHeader}
 
-### Mods are not visible in "mods" menu after subscription {: .subHeader}
-if mods are not visible in the mods folder even after you subscribed to the mod on the Steam Workshop, it could be caused by the following:
+If mods are not visible in the mods folder even after you subscribed to the mod on the Steam Workshop, it could be caused by the following:
 
-1. You dont own all DLCs (Afterbirth and Afterbirth+). All Steam Workshop mods require those two DLCs to be installed in order for them to work correctly.
+1. You do not own Afterbirth and Afterbirth+. All Steam Workshop mods require those two DLCs to be installed in order for them to work correctly.
 
-2. (Only in AB+:) Your Windows / Mac Username does contain special characters, that are not part of the standard english alphabet. Since the game is not able to interpret those correctly, it cant find the mods folder. In order to fix this issue, you sadly have to create a new Windows User on your computer which name only contains english characters.
+2. (Only in Afterbirth+) Your Windows / Mac username contains characters that are not part of the standard English alphabet. Since the game is not able to interpret those correctly, it will not be able to find the mods folder. In order to fix this issue, you have to create a new user on your computer which name only contains English characters.
 
-### A mod doesn't work correctly {: .subHeader}
-If a mod doesn`t work for you, there are multiple possible solutions:
+### A mod does not work correctly. {: .subHeader}
 
-1. Check if the mod is listed and enabled in the "mods" menu. See the question aboth if that is not the case.
-2. Close the game, unsubscribe from the mod on the Workshop, delete the Mod
-3. Check if the Debug Console contains any Error messages. [How to open the Console](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
+1. Check if the mod is listed and enabled in the "mods" menu.
+1. Follow the steps for purging a mod found in [this question](#a-mod-has-invisible-enemies-or-other-missing-content).
+1. Check if the log.txt contains any error messages. (By default, the log.txt is located at `C:\Users\james\Documents\My Games\Binding of Isaac Repentance\log.txt`.) If you have an error along the lines of `... attempt to call a nil value (global 'RegisterMod')`, your game files are corrupt and you need to verify the game's integrity (see below).
+1. Disable all other mods you have installed in order to see if they are causing any errors.
+1. Use Steam to "Verify integrity of game files". For more information, see [this guide](https://inxile.zendesk.com/hc/en-us/articles/115004662908-Verify-game-cache-files-Steam-).
 
-    * If the error message reads  `... attempt to call a nil value (global 'RegisterMod')`, your game files are corrupt and you need to do **Step 5**.
+### A mod has invisible enemies or other missing content. {: .subHeader}
 
-4. Disable all other mods you have installed and see if one of those caused any errors.
+It is likely that this is due to Steam not downloading all of the mod's files. You can purge the mod by performing the following steps:
 
-5. Execute the "Verify Game cache files" function in steam for the Game. Step by step guide can be found here Verify Game Cache Files [inxile.zendesk.com](https://inxile.zendesk.com/hc/en-us/articles/115004662908-Verify-game-cache-files-Steam-)
-
-
-### A big mod has invisible enemies, and everything seems broken {: .subHeader}
-It is highly likely that this is due to Steam not downloading all of the mod's files, rather than any error in the mod.
-
-Here are a couple of steps you can take to try to fix it:
-
-1. Close the game
-1. Unsubscribe from the mod on Steam
-1. Find your mods folder (See [here](#where-can-i-find-the-mod-files) )
-1. Delete the folder of the broken mod
-1. Open the game, then close it after it finished loading (intro cutscene plays)
-1. Resubscribe to the mod
-1. Open the game again. **DON'T** close the game when it seems to not respond anymore
-
-This process will delete all instances of the mod files, allowing steam to try and download them all again.
-
+1. Close the game.
+1. Unsubscribe from the mod on the Steam Workshop.
+1. Next, delete the mod directory in the real "mods" directory. (By default, this is located at `C:\Program Files (x86)\Steam\steamapps\common\The Binding of Isaac Rebirth\mods`.)
+1. Delete the mod directory in the Steam cached mods directory. (By default, this is located at `C:\Program Files (x86)\Steam\userdata\[Steam ID]\250900\remote`.
+1. Open the game.
+1. Close the game after the intro cutscene begins to play.
+1. Resubscribe to the mod on the Steam Workshop.
+1. Open the game again. **DO NOT** close the game when it seems to not respond anymore.
 
 ### Why isn't my code working? How do I know when errors occur? Where is the log.txt file located? {: .subHeader}
 
 Lua is an interpreted language, which means that if you make a typo or have otherwise bad code, you will only be able to discover it once the program actually runs. If the Lua interpreters encounters an error, it will write it to the game's log.txt file.
 
-By default, this file is located at: `C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance\log.txt`
+By default, this file is located at:
+
+```
+C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance\log.txt
+```
 
 Open this file and search it carefully for Lua-related errors. (Ctrl + f for "error" is a good start.) This will often tell you the line number that you messed up on.
 
-It is also recommended to set `FadedConsoleDisplay=1` in the options.ini file so that it is a little bit more easy to discover errors while you play.
+It is also recommended to set `FadedConsoleDisplay=1` in the options.ini file so that it is a little bit more easy to discover errors while you play. By default, the options.ini file is located at:
 
-For people comfortable with command-line applications, use my [isaac-log-viewer](https://github.com/Zamiell/isaac-log-viewer) script and have it running on a second monitor as you code & test.
+```
+C:\Users\james\Documents\My Games\Binding of Isaac Repentance\options.ini
+```
 
+For people comfortable with command-line applications, use Zamiel's [isaac-log-viewer](https://github.com/Zamiell/isaac-log-viewer) and have it running on a second monitor as you code & test.
 
 ### When is the log.txt cleared? {: .subHeader}
 
 Every time that you open the game, all of the contents of the log.txt is deleted. Thus, if you need information from the log after a bug occurs, make sure that you do not re-launch the game.
-
 
 ### How do I troubleshoot my code? {: .subHeader}
 
@@ -214,13 +207,11 @@ The tried-and-true method to figure out almost any bug is called "print debuggin
 
 Often times, the reason that your code is not working is that your variables are not what you think they are. So, print out what the variables are at each step of the way so that you can confirm that they are what you think they are. Use something along the lines of: `Isaac.DebugString("GETTING HERE - FOO IS: " .. tostring(foo))`
 
-
 ### I modified an XML file and the game crashes when I open it or when I go into a new run. {: .subHeader}
 
 A crash means that the XML file is invalid, meaning that you messed up somewhere while editing the file. Start over from scratch and make tiny edits one at a time until you find the exact part that crashes the game.
 
 Another helpful troubleshooting tool is validators like [xmlvalidation.com](https://www.xmlvalidation.com/).
-
 
 ### I enabled a mod and now my game is crashing. How can I fix this? {: .subHeader}
 
@@ -228,6 +219,7 @@ You can try looking through the log.txt file to see if anything interesting is t
 
 Instead, you can find the problem by disabling your mods one by one until you find the exact mod that is causing the crash. Then, you can report it to the developer of the mod, or try to manually fix the code yourself.
 
+Note that whenever you enable or disable a mod, you should completely close and re-open the game, since it does not load resources properly.
 
 ### My mod is causing the game to crash. How do I figure out which line of code is causing the crash? {: .subHeader}
 
@@ -253,11 +245,9 @@ Another common callback that mods use is `MC_POST_UPDATE`, which fires on every 
 
 Go through the [ModCallbacks page](../enums/ModCallbacks.md) and read what all of the callbacks do so that you can get familiar with them.
 
-
 ### What is Single Line Responsibility (SLR)? {: .subHeader}
 
 When writing code, put some effort into making it look nice and be easy to read for others, especially if you are showing it to other people or asking for help. In this vein, it is a good idea to follow the "single line responsibility" rule - meaning that **one line** should only do **one thing**. Read [this blog](https://midu.dev/single-line-responsability-haz-una-cosa-por-linea/) for more details about why SLR is great.
-
 
 ### How do I apply a costume to my character? {: .subHeader}
 
@@ -298,8 +288,6 @@ This is called a "null costume" and it is accomplished via the `EntityPlayer.Add
     mod:AddCallback(ModCallbacks.MC_POST_PLAYER_INIT, mod.postPlayerInit)
     ```
 
-
-
 ### How do I make the costume on my custom character persistent? {: .subHeader}
 
 Use [Sanio's "Character Costume Protector" library](https://steamcommunity.com/sharedfiles/filedetails/?id=2541362255) for this, or study the source code and re-implement it yourself.
@@ -310,11 +298,9 @@ For a reference implementation, see [Andrew the Bunny Knight](https://steamcommu
 
 Unfortunately, Isaac does not natively support modded custom floors. BudJMT and DeadInfinity have built a custom system called [StageAPI](https://github.com/Meowlala/BOIStageAPI15) that allows mods to add custom floors in a hacky way. However, StageAPI is not easy to use, so unless you are already an experienced Isaac modder & coder, you should stick to more simple projects.
 
-
 ### How do I modify the Devil Room / Angel Room chances? {: .subHeader}
 
 There is no built-in way to do this, so you will have to get inventive. For the most control, you can delete all vanilla Devil/Angel doors and completely re-implement the system from scratch. Otherwise, you can temporarily give items to the player such as Goat Head or Rosary Bead, or use things like [Game.SetLastDevilRoomStage()](../Level.md#setlastdevilroomstage) or [Level.SetRedHeartDamage()](../Level.md#setredheartdamage). You also might want to use [LevelStateFlags](../enums/LevelStateFlag.md).
-
 
 ### How do I get a familiar to follow the player like Brother Bobby does? {: .subHeader}
 
@@ -340,7 +326,6 @@ There is no built-in way to do this, so you will have to get inventive. For the 
     }
     ```
 
-
 ### How do you use StageAPI to add new bosses? {: .subHeader}
 
 See [this screenshot](https://cdn.discordapp.com/attachments/205854782542315520/895485829458325604/unknown.png) from Xalum.
@@ -353,20 +338,16 @@ For :material-language-typescript:IsaacScript users, you can use the provided [:
 
 If you want to implement this callback yourself, the source code / algorithm is provided [here](https://github.com/IsaacScript/isaacscript-common/blob/main/src/callbacks/itemPickup.ts).
 
-
 ### How do you tell what the entity type, variant, or subtype of a particular entity is? {: .subHeader}
 
 You can:
 
-1) Type "spawn x" into the in-game console. For example, "spawn confessional" would show that the Confessional entity has an identifier of 6.17. This means that it has an entity type of 6 and a variant of 17.
-2) Or, you can ctrl+f in the "resources-dlc3/entities2.xml" file for the entity you want.
-
+1. Type "spawn x" into the in-game console. For example, "spawn confessional" would show that the Confessional entity has an identifier of 6.17. This means that it has an entity type of 6 and a variant of 17.
+2. Or, you can ctrl+f in the "resources-dlc3/entities2.xml" file for the entity you want.
 
 ### How do I blindfold the player? {: .subHeader}
 
 === ":material-language-lua: Lua"
-    If you are using Lua, then copy-paste the following function into your mod and/or standard library:
-
     ```lua
     --- Written by Zamiel, technique created by im_tem
     -- @param player EntityPlayer
@@ -406,7 +387,15 @@ You can:
     setBlindfold(player, true);
     ```
 
+### What is the difference between an API and a library? {: .subHeader}
 
+Some mods on the workshop package functionality together as an abstraction for other people to use. In software, this is what is typically known as a "library". As a programmer, it is usually a lot easier to leverage other people's battle-tested libraries than to roll your own from scratch.
+
+On the other hand, an API is short for application programming interface, and it is exactly what it sounds like. An application might want to expose some functionality to external users and software, and it would do that through an explicitly defined interface. Libraries expose an API so that end-users can consume them. But note that *any* software can have an API, not just a library. For example, the Revelations Mod is a popular mod that adds new floors, bosses, and items to the game. But it also exposes an API so that it can be made compatible with other mods.
+
+Historically, Isaac libraries have labeled themselves as "APIs", but this is a misnomer. Some examples of this include [StageAPI](https://github.com/Meowlala/BOIStageAPI15) and [MinimapAPI](https://github.com/TazTxUK/MinimapAPI). On the other hand, an example of a library that is correctly named is Sanio's [Character Costume Protector](https://steamcommunity.com/sharedfiles/filedetails/?id=2541362255).
+
+If you are creating a new library, please use the correct terminology to name your project, which helps prevent confusion for newcomers to the Isaac modding scene.
 
 ## Lua
 
@@ -428,20 +417,17 @@ For example, in Lua:
 
 === ":material-language-typescript: TypeScript"
 
+    In IsaacScript, you could implement the code on the Lua tab in the exact same way. However, for this specific case, you can simply use a helper function to iterate over the rooms directly:
+
     ```ts
-    const game = Game();
-    const level = game.GetLevel();
-    const rooms = level.GetRooms();
-    for (let i = 0; i < rooms.Size; i++) {
-      const room = rooms.Get(i);
+    for (const roomDescriptor of getRooms()) {
       // Do something with the room
     }
     ```
 
-
 ### What is the difference between `require` and `include`? {: .subHeader}
-See the [docs](../tutorials/Using-Additional-Lua-Files.md).
 
+See the [docs](../tutorials/Using-Additional-Lua-Files.md).
 
 ### What is the difference between `pairs` and `ipairs`? {: .subHeader}
 
@@ -461,6 +447,7 @@ for key, value in pairs(map) do
   print(value) -- Prints bar, 123
 end
 ```
+
 ```lua
 local array = {
   123,
@@ -475,7 +462,6 @@ end
 ```
 
 Since Lua is [untyped](https://www.tutorialspoint.com/What-are-the-differences-between-untyped-and-dynamically-typed-programming-languages) and uses tables to represent multiple different data structures, `pairs` and `ipairs` serve as a flag to tell the reader what the underlying data structure really is.
-
 
 ### What does the colon operator in Lua do? {: .subHeader}
 
@@ -493,7 +479,7 @@ foo.bar(foo, arg1, arg2)
 foo:bar(arg1, arg)
 ```
 
-The point of using the colon is that it is a convienence to save you from typing out the longer function call, at the cost of some obfucation for those not familiar with Lua. This feature is included in the language since doing this is such a common task. (Lua modules are often used to emulate Java-style classes.)
+The point of using the colon is that it is a convenience to save you from typing out the longer function call, at the cost of some obfuscation for those not familiar with Lua. This feature is included in the language since doing this is such a common task. (Lua modules are often used to emulate Java-style classes.)
 
 It is idiomatic in Lua to invoke any function that is part of a module with a colon, and you should follow this convention when writing your own code. Additionally, most API class methods should be invoked with a colon. However, the `Isaac` class is an exception:
 
@@ -504,12 +490,11 @@ Isaac:DebugString("foo") -- Fails because the method does not expect the class a
 
 In conclusion, you should only use a period with a function when it not part of a module, or it is the Isaac class, or you are passing the function as a reference.
 
-It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent.)
-
-
+It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent and very difficult to mess up.)
 
 ## Communication
-Some small tips on how to improve communication about modding via :fontawesome-brands-discord: Disord.
+
+These are some tips on how to improve communication.
 
 ### Use Discord Syntax Highlighting {: .subHeader}
 
@@ -538,7 +523,7 @@ When asking for help, it is common to post a code-snippet. Before posting code, 
 - In :material-language-lua: Lua, use [Lua Beautifier](https://goonlinetools.com/lua-beautifier/), [LuaFormatter](https://github.com/Koihik/LuaFormatter), or [lua-fmt](https://github.com/trixnz/lua-fmt).
 - In :material-language-typescript: TypeScript, use [Prettier](https://prettier.io/).
 
-### Avoid posting Screenshots {: .subHeader}
+### Avoid Posting Screenshots {: .subHeader}
 
 When asking for help, it is common to post a screenshot of your code. **Don't do this**, because it isn't editable or copy-pasteable. Instead, post the actual text of the code. Also see the section on [Discord syntax highlighting](#use-discord-syntax-highlighting).
 
@@ -548,7 +533,7 @@ When asking for help, it is common to post a bunch of code that is unrelated to 
 
 Please read [this StackOverflow post on how to create minimal, reproducible examples](https://stackoverflow.com/help/minimal-reproducible-example).
 
-### Avoid useing Link Previews {: .subHeader}
+### Avoid Using Link Previews {: .subHeader}
 
 Link previews can clutter the conversion, turning a tiny message into a massive wall of text. It is courteous to enclose all links in <>.
 
@@ -557,13 +542,3 @@ For example:
 ```
 Here's a link to my code: <https://github.com/IsaacScript/isaacscript-common/blob/main/src/functions/array.ts#L3-L16>
 ```
-
-### What is the difference between an API and a library? {: .subHeader}
-
-Some mods on the workshop package functionality together as an abstraction for other people to use. In software, this is what is typically known as a "library". As a programmer, it is usually a lot easier to leverage other people's battle-tested libraries than to roll your own from scratch.
-
-On the other hand, an API is short for application programming interface, and it is exactly what it sounds like. An application might want to expose some functionality to external users and software, and it would do that through an explicitly defined interface. Libraries expose an API so that end-users can consume them. But note that *any* software can have an API, not just a library. For example, the Revelations Mod is a popular mod that adds new floors, bosses, and items to the game. But it also exposes an API so that it can be made compatible with other mods.
-
-Historically, Isaac libraries have labeled themselves as "APIs", but this is a misnomer. Some examples of this include [StageAPI](https://github.com/Meowlala/BOIStageAPI15) and [MinimapAPI](https://github.com/TazTxUK/MinimapAPI). On the other hand, an example of a library that is correctly named is Sanio's [Character Costume Protector](https://steamcommunity.com/sharedfiles/filedetails/?id=2541362255).
-
-If you are creating a new library, please use the correct terminology to name your project, which helps prevent confusion for newcomers to the Isaac modding scene.
