@@ -198,6 +198,8 @@ nav:
         - "Writing screen shaders": tutorials/Writingscreenshaders.md
         - "Render text": tutorials/Tutorial-Rendertext.md
         - "Directories and save files": tutorials/directories-and-save-files.md
+        - "Mod Organization": "tutorials/mod-organization.md"
+        - "Storing Data": "tutorials/storing-data.md"
     - XMLs:
         - "XML Overview": xml/XMLFiledocumentation.md
         - "achievements.xml" : xml/achievements.md
