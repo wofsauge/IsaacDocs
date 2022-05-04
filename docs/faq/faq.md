@@ -219,7 +219,7 @@ You can try looking through the log.txt file to see if anything interesting is t
 
 Instead, you can find the problem by disabling your mods one by one until you find the exact mod that is causing the crash. Then, you can report it to the developer of the mod, or try to manually fix the code yourself.
 
-Note that whenever you enable or disable a mod, you should completely close and re-open the game, since it does not load resources properly.
+Note that whenever you enable or disable a mod, you should completely close and re-open the game (because the game does not load resources properly when you enable/disable a mod via the in-game menu).
 
 ### My mod is causing the game to crash. How do I figure out which line of code is causing the crash? {: .subHeader}
 
