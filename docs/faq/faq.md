@@ -53,7 +53,7 @@ This also means that if you want to change the way a vanilla item works, you wil
 
 ### Who can I hire/commission to program an Isaac mod for me? {: .subHeader}
 
-Some members of the community can be commissioned to create mods for you. For specific recommendations, you can ask in the **[:fontawesome-brands-discord: official Discord server](https://discord.gg/isaac)**.
+Some members of the community can be hired to create mods. For specific recommendations, you can ask in the **[:fontawesome-brands-discord: official Discord server](https://discord.gg/isaac)**.
 
 ## Assets
 
