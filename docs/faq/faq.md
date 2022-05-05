@@ -328,7 +328,28 @@ There is no built-in way to do this, so you will have to get inventive. For the 
 
 ### How do you use StageAPI to add new bosses? {: .subHeader}
 
-See [this screenshot](https://cdn.discordapp.com/attachments/205854782542315520/895485829458325604/unknown.png) from Xalum.
+This is an example code snippet from Xalum:
+
+```lua
+mod.StageAPIBosses = {
+    StageAPI.AddBossData("The Baron", {
+        Name = "The Baron",
+        Portrait = "gfx/bosses/baron/portrait_baron.png",
+        Bossname = "gfx/bosses/baron/name_baron.png",
+        Rooms = StageAPI.RoomsList("BaronBossRooms", include("resources.luarooms.boss_baron"))
+    }),
+
+    StageAPI.AddBossData("High Amon", {
+        Name = "High Amon",
+        Portrait = "gfx/bosses/amon/portrait_amon.png",
+        Bossname = "gfx/bosses/amon/name_amon.png",
+        Rooms = StageAPI.RoomsList("AmonBossRooms", include("resources.luarooms.boss_amon"))
+    }),
+}
+
+StageAPI.AddBossToBaseFloorPool({BossID = "The Baron", Weight = 1.5}, LevelStage.STAGE3_1, StageType.STAGETYPE_AFTERBIRTH)
+StageAPI.AddBossToBaseFloorPool({BossID = "High Amon", AlwaysReplaceSubtype = 83, OnlyReplaceSubtype = 83}, LevelStage.STAGE2_1, StageType.STAGETYPE_REPENTANCE_B)
+```
 
 ### How do I know when a player has picked up a collectible item? {: .subHeader}
 
