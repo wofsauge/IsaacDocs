@@ -496,6 +496,10 @@ It can be pretty annoying to swap back and forth between using periods and colon
 
 These are some tips on how to improve communication.
 
+### Read the Docs
+
+This is the webpage for the Isaac modding documentation, or "the docs" for short. Please search the docs using the search feature in the top-right-hand corner before asking a question to other modders.
+
 ### Use Discord Syntax Highlighting {: .subHeader}
 
 When pasting code into Discord, make sure to paste it in a "code block" by using triple backticks. And make sure to use syntax highlighting for the language, by typing the name of the language next to the backticks.
