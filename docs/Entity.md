@@ -781,7 +781,16 @@ ___
 ### Sprite·Scale {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) SpriteScale  {: .copyable aria-label='Variables' }
-Get/set the scale of the enemy sprite. This can be used to also Scale the shadow of the entity.
+Get/set the scale of the enemy sprite. This can be used to also scale the shadow of the entity.
+
+Also used as a Player stat - Change this in a callback to MC_EVALUATE_CACHE using the CacheFlag.CACHE_SIZE flag.  **This is equal to the Size stat.**
+
+Most items that apply a Size Up (Magic Mushroom, Pill Larger...) do so by multiplying the SpriteScale by 1.2500623464584 (this is speculated to be 1.25 with a floating number error, you may choose to use 1.25 for futureproofing instead).
+
+Most items that apply a Size Down (Mini Mushroom, Binky, Pill Smaller...) do so by multiplying the SpriteScale by 0.79996013641357 (this is speculated to be 0.8 with a floating number error, you may choose to use 0.8 for futureproofing instead).
+
+Pluto uses its own multiplier of 0.5.
+
 ___
 ### Sub·Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

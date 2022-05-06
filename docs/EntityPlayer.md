@@ -1777,10 +1777,6 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is eq
 Defines how fast the tear travel when spawned.
 
 The default velocity of a tear shot is 10 times the players ShotSpeed.
-___
-### Sprite·Scale {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### [Vector](Vector.md) SpriteScale  {: .copyable aria-label='Variables' }
 
 ___
 ### Tear·Color {: aria-label='Variables' }
