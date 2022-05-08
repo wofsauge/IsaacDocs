@@ -495,7 +495,7 @@ You might think it is silly to rank "code clarity" is being more important than 
 - Code that doesn't work, but is easy to understand, can be modified to be made to work.
 - Code that works, but is indecipherable, is going to be very difficult to modify. And this means that we probably can't fix any bugs or add new features.
 
-One of the key insights of [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum), the creator of the [Python](https://www.python.org/) programming language, was that [code is read much more often than it is written](https://www.python.org/dev/peps/pep-0008/). Python was designed to be concise, clean, and readable. It had standard ways of doing things and recommended that everyone follow the [PEP-8 coding standard](https://www.python.org/dev/peps/pep-0008/). Now, Python is the [most popular programming language in the world](https://pypl.github.io/PYPL.html). The readability of the code isn't the only reason for Python's rise to success, but it is one of the more important ones.
+One of the key insights of [Guido van Rossum](https://en.wikipedia.org/wiki/Guido_van_Rossum), the creator of the [Python](https://www.python.org/) programming language, was that [code is read much more often than it is written](https://www.python.org/dev/peps/pep-0008/). Python was designed to be concise, clean, and readable. It had standard ways of doing things and recommends that everyone follow the [PEP-8 coding standard](https://www.python.org/dev/peps/pep-0008/). Now, Python is the [most popular programming language in the world](https://pypl.github.io/PYPL.html). The readability of the code isn't the *only* reason for Python's rise, but it is one of the more important ones.
 
 ## Lua
 
