@@ -418,7 +418,7 @@ Historically, Isaac libraries have labeled themselves as "APIs", but this is a m
 
 If you are creating a new library, please use the correct terminology to name your project, which helps prevent confusion for newcomers to the Isaac modding scene.
 
-### What is a micro-optimization?
+### What is a micro-optimization? Should I optimize my mod?
 
 #### Definition
 
