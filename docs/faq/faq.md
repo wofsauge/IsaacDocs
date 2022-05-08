@@ -458,7 +458,7 @@ end
 
 The idea here is that since we got rid of two function calls, the program should *theoretically* speed up. (Because under the hood, what functions do when they are called is put values on the stack, and then pop them back off of the stack when they are done.)
 
-But in reality, compilers can often optimize the code to perform this optimization automatically (without the programmer having to actually modify their source code). So in this case, the beginner programmer is making their source code worse in exchange for byte-code that will run identically. Bad!
+But in reality, compilers can often optimize the code to perform this speed-up automatically (without the programmer having to actually modify their source code). So in this case, the beginner programmer is making their source code worse in exchange for byte-code that will run identically. Bad!
 
 Furthermore, even if the compiler does not optimize the function call automatically, the simple act of calling a function can happen in few short nanoseconds. You would never be able to meaningfully measure a difference in the run-time performance of the program with a few extra function calls. So it's still the same as before: the beginner programmer is making their source code worse for no measurable benefit.
 
