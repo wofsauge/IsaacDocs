@@ -472,7 +472,7 @@ This is the reason why programmers have the maxim: "Premature optimization is th
 
 In the example above, the beginner programmer assumed that removing function calls would speed up the program. But these kinds of assumptions could be about any type of code, not just function calls. You might "know" that coding in a certain way will be faster than in another way.
 
-But in real life programs, it is **extremely difficult** to predict what kinds of code transformations will actually affect the performance of the program. Sometimes, you can make changes that you think will speed up the program, but they really make it slower! And sometimes, you can make changes that you think will make the program slower, but they really speed it up! The compiler does all kinds of crazy things under-the-hood.
+But in real life programs, it is **extremely difficult** to predict what kinds of code transformations will actually affect the performance of the program. Sometimes, you can make a change that you think will speed up the program, but it really makes it slower! And sometimes, you can make a change that you think will make the program slower, but it really speeds it up! The compiler does all kinds of crazy things under-the-hood.
 
 This is why when we talk about optimization, the most important thing to talk about is **measuring**. Memorize the **[three rules of optimization](https://wiki.c2.com/?RulesOfOptimization)** from the C2 wiki:
 
