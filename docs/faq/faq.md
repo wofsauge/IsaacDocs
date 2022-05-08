@@ -420,7 +420,7 @@ If you are creating a new library, please use the correct terminology to name yo
 
 ### What is a micro-optimization?
 
-### Definition
+#### Definition
 
 As programmers, we are often concerned with the speed of our programs.
 
@@ -468,7 +468,7 @@ This is the reason why programmers have the maxim: "Premature optimization is th
 
 > Programmers waste enormous amounts of time thinking about, or worrying about, the speed of noncritical parts of their programs, and these attempts at efficiency actually have a strong negative impact when debugging and maintenance are considered. We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil. Yet we should not pass up our opportunities in that critical 3%.
 
-### Measuring
+#### Measuring
 
 In the example above, the beginner programmer assumed that removing function calls would speed up the program. But these kinds of assumptions could be about any type of code, not just function calls. You might "know" that coding in a certain way will be faster than in another way.
 
@@ -484,7 +484,7 @@ This is why when we talk about optimization, the most important thing to talk ab
 
 The idea behind these 3 rules is that. in real life programs, you almost never need to optimize. But if you really do, you **must** measure both before and after. Based on what you measure, it will tell you if the code change is worth the costs of making the code longer, more complicated, or harder to understand. Sometimes, it will be worth it. But often, it won't.
 
-### Code Clarity
+#### Code Clarity
 
 So, if you should not generally be concerned with performance, what should you be concerned with? The answer is code clarity.
 
