@@ -474,13 +474,13 @@ In the example above, the beginner programmer assumed that removing function cal
 
 But in real life programs, it is **extremely difficult** to predict what kinds of code transformations will actually affect the performance of the program. Sometimes, you can make a change that you think will speed up the program, but it really makes it slower! And sometimes, you can make a change that you think will make the program slower, but it really speeds it up! The compiler does all kinds of crazy things under-the-hood.
 
-This is why when we talk about optimization, the most important thing to talk about is **measuring**. Memorize the **[three rules of optimization](https://wiki.c2.com/?RulesOfOptimization)** from the C2 wiki:
+This is why when we talk about optimization, the most important thing to discuss is **measuring**. Measuring the run-time of a piece of code is calling profiling. (It's also referred to as benchmarking.)
+
+Memorize the **[three rules of optimization](https://wiki.c2.com/?RulesOfOptimization)** from the C2 wiki:
 
 1) Don't.
 2) Don't... yet.
 3) Profile before optimization.
-
-(Measuring the run-time of a piece of code is calling profiling. It's also referred to as benchmarking.)
 
 The idea behind these 3 rules is that. in real life programs, you almost never need to optimize. But if you really do, you **must** measure both before and after. Based on what you measure, it will tell you if the code change is worth the costs of making the code longer, more complicated, or harder to understand. Sometimes, it will be worth it. But often, it won't.
 
