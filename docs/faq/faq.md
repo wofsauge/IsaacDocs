@@ -41,7 +41,7 @@ Other resources:
 - [Written tutorials](../tutorials/ExampleProject.md)
 - [Collection of useful tools](../tutorials/Tools.md)
 - [AgentCucco's Video Tutorials](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) (playlist)
-- [:material-language-typescript:IsaacScript](https://isaacscript.github.io/): [IsaacScript "Green Candle" tutorial](https://isaacscript.github.io/docs/example-mod)
+- [:material-language-typescript:IsaacScript](https://isaacscript.github.io/): ["Green Candle" tutorial](https://isaacscript.github.io/docs/example-mod)
 
 ### Where can I see the code for [some vanilla item] or [some vanilla mechanic]? {: .subHeader}
 
