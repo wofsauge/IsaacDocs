@@ -211,6 +211,7 @@
 |[ ](#){: .abrep .tooltip .badge }|308 |ENTITY_FISTULOID {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|309 |ENTITY_GUSH {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|310 |ENTITY_LEPER {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|311 |ENTITY_MR_MINE {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|401 |ENTITY_STAIN {: .copyable } | Afterbirth bosses |
 |[ ](#){: .abrep .tooltip .badge }|402 |ENTITY_BROWNIE {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|403 |ENTITY_FORSAKEN {: .copyable } |  |
