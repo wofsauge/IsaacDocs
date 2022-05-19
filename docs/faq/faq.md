@@ -424,7 +424,7 @@ If you are creating a new library, please use the correct terminology to name yo
 
 As programmers, we are often concerned with the speed of our programs.
 
-When beginner programmers start to think about "performance", they often make bad adjustments to their bad in the hopes that it will speed it up. These are called [micro-optimizations (or premature optimizations)](https://wiki.c2.com/?PrematureOptimization). For example, a beginner might start with some code that is neatly organized into separate functions, like this:
+When beginner programmers start to think about "performance", they often make bad adjustments to their code in the hopes that it will speed it up. These are called [micro-optimizations (or premature optimizations)](https://wiki.c2.com/?PrematureOptimization). For example, a beginner might start with some code that is neatly organized into separate functions, like this:
 
 ```lua
 local function main()
