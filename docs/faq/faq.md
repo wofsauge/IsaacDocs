@@ -490,7 +490,7 @@ So, if you should not generally be concerned with performance, what should you b
 
 First and foremost, the goal of code is to make it neat and easy to read for others. (And even if you are writing code that is never going to be read by anyone else, you should still make it neat and easy to read for future-you, who might have to read this code months or years from now and have to figure out what it does in order to fix some bug.)
 
-You might think it is silly to rank "code clarity" is being more important than having "code that works". And it's debatable. But consider this:
+You might think it is silly to rank "code clarity" as being more important than having "code that works". And that's certainly debatable. But consider this:
 
 - Code that doesn't work, but is easy to understand, can be modified to be made to work.
 - Code that works, but is indecipherable, is going to be very difficult to modify. And this means that we probably can't fix any bugs or add new features.
