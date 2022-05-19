@@ -82,10 +82,11 @@ Move to another floor on the same seed. You can use this to skip ahead to a late
 ### **gridspawn**
 Syntax:
 ```
-gridspawn 1000
-gridspawn 1494
-gridspawn 9000
-gridspawn 9100
+gridspawn 1000    -- Spawns Rock
+gridspawn 1494    -- Spawns Rainbow Poop
+gridspawn 9000    -- Spawns Trap Door
+gridspawn 9000.1  -- Spawns Void Portal
+gridspawn 9100    -- Spawns Staircase
 ```
 
 Spawns the grid entity with the given ID at a random place in the room. For some reason it doesn't always do something, possibly because of failing to overwrite other grid entities or trying to spawn outside the room or something. Pits won't look right until you leave the room and come back.
