@@ -294,7 +294,7 @@ The return value can be bool if it's a IS_ACTION_XXX hook or float if it's an GE
 
 Returning any value will have no effect on later callback executions.
 
-???- info "Execution informations"
+???- info "Execution information"
     This callback is called roughly 1470 times a second.
 
 |DLC|Value|Name|Function Args| Optional Args|
