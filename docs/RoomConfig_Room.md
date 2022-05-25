@@ -21,7 +21,7 @@ ___
 ### Doors {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int Doors  {: .copyable aria-label='Variables' }
-Returns a bit mask of the positions of the doors in this room. It is  a combination of bit flags of the DoorSlotFlag enum, which is defined as follows:
+Returns a bit mask of the positions of valid door positions in this room. It is  a combination of bit flags of the DoorSlotFlag enum, which is defined as follows:
 
 ```lua
 enum DoorSlotFlag {
