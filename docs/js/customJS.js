@@ -120,7 +120,7 @@ function modifyCallbackPageLayout() {
         if ($(this).get(0).tagName == "H3") {
             if (mcTableData != null && curH3 != null) {
                 var headerLink = mcTableData.find("td:eq(2)").text().toLowerCase();
-                tableContent = tableContent + "<tr><td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>"
+                tableContent = tableContent + "<tr><td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>";
                 tableContent = tableContent + "<td>" + mcTableData.find("td:eq(3)").html() + "</td><td>" + mcTableData.find("td:eq(4)").html() + "</td></tr>";
             }
             curH3 = $(this);
