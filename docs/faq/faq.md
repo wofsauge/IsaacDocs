@@ -146,6 +146,15 @@ Basement Renovator is written in Python, so you can either run it from source or
 
 This happens when the sprite is saved with the wrong bit depth. Set it at 32-bit depth specifically. (Don't set it to be "Automatic".)
 
+=== "![paint.net](misc/paintNetIcon.png) **Paint.NET**"
+
+    ![paint.net](misc/32bit_paintNET.png)
+
+=== "![photoshop](misc/photoshopIcon.png) **Photoshop**"
+
+    ![photoshop](misc/32bit_photoshop.png)
+
+
 ### Why is a mod that I subscribed to not visible in the "mods" menu? {: .subHeader}
 
 If mods are not visible in the mods folder even after you subscribed to the mod on the Steam Workshop, it could be caused by the following:
@@ -428,7 +437,7 @@ When beginner programmers start to think about "performance", they often make ba
 
 ```lua
 local function main()
-  -- Do some stuff with foo  
+  -- Do some stuff with foo
   foo()
 
   -- Do some stuff with bar
@@ -450,7 +459,7 @@ In the previous code, we have two functions that are small, named well (theoreti
 local function main()
   -- Do some stuff with foo
   -- TODO
-  
+
   -- Do some stuff with bar
   -- TODO
 end
