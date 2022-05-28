@@ -248,7 +248,11 @@ ___
 ### Initialize·Devil·Angel·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void InitializeDevilAngelRoom ( boolean ForceAngel, boolean ForceDevil ) {: .copyable aria-label='Functions' }
-
+By calling this function, it "locks in" the choice between a Devil Room and an Angel Room for the current floor.
+Once the room is initialized, the appropriate door will spawn after killing the boss.
+This function still works to grant a Devil Room even if the player has the Eucharist.
+Calling this function twice will have no effect, because the room will already have been initialized. For example, this means that if you force an Angel Room, you can't change it back to a Devil Room later on.
+However, you can get around this restriction by calling `level:GetRoomByIdx(GridRooms.ROOM_DEVIL_IDX).Data = nil`, which will uninitialize the room.
 ___
 ### Is·Alt·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
