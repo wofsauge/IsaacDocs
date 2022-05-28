@@ -23,6 +23,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityDesc](GridEntityDesc.md) GetSaveState ( ) {: .copyable aria-label='Functions' }
 
+???+ info "Info"
+    Both the [Desc](#desc) property and the [GetSaveState()](#getsavestate) method return the exact same [GridEntityDesc](GridEntityDesc.md) object. The game devs advise to use [GetSaveState()](#getsavestate) instead of [Desc](#desc).
 ___
 ### Get·Sprite () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -132,6 +134,9 @@ ___
 ### Desc {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityDesc](GridEntityDesc.md) Desc  {: .copyable aria-label='Variables' }
+
+???+ info "Info"
+    Both the [Desc](#desc) property and the [GetSaveState()](#getsavestate) method return the exact same [GridEntityDesc](GridEntityDesc.md) object. The game devs advise to use [GetSaveState()](#getsavestate) instead of [Desc](#desc).
 
 ___
 ### Position {: aria-label='Variables' }
