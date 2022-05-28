@@ -242,6 +242,7 @@ nav:
         - "FAQ" : faq/faq.md
     - Tools:
         - "Tools Overview" : tutorials/Tools.md
+        - "Animation Editor" : tutorials/Tool_AnimationEditor.md
         - "Itempool Editor" : tutorials/Tool_ItemPoolEditor.md
     - Bugs: https://github.com/Meowlala/RepentanceAPIIssueTracker
     - Lua 5.3 Docs: https://www.lua.org/manual/5.3/
