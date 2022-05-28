@@ -27,7 +27,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-You can change the attributes of the projectile by adding one or more [`ProjectileFlag`]((enums/ProjectileFlags.md)).
+You can change the attributes of the projectile by adding one or more [`ProjectileFlag`](enums/ProjectileFlags.md).
 
 ___
 ### Add·Scale () {: aria-label='Functions' }
