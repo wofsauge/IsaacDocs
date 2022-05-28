@@ -120,8 +120,12 @@ function modifyCallbackPageLayout() {
         if ($(this).get(0).tagName == "H3") {
             if (mcTableData != null && curH3 != null) {
                 var headerLink = mcTableData.find("td:eq(2)").text().toLowerCase();
-                tableContent = tableContent + "<tr><td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>";
-                tableContent = tableContent + "<td>" + mcTableData.find("td:eq(3)").html() + "</td><td>" + mcTableData.find("td:eq(4)").html() + "</td></tr>";
+                console.log(headerLink);
+                tableContent = tableContent + "<tr>" +
+                    "<td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>" +
+                    "<td>" + mcTableData.find("td:eq(3)").html() + "</td>" +
+                    "<td>" + mcTableData.find("td:eq(4)").html() + "</td>" +
+                    "<td>" + mcTableData.find("td:eq(5)").html() + "</td></tr>";
             }
             curH3 = $(this);
         } else if ($(this).get(0).tagName == "DIV") {
@@ -130,7 +134,8 @@ function modifyCallbackPageLayout() {
             }
         }
     });
-    var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Name</th><th>Function Args</th><th>Optional Args</th></tr></thead><tbody></tbody></table><hr/></div>");
+    var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\">" +
+        "<thead><tr><th>Name</th><th>Function Args</th><th>Optional Args</th><th>Return Type</th></tr></thead><tbody></tbody></table><hr/></div>");
     mapObj.insertAfter($(".md-content__inner").find("p").first());
 
     $('#contentOverviewTable > tbody').append(tableContent);
