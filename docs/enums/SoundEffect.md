@@ -129,6 +129,7 @@
 |[ ](#){: .abrep .tooltip .badge }|197 |SOUND_DERP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|199 |SOUND_DIMEPICKUP {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|200 |SOUND_LUCKYPICKUP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|201 |SOUND_FETUS_FEET {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|204 |SOUND_GOLDENKEY {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|205 |SOUND_GOOATTACH0 {: .copyable } |  |
