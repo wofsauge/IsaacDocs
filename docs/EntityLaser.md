@@ -24,7 +24,19 @@ ___
 ___
 ### Get·Non·Optimized·Samples () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const HomingLaser::SampleList GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
+#### const [VectorList](CppContainer_Vector_VectorList.md) GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
+
+Returns a VectorList representing the path of the laser. Seems to typically return 51 evenly-spaced points along the laser's path, as opposed to [`GetSamples()`](#GetSamples) which only returns the minimum needed points to represent the path of the laser.
+
+???+ example "Example Usage"
+    ```lua
+    local samplePoints = laser:GetNonOptimizedSamples()
+    
+    for i=0, #samplePoints-1 do
+        local pos = samplePoints:Get(i)
+        ...
+    end
+    ```
 
 ___
 ### Get·Render·Z () {: aria-label='Functions' }
@@ -34,7 +46,21 @@ ___
 ___
 ### Get·Samples () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const HomingLaser::SampleList GetSamples ( ) {: .copyable aria-label='Functions' }
+#### const [VectorList](CppContainer_Vector_VectorList.md) GetSamples ( ) {: .copyable aria-label='Functions' }
+
+Returns a VectorList representing the path of the laser. Unlike [`GetNonOptimizedSamples()`](#GetNonOptimizedSamples), this function returns as few points as possible, while still correctly representing the path of the laser.
+
+For example, for a completely straight laser, [`GetNonOptimizedSamples()`](#GetNonOptimizedSamples) will still return 51 points as always, but this function only only return 2.
+
+???+ example "Example Usage"
+    ```lua
+    local samplePoints = laser:GetSamples()
+    
+    for i=0, #samplePoints-1 do
+        local pos = samplePoints:Get(i)
+        ...
+    end
+    ```
 
 ___
 ### Has·Tear·Flags () {: aria-label='Functions' }
