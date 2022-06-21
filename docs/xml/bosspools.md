@@ -3,6 +3,8 @@
 
 This file is used to store informations about the bosses able to spawn on a given stage.
 
+This file can only be used to modify vanilla bosses. To add custom bosses, you need a 3rd-party library such as [StageAPI](https://github.com/Meowlala/BOIStageAPI15).
+
 **Resource-Folder**{: .xmlInfo .red}:  Placing this file in your mods "resource" folder has no effect!
 
 **Content-Folder**{: .xmlInfo .red}: Placing this file in your mods "content" folder has no effect!
