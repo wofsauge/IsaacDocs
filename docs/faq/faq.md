@@ -487,9 +487,9 @@ This is why when we talk about optimization, the most important thing to discuss
 
 Memorize the **[three rules of optimization](https://wiki.c2.com/?RulesOfOptimization)** from the C2 wiki:
 
-1) Don't.
-2) Don't... yet.
-3) Profile before optimization.
+1. Don't.
+2. Don't... yet.
+3. Profile before optimization.
 
 The idea behind these 3 rules is that in real life programs, you almost never need to optimize. But if you really do, you **must** measure both before and after. Based on what you measure, it will tell you if the code change is worth the costs of making the code longer, more complicated, or harder to understand. Sometimes, it will be worth it. But often, it won't.
 
