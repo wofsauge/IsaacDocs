@@ -103,4 +103,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int Wait  {: .copyable aria-label='Variables' }
 
+Used with collectibles to enforce a period of time where the player will not automatically pick up the collectible. New collectibles spawn with a `Wait` value of 20 (which corresponds to 20 game frames). The value will automatically decrement as game frames pass.
+
+It is unknown whether or not this value is used for pickups other than collectibles.
+
 ___
