@@ -239,7 +239,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
 
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
-		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
+		mySprite:Render(Vector(50,50))
 	end
     ```
 ___
@@ -262,7 +262,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
 
 	-- Execute this function every POST_RENDER. For example in the MC_POST_RENDER callback.
 	function myRenderSpriteFunction()
-		mySprite:RenderLayer(2, Vector(50,50), Vector(0,0), Vector(0,0))
+		mySprite:RenderLayer(2, Vector(50,50))
 	end
     ```
 ___
