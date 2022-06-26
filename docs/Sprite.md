@@ -222,7 +222,7 @@ ___
 ___
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Render ( [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp, [Vector](Vector.md) BottomRightClamp ) {: .copyable aria-label='Functions' }
+#### void Render ( [Vector](Vector.md) Position, [Vector](Vector.md) [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
 Renders the sprite object at a given screen position, where (0,0) is the top left of the screen.
 
 This function needs to be called every frame. For example in the MC_POST_RENDER callback.
