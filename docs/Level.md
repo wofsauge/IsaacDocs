@@ -358,8 +358,11 @@ ___
 ___
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void SetStage ( [LevelStage](enums/LevelStage.md) Stage, [StageType](enums/StageType.md) StageType ) {: .copyable aria-label='Functions' }
+#### void SetStage ( int StageOffset, int StageTypeOffset ) {: .copyable aria-label='Functions' }
 for SetStage/SetNextStage to have effect, call Init afterward
+
+Not much is known about these functions; submit a pull request if you learn more.
+
 ___
 ### Set·State·Flag () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
