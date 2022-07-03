@@ -349,7 +349,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetNextStage ( ) {: .copyable aria-label='Functions' }
 
-This function puts you in the next stage without applying any of the floor changes except visuals until you use StartStageTransition()
+This function puts you in the next stage without applying any of the floor changes. You are meant to call the `Level.StartStageTransition` method after using this function.
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
