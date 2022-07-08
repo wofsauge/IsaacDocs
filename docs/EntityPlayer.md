@@ -1331,6 +1331,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### boolean NeedsCharge ( [ActiveSlot](enums/ActiveSlot.md) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
 
+This will always return false for active items that have `chargetype="special"` set in the `items.xml` file, even if they are not fully charged.
+
 ___
 ### Play·Extra·Animation () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
