@@ -585,7 +585,7 @@ A period invokes the function in the "normal" way. A colon invokes the function 
 
 ```lua
 foo.bar(foo, arg1, arg2)
-foo:bar(arg1, arg)
+foo:bar(arg1, arg2)
 ```
 
 The point of using the colon is that it is a convenience to save you from typing out the longer function call, at the cost of some obfuscation for those not familiar with Lua. This feature is included in the language since doing this is such a common task. (Lua modules are often used to emulate Java-style classes.)
