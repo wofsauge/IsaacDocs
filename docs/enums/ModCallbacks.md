@@ -370,7 +370,7 @@ Returning any value will have no effect on later callback executions.
 ### MC_POST_NEW_LEVEL {: .copyable }
 This triggers after transitioning a level or stage.
 
-Its always called **after** MC_POST_NEW_ROOM.
+Unintuitively, it is always called **after** MC_POST_NEW_ROOM.
 
 Returning any value will have no effect on later callback executions.
 
