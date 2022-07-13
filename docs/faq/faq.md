@@ -45,7 +45,7 @@ Other resources:
 
 ### I am trying to do a basic mod and it doesn't work. I am trying to do a character/familiar/enemy and sprites are invisible.
 
-Files must go into specific directories, or they won't work. Start by following the [Lytebringr video tutorials on YouTube](https://www.youtube.com/playlist?list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF) and don't change anything that he is doing. Once you've verified that the character/familiar/enemy works in exactly the same way that it does in the video, then start to change things one thing at a time until it breaks. Then you will see where the problem is and you can ask a much more specific question.
+Files must go into specific directories, or they won't work. Start by following the [Lytebringr video tutorials on YouTube](https://www.youtube.com/playlist?list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF) and don't change anything that he is doing. Once you've verified that the character/familiar/enemy works in exactly the same way that it does in the video, then start to change things one thing at a time until it breaks. Then you will see where the problem is and you can ask a much more specific question, if needed.
 
 ### Where can I see the code for [some vanilla item] or [some vanilla mechanic]? {: .subHeader}
 
