@@ -8,7 +8,7 @@
 |[ ](#){: .abrep .tooltip .badge }|1 << 0|FLAG_NO_STATUS_EFFECTS {: .copyable } | prevent freeze/poison/slow/charm/confusion/fear/burn |
 |[ ](#){: .abrep .tooltip .badge }|1 << 1 |FLAG_NO_INTERPOLATE {: .copyable } | do not interpolate position |
 |[ ](#){: .abrep .tooltip .badge }|1 << 2 |FLAG_APPEAR {: .copyable } | play appear animation after Init |
-|[ ](#){: .abrep .tooltip .badge }|1 << 3 |FLAG_RENDER_FLOOR {: .copyable } | will be rendered to floor texture |
+|[ ](#){: .abrep .tooltip .badge }|1 << 3 |FLAG_RENDER_FLOOR {: .copyable } | Meant for entities that have a sprite loaded that represent a floor texture. Entities with this flag will be removed after their first render. (Removing the entity is desirable because we would not want it to override other things that render to the floor, like bomb explosions. You can use `EntityFlag.NO_REMOVE_ON_TEX_RENDER` to disable this behavior. |
 |[ ](#){: .abrep .tooltip .badge }|1 << 4 |FLAG_NO_TARGET {: .copyable } | will not be a target of NPCs or familiars |
 |[ ](#){: .abrep .tooltip .badge }|1 << 5 |FLAG_FREEZE {: .copyable } | freezing effect |
 |[ ](#){: .abrep .tooltip .badge }|1 << 6 |FLAG_POISON {: .copyable } | poison effect |
@@ -18,11 +18,11 @@
 |[ ](#){: .abrep .tooltip .badge }|1 << 10 |FLAG_MIDAS_FREEZE {: .copyable } | Midas frozen |
 |[ ](#){: .abrep .tooltip .badge }|1 << 11 |FLAG_FEAR {: .copyable } | Fleeing in Fear (like Mom's Pad) |
 |[ ](#){: .abrep .tooltip .badge }|1 << 12 |FLAG_BURN {: .copyable } | Caused by Fire Mind tears, works like poison except with Red color effect. |
-|[ ](#){: .abrep .tooltip .badge }|1 << 13 |FLAG_RENDER_WALL {: .copyable } | will be rendered to wall texture |
+|[ ](#){: .abrep .tooltip .badge }|1 << 13 |FLAG_RENDER_WALL {: .copyable } | Meant for entities that have a sprite loaded that represent a wall texture. Entities with this flag will be removed after their first render. (Removing the entity is desirable because we would not want it to override other things that render to the wall, like bomb explosions. You can use `EntityFlag.NO_REMOVE_ON_TEX_RENDER` to disable this behavior. |
 |[ ](#){: .abrep .tooltip .badge }|1 << 14 |FLAG_INTERPOLATION_UPDATE {: .copyable } | entity is updating at 60 fps, and this is an odd frame |
 |[ ](#){: .abrep .tooltip .badge }|1 << 15 |FLAG_APPLY_GRAVITY {: .copyable } | In sidescrolling room, this indicates that we're in a gravity zone. |
 |[ ](#){: .abrep .tooltip .badge }|1 << 16 |FLAG_NO_BLOOD_SPLASH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 << 17 |FLAG_NO_REMOVE_ON_TEX_RENDER {: .copyable } | for FLAG_RENDER_FLOOR and FLAG_RENDER_WALL |
+|[ ](#){: .abrep .tooltip .badge }|1 << 17 |FLAG_NO_REMOVE_ON_TEX_RENDER {: .copyable } | See `EntityFlag.FLAG_RENDER_FLOOR` and `EntityFlag.FLAG_RENDER_WALL`. |
 |[ ](#){: .abrep .tooltip .badge }|1 << 18 |FLAG_NO_DEATH_TRIGGER {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|1 << 19 |FLAG_NO_SPIKE_DAMAGE {: .copyable } | EntityNPC: shouldn't take any damage from spikes |
 |[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_LASER_POP {: .copyable } | EntityTear: Pop tear fired by a laser, should decelerate very quickly for the first few frames |
