@@ -15,7 +15,7 @@ ___
 ### Get·Default·Animation () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
-This function returns the name of the "Default" animation of a given sprite based on its .anm2 file.
+* Returns the `DefaultAnimation` value from the currently loaded anm2 file.
 
 This function seems to be the same as `GetDefaultAnimationName()`.
 
