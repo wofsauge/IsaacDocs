@@ -158,11 +158,11 @@ ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
-Starts executing the given animation at Frame 0. Using the [Update()](#update) function will den advance the animation by one frame.
+Starts executing the given animation, starting at frame 0. After calling this method, you must call the `Sprite.Update` method on every render frame in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsFinished` method.)
 
-Calling this function again will always reset the current frame back to 0.
+Calling this method again will reset the current frame back to 0.
 
-Setting the "**Force**" value to true will stop any already playing animation and start the new one.
+- **Force** - If true, the currently playing animation will be stopped, if any. If false, and there is already a currently playing animation, this method will do nothing and the current animation will continue to play.
 
 ???- example "Example Code"
     This code plays and renders a sprite.
@@ -188,11 +188,11 @@ ___
 ### Play·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
-Starts executing the given overlay animation at Frame 0. Using the [Update()](#update) function will den advance the animation by one frame.
+Starts executing the given overlay animation, starting at frame 0. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.) After calling this method, you must call the `Sprite.Update` method on every render frame in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsOverlayFinished` method.)
 
-Calling this function again will always reset the current frame back to 0.
+Calling this function again will always reset the current overlay frame back to 0.
 
-Setting the "**Force**" value to true will stop any already playing animation and start the new one.
+- **Force** - If true, the currently playing animation will be stopped, if any. If false, and there is already a currently playing animation, this method will do nothing and the current animation will continue to play.
 
 ???- example "Example Code"
     This code plays and renders an overlay sprite.
@@ -217,7 +217,7 @@ ___
 ### Play·Random () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayRandom ( int Seed ) {: .copyable aria-label='Functions' }
-Play a randomly selected animation of the currently loaded .anm2 file.
+Plays a random animation from the currently loaded anm2 file.
 
 ___
 ### Reload () {: aria-label='Functions' }
@@ -233,9 +233,9 @@ ___
 ### Render () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Render ( [Vector](Vector.md) Position, [Vector](Vector.md) [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
-Renders the sprite object at a given screen position, where (0,0) is the top left of the screen.
+Renders the sprite object at a given screen position, where (0, 0) is the top left corner of the screen.
 
-This function needs to be called every frame. For example in the MC_POST_RENDER callback.
+In order for the sprite to be drawn, this function needs to be called on every render frame. (For example in the `MC_POST_RENDER` callback.)
 
 TopLeftClamp and BottomRightClamp can be used to crop the sprite.
 
@@ -257,9 +257,9 @@ ___
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void RenderLayer ( int LayerId, [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
-Renders the given layer of the sprite object at a given screen position, where (0,0) is the top left of the screen.
+Renders a specific layer of the sprite at a given screen position, where (0,0) is the top left corner of the screen.
 
-This function needs to be called every frame. For example in the MC_POST_RENDER callback.
+This is similar to the `Sprite.Render` method, but it will only render a specific layer of the sprite instead of all of the layers at once.
 
 TopLeftClamp and BottomRightClamp can be used to crop the sprite.
 
@@ -280,7 +280,9 @@ ___
 ### Replace·Spritesheet () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
-Changes the ".png" file assosiated to a specific layer of a sprite.
+Changes the ".png" file associated with a specific layer of a sprite.
+
+After replacing a spritesheet, you must call the `Sprite.LoadGraphics` method afterwards.
 
 ???+ note "Notes"
     The effect is only applied after calling the [LoadGraphics()](#LoadGraphics) function afterwards.
@@ -305,20 +307,27 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean SetAnimation ( string AnimationName, boolean Reset = true ) {: .copyable aria-label='Functions' }
 
-???+ note "Notes"
-    Passing Reset as false will continue the animation from the current frame. This is a really good tool for familiars that alternate between different FloatDirection animations dynamically and other entities that follow similar behaviors.
+Similar to the `Sprite.Play` method, but does not start the animation.
+
+- **Reset** - as false will continue the animation from the current frame. This is a really good tool for familiars that alternate between different FloatDirection animations dynamically and other entities that follow similar behaviors.
 
 ___
 ### Set·Frame () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void SetFrame ( int FrameNum ) {: .copyable aria-label='Functions' }
-
 #### void SetFrame ( string AnimationName, int FrameNum ) {: .copyable .secondH4 aria-label='Functions' }
-Sets currently playing frame.
+
+Changes the current animation to a specific frame.
+
+Note that normally, you would use the `Sprite.Update` method to automatically iterate the sprite's animation frame. Thus, this method is typically used for sprites that don't play animations.
+
+The `Sprite.SetFrame` method has two overloads: one which supports setting an animation at the same time, and one that uses the currently playing animation.
+
 ___
 ### Set·Last·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetLastFrame ( ) {: .copyable aria-label='Functions' }
+
 Sets the currently playing animation to be on its last frame.
 ___
 ### Set·Layer·Frame () {: aria-label='Functions' }
@@ -349,7 +358,8 @@ ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
-Advances the currently playing animation by one frame()
+
+Advances the currently playing animation by one frame.
 
 ___
 ### Was·Event·Triggered () {: aria-label='Functions' }
