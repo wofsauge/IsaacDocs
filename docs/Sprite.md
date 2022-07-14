@@ -17,8 +17,7 @@ ___
 #### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
 This function returns the name of the "Default" animation of a given sprite based on its .anm2 file.
 
-???- info "Info"
-    This function seems to be the same as `GetDefaultAnimationName()`.
+This function seems to be the same as `GetDefaultAnimationName()`.
 
 ???- example "Example Code"
     This code print the default animation name "WalkDown" of the player sprite.
@@ -34,8 +33,7 @@ ___
 #### string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
 This function returns the name of the "Default" animation of a given sprite based on its .anm2 file.
 
-???- info "Info"
-    This function seems to be the same as `GetDefaultAnimation()`.
+This function seems to be the same as `GetDefaultAnimation()`.
 
 ???- example "Example Code"
     This code print the default animation name "WalkDown" of the player sprite.
