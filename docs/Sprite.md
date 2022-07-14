@@ -27,6 +27,7 @@ This function seems to be the same as `GetDefaultAnimationName()`.
     local sprite = player:GetSprite()
     print(sprite:GetDefaultAnimation()) -- this prints "WalkDown"
     ```
+
 ___
 ### Get·Default·Animation·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -48,7 +49,7 @@ ___
 ### Get·Filename () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string GetFilename ( ) {: .copyable aria-label='Functions' }
-This function returns the path to the .anm2 file used by the sprite.
+Returns the path to the anm2 file that is loaded on the sprite.
 
 ???- example "Example Code"
     This code print the .anm2 path of the player sprite.
@@ -63,28 +64,32 @@ ___
 ### Get·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetFrame ( ) {: .copyable aria-label='Functions' }
-Returns the currently rendered Frame of the given Sprite.
+Returns the frame number of the animation that is currently being rendered.
+
 ___
 ### Get·Layer·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetLayerCount ( ) {: .copyable aria-label='Functions' }
-Returns the number of layers of the .anm2 file of the sprite. All Animations use the same amount of Layers.
+Returns the number of layers in the anm2 file that is loaded on the sprite. All animations use the same amount of layers.
+
 ___
 ### Get·Overlay·Animation () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### string GetOverlayAnimation ( ) {: .copyable aria-label='Functions' }
-Return the name of the currently played overlay animation.
+Returns the name of the currently playing overlay animation. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.)
 
 ___
 ### Get·Overlay·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetOverlayFrame ( ) {: .copyable aria-label='Functions' }
-Returns the currently rendered Frame of the Overlay of the given Sprite. It acts independent from the normal Frame count.
+Returns the frame number of the overlay animation that is currently being rendered. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.)
+
 ___
 ### Get·Texel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [KColor](KColor.md) GetTexel ( [Vector](Vector.md) SamplePos, [Vector](Vector.md) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
-Returns the color of the pixel of the Sprite at the given sample position. RenderPos can be neglected and set to a null vector
+Returns the color of the pixel of the sprite at the given sample position. RenderPos can be neglected and set to a null vector
+
 ___
 ### Is·Event·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -118,8 +123,11 @@ ___
 ___
 ### Load () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Load ( string Filename, boolean LoadGraphics ) {: .copyable aria-label='Functions' }
-Loads a given ".anm2" file. The filepath is relative to the "resources" folder. The boolean can be used to load the graphics (.png files) as well, without calling the [LoadGraphics()](#loadgraphics) function.
+#### void Load ( string ANM2Path, boolean LoadGraphics ) {: .copyable aria-label='Functions' }
+Loads a given anm2 file. Each sprite must have an anm2 file loaded in order for it to display anything.
+
+- ANM2Path - The path to the anm2 file that contains all of the animations for this sprite. This should be relative to the "resources" folder.
+- LoadGraphics - Whether or not the `Sprite.LoadGraphics` method is automatically called after the anm2 file is loaded.
 
 ???- example "Example Code"
     This code creates a new sprite object, loads an .anm2 file and renders it on the screen.
@@ -129,11 +137,12 @@ Loads a given ".anm2" file. The filepath is relative to the "resources" folder. 
 	mySprite:Load("gfx/myCoolAnimation.anm2", true)
     mySprite:Render(Vector(75,75), Vector(0,0), Vector(0,0))
     ```
+
 ___
 ### Load·Graphics () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void LoadGraphics ( ) {: .copyable aria-label='Functions' }
-Loads and applies assosiated graphic-objects like ".png" files.
+Used to load the PNG files that are specified in the sprite's anm2. Typically, you would only call this method if you have previously passed false to the `loadGraphics` argument of the `Sprite.Load` method or you have called the `Sprite.ReplaceSpritesheet` method.
 
 ???- example "Example Code"
     This code creates a new sprite object and replaces the spritesheet of layer 0 of a sprite object with a different spritesheet.
@@ -144,6 +153,7 @@ Loads and applies assosiated graphic-objects like ".png" files.
 	mySprite:ReplaceSpritesheet(0, "gfx/my_new_spritesheet.png")
 	mySprite:LoadGraphics()
     ```
+
 ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -202,11 +212,13 @@ Setting the "**Force**" value to true will stop any already playing animation an
 		mySprite:Render(Vector(50,50), Vector(0,0), Vector(0,0))
 	end
     ```
+
 ___
 ### Play·Random () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayRandom ( int Seed ) {: .copyable aria-label='Functions' }
 Play a randomly selected animation of the currently loaded .anm2 file.
+
 ___
 ### Reload () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -240,6 +252,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
 		mySprite:Render(Vector(50,50))
 	end
     ```
+
 ___
 ### Render·Layer () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -281,6 +294,7 @@ Changes the ".png" file assosiated to a specific layer of a sprite.
 	mySprite:ReplaceSpritesheet(0, "gfx/my_new_spritesheet.png")
 	mySprite:LoadGraphics()
     ```
+
 ___
 ### Reset () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
