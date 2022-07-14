@@ -9,7 +9,7 @@ ___
 ### Get·Animation () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### string GetAnimation ( ) {: .copyable aria-label='Functions' }
-Return the name of the currently played animation.
+Return the name of the currently playing animation.
 
 ___
 ### Get·Default·Animation () {: aria-label='Functions' }
