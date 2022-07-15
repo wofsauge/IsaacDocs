@@ -345,13 +345,15 @@ ___
 ___
 ### Has·Hallucination () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int HasHallucination ( ) {: .copyable aria-label='Functions' }
-
+#### boolean HasHallucination ( ) {: .copyable aria-label='Functions' }
+Returns true if the Delirium animation (Static noise intersected with past gameplay fotage) is playing right now.
 ___
 ### Is·Greed·Mode () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsGreedMode ( ) {: .copyable aria-label='Functions' }
+Returns true if the current gamemode is set to Greed or Greedier mode.
 
+To differentiate between Greed and Greedier mode, you need to use the [`Game().Difficulty`](#difficulty) attribute.
 ___
 ### Is·Paused () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
