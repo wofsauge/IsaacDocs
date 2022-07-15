@@ -27,10 +27,12 @@ Notes: The BoxWidth and Center parameters can be used for aligning the text: If 
 ???- example "Example Code"
     Example usage.
     ```lua
+    -- In an initialization function:
     local f = Font() -- init font object
     f:Load("font/terminus.fnt") -- load a font into the font object
-    f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
 
+    -- In a render function on every frame:
+    f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position (60, 50)
     ```
 
 ___
