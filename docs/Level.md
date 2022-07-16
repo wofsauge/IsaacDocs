@@ -63,6 +63,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanOpenChallengeRoom ( int RoomIndex ) {: .copyable aria-label='Functions' }
 
+Returns whether or not a Challenge Room door will be open. You must pass this method a valid grid index on the floor. It does not matter if the grid index is actually attached to the Challenge Room or not. This method will always return false if an invalid or a negative grid index is passed.
+
 ___
 ### Can·Spawn·Devil·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
