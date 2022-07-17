@@ -243,7 +243,7 @@ ___
 ### Can·Shut·Doors () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanShutDoors ( ) {: .copyable aria-label='Functions' }
-enemies keep the doors shut.
+Enemies keep the doors shut.
 ___
 ### Clear·Entity·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
