@@ -233,7 +233,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddVelocity ( [Vector](Vector.md) Velocity ) {: .copyable aria-label='Functions' }
 
-Adds velocity to the entity. This can be used to move him in a certain direktion (for example as a result of collision)
+Adds velocity to the entity. This can be used to move him in a certain direction (for example as a result of collision)
 ___
 ### Blood·Explode () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
