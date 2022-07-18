@@ -6,24 +6,24 @@ If you want to load an additional .lua file besides your main.lua file, you can 
 
 `require` is a built-in Lua function. Using `require` is the conventional way in Lua programs to split code up into multiple files. For example:
 
+#### `main.lua`
+
 ```lua
--- main.lua
+local foo = require("foo") -- Loads the "foo.lua" file and saves its return value into the variable "foo".
 
-local foo = require("foo") -- loads the "foo.lua" file and saves its return value into the variable "foo"
-
-foo:bar() -- Calls the function "bar()" of the foo object. Here, it will print "hello"
+foo:bar() -- Calls the function "bar()" of the foo table.
 ```
 
+#### `foo.lua`
+
 ```lua
--- foo.lua
+local foo = {} -- Creates a table that represents this module and will be returned later.
 
-local foo = {} -- creates a table that will be returned later
-
-function foo:bar() -- Defines the function "bar()" and adds it to the "foo" table
+function foo:bar() -- Defines the function "bar()" and adds it to the "foo" table.
   print("hello")
 end
 
-return foo -- returns the "foo" table to let it be accessed by the file which calls "require()"
+return foo -- Returns the "foo" table so that it can be accessed by anything that imports this file .
 ```
 
 Here, "foo" is a Lua *module* that provides variables and methods. It's also possible to return functions or primitive values, but conventionally Lua modules always return a table.
@@ -35,7 +35,7 @@ One important aspect of `require` is that when it is used, it caches the result.
 Unlike other programming languages, it is conventional in Lua to use a period as a path separator. For example, if you wanted to import a file called `bar.lua` in a subdirectory called `foo`, you would use the following `require` statement:
 
 ```lua
-local bar = require("foo.bar") -- loads file from path "./foo/bar.lua"
+local bar = require("foo.bar") -- Loads a file from the path: ./foo/bar.lua
 ```
 
 ### The `luamod` Problem With `require`
@@ -65,7 +65,7 @@ If you need to use `require` instead of `include`, you can work around the afore
 ```lua
 --[[ main.lua ]]--
 
-local MOD_NAME = "MyMod" -- Cannot have spaces, since it represents a path
+local MOD_NAME = "MyMod" -- Cannot have spaces, since it represents a path.
 
 -- Players can boot the game with an launch option called "--luadebug", which will enable additional
 -- functionality that is considered to be unsafe. For more information about this flag, see the
