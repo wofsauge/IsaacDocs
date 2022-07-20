@@ -223,7 +223,10 @@ Returning any value will have no effect on later callback executions.
     Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PEFFECT_UPDATE and check those attributes on the first possible frame.
 
 ???- info "Conditional Behaviour [ ](#){: .rep .tooltip .badge }"
-    This callback disables the behaviour of a number of EntityPlayer methods if it gets called while continuing a saved run. This behaviour serves to make adding player starting items easy. The following EntityPlayer methods are known to be affected:
+    This callback causes many `EntityPlayer` methods to silently fail if the methods are called while continuing a saved run. This behavior was intentionally added by Kilburn in the Repentance DLC in order to make it easier for modders to add starting items to custom characters. (This behavior obviaties the need to use filtration logic to distinguish between the cases of a new run / Genesis room and a continued run.)
+    
+    The following EntityPlayer methods are known to be affected:
+
     ```lua
     AddCollectible
     AddTrinket
