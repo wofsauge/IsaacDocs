@@ -625,7 +625,7 @@ It can be pretty annoying to swap back and forth between using periods and colon
 
 This message means that the game attempted to get a new random collectible type from an item pool, but the item pool was all out of items. When an item pool is depleted like this, the game reverts to getting a random collectible from the Treasure Room pool instead, since that is the default pool. In the case that the Treasure Room pool itself was depleted, then the game will return `CollectibleType.COLLECTIBLE_BREAKFAST` instead.
 
-If your mod is causing this message, it is likely a sign that you have a problem in your logic somewhere. Perhaps you are spawning a ton of random collectibles by accident. You might also want to examine the logic in any `MC_PRE_GET_COLLECTIBLE` or `MC_POST_GET_COLLECTIBLE` callbacks.
+If your mod is causing this message, it is likely a sign that you have a problem in your logic somewhere. Perhaps you are spawning a ton of random collectibles by accident, which would subsequently deplete the room's item pool. You might also want to examine the logic in any `MC_PRE_GET_COLLECTIBLE` or `MC_POST_GET_COLLECTIBLE` callbacks.
 
 ## Communication
 
