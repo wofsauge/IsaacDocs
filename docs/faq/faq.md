@@ -621,7 +621,7 @@ EntityLaser:ShootAngle(...) -- Fails because the method does not expect the clas
 
 It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent and impossible to mess up.)
 
-### What does the "[INFO] - [warn] item pool ran out of repicks" message mean in the "log.txt" file?
+### What does the "[INFO] - [warn] item pool ran out of repicks" message mean in the "log.txt" file?  {: .subHeader}
 
 This message means that the game attempted to get a new random collectible type from an item pool, but the item pool was all out of items. When an item pool is depleted like this, the game reverts to getting a random collectible from the Treasure Room pool instead, since that is the default pool. In the case that the Treasure Room pool itself was depleted, then the game will return `CollectibleType.COLLECTIBLE_BREAKFAST` instead.
 
