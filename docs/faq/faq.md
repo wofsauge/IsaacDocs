@@ -619,7 +619,7 @@ EntityLaser.ShootAngle(...) -- Works.
 EntityLaser:ShootAngle(...) -- Fails because the method does not expect the class as the first argument.
 ```
 
-It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent and very difficult to mess up.)
+It can be pretty annoying to swap back and forth between using periods and colons. If this part of Lua bothers you, you can try programming mods in TypeScript using the [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) framework. (In TypeScript, you invoke every function with a period, which is consistent and impossible to mess up.)
 
 ### What does the "[INFO] - [warn] item pool ran out of repicks" message mean in the "log.txt" file?
 
