@@ -81,7 +81,11 @@ ___
 
 If in a shop, this value describes which slot the item is for sale in. For example, if the shop has 6 things for sale, the pickups in the room will have shop item IDs of 0, 1, 2, 3, 4, and 5.
 
-When spawning a new collectible item, the ShopItemId will be 0 by default. This has a side effect of making the D6 roll the collectible into a red heart. By setting shop item id to -1, it will fix this behavior such that the collectible will properly roll into another collectible.
+When spawning a new collectible item, the ShopItemId will be 0 by default. This has a side effect of making the D6 roll the collectible into a red heart. By setting shop item id to -1, it will fix this behavior such that the collectible will properly roll into another collectible. However, non-collectible pickups may reroll into collectibles through a D20 or similar.
+
+By setting shop item id to -2, automatic prices will be devil deal prices. Otherwise this is identical to -1.
+
+Other negative values act identically to -1.
 
 ___
 ### State {: aria-label='Variables' }
