@@ -222,6 +222,52 @@ Returning any value will have no effect on later callback executions.
 ???- warning "Warning"
     Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PEFFECT_UPDATE and check those attributes on the first possible frame.
 
+???- info "Conditional Behaviour [ ](#){: .rep .tooltip .badge }"
+    This callback causes many `EntityPlayer` methods to silently fail if the methods are called while continuing a saved run. This behavior was intentionally added by Kilburn in the Repentance DLC in order to make it easier for modders to add starting items to custom characters. (This behavior obviaties the need for modders to use filtration logic to distinguish between the cases of a new run/Genesis use/co-op spawn and a continued run.)
+    
+    The following EntityPlayer methods are known to fail:
+
+    ```lua
+    AddCollectible
+    AddTrinket
+    AddKeys
+    AddCoins
+    AddBombs
+    AddGoldenBomb
+    AddGoldenKey
+    AddGigaBombs
+    AddMaxHearts
+    AddHearts
+    AddBlackHearts
+    AddSoulHearts
+    AddRottenHearts
+    AddBoneHearts
+    AddGoldenHearts
+    AddEternalHearts
+    AddBrokenHearts
+    AddCard
+    AddPill
+    AddPrettyFly
+    AddJarFlies
+    AddJarHearts
+    AddSoulCharge
+    AddBloodCharge
+    AddPoopMana
+    SetPocketActiveItem
+    ```
+    
+    The following EntityPlayer methods have been verified to continue firing:
+    
+    ```lua
+    AddBlueFlies
+    AddBlueSpider
+    AddWisp
+    AddItemWisp
+    AddSwarmFlyOrbital
+    AddFriendlyDip
+    ```
+    
+
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|9 |MC_POST_PLAYER_INIT {: .copyable } | ([EntityPlayer](../EntityPlayer.md))|PlayerVariant* | void |
