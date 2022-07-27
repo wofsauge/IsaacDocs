@@ -190,7 +190,28 @@ costumetest 33
 Gives Isaac a number of totally random costumes, without having the associated items.
 
 ### **restart**
-Same as holding R. Resets the game back to the beginning of a new run. listcollectibles Prints a list of all items in your possession, and how many of each
+Same as holding R. Resets the game back to the beginning of a new run. Adding a number to the end will restart you as a specific character.
+
+Syntax:
+```
+restart
+restart 1
+```
+The first command will restart you as your current character, the latter will restart you as Magdalene. Numbers at the end can range from 0 - 40. Any number outside of this range will crash your game.
+
+### **listcollectibles**
+Prints a list of all items in your possession, and how many of each.
+
+Syntax:
+```
+g c1
+repeat 4
+g c2
+listcollectibles
+```
+
+This will print "The Sad Onion:5,The Inner Eye:1"
+
 
 ### **repeat**
 
