@@ -389,12 +389,22 @@ ___
 ### Animate·Happy () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateHappy ( ) {: .copyable aria-label='Functions' }
-thumbs up
+Plays the happy animation, played when taking a positive pill.
+	???- example "Example Code"
+		Plays the happy animation.
+		``local player = Isaac.GetPlayer()
+		player:AnimateHappy()
+		``
 ___
 ### Animate·Light·Travel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateLightTravel ( ) {: .copyable aria-label='Functions' }
-end of a stage
+Plays the animation that is played when entering the light in the ascent, or entering the cathedral.
+	??- example "Example Code"
+		Plays the animation.
+		``local player = Isaac.GetPlayer()
+		player:AnimateLightTravel()
+		``
 
 ___
 ### Animate·Pickup () {: aria-label='Functions' }
@@ -412,27 +422,38 @@ ___
 ### Animate·Pitfall·In () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimatePitfallIn ( ) {: .copyable aria-label='Functions' }
-Fall into pitfall.
+Does 1/2 heart of damage and plays the animation of falling into a pitfall.
 ___
 ### Animate·Pitfall·Out () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimatePitfallOut ( ) {: .copyable aria-label='Functions' }
-Jump out of pitfall.
+The animation of jumping back out of a pitfall.
 ___
 ### Animate·Sad () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateSad ( ) {: .copyable aria-label='Functions' }
-oh no!
+Plays the sad animation, played when taking a negative pill.
+	???- example "Example Code"
+		Plays the sad animation.
+		``local player = Isaac.GetPlayer()
+		player:AnimateSad()
+		``
 ___
 ### Animate·Teleport () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateTeleport ( boolean Up ) {: .copyable aria-label='Functions' }
-teleport to another room
+The animation played when teleporting into another room.
 ___
 ### Animate·Trapdoor () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateTrapdoor ( ) {: .copyable aria-label='Functions' }
-end of a stage
+Plays the animation of the player jumping down a trapdoor.
+	???- example "Example Code"
+		Plays the animation of jumping down a trapdoor.
+		``local player = Isaac.GetPlayer()
+		player:AnimateTrapdoor()
+		``
+
 ___
 ### Animate·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
