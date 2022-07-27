@@ -24,6 +24,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### string HudAnim  {: .copyable aria-label='Variables' }
 
+Returns the name of the animation in `ui_cardfronts.anm2`.
+
+???- bug "Bugs"
+    This will return a blank string unless used on a modded card. Standard cards will return nothing.
 ___
 ### ID {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
