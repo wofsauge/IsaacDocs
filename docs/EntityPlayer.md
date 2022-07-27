@@ -389,7 +389,12 @@ ___
 ### Animate·Happy () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateHappy ( ) {: .copyable aria-label='Functions' }
-thumbs up
+Plays the happy animation, played when taking a positive pill.
+	???- example "Example Code"
+		Plays the happy animation.
+		``local player = Isaac.GetPlayer()
+		player:AnimateHappy()
+		``
 ___
 ### Animate·Light·Travel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -422,7 +427,12 @@ ___
 ### Animate·Sad () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateSad ( ) {: .copyable aria-label='Functions' }
-oh no!
+Plays the sad animation, played when taking a negative pill.
+	???- example "Example Code"
+		Plays the sad animation.
+		``local player = Isaac.GetPlayer()
+		player:AnimateSad()
+		``
 ___
 ### Animate·Teleport () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
