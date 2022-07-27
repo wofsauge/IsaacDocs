@@ -390,21 +390,23 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateHappy ( ) {: .copyable aria-label='Functions' }
 Plays the happy animation, played when taking a positive pill.
-	???- example "Example Code"
-		Plays the happy animation.
-		``local player = Isaac.GetPlayer()
-		player:AnimateHappy()
-		``
+
+???- example "Example Code"
+	Plays the happy animation.
+	```local player = Isaac.GetPlayer()
+	player:AnimateHappy()
+	```
 ___
 ### Animate·Light·Travel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateLightTravel ( ) {: .copyable aria-label='Functions' }
 Plays the animation that is played when entering the light in the ascent, or entering the cathedral.
-	??- example "Example Code"
-		Plays the animation.
-		``local player = Isaac.GetPlayer()
-		player:AnimateLightTravel()
-		``
+
+???- example "Example Code"
+	Plays the animation.
+	```local player = Isaac.GetPlayer()
+	player:AnimateLightTravel()
+	```
 
 ___
 ### Animate·Pickup () {: aria-label='Functions' }
@@ -433,11 +435,12 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateSad ( ) {: .copyable aria-label='Functions' }
 Plays the sad animation, played when taking a negative pill.
-	???- example "Example Code"
-		Plays the sad animation.
-		``local player = Isaac.GetPlayer()
-		player:AnimateSad()
-		``
+
+???- example "Example Code"
+	Plays the sad animation.
+	```local player = Isaac.GetPlayer()
+	player:AnimateSad()
+	```
 ___
 ### Animate·Teleport () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
