@@ -17,16 +17,19 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }
 
+Returns if the item is a collectible.
 ___
 ### Is·Null () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsNull ( ) {: .copyable aria-label='Functions' }
 
+Returns if the item is null.
 ___
 ### Is·Trinket () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsTrinket ( ) {: .copyable aria-label='Functions' }
 
+Returns if the item is a trinket.
 ___
 ## Variables
 ### Achievement·ID {: aria-label='Variables' }
@@ -185,7 +188,6 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean PassiveCache  {: .copyable aria-label='Variables' }
 
-
 Whether or not a cache evaluation is called when the item is picked up. (used in item's like "Mom's Box")
 ___
 ### Persistent·Effect {: aria-label='Variables' }
@@ -210,6 +212,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Special  {: .copyable aria-label='Variables' }
 
+For the special collectible reroll system. (not applicable in Repentance)
 ___
 ### Tags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -220,4 +223,6 @@ ___
 ### Type {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [ItemType](enums/ItemType.md) Type  {: .copyable aria-label='Variables' }
+
+The item's [ItemType](enums/ItemType.md).
 ___
