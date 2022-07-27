@@ -62,6 +62,13 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddBrokenHearts ( int BrokenHearts ) {: .copyable aria-label='Functions' }
 
+Adds broken hearts to the player. 1 unit is one broken heart. Broken hearts can be removed with negative numbers.
+???- example "Example Code"
+	This code adds 1 broken heart to the player, then takes it away.
+	```lua
+	Isaac.GetPlayer():AddBrokenHearts(1)
+	Isaac.GetPlayer():AddBrokenHearts(-1)
+	```
 ___
 ### Add·Cache·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -334,7 +341,9 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Bethany.
+Adds one soul heart to Bethany's charge, equivalent to a half soul heart.
+???- note "Notes"
+	This function will only work when playing as Bethany. 
 
 ___
 ### Add·Soul·Hearts () {: aria-label='Functions' }
@@ -612,6 +621,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void DoZitEffect ( [Vector](Vector.md) Direction ) {: .copyable aria-label='Functions' }
 
+Fires a creep shot, same as the one fired by the item "The Large Zit"
+
 ___
 ### Drop·Pocket·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -863,6 +874,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetExtraLives ( ) {: .copyable aria-label='Functions' }
 
+Returns the number of extra lives the player currently has.
 ___
 ### Get·Fire·Direction () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
