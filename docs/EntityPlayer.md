@@ -389,7 +389,7 @@ ___
 ### Animate·Happy () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateHappy ( ) {: .copyable aria-label='Functions' }
-thumbs up
+Isaac's thumbs up animation, such as when collecting an item.
 ___
 ### Animate·Light·Travel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
