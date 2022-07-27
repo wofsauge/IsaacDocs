@@ -399,7 +399,7 @@ ___
 ### Animate·Light·Travel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateLightTravel ( ) {: .copyable aria-label='Functions' }
-Plays the animatiion that is played when entering the light in the ascent, or entering the cathedral.
+Plays the animation that is played when entering the light in the ascent, or entering the cathedral.
 	??- example "Example Code"
 		Plays the animation.
 		``local player = Isaac.GetPlayer()
@@ -447,7 +447,7 @@ ___
 ### Animate·Trapdoor () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateTrapdoor ( ) {: .copyable aria-label='Functions' }
-Plays the animation of player jumping down a trapdoor.
+Plays the animation of the player jumping down a trapdoor.
 	???- example "Example Code"
 		Plays the animation of jumping down a trapdoor.
 		``local player = Isaac.GetPlayer()
