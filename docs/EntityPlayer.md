@@ -392,11 +392,12 @@ ___
 Plays the happy animation, played when taking a positive pill.
 
 ???- example "Example Code"
-	Plays the happy animation.
-	```local player = Isaac.GetPlayer()
-	player:AnimateHappy()
-	```
-___
+    This code plays the happy animation.
+    ```lua 
+    local player = Isaac.GetPlayer()
+    player:AnimateHappy()
+    ```
+
 ### Animate·Light·Travel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateLightTravel ( ) {: .copyable aria-label='Functions' }
@@ -404,7 +405,8 @@ Plays the animation that is played when entering the light in the ascent, or ent
 
 ???- example "Example Code"
 	Plays the animation.
-	```local player = Isaac.GetPlayer()
+	```lua 
+    local player = Isaac.GetPlayer()
 	player:AnimateLightTravel()
 	```
 
@@ -438,7 +440,8 @@ Plays the sad animation, played when taking a negative pill.
 
 ???- example "Example Code"
 	Plays the sad animation.
-	```local player = Isaac.GetPlayer()
+	```lua 
+    	local player = Isaac.GetPlayer()
 	player:AnimateSad()
 	```
 ___
