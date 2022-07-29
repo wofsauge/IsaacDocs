@@ -18,7 +18,7 @@
 Adds the effect of a collectible to the player, without actually giving him the assosiated item.
 
 ???+ bug
-    This function does only work for some collectibles, but not all. For example, it doesnt work for "Chocolate milk".
+    This function only works for a subset of collectibles. For example, it will work with "Holy Mantle", but not with "Chocolate Milk".
 
 ???- example "Example Code"
     This code applies the effect and costume of the item "Sad Onion" to the player.
