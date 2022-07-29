@@ -492,6 +492,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, [RoomTransitionAnim](enums/RoomTransitionAnim.md) Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
+Note that if you use `RoomTransitionAnim.PIXELATION` (2), you must not interrupt the effect (e.g. with another room transition or room change) once it starts playing. Otherwise, after around 11 interuptions, the "log.txt" will start to become spammed with "[ASSERT] - PushRenderTarget: stack overflow!". This is because internally, the game uses a finite buffer to store information about the effect, and if it is interrupted, the buffer will never be cleared.
+
 ???- info "Dimension Info"
     Dimension: ID of the dimension to get the room from
 
