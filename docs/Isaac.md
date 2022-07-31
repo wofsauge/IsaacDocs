@@ -228,8 +228,9 @@ ___
 ___
 ### Get·Item·Config () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Config](ItemConfig.md) GetItemConfig ( ) {: .copyable aria-label='Functions' }
-Returns the [ItemConfigConfig](ItemConfig.md) object.
+#### [ItemConfig](ItemConfig.md) GetItemConfig ( ) {: .copyable aria-label='Functions' }
+
+This is the only way to access the `ItemConfig` object.
 ___
 ### Get·Item·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
