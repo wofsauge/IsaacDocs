@@ -257,6 +257,7 @@ ___
 ### Get·Starting·Room·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStartingRoomIndex ( ) {: .copyable aria-label='Functions' }
+Returns the gridindex of the starting room of the current level.
 
 ___
 ### Get·State·Flag () {: aria-label='Functions' }
