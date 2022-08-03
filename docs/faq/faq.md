@@ -45,7 +45,9 @@ Other resources:
 
 ### I am trying to make a basic mod and it doesn't work. I am trying to make a character/familiar/enemy and the sprites are invisible. {: .subHeader}
 
-Files must go into specific directories, or they won't work. Start by following the [Lytebringr video tutorials on YouTube](https://www.youtube.com/playlist?list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF) and don't change anything that he is doing. Once you've verified that the character/familiar/enemy works in exactly the same way that it does in the video, then start to change things one thing at a time until it breaks. Then you will see where the problem is and you can ask a much more specific question, if needed.
+Files must go into specific directories, or they won't work. Note that in Repentance, the location of [the mods directory is different](#where-is-the-directoryfolder-for-mods-located) from where it was located in Afterbirth+.
+
+Even if you know the right "mods" directory, the files inside of them have to go in really specific places. Thus, you might be not putting your files in exactly the right place. Start by following the [Lytebringr video tutorial on YouTube](https://www.youtube.com/playlist?list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF) that roughly corresponds to the thing you want to do (e.g. character/familiar/enemy/whatever). Next, don't change anything that he is doing (besides using the right "mods" directory. Once you have verified that your character/familiar/enemy/whatever works in exactly the same way that it does in the video, then start to change things one thing at a time until it breaks. Then, you will see where the problem is, and you can go on to ask a much more specific question, if needed.
 
 ### Where can I see the code for [some vanilla item] or [some vanilla mechanic]? {: .subHeader}
 
