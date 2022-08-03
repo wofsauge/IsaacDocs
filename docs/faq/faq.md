@@ -32,7 +32,7 @@ The wiki also has a [list of every console command](https://bindingofisaacrebirt
 
 ### How do I get started modding Isaac? (getting started) {: .subHeader}
 
-We generally recommend that people watch the Lytebringr's series of [video tutorials on YouTube](https://www.youtube.com/playlist?list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF). These videos were made for Afterbirth+, but not much has changed now that Repentance DLC is out, so they are still your best bet for learning the ropes.
+We generally recommend that people watch the Lytebringr's series of [video tutorials on YouTube](https://www.youtube.com/playlist?list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF). These videos were made after the Afterbirth+ DLC was released, but not much has changed now that Repentance DLC is out, so they are still your best bet for learning the ropes.
 
 The main difference is that the location of [the mods directory has changed](#where-is-the-directoryfolder-for-mods-located).
 
