@@ -41,7 +41,7 @@ Other resources:
 - [Written tutorials](../tutorials/ExampleProject.md)
 - [Collection of useful tools](../tutorials/Tools.md)
 - [AgentCucco's Video Tutorials](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) (playlist)
-- [:material-language-typescript:IsaacScript "Green Candle" tutorial](https://isaacscript.github.io/docs/example-mod)
+- [:material-language-typescript:IsaacScript "Green Candle" tutorial](https://isaacscript.github.io/main/example-mod)
 
 ### I am trying to make a basic mod and it doesn't work. I am trying to make a character/familiar/enemy and the sprites are invisible. {: .subHeader}
 
