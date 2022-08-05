@@ -366,6 +366,10 @@ StageAPI.AddBossToBaseFloorPool({BossID = "The Baron", Weight = 1.5}, LevelStage
 StageAPI.AddBossToBaseFloorPool({BossID = "High Amon", AlwaysReplaceSubtype = 83, OnlyReplaceSubtype = 83}, LevelStage.STAGE2_1, StageType.STAGETYPE_REPENTANCE_B)
 ```
 
+### How do I make my custom character start with a smelted / gulped trinket? {: .subHeader}
+
+You cannot do this via editing the XML file. Thus, you must accomplish this via Lua or TypeScript code.
+
 ### How do I know when a player has picked up a collectible item? {: .subHeader}
 
 There is no vanilla callback for this. As a workaround, you can check `EntityPlayer.IsItemQueueEmpty()` on every PostUpdate frame, and then check `EntityPlayer.QueuedItem` when it is not empty. Obviously, this will not work for items that never get queued.
