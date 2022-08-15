@@ -2,9 +2,13 @@
 
 ### About
 
-This chart documents the effects of V1, V2, I1, I2, and State on every enemy in the game. This is useful for creating variants of existing monsters or changing their behavior on the go.
+This chart documents the effects of the `V1`, `V2`, `I1`, `I2`, and `State` fields for many NPCs. This is useful for creating variants of existing monsters or changing their behavior.
+
+This page is currently a work in progress; Ethereal plans to add more NPCs to the list soon.
 
 ### Enemy List
+
+<!-- Do not attempt to format this table manually; use Prettier to auto-format it. -->
 
 | Id  | Entity           | States                                                                                                                                                                                                                                                        | I1                                                                      | I2                                                                                                                           | V1                                                                                                                                                                                                                                                                                               | V2     |
 | --- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------ |
