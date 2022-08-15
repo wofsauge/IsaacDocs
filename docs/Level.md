@@ -231,7 +231,7 @@ ___
 		* 2: Death Certificate dimension
 
 ???- warn "Warning"
-    This function always returns a valid RoomDescriptor object, so error checking is recommended. The `GridIndex` property of an invalid RoomDescriptor object seems to always be -1. Note that this specific `GridIndex` is also used by the Devil/Angel Room, but those rooms will have a different `VisitedCount`.
+    This function always returns a valid RoomDescriptor object, so error checking is recommended. The `Data` property of an invalid RoomDescriptor object is `nil`.
 
 ___
 ### Get·Room·Count () {: aria-label='Functions' }
