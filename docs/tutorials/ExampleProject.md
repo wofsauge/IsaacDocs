@@ -41,3 +41,7 @@ end
  -- Specify that the "onTear" function should be executed whenever the player fires a tear
 mod:AddCallback(ModCallbacks.MC_POST_FIRE_TEAR, postFireTear)
 ```
+
+From here, you can change the code to do whatever you want. In short, you will have to subscribe to the appropriate callbacks (in order to run code at the specific times that you want). And then you will have to use the appropriate API methods (to change things in-game corresponding to what you want to do).
+
+Start by browsing the docs for the `ModCallbacks` enum to learn what all the different callback options are. Then, browse through the rest of the API documentation to get a feel for what kinds of things are possible to read and change.
