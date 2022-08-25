@@ -26,11 +26,6 @@ The following is an example mod that always changes the player's tears to have a
 local mod = RegisterMod("Custom Tears", 1)
 
 local function postFireTear(_, tear)
-  -- Get the main player, which is an instance of the "EntityPlayer" class
-  local player = Isaac.GetPlayer()
-
-  player:AddCoins(1)
-
   -- Add a slowing effect to the tear
   tear.TearFlags = tear.TearFlags | TearFlags.TEAR_SLOW
 
