@@ -709,6 +709,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) Parent  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
+This is a reference to the "parent" entity. For most entities, this field will be nil. This field is used in multi-segment entities to refer back to which segment is the "main" entity, like the head.
+
 ___
 ### Position {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
