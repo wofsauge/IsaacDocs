@@ -32,7 +32,7 @@ Grid entities are represented by the `GridEntity` API class.
 
 Vanilla grid entities are not defined in an XML file. Mods cannot create custom grid entities.
 
-Mods can spawn grid entities with the `Isaac.GridSpawn` method.
+Mods can spawn grid entities with the `Isaac.GridSpawn` method. (It is not possible to spawn grid entities with a specific seed.)
 
 <br>
 
