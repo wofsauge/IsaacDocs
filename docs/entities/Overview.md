@@ -49,14 +49,14 @@ The `Entity` API class contains all three of these values as properties. The `Gr
 You can make a helper function for getting the ID of an entity:
 
 ```lua
--- Helper function to return a string containing an entity's type, variant, and sub-type.
+-- Helper function to get a string containing an entity's type, variant, and sub-type.
 local function getEntityID(entity)
   return tostring(entity.Type) .. "." .. tostring(entity.Variant) .. "." .. tostring(entity.SubType)
 end
 ```
 
 ```lua
--- Helper function to return a string containing a grid entity's type and variant.
+-- Helper function to get a string containing a grid entity's type and variant.
 local function getGridEntityID(gridEntity)
   local gridEntityType = gridEntity:GetType()
   local gridEntityVariant = gridEntity:GetVariant()
