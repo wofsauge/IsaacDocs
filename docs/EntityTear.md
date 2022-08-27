@@ -61,7 +61,7 @@ ___
 ### Bounced {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Bounced  {: .copyable aria-label='Variables' }
-true if tear bounced of something
+true if tear bounced off something
 ___
 ### Can·Trigger·Streak·End {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
