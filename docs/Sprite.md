@@ -284,9 +284,6 @@ Changes the ".png" file associated with a specific layer of a sprite.
 
 After replacing a spritesheet, you must call the `Sprite.LoadGraphics` method afterwards.
 
-???+ note "Notes"
-    The effect is only applied after calling the [LoadGraphics()](#LoadGraphics) function afterwards.
-
 ???- example "Example Code"
     This code creates a new sprite object and replaces the spritesheet of layer 0 of a sprite object with a different spritesheet.
 
