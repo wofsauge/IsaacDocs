@@ -1,8 +1,8 @@
-# [Tutorial] Enemy data
+# Entity data documentation
 
 ### About
 
-This chart documents the effects of the `V1`, `V2`, `I1`, `I2`, and `State` fields for many NPCs. This is useful for creating variants of existing monsters or changing their behavior.
+This chart documents the effects of the `V1`, `V2`, `I1`, `I2`, and `State` fields for many NPCs. This is useful for creating variants of existing entities or changing their behavior.
 
 This page is currently a work in progress; Ethereal plans to add more NPCs to the list soon.
 
