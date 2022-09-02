@@ -503,33 +503,47 @@ Note that if you use `RoomTransitionAnim.PIXELATION` (2), you must not interrupt
 		* 2: Death Certificate dimension
 
 ???- note "Notes"
-    Available Animation types (Discovered by "ilise rose" (@yatboim)):
+	-RoomTransitionAnim.WALK: Will play the correct walk animation regardless of the direction you use, as long as the direction is in the same axis as the room you're traveling too. So if the room is on the left, it'll play the correct animation whether you use Direction.LEFT or Direction.RIGHT. If you put in the wrong direction, it'll just fade to the next room (not fade to black, just fade). If you put in Direction.NO_DIRECTION it'll play a fade to black regardless.
+	
+	-RoomTransitionAnim.FADE: Will play a fade to black regardless of the direction. If the direction is Direction.NO_DIRECTION the fade will be shorter.
+	
+	-RoomTransitionAnim.PIXELATION: Will play the usual pixelation regardless of the direction.
 
-    0: (Default) Standard transition, sweeps the room in from a direction
+	-RoomTransitionAnim.TELEPORT: Will play the teleport animation and sound, then it'll play the walk animation using the direction you inputted. If Direction.NO_DIRECTION is used, it'll play a short fade to white instead of the walk animation.
 
-    1: (Fade) Fade to black transition, like its used for the "goto" - console command
+	-RoomTransitionAnim.MAZE: Like RoomTransitionAnim.WALK but better, as it will always play the walk animation you put into it. Using Direction.NO_DIRECTION will play a short fade to black.
 
-    2: (Stage) Pixel out transition, like used for crawlspaces and the trapdoor at the end of floors
+	-RoomTransitionAnim.ANKH: Works like RoomTransitionAnim.MAZE.
 
-    3: (Teleport) teleport transition, isaac teleports out of the current room and into the next
+	-RoomTransitionAnim.DEAD_CAT: Works like RoomTransitionAnim.MAZE.
 
-    5: (Ankh) Same as standard transition
+	-RoomTransitionAnim.ONE_UP: Works like RoomTransitionAnim.MAZE but plays the one up sound upon entering the room.
 
-    6: (Dead Cat) Same as standard transition
+	-RoomTransitionAnim.COLLAR: Works like RoomTransitionAnim.MAZE.
 
-    7: (1Up) Same as standard transition
+	-RoomTransitionAnim.JUDAS_SHADOW: Works like RoomTransitionAnim.MAZE.
 
-    8: (Guppys Collar) Same as standard transition
+	-RoomTransitionAnim.LAZARUS: Works like RoomTransitionAnim.MAZE.
 
-    9: (Judas Shadow) Same as standard transition
+	-RoomTransitionAnim.WOMB_TELEPORT: Makes the player invisible and plays a fade to black. If used to change into the same room, the player's visibility won't be restored. If Direction.NO_DIRECTION is used, it'll play a shorter fade to black.
 
-    10: (Lazarus Rags) Same as standard transition
+	-RoomTransitionAnim.GLOWING_HOURGLASS: Basically the same as using the glowing hourglass item, further testing should be done to see if there are any differences. Ignores the direction and the room index inputted.
+	
+	-RoomTransitionAnim.MISSING_POSTER: Works like RoomTransitionAnim.MAZE.
 
-    12: (Glowing Hourglass) Same as standard transition
+	-RoomTransitionAnim.BOSS_FORCED: Plays a walk animation twice. If used with Direction.NO_DIRECTION plays a short fade to black. Doesnt even skip the boss vs screen.
+	
+	-RoomTransitionAnim.PORTAL_TELEPORT: Works like RoomTransitionAnim.WOMB_TELEPORT.
 
-    13: (D7) Same as standard transition
+	-RoomTransitionAnim.FORGOTTEN_TELEPORT: Works like RoomTransitionAnim.FADE.
 
-    14: (Missing Poster) Same as standard transition
+	-RoomTransitionAnim.FADE_MIRROR: Plays the mirror exit sound and a fade to white animation. If used with Direction.NO_DIRECTION, the fade to white is shorter.
+	
+	-RoomTransitionAnim.MINECART: Works like RoomTransitionAnim.FADE.
+
+	-RoomTransitionAnim.DEATH_CERTIFICATE: The player lies down, then there's a fade to black and the player appears lying down again and gets up. Ignores the direction, but using Direction.NO_DIRECTION will make the fade shorter. The game is paused during the lying down and getting up animation.
+
+	The boss vs screen overrides all of these transitions, however, using RoomTransitionAnim.DEATH_CERTIFICATE will make it so the player appears lying down after the vs screen and the game will be paused while they get up.
 
 ???+ bug "Bugs"
     The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
