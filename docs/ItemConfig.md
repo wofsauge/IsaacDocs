@@ -117,10 +117,6 @@ Since this function is a static function, the usage is a bit different. Take a l
     ItemConfig.Config.IsValidCollectible(1)
 
     ```
-
-
-???+ bug "Bugs"
-    This function returns false for modded items! Use itemConfig:GetCollectible() instead.
 ___
 ### Should·Add·Costume·On·Pickup () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
