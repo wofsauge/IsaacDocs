@@ -53,12 +53,11 @@ The anm2 specified in `entities2.xml` should have the animations HUD and HUDSmal
 
 Note that the subtype used in `entities2.xml` and the `pickup` tag **cannot** be used to spawn your card, and will instead crash the game. You must spawn / give your card via the card id, which you can obtain from `Isaac.GetCardIdByName(string cardHudName)` as described above. You can also check your card's current ID easily in the console by typing `g kID` and checking autocomplete; the last base game card is `k97`, the Soul of Jacob, so modded ids will start at `k98`.
 
-Note that cards added through `pocketitems.xml` are **not** automatically added to the card pool, and you must set up their spawning manually. This can be done most easily through the `MC_GET_CARD` callback.
-
+Unlike in Afterbirth+, cards added in `pocketitems.xml` get automatically added to the card pool.
 
 ## Pill Effects
 
-Pill effects are significantly easier to add than cards, and are automatically added to the pill pool when created. They are marked by `<pilleffect ... />`, like so:
+Pill effects are significantly easier to add than cards, and are also automatically added to the pill pool when created. They are marked by `<pilleffect ... />`, like so:
 
 ```xml
 <pilleffect announcer2="760" id="0" name="Bad Gas" announcer="328" class="1+" mimiccharge="1" />
