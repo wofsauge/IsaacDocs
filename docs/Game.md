@@ -511,7 +511,7 @@ Note that if you use `RoomTransitionAnim.PIXELATION` (2), you must not interrupt
 ___
 ### Start·Stage·Transition () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void StartStageTransition ( boolean SameStage, StageTransition::Animation Animation ) {: .copyable aria-label='Functions' }
+#### void StartStageTransition ( boolean SameStage, StageTransition::Animation Animation, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 
 Starts a transition animation like it`s playing when entering a trapdoor to switch between stages.
 **Stage Transition types:**
