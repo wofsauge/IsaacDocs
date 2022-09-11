@@ -310,7 +310,7 @@ Return true or nil if the entity or player should sustain the damage, otherwise 
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (Entity [[Entity](../Entity.md)],<br>DamageAmount [float],<br>[DamageFlags](DamageFlag.md) [int],<br>DamageSource [[EntityRef](../EntityRef.md)],<br>DamageCountdownFrames [int])|[EntityType](EntityType.md) | boolean |
+|[ ](#){: .abrep .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (Entity [[Entity](../Entity.md)],<br>Amount [float],<br>[DamageFlags](DamageFlag.md) [int],<br>Source [[EntityRef](../EntityRef.md)],<br>CountdownFrames [int])|[EntityType](EntityType.md) | boolean |
 
 ### MC_POST_CURSE_EVAL {: .copyable }
 Curses is a bitmask containing current [curses](LevelCurse.md). Called after the current Level applied it's curses. Returns the new curse bitmask. Use `Isaac.GetCurseIdByName()` to get the curseID.
