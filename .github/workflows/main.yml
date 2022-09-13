@@ -37,11 +37,12 @@ jobs:
               with:
                   token: '${{ secrets.GITHUB_TOKEN }}'
 
-            - run: pip install mkdocs
-            - run: pip install mkdocs-material
-            - run: pip install mike
-            - run: pip install mkdocs-git-revision-date-plugin
-            - run: pip install mkdocs-git-revision-date-localized-plugin
+            - run: 
+                   pip install mkdocs
+                   pip install mkdocs-material
+                   pip install mike
+                   pip install mkdocs-git-revision-date-plugin
+                   pip install mkdocs-git-revision-date-localized-plugin
             - name: Clear mk-docs branch
               run: mike delete --all
 
@@ -66,3 +67,4 @@ jobs:
                   src_branch: old_docs
                   dst_branch: gh-pages
                   commit_message: Finished updating Github-Pages
+            - run: git push
