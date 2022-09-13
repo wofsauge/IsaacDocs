@@ -16,6 +16,7 @@
 * [Text Sprite Generator](https://wofsauge.github.io/IsaacTools/text_generator.html): Automatically generates Character- and VS Screen text sprites
 * [Character Sheet Generator](https://wofsauge.github.io/IsaacTools/charactersheet_generator.html): Tool that automatically generates teleport and Missing No. Sprites for your character's spritesheet
 * [Repentance Run Tracker](https://github.com/aymericingargiola/repentance-run-tracker): Tool that shows and records extensive informations about your runs.
+* [EzItems](https://ddeeddii.github.io/ezitems-web/): Tool to automatically write a mod that is able to rename items and trinkets. Both their name and description are supported.
 
 ## Coding Tools
 * [Visual Studio Code](https://code.visualstudio.com/) : Free Coding environment
