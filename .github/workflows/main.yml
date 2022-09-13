@@ -39,7 +39,7 @@ jobs:
               with:
                   token: '${{ secrets.GITHUB_TOKEN }}'
 
-            - run: 
+            - run: |
                    pip install mkdocs
                    pip install mkdocs-material
                    pip install mike
@@ -48,7 +48,8 @@ jobs:
                    
             - name: Deploy Repentance Docs
               if:   github.event_name == 'push' && github.ref == 'refs/heads/main'
-              run: mike delete Repentance
+              run: |
+                   mike delete Repentance
                    mike delete rep
                    mike deploy rep Repentance -t Repentance -p
                    mike set-default rep
@@ -61,7 +62,8 @@ jobs:
                   ref: ab_plus
             - name: Deploy AB+ Docs
               if:   github.event_name == 'push' && github.ref == 'refs/heads/ab_plus'
-              run: mike delete Afterbirth+
+              run: |
+                   mike delete Afterbirth+
                    mike delete abp
                    mike deploy abp Afterbirth+ -t Afterbirth+ -p
 
