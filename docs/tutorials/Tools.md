@@ -21,7 +21,7 @@
 ## Coding Tools
 * [Visual Studio Code](https://code.visualstudio.com/) : Free Coding environment
     * Plug-In: [ "Lua" ](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) Provides a lot of QoL features, syntax Check, Reference checks, IntelliSense, Auto complete, ...
-    * Plug-In:  [vscode-isaac-afterbirth-plus](https://marketplace.visualstudio.com/items?itemName=Zamiel.vscode-isaac-afterbirth-plus) Auto-complete for Isaac Enums
+    * Plug-In:  [Binding of Isaac Lua API](https://marketplace.visualstudio.com/items?itemName=Filloax.isaac-lua-api-vscode) Auto-complete for Isaac API Enums, functions and features
 * [Notepad++](https://notepad-plus-plus.org/downloads/) : Free Coding environment
 * [ZeroBrane Studio](https://studio.zerobrane.com/) : Free Coding environment
     * Plug-In: [Afterbirth-API-for-ZeroBrane (outdated)](https://github.com/Yusyuriv/Afterbirth-API-for-ZeroBrane) Autocomplete for Isaac API functions and enums
