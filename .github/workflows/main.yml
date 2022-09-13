@@ -45,7 +45,7 @@ jobs:
             - name: Clear mk-docs branch
               run: mike delete --all
 
-            - run: mike deploy rep Repentance -t Repentance -p
+            - run: mike deploy rep Repentance -t Repentance
             - run: mike set-default rep
 
             - name: Deploy AB+ Docs
@@ -54,7 +54,7 @@ jobs:
                   fetch-depth: 0
                   ref: ab_plus
 
-            - run: mike deploy abp Afterbirth+ -t Afterbirth+ -p
+            - run: mike deploy abp Afterbirth+ -t Afterbirth+
 
             - name: Copy old ab+ docs and index.html
               uses: andstor/copycat-action@v3
@@ -65,3 +65,4 @@ jobs:
                   dst_repo_name: IsaacDocs
                   src_branch: old_docs
                   dst_branch: gh-pages
+                  commit_message: Finished updating Github-Pages
