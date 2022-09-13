@@ -68,5 +68,5 @@ jobs:
                   dst_branch: gh-pages
                   commit_message: Added original ab+ Docs
             - run: git add .
-                   git commit -m "Finished updating Github-Pages"
-                   git push
+            - run: git commit -m "Finished updating Github-Pages"
+            - run: git push
