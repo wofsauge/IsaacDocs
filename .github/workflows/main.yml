@@ -4,6 +4,8 @@ on:
     push:
         branches:
             - main
+            - ab_plus
+            - old_docs
 
 jobs:
     code_checks:
@@ -43,21 +45,28 @@ jobs:
                    pip install mike
                    pip install mkdocs-git-revision-date-plugin
                    pip install mkdocs-git-revision-date-localized-plugin
-            - name: Clear mk-docs branch
-              run: mike delete --all
-
-            - run: mike deploy rep Repentance -t Repentance
-            - run: mike set-default rep
-
-            - name: Deploy AB+ Docs
+                   
+            - name: Deploy Repentance Docs
+              if:   github.event_name == 'push' && github.ref == 'refs/heads/main'
+              run: mike delete Repentance
+                   mike delete rep
+                   mike deploy rep Repentance -t Repentance -p
+                   mike set-default rep
+                   
+            - name: Checkout AB+ Repo
+              if:   github.event_name == 'push' && github.ref == 'refs/heads/ab_plus'
               uses: actions/checkout@v2
               with:
                   fetch-depth: 0
                   ref: ab_plus
-
-            - run: mike deploy abp Afterbirth+ -t Afterbirth+
+            - name: Deploy AB+ Docs
+              if:   github.event_name == 'push' && github.ref == 'refs/heads/ab_plus'
+              run: mike delete Afterbirth+
+                   mike delete abp
+                   mike deploy abp Afterbirth+ -t Afterbirth+ -p
 
             - name: Copy old ab+ docs and index.html
+              if:   github.event_name == 'push' && github.ref == 'refs/heads/old_docs'
               uses: andstor/copycat-action@v3
               with:
                   personal_token: ${{ secrets.PERSONAL_TOKEN }}
@@ -66,7 +75,4 @@ jobs:
                   dst_repo_name: IsaacDocs
                   src_branch: old_docs
                   dst_branch: gh-pages
-                  commit_message: Added original ab+ Docs
-            - run: git add .
-            - run: git commit -m "Finished updating Github-Pages"
-            - run: git push
+                  commit_message: Updated original ab+ Docs
