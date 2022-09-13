@@ -66,5 +66,7 @@ jobs:
                   dst_repo_name: IsaacDocs
                   src_branch: old_docs
                   dst_branch: gh-pages
-                  commit_message: Finished updating Github-Pages
-            - run: git push
+                  commit_message: Added original ab+ Docs
+            - run: git add .
+                   git commit -m "Finished updating Github-Pages"
+                   git push
