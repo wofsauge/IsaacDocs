@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PickupVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

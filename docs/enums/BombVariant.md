@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "BombVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

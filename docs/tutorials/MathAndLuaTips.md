@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Math and Lua Tips for BoI Modding
 
 ## Lua Tips

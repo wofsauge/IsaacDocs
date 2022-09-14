@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Music"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

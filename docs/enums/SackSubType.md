@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "SackSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

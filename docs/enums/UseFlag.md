@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "UseFlag"
 
 ???+ tip "Bitset Calculator"

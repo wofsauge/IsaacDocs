@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "VectorList"
 ## Operators
 ### __len () {: aria-label='Operators' }

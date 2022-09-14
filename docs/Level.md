@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Level"
 
 ???+ info
@@ -16,7 +20,7 @@
 #### void AddAngelRoomChance ( float Chance ) {: .copyable aria-label='Functions' }
 Modifies the variable that sacrifice rooms and confessionals modify when you get the you feel blessed effect, which means that changing it to (+.15) and (+.5) will have the same effects as the 3rd and 5th sacrifice room hits respectively, and (+.1) is equal to getting the blessed effect from confessionals
 
-When the game trys to spawn a deal it will roll once (0-1.0) which if what it rolls is below the listed angel chance in the stats hud (which is NOT what we are changing with AddAngelRoomChance) then it will be an angel room. 
+When the game trys to spawn a deal it will roll once (0-1.0) which if what it rolls is below the listed angel chance in the stats hud (which is NOT what we are changing with AddAngelRoomChance) then it will be an angel room.
 
 This means that whatever value it is will be a single chance of a an angel roll, effectively on the stat screen it changes the % of devil deal into angel deal with the forumla of (%devil deal=((%devil deal)\*(1-angelRoomChance))), ie making it .1 will cause it to show as 50% base angel, +5% (which is the remaining devil chance of 50%\*(1 - .1), if you have for example rosary bead trinket it will be 50% angel base + 50% chance from rosary to 75% base, and if angeRoomChance is .1 then it will add 2.5% (remaining 25% devil chance\*(1 - .1))
 

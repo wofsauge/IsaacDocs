@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "HeartSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

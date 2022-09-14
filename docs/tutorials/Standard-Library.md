@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Importing Lua Modules from the Standard Library
 
 Lua provides a standard library. However, since Isaac is a sandboxed environment, not everything is available for use:

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "GameStateFlag"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

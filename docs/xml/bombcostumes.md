@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "bombcostumes.xml"
 [ ](#){: .rep .tooltip .badge }
 

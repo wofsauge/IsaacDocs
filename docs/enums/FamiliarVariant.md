@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "FamiliarVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

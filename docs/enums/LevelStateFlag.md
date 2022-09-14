@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "LevelStateFlag"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

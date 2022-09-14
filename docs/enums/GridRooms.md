@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "GridRooms"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "InputHook"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

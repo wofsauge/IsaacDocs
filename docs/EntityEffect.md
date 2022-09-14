@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityEffect"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

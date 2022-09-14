@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "LocustSubtypes"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

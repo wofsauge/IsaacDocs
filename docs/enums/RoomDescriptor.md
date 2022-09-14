@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "RoomDescriptor"
 
 The "RoomDescriptor" Class has separate Enums that are used for special information handling.

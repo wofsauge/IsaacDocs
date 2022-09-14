@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ActionTriggers"
 
 ???+ tip "Bitset Calculator"

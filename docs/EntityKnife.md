@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityKnife"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

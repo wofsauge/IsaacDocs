@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "NullItemID"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

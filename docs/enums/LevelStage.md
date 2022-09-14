@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "LevelStage"
 |DLC|Value| Enumerator|internal id|possible stages|Comment|
 |:--|:--|:--|:--|:--|:--|

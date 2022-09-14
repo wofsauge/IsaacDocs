@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "curses.xml"
 
 Stores the names and ids of the available curses.

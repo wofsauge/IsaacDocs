@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "KColor"
 ## Constructors
 ### KColor () {: aria-label='Constructors' }

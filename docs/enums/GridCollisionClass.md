@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "GridCollisionClass"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

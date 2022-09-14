@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EffectList"
 ## Operators
 ### __len () {: aria-label='Operators' }

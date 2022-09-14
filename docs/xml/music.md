@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "music.xml"
 
 This file is used to store and define the music tracks the game plays. This is only background music, sound effects are in the "sounds.xml" file.

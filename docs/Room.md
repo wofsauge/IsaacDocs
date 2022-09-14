@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Room"
 
 ???+ info
@@ -29,18 +33,18 @@ Returns 2 values:
     **2** : is used for explosions, it only collides with walls and indestructible blocks
 
     **3** : is a line check that only collides with obstacles that can block projectiles
-    
+
 ???+ note "GridPathThreshold notes"
     GridPath values pseudo-enumeration:
-    
+
     **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
-    
+
     **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
-    
+
     **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Damage·Grid () {: aria-label='Functions' }
@@ -239,15 +243,15 @@ Grid path is a property of a grid square that represents the "cost" of traveling
 
 ???+ note "notes"
     GridPath values pseudo-enumeration:
-    
+
     **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
-    
+
     **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
-    
+
     **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Get·Grid·Path·From·Pos () {: aria-label='Functions' }
@@ -256,15 +260,15 @@ ___
 
 ???+ note "notes"
     GridPath values pseudo-enumeration:
-    
+
     **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
-    
+
     **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
-    
+
     **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Get·Grid·Position () {: aria-label='Functions' }
@@ -393,7 +397,7 @@ Returns the ID of the stage the room was designed for.
 	|[ ](#){: .rep .tooltip .badge }|33 |Corpse |  |
 	|[ ](#){: .rep .tooltip .badge }|35 |Home |The Stage ID of 34 does not exist. |
 	|[ ](#){: .rep .tooltip .badge }|36 |Backwards |These rooms are used during the Ascent. |
-     
+
 ___
 ### Get·Room·Shape () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -416,7 +420,7 @@ ___
 
 ???+ bug "Bug"
     Calling this function crashes the game
-    
+
 
 ___
 ### Get·Shop·Level () {: aria-label='Functions' }
@@ -661,15 +665,15 @@ Grid path is a property of a grid square that represents the "cost" of traveling
 
 ???+ note "notes"
     GridPath values pseudo-enumeration:
-    
+
     **900**  : Set by some enemies when they pass through a tile. De-prioritises the tile for pathfinders. Degrades over time in steps of 100.
-    
+
     **950**  : Set by fire places. De-prioritises the tile for pathfinders. Does not degrade.
-    
+
     **1000** : Set by grid entities. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3000** : Set by pits. Invalidates the tile for pathfinders. Impedes grounded player movement. Does not degrade.
-    
+
     **3999** : Set by grimaces. Invalidates the tile for pathfinders. Impedes grounded player movement. Drops to 900 and then degrades over time in steps of 100 (Grimaces reset value every frame).
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }

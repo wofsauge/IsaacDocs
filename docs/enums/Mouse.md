@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Mouse"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

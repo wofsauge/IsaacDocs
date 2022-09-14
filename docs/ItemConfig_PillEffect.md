@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "ItemConfigPillEffect"
 ## Variables
 ### Achievement·ID {: aria-label='Variables' }
@@ -25,5 +29,5 @@ ___
 Returns the name of the pill effect.
 
 ???- warning "Warning"
-    In Repentance, returns "#[PILL_NAME]" rather than the pill effect's ingame name. (i.e. Balls of Steel will return #BALLS_OF_STEEL_NAME) 
+    In Repentance, returns "#[PILL_NAME]" rather than the pill effect's ingame name. (i.e. Balls of Steel will return #BALLS_OF_STEEL_NAME)
 ___

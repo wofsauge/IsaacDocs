@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ButtonAction"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

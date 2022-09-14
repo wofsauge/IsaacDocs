@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "SeedEffect"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

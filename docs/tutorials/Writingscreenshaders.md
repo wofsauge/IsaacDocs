@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Writing screen shaders
 
 ## Example Shaders:

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PoopSpellType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

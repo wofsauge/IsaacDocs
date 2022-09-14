@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "DoorState"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

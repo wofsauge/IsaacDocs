@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "babies.xml"
 
 This file is used to store informations about coop-babies.

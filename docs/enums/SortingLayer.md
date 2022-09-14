@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "SortingLayer"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

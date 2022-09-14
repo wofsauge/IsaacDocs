@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "BedSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

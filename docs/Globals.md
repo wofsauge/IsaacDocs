@@ -1,3 +1,7 @@
+---
+tags:
+  - Globals
+---
 # Globals
 
 Global variables are variables that every mod has access to. In Isaac modding, the global environment is a mix of things provided by the Lua standard library and things provided by the Isaac API.

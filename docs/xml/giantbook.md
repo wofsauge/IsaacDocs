@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "giantbook.xml"
 
 This page needs some content. You can contribute to it using the Edit Button!

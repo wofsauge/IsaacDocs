@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Directories & Save Files Explanation (Repentance)
 
 This guide assumes you are on :fontawesome-brands-windows: Windows.

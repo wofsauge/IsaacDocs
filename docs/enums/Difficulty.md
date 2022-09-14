@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Difficulty"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

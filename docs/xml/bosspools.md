@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "bosspools.xml"
 [ ](#){: .rep .tooltip .badge }
 

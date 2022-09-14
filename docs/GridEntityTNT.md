@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "GridEntityTNT"
 ### Inherits from Class: {: .inheritance }
 [GridEntity](GridEntity.md)

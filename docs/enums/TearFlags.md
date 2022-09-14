@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "TearFlags"
 
 Tearflag is defined as:

@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityPlayer"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)
@@ -343,7 +347,7 @@ ___
 
 Adds one soul heart to Bethany's charge, equivalent to a half soul heart.
 ???- note "Notes"
-	This function will only work when playing as Bethany. 
+	This function will only work when playing as Bethany.
 
 ___
 ### Add·Soul·Hearts () {: aria-label='Functions' }
@@ -402,7 +406,7 @@ Plays the happy animation, played when taking a positive pill.
 
 ???- example "Example Code"
     This code plays the happy animation.
-    ```lua 
+    ```lua
     local player = Isaac.GetPlayer()
     player:AnimateHappy()
     ```
@@ -414,7 +418,7 @@ Plays the animation that is played when entering the light in the ascent, or ent
 
 ???- example "Example Code"
 	Plays the animation.
-	```lua 
+	```lua
     local player = Isaac.GetPlayer()
 	player:AnimateLightTravel()
 	```
@@ -449,7 +453,7 @@ Plays the sad animation, played when taking a negative pill.
 
 ???- example "Example Code"
 	Plays the sad animation.
-	```lua 
+	```lua
     	local player = Isaac.GetPlayer()
 	player:AnimateSad()
 	```

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "NpcState"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

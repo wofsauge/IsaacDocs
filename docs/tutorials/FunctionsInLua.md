@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Functions in Lua
 ----
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "BackdropType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

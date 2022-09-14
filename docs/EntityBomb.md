@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityBomb"
 
 ### Inherits from Class: {: .inheritance }

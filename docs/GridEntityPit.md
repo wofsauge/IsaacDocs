@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "GridEntityPit"
 ### Inherits from Class: {: .inheritance }
 [GridEntity](GridEntity.md)

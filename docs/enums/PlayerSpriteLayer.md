@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PlayerSpriteLayer"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

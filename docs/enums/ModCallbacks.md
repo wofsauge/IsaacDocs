@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ModCallbacks"
 Execution order diagram: [![callback diagram](../images/infographics/Isaac Callbacks.svg){: width='500' }](../images/infographics/Isaac Callbacks.svg)
 
@@ -224,7 +228,7 @@ Returning any value will have no effect on later callback executions.
 
 ???- info "Conditional Behaviour [ ](#){: .rep .tooltip .badge }"
     This callback causes many `EntityPlayer` methods to silently fail if the methods are called while continuing a saved run. This behavior was intentionally added by Kilburn in the Repentance DLC in order to make it easier for modders to add starting items to custom characters. (This behavior obviaties the need for modders to use filtration logic to distinguish between the cases of a new run/Genesis use/co-op spawn and a continued run.)
-    
+
     The following EntityPlayer methods are known to fail:
 
     ```lua
@@ -255,9 +259,9 @@ Returning any value will have no effect on later callback executions.
     AddPoopMana
     SetPocketActiveItem
     ```
-    
+
     The following EntityPlayer methods have been verified to continue firing:
-    
+
     ```lua
     AddBlueFlies
     AddBlueSpider
@@ -266,7 +270,7 @@ Returning any value will have no effect on later callback executions.
     AddSwarmFlyOrbital
     AddFriendlyDip
     ```
-    
+
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
@@ -334,7 +338,7 @@ This callback is used to arbitrarily change inputs. For example, you can complet
 - [Entity](../Entity.md) - The entity that is requesting the input. Most of the time this will be a player. However, it can also be nil if the input is not read from an entity class.
 - [InputHook](InputHook.md) - This determines the kind of input that is being polled. This corresponds to the `Input.IsActionTriggered`, `Input.IsActionPressed`, and `Input.GetActionValue` methods.
 
-Return nil if you do not want to overwrite the input. If you do want to overwrite the input, then you have to return a boolean for the `IS_ACTION_PRESSED` (0) and `IS_ACTION_TRIGGERED` (1) input hooks, or a float between 0.0 and 1.0 for the `GET_ACTION_VALUE` (2) input hook. 
+Return nil if you do not want to overwrite the input. If you do want to overwrite the input, then you have to return a boolean for the `IS_ACTION_PRESSED` (0) and `IS_ACTION_TRIGGERED` (1) input hooks, or a float between 0.0 and 1.0 for the `GET_ACTION_VALUE` (2) input hook.
 
 Returning any value will have no effect on later callback executions.
 

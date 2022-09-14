@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "SFXManager"
 ## Constructors
 ### SFXManager () {: aria-label='Constructors' }

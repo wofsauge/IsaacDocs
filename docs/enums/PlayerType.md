@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PlayerType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

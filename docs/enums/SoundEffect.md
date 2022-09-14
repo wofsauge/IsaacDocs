@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "SoundEffect"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

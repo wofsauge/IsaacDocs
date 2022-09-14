@@ -1,3 +1,7 @@
+---
+tags:
+  - FAQ
+---
 # The Binding of Isaac: Repentance Modding FAQ
 
 ## General

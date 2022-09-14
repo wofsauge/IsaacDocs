@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Card"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

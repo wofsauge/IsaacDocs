@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Challenge"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Seeds"
 ## Functions
 ### Add·Seed·Effect () {: aria-label='Functions' }

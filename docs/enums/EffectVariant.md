@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "EffectVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

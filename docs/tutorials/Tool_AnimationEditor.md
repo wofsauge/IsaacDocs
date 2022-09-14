@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Official Animation Editor
 
 The official **Animation Editor** tool can be found in the "Tools" folder inside your game files.

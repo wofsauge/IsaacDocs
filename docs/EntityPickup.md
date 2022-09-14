@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityPickup"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

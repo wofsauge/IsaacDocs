@@ -246,6 +246,7 @@ nav:
         - "Animation Editor" : tutorials/Tool_AnimationEditor.md
         - "Itempool Editor" : tutorials/Tool_ItemPoolEditor.md
     - Bugs: https://github.com/Meowlala/RepentanceAPIIssueTracker
+    - Tags: tags.md
     - Lua 5.3 Docs: https://www.lua.org/manual/5.3/
 theme:
     name: material
@@ -292,6 +293,8 @@ plugins:
   - git-revision-date-localized:
       fallback_to_build_date: true
       type: date
+  - tags:
+      tags_file: tags.md
 extra:
   social:
     - icon: fontawesome/brands/github

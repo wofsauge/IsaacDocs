@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Entity"
 
 First, see [the tutorial on entities](entities/Overview.md).

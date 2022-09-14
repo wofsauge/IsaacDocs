@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "translations.xml"
 
 This file is used to store a mapping of possible game translation packages. Used for Japanese and Korean.

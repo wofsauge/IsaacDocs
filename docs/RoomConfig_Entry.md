@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "RoomConfigEntry"
 ???+ info
     You can get this class by using the following function:

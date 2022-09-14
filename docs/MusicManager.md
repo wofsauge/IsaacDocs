@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "MusicManager"
 ## Constructors
 ### Music·Manager () {: aria-label='Constructors' }

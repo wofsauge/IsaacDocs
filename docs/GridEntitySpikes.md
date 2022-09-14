@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "GridEntitySpikes"
 ### Inherits from Class: {: .inheritance }
 [GridEntity](GridEntity.md)

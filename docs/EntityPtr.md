@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityPtr"
 ## Constructors
 ### Entity·Ptr () {: aria-label='Constructors' }
@@ -21,11 +25,11 @@ local function getPlayerFromPtr()
   if playerPtr == nil then
     return nil
   end
-  
+
   if playerPtr.Ref == nil then
     return nil
   end
-  
+
   return playerPtr.Ref:ToPlayer()
 end
 ```

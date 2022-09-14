@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityRef"
 ## Constructors
 ### Entity·Ref () {: aria-label='Constructors' }

@@ -1,3 +1,7 @@
+---
+tags:
+  - Entity
+---
 # Information for "Fissure Spawner"
 
 A Fissure Spawner (1000.192) is an entity included in the Repentance DLC. It spawns Fissure enemies over and over until the room is cleared.

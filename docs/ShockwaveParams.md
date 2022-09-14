@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "ShockwaveParams"
 ## Variables
 ### Age {: aria-label='Variables' }

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "EntityPartition"
 
 ???+ tip "Bitset Calculator"

@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "ProjectileParams"
 ## Constructors
 ### Projectile·Params () {: aria-label='Constructors' }

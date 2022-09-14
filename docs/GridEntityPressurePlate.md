@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "GridEntityPressurePlate"
 ### Inherits from Class: {: .inheritance }
 [GridEntity](GridEntity.md)

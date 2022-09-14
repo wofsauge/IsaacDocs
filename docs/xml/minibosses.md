@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "minibosses.xml"
 
 This file is used to store the name of the miniboss in certain miniboss-rooms. The name will be displayed on a "streak"-animation like "Isaac vs. MINIBOSS_NAME"

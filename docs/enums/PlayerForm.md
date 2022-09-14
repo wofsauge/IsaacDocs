@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PlayerForm"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

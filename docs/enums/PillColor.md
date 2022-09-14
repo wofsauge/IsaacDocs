@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PillColor"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

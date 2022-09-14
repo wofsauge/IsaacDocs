@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "locusts.xml"
 This file is used to define the properties of Locust familiars, spawned by Abyss.
 

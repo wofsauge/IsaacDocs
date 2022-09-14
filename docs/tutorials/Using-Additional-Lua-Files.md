@@ -1,3 +1,7 @@
+---
+tags:
+  - Tutorial
+---
 # [Tutorial] Using Additional .lua Files
 
 If you want to load an additional .lua file besides your main.lua file, you can use either the `require` or `include` functions. Both have different purposes.

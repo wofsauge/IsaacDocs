@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "WeaponType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

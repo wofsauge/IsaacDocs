@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Vector"
 ## Constructors
 ### Vector () {: aria-label='Constructors' }

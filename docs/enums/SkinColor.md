@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "SkinColor"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

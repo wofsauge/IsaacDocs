@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "GridEntityDesc"
 ## Variables
 ### Initialized {: aria-label='Variables' }

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PillEffect"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

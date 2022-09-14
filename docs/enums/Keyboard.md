@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Keyboard"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

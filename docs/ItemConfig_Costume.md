@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "ItemConfigCostume"
 ## Variables
 ### Anm2Path {: aria-label='Variables' }

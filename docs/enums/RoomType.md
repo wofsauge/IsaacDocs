@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "RoomType"
 |DLC|Value|Enumerator|Icon|Comment|
 |:--|:--|:--|:--|:--|

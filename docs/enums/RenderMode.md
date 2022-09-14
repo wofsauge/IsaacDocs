@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "RenderMode"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

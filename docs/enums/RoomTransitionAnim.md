@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "RoomTransitionAnim"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

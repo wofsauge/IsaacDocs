@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ChestSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

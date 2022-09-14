@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ProjectileVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

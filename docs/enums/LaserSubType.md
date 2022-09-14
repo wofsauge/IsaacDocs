@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "LaserSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

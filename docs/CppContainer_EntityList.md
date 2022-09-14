@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityList"
 ## Operators
 ### __len () {: aria-label='Operators' }

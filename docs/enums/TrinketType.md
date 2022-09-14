@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "TrinketType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

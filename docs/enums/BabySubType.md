@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "BabySubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

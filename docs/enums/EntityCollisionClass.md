@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "EntityCollisionClass"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

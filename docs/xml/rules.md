@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "rules.txt"
 
 This file is used to store all "rules" displayed when using the "Rules" card.

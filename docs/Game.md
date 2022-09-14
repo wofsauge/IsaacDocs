@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Game"
 ## Constructors
 ### Game () {: aria-label='Constructors' }

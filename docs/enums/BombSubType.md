@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "BombSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "wisps.xml"
 This file is used to define the properties of Wisp familiars, spawned by Book of Virtues.
 

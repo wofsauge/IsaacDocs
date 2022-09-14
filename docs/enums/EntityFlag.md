@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "EntityFlag"
 
 ???+ tip "Bitset Calculator"

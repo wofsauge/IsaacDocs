@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "PillConfigList"
 ## Operators
 ### __len () {: aria-label='Operators' }

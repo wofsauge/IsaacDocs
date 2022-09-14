@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "GridEntityPoop"
 ### Inherits from Class: {: .inheritance }
 [GridEntity](GridEntity.md)

@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "playerforms.xml"
 This file is used to define transformations.
 

@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Options"
 
 The `Options` class represents the values contained within the user's `options.ini` file. For example, this is useful so that mods that add things to the HUD can properly account for the `HUDOffset`.

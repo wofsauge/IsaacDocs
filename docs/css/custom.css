@@ -400,6 +400,10 @@ div[data-md-component$="announce"] {
     padding: 0.5em .8rem;
 }
 
+.md-search-result__article>.md-tag {
+    display: none;
+}
+
 
 /*Format default table layout*/
 

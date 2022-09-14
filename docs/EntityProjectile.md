@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityProjectile"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

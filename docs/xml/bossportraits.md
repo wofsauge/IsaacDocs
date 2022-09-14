@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "bossportraits.xml"
 
 This file is used to store informations about the VS screen sprites of bosses.

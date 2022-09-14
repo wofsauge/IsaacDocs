@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityFamiliar"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

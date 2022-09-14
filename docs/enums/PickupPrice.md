@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PickupPrice"
 |DLC|Value|Enumerator|Value|Comment|
 |:--|:--|:--|:--|:--|

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ItemType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

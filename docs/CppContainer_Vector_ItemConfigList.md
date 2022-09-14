@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "ItemConfigList"
 ## Operators
 ### __len () {: aria-label='Operators' }

@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "seeds.txt"
 
 A text file containing special seeds, mostly used for Easter Egg seeds.

@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "nightmares.xml"
 
 Used to store all animation paths to the nightmares (dream sequence between stage transitions)

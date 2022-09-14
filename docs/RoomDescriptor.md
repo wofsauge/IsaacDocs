@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "RoomDescriptor"
 
 ???+ info
@@ -221,11 +225,11 @@ room:Update()
 ```
 
 ???- note "Notes"
-    - In the image below, each item's ShopItemId is written underneath it.  
-    - Notice how all items that share a ShopItemId have the same PickupVariant, but aren't identical.  
-    - ShopItemDiscountIdx is 2, so all shop items with a ShopItemId of 2 are on sale.  
-    - After all items are created, the ShopItemIdx for this room is 0.  
-    ![ShopItemIdx Example](images/shopItemIdxDiagram.png)  
+    - In the image below, each item's ShopItemId is written underneath it.
+    - Notice how all items that share a ShopItemId have the same PickupVariant, but aren't identical.
+    - ShopItemDiscountIdx is 2, so all shop items with a ShopItemId of 2 are on sale.
+    - After all items are created, the ShopItemIdx for this room is 0.
+    ![ShopItemIdx Example](images/shopItemIdxDiagram.png)
 ___
 ### Spawn·Seed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

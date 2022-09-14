@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "CoinSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

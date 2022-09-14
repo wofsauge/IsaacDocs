@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "PoopPickupSubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

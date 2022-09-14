@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "challenges.xml"
 
 Used to store all challenges and some of their attributes.

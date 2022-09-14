@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ProjectileFlags"
 
 ???+ tip "Bitset Calculator"

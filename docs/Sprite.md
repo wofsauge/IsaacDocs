@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Sprite"
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }

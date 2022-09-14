@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "Font"
 ## Constructors
 ### Font () {: aria-label='Constructors' }

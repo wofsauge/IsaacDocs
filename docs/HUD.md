@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "HUD"
 ## Functions
 ### Assign·Player·HUDs () {: aria-label='Functions' }

@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "cutscenes.xml"
 
 This file stores and defines the intro cutscene and the various ending cutscenes in the game.

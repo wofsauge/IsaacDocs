@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ItemConfig"
 
 The "ItemConfig" Class has separate Enums that are used for special information handling.

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ItemPoolType"
 |DLC|Value|Enumerator| Name in itempool.xml |Comment|
 |:--|:--|:--|:--|:--|

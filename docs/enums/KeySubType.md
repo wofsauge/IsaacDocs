@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "KeySubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "intValues"
 ## Operators
 ### __len () {: aria-label='Operators' }

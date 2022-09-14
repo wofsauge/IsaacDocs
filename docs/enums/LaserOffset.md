@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "LaserOffset"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

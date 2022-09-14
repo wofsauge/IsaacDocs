@@ -1,9 +1,13 @@
+---
+tags:
+  - Class
+---
 # Class "ItemConfigCard"
 ## Variables
 ### Achievement·ID {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int AchievementID  {: .copyable aria-label='Variables' }
-Returns the ID of the achievement that unlocks the card. Returns ``:::lua -1`` if the card is unlocked by default. 
+Returns the ID of the achievement that unlocks the card. Returns ``:::lua -1`` if the card is unlocked by default.
 ___
 ### Description {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

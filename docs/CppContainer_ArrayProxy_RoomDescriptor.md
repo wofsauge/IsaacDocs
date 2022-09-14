@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "RoomDescriptor"
 ## Operators
 ### __len () {: aria-label='Operators' }

@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "RNG"
 
 The RNG class is provdes a mechanism to produce seeded random numbers. This is used heavily by both the game and mods.
@@ -17,7 +21,7 @@ When setting the seed, it is recommended to use a shift index of 35, which is wh
     -- Any value between 0 and 80 should work equally well.
     -- https://www.jstatsoft.org/article/view/v008i14/xorshift.pdf
     local RECOMMENDED_SHIFT_IDX = 35
-    
+
     local game = Game()
     local seeds = game:GetSeeds()
     local startSeed = seeds:GetStartSeed()

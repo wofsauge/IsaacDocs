@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "fortunes.txt"
 
 This file is used to store all "fortunes" displayed when using the "Fortune Machine" or similar.

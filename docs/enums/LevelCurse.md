@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "LevelCurse"
 
 ???+ tip "Bitset Calculator"

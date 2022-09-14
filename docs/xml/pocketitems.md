@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "pocketitems.xml"
 
 **Resource-Folder**{: .xmlInfo .red}: Using this file in a resource folder of a mod will replace the original file.

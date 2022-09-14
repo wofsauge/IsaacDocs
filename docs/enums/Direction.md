@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "Direction"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

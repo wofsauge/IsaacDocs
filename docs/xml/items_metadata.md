@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "items_metadata.xml"
 This file is used to define additional informations for Collectibles or Trinkets. This includes the quality, and special properties like transformations or gameplay interactions.
 

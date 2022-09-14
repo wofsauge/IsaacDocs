@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityNPC"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

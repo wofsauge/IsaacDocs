@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "BatterySubType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "StageType"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

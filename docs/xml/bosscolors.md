@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "bosscolors.xml"
 
 This file is used to store all valid champion bosses. Effects of champion bosses are hardcoded, so this file defines only color, scale and HP multiplier of the boss.

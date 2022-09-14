@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "RoomShape"
 |DLC|Value|Enumerator|Preview|Possible Gridindicies|Comment|
 |:--|:--|:--|:--|:--|:--|

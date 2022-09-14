@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "items.xml"
 
 old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_to_modify_items/](https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_to_modify_items/)

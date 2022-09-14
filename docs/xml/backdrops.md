@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "backdrops.xml"
 
 This file is used to store informations about the backdrops and sprites used in the stages.

@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "DoorVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|

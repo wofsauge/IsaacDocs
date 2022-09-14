@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "achievements.xml"
 
 This file is used to store general informations about the ingame achievements.

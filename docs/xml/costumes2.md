@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "costumes2.xml"
 
 Defines Costume informations.

@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "stages.xml"
 
 This file is used to store informations about the Levels / Stages of the game.

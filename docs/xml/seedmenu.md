@@ -1,3 +1,7 @@
+---
+tags:
+  - File
+---
 # File "seedmenu.xml"
 
 File that defines the display of the Easter Egg seed menu.

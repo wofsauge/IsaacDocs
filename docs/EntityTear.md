@@ -1,3 +1,7 @@
+---
+tags:
+  - Class
+---
 # Class "EntityTear"
 ### Inherits from Class: {: .inheritance }
 [Entity](Entity.md)

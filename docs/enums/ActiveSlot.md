@@ -1,3 +1,7 @@
+---
+tags:
+  - Enum
+---
 # Enum "ActiveSlot"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
