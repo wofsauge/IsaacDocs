@@ -1,3 +1,7 @@
+---
+search:
+  boost: -999
+---
 # Lua API Documentation for The Binding of Isaac - Repentance
 ___
 
