@@ -344,10 +344,15 @@ document$.subscribe(function() {
     // We use an Element observer, to change the search results AFTER they where placed
     var target = document.querySelector('.md-search-result__list')
     var observer = new MutationObserver(function(mutations) {
-        $("li.md-search-result__item").find('a').each(function(e) {
-            hidePlaceholderChar($(this));
-            colorizeSearchResults($(this));
+        $("li.md-search-result__item").each(function(e) {
+            var firstATag = $(this).find('a').first();
+            hidePlaceholderChar(firstATag);
+            colorizeSearchResults(firstATag);
         });
+        $("article.md-search-result__article").each(function(e) {
+            $(this).removeClass("md-typeset"); // Remove class that destroys search result layouts
+        })
+
     });
     var config = { attributes: true, childList: true, characterData: true };
     observer.observe(target, config);
