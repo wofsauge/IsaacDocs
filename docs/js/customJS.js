@@ -346,8 +346,10 @@ document$.subscribe(function() {
     var observer = new MutationObserver(function(mutations) {
         $("li.md-search-result__item").each(function(e) {
             var firstATag = $(this).find('a').first();
-            hidePlaceholderChar(firstATag);
             colorizeSearchResults(firstATag);
+        });
+        $("li.md-search-result__item").find('a').each(function(e) {
+            hidePlaceholderChar($(this));
         });
         $("article.md-search-result__article").each(function(e) {
             $(this).removeClass("md-typeset"); // Remove class that destroys search result layouts
