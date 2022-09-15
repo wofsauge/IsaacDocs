@@ -1,6 +1,7 @@
 ---
 tags:
   - Class
+  - Isaac
 ---
 # Class "Isaac"
 

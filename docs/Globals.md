@@ -1,6 +1,8 @@
 ---
 tags:
   - Globals
+search:
+  boost: 2
 ---
 # Globals
 

@@ -1,7 +1,3 @@
----
-tags:
-  - Entity
----
 # Entity data documentation
 
 ### About

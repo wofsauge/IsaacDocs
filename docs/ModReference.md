@@ -1,6 +1,8 @@
 ---
 tags:
   - Class
+search:
+  boost: 0.5
 ---
 # Class "Mod Reference"
 

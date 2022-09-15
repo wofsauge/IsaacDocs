@@ -1,6 +1,8 @@
 ---
 tags:
   - Class
+search:
+  boost: 0.25
 ---
 # Class "PlayerTypesActiveItemDesc"
 

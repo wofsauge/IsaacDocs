@@ -353,6 +353,9 @@ document$.subscribe(function() {
         });
         $("article.md-search-result__article").each(function(e) {
             $(this).removeClass("md-typeset"); // Remove class that destroys search result layouts
+            if ($(this).attr("data-md-score") < 0) {
+                $(this).parent().parent().hide();
+            }
         })
 
     });

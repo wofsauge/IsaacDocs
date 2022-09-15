@@ -30,10 +30,6 @@ Child-node of the "sound" node. Multiple "sample" nodes can be added to a "sound
 ## Informations
 Its only possible to define ".wav" files as sound effects. The file must be encoded in 32-bit, otherwise it will sound like high-pitched static noise. The Bitrate and audio-channel options can be choosen freely.
 
-#---
-tags:
-  - File
----
 # File Conversions
 For an easy conversion from any audio-format to the needed ".wav" format, you can use a lot of software tools for editing sound files.
 

@@ -1,7 +1,3 @@
----
-tags:
-  - Entity
----
 # Informations for "Spike Ball and Chain"
 
 Spikechains must be on either Top, Right, Bottom or Left side of a block in order to be attached and spin around it.

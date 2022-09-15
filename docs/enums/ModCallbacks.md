@@ -1,6 +1,9 @@
 ---
 tags:
   - Enum
+
+search:
+  boost: 3
 ---
 # Enum "ModCallbacks"
 Execution order diagram: [![callback diagram](../images/infographics/Isaac Callbacks.svg){: width='500' }](../images/infographics/Isaac Callbacks.svg)

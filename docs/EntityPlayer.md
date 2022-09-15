@@ -1,6 +1,7 @@
 ---
 tags:
   - Class
+  - Player
 ---
 # Class "EntityPlayer"
 ### Inherits from Class: {: .inheritance }

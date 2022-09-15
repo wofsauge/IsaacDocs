@@ -1,6 +1,8 @@
 ---
 tags:
   - Class
+search:
+  boost: 2
 ---
 # Class "Global Functions"
 ## Constructors
