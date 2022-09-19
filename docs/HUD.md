@@ -35,11 +35,45 @@ ___
 ### Show·Item·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowItemText ( string MainString, string SecondaryString, boolean IsCurseDisplay = false ) {: .copyable aria-label='Functions' }
+
+Displays "streak text". You can use this to simulate the player picking up an item without them actually picking anything up. The name of the method is misleading, as you can generate any arbitrary text - it does not necessarily have to do with an item.
+
+This method is overloaded, meaning that you can use two different sets of parameters, depending on your needs. (See the subsequent section.)
+
+For example:
+
+```lua
+local function showHelpText()
+  local game = Game()
+  local hud = game.GetHUD()
+
+  hud:ShowItemText("Don't touch the spikes!", "It will drain your mana.")
+end
+```
+
 ___
 ### Show·Item·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowItemText ( [EntityPlayer](EntityPlayer.md) Player, [ItemConfigItem](ItemConfig_Item.md) Item) {: .copyable aria-label='Functions' }
-Allows to display an item splash text without picking it up.
+
+Displays "streak text". You can use this to simulate the player picking up an item without them actually picking anything up.
+
+This method is overloaded, meaning that you can use two different sets of parameters, depending on your needs. (See the previous section.)
+
+For example:
+
+```lua
+local function showSadOnionText()
+  local game = Game()
+  local hud = game.GetHUD()
+  local itemConfig = Isaac.GetItemConfig()
+
+  local player = Isaac.GetPlayer()
+  local itemConfigItem = itemConfig:GetCollectible(CollectibleType.COLLECTIBLE_SAD_ONION)
+  hud:ShowItemText(player, itemConfigItem)
+end
+```
+
 ___
 ### Set·Visible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
