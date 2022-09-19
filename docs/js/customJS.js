@@ -113,26 +113,15 @@ function modifyCallbackPageLayout() {
         return;
     }
 
-    var curH3;
-    var mcTableData;
     var tableContent = "";
-    $("article.md-content__inner").children().each(function(index) {
-        if ($(this).get(0).tagName == "H3") {
-            if (mcTableData != null && curH3 != null) {
-                var headerLink = mcTableData.find("td:eq(2)").text().toLowerCase();
-                console.log(headerLink);
-                tableContent = tableContent + "<tr>" +
-                    "<td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>" +
-                    "<td>" + mcTableData.find("td:eq(3)").html() + "</td>" +
-                    "<td>" + mcTableData.find("td:eq(4)").html() + "</td>" +
-                    "<td>" + mcTableData.find("td:eq(5)").html() + "</td></tr>";
-            }
-            curH3 = $(this);
-        } else if ($(this).get(0).tagName == "DIV") {
-            if (curH3 != null) {
-                mcTableData = $(this);
-            }
-        }
+    $("article.md-content__inner .md-typeset__table").each(function(index) {
+        var headerLink = $(this).find("td:eq(2)").text().toLowerCase();
+        console.log(headerLink);
+        tableContent = tableContent + "<tr>" +
+            "<td class=\"copyable\"><a href=\"#" + headerLink + "\">" + $(this).find("td:eq(2)").text() + "</a></td>" +
+            "<td>" + $(this).find("td:eq(3)").html() + "</td>" +
+            "<td>" + $(this).find("td:eq(4)").html() + "</td>" +
+            "<td>" + $(this).find("td:eq(5)").html() + "</td></tr>";
     });
     var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\">" +
         "<thead><tr><th>Name</th><th>Function Args</th><th>Optional Args</th><th>Return Type</th></tr></thead><tbody></tbody></table><hr/></div>");
