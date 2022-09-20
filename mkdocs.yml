@@ -279,6 +279,8 @@ markdown_extensions:
       linenums: true
   - pymdownx.superfences
   - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
   - admonition
   - pymdownx.details
   - pymdownx.emoji:
