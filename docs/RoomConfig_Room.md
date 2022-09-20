@@ -74,7 +74,7 @@ ___
 ___
 ### Spawns {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [SpawnList](CppContainer_ArrayProxy_RoomConfigSpawns.md) Spawns  {: .copyable aria-label='Variables' }
+#### const [RoomConfigSpawns](CppContainer_ArrayProxy_RoomConfigSpawns.md) Spawns  {: .copyable aria-label='Variables' }
 
 ___
 ### Stage·ID {: aria-label='Variables' }
