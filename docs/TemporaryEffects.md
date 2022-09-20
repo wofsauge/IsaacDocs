@@ -26,8 +26,8 @@ Adds the effect of a collectible to the player, without actually giving him the 
 ???+ bug
     This function only works for a subset of collectibles. For example, it will work with "Holy Mantle", but not with "Chocolate Milk".
     
-    ???- info
-        Passive tems that work when used with AddCollectibleEffect() (excluding quest items).
+    ???- info "Supported Items"
+        Passive items that work when used with AddCollectibleEffect() (excluding quest items).
 
         - Sad Onion
         - Inner Eye
