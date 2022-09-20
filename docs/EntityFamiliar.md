@@ -155,6 +155,11 @@ ___
 #### int Hearts  {: .copyable aria-label='Variables' }
 
 ___
+### Is·Delayed {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### bool IsDelayed {: .copyable aria-label='Variables' }
+
+___
 ### Is·Follower {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### bool IsFollower {: .copyable aria-label='Variables' }
