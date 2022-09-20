@@ -1825,11 +1825,6 @@ Defines how fast the tear travel when spawned.
 The default velocity of a tear shot is 10 times the players ShotSpeed.
 
 ___
-### Sprite·Scale {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### float SpriteScale  {: .copyable aria-label='Variables' }
-
-___
 ### Tear·Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Color](Color.md) TearColor  {: .copyable aria-label='Variables' }
