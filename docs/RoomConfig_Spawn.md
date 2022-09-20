@@ -29,7 +29,7 @@ ___
 ## Variables
 ### Entries {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### [RoomConfigEntries](RoomConfigEntries.md) Entries  {: .copyable aria-label='Variables' }
+#### [RoomConfigEntries](CppContainer_ArrayProxy_RoomConfigEntries.md) Entries  {: .copyable aria-label='Variables' }
 
 ___
 
