@@ -157,12 +157,12 @@ ___
 ___
 ### Is·Delayed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### bool IsDelayed {: .copyable aria-label='Variables' }
+#### boolean IsDelayed {: .copyable aria-label='Variables' }
 
 ___
 ### Is·Follower {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### bool IsFollower {: .copyable aria-label='Variables' }
+#### boolean IsFollower {: .copyable aria-label='Variables' }
 
 ___
 ### Keys {: aria-label='Variables' }
