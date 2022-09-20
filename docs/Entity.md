@@ -626,6 +626,11 @@ ___
 #### float CollisionDamage  {: .copyable aria-label='Variables' }
 
 ___
+### Color {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
+
+___
 ### Depth·Offset {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float DepthOffset  {: .copyable aria-label='Variables' }

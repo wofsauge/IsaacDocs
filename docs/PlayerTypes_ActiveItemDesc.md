@@ -37,6 +37,12 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### float PartialCharge {: .copyable aria-label='Variables' }
 How close the item is to gaining another charge (0-1 range, used by 4.5 Volt)
+
+___
+### SubCharge {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int SubCharge {: .copyable aria-label='Variables' }
+
 ___
 ### TimedRechargeCooldown {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
