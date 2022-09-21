@@ -18,18 +18,18 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|10 |ACTION_PILLCARD {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|11 |ACTION_DROP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|12 |ACTION_PAUSE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|13 |ACTION_MAP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|14 |ACTION_MENUCONFIRM {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|15 |ACTION_MENUBACK {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|13 |ACTION_MAP {: .copyable } | TAB on keyboard; Select on controller |
+|[ ](#){: .abrep .tooltip .badge }|14 |ACTION_MENUCONFIRM {: .copyable } | Enter on keyboard; A on Controller |
+|[ ](#){: .abrep .tooltip .badge }|15 |ACTION_MENUBACK {: .copyable } | Esc on keyboard; B on Controller |
 |[ ](#){: .abrep .tooltip .badge }|16 |ACTION_RESTART {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|17 |ACTION_FULLSCREEN {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |ACTION_MUTE {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|19 |ACTION_JOINMULTIPLAYER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|20 |ACTION_MENULEFT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|21 |ACTION_MENURIGHT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|22 |ACTION_MENUUP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|23 |ACTION_MENUDOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|24 |ACTION_MENULT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|25 |ACTION_MENURT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|26 |ACTION_MENUTAB {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|20 |ACTION_MENULEFT {: .copyable } | same as walk left |
+|[ ](#){: .abrep .tooltip .badge }|21 |ACTION_MENURIGHT {: .copyable } | same as walk right  |
+|[ ](#){: .abrep .tooltip .badge }|22 |ACTION_MENUUP {: .copyable } | same as walk up  |
+|[ ](#){: .abrep .tooltip .badge }|23 |ACTION_MENUDOWN {: .copyable } | same as walk down  |
+|[ ](#){: .abrep .tooltip .badge }|24 |ACTION_MENULT {: .copyable } | Left trigger |
+|[ ](#){: .abrep .tooltip .badge }|25 |ACTION_MENURT {: .copyable } | Right trigger |
+|[ ](#){: .abrep .tooltip .badge }|26 |ACTION_MENUTAB {: .copyable } | TAB on keyboard; X on controller |
 |[ ](#){: .abrep .tooltip .badge }|28 |ACTION_CONSOLE {: .copyable } | USE ONLY FOR HOOKING! To check the input use IsButtonTriggered with desired key <br> |
