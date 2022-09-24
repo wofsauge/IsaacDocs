@@ -524,6 +524,8 @@ Starts a transition animation like it`s playing when entering a trapdoor to swit
 * 1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.
 * &gt;2: Same as 0
 
+???+ bug "Bug"
+    Defining a player will crash the game. To prevent this, keep player-argument nil: `Game():StartStageTransition(false, 0, nil)`
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
