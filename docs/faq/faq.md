@@ -552,7 +552,7 @@ For example, in Lua:
 
 ### What is the difference between `require` and `include`? {: .subHeader}
 
-See the [docs](../tutorials/Using-Additional-Lua-Files.md).
+See the [tutorial on using additional Lua files](../tutorials/Using-Additional-Lua-Files.md).
 
 ### What is the difference between `pairs` and `ipairs`? {: .subHeader}
 
