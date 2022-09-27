@@ -649,7 +649,7 @@ Like most things in life, a lot of basic questions about Isaac modding can be ea
 
 In fact, the website you are on right now is the community docs. Welcome! Use the search bar in the top right hand corner to look up the information you need. For example, if you wanted to know how to get the soul hearts of a player, you could search for "soul hearts", and then you would find the `EntityPlayer.GetSoulHearts` method.
 
-Now that you know about the docs, please remember to search the docs before asking a question in the Isaac community Discord server. By asking questions that can be easily answered by searching the docs, it's not being very respectful to the volunteers who spend their time answering questions.
+Now that you know about the docs, please remember to search the docs before asking a question in the Isaac community Discord server. By asking questions that can be easily answered by searching the docs, it is not being very respectful to the volunteers who spend their time answering questions.
 
 ### Use Discord Syntax Highlighting {: .subHeader}
 
