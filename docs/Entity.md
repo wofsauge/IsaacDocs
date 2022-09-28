@@ -259,7 +259,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CollidesWithGrid ( ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity is able to collide with grid entities in general. (This is not to be confused with whether or not the entity is currently colliding with a grid entity.)
+Returns true if the entity is able to collide with grid entities in general. (This is not to be confused with whether or not the entity is currently colliding with a grid entity.)
 ___
 ### Die () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -271,7 +271,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Exists ( ) {: .copyable aria-label='Functions' }
 
-Returns true, if this entity still exists.
+Returns true if this entity still exists.
 ___
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -374,7 +374,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity has all named [EntityFlags](enums/EntityFlag.md) set.
+Returns true if the entity has all named [EntityFlags](enums/EntityFlag.md) set.
 
 ???- example "Example Code"
     This code prints something in the console, if the entity has a specific [EntityFlags](enums/EntityFlag.md).
