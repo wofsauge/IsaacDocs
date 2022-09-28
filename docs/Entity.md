@@ -271,7 +271,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Exists ( ) {: .copyable aria-label='Functions' }
 
-Returns true if this entity still exists.
+Checks whether the entity is still spawned in the current room.
+
+This is mostly useful in situations where you are unwrapping an `EntityPtr` and the corresponding entity may or may not have been killed in the interim period.
+
 ___
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
