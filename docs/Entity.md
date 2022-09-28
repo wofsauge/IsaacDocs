@@ -82,7 +82,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like being friendly or being shrunk. You can add multiple flags at the same time by bitwise-concatenating them.
+Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like being friendly or being immune from spike damage. You can add multiple flags at the same time by bitwise-concatenating them.
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
@@ -612,7 +612,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
-Runs the post-update logic for an entity for a single frame, which will cause the associated callback to fire. Mods usually never need to call this function, as it can cause bugs when post-update logic is ran more than once a frame.
+Runs the post-update logic for the entity for a single frame, which will cause the associated callback to fire. Mods usually never need to call this function, as it can cause bugs when post-update logic is ran more than once a frame.
 
 ___
 ## Variables
