@@ -612,6 +612,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
+Runs the post-update logic for an entity for a single frame, which will cause the associated callback to fire. Mods usually never need to call this function, as it can cause bugs when post-update logic is ran more than once a frame.
+
 ___
 ## Variables
 ### Child {: aria-label='Variables' }
