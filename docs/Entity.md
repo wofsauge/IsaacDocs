@@ -287,13 +287,13 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Color](Color.md) GetColor ( ) {: .copyable aria-label='Functions' }
 
-Returns the Color object assosiated to this entity.
+Returns the Color object associated to this entity.
 ___
 ### Get·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### table GetData ( ) {: .copyable aria-label='Functions' }
 
-Returns a Lua table that contains mod-related data assosiated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
+Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
 
 GetData is typically used by smaller mods as a quick way to store information about an entity without having to create a dedicated data structure.
 
