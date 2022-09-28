@@ -552,7 +552,7 @@ For example, in Lua:
 
 ### What is the difference between `require` and `include`? {: .subHeader}
 
-See the [docs](../tutorials/Using-Additional-Lua-Files.md).
+See the [tutorial on using additional Lua files](../tutorials/Using-Additional-Lua-Files.md).
 
 ### What is the difference between `pairs` and `ipairs`? {: .subHeader}
 
@@ -645,7 +645,11 @@ These are some tips on how to improve communication.
 
 ### Read the Docs
 
-This is the webpage for the Isaac modding documentation, or "the docs" for short. Please search the docs using the search feature in the top-right-hand corner before asking a question to other modders.
+A lot of basic questions about Isaac modding can be answered by "reading the manual". In this case, the "manual" is the unofficial community documentation website, created by famous Isaac modder Wofsauge. (The community documentation website is much better than the "normal" documentation that comes included with the game, which is incomplete, hard to search, and buggy.)
+
+In fact, the website you are on right now is the community docs. Welcome! Use the search bar in the top right hand corner to easily look up the information you need. For example, if you wanted to know how to get the soul hearts of a player, you could search for "soul hearts", and then you would find the `EntityPlayer.GetSoulHearts` method.
+
+Now that you know about the docs, please remember to search the docs before asking a question in the Isaac community Discord server. By asking questions that can be easily answered by searching the docs, it is not being very respectful to the volunteers who spend their time answering questions.
 
 ### Use Discord Syntax Highlighting {: .subHeader}
 

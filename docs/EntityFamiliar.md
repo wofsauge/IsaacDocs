@@ -205,6 +205,16 @@ ___
 
 Defines the orbit of the familiar, if its an orbital. The Vector is interpreted as the dimensions of the circle/oval orbit. Example: `:::lua Vector(110,90)` is the orbital of "Forever alone".
 ___
+### Orbit·Layer {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### int OrbitLayer  {: .copyable aria-label='Variables' }
+
+___
+### Orbit·Speed {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### float OrbitSpeed  {: .copyable aria-label='Variables' }
+
+___
 ### Player {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) Player  {: .copyable aria-label='Variables' }

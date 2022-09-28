@@ -57,6 +57,11 @@ ___
 #### const string Name  {: .copyable aria-label='Variables' }
 
 ___
+### Original·Variant {: aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+#### int OriginalVariant  {: .copyable aria-label='Variables' }
+
+___
 ### Shape {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [RoomShape](enums/RoomShape.md) Shape  {: .copyable aria-label='Variables' }
@@ -69,7 +74,7 @@ ___
 ___
 ### Spawns {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [SpawnList](CppContainer_ArrayProxy_RoomConfigSpawns.md) Spawns  {: .copyable aria-label='Variables' }
+#### const [RoomConfigSpawns](CppContainer_ArrayProxy_RoomConfigSpawns.md) Spawns  {: .copyable aria-label='Variables' }
 
 ___
 ### Stage·ID {: aria-label='Variables' }

@@ -58,6 +58,11 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int AddCoins  {: .copyable aria-label='Variables' }
 
+___
+### Add·Costume·On·Pickup {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean AddCostumeOnPickup  {: .copyable aria-label='Variables' }
+
 Returns the number of coins the item adds to the player.
 ___
 ### Add·Hearts {: aria-label='Variables' }

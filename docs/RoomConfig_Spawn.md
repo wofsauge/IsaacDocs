@@ -27,6 +27,12 @@ search:
 r is a value between 0 and 1
 ___
 ## Variables
+### Entries {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### [RoomConfigEntries](CppContainer_ArrayProxy_RoomConfigEntries.md) Entries  {: .copyable aria-label='Variables' }
+
+___
+
 ### Entry·Count {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int EntryCount  {: .copyable aria-label='Variables' }

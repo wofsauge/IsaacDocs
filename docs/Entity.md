@@ -82,7 +82,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
+Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like being friendly or being immune from spike damage. You can add multiple flags at the same time by bitwise-concatenating them.
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
@@ -253,13 +253,13 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Removes all [EntityFlags](enums/EntityFlag.md) from the entity.
+Removes all of the provided [EntityFlags](enums/EntityFlag.md) from the entity.
 ___
 ### Collides·With·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CollidesWithGrid ( ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity is able to collide with the grid.
+Returns true if the entity is able to collide with grid entities in general. (This is not to be confused with whether or not the entity is currently colliding with a grid entity.)
 ___
 ### Die () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -271,7 +271,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Exists ( ) {: .copyable aria-label='Functions' }
 
-Returns true, if this entity still exists.
+Checks whether the entity is still spawned in the current room.
+
+This is mostly useful in situations where you are unwrapping an `EntityPtr` and the corresponding entity may or may not have been killed in the interim period.
+
 ___
 ### Get·Boss·ID () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -284,13 +287,13 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [Color](Color.md) GetColor ( ) {: .copyable aria-label='Functions' }
 
-Returns the Color object assosiated to this entity.
+Returns the Color object associated to this entity.
 ___
 ### Get·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### table GetData ( ) {: .copyable aria-label='Functions' }
 
-Returns a Lua table that contains mod-related data assosiated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
+Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
 
 GetData is typically used by smaller mods as a quick way to store information about an entity without having to create a dedicated data structure.
 
@@ -345,7 +348,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) GetLastChild ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the last child of this entity. This is useful for certain segmented enemies so you can go all the way to the bottom "tail" entity in one call.
+Returns the last child of this entity. This is useful for certain segmented enemies so you can go all the way to the bottom "tail" entity in one method call.
 
 ???+ note "Return behavior"
     If no child is found, this function returns `nil`.
@@ -354,7 +357,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) GetLastParent ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the last parent of this entity. This is useful for certain segmented enemies so you can go all the way to the top "head" entity in one call.
+Returns the last parent of this entity. This is useful for certain segmented enemies so you can go all the way to the top "head" entity in one method call.
 
 ???+ note "Return behavior"
     If no parent is found, this function returns `nil`.
@@ -374,7 +377,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Returns true, if the entity has all named [EntityFlags](enums/EntityFlag.md) set.
+Returns true if the entity has all named [EntityFlags](enums/EntityFlag.md) set.
 
 ???- example "Example Code"
     This code prints something in the console, if the entity has a specific [EntityFlags](enums/EntityFlag.md).
@@ -612,6 +615,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
+Runs the post-update logic for the entity for a single frame, which will cause the associated callback to fire. Mods usually never need to call this function, as it can cause bugs when post-update logic is ran more than once a frame.
+
 ___
 ## Variables
 ### Child {: aria-label='Variables' }
@@ -624,6 +629,11 @@ ___
 ### Collision·Damage {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float CollisionDamage  {: .copyable aria-label='Variables' }
+
+___
+### Color {: aria-label='Variables' }
+[ ](#){: .abrep .tooltip .badge }
+#### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
 
 ___
 ### Depth·Offset {: aria-label='Variables' }
