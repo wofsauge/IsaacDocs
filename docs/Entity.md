@@ -82,7 +82,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like poisoning or freeze. You can add multiple flags at the same time by bitwise-concatenating them.
+Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like being friendly or being shrunk. You can add multiple flags at the same time by bitwise-concatenating them.
 
 ???- example "Example Code"
     This code adds slowing and confusion to the enetity.
@@ -253,7 +253,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
-Removes all [EntityFlags](enums/EntityFlag.md) from the entity.
+Removes all of the provided [EntityFlags](enums/EntityFlag.md) from the entity.
 ___
 ### Collides·With·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
