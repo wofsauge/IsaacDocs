@@ -348,7 +348,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) GetLastChild ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the last child of this entity. This is useful for certain segmented enemies so you can go all the way to the bottom "tail" entity in one call.
+Returns the last child of this entity. This is useful for certain segmented enemies so you can go all the way to the bottom "tail" entity in one method call.
 
 ???+ note "Return behavior"
     If no child is found, this function returns `nil`.
@@ -357,7 +357,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) GetLastParent ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
-Returns the last parent of this entity. This is useful for certain segmented enemies so you can go all the way to the top "head" entity in one call.
+Returns the last parent of this entity. This is useful for certain segmented enemies so you can go all the way to the top "head" entity in one method call.
 
 ???+ note "Return behavior"
     If no parent is found, this function returns `nil`.
