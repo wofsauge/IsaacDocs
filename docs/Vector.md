@@ -100,7 +100,7 @@ Returns distance between two vectors
 
 ???- example "Example Code"
     ```lua
-    local sqtDist = Vector(2,0):Distance(Vector(4,0))) --sqtDist = 2
+    local sqtDist = Vector(2,0):Distance(Vector(4,0)) --sqtDist = 2
 
     ```
 
@@ -112,7 +112,7 @@ Returns squared distance between two vectors
 
 ???- example "Example Code"
     ```lua
-    local sqtDist = Vector(2,0):DistanceSquared(Vector(4,0))) --sqtDist = 4
+    local sqtDist = Vector(2,0):DistanceSquared(Vector(4,0)) --sqtDist = 4
 
     ```
 
@@ -130,7 +130,7 @@ Build a [Vector](Vector.md) from an angle, returns a normalized vector. Angle 0 
 ???- example "Example Code"
     This code returns a vector that has a 45 degree angle
     ```lua
-    local vec = Vector.FromAngle(45)) --vec is now Vector(0.70711,0.70711)
+    local vec = Vector.FromAngle(45) --vec is now Vector(0.70711,0.70711)
 
     ```
 ___
