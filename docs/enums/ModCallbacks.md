@@ -209,7 +209,7 @@ You can force this callback to fire in other callbacks by 1) manually adding the
 -- My custom item changes the player's damage on every frame
 function barPostPEffectUpdate(player)
   player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
-  player:EvaluateCache() -- The "MC_EVALUATE_CACHE" callback will now fire
+  player:EvaluateItems() -- The "MC_EVALUATE_CACHE" callback will now fire.
 end
 ```
 
