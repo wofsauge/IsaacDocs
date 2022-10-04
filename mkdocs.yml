@@ -302,7 +302,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/wofsauge/IsaacDocs
       name: "BoI: Lua API Docs on GitHub"
-    - icon: fontawesome-brands-discord
+    - icon: fontawesome/brands/discord
       link: https://discord.gg/isaac
       name: "Official Discord Server"
   version:
