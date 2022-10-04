@@ -302,6 +302,9 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/wofsauge/IsaacDocs
       name: "BoI: Lua API Docs on GitHub"
+    - icon: fontawesome-brands-discord
+      link: https://discord.gg/isaac
+      name: "Official Discord Server"
   version:
     provider: mike
     default: rep
@@ -313,7 +316,7 @@ extra_javascript:
     - js/tablesort.number.min.js
     - js/customJS.js
     - js/jquery.mark.min.js
-copyright: Copyright &copy; 2021 - 2022 Wofsauge (:fontawesome-brands-discord: Wofsauge#6503)
+copyright: Copyright &copy; 2021 - 2022 Wofsauge (Discord: Wofsauge#6503)
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
 edit_uri: edit/main/docs/
