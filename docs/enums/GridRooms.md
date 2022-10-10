@@ -3,6 +3,19 @@ tags:
   - Enum
 ---
 # Enum "GridRooms"
+
+## Example
+???- example "Example Code"
+    This code checks if the player is inside an "I Am Error" room.
+
+    ```lua
+    local level = Game():GetLevel()
+    local curRoom = level:GetCurrentRoomDesc()
+    if curRoom.GridIndex == GridRooms.ROOM_ERROR_IDX then
+      print("Success")
+    end
+    ```
+
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|-99999 |NO_ROOM_IDX {: .copyable } |  |
