@@ -184,6 +184,8 @@ Returning any value will have no effect on later callback executions.
 ### MC_EVALUATE_CACHE {: .copyable }
 Called one or more times when a player's stats are re-evaluated. For example, this will fire after the player picks up a collectible item that grants stats or uses a stat pill.
 
+The optional parameter can be used to specify a CacheFlag. It must be a singular CacheFlag, a composition of two or more CacheFlags will not work.
+
 Returning any value will have no effect on later callback executions.
 
 Use this callback to implement anything that changse the player's stats, familiars, flying, weapons, and so on.
@@ -213,7 +215,7 @@ function barPostPEffectUpdate(player)
 end
 ```
 
-Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag.
+Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag. 
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
