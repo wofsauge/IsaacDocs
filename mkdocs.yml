@@ -243,6 +243,7 @@ nav:
         - "FAQ" : faq/faq.md
     - Tools:
         - "Tools Overview" : tutorials/Tools.md
+        - "XML Validator" : tutorials/Tool_XMLValidator.md
         - "Animation Editor" : tutorials/Tool_AnimationEditor.md
         - "Itempool Editor" : tutorials/Tool_ItemPoolEditor.md
     - Bugs: https://github.com/Meowlala/RepentanceAPIIssueTracker
@@ -281,6 +282,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       check_paths: true
+      url_download: true
   - admonition
   - pymdownx.details
   - pymdownx.emoji:
