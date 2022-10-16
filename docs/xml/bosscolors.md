@@ -15,7 +15,7 @@ This file is used to store all valid champion bosses. Effects of champion bosses
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 |id|int|Ingame-Id of the Boss.|
-|variant|Ingame-Variant of the Boss.||
+|variant|int|Ingame-Variant of the Boss.|
 
 ## "color" Tag
 
