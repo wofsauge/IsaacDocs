@@ -13,4 +13,7 @@ This page needs some content. You can contribute to it using the Edit Button!
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
-|*todo*|||
+|id|int||
+|anm2|string| Path to the .anm2 file to be used|
+|anim|string|Name of the animation to be played|
+|persist|boolean||
