@@ -26,7 +26,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 | soulhearts | int |  |
 | blackhearts | int |  |
 | maxhearts | int | Number of added empty heart containers. |
-| maxcharges | int | |
+| maxcharges | int | When chargetype is set to `timed`, this attribute is used to define the cooldown of the item in frames. |
 | chargetype | string | Possible values: [normal, timed, special]|
 | cooldown | int | Number of frames until this item's associated CollectibleEffect is auto-removed if granted. CollectibleEffects are automatically granted by active items on use. |
 | passivecache | bool | Calls a cache evaluation when picked up (used for acive items, e.g. Mom's Box). |
