@@ -338,6 +338,8 @@ If a number is returned, it will be the "Curses" arg for later executed callback
 
 ### MC_INPUT_ACTION {: .copyable }
 
+This callback fires every time the game polls for input, once for each keyboard or controller button. (Thus, it fires many times per frame.) Since it has to do with polling, it fires regardless of whether or not the player is actually pressing any particular input.
+
 This callback is used to arbitrarily change inputs. For example, you can completely disable the player from pressing a certain button. Or, you can force the player to press a specific button, and so on. If all you want to do is *read* if an input is pressed or not, then you should not use this callback, and instead use the `Input.IsActionTriggered` method in the `MC_POST_RENDER` callback.
 
 - [Entity](../Entity.md) - The entity that is requesting the input. Most of the time this will be a player. However, it can also be nil if the input is not read from an entity class.
