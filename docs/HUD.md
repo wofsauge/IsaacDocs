@@ -12,15 +12,20 @@ ___
 ### Flash·Charge·Bar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void FlashChargeBar ( [EntityPlayer](EntityPlayer.md) Player, [ActiveSlot](enums/ActiveSlot.md) ActiveSlot ) {: .copyable aria-label='Functions' }
-Chargebar flashes as if item was actually charged.
+Causes the charge bar of the active item in the specified slot to blink as if it had gained charges
+
 ___
 ### Invalidate·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void InvalidateActiveItem ( [EntityPlayer](EntityPlayer.md) Player, [ActiveSlot](enums/ActiveSlot.md) ActiveSlot ) {: .copyable aria-label='Functions' }
+Forces the specified active item slot to update, this might be useful for functions that modify an active item slot without directly giving or removing items
+
 ___
 ### Invalidate·Crafting·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void InvalidateCraftingItem ( [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
+Forces the crafting output from Bag of Crafting to update (this might become useful in the future)
+
 ___
 ### Is·Visible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
