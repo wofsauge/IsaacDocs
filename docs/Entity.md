@@ -282,6 +282,8 @@ ___
 If the entity is a boss, it returns its specific boss id. If it isn't a boss it will return 0.
 
 A boss ID is **NOT** equal to the entity Type, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
+
+For Delirium, this function returns the boss id, delirium is currently transformed into.
 ___
 ### Get·Color () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
