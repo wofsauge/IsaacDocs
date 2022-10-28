@@ -310,10 +310,9 @@ a.tooltip:hover:after {
     line-height: 1.8rem;
 }
 
-.clearSearchMarks:hover {
+.clearSearchMarks>label:hover, .clearSearchMarks>input:hover {
     cursor: pointer;
 }
-
 
 /**** WEBSITE FORMATTING ****/
 
