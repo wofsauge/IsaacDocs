@@ -393,7 +393,8 @@ div[data-md-component$="announce"] {
 }
 
 .md-search-result__title {
-    line-height: 0.7;
+    line-height: 1;
+    margin: 0.25em 0;
 }
 
 .md-search-result__more summary {
