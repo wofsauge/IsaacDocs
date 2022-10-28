@@ -339,7 +339,9 @@ details>summary {
 
 .md-footer-meta__inner {
     /* footer bar a bit smaller */
-    padding: 0;
+    padding: 0.5em 1em;
+    font-size: 0.75em;
+    line-height: 2.3;
 }
 
 .md-tabs__link {
