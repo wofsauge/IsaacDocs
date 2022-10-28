@@ -18,9 +18,11 @@ function unmarkStuff() {
         if (highlightResultsState == null || highlightResultsState == 0) {
             highlightResultsState = 1;
             $content.unmark();
+            $("body").addClass("hideMarks");
             $(".clearSearchMarks").prop('checked', false);
         } else {
             highlightResultsState = 0;
+            $("body").removeClass("hideMarks");
             $(".clearSearchMarks").prop('checked', true);
         }
 
@@ -31,9 +33,6 @@ function unmarkStuff() {
                 jumpTarget = "#" + jumpTargetValue[1];
             }
             var searchText = "?h=" + $("input[aria-label=\"Search\"]").val();
-            if (highlightResultsState == 1) {
-                searchText = ""
-            }
             var link = $(this).attr('href').split("?")[0].split("#")[0];
             $(this).attr('href', link + searchText + jumpTarget);
         });
@@ -259,7 +258,6 @@ document$.subscribe(function() {
         $(".md-version__list").append('<li class="md-version__item"><a href="/' + sourceFolder + '/oldDocs/index.html" class="md-version__link">Original AB+ Docs</a></li>')
     }, 500, 9000);
 
-
     // handle Copy Buttons
     $(".copyable").each(function(e) {
         if ($(this).prop("tagName") == "TD") {
@@ -364,32 +362,13 @@ document$.subscribe(function() {
         editClone.appendTo($(this).parent());
     })
 
-    //remove search query string of search result links
-    // We use an Element observer, to change the search results AFTER they where placed
-    var target = document.querySelector('.md-search-result__list')
-    var observer = new MutationObserver(function(mutations) {
-        var searchText = $("input[aria-label=\"Search\"]").val();
-        if (typeof(Storage) !== "undefined" && localStorage.getItem("highlightResults") == 1) {
-            $("li.md-search-result__item").find('a').each(function(e) {
-                var jumpTargetValue = $(this).attr('href').split("#");
-                var jumpTarget = "";
-                if (jumpTargetValue.length > 1) {
-                    jumpTarget = "#" + jumpTargetValue[1];
-                }
-                var link = $(this).attr('href').split("?")[0].split("#")[0];
-                $(this).attr('href', link + jumpTarget);
-            });
-        }
-    });
-    var config = { attributes: true, childList: true, characterData: true };
-    observer.observe(target, config);
-
     mark();
 
     if (typeof(Storage) !== "undefined") {
         if (localStorage.getItem("highlightResults") == 1) {
             $(".clearSearchMarks").prop('checked', false);
             $content.unmark();
+            $("body").addClass("hideMarks");
         }
     }
 });

@@ -13,6 +13,7 @@
     --operator-overview-bg-color: #F3E5F5;
     --abp-color: #FDD835;
     --rep-color: #F44336;
+    --md-typeset-mark-text-color: #000000;
 }
 
 nav[aria-label='Functions'] {
@@ -238,6 +239,7 @@ a.const.tooltip:after {
     --md-accent-fg-color: #ffc41e;
     /*var(--md-primary-fg-color--light);*/
     --md-typeset-mark-color: #ffc41e;
+    --md-typeset-mark-text-color: #000000;
     --md-typeset-kbd-color: hsla(var(--md-hue), 15%, 94%, 0.12);
     --md-typeset-kbd-accent-color: hsla(var(--md-hue), 15%, 94%, 0.2);
     --md-typeset-kbd-border-color: hsla(var(--md-hue), 15%, 14%, 1);
@@ -292,7 +294,12 @@ a.tooltip:hover:after {
 /**** Mark.js Highlights ****/
 
 .md-typeset mark {
-    color: black;
+    color: var(--md-typeset-mark-text-color);
+}
+
+.hideMarks{
+    --md-typeset-mark-color: #00000000; /*Make yellow highlight invisible if applied*/
+    --md-typeset-mark-text-color: initial;
 }
 
 .clearSearchMarks {
