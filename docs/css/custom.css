@@ -474,7 +474,8 @@ div[data-md-component$="announce"] {
 
 .copyButton>span {
     visibility: hidden;
-    min-width: 13em;
+    width: max-content;
+    max-width: 80vw;
     opacity: 0;
     transform: translateX(-50%);
     background-color: var(--md-accent-fg-color);

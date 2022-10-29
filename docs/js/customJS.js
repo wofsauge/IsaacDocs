@@ -320,7 +320,7 @@ document$.subscribe(function() {
             document.execCommand("copy");
             $(this).remove();
         });
-        $(this).find("span").first().text("Copied: \n" + copyText);
+        $(this).find("span").first().html("Copied: <br><code>" + copyText+"</code>");
     });
 
     $(".copyButton").mouseleave(function() {
