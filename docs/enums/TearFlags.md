@@ -16,7 +16,7 @@ end
 
 |DLC|Value|Enumerator|Ingame Color|Comment|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .rep .tooltip .badge }| BitSet128(0,0) |TEAR_NORMAL {: .copyable } | `Color(1, 1, 1, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(255, 255, 255, 255, 0, 0, 0)` | Default tear (no special effects) |
+|[ ](#){: .rep .tooltip .badge }| [BitSet128](BitSet128.md)(0,0) |TEAR_NORMAL {: .copyable } | `Color(1, 1, 1, 1, 0, 0, 0)`<br> Range 0-255: <br>`Color(255, 255, 255, 255, 0, 0, 0)` | Default tear (no special effects) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(0) |TEAR_SPECTRAL {: .copyable } | `Color(1.5, 2, 2, 0.5, 0, 0, 0)`<br> Range 0-255: <br>`Color(382, 510, 510, 127, 0, 0, 0)` | Ouija board type tear (goes thru obstacles) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(1) |TEAR_PIERCING {: .copyable } | No changes | Cupid's arrow type tear (goes thru enemy) |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(2) |TEAR_HOMING {: .copyable } | `Color(0.4, 0.15, 0.38, 1, 0.27843, 0, 0.4549)` <br> Range 0-255: <br>`Color(102, 38, 97, 255, 71, 0, 116)` | Spoon bender type tear (homes to enemy) |

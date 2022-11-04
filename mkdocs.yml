@@ -105,6 +105,7 @@ nav:
             - "WeaponType": enums/WeaponType.md
         - "Globals": Globals.md
         - "Global Functions": GlobalFunctions.md
+        - "BitSet128": BitSet128.md
         - "Color": Color.md
         - "CppContainer":
             - "ArrayProxy":
