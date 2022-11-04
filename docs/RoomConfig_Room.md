@@ -52,6 +52,13 @@ ___
 #### const float InitialWeight  {: .copyable aria-label='Variables' }
 
 ___
+### Mode () {: aria-label='Variables' }
+[ ](#){: .const .tooltip .badge } [ ](#){: .rep .tooltip .badge }
+#### const userdata Mode ( ) {: .copyable aria-label='Variables' }
+???+ bug "Bug"
+    This variable is broken and returns userdata.
+
+___
 ### Name {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const string Name  {: .copyable aria-label='Variables' }
