@@ -26,6 +26,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|70 |PICKUP_PILL {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|90 |PICKUP_LIL_BATTERY {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|100 |PICKUP_COLLECTIBLE {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|110 |PICKUP_BROKEN_SHOVEL {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|150 |PICKUP_SHOPITEM {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|300 |PICKUP_TAROTCARD {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|340 |PICKUP_BIGCHEST {: .copyable } |  |
