@@ -16,7 +16,7 @@ ___
 ## Operators
 ### __bnot () {: aria-label='Operators' }
 [ ](#){: .rep .tooltip .badge }
-#### [BitSet128](BitSet128.md) __bnot () {: .copyable aria-label='Operators' }
+#### [BitSet128](BitSet128.md) __bnot ( ) {: .copyable aria-label='Operators' }
 Defines the negation of a [BitSet128](BitSet128.md) object using the `~` operator.
 ___
 
@@ -85,7 +85,7 @@ Sets the bit at the given position to the given value.
 
 ___
 
-### __ToString () {: aria-label='Functions' }
+### __ToString ( ) {: aria-label='Functions' }
 [ ](#){: .tooltip .badge } [ ](#){: .rep .tooltip .badge }
 #### void __ToString () {: .copyable aria-label='Functions' }
 *Not a real function, just for information*
