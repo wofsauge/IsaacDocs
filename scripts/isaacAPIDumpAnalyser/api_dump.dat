@@ -10,95 +10,101 @@ Subclasses:
 
 		Subclasses:
 
-			Table APIOverride.OverriddenClasses.Level.Original
+			Class APIOverride.OverriddenClasses.Level.Original (type Level)
 
-			Subclasses:
+			Methods:
 
-				Class APIOverride.OverriddenClasses.Level.Original.__const (type Level)
+				AddAngelRoomChance
+				AddCurse
+				ApplyBlueMapEffect
+				ApplyCompassEffect
+				ApplyMapEffect
+				CanOpenChallengeRoom
+				CanSpawnDevilRoom
+				CanStageHaveCurseOfLabyrinth
+				ChangeRoom
+				DisableDevilRoom
+				ForceHorsemanBoss
+				GetAbsoluteStage
+				GetAngelRoomChance
+				GetCanSeeEverything
+				GetCurrentRoom
+				GetCurrentRoomDesc
+				GetCurrentRoomIndex
+				GetCurseName
+				GetCurses
+				GetDevilAngelRoomRNG
+				GetDungeonPlacementSeed
+				GetEnterPosition
+				GetHeartPicked
+				GetLastBossRoomListIndex
+				GetLastRoomDesc
+				GetName
+				GetNonCompleteRoomIndex
+				GetPlanetariumChance
+				GetPreviousRoomIndex
+				GetRandomRoomIndex
+				GetRoomByIdx
+				GetRoomCount
+				GetRooms
+				GetStage
+				GetStageType
+				GetStartingRoomIndex
+				GetStateFlag
+				HasBossChallenge
+				InitializeDevilAngelRoom
+				IsAltStage
+				IsAscent
+				IsDevilRoomDisabled
+				IsNextStageAvailable
+				IsPreAscent
+				MakeRedRoomDoor
+				QueryRoomTypeIndex
+				RemoveCompassEffect
+				RemoveCurses
+				SetCanSeeEverything
+				SetHeartPicked
+				SetNextStage
+				SetRedHeartDamage
+				SetStage
+				SetStateFlag
+				ShowMap
+				ShowName
+				UncoverHiddenDoor
+				Update
+				UpdateVisibility
 
-				Methods:
+			Properties:
 
-					AddAngelRoomChance
-					AddCurse
-					ApplyBlueMapEffect
-					ApplyCompassEffect
-					ApplyMapEffect
-					CanOpenChallengeRoom
-					CanSpawnDevilRoom
-					CanStageHaveCurseOfLabyrinth
-					ChangeRoom
-					DisableDevilRoom
-					ForceHorsemanBoss
-					GetAbsoluteStage
-					GetAngelRoomChance
-					GetCanSeeEverything
-					GetCurrentRoom
-					GetCurrentRoomDesc
-					GetCurrentRoomIndex
-					GetCurseName
-					GetCurses
-					GetDevilAngelRoomRNG
-					GetDungeonPlacementSeed
-					GetEnterPosition
-					GetHeartPicked
-					GetLastBossRoomListIndex
-					GetLastRoomDesc
-					GetName
-					GetNonCompleteRoomIndex
-					GetPlanetariumChance
-					GetPreviousRoomIndex
-					GetRandomRoomIndex
-					GetRoomByIdx
-					GetRoomCount
-					GetRooms
-					GetStage
-					GetStageType
-					GetStartingRoomIndex
-					GetStateFlag
-					HasBossChallenge
-					InitializeDevilAngelRoom
-					IsAltStage
-					IsAscent
-					IsDevilRoomDisabled
-					IsNextStageAvailable
-					IsPreAscent
-					MakeRedRoomDoor
-					QueryRoomTypeIndex
-					RemoveCompassEffect
-					RemoveCurses
-					SetCanSeeEverything
-					SetHeartPicked
-					SetNextStage
-					SetRedHeartDamage
-					SetStage
-					SetStateFlag
-					ShowMap
-					ShowName
-					UncoverHiddenDoor
-					Update
-					UpdateVisibility
-
-				Properties:
-
-					DungeonReturnPosition (Get: true, Set: true)
-					DungeonReturnRoomIndex (Get: true, Set: true)
-					EnterDoor (Get: true, Set: true)
-					GreedModeWave (Get: true, Set: true)
-					LeaveDoor (Get: true, Set: true)
-
-				Subclasses:
-
-
+				DungeonReturnPosition (Get: true, Set: true)
+				DungeonReturnRoomIndex (Get: true, Set: true)
+				EnterDoor (Get: true, Set: true)
+				GreedModeWave (Get: true, Set: true)
+				LeaveDoor (Get: true, Set: true)
 
 
 
 
 Class BitSet128 (type BitSet128)
 
+Static Methods:
+
+	__call
+
 Methods:
 
 	Get
 	Set
+	__band
+	__bnot
+	__bor
+	__bxor
+	__eq
+	__le
+	__lt
+	__shl
+	__shr
+	__tostring
 
 Properties:
 
@@ -107,12 +113,18 @@ Properties:
 
 Class Color (type Color)
 
+Static Methods:
+
+	Lerp
+	__call
+
 Methods:
 
 	Reset
 	SetColorize
 	SetOffset
 	SetTint
+	__mul
 
 Properties:
 
@@ -124,11 +136,11 @@ Properties:
 	R (Get: true, Set: true)
 	RO (Get: true, Set: true)
 
-Table CppContainer
+Namespace CppContainer
 
 Subclasses:
 
-	Table CppContainer.ArrayProxy
+	Namespace CppContainer.ArrayProxy
 
 	Subclasses:
 
@@ -137,40 +149,44 @@ Subclasses:
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.ArrayProxy.RoomConfigSpawns (type RoomConfigSpawns)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.ArrayProxy.RoomDescriptor (type RoomDescriptor)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.ArrayProxy.intValues (type intValues)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 
 	Class CppContainer.EntityList (type EntityList)
@@ -178,12 +194,13 @@ Subclasses:
 	Methods:
 
 		Get
+		__len
 
 	Properties:
 
-		Size (Get: true, Set: nil)
+		Size (Get: true, Set: false)
 
-	Table CppContainer.Vector
+	Namespace CppContainer.Vector
 
 	Subclasses:
 
@@ -192,60 +209,66 @@ Subclasses:
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.Vector.CostumeConfigList (type CostumeConfigList)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.Vector.EffectList (type EffectList)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.Vector.ItemConfigList (type ItemConfigList)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.Vector.PillConfigList (type PillConfigList)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 		Class CppContainer.Vector.VectorList (type VectorList)
 
 		Methods:
 
 			Get
+			__len
 
 		Properties:
 
-			Size (Get: true, Set: nil)
+			Size (Get: true, Set: false)
 
 
 
@@ -322,15 +345,15 @@ Properties:
 	CollisionDamage (Get: true, Set: true)
 	Color (Get: true, Set: true)
 	DepthOffset (Get: true, Set: true)
-	DropSeed (Get: true, Set: nil)
+	DropSeed (Get: true, Set: false)
 	EntityCollisionClass (Get: true, Set: true)
 	FlipX (Get: true, Set: true)
-	FrameCount (Get: true, Set: nil)
+	FrameCount (Get: true, Set: false)
 	Friction (Get: true, Set: true)
 	GridCollisionClass (Get: true, Set: true)
 	HitPoints (Get: true, Set: true)
-	Index (Get: true, Set: nil)
-	InitSeed (Get: true, Set: nil)
+	Index (Get: true, Set: false)
+	InitSeed (Get: true, Set: false)
 	Mass (Get: true, Set: true)
 	MaxHitPoints (Get: true, Set: true)
 	Parent (Get: true, Set: true)
@@ -339,7 +362,7 @@ Properties:
 	RenderZOffset (Get: true, Set: true)
 	Size (Get: true, Set: true)
 	SizeMulti (Get: true, Set: true)
-	SpawnGridIndex (Get: true, Set: nil)
+	SpawnGridIndex (Get: true, Set: false)
 	SpawnerEntity (Get: true, Set: true)
 	SpawnerType (Get: true, Set: true)
 	SpawnerVariant (Get: true, Set: true)
@@ -350,7 +373,7 @@ Properties:
 	SubType (Get: true, Set: true)
 	Target (Get: true, Set: true)
 	TargetPosition (Get: true, Set: true)
-	Type (Get: true, Set: nil)
+	Type (Get: true, Set: false)
 	Variant (Get: true, Set: true)
 	Velocity (Get: true, Set: true)
 	Visible (Get: true, Set: true)
@@ -369,6 +392,10 @@ Properties:
 	RadiusMultiplier (Get: true, Set: true)
 
 Class EntityEffect (type EntityEffect)
+
+Static Methods:
+
+	IsPlayerCreep
 
 Methods:
 
@@ -394,6 +421,10 @@ Properties:
 	m_Height (Get: true, Set: true)
 
 Class EntityFamiliar (type EntityFamiliar)
+
+Static Methods:
+
+	GetOrbitDistance
 
 Methods:
 
@@ -464,6 +495,11 @@ Properties:
 
 Class EntityLaser (type EntityLaser)
 
+Static Methods:
+
+	CalculateEndPoint
+	ShootAngle
+
 Methods:
 
 	GetEndPoint
@@ -511,6 +547,10 @@ Properties:
 
 Class EntityNPC (type EntityNPC)
 
+Static Methods:
+
+	ThrowSpider
+
 Methods:
 
 	AnimWalkFrame
@@ -538,12 +578,12 @@ Methods:
 Properties:
 
 	CanShutDoors (Get: true, Set: true)
-	ChildNPC (Get: true, Set: nil)
+	ChildNPC (Get: true, Set: false)
 	EntityRef (Get: true, Set: true)
 	GroupIdx (Get: true, Set: true)
 	I1 (Get: true, Set: true)
 	I2 (Get: true, Set: true)
-	ParentNPC (Get: true, Set: nil)
+	ParentNPC (Get: true, Set: false)
 	Pathfinder (Get: true, Set: true)
 	ProjectileCooldown (Get: true, Set: true)
 	ProjectileDelay (Get: true, Set: true)
@@ -579,6 +619,10 @@ Properties:
 	Wait (Get: true, Set: true)
 
 Class EntityPlayer (type EntityPlayer)
+
+Static Methods:
+
+	GetMultiShotPositionVelocity
 
 Methods:
 
@@ -835,7 +879,7 @@ Properties:
 
 	BabySkin (Get: true, Set: true)
 	CanFly (Get: true, Set: true)
-	ControllerIndex (Get: true, Set: nil)
+	ControllerIndex (Get: true, Set: false)
 	ControlsCooldown (Get: true, Set: true)
 	ControlsEnabled (Get: true, Set: true)
 	Damage (Get: true, Set: true)
@@ -890,15 +934,23 @@ Properties:
 
 Class EntityPtr (type EntityPtr)
 
+Static Methods:
+
+	__call
+
 Methods:
 
 	SetReference
 
 Properties:
 
-	Ref (Get: true, Set: nil)
+	Ref (Get: true, Set: false)
 
 Class EntityRef (type EntityRef)
+
+Static Methods:
+
+	__call
 
 Properties:
 
@@ -924,8 +976,8 @@ Methods:
 
 Properties:
 
-	BaseDamage (Get: true, Set: nil)
-	BaseScale (Get: true, Set: nil)
+	BaseDamage (Get: true, Set: false)
+	BaseScale (Get: true, Set: false)
 	CanTriggerStreakEnd (Get: true, Set: true)
 	ContinueVelocity (Get: true, Set: true)
 	FallingAcceleration (Get: true, Set: true)
@@ -934,17 +986,21 @@ Properties:
 	HomingFriction (Get: true, Set: true)
 	KnockbackMultiplier (Get: true, Set: true)
 	ParentOffset (Get: true, Set: true)
-	PosDisplacement (Get: true, Set: nil)
+	PosDisplacement (Get: true, Set: false)
 	Rotation (Get: true, Set: true)
 	Scale (Get: true, Set: true)
 	StickDiff (Get: true, Set: true)
 	StickTarget (Get: true, Set: true)
 	StickTimer (Get: true, Set: true)
 	TearFlags (Get: true, Set: true)
-	TearIndex (Get: true, Set: nil)
+	TearIndex (Get: true, Set: false)
 	WaitFrames (Get: true, Set: true)
 
 Class Font (type Font)
+
+Static Methods:
+
+	__call
 
 Methods:
 
@@ -992,7 +1048,7 @@ Properties:
 
 	CollisionClass (Get: true, Set: true)
 	Desc (Get: true, Set: true)
-	Position (Get: true, Set: nil)
+	Position (Get: true, Set: false)
 	State (Get: true, Set: true)
 	VarData (Get: true, Set: true)
 
@@ -1124,7 +1180,75 @@ Methods:
 	ShowFortuneText
 	ShowItemText
 
-Table ItemConfig
+Namespace Input
+
+Static Methods:
+
+	GetActionValue
+	GetButtonValue
+	GetMousePosition
+	IsActionPressed
+	IsActionTriggered
+	IsButtonPressed
+	IsButtonTriggered
+	IsMouseBtnPressed
+
+Namespace Isaac
+
+Static Methods:
+
+	AddCallback
+	AddPillEffectToPool
+	ConsoleOutput
+	CountBosses
+	CountEnemies
+	CountEntities
+	DebugString
+	ExecuteCommand
+	Explode
+	FindByType
+	FindInRadius
+	GetCardIdByName
+	GetChallenge
+	GetChallengeIdByName
+	GetCostumeIdByPath
+	GetCurseIdByName
+	GetEntityTypeByName
+	GetEntityVariantByName
+	GetFrameCount
+	GetFreeNearPosition
+	GetItemConfig
+	GetItemIdByName
+	GetMusicIdByName
+	GetPillEffectByName
+	GetPlayer
+	GetPlayerTypeByName
+	GetRandomPosition
+	GetRoomEntities
+	GetScreenHeight
+	GetScreenPointScale
+	GetScreenWidth
+	GetSoundIdByName
+	GetTextWidth
+	GetTime
+	GetTrinketIdByName
+	GridSpawn
+	HasModData
+	LoadModData
+	RegisterMod
+	RemoveCallback
+	RemoveModData
+	RenderScaledText
+	RenderText
+	SaveModData
+	ScreenToWorld
+	ScreenToWorldDistance
+	Spawn
+	WorldToRenderPosition
+	WorldToScreen
+	WorldToScreenDistance
+
+Namespace ItemConfig
 
 Subclasses:
 
@@ -1140,6 +1264,11 @@ Subclasses:
 		Name (Get: true, Set: true)
 
 	Class ItemConfig.Config (type Config)
+
+	Static Methods:
+
+		IsValidCollectible
+		ShouldAddCostumeOnPickup
 
 	Methods:
 
@@ -1190,7 +1319,7 @@ Subclasses:
 		CacheFlags (Get: true, Set: true)
 		ChargeType (Get: true, Set: true)
 		ClearEffectsOnRemove (Get: true, Set: true)
-		Costume (Get: true, Set: nil)
+		Costume (Get: true, Set: false)
 		CraftingQuality (Get: true, Set: true)
 		Description (Get: true, Set: true)
 		DevilPrice (Get: true, Set: true)
@@ -1241,6 +1370,10 @@ Methods:
 	ResetTrinkets
 
 Class KColor (type KColor)
+
+Static Methods:
+
+	__call
 
 Properties:
 
@@ -1321,6 +1454,37 @@ Properties:
 	GreedModeWave (Get: true, Set: true)
 	LeaveDoor (Get: true, Set: true)
 
+Namespace Options
+
+Static Properties:
+
+	AnnouncerVoiceMode (Get: true, Set: true)
+	BulletVisibility (Get: true, Set: true)
+	CameraStyle (Get: true, Set: true)
+	ChargeBars (Get: true, Set: true)
+	ConsoleFont (Get: true, Set: true)
+	DebugConsoleEnabled (Get: true, Set: true)
+	DisplayPopups (Get: true, Set: true)
+	ExtraHUDStyle (Get: true, Set: true)
+	FadedConsoleDisplay (Get: true, Set: true)
+	Filter (Get: true, Set: true)
+	FoundHUD (Get: true, Set: true)
+	Fullscreen (Get: true, Set: true)
+	Gamma (Get: true, Set: true)
+	HUDOffset (Get: true, Set: true)
+	Language (Get: true, Set: true)
+	MapOpacity (Get: true, Set: true)
+	MaxRenderScale (Get: true, Set: true)
+	MaxScale (Get: true, Set: true)
+	MouseControl (Get: true, Set: true)
+	MusicVolume (Get: true, Set: true)
+	PauseOnFocusLost (Get: true, Set: true)
+	RumbleEnabled (Get: true, Set: true)
+	SFXVolume (Get: true, Set: true)
+	SaveCommandHistory (Get: true, Set: true)
+	UseBorderlessFullscreen (Get: true, Set: true)
+	VSync (Get: true, Set: true)
+
 Class PathFinder (type PathFinder)
 
 Methods:
@@ -1339,7 +1503,7 @@ Methods:
 	SetCanCrushRocks
 	UpdateGridIndex
 
-Table PlayerTypes
+Namespace PlayerTypes
 
 Subclasses:
 
@@ -1364,6 +1528,10 @@ Subclasses:
 
 
 Class ProjectileParams (type ProjectileParams)
+
+Static Methods:
+
+	__call
 
 Properties:
 
@@ -1400,6 +1568,10 @@ Properties:
 	Touched (Get: true, Set: true)
 
 Class RNG (type RNG)
+
+Static Methods:
+
+	__call
 
 Methods:
 
@@ -1530,7 +1702,7 @@ Methods:
 	Update
 	WorldToScreenPosition
 
-Table RoomConfig
+Namespace RoomConfig
 
 Subclasses:
 
@@ -1547,22 +1719,22 @@ Subclasses:
 
 	Properties:
 
-		Difficulty (Get: true, Set: nil)
-		Doors (Get: true, Set: nil)
-		Height (Get: true, Set: nil)
-		InitialWeight (Get: true, Set: nil)
-		Mode (Get: true, Set: nil)
-		Name (Get: true, Set: nil)
-		OriginalVariant (Get: true, Set: nil)
-		Shape (Get: true, Set: nil)
-		SpawnCount (Get: true, Set: nil)
-		Spawns (Get: true, Set: nil)
-		StageID (Get: true, Set: nil)
-		Subtype (Get: true, Set: nil)
-		Type (Get: true, Set: nil)
-		Variant (Get: true, Set: nil)
-		Weight (Get: true, Set: nil)
-		Width (Get: true, Set: nil)
+		Difficulty (Get: true, Set: false)
+		Doors (Get: true, Set: false)
+		Height (Get: true, Set: false)
+		InitialWeight (Get: true, Set: false)
+		Mode (Get: true, Set: false)
+		Name (Get: true, Set: false)
+		OriginalVariant (Get: true, Set: false)
+		Shape (Get: true, Set: false)
+		SpawnCount (Get: true, Set: false)
+		Spawns (Get: true, Set: false)
+		StageID (Get: true, Set: false)
+		Subtype (Get: true, Set: false)
+		Type (Get: true, Set: false)
+		Variant (Get: true, Set: false)
+		Weight (Get: true, Set: false)
+		Width (Get: true, Set: false)
 
 	Class RoomConfig.Spawn (type Spawn)
 
@@ -1572,7 +1744,7 @@ Subclasses:
 
 	Properties:
 
-		Entries (Get: true, Set: nil)
+		Entries (Get: true, Set: false)
 		EntryCount (Get: true, Set: true)
 		SumWeights (Get: true, Set: true)
 		X (Get: true, Set: true)
@@ -1611,6 +1783,16 @@ Properties:
 
 Class Seeds (type Seeds)
 
+Static Methods:
+
+	CountUnlockedSeedEffects
+	GetSeedEffect
+	InitSeedInfo
+	IsSpecialSeed
+	IsStringValidSeed
+	Seed2String
+	String2Seed
+
 Methods:
 
 	AddSeedEffect
@@ -1646,6 +1828,10 @@ Properties:
 	TimeDT (Get: true, Set: true)
 
 Class Sprite (type Sprite)
+
+Static Methods:
+
+	__call
 
 Methods:
 
@@ -1741,6 +1927,11 @@ Methods:
 
 Class Vector (type Vector)
 
+Static Methods:
+
+	FromAngle
+	__call
+
 Methods:
 
 	Clamp
@@ -1758,9 +1949,146 @@ Methods:
 	Resize
 	Resized
 	Rotated
+	__add
+	__div
+	__mul
+	__sub
+	__tostring
+	__unm
 
 Properties:
 
 	X (Get: true, Set: true)
 	Y (Get: true, Set: true)
+
+Class Game (type Game)
+
+Methods:
+
+	AddDevilRoomDeal
+	AddEncounteredBoss
+	AddPixelation
+	AddStageWithoutDamage
+	AddStageWithoutHeartsPicked
+	AddTreasureRoomsVisited
+	BombDamage
+	BombExplosionEffects
+	BombTearflagEffects
+	ButterBeanFart
+	ChangeRoom
+	CharmFart
+	ClearDonationModAngel
+	ClearDonationModGreed
+	ClearStagesWithoutDamage
+	ClearStagesWithoutHeartsPicked
+	Darken
+	DonateAngel
+	DonateGreed
+	End
+	Fadein
+	Fadeout
+	Fart
+	FinishChallenge
+	GetAmbush
+	GetDarknessModifier
+	GetDevilRoomDeals
+	GetDonationModAngel
+	GetDonationModGreed
+	GetFont
+	GetFrameCount
+	GetGreedBossWaveNum
+	GetGreedWavesNum
+	GetHUD
+	GetItemOverlay
+	GetItemPool
+	GetLastDevilRoomStage
+	GetLastLevelWithDamage
+	GetLastLevelWithoutHalfHp
+	GetLevel
+	GetNearestPlayer
+	GetNumEncounteredBosses
+	GetNumPlayers
+	GetPlayer
+	GetRandomPlayer
+	GetRoom
+	GetScreenShakeCountdown
+	GetSeeds
+	GetStagesWithoutDamage
+	GetStagesWithoutHeartsPicked
+	GetStateFlag
+	GetTargetDarkness
+	GetTreasureRoomVisitCount
+	GetVictoryLap
+	HasEncounteredBoss
+	HasHallucination
+	IsGreedMode
+	IsPaused
+	MoveToRandomRoom
+	NextVictoryLap
+	Render
+	RerollEnemy
+	RerollLevelCollectibles
+	RerollLevelPickups
+	SetLastDevilRoomStage
+	SetLastLevelWithDamage
+	SetLastLevelWithoutHalfHp
+	SetStateFlag
+	ShakeScreen
+	ShowFortune
+	ShowHallucination
+	ShowRule
+	Spawn
+	SpawnEntityDesc
+	SpawnParticles
+	StartRoomTransition
+	StartStageTransition
+	Update
+	UpdateStrangeAttractor
+
+Properties:
+
+	BlueWombParTime (Get: true, Set: true)
+	BossRushParTime (Get: true, Set: true)
+	Challenge (Get: true, Set: true)
+	Difficulty (Get: true, Set: false)
+	ScreenShakeOffset (Get: true, Set: true)
+	TimeCounter (Get: true, Set: true)
+
+Class MusicManager (type MusicManager)
+
+Methods:
+
+	Crossfade
+	Disable
+	DisableLayer
+	Enable
+	EnableLayer
+	Fadein
+	Fadeout
+	GetCurrentMusicID
+	GetQueuedMusicID
+	IsEnabled
+	IsLayerEnabled
+	Pause
+	PitchSlide
+	Play
+	Queue
+	ResetPitch
+	Resume
+	UpdateVolume
+	VolumeSlide
+
+Class SFXManager (type SFXManager)
+
+Methods:
+
+	AdjustPitch
+	AdjustVolume
+	GetAmbientSoundVolume
+	IsPlaying
+	Play
+	Preload
+	SetAmbientSound
+	Stop
+	StopLoopingSounds
 
