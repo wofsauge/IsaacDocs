@@ -121,6 +121,12 @@ ___
 
 Returns the costume given to the player by the item.
 ___
+### CraftingQuality {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int CraftingQuality  {: .copyable aria-label='Variables' }
+
+The item's quality for the Bag of Crafting algorithm. Possible values are -1, 0, 1, 2, 3, and 4. A value of -1 indicates that the item is disabled from being craftable.
+___
 ### Description {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### string Description  {: .copyable aria-label='Variables' }
