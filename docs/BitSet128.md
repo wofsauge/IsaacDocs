@@ -85,11 +85,9 @@ Sets the bit at the given position to the given value.
 
 ___
 
-### __ToString () {: aria-label='Functions' }
+### __tostring () {: aria-label='Functions' }
 [ ](#){: .tooltip .badge } [ ](#){: .rep .tooltip .badge }
-#### void __ToString ( ) {: .copyable aria-label='Functions' }
-*Not a real function, just for information*
-
+#### void __tostring ( ) {: .copyable aria-label='Functions' }
 [BitSet128](BitSet128.md) objects can be cast to a string object, which returns information about this object in the following format:
 
 ```

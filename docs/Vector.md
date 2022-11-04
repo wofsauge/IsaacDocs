@@ -216,6 +216,15 @@ ___
 #### [Vector](Vector.md) Rotated ( float AngleDegrees ) {: .copyable aria-label='Functions' }
 Returns a rotated version of the vector by AngleDegrees
 ___
+### __tostring () {: aria-label='Functions' }
+[ ](#){: .tooltip .badge } [ ](#){: .rep .tooltip .badge }
+#### void __tostring ( ) {: .copyable aria-label='Functions' }
+[Vector](Vector.md) objects can be cast to a string object, which returns information about this object in the following format:
+
+```
+Vector(X,Y)
+```
+___
 ## Variables
 ### X {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
