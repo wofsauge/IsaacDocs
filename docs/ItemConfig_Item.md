@@ -125,7 +125,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int CraftingQuality  {: .copyable aria-label='Variables' }
 
-Returns the item's quality as used for the Bag of Crafting algorithm. Possible values are -1, 0, 1, 2, 3, and 4. Values of -1 are items disabled from being craftable in bag of crafting.
+The item's quality for the Bag of Crafting algorithm. Possible values are -1, 0, 1, 2, 3, and 4. Values of -1 are items disabled from being craftable.
 ___
 ### Description {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
