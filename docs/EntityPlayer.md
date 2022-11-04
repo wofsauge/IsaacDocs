@@ -1559,8 +1559,10 @@ Only works on Bethany.
 
 ___
 ### Set·Target·Trap·Door () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### void SetTargetTrapDoor ( [GridEntity](GridEntity.md) TrapDoor ) {: .copyable aria-label='Functions' }
+
+This function got removed with Repentance.
 
 ___
 ### Shoot·Red·Candle () {: aria-label='Functions' }

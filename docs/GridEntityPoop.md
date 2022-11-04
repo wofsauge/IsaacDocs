@@ -18,9 +18,9 @@ ___
 ___
 ## Variables
 ### Reduced·Spawn·Rate {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### boolean ReducedSpawnRate  {: .copyable aria-label='Variables' }
-
+This attribute got removed with Repentance.
 ___
 ### Revive·Timer {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

@@ -150,9 +150,9 @@ Any item that is not marked with a devil price will return ``:::lua 1``
     ```
 ___
 ### Discharged {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### boolean Discharged  {: .copyable aria-label='Variables' }
-
+This attribute got removed with Repentance.
 ___
 ### Gfx·File·Name {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
