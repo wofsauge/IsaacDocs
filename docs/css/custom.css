@@ -218,6 +218,12 @@ a.const.tooltip:after {
     --operator-color-light: #272938;
     --operator-overview-bg-color: rgb(186 104 200 / 50%);
     --md-hue: 232;
+
+    --md-primary-fg-color: #4051b5;
+    --md-primary-bg-color: #FFFFFF;
+    --md-primary-bg-color: rgb(255 255 255 / 87%);
+    --md-primary-bg-color--light: rgb(255 255 255 / 54%);
+
     --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
     --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
     --md-default-fg-color--lighter: #ffc41e;
@@ -256,6 +262,7 @@ a.const.tooltip:after {
     --md-code-hl-keyword-color: hsla(219, 66%, 64%, 1);
     --md-code-hl-string-color: hsla(150, 58%, 44%, 1);
 }
+
 
 
 /**** TOOLTIP ****/
