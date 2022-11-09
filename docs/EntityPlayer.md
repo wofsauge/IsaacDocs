@@ -304,7 +304,6 @@ ___
 ### Add·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddNullCostume ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
-for Lua
 
 ___
 ### Add·Pill () {: aria-label='Functions' }
