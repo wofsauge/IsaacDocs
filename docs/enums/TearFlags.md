@@ -99,12 +99,26 @@ end
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(79) |TEAR_CARD_DROP_DEATH {: .copyable } | No changes | Killed enemies will drop a random tarot card |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(80) |TEAR_RUNE_DROP_DEATH {: .copyable } | No changes | Killed enemies will drop a random rune |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(81) |TEAR_TELEPORT {: .copyable } | No changes | Hit enemies will teleport to a different part of the room |
-|[ ](#){: .rep .tooltip .badge }| 82 |TEAR_EFFECT_COUNT {: .copyable } | No changes |  |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(82) |TEAR_DECELERATE {: .copyable } | No changes | Decelerate over time |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(83) |TEAR_ACCELERATE {: .copyable } | No changes | Accelerate over time |
+|[ ](#){: .rep .tooltip .badge }| 84 |TEAR_EFFECT_COUNT {: .copyable } | No changes |  |
+
 
 The following flags are reserved at the top end of the bitset, and cannot be selected randomly by any items that may attempt to do so.
 
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(104) | TEAR_BOUNCE_WALLSONLY {: .copyable } | Similar to TEAR_BOUNCE but only bounces off walls, not enemies |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(105) | TEAR_NO_GRID_DAMAGE {: .copyable } | Cannot deal damage to grid entities (used by Saturnus to prevent unfair damage in some rooms) |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(106) | TEAR_BACKSTAB {: .copyable } | Deals extra damage from behind and inflicts bleeding |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(107) | TEAR_FETUS_SWORD {: .copyable } | Fetuses whack their target with a sword and perform spin attacks |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(108) | TEAR_FETUS_BONE {: .copyable } | Fetuses whack their target with a bone club instead of ramming into them |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(109) | TEAR_FETUS_KNIFE {: .copyable } | Fetuses carry a knife |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(110) | TEAR_FETUS_TECHX {: .copyable } | Fetuses have a Tech X ring around them |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(111) | TEAR_FETUS_TECH {: .copyable } | Fetuses keep their distance and occasionally shoot tech lasers at their target |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(112) | TEAR_FETUS_BRIMSTONE {: .copyable } | Fetuses shoot a brimstone beam at the first enemy they hit |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(113) | TEAR_FETUS_BOMBER {: .copyable } | Fetuses drop a bomb on their first impact with an enemy |
+|[ ](#){: .rep .tooltip .badge }| TEARFLAG(114) | TEAR_FETUS {: .copyable } | Base flag for C Section fetuses |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(115) | TEAR_REROLL_ROCK_WISP {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(116) | TEAR_MOM_STOMP_WISP {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }| TEARFLAG(117) | TEAR_ENEMY_TO_WISP {: .copyable } |  |
