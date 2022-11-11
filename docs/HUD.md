@@ -32,6 +32,14 @@ ___
 #### boolean IsVisible ( ) {: .copyable aria-label='Functions' }
 Returns false if HUD is invisible and true otherwise.
 ___
+### Post·Update () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void PostUpdate ( ) {: .copyable aria-label='Functions' }
+___
+### Render () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void Render ( ) {: .copyable aria-label='Functions' }
+___
 ### Show·Fortune·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowFortuneText ( string MainString, string SecondaryString, ... ) {: .copyable aria-label='Functions' }
@@ -84,3 +92,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }
 Turns the HUD on or off.
+___
+### Update () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void Update ( ) {: .copyable aria-label='Functions' }
