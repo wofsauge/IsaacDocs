@@ -74,4 +74,5 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|76 |SEED_AXIS_ALIGNED_CONTROLS {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|77 |SEED_SUPER_HOT {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|78 |SEED_RETRO_VISION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|79 |NUM_SEEDS {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|79 |SEED_G_FUEL {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|80 |NUM_SEEDS {: .copyable } |  |
