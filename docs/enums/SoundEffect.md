@@ -3,726 +3,726 @@ tags:
   - Enum
 ---
 # Enum "SoundEffect"
-|DLC|Value|Enumerator|Comment|
-|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|0 |SOUND_NULL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 |SOUND_1UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|2 |SOUND_BIRD_FLAP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|3 |SOUND_BLOBBY_WIGGLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|4 |SOUND_INSECT_SWARM_LOOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|5 |SOUND_BLOOD_LASER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|6 |SOUND_BLOOD_LASER_SMALL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|7 |SOUND_BLOOD_LASER_LARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|8 |SOUND_BOOK_PAGE_TURN_12 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|9 |SOUND_BOSS_BUG_HISS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|10 |SOUND_BLOOD_LASER_LARGER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|11 |SOUND_BOSS_GURGLE_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|12 |SOUND_BOSS_LITE_GURGLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|13 |SOUND_BOSS_LITE_HISS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|14 |SOUND_BOSS_LITE_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|15 |SOUND_BOSS_LITE_SLOPPY_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|16 |SOUND_BOSS_SPIT_BLOB_BARF {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|17 |SOUND_PAPER_IN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|18 |SOUND_PAPER_OUT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|21 |SOUND_CHEST_DROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|22 |SOUND_CHEST_OPEN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|23 |SOUND_CHOIR_UNLOCK {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|24 |SOUND_COIN_SLOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|25 |SOUND_CUTE_GRUNT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|27 |SOUND_DEATH_BURST_BONE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|28 |SOUND_DEATH_BURST_LARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|29 |SOUND_DEATH_REVERSE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|30 |SOUND_DEATH_BURST_SMALL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|33 |SOUND_DEATH_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|34 |SOUND_DEVIL_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|35 |SOUND_DOOR_HEAVY_CLOSE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|36 |SOUND_DOOR_HEAVY_OPEN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|37 |SOUND_FART {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|38 |SOUND_FETUS_JUMP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|40 |SOUND_FETUS_LAND {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|43 |SOUND_FIREDEATH_HISS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|44 |SOUND_FLOATY_BABY_ROAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|45 |SOUND_COIN_INSERT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|46 |SOUND_METAL_DOOR_CLOSE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|47 |SOUND_METAL_DOOR_OPEN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|48 |SOUND_FORESTBOSS_STOMPS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|49 |SOUND_SCYTHE_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|50 |SOUND_STONE_WALKER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|51 |SOUND_GASCAN_POUR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|52 |SOUND_HELLBOSS_GROUNDPOUND {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|53 |SOUND_GLASS_BREAK {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|54 |SOUND_HOLY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|55 |SOUND_ISAAC_HURT_GRUNT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|56 |SOUND_CHILD_HAPPY_ROAR_SHORT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|57 |SOUND_CHILD_ANGRY_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|58 |SOUND_KEYPICKUP_GAUNTLET {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|59 |SOUND_KEY_DROP0 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|60 |SOUND_BABY_HURT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|64 |SOUND_MAGGOT_BURST_OUT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|66 |SOUND_MAGGOT_ENTER_GROUND {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|68 |SOUND_MEAT_FEET_SLOW0 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|69 |SOUND_MEAT_IMPACTS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|72 |SOUND_MEAT_JUMPS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|77 |SOUND_MEATY_DEATHS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|78 |SOUND_POT_BREAK_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|79 |SOUND_MUSHROOM_POOF_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|80 |SOUND_BLACK_POOF {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|81 |SOUND_STATIC {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|84 |SOUND_MOM_VOX_EVILLAUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|85 |SOUND_MOM_VOX_FILTERED_DEATH_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|86 |SOUND_MOM_VOX_FILTERED_EVILLAUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|87 |SOUND_MOM_VOX_FILTERED_HURT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|90 |SOUND_MOM_VOX_FILTERED_ISAAC {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|93 |SOUND_MOM_VOX_GRUNT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|97 |SOUND_MOM_VOX_HURT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|101 |SOUND_MOM_VOX_ISAAC {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|104 |SOUND_MONSTER_GRUNT_0 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|106 |SOUND_MONSTER_GRUNT_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|108 |SOUND_MONSTER_GRUNT_2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|112 |SOUND_MONSTER_GRUNT_4 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|114 |SOUND_MONSTER_GRUNT_5 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|115 |SOUND_MONSTER_ROAR_0 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|116 |SOUND_MONSTER_ROAR_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|117 |SOUND_MONSTER_ROAR_2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|118 |SOUND_MONSTER_ROAR_3 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|119 |SOUND_MONSTER_YELL_A {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|122 |SOUND_MONSTER_YELL_B {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|128 |SOUND_POWERUP1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|129 |SOUND_POWERUP2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|130 |SOUND_POWERUP3 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|132 |SOUND_POWERUP_SPEWER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|133 |SOUND_REDLIGHTNING_ZAP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|134 |SOUND_REDLIGHTNING_ZAP_WEAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|135 |SOUND_REDLIGHTNING_ZAP_STRONG {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|136 |SOUND_REDLIGHTNING_ZAP_BURST {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|137 |SOUND_ROCK_CRUMBLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|138 |SOUND_POT_BREAK {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|139 |SOUND_MUSHROOM_POOF {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|141 |SOUND_ROCKET_BLAST_DEATH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|142 |SOUND_SMB_LARGE_CHEWS_4 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|143 |SOUND_SCARED_WHIMPER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|146 |SOUND_SHAKEY_KID_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|149 |SOUND_SINK_DRAIN_GURGLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|150 |SOUND_TEARIMPACTS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|153 |SOUND_TEARS_FIRE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|156 |SOUND_UNLOCK00 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|157 |SOUND_VAMP_GULP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|158 |SOUND_WHEEZY_COUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|159 |SOUND_SPIDER_COUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|165 |SOUND_ZOMBIE_WALKER_KID {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|166 |SOUND_ANIMAL_SQUISH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|167 |SOUND_ANGRY_GURGLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|169 |SOUND_BAND_AID_PICK_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|170 |SOUND_BATTERYCHARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|171 |SOUND_BEEP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|172 |SOUND_LIGHTBOLT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|173 |SOUND_LIGHTBOLT_CHARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|175 |SOUND_BLOODBANK_SPAWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|178 |SOUND_BLOODSHOOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|181 |SOUND_BOIL_HATCH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|182 |SOUND_BOSS1_EXPLOSIONS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|183 |SOUND_EXPLOSION_WEAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|184 |SOUND_EXPLOSION_STRONG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|185 |SOUND_BOSS2_BUBBLES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|186 |SOUND_EXPLOSION_DEBRIS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|195 |SOUND_CHARACTER_SELECT_RIGHT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|197 |SOUND_DERP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|199 |SOUND_DIMEPICKUP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|200 |SOUND_LUCKYPICKUP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|201 |SOUND_FETUS_FEET {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|204 |SOUND_GOLDENKEY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|205 |SOUND_GOOATTACH0 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|207 |SOUND_GOODEATH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|211 |SOUND_HAND_LASERS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|212 |SOUND_HEARTIN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|213 |SOUND_HEARTOUT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|214 |SOUND_HELL_PORTAL1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|215 |SOUND_HELL_PORTAL2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|217 |SOUND_ISAACDIES {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|218 |SOUND_ITEMRECHARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|219 |SOUND_KISS_LIPS1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|221 |SOUND_LEECH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|224 |SOUND_MAGGOTCHARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|226 |SOUND_MEATHEADSHOOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|229 |SOUND_METAL_BLOCKBREAK {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|231 |SOUND_NICKELDROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|232 |SOUND_NICKELPICKUP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|233 |SOUND_PENNYDROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|234 |SOUND_PENNYPICKUP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|237 |SOUND_PLOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|238 |SOUND_SATAN_APPEAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|239 |SOUND_SATAN_BLAST {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|240 |SOUND_SATAN_CHARGE_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|241 |SOUND_SATAN_GROW {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|242 |SOUND_SATAN_HURT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|243 |SOUND_SATAN_RISE_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|245 |SOUND_SATAN_SPIT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|246 |SOUND_SATAN_STOMP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|249 |SOUND_SCAMPER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|252 |SOUND_SHELLGAME {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|255 |SOUND_SLOTSPAWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|258 |SOUND_SPLATTER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|261 |SOUND_STEAM_HALFSEC {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|262 |SOUND_STONESHOOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|263 |SOUND_WEIRD_WORM_SPIT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|265 |SOUND_SUMMONSOUND {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|266 |SOUND_SUPERHOLY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|267 |SOUND_THUMBS_DOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|268 |SOUND_THUMBSUP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|269 |SOUND_FIRE_BURN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|270 |SOUND_HAPPY_RAINBOW {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|271 |SOUND_LASERRING {: .copyable } | new (ab) |
-|[ ](#){: .rep .tooltip .badge }|272 |SOUND_LASERRING_WEAK {: .copyable } | new (ab) |
-|[ ](#){: .rep .tooltip .badge }|273 |SOUND_LASERRING_STRONG {: .copyable } | new (ab) |
-|[ ](#){: .rep .tooltip .badge }|274 |SOUND_CASH_REGISTER {: .copyable } | new (ab+) |
-|[ ](#){: .rep .tooltip .badge }|275 |SOUND_ANGEL_WING {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|276 |SOUND_ANGEL_BEAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|277 |SOUND_HOLY_MANTLE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|278 |SOUND_MEGA_BLAST_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|279 |SOUND_MEGA_BLAST_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|280 |SOUND_MEGA_BLAST_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|281 |SOUND_BLOOD_LASER_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|282 |SOUND_MENU_SCROLL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|283 |SOUND_MENU_NOTE_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|284 |SOUND_MENU_NOTE_HIDE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|285 |SOUND_MENU_CHARACTER_SELECT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|286 |SOUND_SUMMON_POOF {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|300 |SOUND_BOO_MAD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|301 |SOUND_FART_GURG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|302 |SOUND_FAT_GRUNT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|303 |SOUND_FAT_WIGGLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|304 |SOUND_FIRE_RUSH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|305 |SOUND_GHOST_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|306 |SOUND_GHOST_SHOOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|307 |SOUND_GRROOWL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|308 |SOUND_GURG_BARF {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|309 |SOUND_INHALE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|310 |SOUND_LOW_INHALE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|311 |SOUND_MEGA_PUKE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|312 |SOUND_MOUTH_FULL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|313 |SOUND_MULTI_SCREAM {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|314 |SOUND_SKIN_PULL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|315 |SOUND_WHISTLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|316 |SOUND_DEVILROOM_DEAL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|317 |SOUND_SPIDER_SPIT_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|318 |SOUND_WORM_SPIT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|319 |SOUND_LITTLE_SPIT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|320 |SOUND_SATAN_ROOM_APPEAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|321 |SOUND_HEARTBEAT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|322 |SOUND_HEARTBEAT_FASTER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|323 |SOUND_HEARTBEAT_FASTEST {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|324 |SOUND_48_HR_ENERGY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|325 |SOUND_ALGIZ {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|326 |SOUND_AMNESIA {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|327 |SOUND_ANZUS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|328 |SOUND_BAD_GAS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|329 |SOUND_BAD_TRIP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|330 |SOUND_BALLS_OF_STEEL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|331 |SOUND_BERKANO {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|332 |SOUND_BOMBS_ARE_KEY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|333 |SOUND_CARD_VS_HUMAN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|334 |SOUND_CHAOS_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|335 |SOUND_CREDIT_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|336 |SOUND_DAGAZ {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|337 |SOUND_DEATH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|338 |SOUND_EHWAZ {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|339 |SOUND_EXPLOSIVE_DIAH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|340 |SOUND_FULL_HP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|341 |SOUND_HAGALAZ {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|342 |SOUND_HP_DOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|343 |SOUND_HP_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|344 |SOUND_HEMATEMISIS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|345 |SOUND_I_FOUND_PILLS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|346 |SOUND_JERA {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|347 |SOUND_JOKER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|348 |SOUND_JUDGEMENT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|349 |SOUND_JUSTICE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|350 |SOUND_LEMON_PARTY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|351 |SOUND_LUCK_DOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|352 |SOUND_LUCK_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|353 |SOUND_PARALYSIS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|354 |SOUND_PERTHRO {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|355 |SOUND_PHEROMONES {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|356 |SOUND_PRETTY_FLY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|357 |SOUND_PUBERTY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|358 |SOUND_RUA_WIZ {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|359 |SOUND_RANGE_DOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|360 |SOUND_RANGE_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|361 |SOUND_RULES_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|362 |SOUND_SEE_4EVER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|363 |SOUND_SPEED_DOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|364 |SOUND_SPEED_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|365 |SOUND_STRENGTH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|366 |SOUND_SUICIDE_KING {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|367 |SOUND_TEARS_DOWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|368 |SOUND_TEARS_UP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|369 |SOUND_TELEPILLS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|370 |SOUND_TEMPERANCE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|371 |SOUND_THE_CHARIOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|372 |SOUND_THE_DEVIL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|373 |SOUND_THE_EMPEROR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|374 |SOUND_EMPRESS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|375 |SOUND_FOOL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|376 |SOUND_HANGED_MAN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|377 |SOUND_HERMIT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|378 |SOUND_HIEROPHANT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|379 |SOUND_HIGHT_PRIESTESS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|380 |SOUND_THE_LOVERS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|381 |SOUND_MAGICIAN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|382 |SOUND_MOON {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|383 |SOUND_STARS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|384 |SOUND_SUN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|385 |SOUND_TOWER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|386 |SOUND_WORLD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|387 |SOUND_TWO_CLUBS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|388 |SOUND_TWO_DIAMONDS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|389 |SOUND_TWO_HEARTS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|390 |SOUND_TWO_SPADES {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|391 |SOUND_WHEEL_OF_FORTUNE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|392 |SOUND_RAGMAN_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|393 |SOUND_RAGMAN_2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|394 |SOUND_RAGMAN_3 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|395 |SOUND_RAGMAN_4 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|396 |SOUND_FLUSH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|397 |SOUND_WATER_DROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|398 |SOUND_WET_FEET {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|399 |SOUND_ADDICTED {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|400 |SOUND_DICE_SHARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|401 |SOUND_EMERGENCY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|402 |SOUND_INFESTED_EXCL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|403 |SOUND_INFESTED_QUEST {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|404 |SOUND_JAIL_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|405 |SOUND_LARGER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|406 |SOUND_PERCS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|407 |SOUND_POWER_PILL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|408 |SOUND_QUESTION_MARK {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|409 |SOUND_RELAX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|410 |SOUND_RETRO {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|411 |SOUND_SMALL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|412 |SOUND_QQQ {: .copyable } | ??? pill |
-|[ ](#){: .abrep .tooltip .badge }|413 |SOUND_DANGLE_WHISTLE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|414 |SOUND_LITTLE_HORN_COUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|415 |SOUND_LITTLE_HORN_GRUNT_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|416 |SOUND_LITTLE_HORN_GRUNT_2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|417 |SOUND_THE_FORSAKEN_LAUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|418 |SOUND_THE_FORSAKEN_SCREAM {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|419 |SOUND_THE_STAIN_BURST {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|420 |SOUND_BROWNIE_LAUGH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|421 |SOUND_HUSH_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|422 |SOUND_HUSH_GROWL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|423 |SOUND_HUSH_LOW_ROAR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|424 |SOUND_FRAIL_CHARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|425 |SOUND_HUSH_CHARGE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|426 |SOUND_MAW_OF_VOID {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|427 |SOUND_ULTRA_GREED_COIN_DESTROY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|428 |SOUND_ULTRA_GREED_COINS_FALLING {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|429 |SOUND_ULTRA_GREED_DEATH_SCREAM {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|430 |SOUND_ULTRA_GREED_TURN_GOLD_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|431 |SOUND_ULTRA_GREED_TURN_GOLD_2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|432 |SOUND_ULTRA_GREED_ROAR_1 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|433 |SOUND_ULTRA_GREED_ROAR_2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|434 |SOUND_ULTRA_GREED_SPIT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|435 |SOUND_ULTRA_GREED_PULL_SLOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|436 |SOUND_ULTRA_GREED_SLOT_SPIN_LOOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|437 |SOUND_ULTRA_GREED_SLOT_STOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|438 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP_END {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|439 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|440 |SOUND_ULTRA_GREED_SPINNING {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|441 |SOUND_DOG_BARK {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|442 |SOUND_DOG_HOWELL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|443 |SOUND_X_LAX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|444 |SOUND_WRONG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|445 |SOUND_VURP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|446 |SOUND_SUNSHINE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|447 |SOUND_SPADES {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|448 |SOUND_HORF {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|449 |SOUND_HOLY_CARD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|450 |SOUND_HEARTS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|451 |SOUND_GULP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|452 |SOUND_FRIENDS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|453 |SOUND_EXCITED {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|454 |SOUND_DROWSY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|455 |SOUND_DIAMONDS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|456 |SOUND_CLUBS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|457 |SOUND_BLACK_RUNE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|458 |SOUND_PING_PONG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|459 |SOUND_SPEWER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|460 |SOUND_MOM_FOOTSTEPS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|461 |SOUND_BONE_HEART {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|462 |SOUND_BONE_SNAP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|463 |SOUND_SHOVEL_DROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|464 |SOUND_SHOVEL_DIG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|465 |SOUND_GOLD_HEART {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|466 |SOUND_GOLD_HEART_DROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|467 |SOUND_BONE_DROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|468 |SOUND_UNHOLY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|469 |SOUND_BUTTON_PRESS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|470 |SOUND_GOLDENBOMB {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|471 |SOUND_CANDLE_LIGHT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|472 |SOUND_THUNDER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|473 |SOUND_WATER_FLOW_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|474 |SOUND_BOSS2_DIVE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|475 |SOUND_BOSS2INTRO_PIPES_TURNON {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|476 |SOUND_WATER_FLOW_LARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|477 |SOUND_DEMON_HIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|478 |SOUND_PUNCH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|479 |SOUND_FLUTE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|480 |SOUND_LAVA_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|481 |SOUND_WOOD_PLANK_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|482 |SOUND_BULLET_SHOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|483 |SOUND_FLAME_BURST {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|484 |SOUND_INFLATE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|485 |SOUND_CLAP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|486 |SOUND_BOSS2INTRO_WATER_EXPLOSION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|487 |SOUND_STONE_IMPACT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|488 |SOUND_BOSS2_WATERTHRASHING {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|489 |SOUND_FART_MEGA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|490 |SOUND_MATCHSTICK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|491 |SOUND_FORTUNE_COOKIE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|492 |SOUND_BULB_FLASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|493 |SOUND_BATTERYDISCHARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|494 |SOUND_WHIP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|495 |SOUND_WHIP_HIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|496 |SOUND_FREEZE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|497 |SOUND_ROTTEN_HEART {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|498 |SOUND_FREEZE_SHATTER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|499 |SOUND_BONE_BOUNCE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|500 |SOUND_BONE_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|501 |SOUND_BISHOP_HIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|502 |Does not exist anymore | (legacy: SOUND_PORTAL_LOOP) |
-|[ ](#){: .rep .tooltip .badge }|503 |SOUND_CHAIN_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|504 |SOUND_CHAIN_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|505 |SOUND_MINECART_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|506 |SOUND_TOOTH_AND_NAIL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|507 |SOUND_TOOTH_AND_NAIL_TICK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|508 |SOUND_STATIC_BUILDUP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|509 |SOUND_THREAD_SNAP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|510 |SOUND_BIG_LEECH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|511 |SOUND_REVERSE_EXPLOSION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|512 |SOUND_REVERSE_FOOL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|513 |SOUND_REVERSE_MAGICIAN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|514 |SOUND_REVERSE_HIGH_PRIESTESS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|515 |SOUND_REVERSE_EMPRESS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|516 |SOUND_REVERSE_EMPEROR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|517 |SOUND_REVERSE_HIEROPHANT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|518 |SOUND_REVERSE_LOVERS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|519 |SOUND_REVERSE_CHARIOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|520 |SOUND_REVERSE_JUSTICE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|521 |SOUND_REVERSE_HERMIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|522 |SOUND_REVERSE_WHEEL_OF_FORTUNE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|523 |SOUND_REVERSE_STRENGTH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|524 |SOUND_REVERSE_HANGED_MAN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|525 |SOUND_REVERSE_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|526 |SOUND_REVERSE_TEMPERANCE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|527 |SOUND_REVERSE_DEVIL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|528 |SOUND_REVERSE_TOWER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|529 |SOUND_REVERSE_STARS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|530 |SOUND_REVERSE_MOON {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|531 |SOUND_REVERSE_SUN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|532 |SOUND_REVERSE_JUDGEMENT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|533 |SOUND_REVERSE_WORLD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|534 |SOUND_FLAMETHROWER_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|535 |SOUND_FLAMETHROWER_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|536 |SOUND_FLAMETHROWER_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|537 |SOUND_ROCKET_LAUNCH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|538 |SOUND_SWORD_SPIN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|539 |SOUND_BABY_BRIM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|540 |SOUND_KNIFE_PULL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|541 |SOUND_DOGMA_APPEAR_SCREAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|542 |SOUND_DOGMA_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|543 |SOUND_DOGMA_BLACKHOLE_CHARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|544 |SOUND_DOGMA_BLACKHOLE_SHOOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|545 |SOUND_DOGMA_BLACKHOLE_OPEN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|546 |SOUND_DOGMA_BLACKHOLE_CLOSE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|547 |SOUND_DOGMA_BRIMSTONE_CHARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|548 |SOUND_DOGMA_BRIMSTONE_SHOOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|549 |SOUND_DOGMA_GODHEAD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|550 |SOUND_DOGMA_JACOBS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|551 |SOUND_DOGMA_JACOBS_ZAP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|552 |SOUND_DOGMA_SCREAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|553 |SOUND_DOGMA_PREACHER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|554 |SOUND_DOGMA_RING_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|555 |SOUND_DOGMA_RING_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|556 |SOUND_DOGMA_FEATHER_SPRAY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|557 |SOUND_DOGMA_JACOBS_DOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|558 |SOUND_DOGMA_BLACKHOLE_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|559 |SOUND_DOGMA_ANGEL_TRANSFORM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|560 |SOUND_DOGMA_ANGEL_TRANSFORM_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|561 |SOUND_DOGMA_LIGHT_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|562 |SOUND_DOGMA_LIGHT_BALL_THROW {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|563 |SOUND_DOGMA_LIGHT_RAY_CHARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|564 |SOUND_DOGMA_LIGHT_RAY_FIRE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|565 |SOUND_DOGMA_SPIN_ATTACK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|566 |SOUND_DOGMA_WING_FLAP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|567 |SOUND_DOGMA_TV_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|568 |SOUND_DIVINE_INTERVENTION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|569 |SOUND_MENU_FLIP_LIGHT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|570 |SOUND_MENU_FLIP_DARK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|571 |SOUND_MENU_RIP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|572 |SOUND_URN_OPEN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|573 |SOUND_URN_CLOSE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|574 |SOUND_RECALL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|575 |SOUND_LARYNX_SCREAM_LO {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|576 |SOUND_LARYNX_SCREAM_MED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|577 |SOUND_LARYNX_SCREAM_HI {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|578 |SOUND_GROUND_TREMOR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|579 |SOUND_SOUL_PICKUP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|580 |SOUND_BALL_AND_CHAIN_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|581 |SOUND_BALL_AND_CHAIN_HIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|582 |SOUND_LAZARUS_FLIP_DEAD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|583 |SOUND_LAZARUS_FLIP_ALIVE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|584 |SOUND_RECALL_FINISH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|585 |SOUND_ROCKET_LAUNCH_SHORT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|586 |SOUND_ROCKET_LAUNCH_TINY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|587 |SOUND_ROCKET_EXPLOSION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|588 |SOUND_JELLY_BOUNCE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|589 |SOUND_POOP_LASER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|590 |SOUND_POISON_WARN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|591 |SOUND_POISON_HURT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|592 |SOUND_BERSERK_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|593 |SOUND_BERSERK_TICK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|594 |SOUND_BERSERK_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|595 |SOUND_EDEN_GLITCH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|596 |SOUND_RAILROAD_TRACK_RAISE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|597 |SOUND_RAILROAD_TRACK_RAISE_FAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|598 |SOUND_MOM_AND_DAD_1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|599 |SOUND_MOM_AND_DAD_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|600 |SOUND_MOM_AND_DAD_3 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|601 |SOUND_MOM_AND_DAD_4 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|602 |SOUND_THUMBSUP_AMPLIFIED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|603 |SOUND_THUMBSDOWN_AMPLIFIED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|604 |SOUND_POWERUP_SPEWER_AMPLIFIED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|605 |SOUND_POOPITEM_THROW {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|606 |SOUND_POOPITEM_STORE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|607 |SOUND_POOPITEM_HOLD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|608 |SOUND_MIRROR_ENTER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|609 |SOUND_MIRROR_EXIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|610 |SOUND_MIRROR_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|611 |SOUND_ANIMA_TRAP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|612 |SOUND_ANIMA_RATTLE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|613 |SOUND_ANIMA_BREAK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|614 |SOUND_VAMP_DOUBLE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|615 |SOUND_FLASHBACK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|616 |SOUND_DARK_ESAU_OPEN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|617 |SOUND_DARK_ESAU_DEATH_OPEN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|618 |SOUND_MOTHER_DEATH1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|619 |SOUND_MOTHER_DEATH2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|620 |SOUND_MOTHER_FISTPOUND1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|621 |SOUND_MOTHER_FISTPOUND2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|622 |SOUND_MOTHER_FISTPOUND3 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|623 |SOUND_MOTHER_FISTULA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|624 |SOUND_MOTHER_APPEAR1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|625 |SOUND_MOTHER_APPEAR2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|626 |SOUND_MOTHER_KNIFE_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|627 |SOUND_MOTHER_KNIFE_THROW {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|628 |SOUND_MOTHER_SUMMON_ISAACS_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|629 |SOUND_MOTHER_SUMMON_ISAACS_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|630 |SOUND_MOTHER_HAND_BOIL_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|631 |SOUND_MOTHER_GRUNT1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|632 |SOUND_MOTHER_GRUNT5 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|633 |SOUND_MOTHER_GRUNT6 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|634 |SOUND_MOTHER_GRUNT7 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|635 |SOUND_MOTHER_LAUGH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|636 |SOUND_MOTHER_SPIN_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|637 |SOUND_MOTHER_WALL_SHOT_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|638 |SOUND_MOTHER_MISC {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|639 |SOUND_MOTHER_SHOOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|640 |SOUND_MOTHER_SUCTION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|641 |SOUND_MOTHER_ISAAC_RISE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|642 |SOUND_MOTHER_ISAAC_HIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|643 |SOUND_MOTHER_WRIST_SWELL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|644 |SOUND_MOTHER_WRIST_EXPLODE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|645 |SOUND_MOTHER_DEATH_MELT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|646 |SOUND_MOTHER_ANGER_SHAKE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|647 |SOUND_MOTHER_CHARGE1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|648 |SOUND_MOTHER_CHARGE2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|649 |SOUND_MOTHER_LAND_SMASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|650 |SOUND_ISAAC_ROAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|651 |SOUND_FAMINE_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|652 |SOUND_FAMINE_DEATH_1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|653 |SOUND_FAMINE_DEATH_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|654 |SOUND_FAMINE_DASH_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|655 |SOUND_FAMINE_DASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|656 |SOUND_FAMINE_SHOOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|657 |SOUND_FAMINE_BURST {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|658 |SOUND_FAMINE_GURGLE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|659 |SOUND_PESTILENCE_MAGGOT_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|660 |SOUND_PESTILENCE_MAGGOT_SHOOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|661 |SOUND_PESTILENCE_MAGGOT_RETURN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|662 |SOUND_PESTILENCE_BODY_SHOOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|663 |SOUND_PESTILENCE_HEAD_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|664 |SOUND_PESTILENCE_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|665 |SOUND_PESTILENCE_COUGH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|666 |SOUND_PESTILENCE_BARF {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|667 |SOUND_PESTILENCE_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|668 |SOUND_PESTILENCE_HEAD_EXPLODE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|669 |SOUND_PESTILENCE_MAGGOT_ENTER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|670 |SOUND_PESTILENCE_MAGGOT_POPOUT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|671 |SOUND_PESTILENCE_MAGGOT_SHOOT2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|672 |SOUND_PESTILENCE_NECK_PUKE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|673 |SOUND_PESTILENCE_PUKE_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|674 |SOUND_WAR_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|675 |SOUND_WAR_APPEAR_LAVA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|676 |SOUND_WAR_BOMB_TOSS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|677 |SOUND_WAR_DASH_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|678 |SOUND_WAR_DASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|679 |SOUND_WAR_HORSE_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|680 |SOUND_WAR_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|681 |SOUND_WAR_FIRE_SCREEM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|682 |SOUND_WAR_GRAB_PLAYER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|683 |SOUND_WAR_BOMB_HOLD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|684 |SOUND_WAR_BOMB_PULL_OUT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|685 |SOUND_WAR_CHASE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|686 |SOUND_WAR_BOMB_TICK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|687 |SOUND_WAR_FLAME {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|688 |SOUND_WAR_LAVA_SPLASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|689 |SOUND_WAR_LAVA_DASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|690 |SOUND_DEATH_DIES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|691 |SOUND_DEATH_DESTROY_SKULLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|692 |SOUND_DEATH_GROWL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|693 |SOUND_DEATH_SWIPE_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|694 |SOUND_DEATH_SWIPE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|695 |SOUND_DEATH_SUMMON_SCYTHES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|696 |SOUND_DEATH_SUMMON_SKULLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|697 |SOUND_BEAST_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|698 |SOUND_BEAST_LASER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|699 |SOUND_BEAST_BACKGROUND_DIVE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|700 |SOUND_BEAST_FIRE_RING {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|701 |SOUND_BEAST_GHOST_DASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|702 |SOUND_BEAST_GHOST_RISE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|703 |SOUND_BEAST_LAVA_BALL_SPLASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|704 |SOUND_BEAST_LAVA_RISE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|705 |SOUND_BEAST_SUCTION_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|706 |SOUND_BEAST_FIRE_BARF {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|707 |SOUND_BEAST_GHOST_ROAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|708 |SOUND_BEAST_INTRO_SCREAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|709 |SOUND_BEAST_SUCTION_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|710 |SOUND_BEAST_SUCTION_START {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|711 |SOUND_BEAST_SPIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|712 |SOUND_BEAST_SURFACE_GROWL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|713 |SOUND_BEAST_SWITCH_SIDES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|714 |SOUND_MOTHERSHADOW_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|715 |SOUND_MOTHERSHADOW_CHARGE_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|716 |SOUND_MOTHERSHADOW_DASH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|717 |SOUND_MOTHERSHADOW_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|718 |SOUND_MOTHERSHADOW_INTRO {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|719 |SOUND_BUMBINO_DEATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|720 |SOUND_BUMBINO_DIZZY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|721 |SOUND_BUMBINO_HIT_WALL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|722 |SOUND_BUMBINO_MISC {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|723 |SOUND_BUMBINO_PUNCH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|724 |SOUND_BUMBINO_RAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|725 |SOUND_BUMBINO_SLAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|726 |SOUND_BUMBINO_SNAP_OUT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|727 |SOUND_SIREN_SCREAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|728 |SOUND_SIREN_SING {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|729 |SOUND_DEATH_SKULL_SUMMON_LOOP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|730 |SOUND_DEATH_SKULL_SUMMON_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|731 |SOUND_BEAST_DEATH_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|732 |SOUND_BEAST_ANGELIC_BLAST {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|733 |SOUND_ANCIENT_RECALL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|734 |SOUND_ERA_WALK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|735 |SOUND_HUGE_GROWTH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|736 |SOUND_RUNE_SHARD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|737 |SOUND_SHOT_SPEED_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|738 |SOUND_SHOT_SPEED_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|739 |SOUND_EXPERIMENTAL_PILL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|740 |SOUND_CRACKED_KEY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|741 |SOUND_QUEEN_OF_HEARTS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|742 |SOUND_WILD_CARD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|743 |SOUND_SOUL_OF_ISAAC {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|744 |SOUND_SOUL_OF_MAGDALENE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|745 |SOUND_SOUL_OF_CAIN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|746 |SOUND_SOUL_OF_JUDAS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|747 |SOUND_SOUL_OF_XXX {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|748 |SOUND_SOUL_OF_EVE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|749 |SOUND_SOUL_OF_SAMSON {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|750 |SOUND_SOUL_OF_AZAZEL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|751 |SOUND_SOUL_OF_LAZARUS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|752 |SOUND_SOUL_OF_EDEN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|753 |SOUND_SOUL_OF_THE_LOST {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|754 |SOUND_SOUL_OF_LILITH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|755 |SOUND_SOUL_OF_THE_KEEPER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|756 |SOUND_SOUL_OF_APOLLYON {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|757 |SOUND_SOUL_OF_THE_FORGOTTEN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|758 |SOUND_SOUL_OF_BETHANY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|759 |SOUND_SOUL_OF_JACOB_AND_ESAU {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|760 |SOUND_MEGA_BAD_GAS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|761 |SOUND_MEGA_BAD_TRIP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|762 |SOUND_MEGA_BALLS_OF_STEEL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|763 |SOUND_MEGA_BOMBS_ARE_KEY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|764 |SOUND_MEGA_EXPLOSIVE_DIARRHEA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|765 |SOUND_MEGA_FULL_HEALTH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|766 |SOUND_MEGA_HEALTH_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|767 |SOUND_MEGA_HEALTH_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|768 |SOUND_MEGA_I_FOUND_PILLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|769 |SOUND_MEGA_PUBERTY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|770 |SOUND_MEGA_PRETTY_FLY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|771 |SOUND_MEGA_RANGE_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|772 |SOUND_MEGA_RANGE_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|773 |SOUND_MEGA_SPEED_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|774 |SOUND_MEGA_SPEED_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|775 |SOUND_MEGA_TEARS_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|776 |SOUND_MEGA_TEARS_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|777 |SOUND_MEGA_LUCK_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|778 |SOUND_MEGA_LUCK_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|779 |SOUND_MEGA_TELEPILLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|780 |SOUND_MEGA_48_HR_ENERGY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|781 |SOUND_MEGA_HEMATEMESIS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|782 |SOUND_MEGA_PARALYSIS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|783 |SOUND_MEGA_I_CAN_SEE_FOREVER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|784 |SOUND_MEGA_PHEROMONES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|785 |SOUND_MEGA_AMNESIA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|786 |SOUND_MEGA_LEMON_PARTY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|787 |SOUND_MEGA_ARE_YOU_A_WIZARD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|788 |SOUND_MEGA_PERCS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|789 |SOUND_MEGA_ADDICTED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|790 |SOUND_MEGA_RELAX {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|791 |SOUND_MEGA_TRIPLE_QUESTION_MARK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|792 |SOUND_MEGA_ONE_MAKES_YOU_LARGER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|793 |SOUND_MEGA_ONE_MAKES_YOU_SMALL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|794 |SOUND_MEGA_INFESTED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|795 |SOUND_MEGA_INFESTED_1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|796 |SOUND_MEGA_POWER_PILL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|797 |SOUND_MEGA_RETRO_VISION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|798 |SOUND_MEGA_FRIENDS_TIL_THE_END {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|799 |SOUND_MEGA_EXLAX {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|800 |SOUND_MEGA_SOMETHINGS_WRONG {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|801 |SOUND_MEGA_IM_DROWSY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|802 |SOUND_MEGA_IM_EXCITED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|803 |SOUND_MEGA_GULP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|804 |SOUND_MEGA_HORF {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|805 |SOUND_MEGA_SUNSHINE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|806 |SOUND_MEGA_VURP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|807 |SOUND_MEGA_SHOT_SPEED_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|808 |SOUND_MEGA_SHOT_SPEED_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|809 |SOUND_MEGA_EXPERIMENTAL_PILL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|810 |SOUND_SIREN_LUNGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|811 |SOUND_SIREN_MINION_SMOKE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|812 |SOUND_SIREN_SCREAM_ATTACK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|813 |SOUND_SIREN_SING_STAB {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|814 |SOUND_BEAST_LAVABALL_RISE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|815 |SOUND_BEAST_GROWL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|816 |SOUND_BEAST_GRUMBLE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|817 |SOUND_FAMINE_GRUNT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|818 |SOUND_GFUEL_1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|819 |SOUND_GFUEL_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|820 |SOUND_GFUEL_3 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|821 |SOUND_GFUEL_4 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|822 |SOUND_GFUEL_EXPLOSION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|823 |SOUND_GFUEL_EXPLOSION_BIG {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|824 |SOUND_GFUEL_GUNSHOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|825 |SOUND_GFUEL_GUNSHOT_SMALL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|826 |SOUND_GFUEL_GUNSHOT_LARGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|827 |SOUND_GFUEL_GUNSHOT_SPREAD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|828 |SOUND_GFUEL_AIR_HORN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|829 |SOUND_GFUEL_ITEM_APPEAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|830 |SOUND_GFUEL_GUNSHOT_MINI {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|831 |SOUND_GFUEL_RICOCHET {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|832 |SOUND_GFUEL_ROCKETLAUNCHER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|833 |NUM_SOUND_EFFECTS {: .copyable } |  |
+|DLC|Value|Enumerator|Sound|Comment|
+|:--|:--|:--|:--|:--|
+|[ ](#){: .abrep .tooltip .badge }|0 |SOUND_NULL {: .copyable } |  |  |
+|[ ](#){: .abrep .tooltip .badge }|1 |SOUND_1UP {: .copyable } |<html> <body> <audio controls id="preview-sound-1"><source src="../sounds/sfx/1.wav" type="audio/wav"> <script>document.getElementById("preview-sound-1").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|2 |SOUND_BIRD_FLAP {: .copyable } |<html> <body> <audio controls id="preview-sound-2"><source src="../sounds/sfx/2.wav" type="audio/wav"> <script>document.getElementById("preview-sound-2").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|3 |SOUND_BLOBBY_WIGGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-3"><source src="../sounds/sfx/3.wav" type="audio/wav"> <script>document.getElementById("preview-sound-3").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|4 |SOUND_INSECT_SWARM_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-4"><source src="../sounds/sfx/4.wav" type="audio/wav"> <script>document.getElementById("preview-sound-4").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|5 |SOUND_BLOOD_LASER {: .copyable } |<html> <body> <audio controls id="preview-sound-5"><source src="../sounds/sfx/5.wav" type="audio/wav"> <script>document.getElementById("preview-sound-5").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|6 |SOUND_BLOOD_LASER_SMALL {: .copyable } |<html> <body> <audio controls id="preview-sound-6"><source src="../sounds/sfx/6.wav" type="audio/wav"> <script>document.getElementById("preview-sound-6").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|7 |SOUND_BLOOD_LASER_LARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-7"><source src="../sounds/sfx/7.wav" type="audio/wav"> <script>document.getElementById("preview-sound-7").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|8 |SOUND_BOOK_PAGE_TURN_12 {: .copyable } |<html> <body> <audio controls id="preview-sound-8"><source src="../sounds/sfx/8.wav" type="audio/wav"> <script>document.getElementById("preview-sound-8").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|9 |SOUND_BOSS_BUG_HISS {: .copyable } |<html> <body> <audio controls id="preview-sound-9"><source src="../sounds/sfx/9.wav" type="audio/wav"> <script>document.getElementById("preview-sound-9").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|10 |SOUND_BLOOD_LASER_LARGER {: .copyable } |<html> <body> <audio controls id="preview-sound-10"><source src="../sounds/sfx/10.wav" type="audio/wav"> <script>document.getElementById("preview-sound-10").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|11 |SOUND_BOSS_GURGLE_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-11"><source src="../sounds/sfx/11.wav" type="audio/wav"> <script>document.getElementById("preview-sound-11").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|12 |SOUND_BOSS_LITE_GURGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-12"><source src="../sounds/sfx/12.wav" type="audio/wav"> <script>document.getElementById("preview-sound-12").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|13 |SOUND_BOSS_LITE_HISS {: .copyable } |<html> <body> <audio controls id="preview-sound-13"><source src="../sounds/sfx/13.wav" type="audio/wav"> <script>document.getElementById("preview-sound-13").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|14 |SOUND_BOSS_LITE_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-14"><source src="../sounds/sfx/14.wav" type="audio/wav"> <script>document.getElementById("preview-sound-14").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|15 |SOUND_BOSS_LITE_SLOPPY_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-15"><source src="../sounds/sfx/15.wav" type="audio/wav"> <script>document.getElementById("preview-sound-15").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|16 |SOUND_BOSS_SPIT_BLOB_BARF {: .copyable } |<html> <body> <audio controls id="preview-sound-16"><source src="../sounds/sfx/16.wav" type="audio/wav"> <script>document.getElementById("preview-sound-16").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|17 |SOUND_PAPER_IN {: .copyable } |<html> <body> <audio controls id="preview-sound-17"><source src="../sounds/sfx/17.wav" type="audio/wav"> <script>document.getElementById("preview-sound-17").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|18 |SOUND_PAPER_OUT {: .copyable } |<html> <body> <audio controls id="preview-sound-18"><source src="../sounds/sfx/18.wav" type="audio/wav"> <script>document.getElementById("preview-sound-18").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|21 |SOUND_CHEST_DROP {: .copyable } |<html> <body> <audio controls id="preview-sound-21"><source src="../sounds/sfx/21.wav" type="audio/wav"> <script>document.getElementById("preview-sound-21").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|22 |SOUND_CHEST_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-22"><source src="../sounds/sfx/22.wav" type="audio/wav"> <script>document.getElementById("preview-sound-22").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|23 |SOUND_CHOIR_UNLOCK {: .copyable } |<html> <body> <audio controls id="preview-sound-23"><source src="../sounds/sfx/23.wav" type="audio/wav"> <script>document.getElementById("preview-sound-23").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|24 |SOUND_COIN_SLOT {: .copyable } |<html> <body> <audio controls id="preview-sound-24"><source src="../sounds/sfx/24.wav" type="audio/wav"> <script>document.getElementById("preview-sound-24").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|25 |SOUND_CUTE_GRUNT {: .copyable } |<html> <body> <audio controls id="preview-sound-25"><source src="../sounds/sfx/25.wav" type="audio/wav"> <script>document.getElementById("preview-sound-25").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|27 |SOUND_DEATH_BURST_BONE {: .copyable } |<html> <body> <audio controls id="preview-sound-27"><source src="../sounds/sfx/27.wav" type="audio/wav"> <script>document.getElementById("preview-sound-27").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|28 |SOUND_DEATH_BURST_LARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-28"><source src="../sounds/sfx/28.wav" type="audio/wav"> <script>document.getElementById("preview-sound-28").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|29 |SOUND_DEATH_REVERSE {: .copyable } |<html> <body> <audio controls id="preview-sound-29"><source src="../sounds/sfx/29.wav" type="audio/wav"> <script>document.getElementById("preview-sound-29").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|30 |SOUND_DEATH_BURST_SMALL {: .copyable } |<html> <body> <audio controls id="preview-sound-30"><source src="../sounds/sfx/30.wav" type="audio/wav"> <script>document.getElementById("preview-sound-30").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|33 |SOUND_DEATH_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-33"><source src="../sounds/sfx/33.wav" type="audio/wav"> <script>document.getElementById("preview-sound-33").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|34 |SOUND_DEVIL_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-34"><source src="../sounds/sfx/34.wav" type="audio/wav"> <script>document.getElementById("preview-sound-34").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|35 |SOUND_DOOR_HEAVY_CLOSE {: .copyable } |<html> <body> <audio controls id="preview-sound-35"><source src="../sounds/sfx/35.wav" type="audio/wav"> <script>document.getElementById("preview-sound-35").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|36 |SOUND_DOOR_HEAVY_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-36"><source src="../sounds/sfx/36.wav" type="audio/wav"> <script>document.getElementById("preview-sound-36").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|37 |SOUND_FART {: .copyable } |<html> <body> <audio controls id="preview-sound-37"><source src="../sounds/sfx/37.wav" type="audio/wav"> <script>document.getElementById("preview-sound-37").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|38 |SOUND_FETUS_JUMP {: .copyable } |<html> <body> <audio controls id="preview-sound-38"><source src="../sounds/sfx/38.wav" type="audio/wav"> <script>document.getElementById("preview-sound-38").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|40 |SOUND_FETUS_LAND {: .copyable } |<html> <body> <audio controls id="preview-sound-40"><source src="../sounds/sfx/40.wav" type="audio/wav"> <script>document.getElementById("preview-sound-40").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|43 |SOUND_FIREDEATH_HISS {: .copyable } |<html> <body> <audio controls id="preview-sound-43"><source src="../sounds/sfx/43.wav" type="audio/wav"> <script>document.getElementById("preview-sound-43").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|44 |SOUND_FLOATY_BABY_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-44"><source src="../sounds/sfx/44.wav" type="audio/wav"> <script>document.getElementById("preview-sound-44").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|45 |SOUND_COIN_INSERT {: .copyable } |<html> <body> <audio controls id="preview-sound-45"><source src="../sounds/sfx/45.wav" type="audio/wav"> <script>document.getElementById("preview-sound-45").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|46 |SOUND_METAL_DOOR_CLOSE {: .copyable } |<html> <body> <audio controls id="preview-sound-46"><source src="../sounds/sfx/46.wav" type="audio/wav"> <script>document.getElementById("preview-sound-46").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|47 |SOUND_METAL_DOOR_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-47"><source src="../sounds/sfx/47.wav" type="audio/wav"> <script>document.getElementById("preview-sound-47").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|48 |SOUND_FORESTBOSS_STOMPS {: .copyable } |<html> <body> <audio controls id="preview-sound-48"><source src="../sounds/sfx/48.wav" type="audio/wav"> <script>document.getElementById("preview-sound-48").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|49 |SOUND_SCYTHE_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-49"><source src="../sounds/sfx/49.wav" type="audio/wav"> <script>document.getElementById("preview-sound-49").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|50 |SOUND_STONE_WALKER {: .copyable } |<html> <body> <audio controls id="preview-sound-50"><source src="../sounds/sfx/50.wav" type="audio/wav"> <script>document.getElementById("preview-sound-50").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|51 |SOUND_GASCAN_POUR {: .copyable } |<html> <body> <audio controls id="preview-sound-51"><source src="../sounds/sfx/51.wav" type="audio/wav"> <script>document.getElementById("preview-sound-51").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|52 |SOUND_HELLBOSS_GROUNDPOUND {: .copyable } |<html> <body> <audio controls id="preview-sound-52"><source src="../sounds/sfx/52.wav" type="audio/wav"> <script>document.getElementById("preview-sound-52").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|53 |SOUND_GLASS_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-53"><source src="../sounds/sfx/53.wav" type="audio/wav"> <script>document.getElementById("preview-sound-53").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|54 |SOUND_HOLY {: .copyable } |<html> <body> <audio controls id="preview-sound-54"><source src="../sounds/sfx/54.wav" type="audio/wav"> <script>document.getElementById("preview-sound-54").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|55 |SOUND_ISAAC_HURT_GRUNT {: .copyable } |<html> <body> <audio controls id="preview-sound-55"><source src="../sounds/sfx/55.wav" type="audio/wav"> <script>document.getElementById("preview-sound-55").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|56 |SOUND_CHILD_HAPPY_ROAR_SHORT {: .copyable } |<html> <body> <audio controls id="preview-sound-56"><source src="../sounds/sfx/56.wav" type="audio/wav"> <script>document.getElementById("preview-sound-56").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|57 |SOUND_CHILD_ANGRY_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-57"><source src="../sounds/sfx/57.wav" type="audio/wav"> <script>document.getElementById("preview-sound-57").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|58 |SOUND_KEYPICKUP_GAUNTLET {: .copyable } |<html> <body> <audio controls id="preview-sound-58"><source src="../sounds/sfx/58.wav" type="audio/wav"> <script>document.getElementById("preview-sound-58").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|59 |SOUND_KEY_DROP0 {: .copyable } |<html> <body> <audio controls id="preview-sound-59"><source src="../sounds/sfx/59.wav" type="audio/wav"> <script>document.getElementById("preview-sound-59").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|60 |SOUND_BABY_HURT {: .copyable } |<html> <body> <audio controls id="preview-sound-60"><source src="../sounds/sfx/60.wav" type="audio/wav"> <script>document.getElementById("preview-sound-60").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|64 |SOUND_MAGGOT_BURST_OUT {: .copyable } |<html> <body> <audio controls id="preview-sound-64"><source src="../sounds/sfx/64.wav" type="audio/wav"> <script>document.getElementById("preview-sound-64").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|66 |SOUND_MAGGOT_ENTER_GROUND {: .copyable } |<html> <body> <audio controls id="preview-sound-66"><source src="../sounds/sfx/66.wav" type="audio/wav"> <script>document.getElementById("preview-sound-66").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|68 |SOUND_MEAT_FEET_SLOW0 {: .copyable } |<html> <body> <audio controls id="preview-sound-68"><source src="../sounds/sfx/68.wav" type="audio/wav"> <script>document.getElementById("preview-sound-68").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|69 |SOUND_MEAT_IMPACTS {: .copyable } |<html> <body> <audio controls id="preview-sound-69"><source src="../sounds/sfx/69.wav" type="audio/wav"> <script>document.getElementById("preview-sound-69").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|72 |SOUND_MEAT_JUMPS {: .copyable } |<html> <body> <audio controls id="preview-sound-72"><source src="../sounds/sfx/72.wav" type="audio/wav"> <script>document.getElementById("preview-sound-72").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|77 |SOUND_MEATY_DEATHS {: .copyable } |<html> <body> <audio controls id="preview-sound-77"><source src="../sounds/sfx/77.wav" type="audio/wav"> <script>document.getElementById("preview-sound-77").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|78 |SOUND_POT_BREAK_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-78"><source src="../sounds/sfx/78.wav" type="audio/wav"> <script>document.getElementById("preview-sound-78").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|79 |SOUND_MUSHROOM_POOF_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-79"><source src="../sounds/sfx/79.wav" type="audio/wav"> <script>document.getElementById("preview-sound-79").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|80 |SOUND_BLACK_POOF {: .copyable } |<html> <body> <audio controls id="preview-sound-80"><source src="../sounds/sfx/80.wav" type="audio/wav"> <script>document.getElementById("preview-sound-80").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|81 |SOUND_STATIC {: .copyable } |<html> <body> <audio controls id="preview-sound-81"><source src="../sounds/sfx/81.wav" type="audio/wav"> <script>document.getElementById("preview-sound-81").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-82"><source src="../sounds/sfx/82.wav" type="audio/wav"> <script>document.getElementById("preview-sound-82").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|84 |SOUND_MOM_VOX_EVILLAUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-84"><source src="../sounds/sfx/84.wav" type="audio/wav"> <script>document.getElementById("preview-sound-84").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|85 |SOUND_MOM_VOX_FILTERED_DEATH_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-85"><source src="../sounds/sfx/85.wav" type="audio/wav"> <script>document.getElementById("preview-sound-85").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|86 |SOUND_MOM_VOX_FILTERED_EVILLAUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-86"><source src="../sounds/sfx/86.wav" type="audio/wav"> <script>document.getElementById("preview-sound-86").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|87 |SOUND_MOM_VOX_FILTERED_HURT {: .copyable } |<html> <body> <audio controls id="preview-sound-87"><source src="../sounds/sfx/87.wav" type="audio/wav"> <script>document.getElementById("preview-sound-87").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|90 |SOUND_MOM_VOX_FILTERED_ISAAC {: .copyable } |<html> <body> <audio controls id="preview-sound-90"><source src="../sounds/sfx/90.wav" type="audio/wav"> <script>document.getElementById("preview-sound-90").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|93 |SOUND_MOM_VOX_GRUNT {: .copyable } |<html> <body> <audio controls id="preview-sound-93"><source src="../sounds/sfx/93.wav" type="audio/wav"> <script>document.getElementById("preview-sound-93").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|97 |SOUND_MOM_VOX_HURT {: .copyable } |<html> <body> <audio controls id="preview-sound-97"><source src="../sounds/sfx/97.wav" type="audio/wav"> <script>document.getElementById("preview-sound-97").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|101 |SOUND_MOM_VOX_ISAAC {: .copyable } |<html> <body> <audio controls id="preview-sound-101"><source src="../sounds/sfx/101.wav" type="audio/wav"> <script>document.getElementById("preview-sound-101").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|104 |SOUND_MONSTER_GRUNT_0 {: .copyable } |<html> <body> <audio controls id="preview-sound-104"><source src="../sounds/sfx/104.wav" type="audio/wav"> <script>document.getElementById("preview-sound-104").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|106 |SOUND_MONSTER_GRUNT_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-106"><source src="../sounds/sfx/106.wav" type="audio/wav"> <script>document.getElementById("preview-sound-106").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|108 |SOUND_MONSTER_GRUNT_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-108"><source src="../sounds/sfx/108.wav" type="audio/wav"> <script>document.getElementById("preview-sound-108").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|112 |SOUND_MONSTER_GRUNT_4 {: .copyable } |<html> <body> <audio controls id="preview-sound-112"><source src="../sounds/sfx/112.wav" type="audio/wav"> <script>document.getElementById("preview-sound-112").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|114 |SOUND_MONSTER_GRUNT_5 {: .copyable } |<html> <body> <audio controls id="preview-sound-114"><source src="../sounds/sfx/114.wav" type="audio/wav"> <script>document.getElementById("preview-sound-114").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|115 |SOUND_MONSTER_ROAR_0 {: .copyable } |<html> <body> <audio controls id="preview-sound-115"><source src="../sounds/sfx/115.wav" type="audio/wav"> <script>document.getElementById("preview-sound-115").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|116 |SOUND_MONSTER_ROAR_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-116"><source src="../sounds/sfx/116.wav" type="audio/wav"> <script>document.getElementById("preview-sound-116").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|117 |SOUND_MONSTER_ROAR_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-117"><source src="../sounds/sfx/117.wav" type="audio/wav"> <script>document.getElementById("preview-sound-117").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|118 |SOUND_MONSTER_ROAR_3 {: .copyable } |<html> <body> <audio controls id="preview-sound-118"><source src="../sounds/sfx/118.wav" type="audio/wav"> <script>document.getElementById("preview-sound-118").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|119 |SOUND_MONSTER_YELL_A {: .copyable } |<html> <body> <audio controls id="preview-sound-119"><source src="../sounds/sfx/119.wav" type="audio/wav"> <script>document.getElementById("preview-sound-119").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|122 |SOUND_MONSTER_YELL_B {: .copyable } |<html> <body> <audio controls id="preview-sound-122"><source src="../sounds/sfx/122.wav" type="audio/wav"> <script>document.getElementById("preview-sound-122").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|128 |SOUND_POWERUP1 {: .copyable } |<html> <body> <audio controls id="preview-sound-128"><source src="../sounds/sfx/128.wav" type="audio/wav"> <script>document.getElementById("preview-sound-128").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|129 |SOUND_POWERUP2 {: .copyable } |<html> <body> <audio controls id="preview-sound-129"><source src="../sounds/sfx/129.wav" type="audio/wav"> <script>document.getElementById("preview-sound-129").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|130 |SOUND_POWERUP3 {: .copyable } |<html> <body> <audio controls id="preview-sound-130"><source src="../sounds/sfx/130.wav" type="audio/wav"> <script>document.getElementById("preview-sound-130").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|132 |SOUND_POWERUP_SPEWER {: .copyable } |<html> <body> <audio controls id="preview-sound-132"><source src="../sounds/sfx/132.wav" type="audio/wav"> <script>document.getElementById("preview-sound-132").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|133 |SOUND_REDLIGHTNING_ZAP {: .copyable } |<html> <body> <audio controls id="preview-sound-133"><source src="../sounds/sfx/133.wav" type="audio/wav"> <script>document.getElementById("preview-sound-133").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|134 |SOUND_REDLIGHTNING_ZAP_WEAK {: .copyable } |<html> <body> <audio controls id="preview-sound-134"><source src="../sounds/sfx/134.wav" type="audio/wav"> <script>document.getElementById("preview-sound-134").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|135 |SOUND_REDLIGHTNING_ZAP_STRONG {: .copyable } |<html> <body> <audio controls id="preview-sound-135"><source src="../sounds/sfx/135.wav" type="audio/wav"> <script>document.getElementById("preview-sound-135").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|136 |SOUND_REDLIGHTNING_ZAP_BURST {: .copyable } |<html> <body> <audio controls id="preview-sound-136"><source src="../sounds/sfx/136.wav" type="audio/wav"> <script>document.getElementById("preview-sound-136").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|137 |SOUND_ROCK_CRUMBLE {: .copyable } |<html> <body> <audio controls id="preview-sound-137"><source src="../sounds/sfx/137.wav" type="audio/wav"> <script>document.getElementById("preview-sound-137").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|138 |SOUND_POT_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-138"><source src="../sounds/sfx/138.wav" type="audio/wav"> <script>document.getElementById("preview-sound-138").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|139 |SOUND_MUSHROOM_POOF {: .copyable } |<html> <body> <audio controls id="preview-sound-139"><source src="../sounds/sfx/139.wav" type="audio/wav"> <script>document.getElementById("preview-sound-139").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|141 |SOUND_ROCKET_BLAST_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-141"><source src="../sounds/sfx/141.wav" type="audio/wav"> <script>document.getElementById("preview-sound-141").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|142 |SOUND_SMB_LARGE_CHEWS_4 {: .copyable } |<html> <body> <audio controls id="preview-sound-142"><source src="../sounds/sfx/142.wav" type="audio/wav"> <script>document.getElementById("preview-sound-142").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|143 |SOUND_SCARED_WHIMPER {: .copyable } |<html> <body> <audio controls id="preview-sound-143"><source src="../sounds/sfx/143.wav" type="audio/wav"> <script>document.getElementById("preview-sound-143").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|146 |SOUND_SHAKEY_KID_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-146"><source src="../sounds/sfx/146.wav" type="audio/wav"> <script>document.getElementById("preview-sound-146").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|149 |SOUND_SINK_DRAIN_GURGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-149"><source src="../sounds/sfx/149.wav" type="audio/wav"> <script>document.getElementById("preview-sound-149").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|150 |SOUND_TEARIMPACTS {: .copyable } |<html> <body> <audio controls id="preview-sound-150"><source src="../sounds/sfx/150.wav" type="audio/wav"> <script>document.getElementById("preview-sound-150").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|153 |SOUND_TEARS_FIRE {: .copyable } |<html> <body> <audio controls id="preview-sound-153"><source src="../sounds/sfx/153.wav" type="audio/wav"> <script>document.getElementById("preview-sound-153").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|156 |SOUND_UNLOCK00 {: .copyable } |<html> <body> <audio controls id="preview-sound-156"><source src="../sounds/sfx/156.wav" type="audio/wav"> <script>document.getElementById("preview-sound-156").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|157 |SOUND_VAMP_GULP {: .copyable } |<html> <body> <audio controls id="preview-sound-157"><source src="../sounds/sfx/157.wav" type="audio/wav"> <script>document.getElementById("preview-sound-157").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|158 |SOUND_WHEEZY_COUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-158"><source src="../sounds/sfx/158.wav" type="audio/wav"> <script>document.getElementById("preview-sound-158").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|159 |SOUND_SPIDER_COUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-159"><source src="../sounds/sfx/159.wav" type="audio/wav"> <script>document.getElementById("preview-sound-159").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|165 |SOUND_ZOMBIE_WALKER_KID {: .copyable } |<html> <body> <audio controls id="preview-sound-165"><source src="../sounds/sfx/165.wav" type="audio/wav"> <script>document.getElementById("preview-sound-165").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|166 |SOUND_ANIMAL_SQUISH {: .copyable } |<html> <body> <audio controls id="preview-sound-166"><source src="../sounds/sfx/166.wav" type="audio/wav"> <script>document.getElementById("preview-sound-166").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|167 |SOUND_ANGRY_GURGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-167"><source src="../sounds/sfx/167.wav" type="audio/wav"> <script>document.getElementById("preview-sound-167").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|169 |SOUND_BAND_AID_PICK_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-169"><source src="../sounds/sfx/169.wav" type="audio/wav"> <script>document.getElementById("preview-sound-169").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|170 |SOUND_BATTERYCHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-170"><source src="../sounds/sfx/170.wav" type="audio/wav"> <script>document.getElementById("preview-sound-170").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|171 |SOUND_BEEP {: .copyable } |<html> <body> <audio controls id="preview-sound-171"><source src="../sounds/sfx/171.wav" type="audio/wav"> <script>document.getElementById("preview-sound-171").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|172 |SOUND_LIGHTBOLT {: .copyable } |<html> <body> <audio controls id="preview-sound-172"><source src="../sounds/sfx/172.wav" type="audio/wav"> <script>document.getElementById("preview-sound-172").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|173 |SOUND_LIGHTBOLT_CHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-173"><source src="../sounds/sfx/173.wav" type="audio/wav"> <script>document.getElementById("preview-sound-173").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|175 |SOUND_BLOODBANK_SPAWN {: .copyable } |<html> <body> <audio controls id="preview-sound-175"><source src="../sounds/sfx/175.wav" type="audio/wav"> <script>document.getElementById("preview-sound-175").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|178 |SOUND_BLOODSHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-178"><source src="../sounds/sfx/178.wav" type="audio/wav"> <script>document.getElementById("preview-sound-178").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|181 |SOUND_BOIL_HATCH {: .copyable } |<html> <body> <audio controls id="preview-sound-181"><source src="../sounds/sfx/181.wav" type="audio/wav"> <script>document.getElementById("preview-sound-181").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|182 |SOUND_BOSS1_EXPLOSIONS {: .copyable } |<html> <body> <audio controls id="preview-sound-182"><source src="../sounds/sfx/182.wav" type="audio/wav"> <script>document.getElementById("preview-sound-182").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|183 |SOUND_EXPLOSION_WEAK {: .copyable } |<html> <body> <audio controls id="preview-sound-183"><source src="../sounds/sfx/183.wav" type="audio/wav"> <script>document.getElementById("preview-sound-183").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|184 |SOUND_EXPLOSION_STRONG {: .copyable } |<html> <body> <audio controls id="preview-sound-184"><source src="../sounds/sfx/184.wav" type="audio/wav"> <script>document.getElementById("preview-sound-184").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|185 |SOUND_BOSS2_BUBBLES {: .copyable } |<html> <body> <audio controls id="preview-sound-185"><source src="../sounds/sfx/185.wav" type="audio/wav"> <script>document.getElementById("preview-sound-185").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|186 |SOUND_EXPLOSION_DEBRIS {: .copyable } |<html> <body> <audio controls id="preview-sound-186"><source src="../sounds/sfx/186.wav" type="audio/wav"> <script>document.getElementById("preview-sound-186").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } |<html> <body> <audio controls id="preview-sound-187"><source src="../sounds/sfx/187.wav" type="audio/wav"> <script>document.getElementById("preview-sound-187").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } |<html> <body> <audio controls id="preview-sound-190"><source src="../sounds/sfx/190.wav" type="audio/wav"> <script>document.getElementById("preview-sound-190").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } |<html> <body> <audio controls id="preview-sound-194"><source src="../sounds/sfx/194.wav" type="audio/wav"> <script>document.getElementById("preview-sound-194").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|195 |SOUND_CHARACTER_SELECT_RIGHT {: .copyable } |<html> <body> <audio controls id="preview-sound-195"><source src="../sounds/sfx/195.wav" type="audio/wav"> <script>document.getElementById("preview-sound-195").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|197 |SOUND_DERP {: .copyable } |<html> <body> <audio controls id="preview-sound-197"><source src="../sounds/sfx/197.wav" type="audio/wav"> <script>document.getElementById("preview-sound-197").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } |<html> <body> <audio controls id="preview-sound-198"><source src="../sounds/sfx/198.wav" type="audio/wav"> <script>document.getElementById("preview-sound-198").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|199 |SOUND_DIMEPICKUP {: .copyable } |<html> <body> <audio controls id="preview-sound-199"><source src="../sounds/sfx/199.wav" type="audio/wav"> <script>document.getElementById("preview-sound-199").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|200 |SOUND_LUCKYPICKUP {: .copyable } |<html> <body> <audio controls id="preview-sound-200"><source src="../sounds/sfx/200.wav" type="audio/wav"> <script>document.getElementById("preview-sound-200").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|201 |SOUND_FETUS_FEET {: .copyable } |<html> <body> <audio controls id="preview-sound-201"><source src="../sounds/sfx/201.wav" type="audio/wav"> <script>document.getElementById("preview-sound-201").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|204 |SOUND_GOLDENKEY {: .copyable } |<html> <body> <audio controls id="preview-sound-204"><source src="../sounds/sfx/204.wav" type="audio/wav"> <script>document.getElementById("preview-sound-204").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|205 |SOUND_GOOATTACH0 {: .copyable } |<html> <body> <audio controls id="preview-sound-205"><source src="../sounds/sfx/205.wav" type="audio/wav"> <script>document.getElementById("preview-sound-205").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|207 |SOUND_GOODEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-207"><source src="../sounds/sfx/207.wav" type="audio/wav"> <script>document.getElementById("preview-sound-207").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|211 |SOUND_HAND_LASERS {: .copyable } |<html> <body> <audio controls id="preview-sound-211"><source src="../sounds/sfx/211.wav" type="audio/wav"> <script>document.getElementById("preview-sound-211").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|212 |SOUND_HEARTIN {: .copyable } |<html> <body> <audio controls id="preview-sound-212"><source src="../sounds/sfx/212.wav" type="audio/wav"> <script>document.getElementById("preview-sound-212").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|213 |SOUND_HEARTOUT {: .copyable } |<html> <body> <audio controls id="preview-sound-213"><source src="../sounds/sfx/213.wav" type="audio/wav"> <script>document.getElementById("preview-sound-213").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|214 |SOUND_HELL_PORTAL1 {: .copyable } |<html> <body> <audio controls id="preview-sound-214"><source src="../sounds/sfx/214.wav" type="audio/wav"> <script>document.getElementById("preview-sound-214").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|215 |SOUND_HELL_PORTAL2 {: .copyable } |<html> <body> <audio controls id="preview-sound-215"><source src="../sounds/sfx/215.wav" type="audio/wav"> <script>document.getElementById("preview-sound-215").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|217 |SOUND_ISAACDIES {: .copyable } |<html> <body> <audio controls id="preview-sound-217"><source src="../sounds/sfx/217.wav" type="audio/wav"> <script>document.getElementById("preview-sound-217").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|218 |SOUND_ITEMRECHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-218"><source src="../sounds/sfx/218.wav" type="audio/wav"> <script>document.getElementById("preview-sound-218").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|219 |SOUND_KISS_LIPS1 {: .copyable } |<html> <body> <audio controls id="preview-sound-219"><source src="../sounds/sfx/219.wav" type="audio/wav"> <script>document.getElementById("preview-sound-219").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|221 |SOUND_LEECH {: .copyable } |<html> <body> <audio controls id="preview-sound-221"><source src="../sounds/sfx/221.wav" type="audio/wav"> <script>document.getElementById("preview-sound-221").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|224 |SOUND_MAGGOTCHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-224"><source src="../sounds/sfx/224.wav" type="audio/wav"> <script>document.getElementById("preview-sound-224").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|226 |SOUND_MEATHEADSHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-226"><source src="../sounds/sfx/226.wav" type="audio/wav"> <script>document.getElementById("preview-sound-226").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|229 |SOUND_METAL_BLOCKBREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-229"><source src="../sounds/sfx/229.wav" type="audio/wav"> <script>document.getElementById("preview-sound-229").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|231 |SOUND_NICKELDROP {: .copyable } |<html> <body> <audio controls id="preview-sound-231"><source src="../sounds/sfx/231.wav" type="audio/wav"> <script>document.getElementById("preview-sound-231").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|232 |SOUND_NICKELPICKUP {: .copyable } |<html> <body> <audio controls id="preview-sound-232"><source src="../sounds/sfx/232.wav" type="audio/wav"> <script>document.getElementById("preview-sound-232").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|233 |SOUND_PENNYDROP {: .copyable } |<html> <body> <audio controls id="preview-sound-233"><source src="../sounds/sfx/233.wav" type="audio/wav"> <script>document.getElementById("preview-sound-233").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|234 |SOUND_PENNYPICKUP {: .copyable } |<html> <body> <audio controls id="preview-sound-234"><source src="../sounds/sfx/234.wav" type="audio/wav"> <script>document.getElementById("preview-sound-234").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|237 |SOUND_PLOP {: .copyable } |<html> <body> <audio controls id="preview-sound-237"><source src="../sounds/sfx/237.wav" type="audio/wav"> <script>document.getElementById("preview-sound-237").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|238 |SOUND_SATAN_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-238"><source src="../sounds/sfx/238.wav" type="audio/wav"> <script>document.getElementById("preview-sound-238").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|239 |SOUND_SATAN_BLAST {: .copyable } |<html> <body> <audio controls id="preview-sound-239"><source src="../sounds/sfx/239.wav" type="audio/wav"> <script>document.getElementById("preview-sound-239").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|240 |SOUND_SATAN_CHARGE_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-240"><source src="../sounds/sfx/240.wav" type="audio/wav"> <script>document.getElementById("preview-sound-240").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|241 |SOUND_SATAN_GROW {: .copyable } |<html> <body> <audio controls id="preview-sound-241"><source src="../sounds/sfx/241.wav" type="audio/wav"> <script>document.getElementById("preview-sound-241").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|242 |SOUND_SATAN_HURT {: .copyable } |<html> <body> <audio controls id="preview-sound-242"><source src="../sounds/sfx/242.wav" type="audio/wav"> <script>document.getElementById("preview-sound-242").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|243 |SOUND_SATAN_RISE_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-243"><source src="../sounds/sfx/243.wav" type="audio/wav"> <script>document.getElementById("preview-sound-243").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|245 |SOUND_SATAN_SPIT {: .copyable } |<html> <body> <audio controls id="preview-sound-245"><source src="../sounds/sfx/245.wav" type="audio/wav"> <script>document.getElementById("preview-sound-245").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|246 |SOUND_SATAN_STOMP {: .copyable } |<html> <body> <audio controls id="preview-sound-246"><source src="../sounds/sfx/246.wav" type="audio/wav"> <script>document.getElementById("preview-sound-246").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|249 |SOUND_SCAMPER {: .copyable } |<html> <body> <audio controls id="preview-sound-249"><source src="../sounds/sfx/249.wav" type="audio/wav"> <script>document.getElementById("preview-sound-249").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|252 |SOUND_SHELLGAME {: .copyable } |<html> <body> <audio controls id="preview-sound-252"><source src="../sounds/sfx/252.wav" type="audio/wav"> <script>document.getElementById("preview-sound-252").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|255 |SOUND_SLOTSPAWN {: .copyable } |<html> <body> <audio controls id="preview-sound-255"><source src="../sounds/sfx/255.wav" type="audio/wav"> <script>document.getElementById("preview-sound-255").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|258 |SOUND_SPLATTER {: .copyable } |<html> <body> <audio controls id="preview-sound-258"><source src="../sounds/sfx/258.wav" type="audio/wav"> <script>document.getElementById("preview-sound-258").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|261 |SOUND_STEAM_HALFSEC {: .copyable } |<html> <body> <audio controls id="preview-sound-261"><source src="../sounds/sfx/261.wav" type="audio/wav"> <script>document.getElementById("preview-sound-261").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|262 |SOUND_STONESHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-262"><source src="../sounds/sfx/262.wav" type="audio/wav"> <script>document.getElementById("preview-sound-262").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|263 |SOUND_WEIRD_WORM_SPIT {: .copyable } |<html> <body> <audio controls id="preview-sound-263"><source src="../sounds/sfx/263.wav" type="audio/wav"> <script>document.getElementById("preview-sound-263").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|265 |SOUND_SUMMONSOUND {: .copyable } |<html> <body> <audio controls id="preview-sound-265"><source src="../sounds/sfx/265.wav" type="audio/wav"> <script>document.getElementById("preview-sound-265").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|266 |SOUND_SUPERHOLY {: .copyable } |<html> <body> <audio controls id="preview-sound-266"><source src="../sounds/sfx/266.wav" type="audio/wav"> <script>document.getElementById("preview-sound-266").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|267 |SOUND_THUMBS_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-267"><source src="../sounds/sfx/267.wav" type="audio/wav"> <script>document.getElementById("preview-sound-267").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|268 |SOUND_THUMBSUP {: .copyable } |<html> <body> <audio controls id="preview-sound-268"><source src="../sounds/sfx/268.wav" type="audio/wav"> <script>document.getElementById("preview-sound-268").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|269 |SOUND_FIRE_BURN {: .copyable } |<html> <body> <audio controls id="preview-sound-269"><source src="../sounds/sfx/269.wav" type="audio/wav"> <script>document.getElementById("preview-sound-269").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|270 |SOUND_HAPPY_RAINBOW {: .copyable } |<html> <body> <audio controls id="preview-sound-270"><source src="../sounds/sfx/270.wav" type="audio/wav"> <script>document.getElementById("preview-sound-270").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|271 |SOUND_LASERRING {: .copyable } |<html> <body> <audio controls id="preview-sound-271"><source src="../sounds/sfx/271.wav" type="audio/wav"> <script>document.getElementById("preview-sound-271").volume = 0.2</script> </body> </html>| new (ab) |
+|[ ](#){: .rep .tooltip .badge }|272 |SOUND_LASERRING_WEAK {: .copyable } |<html> <body> <audio controls id="preview-sound-272"><source src="../sounds/sfx/272.wav" type="audio/wav"> <script>document.getElementById("preview-sound-272").volume = 0.2</script> </body> </html>| new (ab) |
+|[ ](#){: .rep .tooltip .badge }|273 |SOUND_LASERRING_STRONG {: .copyable } |<html> <body> <audio controls id="preview-sound-273"><source src="../sounds/sfx/273.wav" type="audio/wav"> <script>document.getElementById("preview-sound-273").volume = 0.2</script> </body> </html>| new (ab) |
+|[ ](#){: .rep .tooltip .badge }|274 |SOUND_CASH_REGISTER {: .copyable } |<html> <body> <audio controls id="preview-sound-274"><source src="../sounds/sfx/274.wav" type="audio/wav"> <script>document.getElementById("preview-sound-274").volume = 0.2</script> </body> </html>| new (ab+) |
+|[ ](#){: .rep .tooltip .badge }|275 |SOUND_ANGEL_WING {: .copyable } |<html> <body> <audio controls id="preview-sound-275"><source src="../sounds/sfx/275.wav" type="audio/wav"> <script>document.getElementById("preview-sound-275").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|276 |SOUND_ANGEL_BEAM {: .copyable } |<html> <body> <audio controls id="preview-sound-276"><source src="../sounds/sfx/276.wav" type="audio/wav"> <script>document.getElementById("preview-sound-276").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|277 |SOUND_HOLY_MANTLE {: .copyable } |<html> <body> <audio controls id="preview-sound-277"><source src="../sounds/sfx/277.wav" type="audio/wav"> <script>document.getElementById("preview-sound-277").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|278 |SOUND_MEGA_BLAST_START {: .copyable } |<html> <body> <audio controls id="preview-sound-278"><source src="../sounds/sfx/278.wav" type="audio/wav"> <script>document.getElementById("preview-sound-278").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|279 |SOUND_MEGA_BLAST_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-279"><source src="../sounds/sfx/279.wav" type="audio/wav"> <script>document.getElementById("preview-sound-279").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|280 |SOUND_MEGA_BLAST_END {: .copyable } |<html> <body> <audio controls id="preview-sound-280"><source src="../sounds/sfx/280.wav" type="audio/wav"> <script>document.getElementById("preview-sound-280").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|281 |SOUND_BLOOD_LASER_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-281"><source src="../sounds/sfx/281.wav" type="audio/wav"> <script>document.getElementById("preview-sound-281").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|282 |SOUND_MENU_SCROLL {: .copyable } |<html> <body> <audio controls id="preview-sound-282"><source src="../sounds/sfx/282.wav" type="audio/wav"> <script>document.getElementById("preview-sound-282").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|283 |SOUND_MENU_NOTE_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-283"><source src="../sounds/sfx/283.wav" type="audio/wav"> <script>document.getElementById("preview-sound-283").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|284 |SOUND_MENU_NOTE_HIDE {: .copyable } |<html> <body> <audio controls id="preview-sound-284"><source src="../sounds/sfx/284.wav" type="audio/wav"> <script>document.getElementById("preview-sound-284").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|285 |SOUND_MENU_CHARACTER_SELECT {: .copyable } |  |  |
+|[ ](#){: .rep .tooltip .badge }|286 |SOUND_SUMMON_POOF {: .copyable } |<html> <body> <audio controls id="preview-sound-286"><source src="../sounds/sfx/286.wav" type="audio/wav"> <script>document.getElementById("preview-sound-286").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|300 |SOUND_BOO_MAD {: .copyable } |<html> <body> <audio controls id="preview-sound-300"><source src="../sounds/sfx/300.wav" type="audio/wav"> <script>document.getElementById("preview-sound-300").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|301 |SOUND_FART_GURG {: .copyable } |<html> <body> <audio controls id="preview-sound-301"><source src="../sounds/sfx/301.wav" type="audio/wav"> <script>document.getElementById("preview-sound-301").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|302 |SOUND_FAT_GRUNT {: .copyable } |<html> <body> <audio controls id="preview-sound-302"><source src="../sounds/sfx/302.wav" type="audio/wav"> <script>document.getElementById("preview-sound-302").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|303 |SOUND_FAT_WIGGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-303"><source src="../sounds/sfx/303.wav" type="audio/wav"> <script>document.getElementById("preview-sound-303").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|304 |SOUND_FIRE_RUSH {: .copyable } |<html> <body> <audio controls id="preview-sound-304"><source src="../sounds/sfx/304.wav" type="audio/wav"> <script>document.getElementById("preview-sound-304").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|305 |SOUND_GHOST_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-305"><source src="../sounds/sfx/305.wav" type="audio/wav"> <script>document.getElementById("preview-sound-305").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|306 |SOUND_GHOST_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-306"><source src="../sounds/sfx/306.wav" type="audio/wav"> <script>document.getElementById("preview-sound-306").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|307 |SOUND_GRROOWL {: .copyable } |<html> <body> <audio controls id="preview-sound-307"><source src="../sounds/sfx/307.wav" type="audio/wav"> <script>document.getElementById("preview-sound-307").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|308 |SOUND_GURG_BARF {: .copyable } |<html> <body> <audio controls id="preview-sound-308"><source src="../sounds/sfx/308.wav" type="audio/wav"> <script>document.getElementById("preview-sound-308").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|309 |SOUND_INHALE {: .copyable } |<html> <body> <audio controls id="preview-sound-309"><source src="../sounds/sfx/309.wav" type="audio/wav"> <script>document.getElementById("preview-sound-309").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|310 |SOUND_LOW_INHALE {: .copyable } |<html> <body> <audio controls id="preview-sound-310"><source src="../sounds/sfx/310.wav" type="audio/wav"> <script>document.getElementById("preview-sound-310").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|311 |SOUND_MEGA_PUKE {: .copyable } |<html> <body> <audio controls id="preview-sound-311"><source src="../sounds/sfx/311.wav" type="audio/wav"> <script>document.getElementById("preview-sound-311").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|312 |SOUND_MOUTH_FULL {: .copyable } |<html> <body> <audio controls id="preview-sound-312"><source src="../sounds/sfx/312.wav" type="audio/wav"> <script>document.getElementById("preview-sound-312").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|313 |SOUND_MULTI_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-313"><source src="../sounds/sfx/313.wav" type="audio/wav"> <script>document.getElementById("preview-sound-313").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|314 |SOUND_SKIN_PULL {: .copyable } |<html> <body> <audio controls id="preview-sound-314"><source src="../sounds/sfx/314.wav" type="audio/wav"> <script>document.getElementById("preview-sound-314").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|315 |SOUND_WHISTLE {: .copyable } |<html> <body> <audio controls id="preview-sound-315"><source src="../sounds/sfx/315.wav" type="audio/wav"> <script>document.getElementById("preview-sound-315").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|316 |SOUND_DEVILROOM_DEAL {: .copyable } |<html> <body> <audio controls id="preview-sound-316"><source src="../sounds/sfx/316.wav" type="audio/wav"> <script>document.getElementById("preview-sound-316").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|317 |SOUND_SPIDER_SPIT_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-317"><source src="../sounds/sfx/317.wav" type="audio/wav"> <script>document.getElementById("preview-sound-317").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|318 |SOUND_WORM_SPIT {: .copyable } |<html> <body> <audio controls id="preview-sound-318"><source src="../sounds/sfx/318.wav" type="audio/wav"> <script>document.getElementById("preview-sound-318").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|319 |SOUND_LITTLE_SPIT {: .copyable } |<html> <body> <audio controls id="preview-sound-319"><source src="../sounds/sfx/319.wav" type="audio/wav"> <script>document.getElementById("preview-sound-319").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|320 |SOUND_SATAN_ROOM_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-320"><source src="../sounds/sfx/320.wav" type="audio/wav"> <script>document.getElementById("preview-sound-320").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|321 |SOUND_HEARTBEAT {: .copyable } |<html> <body> <audio controls id="preview-sound-321"><source src="../sounds/sfx/321.wav" type="audio/wav"> <script>document.getElementById("preview-sound-321").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|322 |SOUND_HEARTBEAT_FASTER {: .copyable } |<html> <body> <audio controls id="preview-sound-322"><source src="../sounds/sfx/322.wav" type="audio/wav"> <script>document.getElementById("preview-sound-322").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|323 |SOUND_HEARTBEAT_FASTEST {: .copyable } |<html> <body> <audio controls id="preview-sound-323"><source src="../sounds/sfx/323.wav" type="audio/wav"> <script>document.getElementById("preview-sound-323").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|324 |SOUND_48_HR_ENERGY {: .copyable } |<html> <body> <audio controls id="preview-sound-324"><source src="../sounds/sfx/324.wav" type="audio/wav"> <script>document.getElementById("preview-sound-324").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|325 |SOUND_ALGIZ {: .copyable } |<html> <body> <audio controls id="preview-sound-325"><source src="../sounds/sfx/325.wav" type="audio/wav"> <script>document.getElementById("preview-sound-325").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|326 |SOUND_AMNESIA {: .copyable } |<html> <body> <audio controls id="preview-sound-326"><source src="../sounds/sfx/326.wav" type="audio/wav"> <script>document.getElementById("preview-sound-326").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|327 |SOUND_ANZUS {: .copyable } |<html> <body> <audio controls id="preview-sound-327"><source src="../sounds/sfx/327.wav" type="audio/wav"> <script>document.getElementById("preview-sound-327").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|328 |SOUND_BAD_GAS {: .copyable } |<html> <body> <audio controls id="preview-sound-328"><source src="../sounds/sfx/328.wav" type="audio/wav"> <script>document.getElementById("preview-sound-328").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|329 |SOUND_BAD_TRIP {: .copyable } |<html> <body> <audio controls id="preview-sound-329"><source src="../sounds/sfx/329.wav" type="audio/wav"> <script>document.getElementById("preview-sound-329").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|330 |SOUND_BALLS_OF_STEEL {: .copyable } |<html> <body> <audio controls id="preview-sound-330"><source src="../sounds/sfx/330.wav" type="audio/wav"> <script>document.getElementById("preview-sound-330").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|331 |SOUND_BERKANO {: .copyable } |<html> <body> <audio controls id="preview-sound-331"><source src="../sounds/sfx/331.wav" type="audio/wav"> <script>document.getElementById("preview-sound-331").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|332 |SOUND_BOMBS_ARE_KEY {: .copyable } |<html> <body> <audio controls id="preview-sound-332"><source src="../sounds/sfx/332.wav" type="audio/wav"> <script>document.getElementById("preview-sound-332").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|333 |SOUND_CARD_VS_HUMAN {: .copyable } |<html> <body> <audio controls id="preview-sound-333"><source src="../sounds/sfx/333.wav" type="audio/wav"> <script>document.getElementById("preview-sound-333").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|334 |SOUND_CHAOS_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-334"><source src="../sounds/sfx/334.wav" type="audio/wav"> <script>document.getElementById("preview-sound-334").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|335 |SOUND_CREDIT_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-335"><source src="../sounds/sfx/335.wav" type="audio/wav"> <script>document.getElementById("preview-sound-335").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|336 |SOUND_DAGAZ {: .copyable } |<html> <body> <audio controls id="preview-sound-336"><source src="../sounds/sfx/336.wav" type="audio/wav"> <script>document.getElementById("preview-sound-336").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|337 |SOUND_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-337"><source src="../sounds/sfx/337.wav" type="audio/wav"> <script>document.getElementById("preview-sound-337").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|338 |SOUND_EHWAZ {: .copyable } |<html> <body> <audio controls id="preview-sound-338"><source src="../sounds/sfx/338.wav" type="audio/wav"> <script>document.getElementById("preview-sound-338").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|339 |SOUND_EXPLOSIVE_DIAH {: .copyable } |<html> <body> <audio controls id="preview-sound-339"><source src="../sounds/sfx/339.wav" type="audio/wav"> <script>document.getElementById("preview-sound-339").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|340 |SOUND_FULL_HP {: .copyable } |<html> <body> <audio controls id="preview-sound-340"><source src="../sounds/sfx/340.wav" type="audio/wav"> <script>document.getElementById("preview-sound-340").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|341 |SOUND_HAGALAZ {: .copyable } |<html> <body> <audio controls id="preview-sound-341"><source src="../sounds/sfx/341.wav" type="audio/wav"> <script>document.getElementById("preview-sound-341").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|342 |SOUND_HP_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-342"><source src="../sounds/sfx/342.wav" type="audio/wav"> <script>document.getElementById("preview-sound-342").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|343 |SOUND_HP_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-343"><source src="../sounds/sfx/343.wav" type="audio/wav"> <script>document.getElementById("preview-sound-343").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|344 |SOUND_HEMATEMISIS {: .copyable } |<html> <body> <audio controls id="preview-sound-344"><source src="../sounds/sfx/344.wav" type="audio/wav"> <script>document.getElementById("preview-sound-344").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|345 |SOUND_I_FOUND_PILLS {: .copyable } |<html> <body> <audio controls id="preview-sound-345"><source src="../sounds/sfx/345.wav" type="audio/wav"> <script>document.getElementById("preview-sound-345").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|346 |SOUND_JERA {: .copyable } |<html> <body> <audio controls id="preview-sound-346"><source src="../sounds/sfx/346.wav" type="audio/wav"> <script>document.getElementById("preview-sound-346").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|347 |SOUND_JOKER {: .copyable } |<html> <body> <audio controls id="preview-sound-347"><source src="../sounds/sfx/347.wav" type="audio/wav"> <script>document.getElementById("preview-sound-347").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|348 |SOUND_JUDGEMENT {: .copyable } |<html> <body> <audio controls id="preview-sound-348"><source src="../sounds/sfx/348.wav" type="audio/wav"> <script>document.getElementById("preview-sound-348").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|349 |SOUND_JUSTICE {: .copyable } |<html> <body> <audio controls id="preview-sound-349"><source src="../sounds/sfx/349.wav" type="audio/wav"> <script>document.getElementById("preview-sound-349").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|350 |SOUND_LEMON_PARTY {: .copyable } |<html> <body> <audio controls id="preview-sound-350"><source src="../sounds/sfx/350.wav" type="audio/wav"> <script>document.getElementById("preview-sound-350").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|351 |SOUND_LUCK_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-351"><source src="../sounds/sfx/351.wav" type="audio/wav"> <script>document.getElementById("preview-sound-351").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|352 |SOUND_LUCK_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-352"><source src="../sounds/sfx/352.wav" type="audio/wav"> <script>document.getElementById("preview-sound-352").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|353 |SOUND_PARALYSIS {: .copyable } |<html> <body> <audio controls id="preview-sound-353"><source src="../sounds/sfx/353.wav" type="audio/wav"> <script>document.getElementById("preview-sound-353").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|354 |SOUND_PERTHRO {: .copyable } |<html> <body> <audio controls id="preview-sound-354"><source src="../sounds/sfx/354.wav" type="audio/wav"> <script>document.getElementById("preview-sound-354").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|355 |SOUND_PHEROMONES {: .copyable } |<html> <body> <audio controls id="preview-sound-355"><source src="../sounds/sfx/355.wav" type="audio/wav"> <script>document.getElementById("preview-sound-355").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|356 |SOUND_PRETTY_FLY {: .copyable } |<html> <body> <audio controls id="preview-sound-356"><source src="../sounds/sfx/356.wav" type="audio/wav"> <script>document.getElementById("preview-sound-356").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|357 |SOUND_PUBERTY {: .copyable } |<html> <body> <audio controls id="preview-sound-357"><source src="../sounds/sfx/357.wav" type="audio/wav"> <script>document.getElementById("preview-sound-357").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|358 |SOUND_RUA_WIZ {: .copyable } |<html> <body> <audio controls id="preview-sound-358"><source src="../sounds/sfx/358.wav" type="audio/wav"> <script>document.getElementById("preview-sound-358").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|359 |SOUND_RANGE_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-359"><source src="../sounds/sfx/359.wav" type="audio/wav"> <script>document.getElementById("preview-sound-359").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|360 |SOUND_RANGE_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-360"><source src="../sounds/sfx/360.wav" type="audio/wav"> <script>document.getElementById("preview-sound-360").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|361 |SOUND_RULES_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-361"><source src="../sounds/sfx/361.wav" type="audio/wav"> <script>document.getElementById("preview-sound-361").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|362 |SOUND_SEE_4EVER {: .copyable } |<html> <body> <audio controls id="preview-sound-362"><source src="../sounds/sfx/362.wav" type="audio/wav"> <script>document.getElementById("preview-sound-362").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|363 |SOUND_SPEED_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-363"><source src="../sounds/sfx/363.wav" type="audio/wav"> <script>document.getElementById("preview-sound-363").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|364 |SOUND_SPEED_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-364"><source src="../sounds/sfx/364.wav" type="audio/wav"> <script>document.getElementById("preview-sound-364").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|365 |SOUND_STRENGTH {: .copyable } |<html> <body> <audio controls id="preview-sound-365"><source src="../sounds/sfx/365.wav" type="audio/wav"> <script>document.getElementById("preview-sound-365").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|366 |SOUND_SUICIDE_KING {: .copyable } |<html> <body> <audio controls id="preview-sound-366"><source src="../sounds/sfx/366.wav" type="audio/wav"> <script>document.getElementById("preview-sound-366").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|367 |SOUND_TEARS_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-367"><source src="../sounds/sfx/367.wav" type="audio/wav"> <script>document.getElementById("preview-sound-367").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|368 |SOUND_TEARS_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-368"><source src="../sounds/sfx/368.wav" type="audio/wav"> <script>document.getElementById("preview-sound-368").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|369 |SOUND_TELEPILLS {: .copyable } |<html> <body> <audio controls id="preview-sound-369"><source src="../sounds/sfx/369.wav" type="audio/wav"> <script>document.getElementById("preview-sound-369").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|370 |SOUND_TEMPERANCE {: .copyable } |<html> <body> <audio controls id="preview-sound-370"><source src="../sounds/sfx/370.wav" type="audio/wav"> <script>document.getElementById("preview-sound-370").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|371 |SOUND_THE_CHARIOT {: .copyable } |<html> <body> <audio controls id="preview-sound-371"><source src="../sounds/sfx/371.wav" type="audio/wav"> <script>document.getElementById("preview-sound-371").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|372 |SOUND_THE_DEVIL {: .copyable } |<html> <body> <audio controls id="preview-sound-372"><source src="../sounds/sfx/372.wav" type="audio/wav"> <script>document.getElementById("preview-sound-372").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|373 |SOUND_THE_EMPEROR {: .copyable } |<html> <body> <audio controls id="preview-sound-373"><source src="../sounds/sfx/373.wav" type="audio/wav"> <script>document.getElementById("preview-sound-373").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|374 |SOUND_EMPRESS {: .copyable } |<html> <body> <audio controls id="preview-sound-374"><source src="../sounds/sfx/374.wav" type="audio/wav"> <script>document.getElementById("preview-sound-374").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|375 |SOUND_FOOL {: .copyable } |<html> <body> <audio controls id="preview-sound-375"><source src="../sounds/sfx/375.wav" type="audio/wav"> <script>document.getElementById("preview-sound-375").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|376 |SOUND_HANGED_MAN {: .copyable } |<html> <body> <audio controls id="preview-sound-376"><source src="../sounds/sfx/376.wav" type="audio/wav"> <script>document.getElementById("preview-sound-376").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|377 |SOUND_HERMIT {: .copyable } |<html> <body> <audio controls id="preview-sound-377"><source src="../sounds/sfx/377.wav" type="audio/wav"> <script>document.getElementById("preview-sound-377").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|378 |SOUND_HIEROPHANT {: .copyable } |<html> <body> <audio controls id="preview-sound-378"><source src="../sounds/sfx/378.wav" type="audio/wav"> <script>document.getElementById("preview-sound-378").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|379 |SOUND_HIGHT_PRIESTESS {: .copyable } |<html> <body> <audio controls id="preview-sound-379"><source src="../sounds/sfx/379.wav" type="audio/wav"> <script>document.getElementById("preview-sound-379").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|380 |SOUND_THE_LOVERS {: .copyable } |<html> <body> <audio controls id="preview-sound-380"><source src="../sounds/sfx/380.wav" type="audio/wav"> <script>document.getElementById("preview-sound-380").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|381 |SOUND_MAGICIAN {: .copyable } |<html> <body> <audio controls id="preview-sound-381"><source src="../sounds/sfx/381.wav" type="audio/wav"> <script>document.getElementById("preview-sound-381").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|382 |SOUND_MOON {: .copyable } |<html> <body> <audio controls id="preview-sound-382"><source src="../sounds/sfx/382.wav" type="audio/wav"> <script>document.getElementById("preview-sound-382").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|383 |SOUND_STARS {: .copyable } |<html> <body> <audio controls id="preview-sound-383"><source src="../sounds/sfx/383.wav" type="audio/wav"> <script>document.getElementById("preview-sound-383").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|384 |SOUND_SUN {: .copyable } |<html> <body> <audio controls id="preview-sound-384"><source src="../sounds/sfx/384.wav" type="audio/wav"> <script>document.getElementById("preview-sound-384").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|385 |SOUND_TOWER {: .copyable } |<html> <body> <audio controls id="preview-sound-385"><source src="../sounds/sfx/385.wav" type="audio/wav"> <script>document.getElementById("preview-sound-385").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|386 |SOUND_WORLD {: .copyable } |<html> <body> <audio controls id="preview-sound-386"><source src="../sounds/sfx/386.wav" type="audio/wav"> <script>document.getElementById("preview-sound-386").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|387 |SOUND_TWO_CLUBS {: .copyable } |<html> <body> <audio controls id="preview-sound-387"><source src="../sounds/sfx/387.wav" type="audio/wav"> <script>document.getElementById("preview-sound-387").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|388 |SOUND_TWO_DIAMONDS {: .copyable } |<html> <body> <audio controls id="preview-sound-388"><source src="../sounds/sfx/388.wav" type="audio/wav"> <script>document.getElementById("preview-sound-388").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|389 |SOUND_TWO_HEARTS {: .copyable } |<html> <body> <audio controls id="preview-sound-389"><source src="../sounds/sfx/389.wav" type="audio/wav"> <script>document.getElementById("preview-sound-389").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|390 |SOUND_TWO_SPADES {: .copyable } |<html> <body> <audio controls id="preview-sound-390"><source src="../sounds/sfx/390.wav" type="audio/wav"> <script>document.getElementById("preview-sound-390").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|391 |SOUND_WHEEL_OF_FORTUNE {: .copyable } |<html> <body> <audio controls id="preview-sound-391"><source src="../sounds/sfx/391.wav" type="audio/wav"> <script>document.getElementById("preview-sound-391").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|392 |SOUND_RAGMAN_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-392"><source src="../sounds/sfx/392.wav" type="audio/wav"> <script>document.getElementById("preview-sound-392").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|393 |SOUND_RAGMAN_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-393"><source src="../sounds/sfx/393.wav" type="audio/wav"> <script>document.getElementById("preview-sound-393").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|394 |SOUND_RAGMAN_3 {: .copyable } |<html> <body> <audio controls id="preview-sound-394"><source src="../sounds/sfx/394.wav" type="audio/wav"> <script>document.getElementById("preview-sound-394").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|395 |SOUND_RAGMAN_4 {: .copyable } |<html> <body> <audio controls id="preview-sound-395"><source src="../sounds/sfx/395.wav" type="audio/wav"> <script>document.getElementById("preview-sound-395").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|396 |SOUND_FLUSH {: .copyable } |<html> <body> <audio controls id="preview-sound-396"><source src="../sounds/sfx/396.wav" type="audio/wav"> <script>document.getElementById("preview-sound-396").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|397 |SOUND_WATER_DROP {: .copyable } |<html> <body> <audio controls id="preview-sound-397"><source src="../sounds/sfx/397.wav" type="audio/wav"> <script>document.getElementById("preview-sound-397").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|398 |SOUND_WET_FEET {: .copyable } |<html> <body> <audio controls id="preview-sound-398"><source src="../sounds/sfx/398.wav" type="audio/wav"> <script>document.getElementById("preview-sound-398").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|399 |SOUND_ADDICTED {: .copyable } |<html> <body> <audio controls id="preview-sound-399"><source src="../sounds/sfx/399.wav" type="audio/wav"> <script>document.getElementById("preview-sound-399").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|400 |SOUND_DICE_SHARD {: .copyable } |<html> <body> <audio controls id="preview-sound-400"><source src="../sounds/sfx/400.wav" type="audio/wav"> <script>document.getElementById("preview-sound-400").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|401 |SOUND_EMERGENCY {: .copyable } |<html> <body> <audio controls id="preview-sound-401"><source src="../sounds/sfx/401.wav" type="audio/wav"> <script>document.getElementById("preview-sound-401").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|402 |SOUND_INFESTED_EXCL {: .copyable } |<html> <body> <audio controls id="preview-sound-402"><source src="../sounds/sfx/402.wav" type="audio/wav"> <script>document.getElementById("preview-sound-402").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|403 |SOUND_INFESTED_QUEST {: .copyable } |<html> <body> <audio controls id="preview-sound-403"><source src="../sounds/sfx/403.wav" type="audio/wav"> <script>document.getElementById("preview-sound-403").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|404 |SOUND_JAIL_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-404"><source src="../sounds/sfx/404.wav" type="audio/wav"> <script>document.getElementById("preview-sound-404").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|405 |SOUND_LARGER {: .copyable } |<html> <body> <audio controls id="preview-sound-405"><source src="../sounds/sfx/405.wav" type="audio/wav"> <script>document.getElementById("preview-sound-405").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|406 |SOUND_PERCS {: .copyable } |<html> <body> <audio controls id="preview-sound-406"><source src="../sounds/sfx/406.wav" type="audio/wav"> <script>document.getElementById("preview-sound-406").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|407 |SOUND_POWER_PILL {: .copyable } |<html> <body> <audio controls id="preview-sound-407"><source src="../sounds/sfx/407.wav" type="audio/wav"> <script>document.getElementById("preview-sound-407").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|408 |SOUND_QUESTION_MARK {: .copyable } |<html> <body> <audio controls id="preview-sound-408"><source src="../sounds/sfx/408.wav" type="audio/wav"> <script>document.getElementById("preview-sound-408").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|409 |SOUND_RELAX {: .copyable } |<html> <body> <audio controls id="preview-sound-409"><source src="../sounds/sfx/409.wav" type="audio/wav"> <script>document.getElementById("preview-sound-409").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|410 |SOUND_RETRO {: .copyable } |<html> <body> <audio controls id="preview-sound-410"><source src="../sounds/sfx/410.wav" type="audio/wav"> <script>document.getElementById("preview-sound-410").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|411 |SOUND_SMALL {: .copyable } |<html> <body> <audio controls id="preview-sound-411"><source src="../sounds/sfx/411.wav" type="audio/wav"> <script>document.getElementById("preview-sound-411").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|412 |SOUND_QQQ {: .copyable } |<html> <body> <audio controls id="preview-sound-412"><source src="../sounds/sfx/412.wav" type="audio/wav"> <script>document.getElementById("preview-sound-412").volume = 0.2</script> </body> </html>| ??? pill |
+|[ ](#){: .abrep .tooltip .badge }|413 |SOUND_DANGLE_WHISTLE {: .copyable } |<html> <body> <audio controls id="preview-sound-413"><source src="../sounds/sfx/413.wav" type="audio/wav"> <script>document.getElementById("preview-sound-413").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|414 |SOUND_LITTLE_HORN_COUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-414"><source src="../sounds/sfx/414.wav" type="audio/wav"> <script>document.getElementById("preview-sound-414").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|415 |SOUND_LITTLE_HORN_GRUNT_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-415"><source src="../sounds/sfx/415.wav" type="audio/wav"> <script>document.getElementById("preview-sound-415").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|416 |SOUND_LITTLE_HORN_GRUNT_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-416"><source src="../sounds/sfx/416.wav" type="audio/wav"> <script>document.getElementById("preview-sound-416").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|417 |SOUND_THE_FORSAKEN_LAUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-417"><source src="../sounds/sfx/417.wav" type="audio/wav"> <script>document.getElementById("preview-sound-417").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|418 |SOUND_THE_FORSAKEN_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-418"><source src="../sounds/sfx/418.wav" type="audio/wav"> <script>document.getElementById("preview-sound-418").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|419 |SOUND_THE_STAIN_BURST {: .copyable } |<html> <body> <audio controls id="preview-sound-419"><source src="../sounds/sfx/419.wav" type="audio/wav"> <script>document.getElementById("preview-sound-419").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|420 |SOUND_BROWNIE_LAUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-420"><source src="../sounds/sfx/420.wav" type="audio/wav"> <script>document.getElementById("preview-sound-420").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|421 |SOUND_HUSH_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-421"><source src="../sounds/sfx/421.wav" type="audio/wav"> <script>document.getElementById("preview-sound-421").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|422 |SOUND_HUSH_GROWL {: .copyable } |<html> <body> <audio controls id="preview-sound-422"><source src="../sounds/sfx/422.wav" type="audio/wav"> <script>document.getElementById("preview-sound-422").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|423 |SOUND_HUSH_LOW_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-423"><source src="../sounds/sfx/423.wav" type="audio/wav"> <script>document.getElementById("preview-sound-423").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|424 |SOUND_FRAIL_CHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-424"><source src="../sounds/sfx/424.wav" type="audio/wav"> <script>document.getElementById("preview-sound-424").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|425 |SOUND_HUSH_CHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-425"><source src="../sounds/sfx/425.wav" type="audio/wav"> <script>document.getElementById("preview-sound-425").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|426 |SOUND_MAW_OF_VOID {: .copyable } |<html> <body> <audio controls id="preview-sound-426"><source src="../sounds/sfx/426.wav" type="audio/wav"> <script>document.getElementById("preview-sound-426").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|427 |SOUND_ULTRA_GREED_COIN_DESTROY {: .copyable } |<html> <body> <audio controls id="preview-sound-427"><source src="../sounds/sfx/427.wav" type="audio/wav"> <script>document.getElementById("preview-sound-427").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|428 |SOUND_ULTRA_GREED_COINS_FALLING {: .copyable } |<html> <body> <audio controls id="preview-sound-428"><source src="../sounds/sfx/428.wav" type="audio/wav"> <script>document.getElementById("preview-sound-428").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|429 |SOUND_ULTRA_GREED_DEATH_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-429"><source src="../sounds/sfx/429.wav" type="audio/wav"> <script>document.getElementById("preview-sound-429").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|430 |SOUND_ULTRA_GREED_TURN_GOLD_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-430"><source src="../sounds/sfx/430.wav" type="audio/wav"> <script>document.getElementById("preview-sound-430").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|431 |SOUND_ULTRA_GREED_TURN_GOLD_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-431"><source src="../sounds/sfx/431.wav" type="audio/wav"> <script>document.getElementById("preview-sound-431").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|432 |SOUND_ULTRA_GREED_ROAR_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-432"><source src="../sounds/sfx/432.wav" type="audio/wav"> <script>document.getElementById("preview-sound-432").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|433 |SOUND_ULTRA_GREED_ROAR_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-433"><source src="../sounds/sfx/433.wav" type="audio/wav"> <script>document.getElementById("preview-sound-433").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|434 |SOUND_ULTRA_GREED_SPIT {: .copyable } |<html> <body> <audio controls id="preview-sound-434"><source src="../sounds/sfx/434.wav" type="audio/wav"> <script>document.getElementById("preview-sound-434").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|435 |SOUND_ULTRA_GREED_PULL_SLOT {: .copyable } |<html> <body> <audio controls id="preview-sound-435"><source src="../sounds/sfx/435.wav" type="audio/wav"> <script>document.getElementById("preview-sound-435").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|436 |SOUND_ULTRA_GREED_SLOT_SPIN_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-436"><source src="../sounds/sfx/436.wav" type="audio/wav"> <script>document.getElementById("preview-sound-436").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|437 |SOUND_ULTRA_GREED_SLOT_STOP {: .copyable } |<html> <body> <audio controls id="preview-sound-437"><source src="../sounds/sfx/437.wav" type="audio/wav"> <script>document.getElementById("preview-sound-437").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|438 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP_END {: .copyable } |<html> <body> <audio controls id="preview-sound-438"><source src="../sounds/sfx/438.wav" type="audio/wav"> <script>document.getElementById("preview-sound-438").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|439 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-439"><source src="../sounds/sfx/439.wav" type="audio/wav"> <script>document.getElementById("preview-sound-439").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|440 |SOUND_ULTRA_GREED_SPINNING {: .copyable } |<html> <body> <audio controls id="preview-sound-440"><source src="../sounds/sfx/440.wav" type="audio/wav"> <script>document.getElementById("preview-sound-440").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|441 |SOUND_DOG_BARK {: .copyable } |<html> <body> <audio controls id="preview-sound-441"><source src="../sounds/sfx/441.wav" type="audio/wav"> <script>document.getElementById("preview-sound-441").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|442 |SOUND_DOG_HOWELL {: .copyable } |<html> <body> <audio controls id="preview-sound-442"><source src="../sounds/sfx/442.wav" type="audio/wav"> <script>document.getElementById("preview-sound-442").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|443 |SOUND_X_LAX {: .copyable } |<html> <body> <audio controls id="preview-sound-443"><source src="../sounds/sfx/443.wav" type="audio/wav"> <script>document.getElementById("preview-sound-443").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|444 |SOUND_WRONG {: .copyable } |<html> <body> <audio controls id="preview-sound-444"><source src="../sounds/sfx/444.wav" type="audio/wav"> <script>document.getElementById("preview-sound-444").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|445 |SOUND_VURP {: .copyable } |<html> <body> <audio controls id="preview-sound-445"><source src="../sounds/sfx/445.wav" type="audio/wav"> <script>document.getElementById("preview-sound-445").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|446 |SOUND_SUNSHINE {: .copyable } |<html> <body> <audio controls id="preview-sound-446"><source src="../sounds/sfx/446.wav" type="audio/wav"> <script>document.getElementById("preview-sound-446").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|447 |SOUND_SPADES {: .copyable } |<html> <body> <audio controls id="preview-sound-447"><source src="../sounds/sfx/447.wav" type="audio/wav"> <script>document.getElementById("preview-sound-447").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|448 |SOUND_HORF {: .copyable } |<html> <body> <audio controls id="preview-sound-448"><source src="../sounds/sfx/448.wav" type="audio/wav"> <script>document.getElementById("preview-sound-448").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|449 |SOUND_HOLY_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-449"><source src="../sounds/sfx/449.wav" type="audio/wav"> <script>document.getElementById("preview-sound-449").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|450 |SOUND_HEARTS {: .copyable } |<html> <body> <audio controls id="preview-sound-450"><source src="../sounds/sfx/450.wav" type="audio/wav"> <script>document.getElementById("preview-sound-450").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|451 |SOUND_GULP {: .copyable } |<html> <body> <audio controls id="preview-sound-451"><source src="../sounds/sfx/451.wav" type="audio/wav"> <script>document.getElementById("preview-sound-451").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|452 |SOUND_FRIENDS {: .copyable } |<html> <body> <audio controls id="preview-sound-452"><source src="../sounds/sfx/452.wav" type="audio/wav"> <script>document.getElementById("preview-sound-452").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|453 |SOUND_EXCITED {: .copyable } |<html> <body> <audio controls id="preview-sound-453"><source src="../sounds/sfx/453.wav" type="audio/wav"> <script>document.getElementById("preview-sound-453").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|454 |SOUND_DROWSY {: .copyable } |<html> <body> <audio controls id="preview-sound-454"><source src="../sounds/sfx/454.wav" type="audio/wav"> <script>document.getElementById("preview-sound-454").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|455 |SOUND_DIAMONDS {: .copyable } |<html> <body> <audio controls id="preview-sound-455"><source src="../sounds/sfx/455.wav" type="audio/wav"> <script>document.getElementById("preview-sound-455").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|456 |SOUND_CLUBS {: .copyable } |<html> <body> <audio controls id="preview-sound-456"><source src="../sounds/sfx/456.wav" type="audio/wav"> <script>document.getElementById("preview-sound-456").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|457 |SOUND_BLACK_RUNE {: .copyable } |<html> <body> <audio controls id="preview-sound-457"><source src="../sounds/sfx/457.wav" type="audio/wav"> <script>document.getElementById("preview-sound-457").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|458 |SOUND_PING_PONG {: .copyable } |<html> <body> <audio controls id="preview-sound-458"><source src="../sounds/sfx/458.wav" type="audio/wav"> <script>document.getElementById("preview-sound-458").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|459 |SOUND_SPEWER {: .copyable } |<html> <body> <audio controls id="preview-sound-459"><source src="../sounds/sfx/459.wav" type="audio/wav"> <script>document.getElementById("preview-sound-459").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|460 |SOUND_MOM_FOOTSTEPS {: .copyable } |<html> <body> <audio controls id="preview-sound-460"><source src="../sounds/sfx/460.wav" type="audio/wav"> <script>document.getElementById("preview-sound-460").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|461 |SOUND_BONE_HEART {: .copyable } |<html> <body> <audio controls id="preview-sound-461"><source src="../sounds/sfx/461.wav" type="audio/wav"> <script>document.getElementById("preview-sound-461").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|462 |SOUND_BONE_SNAP {: .copyable } |<html> <body> <audio controls id="preview-sound-462"><source src="../sounds/sfx/462.wav" type="audio/wav"> <script>document.getElementById("preview-sound-462").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|463 |SOUND_SHOVEL_DROP {: .copyable } |<html> <body> <audio controls id="preview-sound-463"><source src="../sounds/sfx/463.wav" type="audio/wav"> <script>document.getElementById("preview-sound-463").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|464 |SOUND_SHOVEL_DIG {: .copyable } |<html> <body> <audio controls id="preview-sound-464"><source src="../sounds/sfx/464.wav" type="audio/wav"> <script>document.getElementById("preview-sound-464").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|465 |SOUND_GOLD_HEART {: .copyable } |<html> <body> <audio controls id="preview-sound-465"><source src="../sounds/sfx/465.wav" type="audio/wav"> <script>document.getElementById("preview-sound-465").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|466 |SOUND_GOLD_HEART_DROP {: .copyable } |<html> <body> <audio controls id="preview-sound-466"><source src="../sounds/sfx/466.wav" type="audio/wav"> <script>document.getElementById("preview-sound-466").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|467 |SOUND_BONE_DROP {: .copyable } |<html> <body> <audio controls id="preview-sound-467"><source src="../sounds/sfx/467.wav" type="audio/wav"> <script>document.getElementById("preview-sound-467").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|468 |SOUND_UNHOLY {: .copyable } |<html> <body> <audio controls id="preview-sound-468"><source src="../sounds/sfx/468.wav" type="audio/wav"> <script>document.getElementById("preview-sound-468").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|469 |SOUND_BUTTON_PRESS {: .copyable } |<html> <body> <audio controls id="preview-sound-469"><source src="../sounds/sfx/469.wav" type="audio/wav"> <script>document.getElementById("preview-sound-469").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .abrep .tooltip .badge }|470 |SOUND_GOLDENBOMB {: .copyable } |<html> <body> <audio controls id="preview-sound-470"><source src="../sounds/sfx/470.wav" type="audio/wav"> <script>document.getElementById("preview-sound-470").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|471 |SOUND_CANDLE_LIGHT {: .copyable } |<html> <body> <audio controls id="preview-sound-471"><source src="../sounds/sfx/471.wav" type="audio/wav"> <script>document.getElementById("preview-sound-471").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|472 |SOUND_THUNDER {: .copyable } |<html> <body> <audio controls id="preview-sound-472"><source src="../sounds/sfx/472.wav" type="audio/wav"> <script>document.getElementById("preview-sound-472").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|473 |SOUND_WATER_FLOW_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-473"><source src="../sounds/sfx/473.wav" type="audio/wav"> <script>document.getElementById("preview-sound-473").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|474 |SOUND_BOSS2_DIVE {: .copyable } |<html> <body> <audio controls id="preview-sound-474"><source src="../sounds/sfx/474.wav" type="audio/wav"> <script>document.getElementById("preview-sound-474").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|475 |SOUND_BOSS2INTRO_PIPES_TURNON {: .copyable } |<html> <body> <audio controls id="preview-sound-475"><source src="../sounds/sfx/475.wav" type="audio/wav"> <script>document.getElementById("preview-sound-475").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|476 |SOUND_WATER_FLOW_LARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-476"><source src="../sounds/sfx/476.wav" type="audio/wav"> <script>document.getElementById("preview-sound-476").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|477 |SOUND_DEMON_HIT {: .copyable } |<html> <body> <audio controls id="preview-sound-477"><source src="../sounds/sfx/477.wav" type="audio/wav"> <script>document.getElementById("preview-sound-477").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|478 |SOUND_PUNCH {: .copyable } |<html> <body> <audio controls id="preview-sound-478"><source src="../sounds/sfx/478.wav" type="audio/wav"> <script>document.getElementById("preview-sound-478").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|479 |SOUND_FLUTE {: .copyable } |<html> <body> <audio controls id="preview-sound-479"><source src="../sounds/sfx/479.wav" type="audio/wav"> <script>document.getElementById("preview-sound-479").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|480 |SOUND_LAVA_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-480"><source src="../sounds/sfx/480.wav" type="audio/wav"> <script>document.getElementById("preview-sound-480").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|481 |SOUND_WOOD_PLANK_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-481"><source src="../sounds/sfx/481.wav" type="audio/wav"> <script>document.getElementById("preview-sound-481").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|482 |SOUND_BULLET_SHOT {: .copyable } |<html> <body> <audio controls id="preview-sound-482"><source src="../sounds/sfx/482.wav" type="audio/wav"> <script>document.getElementById("preview-sound-482").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|483 |SOUND_FLAME_BURST {: .copyable } |<html> <body> <audio controls id="preview-sound-483"><source src="../sounds/sfx/483.wav" type="audio/wav"> <script>document.getElementById("preview-sound-483").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|484 |SOUND_INFLATE {: .copyable } |<html> <body> <audio controls id="preview-sound-484"><source src="../sounds/sfx/484.wav" type="audio/wav"> <script>document.getElementById("preview-sound-484").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|485 |SOUND_CLAP {: .copyable } |<html> <body> <audio controls id="preview-sound-485"><source src="../sounds/sfx/485.wav" type="audio/wav"> <script>document.getElementById("preview-sound-485").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|486 |SOUND_BOSS2INTRO_WATER_EXPLOSION {: .copyable } |<html> <body> <audio controls id="preview-sound-486"><source src="../sounds/sfx/486.wav" type="audio/wav"> <script>document.getElementById("preview-sound-486").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|487 |SOUND_STONE_IMPACT {: .copyable } |<html> <body> <audio controls id="preview-sound-487"><source src="../sounds/sfx/487.wav" type="audio/wav"> <script>document.getElementById("preview-sound-487").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|488 |SOUND_BOSS2_WATERTHRASHING {: .copyable } |<html> <body> <audio controls id="preview-sound-488"><source src="../sounds/sfx/488.wav" type="audio/wav"> <script>document.getElementById("preview-sound-488").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|489 |SOUND_FART_MEGA {: .copyable } |<html> <body> <audio controls id="preview-sound-489"><source src="../sounds/sfx/489.wav" type="audio/wav"> <script>document.getElementById("preview-sound-489").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|490 |SOUND_MATCHSTICK {: .copyable } |<html> <body> <audio controls id="preview-sound-490"><source src="../sounds/sfx/490.wav" type="audio/wav"> <script>document.getElementById("preview-sound-490").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|491 |SOUND_FORTUNE_COOKIE {: .copyable } |<html> <body> <audio controls id="preview-sound-491"><source src="../sounds/sfx/491.wav" type="audio/wav"> <script>document.getElementById("preview-sound-491").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|492 |SOUND_BULB_FLASH {: .copyable } |<html> <body> <audio controls id="preview-sound-492"><source src="../sounds/sfx/492.wav" type="audio/wav"> <script>document.getElementById("preview-sound-492").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|493 |SOUND_BATTERYDISCHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-493"><source src="../sounds/sfx/493.wav" type="audio/wav"> <script>document.getElementById("preview-sound-493").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|494 |SOUND_WHIP {: .copyable } |<html> <body> <audio controls id="preview-sound-494"><source src="../sounds/sfx/494.wav" type="audio/wav"> <script>document.getElementById("preview-sound-494").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|495 |SOUND_WHIP_HIT {: .copyable } |<html> <body> <audio controls id="preview-sound-495"><source src="../sounds/sfx/495.wav" type="audio/wav"> <script>document.getElementById("preview-sound-495").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|496 |SOUND_FREEZE {: .copyable } |<html> <body> <audio controls id="preview-sound-496"><source src="../sounds/sfx/496.wav" type="audio/wav"> <script>document.getElementById("preview-sound-496").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|497 |SOUND_ROTTEN_HEART {: .copyable } |<html> <body> <audio controls id="preview-sound-497"><source src="../sounds/sfx/497.wav" type="audio/wav"> <script>document.getElementById("preview-sound-497").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|498 |SOUND_FREEZE_SHATTER {: .copyable } |<html> <body> <audio controls id="preview-sound-498"><source src="../sounds/sfx/498.wav" type="audio/wav"> <script>document.getElementById("preview-sound-498").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|499 |SOUND_BONE_BOUNCE {: .copyable } |<html> <body> <audio controls id="preview-sound-499"><source src="../sounds/sfx/499.wav" type="audio/wav"> <script>document.getElementById("preview-sound-499").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|500 |SOUND_BONE_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-500"><source src="../sounds/sfx/500.wav" type="audio/wav"> <script>document.getElementById("preview-sound-500").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|501 |SOUND_BISHOP_HIT {: .copyable } |<html> <body> <audio controls id="preview-sound-501"><source src="../sounds/sfx/501.wav" type="audio/wav"> <script>document.getElementById("preview-sound-501").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|502 |Does not exist anymore | | (legacy: SOUND_PORTAL_LOOP) |
+|[ ](#){: .rep .tooltip .badge }|503 |SOUND_CHAIN_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-503"><source src="../sounds/sfx/503.wav" type="audio/wav"> <script>document.getElementById("preview-sound-503").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|504 |SOUND_CHAIN_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-504"><source src="../sounds/sfx/504.wav" type="audio/wav"> <script>document.getElementById("preview-sound-504").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|505 |SOUND_MINECART_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-505"><source src="../sounds/sfx/505.wav" type="audio/wav"> <script>document.getElementById("preview-sound-505").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|506 |SOUND_TOOTH_AND_NAIL {: .copyable } |<html> <body> <audio controls id="preview-sound-506"><source src="../sounds/sfx/506.wav" type="audio/wav"> <script>document.getElementById("preview-sound-506").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|507 |SOUND_TOOTH_AND_NAIL_TICK {: .copyable } |<html> <body> <audio controls id="preview-sound-507"><source src="../sounds/sfx/507.wav" type="audio/wav"> <script>document.getElementById("preview-sound-507").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|508 |SOUND_STATIC_BUILDUP {: .copyable } |<html> <body> <audio controls id="preview-sound-508"><source src="../sounds/sfx/508.wav" type="audio/wav"> <script>document.getElementById("preview-sound-508").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|509 |SOUND_THREAD_SNAP {: .copyable } |<html> <body> <audio controls id="preview-sound-509"><source src="../sounds/sfx/509.wav" type="audio/wav"> <script>document.getElementById("preview-sound-509").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|510 |SOUND_BIG_LEECH {: .copyable } |<html> <body> <audio controls id="preview-sound-510"><source src="../sounds/sfx/510.wav" type="audio/wav"> <script>document.getElementById("preview-sound-510").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|511 |SOUND_REVERSE_EXPLOSION {: .copyable } |<html> <body> <audio controls id="preview-sound-511"><source src="../sounds/sfx/511.wav" type="audio/wav"> <script>document.getElementById("preview-sound-511").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|512 |SOUND_REVERSE_FOOL {: .copyable } |<html> <body> <audio controls id="preview-sound-512"><source src="../sounds/sfx/512.wav" type="audio/wav"> <script>document.getElementById("preview-sound-512").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|513 |SOUND_REVERSE_MAGICIAN {: .copyable } |<html> <body> <audio controls id="preview-sound-513"><source src="../sounds/sfx/513.wav" type="audio/wav"> <script>document.getElementById("preview-sound-513").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|514 |SOUND_REVERSE_HIGH_PRIESTESS {: .copyable } |<html> <body> <audio controls id="preview-sound-514"><source src="../sounds/sfx/514.wav" type="audio/wav"> <script>document.getElementById("preview-sound-514").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|515 |SOUND_REVERSE_EMPRESS {: .copyable } |<html> <body> <audio controls id="preview-sound-515"><source src="../sounds/sfx/515.wav" type="audio/wav"> <script>document.getElementById("preview-sound-515").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|516 |SOUND_REVERSE_EMPEROR {: .copyable } |<html> <body> <audio controls id="preview-sound-516"><source src="../sounds/sfx/516.wav" type="audio/wav"> <script>document.getElementById("preview-sound-516").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|517 |SOUND_REVERSE_HIEROPHANT {: .copyable } |<html> <body> <audio controls id="preview-sound-517"><source src="../sounds/sfx/517.wav" type="audio/wav"> <script>document.getElementById("preview-sound-517").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|518 |SOUND_REVERSE_LOVERS {: .copyable } |<html> <body> <audio controls id="preview-sound-518"><source src="../sounds/sfx/518.wav" type="audio/wav"> <script>document.getElementById("preview-sound-518").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|519 |SOUND_REVERSE_CHARIOT {: .copyable } |<html> <body> <audio controls id="preview-sound-519"><source src="../sounds/sfx/519.wav" type="audio/wav"> <script>document.getElementById("preview-sound-519").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|520 |SOUND_REVERSE_JUSTICE {: .copyable } |<html> <body> <audio controls id="preview-sound-520"><source src="../sounds/sfx/520.wav" type="audio/wav"> <script>document.getElementById("preview-sound-520").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|521 |SOUND_REVERSE_HERMIT {: .copyable } |<html> <body> <audio controls id="preview-sound-521"><source src="../sounds/sfx/521.wav" type="audio/wav"> <script>document.getElementById("preview-sound-521").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|522 |SOUND_REVERSE_WHEEL_OF_FORTUNE {: .copyable } |<html> <body> <audio controls id="preview-sound-522"><source src="../sounds/sfx/522.wav" type="audio/wav"> <script>document.getElementById("preview-sound-522").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|523 |SOUND_REVERSE_STRENGTH {: .copyable } |<html> <body> <audio controls id="preview-sound-523"><source src="../sounds/sfx/523.wav" type="audio/wav"> <script>document.getElementById("preview-sound-523").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|524 |SOUND_REVERSE_HANGED_MAN {: .copyable } |<html> <body> <audio controls id="preview-sound-524"><source src="../sounds/sfx/524.wav" type="audio/wav"> <script>document.getElementById("preview-sound-524").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|525 |SOUND_REVERSE_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-525"><source src="../sounds/sfx/525.wav" type="audio/wav"> <script>document.getElementById("preview-sound-525").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|526 |SOUND_REVERSE_TEMPERANCE {: .copyable } |<html> <body> <audio controls id="preview-sound-526"><source src="../sounds/sfx/526.wav" type="audio/wav"> <script>document.getElementById("preview-sound-526").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|527 |SOUND_REVERSE_DEVIL {: .copyable } |<html> <body> <audio controls id="preview-sound-527"><source src="../sounds/sfx/527.wav" type="audio/wav"> <script>document.getElementById("preview-sound-527").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|528 |SOUND_REVERSE_TOWER {: .copyable } |<html> <body> <audio controls id="preview-sound-528"><source src="../sounds/sfx/528.wav" type="audio/wav"> <script>document.getElementById("preview-sound-528").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|529 |SOUND_REVERSE_STARS {: .copyable } |<html> <body> <audio controls id="preview-sound-529"><source src="../sounds/sfx/529.wav" type="audio/wav"> <script>document.getElementById("preview-sound-529").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|530 |SOUND_REVERSE_MOON {: .copyable } |<html> <body> <audio controls id="preview-sound-530"><source src="../sounds/sfx/530.wav" type="audio/wav"> <script>document.getElementById("preview-sound-530").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|531 |SOUND_REVERSE_SUN {: .copyable } |<html> <body> <audio controls id="preview-sound-531"><source src="../sounds/sfx/531.wav" type="audio/wav"> <script>document.getElementById("preview-sound-531").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|532 |SOUND_REVERSE_JUDGEMENT {: .copyable } |<html> <body> <audio controls id="preview-sound-532"><source src="../sounds/sfx/532.wav" type="audio/wav"> <script>document.getElementById("preview-sound-532").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|533 |SOUND_REVERSE_WORLD {: .copyable } |<html> <body> <audio controls id="preview-sound-533"><source src="../sounds/sfx/533.wav" type="audio/wav"> <script>document.getElementById("preview-sound-533").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|534 |SOUND_FLAMETHROWER_START {: .copyable } |<html> <body> <audio controls id="preview-sound-534"><source src="../sounds/sfx/534.wav" type="audio/wav"> <script>document.getElementById("preview-sound-534").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|535 |SOUND_FLAMETHROWER_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-535"><source src="../sounds/sfx/535.wav" type="audio/wav"> <script>document.getElementById("preview-sound-535").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|536 |SOUND_FLAMETHROWER_END {: .copyable } |<html> <body> <audio controls id="preview-sound-536"><source src="../sounds/sfx/536.wav" type="audio/wav"> <script>document.getElementById("preview-sound-536").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|537 |SOUND_ROCKET_LAUNCH {: .copyable } |<html> <body> <audio controls id="preview-sound-537"><source src="../sounds/sfx/537.wav" type="audio/wav"> <script>document.getElementById("preview-sound-537").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|538 |SOUND_SWORD_SPIN {: .copyable } |<html> <body> <audio controls id="preview-sound-538"><source src="../sounds/sfx/538.wav" type="audio/wav"> <script>document.getElementById("preview-sound-538").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|539 |SOUND_BABY_BRIM {: .copyable } |<html> <body> <audio controls id="preview-sound-539"><source src="../sounds/sfx/539.wav" type="audio/wav"> <script>document.getElementById("preview-sound-539").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|540 |SOUND_KNIFE_PULL {: .copyable } |<html> <body> <audio controls id="preview-sound-540"><source src="../sounds/sfx/540.wav" type="audio/wav"> <script>document.getElementById("preview-sound-540").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|541 |SOUND_DOGMA_APPEAR_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-541"><source src="../sounds/sfx/541.wav" type="audio/wav"> <script>document.getElementById("preview-sound-541").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|542 |SOUND_DOGMA_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-542"><source src="../sounds/sfx/542.wav" type="audio/wav"> <script>document.getElementById("preview-sound-542").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|543 |SOUND_DOGMA_BLACKHOLE_CHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-543"><source src="../sounds/sfx/543.wav" type="audio/wav"> <script>document.getElementById("preview-sound-543").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|544 |SOUND_DOGMA_BLACKHOLE_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-544"><source src="../sounds/sfx/544.wav" type="audio/wav"> <script>document.getElementById("preview-sound-544").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|545 |SOUND_DOGMA_BLACKHOLE_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-545"><source src="../sounds/sfx/545.wav" type="audio/wav"> <script>document.getElementById("preview-sound-545").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|546 |SOUND_DOGMA_BLACKHOLE_CLOSE {: .copyable } |<html> <body> <audio controls id="preview-sound-546"><source src="../sounds/sfx/546.wav" type="audio/wav"> <script>document.getElementById("preview-sound-546").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|547 |SOUND_DOGMA_BRIMSTONE_CHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-547"><source src="../sounds/sfx/547.wav" type="audio/wav"> <script>document.getElementById("preview-sound-547").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|548 |SOUND_DOGMA_BRIMSTONE_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-548"><source src="../sounds/sfx/548.wav" type="audio/wav"> <script>document.getElementById("preview-sound-548").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|549 |SOUND_DOGMA_GODHEAD {: .copyable } |<html> <body> <audio controls id="preview-sound-549"><source src="../sounds/sfx/549.wav" type="audio/wav"> <script>document.getElementById("preview-sound-549").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|550 |SOUND_DOGMA_JACOBS {: .copyable } |<html> <body> <audio controls id="preview-sound-550"><source src="../sounds/sfx/550.wav" type="audio/wav"> <script>document.getElementById("preview-sound-550").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|551 |SOUND_DOGMA_JACOBS_ZAP {: .copyable } |<html> <body> <audio controls id="preview-sound-551"><source src="../sounds/sfx/551.wav" type="audio/wav"> <script>document.getElementById("preview-sound-551").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|552 |SOUND_DOGMA_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-552"><source src="../sounds/sfx/552.wav" type="audio/wav"> <script>document.getElementById("preview-sound-552").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|553 |SOUND_DOGMA_PREACHER {: .copyable } |<html> <body> <audio controls id="preview-sound-553"><source src="../sounds/sfx/553.wav" type="audio/wav"> <script>document.getElementById("preview-sound-553").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|554 |SOUND_DOGMA_RING_START {: .copyable } |<html> <body> <audio controls id="preview-sound-554"><source src="../sounds/sfx/554.wav" type="audio/wav"> <script>document.getElementById("preview-sound-554").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|555 |SOUND_DOGMA_RING_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-555"><source src="../sounds/sfx/555.wav" type="audio/wav"> <script>document.getElementById("preview-sound-555").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|556 |SOUND_DOGMA_FEATHER_SPRAY {: .copyable } |<html> <body> <audio controls id="preview-sound-556"><source src="../sounds/sfx/556.wav" type="audio/wav"> <script>document.getElementById("preview-sound-556").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|557 |SOUND_DOGMA_JACOBS_DOT {: .copyable } |<html> <body> <audio controls id="preview-sound-557"><source src="../sounds/sfx/557.wav" type="audio/wav"> <script>document.getElementById("preview-sound-557").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|558 |SOUND_DOGMA_BLACKHOLE_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-558"><source src="../sounds/sfx/558.wav" type="audio/wav"> <script>document.getElementById("preview-sound-558").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|559 |SOUND_DOGMA_ANGEL_TRANSFORM {: .copyable } |<html> <body> <audio controls id="preview-sound-559"><source src="../sounds/sfx/559.wav" type="audio/wav"> <script>document.getElementById("preview-sound-559").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|560 |SOUND_DOGMA_ANGEL_TRANSFORM_END {: .copyable } |<html> <body> <audio controls id="preview-sound-560"><source src="../sounds/sfx/560.wav" type="audio/wav"> <script>document.getElementById("preview-sound-560").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|561 |SOUND_DOGMA_LIGHT_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-561"><source src="../sounds/sfx/561.wav" type="audio/wav"> <script>document.getElementById("preview-sound-561").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|562 |SOUND_DOGMA_LIGHT_BALL_THROW {: .copyable } |<html> <body> <audio controls id="preview-sound-562"><source src="../sounds/sfx/562.wav" type="audio/wav"> <script>document.getElementById("preview-sound-562").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|563 |SOUND_DOGMA_LIGHT_RAY_CHARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-563"><source src="../sounds/sfx/563.wav" type="audio/wav"> <script>document.getElementById("preview-sound-563").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|564 |SOUND_DOGMA_LIGHT_RAY_FIRE {: .copyable } |<html> <body> <audio controls id="preview-sound-564"><source src="../sounds/sfx/564.wav" type="audio/wav"> <script>document.getElementById("preview-sound-564").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|565 |SOUND_DOGMA_SPIN_ATTACK {: .copyable } |<html> <body> <audio controls id="preview-sound-565"><source src="../sounds/sfx/565.wav" type="audio/wav"> <script>document.getElementById("preview-sound-565").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|566 |SOUND_DOGMA_WING_FLAP {: .copyable } |<html> <body> <audio controls id="preview-sound-566"><source src="../sounds/sfx/566.wav" type="audio/wav"> <script>document.getElementById("preview-sound-566").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|567 |SOUND_DOGMA_TV_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-567"><source src="../sounds/sfx/567.wav" type="audio/wav"> <script>document.getElementById("preview-sound-567").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|568 |SOUND_DIVINE_INTERVENTION {: .copyable } |<html> <body> <audio controls id="preview-sound-568"><source src="../sounds/sfx/568.wav" type="audio/wav"> <script>document.getElementById("preview-sound-568").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|569 |SOUND_MENU_FLIP_LIGHT {: .copyable } |<html> <body> <audio controls id="preview-sound-569"><source src="../sounds/sfx/569.wav" type="audio/wav"> <script>document.getElementById("preview-sound-569").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|570 |SOUND_MENU_FLIP_DARK {: .copyable } |<html> <body> <audio controls id="preview-sound-570"><source src="../sounds/sfx/570.wav" type="audio/wav"> <script>document.getElementById("preview-sound-570").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|571 |SOUND_MENU_RIP {: .copyable } |<html> <body> <audio controls id="preview-sound-571"><source src="../sounds/sfx/571.wav" type="audio/wav"> <script>document.getElementById("preview-sound-571").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|572 |SOUND_URN_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-572"><source src="../sounds/sfx/572.wav" type="audio/wav"> <script>document.getElementById("preview-sound-572").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|573 |SOUND_URN_CLOSE {: .copyable } |<html> <body> <audio controls id="preview-sound-573"><source src="../sounds/sfx/573.wav" type="audio/wav"> <script>document.getElementById("preview-sound-573").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|574 |SOUND_RECALL {: .copyable } |<html> <body> <audio controls id="preview-sound-574"><source src="../sounds/sfx/574.wav" type="audio/wav"> <script>document.getElementById("preview-sound-574").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|575 |SOUND_LARYNX_SCREAM_LO {: .copyable } |<html> <body> <audio controls id="preview-sound-575"><source src="../sounds/sfx/575.wav" type="audio/wav"> <script>document.getElementById("preview-sound-575").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|576 |SOUND_LARYNX_SCREAM_MED {: .copyable } |<html> <body> <audio controls id="preview-sound-576"><source src="../sounds/sfx/576.wav" type="audio/wav"> <script>document.getElementById("preview-sound-576").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|577 |SOUND_LARYNX_SCREAM_HI {: .copyable } |<html> <body> <audio controls id="preview-sound-577"><source src="../sounds/sfx/577.wav" type="audio/wav"> <script>document.getElementById("preview-sound-577").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|578 |SOUND_GROUND_TREMOR {: .copyable } |<html> <body> <audio controls id="preview-sound-578"><source src="../sounds/sfx/578.wav" type="audio/wav"> <script>document.getElementById("preview-sound-578").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|579 |SOUND_SOUL_PICKUP {: .copyable } |<html> <body> <audio controls id="preview-sound-579"><source src="../sounds/sfx/579.wav" type="audio/wav"> <script>document.getElementById("preview-sound-579").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|580 |SOUND_BALL_AND_CHAIN_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-580"><source src="../sounds/sfx/580.wav" type="audio/wav"> <script>document.getElementById("preview-sound-580").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|581 |SOUND_BALL_AND_CHAIN_HIT {: .copyable } |<html> <body> <audio controls id="preview-sound-581"><source src="../sounds/sfx/581.wav" type="audio/wav"> <script>document.getElementById("preview-sound-581").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|582 |SOUND_LAZARUS_FLIP_DEAD {: .copyable } |<html> <body> <audio controls id="preview-sound-582"><source src="../sounds/sfx/582.wav" type="audio/wav"> <script>document.getElementById("preview-sound-582").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|583 |SOUND_LAZARUS_FLIP_ALIVE {: .copyable } |<html> <body> <audio controls id="preview-sound-583"><source src="../sounds/sfx/583.wav" type="audio/wav"> <script>document.getElementById("preview-sound-583").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|584 |SOUND_RECALL_FINISH {: .copyable } |<html> <body> <audio controls id="preview-sound-584"><source src="../sounds/sfx/584.wav" type="audio/wav"> <script>document.getElementById("preview-sound-584").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|585 |SOUND_ROCKET_LAUNCH_SHORT {: .copyable } |<html> <body> <audio controls id="preview-sound-585"><source src="../sounds/sfx/585.wav" type="audio/wav"> <script>document.getElementById("preview-sound-585").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|586 |SOUND_ROCKET_LAUNCH_TINY {: .copyable } |<html> <body> <audio controls id="preview-sound-586"><source src="../sounds/sfx/586.wav" type="audio/wav"> <script>document.getElementById("preview-sound-586").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|587 |SOUND_ROCKET_EXPLOSION {: .copyable } |<html> <body> <audio controls id="preview-sound-587"><source src="../sounds/sfx/587.wav" type="audio/wav"> <script>document.getElementById("preview-sound-587").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|588 |SOUND_JELLY_BOUNCE {: .copyable } |<html> <body> <audio controls id="preview-sound-588"><source src="../sounds/sfx/588.wav" type="audio/wav"> <script>document.getElementById("preview-sound-588").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|589 |SOUND_POOP_LASER {: .copyable } |<html> <body> <audio controls id="preview-sound-589"><source src="../sounds/sfx/589.wav" type="audio/wav"> <script>document.getElementById("preview-sound-589").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|590 |SOUND_POISON_WARN {: .copyable } |<html> <body> <audio controls id="preview-sound-590"><source src="../sounds/sfx/590.wav" type="audio/wav"> <script>document.getElementById("preview-sound-590").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|591 |SOUND_POISON_HURT {: .copyable } |<html> <body> <audio controls id="preview-sound-591"><source src="../sounds/sfx/591.wav" type="audio/wav"> <script>document.getElementById("preview-sound-591").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|592 |SOUND_BERSERK_START {: .copyable } |<html> <body> <audio controls id="preview-sound-592"><source src="../sounds/sfx/592.wav" type="audio/wav"> <script>document.getElementById("preview-sound-592").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|593 |SOUND_BERSERK_TICK {: .copyable } |<html> <body> <audio controls id="preview-sound-593"><source src="../sounds/sfx/593.wav" type="audio/wav"> <script>document.getElementById("preview-sound-593").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|594 |SOUND_BERSERK_END {: .copyable } |<html> <body> <audio controls id="preview-sound-594"><source src="../sounds/sfx/594.wav" type="audio/wav"> <script>document.getElementById("preview-sound-594").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|595 |SOUND_EDEN_GLITCH {: .copyable } |<html> <body> <audio controls id="preview-sound-595"><source src="../sounds/sfx/595.wav" type="audio/wav"> <script>document.getElementById("preview-sound-595").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|596 |SOUND_RAILROAD_TRACK_RAISE {: .copyable } |<html> <body> <audio controls id="preview-sound-596"><source src="../sounds/sfx/596.wav" type="audio/wav"> <script>document.getElementById("preview-sound-596").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|597 |SOUND_RAILROAD_TRACK_RAISE_FAR {: .copyable } |<html> <body> <audio controls id="preview-sound-597"><source src="../sounds/sfx/597.wav" type="audio/wav"> <script>document.getElementById("preview-sound-597").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|598 |SOUND_MOM_AND_DAD_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-598"><source src="../sounds/sfx/598.wav" type="audio/wav"> <script>document.getElementById("preview-sound-598").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|599 |SOUND_MOM_AND_DAD_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-599"><source src="../sounds/sfx/599.wav" type="audio/wav"> <script>document.getElementById("preview-sound-599").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|600 |SOUND_MOM_AND_DAD_3 {: .copyable } |<html> <body> <audio controls id="preview-sound-600"><source src="../sounds/sfx/600.wav" type="audio/wav"> <script>document.getElementById("preview-sound-600").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|601 |SOUND_MOM_AND_DAD_4 {: .copyable } |<html> <body> <audio controls id="preview-sound-601"><source src="../sounds/sfx/601.wav" type="audio/wav"> <script>document.getElementById("preview-sound-601").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|602 |SOUND_THUMBSUP_AMPLIFIED {: .copyable } |<html> <body> <audio controls id="preview-sound-602"><source src="../sounds/sfx/602.wav" type="audio/wav"> <script>document.getElementById("preview-sound-602").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|603 |SOUND_THUMBSDOWN_AMPLIFIED {: .copyable } |<html> <body> <audio controls id="preview-sound-603"><source src="../sounds/sfx/603.wav" type="audio/wav"> <script>document.getElementById("preview-sound-603").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|604 |SOUND_POWERUP_SPEWER_AMPLIFIED {: .copyable } |<html> <body> <audio controls id="preview-sound-604"><source src="../sounds/sfx/604.wav" type="audio/wav"> <script>document.getElementById("preview-sound-604").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|605 |SOUND_POOPITEM_THROW {: .copyable } |<html> <body> <audio controls id="preview-sound-605"><source src="../sounds/sfx/605.wav" type="audio/wav"> <script>document.getElementById("preview-sound-605").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|606 |SOUND_POOPITEM_STORE {: .copyable } |<html> <body> <audio controls id="preview-sound-606"><source src="../sounds/sfx/606.wav" type="audio/wav"> <script>document.getElementById("preview-sound-606").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|607 |SOUND_POOPITEM_HOLD {: .copyable } |<html> <body> <audio controls id="preview-sound-607"><source src="../sounds/sfx/607.wav" type="audio/wav"> <script>document.getElementById("preview-sound-607").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|608 |SOUND_MIRROR_ENTER {: .copyable } |<html> <body> <audio controls id="preview-sound-608"><source src="../sounds/sfx/608.wav" type="audio/wav"> <script>document.getElementById("preview-sound-608").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|609 |SOUND_MIRROR_EXIT {: .copyable } |<html> <body> <audio controls id="preview-sound-609"><source src="../sounds/sfx/609.wav" type="audio/wav"> <script>document.getElementById("preview-sound-609").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|610 |SOUND_MIRROR_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-610"><source src="../sounds/sfx/610.wav" type="audio/wav"> <script>document.getElementById("preview-sound-610").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|611 |SOUND_ANIMA_TRAP {: .copyable } |<html> <body> <audio controls id="preview-sound-611"><source src="../sounds/sfx/611.wav" type="audio/wav"> <script>document.getElementById("preview-sound-611").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|612 |SOUND_ANIMA_RATTLE {: .copyable } |<html> <body> <audio controls id="preview-sound-612"><source src="../sounds/sfx/612.wav" type="audio/wav"> <script>document.getElementById("preview-sound-612").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|613 |SOUND_ANIMA_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-613"><source src="../sounds/sfx/613.wav" type="audio/wav"> <script>document.getElementById("preview-sound-613").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|614 |SOUND_VAMP_DOUBLE {: .copyable } |<html> <body> <audio controls id="preview-sound-614"><source src="../sounds/sfx/614.wav" type="audio/wav"> <script>document.getElementById("preview-sound-614").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|615 |SOUND_FLASHBACK {: .copyable } |<html> <body> <audio controls id="preview-sound-615"><source src="../sounds/sfx/615.wav" type="audio/wav"> <script>document.getElementById("preview-sound-615").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|616 |SOUND_DARK_ESAU_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-616"><source src="../sounds/sfx/616.wav" type="audio/wav"> <script>document.getElementById("preview-sound-616").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|617 |SOUND_DARK_ESAU_DEATH_OPEN {: .copyable } |<html> <body> <audio controls id="preview-sound-617"><source src="../sounds/sfx/617.wav" type="audio/wav"> <script>document.getElementById("preview-sound-617").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|618 |SOUND_MOTHER_DEATH1 {: .copyable } |<html> <body> <audio controls id="preview-sound-618"><source src="../sounds/sfx/618.wav" type="audio/wav"> <script>document.getElementById("preview-sound-618").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|619 |SOUND_MOTHER_DEATH2 {: .copyable } |<html> <body> <audio controls id="preview-sound-619"><source src="../sounds/sfx/619.wav" type="audio/wav"> <script>document.getElementById("preview-sound-619").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|620 |SOUND_MOTHER_FISTPOUND1 {: .copyable } |<html> <body> <audio controls id="preview-sound-620"><source src="../sounds/sfx/620.wav" type="audio/wav"> <script>document.getElementById("preview-sound-620").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|621 |SOUND_MOTHER_FISTPOUND2 {: .copyable } |<html> <body> <audio controls id="preview-sound-621"><source src="../sounds/sfx/621.wav" type="audio/wav"> <script>document.getElementById("preview-sound-621").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|622 |SOUND_MOTHER_FISTPOUND3 {: .copyable } |<html> <body> <audio controls id="preview-sound-622"><source src="../sounds/sfx/622.wav" type="audio/wav"> <script>document.getElementById("preview-sound-622").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|623 |SOUND_MOTHER_FISTULA {: .copyable } |<html> <body> <audio controls id="preview-sound-623"><source src="../sounds/sfx/623.wav" type="audio/wav"> <script>document.getElementById("preview-sound-623").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|624 |SOUND_MOTHER_APPEAR1 {: .copyable } |<html> <body> <audio controls id="preview-sound-624"><source src="../sounds/sfx/624.wav" type="audio/wav"> <script>document.getElementById("preview-sound-624").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|625 |SOUND_MOTHER_APPEAR2 {: .copyable } |<html> <body> <audio controls id="preview-sound-625"><source src="../sounds/sfx/625.wav" type="audio/wav"> <script>document.getElementById("preview-sound-625").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|626 |SOUND_MOTHER_KNIFE_START {: .copyable } |<html> <body> <audio controls id="preview-sound-626"><source src="../sounds/sfx/626.wav" type="audio/wav"> <script>document.getElementById("preview-sound-626").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|627 |SOUND_MOTHER_KNIFE_THROW {: .copyable } |<html> <body> <audio controls id="preview-sound-627"><source src="../sounds/sfx/627.wav" type="audio/wav"> <script>document.getElementById("preview-sound-627").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|628 |SOUND_MOTHER_SUMMON_ISAACS_START {: .copyable } |<html> <body> <audio controls id="preview-sound-628"><source src="../sounds/sfx/628.wav" type="audio/wav"> <script>document.getElementById("preview-sound-628").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|629 |SOUND_MOTHER_SUMMON_ISAACS_END {: .copyable } |<html> <body> <audio controls id="preview-sound-629"><source src="../sounds/sfx/629.wav" type="audio/wav"> <script>document.getElementById("preview-sound-629").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|630 |SOUND_MOTHER_HAND_BOIL_START {: .copyable } |<html> <body> <audio controls id="preview-sound-630"><source src="../sounds/sfx/630.wav" type="audio/wav"> <script>document.getElementById("preview-sound-630").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|631 |SOUND_MOTHER_GRUNT1 {: .copyable } |<html> <body> <audio controls id="preview-sound-631"><source src="../sounds/sfx/631.wav" type="audio/wav"> <script>document.getElementById("preview-sound-631").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|632 |SOUND_MOTHER_GRUNT5 {: .copyable } |<html> <body> <audio controls id="preview-sound-632"><source src="../sounds/sfx/632.wav" type="audio/wav"> <script>document.getElementById("preview-sound-632").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|633 |SOUND_MOTHER_GRUNT6 {: .copyable } |<html> <body> <audio controls id="preview-sound-633"><source src="../sounds/sfx/633.wav" type="audio/wav"> <script>document.getElementById("preview-sound-633").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|634 |SOUND_MOTHER_GRUNT7 {: .copyable } |<html> <body> <audio controls id="preview-sound-634"><source src="../sounds/sfx/634.wav" type="audio/wav"> <script>document.getElementById("preview-sound-634").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|635 |SOUND_MOTHER_LAUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-635"><source src="../sounds/sfx/635.wav" type="audio/wav"> <script>document.getElementById("preview-sound-635").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|636 |SOUND_MOTHER_SPIN_START {: .copyable } |<html> <body> <audio controls id="preview-sound-636"><source src="../sounds/sfx/636.wav" type="audio/wav"> <script>document.getElementById("preview-sound-636").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|637 |SOUND_MOTHER_WALL_SHOT_START {: .copyable } |<html> <body> <audio controls id="preview-sound-637"><source src="../sounds/sfx/637.wav" type="audio/wav"> <script>document.getElementById("preview-sound-637").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|638 |SOUND_MOTHER_MISC {: .copyable } |<html> <body> <audio controls id="preview-sound-638"><source src="../sounds/sfx/638.wav" type="audio/wav"> <script>document.getElementById("preview-sound-638").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|639 |SOUND_MOTHER_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-639"><source src="../sounds/sfx/639.wav" type="audio/wav"> <script>document.getElementById("preview-sound-639").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|640 |SOUND_MOTHER_SUCTION {: .copyable } |<html> <body> <audio controls id="preview-sound-640"><source src="../sounds/sfx/640.wav" type="audio/wav"> <script>document.getElementById("preview-sound-640").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|641 |SOUND_MOTHER_ISAAC_RISE {: .copyable } |<html> <body> <audio controls id="preview-sound-641"><source src="../sounds/sfx/641.wav" type="audio/wav"> <script>document.getElementById("preview-sound-641").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|642 |SOUND_MOTHER_ISAAC_HIT {: .copyable } |<html> <body> <audio controls id="preview-sound-642"><source src="../sounds/sfx/642.wav" type="audio/wav"> <script>document.getElementById("preview-sound-642").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|643 |SOUND_MOTHER_WRIST_SWELL {: .copyable } |<html> <body> <audio controls id="preview-sound-643"><source src="../sounds/sfx/643.wav" type="audio/wav"> <script>document.getElementById("preview-sound-643").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|644 |SOUND_MOTHER_WRIST_EXPLODE {: .copyable } |<html> <body> <audio controls id="preview-sound-644"><source src="../sounds/sfx/644.wav" type="audio/wav"> <script>document.getElementById("preview-sound-644").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|645 |SOUND_MOTHER_DEATH_MELT {: .copyable } |<html> <body> <audio controls id="preview-sound-645"><source src="../sounds/sfx/645.wav" type="audio/wav"> <script>document.getElementById("preview-sound-645").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|646 |SOUND_MOTHER_ANGER_SHAKE {: .copyable } |<html> <body> <audio controls id="preview-sound-646"><source src="../sounds/sfx/646.wav" type="audio/wav"> <script>document.getElementById("preview-sound-646").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|647 |SOUND_MOTHER_CHARGE1 {: .copyable } |<html> <body> <audio controls id="preview-sound-647"><source src="../sounds/sfx/647.wav" type="audio/wav"> <script>document.getElementById("preview-sound-647").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|648 |SOUND_MOTHER_CHARGE2 {: .copyable } |<html> <body> <audio controls id="preview-sound-648"><source src="../sounds/sfx/648.wav" type="audio/wav"> <script>document.getElementById("preview-sound-648").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|649 |SOUND_MOTHER_LAND_SMASH {: .copyable } |<html> <body> <audio controls id="preview-sound-649"><source src="../sounds/sfx/649.wav" type="audio/wav"> <script>document.getElementById("preview-sound-649").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|650 |SOUND_ISAAC_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-650"><source src="../sounds/sfx/650.wav" type="audio/wav"> <script>document.getElementById("preview-sound-650").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|651 |SOUND_FAMINE_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-651"><source src="../sounds/sfx/651.wav" type="audio/wav"> <script>document.getElementById("preview-sound-651").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|652 |SOUND_FAMINE_DEATH_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-652"><source src="../sounds/sfx/652.wav" type="audio/wav"> <script>document.getElementById("preview-sound-652").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|653 |SOUND_FAMINE_DEATH_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-653"><source src="../sounds/sfx/653.wav" type="audio/wav"> <script>document.getElementById("preview-sound-653").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|654 |SOUND_FAMINE_DASH_START {: .copyable } |<html> <body> <audio controls id="preview-sound-654"><source src="../sounds/sfx/654.wav" type="audio/wav"> <script>document.getElementById("preview-sound-654").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|655 |SOUND_FAMINE_DASH {: .copyable } |<html> <body> <audio controls id="preview-sound-655"><source src="../sounds/sfx/655.wav" type="audio/wav"> <script>document.getElementById("preview-sound-655").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|656 |SOUND_FAMINE_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-656"><source src="../sounds/sfx/656.wav" type="audio/wav"> <script>document.getElementById("preview-sound-656").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|657 |SOUND_FAMINE_BURST {: .copyable } |<html> <body> <audio controls id="preview-sound-657"><source src="../sounds/sfx/657.wav" type="audio/wav"> <script>document.getElementById("preview-sound-657").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|658 |SOUND_FAMINE_GURGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-658"><source src="../sounds/sfx/658.wav" type="audio/wav"> <script>document.getElementById("preview-sound-658").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|659 |SOUND_PESTILENCE_MAGGOT_START {: .copyable } |<html> <body> <audio controls id="preview-sound-659"><source src="../sounds/sfx/659.wav" type="audio/wav"> <script>document.getElementById("preview-sound-659").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|660 |SOUND_PESTILENCE_MAGGOT_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-660"><source src="../sounds/sfx/660.wav" type="audio/wav"> <script>document.getElementById("preview-sound-660").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|661 |SOUND_PESTILENCE_MAGGOT_RETURN {: .copyable } |<html> <body> <audio controls id="preview-sound-661"><source src="../sounds/sfx/661.wav" type="audio/wav"> <script>document.getElementById("preview-sound-661").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|662 |SOUND_PESTILENCE_BODY_SHOOT {: .copyable } |<html> <body> <audio controls id="preview-sound-662"><source src="../sounds/sfx/662.wav" type="audio/wav"> <script>document.getElementById("preview-sound-662").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|663 |SOUND_PESTILENCE_HEAD_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-663"><source src="../sounds/sfx/663.wav" type="audio/wav"> <script>document.getElementById("preview-sound-663").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|664 |SOUND_PESTILENCE_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-664"><source src="../sounds/sfx/664.wav" type="audio/wav"> <script>document.getElementById("preview-sound-664").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|665 |SOUND_PESTILENCE_COUGH {: .copyable } |<html> <body> <audio controls id="preview-sound-665"><source src="../sounds/sfx/665.wav" type="audio/wav"> <script>document.getElementById("preview-sound-665").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|666 |SOUND_PESTILENCE_BARF {: .copyable } |<html> <body> <audio controls id="preview-sound-666"><source src="../sounds/sfx/666.wav" type="audio/wav"> <script>document.getElementById("preview-sound-666").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|667 |SOUND_PESTILENCE_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-667"><source src="../sounds/sfx/667.wav" type="audio/wav"> <script>document.getElementById("preview-sound-667").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|668 |SOUND_PESTILENCE_HEAD_EXPLODE {: .copyable } |<html> <body> <audio controls id="preview-sound-668"><source src="../sounds/sfx/668.wav" type="audio/wav"> <script>document.getElementById("preview-sound-668").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|669 |SOUND_PESTILENCE_MAGGOT_ENTER {: .copyable } |<html> <body> <audio controls id="preview-sound-669"><source src="../sounds/sfx/669.wav" type="audio/wav"> <script>document.getElementById("preview-sound-669").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|670 |SOUND_PESTILENCE_MAGGOT_POPOUT {: .copyable } |<html> <body> <audio controls id="preview-sound-670"><source src="../sounds/sfx/670.wav" type="audio/wav"> <script>document.getElementById("preview-sound-670").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|671 |SOUND_PESTILENCE_MAGGOT_SHOOT2 {: .copyable } |<html> <body> <audio controls id="preview-sound-671"><source src="../sounds/sfx/671.wav" type="audio/wav"> <script>document.getElementById("preview-sound-671").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|672 |SOUND_PESTILENCE_NECK_PUKE {: .copyable } |<html> <body> <audio controls id="preview-sound-672"><source src="../sounds/sfx/672.wav" type="audio/wav"> <script>document.getElementById("preview-sound-672").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|673 |SOUND_PESTILENCE_PUKE_START {: .copyable } |<html> <body> <audio controls id="preview-sound-673"><source src="../sounds/sfx/673.wav" type="audio/wav"> <script>document.getElementById("preview-sound-673").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|674 |SOUND_WAR_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-674"><source src="../sounds/sfx/674.wav" type="audio/wav"> <script>document.getElementById("preview-sound-674").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|675 |SOUND_WAR_APPEAR_LAVA {: .copyable } |<html> <body> <audio controls id="preview-sound-675"><source src="../sounds/sfx/675.wav" type="audio/wav"> <script>document.getElementById("preview-sound-675").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|676 |SOUND_WAR_BOMB_TOSS {: .copyable } |<html> <body> <audio controls id="preview-sound-676"><source src="../sounds/sfx/676.wav" type="audio/wav"> <script>document.getElementById("preview-sound-676").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|677 |SOUND_WAR_DASH_START {: .copyable } |<html> <body> <audio controls id="preview-sound-677"><source src="../sounds/sfx/677.wav" type="audio/wav"> <script>document.getElementById("preview-sound-677").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|678 |SOUND_WAR_DASH {: .copyable } |<html> <body> <audio controls id="preview-sound-678"><source src="../sounds/sfx/678.wav" type="audio/wav"> <script>document.getElementById("preview-sound-678").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|679 |SOUND_WAR_HORSE_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-679"><source src="../sounds/sfx/679.wav" type="audio/wav"> <script>document.getElementById("preview-sound-679").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|680 |SOUND_WAR_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-680"><source src="../sounds/sfx/680.wav" type="audio/wav"> <script>document.getElementById("preview-sound-680").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|681 |SOUND_WAR_FIRE_SCREEM {: .copyable } |<html> <body> <audio controls id="preview-sound-681"><source src="../sounds/sfx/681.wav" type="audio/wav"> <script>document.getElementById("preview-sound-681").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|682 |SOUND_WAR_GRAB_PLAYER {: .copyable } |<html> <body> <audio controls id="preview-sound-682"><source src="../sounds/sfx/682.wav" type="audio/wav"> <script>document.getElementById("preview-sound-682").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|683 |SOUND_WAR_BOMB_HOLD {: .copyable } |<html> <body> <audio controls id="preview-sound-683"><source src="../sounds/sfx/683.wav" type="audio/wav"> <script>document.getElementById("preview-sound-683").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|684 |SOUND_WAR_BOMB_PULL_OUT {: .copyable } |<html> <body> <audio controls id="preview-sound-684"><source src="../sounds/sfx/684.wav" type="audio/wav"> <script>document.getElementById("preview-sound-684").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|685 |SOUND_WAR_CHASE {: .copyable } |<html> <body> <audio controls id="preview-sound-685"><source src="../sounds/sfx/685.wav" type="audio/wav"> <script>document.getElementById("preview-sound-685").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|686 |SOUND_WAR_BOMB_TICK {: .copyable } |<html> <body> <audio controls id="preview-sound-686"><source src="../sounds/sfx/686.wav" type="audio/wav"> <script>document.getElementById("preview-sound-686").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|687 |SOUND_WAR_FLAME {: .copyable } |<html> <body> <audio controls id="preview-sound-687"><source src="../sounds/sfx/687.wav" type="audio/wav"> <script>document.getElementById("preview-sound-687").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|688 |SOUND_WAR_LAVA_SPLASH {: .copyable } |<html> <body> <audio controls id="preview-sound-688"><source src="../sounds/sfx/688.wav" type="audio/wav"> <script>document.getElementById("preview-sound-688").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|689 |SOUND_WAR_LAVA_DASH {: .copyable } |<html> <body> <audio controls id="preview-sound-689"><source src="../sounds/sfx/689.wav" type="audio/wav"> <script>document.getElementById("preview-sound-689").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|690 |SOUND_DEATH_DIES {: .copyable } |<html> <body> <audio controls id="preview-sound-690"><source src="../sounds/sfx/690.wav" type="audio/wav"> <script>document.getElementById("preview-sound-690").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|691 |SOUND_DEATH_DESTROY_SKULLS {: .copyable } |<html> <body> <audio controls id="preview-sound-691"><source src="../sounds/sfx/691.wav" type="audio/wav"> <script>document.getElementById("preview-sound-691").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|692 |SOUND_DEATH_GROWL {: .copyable } |<html> <body> <audio controls id="preview-sound-692"><source src="../sounds/sfx/692.wav" type="audio/wav"> <script>document.getElementById("preview-sound-692").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|693 |SOUND_DEATH_SWIPE_START {: .copyable } |<html> <body> <audio controls id="preview-sound-693"><source src="../sounds/sfx/693.wav" type="audio/wav"> <script>document.getElementById("preview-sound-693").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|694 |SOUND_DEATH_SWIPE {: .copyable } |<html> <body> <audio controls id="preview-sound-694"><source src="../sounds/sfx/694.wav" type="audio/wav"> <script>document.getElementById("preview-sound-694").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|695 |SOUND_DEATH_SUMMON_SCYTHES {: .copyable } |<html> <body> <audio controls id="preview-sound-695"><source src="../sounds/sfx/695.wav" type="audio/wav"> <script>document.getElementById("preview-sound-695").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|696 |SOUND_DEATH_SUMMON_SKULLS {: .copyable } |<html> <body> <audio controls id="preview-sound-696"><source src="../sounds/sfx/696.wav" type="audio/wav"> <script>document.getElementById("preview-sound-696").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|697 |SOUND_BEAST_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-697"><source src="../sounds/sfx/697.wav" type="audio/wav"> <script>document.getElementById("preview-sound-697").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|698 |SOUND_BEAST_LASER {: .copyable } |<html> <body> <audio controls id="preview-sound-698"><source src="../sounds/sfx/698.wav" type="audio/wav"> <script>document.getElementById("preview-sound-698").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|699 |SOUND_BEAST_BACKGROUND_DIVE {: .copyable } |<html> <body> <audio controls id="preview-sound-699"><source src="../sounds/sfx/699.wav" type="audio/wav"> <script>document.getElementById("preview-sound-699").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|700 |SOUND_BEAST_FIRE_RING {: .copyable } |<html> <body> <audio controls id="preview-sound-700"><source src="../sounds/sfx/700.wav" type="audio/wav"> <script>document.getElementById("preview-sound-700").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|701 |SOUND_BEAST_GHOST_DASH {: .copyable } |<html> <body> <audio controls id="preview-sound-701"><source src="../sounds/sfx/701.wav" type="audio/wav"> <script>document.getElementById("preview-sound-701").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|702 |SOUND_BEAST_GHOST_RISE {: .copyable } |<html> <body> <audio controls id="preview-sound-702"><source src="../sounds/sfx/702.wav" type="audio/wav"> <script>document.getElementById("preview-sound-702").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|703 |SOUND_BEAST_LAVA_BALL_SPLASH {: .copyable } |<html> <body> <audio controls id="preview-sound-703"><source src="../sounds/sfx/703.wav" type="audio/wav"> <script>document.getElementById("preview-sound-703").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|704 |SOUND_BEAST_LAVA_RISE {: .copyable } |<html> <body> <audio controls id="preview-sound-704"><source src="../sounds/sfx/704.wav" type="audio/wav"> <script>document.getElementById("preview-sound-704").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|705 |SOUND_BEAST_SUCTION_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-705"><source src="../sounds/sfx/705.wav" type="audio/wav"> <script>document.getElementById("preview-sound-705").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|706 |SOUND_BEAST_FIRE_BARF {: .copyable } |<html> <body> <audio controls id="preview-sound-706"><source src="../sounds/sfx/706.wav" type="audio/wav"> <script>document.getElementById("preview-sound-706").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|707 |SOUND_BEAST_GHOST_ROAR {: .copyable } |<html> <body> <audio controls id="preview-sound-707"><source src="../sounds/sfx/707.wav" type="audio/wav"> <script>document.getElementById("preview-sound-707").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|708 |SOUND_BEAST_INTRO_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-708"><source src="../sounds/sfx/708.wav" type="audio/wav"> <script>document.getElementById("preview-sound-708").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|709 |SOUND_BEAST_SUCTION_END {: .copyable } |<html> <body> <audio controls id="preview-sound-709"><source src="../sounds/sfx/709.wav" type="audio/wav"> <script>document.getElementById("preview-sound-709").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|710 |SOUND_BEAST_SUCTION_START {: .copyable } |<html> <body> <audio controls id="preview-sound-710"><source src="../sounds/sfx/710.wav" type="audio/wav"> <script>document.getElementById("preview-sound-710").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|711 |SOUND_BEAST_SPIT {: .copyable } |<html> <body> <audio controls id="preview-sound-711"><source src="../sounds/sfx/711.wav" type="audio/wav"> <script>document.getElementById("preview-sound-711").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|712 |SOUND_BEAST_SURFACE_GROWL {: .copyable } |<html> <body> <audio controls id="preview-sound-712"><source src="../sounds/sfx/712.wav" type="audio/wav"> <script>document.getElementById("preview-sound-712").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|713 |SOUND_BEAST_SWITCH_SIDES {: .copyable } |<html> <body> <audio controls id="preview-sound-713"><source src="../sounds/sfx/713.wav" type="audio/wav"> <script>document.getElementById("preview-sound-713").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|714 |SOUND_MOTHERSHADOW_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-714"><source src="../sounds/sfx/714.wav" type="audio/wav"> <script>document.getElementById("preview-sound-714").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|715 |SOUND_MOTHERSHADOW_CHARGE_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-715"><source src="../sounds/sfx/715.wav" type="audio/wav"> <script>document.getElementById("preview-sound-715").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|716 |SOUND_MOTHERSHADOW_DASH {: .copyable } |<html> <body> <audio controls id="preview-sound-716"><source src="../sounds/sfx/716.wav" type="audio/wav"> <script>document.getElementById("preview-sound-716").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|717 |SOUND_MOTHERSHADOW_END {: .copyable } |<html> <body> <audio controls id="preview-sound-717"><source src="../sounds/sfx/717.wav" type="audio/wav"> <script>document.getElementById("preview-sound-717").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|718 |SOUND_MOTHERSHADOW_INTRO {: .copyable } | <html> <body> <audio controls id="preview-sound-718"><source src="../sounds/sfx/718.wav" type="audio/wav"> <script>document.getElementById("preview-sound-718").volume = 0.2</script> </body> </html> |  |
+|[ ](#){: .rep .tooltip .badge }|719 |SOUND_BUMBINO_DEATH {: .copyable } |<html> <body> <audio controls id="preview-sound-719"><source src="../sounds/sfx/719.wav" type="audio/wav"> <script>document.getElementById("preview-sound-719").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|720 |SOUND_BUMBINO_DIZZY {: .copyable } |<html> <body> <audio controls id="preview-sound-720"><source src="../sounds/sfx/720.wav" type="audio/wav"> <script>document.getElementById("preview-sound-720").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|721 |SOUND_BUMBINO_HIT_WALL {: .copyable } |<html> <body> <audio controls id="preview-sound-721"><source src="../sounds/sfx/721.wav" type="audio/wav"> <script>document.getElementById("preview-sound-721").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|722 |SOUND_BUMBINO_MISC {: .copyable } |<html> <body> <audio controls id="preview-sound-722"><source src="../sounds/sfx/722.wav" type="audio/wav"> <script>document.getElementById("preview-sound-722").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|723 |SOUND_BUMBINO_PUNCH {: .copyable } |<html> <body> <audio controls id="preview-sound-723"><source src="../sounds/sfx/723.wav" type="audio/wav"> <script>document.getElementById("preview-sound-723").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|724 |SOUND_BUMBINO_RAM {: .copyable } |<html> <body> <audio controls id="preview-sound-724"><source src="../sounds/sfx/724.wav" type="audio/wav"> <script>document.getElementById("preview-sound-724").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|725 |SOUND_BUMBINO_SLAM {: .copyable } |<html> <body> <audio controls id="preview-sound-725"><source src="../sounds/sfx/725.wav" type="audio/wav"> <script>document.getElementById("preview-sound-725").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|726 |SOUND_BUMBINO_SNAP_OUT {: .copyable } |<html> <body> <audio controls id="preview-sound-726"><source src="../sounds/sfx/726.wav" type="audio/wav"> <script>document.getElementById("preview-sound-726").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|727 |SOUND_SIREN_SCREAM {: .copyable } |<html> <body> <audio controls id="preview-sound-727"><source src="../sounds/sfx/727.wav" type="audio/wav"> <script>document.getElementById("preview-sound-727").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|728 |SOUND_SIREN_SING {: .copyable } |<html> <body> <audio controls id="preview-sound-728"><source src="../sounds/sfx/728.wav" type="audio/wav"> <script>document.getElementById("preview-sound-728").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|729 |SOUND_DEATH_SKULL_SUMMON_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-729"><source src="../sounds/sfx/729.wav" type="audio/wav"> <script>document.getElementById("preview-sound-729").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|730 |SOUND_DEATH_SKULL_SUMMON_END {: .copyable } |<html> <body> <audio controls id="preview-sound-730"><source src="../sounds/sfx/730.wav" type="audio/wav"> <script>document.getElementById("preview-sound-730").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|731 |SOUND_BEAST_DEATH_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-731"><source src="../sounds/sfx/731.wav" type="audio/wav"> <script>document.getElementById("preview-sound-731").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|732 |SOUND_BEAST_ANGELIC_BLAST {: .copyable } |<html> <body> <audio controls id="preview-sound-732"><source src="../sounds/sfx/732.wav" type="audio/wav"> <script>document.getElementById("preview-sound-732").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|733 |SOUND_ANCIENT_RECALL {: .copyable } |<html> <body> <audio controls id="preview-sound-733"><source src="../sounds/sfx/733.wav" type="audio/wav"> <script>document.getElementById("preview-sound-733").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|734 |SOUND_ERA_WALK {: .copyable } |<html> <body> <audio controls id="preview-sound-734"><source src="../sounds/sfx/734.wav" type="audio/wav"> <script>document.getElementById("preview-sound-734").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|735 |SOUND_HUGE_GROWTH {: .copyable } |<html> <body> <audio controls id="preview-sound-735"><source src="../sounds/sfx/735.wav" type="audio/wav"> <script>document.getElementById("preview-sound-735").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|736 |SOUND_RUNE_SHARD {: .copyable } |<html> <body> <audio controls id="preview-sound-736"><source src="../sounds/sfx/736.wav" type="audio/wav"> <script>document.getElementById("preview-sound-736").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|737 |SOUND_SHOT_SPEED_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-737"><source src="../sounds/sfx/737.wav" type="audio/wav"> <script>document.getElementById("preview-sound-737").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|738 |SOUND_SHOT_SPEED_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-738"><source src="../sounds/sfx/738.wav" type="audio/wav"> <script>document.getElementById("preview-sound-738").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|739 |SOUND_EXPERIMENTAL_PILL {: .copyable } |<html> <body> <audio controls id="preview-sound-739"><source src="../sounds/sfx/739.wav" type="audio/wav"> <script>document.getElementById("preview-sound-739").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|740 |SOUND_CRACKED_KEY {: .copyable } |<html> <body> <audio controls id="preview-sound-740"><source src="../sounds/sfx/740.wav" type="audio/wav"> <script>document.getElementById("preview-sound-740").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|741 |SOUND_QUEEN_OF_HEARTS {: .copyable } |<html> <body> <audio controls id="preview-sound-741"><source src="../sounds/sfx/741.wav" type="audio/wav"> <script>document.getElementById("preview-sound-741").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|742 |SOUND_WILD_CARD {: .copyable } |<html> <body> <audio controls id="preview-sound-742"><source src="../sounds/sfx/742.wav" type="audio/wav"> <script>document.getElementById("preview-sound-742").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|743 |SOUND_SOUL_OF_ISAAC {: .copyable } |<html> <body> <audio controls id="preview-sound-743"><source src="../sounds/sfx/743.wav" type="audio/wav"> <script>document.getElementById("preview-sound-743").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|744 |SOUND_SOUL_OF_MAGDALENE {: .copyable } |<html> <body> <audio controls id="preview-sound-744"><source src="../sounds/sfx/744.wav" type="audio/wav"> <script>document.getElementById("preview-sound-744").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|745 |SOUND_SOUL_OF_CAIN {: .copyable } |<html> <body> <audio controls id="preview-sound-745"><source src="../sounds/sfx/745.wav" type="audio/wav"> <script>document.getElementById("preview-sound-745").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|746 |SOUND_SOUL_OF_JUDAS {: .copyable } |<html> <body> <audio controls id="preview-sound-746"><source src="../sounds/sfx/746.wav" type="audio/wav"> <script>document.getElementById("preview-sound-746").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|747 |SOUND_SOUL_OF_XXX {: .copyable } |<html> <body> <audio controls id="preview-sound-747"><source src="../sounds/sfx/747.wav" type="audio/wav"> <script>document.getElementById("preview-sound-747").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|748 |SOUND_SOUL_OF_EVE {: .copyable } |<html> <body> <audio controls id="preview-sound-748"><source src="../sounds/sfx/748.wav" type="audio/wav"> <script>document.getElementById("preview-sound-748").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|749 |SOUND_SOUL_OF_SAMSON {: .copyable } |<html> <body> <audio controls id="preview-sound-749"><source src="../sounds/sfx/749.wav" type="audio/wav"> <script>document.getElementById("preview-sound-749").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|750 |SOUND_SOUL_OF_AZAZEL {: .copyable } |<html> <body> <audio controls id="preview-sound-750"><source src="../sounds/sfx/750.wav" type="audio/wav"> <script>document.getElementById("preview-sound-750").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|751 |SOUND_SOUL_OF_LAZARUS {: .copyable } |<html> <body> <audio controls id="preview-sound-751"><source src="../sounds/sfx/751.wav" type="audio/wav"> <script>document.getElementById("preview-sound-751").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|752 |SOUND_SOUL_OF_EDEN {: .copyable } |<html> <body> <audio controls id="preview-sound-752"><source src="../sounds/sfx/752.wav" type="audio/wav"> <script>document.getElementById("preview-sound-752").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|753 |SOUND_SOUL_OF_THE_LOST {: .copyable } |<html> <body> <audio controls id="preview-sound-753"><source src="../sounds/sfx/753.wav" type="audio/wav"> <script>document.getElementById("preview-sound-753").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|754 |SOUND_SOUL_OF_LILITH {: .copyable } |<html> <body> <audio controls id="preview-sound-754"><source src="../sounds/sfx/754.wav" type="audio/wav"> <script>document.getElementById("preview-sound-754").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|755 |SOUND_SOUL_OF_THE_KEEPER {: .copyable } |<html> <body> <audio controls id="preview-sound-755"><source src="../sounds/sfx/755.wav" type="audio/wav"> <script>document.getElementById("preview-sound-755").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|756 |SOUND_SOUL_OF_APOLLYON {: .copyable } |<html> <body> <audio controls id="preview-sound-756"><source src="../sounds/sfx/756.wav" type="audio/wav"> <script>document.getElementById("preview-sound-756").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|757 |SOUND_SOUL_OF_THE_FORGOTTEN {: .copyable } |<html> <body> <audio controls id="preview-sound-757"><source src="../sounds/sfx/757.wav" type="audio/wav"> <script>document.getElementById("preview-sound-757").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|758 |SOUND_SOUL_OF_BETHANY {: .copyable } |<html> <body> <audio controls id="preview-sound-758"><source src="../sounds/sfx/758.wav" type="audio/wav"> <script>document.getElementById("preview-sound-758").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|759 |SOUND_SOUL_OF_JACOB_AND_ESAU {: .copyable } |<html> <body> <audio controls id="preview-sound-759"><source src="../sounds/sfx/759.wav" type="audio/wav"> <script>document.getElementById("preview-sound-759").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|760 |SOUND_MEGA_BAD_GAS {: .copyable } |<html> <body> <audio controls id="preview-sound-760"><source src="../sounds/sfx/760.wav" type="audio/wav"> <script>document.getElementById("preview-sound-760").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|761 |SOUND_MEGA_BAD_TRIP {: .copyable } |<html> <body> <audio controls id="preview-sound-761"><source src="../sounds/sfx/761.wav" type="audio/wav"> <script>document.getElementById("preview-sound-761").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|762 |SOUND_MEGA_BALLS_OF_STEEL {: .copyable } |<html> <body> <audio controls id="preview-sound-762"><source src="../sounds/sfx/762.wav" type="audio/wav"> <script>document.getElementById("preview-sound-762").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|763 |SOUND_MEGA_BOMBS_ARE_KEY {: .copyable } |<html> <body> <audio controls id="preview-sound-763"><source src="../sounds/sfx/763.wav" type="audio/wav"> <script>document.getElementById("preview-sound-763").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|764 |SOUND_MEGA_EXPLOSIVE_DIARRHEA {: .copyable } |<html> <body> <audio controls id="preview-sound-764"><source src="../sounds/sfx/764.wav" type="audio/wav"> <script>document.getElementById("preview-sound-764").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|765 |SOUND_MEGA_FULL_HEALTH {: .copyable } |<html> <body> <audio controls id="preview-sound-765"><source src="../sounds/sfx/765.wav" type="audio/wav"> <script>document.getElementById("preview-sound-765").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|766 |SOUND_MEGA_HEALTH_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-766"><source src="../sounds/sfx/766.wav" type="audio/wav"> <script>document.getElementById("preview-sound-766").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|767 |SOUND_MEGA_HEALTH_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-767"><source src="../sounds/sfx/767.wav" type="audio/wav"> <script>document.getElementById("preview-sound-767").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|768 |SOUND_MEGA_I_FOUND_PILLS {: .copyable } |<html> <body> <audio controls id="preview-sound-768"><source src="../sounds/sfx/768.wav" type="audio/wav"> <script>document.getElementById("preview-sound-768").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|769 |SOUND_MEGA_PUBERTY {: .copyable } |<html> <body> <audio controls id="preview-sound-769"><source src="../sounds/sfx/769.wav" type="audio/wav"> <script>document.getElementById("preview-sound-769").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|770 |SOUND_MEGA_PRETTY_FLY {: .copyable } |<html> <body> <audio controls id="preview-sound-770"><source src="../sounds/sfx/770.wav" type="audio/wav"> <script>document.getElementById("preview-sound-770").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|771 |SOUND_MEGA_RANGE_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-771"><source src="../sounds/sfx/771.wav" type="audio/wav"> <script>document.getElementById("preview-sound-771").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|772 |SOUND_MEGA_RANGE_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-772"><source src="../sounds/sfx/772.wav" type="audio/wav"> <script>document.getElementById("preview-sound-772").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|773 |SOUND_MEGA_SPEED_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-773"><source src="../sounds/sfx/773.wav" type="audio/wav"> <script>document.getElementById("preview-sound-773").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|774 |SOUND_MEGA_SPEED_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-774"><source src="../sounds/sfx/774.wav" type="audio/wav"> <script>document.getElementById("preview-sound-774").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|775 |SOUND_MEGA_TEARS_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-775"><source src="../sounds/sfx/775.wav" type="audio/wav"> <script>document.getElementById("preview-sound-775").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|776 |SOUND_MEGA_TEARS_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-776"><source src="../sounds/sfx/776.wav" type="audio/wav"> <script>document.getElementById("preview-sound-776").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|777 |SOUND_MEGA_LUCK_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-777"><source src="../sounds/sfx/777.wav" type="audio/wav"> <script>document.getElementById("preview-sound-777").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|778 |SOUND_MEGA_LUCK_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-778"><source src="../sounds/sfx/778.wav" type="audio/wav"> <script>document.getElementById("preview-sound-778").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|779 |SOUND_MEGA_TELEPILLS {: .copyable } |<html> <body> <audio controls id="preview-sound-779"><source src="../sounds/sfx/779.wav" type="audio/wav"> <script>document.getElementById("preview-sound-779").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|780 |SOUND_MEGA_48_HR_ENERGY {: .copyable } |<html> <body> <audio controls id="preview-sound-780"><source src="../sounds/sfx/780.wav" type="audio/wav"> <script>document.getElementById("preview-sound-780").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|781 |SOUND_MEGA_HEMATEMESIS {: .copyable } |<html> <body> <audio controls id="preview-sound-781"><source src="../sounds/sfx/781.wav" type="audio/wav"> <script>document.getElementById("preview-sound-781").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|782 |SOUND_MEGA_PARALYSIS {: .copyable } |<html> <body> <audio controls id="preview-sound-782"><source src="../sounds/sfx/782.wav" type="audio/wav"> <script>document.getElementById("preview-sound-782").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|783 |SOUND_MEGA_I_CAN_SEE_FOREVER {: .copyable } |<html> <body> <audio controls id="preview-sound-783"><source src="../sounds/sfx/783.wav" type="audio/wav"> <script>document.getElementById("preview-sound-783").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|784 |SOUND_MEGA_PHEROMONES {: .copyable } |<html> <body> <audio controls id="preview-sound-784"><source src="../sounds/sfx/784.wav" type="audio/wav"> <script>document.getElementById("preview-sound-784").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|785 |SOUND_MEGA_AMNESIA {: .copyable } |<html> <body> <audio controls id="preview-sound-785"><source src="../sounds/sfx/785.wav" type="audio/wav"> <script>document.getElementById("preview-sound-785").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|786 |SOUND_MEGA_LEMON_PARTY {: .copyable } |<html> <body> <audio controls id="preview-sound-786"><source src="../sounds/sfx/786.wav" type="audio/wav"> <script>document.getElementById("preview-sound-786").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|787 |SOUND_MEGA_ARE_YOU_A_WIZARD {: .copyable } |<html> <body> <audio controls id="preview-sound-787"><source src="../sounds/sfx/787.wav" type="audio/wav"> <script>document.getElementById("preview-sound-787").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|788 |SOUND_MEGA_PERCS {: .copyable } |<html> <body> <audio controls id="preview-sound-788"><source src="../sounds/sfx/788.wav" type="audio/wav"> <script>document.getElementById("preview-sound-788").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|789 |SOUND_MEGA_ADDICTED {: .copyable } |<html> <body> <audio controls id="preview-sound-789"><source src="../sounds/sfx/789.wav" type="audio/wav"> <script>document.getElementById("preview-sound-789").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|790 |SOUND_MEGA_RELAX {: .copyable } |<html> <body> <audio controls id="preview-sound-790"><source src="../sounds/sfx/790.wav" type="audio/wav"> <script>document.getElementById("preview-sound-790").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|791 |SOUND_MEGA_TRIPLE_QUESTION_MARK {: .copyable } |<html> <body> <audio controls id="preview-sound-791"><source src="../sounds/sfx/791.wav" type="audio/wav"> <script>document.getElementById("preview-sound-791").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|792 |SOUND_MEGA_ONE_MAKES_YOU_LARGER {: .copyable } |<html> <body> <audio controls id="preview-sound-792"><source src="../sounds/sfx/792.wav" type="audio/wav"> <script>document.getElementById("preview-sound-792").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|793 |SOUND_MEGA_ONE_MAKES_YOU_SMALL {: .copyable } |<html> <body> <audio controls id="preview-sound-793"><source src="../sounds/sfx/793.wav" type="audio/wav"> <script>document.getElementById("preview-sound-793").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|794 |SOUND_MEGA_INFESTED {: .copyable } |<html> <body> <audio controls id="preview-sound-794"><source src="../sounds/sfx/794.wav" type="audio/wav"> <script>document.getElementById("preview-sound-794").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|795 |SOUND_MEGA_INFESTED_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-795"><source src="../sounds/sfx/795.wav" type="audio/wav"> <script>document.getElementById("preview-sound-795").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|796 |SOUND_MEGA_POWER_PILL {: .copyable } |<html> <body> <audio controls id="preview-sound-796"><source src="../sounds/sfx/796.wav" type="audio/wav"> <script>document.getElementById("preview-sound-796").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|797 |SOUND_MEGA_RETRO_VISION {: .copyable } |<html> <body> <audio controls id="preview-sound-797"><source src="../sounds/sfx/797.wav" type="audio/wav"> <script>document.getElementById("preview-sound-797").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|798 |SOUND_MEGA_FRIENDS_TIL_THE_END {: .copyable } |<html> <body> <audio controls id="preview-sound-798"><source src="../sounds/sfx/798.wav" type="audio/wav"> <script>document.getElementById("preview-sound-798").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|799 |SOUND_MEGA_EXLAX {: .copyable } |<html> <body> <audio controls id="preview-sound-799"><source src="../sounds/sfx/799.wav" type="audio/wav"> <script>document.getElementById("preview-sound-799").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|800 |SOUND_MEGA_SOMETHINGS_WRONG {: .copyable } |<html> <body> <audio controls id="preview-sound-800"><source src="../sounds/sfx/800.wav" type="audio/wav"> <script>document.getElementById("preview-sound-800").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|801 |SOUND_MEGA_IM_DROWSY {: .copyable } |<html> <body> <audio controls id="preview-sound-801"><source src="../sounds/sfx/801.wav" type="audio/wav"> <script>document.getElementById("preview-sound-801").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|802 |SOUND_MEGA_IM_EXCITED {: .copyable } |<html> <body> <audio controls id="preview-sound-802"><source src="../sounds/sfx/802.wav" type="audio/wav"> <script>document.getElementById("preview-sound-802").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|803 |SOUND_MEGA_GULP {: .copyable } |<html> <body> <audio controls id="preview-sound-803"><source src="../sounds/sfx/803.wav" type="audio/wav"> <script>document.getElementById("preview-sound-803").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|804 |SOUND_MEGA_HORF {: .copyable } |<html> <body> <audio controls id="preview-sound-804"><source src="../sounds/sfx/804.wav" type="audio/wav"> <script>document.getElementById("preview-sound-804").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|805 |SOUND_MEGA_SUNSHINE {: .copyable } |<html> <body> <audio controls id="preview-sound-805"><source src="../sounds/sfx/805.wav" type="audio/wav"> <script>document.getElementById("preview-sound-805").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|806 |SOUND_MEGA_VURP {: .copyable } |<html> <body> <audio controls id="preview-sound-806"><source src="../sounds/sfx/806.wav" type="audio/wav"> <script>document.getElementById("preview-sound-806").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|807 |SOUND_MEGA_SHOT_SPEED_DOWN {: .copyable } |<html> <body> <audio controls id="preview-sound-807"><source src="../sounds/sfx/807.wav" type="audio/wav"> <script>document.getElementById("preview-sound-807").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|808 |SOUND_MEGA_SHOT_SPEED_UP {: .copyable } |<html> <body> <audio controls id="preview-sound-808"><source src="../sounds/sfx/808.wav" type="audio/wav"> <script>document.getElementById("preview-sound-808").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|809 |SOUND_MEGA_EXPERIMENTAL_PILL {: .copyable } |<html> <body> <audio controls id="preview-sound-809"><source src="../sounds/sfx/809.wav" type="audio/wav"> <script>document.getElementById("preview-sound-809").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|810 |SOUND_SIREN_LUNGE {: .copyable } |<html> <body> <audio controls id="preview-sound-810"><source src="../sounds/sfx/810.wav" type="audio/wav"> <script>document.getElementById("preview-sound-810").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|811 |SOUND_SIREN_MINION_SMOKE {: .copyable } |<html> <body> <audio controls id="preview-sound-811"><source src="../sounds/sfx/811.wav" type="audio/wav"> <script>document.getElementById("preview-sound-811").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|812 |SOUND_SIREN_SCREAM_ATTACK {: .copyable } |<html> <body> <audio controls id="preview-sound-812"><source src="../sounds/sfx/812.wav" type="audio/wav"> <script>document.getElementById("preview-sound-812").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|813 |SOUND_SIREN_SING_STAB {: .copyable } |<html> <body> <audio controls id="preview-sound-813"><source src="../sounds/sfx/813.wav" type="audio/wav"> <script>document.getElementById("preview-sound-813").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|814 |SOUND_BEAST_LAVABALL_RISE {: .copyable } |<html> <body> <audio controls id="preview-sound-814"><source src="../sounds/sfx/814.wav" type="audio/wav"> <script>document.getElementById("preview-sound-814").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|815 |SOUND_BEAST_GROWL {: .copyable } |<html> <body> <audio controls id="preview-sound-815"><source src="../sounds/sfx/815.wav" type="audio/wav"> <script>document.getElementById("preview-sound-815").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|816 |SOUND_BEAST_GRUMBLE {: .copyable } |<html> <body> <audio controls id="preview-sound-816"><source src="../sounds/sfx/816.wav" type="audio/wav"> <script>document.getElementById("preview-sound-816").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|817 |SOUND_FAMINE_GRUNT {: .copyable } |<html> <body> <audio controls id="preview-sound-817"><source src="../sounds/sfx/817.wav" type="audio/wav"> <script>document.getElementById("preview-sound-817").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|818 |SOUND_GFUEL_1 {: .copyable } |<html> <body> <audio controls id="preview-sound-818"><source src="../sounds/sfx/818.wav" type="audio/wav"> <script>document.getElementById("preview-sound-818").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|819 |SOUND_GFUEL_2 {: .copyable } |<html> <body> <audio controls id="preview-sound-819"><source src="../sounds/sfx/819.wav" type="audio/wav"> <script>document.getElementById("preview-sound-819").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|820 |SOUND_GFUEL_3 {: .copyable } |<html> <body> <audio controls id="preview-sound-820"><source src="../sounds/sfx/820.wav" type="audio/wav"> <script>document.getElementById("preview-sound-820").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|821 |SOUND_GFUEL_4 {: .copyable } |<html> <body> <audio controls id="preview-sound-821"><source src="../sounds/sfx/821.wav" type="audio/wav"> <script>document.getElementById("preview-sound-821").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|822 |SOUND_GFUEL_EXPLOSION {: .copyable } |<html> <body> <audio controls id="preview-sound-822"><source src="../sounds/sfx/822.wav" type="audio/wav"> <script>document.getElementById("preview-sound-822").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|823 |SOUND_GFUEL_EXPLOSION_BIG {: .copyable } |<html> <body> <audio controls id="preview-sound-823"><source src="../sounds/sfx/823.wav" type="audio/wav"> <script>document.getElementById("preview-sound-823").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|824 |SOUND_GFUEL_GUNSHOT {: .copyable } |<html> <body> <audio controls id="preview-sound-824"><source src="../sounds/sfx/824.wav" type="audio/wav"> <script>document.getElementById("preview-sound-824").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|825 |SOUND_GFUEL_GUNSHOT_SMALL {: .copyable } |<html> <body> <audio controls id="preview-sound-825"><source src="../sounds/sfx/825.wav" type="audio/wav"> <script>document.getElementById("preview-sound-825").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|826 |SOUND_GFUEL_GUNSHOT_LARGE {: .copyable } |<html> <body> <audio controls id="preview-sound-826"><source src="../sounds/sfx/826.wav" type="audio/wav"> <script>document.getElementById("preview-sound-826").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|827 |SOUND_GFUEL_GUNSHOT_SPREAD {: .copyable } |<html> <body> <audio controls id="preview-sound-827"><source src="../sounds/sfx/827.wav" type="audio/wav"> <script>document.getElementById("preview-sound-827").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|828 |SOUND_GFUEL_AIR_HORN {: .copyable } |<html> <body> <audio controls id="preview-sound-828"><source src="../sounds/sfx/828.wav" type="audio/wav"> <script>document.getElementById("preview-sound-828").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|829 |SOUND_GFUEL_ITEM_APPEAR {: .copyable } |<html> <body> <audio controls id="preview-sound-829"><source src="../sounds/sfx/829.wav" type="audio/wav"> <script>document.getElementById("preview-sound-829").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|830 |SOUND_GFUEL_GUNSHOT_MINI {: .copyable } |<html> <body> <audio controls id="preview-sound-830"><source src="../sounds/sfx/830.wav" type="audio/wav"> <script>document.getElementById("preview-sound-830").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|831 |SOUND_GFUEL_RICOCHET {: .copyable } |<html> <body> <audio controls id="preview-sound-831"><source src="../sounds/sfx/831.wav" type="audio/wav"> <script>document.getElementById("preview-sound-831").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|832 |SOUND_GFUEL_ROCKETLAUNCHER {: .copyable } |<html> <body> <audio controls id="preview-sound-832"><source src="../sounds/sfx/832.wav" type="audio/wav"> <script>document.getElementById("preview-sound-832").volume = 0.2</script> </body> </html>|  |
+|[ ](#){: .rep .tooltip .badge }|833 |NUM_SOUND_EFFECTS {: .copyable } |  |  |
