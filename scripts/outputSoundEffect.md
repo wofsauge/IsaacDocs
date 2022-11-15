@@ -5,7 +5,7 @@ tags:
 # Enum "SoundEffect"
 |DLC|Value|Enumerator|Sound|Comment|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|0 |SOUND_NULL {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|0 |SOUND_NULL {: .copyable } |<html> <body> <audio controls id="preview-sound-0"><source src="https://maya-bee.github.io/sounds/0.wav" type="audio/wav"> <script>document.getElementById("preview-sound-0").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .abrep .tooltip .badge }|1 |SOUND_1UP {: .copyable } |<html> <body> <audio controls id="preview-sound-1"><source src="https://maya-bee.github.io/sounds/1.wav" type="audio/wav"> <script>document.getElementById("preview-sound-1").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .abrep .tooltip .badge }|2 |SOUND_BIRD_FLAP {: .copyable } |<html> <body> <audio controls id="preview-sound-2"><source src="https://maya-bee.github.io/sounds/2.wav" type="audio/wav"> <script>document.getElementById("preview-sound-2").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .abrep .tooltip .badge }|3 |SOUND_BLOBBY_WIGGLE {: .copyable } |<html> <body> <audio controls id="preview-sound-3"><source src="https://maya-bee.github.io/sounds/3.wav" type="audio/wav"> <script>document.getElementById("preview-sound-3").volume = 0.2</script> </body> </html>|  |
@@ -394,7 +394,7 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|499 |SOUND_BONE_BOUNCE {: .copyable } |<html> <body> <audio controls id="preview-sound-499"><source src="https://maya-bee.github.io/sounds/499.wav" type="audio/wav"> <script>document.getElementById("preview-sound-499").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .rep .tooltip .badge }|500 |SOUND_BONE_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-500"><source src="https://maya-bee.github.io/sounds/500.wav" type="audio/wav"> <script>document.getElementById("preview-sound-500").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .rep .tooltip .badge }|501 |SOUND_BISHOP_HIT {: .copyable } |<html> <body> <audio controls id="preview-sound-501"><source src="https://maya-bee.github.io/sounds/501.wav" type="audio/wav"> <script>document.getElementById("preview-sound-501").volume = 0.2</script> </body> </html>|  |
-|[ ](#){: .rep .tooltip .badge }|502 |Does not exist anymore | |
+|[ ](#){: .rep .tooltip .badge }|502 |Does not exist anymore |<html> <body> <audio controls id="preview-sound-502"><source src="https://maya-bee.github.io/sounds/502.wav" type="audio/wav"> <script>document.getElementById("preview-sound-502").volume = 0.2</script> </body> </html>| (legacy: SOUND_PORTAL_LOOP) |
 |[ ](#){: .rep .tooltip .badge }|503 |SOUND_CHAIN_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-503"><source src="https://maya-bee.github.io/sounds/503.wav" type="audio/wav"> <script>document.getElementById("preview-sound-503").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .rep .tooltip .badge }|504 |SOUND_CHAIN_BREAK {: .copyable } |<html> <body> <audio controls id="preview-sound-504"><source src="https://maya-bee.github.io/sounds/504.wav" type="audio/wav"> <script>document.getElementById("preview-sound-504").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .rep .tooltip .badge }|505 |SOUND_MINECART_LOOP {: .copyable } |<html> <body> <audio controls id="preview-sound-505"><source src="https://maya-bee.github.io/sounds/505.wav" type="audio/wav"> <script>document.getElementById("preview-sound-505").volume = 0.2</script> </body> </html>|  |
@@ -725,4 +725,4 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|830 |SOUND_GFUEL_GUNSHOT_MINI {: .copyable } |<html> <body> <audio controls id="preview-sound-830"><source src="https://maya-bee.github.io/sounds/830.wav" type="audio/wav"> <script>document.getElementById("preview-sound-830").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .rep .tooltip .badge }|831 |SOUND_GFUEL_RICOCHET {: .copyable } |<html> <body> <audio controls id="preview-sound-831"><source src="https://maya-bee.github.io/sounds/831.wav" type="audio/wav"> <script>document.getElementById("preview-sound-831").volume = 0.2</script> </body> </html>|  |
 |[ ](#){: .rep .tooltip .badge }|832 |SOUND_GFUEL_ROCKETLAUNCHER {: .copyable } |<html> <body> <audio controls id="preview-sound-832"><source src="https://maya-bee.github.io/sounds/832.wav" type="audio/wav"> <script>document.getElementById("preview-sound-832").volume = 0.2</script> </body> </html>|  |
-|[ ](#){: .rep .tooltip .badge }|833 |NUM_SOUND_EFFECTS {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|833 |NUM_SOUND_EFFECTS {: .copyable } |<html> <body> <audio controls id="preview-sound-833"><source src="https://maya-bee.github.io/sounds/833.wav" type="audio/wav"> <script>document.getElementById("preview-sound-833").volume = 0.2</script> </body> </html>|  |
