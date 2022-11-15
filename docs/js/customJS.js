@@ -225,6 +225,10 @@ document$.subscribe(function() {
     modifyCallbackPageLayout();
     addBitsetCalculator();
     buildContentMap();
+
+    // reduce audio volume to 25%
+    $("audio").prop("volume", 0.25);
+
     $(".overviewHeader").click(function() {
         $(this).toggleClass("collapsed");
         $(".contentTable").toggle();
