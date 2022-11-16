@@ -11,7 +11,8 @@ tags:
 Constructor for the "KColor" class.
 
 ???+ note "Notes"
-  "KColor" is only used in the [Font](Font.md) class. For most other situations you will need to use the [Color()](Color.md) constructor.
+	"KColor" is only used in the [Font](Font.md) class. For most other situations you will need to use the [Color()](Color.md) constructor.
+
 ___
 ## Variables
 ### Alpha {: aria-label='Variables' }
