@@ -15,8 +15,8 @@ Constructor for the "BitSet128" class.
 [BitSet128](BitSet128.md) is used as a storage system for flags and other bit-wise evaluated values that exceed the numeric limits of the default 64-bit integers which only allow for up to 64 flags to be defined. [BitSet128](BitSet128.md) allows for up to 128 Flags by spliting the bitset into a "lower" and "higher" part. Those parts are represented by a simple 64bit integer number.
 ___
 ### Color () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
-#### [Color](Color.md) Color ( float R, float G, float B, float A, int RO, int GO, int BO ) {: .copyable aria-label='Constructors' }
+[ ](#){: .rep .tooltip .badge }
+#### [Color](Color.md) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[Color](Color.md)" class.
 
@@ -24,9 +24,7 @@ When using the [Font](Font.md) class, use [KColor()](KColor.md) instead.
 
 Colors are made of three separate components, tint, colorize and offset. Tint acts like a color multiplicator. Offset is a color which is added after the tint is applied. Colorize is complicated. See the `:::lua SetColorize()` function for a detailed description.
 
-R, G, B and A accept numbers between 0 and 1.
-
-RO, GO and BO accept numbers between -255 and 255.
+R, G, B, A, RO, GO and BO accept numbers between 0 and 1.
 ___
 ### Entity·Ptr () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
