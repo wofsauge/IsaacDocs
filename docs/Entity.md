@@ -259,7 +259,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CollidesWithGrid ( ) {: .copyable aria-label='Functions' }
 
-Returns true if the entity is able to collide with grid entities in general. (This is not to be confused with whether or not the entity is currently colliding with a grid entity.)
+Returns true if the entity is currently colliding with a valid GridEntity, as dictated by its `Entity.GridCollisionClass`.
 ___
 ### Die () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
