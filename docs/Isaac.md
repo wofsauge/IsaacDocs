@@ -16,7 +16,7 @@ tags:
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddCallback ( table modRef, variable callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddCallback ( table modRef, function callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [AddCallback](ModReference.md#addcallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -29,7 +29,7 @@ returns pill color
 ___
 ### Add·Priority·Callback () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddPriorityCallback ( table modRef, variable callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddPriorityCallback ( table modRef, function callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 ___
 ### Console·Output () {: aria-label='Functions' }
@@ -115,11 +115,11 @@ This function does not return the entities sorted by nearest first, but based on
 ___
 ### Get·Built·In·Callback·State () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean GetBuiltInCallbackState ( variable callbackId ) {: .copyable aria-label='Functions' }
+#### boolean GetBuiltInCallbackState ( function callbackId ) {: .copyable aria-label='Functions' }
 ___
 ### Get·Callbacks () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### table GetCallbacks ( variable callbackId, boolean createIfMissing ) {: .copyable aria-label='Functions' }
+#### table GetCallbacks ( function callbackId, boolean createIfMissing ) {: .copyable aria-label='Functions' }
 ___
 ### Get·Card·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -491,7 +491,7 @@ It is recommended to use the global [RegisterMod](GlobalFunctions.md#registermod
 ___
 ### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveCallback ( table modRef, variable callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
+#### void RemoveCallback ( table modRef, function callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [RemoveCallback](ModReference.md#removecallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -540,12 +540,12 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
 ___
 ### Run·Callback () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RunCallback ( variable callbackId, table modRef ) {: .copyable aria-label='Functions' }
+#### void RunCallback ( function callbackId, table modRef ) {: .copyable aria-label='Functions' }
 
 ___
 ### Run·Callback·With·Param () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RunCallbackWithParam ( variable callbackId, table modRef ) {: .copyable aria-label='Functions' }
+#### void RunCallbackWithParam ( function callbackId, table modRef ) {: .copyable aria-label='Functions' }
 
 ___
 ### Save·Mod·Data () {: aria-label='Functions' }
@@ -574,7 +574,7 @@ ___
 ___
 ### Set·Built·In·Callback·State () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void SetBuiltInCallbackState ( variable callbackId, boolean state ) {: .copyable aria-label='Functions' }
+#### void SetBuiltInCallbackState ( function callbackId, boolean state ) {: .copyable aria-label='Functions' }
 
 ___
 
