@@ -411,11 +411,9 @@ Checking for this value is not sufficient to detect a Double Trouble room becaus
 ___
 ### Get·Seeded·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed, bool NoDecrease = false ) {: .copyable aria-label='Functions' }
 
-???+ bug "Bug"
-    Calling this function crashes the game
-
+When NoDecrease is true, returned collectibles will not be removed from the pools they came from
 
 ___
 ### Get·Shop·Level () {: aria-label='Functions' }
