@@ -25,6 +25,12 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int AddPillEffectToPool ( int pillEffect ) {: .copyable aria-label='Functions' }
 returns pill color
+
+___
+### Add·Priority·Callback () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void AddPriorityCallback ( table modRef, function callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+
 ___
 ### Console·Output () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -106,6 +112,14 @@ ___
 Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](enums/EntityPartition.md)) (include all = 0xffffffff)
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded.
+___
+### Get·Built·In·Callback·State () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean GetBuiltInCallbackState ( function callbackId ) {: .copyable aria-label='Functions' }
+___
+### Get·Callbacks () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### table GetCallbacks ( function callbackId, boolean createIfMissing ) {: .copyable aria-label='Functions' }
 ___
 ### Get·Card·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -524,6 +538,16 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
     ```
 
 ___
+### Run·Callback () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void RunCallback ( function callbackId, table modRef ) {: .copyable aria-label='Functions' }
+
+___
+### Run·Callback·With·Param () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void RunCallbackWithParam ( function callbackId, table modRef ) {: .copyable aria-label='Functions' }
+
+___
 ### Save·Mod·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SaveModData ( table modRef, string data ) {: .copyable aria-label='Functions' }
@@ -547,8 +571,13 @@ ___
 ### Screen·To·World·Distance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) ScreenToWorldDistance ( [Vector](Vector.md) pos ) {: .copyable aria-label='Functions' }
+___
+### Set·Built·In·Callback·State () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void SetBuiltInCallbackState ( function callbackId, boolean state ) {: .copyable aria-label='Functions' }
 
 ___
+
 ### Spawn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](Vector.md) position, [Vector](Vector.md) velocity, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }

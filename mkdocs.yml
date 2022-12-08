@@ -35,6 +35,7 @@ nav:
             - "BombVariant": enums/BombVariant.md
             - "ButtonAction": enums/ButtonAction.md
             - "CacheFlag": enums/CacheFlag.md
+            - "CallbackPriority": enums/CallbackPriority.md
             - "Card": enums/Card.md
             - "Challenge": enums/Challenge.md
             - "ChampionColor": enums/ChampionColor.md
@@ -67,6 +68,7 @@ nav:
             - "KeySubType": enums/KeySubType.md
             - "LaserOffset": enums/LaserOffset.md
             - "LaserSubType": enums/LaserSubType.md
+            - "LaserVariant": enums/LaserVariant.md
             - "LevelCurse": enums/LevelCurse.md
             - "LevelStage": enums/LevelStage.md
             - "LevelStateFlag": enums/LevelStateFlag.md
@@ -176,7 +178,6 @@ nav:
         - "RoomDescriptor": RoomDescriptor.md
         - "RNG": RNG.md
         - "Seeds": Seeds.md
-        - "ShockwaveParams": ShockwaveParams.md
         - "Sprite": Sprite.md
         - "SFXManager": SFXManager.md
         - "TearParams": TearParams.md

@@ -757,6 +757,11 @@ ___
 #### [Vector](Vector.md) SizeMulti  {: .copyable aria-label='Variables' }
 
 ___
+### Sorting·Layer {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### [SortingLayer](enums/SortingLayer.md) SortingLayer  {: .copyable aria-label='Variables' }
+
+___
 ### Spawner·Entity {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) SpawnerEntity  {: .copyable aria-label='Variables' data-altreturn='nil' }

@@ -1,90 +1,3 @@
-Table APIOverride
-
-Subclasses:
-
-	Table APIOverride.OverriddenClasses
-
-	Subclasses:
-
-		Table APIOverride.OverriddenClasses.Level
-
-		Subclasses:
-
-			Class APIOverride.OverriddenClasses.Level.Original (type Level)
-
-			Methods:
-
-				AddAngelRoomChance
-				AddCurse
-				ApplyBlueMapEffect
-				ApplyCompassEffect
-				ApplyMapEffect
-				CanOpenChallengeRoom
-				CanSpawnDevilRoom
-				CanStageHaveCurseOfLabyrinth
-				ChangeRoom
-				DisableDevilRoom
-				ForceHorsemanBoss
-				GetAbsoluteStage
-				GetAngelRoomChance
-				GetCanSeeEverything
-				GetCurrentRoom
-				GetCurrentRoomDesc
-				GetCurrentRoomIndex
-				GetCurseName
-				GetCurses
-				GetDevilAngelRoomRNG
-				GetDungeonPlacementSeed
-				GetEnterPosition
-				GetHeartPicked
-				GetLastBossRoomListIndex
-				GetLastRoomDesc
-				GetName
-				GetNonCompleteRoomIndex
-				GetPlanetariumChance
-				GetPreviousRoomIndex
-				GetRandomRoomIndex
-				GetRoomByIdx
-				GetRoomCount
-				GetRooms
-				GetStage
-				GetStageType
-				GetStartingRoomIndex
-				GetStateFlag
-				HasBossChallenge
-				InitializeDevilAngelRoom
-				IsAltStage
-				IsAscent
-				IsDevilRoomDisabled
-				IsNextStageAvailable
-				IsPreAscent
-				MakeRedRoomDoor
-				QueryRoomTypeIndex
-				RemoveCompassEffect
-				RemoveCurses
-				SetCanSeeEverything
-				SetHeartPicked
-				SetNextStage
-				SetRedHeartDamage
-				SetStage
-				SetStateFlag
-				ShowMap
-				ShowName
-				UncoverHiddenDoor
-				Update
-				UpdateVisibility
-
-			Properties:
-
-				DungeonReturnPosition (Get: true, Set: true)
-				DungeonReturnRoomIndex (Get: true, Set: true)
-				EnterDoor (Get: true, Set: true)
-				GreedModeWave (Get: true, Set: true)
-				LeaveDoor (Get: true, Set: true)
-
-
-
-
 Class BitSet128 (type BitSet128)
 
 Static Methods:
@@ -362,6 +275,7 @@ Properties:
 	RenderZOffset (Get: true, Set: true)
 	Size (Get: true, Set: true)
 	SizeMulti (Get: true, Set: true)
+	SortingLayer (Get: true, Set: true)
 	SpawnGridIndex (Get: true, Set: false)
 	SpawnerEntity (Get: true, Set: true)
 	SpawnerType (Get: true, Set: true)
@@ -1176,9 +1090,12 @@ Methods:
 	InvalidateActiveItem
 	InvalidateCraftingItem
 	IsVisible
+	PostUpdate
+	Render
 	SetVisible
 	ShowFortuneText
 	ShowItemText
+	Update
 
 Namespace Input
 
@@ -1199,6 +1116,7 @@ Static Methods:
 
 	AddCallback
 	AddPillEffectToPool
+	AddPriorityCallback
 	ConsoleOutput
 	CountBosses
 	CountEnemies
@@ -1208,6 +1126,8 @@ Static Methods:
 	Explode
 	FindByType
 	FindInRadius
+	GetBuiltInCallbackState
+	GetCallbacks
 	GetCardIdByName
 	GetChallenge
 	GetChallengeIdByName
@@ -1240,9 +1160,12 @@ Static Methods:
 	RemoveModData
 	RenderScaledText
 	RenderText
+	RunCallback
+	RunCallbackWithParam
 	SaveModData
 	ScreenToWorld
 	ScreenToWorldDistance
+	SetBuiltInCallbackState
 	Spawn
 	WorldToRenderPosition
 	WorldToScreen
@@ -1254,14 +1177,25 @@ Subclasses:
 
 	Class ItemConfig.Card (type Card)
 
+	Methods:
+
+		IsAvailable
+		IsCard
+		IsRune
+
 	Properties:
 
 		AchievementID (Get: true, Set: true)
+		AnnouncerDelay (Get: true, Set: true)
+		AnnouncerVoice (Get: true, Set: true)
+		CardType (Get: true, Set: true)
 		Description (Get: true, Set: true)
 		GreedModeAllowed (Get: true, Set: true)
 		HudAnim (Get: true, Set: true)
 		ID (Get: true, Set: true)
+		MimicCharge (Get: true, Set: true)
 		Name (Get: true, Set: true)
+		PickupSubtype (Get: true, Set: true)
 
 	Class ItemConfig.Config (type Config)
 
@@ -1301,6 +1235,7 @@ Subclasses:
 	Methods:
 
 		HasTags
+		IsAvailable
 		IsCollectible
 		IsNull
 		IsTrinket
@@ -1340,11 +1275,21 @@ Subclasses:
 
 	Class ItemConfig.PillEffect (type PillEffect)
 
+	Methods:
+
+		IsAvailable
+
 	Properties:
 
 		AchievementID (Get: true, Set: true)
+		AnnouncerDelay (Get: true, Set: true)
+		AnnouncerVoice (Get: true, Set: true)
+		AnnouncerVoiceSuper (Get: true, Set: true)
+		EffectClass (Get: true, Set: true)
+		EffectSubClass (Get: true, Set: true)
 		GreedModeAllowed (Get: true, Set: true)
 		ID (Get: true, Set: true)
+		MimicCharge (Get: true, Set: true)
 		Name (Get: true, Set: true)
 
 
@@ -1626,7 +1571,6 @@ Methods:
 	GetLaserTarget
 	GetLavaIntensity
 	GetLightingAlpha
-	GetNextShockwaveId
 	GetRandomPosition
 	GetRandomTileIndex
 	GetRedHeartDamage
@@ -1679,7 +1623,6 @@ Methods:
 	SetGridPath
 	SetRedHeartDamage
 	SetSacrificeDone
-	SetShockwaveParam
 	SetSlowDown
 	SetWallColor
 	ShopReshuffle
@@ -1815,17 +1758,6 @@ Methods:
 	Reset
 	Restart
 	SetStartSeed
-
-Class ShockwaveParams (type ShockwaveParams)
-
-Properties:
-
-	Age (Get: true, Set: true)
-	LifeSpan (Get: true, Set: true)
-	Position (Get: true, Set: true)
-	Strength (Get: true, Set: true)
-	Time (Get: true, Set: true)
-	TimeDT (Get: true, Set: true)
 
 Class Sprite (type Sprite)
 
@@ -2023,6 +1955,7 @@ Methods:
 	HasHallucination
 	IsGreedMode
 	IsPaused
+	MakeShockwave
 	MoveToRandomRoom
 	NextVictoryLap
 	Render

@@ -1038,3 +1038,10 @@ Returns true if the internal devolving behavior should be ignored - When returni
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|72 |MC_PRE_ENTITY_DEVOLVE {: .copyable } | ([Entity](../Entity.md)) | - | boolean |
+
+### MC_PRE_MOD_UNLOAD {: .copyable }
+This is called right before any mod is unloaded (when disabling a mod or reloading it using luamod), the mod's table is passed as an argument
+
+|DLC|Value|Name|Function Args|Optional Args|Return Type|
+|:--|:--|:--|:--|:--|:--|
+|[ ](#){: .rep .tooltip .badge }|73 |MC_PRE_MOD_UNLOAD {: .copyable } | table Mod | - | void |
