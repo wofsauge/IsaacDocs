@@ -43,13 +43,11 @@ Example of a players.xml file:
 ```xml
 <players root="gfx/characters/costumes/"
          portraitroot="gfx/ui/boss/"
-         nameimageroot="gfx/ui/boss/"
-         bigportraitroot="gfx/ui/stage/">
+         nameimageroot="gfx/ui/boss/">
 	<player name="Bob" skin="character_Bob.png" hp="4"
           black="4" pocketActive="712" items="1,4" keys="3"
           nameimage="playername_Bob.png"
           portrait="playerportrait_Bob.png"
-          bigportrait="playerbigportrait_Bob.png"
           skinColor="-1" canShoot="false"
           birthright="You are now a gamer"/>
 </players>

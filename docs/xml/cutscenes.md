@@ -29,6 +29,7 @@ This file stores and defines the intro cutscene and the various ending cutscenes
 |musicDelay|int|How long the game should wait to play the aforementioned music, if any|
 |width|int|How wide the anm2 should be displayed on screen|
 |height|int|How long the anm2 should be displayed on screen|
+|subtitles|string|The filepath to the subtitles.srt file|
 |letterbox|bool||
 
 ## "videopart" Tag
@@ -36,4 +37,5 @@ This file stores and defines the intro cutscene and the various ending cutscenes
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 |file|string|The filepath to the video file this videopart should play|
+|subtitles|string|The filepath to the subtitles.srt file|
 |keepMusic|bool|Whether or not music defined in an anm2part should keep playing while this videopart is playing|

@@ -304,7 +304,6 @@ ___
 ### Add·Null·Costume () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddNullCostume ( [NullItemID](enums/NullItemID.md) NullId ) {: .copyable aria-label='Functions' }
-for Lua
 
 ___
 ### Add·Pill () {: aria-label='Functions' }
@@ -1559,8 +1558,10 @@ Only works on Bethany.
 
 ___
 ### Set·Target·Trap·Door () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### void SetTargetTrapDoor ( [GridEntity](GridEntity.md) TrapDoor ) {: .copyable aria-label='Functions' }
+
+This function got removed with Repentance.
 
 ___
 ### Shoot·Red·Candle () {: aria-label='Functions' }
@@ -1823,11 +1824,6 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE.  **This is eq
 Defines how fast the tear travel when spawned.
 
 The default velocity of a tear shot is 10 times the players ShotSpeed.
-
-___
-### Sprite·Scale {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
-#### float SpriteScale  {: .copyable aria-label='Variables' }
 
 ___
 ### Tear·Color {: aria-label='Variables' }

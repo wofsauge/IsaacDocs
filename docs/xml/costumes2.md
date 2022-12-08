@@ -30,7 +30,7 @@ From bottom to top: glow < body < body{0..1} < head < head{0..5} < top0 < extra 
 |:--|:--|:--|
 |id|int|Ingame-Id of the Costume. Will be overridden by the game when file is in content folder.|
 |anm2path|string|Path to the .anm2 file|
-|type|string|Type of the costume. Available: none | passive | active | familiar | trinket|
+|type|string|Type of the costume. Available: [none, passive, active, familiar, trinket]|
 |priority|int|Priority of the costume. higher number means higher priority|
 |overwriteColor|bool|Define if a costume overrides the body color of the character (default: false)|
 |isFlying|bool|Define if a costume displays a flying character (default: false)|

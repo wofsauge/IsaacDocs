@@ -184,6 +184,8 @@ Returning any value will have no effect on later callback executions.
 ### MC_EVALUATE_CACHE {: .copyable }
 Called one or more times when a player's stats are re-evaluated. For example, this will fire after the player picks up a collectible item that grants stats or uses a stat pill.
 
+The optional parameter can be used to specify a CacheFlag. It must be a singular CacheFlag, a composition of two or more CacheFlags will not work.
+
 Returning any value will have no effect on later callback executions.
 
 Use this callback to implement anything that changse the player's stats, familiars, flying, weapons, and so on.
@@ -209,11 +211,11 @@ You can force this callback to fire in other callbacks by 1) manually adding the
 -- My custom item changes the player's damage on every frame
 function barPostPEffectUpdate(player)
   player:AddCacheFlags(CacheFlag.CACHE_DAMAGE)
-  player:EvaluateCache() -- The "MC_EVALUATE_CACHE" callback will now fire
+  player:EvaluateItems() -- The "MC_EVALUATE_CACHE" callback will now fire.
 end
 ```
 
-Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag.
+Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag. 
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
@@ -335,6 +337,8 @@ If a number is returned, it will be the "Curses" arg for later executed callback
 |[ ](#){: .abrep .tooltip .badge }|12 |MC_POST_CURSE_EVAL {: .copyable } | ([Curses](LevelCurse.md) [int]) | - | int |
 
 ### MC_INPUT_ACTION {: .copyable }
+
+This callback fires every time the game polls for input, once for each keyboard or controller button. (Thus, it fires many times per frame.) Since it has to do with polling, it fires regardless of whether or not the player is actually pressing any particular input.
 
 This callback is used to arbitrarily change inputs. For example, you can completely disable the player from pressing a certain button. Or, you can force the player to press a specific button, and so on. If all you want to do is *read* if an input is pressed or not, then you should not use this callback, and instead use the `Input.IsActionTriggered` method in the `MC_POST_RENDER` callback.
 
@@ -1025,3 +1029,12 @@ Returning any value will have no effect on later callback executions.
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|71 |MC_PRE_ROOM_ENTITY_SPAWN {: .copyable } | ([EntityType](EntityType.md),<br>Variant [int],<br>SubType [int],<br>GridIndex [int],<br>Seed [int]) | - | void |
+
+### MC_PRE_ENTITY_DEVOLVE {: .copyable }
+This is called when an entity is devolved through D10 or similar.
+
+Returns true if the internal devolving behavior should be ignored - When returning true, this callback is responsible for spawning the devolved entity and removing the original one.
+
+|DLC|Value|Name|Function Args|Optional Args|Return Type|
+|:--|:--|:--|:--|:--|:--|
+|[ ](#){: .rep .tooltip .badge }|72 |MC_PRE_ENTITY_DEVOLVE {: .copyable } | ([Entity](../Entity.md)) | - | boolean |

@@ -123,6 +123,24 @@ ___
 ### Is·Playing () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
+Returns true/false depending on if the sprite is playing the provided animation name. Names are set in a given sprite's anm2 file.
+
+???- example "Example Code"
+    This code checks the name of the current animation ("Appear" and "Idle" are used by cards), then replaces its animations with ones loaded from a custom anm2 file called "Custom_Animations.anm2", which has the same animation names.
+
+    ```lua
+	if mySprite:IsPlaying("Appear") then
+		mySprite:Load("gfx/Custom_Animations.anm2", true)
+		mySprite:LoadGraphics()
+		mySprite:Play("Appear",true)
+		mySprite:Update()
+	elseif mySprite:IsPlaying("Idle") then
+		mySprite:Load("gfx/Custom_Animations.anm2", true)
+		mySprite:LoadGraphics()
+		mySprite:Play("Idle",true)
+		mySprite:Update()
+	end
+    ```
 
 ___
 ### Load () {: aria-label='Functions' }

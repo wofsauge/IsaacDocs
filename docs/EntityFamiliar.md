@@ -209,6 +209,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int OrbitLayer  {: .copyable aria-label='Variables' }
 
+This value is `-1` by default, and changes to whichever value is defined by `EntityFamiliar:AddToOrbit()`.
 ___
 ### Orbit·Speed {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

@@ -58,12 +58,13 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int AddCoins  {: .copyable aria-label='Variables' }
 
+Returns the number of coins the item adds to the player.
 ___
 ### Add·Costume·On·Pickup {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean AddCostumeOnPickup  {: .copyable aria-label='Variables' }
 
-Returns the number of coins the item adds to the player.
+Returns whether or not the item adds its costume on pickup.
 ___
 ### Add·Hearts {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -120,6 +121,12 @@ ___
 
 Returns the costume given to the player by the item.
 ___
+### CraftingQuality {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### int CraftingQuality  {: .copyable aria-label='Variables' }
+
+The item's quality for the Bag of Crafting algorithm. Possible values are -1, 0, 1, 2, 3, and 4. A value of -1 indicates that the item is disabled from being craftable.
+___
 ### Description {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### string Description  {: .copyable aria-label='Variables' }
@@ -143,9 +150,9 @@ Any item that is not marked with a devil price will return ``:::lua 1``
     ```
 ___
 ### Discharged {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### boolean Discharged  {: .copyable aria-label='Variables' }
-
+This attribute got removed with Repentance.
 ___
 ### Gfx·File·Name {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

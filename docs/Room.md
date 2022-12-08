@@ -761,8 +761,9 @@ Tries to create a bridge over a given pit. Returns true if the creation was succ
 
 ___
 ### Try·Place·Ladder () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### void TryPlaceLadder ( [Vector](Vector.md) PlayerPos, [Vector](Vector.md) PlayerVelocity, [Entity](Entity.md) Ladder ) {: .copyable aria-label='Functions' }
+This function got removed with Repentance.
 
 ___
 ### Try·Spawn·Blue·Womb·Door () {: aria-label='Functions' }

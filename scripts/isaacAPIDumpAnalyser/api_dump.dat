@@ -1,0 +1,2094 @@
+Table APIOverride
+
+Subclasses:
+
+	Table APIOverride.OverriddenClasses
+
+	Subclasses:
+
+		Table APIOverride.OverriddenClasses.Level
+
+		Subclasses:
+
+			Class APIOverride.OverriddenClasses.Level.Original (type Level)
+
+			Methods:
+
+				AddAngelRoomChance
+				AddCurse
+				ApplyBlueMapEffect
+				ApplyCompassEffect
+				ApplyMapEffect
+				CanOpenChallengeRoom
+				CanSpawnDevilRoom
+				CanStageHaveCurseOfLabyrinth
+				ChangeRoom
+				DisableDevilRoom
+				ForceHorsemanBoss
+				GetAbsoluteStage
+				GetAngelRoomChance
+				GetCanSeeEverything
+				GetCurrentRoom
+				GetCurrentRoomDesc
+				GetCurrentRoomIndex
+				GetCurseName
+				GetCurses
+				GetDevilAngelRoomRNG
+				GetDungeonPlacementSeed
+				GetEnterPosition
+				GetHeartPicked
+				GetLastBossRoomListIndex
+				GetLastRoomDesc
+				GetName
+				GetNonCompleteRoomIndex
+				GetPlanetariumChance
+				GetPreviousRoomIndex
+				GetRandomRoomIndex
+				GetRoomByIdx
+				GetRoomCount
+				GetRooms
+				GetStage
+				GetStageType
+				GetStartingRoomIndex
+				GetStateFlag
+				HasBossChallenge
+				InitializeDevilAngelRoom
+				IsAltStage
+				IsAscent
+				IsDevilRoomDisabled
+				IsNextStageAvailable
+				IsPreAscent
+				MakeRedRoomDoor
+				QueryRoomTypeIndex
+				RemoveCompassEffect
+				RemoveCurses
+				SetCanSeeEverything
+				SetHeartPicked
+				SetNextStage
+				SetRedHeartDamage
+				SetStage
+				SetStateFlag
+				ShowMap
+				ShowName
+				UncoverHiddenDoor
+				Update
+				UpdateVisibility
+
+			Properties:
+
+				DungeonReturnPosition (Get: true, Set: true)
+				DungeonReturnRoomIndex (Get: true, Set: true)
+				EnterDoor (Get: true, Set: true)
+				GreedModeWave (Get: true, Set: true)
+				LeaveDoor (Get: true, Set: true)
+
+
+
+
+Class BitSet128 (type BitSet128)
+
+Static Methods:
+
+	__call
+
+Methods:
+
+	Get
+	Set
+	__band
+	__bnot
+	__bor
+	__bxor
+	__eq
+	__le
+	__lt
+	__shl
+	__shr
+	__tostring
+
+Properties:
+
+	h (Get: true, Set: true)
+	l (Get: true, Set: true)
+
+Class Color (type Color)
+
+Static Methods:
+
+	Lerp
+	__call
+
+Methods:
+
+	Reset
+	SetColorize
+	SetOffset
+	SetTint
+	__mul
+
+Properties:
+
+	A (Get: true, Set: true)
+	B (Get: true, Set: true)
+	BO (Get: true, Set: true)
+	G (Get: true, Set: true)
+	GO (Get: true, Set: true)
+	R (Get: true, Set: true)
+	RO (Get: true, Set: true)
+
+Namespace CppContainer
+
+Subclasses:
+
+	Namespace CppContainer.ArrayProxy
+
+	Subclasses:
+
+		Class CppContainer.ArrayProxy.RoomConfigEntries (type RoomConfigEntries)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.ArrayProxy.RoomConfigSpawns (type RoomConfigSpawns)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.ArrayProxy.RoomDescriptor (type RoomDescriptor)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.ArrayProxy.intValues (type intValues)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+
+	Class CppContainer.EntityList (type EntityList)
+
+	Methods:
+
+		Get
+		__len
+
+	Properties:
+
+		Size (Get: true, Set: false)
+
+	Namespace CppContainer.Vector
+
+	Subclasses:
+
+		Class CppContainer.Vector.CardConfigList (type CardConfigList)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.Vector.CostumeConfigList (type CostumeConfigList)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.Vector.EffectList (type EffectList)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.Vector.ItemConfigList (type ItemConfigList)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.Vector.PillConfigList (type PillConfigList)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+		Class CppContainer.Vector.VectorList (type VectorList)
+
+		Methods:
+
+			Get
+			__len
+
+		Properties:
+
+			Size (Get: true, Set: false)
+
+
+
+Class Entity (type Entity)
+
+Methods:
+
+	AddBurn
+	AddCharmed
+	AddConfusion
+	AddEntityFlags
+	AddFear
+	AddFreeze
+	AddHealth
+	AddMidasFreeze
+	AddPoison
+	AddShrink
+	AddSlowing
+	AddVelocity
+	BloodExplode
+	CanShutDoors
+	ClearEntityFlags
+	CollidesWithGrid
+	Die
+	Exists
+	GetBossID
+	GetColor
+	GetData
+	GetDropRNG
+	GetEntityFlags
+	GetLastChild
+	GetLastParent
+	GetSprite
+	HasCommonParentWithEntity
+	HasEntityFlags
+	HasFullHealth
+	HasMortalDamage
+	IsActiveEnemy
+	IsBoss
+	IsDead
+	IsEnemy
+	IsFlying
+	IsFrame
+	IsInvincible
+	IsVisible
+	IsVulnerableEnemy
+	Kill
+	MultiplyFriction
+	PostRender
+	Remove
+	RemoveStatusEffects
+	Render
+	RenderShadowLayer
+	SetColor
+	SetSize
+	SetSpriteFrame
+	SetSpriteOverlayFrame
+	TakeDamage
+	ToBomb
+	ToEffect
+	ToFamiliar
+	ToKnife
+	ToLaser
+	ToNPC
+	ToPickup
+	ToPlayer
+	ToProjectile
+	ToTear
+	Update
+
+Properties:
+
+	Child (Get: true, Set: true)
+	CollisionDamage (Get: true, Set: true)
+	Color (Get: true, Set: true)
+	DepthOffset (Get: true, Set: true)
+	DropSeed (Get: true, Set: false)
+	EntityCollisionClass (Get: true, Set: true)
+	FlipX (Get: true, Set: true)
+	FrameCount (Get: true, Set: false)
+	Friction (Get: true, Set: true)
+	GridCollisionClass (Get: true, Set: true)
+	HitPoints (Get: true, Set: true)
+	Index (Get: true, Set: false)
+	InitSeed (Get: true, Set: false)
+	Mass (Get: true, Set: true)
+	MaxHitPoints (Get: true, Set: true)
+	Parent (Get: true, Set: true)
+	Position (Get: true, Set: true)
+	PositionOffset (Get: true, Set: true)
+	RenderZOffset (Get: true, Set: true)
+	Size (Get: true, Set: true)
+	SizeMulti (Get: true, Set: true)
+	SpawnGridIndex (Get: true, Set: false)
+	SpawnerEntity (Get: true, Set: true)
+	SpawnerType (Get: true, Set: true)
+	SpawnerVariant (Get: true, Set: true)
+	SplatColor (Get: true, Set: true)
+	SpriteOffset (Get: true, Set: true)
+	SpriteRotation (Get: true, Set: true)
+	SpriteScale (Get: true, Set: true)
+	SubType (Get: true, Set: true)
+	Target (Get: true, Set: true)
+	TargetPosition (Get: true, Set: true)
+	Type (Get: true, Set: false)
+	Variant (Get: true, Set: true)
+	Velocity (Get: true, Set: true)
+	Visible (Get: true, Set: true)
+
+Class EntityBomb (type EntityBomb)
+
+Methods:
+
+	SetExplosionCountdown
+
+Properties:
+
+	ExplosionDamage (Get: true, Set: true)
+	Flags (Get: true, Set: true)
+	IsFetus (Get: true, Set: true)
+	RadiusMultiplier (Get: true, Set: true)
+
+Class EntityEffect (type EntityEffect)
+
+Static Methods:
+
+	IsPlayerCreep
+
+Methods:
+
+	FollowParent
+	SetDamageSource
+	SetRadii
+	SetTimeout
+
+Properties:
+
+	DamageSource (Get: true, Set: true)
+	FallingAcceleration (Get: true, Set: true)
+	FallingSpeed (Get: true, Set: true)
+	IsFollowing (Get: true, Set: true)
+	LifeSpan (Get: true, Set: true)
+	MaxRadius (Get: true, Set: true)
+	MinRadius (Get: true, Set: true)
+	ParentOffset (Get: true, Set: true)
+	Rotation (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+	State (Get: true, Set: true)
+	Timeout (Get: true, Set: true)
+	m_Height (Get: true, Set: true)
+
+Class EntityFamiliar (type EntityFamiliar)
+
+Static Methods:
+
+	GetOrbitDistance
+
+Methods:
+
+	AddCoins
+	AddHearts
+	AddKeys
+	AddToDelayed
+	AddToFollowers
+	AddToOrbit
+	FireProjectile
+	FollowParent
+	FollowPosition
+	GetOrbitPosition
+	MoveDelayed
+	MoveDiagonally
+	PickEnemyTarget
+	PlayChargeAnim
+	PlayFloatAnim
+	PlayShootAnim
+	RecalculateOrbitOffset
+	RemoveFromDelayed
+	RemoveFromFollowers
+	RemoveFromOrbit
+	Shoot
+
+Properties:
+
+	Coins (Get: true, Set: true)
+	FireCooldown (Get: true, Set: true)
+	HeadFrameDelay (Get: true, Set: true)
+	Hearts (Get: true, Set: true)
+	IsDelayed (Get: true, Set: true)
+	IsFollower (Get: true, Set: true)
+	Keys (Get: true, Set: true)
+	LastDirection (Get: true, Set: true)
+	MoveDirection (Get: true, Set: true)
+	OrbitAngleOffset (Get: true, Set: true)
+	OrbitDistance (Get: true, Set: true)
+	OrbitLayer (Get: true, Set: true)
+	OrbitSpeed (Get: true, Set: true)
+	Player (Get: true, Set: true)
+	RoomClearCount (Get: true, Set: true)
+	ShootDirection (Get: true, Set: true)
+	State (Get: true, Set: true)
+
+Class EntityKnife (type EntityKnife)
+
+Methods:
+
+	GetKnifeDistance
+	GetKnifeVelocity
+	GetRenderZ
+	IsFlying
+	Reset
+	SetPathFollowSpeed
+	Shoot
+
+Properties:
+
+	Charge (Get: true, Set: true)
+	MaxDistance (Get: true, Set: true)
+	PathFollowSpeed (Get: true, Set: true)
+	PathOffset (Get: true, Set: true)
+	Rotation (Get: true, Set: true)
+	RotationOffset (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+	TearFlags (Get: true, Set: true)
+
+Class EntityLaser (type EntityLaser)
+
+Static Methods:
+
+	CalculateEndPoint
+	ShootAngle
+
+Methods:
+
+	GetEndPoint
+	GetNonOptimizedSamples
+	GetRenderZ
+	GetSamples
+	IsCircleLaser
+	IsSampleLaser
+	SetActiveRotation
+	SetBlackHpDropChance
+	SetHomingType
+	SetMaxDistance
+	SetMultidimensionalTouched
+	SetOneHit
+	SetTimeout
+
+Properties:
+
+	Angle (Get: true, Set: true)
+	AngleDegrees (Get: true, Set: true)
+	BlackHpDropChance (Get: true, Set: true)
+	BounceLaser (Get: true, Set: true)
+	CurveStrength (Get: true, Set: true)
+	DisableFollowParent (Get: true, Set: true)
+	EndPoint (Get: true, Set: true)
+	FirstUpdate (Get: true, Set: true)
+	GridHit (Get: true, Set: true)
+	HomingLaser (Get: true, Set: true)
+	HomingType (Get: true, Set: true)
+	IsActiveRotating (Get: true, Set: true)
+	LaserLength (Get: true, Set: true)
+	LastAngleDegrees (Get: true, Set: true)
+	MaxDistance (Get: true, Set: true)
+	OneHit (Get: true, Set: true)
+	ParentOffset (Get: true, Set: true)
+	Radius (Get: true, Set: true)
+	RotationDegrees (Get: true, Set: true)
+	RotationDelay (Get: true, Set: true)
+	RotationSpd (Get: true, Set: true)
+	SampleLaser (Get: true, Set: true)
+	Shrink (Get: true, Set: true)
+	StartAngleDegrees (Get: true, Set: true)
+	TearFlags (Get: true, Set: true)
+	Timeout (Get: true, Set: true)
+
+Class EntityNPC (type EntityNPC)
+
+Static Methods:
+
+	ThrowSpider
+
+Methods:
+
+	AnimWalkFrame
+	CalcTargetPosition
+	CanBeDamagedFromVelocity
+	CanReroll
+	FireBossProjectiles
+	FireProjectiles
+	GetAliveEnemyCount
+	GetBossColorIdx
+	GetChampionColorIdx
+	GetPlayerTarget
+	IsBoss
+	IsChampion
+	KillUnique
+	MakeChampion
+	MakeSplat
+	Morph
+	PlaySound
+	QueryNPCsGroup
+	QueryNPCsSpawnerType
+	QueryNPCsType
+	ResetPathFinderTarget
+
+Properties:
+
+	CanShutDoors (Get: true, Set: true)
+	ChildNPC (Get: true, Set: false)
+	EntityRef (Get: true, Set: true)
+	GroupIdx (Get: true, Set: true)
+	I1 (Get: true, Set: true)
+	I2 (Get: true, Set: true)
+	ParentNPC (Get: true, Set: false)
+	Pathfinder (Get: true, Set: true)
+	ProjectileCooldown (Get: true, Set: true)
+	ProjectileDelay (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+	State (Get: true, Set: true)
+	StateFrame (Get: true, Set: true)
+	V1 (Get: true, Set: true)
+	V2 (Get: true, Set: true)
+
+Class EntityPickup (type EntityPickup)
+
+Methods:
+
+	AppearFast
+	CanReroll
+	GetCoinValue
+	IsShopItem
+	Morph
+	PlayDropSound
+	PlayPickupSound
+	TryOpenChest
+
+Properties:
+
+	AutoUpdatePrice (Get: true, Set: true)
+	Charge (Get: true, Set: true)
+	OptionsPickupIndex (Get: true, Set: true)
+	Price (Get: true, Set: true)
+	ShopItemId (Get: true, Set: true)
+	State (Get: true, Set: true)
+	Timeout (Get: true, Set: true)
+	Touched (Get: true, Set: true)
+	Wait (Get: true, Set: true)
+
+Class EntityPlayer (type EntityPlayer)
+
+Static Methods:
+
+	GetMultiShotPositionVelocity
+
+Methods:
+
+	AddBlackHearts
+	AddBloodCharge
+	AddBlueFlies
+	AddBlueSpider
+	AddBombs
+	AddBoneHearts
+	AddBrokenHearts
+	AddCacheFlags
+	AddCard
+	AddCoins
+	AddCollectible
+	AddControlsCooldown
+	AddCostume
+	AddCurseMistEffect
+	AddDeadEyeCharge
+	AddDollarBillEffect
+	AddEternalHearts
+	AddFriendlyDip
+	AddGigaBombs
+	AddGoldenBomb
+	AddGoldenHearts
+	AddGoldenKey
+	AddHearts
+	AddItemWisp
+	AddJarFlies
+	AddJarHearts
+	AddKeys
+	AddMaxHearts
+	AddMinisaac
+	AddNullCostume
+	AddPill
+	AddPlayerFormCostume
+	AddPoopMana
+	AddPrettyFly
+	AddRottenHearts
+	AddSoulCharge
+	AddSoulHearts
+	AddSwarmFlyOrbital
+	AddTrinket
+	AddWisp
+	AnimateAppear
+	AnimateCard
+	AnimateCollectible
+	AnimateHappy
+	AnimateLightTravel
+	AnimatePickup
+	AnimatePill
+	AnimatePitfallIn
+	AnimatePitfallOut
+	AnimateSad
+	AnimateTeleport
+	AnimateTrapdoor
+	AnimateTrinket
+	AreControlsEnabled
+	AreOpposingShootDirectionsPressed
+	CanAddCollectible
+	CanPickBlackHearts
+	CanPickBoneHearts
+	CanPickGoldenHearts
+	CanPickRedHearts
+	CanPickRottenHearts
+	CanPickSoulHearts
+	CanPickupItem
+	CanShoot
+	CanTurnHead
+	ChangePlayerType
+	CheckFamiliar
+	ClearCostumes
+	ClearDeadEyeCharge
+	ClearTemporaryEffects
+	DischargeActiveItem
+	DoZitEffect
+	DonateLuck
+	DropPocketItem
+	DropTrinket
+	EvaluateItems
+	FireBomb
+	FireBrimstone
+	FireDelayedBrimstone
+	FireKnife
+	FireTear
+	FireTechLaser
+	FireTechXLaser
+	FlushQueueItem
+	FullCharge
+	GetActiveCharge
+	GetActiveItem
+	GetActiveSubCharge
+	GetActiveWeaponEntity
+	GetAimDirection
+	GetBabySkin
+	GetBatteryCharge
+	GetBlackHearts
+	GetBloodCharge
+	GetBodyColor
+	GetBombFlags
+	GetBombVariant
+	GetBoneHearts
+	GetBrokenHearts
+	GetCard
+	GetCardRNG
+	GetCollectibleCount
+	GetCollectibleNum
+	GetCollectibleRNG
+	GetCostumeNullPos
+	GetDamageCooldown
+	GetEffectiveBloodCharge
+	GetEffectiveMaxHearts
+	GetEffectiveSoulCharge
+	GetEffects
+	GetEternalHearts
+	GetExtraLives
+	GetFireDirection
+	GetFlyingOffset
+	GetGoldenHearts
+	GetGreedDonationBreakChance
+	GetHeadColor
+	GetHeadDirection
+	GetHeartLimit
+	GetHearts
+	GetItemState
+	GetJarFlies
+	GetJarHearts
+	GetLaserOffset
+	GetLastActionTriggers
+	GetLastDamageFlags
+	GetLastDamageSource
+	GetLastDirection
+	GetMainTwin
+	GetMaxHearts
+	GetMaxPocketItems
+	GetMaxPoopMana
+	GetMaxTrinkets
+	GetModelingClayEffect
+	GetMovementDirection
+	GetMovementInput
+	GetMovementJoystick
+	GetMovementVector
+	GetMultiShotParams
+	GetNPCTarget
+	GetName
+	GetNumBlueFlies
+	GetNumBlueSpiders
+	GetNumBombs
+	GetNumCoins
+	GetNumGigaBombs
+	GetNumKeys
+	GetOtherTwin
+	GetPill
+	GetPillRNG
+	GetPlayerType
+	GetPocketItem
+	GetPoopMana
+	GetPoopSpell
+	GetRecentMovementVector
+	GetRottenHearts
+	GetShootingInput
+	GetShootingJoystick
+	GetSmoothBodyRotation
+	GetSoulCharge
+	GetSoulHearts
+	GetSubPlayer
+	GetTearHitParams
+	GetTearMovementInheritance
+	GetTearPoisonDamage
+	GetTearRangeModifier
+	GetTotalDamageTaken
+	GetTractorBeam
+	GetTrinket
+	GetTrinketMultiplier
+	GetTrinketRNG
+	GetVelocityBeforeUpdate
+	GetZodiacEffect
+	HasCollectible
+	HasCurseMistEffect
+	HasFullHearts
+	HasFullHeartsAndSoulHearts
+	HasGoldenBomb
+	HasGoldenKey
+	HasInvincibility
+	HasPlayerForm
+	HasTimedItem
+	HasTrinket
+	HasWeaponType
+	InitBabySkin
+	IsBlackHeart
+	IsBoneHeart
+	IsCoopGhost
+	IsExtraAnimationFinished
+	IsFullSpriteRendering
+	IsHeldItemVisible
+	IsHoldingItem
+	IsItemQueueEmpty
+	IsP2Appearing
+	IsPosInSpotLight
+	IsSubPlayer
+	NeedsCharge
+	PlayExtraAnimation
+	QueueExtraAnimation
+	QueueItem
+	RemoveBlackHeart
+	RemoveBlueFly
+	RemoveBlueSpider
+	RemoveCollectible
+	RemoveCostume
+	RemoveCurseMistEffect
+	RemoveGoldenBomb
+	RemoveGoldenKey
+	RemoveSkinCostume
+	RenderBody
+	RenderGlow
+	RenderHead
+	RenderTop
+	ReplaceCostumeSprite
+	ResetDamageCooldown
+	ResetItemState
+	RespawnFamiliars
+	Revive
+	SetActiveCharge
+	SetBloodCharge
+	SetCard
+	SetFullHearts
+	SetMinDamageCooldown
+	SetPill
+	SetPocketActiveItem
+	SetShootingCooldown
+	SetSoulCharge
+	ShootRedCandle
+	SpawnMawOfVoid
+	StopExtraAnimation
+	SwapActiveItems
+	ThrowBlueSpider
+	ThrowFriendlyDip
+	ThrowHeldEntity
+	TriggerBookOfVirtues
+	TryHoldEntity
+	TryHoldTrinket
+	TryRemoveCollectibleCostume
+	TryRemoveNullCostume
+	TryRemoveTrinket
+	TryRemoveTrinketCostume
+	TryUseKey
+	UpdateCanShoot
+	UseActiveItem
+	UseCard
+	UsePill
+	UsePoopSpell
+	WillPlayerRevive
+
+Properties:
+
+	BabySkin (Get: true, Set: true)
+	CanFly (Get: true, Set: true)
+	ControllerIndex (Get: true, Set: false)
+	ControlsCooldown (Get: true, Set: true)
+	ControlsEnabled (Get: true, Set: true)
+	Damage (Get: true, Set: true)
+	FireDelay (Get: true, Set: true)
+	FriendBallEnemy (Get: true, Set: true)
+	HeadFrameDelay (Get: true, Set: true)
+	IBSCharge (Get: true, Set: true)
+	ItemHoldCooldown (Get: true, Set: true)
+	LaserColor (Get: true, Set: true)
+	Luck (Get: true, Set: true)
+	MaxFireDelay (Get: true, Set: true)
+	MoveSpeed (Get: true, Set: true)
+	QueuedItem (Get: true, Set: true)
+	SamsonBerserkCharge (Get: true, Set: true)
+	ShotSpeed (Get: true, Set: true)
+	SpriteScale (Get: true, Set: true)
+	TearColor (Get: true, Set: true)
+	TearFallingAcceleration (Get: true, Set: true)
+	TearFallingSpeed (Get: true, Set: true)
+	TearFlags (Get: true, Set: true)
+	TearHeight (Get: true, Set: true)
+	TearRange (Get: true, Set: true)
+	TearsOffset (Get: true, Set: true)
+
+Class EntityProjectile (type EntityProjectile)
+
+Methods:
+
+	AddChangeFlags
+	AddFallingAccel
+	AddFallingSpeed
+	AddHeight
+	AddProjectileFlags
+	AddScale
+
+Properties:
+
+	Acceleration (Get: true, Set: true)
+	ChangeFlags (Get: true, Set: true)
+	ChangeTimeout (Get: true, Set: true)
+	ChangeVelocity (Get: true, Set: true)
+	CurvingStrength (Get: true, Set: true)
+	Damage (Get: true, Set: true)
+	DepthOffset (Get: true, Set: true)
+	FallingAccel (Get: true, Set: true)
+	FallingSpeed (Get: true, Set: true)
+	Height (Get: true, Set: true)
+	HomingStrength (Get: true, Set: true)
+	ProjectileFlags (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+	WiggleFrameOffset (Get: true, Set: true)
+
+Class EntityPtr (type EntityPtr)
+
+Static Methods:
+
+	__call
+
+Methods:
+
+	SetReference
+
+Properties:
+
+	Ref (Get: true, Set: false)
+
+Class EntityRef (type EntityRef)
+
+Static Methods:
+
+	__call
+
+Properties:
+
+	Entity (Get: true, Set: true)
+	IsCharmed (Get: true, Set: true)
+	IsFriendly (Get: true, Set: true)
+	Position (Get: true, Set: true)
+	SpawnerType (Get: true, Set: true)
+	SpawnerVariant (Get: true, Set: true)
+	Type (Get: true, Set: true)
+	Variant (Get: true, Set: true)
+
+Class EntityTear (type EntityTear)
+
+Methods:
+
+	ChangeVariant
+	ResetSpriteScale
+	SetDeadEyeIntensity
+	SetKnockbackMultiplier
+	SetParentOffset
+	SetWaitFrames
+
+Properties:
+
+	BaseDamage (Get: true, Set: false)
+	BaseScale (Get: true, Set: false)
+	CanTriggerStreakEnd (Get: true, Set: true)
+	ContinueVelocity (Get: true, Set: true)
+	FallingAcceleration (Get: true, Set: true)
+	FallingSpeed (Get: true, Set: true)
+	Height (Get: true, Set: true)
+	HomingFriction (Get: true, Set: true)
+	KnockbackMultiplier (Get: true, Set: true)
+	ParentOffset (Get: true, Set: true)
+	PosDisplacement (Get: true, Set: false)
+	Rotation (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+	StickDiff (Get: true, Set: true)
+	StickTarget (Get: true, Set: true)
+	StickTimer (Get: true, Set: true)
+	TearFlags (Get: true, Set: true)
+	TearIndex (Get: true, Set: false)
+	WaitFrames (Get: true, Set: true)
+
+Class Font (type Font)
+
+Static Methods:
+
+	__call
+
+Methods:
+
+	DrawString
+	DrawStringScaled
+	DrawStringScaledUTF8
+	DrawStringUTF8
+	GetBaselineHeight
+	GetCharacterWidth
+	GetLineHeight
+	GetStringWidth
+	GetStringWidthUTF8
+	IsLoaded
+	Load
+	SetMissingCharacter
+	Unload
+
+Class GridEntity (type GridEntity)
+
+Methods:
+
+	Destroy
+	GetGridIndex
+	GetRNG
+	GetSaveState
+	GetSprite
+	GetType
+	GetVariant
+	Hurt
+	Init
+	PostInit
+	Render
+	SetType
+	SetVariant
+	ToDoor
+	ToPit
+	ToPoop
+	ToPressurePlate
+	ToRock
+	ToSpikes
+	ToTNT
+	Update
+
+Properties:
+
+	CollisionClass (Get: true, Set: true)
+	Desc (Get: true, Set: true)
+	Position (Get: true, Set: false)
+	State (Get: true, Set: true)
+	VarData (Get: true, Set: true)
+
+Class GridEntityDesc (type GridEntityDesc)
+
+Properties:
+
+	Initialized (Get: true, Set: true)
+	SpawnCount (Get: true, Set: true)
+	SpawnSeed (Get: true, Set: true)
+	State (Get: true, Set: true)
+	Type (Get: true, Set: true)
+	VarData (Get: true, Set: true)
+	VariableSeed (Get: true, Set: true)
+	Variant (Get: true, Set: true)
+
+Class GridEntityDoor (type GridEntityDoor)
+
+Methods:
+
+	Bar
+	CanBlowOpen
+	Close
+	GetSpriteOffset
+	IsBusted
+	IsKeyFamiliarTarget
+	IsLocked
+	IsOpen
+	IsRoomType
+	IsTargetRoomArcade
+	Open
+	SetLocked
+	SetRoomTypes
+	SpawnDust
+	TryBlowOpen
+	TryUnlock
+
+Properties:
+
+	Busted (Get: true, Set: true)
+	CloseAnimation (Get: true, Set: true)
+	CurrentRoomType (Get: true, Set: true)
+	Direction (Get: true, Set: true)
+	ExtraSprite (Get: true, Set: true)
+	ExtraVisible (Get: true, Set: true)
+	LockedAnimation (Get: true, Set: true)
+	OpenAnimation (Get: true, Set: true)
+	OpenLockedAnimation (Get: true, Set: true)
+	PreviousState (Get: true, Set: true)
+	PreviousVariant (Get: true, Set: true)
+	Slot (Get: true, Set: true)
+	TargetRoomIndex (Get: true, Set: true)
+	TargetRoomType (Get: true, Set: true)
+
+Class GridEntityPit (type GridEntityPit)
+
+Methods:
+
+	MakeBridge
+	SetLadder
+	UpdateCollision
+
+Properties:
+
+	HasLadder (Get: true, Set: true)
+
+Class GridEntityPoop (type GridEntityPoop)
+
+Methods:
+
+	ReduceSpawnRate
+	RespawnRedPoop
+
+Properties:
+
+	ReviveTimer (Get: true, Set: true)
+	StateAnimation (Get: true, Set: true)
+	UnderPlayer (Get: true, Set: true)
+
+Class GridEntityPressurePlate (type GridEntityPressurePlate)
+
+Methods:
+
+	Reward
+
+Properties:
+
+	GreedModeRNG (Get: true, Set: true)
+	NextGreedAnimation (Get: true, Set: true)
+	TimerPlate (Get: true, Set: true)
+
+Class GridEntityRock (type GridEntityRock)
+
+Methods:
+
+	GetBigRockFrame
+	GetRubbleAnim
+	SetBigRockFrame
+	UpdateAnimFrame
+
+Properties:
+
+	Anim (Get: true, Set: true)
+	FrameCnt (Get: true, Set: true)
+	RubbleAnim (Get: true, Set: true)
+
+Class GridEntitySpikes (type GridEntitySpikes)
+
+Properties:
+
+	Timeout (Get: true, Set: true)
+
+Class GridEntityTNT (type GridEntityTNT)
+
+Properties:
+
+	FrameCnt (Get: true, Set: true)
+
+Class HUD (type HUD)
+
+Methods:
+
+	AssignPlayerHUDs
+	FlashChargeBar
+	InvalidateActiveItem
+	InvalidateCraftingItem
+	IsVisible
+	SetVisible
+	ShowFortuneText
+	ShowItemText
+
+Namespace Input
+
+Static Methods:
+
+	GetActionValue
+	GetButtonValue
+	GetMousePosition
+	IsActionPressed
+	IsActionTriggered
+	IsButtonPressed
+	IsButtonTriggered
+	IsMouseBtnPressed
+
+Namespace Isaac
+
+Static Methods:
+
+	AddCallback
+	AddPillEffectToPool
+	ConsoleOutput
+	CountBosses
+	CountEnemies
+	CountEntities
+	DebugString
+	ExecuteCommand
+	Explode
+	FindByType
+	FindInRadius
+	GetCardIdByName
+	GetChallenge
+	GetChallengeIdByName
+	GetCostumeIdByPath
+	GetCurseIdByName
+	GetEntityTypeByName
+	GetEntityVariantByName
+	GetFrameCount
+	GetFreeNearPosition
+	GetItemConfig
+	GetItemIdByName
+	GetMusicIdByName
+	GetPillEffectByName
+	GetPlayer
+	GetPlayerTypeByName
+	GetRandomPosition
+	GetRoomEntities
+	GetScreenHeight
+	GetScreenPointScale
+	GetScreenWidth
+	GetSoundIdByName
+	GetTextWidth
+	GetTime
+	GetTrinketIdByName
+	GridSpawn
+	HasModData
+	LoadModData
+	RegisterMod
+	RemoveCallback
+	RemoveModData
+	RenderScaledText
+	RenderText
+	SaveModData
+	ScreenToWorld
+	ScreenToWorldDistance
+	Spawn
+	WorldToRenderPosition
+	WorldToScreen
+	WorldToScreenDistance
+
+Namespace ItemConfig
+
+Subclasses:
+
+	Class ItemConfig.Card (type Card)
+
+	Properties:
+
+		AchievementID (Get: true, Set: true)
+		Description (Get: true, Set: true)
+		GreedModeAllowed (Get: true, Set: true)
+		HudAnim (Get: true, Set: true)
+		ID (Get: true, Set: true)
+		Name (Get: true, Set: true)
+
+	Class ItemConfig.Config (type Config)
+
+	Static Methods:
+
+		IsValidCollectible
+		ShouldAddCostumeOnPickup
+
+	Methods:
+
+		GetCard
+		GetCards
+		GetCollectible
+		GetCollectibles
+		GetNullItem
+		GetNullItems
+		GetPillEffect
+		GetPillEffects
+		GetTrinket
+		GetTrinkets
+
+	Class ItemConfig.Costume (type Costume)
+
+	Properties:
+
+		Anm2Path (Get: true, Set: true)
+		HasOverlay (Get: true, Set: true)
+		HasSkinAlt (Get: true, Set: true)
+		ID (Get: true, Set: true)
+		IsFlying (Get: true, Set: true)
+		OverwriteColor (Get: true, Set: true)
+		Priority (Get: true, Set: true)
+		SkinColor (Get: true, Set: true)
+
+	Class ItemConfig.Item (type Item)
+
+	Methods:
+
+		HasTags
+		IsCollectible
+		IsNull
+		IsTrinket
+
+	Properties:
+
+		AchievementID (Get: true, Set: true)
+		AddBlackHearts (Get: true, Set: true)
+		AddBombs (Get: true, Set: true)
+		AddCoins (Get: true, Set: true)
+		AddCostumeOnPickup (Get: true, Set: true)
+		AddHearts (Get: true, Set: true)
+		AddKeys (Get: true, Set: true)
+		AddMaxHearts (Get: true, Set: true)
+		AddSoulHearts (Get: true, Set: true)
+		CacheFlags (Get: true, Set: true)
+		ChargeType (Get: true, Set: true)
+		ClearEffectsOnRemove (Get: true, Set: true)
+		Costume (Get: true, Set: false)
+		CraftingQuality (Get: true, Set: true)
+		Description (Get: true, Set: true)
+		DevilPrice (Get: true, Set: true)
+		GfxFileName (Get: true, Set: true)
+		Hidden (Get: true, Set: true)
+		ID (Get: true, Set: true)
+		InitCharge (Get: true, Set: true)
+		MaxCharges (Get: true, Set: true)
+		MaxCooldown (Get: true, Set: true)
+		Name (Get: true, Set: true)
+		PassiveCache (Get: true, Set: true)
+		PersistentEffect (Get: true, Set: true)
+		Quality (Get: true, Set: true)
+		ShopPrice (Get: true, Set: true)
+		Special (Get: true, Set: true)
+		Tags (Get: true, Set: true)
+		Type (Get: true, Set: true)
+
+	Class ItemConfig.PillEffect (type PillEffect)
+
+	Properties:
+
+		AchievementID (Get: true, Set: true)
+		GreedModeAllowed (Get: true, Set: true)
+		ID (Get: true, Set: true)
+		Name (Get: true, Set: true)
+
+
+Class ItemPool (type ItemPool)
+
+Methods:
+
+	AddBibleUpgrade
+	AddRoomBlacklist
+	ForceAddPillEffect
+	GetCard
+	GetCollectible
+	GetLastPool
+	GetPill
+	GetPillEffect
+	GetPoolForRoom
+	GetTrinket
+	IdentifyPill
+	IsPillIdentified
+	RemoveCollectible
+	RemoveTrinket
+	ResetRoomBlacklist
+	ResetTrinkets
+
+Class KColor (type KColor)
+
+Static Methods:
+
+	__call
+
+Properties:
+
+	Alpha (Get: true, Set: true)
+	Blue (Get: true, Set: true)
+	Green (Get: true, Set: true)
+	Red (Get: true, Set: true)
+
+Class Level (type Level)
+
+Methods:
+
+	AddAngelRoomChance
+	AddCurse
+	ApplyBlueMapEffect
+	ApplyCompassEffect
+	ApplyMapEffect
+	CanOpenChallengeRoom
+	CanSpawnDevilRoom
+	CanStageHaveCurseOfLabyrinth
+	ChangeRoom
+	DisableDevilRoom
+	ForceHorsemanBoss
+	GetAbsoluteStage
+	GetAngelRoomChance
+	GetCanSeeEverything
+	GetCurrentRoom
+	GetCurrentRoomDesc
+	GetCurrentRoomIndex
+	GetCurseName
+	GetCurses
+	GetDevilAngelRoomRNG
+	GetDungeonPlacementSeed
+	GetEnterPosition
+	GetHeartPicked
+	GetLastBossRoomListIndex
+	GetLastRoomDesc
+	GetName
+	GetNonCompleteRoomIndex
+	GetPlanetariumChance
+	GetPreviousRoomIndex
+	GetRandomRoomIndex
+	GetRoomByIdx
+	GetRoomCount
+	GetRooms
+	GetStage
+	GetStageType
+	GetStartingRoomIndex
+	GetStateFlag
+	HasBossChallenge
+	InitializeDevilAngelRoom
+	IsAltStage
+	IsAscent
+	IsDevilRoomDisabled
+	IsNextStageAvailable
+	IsPreAscent
+	MakeRedRoomDoor
+	QueryRoomTypeIndex
+	RemoveCompassEffect
+	RemoveCurses
+	SetCanSeeEverything
+	SetHeartPicked
+	SetNextStage
+	SetRedHeartDamage
+	SetStage
+	SetStateFlag
+	ShowMap
+	ShowName
+	UncoverHiddenDoor
+	Update
+	UpdateVisibility
+
+Properties:
+
+	DungeonReturnPosition (Get: true, Set: true)
+	DungeonReturnRoomIndex (Get: true, Set: true)
+	EnterDoor (Get: true, Set: true)
+	GreedModeWave (Get: true, Set: true)
+	LeaveDoor (Get: true, Set: true)
+
+Namespace Options
+
+Static Properties:
+
+	AnnouncerVoiceMode (Get: true, Set: true)
+	BulletVisibility (Get: true, Set: true)
+	CameraStyle (Get: true, Set: true)
+	ChargeBars (Get: true, Set: true)
+	ConsoleFont (Get: true, Set: true)
+	DebugConsoleEnabled (Get: true, Set: true)
+	DisplayPopups (Get: true, Set: true)
+	ExtraHUDStyle (Get: true, Set: true)
+	FadedConsoleDisplay (Get: true, Set: true)
+	Filter (Get: true, Set: true)
+	FoundHUD (Get: true, Set: true)
+	Fullscreen (Get: true, Set: true)
+	Gamma (Get: true, Set: true)
+	HUDOffset (Get: true, Set: true)
+	Language (Get: true, Set: true)
+	MapOpacity (Get: true, Set: true)
+	MaxRenderScale (Get: true, Set: true)
+	MaxScale (Get: true, Set: true)
+	MouseControl (Get: true, Set: true)
+	MusicVolume (Get: true, Set: true)
+	PauseOnFocusLost (Get: true, Set: true)
+	RumbleEnabled (Get: true, Set: true)
+	SFXVolume (Get: true, Set: true)
+	SaveCommandHistory (Get: true, Set: true)
+	UseBorderlessFullscreen (Get: true, Set: true)
+	VSync (Get: true, Set: true)
+
+Class PathFinder (type PathFinder)
+
+Methods:
+
+	EvadeTarget
+	FindGridPath
+	GetEvadeMovementCountdown
+	GetGridIndex
+	HasDirectPath
+	HasPathToPos
+	MoveRandomly
+	MoveRandomlyAxisAligned
+	MoveRandomlyBoss
+	Reset
+	ResetMovementTarget
+	SetCanCrushRocks
+	UpdateGridIndex
+
+Namespace PlayerTypes
+
+Subclasses:
+
+	Class PlayerTypes.ActiveItemDesc (type ActiveItemDesc)
+
+	Properties:
+
+		BatteryCharge (Get: true, Set: true)
+		Charge (Get: true, Set: true)
+		Item (Get: true, Set: true)
+		PartialCharge (Get: true, Set: true)
+		SubCharge (Get: true, Set: true)
+		TimedRechargeCooldown (Get: true, Set: true)
+		VarData (Get: true, Set: true)
+
+	Class PlayerTypes.PosVel (type PosVel)
+
+	Properties:
+
+		Position (Get: true, Set: true)
+		Velocity (Get: true, Set: true)
+
+
+Class ProjectileParams (type ProjectileParams)
+
+Static Methods:
+
+	__call
+
+Properties:
+
+	Acceleration (Get: true, Set: true)
+	BulletFlags (Get: true, Set: true)
+	ChangeFlags (Get: true, Set: true)
+	ChangeTimeout (Get: true, Set: true)
+	ChangeVelocity (Get: true, Set: true)
+	CircleAngle (Get: true, Set: true)
+	Color (Get: true, Set: true)
+	CurvingStrength (Get: true, Set: true)
+	DepthOffset (Get: true, Set: true)
+	DotProductLimit (Get: true, Set: true)
+	FallingAccelModifier (Get: true, Set: true)
+	FallingSpeedModifier (Get: true, Set: true)
+	FireDirectionLimit (Get: true, Set: true)
+	GridCollision (Get: true, Set: true)
+	HeightModifier (Get: true, Set: true)
+	HomingStrength (Get: true, Set: true)
+	PositionOffset (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+	Spread (Get: true, Set: true)
+	TargetPosition (Get: true, Set: true)
+	Variant (Get: true, Set: true)
+	VelocityMulti (Get: true, Set: true)
+	WiggleFrameOffset (Get: true, Set: true)
+
+Class QueueItemData (type QueueItemData)
+
+Properties:
+
+	Charge (Get: true, Set: true)
+	Item (Get: true, Set: true)
+	Touched (Get: true, Set: true)
+
+Class RNG (type RNG)
+
+Static Methods:
+
+	__call
+
+Methods:
+
+	GetSeed
+	Next
+	RandomFloat
+	RandomInt
+	SetSeed
+
+Class Room (type Room)
+
+Methods:
+
+	CheckLine
+	DamageGrid
+	DestroyGrid
+	EmitBloodFromWalls
+	FindFreePickupSpawnPosition
+	FindFreeTilePosition
+	GetAliveBossesCount
+	GetAliveEnemiesCount
+	GetAwardSeed
+	GetBackdropType
+	GetBossID
+	GetBottomRightPos
+	GetBrokenWatchState
+	GetCenterPos
+	GetClampedGridIndex
+	GetClampedPosition
+	GetDecorationSeed
+	GetDeliriumDistance
+	GetDevilRoomChance
+	GetDoor
+	GetDoorSlotPosition
+	GetDungeonRockIdx
+	GetEnemyDamageInflicted
+	GetEntities
+	GetFrameCount
+	GetGridCollision
+	GetGridCollisionAtPos
+	GetGridEntity
+	GetGridEntityFromPos
+	GetGridHeight
+	GetGridIndex
+	GetGridPath
+	GetGridPathFromPos
+	GetGridPosition
+	GetGridSize
+	GetGridWidth
+	GetLRoomAreaDesc
+	GetLRoomTileDesc
+	GetLaserTarget
+	GetLavaIntensity
+	GetLightingAlpha
+	GetNextShockwaveId
+	GetRandomPosition
+	GetRandomTileIndex
+	GetRedHeartDamage
+	GetRenderMode
+	GetRenderScrollOffset
+	GetRenderSurfaceTopLeft
+	GetRoomConfigStage
+	GetRoomShape
+	GetSecondBossID
+	GetSeededCollectible
+	GetShopLevel
+	GetSpawnSeed
+	GetTintedRockIdx
+	GetTopLeftPos
+	GetType
+	GetWaterCurrent
+	HasCurseMist
+	HasLava
+	HasSlowDown
+	HasTriggerPressurePlates
+	HasWater
+	HasWaterPits
+	InvalidatePickupVision
+	IsAmbushActive
+	IsAmbushDone
+	IsClear
+	IsCurrentRoomLastBoss
+	IsDoorSlotAllowed
+	IsFirstEnemyDead
+	IsFirstVisit
+	IsInitialized
+	IsLShapedRoom
+	IsMirrorWorld
+	IsPositionInRoom
+	IsSacrificeDone
+	KeepDoorsClosed
+	MamaMegaExplosion
+	PlayMusic
+	RemoveDoor
+	RemoveGridEntity
+	Render
+	RespawnEnemies
+	ScreenWrapPosition
+	SetAmbushDone
+	SetBrokenWatchState
+	SetCardAgainstHumanity
+	SetClear
+	SetFirstEnemyDead
+	SetFloorColor
+	SetGridPath
+	SetRedHeartDamage
+	SetSacrificeDone
+	SetShockwaveParam
+	SetSlowDown
+	SetWallColor
+	ShopReshuffle
+	ShopRestockFull
+	ShopRestockPartial
+	SpawnClearAward
+	SpawnGridEntity
+	StopRain
+	TriggerClear
+	TryMakeBridge
+	TrySpawnBlueWombDoor
+	TrySpawnBossRushDoor
+	TrySpawnDevilRoomDoor
+	TrySpawnMegaSatanRoomDoor
+	TrySpawnSecretExit
+	TrySpawnSecretShop
+	TrySpawnSpecialQuestDoor
+	TrySpawnTheVoidDoor
+	TurnGold
+	Update
+	WorldToScreenPosition
+
+Namespace RoomConfig
+
+Subclasses:
+
+	Class RoomConfig.Entry (type Entry)
+
+	Properties:
+
+		Subtype (Get: true, Set: true)
+		Type (Get: true, Set: true)
+		Variant (Get: true, Set: true)
+		Weight (Get: true, Set: true)
+
+	Class RoomConfig.Room (type Room)
+
+	Properties:
+
+		Difficulty (Get: true, Set: false)
+		Doors (Get: true, Set: false)
+		Height (Get: true, Set: false)
+		InitialWeight (Get: true, Set: false)
+		Mode (Get: true, Set: false)
+		Name (Get: true, Set: false)
+		OriginalVariant (Get: true, Set: false)
+		Shape (Get: true, Set: false)
+		SpawnCount (Get: true, Set: false)
+		Spawns (Get: true, Set: false)
+		StageID (Get: true, Set: false)
+		Subtype (Get: true, Set: false)
+		Type (Get: true, Set: false)
+		Variant (Get: true, Set: false)
+		Weight (Get: true, Set: false)
+		Width (Get: true, Set: false)
+
+	Class RoomConfig.Spawn (type Spawn)
+
+	Methods:
+
+		PickEntry
+
+	Properties:
+
+		Entries (Get: true, Set: false)
+		EntryCount (Get: true, Set: true)
+		SumWeights (Get: true, Set: true)
+		X (Get: true, Set: true)
+		Y (Get: true, Set: true)
+
+
+Class RoomDescriptor (type RoomDescriptor)
+
+Properties:
+
+	AllowedDoors (Get: true, Set: true)
+	AwardSeed (Get: true, Set: true)
+	ChallengeDone (Get: true, Set: true)
+	Clear (Get: true, Set: true)
+	ClearCount (Get: true, Set: true)
+	Data (Get: true, Set: true)
+	DecorationSeed (Get: true, Set: true)
+	DeliriumDistance (Get: true, Set: true)
+	DisplayFlags (Get: true, Set: true)
+	Flags (Get: true, Set: true)
+	GridIndex (Get: true, Set: true)
+	HasWater (Get: true, Set: true)
+	ListIndex (Get: true, Set: true)
+	NoReward (Get: true, Set: true)
+	OverrideData (Get: true, Set: true)
+	PitsCount (Get: true, Set: true)
+	PoopCount (Get: true, Set: true)
+	PressurePlatesTriggered (Get: true, Set: true)
+	SacrificeDone (Get: true, Set: true)
+	SafeGridIndex (Get: true, Set: true)
+	ShopItemDiscountIdx (Get: true, Set: true)
+	ShopItemIdx (Get: true, Set: true)
+	SpawnSeed (Get: true, Set: true)
+	SurpriseMiniboss (Get: true, Set: true)
+	VisitedCount (Get: true, Set: true)
+
+Class Seeds (type Seeds)
+
+Static Methods:
+
+	CountUnlockedSeedEffects
+	GetSeedEffect
+	InitSeedInfo
+	IsSpecialSeed
+	IsStringValidSeed
+	Seed2String
+	String2Seed
+
+Methods:
+
+	AddSeedEffect
+	CanAddSeedEffect
+	ClearSeedEffects
+	ClearStartSeed
+	CountSeedEffects
+	ForgetStageSeed
+	GetNextSeed
+	GetPlayerInitSeed
+	GetStageSeed
+	GetStartSeed
+	GetStartSeedString
+	HasSeedEffect
+	IsCustomRun
+	IsInitialized
+	IsSeedComboBanned
+	RemoveBlockingSeedEffects
+	RemoveSeedEffect
+	Reset
+	Restart
+	SetStartSeed
+
+Class ShockwaveParams (type ShockwaveParams)
+
+Properties:
+
+	Age (Get: true, Set: true)
+	LifeSpan (Get: true, Set: true)
+	Position (Get: true, Set: true)
+	Strength (Get: true, Set: true)
+	Time (Get: true, Set: true)
+	TimeDT (Get: true, Set: true)
+
+Class Sprite (type Sprite)
+
+Static Methods:
+
+	__call
+
+Methods:
+
+	GetAnimation
+	GetDefaultAnimation
+	GetDefaultAnimationName
+	GetFilename
+	GetFrame
+	GetLayerCount
+	GetOverlayAnimation
+	GetOverlayFrame
+	GetTexel
+	IsEventTriggered
+	IsFinished
+	IsLoaded
+	IsOverlayFinished
+	IsOverlayPlaying
+	IsPlaying
+	Load
+	LoadGraphics
+	Play
+	PlayOverlay
+	PlayRandom
+	Reload
+	RemoveOverlay
+	Render
+	RenderLayer
+	ReplaceSpritesheet
+	Reset
+	SetAnimation
+	SetFrame
+	SetFrame_1
+	SetLastFrame
+	SetLayerFrame
+	SetOverlayAnimation
+	SetOverlayFrame
+	SetOverlayRenderPriority
+	Stop
+	Update
+	WasEventTriggered
+
+Properties:
+
+	Color (Get: true, Set: true)
+	FlipX (Get: true, Set: true)
+	FlipY (Get: true, Set: true)
+	Offset (Get: true, Set: true)
+	PlaybackSpeed (Get: true, Set: true)
+	Rotation (Get: true, Set: true)
+	Scale (Get: true, Set: true)
+
+Class TearParams (type TearParams)
+
+Properties:
+
+	BombVariant (Get: true, Set: true)
+	TearColor (Get: true, Set: true)
+	TearDamage (Get: true, Set: true)
+	TearFlags (Get: true, Set: true)
+	TearHeight (Get: true, Set: true)
+	TearScale (Get: true, Set: true)
+	TearVariant (Get: true, Set: true)
+
+Class TemporaryEffect (type TemporaryEffect)
+
+Properties:
+
+	Cooldown (Get: true, Set: true)
+	Count (Get: true, Set: true)
+	Item (Get: true, Set: true)
+
+Class TemporaryEffects (type TemporaryEffects)
+
+Methods:
+
+	AddCollectibleEffect
+	AddNullEffect
+	AddTrinketEffect
+	ClearEffects
+	GetCollectibleEffect
+	GetCollectibleEffectNum
+	GetEffectsList
+	GetNullEffect
+	GetNullEffectNum
+	GetTrinketEffect
+	GetTrinketEffectNum
+	HasCollectibleEffect
+	HasNullEffect
+	HasTrinketEffect
+	RemoveCollectibleEffect
+	RemoveNullEffect
+	RemoveTrinketEffect
+
+Class Vector (type Vector)
+
+Static Methods:
+
+	FromAngle
+	__call
+
+Methods:
+
+	Clamp
+	Clamped
+	Cross
+	Distance
+	DistanceSquared
+	Dot
+	GetAngleDegrees
+	Length
+	LengthSquared
+	Lerp
+	Normalize
+	Normalized
+	Resize
+	Resized
+	Rotated
+	__add
+	__div
+	__mul
+	__sub
+	__tostring
+	__unm
+
+Properties:
+
+	X (Get: true, Set: true)
+	Y (Get: true, Set: true)
+
+Class Game (type Game)
+
+Methods:
+
+	AddDevilRoomDeal
+	AddEncounteredBoss
+	AddPixelation
+	AddStageWithoutDamage
+	AddStageWithoutHeartsPicked
+	AddTreasureRoomsVisited
+	BombDamage
+	BombExplosionEffects
+	BombTearflagEffects
+	ButterBeanFart
+	ChangeRoom
+	CharmFart
+	ClearDonationModAngel
+	ClearDonationModGreed
+	ClearStagesWithoutDamage
+	ClearStagesWithoutHeartsPicked
+	Darken
+	DonateAngel
+	DonateGreed
+	End
+	Fadein
+	Fadeout
+	Fart
+	FinishChallenge
+	GetAmbush
+	GetDarknessModifier
+	GetDevilRoomDeals
+	GetDonationModAngel
+	GetDonationModGreed
+	GetFont
+	GetFrameCount
+	GetGreedBossWaveNum
+	GetGreedWavesNum
+	GetHUD
+	GetItemOverlay
+	GetItemPool
+	GetLastDevilRoomStage
+	GetLastLevelWithDamage
+	GetLastLevelWithoutHalfHp
+	GetLevel
+	GetNearestPlayer
+	GetNumEncounteredBosses
+	GetNumPlayers
+	GetPlayer
+	GetRandomPlayer
+	GetRoom
+	GetScreenShakeCountdown
+	GetSeeds
+	GetStagesWithoutDamage
+	GetStagesWithoutHeartsPicked
+	GetStateFlag
+	GetTargetDarkness
+	GetTreasureRoomVisitCount
+	GetVictoryLap
+	HasEncounteredBoss
+	HasHallucination
+	IsGreedMode
+	IsPaused
+	MoveToRandomRoom
+	NextVictoryLap
+	Render
+	RerollEnemy
+	RerollLevelCollectibles
+	RerollLevelPickups
+	SetLastDevilRoomStage
+	SetLastLevelWithDamage
+	SetLastLevelWithoutHalfHp
+	SetStateFlag
+	ShakeScreen
+	ShowFortune
+	ShowHallucination
+	ShowRule
+	Spawn
+	SpawnEntityDesc
+	SpawnParticles
+	StartRoomTransition
+	StartStageTransition
+	Update
+	UpdateStrangeAttractor
+
+Properties:
+
+	BlueWombParTime (Get: true, Set: true)
+	BossRushParTime (Get: true, Set: true)
+	Challenge (Get: true, Set: true)
+	Difficulty (Get: true, Set: false)
+	ScreenShakeOffset (Get: true, Set: true)
+	TimeCounter (Get: true, Set: true)
+
+Class MusicManager (type MusicManager)
+
+Methods:
+
+	Crossfade
+	Disable
+	DisableLayer
+	Enable
+	EnableLayer
+	Fadein
+	Fadeout
+	GetCurrentMusicID
+	GetQueuedMusicID
+	IsEnabled
+	IsLayerEnabled
+	Pause
+	PitchSlide
+	Play
+	Queue
+	ResetPitch
+	Resume
+	UpdateVolume
+	VolumeSlide
+
+Class SFXManager (type SFXManager)
+
+Methods:
+
+	AdjustPitch
+	AdjustVolume
+	GetAmbientSoundVolume
+	IsPlaying
+	Play
+	Preload
+	SetAmbientSound
+	Stop
+	StopLoopingSounds
+

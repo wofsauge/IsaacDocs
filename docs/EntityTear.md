@@ -63,9 +63,11 @@ ___
 
 ___
 ### Bounced {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### boolean Bounced  {: .copyable aria-label='Variables' }
-true if tear bounced off something
+true if tear bounced off something.
+
+This attribute got removed with Repentance.
 ___
 ### Can·Trigger·Streak·End {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
