@@ -173,4 +173,4 @@ end, {"howdy", "globe"})
 Isaac.RunCallbackWithParam("TEST_PARAMS_2", {"hello", "world"})
 ```
 
-*(Esample source: _Kilburn)*
+*(Example source: _Kilburn)*
