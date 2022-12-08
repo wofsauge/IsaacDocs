@@ -178,7 +178,6 @@ nav:
         - "RoomDescriptor": RoomDescriptor.md
         - "RNG": RNG.md
         - "Seeds": Seeds.md
-        - "ShockwaveParams": ShockwaveParams.md
         - "Sprite": Sprite.md
         - "SFXManager": SFXManager.md
         - "TearParams": TearParams.md
