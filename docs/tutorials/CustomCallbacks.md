@@ -174,3 +174,29 @@ Isaac.RunCallbackWithParam("TEST_PARAMS_2", {"hello", "world"})
 ```
 
 *(Example source: _Kilburn)*
+
+## Unique callback IDs
+
+It's heavily recommended to use string IDs with a prefix unique to your mod in your callbacks, to avoid overlapping other mods' callbacks that might have the same name. For example, for a mod named AchievementLibrary, something like ACHLIB_TEST_CALLBACK.
+
+If you need your callback ID to be unique even if the name is shared, for example if you make a library to be included in other mods, and as such whose logic might run more than once (which would lead in running callbacks with the same name more than once, if using a string name), you can use table references as IDs instead. Here is an example:
+
+```Lua
+MyLibrary.Callbacks.TEST_CALLBACK = {}
+MyLibrary.Callbacks.TEST_CALLBACK_2 = {}
+
+MOD:AddCallback(MyLibrary.Callbacks.TEST_CALLBACK, function
+() 
+    print("TEST 1")
+end)
+MOD:AddCallback(MyLibrary.Callbacks.TEST_CALLBACK_2, function()
+    print("TEST 2")
+end)
+
+Isaac.RunCallback(MyLibrary.Callbacks.TEST_CALLBACK)
+Isaac.RunCallback(MyLibrary.Callbacks.TEST_CALLBACK_2)
+```
+
+As each table reference is unique, every new created table will be treated as a different ID. The advantage to this is having a unique locally defined ID, that isn't shared with the global space of possible strings.
+
+

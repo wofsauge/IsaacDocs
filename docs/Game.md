@@ -365,6 +365,11 @@ ___
 
 Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes having the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.
 ___
+### Make·Shockwave () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void MakeShockwave ( [Vector](Vector.md) Position, float Amplitude, float Speed, int Duration ) {: .copyable aria-label='Functions' }
+
+___
 ### Move·To·Random·Room () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void MoveToRandomRoom ( boolean IAmErrorRoom, int Seed, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }

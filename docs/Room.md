@@ -317,11 +317,6 @@ ___
 ???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___
-### Get·Next·Shockwave·Id () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### int GetNextShockwaveId ( ) {: .copyable aria-label='Functions' }
-
-___
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
@@ -416,11 +411,9 @@ Checking for this value is not sufficient to detect a Double Trouble room becaus
 ___
 ### Get·Seeded·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed, bool NoDecrease = false ) {: .copyable aria-label='Functions' }
 
-???+ bug "Bug"
-    Calling this function crashes the game
-
+When NoDecrease is true, returned collectibles will not be removed from the pools they came from
 
 ___
 ### Get·Shop·Level () {: aria-label='Functions' }
@@ -684,11 +677,6 @@ ___
 ### Set·Sacrifice·Done () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSacrificeDone ( boolean Done ) {: .copyable aria-label='Functions' }
-
-___
-### Set·Shockwave·Param () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### void SetShockwaveParam ( int ShockwaveId, [ShockwaveParams](ShockwaveParams.md) Params ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Slow·Down () {: aria-label='Functions' }
