@@ -1045,4 +1045,3 @@ This is called right before any mod is unloaded (when disabling a mod or reloadi
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|73 |MC_PRE_MOD_UNLOAD {: .copyable } | table Mod | - | void |
-
