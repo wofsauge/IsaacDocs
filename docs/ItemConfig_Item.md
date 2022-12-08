@@ -17,6 +17,11 @@ Returns true or false, depending on whether or not the item has the given [tag](
     Isaac.GetItemConfig():GetCollectible(1):HasTags(ItemConfig.TAG_BOB)
     ```
 ___
+### Is·Available () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean IsAvailable ( ) {: .copyable aria-label='Functions' }
+
+___
 ### Is·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCollectible ( ) {: .copyable aria-label='Functions' }
