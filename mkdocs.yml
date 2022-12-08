@@ -67,6 +67,7 @@ nav:
             - "KeySubType": enums/KeySubType.md
             - "LaserOffset": enums/LaserOffset.md
             - "LaserSubType": enums/LaserSubType.md
+            - "LaserVariant": enums/LaserVariant.md
             - "LevelCurse": enums/LevelCurse.md
             - "LevelStage": enums/LevelStage.md
             - "LevelStateFlag": enums/LevelStateFlag.md
