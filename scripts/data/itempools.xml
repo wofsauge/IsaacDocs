@@ -34,6 +34,8 @@
 		<Item Id="36" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Mr. Boom-->
 		<Item Id="37" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Tammy's Head-->
+		<Item Id="38" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Mom's Bra-->
 		<Item Id="39" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Kamikaze!-->
@@ -160,6 +162,8 @@
 		<Item Id="124" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Bobby-Bomb-->
 		<Item Id="125" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Razor Blade-->
+		<Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Forget Me Now-->
 		<Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Forever alone-->
@@ -214,6 +218,8 @@
 		<Item Id="166" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Harlequin Baby-->
 		<Item Id="167" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Epic Fetus-->
+		<Item Id="168" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--Polyphemus-->
 		<Item Id="169" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Daddy Longlegs-->
@@ -273,7 +279,7 @@
 		<!--Anti-Gravity-->
 		<Item Id="222" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Pyromaniac-->
-		<Item Id="223" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
+		<Item Id="223" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Cricket's Body-->
 		<Item Id="224" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Gimpy-->
@@ -524,7 +530,7 @@
 		<Item Id="419" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Kidney Bean-->
 		<Item Id="421" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Obsessed Fan-->
 		<Item Id="426" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
@@ -762,6 +768,8 @@
 		<Item Id="676" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Astral Projection-->
 		<Item Id="677" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
+		<!--C Section-->
+		<Item Id="678" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Montezuma's Revenge-->
 		<Item Id="680" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Lil Portal-->
@@ -782,6 +790,10 @@
 		<Item Id="703" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Suplex!-->
 		<Item Id="709" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Bag of Crafting-->
+		<Item Id="710" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Sumptorium-->
+		<Item Id="713" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Keeper's Kin-->
 		<Item Id="717" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Everything Jar-->
@@ -869,7 +881,7 @@
 		<!--Black Candle-->
 		<Item Id="260" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Blank Card-->
-		<Item Id="286" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
+		<Item Id="286" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Red Candle-->
 		<Item Id="289" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--The Jar-->
@@ -912,7 +924,7 @@
 		<Item Id="414" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Deep Pockets-->
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Sack Head-->
 		<Item Id="424" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
@@ -1110,6 +1122,10 @@
 		<Item Id="707" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Stapler-->
 		<Item Id="708" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Glass Eye-->
+		<Item Id="730" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Stye-->
+		<Item Id="731" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="devil">
 		<!--Brother Bobby-->
@@ -1152,8 +1168,6 @@
 		<Item Id="122" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Monster Manual-->
 		<Item Id="123" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Razor Blade-->
-		<Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Forget Me Now-->
 		<Item Id="127" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
 		<!--Guppy's Paw-->
@@ -1170,6 +1184,8 @@
 		<Item Id="163" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Sacrificial Dagger-->
 		<Item Id="172" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Blood Rights-->
+		<Item Id="186" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Guppy's Hairball-->
 		<Item Id="187" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Guppy's Collar-->
@@ -1238,6 +1254,10 @@
 		<Item Id="477" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Duality-->
 		<Item Id="498" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Little Horn-->
+		<Item Id="503" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Backstabber-->
+		<Item Id="506" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Lil Delirium-->
 		<Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--7 Seals-->
@@ -1304,6 +1324,8 @@
 		<Item Id="33" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Rosary-->
 		<Item Id="72" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Book of Revelations-->
+		<Item Id="78" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--The Relic-->
 		<Item Id="98" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--The Halo-->
@@ -1314,6 +1336,8 @@
 		<Item Id="112" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Dead Sea Scrolls-->
 		<Item Id="124" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Stigmata-->
+		<Item Id="138" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Scapular-->
 		<Item Id="142" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Prayer Card-->
@@ -1332,6 +1356,8 @@
 		<Item Id="184" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Dead Dove-->
 		<Item Id="185" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Jesus Juice-->
+		<Item Id="197" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Trinity Shield-->
 		<Item Id="243" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Holy Mantle-->
@@ -1358,6 +1384,8 @@
 		<Item Id="390" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Spear Of Destiny-->
 		<Item Id="400" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Purity-->
+		<Item Id="407" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Immaculate Conception-->
 		<Item Id="413" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Crown Of Light-->
@@ -1536,6 +1564,8 @@
 		<Item Id="701" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Esau Jr.-->
 		<Item Id="703" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Flip-->
+		<Item Id="711" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Keeper's Sack-->
 		<Item Id="716" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Keeper's Kin-->
@@ -1640,6 +1670,10 @@
 		<Item Id="644" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
 		<!--Stapler-->
 		<Item Id="708" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Glass Eye-->
+		<Item Id="730" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Mom's Ring-->
+		<Item Id="732" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="redChest">
 		<!--Dead Cat-->
@@ -1810,6 +1844,8 @@
 		<Item Id="80" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Dead Cat-->
 		<Item Id="81" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Razor Blade-->
+		<Item Id="126" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Guppy's Paw-->
 		<Item Id="133" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Guppy's Tail-->
@@ -1844,8 +1880,6 @@
 		<Item Id="496" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Little Horn-->
 		<Item Id="503" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
-		<!--Mom's Razor-->
-		<Item Id="508" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Sacrificial Altar-->
 		<Item Id="536" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Blood Puppy-->
@@ -1858,6 +1892,8 @@
 		<Item Id="642" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--False PHD-->
 		<Item Id="654" Weight="0.5" DecreaseBy="0.25" RemoveOn="0.05"/>
+		<!--Guppy's Eye-->
+		<Item Id="665" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Sanguine Bond-->
 		<Item Id="692" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Heartbreak-->
@@ -1866,6 +1902,8 @@
 		<Item Id="697" Weight="0.5" DecreaseBy="0.25" RemoveOn="0.05"/>
 		<!--Vengeful Spirit-->
 		<Item Id="702" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Flip-->
+		<Item Id="711" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="keyMaster">
 		<!--Halo of Flies-->
@@ -1974,6 +2012,8 @@
 		<Item Id="508" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Red Key-->
 		<Item Id="580" Weight="0.5" DecreaseBy="0.25" RemoveOn="0.05"/>
+		<!--Mom's Ring-->
+		<Item Id="732" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedTreasure">
 		<!--The Sad Onion-->
@@ -1998,6 +2038,8 @@
 		<Item Id="12" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--The Virus-->
 		<Item Id="13" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Skeleton Key-->
+		<Item Id="17" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--The Book of Belial-->
 		<Item Id="34" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--The Necronomicon-->
@@ -2036,8 +2078,6 @@
 		<Item Id="68" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Chocolate Milk-->
 		<Item Id="69" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Cube of Meat-->
-		<Item Id="73" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--My Little Unicorn-->
 		<Item Id="77" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Book of Revelations-->
@@ -2092,10 +2132,14 @@
 		<Item Id="117" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Odd Mushroom-->
 		<Item Id="120" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Odd Mushroom-->
+		<Item Id="121" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Dead Sea Scrolls-->
 		<Item Id="124" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Bobby-Bomb-->
 		<Item Id="125" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Razor Blade-->
+		<Item Id="126" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Forever alone-->
 		<Item Id="128" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Bomb Bag-->
@@ -2138,6 +2182,8 @@
 		<Item Id="163" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Harlequin Baby-->
 		<Item Id="167" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Epic Fetus-->
+		<Item Id="168" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--Polyphemus-->
 		<Item Id="169" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Daddy Longlegs-->
@@ -2154,6 +2200,8 @@
 		<Item Id="188" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--SMB Super Fan-->
 		<Item Id="189" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Pyro-->
+		<Item Id="190" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--3 Dollar Bill-->
 		<Item Id="191" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Telepathy For Dummies-->
@@ -2380,6 +2428,8 @@
 		<Item Id="416" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Kidney Bean-->
 		<Item Id="421" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Glowing Hourglass-->
+		<Item Id="422" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Night Light-->
 		<Item Id="425" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Obsessed Fan-->
@@ -2610,6 +2660,8 @@
 		<Item Id="676" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Astral Projection-->
 		<Item Id="677" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
+		<!--C Section-->
+		<Item Id="678" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Montezuma's Revenge-->
 		<Item Id="680" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Lil Portal-->
@@ -2630,6 +2682,10 @@
 		<Item Id="703" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Suplex!-->
 		<Item Id="709" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Bag of Crafting-->
+		<Item Id="710" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Sumptorium-->
+		<Item Id="713" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Keeper's Sack-->
 		<Item Id="716" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
 		<!--Keeper's Kin-->
@@ -2698,6 +2754,8 @@
 		<Item Id="101" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Odd Mushroom-->
 		<Item Id="120" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Odd Mushroom-->
+		<Item Id="121" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--A Lump of Coal-->
 		<Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Speed Ball-->
@@ -2718,8 +2776,8 @@
 		<Item Id="197" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Box-->
 		<Item Id="198" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mom's Key-->
-		<Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Ball of Bandages-->
+		<Item Id="207" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Experimental Treatment-->
 		<Item Id="240" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Magic Scab-->
@@ -2780,6 +2838,10 @@
 		<Item Id="707" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Stapler-->
 		<Item Id="708" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Glass Eye-->
+		<Item Id="730" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Stye-->
+		<Item Id="731" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedShop">
 		<!--1up!-->
@@ -2808,6 +2870,8 @@
 		<Item Id="156" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--D20-->
 		<Item Id="166" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Mom's Key-->
+		<Item Id="199" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Fanny Pack-->
 		<Item Id="204" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Champion Belt-->
@@ -2831,7 +2895,7 @@
 		<!--D10-->
 		<Item Id="285" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Blank Card-->
-		<Item Id="286" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
+		<Item Id="286" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Red Candle-->
 		<Item Id="289" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Pandora's Box-->
@@ -2879,7 +2943,7 @@
 		<!--Mama Mega!-->
 		<Item Id="483" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
 		<!--Crooked Penny-->
-		<Item Id="485" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
+		<Item Id="485" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Dull Razor-->
 		<Item Id="486" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Potato Peeler-->
@@ -2887,11 +2951,9 @@
 		<!--Metronome-->
 		<Item Id="488" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--D infinity-->
-		<Item Id="489" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<Item Id="489" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--Sack of Sacks-->
 		<Item Id="500" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Poke Go-->
-		<Item Id="505" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Black Hole-->
 		<Item Id="512" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Mystery Gift-->
@@ -2946,26 +3008,78 @@
 		<Item Id="701" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--Esau Jr.-->
 		<Item Id="703" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
+		<!--Flip-->
+		<Item Id="711" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--TMTRAINER-->
 		<Item Id="721" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--Anima Sola-->
 		<Item Id="722" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
 		<!--Spindown Dice-->
 		<Item Id="723" Weight="0.1" DecreaseBy="0.1" RemoveOn="0.01"/>
+		<!--Mom's Ring-->
+		<Item Id="732" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedCurse">
+		<!--Pentagram-->
+		<Item Id="51" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Cube of Meat-->
 		<Item Id="73" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--The Mark-->
+		<Item Id="79" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--The Pact-->
+		<Item Id="80" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Dead Cat-->
 		<Item Id="81" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Razor Blade-->
+		<Item Id="126" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Guppy's Paw-->
 		<Item Id="133" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
-		<!--Guppy's Tail-->
-		<Item Id="134" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Guppy's Head-->
 		<Item Id="145" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Guppy's Collar-->
 		<Item Id="212" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Ceremonial Robes-->
+		<Item Id="216" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Gimpy-->
+		<Item Id="225" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Black Candle-->
+		<Item Id="260" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Curse of the Tower-->
+		<Item Id="371" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Athame-->
+		<Item Id="408" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Dark Prince's Crown-->
+		<Item Id="442" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Tarot Cloth-->
+		<Item Id="451" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Shade-->
+		<Item Id="468" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Plan C-->
+		<Item Id="475" Weight="0.2" DecreaseBy="0.1" RemoveOn="0.02"/>
+		<!--Euthanasia-->
+		<Item Id="496" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Little Horn-->
+		<Item Id="503" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Sacrificial Altar-->
+		<Item Id="536" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Blood Puppy-->
+		<Item Id="565" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Blood Oath-->
+		<Item Id="569" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Magic Skin-->
+		<Item Id="642" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--False PHD-->
+		<Item Id="654" Weight="0.5" DecreaseBy="0.25" RemoveOn="0.05"/>
+		<!--Guppy's Eye-->
+		<Item Id="665" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Sanguine Bond-->
+		<Item Id="692" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Heartbreak-->
+		<Item Id="694" Weight="0.5" DecreaseBy="0.25" RemoveOn="0.05"/>
+		<!--Vengeful Spirit-->
+		<Item Id="702" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--Flip-->
+		<Item Id="711" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedDevil">
 		<!--The Book of Belial-->
@@ -2978,8 +3092,6 @@
 		<Item Id="67" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Technology-->
 		<Item Id="68" Weight="0.2" DecreaseBy="0.2" RemoveOn="0.02"/>
-		<!--Cube of Meat-->
-		<Item Id="73" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--A Quarter-->
 		<Item Id="74" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--The Mark-->
@@ -3002,8 +3114,6 @@
 		<Item Id="114" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Ouija Board-->
 		<Item Id="115" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Dead Bird-->
-		<Item Id="117" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Brimstone-->
 		<Item Id="118" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Whore of Babylon-->
@@ -3014,8 +3124,6 @@
 		<Item Id="132" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Guppy's Paw-->
 		<Item Id="133" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Guppy's Tail-->
-		<Item Id="134" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Guppy's Head-->
 		<Item Id="145" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Bloody Lust-->
@@ -3080,12 +3188,12 @@
 		<Item Id="468" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Little Horn-->
 		<Item Id="503" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Backstabber-->
+		<Item Id="506" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Lil Delirium-->
 		<Item Id="519" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--7 Seals-->
 		<Item Id="526" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Death's List-->
-		<Item Id="530" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Sacrificial Altar-->
 		<Item Id="536" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Book of the Dead-->
@@ -3142,8 +3250,6 @@
 		<Item Id="7" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Rosary-->
 		<Item Id="72" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Cube of Meat-->
-		<Item Id="73" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Book of Revelations-->
 		<Item Id="78" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Guardian Angel-->
@@ -3152,8 +3258,6 @@
 		<Item Id="138" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Celtic Cross-->
 		<Item Id="162" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Mitre-->
-		<Item Id="173" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Holy Water-->
 		<Item Id="178" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Sacred Heart-->
@@ -3168,6 +3272,8 @@
 		<Item Id="243" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Holy Mantle-->
 		<Item Id="313" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Breath of Life-->
+		<Item Id="326" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Godhead-->
 		<Item Id="331" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--The Mind-->
@@ -3192,8 +3298,6 @@
 		<Item Id="415" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Circle of Protection-->
 		<Item Id="423" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-		<!--Glyph of Balance-->
-		<Item Id="464" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Eden's Soul-->
 		<Item Id="490" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Eucharist-->
@@ -3204,6 +3308,8 @@
 		<Item Id="528" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Trisagion-->
 		<Item Id="533" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Hallowed Ground-->
+		<Item Id="543" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Paschal Candle-->
 		<Item Id="567" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 		<!--Divine Intervention-->
@@ -3242,8 +3348,120 @@
 		<Item Id="696" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="greedSecret">
-		<!--Cube of Meat-->
-		<Item Id="73" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
+		<!--1up!-->
+		<Item Id="11" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Raw Liver-->
+		<Item Id="16" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Skeleton Key-->
+		<Item Id="17" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Transcendence-->
+		<Item Id="20" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--The Necronomicon-->
+		<Item Id="35" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--We Need To Go Deeper!-->
+		<Item Id="84" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Odd Mushroom-->
+		<Item Id="120" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Odd Mushroom-->
+		<Item Id="121" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Forget Me Now-->
+		<Item Id="127" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Epic Fetus-->
+		<Item Id="168" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Pyro-->
+		<Item Id="190" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Lost Contact-->
+		<Item Id="213" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Black Lotus-->
+		<Item Id="226" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Infamy-->
+		<Item Id="242" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Missing No.-->
+		<Item Id="258" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Missing Page 2-->
+		<Item Id="262" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Clear Rune-->
+		<Item Id="263" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Mystery Sack-->
+		<Item Id="271" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Blank Card-->
+		<Item Id="286" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Cursed Eye-->
+		<Item Id="316" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Samson's Chains-->
+		<Item Id="321" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Placebo-->
+		<Item Id="348" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Rune Bag-->
+		<Item Id="389" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Chaos-->
+		<Item Id="402" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--GB Bug-->
+		<Item Id="405" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Sack Head-->
+		<Item Id="424" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Eye of Greed-->
+		<Item Id="450" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--D infinity-->
+		<Item Id="489" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Sack of Sacks-->
+		<Item Id="500" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Greed's Gullet-->
+		<Item Id="501" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Dad's Ring-->
+		<Item Id="546" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Rock Bottom-->
+		<Item Id="562" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Orphan Socks-->
+		<Item Id="571" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Wavy Cap-->
+		<Item Id="582" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Eternal D6-->
+		<Item Id="609" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Lost Soul-->
+		<Item Id="612" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Mega Mush-->
+		<Item Id="625" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Death Certificate-->
+		<Item Id="628" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Evil Charm-->
+		<Item Id="632" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--R Key-->
+		<Item Id="636" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Binge Eater-->
+		<Item Id="664" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Strawman-->
+		<Item Id="667" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Sausage-->
+		<Item Id="669" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Spirit Shackles-->
+		<Item Id="674" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Astral Projection-->
+		<Item Id="677" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Inner Child-->
+		<Item Id="688" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Glitched Crown-->
+		<Item Id="689" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Sacred Orb-->
+		<Item Id="691" Weight="0.5" DecreaseBy="0.5" RemoveOn="0.05"/>
+		<!--Echo Chamber-->
+		<Item Id="700" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Isaac's Tomb-->
+		<Item Id="701" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Esau Jr.-->
+		<Item Id="703" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Flip-->
+		<Item Id="711" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Keeper's Sack-->
+		<Item Id="716" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Keeper's Kin-->
+		<Item Id="717" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Keeper's Box-->
+		<Item Id="719" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--TMTRAINER-->
+		<Item Id="721" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
+		<!--Spindown Dice-->
+		<Item Id="723" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="craneGame">
 		<!--The Sad Onion-->
@@ -3368,7 +3586,7 @@
 		<Item Id="406" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Teleport 2.0-->
 		<Item Id="419" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
-		<!--Glowing Hour Glass-->
+		<!--Glowing Hourglass-->
 		<Item Id="422" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Night Light-->
 		<Item Id="425" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
@@ -3436,10 +3654,196 @@
 		<Item Id="720" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 		<!--Spindown Dice-->
 		<Item Id="723" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
+		<!--Glass Eye-->
+		<Item Id="730" Weight="1" DecreaseBy="0.1" RemoveOn="0.1"/>
 	</Pool>
-	<Pool Name="unused24">
-		<!--The Sad Onion-->
-		<Item Id="1" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+	<Pool Name="ultraSecret">
+		<!--Magic Mushroom-->
+		<Item Id="12" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--The Virus-->
+		<Item Id="13" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--<3-->
+		<Item Id="15" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Mom's Heels-->
+		<Item Id="30" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Mom's Lipstick-->
+		<Item Id="31" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Kamikaze!-->
+		<Item Id="40" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Yum Heart-->
+		<Item Id="45" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Shoop da Whoop!-->
+		<Item Id="49" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Pentagram-->
+		<Item Id="51" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Magneto-->
+		<Item Id="53" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Sister Maggy-->
+		<Item Id="67" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Rosary-->
+		<Item Id="72" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Cube of Meat-->
+		<Item Id="73" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--The Mark-->
+		<Item Id="79" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--The Pact-->
+		<Item Id="80" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Lord of the Pit-->
+		<Item Id="82" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Little C.H.A.D.-->
+		<Item Id="96" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--The D6-->
+		<Item Id="105" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Money = Power-->
+		<Item Id="109" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Mom's Contacts-->
+		<Item Id="110" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Brimstone-->
+		<Item Id="118" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Blood Bag-->
+		<Item Id="119" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Whore of Babylon-->
+		<Item Id="122" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--IV Bag-->
+		<Item Id="135" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Remote Detonator-->
+		<Item Id="137" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Bloody Lust-->
+		<Item Id="157" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Spirit of the Night-->
+		<Item Id="159" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--D20-->
+		<Item Id="166" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Harlequin Baby-->
+		<Item Id="167" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Stem Cells-->
+		<Item Id="176" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Portable Slot-->
+		<Item Id="177" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Sacred Heart-->
+		<Item Id="182" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--MEAT!-->
+		<Item Id="193" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Champion Belt-->
+		<Item Id="208" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Anemic-->
+		<Item Id="214" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Abaddon-->
+		<Item Id="230" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--BFFS!-->
+		<Item Id="247" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Magic Scab-->
+		<Item Id="253" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Blood Clot-->
+		<Item Id="254" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Proptosis-->
+		<Item Id="261" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Isaac's Heart-->
+		<Item Id="276" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Red Candle-->
+		<Item Id="289" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--The Body-->
+		<Item Id="334" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Dead Eye-->
+		<Item Id="373" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Marked-->
+		<Item Id="394" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Maw Of The Void-->
+		<Item Id="399" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Lusty Blood-->
+		<Item Id="411" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Cambion Conception-->
+		<Item Id="412" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Kidney Bean-->
+		<Item Id="421" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Lil Loki-->
+		<Item Id="435" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Apple!-->
+		<Item Id="443" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Varicose Veins-->
+		<Item Id="452" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Eye of Belial-->
+		<Item Id="462" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Contagion-->
+		<Item Id="466" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Plan C-->
+		<Item Id="475" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Dataminer-->
+		<Item Id="481" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Backstabber-->
+		<Item Id="506" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Angry Fly-->
+		<Item Id="511" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Haemolacria-->
+		<Item Id="531" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Marrow-->
+		<Item Id="541" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--2Spooky-->
+		<Item Id="554" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Sulfur-->
+		<Item Id="556" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Blood Puppy-->
+		<Item Id="565" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Eye of the Occult-->
+		<Item Id="572" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Immaculate Heart-->
+		<Item Id="573" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Red Key-->
+		<Item Id="580" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Ocular Rift-->
+		<Item Id="606" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Boiled Baby-->
+		<Item Id="607" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Blood Bombs-->
+		<Item Id="614" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Bird's Eye-->
+		<Item Id="616" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Rotten Tomato-->
+		<Item Id="618" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Red Stew-->
+		<Item Id="621" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Knockout Drops-->
+		<Item Id="637" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Plum Flute-->
+		<Item Id="650" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--False PHD-->
+		<Item Id="654" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Vasculitis-->
+		<Item Id="657" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Candy Heart-->
+		<Item Id="671" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--C Section-->
+		<Item Id="678" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Worm Friend-->
+		<Item Id="682" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Hungry Soul-->
+		<Item Id="684" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Sanguine Bond-->
+		<Item Id="692" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Heartbreak-->
+		<Item Id="694" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Bloody Gust-->
+		<Item Id="695" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Echo Chamber-->
+		<Item Id="700" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Vengeful Spirit-->
+		<Item Id="702" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Esau Jr.-->
+		<Item Id="703" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Berserk!-->
+		<Item Id="704" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Dark Arts-->
+		<Item Id="705" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Abyss-->
+		<Item Id="706" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Flip-->
+		<Item Id="711" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Hypercoagulation-->
+		<Item Id="724" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Hemoptysis-->
+		<Item Id="726" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Gello-->
+		<Item Id="728" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="bombBum">
 		<!--Mr. Boom-->
@@ -3461,7 +3865,7 @@
 		<!--Hot Bombs-->
 		<Item Id="256" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Bomber Boy-->
-		<Item Id="353" Weight="0.2" DecreaseBy="0.1" RemoveOn="0.02"/>
+		<Item Id="353" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Scatter Bombs-->
 		<Item Id="366" Weight="1" DecreaseBy="0.5" RemoveOn="0.1"/>
 		<!--Sticky Bombs-->
@@ -3556,6 +3960,8 @@
 		<Item Id="547" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
 		<!--Mom's Bracelet-->
 		<Item Id="604" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+		<!--Mom's Ring-->
+		<Item Id="732" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
 	</Pool>
 	<Pool Name="babyShop">
 		<!--Brother Bobby-->
