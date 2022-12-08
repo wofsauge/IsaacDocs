@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 
 const allFiles = getFilesForDirectory("./docs/");
-const defaultVariables = "int|char|static|const|userdata|table|void|boolean|float|string|Object";
+const defaultVariables = "int|char|static|const|userdata|table|void|boolean|float|string|Object|function";
 const ignoreVars = "LRoomAreaDesc|LRoomTileDesc|Ambush|ItemOverlay|HomingLaser|LaserHomingType|SkinColor|PlayerPocketItem|DoorSet|MultiShotParams|EntityDesc|Ending|FadeoutTarget";
 
 const regularExpressions = [
