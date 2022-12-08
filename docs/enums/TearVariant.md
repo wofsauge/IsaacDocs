@@ -55,3 +55,4 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|47 |SWORD_BEAM {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|48 |SPORE {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|49 |TECH_SWORD_BEAM {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|50 |FETUS {: .copyable } |  |
