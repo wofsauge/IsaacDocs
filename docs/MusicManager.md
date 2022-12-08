@@ -85,7 +85,7 @@ ___
 ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Play ( [MusicManager](MusicManager.md) ID, float Volume ) {: .copyable aria-label='Functions' }
+#### void Play ( [MusicManager](MusicManager.md) ID, float Volume = 1 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Queue () {: aria-label='Functions' }
