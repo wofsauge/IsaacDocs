@@ -35,6 +35,7 @@ nav:
             - "BombVariant": enums/BombVariant.md
             - "ButtonAction": enums/ButtonAction.md
             - "CacheFlag": enums/CacheFlag.md
+            - "CallbackPriority": enums/CallbackPriority.md
             - "Card": enums/Card.md
             - "Challenge": enums/Challenge.md
             - "ChampionColor": enums/ChampionColor.md
