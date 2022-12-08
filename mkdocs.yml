@@ -203,7 +203,7 @@ nav:
         - "Directories and save files": tutorials/directories-and-save-files.md
         - "Mod Organization": "tutorials/mod-organization.md"
         - "Storing Data": "tutorials/storing-data.md"
-        - "Custom Callbacks" : "tutorials/CustomCallbacks.md"
+        - "Custom Callbacks": tutorials/CustomCallbacks.md
     - XMLs:
         - "XML Overview": xml/XMLFiledocumentation.md
         - "achievements.xml" : xml/achievements.md
