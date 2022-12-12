@@ -1028,7 +1028,7 @@ Returning any value will have no effect on later callback executions.
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|71 |MC_PRE_ROOM_ENTITY_SPAWN {: .copyable } | ([EntityType](EntityType.md),<br>Variant [int],<br>SubType [int],<br>GridIndex [int],<br>Seed [int]) | - | void |
+|[ ](#){: .abrep .tooltip .badge }|71 |MC_PRE_ROOM_ENTITY_SPAWN {: .copyable } | ([EntityType](EntityType.md),<br>Variant [int],<br>SubType [int],<br>GridIndex [int],<br>Seed [int]) | - | table |
 
 ### MC_PRE_ENTITY_DEVOLVE {: .copyable }
 This is called when an entity is devolved through D10 or similar.
