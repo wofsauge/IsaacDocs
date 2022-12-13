@@ -319,7 +319,7 @@ This function is the same as [`Game():GetPlayer()`](Game.md#getplayer).
       local numPlayers = game:GetNumPlayers()
 
       local players = {}
-      for i = 0, numPlayers do
+      for i = 0, numPlayers - 1 do
         local player = Isaac.GetPlayer(i)
         table.insert(players, player)
       end
