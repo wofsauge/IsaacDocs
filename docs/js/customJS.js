@@ -84,10 +84,11 @@ function buildContentMap() {
 
     var tableContent = "";
     $("h4").each(function(index) {
-        //remove anchor links from variable description headers... we dont need them and they suck
-        $(this).find("a.headerlink").remove();
-
-        var funcParts = $(this).html().split(" (");
+        //remove anchor links and mark objects from variable description headers... we dont need them and they suck
+        var cloneH4 = $(this).clone();
+        cloneH4.find("a.headerlink").remove();
+        cloneH4.find("mark").contents().unwrap();
+        var funcParts = cloneH4.html().split(" (");
         var funcFront = funcParts[0].split(" ");
         var funcName = funcFront.pop();
         var parentH3Node = $(this).prev();
