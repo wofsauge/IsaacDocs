@@ -549,14 +549,6 @@ Changing the player type within MC_POST_PLAYER_INIT will result in the player ge
 
 Changing the player Type into Jacob will also spawn Esau.
 
-Changing the player into Lilith will not spawn the Incubus. You need to call [`RespawnFamiliars()`](#respawnfamiliars) on the next available MC_POST_PEFFECT_UPDATE to spawn it in.
-
-In some cases, you need to give a secondary character health otherwise it won't show up. E.g. The Soul won't show up with The Forgotten unless you explicitly give it some health. You can get a reference to The Soul with [`GetSubPlayer()`](#getsubplayer).
-
-???+ bug "Bugs"
-	Changing to Tainted Forgotten will result in no Tainted Soul appearing.
-	Changing to Tainted Lazarus will result in player only having one form (because they won't have the Flip pocket item).
-
 ___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
