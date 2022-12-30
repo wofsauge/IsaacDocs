@@ -148,3 +148,27 @@ Since the remain of a division is never negative or bigger than the divisor, the
     local isDivideableBySeven = 123429292 % 7 -- Result = 0. Therefore, its divideable by 7
     ```
 
+## Floor Division
+While not particularly useful and easily replaceable by using `math.floor`, floor division can help with simplifying and organising code. It works similarly to the regular division operator, but rounds the result down to the nearest integer.
+
+### Usage
+```lua
+local floorQuotient = dividend // divisor
+```
+It can be used in combination with the Modulo operator to recreate the dividend, as follows:
+```lua
+local dividend = (floorQuotient * divisor) + remainder
+```
+Keep in mind it always rounds to a number equal or lower than the result of the division. This means `-11//5` will return `-3` whereas `11//5` will retun 2. This makes it so making a number negative can generate different results if you do so before or after using the Floor Quotient operator.
+
+???- example "Examples"
+    ```lua
+    -- ...
+    -11//2 -- = -6
+    11//2 -- = 5
+    -11//-2 -- = 5
+    -- ...
+
+    local floorRightAngle = 170//90 * 90 -- Result = 90. 
+    local roundRightAngle = (170+45)//90 - 45 -- Result = 180
+    ```
