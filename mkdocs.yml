@@ -318,12 +318,12 @@ extra:
 extra_css:
     - css/custom.css
 extra_javascript:
-    - https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js
+    - https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js
     - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
     - js/tablesort.number.min.js
     - js/customJS.js
     - js/jquery.mark.min.js
-copyright: "Copyright &copy; 2021 - 2022 Wofsauge (Discord: Wofsauge#6503)"
+copyright: "Copyright &copy; 2021 - 2023 Wofsauge (Discord: Wofsauge#6503)"
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
 edit_uri: edit/main/docs/
