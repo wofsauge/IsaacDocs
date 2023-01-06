@@ -17,7 +17,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|9 |ACTION_ITEM {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|10 |ACTION_PILLCARD {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|11 |ACTION_DROP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|12 |ACTION_PAUSE {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|12 |ACTION_PAUSE {: .copyable } | Can only be detected when holding P after closing the pause menu; Isn't polled by MC_INPUT_ACTION |
 |[ ](#){: .abrep .tooltip .badge }|13 |ACTION_MAP {: .copyable } | TAB on keyboard; Select on controller |
 |[ ](#){: .abrep .tooltip .badge }|14 |ACTION_MENUCONFIRM {: .copyable } | Enter on keyboard; A on Controller |
 |[ ](#){: .abrep .tooltip .badge }|15 |ACTION_MENUBACK {: .copyable } | Esc on keyboard; B on Controller |
