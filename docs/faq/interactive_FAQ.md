@@ -21,7 +21,26 @@ INTERACTIVE_questions = {
       answers: [
         { text: "Yes", link: "MOD_MENU_1" },
         { text: "No", link: "DLC_MISSING" },
+        { text: "Game crashes", link: "GENERIC_CRASH" },
       ],
+    },
+    "GENERIC_CRASH" : {
+      text: "When does the crash happen?",
+      answers: [
+        { text: "On game launch", link: "CRASH_STARTUP" },
+        { text: "when loading a savegame", link: "CRASH_CHAR_CONTINUE" },
+        { text: "when starting a run", link: "CRASH_RUN" },
+        { text: "while playing the game", link: "CRASH_RUN" },
+      ],
+    },
+    "CRASH_STARTUP" : {
+      text: "When the game crashes directly when launching the game, this means that an invalid '.xml' file is inside one of the mods you have installed. Please unsubscribe or deinstall all mods you have installed in the timeframe between the crash and the game working fine.",
+    },
+    "CRASH_CHAR_CONTINUE" : {
+      text: "A crash happening when loading a savegame is most likely caused, by having a continuable run active, which was played with a modded character which was deinstalled recently.<br>Please reinstall the character mod and start a run with a vanilla character, for example Isaac.",
+    },
+    "CRASH_RUN" : {
+      text: 'A crash happening on starting a run or while playing is most likely caused by a mod encountering a critical error. Please contact the mod creator, or visit the Modding Discord server and ask for help: <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a>',
     },
     "DLC_MISSING" : {
       text: "You need to have at least the 'Afterbirth+' DLC or 'Repentance' installed to use Steam Workshop mods.<br>To get mods compatible with the base game (Rebirth) or Afterbirth (DLC 1), please check out <a href=\"https://moddingofisaac.com/\">https://moddingofisaac.com/</a>",
@@ -78,22 +97,35 @@ The folder structure should now look like shown in the screenshot.',
       image: "../images/faq/menu_mods.png",
       answers: [
         { text: "Looks like 'a deactived mod'", link: "MOD_NOT_ACTIVE" },
-        { text: "Looks like 'an active mod'", link: 7 },
+        { text: "Looks like 'an active mod'", link: "MODS_NOT_WORK" },
       ],
     },
     "MOD_NOT_ACTIVE" : {
       text: 'Press tab on the mod\'s list until mods become dark, if the mod in question is still faint then scroll down and press space on it until its dark.',
       image: "../images/faq/menu_mods.png",
     },
-    7 : {
-      text: 'Do most of your mods not work?<br> If so, Have you tried <a href="https://inxile.zendesk.com/hc/en-us/articles/115004662908">verifying the game files</a>?',
+    "MODS_NOT_WORK" : {
+      text: 'Do most of your installed and enabled mods not work?',
       answers: [
-        { text: "Yes", link: 6 },
-        { text: "No", link: 8 },
+        { text: "Yes", link: "VERIFY_CACHE" },
+        { text: "No, most work fine", link: "CONSOLE_ERROR" },
       ],
     },
-    8 : {
-      text: 'Please <a href="https://inxile.zendesk.com/hc/en-us/articles/115004662908">verify the game files</a>, restart your game and try again.',
+    "VERIFY_CACHE" : {
+      text: 'Some of your game files might be corrupted. Please <a href="https://inxile.zendesk.com/hc/en-us/articles/115004662908">verify the game files</a>, restart your game and try again.',
+    },
+    "CONSOLE_ERROR" : {
+      text: 'Do you see any Error messages in the debug console?<br>You can learn on how to open the console here: <a href="https://bindingofisaacrebirth.fandom.com/wiki/Debug_Console">Binding of Isaac Wiki</a>',
+      answers: [
+        { text: "Yes", link: "SEND_ERROR_TO_CREATOR" },
+        { text: "No", link: "UNKNOWN_REASON" },
+      ],
+    },
+    "SEND_ERROR_TO_CREATOR" : {
+      text: 'The Mod doesnt work, because it encounters an error, please take a screenshot of the error message or write it down and send it to the mod developer.',
+    },
+    "UNKNOWN_REASON" : {
+      text: 'There seems to be another unknown reason for the mod to not work. Please contact the mod creator, or visit the Modding Discord server and ask for help: <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a>',
     },
   };
     </script>
