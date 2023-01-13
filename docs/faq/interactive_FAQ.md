@@ -9,6 +9,7 @@ This page provides an interactive debugging tool, which helps you to find out ho
 
 [](#){: .interactiveFAQ }
 
+[Back :material-undo:](javascript:previousQuestion()){ .md-button }
 [Restart Questionnaire :material-restart:](javascript:setQuestion(&#39;START&#39;)){ .md-button }
 
 
@@ -132,7 +133,7 @@ The folder structure should now look like shown in the screenshot.',
       ],
     },
     "CHECK_LOG" : {
-      text: 'After the crash, but before launching the game again, head to "Documents\My Games\Binding of Isaac Repentance" and open the log.txt with the notepad. Scroll down to the very bottom. Do you see any errors in there?',
+      text: 'After the crash, but before launching the game again, head to "Documents\\My Games\\Binding of Isaac Repentance" and open the log.txt with the notepad. Scroll down to the very bottom. Do you see any errors in there?',
       answers: [
         { text: "Yes", link: "SEND_LOG_TO_CREATOR" },
         { text: "No", link: "UNKNOWN_REASON" },

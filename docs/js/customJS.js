@@ -482,23 +482,36 @@ function waitForElementToDisplay(selector, callback, checkFrequencyInMs, timeout
 
 
 ////////////////////////////////////////////////
+  var questionHistory = [];
   var currentQuestion;
 
   function createAnswers() {
     $("#faq_buttons").empty();
-    if ('answers' in currentQuestion) {
+    if ("answers" in currentQuestion) {
       for (const answer of currentQuestion.answers) {
-        var answerButton = $('<button class="faqButton md-button md-button--primary" onclick="setQuestion(\'' + answer.link + '\')">' + answer.text + "</button>");
+        var answerButton = $('<button class="faqButton md-button md-button--primary" onclick="setQuestion(\'' + answer.link + "')\">" + answer.text + "</button>");
         $("#faq_buttons").append(answerButton);
       }
     }
   }
+  function previousQuestion() {
+    var prevQuestion = "START";
+    if (questionHistory.length > 1) {
+      prevQuestion = questionHistory[questionHistory.length-2];
+    }
+    setQuestion(prevQuestion, true);
+    questionHistory.pop();
+  }
 
-  function setQuestion(questionID) {
+  function setQuestion(questionID, isUndo) {
     if (typeof INTERACTIVE_questions === "undefined") {
       return;
     }
     $("#interactiveFAQ").fadeOut(250, function () {
+      // Add to history
+      if (!isUndo) {
+        questionHistory.push(questionID.toString());
+      }
       currentQuestion = INTERACTIVE_questions[questionID.toString()];
 
       $("#faq_text").html(currentQuestion.text);
