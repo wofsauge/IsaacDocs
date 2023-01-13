@@ -244,6 +244,7 @@ nav:
         - "wisps.xml" : xml/wisps.md
     - FAQ:
         - "FAQ" : faq/faq.md
+        - "interactive FAQ" : faq/interactive_FAQ.md
     - Tools:
         - "Tools Overview" : tutorials/Tools.md
         - "XML Validator" : tutorials/Tool_XMLValidator.md

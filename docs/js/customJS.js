@@ -477,3 +477,51 @@ function waitForElementToDisplay(selector, callback, checkFrequencyInMs, timeout
         }
     })();
 }
+
+
+
+
+////////////////////////////////////////////////
+  var currentQuestion;
+
+  function createAnswers() {
+    $("#faq_buttons").empty();
+    if ('answers' in currentQuestion) {
+      for (const answer of currentQuestion.answers) {
+        var answerButton = $('<button class="faqButton md-button md-button--primary" onclick="setQuestion(\'' + answer.link + '\')">' + answer.text + "</button>");
+        $("#faq_buttons").append(answerButton);
+      }
+    }
+  }
+
+  function setQuestion(questionID) {
+    if (typeof INTERACTIVE_questions === "undefined") {
+      return;
+    }
+    $("#interactiveFAQ").fadeOut(250, function () {
+      currentQuestion = INTERACTIVE_questions[questionID.toString()];
+
+      $("#faq_text").html(currentQuestion.text);
+
+      if ("image" in currentQuestion) {
+        $("#faq_image").attr("src", currentQuestion.image);
+      } else {
+        $("#faq_image").attr("src", "");
+      }
+
+      createAnswers();
+
+      $("#interactiveFAQ").fadeIn(250);
+    });
+  }
+
+  document$.subscribe(function () {
+    $(".interactiveFAQ").each(function (header) {
+      $('<div id="interactiveFAQ"><img id="faq_image" width="400" align="right" alt="" src=""><h4>Question</h4><div id="faq_text"></div><div id="faq_buttons"></div></div>').insertAfter($(this));
+      setQuestion("START");
+    });
+  });
+
+
+
+
