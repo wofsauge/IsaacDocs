@@ -9,7 +9,7 @@ This page provides an interactive debugging tool, which helps you to find out ho
 
 [](#){: .interactiveFAQ }
 
-[Restart Questionaire :material-restart:](javascript:setQuestion(&#39;START&#39;)){ .md-button }
+[Restart Questionnaire :material-restart:](javascript:setQuestion(&#39;START&#39;)){ .md-button }
 
 
 
@@ -139,7 +139,7 @@ The folder structure should now look like shown in the screenshot.',
       ],
     },
   "SEND_LOG_TO_CREATOR" : {
-      text: 'Copy the last last 5-10 lines of the log.txt and send them to the mod's creator on the steam page for the mod, via pm or any medium. Alternatively, you can <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a> and use this log to ask for help.',
+      text: 'Copy the last last 5-10 lines of the log.txt and send them to the mod\'s creator on the steam page for the mod, via pm or any medium. Alternatively, you can <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a> and use this log to ask for help.',
     },
     "UNKNOWN_REASON" : {
       text: 'There seems to be another unknown reason for the mod to not work. Please contact the mod creator, or visit the Modding Discord server and ask for help: <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a>',
