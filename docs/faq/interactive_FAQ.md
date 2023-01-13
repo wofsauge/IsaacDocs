@@ -118,11 +118,28 @@ The folder structure should now look like shown in the screenshot.',
       text: 'Do you see any Error messages in the debug console?<br>You can learn on how to open the console here: <a href="https://bindingofisaacrebirth.fandom.com/wiki/Debug_Console">Binding of Isaac Wiki</a>',
       answers: [
         { text: "Yes", link: "SEND_ERROR_TO_CREATOR" },
+        { text: "No", link: "POTENTIAL_CRASH" },
+      ],
+    },
+  "SEND_ERROR_TO_CREATOR" : {
+      text: 'The Mod doesn\'t work, because it encounters an error, please take a screenshot of the error message or write it down and send it to the mod developer.',
+    },
+    "POTENTIAL_CRASH" : {
+      text: 'Does the game not hang but rather closes instantly when the error happens, giving you no opportunity to check the console?',
+      answers: [
+        { text: "Yes", link: "CHECK_LOG" },
         { text: "No", link: "UNKNOWN_REASON" },
       ],
     },
-    "SEND_ERROR_TO_CREATOR" : {
-      text: 'The Mod doesn\'t work, because it encounters an error, please take a screenshot of the error message or write it down and send it to the mod developer.',
+    "CHECK_LOG" : {
+      text: 'After the crash, but before launching the game again, head to "Documents\My Games\Binding of Isaac Repentance" and open the log.txt with the notepad. Scroll down to the very bottom. Do you see any errors in there?',
+      answers: [
+        { text: "Yes", link: "SEND_LOG_TO_CREATOR" },
+        { text: "No", link: "UNKNOWN_REASON" },
+      ],
+    },
+  "SEND_LOG_TO_CREATOR" : {
+      text: 'Copy the last last 5-10 lines of the log.txt and send them to the mod's creator on the steam page for the mod, via pm or any medium. Alternatively, you can <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a> and use this log to ask for help.',
     },
     "UNKNOWN_REASON" : {
       text: 'There seems to be another unknown reason for the mod to not work. Please contact the mod creator, or visit the Modding Discord server and ask for help: <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a>',
