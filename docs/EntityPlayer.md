@@ -1495,6 +1495,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void Revive ( ) {: .copyable aria-label='Functions' }
 Revives the player.
+
+???+ bug "Bugs"
+    Exiting the run at any point after this function is called will make it so that the run can't be continued.
 ___
 ### Set·Active·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
