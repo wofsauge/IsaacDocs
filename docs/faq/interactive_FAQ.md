@@ -133,7 +133,7 @@ The folder structure should now look like shown in the screenshot.',
       ],
     },
     "CHECK_LOG" : {
-      text: 'After the crash, but before launching the game again, head to "Documents\\My Games\\Binding of Isaac Repentance" and open the log.txt with the notepad. Scroll down to the very bottom. Do you see any errors in there?',
+      text: 'After the crash, but before launching the game again, head to "C:\\Users\\[YourUserName]\\Documents\\My Games\\Binding of Isaac Repentance" and open the log.txt with the notepad. Scroll down to the very bottom. Do you see any errors in there?',
       answers: [
         { text: "Yes", link: "SEND_LOG_TO_CREATOR" },
         { text: "No", link: "UNKNOWN_REASON" },
