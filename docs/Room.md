@@ -200,6 +200,7 @@ ___
 ### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
+Returns the amount of frames the room has been active for. Resets to 0 when the player leaves the room or the run is exited.
 
 ___
 ### Get·Grid·Collision () {: aria-label='Functions' }
@@ -289,13 +290,13 @@ ___
 ### Get·Laser·Target () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetLaserTarget ( [Vector](Vector.md) Pos, [Vector](Vector.md) Dir ) {: .copyable aria-label='Functions' }
-returns the hit position for a laser beam (Technology, Robo-Baby) usually, the first poop, fire, rock, TNT, or wall encountered on a straight line
+Returns the hit position for a laser beam (Technology, Robo-Baby). Usually this is the first poop, fire, rock, TNT, or wall encountered in a straight line.
 
 ___
 ### Get·Lava·Intensity () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### float GetLavaIntensity ( ) {: .copyable aria-label='Functions' }
-Usually returns 1, unless the lava is in the process of being cooled down by Flush! or other room flooding effects, in which case this will gradually decrease down to 0
+Usually returns 1, unless the lava is in the process of being cooled down by Flush! or other room flooding effects, in which case this will gradually decrease down to 0.
 
 ___
 ### Get·Lighting·Alpha () {: aria-label='Functions' }
@@ -320,7 +321,7 @@ ___
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
-returns random non tile aligned position
+Returns a random position in the room. This position is not alligned with the grid.
 ___
 ### Get·Random·Tile·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -330,12 +331,13 @@ ___
 ### Get·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean GetRedHeartDamage ( ) {: .copyable aria-label='Functions' }
+Returns `true` if the player took non-self inflicted damage to a red heart container while in the room. Resets to `false` if the player leaves the room or exits the run.
 
 ___
 ### Get·Render·Mode () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [RenderMode](enums/RenderMode.md) GetRenderMode ( ) {: .copyable aria-label='Functions' }
-Returns a RenderMode enum which can be used to render entities differently depending on context (i.e. custom water reflections)
+Returns a RenderMode enum which can be used to render entities differently depending on context (i.e. custom water reflections).
 ___
 ### Get·Render·Scroll·Offset () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -413,7 +415,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed, bool NoDecrease = false ) {: .copyable aria-label='Functions' }
 
-When NoDecrease is true, returned collectibles will not be removed from the pools they came from
+When `NoDecrease` is true, returned collectibles will not be removed from the pools they came from.
 
 ___
 ### Get·Shop·Level () {: aria-label='Functions' }
@@ -434,7 +436,7 @@ ___
 ### Get·Top·Left·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetTopLeftPos ( ) {: .copyable aria-label='Functions' }
-returns top left position inside of walls
+Returns the top-left position inside of the walls.
 ___
 ### Get·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -444,19 +446,22 @@ ___
 ### Get·Water·Current () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [Vector](Vector.md) GetWaterCurrent ( ) {: .copyable aria-label='Functions' }
-Returns a vector corresponding to any water current in the room
+Returns a vector corresponding to any water current in the room.
 
 ___
 ### Has·Curse·Mist () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasCurseMist ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is inside the abandoned mineshaft
+Returns true if the player is inside the abandoned mineshaft.
 
 ___
 ### Has·Lava () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasLava ( ) {: .copyable aria-label='Functions' }
-Returns true if the room contains lava pits
+Returns true if the room contains lava.
+
+???- warning "Warning"
+    This function will return `true` if the room contains lava even if there are no pits to make the lava visible.
 
 ___
 ### Has·Slow·Down () {: aria-label='Functions' }
@@ -484,12 +489,13 @@ ___
 ### Has·Water·Pits () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasWaterPits ( ) {: .copyable aria-label='Functions' }
+Returns `true` if the room contains pits that have liquid in them (e.g. lava in Mines, tar in Dank Depths, etc.).
 
 ___
 ### Invalidate·Pickup·Vision () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void InvalidatePickupVision ( ) {: .copyable aria-label='Functions' }
-Causes chest previews from Guppy's Eye to be updated on the next frame
+Causes chest previews from Guppy's Eye to be updated on the next frame.
 
 ___
 ### Is·Ambush·Active () {: aria-label='Functions' }
@@ -546,7 +552,7 @@ ___
 ### Is·Mirror·World () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsMirrorWorld ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is inside the mirror dimension
+Returns true if the player is inside the mirror dimension.
 
 ___
 ### Is·Position·In·Room () {: aria-label='Functions' }
@@ -631,7 +637,7 @@ ___
 ### Set·Clear () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetClear ( boolean Clear ) {: .copyable aria-label='Functions' }
-Needed for angel room, so the clear flag can be set to false when the angel spawns
+Needed for angel rooms so that the clear flag can be set to false when the angel spawns.
 ___
 ### Set·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -738,7 +744,7 @@ ___
 ### Trigger·Clear () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void TriggerClear ( boolean Silent = false ) {: .copyable aria-label='Functions' }
-Triggers all room clear effects (does not actually clear the room)
+Triggers all room clear effects (does not actually clear the room).
 Door opening sounds can be muted by setting Silent to true
 
 ___
@@ -812,6 +818,7 @@ ___
 ### Turn·Gold () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void TurnGold ( ) {: .copyable aria-label='Functions' }
+Applies a gold tint to all grid entities in the room. This is the same effect that the game does after defeating Ultra Greedier.
 
 ___
 ### Update () {: aria-label='Functions' }
