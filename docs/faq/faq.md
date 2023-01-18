@@ -680,7 +680,7 @@ When asking for help, it is common to post a code-snippet. Before posting code, 
 
 ### Avoid Posting Screenshots {: .subHeader}
 
-When asking for help, it is common to post a screenshot of your code. **Don't do this**, because it isn't editable or copy-pasteable. Instead, post the actual text of the code. Also see the section on [Discord syntax highlighting](#use-discord-syntax-highlighting).
+When asking for help, it is common to post a screenshot of your code. **Don't do this**, because it isn't editable, or copy-pasteable, or searchable. Instead, post the actual text of the code. Also see the section on [Discord syntax highlighting](#use-discord-syntax-highlighting).
 
 ### Use Minimal, Reproducible Examples {: .subHeader}
 
