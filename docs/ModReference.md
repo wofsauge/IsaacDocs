@@ -20,7 +20,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void AddPriorityCallback ( [ModCallbacks](enums/ModCallbacks.md) callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, function callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
-Allows modders to specify that a callback function should run earlier or later than normal.
+Allows modders to specify that a callback function should run earlier or later than normal relative to other functions added to that callback.
 ___
 ### Has·Data () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
