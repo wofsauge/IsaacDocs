@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "EntityEffect"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Follow·Parent () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "GridEntityPoop"
-### Inherits from Class: {: .inheritance }
-[GridEntity](GridEntity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions
 ### Reduce·Spawn·Rate () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

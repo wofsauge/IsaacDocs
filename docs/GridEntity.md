@@ -4,8 +4,8 @@ tags:
 ---
 # Class "GridEntity"
 
-### Children Classes {: .inheritance }
-[GridEntityDoor](GridEntityDoor.md), [GridEntityPit](GridEntityPit.md), [GridEntityPoop](GridEntityPoop.md), [GridEntityPressurePlate](GridEntityPressurePlate.md), [GridEntityRock](GridEntityRock.md), [GridEntitySpikes](GridEntitySpikes.md), [GridEntityTNT](GridEntityTNT.md)
+## Class Diagram
+--8<-- "docs/snippets/GridEntityClassDiagram.md"
 
 ## Functions
 ### Destroy () {: aria-label='Functions' }

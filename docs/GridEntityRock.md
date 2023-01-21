@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "GridEntityRock"
-### Inherits from Class: {: .inheritance }
-[GridEntity](GridEntity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions
 ### Get·Big·Rock·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

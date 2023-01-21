@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "EntityFamiliar"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Add·Coins () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

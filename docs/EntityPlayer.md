@@ -4,8 +4,9 @@ tags:
   - Player
 ---
 # Class "EntityPlayer"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Add·Black·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
