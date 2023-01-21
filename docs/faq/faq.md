@@ -690,7 +690,7 @@ Please read [this StackOverflow post on how to create minimal, reproducible exam
 
 ### Avoid Using Link Previews {: .subHeader}
 
-Link previews can clutter the conversion, turning a tiny message into a massive wall of text. It is courteous to enclose all links in <>.
+Link previews can clutter the conversion, turning a tiny message into a massive wall of text. It is courteous to enclose all links in <>, which will disable the feature.
 
 For example:
 
