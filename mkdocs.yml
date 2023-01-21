@@ -320,6 +320,9 @@ extra:
   version:
     provider: mike
     default: rep
+  analytics:
+    provider: google
+    property: G-ZBKP3LLT96
 extra_css:
     - css/custom.css
 extra_javascript:
