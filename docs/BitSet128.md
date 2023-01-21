@@ -1,5 +1,6 @@
 ---
 tags:
+  - Globals
   - Class
 ---
 # Class "BitSet128"

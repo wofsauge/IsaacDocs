@@ -1,5 +1,6 @@
 ---
 tags:
+  - Globals
   - Class
 ---
 # Class "Vector"

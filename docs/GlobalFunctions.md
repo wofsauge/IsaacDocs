@@ -1,6 +1,6 @@
 ---
 tags:
-  - Class
+  - Globals
 search:
   boost: 2
 ---
