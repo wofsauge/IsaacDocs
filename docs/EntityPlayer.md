@@ -312,17 +312,17 @@ ___
 #### void AddPill ( [PillColor](enums/PillColor.md) Pill ) {: .copyable aria-label='Functions' }
 
 ___
+### Add·Player·Form·Costume () {: aria-label='Functions' }
+[ ](#){: .abrep .tooltip .badge }
+#### void AddPlayerFormCostume ( [PlayerForm](enums/PlayerForm.md) Form ) {: .copyable aria-label='Functions' }
+Adds the costume of the given transformation.
+
+___
 ### Add·Poop·Mana () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddPoopMana ( int Num ) {: .copyable aria-label='Functions' }
 
 Adds (or remove) poop consumables from the player
-
-___
-### Add·Player·Form·Costume () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### void AddPlayerFormCostume ( [PlayerForm](enums/PlayerForm.md) Form ) {: .copyable aria-label='Functions' }
-Adds the costume of the given transformation.
 
 ___
 ### Add·Pretty·Fly () {: aria-label='Functions' }
@@ -842,17 +842,17 @@ ___
 #### int GetDamageCooldown ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Effective·Blood·Charge () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetEffectiveBloodCharge ( ) {: .copyable aria-label='Functions' }
+
+___
 ### Get·Effective·Max·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetEffectiveMaxHearts ( ) {: .copyable aria-label='Functions' }
 
 Returns the amount of Red Hearts the player can contain in their Heart Containers and Bone Hearts. 1 unit is half a red heart.
 **Example:** you have 3 red heart container and one bone heart. 6(red) + 2(bone) = 8
-
-___
-### Get·Effective·Blood·Charge () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### int GetEffectiveBloodCharge ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Effective·Soul·Charge () {: aria-label='Functions' }
@@ -1164,6 +1164,11 @@ ___
 #### float GetSmoothBodyRotation ( ) {: .copyable aria-label='Functions' }
 
 ___
+### Get·Soul·Charge () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### int GetSoulCharge ( ) {: .copyable aria-label='Functions' }
+
+___
 ### Get·Soul·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetSoulHearts ( ) {: .copyable aria-label='Functions' }
@@ -1172,11 +1177,6 @@ Returns the amount of Soul Hearts the player has. 1 unit is half a heart.
 
 ???- note "Notes"
     Black Hearts count toward this total, as the game sees them as soul hearts.
-
-___
-### Get·Soul·Charge () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### int GetSoulCharge ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Sub·Player () {: aria-label='Functions' }
@@ -1685,6 +1685,12 @@ ___
 #### void UsePill ( [PillEffect](enums/PillEffect.md) ID, [PillColor](enums/PillColor.md) PillColor, [UseFlags](enums/UseFlag.md) UseFlags = 0  ) {: .copyable aria-label='Functions' }
 
 ___
+### Use·Poop·Spell () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void UsePoopSpell ( [PoopSpellType](enums/PoopSpellType.md) type ) {: .copyable aria-label='Functions' }
+Triggers one of Tainted ???'s poop spells (see [PoopSpellType](enums/PoopSpellType.md) enum)
+
+___
 ### Will·Player·Revive () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean WillPlayerRevive ( ) {: .copyable aria-label='Functions' }
@@ -1695,12 +1701,6 @@ Right now, there are 3 items that grant conditional extra lives:
 * Guppy's Collar - This function will successfully predict whether or not the next revive from Guppy's Collar will work or not. (50% chance)
 * Broken Ankh - This function will successfully predict whether or not the next revive from Broken Ankh will work or not. (22.22% chance)
 * Mysterious Paper - This function will only successfully predict the revive from Missing Poster every 4 frames, because it evaluates only one of its 4 possible item effects each frame.
-
-___
-### Use·Poop·Spell () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### void UsePoopSpell ( [PoopSpellType](enums/PoopSpellType.md) type ) {: .copyable aria-label='Functions' }
-Triggers one of Tainted ???'s poop spells (see [PoopSpellType](enums/PoopSpellType.md) enum)
 
 ___
 ## Variables

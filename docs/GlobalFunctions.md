@@ -114,11 +114,6 @@ ___
 #### [RNG](RNG.md) RNG ( ) {: .copyable aria-label='Constructors' }
 
 ___
-### Sprite () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
-#### [Sprite](Sprite.md) Sprite ( ) {: .copyable aria-label='Constructors' }
-
-___
 ### SFXManager () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
 #### [SFXManager](SFXManager.md) SFXManager ( ) {: .copyable aria-label='Constructors' }
@@ -131,6 +126,11 @@ Returns a [SFXManager](SFXManager.md) object.
     SFXManager():Stop(SoundEffect.SOUND_1UP)
 
     ```
+___
+### Sprite () {: aria-label='Constructors' }
+[ ](#){: .abrep .tooltip .badge }
+#### [Sprite](Sprite.md) Sprite ( ) {: .copyable aria-label='Constructors' }
+
 ___
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

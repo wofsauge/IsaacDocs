@@ -46,14 +46,14 @@ ___
 0: default, 1: small, 2: tiny
 
 ___
-### Display·Popups {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
-#### boolean DisplayPopups  {: .copyable aria-label='Variables' }
-
-___
 ### Debug·Console·Enabled {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean DebugConsoleEnabled  {: .copyable aria-label='Variables' }
+
+___
+### Display·Popups {: aria-label='Variables' }
+[ ](#){: .rep .tooltip .badge }
+#### boolean DisplayPopups  {: .copyable aria-label='Variables' }
 
 ___
 ### Extra·HUD·Style {: aria-label='Variables' }

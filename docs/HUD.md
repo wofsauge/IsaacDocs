@@ -40,6 +40,11 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void Render ( ) {: .copyable aria-label='Functions' }
 ___
+### Set·Visible () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }
+Turns the HUD on or off.
+___
 ### Show·Fortune·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowFortuneText ( string MainString, string SecondaryString, ... ) {: .copyable aria-label='Functions' }
@@ -87,11 +92,6 @@ local function showSadOnionText()
 end
 ```
 
-___
-### Set·Visible () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }
-Turns the HUD on or off.
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
