@@ -323,16 +323,6 @@ extra:
   analytics:
     provider: google
     property: G-ZBKP3LLT96
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    actions:
-      - accept
-      - manage
 extra_css:
     - css/custom.css
 extra_javascript:
@@ -341,9 +331,7 @@ extra_javascript:
     - js/tablesort.number.min.js
     - js/customJS.js
     - js/jquery.mark.min.js
-copyright: >
-    Copyright &copy; 2021 - 2023 Wofsauge (Discord: Wofsauge#6503)
-    <a href="#__consent">Change cookie settings</a>
+copyright: "Copyright &copy; 2021 - 2023 Wofsauge (Discord: Wofsauge#6503)"
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
 edit_uri: edit/main/docs/
