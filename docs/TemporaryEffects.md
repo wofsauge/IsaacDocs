@@ -21,13 +21,19 @@ search:
 ### Add·Collectible·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddCollectibleEffect ( [CollectibleType](enums/CollectibleType.md) CollectibleType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
-Adds the effect of a collectible to the player, without actually giving him the assosiated item.
+Adds the CollectibleEffect associated with a given item. If the passed item's CollectibleEffect is marked to have a cooldown or be persistent in items.xml, this will be respected.
 
-???+ bug
-    This function only works for a subset of collectibles. For example, it will work with "Holy Mantle", but not with "Chocolate Milk".
+???+ info "Misinformation"
+    TemporaryEffects, despite their names, are not and were never intended to be fake or temporary copies of items. Notably every single active item automatically grants its CollectibleEffect on use, and this is often closely tied to its effect; CollectibleEffects can therefore be visuallised more as an item's state. For example in passive items:
+    
+    * Holy Mantle utilises its CollectibleEffect to track how many shield charges the player currently has.
+    * Most familiar items can have their familiar granted via their CollectibleEffect.
+    * Whore of Babylon and Crown of Light grant their CollectibleEffects while activated.
+    
+    Some items can have their effects granted invisibly through the use of their CollectibleEffect, oftentimes this is because another item pre-repentance wished to invoke its effect (such as Monster Manual). Many post-repentance items use real fake copies of items for this purpose, but adding these is not supported by the API and some such as Hemoptysis and Berserk! still use CollectibleEffects for their cooldowns. You should not assume that any given item will work as a TemporaryEffect the same as it does when actually obtained.
 
     ???- info "Supported Items"
-        Passive items that work when used with AddCollectibleEffect() (excluding quest items).
+        Passive items with notable CollectibleEffects (excluding quest items).
 
         --8<-- "docs/snippets/AddCollectibleEffect.txt"
 
