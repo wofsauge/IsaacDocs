@@ -24,10 +24,10 @@ search:
 Adds the CollectibleEffect associated with a given item. If the passed item's CollectibleEffect is marked to have a cooldown or be persistent in items.xml, this will be respected.
 
 ???+ info "Misinformation"
-    TemporaryEffects, despite their names, are not and were never intended to be fake or temporary copies of items. Notably every single active item automatically grants its CollectibleEffect on use, and this is often closely tied to its effect, CollectibleEffects can therefore be visuallised more as an item's state. For example in passive items:
+    TemporaryEffects, despite their names, are not and were never intended to be fake or temporary copies of items. Notably every single active item automatically grants its CollectibleEffect on use, and this is often closely tied to its effect; CollectibleEffects can therefore be visuallised more as an item's state. For example in passive items:
     
     * Holy Mantle utilises its CollectibleEffect to track how many shield charges the player currently has.
-    * Most familiar items can be granted their familiar via their CollectibleEffect.
+    * Most familiar items can have their familiar granted via their CollectibleEffect.
     * Whore of Babylon and Crown of Light grant their CollectibleEffects while activated.
     
     Some items can have their effects granted invisibly through the use of their CollectibleEffect, oftentimes this is because another item pre-repentance wished to invoke its effect (such as Monster Manual). Many post-repentance items use real fake copies of items for this purpose, but adding these is not supported by the API and some such as Hemoptysis and Berserk! still use CollectibleEffects for their cooldowns. You should not assume that any given item will work as a TemporaryEffect the same as it does when actually obtained.
