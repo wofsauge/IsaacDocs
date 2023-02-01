@@ -558,6 +558,7 @@ ___
 ### Is·Position·In·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPositionInRoom ( [Vector](Vector.md) Pos, float Margin ) {: .copyable aria-label='Functions' }
+Returns true, if the given position is inside the room. Margin is used as a radius around the position that also needs to be inside the room boundaries. The Room boundary is the position between the walkable area and the walls. Therefore, positions inside walls and the black void do count as "outside" the room.
 
 ___
 ### Is·Sacrifice·Done () {: aria-label='Functions' }
