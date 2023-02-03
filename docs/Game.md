@@ -118,6 +118,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void Darken ( float Darkness, int Timeout ) {: .copyable aria-label='Functions' }
 
+Darkens the room. This is the function that is called internally during The Lamb fight or when Dice Rooms are activated.
 ___
 ### Donate·Angel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
