@@ -681,8 +681,7 @@ ___
 #### [EntityLaser](EntityLaser.md) FireTechLaser ( [Vector](Vector.md) Position, [LaserOffset](enums/LaserOffset.md) OffsetID, [Vector](Vector.md) Direction, boolean LeftEye, boolean OneHit = false, Entity Source = nil, float DamageMultiplier = 1 ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
-    The `DamageMultiplier` property doesn't appear to work.
-    Additionally, spawning a laser with this method will prevent you from being able to change how much damage it does.
+    The `DamageMultiplier` parameter doesn't do anything when supplying [LASER_TECH2_OFFSET](enums/LaserOffset.md) as the offset.
 
 ___
 ### Fire·Tech·XLaser () {: aria-label='Functions' }
