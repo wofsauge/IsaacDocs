@@ -162,6 +162,8 @@ ___
 
     14: The Beast / Final (movie)
 
+    Successful endings increment your win streak. If you pass a bad number like 0 then you can artificially increase your win streak as much as you want.
+
 ___
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
