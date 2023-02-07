@@ -133,6 +133,36 @@ ___
 ### End () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void End ( Ending Ending ) {: .copyable aria-label='Functions' }
+???+ note "Ending notes"
+    1: Game over "Dear Diary" (exit/restart)
+
+    2: Mom / Epilogue (movie)
+
+    3: Credits (movie)
+
+    4: Satan / End 12 (movie)
+
+    5: Isaac / End 13 (movie)
+
+    6: The Lamb / End 15 (movie)
+
+    7: ??? / End 14 (movie)
+
+    8: Mega Satan / End 16 (movie)
+
+    9: Greed / End 18 (movie)
+
+    10: Hush / End 17 (movie)
+
+    11: Delirium / End 20 (movie)
+
+    12: Greedier / End 19 (movie)
+
+    13: Mother / End 21 (movie)
+
+    14: The Beast / Final (movie)
+
+    Successful endings increment your win streak. If you pass a bad number like 0 then you can artificially increase your win streak as much as you want.
 
 ___
 ### Fadein () {: aria-label='Functions' }
