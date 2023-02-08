@@ -138,7 +138,7 @@ ___
 
     2: Mom / Epilogue (movie)
 
-    3: Credits (movie)
+    3: Mom's Heart / End 1/2/3/4/5/6/7/8/9/10/11 (movie) or just Credits depending on context
 
     4: Satan / End 12 (movie)
 
