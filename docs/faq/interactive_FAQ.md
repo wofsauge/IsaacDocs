@@ -41,7 +41,15 @@ INTERACTIVE_questions = {
       text: "A crash happening when loading a save game is most likely caused, by having a continuable run active, which was played with a modded character which was uninstalled recently.<br>Please reinstall the character mod and start a run with a vanilla character, for example Isaac.",
     },
     "CRASH_RUN" : {
-      text: 'A crash happening on starting a run or while playing is most likely caused by a mod encountering a critical error. Please contact the mod creator, or visit the Modding Discord server and ask for help: <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a>',
+      text: 'A crash happening on starting a run or while playing is most likely caused by a mod encountering a critical error. The reason for the crash can be found inside a crash log file. Those files can be found in the following folder: <br> C:\\Users\\[YourUsername]\\Documents\\My Games\\Binding of Isaac Repentance\\<br>The crash files are ".txt" files that follow the pattern: "isaacv[VERSION]-[CRASH_DATE]-[CRASH-TIME]-[NUMBERS]-[NUMBERS].txt". <br>Example: "isaacv1.7.9b.J835-20230119-174342-25560-10688.txt"<br><br>Please send the most recent crash log file to the mod creator to make it easier for them to fix the issue. Alternatively, visit the Modding Discord server and ask for help: <a href="https://discord.gg/KbevtvgD4z">Join the Official Modding Of Isaac Discord-Server</a>',
+      image: "../images/faq/crashfile_location.png",
+      answers: [
+        {text: "Do i have an outdated version of the game?", link: "VERSION_MISMATCH"}
+      ]
+    },
+    "VERSION_MISMATCH" : {
+      text: 'Some issues might occur, because you dont have the most recent version of the game installed, making some mods not work correctly anymore. You can look up the installed version of the game inside the "log.txt" file (See: Blue arrow on screenshot), found inside this folder:<br>C:\\Users\\[YourUsername]\\Documents\\My Games\\Binding of Isaac Repentance\\<br>You can look up the most recent version number of the game in the Wiki <a href="https://bindingofisaacrebirth.fandom.com/wiki/Version_History">https://bindingofisaacrebirth.fandom.com/wiki/Version_History</a><br>If your version number is not the same as the most recent one, please update your game and try to use the mod again.',
+      image: "../images/faq/logfile_location.png",
     },
     "DLC_MISSING" : {
       text: "You need to have at least the 'Afterbirth+' DLC or 'Repentance' installed to use Steam Workshop mods.<br>To get mods compatible with the base game (Rebirth) or Afterbirth (DLC 1), please check out <a href=\"https://moddingofisaac.com/\">https://moddingofisaac.com/</a>",
