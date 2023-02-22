@@ -63,7 +63,7 @@ For example:
 ```lua
 local function showHelpText()
   local game = Game()
-  local hud = game.GetHUD()
+  local hud = game:GetHUD()
 
   hud:ShowItemText("Don't touch the spikes!", "It will drain your mana.")
 end
@@ -83,7 +83,7 @@ For example:
 ```lua
 local function showSadOnionText()
   local game = Game()
-  local hud = game.GetHUD()
+  local hud = game:GetHUD()
   local itemConfig = Isaac.GetItemConfig()
 
   local player = Isaac.GetPlayer()
