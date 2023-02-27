@@ -31,7 +31,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|1 << 19 |FLAG_NO_SPIKE_DAMAGE {: .copyable } | EntityNPC: shouldn't take any damage from spikes |
 |[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_LASER_POP {: .copyable } | EntityTear: Pop tear fired by a laser, should decelerate very quickly for the first few frames |
 |[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_ITEM_SHOULD_DUPLICATE {: .copyable } | EntityPickup: item pedestal affected by Damocles, will be duplicated at the end of the current frame |
-|[ ](#){: .abrep .tooltip .badge }|1 << 20 |FLAG_BOSSDEATH_TRIGGERED {: .copyable } | Some bosses (Lamb/Mother) can die (HitPoints <= 0) but they'll still appear to be active in the room (IsActiveEnemy). You can check this flag in those cases. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 20 |FLAG_BOSSDEATH_TRIGGERED {: .copyable } | Some bosses (Lamb/Mother) can die but they'll still appear to be active in the room (IsActiveEnemy). You can check this flag in those cases. |
 |[ ](#){: .abrep .tooltip .badge }|1 << 21 |FLAG_DONT_OVERWRITE {: .copyable } | Used in entityfactory to not remove this entity if there is no space left for new entity |
 |[ ](#){: .abrep .tooltip .badge }|1 << 22 |FLAG_SPAWN_STICKY_SPIDERS {: .copyable } | Used by Sticky bombs to generate spiders on death |
 |[ ](#){: .abrep .tooltip .badge }|1 << 23 |FLAG_SPAWN_BLACK_HP {: .copyable } | Used by black hp drop tear flag to drop a black hp on enemy death |
