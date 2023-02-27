@@ -75,6 +75,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPillIdentified ( [PillColor](enums/PillColor.md) PillColor ) {: .copyable aria-label='Functions' }
 
+Once the player takes PHD, Virgo, or False PHD, this will always return true, even if the player has not already identified the pill.
+
 ___
 ### Remove·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
