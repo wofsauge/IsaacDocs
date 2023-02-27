@@ -19,7 +19,7 @@ When setting the seed, it is recommended to use a shift index of 35, which is wh
 ???+ example "Example code"
     ```lua
     -- This is the ShiftIdx that Blade recommended after having reviewing the game's internal functions.
-    -- Any value between 0 and 80 should work equally well.
+    -- Any value between 0 and 80 (inclusive) should work equally well.
     -- https://www.jstatsoft.org/article/view/v008i14/xorshift.pdf
     local RECOMMENDED_SHIFT_IDX = 35
 
@@ -58,7 +58,7 @@ Note that this will automatically call the `RNG.Next` method before retrieving t
 ???+ example "Example code"
     ```lua
     -- This is the ShiftIdx that Blade recommended after having reviewing the game's internal functions.
-    -- Any value between 0 and 80 should work equally well.
+    -- Any value between 0 and 80 (inclusive) should work equally well.
     -- https://www.jstatsoft.org/article/view/v008i14/xorshift.pdf
     local RECOMMENDED_SHIFT_IDX = 35
     local MY_ENTITY_CHANCE = 0.3 -- 30%
@@ -92,7 +92,7 @@ ___
 ### Set·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSeed ( int Seed, int ShiftIdx ) {: .copyable aria-label='Functions' }
-Set the seed of a given RNG object. Both Seed and ShiftIdx need to be an integer number that is **not** 0. Otherwise it can cause crashes.
+Set the seed of a given RNG object. Seed needs to be a positive integer number that is **not** 0. Otherwise it can cause crashes. ShiftIdx must be between 0 and 80 (inclusive) or it can cause crashes.
 
 Shift index table can be found here: https://gist.github.com/bladecoding/17b341ed08ff94d2deb704ebda8ffc5f
 
