@@ -10,13 +10,17 @@ tags:
 
 `pocketitems.xml` is used for two significantly different purposes: Adding cards, and adding pill effects. These have different xml syntaxes, seen below.
 
-## Cards
+## Cards & Runes
 
 Cards are marked by `<card ... />`, like so:
 
 
 ```xml
 <card type="tarot" pickup="1" description="Where journey begins" id="1" name="0 - The Fool" announcer="375" announcerdelay="60" mimiccharge="2" />
+```
+Runes use the same attributes as cards, but are marked by `<rune ... />` or the type equal `rune`. In the vanilla files, all runes except the soul stones use the `<rune>` tag and type. Soul stones use the `<card>` tag and the `rune` type, but seem to act the same as other runes regardless. An example for a rune would be:
+```xml
+<rune type="rune" pickup="3" achievement="89" description="Some description" id="32" name="Some Rune" announcer="341" mimiccharge="2" />
 ```
 
 
