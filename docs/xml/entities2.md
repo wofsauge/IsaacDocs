@@ -79,3 +79,25 @@ Downpour Sprite: monster_017_gaper_downpour.png
 |Ashpit|_ashpit|
 |Mausoleum|_mausoleum|
 |Gehenna|_gehenna|
+
+## `<gibs>` tag
+the `<gibs>` tag is used to define the gibs that are spawned when an entity is killed or destroyed.
+| Variable-Name | Possible Values | Description |
+|:--|:--|:--|
+| amount | int | How many gibs should be spawned|
+| blood | int | Possible values: [0,1] where 0 is off and 1 is on|
+| bone | int |Possible values: [0,1] where 0 is off and 1 is on|
+| chain | int |Possible values: [0,1] where 0 is off and 1 is on|
+| colorblood | int |Possible values: [0,1] where 0 is off and 1 is on|
+| dust | int |Possible values: [0,1] where 0 is off and 1 is on|
+| eye | int |Possible values: [0,1] where 0 is off and 1 is on|
+| gut | int |Possible values: [0,1] where 0 is off and 1 is on|
+| huge | int |Possible values: [0,1] where 0 is off and 1 is on|
+| large | int |Possible values: [0,1] where 0 is off and 1 is on|
+| poop | int |Possible values: [0,1] where 0 is off and 1 is on|
+| rock | int |Possible values: [0,1] where 0 is off and 1 is on|
+| rock_small | int |Possible values: [0,1] where 0 is off and 1 is on|
+| small | int |Possible values: [0,1] where 0 is off and 1 is on|
+| sound_baby | int |Possible values: [0,1] where 0 is off and 1 is on|
+| sound_bone | int |Possible values: [0,1] where 0 is off and 1 is on|
+| worm | int |Possible values: [0,1] where 0 is off and 1 is on|
