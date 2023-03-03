@@ -562,7 +562,7 @@ Starts a transition animation like it`s playing when entering a trapdoor to swit
 * &gt;2: Same as 0
 
 ???+ bug "Bug"
-    Defining a player will crash the game. To prevent this, keep player-argument nil: `Game():StartStageTransition(false, 0, nil)`
+    Not defining a player will crash the game. To prevent this, either pass an EntityPlayer from elsewhere, such as a callback, or use [`Isaac.GetPlayer()`](Isaac.md#getplayer): `Game():StartStageTransition(false, 0, Isaac.GetPlayer())`
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
