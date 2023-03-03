@@ -370,11 +370,12 @@ for SetStage/SetNextStage to have effect, call Init afterward
 
 StageOffset acts as the new "floor"
 e.g. 1 would be equally difficult to Basement I, 
-     2 would be equally difficult to Basement II
- and 3 would be equally difficult to Caves I
+     2 would be equally difficult to Basement II,
+     3 would be equally difficult to Caves I
 
 StageTypeOffset tells the game what "stage" to use, based on the listed IDs in stages.xml, however, the default stage of the floor's ID will be added on top of this
 e.g. StageOffset = 1 means the stage at ID 1(Basement's stage ID) + StageTypeOffset, 
+     StageOffset = 2 means the stage at ID 1(Same as StageOffset 1) + StageTypeOffset,
      StageOffset = 3 means the stage at ID 4(Caves' stage ID) + StageTypeOffset
 If you wish to directly use a stage ID, you can subtract the default stage for any given floor using a function like:
 ```lua
