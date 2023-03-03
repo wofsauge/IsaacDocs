@@ -42,7 +42,7 @@ ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void Play ( [SoundEffect](enums/SoundEffect.md) ID, float Volume = 1, int FrameDelay = 2, boolean Loop = false, float Pitch = 1, float Pan = 0 ) {: .copyable aria-label='Functions' }
-
+Despite its name, **FrameDelay** does NOT add a delay before the sound plays. Rather, it determines how many frames must pass before the sound can be played again.
 ___
 ### Preload () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
