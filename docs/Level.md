@@ -377,9 +377,9 @@ StageOffset acts as the new "floor":
 
 StageTypeOffset tells the game what "stage" to use, based on the listed IDs in [stages.xml](xml/stages.md), however, the default stage of the floor's ID will be added on top of this
 
-* StageOffset = 1 uses the stage at ID 1(Basement's stage ID) + StageTypeOffset, 
-* StageOffset = 2 uses the stage at ID 1(Same as StageOffset 1) + StageTypeOffset,
-* StageOffset = 3 uses the stage at ID 4(Caves' stage ID) + StageTypeOffset
+* StageOffset = 1 uses the stage at ID: StageTypeOffset + 1(Basement's stage ID), 
+* StageOffset = 2 uses the stage at ID: StageTypeOffset + 1(Same as StageOffset 1),
+* StageOffset = 3 uses the stage at ID: StageTypeOffset + 4(Caves' stage ID)
 
 If you wish to directly use a stage ID, you can subtract the default stage for any given floor using a function like:
 ```lua
