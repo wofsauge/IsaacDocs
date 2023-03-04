@@ -356,7 +356,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetNextStage ( ) {: .copyable aria-label='Functions' }
 
-This function puts you in the next stage without applying any of the floor changes. You are meant to call the `Game.StartStageTransition` method after using this function.
+This function puts you in the next stage without applying any of the floor changes. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -366,9 +366,41 @@ ___
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetStage ( int StageOffset, int StageTypeOffset ) {: .copyable aria-label='Functions' }
-for SetStage/SetNextStage to have effect, call Init afterward
 
-Not much is known about these functions; submit a pull request if you learn more.
+This function changes the current floor, and it's stage. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
+
+StageOffset acts as the new "floor":
+
+* 1 would be equally difficult to Basement I, 
+* 2 would be equally difficult to Basement II,
+* 3 would be equally difficult to Caves I
+
+StageTypeOffset tells the game what "stage" to use, based on the listed IDs in [stages.xml](xml/stages.md), however, the default stage of the floor's ID will be added on top of this
+
+* StageOffset = 1 uses the stage at ID: StageTypeOffset + 1(Basement's stage ID), 
+* StageOffset = 2 uses the stage at ID: StageTypeOffset + 1(Same as StageOffset 1),
+* StageOffset = 3 uses the stage at ID: StageTypeOffset + 4(Caves' stage ID)
+
+If you wish to directly use a stage ID, you can subtract the default stage for any given floor using a function like:
+```lua
+local function defaultStageOfFloor(StageOffset)
+	if (StageOffset == 0) then
+		print("Attempting to get default stage of floor 0. This is not recommended")
+		Isaac.DebugString("Attempting to get default stage of floor 0. This is not recommended")
+		return 0
+	elseif (StageOffset <= 8) then
+		return math.ceil(StageOffset/2) * 3 -2
+	else
+		return 10 + (StageOffset-8) * 2
+	end
+end
+```
+???- note "Notes"
+	If you pass StageOffset = 0, the function acts (seemingly) arbitrarily, though it is still possible to use
+
+	StageOffset = -1 has an unusually small floor
+
+	StageOffsets 9, 12, and 13 are all seemingly hardcoded in some ways. Blue Womb seems to have it's backdrop and layout forced, while The Void and Home seems to force their name and backdrop
 
 ___
 ### Set·State·Flag () {: aria-label='Functions' }
