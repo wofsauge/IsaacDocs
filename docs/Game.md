@@ -556,6 +556,8 @@ ___
 
 Starts a transition animation, like the ones used when entering a trapdoor or light beam to reach the next stage.
 
+The value of Animation seemingly has no actual effect on the transition. (If you have more info, submit a pull request.)
+
 ???+ bug "Bug"
 	Contrary to previous beliefs, this function will crash when **not** provided with an EntityPlayer. It is worth noting however, that the function, even when used correctly, is inconsistent and seems to sometimes crash for no reason.
 ___
