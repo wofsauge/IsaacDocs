@@ -556,13 +556,6 @@ ___
 
 Starts a transition animation, like the ones used when entering a trapdoor or light beam to reach the next stage.
 
-
-**Stage Transition types:**
-
-* 0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.
-* 1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.
-* &gt;2: Same as 0
-
 ???+ bug "Bug"
 	Contrary to previous beliefs, this function will crash when **not** provided with an EntityPlayer. It is worth noting however, that the function, even when used correctly, is inconsistent and seems to sometimes crash for no reason.
 ___
