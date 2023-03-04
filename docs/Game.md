@@ -554,7 +554,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void StartStageTransition ( boolean SameStage, StageTransition::Animation Animation, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 
-Starts a transition animation like it`s playing when entering a trapdoor to switch between stages.
+Starts a transition animation, like the ones used when entering a trapdoor or light beam to reach the next stage.
+
+
 **Stage Transition types:**
 
 * 0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.
