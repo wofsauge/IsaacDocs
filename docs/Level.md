@@ -374,7 +374,7 @@ StageOffset acts as the new "floor":
 * 2 would be equally difficult to Basement II,
 * 3 would be equally difficult to Caves I
 
-StageTypeOffset tells the game what "stage" to use, based on the listed IDs in stages.xml, however, the default stage of the floor's ID will be added on top of this
+StageTypeOffset tells the game what "stage" to use, based on the listed IDs in [stages.xml](xml/stages.md), however, the default stage of the floor's ID will be added on top of this
 
 * StageOffset = 1 means the stage at ID 1(Basement's stage ID) + StageTypeOffset, 
 * StageOffset = 2 means the stage at ID 1(Same as StageOffset 1) + StageTypeOffset,
