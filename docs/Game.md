@@ -562,7 +562,7 @@ Starts a transition animation like it`s playing when entering a trapdoor to swit
 * &gt;2: Same as 0
 
 ???+ bug "Bug"
-    Not defining a player will crash the game. To prevent this, either pass an EntityPlayer from elsewhere, such as a callback, or use [`Isaac.GetPlayer()`](Isaac.md#getplayer): `Game():StartStageTransition(false, 0, Isaac.GetPlayer())`. It is worth noting that this function is still inconsistent, and is known to crash for seemingly no reason.
+	Contrary to previous beliefs, this function will crash when **not** provided with an EntityPlayer. It is worth noting however, that the function, even when used correctly, is inconsistent and seems to sometimes crash for no reason.
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
