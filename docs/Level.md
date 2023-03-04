@@ -356,7 +356,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetNextStage ( ) {: .copyable aria-label='Functions' }
 
-This function puts you in the next stage without applying any of the floor changes. You are meant to call the `Game.StartStageTransition` method after using this function.
+This function puts you in the next stage without applying any of the floor changes. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -366,7 +366,8 @@ ___
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetStage ( int StageOffset, int StageTypeOffset ) {: .copyable aria-label='Functions' }
-for SetStage/SetNextStage to have effect, call Init afterward
+
+This function changes the current floor, and it's stage. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 
 StageOffset acts as the new "floor":
 
@@ -376,9 +377,9 @@ StageOffset acts as the new "floor":
 
 StageTypeOffset tells the game what "stage" to use, based on the listed IDs in [stages.xml](xml/stages.md), however, the default stage of the floor's ID will be added on top of this
 
-* StageOffset = 1 means the stage at ID 1(Basement's stage ID) + StageTypeOffset, 
-* StageOffset = 2 means the stage at ID 1(Same as StageOffset 1) + StageTypeOffset,
-* StageOffset = 3 means the stage at ID 4(Caves' stage ID) + StageTypeOffset
+* StageOffset = 1 uses the stage at ID 1(Basement's stage ID) + StageTypeOffset, 
+* StageOffset = 2 uses the stage at ID 1(Same as StageOffset 1) + StageTypeOffset,
+* StageOffset = 3 uses the stage at ID 4(Caves' stage ID) + StageTypeOffset
 
 If you wish to directly use a stage ID, you can subtract the default stage for any given floor using a function like:
 ```lua
