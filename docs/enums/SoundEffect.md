@@ -110,6 +110,10 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|157 |SOUND_VAMP_GULP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/157.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|158 |SOUND_WHEEZY_COUGH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/158.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|159 |SOUND_SPIDER_COUGH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/159.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|160 |SOUND_PORTAL_OPEN {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|161 |SOUND_PORTAL_LOOP {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|162 |SOUND_PORTAL_SPAWN {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|163 |SOUND_TAR_LOOP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|165 |SOUND_ZOMBIE_WALKER_KID {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/165.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|166 |SOUND_ANIMAL_SQUISH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/166.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|167 |SOUND_ANGRY_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/167.wav" type="audio/wav"></audio>|  |
