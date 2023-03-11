@@ -45,8 +45,7 @@ ___
 ### Can·Open·Challenge·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanOpenChallengeRoom ( int RoomIndex ) {: .copyable aria-label='Functions' }
-
-Returns whether or not a Challenge Room door will be open. You must pass this method a valid grid index on the floor. It does not matter if the grid index is actually attached to the Challenge Room or not. This method will always return false if an invalid or a negative grid index is passed.
+Returns whether or not a Challenge Room door will be open. You must pass this method a valid grid index on the floor. It does not matter if the grid index is actually attached to the Challenge Room or not. This method will always return `false` if an invalid or a negative grid index is passed.
 
 ___
 ### Can·Spawn·Devil·Room () {: aria-label='Functions' }
@@ -75,7 +74,6 @@ ___
 ### Force·Horseman·Boss () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean ForceHorsemanBoss ( int Seed ) {: .copyable aria-label='Functions' }
-
 Returns `true` on success.
 ___
 ### Get·Absolute·Stage () {: aria-label='Functions' }
@@ -94,7 +92,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### float GetAngelRoomChance ( ) {: .copyable aria-label='Functions' }
 
-Gets the modifier value of the chance for this floor's deal to be an Angel deal. Specifically, the actual effective chance for a deal to be an Angel deal is 50% _plus_ this value.
+Gets the modifier value of the chance for this floor's deal to be an Angel deal. Specifically, the actual effective chance for a deal to be an Angel deal is 50% plus this value.
 If this chance is above `0.0`, deals can become Angel deals even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not been entered yet, the deal is guaranteed to be an Angel deal. Under normal circumstances, setting this chance to below `0.0` will _not_ reduce the chance for an Angel deal, as values below `0.0` are usually ignored. A negative chance will only affect Angel deal chance if the player has an item that enables visiting Angel deals even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
 
 ___
@@ -294,7 +292,7 @@ ___
 ### Is·Pre·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsPreAscent ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is in the version of Mausoleum/Gehenna II leading to the Ascent.
+Returns `true` if the player is in the version of Mausoleum/Gehenna II leading to the Ascent.
 
 ___
 ### Make·Red·Room·Door () {: aria-label='Functions' }
@@ -302,12 +300,12 @@ ___
 #### boolean MakeRedRoomDoor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
 Attempts to create a red room door in the given room at the given door slot
 
-Returns true on success.
+Returns `true` on success.
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int QueryRoomTypeIndex ( [RoomType](enums/RoomType.md) RoomType, boolean Visited, [RNG](RNG.md) rng, boolean IgnoreGroup = false ) {: .copyable aria-label='Functions' }
-IgnoreGroup: If set to true, includes rooms that do not have the same group ID as the current room (currently unused)
+IgnoreGroup: If set to `true`, includes rooms that do not have the same group ID as the current room (currently unused)
 ___
 ### Remove·Compass·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -338,7 +336,6 @@ ___
 ### Set·Next·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetNextStage ( ) {: .copyable aria-label='Functions' }
-
 This function puts you in the next stage without applying any of the floor changes. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
@@ -349,7 +346,6 @@ ___
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetStage ( int StageOffset, int StageTypeOffset ) {: .copyable aria-label='Functions' }
-
 This function changes the current floor, and it's stage. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 
 StageOffset acts as the new "floor":
@@ -414,7 +410,6 @@ ___
 ### Update·Visibility () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void UpdateVisibility ( ) {: .copyable aria-label='Functions' }
-
 
 ???- note "Notes"
     Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call  UpdateVisibility() afterwards to apply any changes.
