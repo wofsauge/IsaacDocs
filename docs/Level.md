@@ -291,6 +291,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsNextStageAvailable ( ) {: .copyable aria-label='Functions' }
 Returns `false` if on a final floor (Chest/Dark Room, The Void, Home). Returns `true` otherwise, including cases where the next stage is technically not available such as not having the Polaroid or Negative when entering its respective Big Chest or beating Hush for the first time.
+
 ___
 ### Is·Pre·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
