@@ -91,7 +91,6 @@ ___
 ### Get·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### float GetAngelRoomChance ( ) {: .copyable aria-label='Functions' }
-
 Gets the modifier value of the chance for this floor's deal to be an Angel deal. Specifically, the actual effective chance for a deal to be an Angel deal is 50% plus this value.
 
 
