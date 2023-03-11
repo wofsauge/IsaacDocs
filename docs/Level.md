@@ -298,9 +298,12 @@ ___
 ### Make·Red·Room·Door () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean MakeRedRoomDoor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
-Attempts to create a red room door in the given room at the given door slot
+Attempts to create a red room door in the given room at the given door slot. Returns `true` on success.
 
-Returns `true` on success.
+???- note "Notes"
+	This function can be used to create rooms not connected to any other room. For example, calling `MakeRedRoomDoor(2, DoorSlot.DOOR_LEFT0)` will create a room where `Slot` of `CurrentRoomIdx` would connect to, in this case grid index 1.
+	
+	Rooms can also be forced to be created by setting [Challenge](Game.md#challenge) to Red Redemption (`Challenge.CHALLENGE_RED_REDEMPTION`). Note that creating a room connected to an otherwise invalid slot will cause the door to lead to an Error room!
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
