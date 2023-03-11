@@ -517,6 +517,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCurrentRoomLastBoss ( ) {: .copyable aria-label='Functions' }
 
+Returns `true` if the current room is the second boss room when on an XL floor. Returns `false` otherwise.
+
 ___
 ### Is·Door·Slot·Allowed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -579,6 +581,8 @@ ___
 ### Play·Music () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayMusic ( ) {: .copyable aria-label='Functions' }
+
+Plays the music track used by this room. Useful for resetting music after playing a different track.
 
 ___
 ### Remove·Door () {: aria-label='Functions' }
@@ -719,6 +723,8 @@ ___
 ### Shop·Restock·Full () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ShopRestockFull ( ) {: .copyable aria-label='Functions' }
+
+Effectively acts like a use of a Reroll Machine, restocking shops and rerolling items.
 
 ___
 ### Shop·Restock·Partial () {: aria-label='Functions' }
