@@ -272,12 +272,13 @@ ___
 ### Is·Alt·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsAltStage ( ) {: .copyable aria-label='Functions' }
+Returns `true` if the level's [StageType](enums/StageType.md) is not `StageType.STAGE_ORIGINAL`.
 
 ___
 ### Is·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsAscent ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is in the Ascent.
+Returns `true` if the player is in the Ascent.
 
 ___
 ### Is·Devil·Room·Disabled () {: aria-label='Functions' }
@@ -288,7 +289,7 @@ ___
 ### Is·Next·Stage·Available () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsNextStageAvailable ( ) {: .copyable aria-label='Functions' }
-
+Returns `false` if on a final floor (Chest/Dark Room, The Void, Home). Returns `true` otherwise, including cases where the next stage is technically not available such as not having the Polaroid or Negative when entering its respective Big Chest or beating Hush for the first time.
 ___
 ### Is·Pre·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
