@@ -93,7 +93,12 @@ ___
 #### float GetAngelRoomChance ( ) {: .copyable aria-label='Functions' }
 
 Gets the modifier value of the chance for this floor's deal to be an Angel deal. Specifically, the actual effective chance for a deal to be an Angel deal is 50% plus this value.
-If this chance is above `0.0`, deals can become Angel deals even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not been entered yet, the deal is guaranteed to be an Angel deal. Under normal circumstances, setting this chance to below `0.0` will _not_ reduce the chance for an Angel deal, as values below `0.0` are usually ignored. A negative chance will only affect Angel deal chance if the player has an item that enables visiting Angel deals even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
+
+
+???+ info
+    If this chance is above `0.0`, deals can become Angel deals even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not been entered yet, the deal is guaranteed to be an Angel deal.
+    
+    Under normal circumstances, setting this chance to below `0.0` will _not_ reduce the chance for an Angel deal, as values below `0.0` are usually ignored. A negative chance will only affect Angel deal chance if the player has an item that enables visiting Angel deals even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
 
 ___
 ### Get·Can·See·Everything () {: aria-label='Functions' }
