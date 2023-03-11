@@ -94,7 +94,7 @@ ___
 Gets the modifier value of the chance for this floor's deal to be an Angel room. Specifically, the actual effective chance for a deal to be an Angel room is 50% plus this value.
 
 ???+ info
-    If this value is above `0.0`, deals can become Angel rooms even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not been entered yet, the deal is guaranteed to be an Angel room.
+    If this value is above `0.0`, deals can become Angel rooms even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not spawned yet, the deal is guaranteed to be an Angel room.
     
     Under normal circumstances, setting this value to below `0.0` will _not_ reduce the chance for an Angel room, as values below `0.0` are usually ignored. A negative value will only affect Angel room chance if the player has an item that enables visiting Angel rooms even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
 
