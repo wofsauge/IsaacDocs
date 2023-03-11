@@ -55,7 +55,8 @@ ___
 ### Destroy·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean DestroyGrid ( int Index, boolean Immediate ) {: .copyable aria-label='Functions' }
-calls DamageGrid internally to damage Poop/Fire removes rocks and opens secret doors returns true if something was destroyed returns false if not used for explosions mostly
+Calls DamageGrid internally to damage Poop/Fire removes rocks and opens secret doors.
+Returns `true` if something was destroyed.
 ___
 ### Emit·Blood·From·Walls () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -65,12 +66,12 @@ ___
 ### Find·Free·Pickup·Spawn·Position () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [Vector](Vector.md) FindFreePickupSpawnPosition ( [Vector](Vector.md) Pos, float InitialStep = 0, boolean AvoidActiveEntities = false, boolean AllowPits = false ) {: .copyable aria-label='Functions' }
-Starting from Pos, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned.
+Starting from `Pos`, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned.
 ___
 ### Find·Free·Tile·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) FindFreeTilePosition ( [Vector](Vector.md) Pos, float DistanceThreshold ) {: .copyable aria-label='Functions' }
-Finds the nearest free tile based on position Stops immediately if the tile sampled has a squared distance less than DistanceThresholdSQ
+Finds the nearest free tile based on position Stops immediately if the tile sampled has a squared distance less than `DistanceThresholdSQ`.
 ___
 ### Get·Alive·Bosses·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -90,7 +91,6 @@ ___
 ### Get·Backdrop·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [BackdropType](enums/BackdropType.md) GetBackdropType ( ) {: .copyable aria-label='Functions' }
-
 Returns the BackdropType of the current room.
 
 ___
@@ -102,16 +102,17 @@ Returns the boss ID of the first boss in the room. Returns 0 otherwise.
 This will return the sub-type of the current room, since this value is used to determine the boss portrait to display when entering.
 
 A boss ID is not equal to the entity type of the boss; it is a separate value in the entities2.xml file inside the "bossID" attribute.
+
 ___
 ### Get·Bottom·Right·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetBottomRightPos ( ) {: .copyable aria-label='Functions' }
-returns bottom right position inside of walls
+Returns bottom right position of the room, inside of the wall border.
+
 ___
 ### Get·Broken·Watch·State () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetBrokenWatchState ( ) {: .copyable aria-label='Functions' }
-
 Returns whether the room is slowed down, sped up or neither.
 
 ???+ note Notes
@@ -122,21 +123,25 @@ Returns whether the room is slowed down, sped up or neither.
     **1**: Room is slowed down, either because of the Broken Watch or because of the I'm Drowsy pill
 
     **2**: Room is sped up, either because of the Broken Watch or because of the I'm Excited!!! pill
+    
 ___
 ### Get·Center·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetCenterPos ( ) {: .copyable aria-label='Functions' }
-returns the room center position
+Returns the room center position.
+
 ___
 ### Get·Clamped·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetClampedGridIndex ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
-converts float position (x,y) to grid index (similar to ingrid) clamps the values if out of bounds
+Returns the grid index located at `Position`. Clamps to the nearest grid index if `Position` is out of bounds.
+
 ___
 ### Get·Clamped·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetClampedPosition ( [Vector](Vector.md) Pos, float Margin ) {: .copyable aria-label='Functions' }
-returns Pos clamped to room borders inside of walls
+Returns `Pos` clamped to within the room's walls with a radius of `Margin` units away from out of bounds.
+
 ___
 ### Get·Decoration·Seed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -156,7 +161,7 @@ ___
 ### Get·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntityDoor](GridEntityDoor.md) GetDoor ( [DoorSlot](enums/DoorSlot.md) Slot ) {: .copyable aria-label='Functions' data-altreturn='nil' }
-Returns the [GridEntityDoor](GridEntityDoor.md) at the given [DoorSlot](enums/DoorSlot.md) position. Returns nil if no Door is located there.
+Returns the [GridEntityDoor](GridEntityDoor.md) at the given [DoorSlot](enums/DoorSlot.md) position. Returns `nil` if no Door is located there.
 
 ___
 ### Get·Door·Slot·Position () {: aria-label='Functions' }
@@ -172,9 +177,9 @@ ___
 ### Get·Enemy·Damage·Inflicted () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### float GetEnemyDamageInflicted ( ) {: .copyable aria-label='Functions' }
-Returns the total amount of HP lost by all enemies in the room within the current frame
+Returns the total amount of HP lost by all enemies in the room within the current frame.
 
-This is used by items that charge on damage inflicted such as Berserk
+This is used by items that charge on damage inflicted, such as Berserk.
 
 ___
 ### Get·Entities () {: aria-label='Functions' }
@@ -200,7 +205,7 @@ ___
 ### Get·Frame·Count () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
-Returns the amount of frames the room has been active for. Resets to 0 when the player leaves the room or the run is exited.
+Returns the amount of frames the room has been active for. Resets to `0` when the player leaves the room or the run is exited.
 
 ___
 ### Get·Grid·Collision () {: aria-label='Functions' }
@@ -208,24 +213,25 @@ ___
 #### [GridCollisionClass](enums/GridCollisionClass.md) GetGridCollision ( int GridIndex ) {: .copyable aria-label='Functions' }
 
 Returns the [GridCollisionClass](enums/GridCollisionClass.md) of the grid entity at this grid index.
+
 ___
 ### Get·Grid·Collision·At·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridCollisionClass](enums/GridCollisionClass.md) GetGridCollisionAtPos ( [Vector](Vector.md) Pos ) {: .copyable aria-label='Functions' }
-
 Returns the [GridCollisionClass](enums/GridCollisionClass.md) of the grid entity at this position in the room.
+
 ___
 ### Get·Grid·Entity () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntity](GridEntity.md) GetGridEntity ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [GridEntity](GridEntity.md) at this grid index. Returns `nil` when no [GridEntity](GridEntity.md) is found.
 
-Returns the [GridEntity](GridEntity.md) at this grid index. Returns `nil`, when no [GridEntity](GridEntity.md) is found.
 ___
 ### Get·Grid·Entity·From·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [GridEntity](GridEntity.md) GetGridEntityFromPos ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' data-altreturn='nil' }
+Returns the [GridEntity](GridEntity.md) at this position in the room. Returns `nil` when no [GridEntity](GridEntity.md) is found.
 
-Returns the [GridEntity](GridEntity.md) at this position in the room. Returns `nil`, when no [GridEntity](GridEntity.md) is found.
 ___
 ### Get·Grid·Height () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -235,7 +241,7 @@ ___
 ### Get·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetGridIndex ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
-converts float position (x,y) to grid index returns -1 for invalid index
+Returns the grid index located at `Position`. Returns `-1` for invalid index.
 ___
 ### Get·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -275,7 +281,7 @@ ___
 ### Get·Grid·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetGridPosition ( int GridIndex ) {: .copyable aria-label='Functions' }
-converts grid index to float (x,y) position undefined behavior for invalid index
+Returns the world position of `GridIndex`, even if `GridIndex` is invalid.
 ___
 ### Get·Grid·Size () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -321,7 +327,7 @@ ___
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
-Returns a random position in the room. This position is not alligned with the grid.
+Returns a random position in the room with a radius of `Margin` units away from any obstacles. This position is not alligned with the grid.
 ___
 ### Get·Random·Tile·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -414,7 +420,6 @@ ___
 ### Get·Seeded·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) GetSeededCollectible ( int Seed, bool NoDecrease = false ) {: .copyable aria-label='Functions' }
-
 When `NoDecrease` is true, returned collectibles will not be removed from the pools they came from.
 
 ___
@@ -452,13 +457,13 @@ ___
 ### Has·Curse·Mist () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasCurseMist ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is inside the abandoned mineshaft.
+Returns `true` if the player is inside the abandoned mineshaft.
 
 ___
 ### Has·Lava () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasLava ( ) {: .copyable aria-label='Functions' }
-Returns true if the room contains lava.
+Returns `true` if the room contains lava.
 
 ???- warning "Warning"
     This function will return `true` if the room contains lava even if there are no pits to make the lava visible.
@@ -478,7 +483,10 @@ ___
 ### Has·Trigger·Pressure·Plates () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTriggerPressurePlates ( ) {: .copyable aria-label='Functions' }
-Returns true if there are one or more pressure plates in the room. (In order to see if the pressure plates are pressed or not, you will have to iterate over the grid entities in the room.)
+Returns `true` if there are one or more pressure plates in the room. 
+
+???- warning "Warning"
+    In order to see if the pressure plates are pressed or not, you will have to iterate over the grid entities in the room.
 
 ___
 ### Has·Water () {: aria-label='Functions' }
@@ -516,12 +524,12 @@ ___
 ### Is·Current·Room·Last·Boss () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsCurrentRoomLastBoss ( ) {: .copyable aria-label='Functions' }
+Returns `true` if the current room is the second boss room when on an XL floor. Returns `false` otherwise.
 
 ___
 ### Is·Door·Slot·Allowed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsDoorSlotAllowed ( [DoorSlot](enums/DoorSlot.md) Slot ) {: .copyable aria-label='Functions' }
-
 Returns whether or not the supplied door slot is valid for the current room. This is contingent on the room definition in the STB/XML file. (Basement Renovator displays valid doors as brown and invalid doors as white.) The value returned by this method is independent of whether or not a door currently exists at the given slot.
 
 For example, in the starting room of a floor, this method would return true for `DoorSlot.LEFT0`, `DoorSlot.UP0`, `Doorslot.RIGHT0`, and `DoorSlot.DOWN0`, and false for all other values (regardless of what doors happen to exist or not).
@@ -558,7 +566,7 @@ ___
 ### Is·Position·In·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPositionInRoom ( [Vector](Vector.md) Pos, float Margin ) {: .copyable aria-label='Functions' }
-Returns true, if the given position is inside the room. Margin is used as a radius around the position that also needs to be inside the room boundaries. The Room boundary is the position between the walkable area and the walls. Therefore, positions inside walls and the black void do count as "outside" the room.
+Returns `true` if the given position is inside the room. `Margin` is used as a radius around the position that also needs to be inside the room boundaries. The Room boundary is the position between the walkable area and the walls. Therefore, positions inside walls and the black void do count as "outside" the room.
 
 ___
 ### Is·Sacrifice·Done () {: aria-label='Functions' }
@@ -579,6 +587,7 @@ ___
 ### Play·Music () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayMusic ( ) {: .copyable aria-label='Functions' }
+Plays the music track used by this room. Useful for resetting music after playing a different track.
 
 ___
 ### Remove·Door () {: aria-label='Functions' }
@@ -607,13 +616,12 @@ ___
 ### Respawn·Enemies () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void RespawnEnemies ( ) {: .copyable aria-label='Functions' }
-for D7 collectible
+Used by the D7 collectible.
 ___
 ### Screen·Wrap·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) ScreenWrapPosition ( [Vector](Vector.md) Pos, float Margin ) {: .copyable aria-label='Functions' }
-
-Returns Pos, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)
+Returns `Pos`, screen-wrapped (if it is just outside the room on the right it will be moved to the left side of the room, etc)
 
 ???- note "Notes"
      This only wraps the point once, so if it has crossed multiple wrapping planes it will only wrap on the one it's closest to. For wrapping a position that has crossed two planes (outside a room in the top left for instance) call this function iteratively.
@@ -626,7 +634,6 @@ ___
 ### Set·Broken·Watch·State () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetBrokenWatchState ( int State ) {: .copyable aria-label='Functions' }
-
 Speed up, slow down or remove either of these states from the current room. See the notes section in [GetBrokenWatchState](#getbrokenwatchstate) for the different values of `State`.
 
 ___
@@ -638,7 +645,7 @@ ___
 ### Set·Clear () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetClear ( boolean Clear ) {: .copyable aria-label='Functions' }
-Needed for angel rooms so that the clear flag can be set to false when the angel spawns.
+Needed for Angel rooms so that the clear flag can be set to false when an Angel spawns.
 ___
 ### Set·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -648,7 +655,6 @@ ___
 ### Set·Floor·Color () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetFloorColor ( [Color](Color.md) FloorColor ) {: .copyable aria-label='Functions' }
-
 Allows you to apply a color modifier to the floor texture of the current room.
 
 ???- example "Example Code"
@@ -661,7 +667,7 @@ ___
 ### Set·Grid·Path () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean SetGridPath ( int Index, int Value ) {: .copyable aria-label='Functions' }
-Grid path is a property of a grid square that represents the "cost" of traveling over this grid cell. Its used for the path finding algorithms which search the cheapest path to a given location. If a grid cell has a value higher than 0, it can prevent grid entities from being spawned on that square. Thus, you can get around it by resetting the grid path to 0, and then spawning the grid entity.
+Grid path is a property of a grid square that represents the "cost" of traveling over this grid cell. Its used for the path finding algorithms which search the cheapest path to a given location. If a grid cell has a value higher than `0`, it can prevent grid entities from being spawned on that square. Thus, you can get around it by resetting the grid path to 0, and then spawning the grid entity.
 
 ???+ note "notes"
     GridPath values pseudo-enumeration:
@@ -689,7 +695,6 @@ ___
 ### Set·Slow·Down () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetSlowDown ( int Duration ) {: .copyable aria-label='Functions' }
-
 Apply a slow down effect for `Duration` logic frames (there are 30 logic frames per second).
 
 Using a negative `Duration` will not do anything at all, instead of making the slow down permanent as one might expect.
@@ -701,7 +706,6 @@ ___
 ### Set·Wall·Color () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetWallColor ( [Color](Color.md) WallColor ) {: .copyable aria-label='Functions' }
-
 Allows you to apply a color modifier to the wall texture of the current room.
 
 ???- example "Example Code"
@@ -719,6 +723,7 @@ ___
 ### Shop·Restock·Full () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ShopRestockFull ( ) {: .copyable aria-label='Functions' }
+Effectively acts like a use of a Reroll Machine, restocking shops and rerolling items.
 
 ___
 ### Shop·Restock·Partial () {: aria-label='Functions' }
@@ -739,81 +744,81 @@ ___
 ### Stop·Rain () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void StopRain ( ) {: .copyable aria-label='Functions' }
-Stops any rain effects in the room
+Stops any rain effects in the room.
 
 ___
 ### Trigger·Clear () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void TriggerClear ( boolean Silent = false ) {: .copyable aria-label='Functions' }
 Triggers all room clear effects (does not actually clear the room).
-Door opening sounds can be muted by setting Silent to true
+Door opening sounds can be muted by setting Silent to `true`.
 
 ___
 ### Try·Make·Bridge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TryMakeBridge ( [GridEntity](GridEntity.md) pit, [GridEntity](GridEntity.md) rock ) {: .copyable aria-label='Functions' }
-Tries to create a bridge over a given pit. Returns true if the creation was successful. Returns false otherwise.
+Tries to create a bridge over a given pit. Returns `true` if the creation was successful. Returns `false` otherwise.
 
 ___
 ### Try·Place·Ladder () {: aria-label='Functions' }
 [ ](#){: .abp .tooltip .badge }
 #### void TryPlaceLadder ( [Vector](Vector.md) PlayerPos, [Vector](Vector.md) PlayerVelocity, [Entity](Entity.md) Ladder ) {: .copyable aria-label='Functions' }
-This function got removed with Repentance.
+This function was removed with Repentance.
 
 ___
 ### Try·Spawn·Blue·Womb·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TrySpawnBlueWombDoor ( boolean FirstTime = true, boolean IgnoreTime = false, boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a door to the Blue Womb
-This usually does nothing outside of Mom's Heart's boss room unless Force is set to true
+Attempts to spawn a door to the Blue Womb.
+This usually does nothing outside of Mom's Heart's boss room unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Boss·Rush·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TrySpawnBossRushDoor ( boolean IgnoreTime = false, boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a door to the boss rush
-This usually does nothing outside of Mom's boss room unless Force is set to true
+Attempts to spawn a door to the Boss Rush.
+This usually does nothing outside of Mom's boss room unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Devil·Room·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TrySpawnDevilRoomDoor ( boolean Animate = false, boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a door to the devil or angel room
-This usually does nothing inside of non-boss rooms unless Force is set to true
+Attempts to spawn a door to the Devil or Angel room.
+This usually does nothing inside of non-boss rooms unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Mega·Satan·Room·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TrySpawnMegaSatanRoomDoor ( boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a door to Mega Satan
-This usually does nothing outside of the starting room of the Chest/Dark Room unless Force is set to true
+Attempts to spawn a door to Mega Satan.
+This usually does nothing outside of the starting room of the Chest/Dark Room unless `Force` is set to `true`
 
 ___
 ### Try·Spawn·Secret·Exit () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean TrySpawnSecretExit ( boolean Animate = false, boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a door to the Downpour, Mines or Mausoleum depending on the current floor
-This usually does nothing outside of boss rooms unless Force is set to true
+Attempts to spawn a door to the Downpour, Mines or Mausoleum depending on the current floor.
+This usually does nothing outside of boss rooms unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Secret·Shop () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean TrySpawnSecretShop ( boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a trapdoor to the Member Card shop within the current room
-This usually does nothing outside of shops or if the player doesn't hold a Member Card unless Force is set to true
+Attempts to spawn a trapdoor to the Member Card shop within the current room.
+This usually does nothing outside of shops or if the player doesn't hold a Member Card unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Special·Quest·Door () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean TrySpawnSpecialQuestDoor ( ) {: .copyable aria-label='Functions' }
-Attempts to spawn either a door to the Mirror Dimension in Downpour, or the abandoned mineshaft in the Mines
+Attempts to spawn either a door to the Mirror Dimension in Downpour, or the abandoned mineshaft in the Mines.
 
 ___
 ### Try·Spawn·The·Void·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean TrySpawnTheVoidDoor ( boolean Force = false ) {: .copyable aria-label='Functions' }
 Attempts to spawn a door to a room containing a Void portal
-This usually does nothing outside of Hush's boss room unless Force is set to true
+This usually does nothing outside of Hush's boss room unless `Force` is set to `true`.
 
 ___
 ### Turn·Gold () {: aria-label='Functions' }
@@ -825,7 +830,6 @@ ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
-
 Updates the current room.
 
 **It is recommended to call this function after calling [Room:RemoveGridEntity()](#removegridentity) in order to correctly apply the changes.**

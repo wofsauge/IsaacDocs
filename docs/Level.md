@@ -18,28 +18,7 @@ tags:
 ### Add·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddAngelRoomChance ( float Chance ) {: .copyable aria-label='Functions' }
-Modifies the variable that sacrifice rooms and confessionals modify when you get the you feel blessed effect, which means that changing it to (+.15) and (+.5) will have the same effects as the 3rd and 5th sacrifice room hits respectively, and (+.1) is equal to getting the blessed effect from confessionals
-
-When the game trys to spawn a deal it will roll once (0-1.0) which if what it rolls is below the listed angel chance in the stats hud (which is NOT what we are changing with AddAngelRoomChance) then it will be an angel room.
-
-This means that whatever value it is will be a single chance of a an angel roll, effectively on the stat screen it changes the % of devil deal into angel deal with the forumla of (%devil deal=((%devil deal)\*(1-angelRoomChance))), ie making it .1 will cause it to show as 50% base angel, +5% (which is the remaining devil chance of 50%\*(1 - .1), if you have for example rosary bead trinket it will be 50% angel base + 50% chance from rosary to 75% base, and if angeRoomChance is .1 then it will add 2.5% (remaining 25% devil chance\*(1 - .1))
-
-Setting it to a negative value does lower angel deal chance but only under very specific circumstances, if you have already taken a devil deal then the angelRoomChance being 0 or below will lower angel deal chance, (in the same foruma of  (%devil deal)=((%devil deal)\*(1-angelRoomChance))), but only if you are eligible for angel deals (ie you have book of virtues or you took the devil deal with act of contrition (side note act on contrition does not affect devil deals you took before you picked it up for the first time, and doesnt work while not holding it)
-
-If you have not taken a devil deal then it being negative will only decrease angel room chance if you are currently holding book of virtues or act of contrition, otherwise negative values are ignored
-
-If the angelRoomChance is positive then there will be a default 50% chance for angels to appear, then the normal calculations for adding angelRoomChance apply (%devil deal=((%devil deal)\*(1-angelRoomChance)))
-
-If you set this value to above 0 and the player has not seen a deal yet then it is guaranteed to be an angel deal, this is why you see it as making it 100% when you havent seen the first deal
-
-Being on basement 1 or its alts will make the angel chance on the hud never change from 0, but if angelRoomChance is above 0 then it will be a guaranteed angel due to the above
-
-If angels are guaranteed via ether having book of virtues and not having seen a deal yet or skipping the first devil deal then you cannot lower the angel deal chance and give a chance for a devil deal until the player sees the angel deal (unsure if its any deal or just angels, so mabs forcing a devil deal could get rid of it)
-
-- If you want to raise angel chance above what it currently is then you can just use this normally to determine what to set it to
-- If you want to lower angel chance (or set it to 0-50% when the player has already taken a deal) then you need to have the player effectively holding act of contrition, and have them have act of contrition before they make their first devil deal (you can get around this by giving it them on the first frame and taking it away afterwards, just remember to remove the eternal heart), or have the player holding book of virtues
-- If you want the player to have the first deal they see to be a chance between devil and angel then you are unfortunately out of luck (pretty sure atleast)
-
+Adds `Chance` to the Angel deal modifier. See [GetAngelRoomChance](Level.md#getangelroomchance) for more information.
 ___
 ### Add·Curse () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -66,8 +45,7 @@ ___
 ### Can·Open·Challenge·Room () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean CanOpenChallengeRoom ( int RoomIndex ) {: .copyable aria-label='Functions' }
-
-Returns whether or not a Challenge Room door will be open. You must pass this method a valid grid index on the floor. It does not matter if the grid index is actually attached to the Challenge Room or not. This method will always return false if an invalid or a negative grid index is passed.
+Returns whether or not a Challenge Room door will be open. You must pass this method a valid grid index on the floor. It does not matter if the grid index is actually attached to the Challenge Room or not. This method will always return `false` if an invalid or a negative grid index is passed.
 
 ___
 ### Can·Spawn·Devil·Room () {: aria-label='Functions' }
@@ -96,7 +74,7 @@ ___
 ### Force·Horseman·Boss () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean ForceHorsemanBoss ( int Seed ) {: .copyable aria-label='Functions' }
-return true on success
+Returns `true` on success.
 ___
 ### Get·Absolute·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -113,7 +91,12 @@ ___
 ### Get·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### float GetAngelRoomChance ( ) {: .copyable aria-label='Functions' }
-See [AddAngelRoomChance](Level.md#addangelroomchance)
+Gets the modifier value of the chance for this floor's deal to be an Angel room. Specifically, the actual effective chance for a deal to be an Angel room is 50% plus this value.
+
+???+ info
+    If this value is above `0.0`, deals can become Angel rooms even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not spawned yet, the deal is guaranteed to be an Angel room.
+    
+    Under normal circumstances, setting this value to below `0.0` will _not_ reduce the chance for an Angel room, as values below `0.0` are usually ignored. A negative value will only affect Angel room chance if the player has an item that enables visiting Angel rooms even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
 
 ___
 ### Get·Can·See·Everything () {: aria-label='Functions' }
@@ -290,12 +273,13 @@ ___
 ### Is·Alt·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsAltStage ( ) {: .copyable aria-label='Functions' }
+Returns `true` if the level's [StageType](enums/StageType.md) is not `StageType.STAGE_ORIGINAL`.
 
 ___
 ### Is·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsAscent ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is in the Ascent.
+Returns `true` if the player is in the Ascent.
 
 ___
 ### Is·Devil·Room·Disabled () {: aria-label='Functions' }
@@ -306,25 +290,29 @@ ___
 ### Is·Next·Stage·Available () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsNextStageAvailable ( ) {: .copyable aria-label='Functions' }
+Returns `false` if on a final floor (Chest/Dark Room, The Void, Home). Returns `true` otherwise, including cases where the next stage is technically not available such as not having the Polaroid or Negative when entering its respective Big Chest or beating Hush for the first time.
 
 ___
 ### Is·Pre·Ascent () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsPreAscent ( ) {: .copyable aria-label='Functions' }
-Returns true if the player is in the version of Mausoleum/Gehenna II leading to the Ascent.
+Returns `true` if the player is in the version of Mausoleum/Gehenna II leading to the Ascent.
 
 ___
 ### Make·Red·Room·Door () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean MakeRedRoomDoor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
-Attempts to create a red room door in the given room at the given door slot
+Attempts to create a red room door in the given room at the given door slot. Returns `true` on success.
 
-Returns true on success.
+???- note "Notes"
+	This function can be used to create rooms not connected to any other room. For example, calling `MakeRedRoomDoor(2, DoorSlot.DOOR_LEFT0)` will create a room where `Slot` of `CurrentRoomIdx` would connect to, in this case grid index 1.
+	
+	Rooms can also be forced to be created by setting [Challenge](Game.md#challenge) to Red Redemption (`Challenge.CHALLENGE_RED_REDEMPTION`). Note that creating a room connected to an otherwise invalid slot will cause the door to lead to an Error room!
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int QueryRoomTypeIndex ( [RoomType](enums/RoomType.md) RoomType, boolean Visited, [RNG](RNG.md) rng, boolean IgnoreGroup = false ) {: .copyable aria-label='Functions' }
-IgnoreGroup: If set to true, includes rooms that do not have the same group ID as the current room (currently unused)
+IgnoreGroup: If set to `true`, includes rooms that do not have the same group ID as the current room (currently unused)
 ___
 ### Remove·Compass·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -355,7 +343,6 @@ ___
 ### Set·Next·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetNextStage ( ) {: .copyable aria-label='Functions' }
-
 This function puts you in the next stage without applying any of the floor changes. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 ___
 ### Set·Red·Heart·Damage () {: aria-label='Functions' }
@@ -366,7 +353,6 @@ ___
 ### Set·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SetStage ( int StageOffset, int StageTypeOffset ) {: .copyable aria-label='Functions' }
-
 This function changes the current floor, and it's stage. For the changes to fully apply, either use the `reseed` [console command](tutorials/DebugConsole.md#reseed), or [Game.StartStageTransition](Game.md#startstagetransition).
 
 StageOffset acts as the new "floor":
@@ -431,7 +417,6 @@ ___
 ### Update·Visibility () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void UpdateVisibility ( ) {: .copyable aria-label='Functions' }
-
 
 ???- note "Notes"
     Whenever you update the visibility of a room on the minimap, it won't update the map automatically, since it is cached. You have to explicitly call  UpdateVisibility() afterwards to apply any changes.
