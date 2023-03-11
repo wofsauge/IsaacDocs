@@ -18,28 +18,7 @@ tags:
 ### Add·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddAngelRoomChance ( float Chance ) {: .copyable aria-label='Functions' }
-Modifies the variable that sacrifice rooms and confessionals modify when you get the you feel blessed effect, which means that changing it to (+.15) and (+.5) will have the same effects as the 3rd and 5th sacrifice room hits respectively, and (+.1) is equal to getting the blessed effect from confessionals
-
-When the game trys to spawn a deal it will roll once (0-1.0) which if what it rolls is below the listed angel chance in the stats hud (which is NOT what we are changing with AddAngelRoomChance) then it will be an angel room.
-
-This means that whatever value it is will be a single chance of a an angel roll, effectively on the stat screen it changes the % of devil deal into angel deal with the forumla of (%devil deal=((%devil deal)\*(1-angelRoomChance))), ie making it .1 will cause it to show as 50% base angel, +5% (which is the remaining devil chance of 50%\*(1 - .1), if you have for example rosary bead trinket it will be 50% angel base + 50% chance from rosary to 75% base, and if angeRoomChance is .1 then it will add 2.5% (remaining 25% devil chance\*(1 - .1))
-
-Setting it to a negative value does lower angel deal chance but only under very specific circumstances, if you have already taken a devil deal then the angelRoomChance being 0 or below will lower angel deal chance, (in the same foruma of  (%devil deal)=((%devil deal)\*(1-angelRoomChance))), but only if you are eligible for angel deals (ie you have book of virtues or you took the devil deal with act of contrition (side note act on contrition does not affect devil deals you took before you picked it up for the first time, and doesnt work while not holding it)
-
-If you have not taken a devil deal then it being negative will only decrease angel room chance if you are currently holding book of virtues or act of contrition, otherwise negative values are ignored
-
-If the angelRoomChance is positive then there will be a default 50% chance for angels to appear, then the normal calculations for adding angelRoomChance apply (%devil deal=((%devil deal)\*(1-angelRoomChance)))
-
-If you set this value to above 0 and the player has not seen a deal yet then it is guaranteed to be an angel deal, this is why you see it as making it 100% when you havent seen the first deal
-
-Being on basement 1 or its alts will make the angel chance on the hud never change from 0, but if angelRoomChance is above 0 then it will be a guaranteed angel due to the above
-
-If angels are guaranteed via ether having book of virtues and not having seen a deal yet or skipping the first devil deal then you cannot lower the angel deal chance and give a chance for a devil deal until the player sees the angel deal (unsure if its any deal or just angels, so mabs forcing a devil deal could get rid of it)
-
-- If you want to raise angel chance above what it currently is then you can just use this normally to determine what to set it to
-- If you want to lower angel chance (or set it to 0-50% when the player has already taken a deal) then you need to have the player effectively holding act of contrition, and have them have act of contrition before they make their first devil deal (you can get around this by giving it them on the first frame and taking it away afterwards, just remember to remove the eternal heart), or have the player holding book of virtues
-- If you want the player to have the first deal they see to be a chance between devil and angel then you are unfortunately out of luck (pretty sure atleast)
-
+Adds `Chance` to the Angel deal modifier. See [GetAngelRoomChance](Level.md#getangelroomchance) for more information.
 ___
 ### Add·Curse () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -96,7 +75,8 @@ ___
 ### Force·Horseman·Boss () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean ForceHorsemanBoss ( int Seed ) {: .copyable aria-label='Functions' }
-return true on success
+
+Returns `true` on success.
 ___
 ### Get·Absolute·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -113,7 +93,9 @@ ___
 ### Get·Angel·Room·Chance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### float GetAngelRoomChance ( ) {: .copyable aria-label='Functions' }
-See [AddAngelRoomChance](Level.md#addangelroomchance)
+
+Gets the modifier value of the chance for this floor's deal to be an Angel deal. Specifically, the actual effective chance for a deal to be an Angel deal is 50% _plus_ this value.
+If this chance is above `0.0`, deals can become Angel deals even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not been entered yet, the deal is guaranteed to be an Angel deal. Under normal circumstances, setting this chance to below `0.0` will _not_ reduce the chance for an Angel deal, as values below `0.0` are usually ignored. A negative chance will only affect Angel deal chance if the player has an item that enables visiting Angel deals even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
 
 ___
 ### Get·Can·See·Everything () {: aria-label='Functions' }
