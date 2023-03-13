@@ -520,6 +520,10 @@ Called right before an entity is spawned.
 
 Optional: Return a table with new values `{ Type, Variant, Subtype, Seed }` to override these values of the spawned entity.
 
+If you want to prevent an entity from spawning, you cannot return an `EntityType` of 0, since that will cause the game to crash.
+
+Sometimes, if you return a type other than the original type (e.g. replacing a pickup with an effect), the game will crash. Thus, you should replace a pickup with a new pickup, and so on.
+
 ???+ bug
     Returning a value that is not a table or nil will cause the game to crash.
 
