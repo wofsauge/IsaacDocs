@@ -290,7 +290,7 @@ ___
 ### Get·Laser·Target () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetLaserTarget ( [Vector](Vector.md) Pos, [Vector](Vector.md) Dir ) {: .copyable aria-label='Functions' }
-Returns the hit position for a laser beam (Technology, Robo-Baby). Usually this is the first poop, fire, rock, TNT, or wall encountered in a straight line.
+Returns the hit position for a laser beam (Technology, Robo-Baby). Usually, this is the first poop, fire, rock, TNT, or wall encountered in a straight line.
 
 ___
 ### Get·Lava·Intensity () {: aria-label='Functions' }
@@ -321,7 +321,7 @@ ___
 ### Get·Random·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
-Returns a random position in the room. This position is not alligned with the grid.
+Returns a non-tile aligned position in the room.
 ___
 ### Get·Random·Tile·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -461,7 +461,7 @@ ___
 Returns true if the room contains lava.
 
 ???- warning "Warning"
-    This function will return `true` if the room contains lava even if there are no pits to make the lava visible.
+    This function will return `true` if the room contains lava, even if there are no pits to make the lava visible.
 
 ___
 ### Has·Slow·Down () {: aria-label='Functions' }
