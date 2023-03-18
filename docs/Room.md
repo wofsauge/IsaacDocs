@@ -328,6 +328,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) GetRandomPosition ( float Margin ) {: .copyable aria-label='Functions' }
 Returns a random position in the room with a radius of `Margin` units away from any obstacles. This position is not alligned with the grid.
+
 ___
 ### Get·Random·Tile·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -646,6 +647,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void SetClear ( boolean Clear ) {: .copyable aria-label='Functions' }
 Needed for Angel rooms so that the clear flag can be set to false when an Angel spawns.
+
 ___
 ### Set·First·Enemy·Dead () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
