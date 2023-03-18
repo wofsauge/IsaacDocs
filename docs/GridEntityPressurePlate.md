@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "GridEntityPressurePlate"
-### Inherits from Class: {: .inheritance }
-[GridEntity](GridEntity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions
 ### Reward () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

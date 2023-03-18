@@ -338,12 +338,12 @@ If a number is returned, it will be the "Curses" arg for later executed callback
 
 ### MC_INPUT_ACTION {: .copyable }
 
-This callback fires every time the game polls for input, once for each keyboard or controller button. (Thus, it fires many times per frame.) Since it has to do with polling, it fires regardless of whether or not the player is actually pressing any particular input.
+This callback fires every time the game polls for a [ButtonAction](ButtonAction.md) input, often several times per frame even for the same action. Since it has to do with polling, it fires regardless of whether or not the player is actually pressing any particular input.
 
 This callback is used to arbitrarily change inputs. For example, you can completely disable the player from pressing a certain button. Or, you can force the player to press a specific button, and so on. If all you want to do is *read* if an input is pressed or not, then you should not use this callback, and instead use the `Input.IsActionTriggered` method in the `MC_POST_RENDER` callback.
 
-- [Entity](../Entity.md) - The entity that is requesting the input. Most of the time this will be a player. However, it can also be nil if the input is not read from an entity class.
-- [InputHook](InputHook.md) - This determines the kind of input that is being polled. This corresponds to the `Input.IsActionTriggered`, `Input.IsActionPressed`, and `Input.GetActionValue` methods.
+- [Entity](../Entity.md) - The entity that is requesting the input. Most of the time this will be a player. However, it can also be nil if the input is not read from an entity class, or an entity being controlled by Friend Finder.
+- [InputHook](InputHook.md) - This determines the kind of input that is being polled. This corresponds to the `Input.IsActionTriggered`, `Input.IsActionPressed`, and `Input.GetActionValue` methods, which trigger this callback.
 
 Return nil if you do not want to overwrite the input. If you do want to overwrite the input, then you have to return a boolean for the `IS_ACTION_PRESSED` (0) and `IS_ACTION_TRIGGERED` (1) input hooks, or a float between 0.0 and 1.0 for the `GET_ACTION_VALUE` (2) input hook.
 
@@ -519,6 +519,10 @@ Return true to prevent the default code of an item to be triggered. This will st
 Called right before an entity is spawned.
 
 Optional: Return a table with new values `{ Type, Variant, Subtype, Seed }` to override these values of the spawned entity.
+
+If you want to prevent an entity from spawning, you cannot return an `EntityType` of 0, since that will cause the game to crash.
+
+Sometimes, if you return a type other than the original type (e.g. replacing a pickup with an effect), the game will crash. Thus, you should replace a pickup with a new pickup, and so on.
 
 ???+ bug
     Returning a value that is not a table or nil will cause the game to crash.

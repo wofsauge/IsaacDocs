@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "EntityPickup"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Appear·Fast () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

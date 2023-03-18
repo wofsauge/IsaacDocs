@@ -75,6 +75,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPillIdentified ( [PillColor](enums/PillColor.md) PillColor ) {: .copyable aria-label='Functions' }
 
+Once the player takes PHD, Virgo, or False PHD, this method will always return true, even if the player has not already seen or used the pill on the run thus far. (This is because this method dictates when the "???" text should be shown as the pill description, and these collectibles will always show the "revealed" text.)
+
 ___
 ### Remove·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

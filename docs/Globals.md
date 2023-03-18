@@ -163,7 +163,6 @@ This is a list of every global variable that is available in the Lua environment
 - SackSubType
 - SeedEffect
 - Seeds
-- ShockwaveParams
 - SkinColor
 - SortingLayer
 - SoundEffect
@@ -190,7 +189,6 @@ This is a list of every global variable that is available in the Lua environment
 - include
 - ipairs
 - load
-- loadfile
 - math
 - next
 - pairs
@@ -219,6 +217,7 @@ The following global variables are added:
 
 - debug
 - io
+- loadfile
 - os
 - package
 

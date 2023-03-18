@@ -10,13 +10,17 @@ tags:
 
 `pocketitems.xml` is used for two significantly different purposes: Adding cards, and adding pill effects. These have different xml syntaxes, seen below.
 
-## Cards
+## Cards & Runes
 
 Cards are marked by `<card ... />`, like so:
 
 
 ```xml
 <card type="tarot" pickup="1" description="Where journey begins" id="1" name="0 - The Fool" announcer="375" announcerdelay="60" mimiccharge="2" />
+```
+Runes use the same attributes as cards, but are marked by `<rune ... />` or the type equal `rune`. In the vanilla files, all runes except the soul stones use the `<rune>` tag and type. Soul stones use the `<card>` tag and the `rune` type, but seem to act the same as other runes regardless. An example for a rune would be:
+```xml
+<rune type="rune" pickup="3" achievement="89" description="Some description" id="32" name="Some Rune" announcer="341" mimiccharge="2" />
 ```
 
 
@@ -31,6 +35,7 @@ Cards are marked by `<card ... />`, like so:
 |announcer|int|The sound ID to play when the card is used.|
 |announcerdelay|int|The delay in frames between card use and the sound provided being played.|
 |achievement|int|Ties the card to a vanilla achievement.|
+|greedmode|bool|Is the pocketitem available in greedmode. Default = true|
 
 In both Afterbirth+ and Repentance, when adding a custom card you must include the `hud` tag, and an anm2 in your mod's `content/gfx/` folder called `ui_cardfronts.anm2`. This anm2 must contain an animation with the same name as specified in the `hud` tag, which will be displayed in the HUD as your card's front. Once you've added a card to the game, you'll be able to get its id through lua by using the `Isaac.GetCardIdByName(string cardHudName)` function, which takes the name specified in the `hud` tag.
 
@@ -78,6 +83,7 @@ Pill effects are significantly easier to add than cards, and are also automatica
 |announcer2|int|Sound ID to play when the pill is used as a horse pill[ ](#){: .rep .tooltip .badge }|
 |announcerdelay|int|Delay in frames between pill use and the sound provided being played|
 |achievement|int|Ties the pill effect to a vanilla achievement|
+|greedmode|bool|Is the pocketitem available in greedmode. Default = true|
 
 
 Example of a `pocketitems.xml` file that adds one new card and one new pill effect:

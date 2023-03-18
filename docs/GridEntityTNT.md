@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "GridEntityTNT"
-### Inherits from Class: {: .inheritance }
-[GridEntity](GridEntity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Variables
 ### Frame·Cnt {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

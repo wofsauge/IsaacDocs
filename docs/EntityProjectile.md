@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "EntityProjectile"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Add·Change·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

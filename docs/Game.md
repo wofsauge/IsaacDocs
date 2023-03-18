@@ -1,5 +1,6 @@
 ---
 tags:
+  - Globals
   - Class
 ---
 # Class "Game"
@@ -117,6 +118,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void Darken ( float Darkness, int Timeout ) {: .copyable aria-label='Functions' }
 
+Darkens the room. This is the function that is called internally during The Lamb fight or when Dice Rooms are activated.
 ___
 ### Donate·Angel () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -131,6 +133,36 @@ ___
 ### End () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void End ( Ending Ending ) {: .copyable aria-label='Functions' }
+???+ note "Ending notes"
+    1: Game over "Dear Diary" (exit/restart)
+
+    2: Mom / Epilogue (movie)
+
+    3: Mom's Heart / End 1/2/3/4/5/6/7/8/9/10/11 (movie) or just Credits depending on context
+
+    4: Satan / End 12 (movie)
+
+    5: Isaac / End 13 (movie)
+
+    6: The Lamb / End 15 (movie)
+
+    7: ??? / End 14 (movie)
+
+    8: Mega Satan / End 16 (movie)
+
+    9: Greed / End 18 (movie)
+
+    10: Hush / End 17 (movie)
+
+    11: Delirium / End 20 (movie)
+
+    12: Greedier / End 19 (movie)
+
+    13: Mother / End 21 (movie)
+
+    14: The Beast / Final (movie)
+
+    Successful endings increment your win streak. If you pass a bad number like 0 then you can artificially increase your win streak as much as you want.
 
 ___
 ### Fadein () {: aria-label='Functions' }
@@ -522,15 +554,12 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void StartStageTransition ( boolean SameStage, StageTransition::Animation Animation, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 
-Starts a transition animation like it`s playing when entering a trapdoor to switch between stages.
-**Stage Transition types:**
+Starts a transition animation, like the ones used when entering a trapdoor or light beam to reach the next stage.
 
-* 0: Standard transition. Removes the playermodel before the pixel fadeout. Then plays the Stage Nightmare animation. The player starts in fetal position after the transition.
-* 1: Standard transition with pixel fadein/out, nightmare cutscene but the player model doesnt get removed and starts in the normal standing position after the transition.
-* &gt;2: Same as 0
+The value of Animation seemingly has no actual effect on the transition. (If you have more info, submit a pull request.)
 
 ???+ bug "Bug"
-    Defining a player will crash the game. To prevent this, keep player-argument nil: `Game():StartStageTransition(false, 0, nil)`
+	Contrary to previous beliefs, this function will crash when **not** provided with an EntityPlayer. It is worth noting however, that the function, even when used correctly, is inconsistent and seems to sometimes crash for no reason.
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

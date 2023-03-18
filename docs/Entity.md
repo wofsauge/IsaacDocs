@@ -6,8 +6,8 @@ tags:
 
 First, see [the tutorial on entities](entities/Overview.md).
 
-### Children Classes {: .inheritance }
-[EntityBomb](EntityBomb.md), [EntityEffect](EntityEffect.md), [EntityFamiliar](EntityFamiliar.md), [EntityKnife](EntityKnife.md), [EntityLaser](EntityLaser.md), [EntityNPC](EntityNPC.md), [EntityPickup](EntityPickup.md), [EntityPlayer](EntityPlayer.md), [EntityProjectile](EntityProjectile.md), [EntityTear](EntityTear.md)
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 
 ## Functions
 ### Add·Burn () {: aria-label='Functions' }
@@ -17,11 +17,11 @@ First, see [the tutorial on entities](entities/Overview.md).
 Adds a burn effect to an enemy. `Duration` is in number of frames. `Damage` is the damage taken per frame.
 
 ???- info "Duration Information"
-    `Duration` must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart.
+    `Duration` must be a minimum of 3 frames to deal damage. Every consecutive damage tick is 20 frames apart.
 
-    - 2 damage ticks = 22 frames
-    - 3 damage ticks = 42 frames
-    - 4 damage ticks = 62 frames
+    - 2 damage ticks = 23 frames
+    - 3 damage ticks = 43 frames
+    - 4 damage ticks = 63 frames
 
     `Duration` has an upper limit. For an EntityPlayer, it maximum is one interval. For a normal entity, the maximum is 6 intervals.
 
@@ -171,18 +171,16 @@ ___
 Adds a poison effect to the entity.
 
 ???- info "Duration infos"
-    The Duration must be a minimum of 2 frames. Every consecutive damage tick is 20 frames apart.
+    The Duration must be a minimum of 3 frames to deal damage. Every consecutive damage tick is 20 frames apart.
 
     ```
-    2 Damage-ticks = 22 frames
-    3 = 42
-    4 = 62
+    2 Damage-ticks = 23 frames
+    3 = 43
+    4 = 63
     ...
     ```
 
 ???+ bug
-    Changing the Damage value doesnt seem to have an effect. It always deals the amount of damage of the player.
-
     The Duration value seems to have an upper limit. For a PlayerEntity, its only lasting for the duration of one damage interval. For Entities its up to 6 damage-intervals.
 
 ???- example "Example Code"

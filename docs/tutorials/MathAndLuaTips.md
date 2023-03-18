@@ -172,3 +172,18 @@ Keep in mind it always rounds to a number equal or lower than the result of the 
     local floorRightAngle = 170//90 * 90 -- Result = 90. 
     local roundRightAngle = (170+45)//90 - 45 -- Result = 180
     ```
+
+## Integer vs Float
+
+`type(x)` will return "number" if the variable is a number, but it won't tell you if it's an integer or float.
+
+`math.type(x)` will return "integer" or "float", or nil if it's not a number.
+
+```lua
+local i = 1
+local f = 1.0
+print(type(i)) -- number
+print(type(f)) -- number
+print(math.type(i)) -- integer
+print(math.type(f)) -- float
+```

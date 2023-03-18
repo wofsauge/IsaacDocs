@@ -76,10 +76,11 @@ function buildContentMap() {
         return;
     }
     var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table><hr/></div>");
-    if ($(".inheritance").length == 0) {
-        mapObj.insertAfter($(".md-content__inner").find("h1"));
+    if ($("#class-diagram").length == 0) {
+        mapObj.insertAfter($(".md-content__inner").find("h1").first());
     } else {
-        mapObj.insertAfter($(".md-content__inner").find("p").first());
+        // insert content map after mermaid diagram
+        mapObj.insertAfter($(".mermaidDiagram").first());
     }
 
     var tableContent = "";

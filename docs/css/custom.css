@@ -750,3 +750,8 @@ td>.copyButton>span::after {
 #faq_text {
     min-height: 10em;
 }
+
+/*** Hide diagrams in their "codeblock" version, which exists on page load **/
+.mermaidDiagram > pre{
+    visibility: hidden;
+}

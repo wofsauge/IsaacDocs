@@ -1,5 +1,6 @@
 ---
 tags:
+  - Tools
   - Tutorial
 ---
 # [Tutorial] Official ItemPool Editor

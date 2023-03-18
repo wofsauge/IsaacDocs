@@ -1,6 +1,6 @@
 ---
 tags:
-  - Tool
+  - Tools
 ---
 # [Tool] XML File Validator
 

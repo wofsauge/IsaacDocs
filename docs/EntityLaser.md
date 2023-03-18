@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "EntityLaser"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Add·Tear·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

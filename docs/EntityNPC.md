@@ -3,8 +3,9 @@ tags:
   - Class
 ---
 # Class "EntityNPC"
-### Inherits from Class: {: .inheritance }
-[Entity](Entity.md)
+
+## Class Diagram
+--8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
 ### Anim·Walk·Frame () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

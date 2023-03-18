@@ -40,6 +40,11 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void Render ( ) {: .copyable aria-label='Functions' }
 ___
+### Set·Visible () {: aria-label='Functions' }
+[ ](#){: .rep .tooltip .badge }
+#### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }
+Turns the HUD on or off.
+___
 ### Show·Fortune·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowFortuneText ( string MainString, string SecondaryString, ... ) {: .copyable aria-label='Functions' }
@@ -58,7 +63,7 @@ For example:
 ```lua
 local function showHelpText()
   local game = Game()
-  local hud = game.GetHUD()
+  local hud = game:GetHUD()
 
   hud:ShowItemText("Don't touch the spikes!", "It will drain your mana.")
 end
@@ -78,7 +83,7 @@ For example:
 ```lua
 local function showSadOnionText()
   local game = Game()
-  local hud = game.GetHUD()
+  local hud = game:GetHUD()
   local itemConfig = Isaac.GetItemConfig()
 
   local player = Isaac.GetPlayer()
@@ -87,11 +92,6 @@ local function showSadOnionText()
 end
 ```
 
-___
-### Set·Visible () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
-#### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }
-Turns the HUD on or off.
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
