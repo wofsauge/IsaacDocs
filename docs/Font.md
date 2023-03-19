@@ -120,8 +120,11 @@ Returns whether a font is loaded or not.
 ___
 ### Load () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean Load ( string FilePath ) {: .copyable aria-label='Functions' }
+#### void Load ( string FilePath ) {: .copyable aria-label='Functions' }
 Loads a font.
+
+???- note "Note"
+    To check that the font actually got loaded, call the [IsLoaded()](#isloaded) method afterwards.
 
 ???- example "Example Code"
     Example usage.
