@@ -215,7 +215,7 @@ function barPostPEffectUpdate(player)
 end
 ```
 
-Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag. 
+Note that the value passed to the callback will always be an exact value of the CacheFlag enum. It is never a composition of two or more CacheFlags. Thus, you should always use normal equality instead of bitwise operators when comparing the cache flag.
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
@@ -878,9 +878,9 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_FIRE_TEAR {: .copyable }
 Called when the player fires a tear.
 
-It is not called for other weapons or tears fired with Incubus.
-
 Returning any value will have no effect on later callback executions.
+
+For Afterbirth+, this is not called for other weapons or tears fired with Incubus. In Repentance, it works for tears fired with Incubus.
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
