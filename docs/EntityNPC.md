@@ -218,7 +218,7 @@ ___
 ___
 ### State {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int State  {: .copyable aria-label='Variables' }
+#### [NpcState](enums/NpcState.md) State  {: .copyable aria-label='Variables' }
 
 ___
 ### State·Frame {: aria-label='Variables' }
