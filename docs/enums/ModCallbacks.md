@@ -342,6 +342,8 @@ This callback fires every time the game polls for a [ButtonAction](ButtonAction.
 
 This callback is used to arbitrarily change inputs. For example, you can completely disable the player from pressing a certain button. Or, you can force the player to press a specific button, and so on. If all you want to do is *read* if an input is pressed or not, then you should not use this callback, and instead use the `Input.IsActionTriggered` method in the `MC_POST_RENDER` callback.
 
+This callback will not affect any custom mod code that is reading user input via the `Input` class.
+
 - [Entity](../Entity.md) - The entity that is requesting the input. Most of the time this will be a player. However, it can also be nil if the input is not read from an entity class, or an entity being controlled by Friend Finder.
 - [InputHook](InputHook.md) - This determines the kind of input that is being polled. This corresponds to the `Input.IsActionTriggered`, `Input.IsActionPressed`, and `Input.GetActionValue` methods, which trigger this callback.
 
