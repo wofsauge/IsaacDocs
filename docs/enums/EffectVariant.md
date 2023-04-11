@@ -25,7 +25,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|16 |POOF02 {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|17 |POOF04 {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |BOMB_CRATER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|19 |CRACK_THE_SKY {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|19 |CRACK_THE_SKY {: .copyable } | Subtype affects behavior:<br>0 - beam appears instantly, hits multiple times (similar to Crack The Sky item)<br>1 - beam appears instantly, hits once (similar to Holy Shot)<br>2 - beam appears with a delay, hits multiplie times (similar to White Pony)<br> |
 |[ ](#){: .abrep .tooltip .badge }|20 |SCYTHE_BREAK {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|21 |TINY_BUG {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|22 |CREEP_RED {: .copyable } |  |
