@@ -1543,6 +1543,9 @@ Slot can be either SLOT_POCKET or SLOT_POCKET2.
 Items added to SLOT_POCKET2 will always be removed upon being used.
 If KeepInPools is set to true, the item will not be removed from the item pools.
 Use this to let the player start with a custom active item in their pocket active slot right away.
+
+???+ bug "Bugs"
+    Calling this function inside PostPlayerInit callback causes a crash when continuing a saved run after closing and reopening the game, unless KeepInPools argument is set to true.
 ___
 ### Set·Shooting·Cooldown () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
