@@ -33,7 +33,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|1 << 21 |DAMAGE_FAKE {: .copyable } | Fake damage that should trigger player's damage effects. <br> |
 |[ ](#){: .abrep .tooltip .badge }|1 << 22 |DAMAGE_BOOGER {: .copyable } | Damage from booger tear <br> |
 |[ ](#){: .rep .tooltip .badge }|1 << 23 |DAMAGE_SPAWN_BLACK_HEART {: .copyable } | Should drop a black heart if damage is lethal <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 24 |DAMAGE_CRUSH {: .copyable } | Damage comes from a strong impact (Mom's foot, rock spikes, rock tears) <br> |
+|[ ](#){: .rep .tooltip .badge }|1 << 24 |DAMAGE_CRUSH {: .copyable } | Damage comes from a strong impact, can damage Tuff Twins or The Shells' stony exteriors (like Mom's foot, shockwaves, rock tears) <br> |
 |[ ](#){: .rep .tooltip .badge }|1 << 25 |DAMAGE_NO_MODIFIERS {: .copyable } | Ignore damage modifiers (such as doubled damage from the Womb and later floors or reduced damage from the Wafer) <br> |
 |[ ](#){: .rep .tooltip .badge }|1 << 26 |DAMAGE_SPAWN_RED_HEART {: .copyable } | Should drop a red heart if damage is lethal <br> |
 |[ ](#){: .rep .tooltip .badge }|1 << 27 |DAMAGE_SPAWN_COIN {: .copyable } | Should drop a coin if damage is lethal <br> |

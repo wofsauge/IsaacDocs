@@ -86,7 +86,7 @@ ___
 
 Returns, if a button is pressed or not. This function will return true, as long the button is held down.
 
-[List of all Action enums](enums/ButtonAction.md)
+[List of all Keyboard enums](enums/Keyboard.md)
 
 ???- example "Example Code"
     This code prints "Enter Button pressed", when the "Enter"-Button was pressed.
@@ -103,7 +103,7 @@ ___
 
 Returns, if a button was pressed some time before or not. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
 
-[List of all Action enums](enums/ButtonAction.md)
+[List of all Keyboard enums](enums/Keyboard.md)
 
 ???- example "Example Code"
     This code prints "Enter Button was pressed", when the "Enter"-Button was pressed.

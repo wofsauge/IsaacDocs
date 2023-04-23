@@ -29,6 +29,9 @@ Draws a string of text to the screen
 Converts UTF8 to UTF16, then draws the string.
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size
 
+???- bug "Bug"
+    Calling this function with `nil` as either the `String` or `RenderColor` parameters will crash the game.
+
 ???- example "Example Code"
     Example usage.
     ```lua
@@ -47,6 +50,9 @@ ___
 Draws a scaled string of text on the screen.
 Converts UTF8 to UTF16, then draws the string.
 
+???- bug "Bug"
+    Calling this function with `nil` as either the `String` or `RenderColor` parameters will crash the game.
+
 ???- example "Example Code"
     Example usage.
     ```lua
@@ -61,6 +67,9 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](KColor.md) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a scaled string of Unicode text on the screen.
+
+???- bug "Bug"
+    Calling this function with `nil` as either the `String` or `RenderColor` parameters will crash the game.
 
 ???- example "Example Code"
     Example usage.
@@ -77,6 +86,9 @@ ___
 #### void DrawStringUTF8 ( string String, float PositionX, float PositionY, [KColor](KColor.md) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a string of Unicode text to the screen
 Notes: The BoxWidth and Center parameters can be used for aligning the text: If BoxWidth is zero, the text will be left aligned and the center parameter will be ignored If BoxWidth is NOT zero, and the Center parameter is FALSE, then the text will be right aligned inside the BoxWidth size If BoxWidth is NOT zero, and the center parameter is TRUE, then the text will be centered inside the BoxWidth size
+
+???- bug "Bug"
+    Calling this function with `nil` as either the `String` or `RenderColor` parameters will crash the game.
 
 ???- example "Example Code"
     Example usage.
@@ -107,6 +119,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### int GetStringWidth ( string String ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16 and returns string width
+
+???- bug "Bug"
+    Calling this function with `nil` as parameter will crash the game.
 ___
 ### Get·String·Width·UTF8 () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -120,8 +135,11 @@ Returns whether a font is loaded or not.
 ___
 ### Load () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean Load ( string FilePath ) {: .copyable aria-label='Functions' }
+#### void Load ( string FilePath ) {: .copyable aria-label='Functions' }
 Loads a font.
+
+???- note "Note"
+    To check that the font actually got loaded, call the [IsLoaded()](#isloaded) method afterwards.
 
 ???- example "Example Code"
     Example usage.
