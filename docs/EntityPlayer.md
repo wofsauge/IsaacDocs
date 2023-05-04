@@ -1030,11 +1030,6 @@ ___
 ???+ bug "Bug"
     Since it returns UserData which cant be edited directly, the return value of this function can only be used in combination with the [GetMultiShotPositionVelocity()](#getmultishotpositionvelocity) function.
 ___
-### Get·Multi·Shot·Position·Velocity () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
-#### [PosVel](PlayerTypes_PosVel.md) GetMultiShotPositionVelocity ( int LoopIndex, [WeaponType](enums/WeaponType.md) Weapon, [Vector](Vector.md) ShotDirection, float ShotSpeed, MultiShotParams params ) {: .copyable aria-label='Functions' }
-Call this function in a loop, where the LoopIndex is a number between 0 and the amount of tears the current MultiShotParams contains. Since MultiShotParams is currently not accessable via the modding api, you need to find other ways to get the amount.
-___
 ### Get·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### string GetName ( ) {: .copyable aria-label='Functions' }
