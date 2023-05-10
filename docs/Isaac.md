@@ -528,7 +528,7 @@ Renders a scaled text on the Screen. X and Y coordinates need to be in screen co
     ```lua
     local player = Isaac.GetPlayer()
     local text = "X: " .. player.Position.X .. ", Y: " .. player.Position.Y
-    Isaac.RenderText(text, 50, 50, 0.5, 0.5, 1, 1, 1, 1)
+    Isaac.RenderScaledText(text, 50, 50, 0.5, 0.5, 1, 1, 1, 1)
     ```
 
 ___
