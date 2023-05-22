@@ -450,7 +450,7 @@ ___
 Spawn a [GridEntity](GridEntity.md) at the given position (world coordinates).
 
 ???+ bug "Bugs"
-    The "forced" argument has no effect and will **not** override the grid entity at the given location. Instead, remove the grid entity at the given location if nessesary before spawning something on top of it.
+    The "forced" argument can override the grid entity at the given location in certain cases. For example: it won't work with a rock, but will work with a rock that's been blown up. You can check the location with `Isaac.GetFreeNearPosition` to see if the game considers that location free. Check the returned grid entity's type to make sure the replacement happened. Otherwise, you may need to remove the grid entity at the given location before spawning something else in its place.
 
 For example, to spawn a super secret rock in the center of the room:
 
