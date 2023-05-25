@@ -1034,6 +1034,10 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [PosVel](PlayerTypes_PosVel.md) GetMultiShotPositionVelocity ( int LoopIndex, [WeaponType](enums/WeaponType.md) Weapon, [Vector](Vector.md) ShotDirection, float ShotSpeed, MultiShotParams params ) {: .copyable aria-label='Functions' }
 Call this function in a loop, where the LoopIndex is a number between 0 and the amount of tears the current MultiShotParams contains. Since MultiShotParams is currently not accessable via the modding api, you need to find other ways to get the amount.
+
+???+ bug "Removed Function"
+    This function does no longer exist in the latest patch! (v1.7.9b.J835)
+
 ___
 ### Get·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
