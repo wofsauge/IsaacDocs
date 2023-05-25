@@ -82,6 +82,7 @@ Downpour Sprite: monster_017_gaper_downpour.png
 
 ## `<gibs>` tag
 the `<gibs>` tag is used to define the gibs that are spawned when an entity is killed or destroyed.
+
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 | amount | int | How many gibs should be spawned|
