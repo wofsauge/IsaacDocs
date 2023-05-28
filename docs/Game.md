@@ -552,14 +552,29 @@ Note that if you use `RoomTransitionAnim.PIXELATION` (2), you must not interrupt
 ___
 ### Start·Stage·Transition () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void StartStageTransition ( boolean SameStage, StageTransition::Animation Animation, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
+#### void StartStageTransition ( boolean SameStage, int TransitionOverride, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 
 Starts a transition animation, like the ones used when entering a trapdoor or light beam to reach the next stage.
 
-The value of Animation seemingly has no actual effect on the transition. (If you have more info, submit a pull request.)
+`SameStage` will cause the stage to be reseeded if set to true. Otherwise, the game will progress to the next stage. The next stage is selected based on the rules of transition internally defined.
+
+* If [GameStateFlag.STATE_SECRET_PATH](enums/GameStateFlag.md) is set, the transition will move towards the alternate path.
+* If [GameStateFlag.STATE_HEAVEN_PATH](enums/GameStateFlag.md) is set, and the current stage is Womb II / XL or ???, the transition will move towards Cathedral, otherwise it will move toward Sheol. 
+* If [GameStateFlag.STATE_BACKWARDS_PATH](enums/GameStateFlag.md) is set, this will progress towards the next stage in the Ascent.
+* If the current stage is Corpse II / XL, the transition will progress towards ???. 
+
+
+`TransitionOverride` can be used to trigger special stage transitions that will progress to a stage that is not necessarily the next one available.
+
+* 2: Sacrifice Room teleportation. Progress towards Dark Room regardless of current floor.
+* 3: Void trapdoor. Progress towards The Void regardless of current floor.
+* 4: unknown. Freeze all logic updates, but the console can still be opened.
+* 5: Ascent transition. If `SameStage` is set to true, progress towards the Ascent version of the current floor (softlocks the game if the current floor doesn't have an Ascent version). If `SameStage` is set to false, move to the next stage (in the non Ascent path), and then enter the Ascent version of this new stage.
+* 6: Home Glowing Hourglass. Progress towards Home, regardless of the current floor. 
 
 ???+ bug "Bug"
 	Contrary to previous beliefs, this function will crash when **not** provided with an EntityPlayer. It is worth noting however, that the function, even when used correctly, is inconsistent and seems to sometimes crash for no reason.
+        Reverse engineering the game shows that the Lua binder associated with this function improperly calls Game::StartStageTransition which results in a C++ stack corruption. As a result, correct calls to this function may or may not crash the game.
 ___
 ### Update () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
