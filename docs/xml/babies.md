@@ -8,9 +8,9 @@ This file is used to store informations about coop-babies.
 
 Placing this file in a resource folder of a mod and removing entries causes crashes.
 
-**Resource-Folder**{: .xmlInfo .red}: Using this file in a resource folder and modifying it can cause crashes.
+**Resource-Folder**{: .xmlInfo .green}: Placing this file in your mods "resource" folder will replace the original file.
 
-**Content-Folder**{: .xmlInfo }: Using this file in a content folder of a mod is not tested yet.
+**Content-Folder**{: .xmlInfo .red}: Placing this file in your mods "content" folder has no effect!
 
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
