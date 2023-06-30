@@ -236,7 +236,7 @@ ___
 
 Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
 1 second equals 30 frames.
-This function therefore works drastically different than `:::lua Isaac.GetFrameCount()`
+This function therefore works drastically different than [`:::lua Isaac.GetFrameCount()`](Isaac.md#getframecount)
 
 ???- example "Example Code"
     This code returns hours, minutes, seconds, and milliseconds of the game running actively:
@@ -559,9 +559,9 @@ Starts a transition animation, like the ones used when entering a trapdoor or li
 `SameStage` will cause the stage to be reseeded if set to true. Otherwise, the game will progress to the next stage. The next stage is selected based on the rules of transition internally defined.
 
 * If [GameStateFlag.STATE_SECRET_PATH](enums/GameStateFlag.md) is set, the transition will move towards the alternate path.
-* If [GameStateFlag.STATE_HEAVEN_PATH](enums/GameStateFlag.md) is set, and the current stage is Womb II / XL or ???, the transition will move towards Cathedral, otherwise it will move toward Sheol. 
+* If [GameStateFlag.STATE_HEAVEN_PATH](enums/GameStateFlag.md) is set, and the current stage is Womb II / XL or ???, the transition will move towards Cathedral, otherwise it will move toward Sheol.
 * If [GameStateFlag.STATE_BACKWARDS_PATH](enums/GameStateFlag.md) is set, this will progress towards the next stage in the Ascent.
-* If the current stage is Corpse II / XL, the transition will progress towards ???. 
+* If the current stage is Corpse II / XL, the transition will progress towards ???.
 
 
 `TransitionOverride` can be used to trigger special stage transitions that will progress to a stage that is not necessarily the next one available.
@@ -570,7 +570,7 @@ Starts a transition animation, like the ones used when entering a trapdoor or li
 * 3: Void trapdoor. Progress towards The Void regardless of current floor.
 * 4: unknown. Freeze all logic updates, but the console can still be opened.
 * 5: Ascent transition. If `SameStage` is set to true, progress towards the Ascent version of the current floor (softlocks the game if the current floor doesn't have an Ascent version). If `SameStage` is set to false, move to the next stage (in the non Ascent path), and then enter the Ascent version of this new stage.
-* 6: Home Glowing Hourglass. Progress towards Home, regardless of the current floor. 
+* 6: Home Glowing Hourglass. Progress towards Home, regardless of the current floor.
 
 ???+ bug "Bug"
 	Contrary to previous beliefs, this function will crash when **not** provided with an EntityPlayer. It is worth noting however, that the function, even when used correctly, is inconsistent and seems to sometimes crash for no reason.
