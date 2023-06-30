@@ -238,7 +238,7 @@ ___
 
 Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
 1 second equals roughtly 60 frames.
-This function therefore works drastically different than `:::lua Game():GetFrameCount()`[Link](Game.md#GetFrameCount)
+This function therefore works drastically different than [`:::lua Game():GetFrameCount()`](Game.md#getframecount)
 
 ___
 ### Get·Free·Near·Position () {: aria-label='Functions' }
