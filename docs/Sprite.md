@@ -105,6 +105,8 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
+#### boolean IsFinished ( ) {: .copyable aria-label='Functions' }
+
 ___
 ### Is·Loaded () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -115,15 +117,21 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsOverlayFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
+#### boolean IsOverlayFinished ( ) {: .copyable aria-label='Functions' }
+
 ___
 ### Is·Overlay·Playing () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsOverlayPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
+#### boolean IsOverlayPlaying ( ) {: .copyable aria-label='Functions' }
+
 ___
 ### Is·Playing () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
+
+#### boolean IsPlaying ( ) {: .copyable aria-label='Functions' }
 Returns true/false depending on if the sprite is playing the provided animation name. Names are set in a given sprite's anm2 file.
 
 ???- example "Example Code"
