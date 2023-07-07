@@ -38,7 +38,7 @@ Used to store all challenges and some of their attributes.
 |minfirerate|float|Minimal fire rate or more|
 |minshotspeed|bool|Minimal shot speed actived or deactivated|
 |bigrange|bool|Enable high starting range value|
-|difficulty|bool|[Game difficulty](../enums/Difficulty.md) [0: normal(default), 1: hard, 2: Greed, 3: Greedier)<br>Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy|
+|difficulty|int|[Game difficulty](../enums/Difficulty.md) [0: normal(default), 1: hard, 2: Greed, 3: Greedier)<br>Greed and greedier mode work, but when killing Ultra Greed, the big Chest spawns, instead of a trophy|
 |megasatan|bool|Last boss is megasatan. Adds the Key to the player.|
 |secretpath|bool|Force the Repentance alt path [ ](#){: .rep .tooltip .badge }|
 
