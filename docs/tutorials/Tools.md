@@ -62,13 +62,16 @@ Extended version of the default game with extra features, bugfixes and modding s
 
 This does not contain or work with the Eternal Update!
 
-#### Install instructions (not verified / propably needs work)
+#### Video Tutorial
+Here is a video tutorial on how to install Spidermod: [https://www.youtube.com/watch?v=E0vagIRSgPc](https://www.youtube.com/watch?v=E0vagIRSgPc)
+
+#### Install instructions (outdated and incomplete)
 1. Download and unpack the zip file in any folder and directory you want.
 3. You may need to install Adobe Flash Player, for it to work. This can be a bit complicated because Flash Player is no longer access and downloadable because Flash is no longer supported.
 2. You may also need to set your Windows system time back to 2018, since Flash player is no longer supposed to work on newer systems
 4. Start the "Binding of Isaac WOTL SpiderMod.exe" file to play the mod
 
-If the window doesn't display anything or you have some "Class not registered" error, download Adobe Flash Player for **Internet Explorer**. Link [!PUT LINK HERE!]
+If the window doesn't display anything or you have some "Class not registered" error, download Adobe Flash Player for **Internet Explorer**. [!PUT LINK HERE!]
 
 ### Community Remix mod
 **Download Link:** [Community Remix mod](https://mega.nz/file/Xp00AIjL#FP_8hI46jtN_zB0O1C8Z2neU55hQdWr1oqOgoua8gEk)
