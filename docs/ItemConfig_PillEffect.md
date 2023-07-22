@@ -35,11 +35,15 @@ ___
 ### Effect·Class {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int EffectClass  {: .copyable aria-label='Variables' }
+???+ bug "Bug"
+    This variable is broken and returns userdata.
 
 ___
 ### Effect·Sub·Class {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### int EffectSubClass  {: .copyable aria-label='Variables' }
+???+ bug "Bug"
+    This variable is broken and returns userdata.
 
 ___
 ### Greed·Mode·Allowed {: aria-label='Variables' }
