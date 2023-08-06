@@ -3,6 +3,9 @@
 ### About
 This table displays important data values for each phase of a boss.
 
+### Excel file
+You can downlad the whole table as a handy excel file here: [bosses.xlsx](../../customData/bosses.xlsx)
+
 ### Chapter 1
 
 |Boss|ID|Attack|State|StateFrame|I1|I2|V1|V2|Animation|Trigger|TriggerFrame|Comments|
@@ -13,14 +16,14 @@ This table displays important data values for each phase of a boss.
 | | |Jump|6|0|0|0|0|0|JumpUp|Jump|10| |
 | | | |7|0|0|0|0|0|JumpDown|Land|32| |
 | | | | | | | | | | |Shoot|34| |
-|Gemini (Contusion)|79|Walk|4|0|0|0|0|0|WalkVert/WalkHori| | |Steven uses the same values 79.1 / 79.11Steven uses the same values 79.1 / 79.11Steven uses the same values 79.1 / 79.11Steven uses the same values 79.1 / 79.11Steven uses the same values 79.1 / 79.11Steven uses the same values 79.1 / 79.11|
+|Gemini (Contusion)|79|Walk|4|0|0|0|0|0|WalkVert/WalkHori| | |Steven uses the same values 79.1 / 79.11|
 | | |Chase|8|Time spent (max 101)|0|0|0|0|RageBody| | | |
 | | |Pant|3|Time spent (max 101)|0|0|0|0|Pant| | | |
 |Gemini (Suture)|79.10|Walk|4|0|0|0|0|0|Walk01| | | |
 | | |Attack|8|0|0|0|0|0|Attack01|Shoot|17| |
 | | |Rage|4|0|0|0|0|0|Rage| | | |
 | | |Chase|4|0|0|0|0|0|Walk02| | | |
-|Dingle|261|Idle|3|Time spent|0|0|0|0|Idle| | |Dangle uses the same values 261.1Dangle uses the same values 261.1Dangle uses the same values 261.1Dangle uses the same values 261.1Dangle uses the same values 261.1Dangle uses the same values 261.1|
+|Dingle|261|Idle|3|Time spent|0|0|0|0|Idle| | |Dangle uses the same values 261.1|
 | | |Whistle|9|0|0|0|0|0|Whistle| | | |
 | | | |8|0|0|0|0|0|Spit|Shoot|3| |
 | | |Spit|10|0|0|0|0|0|Dance| | | |
@@ -28,7 +31,7 @@ This table displays important data values for each phase of a boss.
 | | |Slide|11|0|0|0|0|0|BeforeSlide| | | |
 | | | |4|0|Number of dashes|0|0|0|Slide| | | |
 | | | |16|Time spent|0|0|0|0|Tired| | | |
-|Gurglings|237.1|Idle|4|0|0|0|0|0|Walk*| | |Turdlings use the same values 237.2Turdlings use the same values 237.2Turdlings use the same values 237.2Turdlings use the same values 237.2Turdlings use the same values 237.2|
+|Gurglings|237.1|Idle|4|0|0|0|0|0|Walk*| | |Turdlings use the same values 237.2|
 | | |Charge|8|0|0|0|Original pos|0|Charge*| | | |
 | | | |3|0|0|0|0|0|Stop|Shoot|7| |
 |Larry Jr.|19|Idle|4|0|0|0|0|0| | | | |
@@ -66,13 +69,13 @@ This table displays important data values for each phase of a boss.
 | | |Spit|8|0|0|0|0|0|Attack1|Shoot|20| |
 | | | | | | | | | | |Shoot2|34| |
 | | |Charge|9|0|0|0|0|0|ChargeStart| | | |
-| | | | |0|0|0|X = Damage taken during attackX = Damage taken during attackX = Damage taken during attack|0|Charge| | |Damage taken starts only during "Charge" anim Transition into Brimstone depend on MaxHPDamage taken starts only during "Charge" anim Transition into Brimstone depend on MaxHPDamage taken starts only during "Charge" anim Transition into Brimstone depend on MaxHP|
+| | | | |0|0|0|X = Damage taken during attack|0|Charge| | |Damage taken starts only during "Charge" anim Transition into Brimstone depend on MaxHP|
 | | | |10|0|0|0|0|0|Attack2|Shoot|20| |
 | | |Split|13|0|0|0|0|0|Split| | |Fallen dies and spawns two smaller ones|
-|Headless Horseman (Head)Headless Horseman (Head)Headless Horseman (Head)|83|Idle|4|0|0|0|0|0|Walk| | | |
+|Headless Horseman (Head)|83|Idle|4|0|0|0|0|0|Walk| | | |
 | | |Dash|8|Remaining dashes|0|0|0|0|Charge + Shake| | | |
 | | |Spit|9|Time spent|0|0|0|0|Attack| | | |
-|Headless Horseman (Body)Headless Horseman (Body)|82|Idle|4|0|0|0|0|0|Walk| | | |
+|Headless Horseman (Body)|82|Idle|4|0|0|0|0|0|Walk| | | |
 | | |Spit|8|Time spent|0|0|0|0|Attack| | | |
 |Rag Man|405|Walk|4|0|0 or timer to revive a spider|0|0|0|Walk*| | | |
 | | |Shoot|8|0|0 or timer to revive a spider|0|0|0|Shooting1|Shoot|4| |
