@@ -779,6 +779,10 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const int SpawnGridIndex  {: .copyable aria-label='Variables' }
 
+This is the grid index with which the entity spawned upon room generation.
+
+Rerolled item pedestals, or entities spawned after the inital room generation will have a value of -1
+
 ___
 ### Splat·Color {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
