@@ -99,6 +99,7 @@ ___
 ### Is·Event·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
+Returns true if the specified event in the animation is currently being triggered.
 
 ___
 ### Is·Finished () {: aria-label='Functions' }
@@ -311,7 +312,7 @@ ___
 ### Replace·Spritesheet () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
-Changes the ".png" file associated with a specific layer of a sprite.
+Changes the ".png" file associated with a specific layer of a sprite. This does not change other layers using the ".png" file that is being replaced.
 
 After replacing a spritesheet, you must call the `Sprite.LoadGraphics` method afterwards.
 
@@ -393,6 +394,7 @@ ___
 ### Was·Event·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean WasEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
+Returns true if the specified event in the animation was triggered at some point, and remains true until the animation stops playing.
 
 ___
 ## Variables
