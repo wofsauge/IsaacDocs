@@ -186,6 +186,16 @@ nav:
         - "Vector": Vector.md
     - Entities:
         - "Overview": entities/Overview.md
+        - "Boss Data":
+          - "Chapter 1": entities/bosses/Chapter1.md
+          - "Chapter 1.5": entities/bosses/Chapter1-5.md
+          - "Chapter 2": entities/bosses/Chapter2.md
+          - "Chapter 2.5": entities/bosses/Chapter2-5.md
+          - "Chapter 3": entities/bosses/Chapter3.md
+          - "Chapter 3.5": entities/bosses/Chapter3-5.md
+          - "Chapter 4": entities/bosses/Chapter4.md
+          - "Chapter 4.5": entities/bosses/Chapter4-5.md
+          - "Final Bosses": entities/bosses/FinalBosses.md
         - "Entity Data": entities/EntityData.md
         - "Fissure Spawner": entities/FissureSpawner.md
         - "Ball & Chain": entities/SpikeBallChain.md

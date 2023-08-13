@@ -230,6 +230,16 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [RoomDescriptor List](CppContainer_ArrayProxy_RoomDescriptor.md) GetRooms ( ) {: .copyable aria-label='Functions' }
 
+???- example "Example Code"
+    This code itterates over every room descriptor and prints the clear status of the room.
+    ```lua
+    local rooms = Game():GetLevel():GetRooms()
+    for i = 0, rooms.Size-1 do
+        local room = rooms:Get(i)
+	print(room.Clear)
+    end
+    ```
+
 ___
 ### Get·Stage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

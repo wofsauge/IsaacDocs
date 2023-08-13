@@ -980,7 +980,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int GetMaxPocketItems ( ) {: .copyable aria-label='Functions' }
 
-Get the number of Pickup items you can carry. (1 on default. 2 with belly button or similar)
+Get the number of Pickup items you can carry. (1 on default. 2 with polydactyly or similar)
 
 If you have a pocket active, it also increments the number by one.
 
