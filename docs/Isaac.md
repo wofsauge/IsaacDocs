@@ -384,7 +384,7 @@ Returns a number denoting how "zoomed in" the screen is. This can be `1.0` or `2
 ???- example "Video Demonstration"
     <figure class="video_container">
         <video controls="true" allowfullscreen="true" muted="true" style="width:25rem">
-            <source src="../customData/screen-point-scale.mp4" type="video/mp4">
+            <source src="./customData/screen-point-scale.mp4" type="video/mp4">
         </video>
         <figcaption>Demonstration of how the size of the game window changes the value this function returns.</figcaption>
     </figure>
