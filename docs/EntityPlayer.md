@@ -838,7 +838,11 @@ ___
 ___
 ### Get·Damage·Cooldown () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetDamageCooldown ( ) {: .copyable aria-label='Functions' }
+#### int GetDamageCooldown () {: .copyable aria-label='Functions' }
+
+When the player is hit, they will flash a different color and receive invulnerability frames. This method returns the amount of invulnerability frames. Normally, the player will receive 60 invulnerability frames when dealt a half-heart of damage or 120 invulnerability frames when dealt a full heart of damage. Additionally, the Blind Rage trinket can affect how invulnerability frames are granted.
+
+Note that the frames returned by this function are render frames, not game frames.
 
 ___
 ### Get·Effective·Blood·Charge () {: aria-label='Functions' }
