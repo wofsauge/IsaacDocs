@@ -455,7 +455,7 @@ The return value determines, what [Card](Card.md) will be spawned. Return nil to
 
 Returned values will not update the "[Card](Card.md)" arg of later executed callbacks.
 
-The `IncludePlayingCards` argument is believed to map on to `ItemConfigCardType.SUIT`.
+The `IncludePlayingCards` argument is whether to include cards of type `ItemConfigCardType.SUIT`. (This was confirmed by looking at the LuaJIT API code in the Nintendo Switch version files.)
 
 ???+ bug
     Returning a value that is not an integer or nil will cause the game to crash.
