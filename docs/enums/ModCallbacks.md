@@ -455,6 +455,8 @@ The return value determines, what [Card](Card.md) will be spawned. Return nil to
 
 Returned values will not update the "[Card](Card.md)" arg of later executed callbacks.
 
+The `IncludePlayingCards` argument is believed to map on to `ItemConfigCardType.SUIT`.
+
 ???+ bug
     Returning a value that is not an integer or nil will cause the game to crash.
 
