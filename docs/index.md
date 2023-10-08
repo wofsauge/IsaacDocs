@@ -9,6 +9,7 @@ This Documentation is a community curated project that provides additional infor
 
 If you want to contribute to this project, consider visiting the **[:fontawesome-brands-github: Github Project](https://github.com/wofsauge/IsaacDocs)**
 
+To learn how to understand the documentation, [click this link.](./faq/faq.md#how-do-i-understand-the-docs)
 
 If you have questions regarding modding in general, Visit:
 
