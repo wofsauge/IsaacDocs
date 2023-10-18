@@ -116,7 +116,7 @@ Returns, if a button was pressed some time before or not. This functions will on
 ___
 ### Is·Mouse·Btn·Pressed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsMouseBtnPressed ( int button ) {: .copyable aria-label='Functions' }
+#### boolean IsMouseBtnPressed ( [Mouse](enums/Mouse.md) button ) {: .copyable aria-label='Functions' }
 
 Returns, if a mousebutton is pressed or not.
 Left: 0, Right: 1, mousewheel: 2, back button: 3, forward button: 4
@@ -124,7 +124,7 @@ Left: 0, Right: 1, mousewheel: 2, back button: 3, forward button: 4
 ???- example "Example Code"
     This code prints "Right Click", when the "right"-mousebutton was pressed.
     ```lua
-    if Input.IsMouseBtnPressed(1)  then
+    if Input.IsMouseBtnPressed(Mouse.MOUSE_BUTTON_2)  then
         print("Right Click")
     end
 
