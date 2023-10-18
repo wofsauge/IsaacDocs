@@ -158,7 +158,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|232 |SOUND_NICKELPICKUP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/232.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|233 |SOUND_PENNYDROP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/233.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|234 |SOUND_PENNYPICKUP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/234.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|237 |SOUND_PLOP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/237.wav" type="audio/wav"></audio>| Used by Peep when he spawns an eye and by The Peeper.  |
+|[ ](#){: .abrep .tooltip .badge }|237 |SOUND_PLOP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/237.wav" type="audio/wav"></audio>| Used by Peep when he spawns an eye, The Peeper, and C Section.  |
 |[ ](#){: .abrep .tooltip .badge }|238 |SOUND_SATAN_APPEAR {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/238.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|239 |SOUND_SATAN_BLAST {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/239.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|240 |SOUND_SATAN_CHARGE_UP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/240.wav" type="audio/wav"></audio>|  |
