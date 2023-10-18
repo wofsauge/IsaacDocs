@@ -27,7 +27,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|21 |SOUND_CHEST_DROP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/21.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|22 |SOUND_CHEST_OPEN {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/22.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|23 |SOUND_CHOIR_UNLOCK {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/23.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|24 |SOUND_COIN_SLOT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/24.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|24 |SOUND_COIN_SLOT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/24.wav" type="audio/wav"></audio>| Various machines, such as reroll machine and donation machine |
 |[ ](#){: .abrep .tooltip .badge }|25 |SOUND_CUTE_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/25.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|27 |SOUND_DEATH_BURST_BONE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/27.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|28 |SOUND_DEATH_BURST_LARGE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/28.wav" type="audio/wav"></audio>|  |
@@ -45,13 +45,13 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|45 |SOUND_COIN_INSERT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/45.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|46 |SOUND_METAL_DOOR_CLOSE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/46.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|47 |SOUND_METAL_DOOR_OPEN {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/47.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|48 |SOUND_FORESTBOSS_STOMPS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/48.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|48 |SOUND_FORESTBOSS_STOMPS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/48.wav" type="audio/wav"></audio>| Monstro stomp |
 |[ ](#){: .rep .tooltip .badge }|49 |SOUND_SCYTHE_BREAK {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/49.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|50 |SOUND_STONE_WALKER {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/50.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|51 |SOUND_GASCAN_POUR {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/51.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|52 |SOUND_HELLBOSS_GROUNDPOUND {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/52.wav" type="audio/wav"></audio>| Slam sound |
 |[ ](#){: .rep .tooltip .badge }|53 |SOUND_GLASS_BREAK {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/53.wav" type="audio/wav"></audio>| Holy Water |
-|[ ](#){: .abrep .tooltip .badge }|54 |SOUND_HOLY {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/54.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|54 |SOUND_HOLY {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/54.wav" type="audio/wav"></audio>| Soul heart |
 |[ ](#){: .abrep .tooltip .badge }|55 |SOUND_ISAAC_HURT_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/55.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|56 |SOUND_CHILD_HAPPY_ROAR_SHORT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/56.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|57 |SOUND_CHILD_ANGRY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/57.wav" type="audio/wav"></audio>|  |
@@ -68,7 +68,7 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|79 |SOUND_MUSHROOM_POOF_2 {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/79.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|80 |SOUND_BLACK_POOF {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/80.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|81 |SOUND_STATIC {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/81.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/82.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/82.wav" type="audio/wav"></audio>| Clicker |
 |[ ](#){: .abrep .tooltip .badge }|84 |SOUND_MOM_VOX_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/84.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|85 |SOUND_MOM_VOX_FILTERED_DEATH_1 {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/85.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|86 |SOUND_MOM_VOX_FILTERED_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/86.wav" type="audio/wav"></audio>|  |
@@ -131,8 +131,8 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|185 |SOUND_BOSS2_BUBBLES {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/185.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|186 |SOUND_EXPLOSION_DEBRIS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/186.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/187.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/190.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/194.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/190.wav" type="audio/wav"></audio>| Incorrect buzzer or cancel sound |
+|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/194.wav" type="audio/wav"></audio>| Entering a boss arena and the door closes  |
 |[ ](#){: .abrep .tooltip .badge }|195 |SOUND_CHARACTER_SELECT_RIGHT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/195.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|197 |SOUND_DERP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/197.wav" type="audio/wav"></audio>| I found pills |
 |[ ](#){: .abrep .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/198.wav" type="audio/wav"></audio>|  |
@@ -179,7 +179,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|267 |SOUND_THUMBS_DOWN {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/267.wav" type="audio/wav"></audio>| Sad negative player animation emote |
 |[ ](#){: .abrep .tooltip .badge }|268 |SOUND_THUMBSUP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/268.wav" type="audio/wav"></audio>| Happy positive player animation emote |
 |[ ](#){: .abrep .tooltip .badge }|269 |SOUND_FIRE_BURN {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/269.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|270 |SOUND_HAPPY_RAINBOW {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/270.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .abrep .tooltip .badge }|270 |SOUND_HAPPY_RAINBOW {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/270.wav" type="audio/wav"></audio>| Rainbow poop |
 |[ ](#){: .rep .tooltip .badge }|271 |SOUND_LASERRING {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/271.wav" type="audio/wav"></audio>| new (ab) |
 |[ ](#){: .rep .tooltip .badge }|272 |SOUND_LASERRING_WEAK {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/272.wav" type="audio/wav"></audio>| new (ab) |
 |[ ](#){: .rep .tooltip .badge }|273 |SOUND_LASERRING_STRONG {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/273.wav" type="audio/wav"></audio>| new (ab) |
