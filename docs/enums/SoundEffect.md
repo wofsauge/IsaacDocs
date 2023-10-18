@@ -119,7 +119,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|167 |SOUND_ANGRY_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/167.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|169 |SOUND_BAND_AID_PICK_UP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/169.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|170 |SOUND_BATTERYCHARGE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/170.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|171 |SOUND_BEEP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/171.wav" type="audio/wav"></audio>| Played when a recharging active is fully charged |
+|[ ](#){: .abrep .tooltip .badge }|171 |SOUND_BEEP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/171.wav" type="audio/wav"></audio>| Used when an active gains a single charge |
 |[ ](#){: .rep .tooltip .badge }|172 |SOUND_LIGHTBOLT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/172.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|173 |SOUND_LIGHTBOLT_CHARGE {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/173.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|175 |SOUND_BLOODBANK_SPAWN {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/175.wav" type="audio/wav"></audio>| Used for Pinking Shears |
