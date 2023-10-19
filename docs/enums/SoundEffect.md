@@ -130,9 +130,9 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|184 |SOUND_EXPLOSION_STRONG {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/184.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|185 |SOUND_BOSS2_BUBBLES {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/185.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|186 |SOUND_EXPLOSION_DEBRIS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/186.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/187.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/190.wav" type="audio/wav"></audio>| Incorrect buzzer or cancel sound |
-|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/194.wav" type="audio/wav"></audio>| Entering a boss arena and the door closes  |
+|[ ](#){: .abrep .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/187.wav" type="audio/wav"></audio>| Incorrect buzzer or cancel sound |
+|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/190.wav" type="audio/wav"></audio>| Entering a boss arena and the door closes |
+|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/194.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|195 |SOUND_CHARACTER_SELECT_RIGHT {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/195.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|197 |SOUND_DERP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/197.wav" type="audio/wav"></audio>| I found pills |
 |[ ](#){: .abrep .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/198.wav" type="audio/wav"></audio>|  |
