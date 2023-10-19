@@ -58,7 +58,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 |noreroll| Immunity from D10 rerolls and the Ace cards|
 |brimstone_soul| Friendly Ball wisps created by this enemy will fire Brimstone lasers|
 |explosive_soul| Friendly Ball wisps created by this enemy will fire explosive tears|
-|homing_soul| Friendly Ball wisps created by this enemy will fire homing lasers|
+|homing_soul| Friendly Ball wisps created by this enemy will fire homing tears|
 
 
 ## Floor specific sprites
