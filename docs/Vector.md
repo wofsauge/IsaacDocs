@@ -13,9 +13,13 @@ ___
 ## Constants
 ### Vector.Zero {: aria-label='Constants' }
 [ ](#){: .rep .tooltip .badge }
+
+Equivalent to `:::lua Vector(0, 0)`.
 ___
 ### Vector.One {: aria-label='Constants' }
 [ ](#){: .rep .tooltip .badge }
+
+Equivalent to `:::lua Vector(1, 1)`.
 ___
 ## Operators
 ### __add () {: aria-label='Operators' }
