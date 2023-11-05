@@ -32,7 +32,7 @@ ___
 #### void Morph ( [EntityType](enums/EntityType.md) Type, int Variant, int SubType, boolean KeepPrice = false, boolean KeepSeed = false, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
 **KeepSeed**: If set to true, keeps the initial RNG seed of the pickup instead of rerolling it
 
-**IgnoreModifiers**: If set to true, ignores item effects that might turn this pickup into something other than the specificed variant and subtype
+**IgnoreModifiers**: If set to true, ignores item effects that might turn this pickup into something other than the specificed variant and sub-type. Specifically, this can be used to prevent a collectible from being affected by Tainted Isaac's rotation mechanic. (For example, if you manually spawn a quest collectible such as a Polaroid, it will be affected by Tainted Isaac's rotation mechanic, which is normally undesired. To fix this, you can immediately morph it into the same entity type / variant /sub-type after spawning with this argument set to true.)
 ___
 ### Play·Drop·Sound () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
