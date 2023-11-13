@@ -92,6 +92,9 @@ If a table is returned instead of a boolean, the following fields can be set to 
 * Remove: Determines whether the item should be removed from the player or not after being used
 * ShowAnim: Plays the default use animation if set to true (equivalent to simply returning true in AB+)
 
+???- info "Note"
+    The "Discharge" field dictates whether the Book of Virtues should generate a wisp. Setting it to `false` prevents the wisp from spawning.
+
 ???- example "Example Code"
     This code will print "Hello World!" everytime an active item is used.
     ```lua
