@@ -1023,6 +1023,18 @@ This Callback also handles special spawns like the spawning of Trapdoors after a
 
 Return true if the spawn routine should be ignored, nil/nothing otherwise. Returning any non-nil value will skip remaining callbacks.
 
+???+ bug
+    Returning true will cause the room's award seed to not advance, causing subsequent calls of this callback in the same room to have the same RNG object. To fix this you can use the following snippet to manually update the award seed.
+    ```lua
+    function mod:preSpawnCleanAward(rng)
+        local level = Game():GetLevel()
+        local roomDesc = level:GetRoomDesc(level:GetCurrentRoomIndex())
+        roomDesc.AwardSeed = rng:GetSeed()
+        return true
+    end
+    mod:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT, mod.getPillEffect)
+    ```
+
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
 |[ ](#){: .abrep .tooltip .badge }|70 |MC_PRE_SPAWN_CLEAN_AWARD {: .copyable } | ([RNG](../RNG.md),<br>SpawnPosition [Vector]) | - | boolean |
