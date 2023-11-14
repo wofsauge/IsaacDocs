@@ -22,6 +22,9 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [RNG](RNG.md) GetRNG ( ) {: .copyable aria-label='Functions' }
 
+???- warning "Warning"
+    This RNG is initialized with the same seed for all grid entities in the whole run. Instead, it's advised to create a custom data structure or use either the [SpawnSeed](GridEntityDesc.md#spawnseed) or [VariableSeed](GridEntityDesc.md#variableseed) fields from the [GridEntityDesc](GridEntityDesc.md) object.
+
 ___
 ### Get·Save·State () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
