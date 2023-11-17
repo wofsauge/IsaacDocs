@@ -67,8 +67,8 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|78 |SOUND_POT_BREAK_2 {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/78.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|79 |SOUND_MUSHROOM_POOF_2 {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/79.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|80 |SOUND_BLACK_POOF {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/80.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .rep .tooltip .badge }|81 |SOUND_STATIC {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/81.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/82.wav" type="audio/wav"></audio>| Clicker |
+|[ ](#){: .rep .tooltip .badge }|81 |SOUND_STATIC {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/81.wav" type="audio/wav"></audio>| Clicker |
+|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/82.wav" type="audio/wav"></audio>| |
 |[ ](#){: .abrep .tooltip .badge }|84 |SOUND_MOM_VOX_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/84.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|85 |SOUND_MOM_VOX_FILTERED_DEATH_1 {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/85.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .abrep .tooltip .badge }|86 |SOUND_MOM_VOX_FILTERED_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://maya-bee.github.io/sounds/86.wav" type="audio/wav"></audio>|  |
