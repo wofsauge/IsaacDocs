@@ -1601,7 +1601,7 @@ ___
 ___
 ### Throw·Friendly·Dip () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFamiliar](EntityFamiliar.md) ThrowFriendlyDip ( int Subtype, [Vector](Vector.md) Position, [Vector](Vector.md) Target = Vector.Zero ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](EntityFamiliar.md) ThrowFriendlyDip ( int Subtype, [Vector](Vector.md) Position, [Vector](Vector.md) Target ) {: .copyable aria-label='Functions' }
 
 ???- note "Dip Subtypes"
     ```lua
