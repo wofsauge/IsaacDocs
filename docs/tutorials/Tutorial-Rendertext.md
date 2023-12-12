@@ -14,7 +14,8 @@ The Following fonts are used by the game and can be used with the [`Font()`](../
 |PF Tempesta Seven (Condensed)|pftempestasevencondensed|[Example PF Tempesta Seven](../images/tutorial_special_chars/example_pftempestasevencondensed.png)|HUD Elements like coin/key counters|[PF Tempesta Seven](https://www.dafont.com/pf-tempesta-seven.font)|
 |Team Meat Font|teammeatfont10<br/>teammeatfont12<br/>teammeatfont16<br/>teammeatfont16bold|[Example teammeatfont10](../images/tutorial_special_chars/example_teammeat10.png)<br/>[Example teammeatfont12](../images/tutorial_special_chars/example_teammeat12.png)<br/>[Example teammeatfont16](../images/tutorial_special_chars/example_teammeat16.png)<br/>[Example teammeatfont16bold](../images/tutorial_special_chars/example_teammeat16bold.png)|Main Menu Elements<br/>Pop-Ups<br/>Timer / Score Elements|[Team Meat Font without Bold](../customData/team-meat-font_1.2.zip)|
 |Terminus|terminus<br/>terminus8|[Example Terminus](../images/tutorial_special_chars/example_terminus.png)<br/>[Example Terminus8](../images/tutorial_special_chars/example_terminus8.png)|Debug Console / Isaac.RenderText()|[Terminus](http://terminus-font.sourceforge.net/)|
-|Upheaval|upheaval|[Example Upheaval](../images/tutorial_special_chars/example_upheaval.png)|Streak text|[Upheaval](https://www.dafont.com/upheaval.font)|
+|Luamini<br/>(Repentance)|luamini<br/>luaminioutlined|[Example luamini](../images/tutorial_special_chars/example_luamini.png)<br/>[Example luaminioutlined](../images/tutorial_special_chars/example_luaminioutlined.png)|Stats HUD| |
+|Upheaval|upheaval<br/>upheavalmini (Repentance)|[Example Upheaval](../images/tutorial_special_chars/example_upheaval.png)<br/>[Example Upheavalmini](../images/tutorial_special_chars/example_upheavalmini.png)|Streak text|[Upheaval](https://www.dafont.com/upheaval.font)|
 |mplus (Japanese)|mplus_10r<br/>mplus_12b|[Example mplus_10r](../images/tutorial_special_chars/example_mplus10r.png)<br/>[Example mplus_12b](../images/tutorial_special_chars/example_mplus12b.png)|Replacement for all fonts aboth for Japanese translation.<br/>10r is pf "Tempesta seven" / "Team Meat" replacement<br/>12b is "Upheaval" replacement|[PixelMplus](http://itouhiro.hatenablog.com/entry/20130602/font)
 [(M+ Fonts)](https://mplus-fonts.osdn.jp/)|
 |kr Font (Korean)|kr_font12<br/>kr_font14|[Example kr_font12](../images/tutorial_special_chars/example_krfont12.png)<br/>[Example kr_font14](../images/tutorial_special_chars/example_krfont14.png)|TBD|No source found right now|
@@ -53,8 +54,14 @@ local f = Font() -- init font object
 f:Load("font/droid.fnt") -- load a font into the font object
 f:DrawString("droid",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
 ```
+dlc3-language specific fonts:
+```lua
+local f = Font() -- init font object
+f:Load("resources-dlc3.jp/font/mplus_10r.fnt") -- load a font from the Japanese data package
+f:DrawString("mplus_10r",60,50,KColor(1,1,1,1,0,0,0),0,true) -- render string with loaded font on position 60x50y
+```
 
-### All possible Fonts that can be drawn:
+### Quick overview of common Fonts that can be drawn:
 
 ![](../images/font-types.png)
 
