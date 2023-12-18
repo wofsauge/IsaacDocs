@@ -105,7 +105,9 @@ ___
 ### Find·By·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### table FindByType ( [EntityType](enums/EntityType.md) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
-Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is includedUse Cache flag for multiple calls per frame.
+Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is included. Use Cache flag for multiple calls per frame.
+
+If an entity has `EntityFlag.FLAG_NO_QUERY` then it will be excluded from the results. If you need to get an entity with that flag then you should use `GetRoomEntities` instead.
 ___
 ### Find·In·Radius () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
