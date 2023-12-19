@@ -57,7 +57,7 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|1 << 43 |FLAG_REDUCE_GIBS {: .copyable } | Spawn less gibs on death |
 |[ ](#){: .rep .tooltip .badge }|1 << 44 |FLAG_TRANSITION_UPDATE {: .copyable } | Updates during room/stage transitions |
 |[ ](#){: .rep .tooltip .badge }|1 << 45 |FLAG_NO_PLAYER_CONTROL {: .copyable } | Cannot be controlled by players |
-|[ ](#){: .rep .tooltip .badge }|1 << 46 |FLAG_NO_QUERY {: .copyable } | Hide from query results |
+|[ ](#){: .rep .tooltip .badge }|1 << 46 |FLAG_NO_QUERY {: .copyable } | Hide from query results. This can hide entities from things like `Isaac.FindByType` and the `MC_ENTITY_TAKE_DMG` callback. Entities will still be visible to `Isaac.GetRoomEntities` and `_UPDATE` callbacks. |
 |[ ](#){: .rep .tooltip .badge }|1 << 47 |FLAG_KNOCKED_BACK {: .copyable } | Strong knockback: Forcefy moved in a specified direction for a short duration |
 |[ ](#){: .rep .tooltip .badge }|1 << 48 |FLAG_APPLY_IMPACT_DAMAGE {: .copyable } | Inflicts damage upon colliding with enemies, takes damage when colliding with walls |
 |[ ](#){: .rep .tooltip .badge }|1 << 49 |FLAG_ICE_FROZEN {: .copyable } | Frozen solid |
