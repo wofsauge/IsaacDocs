@@ -398,6 +398,7 @@ ___
 ### Animate·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AnimateCollectible ( [CollectibleType](enums/CollectibleType.md) Collectible, string AnimName = "Pickup", string SpriteAnimName = "PlayerPickupSparkle" ) {: .copyable aria-label='Functions' }
+`AnimName` refers to an animation name in `001.000_player.anm2` (e.g. `Pickup` or `UseItem`). `SpriteAnimName` refers to an animation name in `005.100_collectible.anm2` (e.g. `PlayerPickup` or `PlayerPickupSparkle`).
 
 ___
 ### Animate·Happy () {: aria-label='Functions' }
