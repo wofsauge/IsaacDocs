@@ -136,11 +136,15 @@ ___
 ### Previous·State {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int PreviousState  {: .copyable aria-label='Variables' }
+???+ bug "Bug"
+    This variable is broken and returns userdata.
 
 ___
 ### Previous·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### int PreviousVariant  {: .copyable aria-label='Variables' }
+???+ bug "Bug"
+    This variable is broken and returns userdata.
 
 ___
 ### Slot {: aria-label='Variables' }
