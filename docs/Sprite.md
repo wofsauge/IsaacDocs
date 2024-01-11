@@ -190,7 +190,7 @@ ___
 ### Play () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
-Starts executing the given animation, starting at frame 0. After calling this method, you must call the `Sprite.Update` method on every render frame in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsFinished` method.)
+Starts executing the given animation, starting at frame 0. After calling this method, you must call the `Sprite.Update` method on every update frame (if you want to update the animation in a render callback, make sure to only run it on even frames) in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsFinished` method.)
 
 Calling this method again will reset the current frame back to 0.
 
@@ -220,7 +220,7 @@ ___
 ### Play·Overlay () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
-Starts executing the given overlay animation, starting at frame 0. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.) After calling this method, you must call the `Sprite.Update` method on every render frame in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsOverlayFinished` method.)
+Starts executing the given overlay animation, starting at frame 0. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.) After calling this method, you must call the `Sprite.Update` method on every update frame (if you want to update the animation in a render callback, make sure to only run it on even frames) in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsOverlayFinished` method.)
 
 Calling this function again will always reset the current overlay frame back to 0.
 
@@ -366,7 +366,11 @@ ___
 ___
 ### Set·Overlay·Animation () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean SetOverlayAnimation ( string AnimationName ) {: .copyable aria-label='Functions' }
+#### boolean SetOverlayAnimation ( string AnimationName, bool Reset = true ) {: .copyable aria-label='Functions' }
+
+Similar to the `Sprite.PlayOverlay` method, but does not start the animation.
+
+- **Reset** - as false will continue the animation from the current frame. This is a really good tool for familiars that alternate between different FloatDirection animations dynamically and other entities that follow similar behaviors.
 
 ___
 ### Set·Overlay·Frame () {: aria-label='Functions' }

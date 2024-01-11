@@ -266,6 +266,10 @@ Another common callback that mods use is `MC_POST_UPDATE`, which fires on every 
 
 Go through the [ModCallbacks page](../enums/ModCallbacks.md) and read what all of the callbacks do so that you can get familiar with them.
 
+### How do I understand the docs? {: .subHeader}
+
+![img](../images/docs_reading_guide.png)
+
 ### What is Single Line Responsibility (SLR)? {: .subHeader}
 
 When writing code, put some effort into making it look nice and be easy to read for others, especially if you are showing it to other people or asking for help. In this vein, it is a good idea to follow the "single line responsibility" rule - meaning that **one line** should only do **one thing**. Read [this blog](https://midu.dev/single-line-responsability-haz-una-cosa-por-linea/) for more details about why SLR is great.

@@ -27,6 +27,8 @@ ___
 ## Constants
 ### Color.Default {: aria-label='Constants' }
 [ ](#){: .rep .tooltip .badge }
+
+Equivalent to `:::lua Color(1, 1, 1, 1)`, the color white.
 ___
 ## Functions
 ### Lerp () {: aria-label='Functions' }

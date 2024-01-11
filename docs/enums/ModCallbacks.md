@@ -92,6 +92,9 @@ If a table is returned instead of a boolean, the following fields can be set to 
 * Remove: Determines whether the item should be removed from the player or not after being used
 * ShowAnim: Plays the default use animation if set to true (equivalent to simply returning true in AB+)
 
+???- info "Note"
+    The "Discharge" field dictates whether the Book of Virtues should generate a wisp. Setting it to `false` prevents the wisp from spawning.
+
 ???- example "Example Code"
     This code will print "Hello World!" everytime an active item is used.
     ```lua
@@ -454,6 +457,8 @@ You can use the boolean values as a filter for the selection.
 The return value determines, what [Card](Card.md) will be spawned. Return nil to not replace the spawned card.
 
 Returned values will not update the "[Card](Card.md)" arg of later executed callbacks.
+
+The `IncludePlayingCards` argument is whether to include cards of type `ItemConfigCardType.SUIT`. (This was confirmed by looking at the LuaJIT API code in the Nintendo Switch version files.)
 
 ???+ bug
     Returning a value that is not an integer or nil will cause the game to crash.
@@ -1020,6 +1025,18 @@ This function is triggered in every room that can be cleared, including boss and
 This Callback also handles special spawns like the spawning of Trapdoors after a boss is killed, therefore returning true here will also cancel those events.
 
 Return true if the spawn routine should be ignored, nil/nothing otherwise. Returning any non-nil value will skip remaining callbacks.
+
+???+ bug
+    Returning true will cause the room's award seed to not advance, causing subsequent calls of this callback in the same room to have the same RNG object. To fix this you can use the following snippet to manually update the award seed.
+    ```lua
+    function mod:preSpawnCleanAward(rng)
+        local level = Game():GetLevel()
+        local roomDesc = level:GetRoomDesc(level:GetCurrentRoomIndex())
+        roomDesc.AwardSeed = rng:GetSeed()
+        return true
+    end
+    mod:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT, mod.getPillEffect)
+    ```
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|

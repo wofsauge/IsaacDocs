@@ -16,7 +16,7 @@ ___
 ## Functions
 ### Get () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### userdata Get ( int idx ) {: .copyable aria-label='Functions' }
+#### [RoomConfig Entry](RoomConfig_Entry.md) Get ( int idx ) {: .copyable aria-label='Functions' }
 
 ___
 ## Variables

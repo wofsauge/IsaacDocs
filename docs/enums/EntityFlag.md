@@ -9,26 +9,26 @@ tags:
 
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|1 << 0|FLAG_NO_STATUS_EFFECTS {: .copyable } | prevent freeze/poison/slow/charm/confusion/fear/burn |
-|[ ](#){: .abrep .tooltip .badge }|1 << 1 |FLAG_NO_INTERPOLATE {: .copyable } | do not interpolate position |
-|[ ](#){: .abrep .tooltip .badge }|1 << 2 |FLAG_APPEAR {: .copyable } | play appear animation after Init |
-|[ ](#){: .abrep .tooltip .badge }|1 << 3 |FLAG_RENDER_FLOOR {: .copyable } | Meant for entities that have a sprite loaded that represent a floor texture. Entities with this flag will be removed after their first render. (Removing the entity is desirable because we would not want it to override other things that render to the floor, like bomb explosions. You can use `EntityFlag.NO_REMOVE_ON_TEX_RENDER` to disable this behavior. |
-|[ ](#){: .abrep .tooltip .badge }|1 << 4 |FLAG_NO_TARGET {: .copyable } | will not be a target of NPCs or familiars |
-|[ ](#){: .abrep .tooltip .badge }|1 << 5 |FLAG_FREEZE {: .copyable } | freezing effect |
-|[ ](#){: .abrep .tooltip .badge }|1 << 6 |FLAG_POISON {: .copyable } | poison effect |
-|[ ](#){: .abrep .tooltip .badge }|1 << 7 |FLAG_SLOW {: .copyable } | slowing (velocity) |
-|[ ](#){: .abrep .tooltip .badge }|1 << 8 |FLAG_CHARM {: .copyable } | Charmed |
-|[ ](#){: .abrep .tooltip .badge }|1 << 9 |FLAG_CONFUSION {: .copyable } | Confused |
-|[ ](#){: .abrep .tooltip .badge }|1 << 10 |FLAG_MIDAS_FREEZE {: .copyable } | Midas frozen |
-|[ ](#){: .abrep .tooltip .badge }|1 << 11 |FLAG_FEAR {: .copyable } | Fleeing in Fear (like Mom's Pad) |
-|[ ](#){: .abrep .tooltip .badge }|1 << 12 |FLAG_BURN {: .copyable } | Caused by Fire Mind tears, works like poison except with Red color effect. |
-|[ ](#){: .abrep .tooltip .badge }|1 << 13 |FLAG_RENDER_WALL {: .copyable } | Meant for entities that have a sprite loaded that represent a wall texture. Entities with this flag will be removed after their first render. (Removing the entity is desirable because we would not want it to override other things that render to the wall, like bomb explosions. You can use `EntityFlag.NO_REMOVE_ON_TEX_RENDER` to disable this behavior. |
-|[ ](#){: .abrep .tooltip .badge }|1 << 14 |FLAG_INTERPOLATION_UPDATE {: .copyable } | entity is updating at 60 fps, and this is an odd frame |
-|[ ](#){: .abrep .tooltip .badge }|1 << 15 |FLAG_APPLY_GRAVITY {: .copyable } | In sidescrolling room, this indicates that we're in a gravity zone. |
-|[ ](#){: .abrep .tooltip .badge }|1 << 16 |FLAG_NO_BLOOD_SPLASH {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|1 << 0|FLAG_NO_STATUS_EFFECTS {: .copyable } | Prevents status effects from applying to the entity (e.g. freeze, poison, slow, charm, confusion, fear, burn, etc.). |
+|[ ](#){: .abrep .tooltip .badge }|1 << 1 |FLAG_NO_INTERPOLATE {: .copyable } | Do not interpolate the position. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 2 |FLAG_APPEAR {: .copyable } | The "Appear" animation will be played after the entity is initialized. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 3 |FLAG_RENDER_FLOOR {: .copyable } | Meant for entities that have a sprite loaded that represent a floor texture. Entities with this flag will be removed after their first render. (Removing the entity is desirable because we would not want it to override other things that render to the floor, like bomb explosions.) You can use `EntityFlag.NO_REMOVE_ON_TEX_RENDER` to disable this behavior. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 4 |FLAG_NO_TARGET {: .copyable } | Will not be a target of NPCs or familiars. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 5 |FLAG_FREEZE {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 6 |FLAG_POISON {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 7 |FLAG_SLOW {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 8 |FLAG_CHARM {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 9 |FLAG_CONFUSION {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 10 |FLAG_MIDAS_FREEZE {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 11 |FLAG_FEAR {: .copyable } | Fleeing in fear (from e.g. Mom's Pad). |
+|[ ](#){: .abrep .tooltip .badge }|1 << 12 |FLAG_BURN {: .copyable } | Caused by Fire Mind tears. Works like poison except with a red color effect. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 13 |FLAG_RENDER_WALL {: .copyable } | Meant for entities that have a sprite loaded that represent a wall texture. Entities with this flag will be removed after their first render. (Removing the entity is desirable because we would not want it to override other things that render to the wall, like bomb explosions.) You can use `EntityFlag.NO_REMOVE_ON_TEX_RENDER` to disable this behavior. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 14 |FLAG_INTERPOLATION_UPDATE {: .copyable } | The entity is updating at 60 frames per second and this is an odd frame. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 15 |FLAG_APPLY_GRAVITY {: .copyable } | Indicates that the entity is in a side-scrolling room and is within a gravity zone. |
+|[ ](#){: .abrep .tooltip .badge }|1 << 16 |FLAG_NO_BLOOD_SPLASH {: .copyable } | |
 |[ ](#){: .abrep .tooltip .badge }|1 << 17 |FLAG_NO_REMOVE_ON_TEX_RENDER {: .copyable } | See `EntityFlag.FLAG_RENDER_FLOOR` and `EntityFlag.FLAG_RENDER_WALL`. |
-|[ ](#){: .abrep .tooltip .badge }|1 << 18 |FLAG_NO_DEATH_TRIGGER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 << 19 |FLAG_NO_SPIKE_DAMAGE {: .copyable } | EntityNPC: shouldn't take any damage from spikes |
+|[ ](#){: .abrep .tooltip .badge }|1 << 18 |FLAG_NO_DEATH_TRIGGER {: .copyable } | |
+|[ ](#){: .abrep .tooltip .badge }|1 << 19 |FLAG_NO_SPIKE_DAMAGE {: .copyable } | |
 |[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_LASER_POP {: .copyable } | EntityTear: Pop tear fired by a laser, should decelerate very quickly for the first few frames |
 |[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_ITEM_SHOULD_DUPLICATE {: .copyable } | EntityPickup: item pedestal affected by Damocles, will be duplicated at the end of the current frame |
 |[ ](#){: .abrep .tooltip .badge }|1 << 20 |FLAG_BOSSDEATH_TRIGGERED {: .copyable } | Some bosses (Lamb/Mother) can die but they'll still appear to be active in the room (IsActiveEnemy). You can check this flag in those cases. |
@@ -57,7 +57,7 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|1 << 43 |FLAG_REDUCE_GIBS {: .copyable } | Spawn less gibs on death |
 |[ ](#){: .rep .tooltip .badge }|1 << 44 |FLAG_TRANSITION_UPDATE {: .copyable } | Updates during room/stage transitions |
 |[ ](#){: .rep .tooltip .badge }|1 << 45 |FLAG_NO_PLAYER_CONTROL {: .copyable } | Cannot be controlled by players |
-|[ ](#){: .rep .tooltip .badge }|1 << 46 |FLAG_NO_QUERY {: .copyable } | Hide from query results |
+|[ ](#){: .rep .tooltip .badge }|1 << 46 |FLAG_NO_QUERY {: .copyable } | Hide from query results. This can hide entities from things like `Isaac.FindByType` and the `MC_ENTITY_TAKE_DMG` callback. Entities will still be visible to `Isaac.GetRoomEntities` and `_UPDATE` callbacks. |
 |[ ](#){: .rep .tooltip .badge }|1 << 47 |FLAG_KNOCKED_BACK {: .copyable } | Strong knockback: Forcefy moved in a specified direction for a short duration |
 |[ ](#){: .rep .tooltip .badge }|1 << 48 |FLAG_APPLY_IMPACT_DAMAGE {: .copyable } | Inflicts damage upon colliding with enemies, takes damage when colliding with walls |
 |[ ](#){: .rep .tooltip .badge }|1 << 49 |FLAG_ICE_FROZEN {: .copyable } | Frozen solid |
@@ -67,7 +67,7 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|1 << 53 |FLAG_KILLSWITCH {: .copyable } | Killed by a killswitch |
 |[ ](#){: .rep .tooltip .badge }|1 << 54 |FLAG_WEAKNESS {: .copyable } | Weakness effect from Reverse Strength |
 |[ ](#){: .rep .tooltip .badge }|1 << 55 |FLAG_EXTRA_GORE {: .copyable } | Spawns more gibs on death |
-|[ ](#){: .rep .tooltip .badge }|1 << 56 |FLAG_BRIMSTONE_MARKED {: .copyable } | Marked by Azazel B, takes extra damage from Brimstone attacks |
+|[ ](#){: .rep .tooltip .badge }|1 << 56 |FLAG_BRIMSTONE_MARKED {: .copyable } | Marked by Tainted Azazel; takes extra damage from Brimstone attacks. |
 |[ ](#){: .rep .tooltip .badge }|1 << 57 |FLAG_HELD {: .copyable } | Picked up by a player |
 |[ ](#){: .rep .tooltip .badge }|1 << 58 |FLAG_THROWN {: .copyable } | Thrown by a player |
 |[ ](#){: .rep .tooltip .badge }|1 << 59 |FLAG_FRIENDLY_BALL {: .copyable } | Used to detect enemies spawned by Friendly Ball |

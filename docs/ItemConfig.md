@@ -31,7 +31,7 @@ ___
 ___
 ### Get·Collectible () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [ItemConfig Item](ItemConfig_Item.md) GetCollectible ( int ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Item](ItemConfig_Item.md) GetCollectible ( [CollectibleType](enums/CollectibleType.md) ID ) {: .copyable aria-label='Functions' }
 
 Returns the Itemobject of a given CollectibleID. Returns nil of nothing was found.
 
@@ -67,7 +67,7 @@ Returns the List of all Collectibles.
 ___
 ### Get·Null·Item () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [ItemConfig Item](ItemConfig_Item.md) GetNullItem ( int ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Item](ItemConfig_Item.md) GetNullItem ( [NullItemID](enums/NullItemID.md) ID ) {: .copyable aria-label='Functions' }
 Returns `nil` if no itemconfig to the given ID can be found.
 
 ___
@@ -95,7 +95,7 @@ ___
 ___
 ### Get·Trinket () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### const [ItemConfig Item](ItemConfig_Item.md) GetTrinket ( int ID ) {: .copyable aria-label='Functions' }
+#### const [ItemConfig Item](ItemConfig_Item.md) GetTrinket ( [TrinketType](enums/TrinketType.md) ID ) {: .copyable aria-label='Functions' }
 Returns `nil` if no itemconfig to the given ID can be found.
 
 ___

@@ -164,7 +164,7 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|237 |ITEM_WISP {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|238 |BLOOD_BABY {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|239 |CUBE_BABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|240 |UMBILICAL_BABY {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|240 |UMBILICAL_BABY {: .copyable } | Gello |
 |[ ](#){: .rep .tooltip .badge }|241 |BLOOD_PUPPY {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|242 |VANISHING_TWIN {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|243 |DECAP_ATTACK {: .copyable } |  |

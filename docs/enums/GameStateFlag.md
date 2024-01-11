@@ -24,7 +24,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|16 |STATE_SUPERGREED_SPAWNED {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|17 |STATE_DONATION_SLOT_BROKEN {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|18 |STATE_DONATION_SLOT_JAMMED {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|19 |STATE_HEAVEN_PATH {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|19 |STATE_HEAVEN_PATH {: .copyable } | Flips to true when you take a heaven light door in the womb ii (taking you to the cathedral instead of sheol). Does not flip back to false if you replay the womb ii and take a trapdoor. |
 |[ ](#){: .abrep .tooltip .badge }|20 |STATE_REBIRTH_BOSS_SWITCHED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|21 |STATE_HAUNT_SELECTED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|22 |STATE_ADVERSARY_SELECTED {: .copyable } | obsolete with Rep |

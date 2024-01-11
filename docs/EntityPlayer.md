@@ -398,6 +398,7 @@ ___
 ### Animate·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AnimateCollectible ( [CollectibleType](enums/CollectibleType.md) Collectible, string AnimName = "Pickup", string SpriteAnimName = "PlayerPickupSparkle" ) {: .copyable aria-label='Functions' }
+`AnimName` refers to an animation name in `001.000_player.anm2` (e.g. `Pickup` or `UseItem`). `SpriteAnimName` refers to an animation name in `005.100_collectible.anm2` (e.g. `PlayerPickup` or `PlayerPickupSparkle`).
 
 ___
 ### Animate·Happy () {: aria-label='Functions' }
@@ -839,6 +840,10 @@ ___
 ### Get·Damage·Cooldown () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetDamageCooldown ( ) {: .copyable aria-label='Functions' }
+
+When the player is hit, they will flash a different color and receive invulnerability frames. This method returns the amount of invulnerability frames. Normally, the player will receive 60 invulnerability frames when dealt a half-heart of damage or 120 invulnerability frames when dealt a full heart of damage. Additionally, the Blind Rage trinket can affect how invulnerability frames are granted.
+
+Note that the frames returned by this function are render frames, not game frames.
 
 ___
 ### Get·Effective·Blood·Charge () {: aria-label='Functions' }
@@ -1597,7 +1602,7 @@ ___
 ___
 ### Throw·Friendly·Dip () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityFamiliar](EntityFamiliar.md) ThrowFriendlyDip ( int Subtype, [Vector](Vector.md) Position, [Vector](Vector.md) Target = Vector.Zero ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](EntityFamiliar.md) ThrowFriendlyDip ( int Subtype, [Vector](Vector.md) Position, [Vector](Vector.md) Target ) {: .copyable aria-label='Functions' }
 
 ???- note "Dip Subtypes"
     ```lua

@@ -55,10 +55,10 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 |fly|Indicates enemies which should be neutralized by Skatole and charmed by Beelzebub|
 |spider|Indicates enemies which should be neutralized by Bursting Sack|
 |ghost|Indicates enemies which Vade Retro can kill at <50% HP as a special interaction|
-|noreroll| Immunity from D10 rerolls|
-|brimstone_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro)|
-|explosive_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro) |
-|homing_soul| (*Usage currently unknown*. might be scrapped feature for Hungry Soul or Vade Retro) |
+|noreroll| Immunity from D10 rerolls and the Ace cards|
+|brimstone_soul| Friendly Ball wisps created by this enemy will fire Brimstone lasers|
+|explosive_soul| Friendly Ball wisps created by this enemy will fire explosive tears|
+|homing_soul| Friendly Ball wisps created by this enemy will fire homing tears|
 
 
 ## Floor specific sprites
