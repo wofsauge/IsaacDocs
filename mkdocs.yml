@@ -4,16 +4,16 @@ nav:
     - Docs:
         - Home: index.md
         - "Last visited":
-            - "1": PLACEHOLDER.md
-            - "2": PLACEHOLDER.md
-            - "3": PLACEHOLDER.md
-            - "4": PLACEHOLDER.md
-            - "5": PLACEHOLDER.md
-            - "6": PLACEHOLDER.md
-            - "7": PLACEHOLDER.md
-            - "8": PLACEHOLDER.md
-            - "9": PLACEHOLDER.md
-            - "10": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
+            - "": PLACEHOLDER.md
         - "Frequently used":
             - "Isaac.": Isaac.md
             - "Entity": Entity.md
@@ -146,8 +146,8 @@ nav:
         - "Mod Reference": ModReference.md
         - "PathFinder": PathFinder.md
         - "PlayerTypes":
-            - "PlayerTypes::ActiveItemDesc": PlayerTypes_ActiveItemDesc.md
-            - "PlayerTypes::PosVel": PlayerTypes_PosVel.md
+            - "PlayerTypesActiveItemDesc": PlayerTypes_ActiveItemDesc.md
+            - "PlayerTypesPosVel": PlayerTypes_PosVel.md
         - "ProjectileParams": ProjectileParams.md
         - "QueueItemData": QueueItemData.md
         - "Room": Room.md
@@ -210,24 +210,49 @@ theme:
     name: material
     custom_dir: overrides
     features:
+        - search.suggest
+        - search.highlight
+        - search.share
         - navigation.tabs
         - navigation.instant
+        - navigation.top
     icon:
         repo: fontawesome/brands/github
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+            icon: material/weather-night
+            name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: amber
+          accent: amber
+          toggle:
+            icon: material/weather-sunny
+            name: Switch to light mode
 markdown_extensions:
   - toc:
       permalink: ⚓︎
       toc_depth: 3
   - pymdownx.highlight:
       linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
+      url_download: true
   - admonition
   - pymdownx.details
-  - pymdownx.superfences
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.tabbed:
+      alternate_style: true
   - attr_list
 plugins:
   - search:
@@ -240,17 +265,23 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/wofsauge/IsaacDocs
       name: "BoI: Lua API Docs on GitHub"
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/isaac
+      name: "Official Discord Server"
   version:
     provider: mike
     default: rep
 extra_css: 
     - css/custom.css
-extra_javascript: 
-    - https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js
+extra_javascript:
+    - https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js
+    - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+    - js/tablesort.number.min.js
     - js/customJS.js
     - js/jquery.mark.min.js
-    - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
-copyright: Copyright &copy; 2021 Wofsauge
+copyright: "Copyright &copy; 2021 - 2024 Wofsauge (Discord: Wofsauge#6503)"
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
-edit_uri: edit/master/docs/
+edit_uri: edit/ab_plus/docs/
+site_url: ""
+use_directory_urls: False

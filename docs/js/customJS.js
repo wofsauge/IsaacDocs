@@ -1,29 +1,43 @@
 $(document).ready(function() {
-    $(".md-search").append("<img onclick=\"toggleDarkMode()\" src=\"https://raw.githubusercontent.com/wofsauge/IsaacDocs/master/docs/images/darkMode.png\" title=\"Toggle Darkmode\" class=\"darkmodeButton\" width=\"25\" height=\"25\" alt=\"darkmode\" />");
-    $("div.md-search-result").prepend("<span class=\"clearSearchMarks\" onclick=\"unmarkStuff()\">Remove current highlights X</span>");
+    var check = "checked";
+    if (typeof(Storage) !== "undefined" && localStorage.getItem("highlightResults") == 1) {
+        check = ""
+    }
+    $("div.md-search-result").prepend('<div class="clearSearchMarks"><input type="checkbox" onclick="unmarkStuff()" id="searchMarks" name="scales" ' + check + '><label for="searchMarks">Highlight search results</label></div>');
+});
 
+$(document).ready(function() {
     if (window.location.hash.replace("#", "") != "") {
         jumpToElement($(window.location.hash));
     }
 });
 
 function unmarkStuff() {
-    $content.unmark();
-}
-
-function toggleDarkMode() {
     if (typeof(Storage) !== "undefined") {
-        var darkModeState = localStorage.getItem("darkMode");
-        if (darkModeState == null || darkModeState == 0) {
-            darkModeState = 1;
-            $("body").addClass("darkMode");
+        var highlightResultsState = localStorage.getItem("highlightResults");
+        if (highlightResultsState == null || highlightResultsState == 0) {
+            highlightResultsState = 1;
+            $content.unmark();
+            $("body").addClass("hideMarks");
+            $(".clearSearchMarks").prop('checked', false);
         } else {
-            darkModeState = 0;
-            $("body").removeClass("darkMode");
+            highlightResultsState = 0;
+            $("body").removeClass("hideMarks");
+            $(".clearSearchMarks").prop('checked', true);
         }
-        localStorage.setItem("darkMode", darkModeState);
-    } else {
-        $("body").toggleClass("darkMode");
+
+        $("li.md-search-result__item").find('a').each(function(e) {
+            var jumpTargetValue = $(this).attr('href').split("#");
+            var jumpTarget = "";
+            if (jumpTargetValue.length > 1) {
+                jumpTarget = "#" + jumpTargetValue[1];
+            }
+            var searchText = "?h=" + $("input[aria-label=\"Search\"]").val();
+            var link = $(this).attr('href').split("?")[0].split("#")[0];
+            $(this).attr('href', link + searchText + jumpTarget);
+        });
+
+        localStorage.setItem("highlightResults", highlightResultsState);
     }
 }
 
@@ -33,8 +47,8 @@ function reevaluateLastVisit() {
             var lastVisitEntry = getRecentList()[index];
             if (lastVisitEntry !== undefined) {
                 $(this).attr("href", lastVisitEntry);
-                lastVisitEntry = lastVisitEntry.replace("IsaacDocs/", "").replace("docs/", "");
-                var linkName = lastVisitEntry.substring(1, lastVisitEntry.length - 1);
+                lastVisitEntry = lastVisitEntry.replace("IsaacDocs/", "").replace("rep/", "").replace("abp/", "").replace("docs/", "");
+                var linkName = lastVisitEntry.substring(1, lastVisitEntry.length).replace(".html", "");
                 $(this).text(linkName);
             } else {
                 $(this).parent().hide();
@@ -57,26 +71,32 @@ function getRecentList() {
 }
 
 function buildContentMap() {
-    if (!$("h1").first().text().includes("Class")) {
+    if (!$("h1").first().text().includes("Class ")) {
         //only build map on class-related pages
         return;
     }
     var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Return value</th><th>Function</th></tr></thead><tbody></tbody></table><hr/></div>");
-    if ($(".inheritance").length == 0) {
-        mapObj.insertAfter("h1");
+    if ($("#class-diagram").length == 0) {
+        mapObj.insertAfter($(".md-content__inner").find("h1").first());
     } else {
-        mapObj.insertAfter($("p").first());
+        // insert content map after mermaid diagram
+        mapObj.insertAfter($(".mermaidDiagram").first());
     }
 
     var tableContent = "";
     $("h4").each(function(index) {
-        //remove anchor links from variable description headers... we dont need them and they suck
-        $(this).find("a.headerlink").remove();
-
-        var funcParts = $(this).html().split(" (");
+        //remove anchor links and mark objects from variable description headers... we dont need them and they suck
+        var cloneH4 = $(this).clone();
+        cloneH4.find("a.headerlink").remove();
+        cloneH4.find("mark").contents().unwrap();
+        var funcParts = cloneH4.html().split(" (");
         var funcFront = funcParts[0].split(" ");
         var funcName = funcFront.pop();
-        var funcLink = $("h3:not(.inheritance)").eq(index).find("a").last().attr("href");
+        var parentH3Node = $(this).prev();
+        while (parentH3Node.prop("tagName") != "H3") {
+            parentH3Node = parentH3Node.prev();
+        }
+        var funcLink = parentH3Node.find("a").last().attr("href");
         funcName = "<a href=\"" + funcLink + "\">" + funcName + "</a>";
         var ariaLabel = $(this).attr("aria-label");
         if (funcParts.length > 1) {
@@ -94,27 +114,91 @@ function modifyCallbackPageLayout() {
         return;
     }
 
-    var curH3;
-    var mcTableData;
     var tableContent = "";
-    $("article.md-content__inner").children().each(function(index) {
-        if ($(this).get(0).tagName == "H3") {
-            if (mcTableData != null && curH3 != null) {
-                var headerLink = mcTableData.find("td:eq(2)").text().toLowerCase();
-                tableContent = tableContent + "<tr><td class=\"copyable\"><a href=\"#" + headerLink + "\">" + mcTableData.find("td:eq(2)").text() + "</a></td>"
-                tableContent = tableContent + "<td>" + mcTableData.find("td:eq(3)").html() + "</td><td>" + mcTableData.find("td:eq(4)").html() + "</td></tr>";
-            }
-            curH3 = $(this);
-        } else if ($(this).get(0).tagName == "DIV") {
-            if (curH3 != null) {
-                mcTableData = $(this);
-            }
-        }
+    $("article.md-content__inner .md-typeset__table").each(function(index) {
+        var headerLink = $(this).find("td:eq(2)").text().toLowerCase();
+        tableContent = tableContent + "<tr>" +
+            "<td>" + $(this).find("td:eq(1)").html() + "</td>" +
+            "<td class=\"copyable\" style=\"text-align: right;\"><a href=\"#" + headerLink + "\">" + $(this).find("td:eq(2)").text() + "</a></td>" +
+            "<td>" + $(this).find("td:eq(3)").html() + "</td>" +
+            "<td>" + $(this).find("td:eq(4)").html() + "</td>" +
+            "<td>" + $(this).find("td:eq(5)").html() + "</td></tr>";
     });
-    var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\"><thead><tr><th>Name</th><th>Function Args</th><th>Optional Args</th></tr></thead><tbody></tbody></table><hr/></div>");
-    mapObj.insertAfter($("p").first());
+    var mapObj = $("<div class=\"contentMap\"><h2 class=\"overviewHeader\">Content Overview</h2><table class=\"contentTable\" id=\"contentOverviewTable\">" +
+        "<thead><tr><th>ID</th><th>Name</th><th>Function Args</th><th>Optional Args</th><th>Return Type</th></tr></thead><tbody></tbody></table><hr/></div>");
+    mapObj.insertAfter($(".md-content__inner").find("p").first());
 
     $('#contentOverviewTable > tbody').append(tableContent);
+}
+
+function addBitsetCalculator() {
+    $(".bitsetCalculator").each(function(header) {
+        $("<div id=\"bitsetCalculator\"><label for=\"bitsetCalcInput\" style=\"float:left\">Number:</label><input type=\"number\" min=\"0\" class=\"md-search__input\" id=\"bitsetCalcInput\" name=\"bitsetCalcInput\"><span id=\"bitsetCalcSplits\"></span><div id=\"bitsetCalcResult\"></div></div>").insertAfter($(this));
+        $("#bitsetCalcInput").on('input', function() {
+            $("#bitsetCalcSplits").empty();
+            $("#bitsetCalcResult").empty();
+            $(".md-typeset__table").find("tr").removeClass("tableHighlight");
+            if ($("#bitsetCalcInput").val() == "") {
+                return;
+            }
+
+            if (parseInt($("#bitsetCalcInput").val()) == "0") {
+                var isMatched = false;
+                $(".md-typeset__table").find("tr").each(function(index) {
+                    var val = $(this).find("td:eq(1)");
+                    if (val.length > 0) {
+                        val = val.text();
+                        val = val.replace("BitSet128(0,0)", "0");
+                        if ("0" === val) {
+                            isMatched = true;
+                            $(this).addClass("tableHighlight");
+                        }
+                    }
+                });
+                var classVar = isMatched ? "class=\"highVal\"" : "";
+                $("#bitsetCalcSplits").append($("<span " + classVar + ">" + $("#bitsetCalcInput").val() + "</span>"));
+                $("#bitsetCalcResult").append($("<span>Found " + (isMatched ? 1 : 0) + " matching enums.</span>"));
+
+            } else {
+                var binary = BigInt($("#bitsetCalcInput").val()).toString(2);
+                var len = binary.length - 1;
+                var completeCounter = 0;
+                for (let i = len; i >= 0; i--) {
+                    var bit = parseInt(binary.substring(len - i, len - i + 1));
+                    var bitToFull = BigInt(bit) << BigInt(i);
+                    var isMatched = false;
+                    $(".md-typeset__table").find("tr").each(function(index) {
+                        var val = $(this).find("td:eq(1)");
+                        if (val.length > 0 && bit == 1) {
+                            val = val.text();
+                            val = val.replace("BitSet128(0,0)", "0");
+                            if (val.indexOf("TEARFLAG") >= 0) {
+                                val = val.replace("TEARFLAG(", "").replace(")", "");
+                                val = "1<<" + val;
+                            }
+                            if (val.indexOf("<<") >= 0) {
+                                val = BigInt(1) << BigInt(parseInt(val.split("<<")[1]));
+                            }
+                            if (bitToFull == val) {
+                                $(this).addClass("tableHighlight");
+                                isMatched = true;
+                                completeCounter = completeCounter + 1;
+                                return false;
+                            }
+                        }
+                    });
+                    var classVar = bit == 1 && isMatched ? "class=\"highVal\"" : "";
+                    $("#bitsetCalcSplits").append($("<span " + classVar + ">" + bit + "</span>"));
+                    if (i % 4 == 0 && i != 0) {
+                        $("#bitsetCalcSplits").append($("<span>|</span>"));
+                    }
+                }
+                $("#bitsetCalcResult").append($("<span>Found " + completeCounter + " matching enums.</span>"));
+            }
+
+        });
+        $("<span>Highlights all bit-flag enums that construct the given integer value.</span><br>").insertAfter($(this));
+    });
 }
 
 document$.subscribe(function() {
@@ -123,7 +207,7 @@ document$.subscribe(function() {
         var recentList = getRecentList();
 
         var pathname = window.location.pathname;
-        if (pathname !== "/") {
+        if (pathname !== "/" && !pathname.includes("index.html")) {
             const index = recentList.indexOf(pathname);
             if (index > -1) {
                 recentList.splice(index, 1);
@@ -141,7 +225,12 @@ document$.subscribe(function() {
     });
 
     modifyCallbackPageLayout();
+    addBitsetCalculator();
     buildContentMap();
+
+    // reduce audio volume to 25%
+    $("audio").prop("volume", 0.25);
+
     $(".overviewHeader").click(function() {
         $(this).toggleClass("collapsed");
         $(".contentTable").toggle();
@@ -161,43 +250,55 @@ document$.subscribe(function() {
         jumpToElement(href);
     });
 
-    // Add "jump to top" button into sidebar
-    var firstLink = $("a.headerlink").first().attr('href');
-    var jumpToEntry = $("<li class=\"md-nav__item\"><a href=\"" + firstLink + "\" class=\"md-nav__link\"> ~~~ Jump to Top ~~~</a></li>");
-    $(".md-nav__list[data-md-component=\"toc\"]").prepend(jumpToEntry);
-
     // Make tables sortable
     document.querySelectorAll("article table").forEach(function(table) {
         new Tablesort(table)
     })
 
+    // Handle Version-selector list
+    waitForElementToDisplay(".md-version__list", function() {
+        var sourceFolder = "IsaacDocs"
+        if (window.location.host.includes("moddingofisaac.com")) {
+            sourceFolder = "docs"
+        }
+        $(".md-version__list").append('<li class="md-version__item"><a href="/' + sourceFolder + '/oldDocs/index.html" class="md-version__link">Original AB+ Docs</a></li>')
+    }, 500, 9000);
+
     // handle Copy Buttons
-    $(".copyable").append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
+    $(".copyable").each(function(e) {
+        if ($(this).prop("tagName") == "TD") {
+            $(this).attr('id', $(this).text())
+            $(this).append('<a class="headerlink" href="#' + $(this).text() + '" title="Permanent link">⚓︎</a>');
+        }
+        $(this).append('<button class="md-clipboard copyButton md-icon"><span>Copy to clipboard</span></button>');
+    })
+
 
     $(".copyButton").click(function() {
         var parent = $(this).parent();
         $(this).find("span").first().text("");
 
         var pathname = window.location.pathname;
-        pathname = pathname.substring(1, pathname.length - 1);
+        pathname = pathname.replace(".html", "").substring(1, pathname.length - 1);
         var splitted = pathname.split("/");
         pathname = splitted[splitted.length - 1];
         var funcNameLine = "";
         parent.each(function(index) {
             funcNameLine = $(this).text();
         });
-        var functionString = funcNameLine;
+        var functionString = funcNameLine.replace("⚓︎", "");
         if (funcNameLine.includes("(")) {
-            functionString = funcNameLine.replace(" ( ", "(").replace(" )", "").replace(")", "");
+            functionString = funcNameLine.replace(" ( ", "(");
             var funcPart1 = functionString.split("(")[0].split(" ");
             var p1 = funcPart1[funcPart1.length - 1];
             var funcPart2 = "";
-            $.each(functionString.split("(")[1].split(", "), function(index, value) {
+            var funcVars = functionString.replace(functionString.split("(")[0], "")
+            $.each(funcVars.split(", "), function(index, value) {
                 if (index > 0) {
                     funcPart2 += ", ";
                 }
                 if (value.split(" ").length > 1) {
-                    funcPart2 += value.split(" ")[1];
+                    funcPart2 += value.split(" ")[1].replace(" )", "").replace(")", "");
                 }
             });
             functionString = p1 + "(" + funcPart2 + ")";
@@ -206,13 +307,13 @@ document$.subscribe(function() {
         }
 
         var connector = ".";
-        if (funcNameLine.includes("(") && !pathname.includes("Isaac")) {
+        if (funcNameLine.includes("(") && !pathname.includes("Isaac") && !pathname.includes("Input")) {
             connector = ":";
         }
         if (parent.attr("aria-label") == "Constructors") {
             connector = "";
         }
-        if (!window.location.pathname.includes("enums") && !pathname.includes("Isaac")) {
+        if (!window.location.pathname.includes("enums") && !pathname.includes("Isaac") && !pathname.includes("Input")) {
             pathname = "";
         }
 
@@ -225,7 +326,7 @@ document$.subscribe(function() {
             document.execCommand("copy");
             $(this).remove();
         });
-        $(this).find("span").first().text("Copied: \n" + copyText);
+        $(this).find("span").first().html("Copied: <br><code>" + copyText+"</code>");
     });
 
     $(".copyButton").mouseleave(function() {
@@ -236,19 +337,19 @@ document$.subscribe(function() {
     // We use an Element observer, to change the search results AFTER they where placed
     var target = document.querySelector('.md-search-result__list')
     var observer = new MutationObserver(function(mutations) {
-        var searchText = $("input[aria-label=\"Search\"]").val();
-        $("li.md-search-result__item").find('a').each(function(e) {
-            var jumpTargetValue = $(this).attr('href').split("#");
-            var jumpTarget = "";
-            if (jumpTargetValue.length > 1) {
-                jumpTarget = "#" + jumpTargetValue[1];
-            }
-            var link = $(this).attr('href').split("?")[0].split("#")[0];
-            $(this).attr('href', link + "?q=" + searchText + jumpTarget);
-
-            hidePlaceholderChar($(this));
-            colorizeSearchResults($(this));
+        $("li.md-search-result__item").each(function(e) {
+            var firstATag = $(this).find('a').first();
+            colorizeSearchResults(firstATag);
         });
+        $("li.md-search-result__item").find('a').each(function(e) {
+            hidePlaceholderChar($(this));
+        });
+        $("article.md-search-result__article").each(function(e) {
+            if ($(this).attr("data-md-score") < 0) {
+                $(this).parent().parent().hide();
+            }
+        })
+
     });
     var config = { attributes: true, childList: true, characterData: true };
     observer.observe(target, config);
@@ -258,9 +359,25 @@ document$.subscribe(function() {
         hidePlaceholderChar($(this));
     })
 
-    mark();
-});
+    //Add Edit button to each header
+    var editButton = $(".md-content__button.md-icon")
+    $("h2>.headerlink,h3>.headerlink").each(function(e) {
+        var editClone = editButton.clone();
+        editClone.addClass("inlineEditButton");
+        editClone.addClass("headerlink");
+        editClone.appendTo($(this).parent());
+    })
 
+    mark();
+
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.getItem("highlightResults") == 1) {
+            $(".clearSearchMarks").prop('checked', false);
+            $content.unmark();
+            $("body").addClass("hideMarks");
+        }
+    }
+});
 
 // mark.js functionality
 var $results;
@@ -281,7 +398,7 @@ var mark = function() {
             if (currentParam.length !== 2) {
                 continue;
             }
-            if (currentParam[0] == "q") {
+            if (currentParam[0] == "h") {
                 keyword = decodeURIComponent(currentParam[1].replace(/\+/g, "%20"));
             }
         }
@@ -317,6 +434,7 @@ function jumpToFirst() {
     }
 }
 
+
 function jumpToElement(element) {
     $('html, body').animate({
         scrollTop: $(element).offset().top - 75
@@ -335,7 +453,88 @@ function colorizeSearchResults(element) {
         element.addClass("searchTutorial");
     } else if (text.includes("Enum ")) {
         element.addClass("searchEnum");
+    } else if (text.includes(".xml")) {
+        element.addClass("searchXML");
     } else if (text.includes("File ")) {
         element.addClass("searchFile");
+    } else if (text.includes("FAQ")) {
+        element.addClass("searchFAQ");
     }
 }
+
+
+function waitForElementToDisplay(selector, callback, checkFrequencyInMs, timeoutInMs) {
+    var startTimeInMs = Date.now();
+    (function loopSearch() {
+        if (document.querySelector(selector) != null) {
+            callback();
+            return;
+        } else {
+            setTimeout(function() {
+                if (timeoutInMs && Date.now() - startTimeInMs > timeoutInMs)
+                    return;
+                loopSearch();
+            }, checkFrequencyInMs);
+        }
+    })();
+}
+
+
+
+
+////////////////////////////////////////////////
+  var questionHistory = [];
+  var currentQuestion;
+
+  function createAnswers() {
+    $("#faq_buttons").empty();
+    if ("answers" in currentQuestion) {
+      for (const answer of currentQuestion.answers) {
+        var answerButton = $('<button class="faqButton md-button md-button--primary" onclick="setQuestion(\'' + answer.link + "')\">" + answer.text + "</button>");
+        $("#faq_buttons").append(answerButton);
+      }
+    }
+  }
+  function previousQuestion() {
+    var prevQuestion = "START";
+    if (questionHistory.length > 1) {
+      prevQuestion = questionHistory[questionHistory.length-2];
+    }
+    setQuestion(prevQuestion, true);
+    questionHistory.pop();
+  }
+
+  function setQuestion(questionID, isUndo) {
+    if (typeof INTERACTIVE_questions === "undefined") {
+      return;
+    }
+    $("#interactiveFAQ").fadeOut(250, function () {
+      // Add to history
+      if (!isUndo) {
+        questionHistory.push(questionID.toString());
+      }
+      currentQuestion = INTERACTIVE_questions[questionID.toString()];
+
+      $("#faq_text").html(currentQuestion.text);
+
+      if ("image" in currentQuestion) {
+        $("#faq_image").attr("src", currentQuestion.image);
+      } else {
+        $("#faq_image").attr("src", "");
+      }
+
+      createAnswers();
+
+      $("#interactiveFAQ").fadeIn(250);
+    });
+  }
+
+  document$.subscribe(function () {
+    $(".interactiveFAQ").each(function (header) {
+      $('<div id="interactiveFAQ"><img id="faq_image" width="400" align="right" alt="" src=""><h4>Question</h4><div id="faq_text"></div><div id="faq_buttons"></div></div>').insertAfter($(this));
+      setQuestion("START");
+    });
+  });
+
+
+

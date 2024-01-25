@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% block announce %}
 <p>
     <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"> <b> WARNING </b> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:">
-    <br> Due to the new DLC, some informations on this website can potentially be out-of-date.
+    <br> Due to the new DLC "Repentance", some informations on this website can potentially be out-of-date.
     <br> If you notice errors, please use the "Pencil"
     <span href="#" class="md-content__button md-icon" style="float: none;margin-left: 0; color:white">
 <svg style="width:1.1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg></span>    icon in the top right to edit the page.</p>
@@ -19,7 +19,9 @@
     var __search = {
         transform: function(query) {
             query = query.replace("_", " ")
-                /* Original Search query filter code*/
+            query = query + "^5 " + query // increase priority of query words in order to prefer matches with page titles. this makes the sorting better
+
+            /* Original Search query filter code*/
             return query
                 .split(/"([^"]+)"/g) /* => 1 */
                 .map((terms, index) => index & 1 ?
@@ -32,4 +34,22 @@
         }
     }
 </script>
+{% endblock %} {% block footer %} {% import "partials/language.html" as lang with context %}
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="md-footer-copyright">
+                {% if config.copyright %}
+                <div class="md-footer-copyright__highlight">
+                    {{ config.copyright }}
+                </div>
+                {% endif %} Made with
+                <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a> {{ extracopyright }}
+            </div>
+            {% include "partials/social.html" %}
+        </div>
+    </div>
+</footer>
 {% endblock %}
