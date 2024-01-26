@@ -614,6 +614,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void DonateLuck ( int Luck ) {: .copyable aria-label='Functions' }
 
+Unlike the Luck property which should be set in MC_EVALUATE_CACHE, this method can be used anywhere and will automatically remember any additional luck added.
 ___
 ### Do·Zit·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
