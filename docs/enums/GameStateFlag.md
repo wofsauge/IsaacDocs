@@ -5,7 +5,7 @@ tags:
 # Enum "GameStateFlag"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|0 |STATE_FAMINE_SPAWNED {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|0 |STATE_FAMINE_SPAWNED {: .copyable } | Repurposed as: angel room spawned |
 |[ ](#){: .abrep .tooltip .badge }|1 |STATE_PESTILENCE_SPAWNED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|2 |STATE_WAR_SPAWNED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|3 |STATE_DEATH_SPAWNED {: .copyable } | obsolete with Rep |
