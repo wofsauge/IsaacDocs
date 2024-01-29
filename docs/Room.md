@@ -157,6 +157,103 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### float GetDevilRoomChance ( ) {: .copyable aria-label='Functions' }
 
+This gives the total devil deal percentage for the floor. It doesn't split it into devil and angel percentages as seen in the found hud. It's effectively the Duality percentage. This will return a value for illegal floors (e.g. Basement I) so be careful. The value can be greater than 100%.
+
+???- example "Example Code"
+    ```lua
+    -- this code shows how to convert room:GetDevilRoomChance into the separate devil and angel percentages shown in the found hud
+    -- this code is current for Repentance as of Jan 2024, other versions might have different values
+    local game = Game()
+    
+    local function anyPlayerHasCollectible(collectible)
+      for i = 0, game:GetNumPlayers() - 1 do
+        local player = game:GetPlayer(i)
+        
+        if player:HasCollectible(collectible, false) then
+          return true
+        end
+      end
+      
+      return false
+    end
+    
+    local function anyPlayerHasTrinket(trinket)
+      for i = 0, game:GetNumPlayers() - 1 do
+        local player = game:GetPlayer(i)
+        
+        if player:HasTrinket(trinket, false) then
+          return true
+        end
+      end
+      
+      return false
+    end
+    
+    local function getDevilAngelRoomChance()
+      local level = game:GetLevel()
+      local room = level:GetCurrentRoom()
+      local totalChance = math.min(room:GetDevilRoomChance(), 1.0)
+      
+      local angelRoomSpawned = game:GetStateFlag(GameStateFlag.STATE_FAMINE_SPAWNED) -- repurposed
+      local devilRoomSpawned = game:GetStateFlag(GameStateFlag.STATE_DEVILROOM_SPAWNED)
+      local devilRoomVisited = game:GetStateFlag(GameStateFlag.STATE_DEVILROOM_VISITED)
+      
+      local devilRoomChance = 1.0
+      if anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_EUCHARIST) then
+        devilRoomChance = 0.0
+      elseif devilRoomSpawned and devilRoomVisited and game:GetDevilRoomDeals() > 0 then -- devil deals locked in
+        if anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_BOOK_OF_VIRTUES) or
+           anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_ACT_OF_CONTRITION) or
+           level:GetAngelRoomChance() > 0.0 -- confessional, sac room
+        then
+          devilRoomChance = 0.5
+        end
+      elseif devilRoomSpawned or anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_BOOK_OF_VIRTUES) or level:GetAngelRoomChance() > 0.0 then
+        if not (devilRoomVisited or angelRoomSpawned) then
+          devilRoomChance = 0.0
+        else
+          devilRoomChance = 0.5
+        end
+      end
+      
+      -- https://bindingofisaacrebirth.fandom.com/wiki/Angel_Room#Angel_Room_Generation_Chance
+      if devilRoomChance == 0.5 then
+        if anyPlayerHasTrinket(TrinketType.TRINKET_ROSARY_BEAD) then
+          devilRoomChance = devilRoomChance * (1.0 - 0.5)
+        end
+        if game:GetDonationModAngel() >= 10 then -- donate 10 coins
+          devilRoomChance = devilRoomChance * (1.0 - 0.5)
+        end
+        if anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_1) then
+          devilRoomChance = devilRoomChance * (1.0 - 0.25)
+        end
+        if anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_KEY_PIECE_2) then
+          devilRoomChance = devilRoomChance * (1.0 - 0.25)
+        end
+        if level:GetStateFlag(LevelStateFlag.STATE_EVIL_BUM_KILLED) then
+          devilRoomChance = devilRoomChance * (1.0 - 0.25)
+        end
+        if level:GetStateFlag(LevelStateFlag.STATE_BUM_LEFT) and not level:GetStateFlag(LevelStateFlag.STATE_EVIL_BUM_LEFT) then
+          devilRoomChance = devilRoomChance * (1.0 - 0.1)
+        end
+        if level:GetStateFlag(LevelStateFlag.STATE_EVIL_BUM_LEFT) and not level:GetStateFlag(LevelStateFlag.STATE_BUM_LEFT) then
+          devilRoomChance = devilRoomChance * (1.0 + 0.1)
+        end
+        if level:GetAngelRoomChance() > 0.0 or
+           (level:GetAngelRoomChance() < 0.0 and (anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_BOOK_OF_VIRTUES) or anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_ACT_OF_CONTRITION)))
+        then
+          devilRoomChance = devilRoomChance * (1.0 - level:GetAngelRoomChance())
+        end
+        if anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_BOOK_OF_VIRTUES) then
+          devilRoomChance = devilRoomChance * (1.0 - 0.25)
+        end
+        devilRoomChance = math.max(0.0, math.min(devilRoomChance, 1.0))
+      end
+      
+      local angelRoomChance = 1.0 - devilRoomChance
+      return totalChance * devilRoomChance, totalChance * angelRoomChance
+    end
+    ```
 ___
 ### Get·Door () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
