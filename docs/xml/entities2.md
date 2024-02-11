@@ -32,7 +32,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 | collisionInterval | int | Number of game ticks till the next collision should be evaluated. Default = 1 |
 | numGridCollisionPoints | int | Number of points along the edge of the collision circle, which are used to detect collisions with grid entities. |
 | friction | float | "Slippyness" of the entity. Default = 1. Lower values make them slide more, similar as they would standing on ice. Higher values make them slide less. A value of 0 makes them unable to move. |
-| shadowSize | int ||
+| shadowSize | float ||
 | stageHP | int ||
 | tags | string | possible values: ['nodelirium', 'spider', 'explosive_soul', 'cansacrifice', 'ghost', 'brimstone_soul', 'homing_soul', 'fly', 'noreroll']<br>See Chapter below for in depth explanations of the tags. |
 | gridCollision | string | possible values: ['nopits', 'ground', 'none', 'walls', 'floor'] |
