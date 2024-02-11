@@ -124,6 +124,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void DonateAngel ( int Donate ) {: .copyable aria-label='Functions' }
 
+Donating 10 coins to a donation machine will increase the odds of an Angel Room if you haven't taken a devil deal. This simulates that behavior without actually adding coins to the donation machine.
 ___
 ### Donate·Greed () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

@@ -5,7 +5,7 @@ tags:
 ---
 # Class "RNG"
 
-The RNG class is provdes a mechanism to produce seeded random numbers. This is used heavily by both the game and mods.
+The RNG class provides a mechanism to produce seeded random numbers. This is used heavily by both the game and mods.
 
 ## Constructors
 ### RNG () {: aria-label='Constructors' }

@@ -5,12 +5,12 @@ tags:
 # Enum "GameStateFlag"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|0 |STATE_FAMINE_SPAWNED {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|0 |STATE_FAMINE_SPAWNED {: .copyable } | Repurposed as "angel room spawned" in Rep. This doesn't seem to do anything with Famine anymore. |
 |[ ](#){: .abrep .tooltip .badge }|1 |STATE_PESTILENCE_SPAWNED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|2 |STATE_WAR_SPAWNED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|3 |STATE_DEATH_SPAWNED {: .copyable } | obsolete with Rep |
 |[ ](#){: .abrep .tooltip .badge }|4 |STATE_BOSSPOOL_SWITCHED {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|5 |STATE_DEVILROOM_SPAWNED {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|5 |STATE_DEVILROOM_SPAWNED {: .copyable } | By default, "devil room spawned" is false which gives 100% devil chance on stage 2. When the devil room spawns, "devil room spawned" is set to true. If you visit the devil room then "devil room visited" is set to true and your devil/angel chance will be 50/50 (assuming you don't pick up a devil item). If you don't visit the devil room then "devil room visited" stays false and the next time you'll get a guaranteed angel room. Once that angel room spawns, "angel room spawned" is set to true so angel rooms don't continue to be guaranteed. |
 |[ ](#){: .abrep .tooltip .badge }|6 |STATE_DEVILROOM_VISITED {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|7 |STATE_BOOK_REVELATIONS_USED {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|8 |STATE_BOOK_PICKED_UP {: .copyable } |  |

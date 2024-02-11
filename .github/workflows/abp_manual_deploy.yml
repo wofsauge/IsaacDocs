@@ -1,0 +1,38 @@
+name: 'AB+ Docs manual deploy'
+
+on:
+    workflow_dispatch
+
+jobs:
+    deployment:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout the repository
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+            - name: Install Python
+              uses: actions/setup-python@v2
+              with:
+                  python-version: 3.x
+            - uses: oleksiyrudenko/gha-git-credentials@v2-latest
+              with:
+                  token: '${{ secrets.GITHUB_TOKEN }}'
+
+            - name: Install PIP packages
+              run: |
+                   pip install mkdocs
+                   pip install mkdocs-material==8.5.11
+                   pip install mike
+                   pip install mkdocs-git-revision-date-plugin
+                   pip install mkdocs-git-revision-date-localized-plugin
+                   
+            - name: Checkout AB+ Repo
+              uses: actions/checkout@v2
+              with:
+                  fetch-depth: 0
+                  ref: ab_plus
+            - name: Deploy AB+ Docs
+              run: |
+                   mike delete abp
+                   mike deploy abp Afterbirth+ -t Afterbirth+ -p

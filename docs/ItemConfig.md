@@ -7,7 +7,7 @@ tags:
 ???+ info
     You can get this class by using the following function:
 
-    * [Isaac:GetItemConfig()](Isaac.md#getitemconfig)
+    * [Isaac.GetItemConfig()](Isaac.md#getitemconfig)
 
     ???+ example "Example Code"
         `Isaac.GetItemConfig()`
