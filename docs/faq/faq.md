@@ -325,7 +325,7 @@ Unfortunately, Isaac does not natively support modded custom floors. BudJMT and 
 
 ### How do I modify the Devil Room / Angel Room chances? {: .subHeader}
 
-There is no built-in way to do this, so you will have to get inventive. For the most control, you can delete all vanilla Devil/Angel doors and completely re-implement the system from scratch. Otherwise, you can temporarily give items to the player such as Goat Head or Rosary Bead, or use things like [Game.SetLastDevilRoomStage()](../Level.md#setlastdevilroomstage) or [Level.SetRedHeartDamage()](../Level.md#setredheartdamage). You also might want to use [LevelStateFlags](../enums/LevelStateFlag.md).
+There is no built-in way to do this, so you will have to get inventive. For the most control, you can delete all vanilla Devil/Angel doors and completely re-implement the system from scratch. Otherwise, you can temporarily give items to the player such as Goat Head or Rosary Bead, or use things like [Game.SetLastDevilRoomStage()](../Game.md#setlastdevilroomstage), [Level.SetRedHeartDamage()](../Level.md#setredheartdamage), and [Level.AddAngelRoomChance()](../Level.md#addangelroomchance). You also might want to use [LevelStateFlags](../enums/LevelStateFlag.md).
 
 ### How do I get a familiar to follow the player like Brother Bobby does? {: .subHeader}
 
