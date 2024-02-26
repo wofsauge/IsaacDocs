@@ -95,7 +95,7 @@ ___
 ___
 ### Queue () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void Queue ( [MusicManager](MusicManager.md) ID ) {: .copyable aria-label='Functions' }
+#### void Queue ( [Music](enums/Music.md) ID ) {: .copyable aria-label='Functions' }
 
 ___
 ### Reset·Pitch () {: aria-label='Functions' }
