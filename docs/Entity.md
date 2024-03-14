@@ -490,6 +490,8 @@ ___
 
 Set the colormask for the entity. This can be used to tint the sprites in different colors.
 
+``Share`` boolean will apply color to child entitiy.
+
 ???- example "Example Code"
     This code changes the color of the sprite to a fully white sprite for 15 frames.
 
