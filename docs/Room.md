@@ -282,7 +282,7 @@ ___
 ### Get·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [EntityList](CppContainer_EntityList.md) GetEntities ( ) {: .copyable aria-label='Functions' }
-Returns an raw pointer to the array that stores all entities in the current room. Therefore, iterating over the return value will always iterate over the entities present in the room during the current logic frame, regardless of then the initial instance of GetEntities was created.
+Returns a raw pointer to the array that stores all entities in the current room. Therefore, iterating over the return value will always iterate over the entities present in the room during the current logic frame, regardless of when GetEntities was initially called.
 
 This behavior is different to [`Isaac.GetRoomEntities()`](Isaac.md#getroomentities), which returns an iterable table of the entities in the room at the time the function was called. **For most usecases, its advised to use [`Isaac.GetRoomEntities()`](Isaac.md#getroomentities)**!
 
