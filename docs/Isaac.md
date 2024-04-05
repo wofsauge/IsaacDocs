@@ -25,7 +25,7 @@ ___
 ### Add·Pill·Effect·To·Pool () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int AddPillEffectToPool ( int pillEffect ) {: .copyable aria-label='Functions' }
-returns pill color
+Returns the [PillColor](enums/PillColor.md) of the added pill.
 
 ___
 ### Add·Priority·Callback () {: aria-label='Functions' }
@@ -39,7 +39,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void ConsoleOutput ( string text ) {: .copyable aria-label='Functions' }
 
-Prints a string into the Debug Console
+Prints a string into the Debug Console.
 
 ???- example "Example Code"
     You can use this example as an alternative.
@@ -50,7 +50,6 @@ Prints a string into the Debug Console
     -- Alternatively:
     print("This is a Test.")
     -- Output: This is a Test.
-
     ```
 
 ___
@@ -71,23 +70,23 @@ ___
 #### int CountEntities ( [Entity](Entity.md) Spawner, [EntityType](enums/EntityType.md) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
-Spawner refers to an entity object (can be `:::lua nil`)
-Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`)
-Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`)
+
+- `Spawner` refers to an Entity object (can be `:::lua nil`).
+- `Type` refers to the found entity's type (can be `:::lua EntityType.ENTITY_NULL`).
+- `Variant` and `Subtype` refer to the found entity's `Variant` and `Subtype` (can be `:::lua -1`).
 
 ___
 ### Debug·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void DebugString ( string str ) {: .copyable aria-label='Functions' }
 
-Prints a string into the log file. You can find this file here `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt`
+Prints a string into the log file. You can find this file here: `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt`
 
 ???- example "Example Code"
     This code prints `:::lua "This is a Test."` in the log.txt file.
     ```lua
     Isaac.DebugString("This is a Test.")
     -- Output: [INFO] - Lua Debug: This is a Test.
-
     ```
 
 ___
@@ -95,8 +94,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### string ExecuteCommand ( string command ) {: .copyable aria-label='Functions' }
 
-This function executes a debug console command. see the
-[Debug Console Tutorial](tutorials/DebugConsole.md) for informations on how to use commands.
+This function executes a debug console command. See the [Debug Console Tutorial](tutorials/DebugConsole.md) for informations on how to use commands.
 ___
 ### Explode () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -173,7 +171,6 @@ Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)
     ```lua
     Isaac.GetChallengeIdByName("Aprils fool")
     --Returns: 32
-
     ```
 
 ___
@@ -188,7 +185,6 @@ Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
     ```lua
     Isaac.GetCostumeIdByPath("gfx/characters/n027_Transformation_Poop.anm2")
     --Returns: 27
-
     ```
 
 ___
@@ -203,7 +199,6 @@ Returns the CurseID of a curse based on its name. (File: curses.xml) Returns `-1
     ```lua
     Isaac.GetCurseIdByName("Curse of the Unknown")
     --Returns: 4
-
     ```
 
 ___
@@ -221,7 +216,6 @@ Returns the EntityType of an entity based on its name. (File: entities2.xml) Ret
     ```lua
     Isaac.GetEntityTypeByName("Flaming Gaper")
     --Returns: 10
-
     ```
 
 ___
@@ -615,7 +609,6 @@ There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) and [Game():Spawn
     This code spawns a random collectible at in center of the current room.
     ```lua
     Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
-
     ```
 ___
 ### World·To·Render·Position () {: aria-label='Functions' }
@@ -645,7 +638,6 @@ Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. T
     local player = Isaac.GetPlayer()
     local screenpos = Isaac.WorldToScreen(player.Position)
     Isaac.RenderText("test", screenpos.X, screenpos.Y, 1 ,1 ,1 ,1 )
-
     ```
 
 ___
