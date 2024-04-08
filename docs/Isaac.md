@@ -17,7 +17,7 @@ tags:
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddCallback ( table modRef, string|number|[ModCallback](enums/ModCallbacks.md) callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddCallback ( table modRef, [ModCallback](enums/ModCallbacks.md)|string callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [AddCallback](ModReference.md#addcallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -30,7 +30,7 @@ Returns the [PillColor](enums/PillColor.md) of the added pill.
 ___
 ### Add·Priority·Callback () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddPriorityCallback ( table modRef, string|number|[ModCallback](enums/ModCallbacks.md) callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddPriorityCallback ( table modRef, [ModCallback](enums/ModCallbacks.md)|string callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [AddPriorityCallback](ModReference.md#addprioritycallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -124,7 +124,7 @@ Returns `true` if callbacks under `callbackId` will be ran by the game. This is 
 ___
 ### Get·Callbacks () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### table GetCallbacks ( string|number|[ModCallback](enums/ModCallbacks.md) callbackId, boolean createIfMissing = nil ) {: .copyable aria-label='Functions' }
+#### table GetCallbacks ( [ModCallback](enums/ModCallbacks.md)|string callbackId, boolean createIfMissing = nil ) {: .copyable aria-label='Functions' }
 Returns a list of callbacks added under `callbackId`. Callbacks are represented as a table, for more information [see the custom callback tutorial.](tutorials/CustomCallbacks.md#run-behavior)
 
 The game holds all callbacks added to `callbackId` in a table, where the `callbackId` is the index, and the value is a table containing all callbacks added using said `callbackId`. If `createIfMissing` is `true`, and there are no added callbacks under `callbackId`, then the game will create an empty table for the `callbackId` for new callbacks to be added to. This empty table contains a metatable with a default `__matchParams` metamethod, which is called when checking if the extra parameter specified when adding the callback is valid. This function is also used with `createIfMissing` set to `true` by the game whenever any callback is added.
@@ -508,7 +508,7 @@ It is recommended to use the global [RegisterMod](GlobalFunctions.md#registermod
 ___
 ### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveCallback ( table modRef, string|number|[ModCallback](enums/ModCallbacks.md) callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
+#### void RemoveCallback ( table modRef, [ModCallback](enums/ModCallbacks.md)|string callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [RemoveCallback](ModReference.md#removecallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -557,13 +557,13 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
 ___
 ### Run·Callback () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RunCallback ( string|number|[ModCallback](enums/ModCallbacks.md) callbackId ) {: .copyable aria-label='Functions' }
+#### void RunCallback ( [ModCallback](enums/ModCallbacks.md)|string callbackId ) {: .copyable aria-label='Functions' }
 Runs all callbacks added under `callbackId`, breaking on the first return and returning that value.
 
 ___
 ### Run·Callback·With·Param () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RunCallbackWithParam ( string|number|[ModCallback](enums/ModCallbacks.md) callbackId ) {: .copyable aria-label='Functions' }
+#### void RunCallbackWithParam ( [ModCallback](enums/ModCallbacks.md)|string callbackId ) {: .copyable aria-label='Functions' }
 Runs all callbacks added under `callbackId`, breaking on the first return and returning that value.
 
 ___
