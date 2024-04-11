@@ -17,7 +17,7 @@ tags:
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddCallback ( table modRef, function callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddCallback ( table modRef, [ModCallback](enums/ModCallbacks.md)|string callbackId, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [AddCallback](ModReference.md#addcallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -25,19 +25,21 @@ ___
 ### Add·Pill·Effect·To·Pool () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int AddPillEffectToPool ( int pillEffect ) {: .copyable aria-label='Functions' }
-returns pill color
+Returns the [PillColor](enums/PillColor.md) of the added pill.
 
 ___
 ### Add·Priority·Callback () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddPriorityCallback ( table modRef, function callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+#### void AddPriorityCallback ( table modRef, [ModCallback](enums/ModCallbacks.md)|string callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, table callbackFn, int entityId ) {: .copyable aria-label='Functions' }
+
+It is recommended to use the [AddPriorityCallback](ModReference.md#addprioritycallback) function on a [Mod Reference](ModReference.md) instead.
 
 ___
 ### Console·Output () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void ConsoleOutput ( string text ) {: .copyable aria-label='Functions' }
 
-Prints a string into the Debug Console
+Prints a string into the Debug Console.
 
 ???- example "Example Code"
     You can use this example as an alternative.
@@ -48,7 +50,6 @@ Prints a string into the Debug Console
     -- Alternatively:
     print("This is a Test.")
     -- Output: This is a Test.
-
     ```
 
 ___
@@ -69,23 +70,23 @@ ___
 #### int CountEntities ( [Entity](Entity.md) Spawner, [EntityType](enums/EntityType.md) Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 ) {: .copyable aria-label='Functions' }
 
 Returns the number of entities in the current room that fulfill the specified requirements.
-Spawner refers to an entity object (can be `:::lua nil`)
-Type refers to the found entity's type (Can be `:::lua EntityType.ENTITY_NULL`)
-Variant and Subtype refer to the found entitys Variant and Subtype (Can be `:::lua -1`)
+
+- `Spawner` refers to an Entity object (can be `:::lua nil`).
+- `Type` refers to the found entity's type (can be `:::lua EntityType.ENTITY_NULL`).
+- `Variant` and `Subtype` refer to the found entity's `Variant` and `Subtype` (can be `:::lua -1`).
 
 ___
 ### Debug·String () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void DebugString ( string str ) {: .copyable aria-label='Functions' }
 
-Prints a string into the log file. You can find this file here `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt`
+Prints a string into the log file. You can find this file here: `:::lua %systemdrive%\Users\%username%\Documents\My Games\Binding of Isaac Repentance\log.txt`
 
 ???- example "Example Code"
     This code prints `:::lua "This is a Test."` in the log.txt file.
     ```lua
     Isaac.DebugString("This is a Test.")
     -- Output: [INFO] - Lua Debug: This is a Test.
-
     ```
 
 ___
@@ -93,8 +94,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### string ExecuteCommand ( string command ) {: .copyable aria-label='Functions' }
 
-This function executes a debug console command. see the
-[Debug Console Tutorial](tutorials/DebugConsole.md) for informations on how to use commands.
+This function executes a debug console command. See the [Debug Console Tutorial](tutorials/DebugConsole.md) for informations on how to use commands.
 ___
 ### Explode () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -118,11 +118,19 @@ This function does not return the entities sorted by nearest first, but based on
 ___
 ### Get·Built·In·Callback·State () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean GetBuiltInCallbackState ( function callbackId ) {: .copyable aria-label='Functions' }
+#### boolean GetBuiltInCallbackState ( [ModCallbacks](enums/ModCallbacks.md) callbackId ) {: .copyable aria-label='Functions' }
+Returns `true` if callbacks under `callbackId` will be ran by the game. This is normally only `false` if there are no callbacks added under `callbackId`.
+
 ___
 ### Get·Callbacks () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### table GetCallbacks ( function callbackId, boolean createIfMissing ) {: .copyable aria-label='Functions' }
+#### table GetCallbacks ( [ModCallback](enums/ModCallbacks.md)|string callbackId, boolean createIfMissing = nil ) {: .copyable aria-label='Functions' }
+Returns a list of callbacks added under `callbackId`. Callbacks are represented as a table, for more information [see the custom callback tutorial.](tutorials/CustomCallbacks.md#run-behavior)
+
+The game holds all callbacks added to `callbackId` in a table, where the `callbackId` is the index, and the value is a table containing all callbacks added using said `callbackId`. If `createIfMissing` is `true`, and there are no added callbacks under `callbackId`, then the game will create an empty table for the `callbackId` for new callbacks to be added to. This empty table contains a metatable with a default `__matchParams` metamethod, which is called when checking if the extra parameter specified when adding the callback is valid. This function is also used with `createIfMissing` set to `true` by the game whenever any callback is added.
+
+If `createIfMissing` is `false` or `nil` and there are no callbacks added under `callbackId`, this function will return an empty table.
+
 ___
 ### Get·Card·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -163,7 +171,6 @@ Returns the ChallengeID of a challenge based on its name. (File: challenges.xml)
     ```lua
     Isaac.GetChallengeIdByName("Aprils fool")
     --Returns: 32
-
     ```
 
 ___
@@ -178,7 +185,6 @@ Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
     ```lua
     Isaac.GetCostumeIdByPath("gfx/characters/n027_Transformation_Poop.anm2")
     --Returns: 27
-
     ```
 
 ___
@@ -193,7 +199,6 @@ Returns the CurseID of a curse based on its name. (File: curses.xml) Returns `-1
     ```lua
     Isaac.GetCurseIdByName("Curse of the Unknown")
     --Returns: 4
-
     ```
 
 ___
@@ -211,7 +216,6 @@ Returns the EntityType of an entity based on its name. (File: entities2.xml) Ret
     ```lua
     Isaac.GetEntityTypeByName("Flaming Gaper")
     --Returns: 10
-
     ```
 
 ___
@@ -504,7 +508,7 @@ It is recommended to use the global [RegisterMod](GlobalFunctions.md#registermod
 ___
 ### Remove·Callback () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void RemoveCallback ( table modRef, function callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
+#### void RemoveCallback ( table modRef, [ModCallback](enums/ModCallbacks.md)|string callbackId, table callbackFn ) {: .copyable aria-label='Functions' }
 
 It is recommended to use the [RemoveCallback](ModReference.md#removecallback) function on a [Mod Reference](ModReference.md) instead.
 
@@ -553,12 +557,14 @@ Renders a text with the default size on the Screen. X and Y coordinates need to 
 ___
 ### Run·Callback () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RunCallback ( function callbackId, table modRef ) {: .copyable aria-label='Functions' }
+#### void RunCallback ( [ModCallback](enums/ModCallbacks.md)|string callbackId ) {: .copyable aria-label='Functions' }
+Runs all callbacks added under `callbackId`, breaking on the first return and returning that value.
 
 ___
 ### Run·Callback·With·Param () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void RunCallbackWithParam ( function callbackId, table modRef ) {: .copyable aria-label='Functions' }
+#### void RunCallbackWithParam ( [ModCallback](enums/ModCallbacks.md)|string callbackId ) {: .copyable aria-label='Functions' }
+Runs all callbacks added under `callbackId`, breaking on the first return and returning that value.
 
 ___
 ### Save·Mod·Data () {: aria-label='Functions' }
@@ -587,7 +593,8 @@ ___
 ___
 ### Set·Built·In·Callback·State () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void SetBuiltInCallbackState ( function callbackId, boolean state ) {: .copyable aria-label='Functions' }
+#### void SetBuiltInCallbackState ( [ModCallbacks](enums/ModCallbacks.md) callbackId, boolean state ) {: .copyable aria-label='Functions' }
+Sets whether callbacks under `callbackId` will be ran by the game. The game uses this to activate a [ModCallbacks](enums/ModCallbacks.md) once a callback is added under one, or deactivate them when those callbacks have been removed.
 
 ___
 
@@ -602,7 +609,6 @@ There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) and [Game():Spawn
     This code spawns a random collectible at in center of the current room.
     ```lua
     Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
-
     ```
 ___
 ### World·To·Render·Position () {: aria-label='Functions' }
@@ -632,7 +638,6 @@ Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. T
     local player = Isaac.GetPlayer()
     local screenpos = Isaac.WorldToScreen(player.Position)
     Isaac.RenderText("test", screenpos.X, screenpos.Y, 1 ,1 ,1 ,1 )
-
     ```
 
 ___
