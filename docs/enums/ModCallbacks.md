@@ -1035,7 +1035,7 @@ Return true if the spawn routine should be ignored, nil/nothing otherwise. Retur
         roomDesc.AwardSeed = rng:GetSeed()
         return true
     end
-    mod:AddCallback(ModCallbacks.MC_GET_PILL_EFFECT, mod.getPillEffect)
+    mod:AddCallback(ModCallbacks.MC_PRE_SPAWN_CLEAN_AWARD, mod.preSpawnCleanAward)
     ```
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
