@@ -48,7 +48,7 @@ ___
 ___
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void Fadein ( [MusicManager](MusicManager.md) ID, float Volume = 1, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
+#### void Fadein ( [Music](enums/Music.md) ID, float Volume = 1, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Fadeout () {: aria-label='Functions' }
