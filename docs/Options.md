@@ -3,19 +3,24 @@ tags:
   - Globals
   - Class
 ---
-# Class "Options"
+# Global Class "Options"
 
-The `Options` class represents the values contained within the user's `options.ini` file. For example, this is useful so that mods that add things to the HUD can properly account for the `HUDOffset`.
+???+ info
+    You can get this class by using the `Options` global table.
 
-Note that mods have free reign to modify these values, so it is possible for a mod to e.g. change the volume to max and play sound effects. Please use this class responsibly.
+    The `Options` class represents the values contained within the user's `options.ini` file. For example, this is useful so that mods that add things to the HUD can properly account for the `HUDOffset`.
 
-The `Options` class is a singleton that is exposed as a global variable. Thus, you can directly get and set values in the class without having to do anything first:
+    Note that mods have free reign to modify these values, so it is possible for a mod to e.g. change the volume to max and play sound effects. Please use this class responsibly.
 
-```lua
-local bulletVisibility = Options.BulletVisibility -- "bulletVisibility" is now set to true or false
+    The `Options` class is a singleton that is exposed as a global variable. Thus, you can directly get and set values in the class without having to do anything first:
 
-Options.ChargeBars = true -- Force charge bars to be on for the player
-```
+    ???+ example "Example Code"
+        ```lua
+        local bulletVisibility = Options.BulletVisibility -- "bulletVisibility" is now set to true or false
+        Options.ChargeBars = true -- Force charge bars to be on for the player
+        ```
+
+
 
 ## Variables
 ### Announcer·Voice·Mode {: aria-label='Variables' }

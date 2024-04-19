@@ -4,15 +4,17 @@ tags:
   - Class
   - Isaac
 ---
-# Class "Isaac"
+# Global Class "Isaac"
 
 ???+ info
-    **When accessing the methods of the Isaac class, you need to use a `.` (period) instead of a `:` (colon)!**
+    You can get this class by using the `Isaac` global table.
 
-    For example:
-    ```lua
-    local player = Isaac.GetPlayer()
-    ```
+    **Note that to call these functions, you must use a `.` (period) instead of a `:` (colon)!**
+
+    ???+ example "Example Code"
+        ```lua
+        local player = Isaac.GetPlayer()
+        ```
 
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
@@ -352,7 +354,7 @@ Returns the PlayerType (ID) of a character based on its name. (File: players.xml
     ```lua
     -- REPENTANCE:
     Isaac.GetPlayerTypeByName("#AZAZEL_NAME") --Returns: 7
-    
+
     -- AFTERBIRTH+:
     Isaac.GetPlayerTypeByName("Azazel") --Returns: 7
 

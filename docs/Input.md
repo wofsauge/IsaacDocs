@@ -1,13 +1,19 @@
 ---
 tags:
+  - Globals
   - Class
 ---
-# Class "Input"
+# Global Class "Input"
 
 ???+ info
-    **In this class you need to use a `.` (Dot) to access its functions instead of a `:` (colon)!**
+    You can get this class by using the `Input` global table.
 
-    **Example:** `Input.GetMousePosition(true)`
+    **Note that to call these functions, you must use a `.` (period) instead of a `:` (colon)!**
+
+    ???+ example "Example Code"
+        ```lua
+        local mousePos = Input.GetMousePosition(true)
+        ```
 
 ## Functions
 ### Get·Action·Value () {: aria-label='Functions' }
