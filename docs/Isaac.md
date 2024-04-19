@@ -342,12 +342,19 @@ ___
 
 Returns the PlayerType (ID) of a character based on its name. (File: players.xml) Returns `-1` if no player with that name could be found.
 
+???+ warning "Warning"
+    In Repentance, character names where made translateable and therefore use the translation placeholder as their "base name". For example, to get the [PlayerType](enums/PlayerType.md) of Cain, you need to use this function with the character name `#AZAZEL_NAME` instead of `Azazel`.
+    It is therefore recommended to use this function for modded characters, and use the [PlayerType](enums/PlayerType.md) enum directly, if you want to have the PlayerType of a vanilla character.
+
 ???- example "Example Code"
     This code gets the PlayerType of Azazel.
 
     ```lua
-    Isaac.GetPlayerTypeByName("Azazel")
-    --Returns: 7
+    -- REPENTANCE:
+    Isaac.GetPlayerTypeByName("#AZAZEL_NAME") --Returns: 7
+    
+    -- AFTERBIRTH+:
+    Isaac.GetPlayerTypeByName("Azazel") --Returns: 7
 
     ```
 
