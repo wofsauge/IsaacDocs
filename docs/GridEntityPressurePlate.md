@@ -4,6 +4,14 @@ tags:
 ---
 # Class "GridEntityPressurePlate"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [GridEntity.ToPressurePlate()](GridEntity.md#topressureplate)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25):ToPressurePlate()`
+
 ## Class Diagram
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions

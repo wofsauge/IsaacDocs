@@ -6,6 +6,17 @@ search:
   boost: 0.25
 ---
 # Class "EntityRef"
+
+???+ info
+    This class can be accessed by using its constructor or the following function:
+
+    * [EntityPlayer.GetLastDamageSource()](EntityPlayer.md#getlastdamagesource)
+
+    ???+ example "Example Code"
+        ```lua
+        local myReference = EntityRef(Isaac.GetPlayer())
+        ```
+
 ## Constructors
 ### Entity·Ref () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

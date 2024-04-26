@@ -3,6 +3,15 @@ tags:
   - Class
 ---
 # Class "ItemConfigCard"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfig.GetCard()](ItemConfig_Item.md#getcard)
+
+    ???+ example "Example Code"
+        `Isaac.GetItemConfig():GetCard(Card.CARD_FOOL)`
+
 ## Functions
 ___
 ### Is·Available () {: aria-label='Functions' }

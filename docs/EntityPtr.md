@@ -6,6 +6,15 @@ search:
   boost: 0.25
 ---
 # Class "EntityPtr"
+
+???+ info
+    This class can be accessed by using its constructor:
+
+    ???+ example "Example Code"
+        ```lua
+        local myPointer = EntityPtr(Isaac.GetPlayer())
+        ```
+
 ## Constructors
 ### Entity·Ptr () {: aria-label='Constructors' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }

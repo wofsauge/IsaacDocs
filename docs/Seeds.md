@@ -3,6 +3,18 @@ tags:
   - Class
 ---
 # Class "Seeds"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [Game:GetSeeds()](Game.md#getseeds)
+
+    ???+ example "Example Code"
+        ```lua
+        local game = Game()
+        local seeds = game:GetSeeds()
+        ```
+
 ## Functions
 ### Add·Seed·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

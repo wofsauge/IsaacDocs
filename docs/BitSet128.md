@@ -5,6 +5,14 @@ tags:
 ---
 # Class "BitSet128"
 
+???+ info
+    This class can be accessed by using its constructor or usind the [TearFlags](enums/TearFlags.md) enum:
+
+    ???+ example "Example Code"
+        ```lua
+        local myBitSet = TearFlags.TEAR_WIGGLE
+        ```
+
 ## Constructors
 ### BitSet128 () {: aria-label='Constructors' }
 [ ](#){: .rep .tooltip .badge }

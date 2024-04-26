@@ -5,6 +5,16 @@ search:
   boost: 0.25
 ---
 # Class "ItemConfigList"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfig.GetNullItems()](ItemConfig.md#getnullitems)
+    * [ItemConfig.GetTrinkets()](ItemConfig.md#gettrinkets)
+
+    ???+ example "Example Code"
+        `local effects = Isaac.GetItemConfig():GetTrinkets()`
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

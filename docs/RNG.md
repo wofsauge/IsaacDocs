@@ -5,7 +5,24 @@ tags:
 ---
 # Class "RNG"
 
-The RNG class provides a mechanism to produce seeded random numbers. This is used heavily by both the game and mods.
+???+ info
+    The RNG class provides a mechanism to produce seeded random numbers. This is used heavily by both the game and mods.
+
+    This class can be accessed by using its constructor or the following function:
+
+    * [Entity.GetDropRNG()](Entity.md#getdroprng)
+    * [EntityPlayer.GetCardRNG()](EntityPlayer.md#getcardrng)
+    * [EntityPlayer.GetCollectibleRNG()](EntityPlayer.md#getcollectiblerng)
+    * [EntityPlayer.GetPillRNG()](EntityPlayer.md#getpillrng)
+    * [EntityPlayer.GetTrinketRNG()](EntityPlayer.md#gettrinketrng)
+    * [GridEntity.GetRNG()](GridEntity.md#getrng)
+    * [GridEntityPreasurePlate.GreedModeRNG](GridEntityPreasurePlate.md#greedmoderng)
+    * [Level.GetDevilAngelRoomRNG()](Level.md#getdevilangelroomrng)
+
+    ???+ example "Example Code"
+        ```lua
+        local myRNG = RNG()
+        ```
 
 ## Constructors
 ### RNG () {: aria-label='Constructors' }

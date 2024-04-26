@@ -16,6 +16,7 @@ search:
         local player = Isaac.GetPlayer()
         local tempEffects = player:GetTearHitParams(WeaponType.WEAPON_TEARS, 1, 1, nil)
         ```
+
 ## Variables
 ### Bomb·Variant {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

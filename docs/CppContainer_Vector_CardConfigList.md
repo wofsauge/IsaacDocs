@@ -5,6 +5,15 @@ search:
   boost: 0.25
 ---
 # Class "CardConfigList"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfig.GetCards()](ItemConfig.md#getcards)
+
+    ???+ example "Example Code"
+        `local cardConfigs = Isaac.GetItemConfig():GetCards()`
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

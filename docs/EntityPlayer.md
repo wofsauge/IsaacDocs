@@ -5,6 +5,22 @@ tags:
 ---
 # Class "EntityPlayer"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToPlayer()](Entity.md#toplayer)
+    * [EntityFamiliar.Player](EntityFamiliar.md#player)
+    * [EntityPlayer.GetMainTwin()](EntityPlayer.md#getmaintwin)
+    * [EntityPlayer.GetOtherTwin()](EntityPlayer.md#getothertwin)
+    * [EntityPlayer.GetSubPlayer()](EntityPlayer.md#getsubplayer)
+    * [Game.GetNearestPlayer()](Game.md#getnearestplayer)
+    * [Game.GetPlayer()](Game.md#getplayer)
+    * [Game.GetRandomPlayer()](Game.md#getrandomplayer)
+    * [Isaac.GetPlayer()](Isaac.md#getplayer)
+
+    ???+ example "Example Code"
+        `local player = Isaac.GetPlayer()`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

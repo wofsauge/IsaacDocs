@@ -5,6 +5,20 @@ search:
   boost: 0.25
 ---
 # Class "RoomConfigSpawns"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [RoomConfigRoom.Spawns](RoomConfig_Room.md#spawns)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        local roomDescriptor = level:GetCurrentRoomDesc()
+        local roomConfigRoom = roomDescriptor.Data
+        local spawnList = roomConfigRoom.Spawns
+        ```
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

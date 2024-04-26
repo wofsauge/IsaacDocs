@@ -3,6 +3,19 @@ tags:
   - Class
 ---
 # Class "ItemConfigItem"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfig.GetCollectible()](ItemConfig.md#getcollectible)
+    * [ItemConfig.GetNullItem()](ItemConfig.md#getnullitem)
+    * [ItemConfig.GetTrinket()](ItemConfig.md#gettrinket)
+    * [QueueItemData.Item](QueueItemData.md#item)
+    * [TemporaryEffect.Item](TemporaryEffect.md#item)
+
+    ???+ example "Example Code"
+        `Isaac.GetItemConfig():GetCollectible(CollectibleType.COLLECTIBLE_SAD_ONION)`
+
 ## Functions
 ___
 ### Has·Tags () {: aria-label='Functions' }

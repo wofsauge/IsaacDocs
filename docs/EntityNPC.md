@@ -4,6 +4,15 @@ tags:
 ---
 # Class "EntityNPC"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToNPC()](Entity.md#tonpc)
+    * [Game.SpawnEntityDesc()](Game.md#spawnentitydesc)
+
+    ???+ example "Example Code"
+        `local entity = Isaac.GetRoomEntities()[1]:ToNPC()`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

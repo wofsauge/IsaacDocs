@@ -4,6 +4,15 @@ tags:
   - Class
 ---
 # Class "Game"
+
+???+ info
+    This class can be accessed by using its constructor:
+
+    ???+ example "Example Code"
+        ```lua
+        local game = Game()
+        ```
+
 ## Constructors
 ### Game () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

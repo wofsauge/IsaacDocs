@@ -20,8 +20,6 @@ tags:
         Options.ChargeBars = true -- Force charge bars to be on for the player
         ```
 
-
-
 ## Variables
 ### Announcer·Voice·Mode {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }

@@ -5,6 +5,20 @@ search:
   boost: 0.25
 ---
 # Class "RoomDescriptor"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [Level.GetCurrentRoomDesc](Level.md#getcurrentroomdesc)
+    * [Level.GetLastRoomDesc](Level.md#getlastroomdesc)
+    * [Level.GetRoomByIdx](Level.md#getroombyidx)
+
+    ???+ example "Example Code"
+        ```lua
+        local level = Game():GetLevel()
+        local roomDescriptor = level:GetCurrentRoomDesc()
+        ```
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

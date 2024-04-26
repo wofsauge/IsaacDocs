@@ -4,6 +4,18 @@ tags:
 ---
 # Class "EntityLaser"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToLaser()](Entity.md#tolaser)
+    * [EntityPlayer.FireBrimstone()](EntityPlayer.md#firebrimstone)
+    * [EntityPlayer.FireDelayedBrimstone()](EntityPlayer.md#firedelayedbrimstone)
+    * [EntityPlayer.FireTechLaser()](EntityPlayer.md#firetechlaser)
+    * [EntityPlayer.FireTechXLaser()](EntityPlayer.md#firetechxlaser)
+
+    ???+ example "Example Code"
+        `local brimstoneEntity = Isaac.GetPlayer():FireBrimstone(Vector(1, 0))`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

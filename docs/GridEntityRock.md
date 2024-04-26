@@ -4,6 +4,14 @@ tags:
 ---
 # Class "GridEntityRock"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [GridEntity.ToRock()](GridEntity.md#torock)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25):ToRock()`
+
 ## Class Diagram
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions

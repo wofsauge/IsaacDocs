@@ -6,6 +6,15 @@ search:
   boost: 0.25
 ---
 # Class "ProjectileParams"
+
+???+ info
+    This class can be accessed by using its constructor:
+
+    ???+ example "Example Code"
+        ```lua
+        local myProjectileParams = ProjectileParams()
+        ```
+
 ## Constructors
 ### Projectile·Params () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

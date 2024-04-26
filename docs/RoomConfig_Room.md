@@ -18,6 +18,7 @@ search:
         local roomDescriptor = level:GetCurrentRoomDesc()
         local roomConfigRoom = roomDescriptor.Data
         ```
+
 ## Variables
 ### Difficulty {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }

@@ -4,6 +4,23 @@ tags:
   - Class
 ---
 # Class "Color"
+
+???+ info
+    This class can be accessed by using its constructor or the following function:
+
+    * [Entity.Color](Entity.md#color)
+    * [Entity.SplatColor](Entity.md#splatcolor)
+    * [EntityPlayer.LaserColor](EntityPlayer.md#lasercolor)
+    * [EntityPlayer.TearColor](EntityPlayer.md#tearcolor)
+    * [ProjectileParams.Color](ProjectileParams.md#color)
+    * [Sprite.Color](Sprite.md#color)
+    * [TearParams.TearColor](TearParams.md#tearcolor)
+
+    ???+ example "Example Code"
+        ```lua
+        local myRedColor = Color(1,0,0,1)
+        ```
+
 ## Constructors
 ### Color () {: aria-label='Constructors' }
 [ ](#){: .rep .tooltip .badge }

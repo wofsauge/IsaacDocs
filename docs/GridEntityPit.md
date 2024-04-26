@@ -4,6 +4,14 @@ tags:
 ---
 # Class "GridEntityPit"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [GridEntity.ToPit()](GridEntity.md#topit)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25):ToPit()`
+
 ## Class Diagram
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions

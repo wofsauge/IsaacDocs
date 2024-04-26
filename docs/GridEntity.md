@@ -4,6 +4,16 @@ tags:
 ---
 # Class "GridEntity"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Isaac.GridSpawn()](Isaac.md#gridspawn)
+    * [Room.GetGridEntity()](Room.md#getgridentity)
+    * [Room.GetGridEntityFromPos()](Room.md#getgridentityfrompos)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25)`
+
 ## Class Diagram
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 

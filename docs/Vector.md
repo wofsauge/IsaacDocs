@@ -4,6 +4,15 @@ tags:
   - Class
 ---
 # Class "Vector"
+
+???+ info
+    This class can be accessed by using its constructor or multiple functions:
+
+    ???+ example "Example Code"
+        ```lua
+        local myVector = Vector(1, -1)
+        ```
+
 ## Constructors
 ### Vector () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

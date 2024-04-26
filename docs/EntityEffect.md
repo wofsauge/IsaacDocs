@@ -4,6 +4,15 @@ tags:
 ---
 # Class "EntityEffect"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToEffect()](Entity.md#toeffect)
+    * [EntityNPC.MakeSplat()](EntityNPC.md#makesplat)
+
+    ???+ example "Example Code"
+        `local entity = Isaac.GetRoomEntities()[1]:ToEffect()`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

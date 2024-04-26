@@ -4,6 +4,15 @@ tags:
   - Class
 ---
 # Class "MusicManager"
+
+???+ info
+    This class can be accessed by using its constructor:
+
+    ???+ example "Example Code"
+        ```lua
+        local musicManager = MusicManager()
+        ```
+
 ## Constructors
 ### Music·Manager () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

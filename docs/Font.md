@@ -4,6 +4,17 @@ tags:
   - Class
 ---
 # Class "Font"
+
+???+ info
+    This class can be accessed by using its constructor or this function:
+
+    * [Game.GetFont()](Game.md#getfont)
+
+    ???+ example "Example Code"
+        ```lua
+        local myFont = Font()
+        ```
+
 ## Constructors
 ### Font () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }
