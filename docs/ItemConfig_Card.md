@@ -7,7 +7,7 @@ tags:
 ???+ info
     You can get this class by using the following function:
 
-    * [ItemConfig.GetCard()](ItemConfig_Item.md#getcard)
+    * [ItemConfig.GetCard()](ItemConfig.md#getcard)
 
     ???+ example "Example Code"
         `Isaac.GetItemConfig():GetCard(Card.CARD_FOOL)`

@@ -9,7 +9,7 @@ search:
 ???+ info
     You can get this class by using the following function:
 
-    * [EntityNPC.QueryNPCsGroup()](EntityNPC.md#querynpcs)
+    * [EntityNPC.QueryNPCsGroup()](EntityNPC.md#querynpcsgroup)
     * [EntityNPC.QueryNPCsSpawnerType()](EntityNPC.md#querynpcsspawnertype)
     * [EntityNPC.QueryNPCsType()](EntityNPC.md#querynpcstype)
     * [Isaac.GetRoomEntities()](Isaac.md#getroomentities)
