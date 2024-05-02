@@ -127,9 +127,9 @@ ___
 
 Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the item and will cause it to not count towards transformations.
 
-Slot 0 is default (normal active item)
-Slot 1 is used by Schoolbag
-Slot 2 is used for pocket active items
+- Slot 0 is default (normal active item)
+- Slot 1 is used by Schoolbag
+- Slot 2 is used for pocket active items
 
 ???- note "Notes"
 	Slot 2 cannot be used if character did not start with a pocket active
@@ -138,23 +138,24 @@ VarData is used for the storage of a persistent context-sensitive value
 
 ???- note "Notes"
 	This is a list of all items that make use of VarData:
-	- Jar of Wisps: Wisps spawned on next use (Max 12)
+
+    - Jar of Wisps: Wisps spawned on next use (Max 12)
 	- D Infinity, Blank Card, Clear Rune, Placebo: Current maximum charge (Any value above 0)
 	- Hold: Stored poop
-	> Poop Types:
-	> [0] None
-	> [1] Normal
-	> [2] Flies
-	> [3] Fire
-	> [4] Petrified
-	> [5] Toxic
-	> [6] Black
-	> [7] Holy
-	> [8] X-Lax
-	> [9] Fart
-	> [10] Bomb
-	> [11] Explosive Diarrhea
-	> [12+] Empty
+	    - Poop Types:
+	    - [0] None
+	    - [1] Normal
+	    - [2] Flies
+	    - [3] Fire
+	    - [4] Petrified
+	    - [5] Toxic
+	    - [6] Black
+	    - [7] Holy
+	    - [8] X-Lax
+	    - [9] Fart
+	    - [10] Bomb
+	    - [11] Explosive Diarrhea
+	    - [12+] Empty
 
 ___
 ### Add·Controls·Cooldown () {: aria-label='Functions' }
