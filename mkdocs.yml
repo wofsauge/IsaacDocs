@@ -15,12 +15,12 @@ nav:
             - "": PLACEHOLDER.md
             - "": PLACEHOLDER.md
         - "Frequently used":
-            - "Isaac.": Isaac.md
+            - "Isaac": Isaac.md
             - "Entity": Entity.md
-            - "-- EntityPlayer": EntityPlayer.md
-            - "-- EntityNPC": EntityNPC.md
-            - "-- EntityEffect": EntityEffect.md
-            - "Game():": Game.md
+            - "EntityPlayer": EntityPlayer.md
+            - "EntityNPC": EntityNPC.md
+            - "EntityEffect": EntityEffect.md
+            - "Game": Game.md
             - "Room": Room.md
             - "Level": Level.md
             - "ModCallbacks": enums/ModCallbacks.md
