@@ -41,7 +41,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddBloodCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Tainted Bethany.
+Adds to the amount of Blood Charge the player has. Blood Charge does not do anything on characters besides Tainted Bethany.
 
 ___
 ### Add·Blue·Flies () {: aria-label='Functions' }
@@ -362,9 +362,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Adds one soul heart to Bethany's charge, equivalent to a half soul heart.
-???- note "Notes"
-	This function will only work when playing as Bethany.
+Adds Soul Charge to the player. Soul Charge does not do anything on characters besides Bethany.
 
 ___
 ### Add·Soul·Hearts () {: aria-label='Functions' }
@@ -785,6 +783,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int GetBloodCharge ( ) {: .copyable aria-label='Functions' }
 
+Returns the amount of Blood Charge the player has.
+
 ___
 ### Get·Body·Color () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -867,6 +867,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int GetEffectiveBloodCharge ( ) {: .copyable aria-label='Functions' }
 
+Returns the amount of Blood Charge the player has. If playing as any other character besides Tainted Bethany, this will return `0`.
+
 ___
 ### Get·Effective·Max·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -879,6 +881,8 @@ ___
 ### Get·Effective·Soul·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int GetEffectiveSoulCharge ( ) {: .copyable aria-label='Functions' }
+
+Returns the amount of Soul Charge the player has. If playing as any other character besides Bethany, this will return `0`.
 
 ___
 ### Get·Effects () {: aria-label='Functions' }
@@ -1192,6 +1196,8 @@ ___
 ### Get·Soul·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int GetSoulCharge ( ) {: .copyable aria-label='Functions' }
+
+Returns the amount of Soul Charge the player has.
 
 ___
 ### Get·Soul·Hearts () {: aria-label='Functions' }
@@ -1534,7 +1540,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void SetBloodCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Tainted Bethany.
+Sets the amount of Blood Charge the player has. Blood Charge does not do anything on characters besides Tainted Bethany.
 
 ___
 ### Set·Card () {: aria-label='Functions' }
@@ -1582,7 +1588,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void SetSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Bethany.
+Sets the amount of Soul Charge the player has. Soul Charge does not do anything on characters besides Bethany.
 
 ___
 ### Set·Target·Trap·Door () {: aria-label='Functions' }
