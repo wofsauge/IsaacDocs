@@ -253,9 +253,15 @@ nav:
         - "translations.xml" : xml/translations.md
         - "wisps.xml" : xml/wisps.md
     - FAQ:
-        - "FAQ" : faq/faq.md
-        - "Launch Options": faq/LaunchOptions.md
+        - "FAQ" : faq/FaqHome.md
         - "Interactive FAQ" : faq/interactive_FAQ.md
+        - "Basic Information" : faq/BasicInformation.md
+        - "Getting Started" : faq/GettingStarted.md
+        - "Coding Help" : faq/Coding.md
+        - "Lua Language" : faq/Lua.md
+        - "Troubleshooting" : faq/Troubleshoot.md
+        - "Good Practices" : faq/Practices.md
+        - "Launch Options": faq/LaunchOptions.md
     - Tools:
         - "Tools Overview" : tutorials/Tools.md
         - "XML Validator" : tutorials/Tool_XMLValidator.md
