@@ -612,13 +612,17 @@ ___
 #### [Entity](Entity.md) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](Vector.md) position, [Vector](Vector.md) velocity, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
-There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) and [Game():Spawn()](Game.md#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](Game.md#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](Isaac.md#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](Isaac.md#spawn).
+
+There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) (this one), which spawns an entity with a random seed, and [Game():Spawn()](Game.md#spawn), which spawns an entity with a specific seed. However due to a bug, [Isaac.Spawn()](Isaac.md#spawn) has a chance to generate a seed of 0, which crashes the game. If you need to spawn an entity with a random seed, you should always use [Game():Spawn()](Game.md#spawn) with a helper function that calls [Random()](GlobalFunctions.md#random) and arbitrarily sets the seed to 1 when the seed is 0.
 
 ???- example "Example Code"
     This code spawns a random collectible at in center of the current room.
     ```lua
     Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)
     ```
+
+???+ bug "Bug"
+    Because the random seed is generated using the [Random()](GlobalFunctions.md#random) function, there is a chance that the entity's InitSeed is set to 0, which causes a crash if the entity needs to use RNG.
 ___
 ### World·To·Render·Position () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

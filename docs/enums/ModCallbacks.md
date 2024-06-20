@@ -325,7 +325,12 @@ Return true or nil if the entity or player should sustain the damage, otherwise 
 |[ ](#){: .abrep .tooltip .badge }|11 |MC_ENTITY_TAKE_DMG {: .copyable } | (Entity [[Entity](../Entity.md)],<br>Amount [float],<br>[DamageFlags](DamageFlag.md) [int],<br>Source [[EntityRef](../EntityRef.md)],<br>CountdownFrames [int])|[EntityType](EntityType.md) | boolean |
 
 ### MC_POST_CURSE_EVAL {: .copyable }
-Curses is a bitmask containing current [curses](LevelCurse.md). Called after the current Level applied it's curses. Returns the new curse bitmask. Use `Isaac.GetCurseIdByName()` to get the curseID.
+
+This callback is fired after the current Level has calculated it's seeded curses but before obligatory curses are applied or banned curses are removed (mainly due to challenges).
+
+If the player enters a level with the Black Candle effect, this callback is skipped.
+
+Curses is a bitmask containing current [curses](LevelCurse.md). if a number is returned it will be used as the new curse bitmask, overwriting the original one. Use `Isaac.GetCurseIdByName()` to get the curseID.
 
 If a number is returned, it will be the "Curses" arg for later executed callbacks.
 
@@ -895,7 +900,6 @@ For Afterbirth+, this is not called for other weapons or tears fired with Incubu
 
 ### MC_PRE_GET_COLLECTIBLE {: .copyable }
 
-
 This callback is called when the game needs to get a new random item from an item pool.
 
 You can return an integer from this callback in order to change the returned collectible type.
@@ -904,11 +908,17 @@ It is not called for "scripted" drops (like Mr. Boom from Wrath) and manually sp
 
 Returned values will not alter args of later executed callbacks.
 
+Returning any non nil value will cause **MC_POST_GET_COLLECTIBLE** to be skipped.
+
 ???+ bug
     Returning a value that is not a table or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
+
+???- info "Notes"
+    **ItemPoolType** always refers to what the original requested item pool was, regardless of whether or not Chaos has
+    meddled with the item pools. However, you can know which item pool is actually going to be used by checking what [ItemPool::GetLastPool()](../ItemPool.md#getlastpool) returns.
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
@@ -917,15 +927,22 @@ Returned values will not alter args of later executed callbacks.
 ### MC_POST_GET_COLLECTIBLE {: .copyable }
 This function is called right after MC_PRE_GET_COLLECTIBLE and determines the Collectible that will be spawned from the given [ItemPoolType](ItemPoolType.md).
 
+If any non nil value was returned to **MC_PRE_GET_COLLECTIBLE** then this callback will be skipped.
+
 You can return an integer from this callback in order to change the returned collectible type.
 
 Returned values will not update the "SelectedCollectible" arg of later executed callbacks.
+
+???- info "Notes"
+    **ItemPoolType** always refers to what the original requested item pool was, regardless of whether or not Chaos has
+    meddled with the item pools. However you can know which item pool was actually used by checking what [ItemPool::GetLastPool()](../ItemPool.md#getlastpool) returns.
 
 ???+ bug
     Returning a value that is not a table or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
+
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
@@ -1022,7 +1039,8 @@ Return true if the internal AI of an NPC should be ignored, nil/nothing otherwis
 ### MC_PRE_SPAWN_CLEAN_AWARD {: .copyable }
 This function is triggered in every room that can be cleared, including boss and angel rooms, and even when it normally would not spawn a reward.
 
-This Callback also handles special spawns like the spawning of Trapdoors after a boss is killed, therefore returning true here will also cancel those events.
+This Callback also handles special spawns, such as Trapdoors after a boss is killed, awarding Completion Marks to the current characters,
+and ending the run in a few cases (Mom, Mega Satan and The Beast). Therefore returning true here will also cancel these events.
 
 Return true if the spawn routine should be ignored, nil/nothing otherwise. Returning any non-nil value will skip remaining callbacks.
 
