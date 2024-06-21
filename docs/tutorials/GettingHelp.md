@@ -1,9 +1,9 @@
 ---
 tags:
-  - FAQ
+  - Tutorial
 ---
 
-# Modding FAQ: Asking for Help
+# [Tutorial] How to Effectively Get Coding Help
 
 ## Double-check the Docs
 

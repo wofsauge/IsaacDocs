@@ -13,5 +13,4 @@ Here you can find a table of contents for useful info and frequently asked quest
 - [Coding help](Coding.md)
 - [Lua language help](Lua.md)
 - [Troubleshooting](Troubleshoot.md)
-- [Good coding practices](Practices.md)
 - [Launch options](LaunchOptions.md)

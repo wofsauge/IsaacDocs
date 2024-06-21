@@ -1,9 +1,9 @@
 ---
 tags:
-  - FAQ
+  - Tutorial
 ---
 
-# Modding FAQ: Coding Practices
+# [Tutorial] Good Coding Practices
 
 ## What is a micro-optimization? Should I optimize my mod? {: .subHeader}
 
