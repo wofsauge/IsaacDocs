@@ -613,7 +613,7 @@ ___
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
 
-There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) (this one), which spawns an entity with a random seed, and [Game():Spawn()](Game.md#spawn), which spawns an entity with a specific seed. However due to a bug, [Isaac.Spawn()](Isaac.md#spawn) has a chance to generate a seed of 0, which crashes the game. If you need to spawn an entity with a random seed, you should always use [Game():Spawn()](Game.md#spawn) with a helper function that calls [Random()](GlobalFunctions.md#random) and arbitrarily sets the seed to 1 when the seed is 0.
+There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn) (this one), which spawns an entity with a random seed, and [Game():Spawn()](Game.md#spawn), which spawns an entity with a specific seed. However due to a bug, [Isaac.Spawn()](Isaac.md#spawn) has a chance to generate a seed of 0, which crashes the game. If you need to spawn an entity with a random seed, you should always use [Game():Spawn()](Game.md#spawn) with a helper function that calls [Random()](GlobalFunctions.md#random) and arbitrarily sets the seed to 1 when the seed is 0. ([IsaacScript](https://isaacscript.github.io/) users can just use the `spawn` helper function, which uses `Game.Spawn` under the hood.)
 
 ???- example "Example Code"
     This code spawns a random collectible at in center of the current room.
