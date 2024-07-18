@@ -4,6 +4,17 @@ tags:
   - Class
 ---
 # Class "KColor"
+
+???+ info
+    This class can be accessed by using its constructor or the following function:
+
+    * [Sprite.GetTexel()](Sprite.md#gettexel)
+
+    ???+ example "Example Code"
+        ```lua
+        local myKColor = KColor(1,0,0,1)
+        ```
+
 ## Constructors
 ### KColor () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

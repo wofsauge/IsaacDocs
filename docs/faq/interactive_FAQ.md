@@ -2,7 +2,7 @@
 tags:
   - FAQ
 ---
-# Interactive Mod installation fixing
+# Interactive Mod Installation Fixing
 This page provides an interactive debugging tool, which helps you to find out how to fix the most common issues that cause a mod to not work correctly.
 
 ## Interactive FAQ

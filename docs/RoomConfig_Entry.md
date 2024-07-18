@@ -19,6 +19,7 @@ search:
         local roomConfigSpawn = spawnList:Get(0)
         local roomConfigEntry = roomConfigSpawn:PickEntry(0)
         ```
+
 ## Variables
 ### Subtype {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

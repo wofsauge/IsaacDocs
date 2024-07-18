@@ -4,6 +4,20 @@ tags:
   - Class
 ---
 # Class "Sprite"
+
+???+ info
+    This class can be accessed by using its constructor or the following function:
+
+    * [Entity.GetSprite()](Entity.md#getsprite)
+    * [GridEntity.GetSprite()](GridEntity.md#getsprite)
+    * [GridEntityDoor.ExtraSprite](GridEntityDoor.md#extrasprite)
+    * [GridEntityPressurePlate.TimerPlate](GridEntityPressurePlate.md#timerplate)
+
+    ???+ example "Example Code"
+        ```lua
+        local mySprite = Sprite()
+        ```
+
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

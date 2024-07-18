@@ -4,6 +4,15 @@ tags:
 ---
 # Class "EntityBomb"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToBomb()](Entity.md#tobomb)
+    * [EntityPlayer.FireBomb()](EntityPlayer.md#firebomb)
+
+    ???+ example "Example Code"
+        `local entity = Isaac.GetPlayer():FireBomb(Vector(0,0), Vector(1,1))`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 

@@ -4,6 +4,15 @@ tags:
 ---
 # Class "EntityProjectile"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToProjectile()](Entity.md#toprojectile)
+    * [EntityNPC.FireBossProjectiles()](EntityNPC.md#firebossprojectiles)
+
+    ???+ example "Example Code"
+        `local entity = Isaac.GetRoomEntities()[1]:ToProjectile()`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

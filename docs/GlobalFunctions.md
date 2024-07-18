@@ -4,7 +4,7 @@ tags:
 search:
   boost: 2
 ---
-# Class "Global Functions"
+# Global Functions
 ## Constructors
 ### BitSet128 () {: aria-label='Constructors' }
 [ ](#){: .rep .tooltip .badge }

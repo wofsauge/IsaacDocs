@@ -5,6 +5,10 @@ search:
   boost: 0.25
 ---
 # Class "intValues"
+
+???+ warning
+    There is currently no method to get access to this class.
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

@@ -4,6 +4,14 @@ tags:
 ---
 # Class "EntityPickup"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToPickup()](Entity.md#topickup)
+
+    ???+ example "Example Code"
+        `local entity = Isaac.GetRoomEntities()[1]:ToPickup()`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

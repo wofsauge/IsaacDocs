@@ -5,6 +5,22 @@ tags:
 ---
 # Class "EntityPlayer"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToPlayer()](Entity.md#toplayer)
+    * [EntityFamiliar.Player](EntityFamiliar.md#player)
+    * [EntityPlayer.GetMainTwin()](EntityPlayer.md#getmaintwin)
+    * [EntityPlayer.GetOtherTwin()](EntityPlayer.md#getothertwin)
+    * [EntityPlayer.GetSubPlayer()](EntityPlayer.md#getsubplayer)
+    * [Game.GetNearestPlayer()](Game.md#getnearestplayer)
+    * [Game.GetPlayer()](Game.md#getplayer)
+    * [Game.GetRandomPlayer()](Game.md#getrandomplayer)
+    * [Isaac.GetPlayer()](Isaac.md#getplayer)
+
+    ???+ example "Example Code"
+        `local player = Isaac.GetPlayer()`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
@@ -25,7 +41,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddBloodCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Tainted Bethany.
+Adds to the amount of Blood Charge the player has. Blood Charge does not do anything on characters besides Tainted Bethany.
 
 ___
 ### Add·Blue·Flies () {: aria-label='Functions' }
@@ -111,9 +127,9 @@ ___
 
 Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the item and will cause it to not count towards transformations.
 
-Slot 0 is default (normal active item)
-Slot 1 is used by Schoolbag
-Slot 2 is used for pocket active items
+- Slot 0 is default (normal active item)
+- Slot 1 is used by Schoolbag
+- Slot 2 is used for pocket active items
 
 ???- note "Notes"
 	Slot 2 cannot be used if character did not start with a pocket active
@@ -122,23 +138,24 @@ VarData is used for the storage of a persistent context-sensitive value
 
 ???- note "Notes"
 	This is a list of all items that make use of VarData:
-	- Jar of Wisps: Wisps spawned on next use (Max 12)
+
+    - Jar of Wisps: Wisps spawned on next use (Max 12)
 	- D Infinity, Blank Card, Clear Rune, Placebo: Current maximum charge (Any value above 0)
 	- Hold: Stored poop
-	> Poop Types:
-	> [0] None
-	> [1] Normal
-	> [2] Flies
-	> [3] Fire
-	> [4] Petrified
-	> [5] Toxic
-	> [6] Black
-	> [7] Holy
-	> [8] X-Lax
-	> [9] Fart
-	> [10] Bomb
-	> [11] Explosive Diarrhea
-	> [12+] Empty
+	    - Poop Types:
+	    - [0] None
+	    - [1] Normal
+	    - [2] Flies
+	    - [3] Fire
+	    - [4] Petrified
+	    - [5] Toxic
+	    - [6] Black
+	    - [7] Holy
+	    - [8] X-Lax
+	    - [9] Fart
+	    - [10] Bomb
+	    - [11] Explosive Diarrhea
+	    - [12+] Empty
 
 ___
 ### Add·Controls·Cooldown () {: aria-label='Functions' }
@@ -346,9 +363,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void AddSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Adds one soul heart to Bethany's charge, equivalent to a half soul heart.
-???- note "Notes"
-	This function will only work when playing as Bethany.
+Adds Soul Charge to the player. Soul Charge does not do anything on characters besides Bethany.
 
 ___
 ### Add·Soul·Hearts () {: aria-label='Functions' }
@@ -769,6 +784,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int GetBloodCharge ( ) {: .copyable aria-label='Functions' }
 
+Returns the amount of Blood Charge the player has.
+
 ___
 ### Get·Body·Color () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -851,6 +868,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### int GetEffectiveBloodCharge ( ) {: .copyable aria-label='Functions' }
 
+Returns the amount of Blood Charge the player has. If playing as any other character besides Tainted Bethany, this will return `0`.
+
 ___
 ### Get·Effective·Max·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -863,6 +882,8 @@ ___
 ### Get·Effective·Soul·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int GetEffectiveSoulCharge ( ) {: .copyable aria-label='Functions' }
+
+Returns the amount of Soul Charge the player has. If playing as any other character besides Bethany, this will return `0`.
 
 ___
 ### Get·Effects () {: aria-label='Functions' }
@@ -1176,6 +1197,8 @@ ___
 ### Get·Soul·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### int GetSoulCharge ( ) {: .copyable aria-label='Functions' }
+
+Returns the amount of Soul Charge the player has.
 
 ___
 ### Get·Soul·Hearts () {: aria-label='Functions' }
@@ -1518,7 +1541,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void SetBloodCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Tainted Bethany.
+Sets the amount of Blood Charge the player has. Blood Charge does not do anything on characters besides Tainted Bethany.
 
 ___
 ### Set·Card () {: aria-label='Functions' }
@@ -1566,7 +1589,7 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### void SetSoulCharge ( int Amount ) {: .copyable aria-label='Functions' }
 
-Only works on Bethany.
+Sets the amount of Soul Charge the player has. Soul Charge does not do anything on characters besides Bethany.
 
 ___
 ### Set·Target·Trap·Door () {: aria-label='Functions' }

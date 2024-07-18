@@ -4,6 +4,19 @@ tags:
 ---
 # Class "EntityFamiliar"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToFamiliar()](Entity.md#tofamiliar)
+    * [EntityPlayer.AddItemWisp()](EntityPlayer.md#additemwisp)
+    * [EntityPlayer.AddMinisaac()](EntityPlayer.md#addminisaac)
+    * [EntityPlayer.AddSwarmFlyOrbital()](EntityPlayer.md#addswarmflyorbital)
+    * [EntityPlayer.AddWisp()](EntityPlayer.md#addwisp)
+    * [EntityPlayer.ThrowFriendlyDip()](EntityPlayer.md#throwfriendlydip)
+
+    ???+ example "Example Code"
+        `local familiarEntity = Isaac.GetPlayer():AddMinisaac(Vector(0,0))`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

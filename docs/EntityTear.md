@@ -4,6 +4,16 @@ tags:
 ---
 # Class "EntityTear"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToTear()](Entity.md#totear)
+    * [EntityFamiliar.FireProjectile()](EntityFamiliar.md#fireprojectile)
+    * [EntityPlayer.FireTear()](EntityPlayer.md#firetear)
+
+    ???+ example "Example Code"
+        `local tearEntity = Isaac.GetPlayer():FireTear( Vector(0,0), Vector(1, 1) )`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

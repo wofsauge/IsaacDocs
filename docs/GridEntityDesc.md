@@ -5,6 +5,16 @@ search:
   boost: 0.25
 ---
 # Class "GridEntityDesc"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [GridEntity.GetSaveState()](GridEntity.md#getsavestate)
+    * [GridEntity.Desc](GridEntity.md#desc)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25):GetSaveState()`
+
 ## Variables
 ### Initialized {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

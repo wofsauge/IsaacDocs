@@ -4,6 +4,18 @@ tags:
 ---
 # Class "EntityLaser"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToLaser()](Entity.md#tolaser)
+    * [EntityPlayer.FireBrimstone()](EntityPlayer.md#firebrimstone)
+    * [EntityPlayer.FireDelayedBrimstone()](EntityPlayer.md#firedelayedbrimstone)
+    * [EntityPlayer.FireTechLaser()](EntityPlayer.md#firetechlaser)
+    * [EntityPlayer.FireTechXLaser()](EntityPlayer.md#firetechxlaser)
+
+    ???+ example "Example Code"
+        `local brimstoneEntity = Isaac.GetPlayer():FireBrimstone(Vector(1, 0))`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions
@@ -31,7 +43,7 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [VectorList](CppContainer_Vector_VectorList.md) GetNonOptimizedSamples ( ) {: .copyable aria-label='Functions' }
 
-Returns a VectorList representing the path of the laser. Seems to typically return 51 evenly-spaced points along the laser's path, as opposed to [`GetSamples()`](#GetSamples) which only returns the minimum needed points to represent the path of the laser.
+Returns a VectorList representing the path of the laser. Seems to typically return 51 evenly-spaced points along the laser's path, as opposed to [`GetSamples()`](#getsamples) which only returns the minimum needed points to represent the path of the laser.
 
 ???+ example "Example Usage"
     ```lua
@@ -53,9 +65,9 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const [VectorList](CppContainer_Vector_VectorList.md) GetSamples ( ) {: .copyable aria-label='Functions' }
 
-Returns a VectorList representing the path of the laser. Unlike [`GetNonOptimizedSamples()`](#GetNonOptimizedSamples), this function returns as few points as possible, while still correctly representing the path of the laser.
+Returns a VectorList representing the path of the laser. Unlike [`GetNonOptimizedSamples()`](#getnonoptimizedsamples), this function returns as few points as possible, while still correctly representing the path of the laser.
 
-For example, for a completely straight laser, [`GetNonOptimizedSamples()`](#GetNonOptimizedSamples) will still return 51 points as always, but this function only only return 2.
+For example, for a completely straight laser, [`GetNonOptimizedSamples()`](#getnonoptimizedsamples) will still return 51 points as always, but this function only only return 2.
 
 ???+ example "Example Usage"
     ```lua

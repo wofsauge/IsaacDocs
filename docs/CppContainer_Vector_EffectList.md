@@ -5,6 +5,19 @@ search:
   boost: 0.25
 ---
 # Class "EffectList"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [TemporaryEffects.GetEffectsList()](TemporaryEffects.md#geteffectslist)
+
+    ???+ example "Example Code"
+        ```lua
+        local player = Isaac.GetPlayer()
+        local tempEffects = player:GetEffects()
+        local effectlist = tempEffects:GetEffectsList()
+        ```
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

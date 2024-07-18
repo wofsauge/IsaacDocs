@@ -5,6 +5,15 @@ search:
   boost: 0.25
 ---
 # Class "PillConfigList"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfig.GetPillEffects()](ItemConfig.md#getpilleffects)
+
+    ???+ example "Example Code"
+        `local effects = Isaac.GetItemConfig():GetPillEffects()`
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

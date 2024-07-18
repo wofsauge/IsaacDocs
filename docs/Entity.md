@@ -4,7 +4,37 @@ tags:
 ---
 # Class "Entity"
 
-First, see [the tutorial on entities](entities/Overview.md).
+???+ info
+    First, see [the tutorial on entities](entities/Overview.md).
+
+    You can get this class by using the following function:
+
+    ???- info "List of all functions that return 'Entity' objects"
+        * [EntityList.Get()](CppContainer_EntityList.md#get)
+        * [Entity.GetLastChild()](Entity.md#getlastchild)
+        * [Entity.GetLastParent()](Entity.md#getlastparent)
+        * [Entity.Child](Entity.md#child)
+        * [Entity.Parent](Entity.md#parent)
+        * [Entity.SpawnerEntity](Entity.md#spawnerentity)
+        * [Entity.Target](Entity.md#target)
+        * [EntityLaser.BounceLaser()](EntityLaser.md#bouncelaser)
+        * [EntityNPC.GetPlayerTarget()](EntityNPC.md#getplayertarget)
+        * [EntityNPC.EntityRef](EntityNPC.md#entityref)
+        * [EntityPlayer.AddBlueFlies](EntityPlayer.md#addblueflies)
+        * [EntityPlayer.AddBlueSpider](EntityPlayer.md#addbluespider)
+        * [EntityPlayer.GetActiveWeaponEntity](EntityPlayer.md#getactiveweaponentity)
+        * [EntityPlayer.GetNPCTarget](EntityPlayer.md#getnpctarget)
+        * [EntityPlayer.GetTractorBeam](EntityPlayer.md#gettractorbeam)
+        * [EntityPlayer.ThrowBlueSpider](EntityPlayer.md#throwbluespider)
+        * [EntityPlayer.ThrowHeldEntity](EntityPlayer.md#throwheldentity)
+        * [EntityPtr](EntityPtr.md#ref)
+        * [EntityRef.Entity](EntityRef.md#entity)
+        * [EntityTear.StickTarget](EntityTear.md#sticktarget)
+        * [Game.Spawn()](Game.md#spawn)
+        * [Isaac.Spawn()](Game.md#spawn)
+
+    ???+ example "Example Code"
+        `local entity = Isaac.Spawn(EntityType.ENTITY_PICKUP, PickupVariant.PICKUP_COLLECTIBLE, 0, Vector(320,280), Vector(0,0), nil)`
 
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
@@ -489,6 +519,8 @@ ___
 #### void SetColor ( [Color](Color.md) Color, int Duration, int Priority, boolean Fadeout, boolean Share ) {: .copyable aria-label='Functions' }
 
 Set the colormask for the entity. This can be used to tint the sprites in different colors.
+
+``Share`` boolean will apply color to child entitiy.
 
 ???- example "Example Code"
     This code changes the color of the sprite to a fully white sprite for 15 frames.

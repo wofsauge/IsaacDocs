@@ -5,6 +5,19 @@ search:
   boost: 0.25
 ---
 # Class "EntityList"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityNPC.QueryNPCsGroup()](EntityNPC.md#querynpcsgroup)
+    * [EntityNPC.QueryNPCsSpawnerType()](EntityNPC.md#querynpcsspawnertype)
+    * [EntityNPC.QueryNPCsType()](EntityNPC.md#querynpcstype)
+    * [Isaac.GetRoomEntities()](Isaac.md#getroomentities)
+    * [Room.GetEntities()](Room.md#getentities)
+
+    ???+ example "Example Code"
+        `local entities = Isaac.GetRoomEntities()`
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

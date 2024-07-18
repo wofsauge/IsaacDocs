@@ -3,6 +3,15 @@ tags:
   - Class
 ---
 # Class "HUD"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [Game.GetHUD()](Game.md#gethud)
+
+    ???+ example "Example Code"
+        `Game():GetHUD()`
+
 ## Functions
 ### Assign·Player·HUDs () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }

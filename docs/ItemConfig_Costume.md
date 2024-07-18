@@ -3,6 +3,15 @@ tags:
   - Class
 ---
 # Class "ItemConfigCostume"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfigItem.Costume](ItemConfig_Item.md#costume)
+
+    ???+ example "Example Code"
+        `Isaac.GetItemConfig():GetCollectible(CollectibleType.COLLECTIBLE_SAD_ONION).Costume`
+
 ## Variables
 ### Anm2Path {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

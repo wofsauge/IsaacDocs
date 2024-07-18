@@ -3,6 +3,15 @@ tags:
   - Class
 ---
 # Class "ItemConfigPillEffect"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [ItemConfig.GetPillEffect()](ItemConfig.md#getpilleffect)
+
+    ???+ example "Example Code"
+        `Isaac.GetItemConfig():GetPillEffect(PillEffect.PILLEFFECT_BAD_GAS)`
+
 ## Functions
 ___
 ### Is·Available () {: aria-label='Functions' }

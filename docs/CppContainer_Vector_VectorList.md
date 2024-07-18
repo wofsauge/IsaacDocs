@@ -5,6 +5,16 @@ search:
   boost: 0.25
 ---
 # Class "VectorList"
+
+???+ info
+    You can get this class by using the following function:
+
+    * [EntityLaser.GetNonOptimizedSamples()](EntityLaser.md#getnonoptimizedsamples)
+    * [EntityLaser.GetSamples()](EntityLaser.md#getsamples)
+
+    ???+ example "Example Code"
+        `local brimstoneEntity = Isaac.GetPlayer():FireBrimstone(Vector(1, 0)):GetSamples()`
+
 ## Operators
 ### __len () {: aria-label='Operators' }
 [ ](#){: .abrep .tooltip .badge }

@@ -4,6 +4,14 @@ tags:
 ---
 # Class "GridEntityPoop"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [GridEntity.ToPoop()](GridEntity.md#topoop)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25):ToPoop()`
+
 ## Class Diagram
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions

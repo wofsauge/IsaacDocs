@@ -4,6 +4,15 @@ tags:
 ---
 # Class "EntityKnife"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [Entity.ToKnife()](Entity.md#toknife)
+    * [EntityPlayer.FireKnife()](EntityPlayer.md#fireknife)
+
+    ???+ example "Example Code"
+        `local knifeEntity = Isaac.GetPlayer():FireKnife(Isaac.GetPlayer())`
+
 ## Class Diagram
 --8<-- "docs/snippets/EntityClassDiagram.md"
 ## Functions

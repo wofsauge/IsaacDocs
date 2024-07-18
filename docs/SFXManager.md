@@ -4,6 +4,15 @@ tags:
   - Class
 ---
 # Class "SFXManager"
+
+???+ info
+    This class can be accessed by using its constructor:
+
+    ???+ example "Example Code"
+        ```lua
+        local sfxManager = SFXManager()
+        ```
+
 ## Constructors
 ### SFXManager () {: aria-label='Constructors' }
 [ ](#){: .abrep .tooltip .badge }

@@ -40,6 +40,13 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) GetCollectible ( [ItemPoolType](enums/ItemPoolType.md) PoolType, boolean Decrease = false, int Seed = Random(), [CollectibleType](enums/CollectibleType.md) DefaultItem = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
 
+???- note "Notes"
+    Already accounts for effects such as NO!, Chaos, Sacred Orb, T.Lost's Better Items, Magic Skin and Rosary Beads, alongside all of the specific character and challenge restrictions.
+
+    If **DefaultItem** is set to CollectibleType.COLLECTIBLE_NULL and the item pool has run out of repicks, then the game will first try to get a collectible from the Treasure Pool (unless **ItemPoolType** is already the Treasure Pool). If that fails then Breakfast is returned (assuming it doesn't get modified into Magic Skin or Rosary later on).
+
+    If **DefaultItem** is set to anything other than CollectibleType.COLLECTIBLE_NULL, this entire process (excluding the potential Magic Skin or Rosary modification) is skipped, and the specified collectible is returned instead.
+
 ___
 ### Get·Last·Pool () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }

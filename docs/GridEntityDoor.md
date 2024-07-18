@@ -4,6 +4,15 @@ tags:
 ---
 # Class "GridEntityDoor"
 
+???+ info
+    You can get this class by using the following function:
+
+    * [GridEntity.ToDoor()](GridEntity.md#todoor)
+    * [Room.GetDoor()](Room.md#getdoor)
+
+    ???+ example "Example Code"
+        `Game():GetRoom():GetGridEntity(25):ToDoor()`
+
 ## Class Diagram
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions
