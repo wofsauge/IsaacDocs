@@ -15,4 +15,4 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|1 << 3 |ENEMY {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|1 << 4 |PICKUP {: .copyable } |  |
 |[ ](#){: .abrep .tooltip .badge }|1 << 5 |PLAYER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 << 6 |EFFECT {: .copyable } |  |
+|[ ](#){: .abrep .tooltip .badge }|1 << 6 |EFFECT {: .copyable } | Effects are only returned by [Isaac.FindInRadius](../Isaac.md#findinradius) if its [EntityCollisionClass](./EntityCollisionClass.md) is NOT set to `ENTCOLL_NONE`! |
