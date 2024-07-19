@@ -14,4 +14,4 @@ If you have questions regarding modding in general, Visit:
 **[:fontawesome-brands-discord: Official BoI Discord-Server](https://discord.gg/isaac)** or **[:fontawesome-brands-discord: Official Modding Of Isaac Discord-Server](https://discord.gg/KbevtvgD4z)**
 
 Check out the [FAQ](./faq/FaqHome.md) for answers to commonly asked questions. View the below diagram to understand how to read the documentation:
-![img](../images/docs_reading_guide.png)
+![img](./images/docs_reading_guide.png)
