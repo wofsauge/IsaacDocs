@@ -106,15 +106,15 @@ Spawn an explosion on a specified location.
 ___
 ### Find·By·Type () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.md) FindByType ( [EntityType](enums/EntityType.md) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
+#### [Entity](Entity.md)[] FindByType ( [EntityType](enums/EntityType.md) Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false ) {: .copyable aria-label='Functions' }
 Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is included. Use Cache flag for multiple calls per frame.
 
 If an entity has `EntityFlag.FLAG_NO_QUERY` then it will be excluded from the results. If you need to get an entity with that flag then you should use `GetRoomEntities` instead.
 ___
 ### Find·In·Radius () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### EntityList[] FindInRadius ( [Vector](Vector.md) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
-Returns entities in range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](enums/EntityPartition.md)) (include all = 0xffffffff)
+#### [Entity](Entity.md)[] FindInRadius ( [Vector](Vector.md) Position, float Radius, int Partitions = 0xFFFFFFFF  ) {: .copyable aria-label='Functions' }
+Returns an array of all entities inside the range of Radius from Position filtered by Partitions mask (see [EntityPartition enum](enums/EntityPartition.md)) (include all = 0xffffffff)
 
 This function does not return the entities sorted by nearest first, but based on the order they were loaded.
 ___
@@ -369,7 +369,7 @@ Returns a random position inside the current room. The Return value is a Vector 
 ___
 ### Get·Room·Entities () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [EntityList](CppContainer_EntityList.md) GetRoomEntities ( ) {: .copyable aria-label='Functions' }
+#### [Entity](Entity.md)[] GetRoomEntities ( ) {: .copyable aria-label='Functions' }
 Returns an iterable table containing all entities in the room at the time the function was called.
 
 This behavior is different to [`Room::GetEntities()`](Room.md#getentities), which returns a raw pointer to the array that stores all entities of the room at any given time. **For most usecases, its advised to use [`Isaac.GetRoomEntities()`](Isaac.md#getroomentities)**!
