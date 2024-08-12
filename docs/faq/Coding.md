@@ -45,13 +45,13 @@ See the [tutorial on using additional Lua files](../tutorials/Using-Additional-L
 
 ## How do I know when a player has picked up a collectible item? {: .subHeader}
 
-If you're using the script extender [REPENTOGON](https://repentogon.com/), then you can use the [MC_POST_ADD_COLLECTIBLE callback](https://repentogon.com/enums/ModCallbacks.html#mc_post_add_collectible).
+If you're using the script extender [REPENTOGON](https://repentogon.com/), then you can use the [MC_POST_ADD_COLLECTIBLE](https://repentogon.com/enums/ModCallbacks.html#mc_post_add_collectible) callback.
 
 Otherwise, there is no vanilla callback for this. As a workaround, you can check `EntityPlayer.IsItemQueueEmpty()` on every PostUpdate frame, and then check `EntityPlayer.QueuedItem` when it is not empty. Obviously, this will not work for items that never get queued.
 
 For :material-language-typescript:[IsaacScript](https://isaacscript.github.io/) users, you can use the provided [:material-language-typescript:MC_POST_ITEM_PICKUP](https://isaacscript.github.io/docs/function-signatures-custom#mc_post_item_pickup) callback.
 
-If you want to implement this callback yourself, the source code / algorithm is provided [here](https://github.com/IsaacScript/isaacscript-common/blob/main/src/callbacks/itemPickup.ts).
+If you want to implement this callback yourself, the source code / algorithm is provided [here](https://github.com/IsaacScript/isaacscript/blob/main/packages/isaacscript-common/src/classes/features/callbackLogic/ItemPickupDetection.ts).
 
 ## What is the ID of [the sound effect that I care about]? {: .subHeader}
 
