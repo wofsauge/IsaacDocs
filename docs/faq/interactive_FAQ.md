@@ -74,14 +74,32 @@ INTERACTIVE_questions = {
     "WORKSHOP_INSTALL" : {
       text: 'Make sure you have subscribed to the mod on the Steam Workshop and have relaunched the game afterwards.',
       answers: [
-        { text: "Still doesn't show up", link: "ERROR_STEAM_WORKSHOP" },
+        { text: "Still doesn't show up", link: "STEAM_WORKSHOP_CHECK" },
       ],
     },
-    "ERROR_STEAM_WORKSHOP" : {
+    "STEAM_WORKSHOP_CHECK" : {
+      text: 'Go into your Steam library, right-click on "The Binding of Isaac: Rebirth", select "Properties" and open the "Workshop" tab.<br>Do you see the mods you have subscribed, and is the number displayed on the right bigger than 0 B?',
+      image: "../images/faq/steam_workshop_downloads.png",
+      answers: [
+        { text: "Numbers are \"0 B\"", link: "STEAM_WORKSHOP_CLEAR_DOWNLOAD_CACHE" },
+        { text: "Numbers are bigger than 0", link: "ERROR_ABP_NON_ENGLISH_CHECK" },
+      ],
+    },
+    "STEAM_WORKSHOP_CLEAR_DOWNLOAD_CACHE" : {
+      text: '"0 B" means, that the data Steam downloaded has the size of 0 bytes. In most cases, that means that Steam failed to download the mods.<br>To force Steam to re-download the mods, do the following steps:<br>\
+<ol><li>Close the game </li>\
+<li>Unsubscribe from every mod that is displayed as "0 B" </li>\
+<li>Start the game, enter the main menu and close the game again (this clears the internal mod manager of the game) </li>\
+<li>Clear the download cache (<b>Steam -> Stettings -> Downloads -> "Clear Cache"</b>) </li>\
+<li>Restart Steam (optional: Restart your PC)</li>\
+<li>Subscribe to the mods again </li>\
+<li>Start the game </li></ol>',
+      image: "../images/faq/steam_clear_download_cache.png",
+    },
+    "ERROR_ABP_NON_ENGLISH_CHECK" : {
       text: 'Do you only have Afterbirth+ installed and does your Windows username contain letters that are not in the English alphabet?',
       answers: [
         { text: "Non English characters", link: "WINDOWS_USER" },
-        //{ text: "I have Repentance", link: "INSTALL" },
       ],
     },
     "WINDOWS_USER" : {
