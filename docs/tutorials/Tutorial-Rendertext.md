@@ -10,7 +10,7 @@ The Following fonts are used by the game and can be used with the [`Font()`](../
 
 |**Font Name**|**Ingame Name/s**|**Ingame Example**|**Ingame Usage**|**Link to font**|
 |--- |--- |--- |--- |--- |
-|Droid Sans|droid|[Example Droid](../images/tutorial_special_chars/example_droid.png)|(Not used ingame)|[Droid Sans](../customData/droid-sans.zip)|
+|Droid Sans|droid|[Example Droid](../images/tutorial_special_chars/example_droid.png)|debug 11(Grid Info)|[Droid Sans](../customData/droid-sans.zip)|
 |PF Tempesta Seven (Condensed)|pftempestasevencondensed|[Example PF Tempesta Seven](../images/tutorial_special_chars/example_pftempestasevencondensed.png)|HUD Elements like coin/key counters|[PF Tempesta Seven](https://www.dafont.com/pf-tempesta-seven.font)|
 |Team Meat Font|teammeatfont10<br/>teammeatfont12<br/>teammeatfont16<br/>teammeatfont16bold|[Example teammeatfont10](../images/tutorial_special_chars/example_teammeat10.png)<br/>[Example teammeatfont12](../images/tutorial_special_chars/example_teammeat12.png)<br/>[Example teammeatfont16](../images/tutorial_special_chars/example_teammeat16.png)<br/>[Example teammeatfont16bold](../images/tutorial_special_chars/example_teammeat16bold.png)|Main Menu Elements<br/>Pop-Ups<br/>Timer / Score Elements|[Team Meat Font without Bold](../customData/team-meat-font_1.2.zip)|
 |Terminus|terminus<br/>terminus8|[Example Terminus](../images/tutorial_special_chars/example_terminus.png)<br/>[Example Terminus8](../images/tutorial_special_chars/example_terminus8.png)|Debug Console / Isaac.RenderText()|[Terminus](http://terminus-font.sourceforge.net/)|
