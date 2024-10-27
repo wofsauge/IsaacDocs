@@ -22,6 +22,9 @@ Vanilla entities are defined in the "resources/entities2.xml" file. Mods can cre
 
 Mods can spawn entities with the `Isaac.Spawn` or `Game.Spawn` methods. The former should be used when the seed of the entity does not matter. Otherwise, use the latter and specify the seed.
 
+???+ bug "Bug"
+    Because the random seed to spawn an entity with `Isaac.Spawn` is generated using the `Random()` function, there is a chance that the entity's InitSeed is set to 0, which causes a crash if the entity needs to use RNG. If you need to spawn an entity with a random seed, you should always use `Game():Spawn()` with a helper function that calls `Random()` and arbitrarily sets the seed to 1 when the seed is 0.
+
 Hint: Nearly everything that you spawn should use have a specified seed, so that the rerolls and other random effects are consistent when replaying through the same seed. (This is how the vanilla game works.)
 
 ### 2) Grid Entities
@@ -32,7 +35,7 @@ Grid entities are represented by the `GridEntity` API class.
 
 Vanilla grid entities are not defined in an XML file. Mods cannot create custom grid entities.
 
-Mods can spawn grid entities with the `Isaac.GridSpawn` method. (It is not possible to spawn grid entities with a specific seed.)
+Mods can spawn grid entities with the `Isaac.GridSpawn` or `Room.SpawnGridEntity` methods. The former should be used when the seed of the grid entity does not matter. Otherwise, use the latter and specify the seed.
 
 <br>
 
