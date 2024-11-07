@@ -165,28 +165,40 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
     -- this code is current for Repentance as of Jan 2024, other versions might have different values
     local game = Game()
     
+    -- without repentogon there's an edge case with the flipped version of tainted lazarus for:
+    -- COLLECTIBLE_EUCHARIST, COLLECTIBLE_BOOK_OF_VIRTUES, COLLECTIBLE_ACT_OF_CONTRITION
     local function anyPlayerHasCollectible(collectible)
-      for i = 0, game:GetNumPlayers() - 1 do
-        local player = game:GetPlayer(i)
-        
-        if player:HasCollectible(collectible, false) then
-          return true
+      if REPENTOGON then
+        return PlayerManager.AnyoneHasCollectible(collectible)
+      else
+        for i = 0, game:GetNumPlayers() - 1 do
+          local player = game:GetPlayer(i)
+          
+          if player:HasCollectible(collectible, false) then
+            return true
+          end
         end
+        
+        return false
       end
-      
-      return false
     end
     
+    -- without repentogon there's an edge case with the flipped version of tainted lazarus for:
+    -- TRINKET_ROSARY_BEAD
     local function anyPlayerHasTrinket(trinket)
-      for i = 0, game:GetNumPlayers() - 1 do
-        local player = game:GetPlayer(i)
-        
-        if player:HasTrinket(trinket, false) then
-          return true
+      if REPENTOGON then
+        return PlayerManager.AnyoneHasTrinket(trinket)
+      else
+        for i = 0, game:GetNumPlayers() - 1 do
+          local player = game:GetPlayer(i)
+          
+          if player:HasTrinket(trinket, false) then
+            return true
+          end
         end
+        
+        return false
       end
-      
-      return false
     end
     
     local function getDevilAngelRoomChance()
