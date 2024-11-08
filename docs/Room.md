@@ -165,28 +165,43 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
     -- this code is current for Repentance as of Jan 2024, other versions might have different values
     local game = Game()
     
+    -- tainted lazarus is an interesting edge case where you flip between an active and inactive player
+    -- the inactive player is not available in repentance's api
+    -- if the inactive player picked up certain items (e.g. key pieces with lazarusshared tag) then calling HasCollectible w/ "false" on the active player will still return true
+    -- unfortunately, this doesn't work for all items that we care about (eucharist, book of virtues, act of contrition)
+    -- repentogon's PlayerManager is able to check against the inactive player's items (via lazarussharedglobal tag)
+    -- repentogon is recommended here if you're playing as tainted lazarus and want to make your numbers match what the game is calculating
     local function anyPlayerHasCollectible(collectible)
-      for i = 0, game:GetNumPlayers() - 1 do
-        local player = game:GetPlayer(i)
-        
-        if player:HasCollectible(collectible, false) then
-          return true
+      if REPENTOGON then
+        return PlayerManager.AnyoneHasCollectible(collectible)
+      else
+        for i = 0, game:GetNumPlayers() - 1 do
+          local player = game:GetPlayer(i)
+          
+          if player:HasCollectible(collectible, false) then
+            return true
+          end
         end
+        
+        return false
       end
-      
-      return false
     end
     
+    -- the same tainted lazarus + repentogon logic applies to trinkets (rosary bead)
     local function anyPlayerHasTrinket(trinket)
-      for i = 0, game:GetNumPlayers() - 1 do
-        local player = game:GetPlayer(i)
-        
-        if player:HasTrinket(trinket, false) then
-          return true
+      if REPENTOGON then
+        return PlayerManager.AnyoneHasTrinket(trinket)
+      else
+        for i = 0, game:GetNumPlayers() - 1 do
+          local player = game:GetPlayer(i)
+          
+          if player:HasTrinket(trinket, false) then
+            return true
+          end
         end
+        
+        return false
       end
-      
-      return false
     end
     
     local function getDevilAngelRoomChance()
