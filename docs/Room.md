@@ -167,9 +167,9 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
     
     -- tainted lazarus is an interesting edge case where you flip between an active and inactive player
     -- the inactive player is not available in repentance's api
-    -- if the inactive player picked up certain items (e.g. key pieces) then calling HasCollectible w/ "false" on the active player will still return true
+    -- if the inactive player picked up certain items (e.g. key pieces with lazarusshared tag) then calling HasCollectible w/ "false" on the active player will still return true
     -- unfortunately, this doesn't work for all items that we care about (eucharist, book of virtues, act of contrition)
-    -- repentogon's PlayerManager is able to check against the inactive player's items
+    -- repentogon's PlayerManager is able to check against the inactive player's items (via lazarussharedglobal tag)
     -- repentogon is recommended here if you're playing as tainted lazarus and want to make your numbers match what the game is calculating
     local function anyPlayerHasCollectible(collectible)
       if REPENTOGON then
