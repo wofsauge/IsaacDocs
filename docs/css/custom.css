@@ -16,6 +16,7 @@
     --constants-overview-bg-color: #f5e5e5;
     --abp-color: #FDD835;
     --rep-color: #F44336;
+    --repplus-color: #ff85e6;
     --md-typeset-mark-text-color: #000000;
 }
 
@@ -162,6 +163,18 @@ a.abp.tooltip:after {
 
 a.rep.tooltip:after {
     content: "Only compatible with Repentance";
+}
+
+.repplus {
+    background-color: var(--repplus-color);
+}
+
+.repplus::before {
+    content: "Rep+";
+}
+
+a.repplus.tooltip:after {
+    content: "Only compatible with Repentance+";
 }
 
 .abrep {

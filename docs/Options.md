@@ -99,6 +99,12 @@ ___
 Each notch in the options menu increments or decrements this by 0.1.
 
 ___
+### JacobEsauControls {: aria-label='Variables' }
+[ ](#){: .repplus .tooltip .badge }
+#### string JacobEsauControls  {: .copyable aria-label='Variables' }
+Added with Repentance+.
+
+___
 ### Language {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### string Language  {: .copyable aria-label='Variables' }

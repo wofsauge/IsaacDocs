@@ -35,6 +35,8 @@ ___
 ### Draw·String () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void DrawString ( string String, float PositionX, float PositionY, [KColor](KColor.md) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void DrawString ( string String, float PositionX, float PositionY, float sizeX, float sizeY, [KColor](KColor.md) RenderColor, [FontRenderSettings](FontRenderSettings.md) settings ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16, then draws the string on screen.
 
 The `BoxWidth` and `Center` parameters can be used for aligning the text. Some things to note about this:
