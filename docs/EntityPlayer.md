@@ -578,15 +578,13 @@ Call this method to spawn the appropriate amount of familiars associated with a 
 
 This is meant to be called in the EvaluateCache callback (when the cache flag is equal to `CacheFlag.CACHE_FAMILIARS`).
 
-Note that this function is bugged in that it will not increment the provided RNG. This is bad because if you provide the player's collectible RNG as the argument for `rng`, the resulting spawned familiars will potentially have the same `InitSeed` as familiars spawned previously on the same run. Since `InitSeed` is the main way to identiy unique familiars, it is important that each familiar has a unique `InitSeed`. Thus, a brand new `RNG` object should always be passed to the `EntityPlayer.CheckFamiliar` method so that each new spawned familiar will have a new, random `InitSeed`. Subsequently, you should handle random familiar events not with an RNG object based on the familiar's `InitSeed`, but with a data structure that maps familiar `InitSeed `to RNG objects that are initialized based on the seed from the `EntityPlayer.GetCollectibleRNG` method.
-
 In most cases, [:material-language-typescript:IsaacScript](https://isaacscript.github.io/) users should use the [`checkFamiliarFromCollectibles`](https://isaacscript.github.io/isaacscript-common/modules/functions_familiars.html#checkFamiliarFromCollectibles) helper function instead of using this method directly, as it automatically calculates the appropriate target count.
 
 **FamiliarVariant**: In most cases, use the familiar variant for your custom familiar.
 
 **TargetCount**: The expected amount of this FamiliarVariant that this EntityPlayer should have. This argument can simply be how many of an item that the current EntityPlayer owns. However, if you want your familiar to synergize with Monster Manual and Box of Friends, then this argument should be  `EntityPlayer:GetCollectibleNum(collectibleType) + EntityPlayer:GetEffects():GetCollectibleEffectNum(collectibleType)`.
 
-**rng**: Always use a brand new RNG object. (See the previous explanation on why you should not use the RNG from the `EntityPlayer.GetCollectibleRNG` method.)
+**rng**: Can just be the RNG object from `EntityPlayer.GetCollectibleRNG` of the collectible that spawns the familiar.
 
 **SourceItemConfigItem**: The `ItemConfigItem` that this familiar was created by. This is nil by default, but it should always be specified so that Sacrificial Altar will work properly. (It informs the game which collectible should be removed if the familiar is tagged with the "cansacrifice" entity tag.) This can be obtained with: `Isaac.GetItemConfig():GetCollectible(collectibleType)`
 
