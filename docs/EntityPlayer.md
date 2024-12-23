@@ -1321,7 +1321,7 @@ ___
 ### Has·Timed·Item () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTimedItem ( ) {: .copyable aria-label='Functions' }
-Kept for avoiding modding issues.
+Returns true if you have a timed active item *(such as Brown Nugget)* in the first active slot
 ___
 ### Has·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
