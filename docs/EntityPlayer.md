@@ -1651,6 +1651,7 @@ ___
 ### Trigger·Book·Of·Virtues () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void TriggerBookOfVirtues ( [CollectibleType](enums/CollectibleType.md) Type = CollectibleType.COLLECTIBLE_NULL, int Charge = 0 ) {: .copyable aria-label='Functions' }
+Works only if the player has the **Book of Virtues** item, otherwise does nothing
 
 ___
 ### Try·Hold·Entity () {: aria-label='Functions' }
