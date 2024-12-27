@@ -47,6 +47,8 @@ ___
 ### Add·Blue·Flies () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) AddBlueFlies ( int Amount, [Vector](Vector.md) Position, [Entity](Entity.md) Target ) {: .copyable aria-label='Functions' }
+???- amount info
+    The trinket **Fish Tail** will always double the `amount` of flies added by this function.
 
 ___
 ### Add·Blue·Spider () {: aria-label='Functions' }
