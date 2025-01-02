@@ -55,6 +55,15 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) AddBlueSpider ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
 
+???- example "Example Code"
+    This code spawns 3 blue spiders at the player's position.
+    ```lua
+    local player = Isaac.GetPlayer()
+    for _ = 1, 3 do
+	player:AddBlueSpider(player.Position)
+    end
+    ```
+
 ___
 ### Add·Bombs () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -304,7 +313,7 @@ Adds heart containers to the player. 2 units is a full heart container. Remove t
 ???- example "Example Code"
     This code adds 1 heart container to the player.
     ```lua
-    Isaac.GetPlayer():AddMaxHearts(2,true)
+    Isaac.GetPlayer():AddMaxHearts(2, true)
     ```
 
 
@@ -340,8 +349,7 @@ ___
 ### Add·Poop·Mana () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddPoopMana ( int Num ) {: .copyable aria-label='Functions' }
-
-Adds (or remove) poop consumables from the player
+Adds (or remove) poop consumables from the player.
 
 ___
 ### Add·Pretty·Fly () {: aria-label='Functions' }
@@ -379,6 +387,7 @@ Adds soul hearts to the player. 1 unit is half a heart. Remove them with negativ
     ```lua
     Isaac.GetPlayer():AddSoulHearts(2)
     ```
+
 ___
 ### Add·Swarm·Fly·Orbital () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -393,6 +402,13 @@ ___
 - If the player has an open trinket slot but already has a trinket, the new trinket will go to the first slot and the existing trinket will get pushed back to the second slot.
 - If you provide an argument of 0 or an otherwise invalid trinket ID, the game will crash.
 - Setting **FirstTimePickingUp** to false will not spawn or add pickups for the item and will not cause it to count towards transformations.
+
+???- example "Example Code"
+    This code adds the golden variant of the Swallowed Penny trinket to the player.
+    ```lua
+    Isaac.GetPlayer():AddTrinket(TrinketType.TRINKET_SWALLOWED_PENNY | TrinketType.TRINKET_GOLDEN_FLAG)
+    ```
+
 ___
 ### Add·Wisp () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -426,8 +442,7 @@ Plays the happy animation, played when taking a positive pill.
 ???- example "Example Code"
     This code plays the happy animation.
     ```lua
-    local player = Isaac.GetPlayer()
-    player:AnimateHappy()
+    Isaac.GetPlayer():AnimateHappy()
     ```
 
 ### Animate·Light·Travel () {: aria-label='Functions' }
@@ -438,8 +453,7 @@ Plays the animation that is played when entering the light in the ascent, or ent
 ???- example "Example Code"
 	Plays the animation.
 	```lua
-    local player = Isaac.GetPlayer()
-	player:AnimateLightTravel()
+	Isaac.GetPlayer():AnimateLightTravel()
 	```
 
 ___
@@ -473,24 +487,25 @@ Plays the sad animation, played when taking a negative pill.
 ???- example "Example Code"
 	Plays the sad animation.
 	```lua
-    	local player = Isaac.GetPlayer()
-	player:AnimateSad()
+	Isaac.GetPlayer():AnimateSad()
 	```
 ___
 ### Animate·Teleport () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateTeleport ( boolean Up ) {: .copyable aria-label='Functions' }
 The animation played when teleporting into another room.
+
 ___
 ### Animate·Trapdoor () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AnimateTrapdoor ( ) {: .copyable aria-label='Functions' }
 Plays the animation of the player jumping down a trapdoor.
-	???- example "Example Code"
-		Plays the animation of jumping down a trapdoor.
-		``local player = Isaac.GetPlayer()
-		player:AnimateTrapdoor()
-		``
+
+???- example "Example Code"
+	Plays the animation of jumping down a trapdoor.
+	```lua
+	Isaac.GetPlayer():AnimateTrapdoor()
+	```
 
 ___
 ### Animate·Trinket () {: aria-label='Functions' }
@@ -618,31 +633,31 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### void ClearTemporaryEffects ( ) {: .copyable aria-label='Functions' }
 Will be called when player exits the room.
+
 ___
 ### Discharge·Active·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void DischargeActiveItem ( [ActiveSlot](enums/ActiveSlot.md) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
-
 Sets the charge of your active item to 0 without triggering the active item effect.
+
 ___
 ### Donate·Luck () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void DonateLuck ( int Luck ) {: .copyable aria-label='Functions' }
-
 Unlike the Luck property which should be set in MC_EVALUATE_CACHE, this method can be used anywhere and will automatically remember any additional luck added.
+
 ___
 ### Do·Zit·Effect () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void DoZitEffect ( [Vector](Vector.md) Direction ) {: .copyable aria-label='Functions' }
-
-Fires a creep shot, same as the one fired by the item "The Large Zit"
+Fires a creep shot, same as the one fired by the item "Large Zit".
 
 ___
 ### Drop·Pocket·Item () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void DropPocketItem ( int PocketNum, [Vector](Vector.md) Pos ) {: .copyable aria-label='Functions' }
-
 Drops a held pocketitem (Card, Pill, Rune... from the given itemslot at the given position. Possible pocketnumbers are [0, 1, 2, 3].  Dropping pocket active items or dice bag dices does not work.
+
 ___
 ### Drop·Trinket () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -717,6 +732,10 @@ ___
 Fully charges the active item. Returns true if the item was fully charged, false otherwise. If player has battery it will first try to fill first charge slot, then the battery slot.
 
 **Force**: If set, items will always be charged even if they normally cannot be recharged by batteries
+
+???- info "ActiveSlot"
+    Setting the ActiveSlot argument to `-1` will recharge items in all slots.
+
 ___
 ### Get·Active·Charge () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
@@ -801,6 +820,7 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [BombVariant](enums/BombVariant.md) GetBombVariant ( [TearFlags](enums/TearFlags.md) TearFlags, boolean ForceSmallBomb ) {: .copyable aria-label='Functions' }
 Pass tear flags to add extra effects to the bomb visual like burn -> hot bombs, even if player doesn't have Hot Bombs collectible. ForceSmallBomb will override large bomb variants for TEAR_PERSISTENT.
+
 ___
 ### Get·Bone·Hearts () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -849,6 +869,7 @@ Gets the [RNG](RNG.md) object of a collectible.
     local player = Isaac.GetPlayer()
     local collectibleRNG = player:GetCollectibleRNG(CollectibleType.COLLECTIBLE_SAD_ONION)
     ```
+
 ___
 ### Get·Costume·Null·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -900,8 +921,8 @@ ___
 ### Get·Extra·Lives () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetExtraLives ( ) {: .copyable aria-label='Functions' }
-
 Returns the number of extra lives the player currently has.
+
 ___
 ### Get·Fire·Direction () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1140,7 +1161,7 @@ ___
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
 #### const PlayerPocketItem GetPocketItem ( int SlotId ) {: .copyable aria-label='Functions' }
 
-Get the userdata of the pocketitem (Card,Pill,rune) in a said slot.
+Get the userdata of the pocketitem (Card, Pill, Rune) in a said slot.
 
 ???+ bug "Bugs"
     This function returns userdata, which can't be processed. It is therefore broken and should not be used!
@@ -1221,7 +1242,8 @@ ___
 ### Get·Tear·Hit·Params () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [TearParams](TearParams.md) GetTearHitParams ( [WeaponType](enums/WeaponType.md) WeaponType, float DamageScale = 1, int TearDisplacement = 1, Entity Source = nil ) {: .copyable aria-label='Functions' }
- Used for tear parameters that are calculated on hit (ex: Tough love, Common cold), DamageScale is used for scale calculation based on damage
+Used for tear parameters that are calculated on hit (ex: Tough love, Common cold), DamageScale is used for scale calculation based on damage
+
 ___
 ### Get·Tear·Movement·Inheritance () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1236,6 +1258,7 @@ ___
 ### Get·Tear·Range·Modifier () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetTearRangeModifier ( ) {: .copyable aria-label='Functions' }
+For Experimental Treatement, returns `-1`, `0` or `1` depending on the range rolled.
 
 ___
 ### Get·Total·Damage·Taken () {: aria-label='Functions' }
@@ -1324,11 +1347,13 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTimedItem ( ) {: .copyable aria-label='Functions' }
 Returns true if you have a timed active item *(such as Brown Nugget)* in the first active slot
+
 ___
 ### Has·Trinket () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### boolean HasTrinket ( [TrinketType](enums/TrinketType.md) Type, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
 **IgnoreModifiers**: If set to true, only counts trinkets the player actually holds and ignores effects granted by other items
+
 ___
 ### Has·Weapon·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1389,6 +1414,7 @@ ___
 ### Is·Pos·In·Spot·Light () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean IsPosInSpotLight ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
+Returns true if the `position` is in the AOE of the **Night Light** item.
 
 ___
 ### Is·Sub·Player () {: aria-label='Functions' }
@@ -1617,6 +1643,7 @@ ___
 ### Swap·Active·Items () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void SwapActiveItems ( ) {: .copyable aria-label='Functions' }
+Swaps active items in the **Schoolbag** activeslot
 
 ___
 ### Throw·Blue·Spider () {: aria-label='Functions' }
@@ -1885,13 +1912,13 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [Tear
 ???- example "Example Code"
     This code makes Isaac's tears spectral.
     ```lua
-    local mod:OnEvaluateTearFlags(player, flag)
+    
+    function mod:OnEvaluateTearFlags(player, flag)
         player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
     end
-
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateTearFlags, CacheFlag.CACHE_TEARFLAG)
-
     ```
+
 ___
 ### Tear·Height {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
@@ -1902,11 +1929,10 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How high abov
     This code gives Isaac a +5 range up.
 
     ```lua
-    local mod:OnEvaluateRange(player, flag)
+    function mod:OnEvaluateRange(player, flag)
         -- we give -5 because the TearHeight stat is always negative; the lower the number - the further the tear travels
         player.TearHeight = player.TearHeight - 5
     end
-
     mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateRange, CacheFlag.CACHE_RANGE)
     ```
 
@@ -1915,6 +1941,19 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### float TearRange  {: .copyable aria-label='Variables' }
 Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How far should a tear go when it spawns?
+
+???+ info "Info"
+    This stat needs to be multiplied by 40, because it calculates the range based on tile length.
+
+???- example "Example Code"
+    This code gives Isaac a +2 range up.
+    
+    ```lua
+    function mod:OnEvaluateRange(player, flag)
+        player.TearRange = player.TearRange + (2 * 40)
+    end
+    mod:AddCallback(ModCallbacks.MC_EVALUATE_CACHE, mod.OnEvaluateRange, CacheFlag.CACHE_RANGE)
+    ```
 
 ___
 ### Tears·Offset {: aria-label='Variables' }
