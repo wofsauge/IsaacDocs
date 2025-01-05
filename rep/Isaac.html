@@ -1,0 +1,6648 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-8.5.10">
+    
+    
+      
+        <title>Isaac - BoI: Lua API Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.975780f9.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.2505c338.min.css">
+        
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="css/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-ZBKP3LLT96"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-ZBKP3LLT96",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-ZBKP3LLT96",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#global-class-isaac" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+<!--<p>
+    <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"> <b> WARNING </b> <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:">
+    <br> Due to the new DLC, some informations on this website can potentially be out-of-date.
+    <br> If you notice errors, please use the "Pencil"
+    <span href="#" class="md-content__button md-icon" style="float: none;margin-left: 0; color:white">
+<svg style="width:1.1em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg></span>    icon in the top right to edit the page.</p>
+
+    -->
+<script>
+    if (typeof(Storage) !== "undefined") {
+        if (localStorage.getItem("darkMode") == 1) {
+            document.body.classList.add("darkMode");
+        }
+    }
+</script>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="BoI: Lua API Docs" class="md-header__button md-logo" aria-label="BoI: Lua API Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BoI: Lua API Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Isaac
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="amber" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/wofsauge/IsaacDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="index.html" class="md-tabs__link">
+      Home
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link md-tabs__link--active">
+        Docs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="entities/Overview.html" class="md-tabs__link">
+        Entities
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="tutorials/ExampleProject.html" class="md-tabs__link">
+        Tutorials
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="xml/XMLFiledocumentation.html" class="md-tabs__link">
+        XMLs
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="faq/FaqHome.html" class="md-tabs__link">
+        FAQ
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="tutorials/Tools.html" class="md-tabs__link">
+        Tools
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://github.com/Meowlala/RepentanceAPIIssueTracker" class="md-tabs__link">
+      Bugs
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="tags.html" class="md-tabs__link">
+      Tags
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="https://www.lua.org/manual/5.3/" class="md-tabs__link">
+      Lua 5.3 Docs
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="BoI: Lua API Docs" class="md-nav__button md-logo" aria-label="BoI: Lua API Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    BoI: Lua API Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/wofsauge/IsaacDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    wofsauge/IsaacDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          Docs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Docs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Docs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_2" type="checkbox" id="__nav_2_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_2">
+          Last visited
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Last visited" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_2">
+          <span class="md-nav__icon md-icon"></span>
+          Last visited
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PLACEHOLDER.html" class="md-nav__link">
+        
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_3" type="checkbox" id="__nav_2_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_3">
+          Frequently used
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Frequently used" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_3">
+          <span class="md-nav__icon md-icon"></span>
+          Frequently used
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Isaac
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Isaac.html" class="md-nav__link md-nav__link--active">
+        Isaac
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addcallback" class="md-nav__link">
+    Add·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addpilleffecttopool" class="md-nav__link">
+    Add·Pill·Effect·To·Pool ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addprioritycallback" class="md-nav__link">
+    Add·Priority·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consoleoutput" class="md-nav__link">
+    Console·Output ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countbosses" class="md-nav__link">
+    Count·Bosses ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countenemies" class="md-nav__link">
+    Count·Enemies ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countentities" class="md-nav__link">
+    Count·Entities ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugstring" class="md-nav__link">
+    Debug·String ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executecommand" class="md-nav__link">
+    Execute·Command ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explode" class="md-nav__link">
+    Explode ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytype" class="md-nav__link">
+    Find·By·Type ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findinradius" class="md-nav__link">
+    Find·In·Radius ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuiltincallbackstate" class="md-nav__link">
+    Get·Built·In·Callback·State ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcallbacks" class="md-nav__link">
+    Get·Callbacks ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcardidbyname" class="md-nav__link">
+    Get·Card·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchallenge" class="md-nav__link">
+    Get·Challenge ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchallengeidbyname" class="md-nav__link">
+    Get·Challenge·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcostumeidbypath" class="md-nav__link">
+    Get·Costume·Id·By·Path ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurseidbyname" class="md-nav__link">
+    Get·Curse·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getentitytypebyname" class="md-nav__link">
+    Get·Entity·Type·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getentityvariantbyname" class="md-nav__link">
+    Get·Entity·Variant·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getframecount" class="md-nav__link">
+    Get·Frame·Count ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfreenearposition" class="md-nav__link">
+    Get·Free·Near·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitemconfig" class="md-nav__link">
+    Get·Item·Config ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitemidbyname" class="md-nav__link">
+    Get·Item·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmusicidbyname" class="md-nav__link">
+    Get·Music·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpilleffectbyname" class="md-nav__link">
+    Get·Pill·Effect·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplayer" class="md-nav__link">
+    Get·Player ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplayertypebyname" class="md-nav__link">
+    Get·Player·Type·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrandomposition" class="md-nav__link">
+    Get·Random·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getroomentities" class="md-nav__link">
+    Get·Room·Entities ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenheight" class="md-nav__link">
+    Get·Screen·Height ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenpointscale" class="md-nav__link">
+    Get·Screen·Point·Scale ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenwidth" class="md-nav__link">
+    Get·Screen·Width ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsoundidbyname" class="md-nav__link">
+    Get·Sound·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettextwidth" class="md-nav__link">
+    Get·Text·Width ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettime" class="md-nav__link">
+    Get·Time ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettrinketidbyname" class="md-nav__link">
+    Get·Trinket·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridspawn" class="md-nav__link">
+    Grid·Spawn ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasmoddata" class="md-nav__link">
+    Has·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmoddata" class="md-nav__link">
+    Load·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registermod" class="md-nav__link">
+    Register·Mod ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removecallback" class="md-nav__link">
+    Remove·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removemoddata" class="md-nav__link">
+    Remove·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renderscaledtext" class="md-nav__link">
+    Render·Scaled·Text ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendertext" class="md-nav__link">
+    Render·Text ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runcallback" class="md-nav__link">
+    Run·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runcallbackwithparam" class="md-nav__link">
+    Run·Callback·With·Param ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savemoddata" class="md-nav__link">
+    Save·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screentoworld" class="md-nav__link">
+    Screen·To·World ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screentoworlddistance" class="md-nav__link">
+    Screen·To·World·Distance ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbuiltincallbackstate" class="md-nav__link">
+    Set·Built·In·Callback·State ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn" class="md-nav__link">
+    Spawn ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtorenderposition" class="md-nav__link">
+    World·To·Render·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreen" class="md-nav__link">
+    World·To·Screen ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreendistance" class="md-nav__link">
+    World·To·Screen·Distance ()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Entity.html" class="md-nav__link">
+        Entity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityPlayer.html" class="md-nav__link">
+        EntityPlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityNPC.html" class="md-nav__link">
+        EntityNPC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityEffect.html" class="md-nav__link">
+        EntityEffect
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Game.html" class="md-nav__link">
+        Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Room.html" class="md-nav__link">
+        Room
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Level.html" class="md-nav__link">
+        Level
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ModCallbacks.html" class="md-nav__link">
+        ModCallbacks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_4">
+          Enums
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Enums" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          Enums
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ActionTriggers.html" class="md-nav__link">
+        ActionTriggers
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ActiveSlot.html" class="md-nav__link">
+        ActiveSlot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/BabySubType.html" class="md-nav__link">
+        BabySubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/BackdropType.html" class="md-nav__link">
+        BackdropType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/BatterySubType.html" class="md-nav__link">
+        BatterySubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/BedSubType.html" class="md-nav__link">
+        BedSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/BombSubType.html" class="md-nav__link">
+        BombSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/BombVariant.html" class="md-nav__link">
+        BombVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ButtonAction.html" class="md-nav__link">
+        ButtonAction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/CacheFlag.html" class="md-nav__link">
+        CacheFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/CallbackPriority.html" class="md-nav__link">
+        CallbackPriority
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Card.html" class="md-nav__link">
+        Card
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Challenge.html" class="md-nav__link">
+        Challenge
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ChampionColor.html" class="md-nav__link">
+        ChampionColor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ChestSubType.html" class="md-nav__link">
+        ChestSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/CoinSubType.html" class="md-nav__link">
+        CoinSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/CollectibleType.html" class="md-nav__link">
+        CollectibleType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/DamageFlag.html" class="md-nav__link">
+        DamageFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Difficulty.html" class="md-nav__link">
+        Difficulty
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Direction.html" class="md-nav__link">
+        Direction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/DoorSlot.html" class="md-nav__link">
+        DoorSlot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/DoorState.html" class="md-nav__link">
+        DoorState
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/DoorVariant.html" class="md-nav__link">
+        DoorVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/DrawStringAlignment.html" class="md-nav__link">
+        DrawStringAlignment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/EffectVariant.html" class="md-nav__link">
+        EffectVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/EntityCollisionClass.html" class="md-nav__link">
+        EntityCollisionClass
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/EntityFlag.html" class="md-nav__link">
+        EntityFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/EntityGridCollisionClass.html" class="md-nav__link">
+        EntityGridCollisionClass
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/EntityPartition.html" class="md-nav__link">
+        EntityPartition
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/EntityType.html" class="md-nav__link">
+        EntityType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/FamiliarVariant.html" class="md-nav__link">
+        FamiliarVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/GameStateFlag.html" class="md-nav__link">
+        GameStateFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/GridCollisionClass.html" class="md-nav__link">
+        GridCollisionClass
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/GridEntityType.html" class="md-nav__link">
+        GridEntityType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/GridRooms.html" class="md-nav__link">
+        GridRooms
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/HeartSubType.html" class="md-nav__link">
+        HeartSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/InputHook.html" class="md-nav__link">
+        InputHook
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ItemConfig.html" class="md-nav__link">
+        ItemConfig
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ItemPoolType.html" class="md-nav__link">
+        ItemPoolType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ItemType.html" class="md-nav__link">
+        ItemType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Keyboard.html" class="md-nav__link">
+        Keyboard
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/KeySubType.html" class="md-nav__link">
+        KeySubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LaserOffset.html" class="md-nav__link">
+        LaserOffset
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LaserSubType.html" class="md-nav__link">
+        LaserSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LaserVariant.html" class="md-nav__link">
+        LaserVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LevelCurse.html" class="md-nav__link">
+        LevelCurse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LevelStage.html" class="md-nav__link">
+        LevelStage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LevelStateFlag.html" class="md-nav__link">
+        LevelStateFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/LocustSubtypes.html" class="md-nav__link">
+        LocustSubtypes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ModCallbacks.html" class="md-nav__link">
+        ModCallbacks
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Mouse.html" class="md-nav__link">
+        Mouse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/Music.html" class="md-nav__link">
+        Music
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/NpcState.html" class="md-nav__link">
+        NpcState
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/NullItemID.html" class="md-nav__link">
+        NullItemID
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PickupPrice.html" class="md-nav__link">
+        PickupPrice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PickupVariant.html" class="md-nav__link">
+        PickupVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PillColor.html" class="md-nav__link">
+        PillColor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PillEffect.html" class="md-nav__link">
+        PillEffect
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PlayerForm.html" class="md-nav__link">
+        PlayerForm
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PlayerSpriteLayer.html" class="md-nav__link">
+        PlayerSpriteLayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PlayerType.html" class="md-nav__link">
+        PlayerType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PoopPickupSubType.html" class="md-nav__link">
+        PoopPickupSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/PoopSpellType.html" class="md-nav__link">
+        PoopSpellType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ProjectileFlags.html" class="md-nav__link">
+        ProjectileFlags
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/ProjectileVariant.html" class="md-nav__link">
+        ProjectileVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/RenderMode.html" class="md-nav__link">
+        RenderMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/RoomDescriptor.html" class="md-nav__link">
+        RoomDescriptor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/RoomShape.html" class="md-nav__link">
+        RoomShape
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/RoomTransitionAnim.html" class="md-nav__link">
+        RoomTransitionAnim
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/RoomType.html" class="md-nav__link">
+        RoomType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/SackSubType.html" class="md-nav__link">
+        SackSubType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/SeedEffect.html" class="md-nav__link">
+        SeedEffect
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/SkinColor.html" class="md-nav__link">
+        SkinColor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/SortingLayer.html" class="md-nav__link">
+        SortingLayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/SoundEffect.html" class="md-nav__link">
+        SoundEffect
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/StageType.html" class="md-nav__link">
+        StageType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/TearFlags.html" class="md-nav__link">
+        TearFlags
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/TearVariant.html" class="md-nav__link">
+        TearVariant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/TrinketType.html" class="md-nav__link">
+        TrinketType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/UseFlag.html" class="md-nav__link">
+        UseFlag
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="enums/WeaponType.html" class="md-nav__link">
+        WeaponType
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Globals.html" class="md-nav__link">
+        Globals
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GlobalFunctions.html" class="md-nav__link">
+        Global Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="BitSet128.html" class="md-nav__link">
+        BitSet128
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Color.html" class="md-nav__link">
+        Color
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9">
+          CppContainer
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="CppContainer" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          CppContainer
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_1" type="checkbox" id="__nav_2_9_1" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9_1">
+          ArrayProxy
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ArrayProxy" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_9_1">
+          <span class="md-nav__icon md-icon"></span>
+          ArrayProxy
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_ArrayProxy_RoomConfigEntries.html" class="md-nav__link">
+        RoomConfigEntries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_ArrayProxy_RoomConfigSpawns.html" class="md-nav__link">
+        RoomConfigSpawns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_ArrayProxy_RoomDescriptor.html" class="md-nav__link">
+        RoomDescriptor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_ArrayProxy_intValues.html" class="md-nav__link">
+        intValues
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_EntityList.html" class="md-nav__link">
+        EntityList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9_3" type="checkbox" id="__nav_2_9_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9_3">
+          Vector
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Vector" data-md-level="3">
+        <label class="md-nav__title" for="__nav_2_9_3">
+          <span class="md-nav__icon md-icon"></span>
+          Vector
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_Vector_CardConfigList.html" class="md-nav__link">
+        CardConfigList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_Vector_CostumeConfigList.html" class="md-nav__link">
+        CostumeConfigList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_Vector_EffectList.html" class="md-nav__link">
+        EffectList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_Vector_ItemConfigList.html" class="md-nav__link">
+        ItemConfigList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_Vector_PillConfigList.html" class="md-nav__link">
+        PillConfigList
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="CppContainer_Vector_VectorList.html" class="md-nav__link">
+        VectorList
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_10" type="checkbox" id="__nav_2_10" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_10">
+          Entity
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Entity" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_10">
+          <span class="md-nav__icon md-icon"></span>
+          Entity
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Entity.html" class="md-nav__link">
+        Entity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityBomb.html" class="md-nav__link">
+        EntityBomb
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityEffect.html" class="md-nav__link">
+        EntityEffect
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityFamiliar.html" class="md-nav__link">
+        EntityFamiliar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityKnife.html" class="md-nav__link">
+        EntityKnife
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityLaser.html" class="md-nav__link">
+        EntityLaser
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityNPC.html" class="md-nav__link">
+        EntityNPC
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityPickup.html" class="md-nav__link">
+        EntityPickup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityPlayer.html" class="md-nav__link">
+        EntityPlayer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityProjectile.html" class="md-nav__link">
+        EntityProjectile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityTear.html" class="md-nav__link">
+        EntityTear
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityPtr.html" class="md-nav__link">
+        EntityPtr
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EntityRef.html" class="md-nav__link">
+        EntityRef
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Font.html" class="md-nav__link">
+        Font
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="FontRenderSettings.html" class="md-nav__link">
+        FontRenderSettings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Game.html" class="md-nav__link">
+        Game
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_16" type="checkbox" id="__nav_2_16" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_16">
+          GridEntity
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="GridEntity" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_16">
+          <span class="md-nav__icon md-icon"></span>
+          GridEntity
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntity.html" class="md-nav__link">
+        GridEntity
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityDoor.html" class="md-nav__link">
+        GridEntityDoor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityPit.html" class="md-nav__link">
+        GridEntityPit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityPoop.html" class="md-nav__link">
+        GridEntityPoop
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityPressurePlate.html" class="md-nav__link">
+        GridEntityPressurePlate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityRock.html" class="md-nav__link">
+        GridEntityRock
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntitySpikes.html" class="md-nav__link">
+        GridEntitySpikes
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityTNT.html" class="md-nav__link">
+        GridEntityTNT
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="GridEntityDesc.html" class="md-nav__link">
+        GridEntityDesc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="HUD.html" class="md-nav__link">
+        HUD
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_19" type="checkbox" id="__nav_2_19" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_19">
+          ItemConfig
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="ItemConfig" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_19">
+          <span class="md-nav__icon md-icon"></span>
+          ItemConfig
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ItemConfig.html" class="md-nav__link">
+        ItemConfig Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ItemConfig_Card.html" class="md-nav__link">
+        ItemConfig - Card
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ItemConfig_Costume.html" class="md-nav__link">
+        ItemConfig - Costume
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ItemConfig_Item.html" class="md-nav__link">
+        ItemConfig - Item
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ItemConfig_PillEffect.html" class="md-nav__link">
+        ItemConfig - PillEffect
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Input.html" class="md-nav__link">
+        Input
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Isaac
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Isaac.html" class="md-nav__link md-nav__link--active">
+        Isaac
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addcallback" class="md-nav__link">
+    Add·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addpilleffecttopool" class="md-nav__link">
+    Add·Pill·Effect·To·Pool ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addprioritycallback" class="md-nav__link">
+    Add·Priority·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consoleoutput" class="md-nav__link">
+    Console·Output ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countbosses" class="md-nav__link">
+    Count·Bosses ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countenemies" class="md-nav__link">
+    Count·Enemies ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countentities" class="md-nav__link">
+    Count·Entities ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugstring" class="md-nav__link">
+    Debug·String ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executecommand" class="md-nav__link">
+    Execute·Command ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explode" class="md-nav__link">
+    Explode ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytype" class="md-nav__link">
+    Find·By·Type ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findinradius" class="md-nav__link">
+    Find·In·Radius ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuiltincallbackstate" class="md-nav__link">
+    Get·Built·In·Callback·State ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcallbacks" class="md-nav__link">
+    Get·Callbacks ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcardidbyname" class="md-nav__link">
+    Get·Card·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchallenge" class="md-nav__link">
+    Get·Challenge ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchallengeidbyname" class="md-nav__link">
+    Get·Challenge·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcostumeidbypath" class="md-nav__link">
+    Get·Costume·Id·By·Path ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurseidbyname" class="md-nav__link">
+    Get·Curse·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getentitytypebyname" class="md-nav__link">
+    Get·Entity·Type·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getentityvariantbyname" class="md-nav__link">
+    Get·Entity·Variant·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getframecount" class="md-nav__link">
+    Get·Frame·Count ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfreenearposition" class="md-nav__link">
+    Get·Free·Near·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitemconfig" class="md-nav__link">
+    Get·Item·Config ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitemidbyname" class="md-nav__link">
+    Get·Item·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmusicidbyname" class="md-nav__link">
+    Get·Music·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpilleffectbyname" class="md-nav__link">
+    Get·Pill·Effect·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplayer" class="md-nav__link">
+    Get·Player ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplayertypebyname" class="md-nav__link">
+    Get·Player·Type·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrandomposition" class="md-nav__link">
+    Get·Random·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getroomentities" class="md-nav__link">
+    Get·Room·Entities ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenheight" class="md-nav__link">
+    Get·Screen·Height ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenpointscale" class="md-nav__link">
+    Get·Screen·Point·Scale ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenwidth" class="md-nav__link">
+    Get·Screen·Width ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsoundidbyname" class="md-nav__link">
+    Get·Sound·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettextwidth" class="md-nav__link">
+    Get·Text·Width ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettime" class="md-nav__link">
+    Get·Time ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettrinketidbyname" class="md-nav__link">
+    Get·Trinket·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridspawn" class="md-nav__link">
+    Grid·Spawn ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasmoddata" class="md-nav__link">
+    Has·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmoddata" class="md-nav__link">
+    Load·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registermod" class="md-nav__link">
+    Register·Mod ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removecallback" class="md-nav__link">
+    Remove·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removemoddata" class="md-nav__link">
+    Remove·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renderscaledtext" class="md-nav__link">
+    Render·Scaled·Text ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendertext" class="md-nav__link">
+    Render·Text ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runcallback" class="md-nav__link">
+    Run·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runcallbackwithparam" class="md-nav__link">
+    Run·Callback·With·Param ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savemoddata" class="md-nav__link">
+    Save·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screentoworld" class="md-nav__link">
+    Screen·To·World ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screentoworlddistance" class="md-nav__link">
+    Screen·To·World·Distance ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbuiltincallbackstate" class="md-nav__link">
+    Set·Built·In·Callback·State ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn" class="md-nav__link">
+    Spawn ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtorenderposition" class="md-nav__link">
+    World·To·Render·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreen" class="md-nav__link">
+    World·To·Screen ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreendistance" class="md-nav__link">
+    World·To·Screen·Distance ()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ItemPool.html" class="md-nav__link">
+        ItemPool
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="KColor.html" class="md-nav__link">
+        KColor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Level.html" class="md-nav__link">
+        Level
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="MusicManager.html" class="md-nav__link">
+        MusicManager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ModReference.html" class="md-nav__link">
+        Mod Reference
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Options.html" class="md-nav__link">
+        Options
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PathFinder.html" class="md-nav__link">
+        PathFinder
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_29" type="checkbox" id="__nav_2_29" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_29">
+          PlayerTypes
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="PlayerTypes" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_29">
+          <span class="md-nav__icon md-icon"></span>
+          PlayerTypes
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerTypes_ActiveItemDesc.html" class="md-nav__link">
+        PlayerTypesActiveItemDesc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="PlayerTypes_PosVel.html" class="md-nav__link">
+        PlayerTypesPosVel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="ProjectileParams.html" class="md-nav__link">
+        ProjectileParams
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="QueueItemData.html" class="md-nav__link">
+        QueueItemData
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Room.html" class="md-nav__link">
+        Room
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_33" type="checkbox" id="__nav_2_33" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_33">
+          RoomConfig
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="RoomConfig" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_33">
+          <span class="md-nav__icon md-icon"></span>
+          RoomConfig
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RoomConfig_Entry.html" class="md-nav__link">
+        Entry
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RoomConfig_Room.html" class="md-nav__link">
+        Room
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RoomConfig_Spawn.html" class="md-nav__link">
+        Spawn
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RoomDescriptor.html" class="md-nav__link">
+        RoomDescriptor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="RNG.html" class="md-nav__link">
+        RNG
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Seeds.html" class="md-nav__link">
+        Seeds
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Sprite.html" class="md-nav__link">
+        Sprite
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="SFXManager.html" class="md-nav__link">
+        SFXManager
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TearParams.html" class="md-nav__link">
+        TearParams
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TemporaryEffect.html" class="md-nav__link">
+        TemporaryEffect
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="TemporaryEffects.html" class="md-nav__link">
+        TemporaryEffects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Vector.html" class="md-nav__link">
+        Vector
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Entities
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Entities" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Entities
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/Overview.html" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_2" type="checkbox" id="__nav_3_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3_2">
+          Boss Data
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Boss Data" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_2">
+          <span class="md-nav__icon md-icon"></span>
+          Boss Data
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter1.html" class="md-nav__link">
+        Chapter 1
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter1-5.html" class="md-nav__link">
+        Chapter 1.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter2.html" class="md-nav__link">
+        Chapter 2
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter2-5.html" class="md-nav__link">
+        Chapter 2.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter3.html" class="md-nav__link">
+        Chapter 3
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter3-5.html" class="md-nav__link">
+        Chapter 3.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter4.html" class="md-nav__link">
+        Chapter 4
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/Chapter4-5.html" class="md-nav__link">
+        Chapter 4.5
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/bosses/FinalBosses.html" class="md-nav__link">
+        Final Bosses
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/EntityData.html" class="md-nav__link">
+        Entity Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/FissureSpawner.html" class="md-nav__link">
+        Fissure Spawner
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="entities/SpikeBallChain.html" class="md-nav__link">
+        Ball & Chain
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Tutorials
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tutorials" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Tutorials
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/ExampleProject.html" class="md-nav__link">
+        Example Project
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/FunctionsInLua.html" class="md-nav__link">
+        Functions in Lua
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/GoodPractices.html" class="md-nav__link">
+        Good Coding Practices
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/GettingHelp.html" class="md-nav__link">
+        Getting Coding Help
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/MathAndLuaTips.html" class="md-nav__link">
+        Math and Lua Tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/AddingCostumesWithoutLUA.html" class="md-nav__link">
+        Adding Costumes to items without LUA
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/ZeroBraneStudio.html" class="md-nav__link">
+        Debugging with ZeroBrane Studio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/DebugConsole.html" class="md-nav__link">
+        Debug Console
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Using-Additional-Lua-Files.html" class="md-nav__link">
+        Using additional .lua Files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Standard-Library.html" class="md-nav__link">
+        Using the standard library
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Writingscreenshaders.html" class="md-nav__link">
+        Writing screen shaders
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Tutorial-Rendertext.html" class="md-nav__link">
+        Render text
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/directories-and-save-files.html" class="md-nav__link">
+        Directories and save files
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/mod-organization.html" class="md-nav__link">
+        Mod Organization
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/storing-data.html" class="md-nav__link">
+        Storing Data
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/CustomCallbacks.html" class="md-nav__link">
+        Custom Callbacks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          XMLs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="XMLs" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          XMLs
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/XMLFiledocumentation.html" class="md-nav__link">
+        XML Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/achievements.html" class="md-nav__link">
+        achievements.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/ambush.html" class="md-nav__link">
+        ambush.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/babies.html" class="md-nav__link">
+        babies.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/bombcostumes.html" class="md-nav__link">
+        bombcostumes.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/backdrops.html" class="md-nav__link">
+        backdrops.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/bosscolors.html" class="md-nav__link">
+        bosscolors.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/bossoverlays.html" class="md-nav__link">
+        bossoverlays.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/bosspools.html" class="md-nav__link">
+        bosspools.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/bossportraits.html" class="md-nav__link">
+        bossportraits.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/challenges.html" class="md-nav__link">
+        challenges.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/costumes2.html" class="md-nav__link">
+        costumes2.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/curses.html" class="md-nav__link">
+        curses.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/cutscenes.html" class="md-nav__link">
+        cutscenes.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/entities2.html" class="md-nav__link">
+        entities2.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/fortunes.html" class="md-nav__link">
+        fortunes.txt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/fxlayers.html" class="md-nav__link">
+        fxlayers.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/giantbook.html" class="md-nav__link">
+        giantbook.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/itempools.html" class="md-nav__link">
+        itempools.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/items.html" class="md-nav__link">
+        items.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/items_metadata.html" class="md-nav__link">
+        items_metadata.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/locusts.html" class="md-nav__link">
+        locusts.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/minibosses.html" class="md-nav__link">
+        minibosses.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/music.html" class="md-nav__link">
+        music.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/nightmares.html" class="md-nav__link">
+        nightmares.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/players.html" class="md-nav__link">
+        players.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/playerforms.html" class="md-nav__link">
+        playerforms.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/pocketitems.html" class="md-nav__link">
+        pocketitems.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/preload.html" class="md-nav__link">
+        preload.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/recipes.html" class="md-nav__link">
+        recipes.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/rules.html" class="md-nav__link">
+        rules.txt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/seedmenu.html" class="md-nav__link">
+        seedmenu.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/seeds.html" class="md-nav__link">
+        seeds.txt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/sounds.html" class="md-nav__link">
+        sounds.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/stages.html" class="md-nav__link">
+        stages.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/translations.html" class="md-nav__link">
+        translations.xml
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="xml/wisps.html" class="md-nav__link">
+        wisps.xml
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          FAQ
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="FAQ" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          FAQ
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/FaqHome.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/interactive_FAQ.html" class="md-nav__link">
+        Interactive FAQ
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/BasicInformation.html" class="md-nav__link">
+        Basic Information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/GettingStarted.html" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/Coding.html" class="md-nav__link">
+        Coding Help
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/Lua.html" class="md-nav__link">
+        Lua Language
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/Troubleshoot.html" class="md-nav__link">
+        Troubleshooting
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="faq/LaunchOptions.html" class="md-nav__link">
+        Launch Options
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Tools" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Tools
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Tools.html" class="md-nav__link">
+        Tools Overview
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Tool_XMLValidator.html" class="md-nav__link">
+        XML Validator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Tool_AnimationEditor.html" class="md-nav__link">
+        Animation Editor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tutorials/Tool_ItemPoolEditor.html" class="md-nav__link">
+        Itempool Editor
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://github.com/Meowlala/RepentanceAPIIssueTracker" class="md-nav__link">
+        Bugs
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tags.html" class="md-nav__link">
+        Tags
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.lua.org/manual/5.3/" class="md-nav__link">
+        Lua 5.3 Docs
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#addcallback" class="md-nav__link">
+    Add·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addpilleffecttopool" class="md-nav__link">
+    Add·Pill·Effect·To·Pool ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addprioritycallback" class="md-nav__link">
+    Add·Priority·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consoleoutput" class="md-nav__link">
+    Console·Output ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countbosses" class="md-nav__link">
+    Count·Bosses ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countenemies" class="md-nav__link">
+    Count·Enemies ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#countentities" class="md-nav__link">
+    Count·Entities ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debugstring" class="md-nav__link">
+    Debug·String ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#executecommand" class="md-nav__link">
+    Execute·Command ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#explode" class="md-nav__link">
+    Explode ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findbytype" class="md-nav__link">
+    Find·By·Type ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findinradius" class="md-nav__link">
+    Find·In·Radius ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getbuiltincallbackstate" class="md-nav__link">
+    Get·Built·In·Callback·State ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcallbacks" class="md-nav__link">
+    Get·Callbacks ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcardidbyname" class="md-nav__link">
+    Get·Card·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchallenge" class="md-nav__link">
+    Get·Challenge ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getchallengeidbyname" class="md-nav__link">
+    Get·Challenge·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcostumeidbypath" class="md-nav__link">
+    Get·Costume·Id·By·Path ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getcurseidbyname" class="md-nav__link">
+    Get·Curse·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getentitytypebyname" class="md-nav__link">
+    Get·Entity·Type·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getentityvariantbyname" class="md-nav__link">
+    Get·Entity·Variant·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getframecount" class="md-nav__link">
+    Get·Frame·Count ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getfreenearposition" class="md-nav__link">
+    Get·Free·Near·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitemconfig" class="md-nav__link">
+    Get·Item·Config ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getitemidbyname" class="md-nav__link">
+    Get·Item·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getmusicidbyname" class="md-nav__link">
+    Get·Music·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getpilleffectbyname" class="md-nav__link">
+    Get·Pill·Effect·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplayer" class="md-nav__link">
+    Get·Player ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getplayertypebyname" class="md-nav__link">
+    Get·Player·Type·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getrandomposition" class="md-nav__link">
+    Get·Random·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getroomentities" class="md-nav__link">
+    Get·Room·Entities ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenheight" class="md-nav__link">
+    Get·Screen·Height ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenpointscale" class="md-nav__link">
+    Get·Screen·Point·Scale ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getscreenwidth" class="md-nav__link">
+    Get·Screen·Width ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getsoundidbyname" class="md-nav__link">
+    Get·Sound·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettextwidth" class="md-nav__link">
+    Get·Text·Width ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettime" class="md-nav__link">
+    Get·Time ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gettrinketidbyname" class="md-nav__link">
+    Get·Trinket·Id·By·Name ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gridspawn" class="md-nav__link">
+    Grid·Spawn ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hasmoddata" class="md-nav__link">
+    Has·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loadmoddata" class="md-nav__link">
+    Load·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registermod" class="md-nav__link">
+    Register·Mod ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removecallback" class="md-nav__link">
+    Remove·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removemoddata" class="md-nav__link">
+    Remove·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renderscaledtext" class="md-nav__link">
+    Render·Scaled·Text ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rendertext" class="md-nav__link">
+    Render·Text ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runcallback" class="md-nav__link">
+    Run·Callback ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#runcallbackwithparam" class="md-nav__link">
+    Run·Callback·With·Param ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#savemoddata" class="md-nav__link">
+    Save·Mod·Data ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screentoworld" class="md-nav__link">
+    Screen·To·World ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screentoworlddistance" class="md-nav__link">
+    Screen·To·World·Distance ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setbuiltincallbackstate" class="md-nav__link">
+    Set·Built·In·Callback·State ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spawn" class="md-nav__link">
+    Spawn ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtorenderposition" class="md-nav__link">
+    World·To·Render·Position ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreen" class="md-nav__link">
+    World·To·Screen ()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#worldtoscreendistance" class="md-nav__link">
+    World·To·Screen·Distance ()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+  <nav class="md-tags" >
+    
+      
+      
+        <a href="tags.html#globals" class="md-tag">Globals</a>
+      
+    
+      
+      
+        <a href="tags.html#class" class="md-tag">Class</a>
+      
+    
+      
+      
+        <a href="tags.html#isaac" class="md-tag">Isaac</a>
+      
+    
+  </nav>
+
+
+
+  <a href="https://github.com/wofsauge/IsaacDocs/edit/main/docs/Isaac.md" title="Edit this page" class="md-content__button md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+<h1 id="global-class-isaac">Global Class "Isaac"<a class="headerlink" href="#global-class-isaac" title="Permanent link">⚓︎</a></h1>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>You can get this class by using the <code>Isaac</code> global table.</p>
+<p><strong>Note that to call these functions, you must use a <code>.</code> (period) instead of a <code>:</code> (colon)!</strong></p>
+<details class="example" open="open">
+<summary>Example Code</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
+</details>
+</details>
+<h2 id="functions">Functions<a class="headerlink" href="#functions" title="Permanent link">⚓︎</a></h2>
+<h3 aria-label="Functions" id="addcallback">Add·Callback ()<a class="headerlink" href="#addcallback" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-addcallback-table-modref-modcallbackstring-callbackid-table-callbackfn-int-entityid">void AddCallback ( table modRef, <a href="enums/ModCallbacks.html">ModCallback</a>|string callbackId, table callbackFn, int entityId )<a class="headerlink" href="#void-addcallback-table-modref-modcallbackstring-callbackid-table-callbackfn-int-entityid" title="Permanent link">⚓︎</a></h4>
+<p>It is recommended to use the <a href="ModReference.html#addcallback">AddCallback</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="addpilleffecttopool">Add·Pill·Effect·To·Pool ()<a class="headerlink" href="#addpilleffecttopool" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-addpilleffecttopool-int-pilleffect">int AddPillEffectToPool ( int pillEffect )<a class="headerlink" href="#int-addpilleffecttopool-int-pilleffect" title="Permanent link">⚓︎</a></h4>
+<p>Returns the <a href="enums/PillColor.html">PillColor</a> of the added pill.</p>
+<hr />
+<h3 aria-label="Functions" id="addprioritycallback">Add·Priority·Callback ()<a class="headerlink" href="#addprioritycallback" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-addprioritycallback-table-modref-modcallbackstring-callbackid-callbackpriority-priority-table-callbackfn-int-entityid">void AddPriorityCallback ( table modRef, <a href="enums/ModCallbacks.html">ModCallback</a>|string callbackId, <a href="enums/CallbackPriority.html">CallbackPriority</a> priority, table callbackFn, int entityId )<a class="headerlink" href="#void-addprioritycallback-table-modref-modcallbackstring-callbackid-callbackpriority-priority-table-callbackfn-int-entityid" title="Permanent link">⚓︎</a></h4>
+<p>It is recommended to use the <a href="ModReference.html#addprioritycallback">AddPriorityCallback</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="consoleoutput">Console·Output ()<a class="headerlink" href="#consoleoutput" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-consoleoutput-string-text">void ConsoleOutput ( string text )<a class="headerlink" href="#void-consoleoutput-string-text" title="Permanent link">⚓︎</a></h4>
+<p>Prints a string into the Debug Console.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>You can use this example as an alternative.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">ConsoleOutput</span><span class="p">(</span><span class="s2">&quot;This is a Test.&quot;</span><span class="p">)</span>
+<span class="c1">-- Output: This is a Test.</span>
+
+<span class="c1">-- Alternatively:</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is a Test.&quot;</span><span class="p">)</span>
+<span class="c1">-- Output: This is a Test.</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="countbosses">Count·Bosses ()<a class="headerlink" href="#countbosses" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-countbosses">int CountBosses ( )<a class="headerlink" href="#int-countbosses" title="Permanent link">⚓︎</a></h4>
+<p>Returns the number of bosses in the current room.</p>
+<hr />
+<h3 aria-label="Functions" id="countenemies">Count·Enemies ()<a class="headerlink" href="#countenemies" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-countenemies">int CountEnemies ( )<a class="headerlink" href="#int-countenemies" title="Permanent link">⚓︎</a></h4>
+<p>Returns the number of enemies in the current room.</p>
+<hr />
+<h3 aria-label="Functions" id="countentities">Count·Entities ()<a class="headerlink" href="#countentities" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-countentities-entity-spawner-entitytype-type-entitytypeentity_null-int-variant-1-int-subtype-1">int CountEntities ( <a href="Entity.html">Entity</a> Spawner, <a href="enums/EntityType.html">EntityType</a> Type = EntityType.ENTITY_NULL, int Variant = -1, int SubType = -1 )<a class="headerlink" href="#int-countentities-entity-spawner-entitytype-type-entitytypeentity_null-int-variant-1-int-subtype-1" title="Permanent link">⚓︎</a></h4>
+<p>Returns the number of entities in the current room that fulfill the specified requirements.</p>
+<ul>
+<li><code>Spawner</code> refers to an Entity object (can be <code class="highlight"><span class="kc">nil</span></code>).</li>
+<li><code>Type</code> refers to the found entity's type (can be <code class="highlight"><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_NULL</span></code>).</li>
+<li><code>Variant</code> and <code>Subtype</code> refer to the found entity's <code>Variant</code> and <code>Subtype</code> (can be <code class="highlight"><span class="o">-</span><span class="mi">1</span></code>).</li>
+</ul>
+<hr />
+<h3 aria-label="Functions" id="debugstring">Debug·String ()<a class="headerlink" href="#debugstring" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-debugstring-string-str">void DebugString ( string str )<a class="headerlink" href="#void-debugstring-string-str" title="Permanent link">⚓︎</a></h4>
+<p>Prints a string into the log file. You can find this file here: <code class="highlight"><span class="o">%</span><span class="n">systemdrive</span><span class="o">%</span><span class="err">\</span><span class="n">Users</span><span class="err">\</span><span class="o">%</span><span class="n">username</span><span class="o">%</span><span class="err">\</span><span class="n">Documents</span><span class="err">\</span><span class="n">My</span> <span class="n">Games</span><span class="err">\</span><span class="n">Binding</span> <span class="n">of</span> <span class="n">Isaac</span> <span class="n">Repentance</span><span class="err">\</span><span class="n">log</span><span class="p">.</span><span class="n">txt</span></code></p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code prints <code class="highlight"><span class="s2">&quot;This is a Test.&quot;</span></code> in the log.txt file.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">DebugString</span><span class="p">(</span><span class="s2">&quot;This is a Test.&quot;</span><span class="p">)</span>
+<span class="c1">-- Output: [INFO] - Lua Debug: This is a Test.</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="executecommand">Execute·Command ()<a class="headerlink" href="#executecommand" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="string-executecommand-string-command">string ExecuteCommand ( string command )<a class="headerlink" href="#string-executecommand-string-command" title="Permanent link">⚓︎</a></h4>
+<p>This function executes a debug console command. See the <a href="tutorials/DebugConsole.html">Debug Console Tutorial</a> for informations on how to use commands.</p>
+<hr />
+<h3 aria-label="Functions" id="explode">Explode ()<a class="headerlink" href="#explode" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-explode-vector-pos-entity-source-float-damage">void Explode ( <a href="Vector.html">Vector</a> pos, <a href="Entity.html">Entity</a> source, float damage )<a class="headerlink" href="#void-explode-vector-pos-entity-source-float-damage" title="Permanent link">⚓︎</a></h4>
+<p>Spawn an explosion on a specified location.</p>
+<hr />
+<h3 aria-label="Functions" id="findbytype">Find·By·Type ()<a class="headerlink" href="#findbytype" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="entity-findbytype-entitytype-type-int-variant-1-int-subtype-1-boolean-cache-false-boolean-ignorefriendly-false"><a href="Entity.html">Entity</a>[] FindByType ( <a href="enums/EntityType.html">EntityType</a> Type, int Variant = -1, int SubType = -1, boolean Cache = false, boolean IgnoreFriendly = false )<a class="headerlink" href="#entity-findbytype-entitytype-type-int-variant-1-int-subtype-1-boolean-cache-false-boolean-ignorefriendly-false" title="Permanent link">⚓︎</a></h4>
+<p>Returns entities based on Type, Variant, Subtype. If Variant and/or Subtype is -1 then everything is included. Use Cache flag for multiple calls per frame.</p>
+<p>If an entity has <code>EntityFlag.FLAG_NO_QUERY</code> then it will be excluded from the results. If you need to get an entity with that flag then you should use <code>GetRoomEntities</code> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="findinradius">Find·In·Radius ()<a class="headerlink" href="#findinradius" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="entity-findinradius-vector-position-float-radius-entitypartition-partitions-0xffffffff"><a href="Entity.html">Entity</a>[] FindInRadius ( <a href="Vector.html">Vector</a> Position, float Radius, <a href="enums/EntityPartition.html">EntityPartition</a> Partitions = 0xFFFFFFFF  )<a class="headerlink" href="#entity-findinradius-vector-position-float-radius-entitypartition-partitions-0xffffffff" title="Permanent link">⚓︎</a></h4>
+<p>Returns an array of all entities inside the range of Radius from Position filtered by Partitions mask. (include all = 0xffffffff)</p>
+<p>This function does not return the entities sorted by nearest first, but based on the order they were loaded.</p>
+<hr />
+<h3 aria-label="Functions" id="getbuiltincallbackstate">Get·Built·In·Callback·State ()<a class="headerlink" href="#getbuiltincallbackstate" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="boolean-getbuiltincallbackstate-modcallbacks-callbackid">boolean GetBuiltInCallbackState ( <a href="enums/ModCallbacks.html">ModCallbacks</a> callbackId )<a class="headerlink" href="#boolean-getbuiltincallbackstate-modcallbacks-callbackid" title="Permanent link">⚓︎</a></h4>
+<p>Returns <code>true</code> if callbacks under <code>callbackId</code> will be ran by the game. This is normally only <code>false</code> if there are no callbacks added under <code>callbackId</code>.</p>
+<hr />
+<h3 aria-label="Functions" id="getcallbacks">Get·Callbacks ()<a class="headerlink" href="#getcallbacks" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="table-getcallbacks-modcallbackstring-callbackid-boolean-createifmissing-nil">table GetCallbacks ( <a href="enums/ModCallbacks.html">ModCallback</a>|string callbackId, boolean createIfMissing = nil )<a class="headerlink" href="#table-getcallbacks-modcallbackstring-callbackid-boolean-createifmissing-nil" title="Permanent link">⚓︎</a></h4>
+<p>Returns a list of callbacks added under <code>callbackId</code>. Callbacks are represented as a table, for more information <a href="tutorials/CustomCallbacks.html#run-behavior">see the custom callback tutorial.</a></p>
+<p>The game holds all callbacks added to <code>callbackId</code> in a table, where the <code>callbackId</code> is the index, and the value is a table containing all callbacks added using said <code>callbackId</code>. If <code>createIfMissing</code> is <code>true</code>, and there are no added callbacks under <code>callbackId</code>, then the game will create an empty table for the <code>callbackId</code> for new callbacks to be added to. This empty table contains a metatable with a default <code>__matchParams</code> metamethod, which is called when checking if the extra parameter specified when adding the callback is valid. This function is also used with <code>createIfMissing</code> set to <code>true</code> by the game whenever any callback is added.</p>
+<p>If <code>createIfMissing</code> is <code>false</code> or <code>nil</code> and there are no callbacks added under <code>callbackId</code>, this function will return an empty table.</p>
+<hr />
+<h3 aria-label="Functions" id="getcardidbyname">Get·Card·Id·By·Name ()<a class="headerlink" href="#getcardidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getcardidbyname-string-cardhudname">int GetCardIdByName ( string cardHudName )<a class="headerlink" href="#int-getcardidbyname-string-cardhudname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the <a href="enums/Card.html">CardID</a> based on the "hud"-attribute defined in the "pocketitems.xml" file. Returns <code>-1</code> if no card with that "hud" attribute value could be found.</p>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>The name of this function is misleading, this function will only work with the "hud"-attribute value of a card and not the name of a card.</p>
+</details>
+<details class="bug" open="open">
+<summary>Bug</summary>
+<p>This function does not work for vanilla cards/runes, because they don't have the "hud" attribute defined in their entry in the pocketitems.xml file. You need to use the <a href="enums/Card.html">Card</a> enum to get those vanilla IDs instead.</p>
+</details>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the CardID of a modded card.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nt">&lt;pocketitems&gt;</span>
+<span class="w">    </span><span class="nt">&lt;card</span><span class="w"> </span><span class="na">type=</span><span class="s">&quot;tarot&quot;</span><span class="w"> </span><span class="na">pickup=</span><span class="s">&quot;1&quot;</span><span class="w"> </span><span class="na">description=</span><span class="s">&quot;some description&quot;</span><span class="w">  </span><span class="na">name=</span><span class="s">&quot;My new card&quot;</span><span class="w"> </span><span class="na">hud=</span><span class="s">&quot;my_modded_card&quot;</span><span class="w"> </span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/pocketitems&gt;</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCardIdByName</span><span class="p">(</span><span class="s2">&quot;my_modded_card&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getchallenge">Get·Challenge ()<a class="headerlink" href="#getchallenge" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getchallenge">int GetChallenge ( )<a class="headerlink" href="#int-getchallenge" title="Permanent link">⚓︎</a></h4>
+<p>Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.</p>
+<hr />
+<h3 aria-label="Functions" id="getchallengeidbyname">Get·Challenge·Id·By·Name ()<a class="headerlink" href="#getchallengeidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getchallengeidbyname-string-challengename">int GetChallengeIdByName ( string challengeName )<a class="headerlink" href="#int-getchallengeidbyname-string-challengename" title="Permanent link">⚓︎</a></h4>
+<p>Returns the ChallengeID of a challenge based on its name. (File: challenges.xml) Returns <code>-1</code> if no challenge with that name could be found (Case sensitive).</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the ChallengeID of Aprils fool.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetChallengeIdByName</span><span class="p">(</span><span class="s2">&quot;Aprils fool&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 32</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getcostumeidbypath">Get·Costume·Id·By·Path ()<a class="headerlink" href="#getcostumeidbypath" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getcostumeidbypath-string-path">int GetCostumeIdByPath ( string path )<a class="headerlink" href="#int-getcostumeidbypath-string-path" title="Permanent link">⚓︎</a></h4>
+<p>Returns the CostumeID of a costume based on its file path. (File: costumes2.xml) Returns <code>-1</code> if no costume with that path could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the CostumeID of the Poop transformation costume.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCostumeIdByPath</span><span class="p">(</span><span class="s2">&quot;gfx/characters/n027_Transformation_Poop.anm2&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 27</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getcurseidbyname">Get·Curse·Id·By·Name ()<a class="headerlink" href="#getcurseidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getcurseidbyname-string-cursename">int GetCurseIdByName ( string curseName )<a class="headerlink" href="#int-getcurseidbyname-string-cursename" title="Permanent link">⚓︎</a></h4>
+<p>Returns the CurseID of a curse based on its name. (File: curses.xml) Returns <code>-1</code> if no curse with that name could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the CurseID of Curse of the Unknown.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetCurseIdByName</span><span class="p">(</span><span class="s2">&quot;Curse of the Unknown&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 4</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getentitytypebyname">Get·Entity·Type·By·Name ()<a class="headerlink" href="#getentitytypebyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getentitytypebyname-string-entityname">int GetEntityTypeByName ( string entityName )<a class="headerlink" href="#int-getentitytypebyname-string-entityname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the EntityType of an entity based on its name. (File: entities2.xml) Returns <code>0</code> if no entity with that name could be found.</p>
+<details class="- note">
+<summary>Notes</summary>
+<p>There is no SubType version of this function.</p>
+</details>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the EntityType of Flaming Gaper.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetEntityTypeByName</span><span class="p">(</span><span class="s2">&quot;Flaming Gaper&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 10</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getentityvariantbyname">Get·Entity·Variant·By·Name ()<a class="headerlink" href="#getentityvariantbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getentityvariantbyname-string-entityname">int GetEntityVariantByName ( string entityName )<a class="headerlink" href="#int-getentityvariantbyname-string-entityname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the variant of an entity based on its name. (File: entities2.xml) Returns <code>-1</code> if no entity with that name could be found.</p>
+<details class="- note">
+<summary>Notes</summary>
+<p>There is no SubType version of this function.</p>
+</details>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the variant of Flaming Gaper.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetEntityVariantByName</span><span class="p">(</span><span class="s2">&quot;Flaming Gaper&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 2</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getframecount">Get·Frame·Count ()<a class="headerlink" href="#getframecount" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getframecount">int GetFrameCount ( )<a class="headerlink" href="#int-getframecount" title="Permanent link">⚓︎</a></h4>
+<p>Returns the amount of frames the game as a whole is running. The counter increases even when the game is paused or when you are in the main menu!
+1 second equals roughtly 60 frames.
+This function therefore works drastically different than <a href="Game.html#getframecount"><code class="highlight"><span class="n">Game</span><span class="p">():</span><span class="n">GetFrameCount</span><span class="p">()</span></code></a></p>
+<hr />
+<h3 aria-label="Functions" id="getfreenearposition">Get·Free·Near·Position ()<a class="headerlink" href="#getfreenearposition" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-getfreenearposition-vector-pos-float-step"><a href="Vector.html">Vector</a> GetFreeNearPosition ( <a href="Vector.html">Vector</a> pos, float step )<a class="headerlink" href="#vector-getfreenearposition-vector-pos-float-step" title="Permanent link">⚓︎</a></h4>
+<hr />
+<h3 aria-label="Functions" id="getitemconfig">Get·Item·Config ()<a class="headerlink" href="#getitemconfig" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="itemconfig-getitemconfig"><a href="ItemConfig.html">ItemConfig</a> GetItemConfig ( )<a class="headerlink" href="#itemconfig-getitemconfig" title="Permanent link">⚓︎</a></h4>
+<p>This is the only way to access the <code>ItemConfig</code> object.</p>
+<hr />
+<h3 aria-label="Functions" id="getitemidbyname">Get·Item·Id·By·Name ()<a class="headerlink" href="#getitemidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getitemidbyname-string-itemname">int GetItemIdByName ( string itemName )<a class="headerlink" href="#int-getitemidbyname-string-itemname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the ItemID of a Collectible. (File: items.xml) Returns <code>-1</code> if no item with that name could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the ItemID of Brimstone.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetItemIdByName</span><span class="p">(</span><span class="s2">&quot;Brimstone&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 118</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getmusicidbyname">Get·Music·Id·By·Name ()<a class="headerlink" href="#getmusicidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getmusicidbyname-string-musicname">int GetMusicIdByName ( string musicName )<a class="headerlink" href="#int-getmusicidbyname-string-musicname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the MusicID of a music track. (File: music.xml) Returns <code>-1</code> if no music with that name could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the MusicID of the Title Screen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetMusicIdByName</span><span class="p">(</span><span class="s2">&quot;Title Screen&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 61</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getpilleffectbyname">Get·Pill·Effect·By·Name ()<a class="headerlink" href="#getpilleffectbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getpilleffectbyname-string-pilleffect">int GetPillEffectByName ( string pillEffect )<a class="headerlink" href="#int-getpilleffectbyname-string-pilleffect" title="Permanent link">⚓︎</a></h4>
+<p>Returns the PillEffectID based on its name. (File: pocketitems.xml) Returns <code>-1</code> if no pill with that name could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the PillEffectID of I can see forever!.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetPillEffectByName</span><span class="p">(</span><span class="s2">&quot;I can see forever!&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 23</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getplayer">Get·Player ()<a class="headerlink" href="#getplayer" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" data-altreturn="nil" id="entityplayer-getplayer-int-playerid-0"><a href="EntityPlayer.html">EntityPlayer</a> GetPlayer ( int playerID = 0 )<a class="headerlink" href="#entityplayer-getplayer-int-playerid-0" title="Permanent link">⚓︎</a></h4>
+<p>Returns the EntityPlayer that matches the provided player ID. Player IDs start at 0 and increment upwards. For example, when playing as Jacob &amp; Esau, Jacob will have a player ID of 0 and Esau will have a player ID of 1.</p>
+<p>If an invalid player ID is passed (such as -20 or 20), the function will instead assume a player index of 0.</p>
+<p>This function can return <code>nil</code> if it is called before any player is initialized (i.e. if you call it in the main menu).</p>
+<p>This function is the same as <a href="Game.html#getplayer"><code>Game():GetPlayer()</code></a>.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">getPlayers</span><span class="p">()</span>
+  <span class="kd">local</span> <span class="n">game</span> <span class="o">=</span> <span class="n">Game</span><span class="p">()</span>
+  <span class="kd">local</span> <span class="n">numPlayers</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetNumPlayers</span><span class="p">()</span>
+
+  <span class="kd">local</span> <span class="n">players</span> <span class="o">=</span> <span class="p">{}</span>
+  <span class="kr">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">numPlayers</span> <span class="o">-</span> <span class="mi">1</span> <span class="kr">do</span>
+    <span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+    <span class="nb">table.insert</span><span class="p">(</span><span class="n">players</span><span class="p">,</span> <span class="n">player</span><span class="p">)</span>
+  <span class="kr">end</span>
+
+  <span class="kr">return</span> <span class="n">players</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getplayertypebyname">Get·Player·Type·By·Name ()<a class="headerlink" href="#getplayertypebyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="playertype-getplayertypebyname-string-playername-boolean-tainted-false"><a href="enums/PlayerType.html">PlayerType</a> GetPlayerTypeByName ( string playerName , boolean Tainted = false )<a class="headerlink" href="#playertype-getplayertypebyname-string-playername-boolean-tainted-false" title="Permanent link">⚓︎</a></h4>
+<p>Returns the PlayerType (ID) of a character based on its name. (File: players.xml) Returns <code>-1</code> if no player with that name could be found.</p>
+<details class="warning" open="open">
+<summary>Warning</summary>
+<p>In Repentance, character names where made translateable and therefore use the translation placeholder as their "base name". For example, to get the <a href="enums/PlayerType.html">PlayerType</a> of Cain, you need to use this function with the character name <code>#AZAZEL_NAME</code> instead of <code>Azazel</code>.
+It is therefore recommended to use this function for modded characters, and use the <a href="enums/PlayerType.html">PlayerType</a> enum directly, if you want to have the PlayerType of a vanilla character.</p>
+</details>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the PlayerType of Azazel.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1">-- REPENTANCE:</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayerTypeByName</span><span class="p">(</span><span class="s2">&quot;#AZAZEL_NAME&quot;</span><span class="p">)</span> <span class="c1">--Returns: 7</span>
+
+<span class="c1">-- AFTERBIRTH+:</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayerTypeByName</span><span class="p">(</span><span class="s2">&quot;Azazel&quot;</span><span class="p">)</span> <span class="c1">--Returns: 7</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getrandomposition">Get·Random·Position ()<a class="headerlink" href="#getrandomposition" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-getrandomposition"><a href="Vector.html">Vector</a> GetRandomPosition ( )<a class="headerlink" href="#vector-getrandomposition" title="Permanent link">⚓︎</a></h4>
+<p>Returns a random position inside the current room. The Return value is a Vector containing the position in world coordinates.</p>
+<hr />
+<h3 aria-label="Functions" id="getroomentities">Get·Room·Entities ()<a class="headerlink" href="#getroomentities" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="entity-getroomentities"><a href="Entity.html">Entity</a>[] GetRoomEntities ( )<a class="headerlink" href="#entity-getroomentities" title="Permanent link">⚓︎</a></h4>
+<p>Returns an iterable table containing all entities in the room at the time the function was called.</p>
+<p>This behavior is different to <a href="Room.html#getentities"><code>Room::GetEntities()</code></a>, which returns a raw pointer to the array that stores all entities of the room at any given time. <strong>For most usecases, its advised to use <a href="Isaac.html#getroomentities"><code>Isaac.GetRoomEntities()</code></a></strong>!</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code prints the Type, Variant and SubType of each entity in the room.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kr">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">entity</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">Isaac</span><span class="p">.</span><span class="n">GetRoomEntities</span><span class="p">())</span> <span class="kr">do</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">entity</span><span class="p">.</span><span class="n">Type</span><span class="p">,</span> <span class="n">entity</span><span class="p">.</span><span class="n">Variant</span><span class="p">,</span> <span class="n">entity</span><span class="p">.</span><span class="n">SubType</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getscreenheight">Get·Screen·Height ()<a class="headerlink" href="#getscreenheight" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="float-getscreenheight">float GetScreenHeight ( )<a class="headerlink" href="#float-getscreenheight" title="Permanent link">⚓︎</a></h4>
+<hr />
+<h3 aria-label="Functions" id="getscreenpointscale">Get·Screen·Point·Scale ()<a class="headerlink" href="#getscreenpointscale" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="float-getscreenpointscale">float GetScreenPointScale ( )<a class="headerlink" href="#float-getscreenpointscale" title="Permanent link">⚓︎</a></h4>
+<p>Returns a number denoting how "zoomed in" the screen is. This can be <code>1.0</code> or <code>2.0</code>, depending on the resolution of the game window.</p>
+<details class="- example">
+<summary>Video Demonstration</summary>
+<p><figure class="video_container">
+    <video controls="true" allowfullscreen="true" muted="true" style="width:25rem">
+        <source src="./customData/screen-point-scale.mp4" type="video/mp4">
+    </video>
+    <figcaption>Demonstration of how the size of the game window changes the value this function returns.</figcaption>
+</figure></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="getscreenwidth">Get·Screen·Width ()<a class="headerlink" href="#getscreenwidth" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="float-getscreenwidth">float GetScreenWidth ( )<a class="headerlink" href="#float-getscreenwidth" title="Permanent link">⚓︎</a></h4>
+<hr />
+<h3 aria-label="Functions" id="getsoundidbyname">Get·Sound·Id·By·Name ()<a class="headerlink" href="#getsoundidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-getsoundidbyname-string-soundname">int GetSoundIdByName ( string soundName )<a class="headerlink" href="#int-getsoundidbyname-string-soundname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the SoundEffectID of a sound based on its name. (File: sounds.xml) Returns <code>-1</code> if no sound with that name could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the SoundEffectID of a sound named "Custom Sound Effect"</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetSoundIdByName</span><span class="p">(</span><span class="s2">&quot;Custom Sound Effect&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="gettextwidth">Get·Text·Width ()<a class="headerlink" href="#gettextwidth" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-gettextwidth-string-str">int GetTextWidth ( string str )<a class="headerlink" href="#int-gettextwidth-string-str" title="Permanent link">⚓︎</a></h4>
+<p>Returns the width of the given string in pixels based on the "terminus8" font (same font as used in Isaac.RenderText())</p>
+<hr />
+<h3 aria-label="Functions" id="gettime">Get·Time ()<a class="headerlink" href="#gettime" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-gettime">int GetTime ( )<a class="headerlink" href="#int-gettime" title="Permanent link">⚓︎</a></h4>
+<p>Returns the current time in milliseconds since the computer's operating system was started.</p>
+<p>This is useful for measuring how much real time has passed independent of how many frames have passed. (Frames are not a very good indicator of how much time has passed, because the game locks up to load new data on every level transition and room transition.)</p>
+<p>For example, you could use this to implement an on-screen speedrunning timer based on real-time, or to benchmark the performance impact of one function over another.</p>
+<hr />
+<h3 aria-label="Functions" id="gettrinketidbyname">Get·Trinket·Id·By·Name ()<a class="headerlink" href="#gettrinketidbyname" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="int-gettrinketidbyname-string-trinketname">int GetTrinketIdByName ( string trinketName )<a class="headerlink" href="#int-gettrinketidbyname-string-trinketname" title="Permanent link">⚓︎</a></h4>
+<p>Returns the TrinketType of a trinket based on its name. (File: items.xml) Returns <code>-1</code> if no trinket with that name could be found.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code gets the TrinketType of Lucky Toe.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">GetTrinketIdByName</span><span class="p">(</span><span class="s2">&quot;Lucky Toe&quot;</span><span class="p">)</span>
+<span class="c1">--Returns: 42</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="gridspawn">Grid·Spawn ()<a class="headerlink" href="#gridspawn" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="gridentity-gridspawn-gridentitytype-gridentitytype-int-variant-vector-position-boolean-forced"><a href="GridEntity.html">GridEntity</a> GridSpawn ( <a href="enums/GridEntityType.html">GridEntityType</a> gridEntityType, int variant, <a href="Vector.html">Vector</a> position, boolean forced )<a class="headerlink" href="#gridentity-gridspawn-gridentitytype-gridentitytype-int-variant-vector-position-boolean-forced" title="Permanent link">⚓︎</a></h4>
+<p>Spawn a <a href="GridEntity.html">GridEntity</a> at the given position (world coordinates).</p>
+<details class="bug" open="open">
+<summary>Bugs</summary>
+<p>The "forced" argument can override the grid entity at the given location in certain cases. For example: it won't work with a rock, but will work with a rock that's been blown up. You can check the location with <code>Isaac.GetFreeNearPosition</code> to see if the game considers that location free. Check the returned grid entity's type to make sure the replacement happened. Otherwise, you may need to remove the grid entity at the given location before spawning something else in its place.</p>
+</details>
+<p>For example, to spawn a super secret rock in the center of the room:</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="n">game</span> <span class="o">=</span> <span class="n">Game</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">room</span> <span class="o">=</span> <span class="n">game</span><span class="p">:</span><span class="n">GetRoom</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">centerPos</span> <span class="o">=</span> <span class="n">room</span><span class="p">:</span><span class="n">GetCenterPos</span><span class="p">()</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">GridSpawn</span><span class="p">(</span><span class="n">GridEntityType</span><span class="p">.</span><span class="n">GRID_ROCK_SS</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">centerPos</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<hr />
+<h3 aria-label="Functions" id="hasmoddata">Has·Mod·Data ()<a class="headerlink" href="#hasmoddata" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="boolean-hasmoddata-table-modref">boolean HasModData ( table modRef )<a class="headerlink" href="#boolean-hasmoddata-table-modref" title="Permanent link">⚓︎</a></h4>
+<p>Returns "true" if your mod has Data stored using the "SaveModData()" function. Aka. if there is a "saveX.dat" file in your mod folder.</p>
+<p>There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<p>For AB+, they are stored inside their mod's folder next to the "main.lua" file.</p>
+<p>For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.</p>
+<p>It is recommended to use the <a href="ModReference.html#hasdata">HasData</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="loadmoddata">Load·Mod·Data ()<a class="headerlink" href="#loadmoddata" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="string-loadmoddata-table-modref">string LoadModData ( table modRef )<a class="headerlink" href="#string-loadmoddata-table-modref" title="Permanent link">⚓︎</a></h4>
+<p>Returns a string that was stored in a "saveX.dat" file using the "SaveModData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
+There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<p>If you call this function in the main menu, it will return the save data for save slot 1 by default.</p>
+<p>For AB+, they are stored inside their mod's folder next to the "main.lua" file.</p>
+<p>For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.</p>
+<p>It is recommended to use the <a href="ModReference.html#loaddata">LoadData</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="registermod">Register·Mod ()<a class="headerlink" href="#registermod" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-registermod-table-modref-string-modname-int-apiversion">void RegisterMod ( table modRef, string modName, int apiVersion )<a class="headerlink" href="#void-registermod-table-modref-string-modname-int-apiversion" title="Permanent link">⚓︎</a></h4>
+<p>Registers a table with the game to use as a <a href="ModReference.html">Mod Reference</a>.</p>
+<p>It is recommended to use the global <a href="GlobalFunctions.html#registermod">RegisterMod</a> function instead.</p>
+<hr />
+<h3 aria-label="Functions" id="removecallback">Remove·Callback ()<a class="headerlink" href="#removecallback" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-removecallback-table-modref-modcallbackstring-callbackid-table-callbackfn">void RemoveCallback ( table modRef, <a href="enums/ModCallbacks.html">ModCallback</a>|string callbackId, table callbackFn )<a class="headerlink" href="#void-removecallback-table-modref-modcallbackstring-callbackid-table-callbackfn" title="Permanent link">⚓︎</a></h4>
+<p>It is recommended to use the <a href="ModReference.html#removecallback">RemoveCallback</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="removemoddata">Remove·Mod·Data ()<a class="headerlink" href="#removemoddata" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-removemoddata-table-modref">void RemoveModData ( table modRef )<a class="headerlink" href="#void-removemoddata-table-modref" title="Permanent link">⚓︎</a></h4>
+<p>Deletes the stored "saveX.dat" file if it exists.
+There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<p>It is recommended to use the <a href="ModReference.html#removedata">RemoveData</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="renderscaledtext">Render·Scaled·Text ()<a class="headerlink" href="#renderscaledtext" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-renderscaledtext-string-str-float-x-float-y-float-scalex-float-scaley-float-r-float-g-float-b-float-a">void RenderScaledText ( string str, float X, float Y, float ScaleX, float ScaleY, float R, float G, float B, float A )<a class="headerlink" href="#void-renderscaledtext-string-str-float-x-float-y-float-scalex-float-scaley-float-r-float-g-float-b-float-a" title="Permanent link">⚓︎</a></h4>
+<p>Renders a scaled text on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). ScaleX, ScaleY, R ,G ,B and A need to be between [0,1]. Some scale values can cause the font to display deformed and pixelated.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code renders the player position on the screen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;X: &quot;</span> <span class="o">..</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">X</span> <span class="o">..</span> <span class="s2">&quot;, Y: &quot;</span> <span class="o">..</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span><span class="p">.</span><span class="n">Y</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderScaledText</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="rendertext">Render·Text ()<a class="headerlink" href="#rendertext" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-rendertext-string-str-float-x-float-y-float-r-float-g-float-b-float-a">void RenderText ( string str, float X, float Y, float R, float G, float B, float A )<a class="headerlink" href="#void-rendertext-string-str-float-x-float-y-float-r-float-g-float-b-float-a" title="Permanent link">⚓︎</a></h4>
+<p>Renders a text with the default size on the Screen. X and Y coordinates need to be in screen coordinates ( x[0,~500) y [0,~350) ). R,G,B and A need to be between [0,1].</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code renders the player position on the screen.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">pos</span> <span class="o">=</span> <span class="n">player</span><span class="p">.</span><span class="n">Position</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s2">&quot;X: &quot;</span><span class="o">..</span><span class="n">pos</span><span class="p">.</span><span class="n">X</span><span class="o">..</span><span class="s2">&quot; Y: &quot;</span><span class="o">..</span><span class="n">pos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<hr />
+<h3 aria-label="Functions" id="runcallback">Run·Callback ()<a class="headerlink" href="#runcallback" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-runcallback-modcallbackstring-callbackid">void RunCallback ( <a href="enums/ModCallbacks.html">ModCallback</a>|string callbackId )<a class="headerlink" href="#void-runcallback-modcallbackstring-callbackid" title="Permanent link">⚓︎</a></h4>
+<p>Runs all callbacks added under <code>callbackId</code>, breaking on the first return and returning that value.</p>
+<hr />
+<h3 aria-label="Functions" id="runcallbackwithparam">Run·Callback·With·Param ()<a class="headerlink" href="#runcallbackwithparam" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-runcallbackwithparam-modcallbackstring-callbackid">void RunCallbackWithParam ( <a href="enums/ModCallbacks.html">ModCallback</a>|string callbackId )<a class="headerlink" href="#void-runcallbackwithparam-modcallbackstring-callbackid" title="Permanent link">⚓︎</a></h4>
+<p>Runs all callbacks added under <code>callbackId</code>, breaking on the first return and returning that value.</p>
+<hr />
+<h3 aria-label="Functions" id="savemoddata">Save·Mod·Data ()<a class="headerlink" href="#savemoddata" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-savemoddata-table-modref-string-data">void SaveModData ( table modRef, string data )<a class="headerlink" href="#void-savemoddata-table-modref-string-data" title="Permanent link">⚓︎</a></h4>
+<p>Stores a string in a "saveX.dat" file. The stored Data persists thruout resets and game restart, so its perfect to store persistent data.</p>
+<p>There are 3 "saveX.dat" files, one per Savegame. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.</p>
+<p>For AB+, they are stored inside their mod's folder next to the "main.lua" file.</p>
+<p>For Repentance, They are stored in the "data" folder next to the "mods" folder inside the game files.</p>
+<p>It is recommended to use the <a href="ModReference.html#savedata">SaveData</a> function on a <a href="ModReference.html">Mod Reference</a> instead.</p>
+<hr />
+<h3 aria-label="Functions" id="screentoworld">Screen·To·World ()<a class="headerlink" href="#screentoworld" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-screentoworld-vector-pos"><a href="Vector.html">Vector</a> ScreenToWorld ( <a href="Vector.html">Vector</a> pos )<a class="headerlink" href="#vector-screentoworld-vector-pos" title="Permanent link">⚓︎</a></h4>
+<p>Transfers Screen (aka. Window coordinates) into Worldcoordinates. This can be used to get a specific location in the room in World coordnates The World coordinate system is x[0,inf) y[0,inf).</p>
+<hr />
+<h3 aria-label="Functions" id="screentoworlddistance">Screen·To·World·Distance ()<a class="headerlink" href="#screentoworlddistance" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-screentoworlddistance-vector-pos"><a href="Vector.html">Vector</a> ScreenToWorldDistance ( <a href="Vector.html">Vector</a> pos )<a class="headerlink" href="#vector-screentoworlddistance-vector-pos" title="Permanent link">⚓︎</a></h4>
+<hr />
+<h3 aria-label="Functions" id="setbuiltincallbackstate">Set·Built·In·Callback·State ()<a class="headerlink" href="#setbuiltincallbackstate" title="Permanent link">⚓︎</a></h3>
+<p><a class="rep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="void-setbuiltincallbackstate-modcallbacks-callbackid-boolean-state">void SetBuiltInCallbackState ( <a href="enums/ModCallbacks.html">ModCallbacks</a> callbackId, boolean state )<a class="headerlink" href="#void-setbuiltincallbackstate-modcallbacks-callbackid-boolean-state" title="Permanent link">⚓︎</a></h4>
+<p>Sets whether callbacks under <code>callbackId</code> will be ran by the game. The game uses this to activate a <a href="enums/ModCallbacks.html">ModCallbacks</a> once a callback is added under one, or deactivate them when those callbacks have been removed.</p>
+<hr />
+<h3 aria-label="Functions" id="spawn">Spawn ()<a class="headerlink" href="#spawn" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="entity-spawn-int-entitytype-int-entityvariant-int-entitysubtype-vector-position-vector-velocity-entity-spawner"><a href="Entity.html">Entity</a> Spawn ( int entityType, int entityVariant, int entitySubtype, <a href="Vector.html">Vector</a> position, <a href="Vector.html">Vector</a> velocity, <a href="Entity.html">Entity</a> Spawner )<a class="headerlink" href="#entity-spawn-int-entitytype-int-entityvariant-int-entitysubtype-vector-position-vector-velocity-entity-spawner" title="Permanent link">⚓︎</a></h4>
+<p>Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.</p>
+<p>There are two spawn functions. <a href="Isaac.html#spawn">Isaac.Spawn()</a> (this one), which spawns an entity with a random seed, and <a href="Game.html#spawn">Game():Spawn()</a>, which spawns an entity with a specific seed. However due to a bug, <a href="Isaac.html#spawn">Isaac.Spawn()</a> has a chance to generate a seed of 0, which crashes the game. If you need to spawn an entity with a random seed, you should always use <a href="Game.html#spawn">Game():Spawn()</a> with a helper function that calls <a href="GlobalFunctions.html#random">Random()</a> and arbitrarily sets the seed to 1 when the seed is 0. (<a href="https://isaacscript.github.io/">IsaacScript</a> users can just use the <code>spawn</code> helper function, which uses <code>Game.Spawn</code> under the hood.)</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code spawns a random collectible at in center of the current room.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">Isaac</span><span class="p">.</span><span class="n">Spawn</span><span class="p">(</span><span class="n">EntityType</span><span class="p">.</span><span class="n">ENTITY_PICKUP</span><span class="p">,</span> <span class="n">PickupVariant</span><span class="p">.</span><span class="n">PICKUP_COLLECTIBLE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">320</span><span class="p">,</span><span class="mi">280</span><span class="p">),</span> <span class="n">Vector</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<details class="bug" open="open">
+<summary>Bug</summary>
+<p>Because the random seed is generated using the <a href="GlobalFunctions.html#random">Random()</a> function, there is a chance that the entity's InitSeed is set to 0, which causes a crash if the entity needs to use RNG.</p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="worldtorenderposition">World·To·Render·Position ()<a class="headerlink" href="#worldtorenderposition" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-worldtorenderposition-vector-pos"><a href="Vector.html">Vector</a> WorldToRenderPosition ( <a href="Vector.html">Vector</a> pos )<a class="headerlink" href="#vector-worldtorenderposition-vector-pos" title="Permanent link">⚓︎</a></h4>
+<p>Transfers world (aka. game coordinates) into Rendercoordinates. This can be used to render things at fixed positions in a room. The Render coordinate system is x[0,inf) y[0,inf). It defines the Position on the rendering-plane in the current room.</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code render "test" at the position of the mouse cursor independend on if the game is in full screen or not.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="n">mousePos</span> <span class="o">=</span> <span class="n">Input</span><span class="p">.</span><span class="n">GetMousePosition</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">renderpos</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">WorldToRenderPosition</span><span class="p">(</span><span class="n">mousePos</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">renderpos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">renderpos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="worldtoscreen">World·To·Screen ()<a class="headerlink" href="#worldtoscreen" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-worldtoscreen-vector-pos"><a href="Vector.html">Vector</a> WorldToScreen ( <a href="Vector.html">Vector</a> pos )<a class="headerlink" href="#vector-worldtoscreen-vector-pos" title="Permanent link">⚓︎</a></h4>
+<p>Transfers world (aka. game coordinates) into Screen (aka. Window) coordinates. This can be used to render things next to an entity. The Screen coordinate system is x[0,inf) y[0,inf). Normally, it goes till ~500x ~300y. The return vector contains integer values or numbers ending with .5</p>
+<details class="- example">
+<summary>Example Code</summary>
+<p>This code render "test" at the position of the player. The text will move with isaac.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kd">local</span> <span class="n">player</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">GetPlayer</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">screenpos</span> <span class="o">=</span> <span class="n">Isaac</span><span class="p">.</span><span class="n">WorldToScreen</span><span class="p">(</span><span class="n">player</span><span class="p">.</span><span class="n">Position</span><span class="p">)</span>
+<span class="n">Isaac</span><span class="p">.</span><span class="n">RenderText</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">screenpos</span><span class="p">.</span><span class="n">X</span><span class="p">,</span> <span class="n">screenpos</span><span class="p">.</span><span class="n">Y</span><span class="p">,</span> <span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">,</span><span class="mi">1</span> <span class="p">)</span>
+</code></pre></div></td></tr></table></div></p>
+</details>
+<hr />
+<h3 aria-label="Functions" id="worldtoscreendistance">World·To·Screen·Distance ()<a class="headerlink" href="#worldtoscreendistance" title="Permanent link">⚓︎</a></h3>
+<p><a class="abrep tooltip badge" href="#"> </a></p>
+<h4 aria-label="Functions" class="copyable" id="vector-worldtoscreendistance-vector-pos"><a href="Vector.html">Vector</a> WorldToScreenDistance ( <a href="Vector.html">Vector</a> pos )<a class="headerlink" href="#vector-worldtoscreendistance-vector-pos" title="Permanent link">⚓︎</a></h4>
+<hr />
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 3, 2025</span>
+      
+    
+  </small>
+</div>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+       
+<footer class="md-footer">
+    <div class="md-footer-meta md-typeset">
+        <div class="md-footer-meta__inner md-grid">
+            <div class="md-footer-copyright">
+                
+                <div class="md-footer-copyright__highlight">
+                    Copyright &copy; 2021 - 2025 Wofsauge (Discord: Wofsauge#6503)
+                </div>
+                 Made with
+                <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a> 
+            </div>
+            <div class="md-social">
+  
+    
+    
+    <a href="https://github.com/wofsauge/IsaacDocs" target="_blank" rel="noopener" title="BoI: Lua API Docs on GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://discord.gg/isaac" target="_blank" rel="noopener" title="Official Discord Server" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M524.531 69.836a1.5 1.5 0 0 0-.764-.7A485.065 485.065 0 0 0 404.081 32.03a1.816 1.816 0 0 0-1.923.91 337.461 337.461 0 0 0-14.9 30.6 447.848 447.848 0 0 0-134.426 0 309.541 309.541 0 0 0-15.135-30.6 1.89 1.89 0 0 0-1.924-.91 483.689 483.689 0 0 0-119.688 37.107 1.712 1.712 0 0 0-.788.676C39.068 183.651 18.186 294.69 28.43 404.354a2.016 2.016 0 0 0 .765 1.375 487.666 487.666 0 0 0 146.825 74.189 1.9 1.9 0 0 0 2.063-.676A348.2 348.2 0 0 0 208.12 430.4a1.86 1.86 0 0 0-1.019-2.588 321.173 321.173 0 0 1-45.868-21.853 1.885 1.885 0 0 1-.185-3.126 251.047 251.047 0 0 0 9.109-7.137 1.819 1.819 0 0 1 1.9-.256c96.229 43.917 200.41 43.917 295.5 0a1.812 1.812 0 0 1 1.924.233 234.533 234.533 0 0 0 9.132 7.16 1.884 1.884 0 0 1-.162 3.126 301.407 301.407 0 0 1-45.89 21.83 1.875 1.875 0 0 0-1 2.611 391.055 391.055 0 0 0 30.014 48.815 1.864 1.864 0 0 0 2.063.7A486.048 486.048 0 0 0 610.7 405.729a1.882 1.882 0 0 0 .765-1.352c12.264-126.783-20.532-236.912-86.934-334.541ZM222.491 337.58c-28.972 0-52.844-26.587-52.844-59.239s23.409-59.241 52.844-59.241c29.665 0 53.306 26.82 52.843 59.239 0 32.654-23.41 59.241-52.843 59.241Zm195.38 0c-28.971 0-52.843-26.587-52.843-59.239s23.409-59.241 52.843-59.241c29.667 0 53.307 26.82 52.844 59.239 0 32.654-23.177 59.241-52.844 59.241Z"/></svg>
+    </a>
+  
+</div>
+        </div>
+    </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+     <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "search.share", "navigation.tabs", "navigation.instant", "navigation.top"], "search": "assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"default": "rep", "provider": "mike"}}</script>
+    
+<script>
+    var __search = {
+        transform: function(query) {
+            query = query.replace("_", " ")
+            query = query + "^5 " + query // increase priority of query words in order to prefer matches with page titles. this makes the sorting better
+
+            /* Original Search query filter code*/
+            return query
+                .split(/"([^"]+)"/g) /* => 1 */
+                .map((terms, index) => index & 1 ?
+                    terms.replace(/^\b|^(?![^\x00-\x7F]|$)|\s+/g, " +") :
+                    terms
+                )
+                .join("")
+                .replace(/"|(?:^|\s+)[*+\-:^~]+(?=\s+|$)/g, "") /* => 2 */
+                .trim()
+        }
+    }
+</script>
+
+    
+      <script src="assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="js/tablesort.number.min.js"></script>
+      
+        <script src="js/customJS.js"></script>
+      
+        <script src="js/jquery.mark.min.js"></script>
+      
+    
+    
+  </body>
+</html>
