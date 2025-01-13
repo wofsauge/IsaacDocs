@@ -135,6 +135,8 @@ ___
 ### Add·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddCollectible ( [CollectibleType](enums/CollectibleType.md) Type, int Charge = 0, boolean FirstTimePickingUp = true, [ActiveSlot](enums/ActiveSlot.md) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddCollectible ( [CollectibleType](enums/CollectibleType.md) Type, int Charge = 0, boolean FirstTimePickingUp = true, [ActiveSlot](enums/ActiveSlot.md) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0, [ItemPoolType](enums/ItemPoolType.md) PoolType ) {: .copyable aria-label='Functions' }
 
 Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the item and will cause it to not count towards transformations.
 
@@ -1914,7 +1916,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [Tear
 ???- example "Example Code"
     This code makes Isaac's tears spectral.
     ```lua
-    
+
     function mod:OnEvaluateTearFlags(player, flag)
         player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
     end
@@ -1949,7 +1951,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How far shoul
 
 ???- example "Example Code"
     This code gives Isaac a +2 range up.
-    
+
     ```lua
     function mod:OnEvaluateRange(player, flag)
         player.TearRange = player.TearRange + (2 * 40)

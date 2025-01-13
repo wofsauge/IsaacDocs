@@ -23,6 +23,11 @@ tags:
 #### boolean Destroy ( boolean Immediate ) {: .copyable aria-label='Functions' }
 
 ___
+### Destroy·With·Source () {: aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### boolean DestroyWithSource ( boolean Immediate, [EntityRef](EntityRef.md) Source ) {: .copyable aria-label='Functions' }
+
+___
 ### Get·Grid·Index () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### int GetGridIndex ( ) {: .copyable aria-label='Functions' }
@@ -61,6 +66,11 @@ ___
 ### Hurt () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean Hurt ( int Damage ) {: .copyable aria-label='Functions' }
+
+___
+### Hurt·With·Source () {: aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### boolean HurtWithSource ( int Damage, [EntityRef](EntityRef.md) Source ) {: .copyable aria-label='Functions' }
 
 ___
 ### Init () {: aria-label='Functions' }
