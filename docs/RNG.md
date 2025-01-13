@@ -16,7 +16,7 @@ tags:
     * [EntityPlayer.GetPillRNG()](EntityPlayer.md#getpillrng)
     * [EntityPlayer.GetTrinketRNG()](EntityPlayer.md#gettrinketrng)
     * [GridEntity.GetRNG()](GridEntity.md#getrng)
-    * [GridEntityPreasurePlate.GreedModeRNG](GridEntityPreasurePlate.md#greedmoderng)
+    * [GridEntityPreasurePlate.GreedModeRNG](GridEntityPressurePlate.md#greedmoderng)
     * [Level.GetDevilAngelRoomRNG()](Level.md#getdevilangelroomrng)
 
     ???+ example "Example Code"

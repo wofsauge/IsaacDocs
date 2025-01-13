@@ -9,7 +9,7 @@ search:
 ???+ info
     You can get this class by using the following function:
 
-    * [RoomConfigSpawn.Entries](RoomConfigSpawns.md#entries)
+    * [RoomConfigSpawn.Entries](RoomConfig_Spawn.md#entries)
 
     ???+ example "Example Code"
         ```lua
