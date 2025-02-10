@@ -95,7 +95,7 @@ Gets the modifier value of the chance for this floor's deal to be an Angel room.
 
 ???+ info
     If this value is above `0.0`, deals can become Angel rooms even if a player has already taken a Devil deal item. If the chance is positive and a deal room has not spawned yet, the deal is guaranteed to be an Angel room.
-    
+
     Under normal circumstances, setting this value to below `0.0` will _not_ reduce the chance for an Angel room, as values below `0.0` are usually ignored. A negative value will only affect Angel room chance if the player has an item that enables visiting Angel rooms even if a Devil deal has already been taken, such as Book of Virtues or Act of Contrition.
 
 ___
@@ -139,7 +139,7 @@ ___
 ___
 ### Get·Curses () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetCurses ( ) {: .copyable aria-label='Functions' }
+#### [LevelCurse](enums/LevelCurse.md) GetCurses ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Devil·Angel·Room·RNG () {: aria-label='Functions' }
@@ -316,7 +316,7 @@ Attempts to create a red room door in the given room at the given door slot. Ret
 
 ???- note "Notes"
 	This function can be used to create rooms not connected to any other room. For example, calling `MakeRedRoomDoor(2, DoorSlot.DOOR_LEFT0)` will create a room where `Slot` of `CurrentRoomIdx` would connect to, in this case grid index 1.
-	
+
 	Rooms can also be forced to be created by setting [Challenge](Game.md#challenge) to Red Redemption (`Challenge.CHALLENGE_RED_REDEMPTION`). Note that creating a room connected to an otherwise invalid slot will cause the door to lead to an Error room!
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
@@ -367,13 +367,13 @@ This function changes the current floor, and it's stage. For the changes to full
 
 StageOffset acts as the new "floor":
 
-* 1 would be equally difficult to Basement I, 
+* 1 would be equally difficult to Basement I,
 * 2 would be equally difficult to Basement II,
 * 3 would be equally difficult to Caves I
 
 StageTypeOffset tells the game what "stage" to use, based on the listed IDs in [stages.xml](xml/stages.md), however, the default stage of the floor's ID will be added on top of this
 
-* StageOffset = 1 uses the stage at ID: StageTypeOffset + 1(Basement's stage ID), 
+* StageOffset = 1 uses the stage at ID: StageTypeOffset + 1(Basement's stage ID),
 * StageOffset = 2 uses the stage at ID: StageTypeOffset + 1(Same as StageOffset 1),
 * StageOffset = 3 uses the stage at ID: StageTypeOffset + 4(Caves' stage ID)
 

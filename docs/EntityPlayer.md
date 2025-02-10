@@ -588,7 +588,7 @@ Changing the player Type into Jacob will also spawn Esau.
 ___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItemConfigItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
+#### void CheckFamiliar ( [FamiliarVariant](enums/FamiliarVariant.md) FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItemConfigItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
 
 Call this method to spawn the appropriate amount of familiars associated with a custom collectible.
 
@@ -700,6 +700,19 @@ ___
 ### Fire·Knife () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [EntityKnife](EntityKnife.md) FireKnife ( [Entity](Entity.md) Parent, float RotationOffset = 0, boolean CantOverwrite = false, int SubType = 0, int Variant = 0 ) {: .copyable aria-label='Functions' }
+
+???- note "Knife Variants"
+    ```lua
+    0: Mom's Knife
+    1: Bone Club
+    2: Bone Scythe
+    3: Berserk Club
+    4: Bag of Crafting
+    5: Sumptorium
+    9: Notched Axe
+    10: Spirit Sword
+    11: Tech Sword
+    ```
 
 ___
 ### Fire·Tear () {: aria-label='Functions' }

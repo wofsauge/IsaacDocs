@@ -568,7 +568,7 @@ ___
 ___
 ### Take·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TakeDamage ( float Damage, int Flags, [EntityRef](EntityRef.md) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
+#### boolean TakeDamage ( float Damage, [DamageFlag](enums/DamageFlag.md) Flags, [EntityRef](EntityRef.md) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
 
 
 ???- note "Notes"

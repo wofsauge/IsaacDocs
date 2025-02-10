@@ -26,7 +26,7 @@ It is recommended to use the [AddCallback](ModReference.md#addcallback) function
 ___
 ### Add·Pill·Effect·To·Pool () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int AddPillEffectToPool ( int pillEffect ) {: .copyable aria-label='Functions' }
+#### [PillColor](enums/PillColor.md) AddPillEffectToPool ( [PillEffect](enums/PillEffect.md) pillEffect ) {: .copyable aria-label='Functions' }
 Returns the [PillColor](enums/PillColor.md) of the added pill.
 
 ___
@@ -136,7 +136,7 @@ If `createIfMissing` is `false` or `nil` and there are no callbacks added under 
 ___
 ### Get·Card·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
+#### [Card](enums/Card.md) GetCardIdByName ( string cardHudName ) {: .copyable aria-label='Functions' }
 Returns the [CardID](enums/Card.md) based on the "hud"-attribute defined in the "pocketitems.xml" file. Returns `-1` if no card with that "hud" attribute value could be found.
 
 ???+ warning "Warning"
@@ -159,12 +159,12 @@ Returns the [CardID](enums/Card.md) based on the "hud"-attribute defined in the 
 ___
 ### Get·Challenge () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetChallenge ( ) {: .copyable aria-label='Functions' }
+#### [Challenge](enums/Challenge.md) GetChallenge ( ) {: .copyable aria-label='Functions' }
 Returns the ID of a challenge the player is currently in. Returns 0 if the player is not playing any challenge.
 ___
 ### Get·Challenge·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetChallengeIdByName ( string challengeName ) {: .copyable aria-label='Functions' }
+#### [Challenge](enums/Challenge.md) GetChallengeIdByName ( string challengeName ) {: .copyable aria-label='Functions' }
 
 Returns the ChallengeID of a challenge based on its name. (File: challenges.xml) Returns `-1` if no challenge with that name could be found (Case sensitive).
 
@@ -192,7 +192,7 @@ Returns the CostumeID of a costume based on its file path. (File: costumes2.xml)
 ___
 ### Get·Curse·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetCurseIdByName ( string curseName ) {: .copyable aria-label='Functions' }
+#### [LevelCurse](enums/LevelCurse.md) GetCurseIdByName ( string curseName ) {: .copyable aria-label='Functions' }
 
 Returns the CurseID of a curse based on its name. (File: curses.xml) Returns `-1` if no curse with that name could be found.
 
@@ -206,7 +206,7 @@ Returns the CurseID of a curse based on its name. (File: curses.xml) Returns `-1
 ___
 ### Get·Entity·Type·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetEntityTypeByName ( string entityName ) {: .copyable aria-label='Functions' }
+#### [EntityType](enums/EntityType.md) GetEntityTypeByName ( string entityName ) {: .copyable aria-label='Functions' }
 
 Returns the EntityType of an entity based on its name. (File: entities2.xml) Returns `0` if no entity with that name could be found.
 
@@ -262,7 +262,7 @@ This is the only way to access the `ItemConfig` object.
 ___
 ### Get·Item·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetItemIdByName ( string itemName ) {: .copyable aria-label='Functions' }
+#### [CollectibleType](enums/CollectibleType.md) GetItemIdByName ( string itemName ) {: .copyable aria-label='Functions' }
 
 Returns the ItemID of a Collectible. (File: items.xml) Returns `-1` if no item with that name could be found.
 
@@ -278,7 +278,7 @@ Returns the ItemID of a Collectible. (File: items.xml) Returns `-1` if no item w
 ___
 ### Get·Music·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetMusicIdByName ( string musicName ) {: .copyable aria-label='Functions' }
+#### [Music](enums/Music.md) GetMusicIdByName ( string musicName ) {: .copyable aria-label='Functions' }
 
 Returns the MusicID of a music track. (File: music.xml) Returns `-1` if no music with that name could be found.
 
@@ -294,7 +294,7 @@ Returns the MusicID of a music track. (File: music.xml) Returns `-1` if no music
 ___
 ### Get·Pill·Effect·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetPillEffectByName ( string pillEffect ) {: .copyable aria-label='Functions' }
+#### [PillEffect](enums/PillEffect.md) GetPillEffectByName ( string pillEffect ) {: .copyable aria-label='Functions' }
 
 Returns the PillEffectID based on its name. (File: pocketitems.xml) Returns `-1` if no pill with that name could be found.
 
@@ -412,9 +412,9 @@ ___
 ___
 ### Get·Sound·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetSoundIdByName ( string soundName ) {: .copyable aria-label='Functions' }
+#### [SoundEffect](enums/SoundEffect.md) GetSoundIdByName ( string soundName ) {: .copyable aria-label='Functions' }
 
-Returns the SoundEffectID of a sound based on its name. (File: sounds.xml) Returns `-1` if no sound with that name could be found.
+Returns the [SoundEffect](enums/SoundEffect.md) of a sound based on its name. (File: sounds.xml) Returns `-1` if no sound with that name could be found.
 
 ???- example "Example Code"
     This code gets the SoundEffectID of a sound named "Custom Sound Effect"
@@ -445,7 +445,7 @@ For example, you could use this to implement an on-screen speedrunning timer bas
 ___
 ### Get·Trinket·Id·By·Name () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### int GetTrinketIdByName ( string trinketName ) {: .copyable aria-label='Functions' }
+#### [TrinketType](enums/TrinketType.md) GetTrinketIdByName ( string trinketName ) {: .copyable aria-label='Functions' }
 
 Returns the TrinketType of a trinket based on its name. (File: items.xml) Returns `-1` if no trinket with that name could be found.
 
@@ -609,7 +609,7 @@ ___
 
 ### Spawn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [Entity](Entity.md) Spawn ( int entityType, int entityVariant, int entitySubtype, [Vector](Vector.md) position, [Vector](Vector.md) velocity, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
+#### [Entity](Entity.md) Spawn ( [EntityType](enums/EntityType.md) entityType, int entityVariant, int entitySubtype, [Vector](Vector.md) position, [Vector](Vector.md) velocity, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
 
 Spawns the defined entity at the given location. If the position is not free, it spawns it in the nearest free position.
 
