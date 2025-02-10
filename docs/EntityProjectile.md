@@ -18,7 +18,7 @@ tags:
 ## Functions
 ### Add·Change·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddChangeFlags ( int Flags ) {: .copyable aria-label='Functions' }
+#### void AddChangeFlags ( [ProjectileFlags](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 See [ChangeFlags](#changeflags).
 ___
@@ -39,7 +39,7 @@ ___
 ___
 ### Add·Projectile·Flags () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void AddProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
+#### void AddProjectileFlags ( [ProjectileFlags](./enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 You can change the attributes of the projectile by adding one or more [`ProjectileFlag`](enums/ProjectileFlags.md).
 
@@ -51,12 +51,12 @@ ___
 ___
 ### Clear·Projectile·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ClearProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
+#### void ClearProjectileFlags ( [`ProjectileFlags`](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Projectile·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean HasProjectileFlags ( int Flags ) {: .copyable aria-label='Functions' }
+#### boolean HasProjectileFlags ( [`ProjectileFlags`](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___
 ## Variables
@@ -67,7 +67,7 @@ ___
 ___
 ### Change·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int ChangeFlags  {: .copyable aria-label='Variables' }
+#### [ProjectileFlags](enums/ProjectileFlags.md) ChangeFlags  {: .copyable aria-label='Variables' }
 
 Uses [ProjectileFlags](enums/ProjectileFlags.md) to define the projectile attributes after the "Changed" state was activated.
 The [ProjectileFlag](enums/ProjectileFlags.md).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!

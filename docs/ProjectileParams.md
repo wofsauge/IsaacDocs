@@ -34,7 +34,7 @@ ___
 ___
 ### Change·Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int ChangeFlags  {: .copyable aria-label='Variables' }
+#### [ProjectileFlags](enums/ProjectileFlags.md) ChangeFlags  {: .copyable aria-label='Variables' }
 
 Uses [ProjectileFlags](enums/ProjectileFlags.md) to define the projectile attributes after the "Changed" state was activated.
 The [ProjectileFlag](enums/ProjectileFlags.md).CHANGE_FLAGS_AFTER_TIMEOUT needs to be set to allow for this change to apply!

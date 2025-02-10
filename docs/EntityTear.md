@@ -24,7 +24,7 @@ tags:
 ___
 ### Change·Variant () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### void ChangeVariant ( int NewVariant ) {: .copyable aria-label='Functions' }
+#### void ChangeVariant ( [TearVariant](enums/TearVariant.md) NewVariant ) {: .copyable aria-label='Functions' }
 
 ___
 ### Clear·Tear·Flags () {: aria-label='Functions' }

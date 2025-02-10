@@ -97,7 +97,7 @@ Indicates what is visible on the minimap.
 ___
 ### Flags {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
-#### int Flags  {: .copyable aria-label='Variables' }
+#### [RoomDescriptor](./enums/RoomDescriptor.md) Flags  {: .copyable aria-label='Variables' }
 The RoomDescriptor flags for the room.
 ___
 ### Grid·Index {: aria-label='Variables' }
