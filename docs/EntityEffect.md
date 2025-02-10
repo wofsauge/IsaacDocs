@@ -23,7 +23,7 @@ tags:
 ___
 ### Is·Player·Creep () {: aria-label='Functions' }
 [ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
-#### static boolean IsPlayerCreep ( [EffectVariant](./enums/EffectVariant.md) Variant ) {: .copyable aria-label='Functions' }
+#### static boolean IsPlayerCreep ( [EffectVariant](/enums/EffectVariant.md) Variant ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Damage·Source () {: aria-label='Functions' }

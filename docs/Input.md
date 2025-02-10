@@ -70,7 +70,7 @@ Returns, if an action-button is pressed or not. An Action-button is any button t
 ___
 ### Is·Action·Triggered () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean IsActionTriggered ( [ButtonAction](enums/ButtonAction.md), int controllerId ) {: .copyable aria-label='Functions' }
+#### boolean IsActionTriggered ( [ButtonAction](enums/ButtonAction.md) action, int controllerId ) {: .copyable aria-label='Functions' }
 
 Returns, if an action-button was pressed some time before or not. An Action-button is any button that got a default function assigned to it. This functions will only return true, if the button was pressed down. It will no longer return true, after you called this function and try to call it in the next update cycle (for example in the next render cycle).
 
