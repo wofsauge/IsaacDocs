@@ -51,12 +51,12 @@ ___
 ___
 ### Clear·Projectile·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void ClearProjectileFlags ( [`ProjectileFlags`](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
+#### void ClearProjectileFlags ( [ProjectileFlags](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Projectile·Flags () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean HasProjectileFlags ( [`ProjectileFlags`](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
+#### boolean HasProjectileFlags ( [ProjectileFlags](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___
 ## Variables

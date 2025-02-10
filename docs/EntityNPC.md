@@ -72,7 +72,7 @@ ___
 ___
 ### Get·Champion·Color·Idx () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### [ChampionColorIdx](ChampionColor) GetChampionColorIdx ( ) {: .copyable aria-label='Functions' }
+#### [ChampionColorIdx](enums/ChampionColor.md) GetChampionColorIdx ( ) {: .copyable aria-label='Functions' }
 
 Returns the NPC's champion color index. Returns -1 if the NPC is not a champion.
 ___
