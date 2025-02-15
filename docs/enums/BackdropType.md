@@ -67,3 +67,6 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|59 |ASHPIT_SHAFT {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|60 |DARK_CLOSET {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|61 |NUM_BACKDROPS {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|61 |DEATHMATCH {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|62 |LIL_PORTAL {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|63 |NUM_BACKDROPS {: .copyable } |  |
