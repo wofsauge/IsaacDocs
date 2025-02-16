@@ -33,3 +33,7 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|25 |ACTION_MENURT {: .copyable } | Right trigger |
 |[ ](#){: .abrep .tooltip .badge }|26 |ACTION_MENUTAB {: .copyable } | TAB on keyboard; X on controller |
 |[ ](#){: .abrep .tooltip .badge }|28 |ACTION_CONSOLE {: .copyable } | USE ONLY FOR HOOKING! To check the input use IsButtonTriggered with desired key <br> |
+|[ ](#){: .repplus .tooltip .badge }|28 |ACTION_MENUEX {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|29 |ACTION_MENUTAB {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|30 |ACTION_EMOTES {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|32 |ACTION_CONSOLE {: .copyable } | USE ONLY FOR HOOKING! To check the input use IsButtonTriggered with desired key <br> |
