@@ -52,11 +52,19 @@ ___
 #### boolean DamageGrid ( int Index, int Damage ) {: .copyable aria-label='Functions' }
 Damage Grid Entities currently this concerns [GridEntityPoop](GridEntityPoop.md) and GridEntity_Fire returns true if damageable entity was found (and possibly damaged) return false if not used by tears, bombs, some NPCs, etc
 ___
+### Damage·Grid·With·Source () {: aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### boolean DamageGridWithSource ( int Index, int Damage, [EntityRef](EntityRef.md) Source ) {: .copyable aria-label='Functions' }
+___
 ### Destroy·Grid () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean DestroyGrid ( int Index, boolean Immediate ) {: .copyable aria-label='Functions' }
 Calls DamageGrid internally to damage Poop/Fire removes rocks and opens secret doors.
 Returns `true` if something was destroyed.
+___
+### Destroy·Grid·With·Source () {: aria-label='Functions' }
+[ ](#){: .abrep .tooltip .badge }
+#### boolean DestroyGridWithSource ( int Index, boolean Immediate, [EntityRef](EntityRef.md) Source ) {: .copyable aria-label='Functions' }
 ___
 ### Emit·Blood·From·Walls () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -123,7 +131,7 @@ Returns whether the room is slowed down, sped up or neither.
     **1**: Room is slowed down, either because of the Broken Watch or because of the I'm Drowsy pill
 
     **2**: Room is sped up, either because of the Broken Watch or because of the I'm Excited!!! pill
-    
+
 ___
 ### Get·Center·Pos () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -164,7 +172,7 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
     -- this code shows how to convert room:GetDevilRoomChance into the separate devil and angel percentages shown in the found hud
     -- this code is current for Repentance as of Jan 2024, other versions might have different values
     local game = Game()
-    
+
     -- tainted lazarus is an interesting edge case where you flip between an active and inactive player
     -- the inactive player is not available in repentance's api
     -- if the inactive player picked up certain items (e.g. key pieces with lazarusshared tag) then calling HasCollectible w/ "false" on the active player will still return true
@@ -177,16 +185,16 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
       else
         for i = 0, game:GetNumPlayers() - 1 do
           local player = game:GetPlayer(i)
-          
+
           if player:HasCollectible(collectible, false) then
             return true
           end
         end
-        
+
         return false
       end
     end
-    
+
     -- the same tainted lazarus + repentogon logic applies to trinkets (rosary bead)
     local function anyPlayerHasTrinket(trinket)
       if REPENTOGON then
@@ -194,25 +202,25 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
       else
         for i = 0, game:GetNumPlayers() - 1 do
           local player = game:GetPlayer(i)
-          
+
           if player:HasTrinket(trinket, false) then
             return true
           end
         end
-        
+
         return false
       end
     end
-    
+
     local function getDevilAngelRoomChance()
       local level = game:GetLevel()
       local room = level:GetCurrentRoom()
       local totalChance = math.min(room:GetDevilRoomChance(), 1.0)
-      
+
       local angelRoomSpawned = game:GetStateFlag(GameStateFlag.STATE_FAMINE_SPAWNED) -- repurposed
       local devilRoomSpawned = game:GetStateFlag(GameStateFlag.STATE_DEVILROOM_SPAWNED)
       local devilRoomVisited = game:GetStateFlag(GameStateFlag.STATE_DEVILROOM_VISITED)
-      
+
       local devilRoomChance = 1.0
       if anyPlayerHasCollectible(CollectibleType.COLLECTIBLE_EUCHARIST) then
         devilRoomChance = 0.0
@@ -230,7 +238,7 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
           devilRoomChance = 0.5
         end
       end
-      
+
       -- https://bindingofisaacrebirth.fandom.com/wiki/Angel_Room#Angel_Room_Generation_Chance
       if devilRoomChance == 0.5 then
         if anyPlayerHasTrinket(TrinketType.TRINKET_ROSARY_BEAD) then
@@ -264,7 +272,7 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
         end
         devilRoomChance = math.max(0.0, math.min(devilRoomChance, 1.0))
       end
-      
+
       local angelRoomChance = 1.0 - devilRoomChance
       return totalChance * devilRoomChance, totalChance * angelRoomChance
     end
@@ -596,7 +604,7 @@ ___
 ### Has·Trigger·Pressure·Plates () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean HasTriggerPressurePlates ( ) {: .copyable aria-label='Functions' }
-Returns `true` if there are one or more pressure plates in the room. 
+Returns `true` if there are one or more pressure plates in the room.
 
 ???- warning "Warning"
     In order to see if the pressure plates are pressed or not, you will have to iterate over the grid entities in the room.
@@ -695,6 +703,8 @@ ___
 ### Mama·Mega·Explosion () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void MamaMegaExplosion ( [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void MamaMegaExplosion ( [Vector](Vector.md) Position = Vector.Zero, [EntityPlayer](EntityPlayer.md) Player = nil ) {: .copyable aria-label='Functions' }
 
 ___
 ### Play·Music () {: aria-label='Functions' }

@@ -43,6 +43,8 @@ tags:
 ### Add·Burn () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddBurn ( [EntityRef](EntityRef.md) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddBurn ( [EntityRef](EntityRef.md) Source, int Duration, float Damage, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a burn effect to an enemy. `Duration` is in number of frames. `Damage` is the damage taken per frame.
 
@@ -70,6 +72,8 @@ ___
 ### Add·Charmed () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddCharmed ( [EntityRef](EntityRef.md) sourceEntity, int Duration ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddCharmed ( [EntityRef](EntityRef.md) sourceEntity, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enemies are friendly towards Isaac and attack other enemies.
 
@@ -128,6 +132,8 @@ ___
 ### Add·Fear () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddFear ( [EntityRef](EntityRef.md) Source, int Duration ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddFear ( [EntityRef](EntityRef.md) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a fear-effect to an entity.
 
@@ -149,6 +155,8 @@ ___
 ### Add·Freeze () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddFreeze ( [EntityRef](EntityRef.md) Source, int Duration ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddFreeze ( [EntityRef](EntityRef.md) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Freezes an entity, making it unable to move and attack.
 
@@ -175,6 +183,8 @@ ___
 ### Add·Midas·Freeze () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddMidasFreeze ( [EntityRef](EntityRef.md) Source, int Duration ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddMidasFreeze ( [EntityRef](EntityRef.md) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 Turns the entity into a gold statue (can't move, can't attack, drops coins when killed)
 
 ???- info "Duration infos"
@@ -197,6 +207,8 @@ ___
 ### Add·Poison () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddPoison ( [EntityRef](EntityRef.md) Source, int Duration, float Damage ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddPoison ( [EntityRef](EntityRef.md) Source, int Duration, float Damage, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a poison effect to the entity.
 
@@ -227,6 +239,8 @@ ___
 ### Add·Shrink () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddShrink ( [EntityRef](EntityRef.md) Source, int Duration ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddShrink ( [EntityRef](EntityRef.md) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a shrink effect to the entity.
 
@@ -247,6 +261,8 @@ ___
 ### Add·Slowing () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void AddSlowing ( [EntityRef](EntityRef.md) Source, int Duration, float SlowValue, [Color](Color.md) SlowColor ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddSlowing ( [EntityRef](EntityRef.md) Source, int Duration, float SlowValue, [Color](Color.md) SlowColor, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 Makes the friction higher, effectively slowing down the entity.
 
 ???- example "Example Code"
@@ -482,6 +498,10 @@ ___
 #### void Kill ( ) {: .copyable aria-label='Functions' }
 Kills the entity and makes a blood splat or gibs.
 ___
+### Kill·With·Source () {: aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void KillWithSource ( [EntityRef](EntityRef.md) Source ) {: .copyable aria-label='Functions' }
+___
 ### Multiply·Friction () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void MultiplyFriction ( float Value ) {: .copyable aria-label='Functions' }
@@ -548,7 +568,7 @@ ___
 ___
 ### Take·Damage () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
-#### boolean TakeDamage ( float Damage, int Flags, [EntityRef](EntityRef.md) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
+#### boolean TakeDamage ( float Damage, [DamageFlag](enums/DamageFlag.md) Flags, [EntityRef](EntityRef.md) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
 
 
 ???- note "Notes"

@@ -111,7 +111,7 @@ The best results can be made by converting Bitmap fonts, since they allow for sm
 *   **Match char height** - the charactersize will be choosen based on the character, and not the size defined in **Size**
 *   **Bold / Italic** - What font styling should be used
 *   **Output invalid char glyph** - Characters that dont have a sprite will be put on the spritesheet, too. This can create holes in the spritesheet
-*   **Do not include kerning pairs** - <Effect unknown, enabled seem to work best>
+*   **Do not include kerning pairs** - Kerning is the manual adjustment of the spacing between two specific glyphs. A kerning pair is the same adjustment, but determined by the type designer—with the instructions embedded directly within in a font file. Only Repentance+ does support reading kerning pairs from .fnt files. In general it is advised to not include kerning pairs.
 
 *   **Rasterization** - used to smooth the font sprites. Not recommended for Isaac since we want pixel-perfect fonts!
 

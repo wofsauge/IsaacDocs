@@ -135,6 +135,8 @@ ___
 ### Add·Collectible () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void AddCollectible ( [CollectibleType](enums/CollectibleType.md) Type, int Charge = 0, boolean FirstTimePickingUp = true, [ActiveSlot](enums/ActiveSlot.md) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void AddCollectible ( [CollectibleType](enums/CollectibleType.md) Type, int Charge = 0, boolean FirstTimePickingUp = true, [ActiveSlot](enums/ActiveSlot.md) Slot = ActiveSlot.SLOT_PRIMARY, int VarData = 0, [ItemPoolType](enums/ItemPoolType.md) PoolType ) {: .copyable aria-label='Functions' }
 
 Setting **FirstTimePickingUp** to false will not add the consumables (keys, bombs,...) of the item and will cause it to not count towards transformations.
 
@@ -586,7 +588,7 @@ Changing the player Type into Jacob will also spawn Esau.
 ___
 ### Check·Familiar () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void CheckFamiliar ( int FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItemConfigItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
+#### void CheckFamiliar ( [FamiliarVariant](enums/FamiliarVariant.md) FamiliarVariant, int TargetCount, [RNG](RNG.md) rng, [ItemConfigItem](ItemConfig_Item.md) SourceItemConfigItem = nil, int FamiliarSubType = -1 ) {: .copyable aria-label='Functions' }
 
 Call this method to spawn the appropriate amount of familiars associated with a custom collectible.
 
@@ -698,6 +700,19 @@ ___
 ### Fire·Knife () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### [EntityKnife](EntityKnife.md) FireKnife ( [Entity](Entity.md) Parent, float RotationOffset = 0, boolean CantOverwrite = false, int SubType = 0, int Variant = 0 ) {: .copyable aria-label='Functions' }
+
+???- note "Knife Variants"
+    ```lua
+    0: Mom's Knife
+    1: Bone Club
+    2: Bone Scythe
+    3: Berserk Club
+    4: Bag of Crafting
+    5: Sumptorium
+    9: Notched Axe
+    10: Spirit Sword
+    11: Tech Sword
+    ```
 
 ___
 ### Fire·Tear () {: aria-label='Functions' }
@@ -1914,7 +1929,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. Various [Tear
 ???- example "Example Code"
     This code makes Isaac's tears spectral.
     ```lua
-    
+
     function mod:OnEvaluateTearFlags(player, flag)
         player.TearFlags = player.TearFlags | TearFlags.TEAR_SPECTRAL
     end
@@ -1949,7 +1964,7 @@ Player stat - Only change this in a callback to MC_EVALUATE_CACHE. How far shoul
 
 ???- example "Example Code"
     This code gives Isaac a +2 range up.
-    
+
     ```lua
     function mod:OnEvaluateRange(player, flag)
         player.TearRange = player.TearRange + (2 * 40)

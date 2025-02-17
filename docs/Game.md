@@ -178,11 +178,15 @@ ___
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Fadein ( float Speed ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void Fadein ( float Speed, boolean ShowIcon = true, [KColor](KColor.md) Color = KColor.Black ) {: .copyable aria-label='Functions' }
 
 ___
 ### Fadeout () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Fadeout ( float Speed, FadeoutTarget Target ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void Fadeout ( float Speed, FadeoutTarget Target, [KColor](KColor.md) Color = KColor.Black ) {: .copyable aria-label='Functions' }
 ???+ note "Notes"
 	FadeoutTarget types:
 

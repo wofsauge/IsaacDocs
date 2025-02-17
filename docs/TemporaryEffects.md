@@ -47,7 +47,7 @@ Adds the CollectibleEffect associated with a given item. If the passed item's Co
 ___
 ### Add·Null·Effect () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### void AddNullEffect ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
+#### void AddNullEffect ( [NullItemID](enums/NullItemID.md) NullId, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Trinket·Effect () {: aria-label='Functions' }
