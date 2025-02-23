@@ -249,6 +249,17 @@ ___
 ### Get·Stage·Type () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### [StageType](enums/StageType.md) GetStageType ( ) {: .copyable aria-label='Functions' }
+The `StageType` returned by this function corresponds to the letter (if any) appended to the stage number in the `stage` [console command](tutorials/DebugConsole.md#stage). For example, using this function in Stage 1 will return one of the following depending on which version of the stage the player is in:
+
+`stage 1` (Basement I) = 0 (StageType.STAGETYPE_ORIGINAL)
+`stage 1a` (Cellar I) = 1 (StageType.STAGETYPE_WOTL)
+`stage 1b` (Burning Basement I) = 2 (StageType.STAGETYPE_AFTERBIRTH)
+`stage 1c` (Downpour I) = 4 (StageType.STAGETYPE_REPENTANCE)
+`stage 1d` (Dross I) = 5 (StageType.STAGETYPE_REPENTANCE_B)
+
+Likewise, using this function in either Sheol (`stage 10`) or Cathedral (`stage 10a`) will return 0 and 1 respectively.
+
+Using this function in a stage without an alternate version (ex: The Void) will always return 0.
 
 ___
 ### Get·Starting·Room·Index () {: aria-label='Functions' }
