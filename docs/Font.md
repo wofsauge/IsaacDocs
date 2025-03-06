@@ -153,17 +153,25 @@ ___
 ### Load () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Load ( string FilePath ) {: .copyable aria-label='Functions' }
-Loads a font.
+Loads a font. To check that the font actually got loaded, call the [IsLoaded()](#isloaded) method afterwards.
 
-???- note "Note"
-    To check that the font actually got loaded, call the [IsLoaded()](#isloaded) method afterwards.
+???- bug "Bug"
+    When loading a custom font, the path provided to this function is actually relative to the game's `resources` folder instead of your mod's `resources` folder, which is inconsistent with things such as [`Sprite:Load()`](./Sprite.md#load). You can load a custom font with the following code:
+
+    ```lua
+    local MOD_FOLDER_NAME = "mymod" -- change to your mod's directory. note that this can be different depending on how the mod was downloaded: if downloaded from the steam workshop, it will have an underscore with the mod's steam id at the end (e.g. "mymod_12345")
+    local CUSTOM_FONT_FILE_PATH = "font/mycoolfont.fnt" -- relative to your "resources" folder
+
+    local customFont = Font()
+    customFont:Load("mods/" .. MOD_FOLDER_NAME .. "/resources/" .. CUSTOM_FONT_FILE_PATH)
+    ```
 
 ???- example "Example Code"
     Example usage.
     ```lua
     local f = Font() -- init font object
     f:Load("font/terminus.fnt") -- load a font into the font object
-    f:DrawString("Hello World!",60,50,KColor(1,1,1,1),0,true) -- render string with loaded font on position 60x50y
+    f:DrawString("Hello World!", 60, 50, KColor.White, 0, true) -- render string with loaded font on position 60x50y
     ```
 
 ___

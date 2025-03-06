@@ -327,7 +327,7 @@ If the entity is a boss, it returns its specific boss id. If it isn't a boss it 
 
 A boss ID is **NOT** equal to the entity Type, but is defined as a separate value in the entities2.xml file inside the "bossID" attribute.
 
-For Delirium, this function returns the boss id, delirium is currently transformed into.
+For Delirium, this function returns the boss id Delirium is currently transformed into.
 ___
 ### Get·Color () {: aria-label='Functions' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
@@ -362,12 +362,11 @@ There are three main problems with `GetData`:
 
 1. Data is not unique per mod, which means that using `GetData` is essentially the same thing as using a global variable. Using global variables is bad for two main reasons. First, other mods can overwrite or mess with your data, so it isn't safe to use them. Second, the scope of global variables makes it difficult to determine where the variable is used when reading the code, and makes it harder to track down bugs, especially in larger programs.
 
-2. Most entities will despawn when leaving the room. For example, even though heart pickups are persisted by the game, they will be despawned and respawned each time the room is left and reentered, respectively. Thus, most entities will have their data deleted upon leaving the room. The exceptions to this are players, familiars, and entities with `EntityFlag.FLAG_PERSISTENT`.
+2. Most entities will despawn when leaving the room. For example, even though heart pickups are persisted by the game, they will be despawned and respawned each time the room is left and reentered, respectively. Thus, most entities will have their data deleted upon leaving the room. The exceptions to this are players, familiars, and entities with [`EntityFlag.FLAG_PERSISTENT`](./enums/EntityFlag.md).
 
 3. Even for entities that don't despawn when you leave a room, `GetData` is still not a suitable storage mechanism because it will be deleted when exiting to the menu or restarting/finishing a run. Well-programmed mods should never lose state when end-users save and quit the game, so instead of programming a `GetData` conversion + serialization routine, it's much simpler to just avoid using it to begin with.
 
-For these reasons, programmers who want their code to be the best that it can be should always avoid using `GetData` in favor of data structures that are local to their own mod (or local to the specific mod feature). The index for such data structures is usually the pointer hash, which can be retrieved for any entity by using the `GetPtrHash` function.
-
+Modders should consider using data structures that are local to their own mod in order to avoid conflicts and any of the other issues previously presented. The index for such data structures is usually the pointer hash, which can be retrieved for any entity by using the [`GetPtrHash`](./GlobalFunctions.md#getptrhash) function.
 ___
 ### Get·Drop·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
@@ -799,17 +798,21 @@ ___
 ### Size {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### float Size  {: .copyable aria-label='Variables' }
-Returns the size of the hitbox on an entity.
+Returns the size of the hitbox of an entity.
 
 ___
 ### Size·Multi {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### [Vector](Vector.md) SizeMulti  {: .copyable aria-label='Variables' }
 
+"Hitboxes" in Isaac aren't boxes at all, but are actually capsules (circles). This determines the shape of the circle, with a higher X value making the circle wider, a higher Y value making the circle taller, and vice versa.
+
 ___
 ### Sorting·Layer {: aria-label='Variables' }
 [ ](#){: .rep .tooltip .badge }
 #### [SortingLayer](enums/SortingLayer.md) SortingLayer  {: .copyable aria-label='Variables' }
+
+Determines when the entity should render over other entities.
 
 ___
 ### Spawner·Entity {: aria-label='Variables' }

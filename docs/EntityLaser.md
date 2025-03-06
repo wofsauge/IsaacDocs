@@ -188,7 +188,7 @@ ___
 ### Grid·Hit {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }
 #### boolean GridHit  {: .copyable aria-label='Variables' }
-true if laser can be clipped by grid entities and it was clipped at that frame.
+`true` if laser can be clipped by grid entities and it was clipped at that frame.
 ___
 ### Homing·Laser {: aria-label='Variables' }
 [ ](#){: .abrep .tooltip .badge }

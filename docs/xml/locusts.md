@@ -58,9 +58,9 @@ Used to define the special properties of the locust created from the item with t
 | shootOverlayGfx | string ||
 | overlayColor | string | Name of color used by the overlay effect |
 | overlayGfx | string |special overlay spritesheet the locust should use |
-| tearFlags | int | id of the [TearFlag](..\enums\TearFlags.md) to use. Guaranteed to be applied if no `procChance` defined |
-| tearFlags2 | int |id of the [TearFlag](..\enums\TearFlags.md) to use. Applied based on `procChance` or `procChance2` |
-| tearFlags3 | int |id of the [TearFlag](..\enums\TearFlags.md) to use. Applied based on `procChance3` |
+| tearFlags | int | id of the [TearFlag](../enums/TearFlags.md) to use. Guaranteed to be applied if no `procChance` defined |
+| tearFlags2 | int |id of the [TearFlag](../enums/TearFlags.md) to use. Applied based on `procChance` or `procChance2` |
+| tearFlags3 | int |id of the [TearFlag](../enums/TearFlags.md) to use. Applied based on `procChance3` |
 | procChance | float | The chance of applying `tearFlags` and `locustFlags`. (default: 1) |
 | procChance2 | float | The chance of applying `tearFlags2` and `locustFlags2` |
 | procChance3 | float | The chance of applying `tearFlags3` and `locustFlags3` |
