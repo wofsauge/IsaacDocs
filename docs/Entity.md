@@ -339,9 +339,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### table GetData ( ) {: .copyable aria-label='Functions' }
 
-Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
+Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. The table returned will be emptied when the entity is despawned, which occurs for most entities upon leaving the current room, with the exceptions to this being players, familiars, and entities with the [`EntityFlag.FLAG_PERSISTENT`](./enums/EntityFlag.md) flag. The table will also be emptied when the run is exited or restarted, making it a bad choice for storing persistent data.
 
-Variables stored with `GetData()` are accessible by all mods, so modders should be wary of using common variable names. Additionally, the table returned will be emptied when the entity is despawned, such as when exiting the room or run.
+The table returned by `GetData()` is also accessible by all mods, making it very easy for mods to overwrite existing variables within the table. Modders should consider using data structures local to their own mod to avoid conflicts.
 
 ???- example "Example Code"
     This code adds custom data to an entity or prints it in the console if it exists.
