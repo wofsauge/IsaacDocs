@@ -58,4 +58,6 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### [Entity](Entity.md) Ref {: .copyable aria-label='Variables' }
 
+This is set to `nil` automatically if the Entity this was previously referring to no longer exists. This is useful to safely store a reference to an Entity in something like a table, as otherwise there can be unexpected behavior if the Entity is stored directly (e.g. crashes, variable can start referring to a different entity).
+
 ___
