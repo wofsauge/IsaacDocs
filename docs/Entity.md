@@ -339,9 +339,9 @@ ___
 [ ](#){: .abrep .tooltip .badge }
 #### table GetData ( ) {: .copyable aria-label='Functions' }
 
-Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. The table returned will be emptied when the entity is despawned, which occurs for most entities upon leaving the current room, with the exceptions to this being players, familiars, and entities with the [`EntityFlag.FLAG_PERSISTENT`](./enums/EntityFlag.md) flag. The table will also be emptied when the run is exited or restarted, making it a bad choice for storing persistent data.
+Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
 
-The table returned by `GetData()` is also accessible by all mods, making it very easy for mods to overwrite existing variables within the table. Modders should consider using data structures local to their own mod to avoid conflicts.
+GetData is typically used by smaller mods as a quick way to store information about an entity without having to create a dedicated data structure.
 
 ???- example "Example Code"
     This code adds custom data to an entity or prints it in the console if it exists.
@@ -357,6 +357,16 @@ The table returned by `GetData()` is also accessible by all mods, making it very
       end
     end
     ```
+
+There are three main problems with `GetData`:
+
+1. Data is not unique per mod, which means that using `GetData` is essentially the same thing as using a global variable. Using global variables is bad for two main reasons. First, other mods can overwrite or mess with your data, so it isn't safe to use them. Second, the scope of global variables makes it difficult to determine where the variable is used when reading the code, and makes it harder to track down bugs, especially in larger programs.
+
+2. Most entities will despawn when leaving the room. For example, even though heart pickups are persisted by the game, they will be despawned and respawned each time the room is left and reentered, respectively. Thus, most entities will have their data deleted upon leaving the room. The exceptions to this are players, familiars, and entities with [`EntityFlag.FLAG_PERSISTENT`](./enums/EntityFlag.md).
+
+3. Even for entities that don't despawn when you leave a room, `GetData` is still not a suitable storage mechanism because it will be deleted when exiting to the menu or restarting/finishing a run. Well-programmed mods should never lose state when end-users save and quit the game, so instead of programming a `GetData` conversion + serialization routine, it's much simpler to just avoid using it to begin with.
+
+Modders should consider using data structures that are local to their own mod in order to avoid conflicts and any of the other issues previously presented. The index for such data structures is usually the pointer hash, which can be retrieved for any entity by using the [`GetPtrHash`](./GlobalFunctions.md#getptrhash) function.
 ___
 ### Get·Drop·RNG () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
