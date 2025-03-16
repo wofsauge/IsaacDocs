@@ -34,6 +34,8 @@ ___
 [ ](#){: .rep .tooltip .badge }
 #### boolean IsAvailable ( ) {: .copyable aria-label='Functions' }
 
+Returns true if the item has been unlocked.
+Returns false if item has not been unlocked or if the item has been blocked from the run by item [tags](enums/ItemConfig.md).
 ___
 ### Is·Collectible () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
