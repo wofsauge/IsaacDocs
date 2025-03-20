@@ -20,7 +20,7 @@ tags:
 
 ## Constructors
 ### Sprite () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Sprite](Sprite.md) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___
@@ -32,7 +32,7 @@ Return the name of the currently playing animation.
 
 ___
 ### Get·Default·Animation () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string GetDefaultAnimation ( ) {: .copyable aria-label='Functions' }
 Returns the `DefaultAnimation` value from the currently loaded anm2 file.
 
@@ -49,7 +49,7 @@ This function seems to be the same as `GetDefaultAnimationName()`.
 
 ___
 ### Get·Default·Animation·Name () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string GetDefaultAnimationName ( ) {: .copyable aria-label='Functions' }
 Returns the `DefaultAnimation` value from the currently loaded anm2 file.
 
@@ -66,7 +66,7 @@ This function seems to be the same as `GetDefaultAnimation()`.
 
 ___
 ### Get·Filename () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string GetFilename ( ) {: .copyable aria-label='Functions' }
 Returns the path to the anm2 file that is loaded on the sprite.
 
@@ -81,13 +81,13 @@ Returns the path to the anm2 file that is loaded on the sprite.
 
 ___
 ### Get·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetFrame ( ) {: .copyable aria-label='Functions' }
 Returns the frame number of the animation that is currently being rendered.
 
 ___
 ### Get·Layer·Count () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetLayerCount ( ) {: .copyable aria-label='Functions' }
 Returns the number of layers in the anm2 file that is loaded on the sprite. All animations use the same amount of layers.
 
@@ -99,51 +99,51 @@ Returns the name of the currently playing overlay animation. (The overlay animat
 
 ___
 ### Get·Overlay·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetOverlayFrame ( ) {: .copyable aria-label='Functions' }
 Returns the frame number of the overlay animation that is currently being rendered. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.)
 
 ___
 ### Get·Texel () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [KColor](KColor.md) GetTexel ( [Vector](Vector.md) SamplePos, [Vector](Vector.md) RenderPos, float AlphaThreshold, int LayerID = 0 ) {: .copyable aria-label='Functions' }
 Returns the color of the pixel of the sprite at the given sample position. RenderPos can be neglected and set to a null vector
 
 ___
 ### Is·Event·Triggered () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
 Returns true if the specified event in the animation is currently being triggered.
 
 ___
 ### Is·Finished () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 #### boolean IsFinished ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Loaded () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsLoaded ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Overlay·Finished () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsOverlayFinished ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 #### boolean IsOverlayFinished ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Overlay·Playing () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsOverlayPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 #### boolean IsOverlayPlaying ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Playing () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsPlaying ( string AnimationName ) {: .copyable aria-label='Functions' }
 
 #### boolean IsPlaying ( ) {: .copyable aria-label='Functions' }
@@ -168,7 +168,7 @@ Returns true/false depending on if the sprite is playing the provided animation 
 
 ___
 ### Load () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Load ( string ANM2Path, boolean LoadGraphics ) {: .copyable aria-label='Functions' }
 Loads a given anm2 file. Each sprite must have an anm2 file loaded in order for it to display anything.
 
@@ -186,7 +186,7 @@ Loads a given anm2 file. Each sprite must have an anm2 file loaded in order for 
 
 ___
 ### Load·Graphics () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void LoadGraphics ( ) {: .copyable aria-label='Functions' }
 Used to load the PNG files that are specified in the sprite's anm2. Typically, you would only call this method if you have previously passed false to the `loadGraphics` argument of the `Sprite.Load` method or you have called the `Sprite.ReplaceSpritesheet` method.
 
@@ -202,7 +202,7 @@ Used to load the PNG files that are specified in the sprite's anm2. Typically, y
 
 ___
 ### Play () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Play ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
 Starts executing the given animation, starting at frame 0. After calling this method, you must call the `Sprite.Update` method on every update frame (if you want to update the animation in a render callback, make sure to only run it on even frames) in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsFinished` method.)
 
@@ -232,7 +232,7 @@ Calling this method again will reset the current frame back to 0.
 
 ___
 ### Play·Overlay () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void PlayOverlay ( string AnimationName, boolean Force ) {: .copyable aria-label='Functions' }
 Starts executing the given overlay animation, starting at frame 0. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.) After calling this method, you must call the `Sprite.Update` method on every update frame (if you want to update the animation in a render callback, make sure to only run it on even frames) in order to advance the animation to the next frame. (Typically, you would also check to see if the animation is finished by using the `Sprite.IsOverlayFinished` method.)
 
@@ -261,23 +261,23 @@ Calling this function again will always reset the current overlay frame back to 
 
 ___
 ### Play·Random () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void PlayRandom ( int Seed ) {: .copyable aria-label='Functions' }
 Plays a random animation from the currently loaded anm2 file.
 
 ___
 ### Reload () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Reload ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Remove·Overlay () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void RemoveOverlay ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Render () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Render ( [Vector](Vector.md) Position, [Vector](Vector.md) [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
 Renders the sprite object at a given screen position, where (0, 0) is the top left corner of the screen.
 
@@ -324,7 +324,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
     ```
 ___
 ### Replace·Spritesheet () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
 Changes the ".png" file associated with a specific layer of a sprite. This does not change other layers using the ".png" file that is being replaced.
 
@@ -342,12 +342,12 @@ After replacing a spritesheet, you must call the `Sprite.LoadGraphics` method af
 
 ___
 ### Reset () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Reset ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Animation () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean SetAnimation ( string AnimationName, boolean Reset = true ) {: .copyable aria-label='Functions' }
 
 Similar to the `Sprite.Play` method, but does not start the animation.
@@ -368,18 +368,18 @@ The `Sprite.SetFrame` method has two overloads: one which supports setting an an
 
 ___
 ### Set·Last·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetLastFrame ( ) {: .copyable aria-label='Functions' }
 
 Sets the currently playing animation to be on its last frame.
 ___
 ### Set·Layer·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetLayerFrame ( int LayerId, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Overlay·Animation () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean SetOverlayAnimation ( string AnimationName, bool Reset = true ) {: .copyable aria-label='Functions' }
 
 Similar to the `Sprite.PlayOverlay` method, but does not start the animation.
@@ -388,66 +388,66 @@ Similar to the `Sprite.PlayOverlay` method, but does not start the animation.
 
 ___
 ### Set·Overlay·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetOverlayFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Overlay·Render·Priority () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetOverlayRenderPriority ( boolean RenderFirst ) {: .copyable aria-label='Functions' }
 
 ___
 ### Stop () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Stop ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Update () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 Advances the currently playing animation by one frame.
 
 ___
 ### Was·Event·Triggered () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean WasEventTriggered ( string EventName ) {: .copyable aria-label='Functions' }
 Returns true if the specified event in the animation was triggered at some point, and remains true until the animation stops playing.
 
 ___
 ## Variables
 ### Color {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
 
 ___
 ### FlipX {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean FlipX  {: .copyable aria-label='Variables' }
 
 ___
 ### FlipY {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean FlipY  {: .copyable aria-label='Variables' }
 
 ___
 ### Offset {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) Offset  {: .copyable aria-label='Variables' }
 
 ___
 ### Playback·Speed {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float PlaybackSpeed  {: .copyable aria-label='Variables' }
 
 ___
 ### Rotation {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Rotation  {: .copyable aria-label='Variables' }
 
 ___
 ### Scale {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) Scale  {: .copyable aria-label='Variables' }
 
 ___

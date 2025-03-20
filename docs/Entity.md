@@ -70,7 +70,7 @@ Adds a burn effect to an enemy. `Duration` is in number of frames. `Damage` is t
 
 ___
 ### Add·Charmed () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void AddCharmed ( [EntityRef](EntityRef.md) sourceEntity, int Duration ) {: .copyable aria-label='Functions' }
 [ ](#){: .repplus .tooltip .badge }
 #### void AddCharmed ( [EntityRef](EntityRef.md) sourceEntity, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
@@ -92,7 +92,7 @@ Adds a charmed-effect to an enemy. Duration is in Number of Frames. Charmed enem
 
 ___
 ### Add·Confusion () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddConfusion ( [EntityRef](EntityRef.md) Source, int Duration, boolean IgnoreBosses ) {: .copyable aria-label='Functions' }
 
 Adds a confusion effect to an entity.
@@ -113,7 +113,7 @@ Adds a confusion effect to an entity.
 
 ___
 ### Add·Entity·Flags () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Add [EntityFlags](enums/EntityFlag.md) to the entity. Flags are used to add specific effects like being friendly or being immune from spike damage. You can add multiple flags at the same time by bitwise-concatenating them.
@@ -176,7 +176,7 @@ Freezes an entity, making it unable to move and attack.
 
 ___
 ### Add·Health () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddHealth ( float HitPoints ) {: .copyable aria-label='Functions' }
 Heals an entity.
 ___
@@ -278,41 +278,41 @@ Makes the friction higher, effectively slowing down the entity.
     ```
 ___
 ### Add·Velocity () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddVelocity ( [Vector](Vector.md) Velocity ) {: .copyable aria-label='Functions' }
 
 Adds velocity to the entity. This can be used to move him in a certain direction (for example as a result of collision)
 ___
 ### Blood·Explode () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void BloodExplode ( ) {: .copyable aria-label='Functions' }
 Explodes with gibs and blood.
 ___
 ### Can·Shut·Doors () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean CanShutDoors ( ) {: .copyable aria-label='Functions' }
 Enemies keep the doors shut.
 ___
 ### Clear·Entity·Flags () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ClearEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Removes all of the provided [EntityFlags](enums/EntityFlag.md) from the entity.
 ___
 ### Collides·With·Grid () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean CollidesWithGrid ( ) {: .copyable aria-label='Functions' }
 
 Returns true if the entity is currently colliding with a valid GridEntity, as dictated by its `Entity.GridCollisionClass`.
 ___
 ### Die () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Die ( ) {: .copyable aria-label='Functions' }
 
 Kills the entity and triggers its death animation.
 ___
 ### Exists () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean Exists ( ) {: .copyable aria-label='Functions' }
 
 Checks whether the entity is still spawned in the current room.
@@ -321,7 +321,7 @@ This is mostly useful in situations where you are unwrapping an `EntityPtr` and 
 
 ___
 ### Get·Boss·ID () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetBossID ( ) {: .copyable aria-label='Functions' }
 If the entity is a boss, it returns its specific boss id. If it isn't a boss it will return 0.
 
@@ -330,13 +330,13 @@ A boss ID is **NOT** equal to the entity Type, but is defined as a separate valu
 For Delirium, this function returns the boss id Delirium is currently transformed into.
 ___
 ### Get·Color () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [Color](Color.md) GetColor ( ) {: .copyable aria-label='Functions' }
 
 Returns the Color object associated with this entity.
 ___
 ### Get·Data () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### table GetData ( ) {: .copyable aria-label='Functions' }
 
 Returns a Lua table that contains mod-related data associated with the entity. Initially, this will always be an empty table. Any values stored in the table by mods will persist until the entity is despawned.
@@ -369,13 +369,13 @@ There are three main problems with `GetData`:
 Modders should consider using data structures that are local to their own mod in order to avoid conflicts and any of the other issues previously presented. The index for such data structures is usually the pointer hash, which can be retrieved for any entity by using the [`GetPtrHash`](./GlobalFunctions.md#getptrhash) function.
 ___
 ### Get·Drop·RNG () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RNG](RNG.md) GetDropRNG ( ) {: .copyable aria-label='Functions' }
 
 Returns the assigned RNG object for the entity. This RNG is used to determine the items that are dropped on the entity's death.
 ___
 ### Get·Entity·Flags () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetEntityFlags ( ) {: .copyable aria-label='Functions' }
 
 Get the [EntityFlags](enums/EntityFlag.md)of the entity. This will be a number which acts like a bitmask.
@@ -390,7 +390,7 @@ Get the [EntityFlags](enums/EntityFlag.md)of the entity. This will be a number w
     ```
 ___
 ### Get·Last·Child () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) GetLastChild ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the last child of this entity. This is useful for certain segmented enemies so you can go all the way to the bottom "tail" entity in one method call.
@@ -399,7 +399,7 @@ Returns the last child of this entity. This is useful for certain segmented enem
     If no child is found, this function returns `nil`.
 ___
 ### Get·Last·Parent () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) GetLastParent ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 
 Returns the last parent of this entity. This is useful for certain segmented enemies so you can go all the way to the top "head" entity in one method call.
@@ -408,18 +408,18 @@ Returns the last parent of this entity. This is useful for certain segmented ene
     If no parent is found, this function returns `nil`.
 ___
 ### Get·Sprite () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Sprite](Sprite.md) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 Return the sprite object of the entity.
 ___
 ### Has·Common·Parent·With·Entity () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasCommonParentWithEntity ( [Entity](Entity.md) Other ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Entity·Flags () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasEntityFlags ( int Flags ) {: .copyable aria-label='Functions' }
 
 Returns true if the entity has all named [EntityFlags](enums/EntityFlag.md) set.
@@ -434,12 +434,12 @@ Returns true if the entity has all named [EntityFlags](enums/EntityFlag.md) set.
     ```
 ___
 ### Has·Full·Health () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasFullHealth ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Mortal·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasMortalDamage ( ) {: .copyable aria-label='Functions' }
 
 
@@ -448,52 +448,52 @@ ___
     HasMortalDamage() will be updated additionally after TakeDamage() is called.
 ___
 ### Is·Active·Enemy () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsActiveEnemy ( boolean includeDead ) {: .copyable aria-label='Functions' }
 return true for non background NPCs (ex: every enemy except fire and shopkeepers)
 ___
 ### Is·Boss () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsBoss ( ) {: .copyable aria-label='Functions' }
 bosses display health bar
 ___
 ### Is·Dead () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsDead ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Enemy () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsEnemy ( ) {: .copyable aria-label='Functions' }
 return true for NPCs that are not controlled by the player
 ___
 ### Is·Flying () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsFlying ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsFrame ( int Frame, int Offset ) {: .copyable aria-label='Functions' }
 true every X frames
 ___
 ### Is·Invincible () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsInvincible ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Visible () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsVisible ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Vulnerable·Enemy () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsVulnerableEnemy ( ) {: .copyable aria-label='Functions' }
 return true for enemies that can be damaged
 ___
 ### Kill () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Kill ( ) {: .copyable aria-label='Functions' }
 Kills the entity and makes a blood splat or gibs.
 ___
@@ -502,39 +502,39 @@ ___
 #### void KillWithSource ( [EntityRef](EntityRef.md) Source ) {: .copyable aria-label='Functions' }
 ___
 ### Multiply·Friction () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void MultiplyFriction ( float Value ) {: .copyable aria-label='Functions' }
 
 ___
 ### Post·Render () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void PostRender ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Remove () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Remove ( ) {: .copyable aria-label='Functions' }
 Remove the entity from the game instantly, without doing any additional effects/animations.
 ___
 ### Remove·Status·Effects () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void RemoveStatusEffects ( ) {: .copyable aria-label='Functions' }
 
 Removes all Status Effects from the entity.
 ___
 ### Render () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Render ( [Vector](Vector.md) Offset ) {: .copyable aria-label='Functions' }
 Render the current sprite of the Entity at the current entity position + offset.
 ___
 ### Render·Shadow·Layer () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean RenderShadowLayer ( [Vector](Vector.md) Offset ) {: .copyable aria-label='Functions' }
 
 Render the shadow / shadow layer again.
 ___
 ### Set·Color () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetColor ( [Color](Color.md) Color, int Duration, int Priority, boolean Fadeout, boolean Share ) {: .copyable aria-label='Functions' }
 
 Set the colormask for the entity. This can be used to tint the sprites in different colors.
@@ -550,23 +550,23 @@ Set the colormask for the entity. This can be used to tint the sprites in differ
 
 ___
 ### Set·Size () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetSize ( float Size, [Vector](Vector.md) SizeMulti, int NumGridCollisionPoints ) {: .copyable aria-label='Functions' }
 
 Set the size of the entity.
 ___
 ### Set·Sprite·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetSpriteFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Sprite·Overlay·Frame () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetSpriteOverlayFrame ( string AnimationName, int FrameNum ) {: .copyable aria-label='Functions' }
 
 ___
 ### Take·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean TakeDamage ( float Damage, [DamageFlag](enums/DamageFlag.md) Flags, [EntityRef](EntityRef.md) Source, int DamageCountdown ) {: .copyable aria-label='Functions' }
 
 
@@ -574,7 +574,7 @@ ___
     The game adds taken damage to a damage buffer, which gets applied in the next frame. Therefore, TakeDamage() will not decrement the entities HP immediately upon calling the function. Rather, it is only updated on the frame afterwards.
 ___
 ### To·Bomb () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityBomb](EntityBomb.md) ToBomb ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityBomb](EntityBomb.md) object.
 
@@ -582,7 +582,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityBomb](EntityBomb.md) obj
     If the conversion is not successful, this function returns `nil`.
 ___
 ### To·Effect () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityEffect](EntityEffect.md) ToEffect ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityEffect](EntityEffect.md) object.
 
@@ -591,7 +591,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityEffect](EntityEffect.md)
 
 ___
 ### To·Familiar () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityFamiliar](EntityFamiliar.md) ToFamiliar ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityFamiliar](EntityFamiliar.md) object.
 
@@ -600,7 +600,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityFamiliar](EntityFamiliar
 
 ___
 ### To·Knife () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityKnife](EntityKnife.md) ToKnife ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityKnife](EntityKnife.md) object.
 
@@ -609,7 +609,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityKnife](EntityKnife.md) o
 
 ___
 ### To·Laser () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityLaser](EntityLaser.md) ToLaser ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityLaser](EntityLaser.md) object.
 
@@ -618,7 +618,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityLaser](EntityLaser.md) o
 
 ___
 ### To·NPC () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityNPC](EntityNPC.md) ToNPC ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityNPC](EntityNPC.md) object.
 
@@ -627,7 +627,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityNPC](EntityNPC.md) objec
 
 ___
 ### To·Pickup () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityPickup](EntityPickup.md) ToPickup ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityPickup](EntityPickup.md) object.
 
@@ -636,7 +636,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityPickup](EntityPickup.md)
 
 ___
 ### To·Player () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) ToPlayer ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityPlayer](EntityPlayer.md) object.
 
@@ -645,7 +645,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityPlayer](EntityPlayer.md)
 
 ___
 ### To·Projectile () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityProjectile](EntityProjectile.md) ToProjectile ( ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Used to cast an [Entity](Entity.md) object to an [EntityProjectile](EntityProjectile.md) object.
 
@@ -654,7 +654,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityProjectile](EntityProjec
 
 ___
 ### To·Tear () {: aria-label='Functions' data-altreturn='nil' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityTear](EntityTear.md) ToTear ( ) {: .copyable aria-label='Functions' }
 Used to cast an [Entity](Entity.md) object to an [EntityTear](EntityTear.md) object.
 
@@ -663,7 +663,7 @@ Used to cast an [Entity](Entity.md) object to an [EntityTear](EntityTear.md) obj
 
 ___
 ### Update () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 Runs the post-update logic for the entity for a single frame, which will cause the associated callback to fire. Mods usually never need to call this function, as it can cause bugs when post-update logic is run more than once a frame.
@@ -671,24 +671,24 @@ Runs the post-update logic for the entity for a single frame, which will cause t
 ___
 ## Variables
 ### Child {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) Child {: .copyable aria-label='Variables' }
 
 ???- warning "Warning"
     Sisters Vis bosses do have their counterpart entity as their Child. But none of them have a Parent entity set.
 ___
 ### Collision·Damage {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float CollisionDamage  {: .copyable aria-label='Variables' }
 
 ___
 ### Color {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Color](Color.md) Color  {: .copyable aria-label='Variables' }
 
 ___
 ### Depth·Offset {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float DepthOffset  {: .copyable aria-label='Variables' }
 
 Get/Set the depth-offset of the entity. This value is added to the Y Position of the entity, which is then used to determine the rendering order of each entity. Default is 0 for all entities.
@@ -708,33 +708,33 @@ Get/Set the depth-offset of the entity. This value is added to the Y Position of
 
 ___
 ### Drop·Seed {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int DropSeed  {: .copyable aria-label='Variables' }
 
 Get the Seed of the Drop RNG.
 ___
 ### Entity·Collision·Class {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityCollisionClass](enums/EntityCollisionClass.md) EntityCollisionClass {: .copyable aria-label='Variables' }
 
 ___
 ### FlipX {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean FlipX  {: .copyable aria-label='Variables' }
 
 ___
 ### Frame·Count {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int FrameCount  {: .copyable aria-label='Variables' }
 
 ___
 ### Friction {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Friction  {: .copyable aria-label='Variables' }
 loaded from entity config
 ___
 ### Grid·Collision·Class {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityGridCollisionClass](enums/EntityGridCollisionClass.md) GridCollisionClass {: .copyable aria-label='Variables' }
 
 
@@ -742,7 +742,7 @@ ___
     EntityPlayers can only use GRIDCOLL_NONE, GRIDCOLL_WALLS, and GRIDCOLL_GROUND. All other enums will behave like GRIDCOLL_WALLS.
 ___
 ### Hit·Points {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float HitPoints  {: .copyable aria-label='Variables' }
 
 
@@ -750,45 +750,45 @@ ___
     The HitPoints value is not decremented immediately upon taking damage like you would expect. Rather, it is only updated on the frame after the entity takes damage.
 ___
 ### Index {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Index  {: .copyable aria-label='Variables' }
 
 ___
 ### Init·Seed {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int InitSeed  {: .copyable aria-label='Variables' }
 
 ___
 ### Mass {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Mass  {: .copyable aria-label='Variables' }
 ???+ note "Notes"
     Stationary enemies have a Mass of 100. This does not apply to some stationary non-enemies, like slots.
 ___
 ### Max·Hit·Points {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float MaxHitPoints  {: .copyable aria-label='Variables' }
 
 ___
 ### Parent {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) Parent  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 This is a reference to the "parent" entity. For most entities, this field will be nil. This field is used in multi-segment entities to refer back to which segment is the "main" entity, like the head.
 
 ___
 ### Position {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) Position  {: .copyable aria-label='Variables' }
 
 ___
 ### Position·Offset {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [Vector](Vector.md) PositionOffset  {: .copyable aria-label='Variables' }
 
 ___
 ### Render·ZOffset {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int RenderZOffset  {: .copyable aria-label='Variables' }
 
 
@@ -796,13 +796,13 @@ ___
     This variable doesn't seem to do anything useful. Use DepthOffset instead.
 ___
 ### Size {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Size  {: .copyable aria-label='Variables' }
 Returns the size of the hitbox of an entity.
 
 ___
 ### Size·Multi {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) SizeMulti  {: .copyable aria-label='Variables' }
 
 "Hitboxes" in Isaac aren't boxes at all, but are actually capsules (circles). This determines the shape of the circle, with a higher X value making the circle wider, a higher Y value making the circle taller, and vice versa.
@@ -816,22 +816,22 @@ Determines when the entity should render over other entities.
 
 ___
 ### Spawner·Entity {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) SpawnerEntity  {: .copyable aria-label='Variables' data-altreturn='nil' }
 
 ___
 ### Spawner·Type {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityType](enums/EntityType.md) SpawnerType  {: .copyable aria-label='Variables' }
 
 ___
 ### Spawner·Variant {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int SpawnerVariant  {: .copyable aria-label='Variables' }
 
 ___
 ### Spawn·Grid·Index {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int SpawnGridIndex  {: .copyable aria-label='Variables' }
 
 This is the grid index with which the entity spawned upon room generation.
@@ -840,7 +840,7 @@ Rerolled item pedestals, or entities spawned after the initial room generation w
 
 ___
 ### Splat·Color {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Color](Color.md) SplatColor  {: .copyable aria-label='Variables' }
 
 The color of the gibs when an entity dies.
@@ -849,17 +849,17 @@ The Color of this property is read only, so if you want to change it, you have t
 
 ___
 ### Sprite·Offset {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) SpriteOffset  {: .copyable aria-label='Variables' }
 
 ___
 ### Sprite·Rotation {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float SpriteRotation  {: .copyable aria-label='Variables' }
 
 ___
 ### Sprite·Scale {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) SpriteScale  {: .copyable aria-label='Variables' }
 Get/set the scale of the enemy sprite. This can be used to also scale the shadow of the entity.
 
@@ -873,37 +873,37 @@ Pluto uses its own multiplier of 0.5.
 
 ___
 ### Sub·Type {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int SubType  {: .copyable aria-label='Variables' }
 
 ___
 ### Target {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) Target  {: .copyable aria-label='Variables' }
 
 ___
 ### Target·Position {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) TargetPosition  {: .copyable aria-label='Variables' }
 
 ___
 ### Type {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [EntityType](enums/EntityType.md) Type  {: .copyable aria-label='Variables' }
 
 ___
 ### Variant {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int Variant  {: .copyable aria-label='Variables' }
 
 ___
 ### Velocity {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) Velocity  {: .copyable aria-label='Variables' }
 
 ___
 ### Visible {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean Visible  {: .copyable aria-label='Variables' }
 
 ___

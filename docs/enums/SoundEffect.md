@@ -5,181 +5,181 @@ tags:
 # Enum "SoundEffect"
 |DLC|Value|Enumerator|Sound|Comment|
 |:--|:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|0 |SOUND_NULL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 |SOUND_1UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/1.wav" type="audio/wav"> </audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|2 |SOUND_BIRD_FLAP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/2.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|3 |SOUND_BLOBBY_WIGGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/3.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|4 |SOUND_INSECT_SWARM_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/4.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|5 |SOUND_BLOOD_LASER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/5.wav" type="audio/wav"></audio>| Brimstone |
+|[ ](#){: .alldlc .tooltip .badge }|0 |SOUND_NULL {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|1 |SOUND_1UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/1.wav" type="audio/wav"> </audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|2 |SOUND_BIRD_FLAP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/2.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|3 |SOUND_BLOBBY_WIGGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/3.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|4 |SOUND_INSECT_SWARM_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/4.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|5 |SOUND_BLOOD_LASER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/5.wav" type="audio/wav"></audio>| Brimstone |
 |[ ](#){: .rep .tooltip .badge }|6 |SOUND_BLOOD_LASER_SMALL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/6.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|7 |SOUND_BLOOD_LASER_LARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/7.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|8 |SOUND_BOOK_PAGE_TURN_12 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/8.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|9 |SOUND_BOSS_BUG_HISS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/9.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|7 |SOUND_BLOOD_LASER_LARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/7.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|8 |SOUND_BOOK_PAGE_TURN_12 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/8.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|9 |SOUND_BOSS_BUG_HISS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/9.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|10 |SOUND_BLOOD_LASER_LARGER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/10.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|11 |SOUND_BOSS_GURGLE_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/11.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|12 |SOUND_BOSS_LITE_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/12.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|13 |SOUND_BOSS_LITE_HISS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/13.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|14 |SOUND_BOSS_LITE_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/14.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|15 |SOUND_BOSS_LITE_SLOPPY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/15.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|16 |SOUND_BOSS_SPIT_BLOB_BARF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/16.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|11 |SOUND_BOSS_GURGLE_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/11.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|12 |SOUND_BOSS_LITE_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/12.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|13 |SOUND_BOSS_LITE_HISS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/13.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|14 |SOUND_BOSS_LITE_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/14.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|15 |SOUND_BOSS_LITE_SLOPPY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/15.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|16 |SOUND_BOSS_SPIT_BLOB_BARF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/16.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|17 |SOUND_PAPER_IN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/17.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|18 |SOUND_PAPER_OUT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/18.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|21 |SOUND_CHEST_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/21.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|22 |SOUND_CHEST_OPEN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/22.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|23 |SOUND_CHOIR_UNLOCK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/23.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|24 |SOUND_COIN_SLOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/24.wav" type="audio/wav"></audio>| Various machines, such as reroll machine and donation machine |
-|[ ](#){: .abrep .tooltip .badge }|25 |SOUND_CUTE_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/25.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|21 |SOUND_CHEST_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/21.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|22 |SOUND_CHEST_OPEN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/22.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|23 |SOUND_CHOIR_UNLOCK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/23.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|24 |SOUND_COIN_SLOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/24.wav" type="audio/wav"></audio>| Various machines, such as reroll machine and donation machine |
+|[ ](#){: .alldlc .tooltip .badge }|25 |SOUND_CUTE_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/25.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|27 |SOUND_DEATH_BURST_BONE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/27.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|28 |SOUND_DEATH_BURST_LARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/28.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|28 |SOUND_DEATH_BURST_LARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/28.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|29 |SOUND_DEATH_REVERSE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/29.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|30 |SOUND_DEATH_BURST_SMALL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/30.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|33 |SOUND_DEATH_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/33.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|34 |SOUND_DEVIL_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/34.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|35 |SOUND_DOOR_HEAVY_CLOSE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/35.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|36 |SOUND_DOOR_HEAVY_OPEN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/36.wav" type="audio/wav"></audio>| Room unlock clear |
-|[ ](#){: .abrep .tooltip .badge }|37 |SOUND_FART {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/37.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|38 |SOUND_FETUS_JUMP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/38.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|40 |SOUND_FETUS_LAND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/40.wav" type="audio/wav"></audio>| Bomb land after appear animation |
-|[ ](#){: .abrep .tooltip .badge }|43 |SOUND_FIREDEATH_HISS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/43.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|44 |SOUND_FLOATY_BABY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/44.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|30 |SOUND_DEATH_BURST_SMALL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/30.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|33 |SOUND_DEATH_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/33.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|34 |SOUND_DEVIL_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/34.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|35 |SOUND_DOOR_HEAVY_CLOSE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/35.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|36 |SOUND_DOOR_HEAVY_OPEN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/36.wav" type="audio/wav"></audio>| Room unlock clear |
+|[ ](#){: .alldlc .tooltip .badge }|37 |SOUND_FART {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/37.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|38 |SOUND_FETUS_JUMP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/38.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|40 |SOUND_FETUS_LAND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/40.wav" type="audio/wav"></audio>| Bomb land after appear animation |
+|[ ](#){: .alldlc .tooltip .badge }|43 |SOUND_FIREDEATH_HISS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/43.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|44 |SOUND_FLOATY_BABY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/44.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|45 |SOUND_COIN_INSERT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/45.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|46 |SOUND_METAL_DOOR_CLOSE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/46.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|47 |SOUND_METAL_DOOR_OPEN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/47.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|48 |SOUND_FORESTBOSS_STOMPS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/48.wav" type="audio/wav"></audio>| Monstro stomp |
+|[ ](#){: .alldlc .tooltip .badge }|48 |SOUND_FORESTBOSS_STOMPS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/48.wav" type="audio/wav"></audio>| Monstro stomp |
 |[ ](#){: .rep .tooltip .badge }|49 |SOUND_SCYTHE_BREAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/49.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|50 |SOUND_STONE_WALKER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/50.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|51 |SOUND_GASCAN_POUR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/51.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|52 |SOUND_HELLBOSS_GROUNDPOUND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/52.wav" type="audio/wav"></audio>| Slam sound |
+|[ ](#){: .alldlc .tooltip .badge }|51 |SOUND_GASCAN_POUR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/51.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|52 |SOUND_HELLBOSS_GROUNDPOUND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/52.wav" type="audio/wav"></audio>| Slam sound |
 |[ ](#){: .rep .tooltip .badge }|53 |SOUND_GLASS_BREAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/53.wav" type="audio/wav"></audio>| Holy Water |
-|[ ](#){: .abrep .tooltip .badge }|54 |SOUND_HOLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/54.wav" type="audio/wav"></audio>| Soul heart |
-|[ ](#){: .abrep .tooltip .badge }|55 |SOUND_ISAAC_HURT_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/55.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|56 |SOUND_CHILD_HAPPY_ROAR_SHORT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/56.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|57 |SOUND_CHILD_ANGRY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/57.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|58 |SOUND_KEYPICKUP_GAUNTLET {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/58.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|59 |SOUND_KEY_DROP0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/59.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|60 |SOUND_BABY_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/60.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|64 |SOUND_MAGGOT_BURST_OUT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/64.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|66 |SOUND_MAGGOT_ENTER_GROUND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/66.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|68 |SOUND_MEAT_FEET_SLOW0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/68.wav" type="audio/wav"></audio>| Heart appear animation end drop sound |
-|[ ](#){: .abrep .tooltip .badge }|69 |SOUND_MEAT_IMPACTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/69.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|72 |SOUND_MEAT_JUMPS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/72.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|77 |SOUND_MEATY_DEATHS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/77.wav" type="audio/wav"></audio>| Backstabber hit in back |
+|[ ](#){: .alldlc .tooltip .badge }|54 |SOUND_HOLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/54.wav" type="audio/wav"></audio>| Soul heart |
+|[ ](#){: .alldlc .tooltip .badge }|55 |SOUND_ISAAC_HURT_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/55.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|56 |SOUND_CHILD_HAPPY_ROAR_SHORT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/56.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|57 |SOUND_CHILD_ANGRY_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/57.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|58 |SOUND_KEYPICKUP_GAUNTLET {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/58.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|59 |SOUND_KEY_DROP0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/59.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|60 |SOUND_BABY_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/60.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|64 |SOUND_MAGGOT_BURST_OUT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/64.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|66 |SOUND_MAGGOT_ENTER_GROUND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/66.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|68 |SOUND_MEAT_FEET_SLOW0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/68.wav" type="audio/wav"></audio>| Heart appear animation end drop sound |
+|[ ](#){: .alldlc .tooltip .badge }|69 |SOUND_MEAT_IMPACTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/69.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|72 |SOUND_MEAT_JUMPS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/72.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|77 |SOUND_MEATY_DEATHS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/77.wav" type="audio/wav"></audio>| Backstabber hit in back |
 |[ ](#){: .rep .tooltip .badge }|78 |SOUND_POT_BREAK_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/78.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|79 |SOUND_MUSHROOM_POOF_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/79.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|80 |SOUND_BLACK_POOF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/80.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|81 |SOUND_STATIC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/81.wav" type="audio/wav"></audio>| Clicker |
-|[ ](#){: .abrep .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/82.wav" type="audio/wav"></audio>| |
-|[ ](#){: .abrep .tooltip .badge }|84 |SOUND_MOM_VOX_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/84.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|85 |SOUND_MOM_VOX_FILTERED_DEATH_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/85.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|86 |SOUND_MOM_VOX_FILTERED_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/86.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|87 |SOUND_MOM_VOX_FILTERED_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/87.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|90 |SOUND_MOM_VOX_FILTERED_ISAAC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/90.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|93 |SOUND_MOM_VOX_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/93.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|97 |SOUND_MOM_VOX_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/97.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|101 |SOUND_MOM_VOX_ISAAC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/101.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|104 |SOUND_MONSTER_GRUNT_0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/104.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|106 |SOUND_MONSTER_GRUNT_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/106.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|108 |SOUND_MONSTER_GRUNT_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/108.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|112 |SOUND_MONSTER_GRUNT_4 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/112.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|114 |SOUND_MONSTER_GRUNT_5 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/114.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|115 |SOUND_MONSTER_ROAR_0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/115.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|116 |SOUND_MONSTER_ROAR_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/116.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|117 |SOUND_MONSTER_ROAR_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/117.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|118 |SOUND_MONSTER_ROAR_3 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/118.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|119 |SOUND_MONSTER_YELL_A {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/119.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|122 |SOUND_MONSTER_YELL_B {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/122.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|128 |SOUND_POWERUP1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/128.wav" type="audio/wav"></audio>| Item pick up sound 1 |
-|[ ](#){: .abrep .tooltip .badge }|129 |SOUND_POWERUP2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/129.wav" type="audio/wav"></audio>| Item pick up sound 2 |
-|[ ](#){: .abrep .tooltip .badge }|130 |SOUND_POWERUP3 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/130.wav" type="audio/wav"></audio>| Item pick up sound 3 |
-|[ ](#){: .abrep .tooltip .badge }|132 |SOUND_POWERUP_SPEWER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/132.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|133 |SOUND_REDLIGHTNING_ZAP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/133.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|82 |SOUND_MOM_VOX_DEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/82.wav" type="audio/wav"></audio>| |
+|[ ](#){: .alldlc .tooltip .badge }|84 |SOUND_MOM_VOX_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/84.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|85 |SOUND_MOM_VOX_FILTERED_DEATH_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/85.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|86 |SOUND_MOM_VOX_FILTERED_EVILLAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/86.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|87 |SOUND_MOM_VOX_FILTERED_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/87.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|90 |SOUND_MOM_VOX_FILTERED_ISAAC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/90.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|93 |SOUND_MOM_VOX_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/93.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|97 |SOUND_MOM_VOX_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/97.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|101 |SOUND_MOM_VOX_ISAAC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/101.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|104 |SOUND_MONSTER_GRUNT_0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/104.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|106 |SOUND_MONSTER_GRUNT_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/106.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|108 |SOUND_MONSTER_GRUNT_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/108.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|112 |SOUND_MONSTER_GRUNT_4 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/112.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|114 |SOUND_MONSTER_GRUNT_5 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/114.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|115 |SOUND_MONSTER_ROAR_0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/115.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|116 |SOUND_MONSTER_ROAR_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/116.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|117 |SOUND_MONSTER_ROAR_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/117.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|118 |SOUND_MONSTER_ROAR_3 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/118.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|119 |SOUND_MONSTER_YELL_A {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/119.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|122 |SOUND_MONSTER_YELL_B {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/122.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|128 |SOUND_POWERUP1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/128.wav" type="audio/wav"></audio>| Item pick up sound 1 |
+|[ ](#){: .alldlc .tooltip .badge }|129 |SOUND_POWERUP2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/129.wav" type="audio/wav"></audio>| Item pick up sound 2 |
+|[ ](#){: .alldlc .tooltip .badge }|130 |SOUND_POWERUP3 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/130.wav" type="audio/wav"></audio>| Item pick up sound 3 |
+|[ ](#){: .alldlc .tooltip .badge }|132 |SOUND_POWERUP_SPEWER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/132.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|133 |SOUND_REDLIGHTNING_ZAP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/133.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|134 |SOUND_REDLIGHTNING_ZAP_WEAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/134.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|135 |SOUND_REDLIGHTNING_ZAP_STRONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/135.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|136 |SOUND_REDLIGHTNING_ZAP_BURST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/136.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|137 |SOUND_ROCK_CRUMBLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/137.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|138 |SOUND_POT_BREAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/138.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|139 |SOUND_MUSHROOM_POOF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/139.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|141 |SOUND_ROCKET_BLAST_DEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/141.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|142 |SOUND_SMB_LARGE_CHEWS_4 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/142.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|143 |SOUND_SCARED_WHIMPER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/143.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|146 |SOUND_SHAKEY_KID_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/146.wav" type="audio/wav"></audio>| Horf |
-|[ ](#){: .abrep .tooltip .badge }|149 |SOUND_SINK_DRAIN_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/149.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|150 |SOUND_TEARIMPACTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/150.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|153 |SOUND_TEARS_FIRE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/153.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|156 |SOUND_UNLOCK00 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/156.wav" type="audio/wav"></audio>| Unlock door |
-|[ ](#){: .abrep .tooltip .badge }|157 |SOUND_VAMP_GULP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/157.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|158 |SOUND_WHEEZY_COUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/158.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|159 |SOUND_SPIDER_COUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/159.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|160 |SOUND_PORTAL_OPEN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|161 |SOUND_PORTAL_LOOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|162 |SOUND_PORTAL_SPAWN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|163 |SOUND_TAR_LOOP {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|165 |SOUND_ZOMBIE_WALKER_KID {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/165.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|166 |SOUND_ANIMAL_SQUISH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/166.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|167 |SOUND_ANGRY_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/167.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|169 |SOUND_BAND_AID_PICK_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/169.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|170 |SOUND_BATTERYCHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/170.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|171 |SOUND_BEEP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/171.wav" type="audio/wav"></audio>| Used when an active gains a single charge |
+|[ ](#){: .alldlc .tooltip .badge }|137 |SOUND_ROCK_CRUMBLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/137.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|138 |SOUND_POT_BREAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/138.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|139 |SOUND_MUSHROOM_POOF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/139.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|141 |SOUND_ROCKET_BLAST_DEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/141.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|142 |SOUND_SMB_LARGE_CHEWS_4 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/142.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|143 |SOUND_SCARED_WHIMPER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/143.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|146 |SOUND_SHAKEY_KID_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/146.wav" type="audio/wav"></audio>| Horf |
+|[ ](#){: .alldlc .tooltip .badge }|149 |SOUND_SINK_DRAIN_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/149.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|150 |SOUND_TEARIMPACTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/150.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|153 |SOUND_TEARS_FIRE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/153.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|156 |SOUND_UNLOCK00 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/156.wav" type="audio/wav"></audio>| Unlock door |
+|[ ](#){: .alldlc .tooltip .badge }|157 |SOUND_VAMP_GULP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/157.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|158 |SOUND_WHEEZY_COUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/158.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|159 |SOUND_SPIDER_COUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/159.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|160 |SOUND_PORTAL_OPEN {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|161 |SOUND_PORTAL_LOOP {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|162 |SOUND_PORTAL_SPAWN {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|163 |SOUND_TAR_LOOP {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|165 |SOUND_ZOMBIE_WALKER_KID {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/165.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|166 |SOUND_ANIMAL_SQUISH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/166.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|167 |SOUND_ANGRY_GURGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/167.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|169 |SOUND_BAND_AID_PICK_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/169.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|170 |SOUND_BATTERYCHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/170.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|171 |SOUND_BEEP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/171.wav" type="audio/wav"></audio>| Used when an active gains a single charge |
 |[ ](#){: .rep .tooltip .badge }|172 |SOUND_LIGHTBOLT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/172.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|173 |SOUND_LIGHTBOLT_CHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/173.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|175 |SOUND_BLOODBANK_SPAWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/175.wav" type="audio/wav"></audio>| Used for Pinking Shears |
-|[ ](#){: .abrep .tooltip .badge }|178 |SOUND_BLOODSHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/178.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|181 |SOUND_BOIL_HATCH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/181.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|182 |SOUND_BOSS1_EXPLOSIONS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/182.wav" type="audio/wav"></audio>| Bomb explosion sound |
+|[ ](#){: .alldlc .tooltip .badge }|175 |SOUND_BLOODBANK_SPAWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/175.wav" type="audio/wav"></audio>| Used for Pinking Shears |
+|[ ](#){: .alldlc .tooltip .badge }|178 |SOUND_BLOODSHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/178.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|181 |SOUND_BOIL_HATCH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/181.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|182 |SOUND_BOSS1_EXPLOSIONS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/182.wav" type="audio/wav"></audio>| Bomb explosion sound |
 |[ ](#){: .rep .tooltip .badge }|183 |SOUND_EXPLOSION_WEAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/183.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|184 |SOUND_EXPLOSION_STRONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/184.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|185 |SOUND_BOSS2_BUBBLES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/185.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|185 |SOUND_BOSS2_BUBBLES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/185.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|186 |SOUND_EXPLOSION_DEBRIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/186.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/187.wav" type="audio/wav"></audio>| Incorrect buzzer or cancel sound |
-|[ ](#){: .abrep .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/190.wav" type="audio/wav"></audio>| Entering a boss arena and the door closes |
-|[ ](#){: .abrep .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/194.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|195 |SOUND_CHARACTER_SELECT_RIGHT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/195.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|197 |SOUND_DERP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/197.wav" type="audio/wav"></audio>| I found pills |
-|[ ](#){: .abrep .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/198.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|199 |SOUND_DIMEPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/199.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|200 |SOUND_LUCKYPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/200.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|201 |SOUND_FETUS_FEET {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/201.wav" type="audio/wav"></audio>| Collect sound for bombs |
-|[ ](#){: .abrep .tooltip .badge }|204 |SOUND_GOLDENKEY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/204.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|205 |SOUND_GOOATTACH0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/205.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|207 |SOUND_GOODEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/207.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|211 |SOUND_HAND_LASERS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/211.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|212 |SOUND_HEARTIN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/212.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|213 |SOUND_HEARTOUT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/213.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|214 |SOUND_HELL_PORTAL1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/214.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|215 |SOUND_HELL_PORTAL2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/215.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|217 |SOUND_ISAACDIES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/217.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|218 |SOUND_ITEMRECHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/218.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|219 |SOUND_KISS_LIPS1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/219.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|221 |SOUND_LEECH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/221.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|224 |SOUND_MAGGOTCHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/224.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|226 |SOUND_MEATHEADSHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/226.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|229 |SOUND_METAL_BLOCKBREAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/229.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|231 |SOUND_NICKELDROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/231.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|232 |SOUND_NICKELPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/232.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|233 |SOUND_PENNYDROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/233.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|234 |SOUND_PENNYPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/234.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|237 |SOUND_PLOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/237.wav" type="audio/wav"></audio>| Used by Peep when he spawns an eye, The Peeper, and C Section.  |
-|[ ](#){: .abrep .tooltip .badge }|238 |SOUND_SATAN_APPEAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/238.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|239 |SOUND_SATAN_BLAST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/239.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|240 |SOUND_SATAN_CHARGE_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/240.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|241 |SOUND_SATAN_GROW {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/241.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|242 |SOUND_SATAN_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/242.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|243 |SOUND_SATAN_RISE_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/243.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|245 |SOUND_SATAN_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/245.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|246 |SOUND_SATAN_STOMP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/246.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|249 |SOUND_SCAMPER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/249.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|252 |SOUND_SHELLGAME {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/252.wav" type="audio/wav"></audio>| Used in Forgotten's bone club swing |
-|[ ](#){: .abrep .tooltip .badge }|255 |SOUND_SLOTSPAWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/255.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|258 |SOUND_SPLATTER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/258.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|261 |SOUND_STEAM_HALFSEC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/261.wav" type="audio/wav"></audio>| Fire fireplace put out |
-|[ ](#){: .abrep .tooltip .badge }|262 |SOUND_STONESHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/262.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|263 |SOUND_WEIRD_WORM_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/263.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|265 |SOUND_SUMMONSOUND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/265.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|266 |SOUND_SUPERHOLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/266.wav" type="audio/wav"></audio>| Eternal / Angel heart |
-|[ ](#){: .abrep .tooltip .badge }|267 |SOUND_THUMBS_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/267.wav" type="audio/wav"></audio>| Sad negative player animation emote |
-|[ ](#){: .abrep .tooltip .badge }|268 |SOUND_THUMBSUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/268.wav" type="audio/wav"></audio>| Happy positive player animation emote |
-|[ ](#){: .abrep .tooltip .badge }|269 |SOUND_FIRE_BURN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/269.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|270 |SOUND_HAPPY_RAINBOW {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/270.wav" type="audio/wav"></audio>| Rainbow poop |
+|[ ](#){: .alldlc .tooltip .badge }|187 |SOUND_BOSS2INTRO_ERRORBUZZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/187.wav" type="audio/wav"></audio>| Incorrect buzzer or cancel sound |
+|[ ](#){: .alldlc .tooltip .badge }|190 |SOUND_CASTLEPORTCULLIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/190.wav" type="audio/wav"></audio>| Entering a boss arena and the door closes |
+|[ ](#){: .alldlc .tooltip .badge }|194 |SOUND_CHARACTER_SELECT_LEFT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/194.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|195 |SOUND_CHARACTER_SELECT_RIGHT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/195.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|197 |SOUND_DERP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/197.wav" type="audio/wav"></audio>| I found pills |
+|[ ](#){: .alldlc .tooltip .badge }|198 |SOUND_DIMEDROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/198.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|199 |SOUND_DIMEPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/199.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|200 |SOUND_LUCKYPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/200.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|201 |SOUND_FETUS_FEET {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/201.wav" type="audio/wav"></audio>| Collect sound for bombs |
+|[ ](#){: .alldlc .tooltip .badge }|204 |SOUND_GOLDENKEY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/204.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|205 |SOUND_GOOATTACH0 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/205.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|207 |SOUND_GOODEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/207.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|211 |SOUND_HAND_LASERS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/211.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|212 |SOUND_HEARTIN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/212.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|213 |SOUND_HEARTOUT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/213.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|214 |SOUND_HELL_PORTAL1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/214.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|215 |SOUND_HELL_PORTAL2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/215.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|217 |SOUND_ISAACDIES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/217.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|218 |SOUND_ITEMRECHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/218.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|219 |SOUND_KISS_LIPS1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/219.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|221 |SOUND_LEECH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/221.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|224 |SOUND_MAGGOTCHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/224.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|226 |SOUND_MEATHEADSHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/226.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|229 |SOUND_METAL_BLOCKBREAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/229.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|231 |SOUND_NICKELDROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/231.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|232 |SOUND_NICKELPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/232.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|233 |SOUND_PENNYDROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/233.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|234 |SOUND_PENNYPICKUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/234.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|237 |SOUND_PLOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/237.wav" type="audio/wav"></audio>| Used by Peep when he spawns an eye, The Peeper, and C Section.  |
+|[ ](#){: .alldlc .tooltip .badge }|238 |SOUND_SATAN_APPEAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/238.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|239 |SOUND_SATAN_BLAST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/239.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|240 |SOUND_SATAN_CHARGE_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/240.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|241 |SOUND_SATAN_GROW {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/241.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|242 |SOUND_SATAN_HURT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/242.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|243 |SOUND_SATAN_RISE_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/243.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|245 |SOUND_SATAN_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/245.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|246 |SOUND_SATAN_STOMP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/246.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|249 |SOUND_SCAMPER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/249.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|252 |SOUND_SHELLGAME {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/252.wav" type="audio/wav"></audio>| Used in Forgotten's bone club swing |
+|[ ](#){: .alldlc .tooltip .badge }|255 |SOUND_SLOTSPAWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/255.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|258 |SOUND_SPLATTER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/258.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|261 |SOUND_STEAM_HALFSEC {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/261.wav" type="audio/wav"></audio>| Fire fireplace put out |
+|[ ](#){: .alldlc .tooltip .badge }|262 |SOUND_STONESHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/262.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|263 |SOUND_WEIRD_WORM_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/263.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|265 |SOUND_SUMMONSOUND {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/265.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|266 |SOUND_SUPERHOLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/266.wav" type="audio/wav"></audio>| Eternal / Angel heart |
+|[ ](#){: .alldlc .tooltip .badge }|267 |SOUND_THUMBS_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/267.wav" type="audio/wav"></audio>| Sad negative player animation emote |
+|[ ](#){: .alldlc .tooltip .badge }|268 |SOUND_THUMBSUP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/268.wav" type="audio/wav"></audio>| Happy positive player animation emote |
+|[ ](#){: .alldlc .tooltip .badge }|269 |SOUND_FIRE_BURN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/269.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|270 |SOUND_HAPPY_RAINBOW {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/270.wav" type="audio/wav"></audio>| Rainbow poop |
 |[ ](#){: .rep .tooltip .badge }|271 |SOUND_LASERRING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/271.wav" type="audio/wav"></audio>| new (ab) |
 |[ ](#){: .rep .tooltip .badge }|272 |SOUND_LASERRING_WEAK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/272.wav" type="audio/wav"></audio>| new (ab) |
 |[ ](#){: .rep .tooltip .badge }|273 |SOUND_LASERRING_STRONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/273.wav" type="audio/wav"></audio>| new (ab) |
@@ -196,177 +196,177 @@ tags:
 |[ ](#){: .rep .tooltip .badge }|284 |SOUND_MENU_NOTE_HIDE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/284.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|285 |SOUND_MENU_CHARACTER_SELECT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/285.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|286 |SOUND_SUMMON_POOF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/286.wav" type="audio/wav"></audio>| Appear "poof" sound |
-|[ ](#){: .abrep .tooltip .badge }|300 |SOUND_BOO_MAD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/300.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|301 |SOUND_FART_GURG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/301.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|302 |SOUND_FAT_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/302.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|303 |SOUND_FAT_WIGGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/303.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|304 |SOUND_FIRE_RUSH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/304.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|305 |SOUND_GHOST_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/305.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|306 |SOUND_GHOST_SHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/306.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|307 |SOUND_GRROOWL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/307.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|308 |SOUND_GURG_BARF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/308.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|309 |SOUND_INHALE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/309.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|310 |SOUND_LOW_INHALE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/310.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|311 |SOUND_MEGA_PUKE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/311.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|312 |SOUND_MOUTH_FULL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/312.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|313 |SOUND_MULTI_SCREAM {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/313.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|314 |SOUND_SKIN_PULL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/314.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|315 |SOUND_WHISTLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/315.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|316 |SOUND_DEVILROOM_DEAL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/316.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|317 |SOUND_SPIDER_SPIT_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/317.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|318 |SOUND_WORM_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/318.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|319 |SOUND_LITTLE_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/319.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|320 |SOUND_SATAN_ROOM_APPEAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/320.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|321 |SOUND_HEARTBEAT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/321.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|322 |SOUND_HEARTBEAT_FASTER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/322.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|323 |SOUND_HEARTBEAT_FASTEST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/323.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|324 |SOUND_48_HR_ENERGY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/324.wav" type="audio/wav"></audio>| 48 (fourty eight) hour energy |
-|[ ](#){: .abrep .tooltip .badge }|325 |SOUND_ALGIZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/325.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|326 |SOUND_AMNESIA {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/326.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|327 |SOUND_ANZUS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/327.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|328 |SOUND_BAD_GAS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/328.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|329 |SOUND_BAD_TRIP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/329.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|330 |SOUND_BALLS_OF_STEEL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/330.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|331 |SOUND_BERKANO {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/331.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|332 |SOUND_BOMBS_ARE_KEY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/332.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|333 |SOUND_CARD_VS_HUMAN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/333.wav" type="audio/wav"></audio>| Card against humanity |
-|[ ](#){: .abrep .tooltip .badge }|334 |SOUND_CHAOS_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/334.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|335 |SOUND_CREDIT_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/335.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|336 |SOUND_DAGAZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/336.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|337 |SOUND_DEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/337.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|338 |SOUND_EHWAZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/338.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|339 |SOUND_EXPLOSIVE_DIAH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/339.wav" type="audio/wav"></audio>| Explosive diarrhea |
-|[ ](#){: .abrep .tooltip .badge }|340 |SOUND_FULL_HP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/340.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|341 |SOUND_HAGALAZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/341.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|342 |SOUND_HP_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/342.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|343 |SOUND_HP_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/343.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|344 |SOUND_HEMATEMISIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/344.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|345 |SOUND_I_FOUND_PILLS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/345.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|346 |SOUND_JERA {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/346.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|347 |SOUND_JOKER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/347.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|348 |SOUND_JUDGEMENT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/348.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|349 |SOUND_JUSTICE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/349.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|350 |SOUND_LEMON_PARTY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/350.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|351 |SOUND_LUCK_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/351.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|352 |SOUND_LUCK_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/352.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|353 |SOUND_PARALYSIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/353.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|354 |SOUND_PERTHRO {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/354.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|355 |SOUND_PHEROMONES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/355.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|356 |SOUND_PRETTY_FLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/356.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|357 |SOUND_PUBERTY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/357.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|358 |SOUND_RUA_WIZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/358.wav" type="audio/wav"></audio>| R U A Wizard / Are you a wizard |
-|[ ](#){: .abrep .tooltip .badge }|359 |SOUND_RANGE_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/359.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|360 |SOUND_RANGE_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/360.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|361 |SOUND_RULES_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/361.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|362 |SOUND_SEE_4EVER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/362.wav" type="audio/wav"></audio>| I can see forever |
-|[ ](#){: .abrep .tooltip .badge }|363 |SOUND_SPEED_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/363.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|364 |SOUND_SPEED_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/364.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|365 |SOUND_STRENGTH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/365.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|366 |SOUND_SUICIDE_KING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/366.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|367 |SOUND_TEARS_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/367.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|368 |SOUND_TEARS_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/368.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|369 |SOUND_TELEPILLS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/369.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|370 |SOUND_TEMPERANCE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/370.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|371 |SOUND_THE_CHARIOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/371.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|372 |SOUND_THE_DEVIL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/372.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|373 |SOUND_THE_EMPEROR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/373.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|374 |SOUND_EMPRESS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/374.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|375 |SOUND_FOOL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/375.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|376 |SOUND_HANGED_MAN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/376.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|377 |SOUND_HERMIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/377.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|378 |SOUND_HIEROPHANT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/378.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|379 |SOUND_HIGHT_PRIESTESS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/379.wav" type="audio/wav"></audio>| The high priestess |
-|[ ](#){: .abrep .tooltip .badge }|380 |SOUND_THE_LOVERS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/380.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|381 |SOUND_MAGICIAN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/381.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|382 |SOUND_MOON {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/382.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|383 |SOUND_STARS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/383.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|384 |SOUND_SUN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/384.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|385 |SOUND_TOWER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/385.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|386 |SOUND_WORLD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/386.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|387 |SOUND_TWO_CLUBS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/387.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|388 |SOUND_TWO_DIAMONDS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/388.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|389 |SOUND_TWO_HEARTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/389.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|390 |SOUND_TWO_SPADES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/390.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|391 |SOUND_WHEEL_OF_FORTUNE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/391.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|392 |SOUND_RAGMAN_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/392.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|393 |SOUND_RAGMAN_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/393.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|394 |SOUND_RAGMAN_3 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/394.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|395 |SOUND_RAGMAN_4 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/395.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|396 |SOUND_FLUSH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/396.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|397 |SOUND_WATER_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/397.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|398 |SOUND_WET_FEET {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/398.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|399 |SOUND_ADDICTED {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/399.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|400 |SOUND_DICE_SHARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/400.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|401 |SOUND_EMERGENCY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/401.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|402 |SOUND_INFESTED_EXCL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/402.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|403 |SOUND_INFESTED_QUEST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/403.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|404 |SOUND_JAIL_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/404.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|405 |SOUND_LARGER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/405.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|406 |SOUND_PERCS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/406.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|407 |SOUND_POWER_PILL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/407.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|408 |SOUND_QUESTION_MARK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/408.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|409 |SOUND_RELAX {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/409.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|410 |SOUND_RETRO {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/410.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|411 |SOUND_SMALL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/411.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|412 |SOUND_QQQ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/412.wav" type="audio/wav"></audio>| ??? pill |
-|[ ](#){: .abrep .tooltip .badge }|413 |SOUND_DANGLE_WHISTLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/413.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|414 |SOUND_LITTLE_HORN_COUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/414.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|415 |SOUND_LITTLE_HORN_GRUNT_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/415.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|416 |SOUND_LITTLE_HORN_GRUNT_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/416.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|417 |SOUND_THE_FORSAKEN_LAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/417.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|418 |SOUND_THE_FORSAKEN_SCREAM {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/418.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|419 |SOUND_THE_STAIN_BURST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/419.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|420 |SOUND_BROWNIE_LAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/420.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|421 |SOUND_HUSH_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/421.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|422 |SOUND_HUSH_GROWL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/422.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|423 |SOUND_HUSH_LOW_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/423.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|424 |SOUND_FRAIL_CHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/424.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|425 |SOUND_HUSH_CHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/425.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|426 |SOUND_MAW_OF_VOID {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/426.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|427 |SOUND_ULTRA_GREED_COIN_DESTROY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/427.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|428 |SOUND_ULTRA_GREED_COINS_FALLING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/428.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|429 |SOUND_ULTRA_GREED_DEATH_SCREAM {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/429.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|430 |SOUND_ULTRA_GREED_TURN_GOLD_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/430.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|431 |SOUND_ULTRA_GREED_TURN_GOLD_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/431.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|432 |SOUND_ULTRA_GREED_ROAR_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/432.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|433 |SOUND_ULTRA_GREED_ROAR_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/433.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|434 |SOUND_ULTRA_GREED_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/434.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|435 |SOUND_ULTRA_GREED_PULL_SLOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/435.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|436 |SOUND_ULTRA_GREED_SLOT_SPIN_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/436.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|437 |SOUND_ULTRA_GREED_SLOT_STOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/437.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|438 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP_END {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/438.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|439 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/439.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|440 |SOUND_ULTRA_GREED_SPINNING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/440.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|441 |SOUND_DOG_BARK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/441.wav" type="audio/wav"></audio>| Dog tooth bark |
-|[ ](#){: .abrep .tooltip .badge }|442 |SOUND_DOG_HOWELL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/442.wav" type="audio/wav"></audio>| Dog tooth howl |
-|[ ](#){: .abrep .tooltip .badge }|443 |SOUND_X_LAX {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/443.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|444 |SOUND_WRONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/444.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|445 |SOUND_VURP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/445.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|446 |SOUND_SUNSHINE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/446.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|447 |SOUND_SPADES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/447.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|448 |SOUND_HORF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/448.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|449 |SOUND_HOLY_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/449.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|450 |SOUND_HEARTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/450.wav" type="audio/wav"></audio>| Ace of Hearts |
-|[ ](#){: .abrep .tooltip .badge }|451 |SOUND_GULP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/451.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|452 |SOUND_FRIENDS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/452.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|453 |SOUND_EXCITED {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/453.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|454 |SOUND_DROWSY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/454.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|455 |SOUND_DIAMONDS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/455.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|456 |SOUND_CLUBS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/456.wav" type="audio/wav"></audio>| Ace of Clubs |
-|[ ](#){: .abrep .tooltip .badge }|457 |SOUND_BLACK_RUNE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/457.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|458 |SOUND_PING_PONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/458.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|459 |SOUND_SPEWER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/459.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|460 |SOUND_MOM_FOOTSTEPS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/460.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|461 |SOUND_BONE_HEART {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/461.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|462 |SOUND_BONE_SNAP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/462.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|463 |SOUND_SHOVEL_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/463.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|464 |SOUND_SHOVEL_DIG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/464.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|465 |SOUND_GOLD_HEART {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/465.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|466 |SOUND_GOLD_HEART_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/466.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|467 |SOUND_BONE_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/467.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|468 |SOUND_UNHOLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/468.wav" type="audio/wav"></audio>| Black heart / demon heart pickup |
-|[ ](#){: .abrep .tooltip .badge }|469 |SOUND_BUTTON_PRESS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/469.wav" type="audio/wav"></audio>|  |
-|[ ](#){: .abrep .tooltip .badge }|470 |SOUND_GOLDENBOMB {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/470.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|300 |SOUND_BOO_MAD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/300.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|301 |SOUND_FART_GURG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/301.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|302 |SOUND_FAT_GRUNT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/302.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|303 |SOUND_FAT_WIGGLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/303.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|304 |SOUND_FIRE_RUSH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/304.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|305 |SOUND_GHOST_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/305.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|306 |SOUND_GHOST_SHOOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/306.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|307 |SOUND_GRROOWL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/307.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|308 |SOUND_GURG_BARF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/308.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|309 |SOUND_INHALE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/309.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|310 |SOUND_LOW_INHALE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/310.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|311 |SOUND_MEGA_PUKE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/311.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|312 |SOUND_MOUTH_FULL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/312.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|313 |SOUND_MULTI_SCREAM {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/313.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|314 |SOUND_SKIN_PULL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/314.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|315 |SOUND_WHISTLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/315.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|316 |SOUND_DEVILROOM_DEAL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/316.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|317 |SOUND_SPIDER_SPIT_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/317.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|318 |SOUND_WORM_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/318.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|319 |SOUND_LITTLE_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/319.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|320 |SOUND_SATAN_ROOM_APPEAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/320.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|321 |SOUND_HEARTBEAT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/321.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|322 |SOUND_HEARTBEAT_FASTER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/322.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|323 |SOUND_HEARTBEAT_FASTEST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/323.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|324 |SOUND_48_HR_ENERGY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/324.wav" type="audio/wav"></audio>| 48 (fourty eight) hour energy |
+|[ ](#){: .alldlc .tooltip .badge }|325 |SOUND_ALGIZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/325.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|326 |SOUND_AMNESIA {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/326.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|327 |SOUND_ANZUS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/327.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|328 |SOUND_BAD_GAS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/328.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|329 |SOUND_BAD_TRIP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/329.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|330 |SOUND_BALLS_OF_STEEL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/330.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|331 |SOUND_BERKANO {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/331.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|332 |SOUND_BOMBS_ARE_KEY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/332.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|333 |SOUND_CARD_VS_HUMAN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/333.wav" type="audio/wav"></audio>| Card against humanity |
+|[ ](#){: .alldlc .tooltip .badge }|334 |SOUND_CHAOS_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/334.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|335 |SOUND_CREDIT_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/335.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|336 |SOUND_DAGAZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/336.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|337 |SOUND_DEATH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/337.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|338 |SOUND_EHWAZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/338.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|339 |SOUND_EXPLOSIVE_DIAH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/339.wav" type="audio/wav"></audio>| Explosive diarrhea |
+|[ ](#){: .alldlc .tooltip .badge }|340 |SOUND_FULL_HP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/340.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|341 |SOUND_HAGALAZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/341.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|342 |SOUND_HP_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/342.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|343 |SOUND_HP_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/343.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|344 |SOUND_HEMATEMISIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/344.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|345 |SOUND_I_FOUND_PILLS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/345.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|346 |SOUND_JERA {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/346.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|347 |SOUND_JOKER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/347.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|348 |SOUND_JUDGEMENT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/348.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|349 |SOUND_JUSTICE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/349.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|350 |SOUND_LEMON_PARTY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/350.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|351 |SOUND_LUCK_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/351.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|352 |SOUND_LUCK_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/352.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|353 |SOUND_PARALYSIS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/353.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|354 |SOUND_PERTHRO {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/354.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|355 |SOUND_PHEROMONES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/355.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|356 |SOUND_PRETTY_FLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/356.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|357 |SOUND_PUBERTY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/357.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|358 |SOUND_RUA_WIZ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/358.wav" type="audio/wav"></audio>| R U A Wizard / Are you a wizard |
+|[ ](#){: .alldlc .tooltip .badge }|359 |SOUND_RANGE_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/359.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|360 |SOUND_RANGE_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/360.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|361 |SOUND_RULES_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/361.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|362 |SOUND_SEE_4EVER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/362.wav" type="audio/wav"></audio>| I can see forever |
+|[ ](#){: .alldlc .tooltip .badge }|363 |SOUND_SPEED_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/363.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|364 |SOUND_SPEED_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/364.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|365 |SOUND_STRENGTH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/365.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|366 |SOUND_SUICIDE_KING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/366.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|367 |SOUND_TEARS_DOWN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/367.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|368 |SOUND_TEARS_UP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/368.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|369 |SOUND_TELEPILLS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/369.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|370 |SOUND_TEMPERANCE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/370.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|371 |SOUND_THE_CHARIOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/371.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|372 |SOUND_THE_DEVIL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/372.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|373 |SOUND_THE_EMPEROR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/373.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|374 |SOUND_EMPRESS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/374.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|375 |SOUND_FOOL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/375.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|376 |SOUND_HANGED_MAN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/376.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|377 |SOUND_HERMIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/377.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|378 |SOUND_HIEROPHANT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/378.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|379 |SOUND_HIGHT_PRIESTESS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/379.wav" type="audio/wav"></audio>| The high priestess |
+|[ ](#){: .alldlc .tooltip .badge }|380 |SOUND_THE_LOVERS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/380.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|381 |SOUND_MAGICIAN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/381.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|382 |SOUND_MOON {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/382.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|383 |SOUND_STARS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/383.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|384 |SOUND_SUN {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/384.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|385 |SOUND_TOWER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/385.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|386 |SOUND_WORLD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/386.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|387 |SOUND_TWO_CLUBS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/387.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|388 |SOUND_TWO_DIAMONDS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/388.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|389 |SOUND_TWO_HEARTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/389.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|390 |SOUND_TWO_SPADES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/390.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|391 |SOUND_WHEEL_OF_FORTUNE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/391.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|392 |SOUND_RAGMAN_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/392.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|393 |SOUND_RAGMAN_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/393.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|394 |SOUND_RAGMAN_3 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/394.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|395 |SOUND_RAGMAN_4 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/395.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|396 |SOUND_FLUSH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/396.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|397 |SOUND_WATER_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/397.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|398 |SOUND_WET_FEET {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/398.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|399 |SOUND_ADDICTED {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/399.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|400 |SOUND_DICE_SHARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/400.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|401 |SOUND_EMERGENCY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/401.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|402 |SOUND_INFESTED_EXCL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/402.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|403 |SOUND_INFESTED_QUEST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/403.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|404 |SOUND_JAIL_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/404.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|405 |SOUND_LARGER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/405.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|406 |SOUND_PERCS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/406.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|407 |SOUND_POWER_PILL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/407.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|408 |SOUND_QUESTION_MARK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/408.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|409 |SOUND_RELAX {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/409.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|410 |SOUND_RETRO {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/410.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|411 |SOUND_SMALL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/411.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|412 |SOUND_QQQ {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/412.wav" type="audio/wav"></audio>| ??? pill |
+|[ ](#){: .alldlc .tooltip .badge }|413 |SOUND_DANGLE_WHISTLE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/413.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|414 |SOUND_LITTLE_HORN_COUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/414.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|415 |SOUND_LITTLE_HORN_GRUNT_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/415.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|416 |SOUND_LITTLE_HORN_GRUNT_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/416.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|417 |SOUND_THE_FORSAKEN_LAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/417.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|418 |SOUND_THE_FORSAKEN_SCREAM {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/418.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|419 |SOUND_THE_STAIN_BURST {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/419.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|420 |SOUND_BROWNIE_LAUGH {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/420.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|421 |SOUND_HUSH_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/421.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|422 |SOUND_HUSH_GROWL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/422.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|423 |SOUND_HUSH_LOW_ROAR {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/423.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|424 |SOUND_FRAIL_CHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/424.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|425 |SOUND_HUSH_CHARGE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/425.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|426 |SOUND_MAW_OF_VOID {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/426.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|427 |SOUND_ULTRA_GREED_COIN_DESTROY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/427.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|428 |SOUND_ULTRA_GREED_COINS_FALLING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/428.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|429 |SOUND_ULTRA_GREED_DEATH_SCREAM {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/429.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|430 |SOUND_ULTRA_GREED_TURN_GOLD_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/430.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|431 |SOUND_ULTRA_GREED_TURN_GOLD_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/431.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|432 |SOUND_ULTRA_GREED_ROAR_1 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/432.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|433 |SOUND_ULTRA_GREED_ROAR_2 {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/433.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|434 |SOUND_ULTRA_GREED_SPIT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/434.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|435 |SOUND_ULTRA_GREED_PULL_SLOT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/435.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|436 |SOUND_ULTRA_GREED_SLOT_SPIN_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/436.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|437 |SOUND_ULTRA_GREED_SLOT_STOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/437.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|438 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP_END {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/438.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|439 |SOUND_ULTRA_GREED_SLOT_WIN_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/439.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|440 |SOUND_ULTRA_GREED_SPINNING {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/440.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|441 |SOUND_DOG_BARK {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/441.wav" type="audio/wav"></audio>| Dog tooth bark |
+|[ ](#){: .alldlc .tooltip .badge }|442 |SOUND_DOG_HOWELL {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/442.wav" type="audio/wav"></audio>| Dog tooth howl |
+|[ ](#){: .alldlc .tooltip .badge }|443 |SOUND_X_LAX {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/443.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|444 |SOUND_WRONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/444.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|445 |SOUND_VURP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/445.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|446 |SOUND_SUNSHINE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/446.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|447 |SOUND_SPADES {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/447.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|448 |SOUND_HORF {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/448.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|449 |SOUND_HOLY_CARD {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/449.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|450 |SOUND_HEARTS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/450.wav" type="audio/wav"></audio>| Ace of Hearts |
+|[ ](#){: .alldlc .tooltip .badge }|451 |SOUND_GULP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/451.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|452 |SOUND_FRIENDS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/452.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|453 |SOUND_EXCITED {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/453.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|454 |SOUND_DROWSY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/454.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|455 |SOUND_DIAMONDS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/455.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|456 |SOUND_CLUBS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/456.wav" type="audio/wav"></audio>| Ace of Clubs |
+|[ ](#){: .alldlc .tooltip .badge }|457 |SOUND_BLACK_RUNE {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/457.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|458 |SOUND_PING_PONG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/458.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|459 |SOUND_SPEWER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/459.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|460 |SOUND_MOM_FOOTSTEPS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/460.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|461 |SOUND_BONE_HEART {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/461.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|462 |SOUND_BONE_SNAP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/462.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|463 |SOUND_SHOVEL_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/463.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|464 |SOUND_SHOVEL_DIG {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/464.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|465 |SOUND_GOLD_HEART {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/465.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|466 |SOUND_GOLD_HEART_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/466.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|467 |SOUND_BONE_DROP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/467.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|468 |SOUND_UNHOLY {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/468.wav" type="audio/wav"></audio>| Black heart / demon heart pickup |
+|[ ](#){: .alldlc .tooltip .badge }|469 |SOUND_BUTTON_PRESS {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/469.wav" type="audio/wav"></audio>|  |
+|[ ](#){: .alldlc .tooltip .badge }|470 |SOUND_GOLDENBOMB {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/470.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|471 |SOUND_CANDLE_LIGHT {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/471.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|472 |SOUND_THUNDER {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/472.wav" type="audio/wav"></audio>|  |
 |[ ](#){: .rep .tooltip .badge }|473 |SOUND_WATER_FLOW_LOOP {: .copyable } | <audio controls preload="none"><source src="https://catinsurance.github.io/sounds/473.wav" type="audio/wav"></audio>|  |

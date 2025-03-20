@@ -31,7 +31,7 @@ ___
 ___
 ## Variables
 ### Achievement·ID {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int AchievementID  {: .copyable aria-label='Variables' }
 Returns the ID of the achievement that unlocks the card. Returns ``:::lua -1`` if the card is unlocked by default.
 
@@ -52,7 +52,7 @@ ___
 
 ___
 ### Description {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string Description  {: .copyable aria-label='Variables' }
 
 Returns the description of the card.
@@ -61,13 +61,13 @@ Returns the description of the card.
     In Repentance, this function now returns ``#[CARD_NAME]_DESCRIPTION``
 ___
 ### Greed·Mode·Allowed {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean GreedModeAllowed  {: .copyable aria-label='Variables' }
 
 Returns whether or not the item can appear in Greed or Greedier mode.
 ___
 ### Hud·Anim {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string HudAnim  {: .copyable aria-label='Variables' }
 
 Returns the name of the animation in `ui_cardfronts.anm2`.
@@ -76,7 +76,7 @@ Returns the name of the animation in `ui_cardfronts.anm2`.
     This will return a blank string unless used on a modded card. Standard cards will return nothing.
 ___
 ### ID {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int ID  {: .copyable aria-label='Variables' }
 
 Returns the ID of the given card.
@@ -87,7 +87,7 @@ ___
 
 ___
 ### Name {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
 Returns the name of the given card.

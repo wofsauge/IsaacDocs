@@ -27,17 +27,17 @@ Colors are made of three separate components, tint, colorize and offset. Tint ac
 R, G, B, A, RO, GO and BO accept numbers between 0 and 1.
 ___
 ### Entity·Ptr () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityPtr](EntityPtr.md) EntityPtr ( [Entity](Entity.md) entity ) {: .copyable aria-label='Constructors' }
 
 ___
 ### Entity·Ref () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityRef](EntityRef.md) EntityRef ( [Entity](Entity.md) entity ) {: .copyable aria-label='Constructors' }
 
 ___
 ### Font () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Font](Font.md) Font ( ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[Font](Font.md)" class.
@@ -53,7 +53,7 @@ Constructor for the "[Font](Font.md)" class.
 
 ___
 ### Game () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Game](Game.md) Game ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [Game](Game.md) object.
@@ -67,7 +67,7 @@ Returns a [Game](Game.md) object.
     ```
 ___
 ### KColor () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [KColor](KColor.md) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[KColor](KColor.md)" class.
@@ -77,7 +77,7 @@ Constructor for the "[KColor](KColor.md)" class.
 
 ___
 ### Music·Manager () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [MusicManager](MusicManager.md) MusicManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [MusicManager](MusicManager.md) object.
@@ -90,12 +90,12 @@ Returns a [MusicManager](MusicManager.md) object.
     ```
 ___
 ### Projectile·Params () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [ProjectileParams](ProjectileParams.md) ProjectileParams ( ) {: .copyable aria-label='Constructors' }
 
 ___
 ### Register·Mod () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Mod Reference](ModReference.md) RegisterMod ( string modName, int apiVersion ) {: .copyable aria-label='Constructors' }
 
 Method to define a mod in the game. This needs to be defined to handle callbacks and save data in your mod.
@@ -110,12 +110,12 @@ Returns a table which acts as the [Mod Reference](ModReference.md).
 
 ___
 ### RNG () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RNG](RNG.md) RNG ( ) {: .copyable aria-label='Constructors' }
 
 ___
 ### SFXManager () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [SFXManager](SFXManager.md) SFXManager ( ) {: .copyable aria-label='Constructors' }
 
 Returns a [SFXManager](SFXManager.md) object.
@@ -128,18 +128,18 @@ Returns a [SFXManager](SFXManager.md) object.
     ```
 ___
 ### Sprite () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Sprite](Sprite.md) Sprite ( ) {: .copyable aria-label='Constructors' }
 
 ___
 ### Vector () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) Vector ( float x, float y) {: .copyable aria-label='Constructors' }
 
 ___
 ## Functions
 ### Get·Ptr·Hash () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetPtrHash ( Object object ) {: .copyable aria-label='Functions' }
 Returns a hash-value of the pointer given as an input value. Valid inputs are any Isaac object, including `:::lua Entity`, `:::lua Room`, `:::lua RNG`, `:::lua Sprite`, `:::lua Game` etc.
 
@@ -165,7 +165,7 @@ If you spawn a certain entity, save it in a variable and then compare it to the 
 
 ___
 ### Random () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int Random ( ) {: .copyable aria-label='Functions' }
 Returns a random integer between 0 and 2^32. It is tested to be inclusive on the lower end and exclusive on the higher end.
 
@@ -173,7 +173,7 @@ Since this function can return 0, you cannot safely use it as the seed for an RN
 
 ___
 ### Random·Vector () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) RandomVector ( ) {: .copyable aria-label='Functions' }
 Returns a random vector with length 1. Multiply this vector by a number for larger random vectors.
 ___

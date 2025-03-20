@@ -14,12 +14,12 @@ tags:
 
 ## Functions
 ### Add·Bible·Upgrade () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddBibleUpgrade ( int Add, [ItemPoolType](enums/ItemPoolType.md) PoolType ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Room·Blacklist () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddRoomBlacklist ( [CollectibleType](enums/CollectibleType.md) Item ) {: .copyable aria-label='Functions' }
 Adds a given item to the blacklist. This item can no longer be chosen from itempools while the player is inside the current room. This effectively prevents the item from appearing.
 
@@ -27,12 +27,12 @@ When the player changes the room, the Blacklist gets reset.
 
 ___
 ### Force·Add·Pill·Effect () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [PillColor](enums/PillColor.md) ForceAddPillEffect ( [PillEffect](enums/PillEffect.md) ID ) {: .copyable aria-label='Functions' }
 Forces a pill effect to be in the pool, usually for challenges, returns PillColor for that effect.
 ___
 ### Get·Card () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Card](enums/Card.md) GetCard ( int Seed, boolean Playing, boolean Rune, boolean OnlyRunes ) {: .copyable aria-label='Functions' }
 
 ___
@@ -49,12 +49,12 @@ ___
 
 ___
 ### Get·Last·Pool () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [ItemPoolType](enums/ItemPoolType.md) GetLastPool ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Pill () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [PillColor](enums/PillColor.md) GetPill ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___
@@ -68,7 +68,7 @@ Returns -1 if passed `PillColor.NULL` (0) or a value of 2048. Returns `PillEffec
 
 ___
 ### Get·Pool·For·Room () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [ItemPoolType](enums/ItemPoolType.md) GetPoolForRoom ( [RoomType](enums/RoomType.md) RoomType, int Seed ) {: .copyable aria-label='Functions' }
 
 ___
@@ -78,12 +78,12 @@ ___
 
 ___
 ### Identify·Pill () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void IdentifyPill ( [PillColor](enums/PillColor.md) PillColor ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Pill·Identified () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsPillIdentified ( [PillColor](enums/PillColor.md) PillColor ) {: .copyable aria-label='Functions' }
 
 Once the player takes PHD, Virgo, or False PHD, this method will always return true, even if the player has not already seen or used the pill on the run thus far. (This is because this method dictates when the "???" text should be shown as the pill description, and these collectibles will always show the "revealed" text.)
@@ -96,12 +96,12 @@ Removes a collectible from the itempool. Returns true if given item did exist in
 
 ___
 ### Remove·Trinket () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean RemoveTrinket ( [TrinketType](enums/TrinketType.md) Trinket ) {: .copyable aria-label='Functions' }
 
 ___
 ### Reset·Room·Blacklist () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ResetRoomBlacklist ( ) {: .copyable aria-label='Functions' }
 Clears the current item black list.
 
@@ -109,7 +109,7 @@ When the player changes the room, this function gets called automatically.
 
 ___
 ### Reset·Trinkets () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ResetTrinkets ( ) {: .copyable aria-label='Functions' }
 
 ___

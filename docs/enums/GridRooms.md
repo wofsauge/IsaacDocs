@@ -19,15 +19,15 @@ tags:
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|-99999 |NO_ROOM_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-1 |ROOM_DEVIL_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-2 |ROOM_ERROR_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-3 |ROOM_DEBUG_IDX {: .copyable } | Rooms visited via `goto` command |
-|[ ](#){: .abrep .tooltip .badge }|-4 |ROOM_DUNGEON_IDX {: .copyable } | |
-|[ ](#){: .abrep .tooltip .badge }|-5 |ROOM_BOSSRUSH_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-6 |ROOM_BLACK_MARKET_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-7 |ROOM_MEGA_SATAN_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-8 |ROOM_BLUE_WOOM_IDX {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|-9 |ROOM_THE_VOID_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-1 |ROOM_DEVIL_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-2 |ROOM_ERROR_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-3 |ROOM_DEBUG_IDX {: .copyable } | Rooms visited via `goto` command |
+|[ ](#){: .alldlc .tooltip .badge }|-4 |ROOM_DUNGEON_IDX {: .copyable } | |
+|[ ](#){: .alldlc .tooltip .badge }|-5 |ROOM_BOSSRUSH_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-6 |ROOM_BLACK_MARKET_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-7 |ROOM_MEGA_SATAN_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-8 |ROOM_BLUE_WOOM_IDX {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|-9 |ROOM_THE_VOID_IDX {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|-10 |ROOM_SECRET_EXIT_IDX {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|-11 |ROOM_GIDEON_DUNGEON_IDX {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|-12 |ROOM_GENESIS_IDX {: .copyable } |  |

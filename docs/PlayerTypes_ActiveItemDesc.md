@@ -19,17 +19,17 @@ search:
 
 ## Variables
 ### Battery·Charge {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int BatteryCharge  {: .copyable aria-label='Variables' }
 
 ___
 ### Charge {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int Charge  {: .copyable aria-label='Variables' }
 For items like Jars this holds the number of flies/hearts.
 ___
 ### Item {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) Item {: .copyable aria-label='Variables' }
 
 ___

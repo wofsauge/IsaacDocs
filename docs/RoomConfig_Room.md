@@ -21,12 +21,12 @@ search:
 
 ## Variables
 ### Difficulty {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [Difficulty](enums/Difficulty.md) Difficulty {: .copyable aria-label='Variables' }
 
 ___
 ### Doors {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Doors  {: .copyable aria-label='Variables' }
 Returns a bit mask of the positions of valid door positions in this room. It is  a combination of bit flags of the DoorSlotFlag enum, which is defined as follows:
 
@@ -44,12 +44,12 @@ enum DoorSlotFlag {
 ```
 ___
 ### Height {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Height  {: .copyable aria-label='Variables' }
 
 ___
 ### Initial·Weight {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const float InitialWeight  {: .copyable aria-label='Variables' }
 
 ___
@@ -61,32 +61,32 @@ ___
 
 ___
 ### Name {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const string Name  {: .copyable aria-label='Variables' }
 
 ___
 ### Original·Variant {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### int OriginalVariant  {: .copyable aria-label='Variables' }
 
 ___
 ### Shape {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [RoomShape](enums/RoomShape.md) Shape  {: .copyable aria-label='Variables' }
 
 ___
 ### Spawn·Count {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int SpawnCount  {: .copyable aria-label='Variables' }
 
 ___
 ### Spawns {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [RoomConfigSpawns](CppContainer_ArrayProxy_RoomConfigSpawns.md) Spawns  {: .copyable aria-label='Variables' }
 
 ___
 ### Stage·ID {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int StageID  {: .copyable aria-label='Variables' }
 The ID of the stage the room was designed for.
 
@@ -94,33 +94,33 @@ The ID of the stage the room was designed for.
 
 	|DLC|ID|Stage|Comment|
 	|:--|:--|:--|:--|
-	|[ ](#){: .abrep .tooltip .badge }|0 |Special Rooms |  |
-	|[ ](#){: .abrep .tooltip .badge }|1 |Basement |  |
-	|[ ](#){: .abrep .tooltip .badge }|2 |Cellar |  |
-	|[ ](#){: .abrep .tooltip .badge }|3 |Burning Basement |  |
-	|[ ](#){: .abrep .tooltip .badge }|4 |Caves |  |
-	|[ ](#){: .abrep .tooltip .badge }|5 |Catacombs |  |
-	|[ ](#){: .abrep .tooltip .badge }|6 |Flooded Caves |  |
-	|[ ](#){: .abrep .tooltip .badge }|7 |Depths |  |
-	|[ ](#){: .abrep .tooltip .badge }|8 |Necropolis |  |
-	|[ ](#){: .abrep .tooltip .badge }|9 |Dank Depths |  |
-	|[ ](#){: .abrep .tooltip .badge }|10 |Womb |  |
-	|[ ](#){: .abrep .tooltip .badge }|11 |Utero |  |
-	|[ ](#){: .abrep .tooltip .badge }|12 |Scarred Womb |  |
-	|[ ](#){: .abrep .tooltip .badge }|13 |Blue Womb |  |
-	|[ ](#){: .abrep .tooltip .badge }|14 |Sheol |  |
-	|[ ](#){: .abrep .tooltip .badge }|15 |Cathedral |  |
-	|[ ](#){: .abrep .tooltip .badge }|16 |Dark Room |  |
-	|[ ](#){: .abrep .tooltip .badge }|17 |Chest |  |
+	|[ ](#){: .alldlc .tooltip .badge }|0 |Special Rooms |  |
+	|[ ](#){: .alldlc .tooltip .badge }|1 |Basement |  |
+	|[ ](#){: .alldlc .tooltip .badge }|2 |Cellar |  |
+	|[ ](#){: .alldlc .tooltip .badge }|3 |Burning Basement |  |
+	|[ ](#){: .alldlc .tooltip .badge }|4 |Caves |  |
+	|[ ](#){: .alldlc .tooltip .badge }|5 |Catacombs |  |
+	|[ ](#){: .alldlc .tooltip .badge }|6 |Flooded Caves |  |
+	|[ ](#){: .alldlc .tooltip .badge }|7 |Depths |  |
+	|[ ](#){: .alldlc .tooltip .badge }|8 |Necropolis |  |
+	|[ ](#){: .alldlc .tooltip .badge }|9 |Dank Depths |  |
+	|[ ](#){: .alldlc .tooltip .badge }|10 |Womb |  |
+	|[ ](#){: .alldlc .tooltip .badge }|11 |Utero |  |
+	|[ ](#){: .alldlc .tooltip .badge }|12 |Scarred Womb |  |
+	|[ ](#){: .alldlc .tooltip .badge }|13 |Blue Womb |  |
+	|[ ](#){: .alldlc .tooltip .badge }|14 |Sheol |  |
+	|[ ](#){: .alldlc .tooltip .badge }|15 |Cathedral |  |
+	|[ ](#){: .alldlc .tooltip .badge }|16 |Dark Room |  |
+	|[ ](#){: .alldlc .tooltip .badge }|17 |Chest |  |
 	|[ ](#){: .abp .tooltip .badge }|18 |Greed Special Rooms |  |
 	|[ ](#){: .abp .tooltip .badge }|19 |Greed Basement |  |
 	|[ ](#){: .abp .tooltip .badge }|20 |Greed Caves |  |
 	|[ ](#){: .abp .tooltip .badge }|21 |Greed Depths |  |
 	|[ ](#){: .abp .tooltip .badge }|22 |Greed Womb |  |
 	|[ ](#){: .abp .tooltip .badge }|23 |Greed Sheol |  |
-	|[ ](#){: .abrep .tooltip .badge }|24 |The Shop |  |
-	|[ ](#){: .abrep .tooltip .badge }|25 |Ultra Greed |  |
-	|[ ](#){: .abrep .tooltip .badge }|26 |The Void |  |
+	|[ ](#){: .alldlc .tooltip .badge }|24 |The Shop |  |
+	|[ ](#){: .alldlc .tooltip .badge }|25 |Ultra Greed |  |
+	|[ ](#){: .alldlc .tooltip .badge }|26 |The Void |  |
 	|[ ](#){: .rep .tooltip .badge }|27 |Downpour |  |
 	|[ ](#){: .rep .tooltip .badge }|28 |Dross |  |
 	|[ ](#){: .rep .tooltip .badge }|29 |Mines |  |
@@ -133,27 +133,27 @@ The ID of the stage the room was designed for.
 
 ___
 ### Subtype {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Subtype  {: .copyable aria-label='Variables' }
 
 ___
 ### Type {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [RoomType](enums/RoomType.md) Type  {: .copyable aria-label='Variables' }
 
 ___
 ### Variant {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Variant  {: .copyable aria-label='Variables' }
 
 ___
 ### Weight {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const float Weight  {: .copyable aria-label='Variables' }
 
 ___
 ### Width {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Width  {: .copyable aria-label='Variables' }
 
 ___
