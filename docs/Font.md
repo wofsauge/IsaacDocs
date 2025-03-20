@@ -17,7 +17,7 @@ tags:
 
 ## Constructors
 ### Font () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Font](Font.md) Font ( ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Font" class.
@@ -118,22 +118,22 @@ The `BoxWidth` and `Center` parameters can be used for aligning the text. Some t
 
 ___
 ### Get·Baseline·Height () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetBaselineHeight ( ) {: .copyable aria-label='Functions' }
 Returns the number of pixels from the absolute top of the line to the base of the characters.
 ___
 ### Get·Character·Width () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetCharacterWidth ( char Character ) {: .copyable aria-label='Functions' }
 Returns the width of a specific character in pixels.
 ___
 ### Get·Line·Height () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetLineHeight ( ) {: .copyable aria-label='Functions' }
 Returns the distance in pixels between each line of text.
 ___
 ### Get·String·Width () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetStringWidth ( string String ) {: .copyable aria-label='Functions' }
 Converts a string from UTF8 to UTF16, and returns the string's width in pixels.
 
@@ -141,17 +141,17 @@ Converts a string from UTF8 to UTF16, and returns the string's width in pixels.
     Calling this function with `nil` as the parameter will crash the game.
 ___
 ### Get·String·Width·UTF8 () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetStringWidthUTF8 ( string String ) {: .copyable aria-label='Functions' }
 Returns the string width of a Unicode text in pixels.
 ___
 ### Is·Loaded () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsLoaded ( ) {: .copyable aria-label='Functions' }
 Returns whether a font is loaded or not.
 ___
 ### Load () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Load ( string FilePath ) {: .copyable aria-label='Functions' }
 Loads a font. To check that the font actually got loaded, call the [IsLoaded()](#isloaded) method afterwards.
 
@@ -176,12 +176,12 @@ Loads a font. To check that the font actually got loaded, call the [IsLoaded()](
 
 ___
 ### Set·Missing·Character () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetMissingCharacter ( char MissingCharacter ) {: .copyable aria-label='Functions' }
 Sets the character that will be used when a missing character is encountered by the font.
 ___
 ### Unload () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Unload ( ) {: .copyable aria-label='Functions' }
 Unloads the font from memory.
 ___

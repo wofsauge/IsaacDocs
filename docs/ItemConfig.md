@@ -16,13 +16,13 @@ tags:
 
 ## Functions
 ### Get·Card () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemConfig Card](ItemConfig_Card.md) GetCard ( [Card](enums/Card.md) ID ) {: .copyable aria-label='Functions' }
 Returns `nil` if no itemconfig to the given ID can be found.
 
 ___
 ### Get·Cards () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [CardList](CppContainer_Vector_CardConfigList.md) GetCards ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
@@ -30,7 +30,7 @@ ___
 
 ___
 ### Get·Collectible () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemConfig Item](ItemConfig_Item.md) GetCollectible ( [CollectibleType](enums/CollectibleType.md) ID ) {: .copyable aria-label='Functions' }
 
 Returns the Itemobject of a given CollectibleID. Returns nil of nothing was found.
@@ -43,7 +43,7 @@ Returns the Itemobject of a given CollectibleID. Returns nil of nothing was foun
     ```
 ___
 ### Get·Collectibles () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const userdata GetCollectibles ( ) {: .copyable aria-label='Functions' }
 
 Returns the List of all Collectibles.
@@ -66,13 +66,13 @@ Returns the List of all Collectibles.
     Calling Get() in this list does not return usable userdata, rendering it useless for that purpose.
 ___
 ### Get·Null·Item () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemConfig Item](ItemConfig_Item.md) GetNullItem ( [NullItemID](enums/NullItemID.md) ID ) {: .copyable aria-label='Functions' }
 Returns `nil` if no itemconfig to the given ID can be found.
 
 ___
 ### Get·Null·Items () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemList](CppContainer_Vector_ItemConfigList.md) GetNullItems ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
@@ -80,13 +80,13 @@ ___
 
 ___
 ### Get·Pill·Effect () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemConfig PillEffect](ItemConfig_PillEffect.md) GetPillEffect ( [PillEffect](enums/PillEffect.md) ID ) {: .copyable aria-label='Functions' }
 Returns `nil` if no itemconfig to the given ID can be found.
 
 ___
 ### Get·Pill·Effects () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [PillList](CppContainer_Vector_PillConfigList.md) GetPillEffects ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
@@ -94,13 +94,13 @@ ___
 
 ___
 ### Get·Trinket () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemConfig Item](ItemConfig_Item.md) GetTrinket ( [TrinketType](enums/TrinketType.md) ID ) {: .copyable aria-label='Functions' }
 Returns `nil` if no itemconfig to the given ID can be found.
 
 ___
 ### Get·Trinkets () {: aria-label='Functions' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [ItemList](CppContainer_Vector_ItemConfigList.md) GetTrinkets ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
@@ -108,7 +108,7 @@ ___
 
 ___
 ### Is·Valid·Collectible () {: aria-label='Functions' }
-[ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .static .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### static boolean IsValidCollectible ( [CollectibleType](enums/CollectibleType.md) ID ) {: .copyable aria-label='Functions' }
 
 Function to check if a given item id is a valid collectible id (aka. this item exists). Returns **True** when it exists and **False** when it doesn't.
@@ -123,7 +123,7 @@ Since this function is a static function, the usage is a bit different. Take a l
     ```
 ___
 ### Should·Add·Costume·On·Pickup () {: aria-label='Functions' }
-[ ](#){: .static .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .static .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### static boolean ShouldAddCostumeOnPickup ( [ItemConfig Item](ItemConfig_Item.md) Config ) {: .copyable aria-label='Functions' }
 Returns weather a given item config object should add a costume when picking up the associated item.
 
