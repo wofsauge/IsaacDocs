@@ -18,21 +18,23 @@ tags:
 ## Functions
 ### Check·Line () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
-#### boolean CheckLine ( [Vector](Vector.md) Pos1, [Vector](Vector.md) Pos2, LinecheckMode Mode, int GridPathThreshold = 0, boolean IgnoreWalls = false, boolean IgnoreCrushable = false ) {: .copyable aria-label='Functions' }
+#### (boolean, [Vector](Vector.md)) CheckLine ( [Vector](Vector.md) Pos1, [Vector](Vector.md) Pos2, LinecheckMode Mode, int GridPathThreshold = 0, boolean IgnoreWalls = false, boolean IgnoreCrushable = false ) {: .copyable aria-label='Functions' }
 Returns 2 values:
-		* boolean: true if there are no obstructions between Pos1 and Pos2, false otherwise
-		* Vector: first hit position from Pos1 to Pos2 (returns Pos2 if the line didn't hit anything)
+
+- boolean: `true` if there are no obstructions between `Pos1` and `Pos2`, `false` otherwise.
+
+- [Vector](Vector.md): first hit position from `Pos1` to `Pos2` (returns `Pos2` if the line didn't hit anything).
 
 ???+ note "LinecheckMode notes"
     LinecheckMode pseudo-enumeration:
 
-    **0** : makes the line check collide with anything that impedes ground movement
+    **0** : Makes the line check collide with anything that impedes ground movement.
 
-    **1** : is a cheaper version of 0, but is not as reliable (For example, can return true if line of sight can be gained between diagonally adjacent rocks)
+    **1** : A cheaper version of 0, but is not as reliable (for example, can return `true` if line of sight can be gained between diagonally adjacent rocks).
 
-    **2** : is used for explosions, it only collides with walls and indestructible blocks
+    **2** : Used for explosions, only collides with walls and indestructible blocks.
 
-    **3** : is a line check that only collides with obstacles that can block projectiles
+    **3** : Only collides with obstacles that can block projectiles.
 
 ???+ note "GridPathThreshold notes"
     GridPath values pseudo-enumeration:
