@@ -11,7 +11,7 @@ search:
 
 ## Operators
 ### __len () {: aria-label='Operators' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int __len ( ) {: .copyable aria-label='Operators' }
 
 The length (#) operation. Returns the size of this list.
@@ -19,13 +19,13 @@ The length (#) operation. Returns the size of this list.
 ___
 ## Functions
 ### Get () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### userdata Get ( int idx ) {: .copyable aria-label='Functions' }
 
 ___
 ## Variables
 ### Size {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Size  {: .copyable aria-label='Variables' }
 
 ___

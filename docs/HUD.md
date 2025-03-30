@@ -62,6 +62,8 @@ ___
 ### Show·Item·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowItemText ( string MainString, string SecondaryString, boolean IsCurseDisplay = false ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void ShowItemText ( string MainString, string SecondaryString, boolean IsCurseDisplay = false, boolean StackUpText ) {: .copyable aria-label='Functions' }
 
 Displays "streak text". You can use this to simulate the player picking up an item without them actually picking anything up. The name of the method is misleading, as you can generate any arbitrary text - it does not necessarily have to do with an item.
 
@@ -82,6 +84,9 @@ ___
 ### Show·Item·Text () {: aria-label='Functions' }
 [ ](#){: .rep .tooltip .badge }
 #### void ShowItemText ( [EntityPlayer](EntityPlayer.md) Player, [ItemConfigItem](ItemConfig_Item.md) Item) {: .copyable aria-label='Functions' }
+### Show·Item·Text () {: aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void ShowItemText ( [EntityPlayer](EntityPlayer.md) Player, [ItemConfigItem](ItemConfig_Item.md) Item, boolean StackUpText ) {: .copyable aria-label='Functions' }
 
 Displays "streak text". You can use this to simulate the player picking up an item without them actually picking anything up.
 

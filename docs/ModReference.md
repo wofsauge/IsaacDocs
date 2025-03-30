@@ -13,23 +13,23 @@ search:
 
 ## Functions
 ### Add·Callback () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddCallback ( [ModCallbacks](enums/ModCallbacks.md) callbackId, function callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 ___
 ### Add·Priority·Callback () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddPriorityCallback ( [ModCallbacks](enums/ModCallbacks.md) callbackId, [CallbackPriority](enums/CallbackPriority.md) priority, function callbackFn, int entityId ) {: .copyable aria-label='Functions' }
 
 Allows modders to specify that a callback function should run earlier or later than normal relative to other functions added to that callback.
 ___
 ### Has·Data () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasData ( ) {: .copyable aria-label='Functions' }
 
 Returns "true" if your mod has Data stored using the "SaveData()" function. Aka. if there is a "saveX.dat" file in your mod folder. There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___
 ### Load·Data () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string LoadData ( ) {: .copyable aria-label='Functions' }
 
 Returns a string that was stored in a "saveX.dat" file using the "SaveData()" function. If there is no "saveX.dat" file in your mod, this function will return an empty string.
@@ -54,19 +54,19 @@ There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's fo
 
 ___
 ### Remove·Callback () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void RemoveCallback ( int callbackId, function callbackFn ) {: .copyable aria-label='Functions' }
 
 ___
 ### Remove·Data () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void RemoveData ( ) {: .copyable aria-label='Functions' }
 
 Deletes the stored "saveX.dat" file if it exists.
 There are 3 "saveX.dat" files, one per Savegame. They are stored in the mod's folder next to the "main.lua" file. The number indicates the savegame it corresponds to. The number will be determined automatically by the game.
 ___
 ### Save·Data () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SaveData ( string data ) {: .copyable aria-label='Functions' }
 
 - Stores a string in a "saveX.dat" file. The stored data persists between runs and between game launches.
@@ -98,7 +98,7 @@ ___
 ___
 ## Variables
 ### Name {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### string Name  {: .copyable aria-label='Variables' }
 
 ___

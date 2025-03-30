@@ -6,24 +6,24 @@ tags:
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
 |[ ](#){: .rep .tooltip .badge }|-1 |PLAYER_POSSESSOR {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|0 |PLAYER_ISAAC {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|0 |PLAYER_ISAAC {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|1 |PLAYER_MAGDALENE {: .copyable } | (ab+: PLAYER_MAGDALENA) |
-|[ ](#){: .abrep .tooltip .badge }|2 |PLAYER_CAIN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|3 |PLAYER_JUDAS {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|2 |PLAYER_CAIN {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|3 |PLAYER_JUDAS {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|4 |PLAYER_BLUEBABY {: .copyable } | (ab+: PLAYER_XXX) |
-|[ ](#){: .abrep .tooltip .badge }|5 |PLAYER_EVE {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|6 |PLAYER_SAMSON {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|7 |PLAYER_AZAZEL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|8 |PLAYER_LAZARUS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|9 |PLAYER_EDEN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|10 |PLAYER_THELOST {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|11 |PLAYER_LAZARUS2 {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|12 |PLAYER_BLACKJUDAS {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|13 |PLAYER_LILITH {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|14 |PLAYER_KEEPER {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|15 |PLAYER_APOLLYON {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|16 |PLAYER_THEFORGOTTEN {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|17 |PLAYER_THESOUL {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|5 |PLAYER_EVE {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|6 |PLAYER_SAMSON {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|7 |PLAYER_AZAZEL {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|8 |PLAYER_LAZARUS {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|9 |PLAYER_EDEN {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|10 |PLAYER_THELOST {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|11 |PLAYER_LAZARUS2 {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|12 |PLAYER_BLACKJUDAS {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|13 |PLAYER_LILITH {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|14 |PLAYER_KEEPER {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|15 |PLAYER_APOLLYON {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|16 |PLAYER_THEFORGOTTEN {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|17 |PLAYER_THESOUL {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|18 |PLAYER_BETHANY {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|19 |PLAYER_JACOB {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|20 |PLAYER_ESAU {: .copyable } |  |

@@ -16,7 +16,7 @@ tags:
     * [EntityPlayer.GetPillRNG()](EntityPlayer.md#getpillrng)
     * [EntityPlayer.GetTrinketRNG()](EntityPlayer.md#gettrinketrng)
     * [GridEntity.GetRNG()](GridEntity.md#getrng)
-    * [GridEntityPreasurePlate.GreedModeRNG](GridEntityPreasurePlate.md#greedmoderng)
+    * [GridEntityPreasurePlate.GreedModeRNG](GridEntityPressurePlate.md#greedmoderng)
     * [Level.GetDevilAngelRoomRNG()](Level.md#getdevilangelroomrng)
 
     ???+ example "Example Code"
@@ -26,7 +26,7 @@ tags:
 
 ## Constructors
 ### RNG () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RNG](RNG.md) RNG ( ) {: .copyable aria-label='Constructors' }
 
 New RNG objects are always initialized with a seed of 2853650767. Thus, after invoking the constructor, you must set the seed of the new RNG object to the initial seed that you want. In some cases, this can just be a new random number between 1 and 4294967295. Use the `Random` global function to get a starting seed for these cases, (but check to make sure that values of 0 are not allowed, since that will crash the game). However, in most cases, seeding with a completely random number would be a bug in your mod, because all behavior in Isaac should be deterministic based on the starting seed of the run, or the seed of the level, or the seed of the room, and so on.
@@ -52,21 +52,21 @@ ___
 ## Functions
 
 ### Get·Seed () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetSeed ( ) {: .copyable aria-label='Functions' }
 
 Returns the current seed of the RNG object.
 
 ___
 ### Next () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int Next ( ) {: .copyable aria-label='Functions' }
 
 "Iterates" the RNG's seed to the next random number in the psuedo-random sequence. (The internal PRNG algorithm used is [Xorshift](https://en.wikipedia.org/wiki/Xorshift).)
 
 ___
 ### Random·Float () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float RandomFloat ( ) {: .copyable aria-label='Functions' }
 Returns a number between 0 and 1. This is inclusive on the lower end and exclusive on the higher end.
 
@@ -89,7 +89,7 @@ Note that this will automatically call the `RNG.Next` method before retrieving t
     ```
 ___
 ### Random·Int () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int RandomInt ( int Max ) {: .copyable aria-label='Functions' }
 Returns a number between 0 and the max value. It is inclusive on the lower end and exclusive on the higher end.
 
@@ -107,7 +107,7 @@ Note that this will automatically call the `RNG.Next` method before retrieving t
     ```
 ___
 ### Set·Seed () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetSeed ( int Seed, int ShiftIdx ) {: .copyable aria-label='Functions' }
 Set the seed of a given RNG object. Seed needs to be a positive integer number that is **not** 0. Otherwise it can cause crashes. ShiftIdx must be between 0 and 80 (inclusive) or it can cause crashes.
 

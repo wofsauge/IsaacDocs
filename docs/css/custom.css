@@ -16,6 +16,8 @@
     --constants-overview-bg-color: #f5e5e5;
     --abp-color: #FDD835;
     --rep-color: #F44336;
+    --repplus-color: #ff85e6;
+    --alldlc-color: #47a5fd;
     --md-typeset-mark-text-color: #000000;
 }
 
@@ -164,12 +166,16 @@ a.rep.tooltip:after {
     content: "Only compatible with Repentance";
 }
 
-.abrep {
-    background: var(--abp-color);
-    background: -moz-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
-    background: -webkit-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
-    background: linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--abp-color), endColorstr=var(--rep-color), GradientType=1);
+.repplus {
+    background-color: var(--repplus-color);
+}
+
+.repplus::before {
+    content: "Rep+";
+}
+
+a.repplus.tooltip:after {
+    content: "Only compatible with Repentance+";
 }
 
 .abrep::before {
@@ -178,6 +184,26 @@ a.rep.tooltip:after {
 
 a.abrep.tooltip:after {
     content: "Compatible with Afterbirth+ and Repentance";
+}
+
+.abrep {
+    background: var(--abp-color);
+    background: -moz-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
+    background: linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--abp-color), endColorstr=var(--rep-color), GradientType=1);
+}
+
+.alldlc {
+    background-color: var(--alldlc-color);
+}
+
+.alldlc::before {
+    content: "All DLCs";
+}
+
+a.alldlc.tooltip:after {
+    content: "Compatible with Afterbirth+, Repentance, and Repentance+";
 }
 
 .static {

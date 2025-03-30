@@ -15,7 +15,7 @@ tags:
 
 ## Constructors
 ### Game () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Game](Game.md) Game ( ) {: .copyable aria-label='Constructors' }
 
 Returns a Game object.
@@ -30,35 +30,35 @@ Returns a Game object.
 ___
 ## Functions
 ### Add·Devil·Room·Deal () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddDevilRoomDeal ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Encountered·Boss () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddEncounteredBoss ( [EntityType](enums/EntityType.md) Boss, int Variant ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Pixelation () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddPixelation ( int Duration ) {: .copyable aria-label='Functions' }
 
 Triggers the effect of the "retro vision" pill.
 ___
 ### Add·Stage·Without·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddStageWithoutDamage ( ) {: .copyable aria-label='Functions' }
 
 Increases the ingame counter, that keeps track of the stages you cleared without taking damage. (useful for Devil deal manipulations)
 ___
 ### Add·Stage·Without·Hearts·Picked () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddStageWithoutHeartsPicked ( ) {: .copyable aria-label='Functions' }
 
 Increases the ingame counter, that keeps track of stages you cleared without picking up hearts.
 ___
 ### Add·Treasure·Rooms·Visited () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void AddTreasureRoomsVisited ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -97,51 +97,51 @@ This function should be used over `Level.ChangeRoom` because that function will 
 		* 2: Death Certificate dimension
 ___
 ### Charm·Fart () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void CharmFart ( [Vector](Vector.md) Position, float Radius, [Entity](Entity.md) Source ) {: .copyable aria-label='Functions' }
 
 ___
 ### Clear·Donation·Mod·Angel () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ClearDonationModAngel ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Clear·Donation·Mod·Greed () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ClearDonationModGreed ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Clear·Stages·Without·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ClearStagesWithoutDamage ( ) {: .copyable aria-label='Functions' }
 
 Sets the counter for stages cleared without damage to 0.
 ___
 ### Clear·Stages·Without·Hearts·Picked () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ClearStagesWithoutHeartsPicked ( ) {: .copyable aria-label='Functions' }
 
 Sets the counter for stages cleared without picking up hearts to 0.
 ___
 ### Darken () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Darken ( float Darkness, int Timeout ) {: .copyable aria-label='Functions' }
 
 Darkens the room. This is the function that is called internally during The Lamb fight or when Dice Rooms are activated.
 ___
 ### Donate·Angel () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void DonateAngel ( int Donate ) {: .copyable aria-label='Functions' }
 
 Donating 10 coins to a donation machine will increase the odds of an Angel Room if you haven't taken a devil deal. This simulates that behavior without actually adding coins to the donation machine.
 ___
 ### Donate·Greed () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void DonateGreed ( int Donate ) {: .copyable aria-label='Functions' }
 
 ___
 ### End () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void End ( Ending Ending ) {: .copyable aria-label='Functions' }
 ???+ note "Ending notes"
     1: Game over "Dear Diary" (exit/restart)
@@ -178,11 +178,15 @@ ___
 ### Fadein () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Fadein ( float Speed ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void Fadein ( float Speed, boolean ShowIcon = true, [KColor](KColor.md) Color = KColor.Black ) {: .copyable aria-label='Functions' }
 
 ___
 ### Fadeout () {: aria-label='Functions' }
 [ ](#){: .abrep .tooltip .badge }
 #### void Fadeout ( float Speed, FadeoutTarget Target ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### void Fadeout ( float Speed, FadeoutTarget Target, [KColor](KColor.md) Color = KColor.Black ) {: .copyable aria-label='Functions' }
 ???+ note "Notes"
 	FadeoutTarget types:
 
@@ -203,45 +207,45 @@ ___
 
 ___
 ### Finish·Challenge () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void FinishChallenge ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Ambush () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### Ambush GetAmbush ( ) {: .copyable aria-label='Functions' }
 ???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 
 ___
 ### Get·Darkness·Modifier () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float GetDarknessModifier ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Devil·Room·Deals () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetDevilRoomDeals ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Donation·Mod·Angel () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetDonationModAngel ( ) {: .copyable aria-label='Functions' }
 
 Get the value that indicates the angel-counter of a shop-donation maschine. This Stat increases everytime you donate to a shop. A higher number grants a few advantages.
 ___
 ### Get·Donation·Mod·Greed () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetDonationModGreed ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Font () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Font](Font.md) GetFont ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Frame·Count () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetFrameCount ( ) {: .copyable aria-label='Functions' }
 
 Returns the number of frames the gameplay is actively running. Pauses are therefore not included!
@@ -260,12 +264,12 @@ This function therefore works drastically different than [`:::lua Isaac.GetFrame
     ```
 ___
 ### Get·Greed·Boss·Wave·Num () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetGreedBossWaveNum ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Greed·Waves·Num () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetGreedWavesNum ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -275,134 +279,134 @@ ___
 
 ___
 ### Get·Item·Overlay () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### ItemOverlay GetItemOverlay ( ) {: .copyable aria-label='Functions' }
 ???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 
 ___
 ### Get·Item·Pool () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [ItemPool](ItemPool.md) GetItemPool ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Last·Devil·Room·Stage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastDevilRoomStage ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___
 ### Get·Last·Level·With·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithDamage ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___
 ### Get·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [LevelStage](enums/LevelStage.md) GetLastLevelWithoutHalfHp ( ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bug"
     Since it returns UserData, this function is unusable and therefore broken.
 ___
 ### Get·Level () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Level](Level.md) GetLevel ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Nearest·Player () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetNearestPlayer ( [Vector](Vector.md) Pos ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Num·Encountered·Bosses () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetNumEncounteredBosses ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Num·Players () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetNumPlayers ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Player () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetPlayer ( int Index ) {: .copyable aria-label='Functions' data-altreturn='nil' }
 Returns the [EntityPlayer](EntityPlayer.md) with the given index. This function can return `nil` if the function is called before any player is initialized. If an index is given, that is not used, it will return the last player in the list.
 
 This function is the same as [`Isaac.GetPlayer()`](Isaac.md#getplayer).
 ___
 ### Get·Random·Player () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityPlayer](EntityPlayer.md) GetRandomPlayer ( [Vector](Vector.md) Pos, float Radius ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Room () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Room](Room.md) GetRoom ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Screen·Shake·Countdown () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetScreenShakeCountdown ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Seeds () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Seeds](Seeds.md) GetSeeds ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Stages·Without·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetStagesWithoutDamage ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Stages·Without·Hearts·Picked () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetStagesWithoutHeartsPicked ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·State·Flag () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean GetStateFlag ( [GameStateFlag](enums/GameStateFlag.md) GameStateFlag ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Target·Darkness () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float GetTargetDarkness ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Treasure·Room·Visit·Count () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetTreasureRoomVisitCount ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Get·Victory·Lap () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GetVictoryLap ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Encountered·Boss () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasEncounteredBoss ( [EntityType](enums/EntityType.md) Boss, int Variant ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Hallucination () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasHallucination ( ) {: .copyable aria-label='Functions' }
 Returns true if the Delirium animation (Static noise intersected with past gameplay fotage) is playing right now.
 ___
 ### Is·Greed·Mode () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsGreedMode ( ) {: .copyable aria-label='Functions' }
 Returns true if the current gamemode is set to Greed or Greedier mode.
 
 To differentiate between Greed and Greedier mode, you need to use the [`Game().Difficulty`](#difficulty) attribute.
 ___
 ### Is·Paused () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean IsPaused ( ) {: .copyable aria-label='Functions' }
 
 Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes having the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.
@@ -418,57 +422,57 @@ ___
 
 ___
 ### Next·Victory·Lap () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void NextVictoryLap ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Render () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Render ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Reroll·Enemy () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean RerollEnemy ( [Entity](Entity.md) e ) {: .copyable aria-label='Functions' }
 
 ___
 ### Reroll·Level·Collectibles () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void RerollLevelCollectibles ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Reroll·Level·Pickups () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void RerollLevelPickups ( int Seed ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Last·Devil·Room·Stage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetLastDevilRoomStage ( [LevelStage](enums/LevelStage.md) Stage ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Last·Level·With·Damage () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetLastLevelWithDamage ( [LevelStage](enums/LevelStage.md) Stage ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·Last·Level·Without·Half·Hp () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetLastLevelWithoutHalfHp ( [LevelStage](enums/LevelStage.md) Stage ) {: .copyable aria-label='Functions' }
 
 ___
 ### Set·State·Flag () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void SetStateFlag ( [GameStateFlag](enums/GameStateFlag.md) GameStateFlag, boolean Val ) {: .copyable aria-label='Functions' }
 
 ___
 ### Shake·Screen () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ShakeScreen ( int Timeout ) {: .copyable aria-label='Functions' }
 
 ___
 ### Show·Fortune () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ShowFortune ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -504,15 +508,15 @@ Plays the Delirium animation (Static noise intersected with past gameplay fotage
     ```
 ___
 ### Show·Rule () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void ShowRule ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Spawn () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Entity](Entity.md) Spawn ( [EntityType](enums/EntityType.md) Type, int Variant, [Vector](Vector.md) Position, [Vector](Vector.md) Velocity, [Entity](Entity.md) Spawner, int SubType, int Seed ) {: .copyable aria-label='Functions' }
 
-The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac.Spawn()](Isaac.md#spawn). If you need to spawn something with a specific seed, then you use [Game():Spawn()](#spawn). If you need to spawn something with a randomly generated seed, then use [Isaac.Spawn()](Isaac.md#spawn). Most of the time, you will probably want to use [Isaac.Spawn()](Isaac.md#spawn).
+There are two spawn functions. [Isaac.Spawn()](Isaac.md#spawn), which spawns an entity with a random seed, and [Game():Spawn()](Game.md#spawn) (this one), which spawns an entity with a specific seed. However due to a bug, [Isaac.Spawn()](Isaac.md#spawn) has a chance to generate a seed of 0, which crashes the game. If you need to spawn an entity with a random seed, you should always use [Game():Spawn()](Game.md#spawn) with a helper function that calls [Random()](GlobalFunctions.md#random) and arbitrarily sets the seed to 1 when the seed is 0.
 
 ???- example "Example Code"
     This code spawns a Leech with specific seed.
@@ -530,7 +534,7 @@ The game has two spawn functions, [Game():Spawn()](#spawn) (this one) and [Isaac
     ```
 ___
 ### Spawn·Entity·Desc () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [EntityNPC](EntityNPC.md) SpawnEntityDesc ( EntityDesc desc, [Vector](Vector.md) Position, [Entity](Entity.md) Spawner ) {: .copyable aria-label='Functions' }
 
 ___
@@ -561,7 +565,7 @@ Note that if you use `RoomTransitionAnim.PIXELATION` (2), you must not interrupt
     The Direction variable is completely ignored at all times, with the game instead calculating the direction between the two rooms itself for the animation. The two rooms are the current room and the room of the RoomIndex. It has no impact on the doors either.
 ___
 ### Start·Stage·Transition () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void StartStageTransition ( boolean SameStage, int TransitionOverride, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 
 Starts a transition animation, like the ones used when entering a trapdoor or light beam to reach the next stage.
@@ -587,7 +591,7 @@ Starts a transition animation, like the ones used when entering a trapdoor or li
         Reverse engineering the game shows that the Lua binder associated with this function improperly calls Game::StartStageTransition which results in a C++ stack corruption. As a result, correct calls to this function may or may not crash the game.
 ___
 ### Update () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -598,32 +602,32 @@ ___
 ___
 ## Variables
 ### Blue·Womb·Par·Time {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int BlueWombParTime  {: .copyable aria-label='Variables' }
 
 ___
 ### Boss·Rush·Par·Time {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int BossRushParTime  {: .copyable aria-label='Variables' }
 Number of frames of game time.
 ___
 ### Challenge {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [Challenge](enums/Challenge.md) Challenge {: .copyable aria-label='Variables' }
 
 ___
 ### Difficulty {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [Difficulty](enums/Difficulty.md) Difficulty {: .copyable aria-label='Variables' }
 
 ___
 ### Screen·Shake·Offset {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const [Vector](Vector.md) ScreenShakeOffset  {: .copyable aria-label='Variables' }
 
 ___
 ### Time·Counter {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int TimeCounter  {: .copyable aria-label='Variables' }
 same as FrameCounter but can be modified, mostly used for timed events (bossrush, daily, ...) and not for timestepping
 ___

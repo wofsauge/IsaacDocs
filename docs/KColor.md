@@ -17,7 +17,7 @@ tags:
 
 ## Constructors
 ### KColor () {: aria-label='Constructors' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [KColor](KColor.md) KColor ( float red, float green, float blue, float alpha ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "KColor" class.
@@ -75,22 +75,22 @@ ___
 
 ## Variables
 ### Alpha {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Alpha  {: .copyable aria-label='Variables' }
 
 ___
 ### Blue {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Blue  {: .copyable aria-label='Variables' }
 
 ___
 ### Green {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Green  {: .copyable aria-label='Variables' }
 
 ___
 ### Red {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### float Red  {: .copyable aria-label='Variables' }
 
 ___

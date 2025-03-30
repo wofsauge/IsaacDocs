@@ -5,19 +5,19 @@ tags:
 # Enum "BombVariant"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .abrep .tooltip .badge }|0 |BOMB_NORMAL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|1 |BOMB_BIG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|2 |BOMB_DECOY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|3 |BOMB_TROLL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|4 |BOMB_SUPERTROLL {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|5 |BOMB_POISON {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|6 |BOMB_POISON_BIG {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|7 |BOMB_SAD {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|8 |BOMB_HOT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|9 |BOMB_BUTT {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|10 |BOMB_MR_MEGA {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|11 |BOMB_BOBBY {: .copyable } |  |
-|[ ](#){: .abrep .tooltip .badge }|12 |BOMB_GLITTER {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|0 |BOMB_NORMAL {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|1 |BOMB_BIG {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|2 |BOMB_DECOY {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|3 |BOMB_TROLL {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|4 |BOMB_SUPERTROLL {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|5 |BOMB_POISON {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|6 |BOMB_POISON_BIG {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|7 |BOMB_SAD {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|8 |BOMB_HOT {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|9 |BOMB_BUTT {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|10 |BOMB_MR_MEGA {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|11 |BOMB_BOBBY {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|12 |BOMB_GLITTER {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|13 |BOMB_THROWABLE {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|14 |BOMB_SMALL {: .copyable } |  |
 |[ ](#){: .rep .tooltip .badge }|15 |BOMB_BRIMSTONE {: .copyable } |  |

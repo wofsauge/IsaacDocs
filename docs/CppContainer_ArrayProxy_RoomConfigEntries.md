@@ -9,7 +9,7 @@ search:
 ???+ info
     You can get this class by using the following function:
 
-    * [RoomConfigSpawn.Entries](RoomConfigSpawns.md#entries)
+    * [RoomConfigSpawn.Entries](RoomConfig_Spawn.md#entries)
 
     ???+ example "Example Code"
         ```lua
@@ -23,7 +23,7 @@ search:
 
 ## Operators
 ### __len () {: aria-label='Operators' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int __len ( ) {: .copyable aria-label='Operators' }
 
 The length (#) operation. Returns the size of this list.
@@ -31,13 +31,13 @@ The length (#) operation. Returns the size of this list.
 ___
 ## Functions
 ### Get () {: aria-label='Functions' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RoomConfig Entry](RoomConfig_Entry.md) Get ( int idx ) {: .copyable aria-label='Functions' }
 
 ___
 ## Variables
 ### Size {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .abrep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
 #### const int Size  {: .copyable aria-label='Variables' }
 
 ___

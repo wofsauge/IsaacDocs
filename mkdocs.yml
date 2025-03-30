@@ -48,6 +48,7 @@ nav:
             - "DoorSlot": enums/DoorSlot.md
             - "DoorState": enums/DoorState.md
             - "DoorVariant": enums/DoorVariant.md
+            - "DrawStringAlignment": enums/DrawStringAlignment.md
             - "EffectVariant": enums/EffectVariant.md
             - "EntityCollisionClass": enums/EntityCollisionClass.md
             - "EntityFlag": enums/EntityFlag.md
@@ -138,6 +139,7 @@ nav:
         - "EntityPtr": EntityPtr.md
         - "EntityRef": EntityRef.md
         - "Font": Font.md
+        - "FontRenderSettings": FontRenderSettings.md
         - "Game": Game.md
         - "GridEntity":
             - "GridEntity": GridEntity.md
@@ -202,6 +204,8 @@ nav:
     - Tutorials:
         - "Example Project": tutorials/ExampleProject.md
         - "Functions in Lua": tutorials/FunctionsInLua.md
+        - "Good Coding Practices": tutorials/GoodPractices.md
+        - "Getting Coding Help": tutorials/GettingHelp.md
         - "Math and Lua Tips": tutorials/MathAndLuaTips.md
         - "Adding Costumes to items without LUA": tutorials/AddingCostumesWithoutLUA.md
         - "Debugging with ZeroBrane Studio": tutorials/ZeroBraneStudio.md
@@ -253,9 +257,14 @@ nav:
         - "translations.xml" : xml/translations.md
         - "wisps.xml" : xml/wisps.md
     - FAQ:
-        - "FAQ" : faq/faq.md
-        - "Launch Options": faq/LaunchOptions.md
+        - "FAQ" : faq/FaqHome.md
         - "Interactive FAQ" : faq/interactive_FAQ.md
+        - "Basic Information" : faq/BasicInformation.md
+        - "Getting Started" : faq/GettingStarted.md
+        - "Coding Help" : faq/Coding.md
+        - "Lua Language" : faq/Lua.md
+        - "Troubleshooting" : faq/Troubleshoot.md
+        - "Launch Options": faq/LaunchOptions.md
     - Tools:
         - "Tools Overview" : tutorials/Tools.md
         - "XML Validator" : tutorials/Tool_XMLValidator.md
@@ -342,7 +351,7 @@ extra_javascript:
     - js/tablesort.number.min.js
     - js/customJS.js
     - js/jquery.mark.min.js
-copyright: "Copyright &copy; 2021 - 2024 Wofsauge (Discord: Wofsauge#6503)"
+copyright: "Copyright &copy; 2021 - 2025 Wofsauge (Discord: Wofsauge#6503)"
 repo_url: https://github.com/wofsauge/IsaacDocs
 repo_name: wofsauge/IsaacDocs
 edit_uri: edit/main/docs/
