@@ -143,7 +143,7 @@ ___
 ### Shoot () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
 #### void Shoot ( ) {: .copyable aria-label='Functions' }
-When called in POST_FAMILIAR_UPDATE, appears to perfectly mimic Brother Bobby. This includes handling animations, firing tears, and synergies.
+When called in POST_FAMILIAR_UPDATE on a custom familiar, appears to handle everything for a basic shooting familiar. This includes handling animations, firing tears, and synergies.
 
 ## Variables
 ### Coins {: aria-label='Variables' }
