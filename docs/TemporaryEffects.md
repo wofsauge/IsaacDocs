@@ -19,7 +19,7 @@ search:
 
 ## Functions
 ### Add·Collectible·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void AddCollectibleEffect ( [CollectibleType](enums/CollectibleType.md) CollectibleType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 Adds the CollectibleEffect associated with a given item. If the passed item's CollectibleEffect is marked to have a cooldown or be persistent in items.xml, this will be respected.
 
@@ -46,12 +46,12 @@ Adds the CollectibleEffect associated with a given item. If the passed item's Co
     ```
 ___
 ### Add·Null·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void AddNullEffect ( [NullItemID](enums/NullItemID.md) NullId, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Add·Trinket·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void AddTrinketEffect ( [TrinketType](enums/TrinketType.md) TrinketType, boolean AddCostume = true, int Count = 1 ) {: .copyable aria-label='Functions' }
 
 ___
@@ -111,17 +111,17 @@ ___
 
 ___
 ### Remove·Collectible·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void RemoveCollectibleEffect ( [CollectibleType](enums/CollectibleType.md) CollectibleType, int Count = 1 ) {: .copyable aria-label='Functions' }
 Count = -1 removes all instances of the effect
 ___
 ### Remove·Null·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void RemoveNullEffect ( [ItemConfigNullItemID](ItemConfig_Item.md) NullId, int Count = 1 ) {: .copyable aria-label='Functions' }
 Count = -1 removes all instances of the effect
 ___
 ### Remove·Trinket·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void RemoveTrinketEffect ( [TrinketType](enums/TrinketType.md) TrinketType, int Count = 1 ) {: .copyable aria-label='Functions' }
 Count = -1 removes all instances of the effect
 ___

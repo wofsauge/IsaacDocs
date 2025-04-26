@@ -194,6 +194,22 @@ a.abrep.tooltip:after {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--abp-color), endColorstr=var(--rep-color), GradientType=1);
 }
 
+.reporplus::before {
+    content: "Rep | Rep+";
+}
+
+a.reporplus.tooltip:after {
+    content: "Compatible with Repentance and Repentance+";
+}
+
+.reporplus {
+    background: var(--rep-color);
+    background: -moz-linear-gradient(90deg, var(--rep-color) 0%, var(--rep-color) 50%, var(--repplus-color) 50%, var(--repplus-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--rep-color) 0%, var(--rep-color) 50%, var(--repplus-color) 50%, var(--repplus-color) 100%);
+    background: linear-gradient(90deg, var(--rep-color) 0%, var(--rep-color) 50%, var(--repplus-color) 50%, var(--repplus-color) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--rep-color), endColorstr=var(--repplus-color), GradientType=1);
+}
+
 .alldlc {
     background-color: var(--alldlc-color);
 }

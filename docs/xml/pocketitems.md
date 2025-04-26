@@ -29,9 +29,9 @@ Runes use the same attributes as cards, but are marked by `<rune ... />` or the 
 |name|string|The name of the card.|
 |description|string|The description of the card.|
 |hud|string|The name of the card's front animation in `content/gfx/ui_cardfronts.anm2`, which is only used in mods.|
-|type|string|Either `tarot`, `tarot_reverse`, `suit`, `special`, `rune`, or `object`. All types other than `object` and `rune` can be mimicked with Blank Card, while cards of type `rune` can be mimicked with Clear Rune. [ ](#){: .rep .tooltip .badge }|
-|mimiccharge|int|The amount of charge the card should take to mimic with Blank Card / Clear Rune. [ ](#){: .rep .tooltip .badge }|
-|pickup|int|The entities2.xml subtype corresponding to this card's pickup. [ ](#){: .rep .tooltip .badge }|
+|type|string|Either `tarot`, `tarot_reverse`, `suit`, `special`, `rune`, or `object`. All types other than `object` and `rune` can be mimicked with Blank Card, while cards of type `rune` can be mimicked with Clear Rune. [ ](#){: .reporplus .tooltip .badge }|
+|mimiccharge|int|The amount of charge the card should take to mimic with Blank Card / Clear Rune. [ ](#){: .reporplus .tooltip .badge }|
+|pickup|int|The entities2.xml subtype corresponding to this card's pickup. [ ](#){: .reporplus .tooltip .badge }|
 |announcer|int|The sound ID to play when the card is used.|
 |announcerdelay|int|The delay in frames between card use and the sound provided being played.|
 |achievement|int|Ties the card to a vanilla achievement.|
@@ -76,11 +76,11 @@ Pill effects are significantly easier to add than cards, and are also automatica
 | Variable-Name | Possible Values | Description |
 |:--|:--|:--|
 |name|string|Name of the pill effect|
-|description|string|Description of the pill effect (optional, used in I found pills)[ ](#){: .rep .tooltip .badge }|
-|class|string|A number from 0 - 3, indicating Joke, Minor, Medium, or Major effects. A `+` or `-` can be appended to note whether the pill is positive or negative, or excluded to denote neutral pills.[ ](#){: .rep .tooltip .badge }|
-|mimiccharge|int|Amount of charge the pill should take to mimic with Placebo[ ](#){: .rep .tooltip .badge }|
+|description|string|Description of the pill effect (optional, used in I found pills)[ ](#){: .reporplus .tooltip .badge }|
+|class|string|A number from 0 - 3, indicating Joke, Minor, Medium, or Major effects. A `+` or `-` can be appended to note whether the pill is positive or negative, or excluded to denote neutral pills.[ ](#){: .reporplus .tooltip .badge }|
+|mimiccharge|int|Amount of charge the pill should take to mimic with Placebo[ ](#){: .reporplus .tooltip .badge }|
 |announcer|int|Sound ID to play when the pill is used|
-|announcer2|int|Sound ID to play when the pill is used as a horse pill[ ](#){: .rep .tooltip .badge }|
+|announcer2|int|Sound ID to play when the pill is used as a horse pill[ ](#){: .reporplus .tooltip .badge }|
 |announcerdelay|int|Delay in frames between pill use and the sound provided being played|
 |achievement|int|Ties the pill effect to a vanilla achievement|
 |greedmode|bool|Is the pocketitem available in greedmode. Default = true|

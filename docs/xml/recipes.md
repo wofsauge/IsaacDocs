@@ -3,7 +3,7 @@ tags:
   - File
 ---
 # File "recipes.xml"
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Stores permenant recipes for Bag of Crafting that are not affected by per-run randomization.
 

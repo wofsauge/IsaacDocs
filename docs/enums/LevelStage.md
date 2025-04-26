@@ -18,7 +18,7 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|10 |STAGE5 {: .copyable } | 10 | Sheol, Cathedral |
 |[ ](#){: .alldlc .tooltip .badge }|11 |STAGE6 {: .copyable } | 11 | Dark Room, Chest |
 |[ ](#){: .alldlc .tooltip .badge }|12 |STAGE7 {: .copyable } | 12 | The Void |
-|[ ](#){: .rep .tooltip .badge }|13 |STAGE8 {: .copyable } | 13  | Home |
+|[ ](#){: .reporplus .tooltip .badge }|13 |STAGE8 {: .copyable } | 13  | Home |
 |[ ](#){: .alldlc .tooltip .badge }|14 |NUM_STAGES {: .copyable } | 14 | (No actual Level, but can be visited ingame. it is a stage full of greed mode rooms, but every wave is its own room.) |
 |[ ](#){: .alldlc .tooltip .badge }|1 |STAGE1_GREED {: .copyable } | 1 | Basement (Greed) |
 |[ ](#){: .alldlc .tooltip .badge }|2 |STAGE2_GREED {: .copyable } | 2 | Caves (Greed) |
@@ -27,4 +27,4 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|5 |STAGE5_GREED {: .copyable } | 5 | Sheol (Greed) |
 |[ ](#){: .alldlc .tooltip .badge }|6 |STAGE6_GREED {: .copyable } | 6 | The Shop (Greed) |
 |[ ](#){: .alldlc .tooltip .badge }|7 |STAGE7_GREED {: .copyable } | 7 | Ultra Greed |
-|[ ](#){: .rep .tooltip .badge }|7 |NUM_BACKWARDS_STAGES {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|7 |NUM_BACKWARDS_STAGES {: .copyable } |  |

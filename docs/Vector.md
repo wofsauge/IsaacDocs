@@ -21,12 +21,12 @@ tags:
 ___
 ## Constants
 ### Vector.Zero {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua Vector(0, 0)`.
 ___
 ### Vector.One {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua Vector(1, 1)`.
 ___
@@ -231,7 +231,7 @@ ___
 Returns a rotated version of the vector by AngleDegrees
 ___
 ### __tostring () {: aria-label='Functions' }
-[ ](#){: .tooltip .badge } [ ](#){: .rep .tooltip .badge }
+[ ](#){: .tooltip .badge } [ ](#){: .reporplus .tooltip .badge }
 #### void __tostring ( ) {: .copyable aria-label='Functions' }
 [Vector](Vector.md) objects can be cast to a string object, which returns information about this object in the following format:
 

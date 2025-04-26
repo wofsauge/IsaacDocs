@@ -5,7 +5,7 @@ tags:
 # File "ambush.xml"
 
 This file is used to store spawning patterns for the wave system of Ambush rooms and Boss Rush.
-[ ](#){: .rep .tooltip .badge } Ambush rooms use a new system that's more similar to Greed Mode waves, so this file only defines the Boss Rush waves.
+[ ](#){: .reporplus .tooltip .badge } Ambush rooms use a new system that's more similar to Greed Mode waves, so this file only defines the Boss Rush waves.
 
 **Resource-Folder**{: .xmlInfo .green }: Placing this file in your mods "resource" folder will replace the original file.
 

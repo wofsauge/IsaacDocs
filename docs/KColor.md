@@ -28,47 +28,47 @@ Constructor for the "KColor" class.
 ___
 ## Constants
 ### KColor.Black {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(0, 0, 0, 1)`.
 ___
 ### KColor.Red {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(1, 0, 0, 1)`.
 ___
 ### KColor.Green {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(0, 1, 0, 1)`.
 ___
 ### KColor.Blue {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(0, 0, 1, 1)`.
 ___
 ### KColor.Yellow {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(1, 1, 0, 1)`.
 ___
 ### KColor.Cyan {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(0, 1, 1, 1)`.
 ___
 ### KColor.Magenta {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(1, 0, 1, 1)`.
 ___
 ### KColor.White {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(1, 1, 1, 1)`.
 ___
 ### KColor.Transparent {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua KColor(0, 0, 0, 0)`.
 ___

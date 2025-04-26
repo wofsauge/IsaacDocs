@@ -29,7 +29,7 @@ Returns a [MusicManager](MusicManager.md) object.
 ___
 ## Functions
 ### Crossfade () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Crossfade ( [Music](enums/Music.md) ID, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 ???+ bug "Bug"
     If the ID parameter is negative or falls out of the allowed range of music IDs, this function will crash the game.
@@ -41,7 +41,7 @@ ___
 
 ___
 ### Disable·Layer () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void DisableLayer ( int LayerId = 0 ) {: .copyable aria-label='Functions' }
 
 ___
@@ -51,17 +51,17 @@ ___
 
 ___
 ### Enable·Layer () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void EnableLayer ( int LayerId = 0, boolean Instant = false ) {: .copyable aria-label='Functions' }
 
 ___
 ### Fadein () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Fadein ( [Music](enums/Music.md) ID, float Volume = 1, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Fadeout () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Fadeout ( float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
 ___
@@ -81,7 +81,7 @@ ___
 
 ___
 ### Is·Layer·Enabled () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsLayerEnabled ( int LayerId = 0 ) {: .copyable aria-label='Functions' }
 
 ___
@@ -124,7 +124,7 @@ ___
 This function sets the music volume to the volume defined in the options menu.
 ___
 ### Volume·Slide () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void VolumeSlide ( float TargetVolume, float FadeRate = 0.08 ) {: .copyable aria-label='Functions' }
 
 ___

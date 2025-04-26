@@ -809,7 +809,7 @@ ___
 
 ___
 ### Sorting·Layer {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [SortingLayer](enums/SortingLayer.md) SortingLayer  {: .copyable aria-label='Variables' }
 
 Determines when the entity should render over other entities.

@@ -34,7 +34,7 @@ ___
 
 ___
 ### Get·RNG () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [RNG](RNG.md) GetRNG ( ) {: .copyable aria-label='Functions' }
 
 ???- warning "Warning"
@@ -49,7 +49,7 @@ ___
     Both the [Desc](#desc) property and the [GetSaveState()](#getsavestate) method return the exact same [GridEntityDesc](GridEntityDesc.md) object. The game devs advise to use [GetSaveState()](#getsavestate) instead of [Desc](#desc).
 ___
 ### Get·Sprite () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [Sprite](Sprite.md) GetSprite ( ) {: .copyable aria-label='Functions' }
 
 ___

@@ -17,7 +17,7 @@ tags:
 
 ## Functions
 ### Check·Line () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### (boolean, [Vector](Vector.md)) CheckLine ( [Vector](Vector.md) Pos1, [Vector](Vector.md) Pos2, LinecheckMode Mode, int GridPathThreshold = 0, boolean IgnoreWalls = false, boolean IgnoreCrushable = false ) {: .copyable aria-label='Functions' }
 Returns 2 values:
 
@@ -74,7 +74,7 @@ ___
 
 ___
 ### Find·Free·Pickup·Spawn·Position () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [Vector](Vector.md) FindFreePickupSpawnPosition ( [Vector](Vector.md) Pos, float InitialStep = 0, boolean AvoidActiveEntities = false, boolean AllowPits = false ) {: .copyable aria-label='Functions' }
 Starting from `Pos`, will try to find a free spawn position where a newly spawned pickup item will not collide with already spawned pickup items, or solid grid elements such as rocks, or pits The returned position will be aligned to the grid. If no free position is found, the original position (aligned to the grid) is returned.
 ___
@@ -297,7 +297,7 @@ ___
 
 ___
 ### Get·Enemy·Damage·Inflicted () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float GetEnemyDamageInflicted ( ) {: .copyable aria-label='Functions' }
 Returns the total amount of HP lost by all enemies in the room within the current frame.
 
@@ -422,7 +422,7 @@ Returns the hit position for a laser beam (Technology, Robo-Baby). Usually this 
 
 ___
 ### Get·Lava·Intensity () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float GetLavaIntensity ( ) {: .copyable aria-label='Functions' }
 Usually returns 1, unless the lava is in the process of being cooled down by Flush! or other room flooding effects, in which case this will gradually decrease down to 0.
 
@@ -464,7 +464,7 @@ Returns `true` if the player took non-self inflicted damage to a red heart conta
 
 ___
 ### Get·Render·Mode () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [RenderMode](enums/RenderMode.md) GetRenderMode ( ) {: .copyable aria-label='Functions' }
 Returns a RenderMode enum which can be used to render entities differently depending on context (i.e. custom water reflections).
 ___
@@ -514,15 +514,15 @@ Returns the ID of the stage the room was designed for.
 	|[ ](#){: .alldlc .tooltip .badge }|24 |The Shop |  |
 	|[ ](#){: .alldlc .tooltip .badge }|25 |Ultra Greed |  |
 	|[ ](#){: .alldlc .tooltip .badge }|26 |The Void |  |
-	|[ ](#){: .rep .tooltip .badge }|27 |Downpour |  |
-	|[ ](#){: .rep .tooltip .badge }|28 |Dross |  |
-	|[ ](#){: .rep .tooltip .badge }|29 |Mines |  |
-	|[ ](#){: .rep .tooltip .badge }|30 |Ashpit |  |
-	|[ ](#){: .rep .tooltip .badge }|31 |Mausoleum |  |
-	|[ ](#){: .rep .tooltip .badge }|32 |Gehenna |  |
-	|[ ](#){: .rep .tooltip .badge }|33 |Corpse |  |
-	|[ ](#){: .rep .tooltip .badge }|35 |Home |The Stage ID of 34 does not exist. |
-	|[ ](#){: .rep .tooltip .badge }|36 |Backwards |These rooms are used during the Ascent. |
+	|[ ](#){: .reporplus .tooltip .badge }|27 |Downpour |  |
+	|[ ](#){: .reporplus .tooltip .badge }|28 |Dross |  |
+	|[ ](#){: .reporplus .tooltip .badge }|29 |Mines |  |
+	|[ ](#){: .reporplus .tooltip .badge }|30 |Ashpit |  |
+	|[ ](#){: .reporplus .tooltip .badge }|31 |Mausoleum |  |
+	|[ ](#){: .reporplus .tooltip .badge }|32 |Gehenna |  |
+	|[ ](#){: .reporplus .tooltip .badge }|33 |Corpse |  |
+	|[ ](#){: .reporplus .tooltip .badge }|35 |Home |The Stage ID of 34 does not exist. |
+	|[ ](#){: .reporplus .tooltip .badge }|36 |Backwards |These rooms are used during the Ascent. |
 
 ___
 ### Get·Room·Shape () {: aria-label='Functions' }
@@ -572,19 +572,19 @@ ___
 
 ___
 ### Get·Water·Current () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [Vector](Vector.md) GetWaterCurrent ( ) {: .copyable aria-label='Functions' }
 Returns a vector corresponding to any water current in the room.
 
 ___
 ### Has·Curse·Mist () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean HasCurseMist ( ) {: .copyable aria-label='Functions' }
 Returns `true` if the player is inside the abandoned mineshaft.
 
 ___
 ### Has·Lava () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean HasLava ( ) {: .copyable aria-label='Functions' }
 Returns `true` if the room contains lava.
 
@@ -624,7 +624,7 @@ Returns `true` if the room contains pits that have liquid in them (e.g. lava in 
 
 ___
 ### Invalidate·Pickup·Vision () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void InvalidatePickupVision ( ) {: .copyable aria-label='Functions' }
 Causes chest previews from Guppy's Eye to be updated on the next frame.
 
@@ -681,7 +681,7 @@ ___
 
 ___
 ### Is·Mirror·World () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsMirrorWorld ( ) {: .copyable aria-label='Functions' }
 Returns true if the player is inside the mirror dimension.
 
@@ -868,13 +868,13 @@ ___
 
 ___
 ### Stop·Rain () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void StopRain ( ) {: .copyable aria-label='Functions' }
 Stops any rain effects in the room.
 
 ___
 ### Trigger·Clear () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void TriggerClear ( boolean Silent = false ) {: .copyable aria-label='Functions' }
 Triggers all room clear effects (does not actually clear the room).
 Door opening sounds can be muted by setting Silent to `true`.
@@ -921,21 +921,21 @@ This usually does nothing outside of the starting room of the Chest/Dark Room un
 
 ___
 ### Try·Spawn·Secret·Exit () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean TrySpawnSecretExit ( boolean Animate = false, boolean Force = false ) {: .copyable aria-label='Functions' }
 Attempts to spawn a door to the Downpour, Mines or Mausoleum depending on the current floor.
 This usually does nothing outside of boss rooms unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Secret·Shop () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean TrySpawnSecretShop ( boolean Force = false ) {: .copyable aria-label='Functions' }
 Attempts to spawn a trapdoor to the Member Card shop within the current room.
 This usually does nothing outside of shops or if the player doesn't hold a Member Card unless `Force` is set to `true`.
 
 ___
 ### Try·Spawn·Special·Quest·Door () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean TrySpawnSpecialQuestDoor ( ) {: .copyable aria-label='Functions' }
 Attempts to spawn either a door to the Mirror Dimension in Downpour, or the abandoned mineshaft in the Mines.
 

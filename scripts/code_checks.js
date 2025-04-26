@@ -17,7 +17,7 @@ const regularExpressions = [
   ["Link to return value is missing", new RegExp("#{4} (const\\s|static\\s)*(?!\\[|\\()(?!" + defaultVariables + "|" + ignoreVars + ")")],
   ["Function declaration first argument has no link", new RegExp("#{4}(.)*\\w \\( (?!" + defaultVariables + "|" + ignoreVars + "|\\)|\\[)")],
   ["Function declaration later argument has no link", new RegExp("#{4}(.)*\\w \\(.*,(?!\\s[" + defaultVariables + "|" + ignoreVars + "|(\\[.*\\]\\(.*\\))])")],
-  ["Badge has more type-definitions than allowed", /\[ \]\(#\)\{: ((.static|.const|.alldlc|.rep|.abp|.repplus)\s){2,5}.tooltip .badge \}/],
+  ["Badge has more type-definitions than allowed", /\[ \]\(#\)\{: ((.static|.const|.alldlc|.rep|.reporplus|.abp|.repplus)\s){2,5}.tooltip .badge \}/],
   ["Internal link doesnt work because its CamelCase.", /\[\w+\]\(([a-z][^·_][A-Z])*#[A-Z]\w+[A-Z]*/],
 ];
 

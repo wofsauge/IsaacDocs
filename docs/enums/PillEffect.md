@@ -53,7 +53,7 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|44 |PILLEFFECT_HORF {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|45 |PILLEFFECT_SUNSHINE {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|46 |PILLEFFECT_VURP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|47 |PILLEFFECT_SHOT_SPEED_DOWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|48 |PILLEFFECT_SHOT_SPEED_UP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|49 |PILLEFFECT_EXPERIMENTAL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|50 |NUM_PILL_EFFECTS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|47 |PILLEFFECT_SHOT_SPEED_DOWN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|48 |PILLEFFECT_SHOT_SPEED_UP {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|49 |PILLEFFECT_EXPERIMENTAL {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|50 |NUM_PILL_EFFECTS {: .copyable } |  |

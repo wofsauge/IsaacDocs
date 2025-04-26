@@ -11,4 +11,4 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|4 |COIN_DOUBLEPACK {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|5 |COIN_LUCKYPENNY {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|6 |COIN_STICKYNICKEL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|7 |COIN_GOLDEN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|7 |COIN_GOLDEN {: .copyable } |  |

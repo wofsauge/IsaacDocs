@@ -7,7 +7,7 @@ search:
 # Global Functions
 ## Constructors
 ### BitSet128 () {: aria-label='Constructors' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [BitSet128](BitSet128.md) BitSet128 ( int Low = 0, int High = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "BitSet128" class.
@@ -15,7 +15,7 @@ Constructor for the "BitSet128" class.
 [BitSet128](BitSet128.md) is used as a storage system for flags and other bit-wise evaluated values that exceed the numeric limits of the default 64-bit integers which only allow for up to 64 flags to be defined. [BitSet128](BitSet128.md) allows for up to 128 Flags by spliting the bitset into a "lower" and "higher" part. Those parts are represented by a simple 64bit integer number.
 ___
 ### Color () {: aria-label='Constructors' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [Color](Color.md) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "[Color](Color.md)" class.
