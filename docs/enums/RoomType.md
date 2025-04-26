@@ -29,10 +29,10 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|21 |ROOM_DICE {: .copyable } | ![img](../images/roomtypes/21.png) |  |
 |[ ](#){: .alldlc .tooltip .badge }|22 |ROOM_BLACK_MARKET {: .copyable } |  |  |
 |[ ](#){: .alldlc .tooltip .badge }|23 |ROOM_GREED_EXIT {: .copyable } |  |  |
-|[ ](#){: .rep .tooltip .badge }|24 |ROOM_PLANETARIUM {: .copyable } | ![img](../images/roomtypes/24.png) |  |
-|[ ](#){: .rep .tooltip .badge }|25 |ROOM_TELEPORTER {: .copyable } | ![img](../images/roomtypes/25.png) | Mausoleum teleporter entrance, currently unused |
-|[ ](#){: .rep .tooltip .badge }|26 |ROOM_TELEPORTER_EXIT {: .copyable } |  | Mausoleum teleporter exit, currently unused |
-|[ ](#){: .rep .tooltip .badge }|27 |ROOM_SECRET_EXIT {: .copyable } |  | Trapdoor room to the alt path floors |
-|[ ](#){: .rep .tooltip .badge }|28 |ROOM_BLUE {: .copyable } |  | Blue Womb rooms spawned by Blue Key |
-|[ ](#){: .rep .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } | ![img](../images/roomtypes/29.png) | Red secret rooms |
-|[ ](#){: .rep .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  |
+|[ ](#){: .reporplus .tooltip .badge }|24 |ROOM_PLANETARIUM {: .copyable } | ![img](../images/roomtypes/24.png) |  |
+|[ ](#){: .reporplus .tooltip .badge }|25 |ROOM_TELEPORTER {: .copyable } | ![img](../images/roomtypes/25.png) | Mausoleum teleporter entrance, currently unused |
+|[ ](#){: .reporplus .tooltip .badge }|26 |ROOM_TELEPORTER_EXIT {: .copyable } |  | Mausoleum teleporter exit, currently unused |
+|[ ](#){: .reporplus .tooltip .badge }|27 |ROOM_SECRET_EXIT {: .copyable } |  | Trapdoor room to the alt path floors |
+|[ ](#){: .reporplus .tooltip .badge }|28 |ROOM_BLUE {: .copyable } |  | Blue Womb rooms spawned by Blue Key |
+|[ ](#){: .reporplus .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } | ![img](../images/roomtypes/29.png) | Red secret rooms |
+|[ ](#){: .reporplus .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  |

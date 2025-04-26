@@ -23,7 +23,7 @@ tags:
 
 ## Constructors
 ### Color () {: aria-label='Constructors' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [Color](Color.md) Color ( float R, float G, float B, float A = 1, float RO = 0, float GO = 0, float BO = 0 ) {: .copyable aria-label='Constructors' }
 
 Constructor for the "Color" class.
@@ -43,7 +43,7 @@ Defines the multiplication of two [Color](Color.md) objects using the `*` operat
 ___
 ## Constants
 ### Color.Default {: aria-label='Constants' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Equivalent to `:::lua Color(1, 1, 1, 1)`, the color white.
 ___

@@ -63,27 +63,27 @@ ___
 
 ___
 ### Bomb·Damage () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void BombDamage ( [Vector](Vector.md) Position, float Damage, float Radius, boolean LineCheck = true, [Entity](Entity.md) Source = nil, [TearFlags](enums/TearFlags.md) TearFlags = [TearFlags](enums/TearFlags.md).TEAR_NORMAL, int DamageFlags = [DamageFlags](enums/DamageFlag.md).DAMAGE_EXPLOSION, boolean DamageSource = false ) {: .copyable aria-label='Functions' }
 
 ___
 ### Bomb·Explosion·Effects () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void BombExplosionEffects ( [Vector](Vector.md) Position, float Damage, [TearFlags](enums/TearFlags.md) TearFlags = [TearFlags](enums/TearFlags.md).TEAR_NORMAL, [Color](Color.md) Color = Color.Default, [Entity](Entity.md) Source = nil, float RadiusMult = 1, boolean LineCheck = true, boolean DamageSource = false, int DamageFlags = [DamageFlags](enums/DamageFlag.md).DAMAGE_EXPLOSION ) {: .copyable aria-label='Functions' }
 The complete bomb explosion package: Do damage, spawn boomgraphics, and apply tearflag-based effects.
 ___
 ### Bomb·Tearflag·Effects () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void BombTearflagEffects ( [Vector](Vector.md) Position, float Radius, [TearFlags](enums/TearFlags.md) TearFlags, [Entity](Entity.md) Source = nil, float RadiusMult = 1) {: .copyable aria-label='Functions' }
 Does bomb-exclusive special effects.
 ___
 ### Butter·Bean·Fart () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void ButterBeanFart ( [Vector](Vector.md) Position, float Radius, [Entity](Entity.md) Source, boolean ShowEffect, boolean DoSuperKnockback ) {: .copyable aria-label='Functions' }
 
 ___
 ### Change·Room () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void ChangeRoom ( int RoomIndex, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 This function should be used over `Level.ChangeRoom` because that function will not update the fxlayers properly.
@@ -202,7 +202,7 @@ ___
 
 ___
 ### Fart () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Fart ( [Vector](Vector.md) Position, float Radius = 85, [Entity](Entity.md) Source = nil, float FartScale = 1, int FartSubType = 0, [Color](Color.md) FartColor = Color.Default ) {: .copyable aria-label='Functions' }
 
 ___
@@ -274,7 +274,7 @@ ___
 
 ___
 ### Get·HUD () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [HUD](HUD.md) GetHUD ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -412,12 +412,12 @@ ___
 Returns true, if the game is in a state, where the player is unable to input any thing or the game logic is paused. This includes having the pause menu opened, being in room transitions/cutscenes or while displaying a "big book" animation.
 ___
 ### Make·Shockwave () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void MakeShockwave ( [Vector](Vector.md) Position, float Amplitude, float Speed, int Duration ) {: .copyable aria-label='Functions' }
 
 ___
 ### Move·To·Random·Room () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void MoveToRandomRoom ( boolean IAmErrorRoom, int Seed, [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 
 ___
@@ -477,7 +477,7 @@ ___
 
 ___
 ### Show·Hallucination () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void ShowHallucination ( int FrameCount, [BackdropType](enums/BackdropType.md) Backdrop = BackdropType.NUM_BACKDROPS ) {: .copyable aria-label='Functions' }
 Plays the Delirium animation (Static noise intersected with past gameplay fotage), which will also change the background of the current room.
 
@@ -539,12 +539,12 @@ ___
 
 ___
 ### Spawn·Particles () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void SpawnParticles ( [Vector](Vector.md) Pos, [EffectVariant](enums/EffectVariant.md) ParticleType, int NumParticles, float Speed, [Color](Color.md) Color = Color.Default, float Height = 100000, int SubType = 0 ) {: .copyable aria-label='Functions' }
 
 ___
 ### Start·Room·Transition () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void StartRoomTransition ( int RoomIndex, [Direction](enums/Direction.md) Direction, [RoomTransitionAnim](enums/RoomTransitionAnim.md) Animation = RoomTransitionAnim.WALK, [EntityPlayer](EntityPlayer.md) Player = nil, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 Note that if you use `RoomTransitionAnim.PIXELATION` (2), you must not interrupt the effect (e.g. with another room transition or room change) once it starts playing. Otherwise, after around 11 interuptions, the "log.txt" will start to become spammed with "[ASSERT] - PushRenderTarget: stack overflow!". This is because internally, the game uses a finite buffer to store information about the effect, and if it is interrupted, the buffer will never be cleared.
@@ -596,7 +596,7 @@ ___
 
 ___
 ### Update·Strange·Attractor () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void UpdateStrangeAttractor ( [Vector](Vector.md) Position, float Force = 10, float Radius = 250 ) {: .copyable aria-label='Functions' }
 
 ___

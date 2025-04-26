@@ -72,7 +72,7 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|74 |SEED_SHOOT_IN_MOVEMENT_DIRECTION {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|75 |SEED_SHOOT_OPPOSITE_MOVEMENT_DIRECTION {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|76 |SEED_AXIS_ALIGNED_CONTROLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|77 |SEED_SUPER_HOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|78 |SEED_RETRO_VISION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|79 |SEED_G_FUEL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|80 |NUM_SEEDS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|77 |SEED_SUPER_HOT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|78 |SEED_RETRO_VISION {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|79 |SEED_G_FUEL {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|80 |NUM_SEEDS {: .copyable } |  |

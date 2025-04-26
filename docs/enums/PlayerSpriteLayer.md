@@ -18,6 +18,6 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|10 |SPRITE_HEAD5 {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|11 |SPRITE_TOP0 {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|12 |SPRITE_EXTRA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|13 |SPRITE_GHOST {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|14 |SPRITE_BACK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|15 |NUM_SPRITE_LAYERS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|13 |SPRITE_GHOST {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|14 |SPRITE_BACK {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|15 |NUM_SPRITE_LAYERS {: .copyable } |  |

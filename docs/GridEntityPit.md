@@ -16,7 +16,7 @@ tags:
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Functions
 ### Make·Bridge () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void MakeBridge ( [GridEntity](GridEntity.md) parentEntity) {: .copyable aria-label='Functions' }
 parentEntity can be `nil` to use the default texture as the bridge
 ___

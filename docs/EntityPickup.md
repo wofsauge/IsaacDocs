@@ -36,7 +36,7 @@ ___
 
 ___
 ### Morph () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Morph ( [EntityType](enums/EntityType.md) Type, int Variant, int SubType, boolean KeepPrice = false, boolean KeepSeed = false, boolean IgnoreModifiers = false ) {: .copyable aria-label='Functions' }
 **KeepSeed**: If set to true, keeps the initial RNG seed of the pickup instead of rerolling it
 
@@ -53,7 +53,7 @@ ___
 
 ___
 ### Try·Open·Chest () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean TryOpenChest ( [EntityPlayer](EntityPlayer.md) Player = nil ) {: .copyable aria-label='Functions' }
 **Player**: The player that opened this chest
 ___
@@ -69,7 +69,7 @@ ___
 
 ___
 ### OptionsPickupIndex {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int OptionsPickupIndex  {: .copyable aria-label='Variables' }
 Any non-zero value causes the item to form an option group with any other item with the same OptionsPickupIndex value.
 

@@ -50,12 +50,12 @@ ___
 
 ___
 ### Clear·Projectile·Flags () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void ClearProjectileFlags ( [ProjectileFlags](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___
 ### Has·Projectile·Flags () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean HasProjectileFlags ( [ProjectileFlags](enums/ProjectileFlags.md) Flags ) {: .copyable aria-label='Functions' }
 
 ___

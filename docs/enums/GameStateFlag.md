@@ -49,10 +49,10 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|41 |STATE_HEART_BOMB_COIN_PICKED {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|42 |STATE_ABPLUS_BOSS_SWITCHED {: .copyable } | obsolete with Rep |
 |[ ](#){: .alldlc .tooltip .badge }|43 |STATE_SISTERS_VIS_SELECTED {: .copyable } | obsolete with Rep |
-|[ ](#){: .rep .tooltip .badge }|43 |STATE_MAX_COINS_OBTAINED {: .copyable } | set when reaching 99 coins, used to check for the Golden Razor achievement |
-|[ ](#){: .rep .tooltip .badge }|44 |STATE_SECRET_PATH {: .copyable } | set when entering a trapdoor that leads to the alternate path |
-|[ ](#){: .rep .tooltip .badge }|45 |STATE_PERFECTION_SPAWNED {: .copyable } | set when Perfection has dropped from a boss |
-|[ ](#){: .rep .tooltip .badge }|46 |STATE_MAUSOLEUM_HEART_KILLED {: .copyable } | set when Mom's Heart has been killed in the Mausoleum |
-|[ ](#){: .rep .tooltip .badge }|47 |STATE_BACKWARDS_PATH_INIT {: .copyable } | set when entering Mausoleum/Gehenna II through the photo door, causes Dad's Note to spawn instead of the Mom boss room |
-|[ ](#){: .rep .tooltip .badge }|48 |STATE_BACKWARDS_PATH {: .copyable } | set during the Ascent |
-|[ ](#){: .rep .tooltip .badge }|49 |NUM_STATE_FLAGS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|43 |STATE_MAX_COINS_OBTAINED {: .copyable } | set when reaching 99 coins, used to check for the Golden Razor achievement |
+|[ ](#){: .reporplus .tooltip .badge }|44 |STATE_SECRET_PATH {: .copyable } | set when entering a trapdoor that leads to the alternate path |
+|[ ](#){: .reporplus .tooltip .badge }|45 |STATE_PERFECTION_SPAWNED {: .copyable } | set when Perfection has dropped from a boss |
+|[ ](#){: .reporplus .tooltip .badge }|46 |STATE_MAUSOLEUM_HEART_KILLED {: .copyable } | set when Mom's Heart has been killed in the Mausoleum |
+|[ ](#){: .reporplus .tooltip .badge }|47 |STATE_BACKWARDS_PATH_INIT {: .copyable } | set when entering Mausoleum/Gehenna II through the photo door, causes Dad's Note to spawn instead of the Mom boss room |
+|[ ](#){: .reporplus .tooltip .badge }|48 |STATE_BACKWARDS_PATH {: .copyable } | set during the Ascent |
+|[ ](#){: .reporplus .tooltip .badge }|49 |NUM_STATE_FLAGS {: .copyable } |  |

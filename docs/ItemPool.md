@@ -37,7 +37,7 @@ ___
 
 ___
 ### Get·Collectible () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [CollectibleType](enums/CollectibleType.md) GetCollectible ( [ItemPoolType](enums/ItemPoolType.md) PoolType, boolean Decrease = false, int Seed = Random(), [CollectibleType](enums/CollectibleType.md) DefaultItem = CollectibleType.COLLECTIBLE_NULL ) {: .copyable aria-label='Functions' }
 
 ???- note "Notes"
@@ -59,7 +59,7 @@ ___
 
 ___
 ### Get·Pill·Effect () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [PillEffect](enums/PillEffect.md) GetPillEffect ( [PillColor](enums/PillColor.md) PillColor, [EntityPlayer](EntityPlayer.md) Player = nil ) {: .copyable aria-label='Functions' }
 
 Will return the pill effect that corresponds to the passed pill color. This will work properly even if the player has not yet identified the pill color (by using one or more pills of that color). It is recommended to always pass the corresponding player because if a player has Lucky Foot, PHD, Virgo, or False PHD, the resolved pill effect will change from what was assigned by default at the beginning of the run.
@@ -73,7 +73,7 @@ ___
 
 ___
 ### Get·Trinket () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [TrinketType](enums/TrinketType.md) GetTrinket ( boolean DontAdvanceRNG = false ) {: .copyable aria-label='Functions' }
 
 ___
@@ -90,7 +90,7 @@ Once the player takes PHD, Virgo, or False PHD, this method will always return t
 
 ___
 ### Remove·Collectible () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean RemoveCollectible ( [CollectibleType](enums/CollectibleType.md) Collectible ) {: .copyable aria-label='Functions' }
 Removes a collectible from the itempool. Returns true if given item did exist in the pool before.
 

@@ -15,17 +15,17 @@ tags:
 ## Functions
 ___
 ### Is·Available () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsAvailable ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Card () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsCard ( ) {: .copyable aria-label='Functions' }
 
 ___
 ### Is·Rune () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsRune ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -37,17 +37,17 @@ Returns the ID of the achievement that unlocks the card. Returns ``:::lua -1`` i
 
 ___
 ### Announcer·Delay {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int AnnouncerDelay  {: .copyable aria-label='Variables' }
 
 ___
 ### Announcer·Voice {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int AnnouncerVoice  {: .copyable aria-label='Variables' }
 
 ___
 ### Card·Type {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int CardType {: .copyable aria-label='Variables' }
 
 ___
@@ -82,7 +82,7 @@ ___
 Returns the ID of the given card.
 ___
 ### Mimic·Charge {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int MimicCharge {: .copyable aria-label='Variables' }
 
 ___
@@ -96,7 +96,7 @@ Returns the name of the given card.
 
 ___
 ### Pickup·Subtype {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int PickupSubtype {: .copyable aria-label='Variables' }
 
 ___

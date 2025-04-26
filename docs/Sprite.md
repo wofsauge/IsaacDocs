@@ -26,7 +26,7 @@ tags:
 ___
 ## Functions
 ### Get·Animation () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### string GetAnimation ( ) {: .copyable aria-label='Functions' }
 Return the name of the currently playing animation.
 
@@ -93,7 +93,7 @@ Returns the number of layers in the anm2 file that is loaded on the sprite. All 
 
 ___
 ### Get·Overlay·Animation () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### string GetOverlayAnimation ( ) {: .copyable aria-label='Functions' }
 Returns the name of the currently playing overlay animation. (The overlay animation is an independent secondary animation that can be played at the same time as the normal animation.)
 
@@ -301,7 +301,7 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
 
 ___
 ### Render·Layer () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void RenderLayer ( int LayerId, [Vector](Vector.md) Position, [Vector](Vector.md) TopLeftClamp = Vector.Zero, [Vector](Vector.md) BottomRightClamp = Vector.Zero ) {: .copyable aria-label='Functions' }
 Renders a specific layer of the sprite at a given screen position, where (0,0) is the top left corner of the screen.
 
@@ -356,7 +356,7 @@ Similar to the `Sprite.Play` method, but does not start the animation.
 
 ___
 ### Set·Frame () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void SetFrame ( int FrameNum ) {: .copyable aria-label='Functions' }
 #### void SetFrame ( string AnimationName, int FrameNum ) {: .copyable .secondH4 aria-label='Functions' }
 
