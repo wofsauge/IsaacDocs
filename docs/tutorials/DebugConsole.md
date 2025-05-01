@@ -100,7 +100,7 @@ Various cheats that are useful for testing. Some of the ones not listed here are
 
 **debug 3** Complete invincibility
 
-**debug 4** +40 damage. Good with Soy Milk.
+**debug 4** +40 damage. Good with Soy Milk. (In Repentance/Repentance+, also causes all spawned trinkets to be golden)
 
 **debug 5** Displays text at the bottom of the screen about the current room
 
