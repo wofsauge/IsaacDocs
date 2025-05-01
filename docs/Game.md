@@ -33,6 +33,7 @@ ___
 [ ](#){: .alldlc .tooltip .badge }
 #### void AddDevilRoomDeal ( ) {: .copyable aria-label='Functions' }
 
+Increments taken devil deals by 1. (This will impact Angel room chance)
 ___
 ### Add·Encountered·Boss () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
