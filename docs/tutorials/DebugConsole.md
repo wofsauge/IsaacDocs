@@ -80,8 +80,13 @@ stage 1
 stage 10a
 stage 3b
 ```
+Format:
+**stage [LevelStage](../enums/LevelStage.md)[StageType(optional)](../enums/StageType.md)**
 
 Move to another floor on the same seed. You can use this to skip ahead to a later floor, go backwards to an earlier floor, or reset the current floor by entering the current floor's id. Entering nonexistent floors can crash the game.
+
+* [LevelStage](../enums/LevelStage.md) is a number between 1 and 13.
+* [StageType (optional)](../enums/StageType.md) is a letter. Valid inputs are: a,b,c and d. It describes the variant of the selected level. If no StageType is defined, the default variant is used ([StageType](../enums/StageType.md) = 0).
 
 ### **gridspawn**
 Syntax:

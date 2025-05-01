@@ -249,7 +249,11 @@ ___
 ### Get·Stage·Type () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [StageType](enums/StageType.md) GetStageType ( ) {: .copyable aria-label='Functions' }
+The [StageType](enums/StageType.md) describes the variant of the current stage.
 
+For example, the available stage variants of Stage 1 and 2 are: Basement (StageType=0), Cellar (StageType=1), Burning Basement (StageType=2), Downpour (StageType=4), Dross (StageType=5)
+
+Using this function in a stage without a variant (for example: The Void) will always return 0.
 ___
 ### Get·Starting·Room·Index () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
