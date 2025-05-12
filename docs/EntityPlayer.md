@@ -1806,7 +1806,9 @@ ___
 ### Controls·Cooldown {: aria-label='Variables' }
 [ ](#){: .alldlc .tooltip .badge }
 #### int ControlsCooldown  {: .copyable aria-label='Variables' }
+Specifies the number of frames the player's controls should be disabled. Decrements by 1 every frame, until it reaches 0. Used by the paralysis pill effect.
 
+At 0 or less, does not block player control.
 ___
 ### Controls·Enabled {: aria-label='Variables' }
 [ ](#){: .alldlc .tooltip .badge }
@@ -1837,7 +1839,9 @@ ___
 ### Head·Frame·Delay {: aria-label='Variables' }
 [ ](#){: .alldlc .tooltip .badge }
 #### int HeadFrameDelay  {: .copyable aria-label='Variables' }
+Specifies the number of frames the player's head should be playing the shooting animation. Decrements by 1 every frame, until it reaches -1.
 
+At negative values, the player's head does not play the shooting animation.
 ___
 ### IBS·Charge {: aria-label='Variables' }
 [ ](#){: .reporplus .tooltip .badge }
