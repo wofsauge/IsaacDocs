@@ -22,7 +22,8 @@ search:
 ## Variables
 ### Difficulty {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
-#### const [Difficulty](enums/Difficulty.md) Difficulty {: .copyable aria-label='Variables' }
+#### const int Difficulty {: .copyable aria-label='Variables' }
+The difficulty of the room, as defined in the room editor. Typically either 5, 10, 15, or 20 for Void rooms, although mods can add rooms with any difficulty. Difficulty 0 means this room cannot show up naturally.
 
 ___
 ### Doors {: aria-label='Variables' }
