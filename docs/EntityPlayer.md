@@ -813,6 +813,27 @@ This does not return the number of black hearts; it returns the bit mask for whi
     Isaac.GetPlayer():GetBlackHearts() -- returns 409, which is 0001 1001 1001 in binary. Therefore, the read order is right to left.
     ```
 
+    Quick code example to parse soul hearts vs black hearts:
+
+    ```lua
+    -- if you setup your hearts as described above then you'll get the following values
+    -- GetSoulHearts = 18
+    -- GetBlackHearts = 409
+    local tbl = {}
+    local player = Isaac.GetPlayer()
+    -- loop over all the soul hearts
+    -- divide by 2 because we need to go from half to whole hearts
+    -- math.ceil to make sure we account for a possible half heart at the end
+    for i = 0, math.ceil(player:GetSoulHearts() / 2) - 1 do
+      -- you can also use BitSet128 here if you want: BitSet128(player:GetBlackHearts(),0):Get(i)
+      table.insert(tbl, (player:GetBlackHearts() & (1 << i)) > 0 and 'B' or 'S')
+    end
+    if player:GetSoulHearts() % 2 ~= 0 then
+      tbl[#tbl] = string.lower(tbl[#tbl]) -- lowercase to indicate half heart at end
+    end
+    print(table.concat(tbl, ' ')) -- prints: B S S B B S S B B
+    ```
+
 ___
 ### Get·Blood·Charge () {: aria-label='Functions' }
 [ ](#){: .reporplus .tooltip .badge }
@@ -1383,11 +1404,91 @@ ___
 ### Is·Black·Heart () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
 #### boolean IsBlackHeart ( int Heart ) {: .copyable aria-label='Functions' }
+This can be used instead of GetBlackHearts to figure out which soul hearts are black hearts.
+
+???- example "Example"
+    Imagine we have the following setup of hearts, where S is a soul heart and B is a black heart:
+
+    ```
+    B S S B B S S B B
+    ```
+
+    Each soul heart is composed of two halves. Only the odd numbers seem to trigger this function. Even numbers always return false. The following assumes that the indexing starts at 1 rather than 0, but regardless, it's the odd numbers that work here. The indexing here only applies to your soul/black hearts. It doesn't matter if you have other red/bone/etc hearts.
+
+    ```
+    B(1,2) S(3,4) S(5,6) B(7,8) B(9,10) S(11,12) S(13,14) B(15,16) B(17,18)
+    ```
+
+    ```lua
+    Isaac.GetPlayer():IsBlackHeart(1) -- returns true (black heart)
+    Isaac.GetPlayer():IsBlackHeart(2) -- returns false (not useful)
+    Isaac.GetPlayer():IsBlackHeart(3) -- returns false (soul heart)
+    -- 1,7,9,15,17 all return true (black hearts)
+    ```
+
+    Quick code example to parse soul hearts vs black hearts:
+
+    ```lua
+    -- if you setup your hearts as described above then you'll get the following value
+    -- GetSoulHearts = 18
+    local tbl = {}
+    local player = Isaac.GetPlayer()
+    -- loop over all the soul heart odd indexes
+    for i = 1, player:GetSoulHearts(), 2 do
+      table.insert(tbl, player:IsBlackHeart(i) and 'B' or 'S')
+    end
+    if player:GetSoulHearts() % 2 ~= 0 then
+      tbl[#tbl] = string.lower(tbl[#tbl]) -- lowercase to indicate half heart at end
+    end
+    print(table.concat(tbl, ' ')) -- prints: B S S B B S S B B
+    ```
 
 ___
 ### Is·Bone·Heart () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
 #### boolean IsBoneHeart ( int heart ) {: .copyable aria-label='Functions' }
+This can be used to figure out the ordering of bone hearts amongst soul/black hearts.
+
+???- example "Example"
+    Imagine we have the following setup of hearts:
+
+    ```
+    BONE SOUL BONE BLACK BONE
+    ```
+
+    The indexing here is for whole hearts, and the index starts at 0. The indexing takes into account bone/soul/black hearts. It doesn't matter if you have other heart types (e.g. red hearts).
+
+    ```lua
+    Isaac.GetPlayer():IsBoneHeart(0) -- returns true (bone heart)
+    Isaac.GetPlayer():IsBoneHeart(1) -- returns false (soul heart)
+    Isaac.GetPlayer():IsBoneHeart(3) -- returns false (black heart)
+    -- 0,2,4 all return true (bone hearts)
+    ```
+
+    Quick code example to parse soul hearts vs black hearts vs bone hearts:
+
+    ```lua
+    -- if you setup your hearts as described above then you'll get the following values
+    -- GetSoulHearts = 4
+    -- GetBoneHearts = 3
+    local tbl = {}
+    local player = Isaac.GetPlayer()
+    -- first, figure out the soul/black heart order
+    for i = 1, player:GetSoulHearts(), 2 do
+      table.insert(tbl, player:IsBlackHeart(i) and 'BLACK' or 'SOUL')
+    end
+    if player:GetSoulHearts() % 2 ~= 0 then
+      tbl[#tbl] = string.lower(tbl[#tbl]) -- lowercase to indicate half heart at end
+    end
+    -- second, figure out where bone hearts fit into the soul/black/bone heart order
+    -- divide soul hearts by 2 to get whole hearts, bone hearts are already in whole heart increments
+    for i = 0, math.ceil(player:GetSoulHearts() / 2) + player:GetBoneHearts() - 1 do
+      if player:IsBoneHeart(i) then
+        table.insert(tbl, i + 1, 'BONE')
+      end
+    end
+    print(table.concat(tbl, ' ')) -- prints: BONE SOUL BONE BLACK BONE
+    ```
 
 ___
 ### Is·Coop·Ghost () {: aria-label='Functions' }
