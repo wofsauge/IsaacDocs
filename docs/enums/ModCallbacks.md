@@ -567,6 +567,8 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_NPC_INIT {: .copyable }
 Returning any value will have no effect on later callback executions.
 
+Will also be called if Delirium morphs into given EntityType.
+
 ???- warning "Warning"
     Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_NPC_UPDATE and check those attributes on the first possible frame.
 
