@@ -415,6 +415,8 @@ ___
 ### Make·Shockwave () {: aria-label='Functions' }
 [ ](#){: .reporplus .tooltip .badge }
 #### void MakeShockwave ( [Vector](Vector.md) Position, float Amplitude, float Speed, int Duration ) {: .copyable aria-label='Functions' }
+???- info "Reference"
+    Monstro's stomp: Amplitude = 0.035 | Speed = 0.025 | Duration = 10
 
 ___
 ### Move·To·Random·Room () {: aria-label='Functions' }
