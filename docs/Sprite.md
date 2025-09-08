@@ -324,11 +324,15 @@ TopLeftClamp and BottomRightClamp can be used to crop the sprite.
     ```
 ___
 ### Replace·Spritesheet () {: aria-label='Functions' }
-[ ](#){: .alldlc .tooltip .badge }
+[ ](#){: .abrep .tooltip .badge }
 #### void ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
+[ ](#){: .repplus .tooltip .badge }
+#### boolean ReplaceSpritesheet ( int LayerId, string PngFilename ) {: .copyable aria-label='Functions' }
 Changes the ".png" file associated with a specific layer of a sprite. This does not change other layers using the ".png" file that is being replaced.
 
 After replacing a spritesheet, you must call the `Sprite.LoadGraphics` method afterwards.
+
+In Repentance+, this returns `true` if the spritesheet at the given layer id was successfully replaced *and* if the new spritesheet is not the same as the old one, otherwise returns `false`.
 
 ???- example "Example Code"
     This code creates a new sprite object and replaces the spritesheet of layer 0 of a sprite object with a different spritesheet.
