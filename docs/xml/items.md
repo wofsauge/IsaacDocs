@@ -31,7 +31,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/3mub9c/ways_t
 | cooldown | int | Number of frames until this item's associated CollectibleEffect is auto-removed if granted. CollectibleEffects are automatically granted by active items on use. |
 | passivecache | bool | Calls a cache evaluation when picked up (used for acive items, e.g. Mom's Box). |
 | special | bool |  |
-| initcharge | int | How many charges should this active item have when first picked up (e.g. Everything Jar[ ](#){: .rep .tooltip .badge }). |
+| initcharge | int | How many charges should this active item have when first picked up (e.g. Everything Jar[ ](#){: .reporplus .tooltip .badge }). |
 | devilprice | int | Possible values: ['1','2'] |
 | shopprice | int |  |
 | addcostumeonpickup | bool |  |

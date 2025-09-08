@@ -19,7 +19,7 @@ tags:
 
 ## Variables
 ### Allowed·Doors {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### DoorSet AllowedDoors  {: .copyable aria-label='Variables' }
 Contains data swapped just on load (in cases like minibosses, or other such events)
 
@@ -27,42 +27,42 @@ Contains data swapped just on load (in cases like minibosses, or other such even
     This variable contains userdata and is therefore not useable.
 ___
 ### Award·Seed {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int AwardSeed  {: .copyable aria-label='Variables' }
 used to spawn clear awards (normal, miniboss, boss rooms) and initialize shop items (shop, devil rooms)
 ___
 ### Challenge·Done {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean ChallengeDone  {: .copyable aria-label='Variables' }
 
 ___
 ### Clear {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean Clear  {: .copyable aria-label='Variables' }
 
 ___
 ### Clear·Count {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int ClearCount  {: .copyable aria-label='Variables' }
 room is clear, don't spawn enemies when visiting
 ___
 ### Data {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RoomConfigRoom](RoomConfig_Room.md) Data  {: .copyable aria-label='Variables' }
 
 ___
 ### Decoration·Seed {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int DecorationSeed  {: .copyable aria-label='Variables' }
 used for cosmetic stuff like backdrops, room decorations, shopkeeper skins
 ___
 ### Delirium·Distance {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int DeliriumDistance  {: .copyable aria-label='Variables' }
 Helper for The Void stage, holds the distance to the Delirium boss in room nr.
 ___
 ### Display·Flags {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int DisplayFlags  {: .copyable aria-label='Variables' }
 
 Indicates what is visible on the minimap.
@@ -96,12 +96,12 @@ Indicates what is visible on the minimap.
     010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100.
 ___
 ### Flags {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RoomDescriptor](enums/RoomDescriptor.md) Flags  {: .copyable aria-label='Variables' }
 The RoomDescriptor flags for the room.
 ___
 ### Grid·Index {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int GridIndex  {: .copyable aria-label='Variables' }
 
 - For a 1x1 room, this is equal to the 1x1 grid index of the room.
@@ -114,12 +114,12 @@ ___
     ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Has·Water {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean HasWater  {: .copyable aria-label='Variables' }
 
 ___
 ### List·Index {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int ListIndex  {: .copyable aria-label='Variables' }
 
 The index for this room corresponding to the `Level.GetRooms().Get()` method. In other words, this is equal to the order that the room was created by the floor generation algorithm.
@@ -128,37 +128,37 @@ Use this as an index for data structures that store data per room, since it is u
 
 ___
 ### No·Reward {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean NoReward  {: .copyable aria-label='Variables' }
 
 ___
 ### Override·Data {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### [RoomConfigRoom](RoomConfig_Room.md) OverrideData  {: .copyable aria-label='Variables' }
 The room variant is in Data. Because Room::Init uses a mix of data, one from level layout and one from replacement data like minibosses, we need to hold the new room data somewhere.
 ___
 ### Pits·Count {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int PitsCount  {: .copyable aria-label='Variables' }
 
 ___
 ### Poop·Count {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int PoopCount  {: .copyable aria-label='Variables' }
 
 ___
 ### Pressure·Plates·Triggered {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean PressurePlatesTriggered  {: .copyable aria-label='Variables' }
 
 ___
 ### Sacrifice·Done {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean SacrificeDone  {: .copyable aria-label='Variables' }
 
 ___
 ### Safe·Grid·Index {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int SafeGridIndex  {: .copyable aria-label='Variables' }
 
 - For a 1x1 room, this is equal to the 1x1 grid index of the room.
@@ -171,7 +171,7 @@ ___
     ![Room Grid indices](images/infographics/RoomGridIndices.png)
 ___
 ### Shop·Item·Discount·Idx {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int ShopItemDiscountIdx  {: .copyable aria-label='Variables' }
 - The index that denotes which shop item(s) will be discounted.
 - Can be a value from -1 to 7.
@@ -199,7 +199,7 @@ room:Update()
 
 ___
 ### Shop·Item·Idx {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int ShopItemIdx  {: .copyable aria-label='Variables' }
 - The ShopItemId value of the next shop item to add to the room.
     - If this is set to 1 in a Room and another shop item is created, the new item will have a ShopItemId of 1, and the Room's ShopItemIdx will then be 2.
@@ -232,16 +232,16 @@ room:Update()
     ![ShopItemIdx Example](images/shopItemIdxDiagram.png)
 ___
 ### Spawn·Seed {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int SpawnSeed  {: .copyable aria-label='Variables' }
 used to spawn entities at room load and initialize enemy drop seeds
 ___
 ### Surprise·Miniboss {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### boolean SurpriseMiniboss  {: .copyable aria-label='Variables' }
 ___
 ### Visited·Count {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int VisitedCount  {: .copyable aria-label='Variables' }
 how often the room has been visited
 ___

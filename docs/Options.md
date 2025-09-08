@@ -22,77 +22,77 @@ tags:
 
 ## Variables
 ### Announcer·Voice·Mode {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int AnnouncerVoiceMode  {: .copyable aria-label='Variables' }
 0: random, 1: off, 2: always on
 
 ___
 ### Bullet·Visibility {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean BulletVisibility  {: .copyable aria-label='Variables' }
 
 ___
 ### Camera·Style {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int CameraStyle  {: .copyable aria-label='Variables' }
 active cam 1: on, 2: off
 
 ___
 ### Charge·Bars {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean ChargeBars  {: .copyable aria-label='Variables' }
 
 ___
 ### Console·Font {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int ConsoleFont  {: .copyable aria-label='Variables' }
 0: default, 1: small, 2: tiny
 
 ___
 ### Debug·Console·Enabled {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean DebugConsoleEnabled  {: .copyable aria-label='Variables' }
 
 ___
 ### Display·Popups {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean DisplayPopups  {: .copyable aria-label='Variables' }
 
 ___
 ### Extra·HUD·Style {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int ExtraHUDStyle  {: .copyable aria-label='Variables' }
 0: off, 1: on, 2: mini
 
 ___
 ### Faded·Console·Display {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean FadedConsoleDisplay  {: .copyable aria-label='Variables' }
 
 ___
 ### Filter {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean Filter  {: .copyable aria-label='Variables' }
 
 ___
 ### Found·HUD {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean FoundHUD  {: .copyable aria-label='Variables' }
 
 ___
 ### Fullscreen {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean Fullscreen  {: .copyable aria-label='Variables' }
 
 ___
 ### Gamma {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float Gamma  {: .copyable aria-label='Variables' }
 0.5-1.5
 
 ___
 ### HUD·Offset {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float HUDOffset  {: .copyable aria-label='Variables' }
 0-1
 
@@ -106,36 +106,36 @@ Added with Repentance+.
 
 ___
 ### Language {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### string Language  {: .copyable aria-label='Variables' }
 Read only
 
 ___
 ### Map·Opacity {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float MapOpacity  {: .copyable aria-label='Variables' }
 0-1
 
 ___
 ### Max·Render·Scale {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int MaxRenderScale  {: .copyable aria-label='Variables' }
 1-99
 
 ___
 ### Max·Scale {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int MaxScale  {: .copyable aria-label='Variables' }
 1-99
 
 ___
 ### Mouse·Control {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean MouseControl  {: .copyable aria-label='Variables' }
 
 ___
 ### Music·Volume {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float MusicVolume  {: .copyable aria-label='Variables' }
 0-1
 
@@ -143,22 +143,22 @@ Attempting to set this to anything other than 0 or 1 will result in a bugged val
 
 ___
 ### Pause·On·Focus·Lost {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean PauseOnFocusLost  {: .copyable aria-label='Variables' }
 
 ___
 ### Rumble·Enabled {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean RumbleEnabled  {: .copyable aria-label='Variables' }
 
 ___
 ### Save·Command·History {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean SaveCommandHistory  {: .copyable aria-label='Variables' }
 
 ___
 ### SFX·Volume {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float SFXVolume  {: .copyable aria-label='Variables' }
 0-1
 
@@ -166,13 +166,13 @@ Attempting to set this to anything other than 0 or 1 will result in a bugged val
 
 ___
 ### Use·Borderless·Fullscreen {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean UseBorderlessFullscreen  {: .copyable aria-label='Variables' }
 Only takes effect if Fullscreen is also true.
 
 ___
 ### VSync {: aria-label='Variables' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean VSync  {: .copyable aria-label='Variables' }
 
 ___

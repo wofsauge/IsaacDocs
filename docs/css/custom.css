@@ -17,6 +17,7 @@
     --abp-color: #FDD835;
     --rep-color: #F44336;
     --repplus-color: #ff85e6;
+    --alldlc-color: #47a5fd;
     --md-typeset-mark-text-color: #000000;
 }
 
@@ -177,6 +178,14 @@ a.repplus.tooltip:after {
     content: "Only compatible with Repentance+";
 }
 
+.abrep::before {
+    content: "AB+ | Rep";
+}
+
+a.abrep.tooltip:after {
+    content: "Compatible with Afterbirth+ and Repentance";
+}
+
 .abrep {
     background: var(--abp-color);
     background: -moz-linear-gradient(90deg, var(--abp-color) 0%, var(--abp-color) 50%, var(--rep-color) 50%, var(--rep-color) 100%);
@@ -185,12 +194,32 @@ a.repplus.tooltip:after {
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--abp-color), endColorstr=var(--rep-color), GradientType=1);
 }
 
-.abrep::before {
-    content: "AB+ | Rep";
+.reporplus::before {
+    content: "Rep | Rep+";
 }
 
-a.abrep.tooltip:after {
-    content: "Compatible with Afterbirth+ and Repentance";
+a.reporplus.tooltip:after {
+    content: "Compatible with Repentance and Repentance+";
+}
+
+.reporplus {
+    background: var(--rep-color);
+    background: -moz-linear-gradient(90deg, var(--rep-color) 0%, var(--rep-color) 50%, var(--repplus-color) 50%, var(--repplus-color) 100%);
+    background: -webkit-linear-gradient(90deg, var(--rep-color) 0%, var(--rep-color) 50%, var(--repplus-color) 50%, var(--repplus-color) 100%);
+    background: linear-gradient(90deg, var(--rep-color) 0%, var(--rep-color) 50%, var(--repplus-color) 50%, var(--repplus-color) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=var(--rep-color), endColorstr=var(--repplus-color), GradientType=1);
+}
+
+.alldlc {
+    background-color: var(--alldlc-color);
+}
+
+.alldlc::before {
+    content: "All DLCs";
+}
+
+a.alldlc.tooltip:after {
+    content: "Compatible with Afterbirth+, Repentance, and Repentance+";
 }
 
 .static {

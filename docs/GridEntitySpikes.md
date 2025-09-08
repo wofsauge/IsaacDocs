@@ -16,7 +16,7 @@ tags:
 --8<-- "docs/snippets/GridEntityClassDiagram.md"
 ## Variables
 ### Timeout {: aria-label='Variables' }
-[ ](#){: .abrep .tooltip .badge }
+[ ](#){: .alldlc .tooltip .badge }
 #### int Timeout  {: .copyable aria-label='Variables' }
 
 ___

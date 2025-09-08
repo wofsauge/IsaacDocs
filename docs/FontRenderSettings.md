@@ -90,6 +90,6 @@ ___
 ### Set·Missing·Character·Override () {: aria-label='Functions' }
 [ ](#){: .repplus .tooltip .badge }
 #### void SetMissingCharacterOverride ( int character ) {: .copyable aria-label='Functions' }
-Sets the character that will be used when a character missing in the font is attempted to be rendered. This overrides previous [Font:SetMissingCharacter()](Font.md#setmissingcharacter) settings.
+Sets the default character used when a character that needs to be rendered is missing. This overrides previous [Font:SetMissingCharacter()](Font.md#setmissingcharacter) settings.
 
 ___
