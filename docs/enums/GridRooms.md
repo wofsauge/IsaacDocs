@@ -37,8 +37,11 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|-16 |ROOM_BLUE_ROOM_IDX {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-17 |ROOM_EXTRA_BOSS_IDX {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-18 |ROOM_ANGEL_SHOP_IDX {: .copyable } | Stairway room |
+|[ ](#){: .repplus .tooltip .badge }|-19 |ROOM_DEATHMATCH_IDX {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|-20 |ROOM_LIL_PORTAL_IDX {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-100 |ROOM_MIRROR_IDX {: .copyable } | Not real room index, doors that point to this have special behavior |
 |[ ](#){: .reporplus .tooltip .badge }|-101 |ROOM_MINESHAFT_IDX {: .copyable } | Not real room index, doors that point to this have special behavior |
-|[ ](#){: .reporplus .tooltip .badge }|18 |NUM_OFF_GRID_ROOMS {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|18 |NUM_OFF_GRID_ROOMS {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|20 |NUM_OFF_GRID_ROOMS {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|507 |MAX_GRID_ROOMS {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|525 |MAX_ROOMS {: .copyable } |  |

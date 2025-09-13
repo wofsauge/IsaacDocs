@@ -205,3 +205,8 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|197 |DEAD_BIRD {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|198 |GENERIC_TRACER {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|199 |ULTRA_DEATH_SCYTHE {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|200 |BULLET_POOF_STATIC {: .copyable } | This is an effect variant from Repentance that didn't have an enum until Repentance+ |
+|[ ](#){: .repplus .tooltip .badge }|201 |UMBILICAL_CORD_HELPER {: .copyable } | This is an effect variant from Repentance that didn't have an enum until Repentance+ |
+|[ ](#){: .repplus .tooltip .badge }|202 |MEGA_BEAN_EXPLOSION {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|203 |SPAWN_PENTAGRAM {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|204 |PLAYER_CREEP_YELLOW {: .copyable } |  |

@@ -35,4 +35,6 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|27 |ROOM_SECRET_EXIT {: .copyable } |  | Trapdoor room to the alt path floors |
 |[ ](#){: .reporplus .tooltip .badge }|28 |ROOM_BLUE {: .copyable } |  | Blue Womb rooms spawned by Blue Key |
 |[ ](#){: .reporplus .tooltip .badge }|29 |ROOM_ULTRASECRET {: .copyable } | ![img](../images/roomtypes/29.png) | Red secret rooms |
-|[ ](#){: .reporplus .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  |
+|[ ](#){: .rep .tooltip .badge }|30 |NUM_ROOMTYPES {: .copyable } |  |  |
+|[ ](#){: .repplus .tooltip .badge }|30 |ROOM_DEATHMATCH {: .copyable } |  |  |
+|[ ](#){: .repplus .tooltip .badge }|31 |NUM_ROOMTYPES {: .copyable } |  |  |
