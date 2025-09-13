@@ -47,6 +47,8 @@ ___
 
     If **DefaultItem** is set to anything other than CollectibleType.COLLECTIBLE_NULL, this entire process (excluding the potential Magic Skin or Rosary modification) is skipped, and the specified collectible is returned instead.
 
+???+ bug "Bugs"
+    This method currently causes the game to crash since Repentance+ v1.9.7.13
 ___
 ### Get·Last·Pool () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
