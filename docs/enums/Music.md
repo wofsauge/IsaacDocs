@@ -103,4 +103,6 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|116 |MUSIC_MINESHAFT_AMBIENT {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|117 |MUSIC_MINESHAFT_ESCAPE {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|118 |MUSIC_REVERSE_GENESIS {: .copyable } |  |
-|[ ](#){: .reporplus .tooltip .badge }|119 |NUM_MUSIC {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|119 |NUM_MUSIC {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|119 |MUSIC_DEATHMATCH {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|120 |NUM_MUSIC {: .copyable } |  |
