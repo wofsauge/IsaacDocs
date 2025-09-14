@@ -278,10 +278,14 @@ Makes the friction higher, effectively slowing down the entity.
     ```
 ___
 ### Add·Velocity () {: aria-label='Functions' }
-[ ](#){: .alldlc .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### void AddVelocity ( [Vector](Vector.md) Velocity ) {: .copyable aria-label='Functions' }
+[ ](#){: .reporplus .tooltip .badge }
+#### void AddVelocity ( [Vector](Vector.md) Velocity, boolean IgnoreTimeScale = false ) {: .copyable aria-label='Functions' }
 
-Adds velocity to the entity. This can be used to move him in a certain direction (for example as a result of collision)
+Adds velocity to the entity. This can be used to move him in a certain direction (for example as a result of collision)ù
+
+- **IgnoreTimeScale** - if true, the added velocity will ignore effects that cause the entity to slow down or speed up (such as Stopwatch)
 ___
 ### Blood·Explode () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
