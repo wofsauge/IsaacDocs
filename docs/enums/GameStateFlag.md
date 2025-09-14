@@ -55,4 +55,9 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|46 |STATE_MAUSOLEUM_HEART_KILLED {: .copyable } | set when Mom's Heart has been killed in the Mausoleum |
 |[ ](#){: .reporplus .tooltip .badge }|47 |STATE_BACKWARDS_PATH_INIT {: .copyable } | set when entering Mausoleum/Gehenna II through the photo door, causes Dad's Note to spawn instead of the Mom boss room |
 |[ ](#){: .reporplus .tooltip .badge }|48 |STATE_BACKWARDS_PATH {: .copyable } | set during the Ascent |
-|[ ](#){: .reporplus .tooltip .badge }|49 |NUM_STATE_FLAGS {: .copyable } |  |
+|[ ](#){: .rep .tooltip .badge }|49 |NUM_STATE_FLAGS {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|49 |STATE_MEGA_SATAN_DOOR_OPENED {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|50 |STATE_URIEL_KILLED {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|51 |STATE_GABRIEL_KILLED {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|52 |STATE_MOTHER_HEART_DOOR_OPENED {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|53 |NUM_STATE_FLAGS {: .copyable } |  |
