@@ -283,9 +283,9 @@ ___
 [ ](#){: .reporplus .tooltip .badge }
 #### void AddVelocity ( [Vector](Vector.md) Velocity, boolean IgnoreTimeScale = false ) {: .copyable aria-label='Functions' }
 
-Adds velocity to the entity. This can be used to move him in a certain direction (for example as a result of collision)ù
+Adds velocity to the entity. This can be used to move him in a certain direction (for example as a result of collision)
 
-- **IgnoreTimeScale** - if true, the added velocity will ignore effects that cause the entity to slow down or speed up (such as Stopwatch)
+- **IgnoreTimeScale** - if true, TimeScale is treated as if it were 1.0, ignoring effects that would otherwise slow down or speed up the entity (e.g. Stopwatch)
 ___
 ### Blood·Explode () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
