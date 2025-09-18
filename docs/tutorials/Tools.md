@@ -4,10 +4,14 @@ tags:
 ---
 # Modding Tools
 
+## Modding Websites
+* [Isaac Blueprints](https://isaacblueprints.com/) : Collection of Modding tutorials, blueprints and helpful tools
+* [Modding Of Isaac Wiki](https://moddingofisaac.wiki.gg/wiki/Modding_of_Isaac_Wiki) : Wiki that contains Wikis for Isaac Mods
+
 
 ## General
-
 * [Basement Renovator](https://github.com/Tempus/Basement-Renovator) : Powerful and intuitive Level and Room Editor
+* [Anm2ed](https://github.com/ShweetsStuff/anm2ed) : A reimplementation of The Binding of Isaac: Rebirth's proprietary animation editor. Manipulates the XML-based ".anm2" format, used for in-game tweened animations. Developed by ShweetsStuff
 * [Backdrop Previewer](https://redd.it/8wmzu6) : Tool to preview Room-Backdrops
 * [Log Viewer](https://github.com/pipe01/abp-log) : Tool to display a live - view the Logfile
 * [Rebirth Item Tracker](https://github.com/Hyphen-ated/RebirthItemTracker) : External tool that displays Item-informations about your current run
