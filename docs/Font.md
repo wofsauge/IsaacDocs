@@ -61,7 +61,7 @@ The `BoxWidth` and `Center` parameters can be used for aligning the text. Some t
 
 ___
 ### Draw·String·Scaled () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void DrawStringScaled ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](KColor.md) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Converts UTF8 to UTF16, then draws the scaled string on the screen.
 
@@ -78,7 +78,7 @@ Converts UTF8 to UTF16, then draws the scaled string on the screen.
 
 ___
 ### Draw·String·Scaled·UTF8 () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void DrawStringScaledUTF8 ( string String, float PositionX, float PositionY, float ScaleX, float ScaleY, [KColor](KColor.md) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a scaled string of Unicode text on the screen.
 
@@ -95,7 +95,7 @@ Draws a scaled string of Unicode text on the screen.
 
 ___
 ### Draw·String·UTF8 () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void DrawStringUTF8 ( string String, float PositionX, float PositionY, [KColor](KColor.md) RenderColor, int BoxWidth = 0, boolean Center = false ) {: .copyable aria-label='Functions' }
 Draws a string of Unicode text on the screen.
 

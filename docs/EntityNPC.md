@@ -97,7 +97,7 @@ ___
 For entities with unique death animation, like Flush! vs poop enemies.
 ___
 ### Make·Champion () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void MakeChampion ( int Seed, ChampionColor ChampionColorIdx = -1, boolean Init = false ) {: .copyable aria-label='Functions' }
 Forces a non champion to become a champion, resets hp to max hp.
 

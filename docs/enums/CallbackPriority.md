@@ -6,7 +6,7 @@ tags:
 
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .rep .tooltip .badge }|-200 |IMPORTANT {: .copyable } | |
-|[ ](#){: .rep .tooltip .badge }|-100 |EARLY {: .copyable } | |
-|[ ](#){: .rep .tooltip .badge }|0 |DEFAULT {: .copyable } | |
-|[ ](#){: .rep .tooltip .badge }|100 |LATE {: .copyable } | |
+|[ ](#){: .reporplus .tooltip .badge }|-200 |IMPORTANT {: .copyable } | |
+|[ ](#){: .reporplus .tooltip .badge }|-100 |EARLY {: .copyable } | |
+|[ ](#){: .reporplus .tooltip .badge }|0 |DEFAULT {: .copyable } | |
+|[ ](#){: .reporplus .tooltip .badge }|100 |LATE {: .copyable } | |

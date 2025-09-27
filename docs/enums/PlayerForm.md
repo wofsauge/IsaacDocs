@@ -18,6 +18,6 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|10 |PLAYERFORM_BOOK_WORM {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|11 |PLAYERFORM_ADULTHOOD {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|12 |PLAYERFORM_SPIDERBABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|13 |PLAYERFORM_STOMPY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|14 |PLAYERFORM_FLIGHT {: .copyable } | AB+, unused |
-|[ ](#){: .rep .tooltip .badge }|15 |NUM_PLAYER_FORMS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|13 |PLAYERFORM_STOMPY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|14 |PLAYERFORM_FLIGHT {: .copyable } | AB+, unused |
+|[ ](#){: .reporplus .tooltip .badge }|15 |NUM_PLAYER_FORMS {: .copyable } |  |

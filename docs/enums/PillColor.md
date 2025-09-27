@@ -19,8 +19,8 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|11 |PILL_BLACK_YELLOW {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|12 |PILL_WHITE_BLACK {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|13 |PILL_WHITE_YELLOW {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|14 |NUM_STANDARD_PILLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|14 |PILL_GOLD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|15 |NUM_PILLS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 11 |PILL_GIANT_FLAG {: .copyable } | 2048 |
-|[ ](#){: .rep .tooltip .badge }|(1 << 11) - 1 |PILL_COLOR_MASK {: .copyable } | 2047, Used for horsepills |
+|[ ](#){: .reporplus .tooltip .badge }|14 |NUM_STANDARD_PILLS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|14 |PILL_GOLD {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|15 |NUM_PILLS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 11 |PILL_GIANT_FLAG {: .copyable } | 2048 |
+|[ ](#){: .reporplus .tooltip .badge }|(1 << 11) - 1 |PILL_COLOR_MASK {: .copyable } | 2047, Used for horsepills |

@@ -117,7 +117,7 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|118 |ANGRY_FLY {: .copyable } | Booster Pack #1 |
 |[ ](#){: .alldlc .tooltip .badge }|119 |BUDDY_IN_A_BOX {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|120 |SPRINKLER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|121 |LEPROSY {: .copyable } | (ab+: LEPROCY) |
+|[ ](#){: .reporplus .tooltip .badge }|121 |LEPROSY {: .copyable } | (ab+: LEPROCY) |
 |[ ](#){: .alldlc .tooltip .badge }|122 |LIL_HARBINGERS {: .copyable } | Booster Pack #3 |
 |[ ](#){: .alldlc .tooltip .badge }|123 |ANGELIC_PRISM {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|124 |MYSTERY_EGG {: .copyable } | Booster Pack #5 |
@@ -127,45 +127,45 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|128 |BONE_ORBITAL {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|129 |HALLOWED_GROUND {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|130 |JAW_BONE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|200 |INTRUDER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|201 |DIP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|202 |DAMOCLES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|203 |BLOOD_OATH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|204 |PSY_FLY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|205 |MENORAH {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|206 |WISP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|207 |PEEPER_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|208 |BOILED_BABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|209 |FREEZER_BABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|210 |BIRD_CAGE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|211 |LOST_SOUL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|212 |LIL_DUMPY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|213 |KNIFE_PIECE_1 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|214 |KNIFE_PIECE_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|216 |TINYTOMA {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|217 |TINYTOMA_2 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|218 |BOT_FLY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|220 |SIREN_MINION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|221 |PASCHAL_CANDLE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|222 |STITCHES {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|223 |KNIFE_FULL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|224 |BABY_PLUM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|225 |FRUITY_PLUM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|226 |SPIN_TO_WIN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|228 |MINISAAC {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|229 |SWARM_FLY_ORBITAL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|230 |LIL_ABADDON {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|231 |ABYSS_LOCUST {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|232 |LIL_PORTAL {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|233 |WORM_FRIEND {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|234 |BONE_SPUR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|235 |TWISTED_BABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|236 |STAR_OF_BETHLEHEM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|237 |ITEM_WISP {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|238 |BLOOD_BABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|239 |CUBE_BABY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|240 |UMBILICAL_BABY {: .copyable } | Gello |
-|[ ](#){: .rep .tooltip .badge }|241 |BLOOD_PUPPY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|242 |VANISHING_TWIN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|243 |DECAP_ATTACK {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|900 |FORGOTTEN_BODY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|200 |INTRUDER {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|201 |DIP {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|202 |DAMOCLES {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|203 |BLOOD_OATH {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|204 |PSY_FLY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|205 |MENORAH {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|206 |WISP {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|207 |PEEPER_2 {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|208 |BOILED_BABY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|209 |FREEZER_BABY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|210 |BIRD_CAGE {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|211 |LOST_SOUL {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|212 |LIL_DUMPY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|213 |KNIFE_PIECE_1 {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|214 |KNIFE_PIECE_2 {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|216 |TINYTOMA {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|217 |TINYTOMA_2 {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|218 |BOT_FLY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|220 |SIREN_MINION {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|221 |PASCHAL_CANDLE {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|222 |STITCHES {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|223 |KNIFE_FULL {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|224 |BABY_PLUM {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|225 |FRUITY_PLUM {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|226 |SPIN_TO_WIN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|228 |MINISAAC {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|229 |SWARM_FLY_ORBITAL {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|230 |LIL_ABADDON {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|231 |ABYSS_LOCUST {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|232 |LIL_PORTAL {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|233 |WORM_FRIEND {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|234 |BONE_SPUR {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|235 |TWISTED_BABY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|236 |STAR_OF_BETHLEHEM {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|237 |ITEM_WISP {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|238 |BLOOD_BABY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|239 |CUBE_BABY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|240 |UMBILICAL_BABY {: .copyable } | Gello |
+|[ ](#){: .reporplus .tooltip .badge }|241 |BLOOD_PUPPY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|242 |VANISHING_TWIN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|243 |DECAP_ATTACK {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|900 |FORGOTTEN_BODY {: .copyable } |  |

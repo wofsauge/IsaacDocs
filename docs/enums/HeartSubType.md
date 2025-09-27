@@ -16,4 +16,4 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|9 |HEART_SCARED {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|10 |HEART_BLENDED {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|11 |HEART_BONE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|12 |HEART_ROTTEN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|12 |HEART_ROTTEN {: .copyable } |  |

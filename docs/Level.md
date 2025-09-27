@@ -59,7 +59,7 @@ ___
 
 ___
 ### Change·Room () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void ChangeRoom ( int RoomIndex, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 ???+ bug "Bugs"
@@ -173,7 +173,7 @@ ___
 
 ___
 ### Get·Name () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### string GetName ( ) {: .copyable aria-label='Functions' }
 
 ___
@@ -183,7 +183,7 @@ ___
 
 ___
 ### Get·Planetarium·Chance () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### float GetPlanetariumChance ( ) {: .copyable aria-label='Functions' }
 Returns the probability of getting a Planetarium (in the 0-1 range)
 
@@ -199,7 +199,7 @@ ___
 
 ___
 ### Get·Room·By·Idx () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### [RoomDescriptor](RoomDescriptor.md) GetRoomByIdx ( int RoomIdx, int Dimension = -1 ) {: .copyable aria-label='Functions' }
 
 ???- example "Example Code"
@@ -249,7 +249,11 @@ ___
 ### Get·Stage·Type () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [StageType](enums/StageType.md) GetStageType ( ) {: .copyable aria-label='Functions' }
+The [StageType](enums/StageType.md) describes the variant of the current stage.
 
+For example, the available stage variants of Stage 1 and 2 are: Basement (StageType=0), Cellar (StageType=1), Burning Basement (StageType=2), Downpour (StageType=4), Dross (StageType=5)
+
+Using this function in a stage without a variant (for example: The Void) will always return 0.
 ___
 ### Get·Starting·Room·Index () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
@@ -287,7 +291,7 @@ Returns `true` if the level's [StageType](enums/StageType.md) is not `StageType.
 
 ___
 ### Is·Ascent () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsAscent ( ) {: .copyable aria-label='Functions' }
 Returns `true` if the player is in the Ascent.
 
@@ -304,13 +308,13 @@ Returns `false` if on a final floor (Chest/Dark Room, The Void, Home). Returns `
 
 ___
 ### Is·Pre·Ascent () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsPreAscent ( ) {: .copyable aria-label='Functions' }
 Returns `true` if the player is in the version of Mausoleum/Gehenna II leading to the Ascent.
 
 ___
 ### Make·Red·Room·Door () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean MakeRedRoomDoor ( int CurrentRoomIdx, DoorSlot Slot ) {: .copyable aria-label='Functions' }
 Attempts to create a red room door in the given room at the given door slot. Returns `true` on success.
 
@@ -320,7 +324,7 @@ Attempts to create a red room door in the given room at the given door slot. Ret
 	Rooms can also be forced to be created by setting [Challenge](Game.md#challenge) to Red Redemption (`Challenge.CHALLENGE_RED_REDEMPTION`). Note that creating a room connected to an otherwise invalid slot will cause the door to lead to an Error room!
 ___
 ### Query·Room·Type·Index () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### int QueryRoomTypeIndex ( [RoomType](enums/RoomType.md) RoomType, boolean Visited, [RNG](RNG.md) rng, boolean IgnoreGroup = false ) {: .copyable aria-label='Functions' }
 IgnoreGroup: If set to `true`, includes rooms that do not have the same group ID as the current room (currently unused)
 ___
@@ -330,7 +334,7 @@ ___
 
 ___
 ### Remove·Curses () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void RemoveCurses ( [LevelCurse](enums/LevelCurse.md) Curses ) {: .copyable aria-label='Functions' }
 Curses: A bitmask of LevelCurse that indicates which curses will be removed
 

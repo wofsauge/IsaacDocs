@@ -20,8 +20,8 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|1 << 8 |CACHE_WEAPON {: .copyable } | |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 9 |CACHE_FAMILIARS {: .copyable } | |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 10 |CACHE_LUCK {: .copyable } | |
-|[ ](#){: .rep .tooltip .badge }|1 << 11 |CACHE_SIZE {: .copyable } | invalidates player size |
-|[ ](#){: .rep .tooltip .badge }|1 << 12 |CACHE_COLOR {: .copyable } | invalidates player color |
-|[ ](#){: .rep .tooltip .badge }|1 << 13 |CACHE_PICKUP_VISION {: .copyable } | invalidates effects that predict pickup drops (i.e. Guppy's Eye) |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 11 |CACHE_SIZE {: .copyable } | invalidates player size |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 12 |CACHE_COLOR {: .copyable } | invalidates player color |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 13 |CACHE_PICKUP_VISION {: .copyable } | invalidates effects that predict pickup drops (i.e. Guppy's Eye) |
 |[ ](#){: .alldlc .tooltip .badge }|(1 << 16) - 1 |CACHE_ALL {: .copyable } | |
-|[ ](#){: .rep .tooltip .badge }|1 << 31 |CACHE_TWIN_SYNC {: .copyable } | special cache flag used when syncing Jacob and Esau's speed |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 31 |CACHE_TWIN_SYNC {: .copyable } | special cache flag used when syncing Jacob and Esau's speed |

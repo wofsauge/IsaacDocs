@@ -22,7 +22,8 @@ search:
 ## Variables
 ### Difficulty {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
-#### const [Difficulty](enums/Difficulty.md) Difficulty {: .copyable aria-label='Variables' }
+#### const int Difficulty {: .copyable aria-label='Variables' }
+The difficulty of the room, as defined in the room editor. Typically either 5, 10, 15, or 20 for Void rooms, although mods can add rooms with any difficulty. Difficulty 0 means this room cannot show up naturally.
 
 ___
 ### Doors {: aria-label='Variables' }
@@ -54,7 +55,7 @@ ___
 
 ___
 ### Mode {: aria-label='Variables' }
-[ ](#){: .const .tooltip .badge } [ ](#){: .rep .tooltip .badge }
+[ ](#){: .const .tooltip .badge } [ ](#){: .reporplus .tooltip .badge }
 #### const userdata Mode  {: .copyable aria-label='Variables' }
 ???+ bug "Bug"
     This variable is broken and returns userdata.
@@ -121,15 +122,15 @@ The ID of the stage the room was designed for.
 	|[ ](#){: .alldlc .tooltip .badge }|24 |The Shop |  |
 	|[ ](#){: .alldlc .tooltip .badge }|25 |Ultra Greed |  |
 	|[ ](#){: .alldlc .tooltip .badge }|26 |The Void |  |
-	|[ ](#){: .rep .tooltip .badge }|27 |Downpour |  |
-	|[ ](#){: .rep .tooltip .badge }|28 |Dross |  |
-	|[ ](#){: .rep .tooltip .badge }|29 |Mines |  |
-	|[ ](#){: .rep .tooltip .badge }|30 |Ashpit |  |
-	|[ ](#){: .rep .tooltip .badge }|31 |Mausoleum |  |
-	|[ ](#){: .rep .tooltip .badge }|32 |Gehenna |  |
-	|[ ](#){: .rep .tooltip .badge }|33 |Corpse |  |
-	|[ ](#){: .rep .tooltip .badge }|35 |Home |The Stage ID of 34 does not exist. |
-	|[ ](#){: .rep .tooltip .badge }|36 |Backwards |These rooms are used during the Ascent. |
+	|[ ](#){: .reporplus .tooltip .badge }|27 |Downpour |  |
+	|[ ](#){: .reporplus .tooltip .badge }|28 |Dross |  |
+	|[ ](#){: .reporplus .tooltip .badge }|29 |Mines |  |
+	|[ ](#){: .reporplus .tooltip .badge }|30 |Ashpit |  |
+	|[ ](#){: .reporplus .tooltip .badge }|31 |Mausoleum |  |
+	|[ ](#){: .reporplus .tooltip .badge }|32 |Gehenna |  |
+	|[ ](#){: .reporplus .tooltip .badge }|33 |Corpse |  |
+	|[ ](#){: .reporplus .tooltip .badge }|35 |Home |The Stage ID of 34 does not exist. |
+	|[ ](#){: .reporplus .tooltip .badge }|36 |Backwards |These rooms are used during the Ascent. |
 
 ___
 ### Subtype {: aria-label='Variables' }

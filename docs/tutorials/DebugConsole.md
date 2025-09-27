@@ -80,8 +80,13 @@ stage 1
 stage 10a
 stage 3b
 ```
+Format:
+**stage [LevelStage](../enums/LevelStage.md)[StageType(optional)](../enums/StageType.md)**
 
 Move to another floor on the same seed. You can use this to skip ahead to a later floor, go backwards to an earlier floor, or reset the current floor by entering the current floor's id. Entering nonexistent floors can crash the game.
+
+* [LevelStage](../enums/LevelStage.md) is a number between 1 and 13.
+* [StageType (optional)](../enums/StageType.md) is a letter. Valid inputs are: a,b,c and d. It describes the variant of the selected level. If no StageType is defined, the default variant is used ([StageType](../enums/StageType.md) = 0).
 
 ### **gridspawn**
 Syntax:
@@ -100,7 +105,7 @@ Various cheats that are useful for testing. Some of the ones not listed here are
 
 **debug 3** Complete invincibility
 
-**debug 4** +40 damage. Good with Soy Milk.
+**debug 4** +40 damage. Good with Soy Milk. (In Repentance/Repentance+, also causes all spawned trinkets to be golden)
 
 **debug 5** Displays text at the bottom of the screen about the current room
 

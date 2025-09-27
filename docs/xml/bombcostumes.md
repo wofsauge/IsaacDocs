@@ -3,7 +3,7 @@ tags:
   - File
 ---
 # File "bombcostumes.xml"
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 Used to apply costumes to bomb relative to their TearFlags.
 

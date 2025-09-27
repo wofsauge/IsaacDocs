@@ -14,48 +14,48 @@ tags:
 
 ## Functions
 ### Assign·Player·HUDs () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void AssignPlayerHUDs ( ) {: .copyable aria-label='Functions' }
 Refreshes the HUD (e.g. Characters that have Parent specified no longer show their health in the main HUD).
 ___
 ### Flash·Charge·Bar () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void FlashChargeBar ( [EntityPlayer](EntityPlayer.md) Player, [ActiveSlot](enums/ActiveSlot.md) ActiveSlot ) {: .copyable aria-label='Functions' }
 Causes the charge bar of the active item in the specified slot to blink as if it had gained charges
 
 ___
 ### Invalidate·Active·Item () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void InvalidateActiveItem ( [EntityPlayer](EntityPlayer.md) Player, [ActiveSlot](enums/ActiveSlot.md) ActiveSlot ) {: .copyable aria-label='Functions' }
 Forces the specified active item slot to update, this might be useful for functions that modify an active item slot without directly giving or removing items
 
 ___
 ### Invalidate·Crafting·Item () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void InvalidateCraftingItem ( [EntityPlayer](EntityPlayer.md) Player ) {: .copyable aria-label='Functions' }
 Forces the crafting output from Bag of Crafting to update (this might become useful in the future)
 
 ___
 ### Is·Visible () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### boolean IsVisible ( ) {: .copyable aria-label='Functions' }
 Returns false if HUD is invisible and true otherwise.
 ___
 ### Post·Update () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void PostUpdate ( ) {: .copyable aria-label='Functions' }
 ___
 ### Render () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Render ( ) {: .copyable aria-label='Functions' }
 ___
 ### Set·Visible () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void SetVisible ( boolean Visible = false ) {: .copyable aria-label='Functions' }
 Turns the HUD on or off.
 ___
 ### Show·Fortune·Text () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void ShowFortuneText ( string MainString, string SecondaryString, ... ) {: .copyable aria-label='Functions' }
 Allows to display fortune streak with text. Accepts unlimited amount of arguments.
 ___
@@ -108,5 +108,5 @@ end
 
 ___
 ### Update () {: aria-label='Functions' }
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 #### void Update ( ) {: .copyable aria-label='Functions' }

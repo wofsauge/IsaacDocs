@@ -32,13 +32,13 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|1 << 20 |DAMAGE_CHEST {: .copyable } | Damage comes from spiked chest <br> |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 21 |DAMAGE_FAKE {: .copyable } | Fake damage that should trigger player's damage effects. <br> |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 22 |DAMAGE_BOOGER {: .copyable } | Damage from booger tear <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 23 |DAMAGE_SPAWN_BLACK_HEART {: .copyable } | Should drop a black heart if damage is lethal <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 24 |DAMAGE_CRUSH {: .copyable } | Damage comes from a strong impact, can damage Tuff Twins or The Shells' stony exteriors (like Mom's foot, shockwaves, rock tears) <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 25 |DAMAGE_NO_MODIFIERS {: .copyable } | Ignore damage modifiers (such as doubled damage from the Womb and later floors or reduced damage from the Wafer) <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 26 |DAMAGE_SPAWN_RED_HEART {: .copyable } | Should drop a red heart if damage is lethal <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 27 |DAMAGE_SPAWN_COIN {: .copyable } | Should drop a coin if damage is lethal <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 28 |DAMAGE_NO_PENALTIES {: .copyable } | Damage shouldn't apply any penalties (such as devil deal chance) <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 29 |DAMAGE_SPAWN_TEMP_HEART {: .copyable } | Should drop a half red heart that quickly despawns if damage is lethal <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 30 |DAMAGE_IGNORE_ARMOR {: .copyable } | Damage ignores boss armor <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 31 |DAMAGE_SPAWN_CARD {: .copyable } | Should drop a card if damage is lethal <br> |
-|[ ](#){: .rep .tooltip .badge }|1 << 32 |DAMAGE_SPAWN_RUNE {: .copyable } | Should drop a rune if damage is lethal <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 23 |DAMAGE_SPAWN_BLACK_HEART {: .copyable } | Should drop a black heart if damage is lethal <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 24 |DAMAGE_CRUSH {: .copyable } | Damage comes from a strong impact, can damage Tuff Twins or The Shells' stony exteriors (like Mom's foot, shockwaves, rock tears) <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 25 |DAMAGE_NO_MODIFIERS {: .copyable } | Ignore damage modifiers (such as doubled damage from the Womb and later floors or reduced damage from the Wafer) <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 26 |DAMAGE_SPAWN_RED_HEART {: .copyable } | Should drop a red heart if damage is lethal <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 27 |DAMAGE_SPAWN_COIN {: .copyable } | Should drop a coin if damage is lethal <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 28 |DAMAGE_NO_PENALTIES {: .copyable } | Damage shouldn't apply any penalties (such as devil deal chance) <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 29 |DAMAGE_SPAWN_TEMP_HEART {: .copyable } | Should drop a half red heart that quickly despawns if damage is lethal <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 30 |DAMAGE_IGNORE_ARMOR {: .copyable } | Damage ignores boss armor <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 31 |DAMAGE_SPAWN_CARD {: .copyable } | Should drop a card if damage is lethal <br> |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 32 |DAMAGE_SPAWN_RUNE {: .copyable } | Should drop a rune if damage is lethal <br> |

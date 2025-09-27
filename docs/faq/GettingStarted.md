@@ -27,7 +27,49 @@ Watch [this video](https://www.youtube.com/watch?v=cJ68vYqzSm0) by LeatherIceCre
 
 In Afterbirth+, the debug console is enabled as long as you have at least one mod activated.
 
-In Repentance, the debug console is enabled according to the "EnableDebugConsole" setting in the options.ini file. By default, it is set to "0", so if you want to use the debug console, you must change it from "0" to "1". (By default, the options.ini file is located at `C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance\options.ini`.)
+In Repentance, the debug console is enabled according to the "EnableDebugConsole" setting in the options.ini file. By default, it is set to "0", so if you want to use the debug console, you must change it from "0" to "1". 
+The options.ini file is located here:
+
+=== ":fontawesome-brands-windows: **Windows**"
+
+    ```
+    Repentance+:
+    C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance+\options.ini
+    
+    Repentance:
+    C:\Users\[username]\Documents\My Games\Binding of Isaac Repentance\options.ini
+
+    Afterbirth+:
+    C:\Users\[username]\Documents\My Games\Binding of Isaac Afterbirth+\options.ini
+    ```
+
+=== ":fontawesome-brands-apple: **Mac OS**"
+
+    ```
+    Repentance+:
+    /Users/[username]/Library/Application Support/Binding of Isaac Repentance+\options.ini
+    
+    Repentance:
+    C/Users/[username]/Library/Application Support/Binding of Isaac Repentance\options.ini
+
+    Afterbirth+:
+    /Users/[username]/Library/Application Support/Binding of Isaac Afterbirth+/options.ini
+    ```
+
+=== ":fontawesome-brands-linux: **Linux**"
+
+    ```
+    Repentance+:
+    ~/.steam/steamapps/compatdata/250900/pfx/users/steamuser/Documents/My Games/Binding of Isaac Repentance+\options.ini
+    
+    Repentance:
+    ~/.steam/steamapps/compatdata/250900/pfx/users/steamuser/Documents/My Games/Binding of Isaac Repentance\options.ini
+
+    Afterbirth+:
+    ~/.steam/steamapps/compatdata/250900/pfx/users/steamuser/Documents/My Games/Binding of Isaac Afterbirth+/options.ini
+    ```
+    
+
 
 To open the console, press the **grave/tilde (~)** key while in a run. If you are on a non-English keyboard, see the [wiki page on the debug console](https://bindingofisaacrebirth.gamepedia.com/Debug_Console) for more information.
 

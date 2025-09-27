@@ -12,4 +12,4 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|4 |GRIDCOLL_BULLET {: .copyable } | detect collision with solids (no pits), don't correct position |
 |[ ](#){: .alldlc .tooltip .badge }|5 |GRIDCOLL_GROUND {: .copyable } | collide with all grid entities (rocks, pits, ..), correct position |
 |[ ](#){: .alldlc .tooltip .badge }|6 |GRIDCOLL_NOPITS {: .copyable } | collide with all grid entities except pits and correct position |
-|[ ](#){: .rep .tooltip .badge }|7 |GRIDCOLL_PITSONLY {: .copyable } | moving inside a pit, collide with everything else, correct position |
+|[ ](#){: .reporplus .tooltip .badge }|7 |GRIDCOLL_PITSONLY {: .copyable } | moving inside a pit, collide with everything else, correct position |

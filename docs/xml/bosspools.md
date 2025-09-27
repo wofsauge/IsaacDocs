@@ -3,7 +3,7 @@ tags:
   - File
 ---
 # File "bosspools.xml"
-[ ](#){: .rep .tooltip .badge }
+[ ](#){: .reporplus .tooltip .badge }
 
 This file is used to store informations about the bosses able to spawn on a given stage.
 

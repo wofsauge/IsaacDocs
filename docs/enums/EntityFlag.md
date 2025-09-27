@@ -29,8 +29,8 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|1 << 17 |FLAG_NO_REMOVE_ON_TEX_RENDER {: .copyable } | See `EntityFlag.FLAG_RENDER_FLOOR` and `EntityFlag.FLAG_RENDER_WALL`. |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 18 |FLAG_NO_DEATH_TRIGGER {: .copyable } | |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 19 |FLAG_NO_SPIKE_DAMAGE {: .copyable } | |
-|[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_LASER_POP {: .copyable } | EntityTear: Pop tear fired by a laser, should decelerate very quickly for the first few frames |
-|[ ](#){: .rep .tooltip .badge }|1 << 19 |FLAG_ITEM_SHOULD_DUPLICATE {: .copyable } | EntityPickup: item pedestal affected by Damocles, will be duplicated at the end of the current frame |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 19 |FLAG_LASER_POP {: .copyable } | EntityTear: Pop tear fired by a laser, should decelerate very quickly for the first few frames |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 19 |FLAG_ITEM_SHOULD_DUPLICATE {: .copyable } | EntityPickup: item pedestal affected by Damocles, will be duplicated at the end of the current frame |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 20 |FLAG_BOSSDEATH_TRIGGERED {: .copyable } | Some bosses (Lamb/Mother) can die but they'll still appear to be active in the room (IsActiveEnemy). You can check this flag in those cases. |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 21 |FLAG_DONT_OVERWRITE {: .copyable } | Used in entityfactory to not remove this entity if there is no space left for new entity |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 22 |FLAG_SPAWN_STICKY_SPIDERS {: .copyable } | Used by Sticky bombs to generate spiders on death |
@@ -49,25 +49,25 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|1 << 35 |FLAG_HIDE_HP_BAR {: .copyable } | Hides the Spider Mod hp bar of an EntityNPC |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 36 |FLAG_NO_DAMAGE_BLINK {: .copyable } | Player was given a short period of invulnerability by something other than damage, don't blink |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 37 |FLAG_PERSISTENT {: .copyable } | The entity will persists between rooms. (It will appear in every room, as opposed to the game remembering the specific room that it was spawned in.) |
-|[ ](#){: .rep .tooltip .badge }|1 << 38 |FLAG_BACKDROP_DETAIL {: .copyable } | Was spawned as a backdrop decoration, should be deleted if the current backdrop changes (due to Delirium) |
-|[ ](#){: .rep .tooltip .badge }|1 << 39 |FLAG_AMBUSH {: .copyable } | Enemy was spawned by some sort of ambush (Greed Mode, challenge rooms), don't collide with the player for a few frames |
-|[ ](#){: .rep .tooltip .badge }|1 << 40 |FLAG_GLITCH {: .copyable } | Glitched out, has different effects depending on the entity |
-|[ ](#){: .rep .tooltip .badge }|1 << 41 |FLAG_SPIN {: .copyable } | Used by Spin to Win, causes a familiar to rapidly spin around its owner |
-|[ ](#){: .rep .tooltip .badge }|1 << 42 |FLAG_NO_REWARD {: .copyable } | Doesn't spawn any kind of reward on death |
-|[ ](#){: .rep .tooltip .badge }|1 << 43 |FLAG_REDUCE_GIBS {: .copyable } | Spawn less gibs on death |
-|[ ](#){: .rep .tooltip .badge }|1 << 44 |FLAG_TRANSITION_UPDATE {: .copyable } | Updates during room/stage transitions |
-|[ ](#){: .rep .tooltip .badge }|1 << 45 |FLAG_NO_PLAYER_CONTROL {: .copyable } | Cannot be controlled by players |
-|[ ](#){: .rep .tooltip .badge }|1 << 46 |FLAG_NO_QUERY {: .copyable } | Hide from query results. This can hide entities from things like `Isaac.FindByType` and the `MC_ENTITY_TAKE_DMG` callback. Entities will still be visible to `Isaac.GetRoomEntities` and `_UPDATE` callbacks. |
-|[ ](#){: .rep .tooltip .badge }|1 << 47 |FLAG_KNOCKED_BACK {: .copyable } | Strong knockback: Forcefy moved in a specified direction for a short duration |
-|[ ](#){: .rep .tooltip .badge }|1 << 48 |FLAG_APPLY_IMPACT_DAMAGE {: .copyable } | Inflicts damage upon colliding with enemies, takes damage when colliding with walls |
-|[ ](#){: .rep .tooltip .badge }|1 << 49 |FLAG_ICE_FROZEN {: .copyable } | Frozen solid |
-|[ ](#){: .rep .tooltip .badge }|1 << 50 |FLAG_ICE {: .copyable } | Flagged to become frozen on death |
-|[ ](#){: .rep .tooltip .badge }|1 << 51 |FLAG_MAGNETIZED {: .copyable } | Magnetized: Attracts nearby enemies, projectiles and pickups |
-|[ ](#){: .rep .tooltip .badge }|1 << 52 |FLAG_BAITED {: .copyable } | Baited: Is targeted by nearby enemies |
-|[ ](#){: .rep .tooltip .badge }|1 << 53 |FLAG_KILLSWITCH {: .copyable } | Killed by a killswitch |
-|[ ](#){: .rep .tooltip .badge }|1 << 54 |FLAG_WEAKNESS {: .copyable } | Weakness effect from Reverse Strength |
-|[ ](#){: .rep .tooltip .badge }|1 << 55 |FLAG_EXTRA_GORE {: .copyable } | Spawns more gibs on death |
-|[ ](#){: .rep .tooltip .badge }|1 << 56 |FLAG_BRIMSTONE_MARKED {: .copyable } | Marked by Tainted Azazel; takes extra damage from Brimstone attacks. |
-|[ ](#){: .rep .tooltip .badge }|1 << 57 |FLAG_HELD {: .copyable } | Picked up by a player |
-|[ ](#){: .rep .tooltip .badge }|1 << 58 |FLAG_THROWN {: .copyable } | Thrown by a player |
-|[ ](#){: .rep .tooltip .badge }|1 << 59 |FLAG_FRIENDLY_BALL {: .copyable } | Used to detect enemies spawned by Friendly Ball |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 38 |FLAG_BACKDROP_DETAIL {: .copyable } | Was spawned as a backdrop decoration, should be deleted if the current backdrop changes (due to Delirium) |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 39 |FLAG_AMBUSH {: .copyable } | Enemy was spawned by some sort of ambush (Greed Mode, challenge rooms), don't collide with the player for a few frames |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 40 |FLAG_GLITCH {: .copyable } | Glitched out, has different effects depending on the entity |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 41 |FLAG_SPIN {: .copyable } | Used by Spin to Win, causes a familiar to rapidly spin around its owner |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 42 |FLAG_NO_REWARD {: .copyable } | Doesn't spawn any kind of reward on death |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 43 |FLAG_REDUCE_GIBS {: .copyable } | Spawn less gibs on death |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 44 |FLAG_TRANSITION_UPDATE {: .copyable } | Updates during room/stage transitions |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 45 |FLAG_NO_PLAYER_CONTROL {: .copyable } | Cannot be controlled by players |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 46 |FLAG_NO_QUERY {: .copyable } | Hide from query results. This can hide entities from things like `Isaac.FindByType` and the `MC_ENTITY_TAKE_DMG` callback. Entities will still be visible to `Isaac.GetRoomEntities` and `_UPDATE` callbacks. |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 47 |FLAG_KNOCKED_BACK {: .copyable } | Strong knockback: Forcefy moved in a specified direction for a short duration |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 48 |FLAG_APPLY_IMPACT_DAMAGE {: .copyable } | Inflicts damage upon colliding with enemies, takes damage when colliding with walls |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 49 |FLAG_ICE_FROZEN {: .copyable } | Frozen solid |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 50 |FLAG_ICE {: .copyable } | Flagged to become frozen on death |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 51 |FLAG_MAGNETIZED {: .copyable } | Magnetized: Attracts nearby enemies, projectiles and pickups |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 52 |FLAG_BAITED {: .copyable } | Baited: Is targeted by nearby enemies |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 53 |FLAG_KILLSWITCH {: .copyable } | Killed by a killswitch |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 54 |FLAG_WEAKNESS {: .copyable } | Weakness effect from Reverse Strength |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 55 |FLAG_EXTRA_GORE {: .copyable } | Spawns more gibs on death |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 56 |FLAG_BRIMSTONE_MARKED {: .copyable } | Marked by Tainted Azazel; takes extra damage from Brimstone attacks. |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 57 |FLAG_HELD {: .copyable } | Picked up by a player |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 58 |FLAG_THROWN {: .copyable } | Thrown by a player |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 59 |FLAG_FRIENDLY_BALL {: .copyable } | Used to detect enemies spawned by Friendly Ball |

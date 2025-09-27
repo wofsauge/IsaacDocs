@@ -43,27 +43,27 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|1 << 31 |CANT_HIT_PLAYER {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 32 |CHANGE_FLAGS_AFTER_TIMEOUT {: .copyable } | "Change" flags will change the bullet's behavior after a timeout. change m_ProjectileFlags to m_TimeoutProjectileFlags. |
 |[ ](#){: .alldlc .tooltip .badge }|1 << 33 |CHANGE_VELOCITY_AFTER_TIMEOUT {: .copyable } | "Change" flags will change the bullet's behavior after a timeout. |
-|[ ](#){: .rep .tooltip .badge }|1 << 34 |STASIS {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 35 |FIRE_WAVE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 36 |FIRE_WAVE_X {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 37 |ACCELERATE_EX {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 38 |BURST8 {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 39 |FIRE_SPAWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 40 |ANTI_GRAVITY {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 41 |TRACTOR_BEAM {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 42 |BOUNCE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 43 |BOUNCE_FLOOR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 44 |SHIELDED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 45 |BLUE_FIRE_SPAWN {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 46 |LASER_SHOT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 47 |GODHEAD {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 48 |SMART_PERFECT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 49 |BURSTSPLIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 50 |WIGGLE_ROTGUT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 51 |FREEZE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 52 |ACCELERATE_TO_POSITION {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 53 |BROCCOLI {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 54 |BACKSPLIT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 55 |SIDEWAVE {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 56 |ORBIT_PARENT {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|1 << 57 |FADEOUT {: .copyable } |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 34 |STASIS {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 35 |FIRE_WAVE {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 36 |FIRE_WAVE_X {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 37 |ACCELERATE_EX {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 38 |BURST8 {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 39 |FIRE_SPAWN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 40 |ANTI_GRAVITY {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 41 |TRACTOR_BEAM {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 42 |BOUNCE {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 43 |BOUNCE_FLOOR {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 44 |SHIELDED {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 45 |BLUE_FIRE_SPAWN {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 46 |LASER_SHOT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 47 |GODHEAD {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 48 |SMART_PERFECT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 49 |BURSTSPLIT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 50 |WIGGLE_ROTGUT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 51 |FREEZE {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 52 |ACCELERATE_TO_POSITION {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 53 |BROCCOLI {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 54 |BACKSPLIT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 55 |SIDEWAVE {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 56 |ORBIT_PARENT {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|1 << 57 |FADEOUT {: .copyable } |

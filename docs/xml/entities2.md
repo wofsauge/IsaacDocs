@@ -52,7 +52,7 @@ old tutorial: [https://www.reddit.com/r/themoddingofisaac/comments/36o00t/entity
 |:--|:--|
 |cansacrifice| Marks familiars on which sacrificial altar can be used on|
 |nodelirium| Blacklists a boss from being used by Delirium|
-|fly|Indicates enemies which should be neutralized by Skatole and charmed by Beelzebub|
+|fly|Indicates enemies which should be neutralized by Skatole (does NOT affect Beelzebub)|
 |spider|Indicates enemies which should be neutralized by Bursting Sack|
 |ghost|Indicates enemies which Vade Retro can kill at <50% HP as a special interaction|
 |noreroll| Immunity from D10 rerolls and the Ace cards|

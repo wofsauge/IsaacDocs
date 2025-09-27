@@ -28,8 +28,8 @@ tags:
 |[ ](#){: .alldlc .tooltip .badge }|20 |GRID_PRESSURE_PLATE {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|21 |GRID_STATUE {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|22 |GRID_ROCK_SS {: .copyable } | A super tinted rock that yields double rewards. |
-|[ ](#){: .rep .tooltip .badge }|23 |GRID_TELEPORTER {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|24 |GRID_PILLAR {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|25 |GRID_ROCK_SPIKED {: .copyable } |  |
-|[ ](#){: .rep .tooltip .badge }|26 |GRID_ROCK_ALT2 {: .copyable } | A tinted skull (that always drops a Fool card). |
-|[ ](#){: .rep .tooltip .badge }|27 |GRID_ROCK_GOLD {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|23 |GRID_TELEPORTER {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|24 |GRID_PILLAR {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|25 |GRID_ROCK_SPIKED {: .copyable } |  |
+|[ ](#){: .reporplus .tooltip .badge }|26 |GRID_ROCK_ALT2 {: .copyable } | A tinted skull (that always drops a Fool card). |
+|[ ](#){: .reporplus .tooltip .badge }|27 |GRID_ROCK_GOLD {: .copyable } |  |

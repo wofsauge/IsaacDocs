@@ -234,7 +234,7 @@ Returning any value will have no effect on later callback executions.
 ???- warning "Warning"
     Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_POST_PEFFECT_UPDATE and check those attributes on the first possible frame.
 
-???- info "Conditional Behaviour [ ](#){: .rep .tooltip .badge }"
+???- info "Conditional Behaviour [ ](#){: .reporplus .tooltip .badge }"
     This callback causes many `EntityPlayer` methods to silently fail if the methods are called while continuing a saved run. This behavior was intentionally added by Kilburn in the Repentance DLC in order to make it easier for modders to add starting items to custom characters. (This behavior obviaties the need for modders to use filtration logic to distinguish between the cases of a new run/Genesis use/co-op spawn and a continued run.)
 
     The following EntityPlayer methods are known to fail:
@@ -566,6 +566,8 @@ Returning any non-nil value will skip remaining callbacks.
 
 ### MC_POST_NPC_INIT {: .copyable }
 Returning any value will have no effect on later callback executions.
+
+Will also be called if Delirium morphs into given EntityType.
 
 ???- warning "Warning"
     Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_NPC_UPDATE and check those attributes on the first possible frame.
@@ -1078,11 +1080,11 @@ Returns true if the internal devolving behavior should be ignored - When returni
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .rep .tooltip .badge }|72 |MC_PRE_ENTITY_DEVOLVE {: .copyable } | ([Entity](../Entity.md)) | - | boolean |
+|[ ](#){: .reporplus .tooltip .badge }|72 |MC_PRE_ENTITY_DEVOLVE {: .copyable } | ([Entity](../Entity.md)) | - | boolean |
 
 ### MC_PRE_MOD_UNLOAD {: .copyable }
 This is called right before any mod is unloaded (when disabling a mod or reloading it using luamod), the mod's table is passed as an argument
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .rep .tooltip .badge }|73 |MC_PRE_MOD_UNLOAD {: .copyable } | table Mod | - | void |
+|[ ](#){: .reporplus .tooltip .badge }|73 |MC_PRE_MOD_UNLOAD {: .copyable } | table Mod | - | void |
