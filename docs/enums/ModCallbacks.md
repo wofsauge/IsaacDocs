@@ -913,7 +913,7 @@ Returned values will not alter args of later executed callbacks.
 Returning any non nil value will cause **MC_POST_GET_COLLECTIBLE** to be skipped.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -924,7 +924,7 @@ Returning any non nil value will cause **MC_POST_GET_COLLECTIBLE** to be skipped
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|62 |MC_PRE_GET_COLLECTIBLE {: .copyable } | ([ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | int |
+|[ ](#){: .alldlc .tooltip .badge }|62 |MC_PRE_GET_COLLECTIBLE {: .copyable } | ([ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | [CollectibleType](CollectibleType.md) |
 
 ### MC_POST_GET_COLLECTIBLE {: .copyable }
 This function is called right after MC_PRE_GET_COLLECTIBLE and determines the Collectible that will be spawned from the given [ItemPoolType](ItemPoolType.md).
@@ -940,7 +940,7 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
     meddled with the item pools. However you can know which item pool was actually used by checking what [ItemPool::GetLastPool()](../ItemPool.md#getlastpool) returns.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -948,7 +948,7 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|63 |MC_POST_GET_COLLECTIBLE {: .copyable } | (SelectedCollectible [[CollectibleType](CollectibleType.md)],<br>[ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | table |
+|[ ](#){: .alldlc .tooltip .badge }|63 |MC_POST_GET_COLLECTIBLE {: .copyable } | (SelectedCollectible [[CollectibleType](CollectibleType.md)],<br>[ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | [CollectibleType](CollectibleType.md) |
 
 ### MC_GET_PILL_COLOR {: .copyable }
 
@@ -959,7 +959,7 @@ Return a PillColor to specify a Pillcolor that needs to be choosen. Return nothi
 Returned values will not alter the args of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
