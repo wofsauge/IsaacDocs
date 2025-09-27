@@ -976,7 +976,7 @@ The effect is applied to every pill of the same PillColor, not to a single pill.
 Returned values will not update the "SelectedPillEffect" arg of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -994,7 +994,7 @@ Returned values will not update the "SelectedPillEffect" arg of later executed c
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|65 |MC_GET_PILL_EFFECT {: .copyable } | (SelectedPillEffect [[PillEffect](PillEffect.md)],<br>PillColor) | - | table |
+|[ ](#){: .alldlc .tooltip .badge }|65 |MC_GET_PILL_EFFECT {: .copyable } | (SelectedPillEffect [[PillEffect](PillEffect.md)],<br>PillColor) | - | [[PillEffect](PillEffect.md)] |
 
 ### MC_GET_TRINKET {: .copyable }
 Called when a [TrinketType](TrinketType.md) of a Trinket needs to be determined.
@@ -1004,14 +1004,14 @@ A [TrinketType](TrinketType.md) can be returned to change the SelectedTrinket.
 Returned values will not update the "SelectedTrinket" arg of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|66 |MC_GET_TRINKET {: .copyable } | (SelectedTrinket [[TrinketType](TrinketType.md)],<br>[RNG](../RNG.md)) | - | table |
+|[ ](#){: .alldlc .tooltip .badge }|66 |MC_GET_TRINKET {: .copyable } | (SelectedTrinket [[TrinketType](TrinketType.md)],<br>[RNG](../RNG.md)) | - | [[TrinketType](TrinketType.md)] |
 
 ### MC_POST_ENTITY_REMOVE {: .copyable }
 Called whenever an [Entity](../Entity.md) gets removed by the game. This includes deaths, kills, removals and even unloading an entity on room transition or ending a run.
