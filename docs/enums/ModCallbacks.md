@@ -913,7 +913,7 @@ Returned values will not alter args of later executed callbacks.
 Returning any non nil value will cause **MC_POST_GET_COLLECTIBLE** to be skipped.
 
 ???+ bug
-    Returning a value that is not an integer or nil will cause the game to crash.
+    Returning a value that is not a [CollectibleType](CollectibleType.md) or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -940,7 +940,7 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
     meddled with the item pools. However you can know which item pool was actually used by checking what [ItemPool::GetLastPool()](../ItemPool.md#getlastpool) returns.
 
 ???+ bug
-    Returning a value that is not an integer or nil will cause the game to crash.
+    Returning a value that is not a [CollectibleType](CollectibleType.md) or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
