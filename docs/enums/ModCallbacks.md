@@ -466,7 +466,7 @@ Returned values will not update the "[Card](Card.md)" arg of later executed call
 The `IncludePlayingCards` argument is whether to include cards of type `ItemConfigCardType.SUIT`. (This was confirmed by looking at the LuaJIT API code in the Nintendo Switch version files.)
 
 ???+ bug
-    Returning a value that is not an integer or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash. Returning an invalid [Card](Card.md) will crash the game if the card is collected.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -1004,7 +1004,7 @@ A [TrinketType](TrinketType.md) can be returned to change the SelectedTrinket.
 Returned values will not update the "SelectedTrinket" arg of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not an integer or nil will cause the game to crash.
+    Returning a value that is not a [TrinketType](TrinketType.md) or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
