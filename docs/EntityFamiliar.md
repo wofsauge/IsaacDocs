@@ -98,8 +98,8 @@ ___
     * 1: Allow switching to a better target even if we already have one
     * 2: Don't prioritize enemies that are close to our owner
     * 4: Prioritize enemies with higher HP
-    * 8: Prioritize enemies with lower HP
-    * 16: Give lower priority to our current target (this makes us more likely to switch between targets)
+    * 8: Give lower priority to our current target (this makes us more likely to switch between targets)
+    * 16: Prioritize enemies with lower HP
 
 **ConeDir**: If ~= Vector.Zero, searches for targets in a cone pointing in this direction
 
