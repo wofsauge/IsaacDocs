@@ -191,7 +191,7 @@ The optional parameter can be used to specify a CacheFlag. It must be a singular
 
 Returning any value will have no effect on later callback executions.
 
-Use this callback to implement anything that changse the player's stats, familiars, flying, weapons, and so on.
+Use this callback to implement anything that changes the player's stats, familiars, flying, weapons, and so on.
 
 Custom collectibles and trinkets annotate which specific stats they affect with the "cache" tag in the "items.xml" file. For example, a custom passive collectible that increases tear rate and damage should have an "items.xml" entry with something along the lines of:
 
