@@ -46,22 +46,13 @@ ___
 ### __div () {: aria-label='Operators' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) __div ( float Modifier ) {: .copyable aria-label='Operators' }
-[ ](#){: .alldlc .tooltip .badge }
-#### [Vector](Vector.md) __div ( [Vector](Vector.md) Modifier ) {: .copyable aria-label='Operators' }
-Defines the Division of a Vector object and a float / vector divisor(Modifier) using the `/` operator.
-The overloaded method that accepts a Vector object performs an **element-wise** division.
+Defines the Division of a Vector object and a float divisor(Modifier) using the `/` operator.
 
 ???- example "Example Code"
     ```lua
-    local vec1 = Vector(6,4)
-
-    -- vector / float
-    local divisor1 = 2
-    local result1 = vec1/divisor1 -- result equals Vector(3,2) now
-
-    -- vector / vector
-    local divisor2 = Vector(1,4)
-    local result2 = vec1/divisor2 -- result equals Vector(6,1) now
+    local vec = Vector(6,4)
+    local divisor = 2
+    local result = vec/divisor -- result equals Vector(3,2) now
     ```
 ___
 ### __mul () {: aria-label='Operators' }
@@ -81,7 +72,7 @@ The overloaded method that accepts a Vector object performs an **element-wise** 
     local result1 = vec1*multiplier1 -- result equals Vector(10,15) now
 
     -- vector * vector
-    local multiplier2 = Vector(5, 2)
+    local multiplier2 = Vector(5,2)
     local result2 = vec1*multiplier2 -- result equals Vector(10,6) now
     ```
 ___
