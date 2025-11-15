@@ -46,25 +46,43 @@ ___
 ### __div () {: aria-label='Operators' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) __div ( float Modifier ) {: .copyable aria-label='Operators' }
-Defines the Division of a Vector object and a float divisor(Modifier) using the `/` operator.
+[ ](#){: .alldlc .tooltip .badge }
+#### [Vector](Vector.md) __div ( [Vector](Vector.md) Modifier ) {: .copyable aria-label='Operators' }
+Defines the Division of a Vector object and a float / vector divisor(Modifier) using the `/` operator.
+The overloaded method that accepts a Vector object performs an **element-wise** division.
 
 ???- example "Example Code"
     ```lua
     local vec1 = Vector(6,4)
-    local divisor = 2
-    local result = vec1/divider -- result equals Vector(3,2) now
+
+    -- vector / float
+    local divisor1 = 2
+    local result1 = vec1/divisor1 -- result equals Vector(3,2) now
+
+    -- vector / vector
+    local divisor2 = Vector(1,4)
+    local result2 = vec1/divisor2 -- result equals Vector(6,1) now
     ```
 ___
 ### __mul () {: aria-label='Operators' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) __mul ( float Modifier ) {: .copyable aria-label='Operators' }
-Defines the Multiplication of a Vector object and a float multiplier(Modifier) using the `*` operator.
+[ ](#){: .alldlc .tooltip .badge }
+#### [Vector](Vector.md) __mul ( [Vector](Vector.md) Modifier ) {: .copyable aria-label='Operators' }
+Defines the Multiplication of a Vector object and a float / vector multiplier(Modifier) using the `*` operator.
+The overloaded method that accepts a Vector object performs an **element-wise** multiplication.
 
 ???- example "Example Code"
     ```lua
     local vec1 = Vector(2,3)
-    local multiplier = 5
-    local result = vec1*multiplier -- result equals Vector(10,15) now
+
+    -- vector * float
+    local multiplier1 = 5
+    local result1 = vec1*multiplier1 -- result equals Vector(10,15) now
+
+    -- vector * vector
+    local multiplier2 = Vector(5, 2)
+    local result2 = vec1*multiplier2 -- result equals Vector(10,6) now
     ```
 ___
 ### __sub () {: aria-label='Operators' }
