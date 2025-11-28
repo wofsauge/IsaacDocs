@@ -46,25 +46,34 @@ ___
 ### __div () {: aria-label='Operators' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) __div ( float Modifier ) {: .copyable aria-label='Operators' }
-Defines the Division of two Vector objects using the `/` operator.
+Defines the Division of a Vector object and a float divisor(Modifier) using the `/` operator.
 
 ???- example "Example Code"
     ```lua
-    local vec1 = Vector(6,4)
-    local vec2 = Vector(2,4)
-    local result = vec1/vec2 -- result equals Vector(3,1) now
+    local vec = Vector(6,4)
+    local divisor = 2
+    local result = vec/divisor -- result equals Vector(3,2) now
     ```
 ___
 ### __mul () {: aria-label='Operators' }
 [ ](#){: .alldlc .tooltip .badge }
 #### [Vector](Vector.md) __mul ( float Modifier ) {: .copyable aria-label='Operators' }
-Defines the Multiplication of two Vector objects using the `*` operator.
+[ ](#){: .alldlc .tooltip .badge }
+#### [Vector](Vector.md) __mul ( [Vector](Vector.md) Modifier ) {: .copyable aria-label='Operators' }
+Defines the Multiplication of a Vector object and a float / vector multiplier(Modifier) using the `*` operator.
+The overloaded method that accepts a Vector object performs an **element-wise** multiplication.
 
 ???- example "Example Code"
     ```lua
     local vec1 = Vector(2,3)
-    local vec2 = Vector(5,3)
-    local result = vec1*vec2 -- result equals Vector(10,9) now
+
+    -- vector * float
+    local multiplier1 = 5
+    local result1 = vec1*multiplier1 -- result equals Vector(10,15) now
+
+    -- vector * vector
+    local multiplier2 = Vector(5,2)
+    local result2 = vec1*multiplier2 -- result equals Vector(10,6) now
     ```
 ___
 ### __sub () {: aria-label='Operators' }
