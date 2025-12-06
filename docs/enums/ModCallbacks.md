@@ -191,7 +191,7 @@ The optional parameter can be used to specify a CacheFlag. It must be a singular
 
 Returning any value will have no effect on later callback executions.
 
-Use this callback to implement anything that changse the player's stats, familiars, flying, weapons, and so on.
+Use this callback to implement anything that changes the player's stats, familiars, flying, weapons, and so on.
 
 Custom collectibles and trinkets annotate which specific stats they affect with the "cache" tag in the "items.xml" file. For example, a custom passive collectible that increases tear rate and damage should have an "items.xml" entry with something along the lines of:
 
@@ -466,7 +466,7 @@ Returned values will not update the "[Card](Card.md)" arg of later executed call
 The `IncludePlayingCards` argument is whether to include cards of type `ItemConfigCardType.SUIT`. (This was confirmed by looking at the LuaJIT API code in the Nintendo Switch version files.)
 
 ???+ bug
-    Returning a value that is not an integer or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash. Returning an invalid [Card](Card.md) will crash the game if the card is collected.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -913,7 +913,7 @@ Returned values will not alter args of later executed callbacks.
 Returning any non nil value will cause **MC_POST_GET_COLLECTIBLE** to be skipped.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not a [CollectibleType](CollectibleType.md) or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -924,7 +924,7 @@ Returning any non nil value will cause **MC_POST_GET_COLLECTIBLE** to be skipped
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|62 |MC_PRE_GET_COLLECTIBLE {: .copyable } | ([ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | int |
+|[ ](#){: .alldlc .tooltip .badge }|62 |MC_PRE_GET_COLLECTIBLE {: .copyable } | ([ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | [CollectibleType](CollectibleType.md) |
 
 ### MC_POST_GET_COLLECTIBLE {: .copyable }
 This function is called right after MC_PRE_GET_COLLECTIBLE and determines the Collectible that will be spawned from the given [ItemPoolType](ItemPoolType.md).
@@ -940,7 +940,7 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
     meddled with the item pools. However you can know which item pool was actually used by checking what [ItemPool::GetLastPool()](../ItemPool.md#getlastpool) returns.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not a [CollectibleType](CollectibleType.md) or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -948,7 +948,7 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|63 |MC_POST_GET_COLLECTIBLE {: .copyable } | (SelectedCollectible [[CollectibleType](CollectibleType.md)],<br>[ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | table |
+|[ ](#){: .alldlc .tooltip .badge }|63 |MC_POST_GET_COLLECTIBLE {: .copyable } | (SelectedCollectible [[CollectibleType](CollectibleType.md)],<br>[ItemPoolType](ItemPoolType.md),<br>Decrease [bool],<br>Seed [int]) | - | [CollectibleType](CollectibleType.md) |
 
 ### MC_GET_PILL_COLOR {: .copyable }
 
@@ -959,7 +959,7 @@ Return a PillColor to specify a Pillcolor that needs to be choosen. Return nothi
 Returned values will not alter the args of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -976,7 +976,7 @@ The effect is applied to every pill of the same PillColor, not to a single pill.
 Returned values will not update the "SelectedPillEffect" arg of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not an integer or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
@@ -994,7 +994,7 @@ Returned values will not update the "SelectedPillEffect" arg of later executed c
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|65 |MC_GET_PILL_EFFECT {: .copyable } | (SelectedPillEffect [[PillEffect](PillEffect.md)],<br>PillColor) | - | table |
+|[ ](#){: .alldlc .tooltip .badge }|65 |MC_GET_PILL_EFFECT {: .copyable } | (SelectedPillEffect [[PillEffect](PillEffect.md)],<br>PillColor) | - | [[PillEffect](PillEffect.md)] |
 
 ### MC_GET_TRINKET {: .copyable }
 Called when a [TrinketType](TrinketType.md) of a Trinket needs to be determined.
@@ -1004,14 +1004,14 @@ A [TrinketType](TrinketType.md) can be returned to change the SelectedTrinket.
 Returned values will not update the "SelectedTrinket" arg of later executed callbacks.
 
 ???+ bug
-    Returning a value that is not a table or nil will cause the game to crash.
+    Returning a value that is not a [TrinketType](TrinketType.md) or nil will cause the game to crash.
 
 ???+ warning "Warning"
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
 
 |DLC|Value|Name|Function Args|Optional Args|Return Type|
 |:--|:--|:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|66 |MC_GET_TRINKET {: .copyable } | (SelectedTrinket [[TrinketType](TrinketType.md)],<br>[RNG](../RNG.md)) | - | table |
+|[ ](#){: .alldlc .tooltip .badge }|66 |MC_GET_TRINKET {: .copyable } | (SelectedTrinket [[TrinketType](TrinketType.md)],<br>[RNG](../RNG.md)) | - | [[TrinketType](TrinketType.md)] |
 
 ### MC_POST_ENTITY_REMOVE {: .copyable }
 Called whenever an [Entity](../Entity.md) gets removed by the game. This includes deaths, kills, removals and even unloading an entity on room transition or ending a run.
