@@ -848,9 +848,12 @@ ___
 
 ___
 ### Get·Bomb·Flags () {: aria-label='Functions' }
-[ ](#){: .alldlc .tooltip .badge }
+[ ](#){: .abp .tooltip .badge }
 #### int GetBombFlags ( ) {: .copyable aria-label='Functions' }
+[ ](#){: .reporplus .tooltip .badge }
+#### int GetBombFlags ( boolean IsFetus = false ) {: .copyable aria-label='Functions' }
 
+**IsFetus**: If set to true, can set flags from bomb collectibles at random chance.
 ___
 ### Get·Bomb·Variant () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
