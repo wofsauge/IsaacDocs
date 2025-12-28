@@ -57,6 +57,37 @@ ___
 
 Returns the current seed of the RNG object.
 
+???- example "Get shift index example code"
+    Isaac's API doesn't provide a way to get the shift index. Repentogon does, but if you don't have access to that then you can use the following function to find the game's default rng shift index values.
+
+    ```lua
+    local function getShiftIdx(rng)
+      local seed = rng:GetSeed()
+      local nexts = {}
+      -- 18 seems to be the magic number here so you don't get false positives
+      -- at 17, rng with seed=1,shiftIdx=53 returns a false positive of 52
+      for i = 1, 18 do
+        table.insert(nexts, rng:Next())
+      end
+      for i = 0, 80 do
+        local rng2 = RNG()
+        rng2:SetSeed(seed, i)
+        for j, v in ipairs(nexts) do
+          if v ~= rng2:Next() then
+            break
+          end
+          if j == #nexts then
+            -- reset the rng since it was modified with Next
+            rng:SetSeed(seed, i)
+            return i
+          end
+        end
+      end
+    end
+
+    print(getShiftIdx(Game():GetLevel():GetDevilAngelRoomRNG())) -- prints: 2
+    ```
+
 ___
 ### Next () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
