@@ -22,7 +22,7 @@ The order in which costumes are rendered is defined by their specific "layers" i
 
 **Layer names**
 
-From bottom to top: glow < body < body{0..1} < head < head{0..5} < top0 < extra < back
+From bottom to top: glow < back < body < body{0..1} < head < head{0..5} < top0 < extra
 
 ## Attributes
 
