@@ -213,7 +213,7 @@ Adds eternal hearts to the player. 1 unit is half a heart. Remove them with nega
 ___
 ### Add·Friendly·Dip () {: aria-label='Functions' }
 [ ](#){: .reporplus .tooltip .badge }
-#### void AddFriendlyDip ( int Subtype, [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
+#### [EntityFamiliar](EntityFamiliar.md) AddFriendlyDip ( int Subtype, [Vector](Vector.md) Position ) {: .copyable aria-label='Functions' }
 
 ???- note "Dip Subtypes"
     ```lua
