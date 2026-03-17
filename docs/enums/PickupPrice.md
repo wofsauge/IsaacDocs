@@ -14,5 +14,5 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|-7 |PRICE_ONE_SOUL_HEART {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-8 |PRICE_TWO_SOUL_HEARTS {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-9 |PRICE_ONE_HEART_AND_ONE_SOUL_HEART {: .copyable } |  |
-|[ ](#){: .repplus .tooltip .badge }|-10 |PRICE_DEVIL_SACRIFICE_SPIKES {: .copyable } | game enum doesn't have this value, but it's correctly used by game |
+|[ ](#){: .repplus .tooltip .badge }|-10 |PRICE_DEVIL_SACRIFICE_SPIKES {: .copyable } | game enum doesn't have this value, but it's correct value and used by game |
 |[ ](#){: .alldlc .tooltip .badge }|-1000 |PRICE_FREE {: .copyable } |  |
