@@ -14,4 +14,5 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|-7 |PRICE_ONE_SOUL_HEART {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-8 |PRICE_TWO_SOUL_HEARTS {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|-9 |PRICE_ONE_HEART_AND_ONE_SOUL_HEART {: .copyable } |  |
+|[ ](#){: .repplus .tooltip .badge }|-10 |PRICE_DEVIL_SACRIFICE_SPIKES {: .copyable } | The official in-game enum does not have this value, but it is the correct value used by game. It corresponds to the Devil Room mechanic with the `devilsacrifice` collectible tag. |
 |[ ](#){: .alldlc .tooltip .badge }|-1000 |PRICE_FREE {: .copyable } |  |
