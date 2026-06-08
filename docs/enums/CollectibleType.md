@@ -643,7 +643,6 @@ tags:
 |[ ](#){: .reporplus .tooltip .badge }|639 |COLLECTIBLE_YUCK_HEART {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|640 |COLLECTIBLE_URN_OF_SOULS {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|641 |COLLECTIBLE_AKELDAMA {: .copyable } |  |
-|[ ](#){: .reporplus .tooltip .badge }|641 |COLLECTIBLE_AKELDAMA {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|642 |COLLECTIBLE_MAGIC_SKIN {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|643 |COLLECTIBLE_REVELATION {: .copyable } |  |
 |[ ](#){: .reporplus .tooltip .badge }|644 |COLLECTIBLE_CONSOLATION_PRIZE {: .copyable } |  |
