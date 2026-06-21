@@ -68,7 +68,7 @@ ___
 ___
 ### Original·Variant {: aria-label='Variables' }
 [ ](#){: .const .tooltip .badge } [ ](#){: .alldlc .tooltip .badge }
-#### int OriginalVariant  {: .copyable aria-label='Variables' }
+#### const int OriginalVariant  {: .copyable aria-label='Variables' }
 
 ___
 ### Shape {: aria-label='Variables' }
