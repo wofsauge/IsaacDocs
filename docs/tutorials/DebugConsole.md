@@ -355,8 +355,8 @@ Rerolls item pedestals and shop items in the current room.
 ### **rewind**
 Makes the game forget about the changes in current room and teleports Isaac back to previous room. (Glowing Hourglass-like effect)
 
-## **testbosspool**
+### **testbosspool**
 Prints a list of boss names and percentage chance (100%=10000) for current floor.
 
-## **reloadwisps**
+### **reloadwisps**
 Reloads wisps spawned by Book of Virtues and locusts spawned by Abyss.
