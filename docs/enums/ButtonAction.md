@@ -5,10 +5,10 @@ tags:
 # Enum "ButtonAction"
 |DLC|Value|Enumerator|Comment|
 |:--|:--|:--|:--|
-|[ ](#){: .alldlc .tooltip .badge }|0 |ACTION_LEFT {: .copyable } |  |
-|[ ](#){: .alldlc .tooltip .badge }|1 |ACTION_RIGHT {: .copyable } |  |
-|[ ](#){: .alldlc .tooltip .badge }|2 |ACTION_UP {: .copyable } |  |
-|[ ](#){: .alldlc .tooltip .badge }|3 |ACTION_DOWN {: .copyable } |  |
+|[ ](#){: .alldlc .tooltip .badge }|0 |ACTION_LEFT {: .copyable } | walk left (as of REP+) |
+|[ ](#){: .alldlc .tooltip .badge }|1 |ACTION_RIGHT {: .copyable } | walk right (as of REP+) |
+|[ ](#){: .alldlc .tooltip .badge }|2 |ACTION_UP {: .copyable } | walk up (as of REP+) |
+|[ ](#){: .alldlc .tooltip .badge }|3 |ACTION_DOWN {: .copyable } | walk down (as of REP+) |
 |[ ](#){: .alldlc .tooltip .badge }|4 |ACTION_SHOOTLEFT {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|5 |ACTION_SHOOTRIGHT {: .copyable } |  |
 |[ ](#){: .alldlc .tooltip .badge }|6 |ACTION_SHOOTUP {: .copyable } |  |
@@ -28,10 +28,10 @@ tags:
 |[ ](#){: .abrep .tooltip .badge }|18 |ACTION_MUTE {: .copyable } | Mute gameplay |
 |[ ](#){: .repplus .tooltip .badge }|18 |ACTION_RESTART {: .copyable } | Restart run <br>**(Value changed with Rep+)** |
 |[ ](#){: .alldlc .tooltip .badge }|19 |ACTION_JOINMULTIPLAYER {: .copyable } |  |
-|[ ](#){: .alldlc .tooltip .badge }|20 |ACTION_MENULEFT {: .copyable } | same as walk left |
-|[ ](#){: .alldlc .tooltip .badge }|21 |ACTION_MENURIGHT {: .copyable } | same as walk right  |
-|[ ](#){: .alldlc .tooltip .badge }|22 |ACTION_MENUUP {: .copyable } | same as walk up  |
-|[ ](#){: .alldlc .tooltip .badge }|23 |ACTION_MENUDOWN {: .copyable } | same as walk down  |
+|[ ](#){: .alldlc .tooltip .badge }|20 |ACTION_MENULEFT {: .copyable } | same as walk left (as of REP+ oudated) |
+|[ ](#){: .alldlc .tooltip .badge }|21 |ACTION_MENURIGHT {: .copyable } | same as walk right (as of REP+ oudated) |
+|[ ](#){: .alldlc .tooltip .badge }|22 |ACTION_MENUUP {: .copyable } | same as walk up (as of REP+ oudated) |
+|[ ](#){: .alldlc .tooltip .badge }|23 |ACTION_MENUDOWN {: .copyable } | same as walk down (as of REP+ oudated) |
 |[ ](#){: .abrep .tooltip .badge }|24 |ACTION_MENULT {: .copyable } | Left trigger |
 |[ ](#){: .repplus .tooltip .badge }|24 |ACTION_MENULB {: .copyable } | Left sholder button <br>**(added with Rep+)** |
 |[ ](#){: .abrep .tooltip .badge }|25 |ACTION_MENURT {: .copyable } | Right trigger |
