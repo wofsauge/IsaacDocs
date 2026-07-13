@@ -32,12 +32,12 @@ This file can only be used to modify vanilla bosses. To add custom bosses, you n
 ???+ example "Example Code"
     This code describes a boss pool with 3 bosses in it.
 
-    ```xml
-    <bosspools>
-        <pool name="basement">
-            <boss id="1" weight="1" />		<!-- Monstro -->
-            <boss id="17" weight="1" />		<!-- Gemini -->
-            <boss id="2" weight="1" />		<!-- Larry Jr. -->
-        </pool>
-    </bosspools>
-    ```
+```xml
+<bosspools>
+    <pool name="basement">
+        <boss id="1" weight="1" />		<!-- Monstro -->
+        <boss id="17" weight="1" />		<!-- Gemini -->
+        <boss id="2" weight="1" />		<!-- Larry Jr. -->
+    </pool>
+</bosspools>
+```
