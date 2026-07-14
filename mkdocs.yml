@@ -222,6 +222,7 @@ nav:
         - "XML Overview": xml/XMLFiledocumentation.md
         - "achievements.xml" : xml/achievements.md
         - "ambush.xml" : xml/ambush.md
+        - "ANM2 format": xml/Anm2_files.md
         - "babies.xml" : xml/babies.md
         - "bombcostumes.xml" : xml/bombcostumes.md
         - "backdrops.xml" : xml/backdrops.md
