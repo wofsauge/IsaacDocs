@@ -68,11 +68,13 @@ ___
 Indicates what is visible on the minimap.
 **Display Flags (bitwise):**
 ```lua
-1 << -1 -- Invisible
+1 << -1 -- No change (room is not "forced" to display)
 1 << 0 -- Visible
 1 << 1 -- Room Shadow
 1 << 2 -- Show Icon
 ```
+
+Note that to lock these changes into effect you must use `Game():GetLevel():UpdateVisibility()`.
 
 ???- example "Examples"
     The flags are hard to interpret, but here are some examples:
@@ -94,6 +96,7 @@ Indicates what is visible on the minimap.
 
     As far as I've seen, 001 is completely unused.
     010, 100, and 110 may be used for compass or blue map, I don't remember. I think they use 100.
+
 ___
 ### Flags {: aria-label='Variables' }
 [ ](#){: .alldlc .tooltip .badge }
