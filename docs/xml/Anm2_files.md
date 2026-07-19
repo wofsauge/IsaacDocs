@@ -140,6 +140,7 @@ An animation to apply to another object (see [`<Null>`](#null-tag)).
 | Interpolated | bool | If set to true, the game will transition between values. |
 
 If the tag is child of `<LayerAnimation>` it may provide more attributes:
+
 | Attribute-Name | Type | Description |
 |:--|:--|:--|
 | XPivot | int | Sets a x coordinate for a "pin" where the layer can be rotated arround |
