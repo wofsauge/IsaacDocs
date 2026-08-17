@@ -325,6 +325,9 @@ luarun relative_path/hello.lua
 
 Takes a path to a lua file and runs it immediately. Paths are relative to the folder where the game is installed.
 
+>[!WARNING]
+>This command has been invalidated as of Repentance and does not seem to function at all.
+
 ### **luamod**
 Examples:
 ```
