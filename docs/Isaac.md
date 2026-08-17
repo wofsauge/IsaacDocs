@@ -91,6 +91,15 @@ Prints a string into the log file. You can find this file here: `:::lua %systemd
     -- Output: [INFO] - Lua Debug: This is a Test.
     ```
 
+???+ warning "Warning"
+    The max string size you can log is 10,219 bytes. If you go over this limit then the string will be truncated, but the newline character won't be appended to the end of your line and the next log line won't start on its own line.
+
+    If you're logging english (or ascii) characters then each character is equal to 1 byte.
+
+    If you're logging multi-byte characters (e.g. chinese characters that use 3 bytes in utf-8 encoding) then perform some simple math: 10219 / 3 = 3406 characters (rounded down)
+
+    You can use `string.len` to get the number of bytes and `utf8.len` to get the number of characters in your string.
+
 ___
 ### Execute·Command () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
