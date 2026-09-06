@@ -71,9 +71,9 @@ The options.ini file is located here:
     
 
 
-To open the console, press the **grave/tilde (~)** key while in a run. If you are on a non-English keyboard, see the [wiki page on the debug console](https://bindingofisaacrebirth.gamepedia.com/Debug_Console) for more information.
+To open the console, press the **grave/tilde (~)** key while in a run. If you are on a non-English keyboard, see the [wiki page on the debug console](https://bindingofisaacrebirth.wiki.gg/Debug_Console) for more information.
 
-The wiki also has a [list of every console command](https://bindingofisaacrebirth.gamepedia.com/Debug_Console).
+The wiki also has a [list of every console command](https://bindingofisaacrebirth.wiki.gg/wiki/Debug_Console#Listed_Commands).
 
 ## Where is the directory/folder for mods located? {: .subHeader}
 
