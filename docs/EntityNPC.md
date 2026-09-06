@@ -115,7 +115,7 @@ ___
 #### boolean Morph ( [EntityType](enums/EntityType.md) type, int Variant, int SubType, int ChampionColorIdx ) {: .copyable aria-label='Functions' }
 
 Morph the current entity into another one. [ChampionColorIdx](https://bindingofisaacrebirth.wiki.gg/wiki/Champions) can be used to turn the entity into a champion. Use `:::lua -1` in order to not add a champion color.
-A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.gamepedia.com/Monsters#Champions)
+A list of Champion colors can be found here : [ChampionColorIdx](https://bindingofisaacrebirth.wiki.gg/wiki/Champions)
 
 ???+ bug
     This function can not turn a champion NPC into a regular NPC! for that, use the following code:
