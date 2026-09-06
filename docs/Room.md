@@ -241,7 +241,7 @@ This gives the total devil deal percentage for the floor. It doesn't split it in
         end
       end
 
-      -- https://bindingofisaacrebirth.fandom.com/wiki/Angel_Room#Angel_Room_Generation_Chance
+      -- https://bindingofisaacrebirth.wiki.gg/wiki/Angel_Room#Angel_Room_Generation_Chance
       if devilRoomChance == 0.5 then
         if anyPlayerHasTrinket(TrinketType.TRINKET_ROSARY_BEAD) then
           devilRoomChance = devilRoomChance * (1.0 - 0.5)
