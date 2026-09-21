@@ -923,7 +923,7 @@ ___
 ### Try·Spawn·Secret·Exit () {: aria-label='Functions' }
 [ ](#){: .reporplus .tooltip .badge }
 #### boolean TrySpawnSecretExit ( boolean Animate = false, boolean Force = false ) {: .copyable aria-label='Functions' }
-Attempts to spawn a door to the Downpour, Mines or Mausoleum depending on the current floor.
+Attempts to spawn a door to the Downpour, Mines, Mausoleum or to the Mausoleum Mom's Heart boss room depending on the current floor.
 This usually does nothing outside of boss rooms unless `Force` is set to `true`.
 
 ___
