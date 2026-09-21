@@ -79,7 +79,7 @@ local MOD_NAME = "MyMod" -- Cannot have spaces, since it represents a path.
 
 -- Players can boot the game with an launch option called "--luadebug", which will enable additional
 -- functionality that is considered to be unsafe. For more information about this flag, see the
--- wiki: https://bindingofisaacrebirth.fandom.com/wiki/Launch_Options
+-- wiki: https://bindingofisaacrebirth.wiki.gg/wiki/Launch_Options
 --
 -- When this flag is enabled, the global environment will be slightly different. The differences are
 -- documented here: https://wofsauge.github.io/IsaacDocs/rep/Globals.html

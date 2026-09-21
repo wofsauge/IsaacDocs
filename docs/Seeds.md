@@ -20,7 +20,7 @@ tags:
 [ ](#){: .alldlc .tooltip .badge }
 #### void AddSeedEffect ( [SeedEffect](enums/SeedEffect.md) Value ) {: .copyable aria-label='Functions' }
 
-A "seed effect" is equivalent to an [easter egg](https://bindingofisaacrebirth.fandom.com/wiki/Seeds#Special_Seeds).
+A "seed effect" is equivalent to an [easter egg](https://bindingofisaacrebirth.wiki.gg/wiki/Seeds#Special_Seeds).
 
 ___
 ### Can·Add·Seed·Effect () {: aria-label='Functions' }

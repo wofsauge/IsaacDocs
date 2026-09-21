@@ -48,7 +48,7 @@ INTERACTIVE_questions = {
       ]
     },
     "VERSION_MISMATCH" : {
-      text: 'Some issues might occur, because you dont have the most recent version of the game installed, making some mods not work correctly anymore. You can look up the installed version of the game inside the "log.txt" file (See: Blue arrow on screenshot), found inside this folder:<br>C:\\Users\\[YourUsername]\\Documents\\My Games\\Binding of Isaac Repentance\\<br>You can look up the most recent version number of the game in the Wiki <a href="https://bindingofisaacrebirth.fandom.com/wiki/Version_History">https://bindingofisaacrebirth.fandom.com/wiki/Version_History</a><br>If your version number is not the same as the most recent one, please update your game and try to use the mod again.',
+      text: 'Some issues might occur, because you dont have the most recent version of the game installed, making some mods not work correctly anymore. You can look up the installed version of the game inside the "log.txt" file (See: Blue arrow on screenshot), found inside this folder:<br>C:\\Users\\[YourUsername]\\Documents\\My Games\\Binding of Isaac Repentance\\<br>You can look up the most recent version number of the game in the Wiki <a href="https://bindingofisaacrebirth.wiki.gg/wiki/Version_History">https://bindingofisaacrebirth.wiki.gg/wiki/Version_History</a><br>If your version number is not the same as the most recent one, please update your game and try to use the mod again.',
       image: "../images/faq/logfile_location.png",
     },
     "DLC_MISSING" : {
