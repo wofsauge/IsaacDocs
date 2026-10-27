@@ -118,14 +118,6 @@ You can set `canShoot` to `false` when defining a player in xml. If you want to 
     end
     ```
 
-=== ":material-language-typescript: TypeScript"
-    If you are using [:material-language-typescript:IsaacScript](https://isaacscript.github.io/), then all you have to do is call the `setBlindfold` function, like so:
-
-    ```ts
-    const player = Isaac.GetPlayer();
-    setBlindfold(player, true);
-    ```
-
 ## How do I apply a costume to my character? {: .subHeader}
 
 This is called a "null costume" and it is accomplished via the [`EntityPlayer.AddNullCostume()`](../EntityPlayer.md#addnullcostume) method. For more information, see [Lytebringr's 8th video](https://www.youtube.com/watch?v=R1CdCyGL1DQ&list=PLMZJyHSWa_My5DDoTQcKCgs475xIpQHSF&index=9).
