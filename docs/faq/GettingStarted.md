@@ -16,7 +16,6 @@ Other resources:
 - [Written tutorials](../tutorials/ExampleProject.md)
 - [Collection of useful tools](../tutorials/Tools.md)
 - [AgentCucco's Video Tutorials](https://www.youtube.com/playlist?list=PLUYzSIp7NO8cEer2FmtxSXlXoMFirvYDN) (playlist)
-- [:material-language-typescript:IsaacScript "Green Candle" tutorial](https://isaacscript.github.io/main/example-mod)
 - [catinsurance's Repentance Modding Tutorials](https://youtube.com/playlist?list=PLkIbky8_pFUpqAF9l7dh_YsEV-zpJ4q50)
 
 ## How do I make sprites in the Isaac style? {: .subHeader}

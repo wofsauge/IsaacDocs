@@ -35,5 +35,3 @@ There is a log viewer built in to [REPENTOGON](https://repentogon.com/). You mig
 First, check out the log.txt file for clues as to why the game is crashing. However, in the vast majority of cases, the log will not show any helpful information when the game crashes.
 
 If you are programming your mod in Lua, then your only option is to insert a lot of print statements to try and narrow down where the crash is occurring.
-
-If you are programming your mod in :material-language-typescript:TypeScript using the [IsaacScript framework](https://isaacscript.github.io/), then you can use [this crash debug plugin](https://github.com/IsaacScript/isaacscript/blob/main/src/plugins/addCrashDebugStatements.ts) that will put the exact line that the mod is crashing at in the log.txt, which is extremely handy.

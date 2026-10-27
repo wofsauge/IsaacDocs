@@ -67,6 +67,5 @@ local function getGridEntityID(gridEntity)
 end
 ```
 
-If you are using [IsaacScript](https://isaacscript.github.io/), these two functions are already included in the standard library, so don't bother making them yourself.
 
 <br>
