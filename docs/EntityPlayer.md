@@ -638,7 +638,7 @@ ___
 ### Discharge·Active·Item () {: aria-label='Functions' }
 [ ](#){: .reporplus .tooltip .badge }
 #### void DischargeActiveItem ( [ActiveSlot](enums/ActiveSlot.md) ActiveSlot = ActiveSlot.SLOT_PRIMARY ) {: .copyable aria-label='Functions' }
-Sets the charge of your active item to 0 without triggering the active item effect.
+Sets the charge of your active item to 0 without triggering the active item effect. This will also trigger Judas' Birthright if the player is holding it.
 
 ___
 ### Donate·Luck () {: aria-label='Functions' }
