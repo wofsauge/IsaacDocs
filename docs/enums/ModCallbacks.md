@@ -25,7 +25,7 @@ Returning any value will have no effect on later callback executions.
     mod:AddCallback(ModCallbacks.MC_NPC_UPDATE, mod.myFunction)
     ```
 
-    This function will only print "Gaper found", if the NPC is of the type "ENTITY_GAPER".
+    This function will only print "Gaper found" if the NPC is of the type "ENTITY_GAPER".
     ```lua
     function mod:myFunction2(entity) -- 'entity' contains a reference to the NPC
         print("Gaper found!")
@@ -42,8 +42,8 @@ Called after every game update.
 
 Returning any value will have no effect on later callback executions.
 
-???- info "Execution informations"
-    This callback is called 30 times per second. It will not be called, when its paused (for example on screentransitions or on the pause menu).
+???- info "Execution information"
+    This callback is called 30 times per second. It will not be called when it's paused (for example, on screen transitions or on the pause menu).
 
 ???- example "Example Code"
     This code will print "Hello World!" for every Game Update.
@@ -63,11 +63,11 @@ Called after every game render (60 times per second).
 
 Returning any value will have no effect on later callback executions.
 
-???- info  "Execution informations"
-    It is highly recommended to only use this function when you want to render something. Its not recommended to use this function for things which are not frequently used or need constant recalculation.
+???- info  "Execution information"
+    It is highly recommended to only use this function when you want to render something. It's not recommended to use this function for things which are not frequently used or need constant recalculation.
 
 ???- example "Example Code"
-    This code will print "Hello World!" everytime the game renders.
+    This code will print "Hello World!" every time the game renders.
     ```lua
     function mod:myFunction()
         print("Hello World!")
@@ -84,7 +84,7 @@ Called when an active item is used, or when any item is passed through EntityPla
 
 The item [RNG](../RNG.md) allows for the item's random events to be seeded.
 
-Return true to show the "use item" animation, otherwise false.Returning any value will have no effect on later callback executions.
+Return true to show the "use item" animation, otherwise false. Returning any value will have no effect on later callback executions.
 
 If a table is returned instead of a boolean, the following fields can be set to a non-nil value for extra functionality:
 
@@ -93,10 +93,10 @@ If a table is returned instead of a boolean, the following fields can be set to 
 * ShowAnim: Plays the default use animation if set to true (equivalent to simply returning true in AB+)
 
 ???- info "Note"
-    The "Discharge" field dictates whether the Book of Virtues should generate a wisp. Setting it to `false` prevents the wisp from spawning.
+    The "Discharge" field dictates whether the Book of Virtues should generate a wisp. Setting it to `false` prevents the wisp from spawning. Setting Discharge to `false` also cancels Judas' Birthright being used automatically; however, this can be countered by calling `EntityPlayer.DischargeActiveItem` before returning.
 
 ???- example "Example Code"
-    This code will print "Hello World!" everytime an active item is used.
+    This code will print "Hello World!" every time an active item is used.
     ```lua
     function mod:myFunction(collectibleID, rngObj, playerWhoUsedItem, useFlags, activeSlot, varData)
         print("Hello World!")
@@ -143,7 +143,7 @@ Called when a card/rune is used.
 Returning any value will have no effect on later callback executions.
 
 ???- example "Example Code"
-    This code will print "Hello World!" everytime any card is used.
+    This code will print "Hello World!" every time any card is used.
     ```lua
     function mod:myFunction(cardID, playerWhoUsedItem, useFlags)
         print("Hello World!")
@@ -290,7 +290,7 @@ Called when a pill is used.
 Returning any value will have no effect on later callback executions.
 
 ???- example "Example Code"
-    This code will print "Hello World!" everytime any pill is used.
+    This code will print "Hello World!" every time any pill is used.
     ```lua
     function mod:myFunction(pillEffectID, playerWhoUsedItem, useFlags)
         print("Hello World!")
@@ -397,7 +397,7 @@ Returning any value will have no effect on later callback executions.
 
 ### MC_POST_GAME_END {: .copyable }
 
-This function gets called when the game over screen appears, or when the an ending starts playing. The boolean value is true when you died and got a game over, false when you won and got an ending.
+This function gets called when the game over screen appears, or when an ending starts playing. The boolean value is true when you died and got a game over, false when you won and got an ending.
 
 Returning any value will have no effect on later callback executions.
 
@@ -459,7 +459,7 @@ Because not all cards have the same chance to spawn, use [RNG](../RNG.md) for a 
 
 You can use the boolean values as a filter for the selection.
 
-The return value determines, what [Card](Card.md) will be spawned. Return nil to not replace the spawned card.
+The return value determines what [Card](Card.md) will be spawned. Return nil to not replace the spawned card.
 
 Returned values will not update the "[Card](Card.md)" arg of later executed callbacks.
 
@@ -497,7 +497,7 @@ Returning a string will print it to the console.
 Returning any value will have no effect on later callback executions.
 
 ???+ bug
-    Returning any value beside nil will cause the game to crash, including a string.
+    Returning any value besides nil will cause the game to crash, including a string.
 
 ???- example "Example code"
     ```lua
@@ -518,7 +518,7 @@ Returning any value will have no effect on later callback executions.
 ### MC_PRE_USE_ITEM {: .copyable }
 Called before an item is used.
 
-Return true to prevent the default code of an item to be triggered. This will still discharge the item.
+Return true to prevent the default code of an item from being triggered. This will still discharge the item.
 
 ???+ bug
     Returning any value besides nil will also prevent later callbacks from being executed.
@@ -554,7 +554,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .alldlc .tooltip .badge }|25 |MC_POST_FAMILIAR_RENDER {: .copyable } | ([EntityFamiliar](../EntityFamiliar.md),<br>RenderOffset [Vector])|[FamiliarVariant](FamiliarVariant.md) | void |
 
 ### MC_PRE_FAMILIAR_COLLISION {: .copyable }
-The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
+The Low value is true when the entity collided with the collider first. It's false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
 Returning any non-nil value will skip remaining callbacks.
@@ -567,7 +567,7 @@ Returning any non-nil value will skip remaining callbacks.
 ### MC_POST_NPC_INIT {: .copyable }
 Returning any value will have no effect on later callback executions.
 
-Will also be called if Delirium morphs into given EntityType.
+Will also be called if Delirium morphs into the given EntityType.
 
 ???- warning "Warning"
     Accessing the initialized entity does provide incomplete data in some use cases. Only Position, Velocity, SpawnerType, SpawnerVariant, SpawnerEntity and some others are set before PostInit callbacks are called and are therefore accessible. Some other attributes (i.e. effect attributes or tear flags) will not be set. If you want to access those values, you need to hook into MC_NPC_UPDATE and check those attributes on the first possible frame.
@@ -593,7 +593,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .alldlc .tooltip .badge }|29 |MC_POST_NPC_DEATH {: .copyable } | ([EntityNPC](../EntityNPC.md))|[EntityType](EntityType.md) | void |
 
 ### MC_PRE_NPC_COLLISION {: .copyable }
-The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
+The Low value is true when the entity collided with the collider first. It's false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
 Returning any non-nil value will skip remaining callbacks.
@@ -683,7 +683,7 @@ Return a table `{ Variant, Subtype }` to override the specified values. This doe
 |[ ](#){: .alldlc .tooltip .badge }|37 |MC_POST_PICKUP_SELECTION {: .copyable } | ([EntityPickup](../EntityPickup.md),<br>Variant [int],<br>Subtype [int]) | - | table |
 
 ### MC_PRE_PICKUP_COLLISION {: .copyable }
-The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
+The Low value is true when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
 Returning any non-nil value will skip remaining callbacks.
@@ -717,7 +717,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .alldlc .tooltip .badge }|41 |MC_POST_TEAR_RENDER {: .copyable } | ([EntityTear](../EntityTear.md),<br>RenderOffset [Vector])|[TearVariant](TearVariant.md) | void |
 
 ### MC_PRE_TEAR_COLLISION {: .copyable }
-The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
+The Low value is true when the entity collided with the collider first. Its false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
 Returning any non-nil value will skip remaining callbacks.
@@ -880,7 +880,7 @@ Returning any value will have no effect on later callback executions.
 |[ ](#){: .alldlc .tooltip .badge }|59 |MC_POST_BOMB_RENDER {: .copyable } | ([EntityBomb](../EntityBomb.md),<br>Offset [Vector])|[BombVariant](BombVariant.md) | void |
 
 ### MC_PRE_BOMB_COLLISION {: .copyable }
-The Low value is true, when the entity collided with the collider first. Its false if the collider collides first.
+The Low value is true when the entity collided with the collider first. It's false if the collider collides first.
 
 Return true to ignore collision, false to collide but not execute internal code and nil to continue with internal code (example: taking damage on contact).
 Returning any non-nil value will skip remaining callbacks.
@@ -952,9 +952,9 @@ Returned values will not update the "SelectedCollectible" arg of later executed 
 
 ### MC_GET_PILL_COLOR {: .copyable }
 
-This function is called, when the game is spawning a pill and needs to determine its PillColor.
+This function is called when the game is spawning a pill and needs to determine its PillColor.
 
-Return a PillColor to specify a Pillcolor that needs to be choosen. Return nothing to let it be handled by the game.
+Return a PillColor to specify a Pillcolor that needs to be chosen. Return nothing to let it be handled by the game.
 
 Returned values will not alter the args of later executed callbacks.
 
@@ -969,7 +969,7 @@ Returned values will not alter the args of later executed callbacks.
 |[ ](#){: .alldlc .tooltip .badge }|64 |MC_GET_PILL_COLOR {: .copyable } | (Seed [int]) | - | [PillColor](PillColor.md) |
 
 ### MC_GET_PILL_EFFECT {: .copyable }
-Called every frames when the game get the [PillEffect](PillEffect.md) of a pill. The effect of the pill can be choosed by returning the chosen [PillEffect](PillEffect.md).
+Called every frame when the game gets the [PillEffect](PillEffect.md) of a pill. The effect of the pill can be chosen by returning its [PillEffect](PillEffect.md).
 
 The effect is applied to every pill of the same PillColor, not to a single pill.
 
@@ -982,7 +982,7 @@ Returned values will not update the "SelectedPillEffect" arg of later executed c
     The last callback to return a valid return value wins out and overwrites previous callbacks' return values
 
 ???- example "Example code"
-    This code turn "Bad Trip" pills into "Balls of Steel" pills.
+    This code turns "Bad Trip" pills into "Balls of Steel" pills.
     ```lua
     function mod:getPillEffect(pillEffect, pillColor)
         if pillEffect == PillEffect.PILLEFFECT_BAD_TRIP then
