@@ -15,6 +15,15 @@ tags:
         local mousePos = Input.GetMousePosition(true)
         ```
 
+???+ note "Controllers"
+    You can get the controller id/index for a player like so: `Isaac.GetPlayer().ControllerIndex`
+
+    A controller index of -1 can be used to check against all controllers.
+
+    Prior to rep+ 1.9.7.19, the keyboard index was 0. Any other controllers (e.g. xbox controller) would start at 1 and increment from there.
+
+    As of rep+ 1.9.7.19, the keyboard index is -2. Any other controllers start at 0.
+
 ## Functions
 ### Get·Action·Value () {: aria-label='Functions' }
 [ ](#){: .alldlc .tooltip .badge }
